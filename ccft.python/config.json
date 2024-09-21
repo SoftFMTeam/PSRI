@@ -1,0 +1,7 @@
+{
+    "mode": "net",
+    "ip": "127.0.0.1",
+    "port": 8192,
+    "debug": true,
+    "cmd-fmt": "json"
+}

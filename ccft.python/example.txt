@@ -1,0 +1,17 @@
+##### joern-cli #####
+
+1 import code
+importCode(inputPath="{source code dir}}", projectName="{proj name}}")
+
+2 parse
+joern-parse {source code dir}
+
+3 export
+joern-export {cpg.bin path} --repr={all} --format={graphml | neo4jcsv | graphson | dot} --out={out dir (must be not existed)}
+eg:
+    joern-export cpg.bin --repr=all --format=neo4jcsv --out=./.neo4jcsv
+    joern-export cpg.bin --repr=all --format=graphml --out=./.graphml
+
+
+##### ccf ana tool #####
+--analysis
