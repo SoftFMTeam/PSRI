@@ -1,0 +1,81 @@
+2593,JUMP_TARGET,-1,case 0:,5,95,case,1,CASTCaseStatement
+2604,JUMP_TARGET,-1,case 1:,5,99,case,6,CASTCaseStatement
+9951,JUMP_TARGET,-1,case kLogFile:,9,237,case,1,CPPASTCaseStatement
+9969,JUMP_TARGET,-1,case kDescriptorFile:,9,241,case,5,CPPASTCaseStatement
+9980,JUMP_TARGET,-1,case kTableFile:,9,246,case,9,CPPASTCaseStatement
+9995,JUMP_TARGET,-1,case kTempFile:,9,249,case,13,CPPASTCaseStatement
+10010,JUMP_TARGET,-1,case kCurrentFile:,9,254,case,17,CPPASTCaseStatement
+10012,JUMP_TARGET,-1,case kDBLockFile:,9,255,case,19,CPPASTCaseStatement
+10014,JUMP_TARGET,-1,case kInfoLogFile:,9,256,case,21,CPPASTCaseStatement
+15418,JUMP_TARGET,-1,case kTypeDeletion:,9,181,case,1,CPPASTCaseStatement
+15429,JUMP_TARGET,-1,case kTypeValue:,9,187,case,6,CPPASTCaseStatement
+16154,JUMP_TARGET,-1,case kReuse:,7,243,case,1,CPPASTCaseStatement
+16162,JUMP_TARGET,-1,case kFilter:,7,246,case,5,CPPASTCaseStatement
+16170,JUMP_TARGET,-1,case kUncompressed:,7,249,case,9,CPPASTCaseStatement
+16178,JUMP_TARGET,-1,default:,7,252,default,13,CPPASTDefaultStatement
+16635,JUMP_TARGET,-1,case kTypeValue:,13,364,case,1,CPPASTCaseStatement
+16647,JUMP_TARGET,-1,case kTypeDeletion:,13,367,case,5,CPPASTCaseStatement
+31667,JUMP_TARGET,-1,case kLogFile:,5,216,case,1,CPPASTCaseStatement
+31674,JUMP_TARGET,-1,case kDescriptorFile:,5,217,case,4,CPPASTCaseStatement
+31681,JUMP_TARGET,-1,case kTableFile:,5,218,case,7,CPPASTCaseStatement
+31688,JUMP_TARGET,-1,default:,5,219,default,10,CPPASTDefaultStatement
+33095,JUMP_TARGET,-1,case RESET_DROP_UNSYNCED_DATA:,7,474,case,1,CPPASTCaseStatement
+33119,JUMP_TARGET,-1,case RESET_DELETE_UNSYNCED_FILES:,7,477,case,5,CPPASTCaseStatement
+33143,JUMP_TARGET,-1,default:,7,480,default,9,CPPASTDefaultStatement
+35191,JUMP_TARGET,-1,case kFullType:,7,96,case,1,CPPASTCaseStatement
+35229,JUMP_TARGET,-1,case kFirstType:,7,114,case,9,CPPASTCaseStatement
+35270,JUMP_TARGET,-1,case kMiddleType:,7,131,case,16,CPPASTCaseStatement
+35297,JUMP_TARGET,-1,case kLastType:,7,140,case,20,CPPASTCaseStatement
+35335,JUMP_TARGET,-1,case kEof:,7,152,case,24,CPPASTCaseStatement
+35346,JUMP_TARGET,-1,case kBadRecord:,7,161,case,28,CPPASTCaseStatement
+35365,JUMP_TARGET,-1,default:,7,169,default,32,CPPASTDefaultStatement
+40579,JUMP_TARGET,-1,case kTypeValue:,9,131,case,1,CPPASTCaseStatement
+40603,JUMP_TARGET,-1,case kTypeDeletion:,9,136,case,4,CPPASTCaseStatement
+45909,JUMP_TARGET,-1,case 0:,7,175,case,1,CPPASTCaseStatement
+45915,JUMP_TARGET,-1,case 1:,7,178,case,4,CPPASTCaseStatement
+45921,JUMP_TARGET,-1,default:,7,181,default,7,CPPASTDefaultStatement
+47712,JUMP_TARGET,-1,case kComparator:,7,124,case,1,CPPASTCaseStatement
+47736,JUMP_TARGET,-1,case kLogNumber:,7,133,case,5,CPPASTCaseStatement
+47754,JUMP_TARGET,-1,case kPrevLogNumber:,7,141,case,9,CPPASTCaseStatement
+47772,JUMP_TARGET,-1,case kNextFileNumber:,7,149,case,13,CPPASTCaseStatement
+47790,JUMP_TARGET,-1,case kLastSequence:,7,157,case,17,CPPASTCaseStatement
+47808,JUMP_TARGET,-1,case kCompactPointer:,7,165,case,21,CPPASTCaseStatement
+47839,JUMP_TARGET,-1,case kDeletedFile:,7,174,case,25,CPPASTCaseStatement
+47870,JUMP_TARGET,-1,case kNewFile:,7,183,case,29,CPPASTCaseStatement
+47927,JUMP_TARGET,-1,default:,7,195,default,33,CPPASTDefaultStatement
+50024,JUMP_TARGET,-1,case kNotFound:,9,414,case,1,CPPASTCaseStatement
+50027,JUMP_TARGET,-1,case kFound:,9,416,case,4,CPPASTCaseStatement
+50031,JUMP_TARGET,-1,case kDeleted:,9,418,case,7,CPPASTCaseStatement
+50042,JUMP_TARGET,-1,case kCorrupt:,9,421,case,11,CPPASTCaseStatement
+56574,JUMP_TARGET,-1,case kTypeValue:,7,56,case,1,CPPASTCaseStatement
+56604,JUMP_TARGET,-1,case kTypeDeletion:,7,64,case,5,CPPASTCaseStatement
+56627,JUMP_TARGET,-1,default:,7,71,default,9,CPPASTDefaultStatement
+57081,JUMP_TARGET,-1,case kTypeValue:,7,27,case,1,CPPASTCaseStatement
+57122,JUMP_TARGET,-1,case kTypeDeletion:,7,35,case,10,CPPASTCaseStatement
+71110,JUMP_TARGET,-1,case kNoCompression:,5,101,case,1,CPPASTCaseStatement
+71156,JUMP_TARGET,-1,case kSnappyCompression:,5,118,case,5,CPPASTCaseStatement
+71227,JUMP_TARGET,-1,default:,5,136,default,8,CPPASTDefaultStatement
+73648,JUMP_TARGET,-1,case kNoCompression:,5,152,case,1,CPPASTCaseStatement
+73654,JUMP_TARGET,-1,case kSnappyCompression:,5,156,case,5,CPPASTCaseStatement
+75467,JUMP_TARGET,-1,case TABLE_TEST:,7,454,case,1,CPPASTCaseStatement
+75477,JUMP_TARGET,-1,case BLOCK_TEST:,7,457,case,5,CPPASTCaseStatement
+75487,JUMP_TARGET,-1,case MEMTABLE_TEST:,7,460,case,9,CPPASTCaseStatement
+75497,JUMP_TARGET,-1,case DB_TEST:,7,463,case,13,CPPASTCaseStatement
+75855,JUMP_TARGET,-1,case 0:,9,528,case,1,CPPASTCaseStatement
+75897,JUMP_TARGET,-1,case 1:,9,538,case,4,CPPASTCaseStatement
+75937,JUMP_TARGET,-1,case 2:,9,546,case,7,CPPASTCaseStatement
+75991,JUMP_TARGET,-1,case 3:,9,556,case,10,CPPASTCaseStatement
+76049,JUMP_TARGET,-1,case 4:,9,570,case,13,CPPASTCaseStatement
+76257,JUMP_TARGET,-1,case 0:,9,619,case,1,CPPASTCaseStatement
+76260,JUMP_TARGET,-1,case 1:,9,622,case,4,CPPASTCaseStatement
+76292,JUMP_TARGET,-1,case 2:,9,629,case,7,CPPASTCaseStatement
+91083,JUMP_TARGET,-1,case 3:,5,36,case,1,CPPASTCaseStatement
+91099,JUMP_TARGET,-1,case 2:,5,39,case,5,CPPASTCaseStatement
+91115,JUMP_TARGET,-1,case 1:,5,42,case,9,CPPASTCaseStatement
+92915,JUMP_TARGET,-1,case kOk:,7,43,case,1,CPPASTCaseStatement
+92921,JUMP_TARGET,-1,case kNotFound:,7,46,case,5,CPPASTCaseStatement
+92927,JUMP_TARGET,-1,case kCorruption:,7,49,case,9,CPPASTCaseStatement
+92933,JUMP_TARGET,-1,case kNotSupported:,7,52,case,13,CPPASTCaseStatement
+92939,JUMP_TARGET,-1,case kInvalidArgument:,7,55,case,17,CPPASTCaseStatement
+92945,JUMP_TARGET,-1,case kIOError:,7,58,case,21,CPPASTCaseStatement
+92951,JUMP_TARGET,-1,default:,7,61,default,25,CPPASTDefaultStatement

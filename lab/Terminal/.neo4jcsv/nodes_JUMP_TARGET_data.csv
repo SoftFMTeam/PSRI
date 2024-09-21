@@ -1,0 +1,2046 @@
+194,JUMP_TARGET,-1,case DbcsAttribute::Leading:,5,30,case,1,CPPASTCaseStatement
+200,JUMP_TARGET,-1,case DbcsAttribute::Trailing:,5,32,case,4,CPPASTCaseStatement
+206,JUMP_TARGET,-1,default:,5,34,default,7,CPPASTDefaultStatement
+654,JUMP_TARGET,-1,case Mode::Loose:,5,217,case,1,CPPASTCaseStatement
+693,JUMP_TARGET,-1,case Mode::LooseTextOnly:,5,231,case,4,CPPASTCaseStatement
+731,JUMP_TARGET,-1,case Mode::Fill:,5,245,case,7,CPPASTCaseStatement
+776,JUMP_TARGET,-1,case Mode::Cell:,5,265,case,10,CPPASTCaseStatement
+800,JUMP_TARGET,-1,case Mode::CharInfo:,5,275,case,13,CPPASTCaseStatement
+824,JUMP_TARGET,-1,case Mode::LegacyAttr:,5,285,case,16,CPPASTCaseStatement
+848,JUMP_TARGET,-1,default:,5,295,default,19,CPPASTDefaultStatement
+2383,JUMP_TARGET,-1,case DbcsAttribute::Leading:,13,473,case,1,CPPASTCaseStatement
+2403,JUMP_TARGET,-1,case DbcsAttribute::Trailing:,13,488,case,5,CPPASTCaseStatement
+2431,JUMP_TARGET,-1,default:,13,507,default,10,CPPASTDefaultStatement
+8861,JUMP_TARGET,-1,case '<':,29,2204,case,1,CPPASTCaseStatement
+8867,JUMP_TARGET,-1,case '>':,29,2207,case,5,CPPASTCaseStatement
+8873,JUMP_TARGET,-1,case '&':,29,2210,case,9,CPPASTCaseStatement
+8879,JUMP_TARGET,-1,default:,29,2213,default,13,CPPASTDefaultStatement
+10491,JUMP_TARGET,-1,case DbcsAttribute::Leading:,5,739,case,1,CPPASTCaseStatement
+10503,JUMP_TARGET,-1,case DbcsAttribute::Trailing:,5,742,case,5,CPPASTCaseStatement
+10517,JUMP_TARGET,-1,default:,5,745,default,9,CPPASTDefaultStatement
+14225,JUMP_TARGET,-1,case L'\\':,13,2482,case,1,CPPASTCaseStatement
+14227,JUMP_TARGET,-1,case L'{':,13,2483,case,3,CPPASTCaseStatement
+14229,JUMP_TARGET,-1,case L'}':,13,2484,case,5,CPPASTCaseStatement
+14241,JUMP_TARGET,-1,default:,13,2487,default,9,CPPASTDefaultStatement
+21004,JUMP_TARGET,-1,case ERROR_SUCCESS:,13,53,case,1,CPPASTCaseStatement
+21012,JUMP_TARGET,-1,case ERROR_INSUFFICIENT_BUFFER:,13,57,case,5,CPPASTCaseStatement
+21020,JUMP_TARGET,-1,case APPMODEL_ERROR_NO_APPLICATION:,13,61,case,9,CPPASTCaseStatement
+21024,JUMP_TARGET,-1,default:,13,64,default,12,CPPASTDefaultStatement
+62515,JUMP_TARGET,-1,case WindowingBehaviorUseCurrent:,13,684,case,1,CPPASTCaseStatement
+62517,JUMP_TARGET,-1,case WindowingBehaviorUseExisting:,13,685,case,3,CPPASTCaseStatement
+62525,JUMP_TARGET,-1,case WindowingBehaviorUseAnyExisting:,13,696,case,7,CPPASTCaseStatement
+62533,JUMP_TARGET,-1,case WindowingBehaviorUseName:,13,699,case,11,CPPASTCaseStatement
+62540,JUMP_TARGET,-1,case WindowingBehaviorUseNone:,13,702,case,15,CPPASTCaseStatement
+62543,JUMP_TARGET,-1,default:,13,707,default,18,CPPASTDefaultStatement
+65577,JUMP_TARGET,-1,case DLL_PROCESS_ATTACH:,5,21,case,1,CPPASTCaseStatement
+65593,JUMP_TARGET,-1,case DLL_PROCESS_DETACH:,5,26,case,7,CPPASTCaseStatement
+66335,JUMP_TARGET,-1,case PackageUpdateAvailability::Available:,25,105,case,1,CPPASTCaseStatement
+66339,JUMP_TARGET,-1,case PackageUpdateAvailability::Required:,25,106,case,3,CPPASTCaseStatement
+66343,JUMP_TARGET,-1,case PackageUpdateAvailability::NoUpdates:,25,107,case,5,CPPASTCaseStatement
+66357,JUMP_TARGET,-1,case PackageUpdateAvailability::Error:,25,111,case,10,CPPASTCaseStatement
+66361,JUMP_TARGET,-1,case PackageUpdateAvailability::Unknown:,25,112,case,12,CPPASTCaseStatement
+66365,JUMP_TARGET,-1,default:,25,113,default,14,CPPASTDefaultStatement
+66688,JUMP_TARGET,-1,case ShortcutAction::SetColorScheme:,9,51,case,1,CPPASTCaseStatement
+66692,JUMP_TARGET,-1,case ShortcutAction::AdjustOpacity:,9,52,case,3,CPPASTCaseStatement
+66776,JUMP_TARGET,-1,case ShortcutAction::SetColorScheme:,9,147,case,1,CPPASTCaseStatement
+66789,JUMP_TARGET,-1,case ShortcutAction::AdjustOpacity:,9,150,case,5,CPPASTCaseStatement
+74562,JUMP_TARGET,-1,case WindowingMode::UseNew:,17,563,case,1,CPPASTCaseStatement
+74570,JUMP_TARGET,-1,case WindowingMode::UseExisting:,17,566,case,5,CPPASTCaseStatement
+74578,JUMP_TARGET,-1,case WindowingMode::UseAnyExisting:,17,569,case,9,CPPASTCaseStatement
+78063,JUMP_TARGET,-1,case CommandPaletteMode::ActionMode:,9,647,case,1,CPPASTCaseStatement
+78079,JUMP_TARGET,-1,case CommandPaletteMode::TabSearchMode:,9,654,case,5,CPPASTCaseStatement
+78085,JUMP_TARGET,-1,case CommandPaletteMode::TabSwitchMode:,9,656,case,8,CPPASTCaseStatement
+78098,JUMP_TARGET,-1,case CommandPaletteMode::CommandlineMode:,9,658,case,11,CPPASTCaseStatement
+78104,JUMP_TARGET,-1,default:,9,660,default,14,CPPASTDefaultStatement
+78923,JUMP_TARGET,-1,case CommandPaletteMode::TabSearchMode:,9,1019,case,1,CPPASTCaseStatement
+78927,JUMP_TARGET,-1,case CommandPaletteMode::TabSwitchMode:,9,1020,case,3,CPPASTCaseStatement
+78948,JUMP_TARGET,-1,case CommandPaletteMode::CommandlineMode:,9,1029,case,6,CPPASTCaseStatement
+78967,JUMP_TARGET,-1,case CommandPaletteMode::ActionMode:,9,1036,case,14,CPPASTCaseStatement
+78971,JUMP_TARGET,-1,default:,9,1037,default,16,CPPASTDefaultStatement
+82684,JUMP_TARGET,-1,case WindowVisualState::WindowVisualStateMaximized:,9,119,case,1,CPPASTCaseStatement
+82717,JUMP_TARGET,-1,case WindowVisualState::WindowVisualStateNormal:,9,128,case,9,CPPASTCaseStatement
+82721,JUMP_TARGET,-1,case WindowVisualState::WindowVisualStateIconified:,9,129,case,11,CPPASTCaseStatement
+82725,JUMP_TARGET,-1,default:,9,130,default,13,CPPASTDefaultStatement
+82774,JUMP_TARGET,-1,case CaptionButton::Minimize:,9,164,case,1,CPPASTCaseStatement
+82807,JUMP_TARGET,-1,case CaptionButton::Maximize:,9,173,case,10,CPPASTCaseStatement
+82841,JUMP_TARGET,-1,case CaptionButton::Close:,9,182,case,19,CPPASTCaseStatement
+82884,JUMP_TARGET,-1,case CaptionButton::Minimize:,9,205,case,1,CPPASTCaseStatement
+82910,JUMP_TARGET,-1,case CaptionButton::Maximize:,9,210,case,7,CPPASTCaseStatement
+82936,JUMP_TARGET,-1,case CaptionButton::Close:,9,215,case,13,CPPASTCaseStatement
+91423,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,1,CPPASTCaseStatement
+91437,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,4,CPPASTCaseStatement
+91449,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,7,CPPASTCaseStatement
+91461,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,10,CPPASTCaseStatement
+91473,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,13,CPPASTCaseStatement
+91485,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,16,CPPASTCaseStatement
+91497,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,19,CPPASTCaseStatement
+91509,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,22,CPPASTCaseStatement
+91521,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,25,CPPASTCaseStatement
+91533,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,28,CPPASTCaseStatement
+91545,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,31,CPPASTCaseStatement
+91557,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,34,CPPASTCaseStatement
+91569,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,37,CPPASTCaseStatement
+91581,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,40,CPPASTCaseStatement
+91593,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,43,CPPASTCaseStatement
+91605,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,46,CPPASTCaseStatement
+91617,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,49,CPPASTCaseStatement
+91629,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,52,CPPASTCaseStatement
+91641,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,55,CPPASTCaseStatement
+91653,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,58,CPPASTCaseStatement
+91665,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,61,CPPASTCaseStatement
+91677,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,64,CPPASTCaseStatement
+91689,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,67,CPPASTCaseStatement
+91701,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,70,CPPASTCaseStatement
+91713,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,73,CPPASTCaseStatement
+91725,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,76,CPPASTCaseStatement
+91737,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,79,CPPASTCaseStatement
+91749,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,82,CPPASTCaseStatement
+91761,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,85,CPPASTCaseStatement
+91773,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,88,CPPASTCaseStatement
+91785,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,91,CPPASTCaseStatement
+91797,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,94,CPPASTCaseStatement
+91809,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,97,CPPASTCaseStatement
+91821,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,100,CPPASTCaseStatement
+91833,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,103,CPPASTCaseStatement
+91845,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,106,CPPASTCaseStatement
+91857,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,109,CPPASTCaseStatement
+91869,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,112,CPPASTCaseStatement
+91881,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,115,CPPASTCaseStatement
+91893,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,118,CPPASTCaseStatement
+91905,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,121,CPPASTCaseStatement
+91917,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,124,CPPASTCaseStatement
+91929,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,127,CPPASTCaseStatement
+91941,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,130,CPPASTCaseStatement
+91953,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,133,CPPASTCaseStatement
+91965,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,136,CPPASTCaseStatement
+91977,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,139,CPPASTCaseStatement
+91989,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,142,CPPASTCaseStatement
+92001,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,145,CPPASTCaseStatement
+92013,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,148,CPPASTCaseStatement
+92025,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,151,CPPASTCaseStatement
+92037,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,154,CPPASTCaseStatement
+92049,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,157,CPPASTCaseStatement
+92061,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,160,CPPASTCaseStatement
+92073,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,163,CPPASTCaseStatement
+92085,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,166,CPPASTCaseStatement
+92097,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,169,CPPASTCaseStatement
+92109,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,172,CPPASTCaseStatement
+92121,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,175,CPPASTCaseStatement
+92133,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,178,CPPASTCaseStatement
+92145,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,181,CPPASTCaseStatement
+92157,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,184,CPPASTCaseStatement
+92169,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,187,CPPASTCaseStatement
+92181,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,190,CPPASTCaseStatement
+92193,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,193,CPPASTCaseStatement
+92205,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,196,CPPASTCaseStatement
+92217,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,199,CPPASTCaseStatement
+92229,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,202,CPPASTCaseStatement
+92241,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,205,CPPASTCaseStatement
+92253,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,208,CPPASTCaseStatement
+92265,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,211,CPPASTCaseStatement
+92277,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,214,CPPASTCaseStatement
+92289,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,217,CPPASTCaseStatement
+92301,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,220,CPPASTCaseStatement
+92313,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,223,CPPASTCaseStatement
+92325,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,226,CPPASTCaseStatement
+92337,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,229,CPPASTCaseStatement
+92349,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,232,CPPASTCaseStatement
+92361,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,235,CPPASTCaseStatement
+92373,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,238,CPPASTCaseStatement
+92385,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,241,CPPASTCaseStatement
+92397,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,244,CPPASTCaseStatement
+92409,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,247,CPPASTCaseStatement
+92421,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,250,CPPASTCaseStatement
+92433,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,253,CPPASTCaseStatement
+92445,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,256,CPPASTCaseStatement
+92457,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS,13,46,default,259,CPPASTCaseStatement
+92469,JUMP_TARGET,-1,default:,9,48,default,262,CPPASTDefaultStatement
+96969,JUMP_TARGET,-1,case TabCloseButtonVisibility::Never:,13,626,case,1,CPPASTCaseStatement
+96977,JUMP_TARGET,-1,case TabCloseButtonVisibility::Hover:,13,629,case,5,CPPASTCaseStatement
+96985,JUMP_TARGET,-1,case TabCloseButtonVisibility::ActiveOnly:,13,632,case,9,CPPASTCaseStatement
+96993,JUMP_TARGET,-1,default:,13,635,default,13,CPPASTDefaultStatement
+100265,JUMP_TARGET,-1,case 0:,9,24,case,1,CPPASTCaseStatement
+100269,JUMP_TARGET,-1,case 1:,9,26,case,4,CPPASTCaseStatement
+100273,JUMP_TARGET,-1,case 2:,9,28,case,7,CPPASTCaseStatement
+100277,JUMP_TARGET,-1,case 3:,9,30,case,10,CPPASTCaseStatement
+100281,JUMP_TARGET,-1,case 4:,9,32,case,13,CPPASTCaseStatement
+101564,JUMP_TARGET,-1,case Settings::Model::TabCloseButtonVisibility::Never:,13,220,case,1,CPPASTCaseStatement
+101584,JUMP_TARGET,-1,case Settings::Model::TabCloseButtonVisibility::Hover:,13,223,case,5,CPPASTCaseStatement
+101604,JUMP_TARGET,-1,default:,13,226,default,9,CPPASTDefaultStatement
+102695,JUMP_TARGET,-1,case NewTabMenuEntryType::Separator:,13,913,case,1,CPPASTCaseStatement
+102707,JUMP_TARGET,-1,case NewTabMenuEntryType::Folder:,13,920,case,4,CPPASTCaseStatement
+102858,JUMP_TARGET,-1,case NewTabMenuEntryType::RemainingProfiles:,13,976,case,7,CPPASTCaseStatement
+102862,JUMP_TARGET,-1,case NewTabMenuEntryType::MatchProfiles:,13,977,case,9,CPPASTCaseStatement
+102900,JUMP_TARGET,-1,case NewTabMenuEntryType::Profile:,13,993,case,12,CPPASTCaseStatement
+107704,JUMP_TARGET,-1,case NoticeLevel::Debug:,13,2868,case,1,CPPASTCaseStatement
+107713,JUMP_TARGET,-1,case NoticeLevel::Info:,13,2871,case,5,CPPASTCaseStatement
+107722,JUMP_TARGET,-1,case NoticeLevel::Warning:,13,2874,case,9,CPPASTCaseStatement
+107731,JUMP_TARGET,-1,case NoticeLevel::Error:,13,2877,case,13,CPPASTCaseStatement
+107906,JUMP_TARGET,-1,case SettingsTarget::DefaultsFile:,13,2997,case,1,CPPASTCaseStatement
+107916,JUMP_TARGET,-1,case SettingsTarget::SettingsFile:,13,3000,case,5,CPPASTCaseStatement
+107926,JUMP_TARGET,-1,case SettingsTarget::AllFiles:,13,3003,case,9,CPPASTCaseStatement
+108803,JUMP_TARGET,-1,case Settings::Model::TabCloseButtonVisibility::Never:,9,3383,case,1,CPPASTCaseStatement
+108823,JUMP_TARGET,-1,case Settings::Model::TabCloseButtonVisibility::Hover:,9,3386,case,5,CPPASTCaseStatement
+108843,JUMP_TARGET,-1,case Settings::Model::TabCloseButtonVisibility::ActiveOnly:,9,3389,case,9,CPPASTCaseStatement
+108851,JUMP_TARGET,-1,default:,9,3390,default,11,CPPASTDefaultStatement
+123191,JUMP_TARGET,-1,case CaptionButton::Minimize:,13,151,case,1,CPPASTCaseStatement
+123199,JUMP_TARGET,-1,case CaptionButton::Maximize:,13,154,case,5,CPPASTCaseStatement
+123207,JUMP_TARGET,-1,case CaptionButton::Close:,13,157,case,9,CPPASTCaseStatement
+123544,JUMP_TARGET,-1,case DLL_PROCESS_ATTACH:,5,20,case,1,CPPASTCaseStatement
+123560,JUMP_TARGET,-1,case DLL_PROCESS_DETACH:,5,25,case,7,CPPASTCaseStatement
+125005,JUMP_TARGET,-1,case InputMode::Line:,13,210,case,1,CPPASTCaseStatement
+125038,JUMP_TARGET,-1,default:,13,219,default,4,CPPASTDefaultStatement
+125284,JUMP_TARGET,-1,case AzureState::AccessStored:,17,358,case,1,CPPASTCaseStatement
+125291,JUMP_TARGET,-1,case AzureState::DeviceFlow:,17,365,case,4,CPPASTCaseStatement
+125298,JUMP_TARGET,-1,case AzureState::TenantChoice:,17,371,case,7,CPPASTCaseStatement
+125305,JUMP_TARGET,-1,case AzureState::StoreTokens:,17,377,case,10,CPPASTCaseStatement
+125312,JUMP_TARGET,-1,case AzureState::TermConnecting:,17,383,case,13,CPPASTCaseStatement
+125319,JUMP_TARGET,-1,case AzureState::TermConnected:,17,389,case,16,CPPASTCaseStatement
+125366,JUMP_TARGET,-1,case WINHTTP_WEB_SOCKET_BINARY_MESSAGE_BUFFER_TYPE:,25,401,case,1,CPPASTCaseStatement
+125368,JUMP_TARGET,-1,case WINHTTP_WEB_SOCKET_UTF8_FRAGMENT_BUFFER_TYPE:,25,402,case,3,CPPASTCaseStatement
+125370,JUMP_TARGET,-1,case WINHTTP_WEB_SOCKET_UTF8_MESSAGE_BUFFER_TYPE:,25,403,case,5,CPPASTCaseStatement
+125416,JUMP_TARGET,-1,case WINHTTP_WEB_SOCKET_CLOSE_BUFFER_TYPE:,25,422,case,8,CPPASTCaseStatement
+129300,JUMP_TARGET,-1,case DLL_PROCESS_ATTACH:,5,22,case,1,CPPASTCaseStatement
+129316,JUMP_TARGET,-1,case DLL_PROCESS_DETACH:,5,27,case,7,CPPASTCaseStatement
+129324,JUMP_TARGET,-1,default:,5,33,default,11,CPPASTDefaultStatement
+132506,JUMP_TARGET,-1,case TextAntialiasingMode::Cleartype:,9,960,case,1,CPPASTCaseStatement
+132514,JUMP_TARGET,-1,case TextAntialiasingMode::Aliased:,9,963,case,5,CPPASTCaseStatement
+132522,JUMP_TARGET,-1,default:,9,966,default,9,CPPASTDefaultStatement
+136230,JUMP_TARGET,-1,case ScrollToMarkDirection::Last:,9,2415,case,1,CPPASTCaseStatement
+136263,JUMP_TARGET,-1,case ScrollToMarkDirection::First:,9,2429,case,4,CPPASTCaseStatement
+136296,JUMP_TARGET,-1,case ScrollToMarkDirection::Next:,9,2443,case,7,CPPASTCaseStatement
+136335,JUMP_TARGET,-1,case ScrollToMarkDirection::Previous:,9,2457,case,10,CPPASTCaseStatement
+136339,JUMP_TARGET,-1,default:,9,2458,default,12,CPPASTDefaultStatement
+142295,JUMP_TARGET,-1,case WM_LBUTTONDOWN:,17,60,case,1,CPPASTCaseStatement
+142297,JUMP_TARGET,-1,case WM_MBUTTONDOWN:,17,61,case,3,CPPASTCaseStatement
+142299,JUMP_TARGET,-1,case WM_RBUTTONDOWN:,17,62,case,5,CPPASTCaseStatement
+142304,JUMP_TARGET,-1,case WM_LBUTTONUP:,17,65,case,9,CPPASTCaseStatement
+142306,JUMP_TARGET,-1,case WM_MBUTTONUP:,17,66,case,11,CPPASTCaseStatement
+142308,JUMP_TARGET,-1,case WM_RBUTTONUP:,17,67,case,13,CPPASTCaseStatement
+142312,JUMP_TARGET,-1,default:,17,70,default,17,CPPASTDefaultStatement
+142319,JUMP_TARGET,-1,case WM_GETOBJECT:,9,81,case,1,CPPASTCaseStatement
+142336,JUMP_TARGET,-1,case WM_LBUTTONDOWN:,9,87,case,5,CPPASTCaseStatement
+142346,JUMP_TARGET,-1,case WM_LBUTTONUP:,9,90,case,9,CPPASTCaseStatement
+142355,JUMP_TARGET,-1,case WM_MBUTTONUP:,9,93,case,12,CPPASTCaseStatement
+142357,JUMP_TARGET,-1,case WM_RBUTTONUP:,9,94,case,14,CPPASTCaseStatement
+142361,JUMP_TARGET,-1,case WM_MOUSEMOVE:,9,97,case,18,CPPASTCaseStatement
+142377,JUMP_TARGET,-1,case WM_RBUTTONDOWN:,9,104,case,22,CPPASTCaseStatement
+142400,JUMP_TARGET,-1,case WM_DESTROY:,9,121,case,26,CPPASTCaseStatement
+142414,JUMP_TARGET,-1,default:,9,126,default,31,CPPASTDefaultStatement
+152556,JUMP_TARGET,-1,case 1:,9,2591,case,1,CPPASTCaseStatement
+152566,JUMP_TARGET,-1,case 2:,9,2593,case,4,CPPASTCaseStatement
+152585,JUMP_TARGET,-1,case 4:,9,2596,case,7,CPPASTCaseStatement
+152604,JUMP_TARGET,-1,default:,9,2598,default,10,CPPASTDefaultStatement
+154041,JUMP_TARGET,-1,case winrt::Windows::UI::Input::PointerUpdateKind::LeftButtonPressed:,9,3419,case,1,CPPASTCaseStatement
+154057,JUMP_TARGET,-1,case winrt::Windows::UI::Input::PointerUpdateKind::LeftButtonReleased:,9,3422,case,5,CPPASTCaseStatement
+154073,JUMP_TARGET,-1,case winrt::Windows::UI::Input::PointerUpdateKind::MiddleButtonPressed:,9,3425,case,9,CPPASTCaseStatement
+154089,JUMP_TARGET,-1,case winrt::Windows::UI::Input::PointerUpdateKind::MiddleButtonReleased:,9,3428,case,13,CPPASTCaseStatement
+154105,JUMP_TARGET,-1,case winrt::Windows::UI::Input::PointerUpdateKind::RightButtonPressed:,9,3431,case,17,CPPASTCaseStatement
+154121,JUMP_TARGET,-1,case winrt::Windows::UI::Input::PointerUpdateKind::RightButtonReleased:,9,3434,case,21,CPPASTCaseStatement
+154137,JUMP_TARGET,-1,default:,9,3437,default,25,CPPASTDefaultStatement
+157175,JUMP_TARGET,-1,case PatternInterface::Text:,9,293,case,1,CPPASTCaseStatement
+157183,JUMP_TARGET,-1,default:,9,296,default,5,CPPASTDefaultStatement
+157966,JUMP_TARGET,-1,case VT_BSTR:,9,101,case,1,CPPASTCaseStatement
+157974,JUMP_TARGET,-1,case VT_I4:,9,105,case,4,CPPASTCaseStatement
+157985,JUMP_TARGET,-1,case VT_R8:,9,112,case,7,CPPASTCaseStatement
+157993,JUMP_TARGET,-1,case VT_BOOL:,9,116,case,10,CPPASTCaseStatement
+158001,JUMP_TARGET,-1,case VT_UNKNOWN:,9,120,case,13,CPPASTCaseStatement
+158035,JUMP_TARGET,-1,default:,9,139,default,16,CPPASTDefaultStatement
+158469,JUMP_TARGET,-1,case DLL_PROCESS_ATTACH:,5,23,case,1,CPPASTCaseStatement
+158487,JUMP_TARGET,-1,case DLL_PROCESS_DETACH:,5,29,case,8,CPPASTCaseStatement
+159430,JUMP_TARGET,-1,case AdjustTextMode::Always:,5,144,case,1,CPPASTCaseStatement
+159455,JUMP_TARGET,-1,case AdjustTextMode::Indexed:,5,148,case,6,CPPASTCaseStatement
+159480,JUMP_TARGET,-1,case AdjustTextMode::Never:,5,152,case,11,CPPASTCaseStatement
+159595,JUMP_TARGET,-1,case CursorStyle::Underscore:,5,173,case,1,CPPASTCaseStatement
+159605,JUMP_TARGET,-1,case CursorStyle::FilledBox:,5,176,case,5,CPPASTCaseStatement
+159615,JUMP_TARGET,-1,case CursorStyle::EmptyBox:,5,179,case,9,CPPASTCaseStatement
+159625,JUMP_TARGET,-1,case CursorStyle::Vintage:,5,182,case,13,CPPASTCaseStatement
+159635,JUMP_TARGET,-1,case CursorStyle::DoubleUnderscore:,5,185,case,17,CPPASTCaseStatement
+159645,JUMP_TARGET,-1,default:,5,188,default,21,CPPASTDefaultStatement
+159646,JUMP_TARGET,-1,case CursorStyle::Bar:,5,189,case,22,CPPASTCaseStatement
+162128,JUMP_TARGET,-1,case MarkCategory::Prompt:,5,1518,case,1,CPPASTCaseStatement
+162141,JUMP_TARGET,-1,case MarkCategory::Error:,5,1522,case,4,CPPASTCaseStatement
+162154,JUMP_TARGET,-1,case MarkCategory::Warning:,5,1526,case,7,CPPASTCaseStatement
+162167,JUMP_TARGET,-1,case MarkCategory::Success:,5,1530,case,10,CPPASTCaseStatement
+162180,JUMP_TARGET,-1,default:,5,1534,default,13,CPPASTDefaultStatement
+162181,JUMP_TARGET,-1,case MarkCategory::Info:,5,1535,case,14,CPPASTCaseStatement
+163485,JUMP_TARGET,-1,case DispatchTypes::TaskbarState::Clear:,5,136,case,1,CPPASTCaseStatement
+163495,JUMP_TARGET,-1,case DispatchTypes::TaskbarState::Set:,5,140,case,5,CPPASTCaseStatement
+163505,JUMP_TARGET,-1,case DispatchTypes::TaskbarState::Indeterminate:,5,144,case,9,CPPASTCaseStatement
+163512,JUMP_TARGET,-1,case DispatchTypes::TaskbarState::Error:,5,147,case,12,CPPASTCaseStatement
+163518,JUMP_TARGET,-1,case DispatchTypes::TaskbarState::Paused:,5,148,case,14,CPPASTCaseStatement
+164839,JUMP_TARGET,-1,case SelectionExpansion::Line:,5,288,case,1,CPPASTCaseStatement
+164848,JUMP_TARGET,-1,case SelectionExpansion::Word:,5,292,case,6,CPPASTCaseStatement
+164869,JUMP_TARGET,-1,case SelectionExpansion::Char:,5,296,case,11,CPPASTCaseStatement
+164873,JUMP_TARGET,-1,default:,5,297,default,13,CPPASTDefaultStatement
+165477,JUMP_TARGET,-1,case VK_LEFT:,13,552,case,1,CPPASTCaseStatement
+165491,JUMP_TARGET,-1,case VK_RIGHT:,13,554,case,4,CPPASTCaseStatement
+165505,JUMP_TARGET,-1,case VK_HOME:,13,556,case,7,CPPASTCaseStatement
+165519,JUMP_TARGET,-1,case VK_END:,13,558,case,10,CPPASTCaseStatement
+165533,JUMP_TARGET,-1,default:,13,560,default,13,CPPASTDefaultStatement
+165540,JUMP_TARGET,-1,case VK_HOME:,13,570,case,1,CPPASTCaseStatement
+165554,JUMP_TARGET,-1,case VK_END:,13,572,case,4,CPPASTCaseStatement
+165568,JUMP_TARGET,-1,case VK_PRIOR:,13,574,case,7,CPPASTCaseStatement
+165582,JUMP_TARGET,-1,case VK_NEXT:,13,576,case,10,CPPASTCaseStatement
+165596,JUMP_TARGET,-1,case VK_LEFT:,13,578,case,13,CPPASTCaseStatement
+165610,JUMP_TARGET,-1,case VK_RIGHT:,13,580,case,16,CPPASTCaseStatement
+165624,JUMP_TARGET,-1,case VK_UP:,13,582,case,19,CPPASTCaseStatement
+165638,JUMP_TARGET,-1,case VK_DOWN:,13,584,case,22,CPPASTCaseStatement
+165652,JUMP_TARGET,-1,default:,13,586,default,25,CPPASTDefaultStatement
+165750,JUMP_TARGET,-1,case SelectionExpansion::Char:,5,632,case,1,CPPASTCaseStatement
+165758,JUMP_TARGET,-1,case SelectionExpansion::Word:,5,635,case,5,CPPASTCaseStatement
+165766,JUMP_TARGET,-1,case SelectionExpansion::Viewport:,5,638,case,9,CPPASTCaseStatement
+165774,JUMP_TARGET,-1,case SelectionExpansion::Buffer:,5,641,case,13,CPPASTCaseStatement
+165904,JUMP_TARGET,-1,case SelectionDirection::Left:,5,689,case,1,CPPASTCaseStatement
+165924,JUMP_TARGET,-1,case SelectionDirection::Right:,5,693,case,6,CPPASTCaseStatement
+165944,JUMP_TARGET,-1,case SelectionDirection::Up:,5,697,case,11,CPPASTCaseStatement
+165986,JUMP_TARGET,-1,case SelectionDirection::Down:,5,704,case,14,CPPASTCaseStatement
+166045,JUMP_TARGET,-1,case SelectionDirection::Left:,5,719,case,1,CPPASTCaseStatement
+166115,JUMP_TARGET,-1,case SelectionDirection::Right:,5,742,case,4,CPPASTCaseStatement
+166190,JUMP_TARGET,-1,case SelectionDirection::Up:,5,765,case,7,CPPASTCaseStatement
+166206,JUMP_TARGET,-1,case SelectionDirection::Down:,5,769,case,12,CPPASTCaseStatement
+166239,JUMP_TARGET,-1,case SelectionDirection::Left:,5,781,case,1,CPPASTCaseStatement
+166246,JUMP_TARGET,-1,case SelectionDirection::Right:,5,784,case,5,CPPASTCaseStatement
+166253,JUMP_TARGET,-1,case SelectionDirection::Up:,5,787,case,9,CPPASTCaseStatement
+166295,JUMP_TARGET,-1,case SelectionDirection::Down:,5,794,case,12,CPPASTCaseStatement
+166362,JUMP_TARGET,-1,case SelectionDirection::Left:,5,810,case,1,CPPASTCaseStatement
+166366,JUMP_TARGET,-1,case SelectionDirection::Up:,5,811,case,3,CPPASTCaseStatement
+166377,JUMP_TARGET,-1,case SelectionDirection::Right:,5,814,case,7,CPPASTCaseStatement
+166381,JUMP_TARGET,-1,case SelectionDirection::Down:,5,815,case,9,CPPASTCaseStatement
+177476,JUMP_TARGET,-1,case VirtualKey::Control:,17,50,case,1,CPPASTCaseStatement
+177480,JUMP_TARGET,-1,case VirtualKey::LeftControl:,17,51,case,3,CPPASTCaseStatement
+177484,JUMP_TARGET,-1,case VirtualKey::RightControl:,17,52,case,5,CPPASTCaseStatement
+177494,JUMP_TARGET,-1,case VirtualKey::Menu:,17,55,case,9,CPPASTCaseStatement
+177498,JUMP_TARGET,-1,case VirtualKey::LeftMenu:,17,56,case,11,CPPASTCaseStatement
+177502,JUMP_TARGET,-1,case VirtualKey::RightMenu:,17,57,case,13,CPPASTCaseStatement
+177512,JUMP_TARGET,-1,case VirtualKey::Shift:,17,60,case,17,CPPASTCaseStatement
+177516,JUMP_TARGET,-1,case VirtualKey::LeftShift:,17,61,case,19,CPPASTCaseStatement
+177526,JUMP_TARGET,-1,case VirtualKey::LeftWindows:,17,64,case,23,CPPASTCaseStatement
+177530,JUMP_TARGET,-1,case VirtualKey::RightWindows:,17,65,case,25,CPPASTCaseStatement
+191794,JUMP_TARGET,-1,case ResizeDirection::Left:,9,292,case,1,CPPASTCaseStatement
+191803,JUMP_TARGET,-1,case ResizeDirection::Right:,9,295,case,5,CPPASTCaseStatement
+191812,JUMP_TARGET,-1,case ResizeDirection::Up:,9,298,case,9,CPPASTCaseStatement
+191821,JUMP_TARGET,-1,case ResizeDirection::Down:,9,301,case,13,CPPASTCaseStatement
+191852,JUMP_TARGET,-1,case FocusDirection::Left:,9,316,case,1,CPPASTCaseStatement
+191861,JUMP_TARGET,-1,case FocusDirection::Right:,9,319,case,5,CPPASTCaseStatement
+191870,JUMP_TARGET,-1,case FocusDirection::Up:,9,322,case,9,CPPASTCaseStatement
+191879,JUMP_TARGET,-1,case FocusDirection::Down:,9,325,case,13,CPPASTCaseStatement
+191888,JUMP_TARGET,-1,case FocusDirection::Previous:,9,328,case,17,CPPASTCaseStatement
+191895,JUMP_TARGET,-1,case FocusDirection::NextInOrder:,9,330,case,20,CPPASTCaseStatement
+191902,JUMP_TARGET,-1,case FocusDirection::PreviousInOrder:,9,332,case,23,CPPASTCaseStatement
+191909,JUMP_TARGET,-1,case FocusDirection::First:,9,334,case,26,CPPASTCaseStatement
+191916,JUMP_TARGET,-1,case FocusDirection::Parent:,9,336,case,29,CPPASTCaseStatement
+191923,JUMP_TARGET,-1,case FocusDirection::Child:,9,338,case,32,CPPASTCaseStatement
+191952,JUMP_TARGET,-1,case FocusDirection::Left:,9,353,case,1,CPPASTCaseStatement
+191961,JUMP_TARGET,-1,case FocusDirection::Right:,9,356,case,5,CPPASTCaseStatement
+191970,JUMP_TARGET,-1,case FocusDirection::Up:,9,359,case,9,CPPASTCaseStatement
+191979,JUMP_TARGET,-1,case FocusDirection::Down:,9,362,case,13,CPPASTCaseStatement
+191988,JUMP_TARGET,-1,case FocusDirection::Previous:,9,365,case,17,CPPASTCaseStatement
+191995,JUMP_TARGET,-1,case FocusDirection::NextInOrder:,9,367,case,20,CPPASTCaseStatement
+192002,JUMP_TARGET,-1,case FocusDirection::PreviousInOrder:,9,369,case,23,CPPASTCaseStatement
+192009,JUMP_TARGET,-1,case FocusDirection::First:,9,371,case,26,CPPASTCaseStatement
+192149,JUMP_TARGET,-1,case SplitDirection::Up:,9,441,case,1,CPPASTCaseStatement
+192157,JUMP_TARGET,-1,case SplitDirection::Right:,9,444,case,5,CPPASTCaseStatement
+192165,JUMP_TARGET,-1,case SplitDirection::Down:,9,447,case,9,CPPASTCaseStatement
+192173,JUMP_TARGET,-1,case SplitDirection::Left:,9,450,case,13,CPPASTCaseStatement
+192255,JUMP_TARGET,-1,case SettingsTarget::DefaultsFile:,9,481,case,1,CPPASTCaseStatement
+192262,JUMP_TARGET,-1,case SettingsTarget::AllFiles:,9,483,case,4,CPPASTCaseStatement
+192269,JUMP_TARGET,-1,case SettingsTarget::SettingsFile:,9,485,case,7,CPPASTCaseStatement
+192276,JUMP_TARGET,-1,case SettingsTarget::SettingsUI:,9,487,case,10,CPPASTCaseStatement
+192280,JUMP_TARGET,-1,default:,9,488,default,12,CPPASTDefaultStatement
+192592,JUMP_TARGET,-1,case Microsoft::Terminal::Control::ScrollToMarkDirection::Last:,9,643,case,1,CPPASTCaseStatement
+192607,JUMP_TARGET,-1,case Microsoft::Terminal::Control::ScrollToMarkDirection::First:,9,645,case,4,CPPASTCaseStatement
+192622,JUMP_TARGET,-1,case Microsoft::Terminal::Control::ScrollToMarkDirection::Next:,9,647,case,7,CPPASTCaseStatement
+192637,JUMP_TARGET,-1,case Microsoft::Terminal::Control::ScrollToMarkDirection::Previous:,9,649,case,10,CPPASTCaseStatement
+192647,JUMP_TARGET,-1,default:,9,650,default,12,CPPASTDefaultStatement
+192730,JUMP_TARGET,-1,case MoveTabDirection::Forward:,9,688,case,1,CPPASTCaseStatement
+192739,JUMP_TARGET,-1,case MoveTabDirection::Backward:,9,691,case,5,CPPASTCaseStatement
+192876,JUMP_TARGET,-1,case FindMatchDirection::Next:,9,754,case,1,CPPASTCaseStatement
+192885,JUMP_TARGET,-1,case FindMatchDirection::Previous:,9,756,case,4,CPPASTCaseStatement
+193175,JUMP_TARGET,-1,case Control::ClearBufferType::All:,9,894,case,1,CPPASTCaseStatement
+193184,JUMP_TARGET,-1,case Control::ClearBufferType::Screen:,9,896,case,4,CPPASTCaseStatement
+193193,JUMP_TARGET,-1,case Control::ClearBufferType::Scrollback:,9,898,case,7,CPPASTCaseStatement
+193572,JUMP_TARGET,-1,case SelectOutputDirection::Next:,9,1061,case,1,CPPASTCaseStatement
+193579,JUMP_TARGET,-1,case SelectOutputDirection::Previous:,9,1063,case,4,CPPASTCaseStatement
+193595,JUMP_TARGET,-1,case SelectOutputDirection::Next:,9,1072,case,1,CPPASTCaseStatement
+193602,JUMP_TARGET,-1,case SelectOutputDirection::Previous:,9,1074,case,4,CPPASTCaseStatement
+203939,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,1,CPPASTCaseStatement
+203964,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,4,CPPASTCaseStatement
+203989,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,7,CPPASTCaseStatement
+204014,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,10,CPPASTCaseStatement
+204039,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,13,CPPASTCaseStatement
+204064,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,16,CPPASTCaseStatement
+204089,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,19,CPPASTCaseStatement
+204114,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,22,CPPASTCaseStatement
+204139,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,25,CPPASTCaseStatement
+204164,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,28,CPPASTCaseStatement
+204189,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,31,CPPASTCaseStatement
+204214,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,34,CPPASTCaseStatement
+204239,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,37,CPPASTCaseStatement
+204264,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,40,CPPASTCaseStatement
+204289,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,43,CPPASTCaseStatement
+204314,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,46,CPPASTCaseStatement
+204339,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,49,CPPASTCaseStatement
+204364,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,52,CPPASTCaseStatement
+204389,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,55,CPPASTCaseStatement
+204414,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,58,CPPASTCaseStatement
+204439,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,61,CPPASTCaseStatement
+204464,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,64,CPPASTCaseStatement
+204489,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,67,CPPASTCaseStatement
+204514,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,70,CPPASTCaseStatement
+204539,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,73,CPPASTCaseStatement
+204564,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,76,CPPASTCaseStatement
+204589,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,79,CPPASTCaseStatement
+204614,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,82,CPPASTCaseStatement
+204639,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,85,CPPASTCaseStatement
+204664,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,88,CPPASTCaseStatement
+204689,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,91,CPPASTCaseStatement
+204714,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,94,CPPASTCaseStatement
+204739,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,97,CPPASTCaseStatement
+204764,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,100,CPPASTCaseStatement
+204789,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,103,CPPASTCaseStatement
+204814,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,106,CPPASTCaseStatement
+204839,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,109,CPPASTCaseStatement
+204864,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,112,CPPASTCaseStatement
+204889,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,115,CPPASTCaseStatement
+204914,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,118,CPPASTCaseStatement
+204939,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,121,CPPASTCaseStatement
+204964,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,124,CPPASTCaseStatement
+204989,JUMP_TARGET,-1,ALL_SHORTCUT_ACTIONS_WITH_ARGS,17,48,default,127,CPPASTCaseStatement
+205014,JUMP_TARGET,-1,default:,13,50,default,130,CPPASTDefaultStatement
+219123,JUMP_TARGET,-1,case NewTabMenuEntryType::Profile:,9,1387,case,1,CPPASTCaseStatement
+219191,JUMP_TARGET,-1,case NewTabMenuEntryType::RemainingProfiles:,9,1420,case,4,CPPASTCaseStatement
+219217,JUMP_TARGET,-1,case NewTabMenuEntryType::Folder:,9,1434,case,7,CPPASTCaseStatement
+219250,JUMP_TARGET,-1,case NewTabMenuEntryType::MatchProfiles:,9,1450,case,10,CPPASTCaseStatement
+220140,JUMP_TARGET,-1,case 1:,17,691,case,1,CPPASTCaseStatement
+220148,JUMP_TARGET,-1,case 2:,17,694,case,5,CPPASTCaseStatement
+220156,JUMP_TARGET,-1,case 3:,17,697,case,9,CPPASTCaseStatement
+220164,JUMP_TARGET,-1,case 4:,17,700,case,13,CPPASTCaseStatement
+220172,JUMP_TARGET,-1,case 5:,17,703,case,17,CPPASTCaseStatement
+220180,JUMP_TARGET,-1,case 6:,17,706,case,21,CPPASTCaseStatement
+220188,JUMP_TARGET,-1,case 7:,17,709,case,25,CPPASTCaseStatement
+220196,JUMP_TARGET,-1,case 8:,17,712,case,29,CPPASTCaseStatement
+220204,JUMP_TARGET,-1,case 10:,17,715,case,33,CPPASTCaseStatement
+220212,JUMP_TARGET,-1,case 13:,17,718,case,37,CPPASTCaseStatement
+221928,JUMP_TARGET,-1,case DelegationConfig::DelegationPairKind::Default:,5,22,case,1,CPPASTCaseStatement
+221937,JUMP_TARGET,-1,case DelegationConfig::DelegationPairKind::Conhost:,5,24,case,4,CPPASTCaseStatement
+221946,JUMP_TARGET,-1,default:,5,26,default,7,CPPASTDefaultStatement
+222027,JUMP_TARGET,-1,case DelegationConfig::DelegationPairKind::Default:,5,49,case,1,CPPASTCaseStatement
+222034,JUMP_TARGET,-1,case DelegationConfig::DelegationPairKind::Conhost:,5,51,case,4,CPPASTCaseStatement
+222043,JUMP_TARGET,-1,default:,5,53,default,7,CPPASTDefaultStatement
+224179,JUMP_TARGET,-1,case NewTabMenuEntryType::Invalid:,9,80,case,1,CPPASTCaseStatement
+224184,JUMP_TARGET,-1,case NewTabMenuEntryType::Profile:,9,84,case,4,CPPASTCaseStatement
+224206,JUMP_TARGET,-1,case NewTabMenuEntryType::RemainingProfiles:,9,95,case,7,CPPASTCaseStatement
+224210,JUMP_TARGET,-1,case NewTabMenuEntryType::MatchProfiles:,9,96,case,9,CPPASTCaseStatement
+224235,JUMP_TARGET,-1,case NewTabMenuEntryType::Folder:,9,109,case,12,CPPASTCaseStatement
+227022,JUMP_TARGET,-1,case winrt::Windows::UI::Xaml::ElementTheme::Light:,5,224,case,1,CPPASTCaseStatement
+227043,JUMP_TARGET,-1,case winrt::Windows::UI::Xaml::ElementTheme::Dark:,5,227,case,4,CPPASTCaseStatement
+227064,JUMP_TARGET,-1,case winrt::Windows::UI::Xaml::ElementTheme::Default:,5,230,case,7,CPPASTCaseStatement
+227076,JUMP_TARGET,-1,default:,5,231,default,9,CPPASTDefaultStatement
+238413,JUMP_TARGET,-1,case NewTabMenuEntryType::Separator:,5,45,case,1,CPPASTCaseStatement
+238423,JUMP_TARGET,-1,case NewTabMenuEntryType::Folder:,5,47,case,4,CPPASTCaseStatement
+238433,JUMP_TARGET,-1,case NewTabMenuEntryType::Profile:,5,49,case,7,CPPASTCaseStatement
+238443,JUMP_TARGET,-1,case NewTabMenuEntryType::RemainingProfiles:,5,51,case,10,CPPASTCaseStatement
+238453,JUMP_TARGET,-1,case NewTabMenuEntryType::MatchProfiles:,5,53,case,13,CPPASTCaseStatement
+238463,JUMP_TARGET,-1,default:,5,55,default,16,CPPASTDefaultStatement
+245425,JUMP_TARGET,-1,case ConvergedAlignment::Horizontal_Left:,9,22,case,1,CPPASTCaseStatement
+245441,JUMP_TARGET,-1,case ConvergedAlignment::Horizontal_Right:,9,25,case,5,CPPASTCaseStatement
+245457,JUMP_TARGET,-1,case ConvergedAlignment::Horizontal_Center:,9,28,case,9,CPPASTCaseStatement
+245461,JUMP_TARGET,-1,default:,9,29,default,11,CPPASTDefaultStatement
+245482,JUMP_TARGET,-1,case ConvergedAlignment::Vertical_Top:,9,38,case,1,CPPASTCaseStatement
+245498,JUMP_TARGET,-1,case ConvergedAlignment::Vertical_Bottom:,9,41,case,5,CPPASTCaseStatement
+245514,JUMP_TARGET,-1,case ConvergedAlignment::Vertical_Center:,9,44,case,9,CPPASTCaseStatement
+245518,JUMP_TARGET,-1,default:,9,45,default,11,CPPASTDefaultStatement
+246052,JUMP_TARGET,-1,case winrt::Windows::UI::Xaml::ElementTheme::Light:,9,215,case,1,CPPASTCaseStatement
+246081,JUMP_TARGET,-1,case winrt::Windows::UI::Xaml::ElementTheme::Dark:,9,221,case,5,CPPASTCaseStatement
+246110,JUMP_TARGET,-1,case winrt::Windows::UI::Xaml::ElementTheme::Default:,9,227,case,9,CPPASTCaseStatement
+255912,JUMP_TARGET,-1,case ThemeColorType::Accent:,5,133,case,1,CPPASTCaseStatement
+255949,JUMP_TARGET,-1,case ThemeColorType::Color:,5,148,case,4,CPPASTCaseStatement
+255958,JUMP_TARGET,-1,case ThemeColorType::TerminalBackground:,5,152,case,7,CPPASTCaseStatement
+255974,JUMP_TARGET,-1,case ThemeColorType::Accent:,5,175,case,1,CPPASTCaseStatement
+255978,JUMP_TARGET,-1,case ThemeColorType::TerminalBackground:,5,176,case,3,CPPASTCaseStatement
+255984,JUMP_TARGET,-1,case ThemeColorType::Color:,5,178,case,6,CPPASTCaseStatement
+258541,JUMP_TARGET,-1,case DLL_PROCESS_ATTACH:,5,20,case,1,CPPASTCaseStatement
+258557,JUMP_TARGET,-1,case DLL_PROCESS_DETACH:,5,25,case,7,CPPASTCaseStatement
+278311,JUMP_TARGET,-1,case Frame::InMainBufferBefore:,9,3841,case,1,CPPASTCaseStatement
+278315,JUMP_TARGET,-1,case Frame::InMainBufferAfter:,9,3842,case,3,CPPASTCaseStatement
+278376,JUMP_TARGET,-1,case Frame::InAltBufferBefore:,9,3853,case,6,CPPASTCaseStatement
+278413,JUMP_TARGET,-1,case Frame::InAltBufferAfter:,9,3862,case,9,CPPASTCaseStatement
+278529,JUMP_TARGET,-1,case Frame::InMainBufferBefore:,9,3995,case,1,CPPASTCaseStatement
+278590,JUMP_TARGET,-1,case Frame::InAltBufferBefore:,9,4006,case,4,CPPASTCaseStatement
+278627,JUMP_TARGET,-1,case Frame::InAltBufferAfter:,9,4015,case,7,CPPASTCaseStatement
+278684,JUMP_TARGET,-1,case Frame::StillInAltBuffer:,9,4026,case,10,CPPASTCaseStatement
+291589,JUMP_TARGET,-1,case WAIT_OBJECT_0:,5,112,case,1,CPPASTCaseStatement
+291597,JUMP_TARGET,-1,case WAIT_TIMEOUT:,5,115,case,5,CPPASTCaseStatement
+291616,JUMP_TARGET,-1,case WAIT_FAILED:,5,119,case,10,CPPASTCaseStatement
+291635,JUMP_TARGET,-1,default:,5,123,default,15,CPPASTDefaultStatement
+299406,JUMP_TARGET,-1,case winrt::Windows::UI::Xaml::ElementTheme::Light:,5,1110,case,1,CPPASTCaseStatement
+299420,JUMP_TARGET,-1,case winrt::Windows::UI::Xaml::ElementTheme::Dark:,5,1112,case,4,CPPASTCaseStatement
+299434,JUMP_TARGET,-1,case winrt::Windows::UI::Xaml::ElementTheme::Default:,5,1114,case,7,CPPASTCaseStatement
+299446,JUMP_TARGET,-1,default:,5,1115,default,9,CPPASTDefaultStatement
+299873,JUMP_TARGET,-1,case winrt::TerminalApp::SystemMenuChangeAction::Add:,5,1307,case,1,CPPASTCaseStatement
+299899,JUMP_TARGET,-1,case winrt::TerminalApp::SystemMenuChangeAction::Remove:,5,1313,case,4,CPPASTCaseStatement
+299917,JUMP_TARGET,-1,default:,5,1318,default,7,CPPASTDefaultStatement
+301041,JUMP_TARGET,-1,case WM_DPICHANGED:,9,45,case,1,CPPASTCaseStatement
+301052,JUMP_TARGET,-1,case WM_DESTROY:,9,50,case,4,CPPASTCaseStatement
+301059,JUMP_TARGET,-1,case WM_SIZE:,9,56,case,7,CPPASTCaseStatement
+301075,JUMP_TARGET,-1,case SIZE_MAXIMIZED:,13,63,case,1,CPPASTCaseStatement
+301077,JUMP_TARGET,-1,case SIZE_RESTORED:,13,65,case,3,CPPASTCaseStatement
+301090,JUMP_TARGET,-1,case SIZE_MINIMIZED:,13,77,case,8,CPPASTCaseStatement
+301101,JUMP_TARGET,-1,default:,13,84,default,12,CPPASTDefaultStatement
+301104,JUMP_TARGET,-1,case CM_UPDATE_TITLE:,9,90,case,10,CPPASTCaseStatement
+301939,JUMP_TARGET,-1,case WMSZ_LEFT:,5,283,case,1,CPPASTCaseStatement
+301941,JUMP_TARGET,-1,case WMSZ_TOPLEFT:,5,284,case,3,CPPASTCaseStatement
+301943,JUMP_TARGET,-1,case WMSZ_BOTTOMLEFT:,5,285,case,5,CPPASTCaseStatement
+301959,JUMP_TARGET,-1,case WMSZ_RIGHT:,5,288,case,9,CPPASTCaseStatement
+301961,JUMP_TARGET,-1,case WMSZ_TOPRIGHT:,5,289,case,11,CPPASTCaseStatement
+301963,JUMP_TARGET,-1,case WMSZ_BOTTOMRIGHT:,5,290,case,13,CPPASTCaseStatement
+301982,JUMP_TARGET,-1,case WMSZ_BOTTOM:,5,298,case,1,CPPASTCaseStatement
+301984,JUMP_TARGET,-1,case WMSZ_BOTTOMLEFT:,5,299,case,3,CPPASTCaseStatement
+301986,JUMP_TARGET,-1,case WMSZ_BOTTOMRIGHT:,5,300,case,5,CPPASTCaseStatement
+302002,JUMP_TARGET,-1,case WMSZ_TOP:,5,303,case,9,CPPASTCaseStatement
+302004,JUMP_TARGET,-1,case WMSZ_TOPLEFT:,5,304,case,11,CPPASTCaseStatement
+302006,JUMP_TARGET,-1,case WMSZ_TOPRIGHT:,5,305,case,13,CPPASTCaseStatement
+302338,JUMP_TARGET,-1,case WM_GETMINMAXINFO:,5,503,case,1,CPPASTCaseStatement
+302346,JUMP_TARGET,-1,case WM_CREATE:,5,508,case,4,CPPASTCaseStatement
+302354,JUMP_TARGET,-1,case WM_SETFOCUS:,5,513,case,7,CPPASTCaseStatement
+302367,JUMP_TARGET,-1,case WM_ACTIVATE:,5,523,case,10,CPPASTCaseStatement
+302397,JUMP_TARGET,-1,case WM_NCLBUTTONDOWN:,5,544,case,13,CPPASTCaseStatement
+302399,JUMP_TARGET,-1,case WM_NCLBUTTONUP:,5,545,case,15,CPPASTCaseStatement
+302401,JUMP_TARGET,-1,case WM_NCMBUTTONDOWN:,5,546,case,17,CPPASTCaseStatement
+302403,JUMP_TARGET,-1,case WM_NCMBUTTONUP:,5,547,case,19,CPPASTCaseStatement
+302405,JUMP_TARGET,-1,case WM_NCRBUTTONDOWN:,5,548,case,21,CPPASTCaseStatement
+302407,JUMP_TARGET,-1,case WM_NCRBUTTONUP:,5,549,case,23,CPPASTCaseStatement
+302409,JUMP_TARGET,-1,case WM_NCXBUTTONDOWN:,5,550,case,25,CPPASTCaseStatement
+302411,JUMP_TARGET,-1,case WM_NCXBUTTONUP:,5,551,case,27,CPPASTCaseStatement
+302416,JUMP_TARGET,-1,case WM_MENUCHAR:,5,558,case,30,CPPASTCaseStatement
+302423,JUMP_TARGET,-1,case WM_SIZING:,5,565,case,33,CPPASTCaseStatement
+302430,JUMP_TARGET,-1,case WM_SIZE:,5,569,case,36,CPPASTCaseStatement
+302506,JUMP_TARGET,-1,case WM_MOVING:,5,606,case,39,CPPASTCaseStatement
+302513,JUMP_TARGET,-1,case WM_MOVE:,5,610,case,42,CPPASTCaseStatement
+302518,JUMP_TARGET,-1,case WM_CLOSE:,5,615,case,45,CPPASTCaseStatement
+302524,JUMP_TARGET,-1,case WM_MOUSEWHEEL:,5,623,case,48,CPPASTCaseStatement
+302528,JUMP_TARGET,-1,case WM_THEMECHANGED:,5,659,case,52,CPPASTCaseStatement
+302537,JUMP_TARGET,-1,case WM_WINDOWPOSCHANGING:,5,662,case,56,CPPASTCaseStatement
+302684,JUMP_TARGET,-1,case WM_SYSCOMMAND:,5,718,case,59,CPPASTCaseStatement
+302740,JUMP_TARGET,-1,case WM_SETTINGCHANGE:,5,739,case,62,CPPASTCaseStatement
+302781,JUMP_TARGET,-1,case WM_ENDSESSION:,5,766,case,65,CPPASTCaseStatement
+303053,JUMP_TARGET,-1,case 0:,9,1018,case,1,CPPASTCaseStatement
+303065,JUMP_TARGET,-1,case 1:,9,1022,case,5,CPPASTCaseStatement
+303087,JUMP_TARGET,-1,case 2:,9,1027,case,10,CPPASTCaseStatement
+303109,JUMP_TARGET,-1,case 3:,9,1032,case,15,CPPASTCaseStatement
+303130,JUMP_TARGET,-1,case 4:,9,1041,case,20,CPPASTCaseStatement
+303152,JUMP_TARGET,-1,default:,9,1046,default,25,CPPASTDefaultStatement
+305761,JUMP_TARGET,-1,case WM_NCHITTEST:,5,168,case,1,CPPASTCaseStatement
+305772,JUMP_TARGET,-1,case WM_NCMOUSEMOVE:,5,176,case,5,CPPASTCaseStatement
+305777,JUMP_TARGET,-1,case HTTOP:,9,186,case,1,CPPASTCaseStatement
+305779,JUMP_TARGET,-1,case HTCAPTION:,9,187,case,3,CPPASTCaseStatement
+305797,JUMP_TARGET,-1,case HTMINBUTTON:,9,197,case,6,CPPASTCaseStatement
+305799,JUMP_TARGET,-1,case HTMAXBUTTON:,9,198,case,8,CPPASTCaseStatement
+305801,JUMP_TARGET,-1,case HTCLOSE:,9,199,case,10,CPPASTCaseStatement
+305811,JUMP_TARGET,-1,default:,9,202,default,14,CPPASTDefaultStatement
+305870,JUMP_TARGET,-1,case WM_NCMOUSELEAVE:,5,228,case,10,CPPASTCaseStatement
+305872,JUMP_TARGET,-1,case WM_MOUSELEAVE:,5,229,case,12,CPPASTCaseStatement
+305882,JUMP_TARGET,-1,case WM_NCLBUTTONDOWN:,5,238,case,17,CPPASTCaseStatement
+305884,JUMP_TARGET,-1,case WM_NCLBUTTONDBLCLK:,5,239,case,19,CPPASTCaseStatement
+305889,JUMP_TARGET,-1,case HTTOP:,9,249,case,1,CPPASTCaseStatement
+305891,JUMP_TARGET,-1,case HTCAPTION:,9,250,case,3,CPPASTCaseStatement
+305905,JUMP_TARGET,-1,case HTMINBUTTON:,9,258,case,6,CPPASTCaseStatement
+305907,JUMP_TARGET,-1,case HTMAXBUTTON:,9,259,case,8,CPPASTCaseStatement
+305909,JUMP_TARGET,-1,case HTCLOSE:,9,260,case,10,CPPASTCaseStatement
+305921,JUMP_TARGET,-1,case WM_NCLBUTTONUP:,5,266,case,23,CPPASTCaseStatement
+305926,JUMP_TARGET,-1,case HTTOP:,9,274,case,1,CPPASTCaseStatement
+305928,JUMP_TARGET,-1,case HTCAPTION:,9,275,case,3,CPPASTCaseStatement
+305943,JUMP_TARGET,-1,case HTMINBUTTON:,9,286,case,7,CPPASTCaseStatement
+305945,JUMP_TARGET,-1,case HTMAXBUTTON:,9,287,case,9,CPPASTCaseStatement
+305947,JUMP_TARGET,-1,case HTCLOSE:,9,288,case,11,CPPASTCaseStatement
+305963,JUMP_TARGET,-1,case WM_NCRBUTTONDOWN:,5,297,case,27,CPPASTCaseStatement
+305965,JUMP_TARGET,-1,case WM_NCRBUTTONDBLCLK:,5,298,case,29,CPPASTCaseStatement
+305967,JUMP_TARGET,-1,case WM_NCRBUTTONUP:,5,299,case,31,CPPASTCaseStatement
+306782,JUMP_TARGET,-1,case HTBOTTOMRIGHT:,13,763,case,1,CPPASTCaseStatement
+306784,JUMP_TARGET,-1,case HTRIGHT:,13,764,case,3,CPPASTCaseStatement
+306786,JUMP_TARGET,-1,case HTTOPRIGHT:,13,765,case,5,CPPASTCaseStatement
+306788,JUMP_TARGET,-1,case HTTOP:,13,766,case,7,CPPASTCaseStatement
+306790,JUMP_TARGET,-1,case HTTOPLEFT:,13,767,case,9,CPPASTCaseStatement
+306792,JUMP_TARGET,-1,case HTLEFT:,13,768,case,11,CPPASTCaseStatement
+306794,JUMP_TARGET,-1,case HTBOTTOMLEFT:,13,769,case,13,CPPASTCaseStatement
+307036,JUMP_TARGET,-1,case WM_SETCURSOR:,5,970,case,1,CPPASTCaseStatement
+307042,JUMP_TARGET,-1,case WM_DISPLAYCHANGE:,5,972,case,4,CPPASTCaseStatement
+307047,JUMP_TARGET,-1,case WM_NCCALCSIZE:,5,977,case,8,CPPASTCaseStatement
+307053,JUMP_TARGET,-1,case WM_NCHITTEST:,5,979,case,11,CPPASTCaseStatement
+307062,JUMP_TARGET,-1,case WM_PAINT:,5,981,case,14,CPPASTCaseStatement
+307066,JUMP_TARGET,-1,case WM_NCRBUTTONUP:,5,983,case,17,CPPASTCaseStatement
+308214,JUMP_TARGET,-1,case NotificationIconMenuItemAction::FocusTerminal:,5,228,case,1,CPPASTCaseStatement
+309859,JUMP_TARGET,-1,case WM_HOTKEY:,5,520,case,1,CPPASTCaseStatement
+309868,JUMP_TARGET,-1,case CM_NOTIFY_FROM_NOTIFICATION_AREA:,5,525,case,4,CPPASTCaseStatement
+309879,JUMP_TARGET,-1,case NIN_SELECT:,9,529,case,1,CPPASTCaseStatement
+309881,JUMP_TARGET,-1,case NIN_KEYSELECT:,9,530,case,3,CPPASTCaseStatement
+309890,JUMP_TARGET,-1,case WM_CONTEXTMENU:,9,535,case,6,CPPASTCaseStatement
+309913,JUMP_TARGET,-1,case WM_MENUCOMMAND:,5,544,case,7,CPPASTCaseStatement
+309928,JUMP_TARGET,-1,default:,5,549,default,10,CPPASTDefaultStatement
+310142,JUMP_TARGET,-1,case Settings::Model::MonitorBehavior::Any:,5,641,case,1,CPPASTCaseStatement
+310163,JUMP_TARGET,-1,case Settings::Model::MonitorBehavior::ToCurrent:,5,644,case,5,CPPASTCaseStatement
+310184,JUMP_TARGET,-1,case Settings::Model::MonitorBehavior::ToMouse:,5,647,case,9,CPPASTCaseStatement
+314937,JUMP_TARGET,-1,"case L'""':",9,46,case,1,CPPASTCaseStatement
+314939,JUMP_TARGET,-1,case L'\\':,9,47,case,3,CPPASTCaseStatement
+314944,JUMP_TARGET,-1,case ' ':,9,50,case,7,CPPASTCaseStatement
+314946,JUMP_TARGET,-1,case '\t':,9,51,case,9,CPPASTCaseStatement
+314952,JUMP_TARGET,-1,default:,9,54,default,13,CPPASTDefaultStatement
+314992,JUMP_TARGET,-1,case L'\\':,9,76,case,1,CPPASTCaseStatement
+315002,JUMP_TARGET,-1,"case L'""':",9,80,case,6,CPPASTCaseStatement
+315029,JUMP_TARGET,-1,default:,9,90,default,10,CPPASTDefaultStatement
+316288,JUMP_TARGET,-1,"DoBlinkingRenditionAndScroll:
+    gci.GetRenderSettings().ToggleBlinkRendition(buffer.GetRenderer());",1,154,DoBlinkingRenditionAndScroll,16,CPPASTLabelStatement
+316300,JUMP_TARGET,-1,"DoScroll:
+    Scrolling::s_ScrollIfNecessary(ScreenInfo);",1,157,DoScroll,18,CPPASTLabelStatement
+320745,JUMP_TARGET,-1,case UNICODE_NULL:,13,199,case,1,CPPASTCaseStatement
+320757,JUMP_TARGET,-1,case UNICODE_BELL:,13,202,case,5,CPPASTCaseStatement
+320768,JUMP_TARGET,-1,case UNICODE_BACKSPACE:,13,205,case,9,CPPASTCaseStatement
+320800,JUMP_TARGET,-1,case UNICODE_TAB:,13,212,case,12,CPPASTCaseStatement
+320849,JUMP_TARGET,-1,case UNICODE_LINEFEED:,13,220,case,15,CPPASTCaseStatement
+320896,JUMP_TARGET,-1,case UNICODE_CARRIAGERETURN:,13,233,case,18,CPPASTCaseStatement
+320916,JUMP_TARGET,-1,default:,13,240,default,21,CPPASTDefaultStatement
+324992,JUMP_TARGET,-1,"ErrorExit2:
+    delete gci.pInputBuffer;",1,117,ErrorExit2,23,CPPASTLabelStatement
+326075,JUMP_TARGET,-1,case CP_JAPANESE:,13,142,case,1,CPPASTCaseStatement
+326085,JUMP_TARGET,-1,case CP_CHINESE_SIMPLIFIED:,13,145,case,5,CPPASTCaseStatement
+326095,JUMP_TARGET,-1,case CP_KOREAN:,13,148,case,9,CPPASTCaseStatement
+326105,JUMP_TARGET,-1,case CP_CHINESE_TRADITIONAL:,13,151,case,13,CPPASTCaseStatement
+326141,JUMP_TARGET,-1,case SHIFTJIS_CHARSET:,5,171,case,1,CPPASTCaseStatement
+326143,JUMP_TARGET,-1,case HANGEUL_CHARSET:,5,172,case,3,CPPASTCaseStatement
+326145,JUMP_TARGET,-1,case CHINESEBIG5_CHARSET:,5,173,case,5,CPPASTCaseStatement
+326147,JUMP_TARGET,-1,case GB2312_CHARSET:,5,174,case,7,CPPASTCaseStatement
+326151,JUMP_TARGET,-1,default:,5,176,default,10,CPPASTDefaultStatement
+327519,JUMP_TARGET,-1,case 0:,5,74,case,1,CPPASTCaseStatement
+327534,JUMP_TARGET,-1,case 1:,5,78,case,6,CPPASTCaseStatement
+327559,JUMP_TARGET,-1,default:,5,82,default,11,CPPASTDefaultStatement
+327565,JUMP_TARGET,-1,case 0:,5,88,case,1,CPPASTCaseStatement
+327580,JUMP_TARGET,-1,case 1:,5,92,case,6,CPPASTCaseStatement
+327605,JUMP_TARGET,-1,default:,5,96,default,11,CPPASTDefaultStatement
+327623,JUMP_TARGET,-1,case 0:,5,104,case,1,CPPASTCaseStatement
+327629,JUMP_TARGET,-1,case 1:,5,107,case,5,CPPASTCaseStatement
+327636,JUMP_TARGET,-1,case 2:,5,110,case,9,CPPASTCaseStatement
+327645,JUMP_TARGET,-1,case 3:,5,113,case,13,CPPASTCaseStatement
+327651,JUMP_TARGET,-1,case 4:,5,116,case,17,CPPASTCaseStatement
+327660,JUMP_TARGET,-1,case 5:,5,119,case,21,CPPASTCaseStatement
+327672,JUMP_TARGET,-1,case 6:,5,122,case,25,CPPASTCaseStatement
+327681,JUMP_TARGET,-1,default:,5,125,default,29,CPPASTDefaultStatement
+341098,JUMP_TARGET,-1,case 0:,5,1054,case,1,CPPASTCaseStatement
+341105,JUMP_TARGET,-1,case 1:,5,1057,case,5,CPPASTCaseStatement
+341112,JUMP_TARGET,-1,default:,5,1060,default,9,CPPASTDefaultStatement
+341620,JUMP_TARGET,-1,case LEGACY_MODE:,21,192,case,1,CPPASTCaseStatement
+341631,JUMP_TARGET,-1,case VT_SIMPLE_MODE:,21,196,case,6,CPPASTCaseStatement
+341642,JUMP_TARGET,-1,case VT_256_MODE:,21,200,case,11,CPPASTCaseStatement
+341653,JUMP_TARGET,-1,case VT_RGB_MODE:,21,204,case,16,CPPASTCaseStatement
+341664,JUMP_TARGET,-1,case VT_256_GRID_MODE:,21,208,case,21,CPPASTCaseStatement
+341675,JUMP_TARGET,-1,default:,21,212,default,26,CPPASTDefaultStatement
+341683,JUMP_TARGET,-1,case LEGACY_MODE:,17,218,case,1,CPPASTCaseStatement
+341698,JUMP_TARGET,-1,case VT_SIMPLE_MODE:,17,222,case,6,CPPASTCaseStatement
+341700,JUMP_TARGET,-1,case VT_256_MODE:,17,223,case,8,CPPASTCaseStatement
+341702,JUMP_TARGET,-1,case VT_RGB_MODE:,17,224,case,10,CPPASTCaseStatement
+341704,JUMP_TARGET,-1,case VT_256_GRID_MODE:,17,225,case,12,CPPASTCaseStatement
+341709,JUMP_TARGET,-1,default:,17,228,default,16,CPPASTDefaultStatement
+343333,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::CrtWrite:,5,259,case,1,CPPASTCaseStatement
+343371,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::WriteConsoleOutputFunc:,5,290,case,4,CPPASTCaseStatement
+343396,JUMP_TARGET,-1,case UnicodeMode::UnicodeSingle:,9,299,case,1,CPPASTCaseStatement
+343412,JUMP_TARGET,-1,case UnicodeMode::UnicodeDoubled:,9,305,case,5,CPPASTCaseStatement
+343453,JUMP_TARGET,-1,default:,9,320,default,9,CPPASTDefaultStatement
+343559,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::WriteConsoleOutputCharacterFunc:,5,362,case,7,CPPASTCaseStatement
+343624,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::WriteConsoleFunc:,5,380,case,10,CPPASTCaseStatement
+343684,JUMP_TARGET,-1,default:,5,396,default,13,CPPASTDefaultStatement
+344603,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::WriteConsoleOutputFunc:,5,1008,case,1,CPPASTCaseStatement
+344612,JUMP_TARGET,-1,case UnicodeMode::UnicodeSingle:,9,1011,case,1,CPPASTCaseStatement
+344648,JUMP_TARGET,-1,case UnicodeMode::UnicodeDoubled:,9,1044,case,5,CPPASTCaseStatement
+344684,JUMP_TARGET,-1,default:,9,1073,default,9,CPPASTDefaultStatement
+344709,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::CrtWrite:,5,1098,case,5,CPPASTCaseStatement
+344715,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::WriteConsoleOutputCharacterFunc:,5,1099,case,7,CPPASTCaseStatement
+344721,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::WriteConsoleFunc:,5,1100,case,9,CPPASTCaseStatement
+344750,JUMP_TARGET,-1,default:,5,1123,default,13,CPPASTDefaultStatement
+344777,JUMP_TARGET,-1,case UnicodeMode::UnicodeSingle:,9,1139,case,1,CPPASTCaseStatement
+344813,JUMP_TARGET,-1,case UnicodeMode::UnicodeDoubled:,9,1163,case,5,CPPASTCaseStatement
+344849,JUMP_TARGET,-1,default:,9,1187,default,9,CPPASTDefaultStatement
+344893,JUMP_TARGET,-1,case DbcsWriteRead::ReadMode::ReadConsoleOutputFunc:,5,1222,case,1,CPPASTCaseStatement
+344911,JUMP_TARGET,-1,case DbcsWriteRead::ReadMode::ReadConsoleOutputCharacterFunc:,5,1227,case,4,CPPASTCaseStatement
+344929,JUMP_TARGET,-1,default:,5,1232,default,7,CPPASTDefaultStatement
+344956,JUMP_TARGET,-1,case DbcsWriteRead::ReadMode::ReadConsoleOutputFunc:,5,1251,case,1,CPPASTCaseStatement
+345058,JUMP_TARGET,-1,case DbcsWriteRead::ReadMode::ReadConsoleOutputCharacterFunc:,5,1277,case,4,CPPASTCaseStatement
+345207,JUMP_TARGET,-1,default:,5,1320,default,7,CPPASTDefaultStatement
+345336,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::CrtWrite:,5,1413,case,1,CPPASTCaseStatement
+345346,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::WriteConsoleOutputFunc:,5,1416,case,5,CPPASTCaseStatement
+345356,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::WriteConsoleOutputCharacterFunc:,5,1419,case,9,CPPASTCaseStatement
+345366,JUMP_TARGET,-1,case DbcsWriteRead::WriteMode::WriteConsoleFunc:,5,1422,case,13,CPPASTCaseStatement
+345376,JUMP_TARGET,-1,default:,5,1425,default,17,CPPASTDefaultStatement
+345386,JUMP_TARGET,-1,case DbcsWriteRead::ReadMode::ReadConsoleOutputFunc:,5,1432,case,1,CPPASTCaseStatement
+345396,JUMP_TARGET,-1,case DbcsWriteRead::ReadMode::ReadConsoleOutputCharacterFunc:,5,1435,case,5,CPPASTCaseStatement
+345406,JUMP_TARGET,-1,default:,5,1438,default,9,CPPASTDefaultStatement
+350261,JUMP_TARGET,-1,case SECURITY_MANDATORY_LOW_RID:,5,323,case,1,CPPASTCaseStatement
+350265,JUMP_TARGET,-1,case SECURITY_MANDATORY_MEDIUM_RID:,5,325,case,4,CPPASTCaseStatement
+350269,JUMP_TARGET,-1,case SECURITY_MANDATORY_HIGH_RID:,5,327,case,7,CPPASTCaseStatement
+350273,JUMP_TARGET,-1,case SECURITY_MANDATORY_SYSTEM_RID:,5,329,case,10,CPPASTCaseStatement
+350277,JUMP_TARGET,-1,default:,5,331,default,13,CPPASTDefaultStatement
+352807,JUMP_TARGET,-1,case VK_SHIFT:,5,37,case,1,CPPASTCaseStatement
+352809,JUMP_TARGET,-1,case VK_CONTROL:,5,38,case,3,CPPASTCaseStatement
+352811,JUMP_TARGET,-1,case VK_MENU:,5,39,case,5,CPPASTCaseStatement
+352813,JUMP_TARGET,-1,case VK_PAUSE:,5,40,case,7,CPPASTCaseStatement
+352815,JUMP_TARGET,-1,case VK_CAPITAL:,5,41,case,9,CPPASTCaseStatement
+352817,JUMP_TARGET,-1,case VK_LWIN:,5,42,case,11,CPPASTCaseStatement
+352819,JUMP_TARGET,-1,case VK_RWIN:,5,43,case,13,CPPASTCaseStatement
+352821,JUMP_TARGET,-1,case VK_NUMLOCK:,5,44,case,15,CPPASTCaseStatement
+352823,JUMP_TARGET,-1,case VK_SCROLL:,5,45,case,17,CPPASTCaseStatement
+352827,JUMP_TARGET,-1,default:,5,47,default,20,CPPASTDefaultStatement
+353266,JUMP_TARGET,-1,case CTRL_C_EVENT:,5,223,case,1,CPPASTCaseStatement
+353276,JUMP_TARGET,-1,case CTRL_BREAK_EVENT:,5,226,case,5,CPPASTCaseStatement
+353286,JUMP_TARGET,-1,case CTRL_CLOSE_EVENT:,5,229,case,9,CPPASTCaseStatement
+353296,JUMP_TARGET,-1,default:,5,232,default,13,CPPASTDefaultStatement
+353455,JUMP_TARGET,-1,case CONSOLE_CTRL_CLOSE_FLAG:,5,300,case,1,CPPASTCaseStatement
+353463,JUMP_TARGET,-1,case CONSOLE_CTRL_BREAK_FLAG:,5,304,case,5,CPPASTCaseStatement
+353471,JUMP_TARGET,-1,case CONSOLE_CTRL_C_FLAG:,5,308,case,9,CPPASTCaseStatement
+353479,JUMP_TARGET,-1,case CONSOLE_CTRL_LOGOFF_FLAG:,5,312,case,13,CPPASTCaseStatement
+353487,JUMP_TARGET,-1,case CONSOLE_CTRL_SHUTDOWN_FLAG:,5,316,case,17,CPPASTCaseStatement
+353495,JUMP_TARGET,-1,default:,5,320,default,21,CPPASTDefaultStatement
+356813,JUMP_TARGET,-1,case Mode::AutoWrap:,5,115,case,1,CPPASTCaseStatement
+356827,JUMP_TARGET,-1,case Mode::LineFeed:,5,118,case,5,CPPASTCaseStatement
+356842,JUMP_TARGET,-1,case Mode::BracketedPaste:,5,121,case,9,CPPASTCaseStatement
+356858,JUMP_TARGET,-1,default:,5,124,default,13,CPPASTDefaultStatement
+356868,JUMP_TARGET,-1,case Mode::AutoWrap:,5,139,case,1,CPPASTCaseStatement
+356881,JUMP_TARGET,-1,case Mode::LineFeed:,5,141,case,4,CPPASTCaseStatement
+356894,JUMP_TARGET,-1,case Mode::BracketedPaste:,5,143,case,7,CPPASTCaseStatement
+356909,JUMP_TARGET,-1,default:,5,145,default,10,CPPASTDefaultStatement
+358477,JUMP_TARGET,-1,case UNICODE_CARRIAGERETURN:,5,458,case,1,CPPASTCaseStatement
+358490,JUMP_TARGET,-1,case EXTKEY_ERASE_PREV_WORD:,5,465,case,4,CPPASTCaseStatement
+358492,JUMP_TARGET,-1,case UNICODE_BACKSPACE:,5,466,case,6,CPPASTCaseStatement
+358542,JUMP_TARGET,-1,default:,5,476,default,10,CPPASTDefaultStatement
+358609,JUMP_TARGET,-1,case VK_ESCAPE:,5,500,case,1,CPPASTCaseStatement
+358630,JUMP_TARGET,-1,case VK_HOME:,5,506,case,5,CPPASTCaseStatement
+358660,JUMP_TARGET,-1,case VK_END:,5,516,case,9,CPPASTCaseStatement
+358696,JUMP_TARGET,-1,case VK_LEFT:,5,526,case,13,CPPASTCaseStatement
+358741,JUMP_TARGET,-1,case VK_F1:,5,539,case,17,CPPASTCaseStatement
+358743,JUMP_TARGET,-1,case VK_RIGHT:,5,540,case,19,CPPASTCaseStatement
+358884,JUMP_TARGET,-1,case VK_INSERT:,5,578,case,23,CPPASTCaseStatement
+358907,JUMP_TARGET,-1,case VK_DELETE:,5,582,case,28,CPPASTCaseStatement
+358953,JUMP_TARGET,-1,case VK_UP:,5,590,case,32,CPPASTCaseStatement
+358955,JUMP_TARGET,-1,case VK_F5:,5,591,case,34,CPPASTCaseStatement
+358980,JUMP_TARGET,-1,case VK_DOWN:,5,597,case,38,CPPASTCaseStatement
+359005,JUMP_TARGET,-1,case VK_PRIOR:,5,603,case,42,CPPASTCaseStatement
+359026,JUMP_TARGET,-1,case VK_NEXT:,5,609,case,46,CPPASTCaseStatement
+359047,JUMP_TARGET,-1,case VK_F2:,5,615,case,50,CPPASTCaseStatement
+359057,JUMP_TARGET,-1,case VK_F3:,5,621,case,54,CPPASTCaseStatement
+359112,JUMP_TARGET,-1,case VK_F4:,5,632,case,58,CPPASTCaseStatement
+359119,JUMP_TARGET,-1,case VK_F6:,5,637,case,62,CPPASTCaseStatement
+359125,JUMP_TARGET,-1,case VK_F7:,5,641,case,66,CPPASTCaseStatement
+359166,JUMP_TARGET,-1,case VK_F8:,5,658,case,70,CPPASTCaseStatement
+359227,JUMP_TARGET,-1,case VK_F9:,5,671,case,74,CPPASTCaseStatement
+359242,JUMP_TARGET,-1,case VK_F10:,5,677,case,78,CPPASTCaseStatement
+359252,JUMP_TARGET,-1,default:,5,684,default,82,CPPASTDefaultStatement
+360373,JUMP_TARGET,-1,case PopupKind::CopyToChar:,5,1095,case,1,CPPASTCaseStatement
+360380,JUMP_TARGET,-1,case PopupKind::CopyFromChar:,5,1098,case,5,CPPASTCaseStatement
+360387,JUMP_TARGET,-1,case PopupKind::CommandNumber:,5,1101,case,9,CPPASTCaseStatement
+360394,JUMP_TARGET,-1,case PopupKind::CommandList:,5,1104,case,13,CPPASTCaseStatement
+360476,JUMP_TARGET,-1,default:,5,1129,default,16,CPPASTDefaultStatement
+360777,JUMP_TARGET,-1,case PopupKind::CopyToChar:,5,1206,case,1,CPPASTCaseStatement
+360787,JUMP_TARGET,-1,case PopupKind::CopyFromChar:,5,1209,case,5,CPPASTCaseStatement
+360797,JUMP_TARGET,-1,case PopupKind::CommandNumber:,5,1212,case,9,CPPASTCaseStatement
+360823,JUMP_TARGET,-1,case PopupKind::CommandList:,5,1217,case,15,CPPASTCaseStatement
+360856,JUMP_TARGET,-1,default:,5,1222,default,21,CPPASTDefaultStatement
+360964,JUMP_TARGET,-1,case PopupKind::CopyToChar:,5,1275,case,1,CPPASTCaseStatement
+360974,JUMP_TARGET,-1,case PopupKind::CopyFromChar:,5,1278,case,5,CPPASTCaseStatement
+360984,JUMP_TARGET,-1,case PopupKind::CommandNumber:,5,1281,case,9,CPPASTCaseStatement
+360994,JUMP_TARGET,-1,case PopupKind::CommandList:,5,1284,case,13,CPPASTCaseStatement
+361004,JUMP_TARGET,-1,default:,5,1287,default,17,CPPASTDefaultStatement
+361354,JUMP_TARGET,-1,case VK_ESCAPE:,5,1402,case,1,CPPASTCaseStatement
+361358,JUMP_TARGET,-1,case VK_F9:,5,1405,case,5,CPPASTCaseStatement
+361365,JUMP_TARGET,-1,case VK_DELETE:,5,1408,case,9,CPPASTCaseStatement
+361385,JUMP_TARGET,-1,case VK_LEFT:,5,1416,case,14,CPPASTCaseStatement
+361387,JUMP_TARGET,-1,case VK_RIGHT:,5,1417,case,16,CPPASTCaseStatement
+361402,JUMP_TARGET,-1,case VK_UP:,5,1421,case,21,CPPASTCaseStatement
+361426,JUMP_TARGET,-1,case VK_DOWN:,5,1429,case,26,CPPASTCaseStatement
+361450,JUMP_TARGET,-1,case VK_HOME:,5,1437,case,31,CPPASTCaseStatement
+361458,JUMP_TARGET,-1,case VK_END:,5,1440,case,35,CPPASTCaseStatement
+361466,JUMP_TARGET,-1,case VK_PRIOR:,5,1444,case,39,CPPASTCaseStatement
+361479,JUMP_TARGET,-1,case VK_NEXT:,5,1448,case,43,CPPASTCaseStatement
+361492,JUMP_TARGET,-1,default:,5,1452,default,47,CPPASTDefaultStatement
+367881,JUMP_TARGET,-1,case VK_UP:,9,226,case,1,CPPASTCaseStatement
+367888,JUMP_TARGET,-1,case VK_DOWN:,9,231,case,4,CPPASTCaseStatement
+367895,JUMP_TARGET,-1,case VK_LEFT:,9,236,case,7,CPPASTCaseStatement
+367905,JUMP_TARGET,-1,case VK_RIGHT:,9,242,case,10,CPPASTCaseStatement
+367915,JUMP_TARGET,-1,case VK_NEXT:,9,248,case,13,CPPASTCaseStatement
+367922,JUMP_TARGET,-1,case VK_PRIOR:,9,253,case,16,CPPASTCaseStatement
+367929,JUMP_TARGET,-1,case VK_END:,9,258,case,19,CPPASTCaseStatement
+367960,JUMP_TARGET,-1,case VK_HOME:,9,281,case,22,CPPASTCaseStatement
+367985,JUMP_TARGET,-1,case VK_SHIFT:,9,303,case,25,CPPASTCaseStatement
+367987,JUMP_TARGET,-1,case VK_CONTROL:,9,304,case,27,CPPASTCaseStatement
+367989,JUMP_TARGET,-1,case VK_MENU:,9,305,case,29,CPPASTCaseStatement
+367994,JUMP_TARGET,-1,default:,9,309,default,32,CPPASTDefaultStatement
+369458,JUMP_TARGET,-1,case VK_LEFT:,9,103,case,1,CPPASTCaseStatement
+369460,JUMP_TARGET,-1,case VK_RIGHT:,9,104,case,3,CPPASTCaseStatement
+369462,JUMP_TARGET,-1,case VK_UP:,9,105,case,5,CPPASTCaseStatement
+369464,JUMP_TARGET,-1,case VK_DOWN:,9,106,case,7,CPPASTCaseStatement
+369466,JUMP_TARGET,-1,case VK_NEXT:,9,107,case,9,CPPASTCaseStatement
+369468,JUMP_TARGET,-1,case VK_PRIOR:,9,108,case,11,CPPASTCaseStatement
+369470,JUMP_TARGET,-1,case VK_HOME:,9,109,case,13,CPPASTCaseStatement
+369472,JUMP_TARGET,-1,case VK_END:,9,110,case,15,CPPASTCaseStatement
+369488,JUMP_TARGET,-1,case VK_LEFT:,9,118,case,1,CPPASTCaseStatement
+369490,JUMP_TARGET,-1,case VK_RIGHT:,9,119,case,3,CPPASTCaseStatement
+369492,JUMP_TARGET,-1,case VK_UP:,9,120,case,5,CPPASTCaseStatement
+369494,JUMP_TARGET,-1,case VK_DOWN:,9,121,case,7,CPPASTCaseStatement
+369496,JUMP_TARGET,-1,case VK_HOME:,9,122,case,9,CPPASTCaseStatement
+369498,JUMP_TARGET,-1,case VK_END:,9,123,case,11,CPPASTCaseStatement
+369818,JUMP_TARGET,-1,case VK_LEFT:,13,311,case,1,CPPASTCaseStatement
+369820,JUMP_TARGET,-1,case VK_RIGHT:,13,312,case,3,CPPASTCaseStatement
+369918,JUMP_TARGET,-1,case VK_LEFT:,9,348,case,1,CPPASTCaseStatement
+369927,JUMP_TARGET,-1,case VK_RIGHT:,9,353,case,4,CPPASTCaseStatement
+369937,JUMP_TARGET,-1,case VK_UP:,9,371,case,7,CPPASTCaseStatement
+369955,JUMP_TARGET,-1,case VK_DOWN:,9,379,case,10,CPPASTCaseStatement
+369973,JUMP_TARGET,-1,case VK_NEXT:,9,388,case,13,CPPASTCaseStatement
+370014,JUMP_TARGET,-1,case VK_PRIOR:,9,397,case,16,CPPASTCaseStatement
+370055,JUMP_TARGET,-1,case VK_HOME:,9,407,case,19,CPPASTCaseStatement
+370094,JUMP_TARGET,-1,case VK_END:,9,448,case,22,CPPASTCaseStatement
+370214,JUMP_TARGET,-1,case VK_LEFT:,9,535,case,1,CPPASTCaseStatement
+370225,JUMP_TARGET,-1,case VK_RIGHT:,9,540,case,4,CPPASTCaseStatement
+370236,JUMP_TARGET,-1,case VK_UP:,9,546,case,7,CPPASTCaseStatement
+370254,JUMP_TARGET,-1,case VK_DOWN:,9,554,case,10,CPPASTCaseStatement
+370272,JUMP_TARGET,-1,case VK_HOME:,9,563,case,13,CPPASTCaseStatement
+370284,JUMP_TARGET,-1,case VK_END:,9,570,case,16,CPPASTCaseStatement
+370567,JUMP_TARGET,-1,case VK_RIGHT:,9,815,case,1,CPPASTCaseStatement
+370591,JUMP_TARGET,-1,case VK_LEFT:,9,824,case,4,CPPASTCaseStatement
+370607,JUMP_TARGET,-1,case VK_UP:,9,833,case,7,CPPASTCaseStatement
+370623,JUMP_TARGET,-1,case VK_DOWN:,9,842,case,10,CPPASTCaseStatement
+370647,JUMP_TARGET,-1,case VK_NEXT:,9,851,case,13,CPPASTCaseStatement
+370695,JUMP_TARGET,-1,case VK_PRIOR:,9,862,case,16,CPPASTCaseStatement
+370727,JUMP_TARGET,-1,case VK_END:,9,872,case,19,CPPASTCaseStatement
+370760,JUMP_TARGET,-1,case VK_HOME:,9,888,case,22,CPPASTCaseStatement
+370780,JUMP_TARGET,-1,default:,9,901,default,25,CPPASTDefaultStatement
+374168,JUMP_TARGET,-1,case VK_ESCAPE:,9,27,case,1,CPPASTCaseStatement
+374170,JUMP_TARGET,-1,case VK_PRIOR:,9,28,case,3,CPPASTCaseStatement
+374172,JUMP_TARGET,-1,case VK_NEXT:,9,29,case,5,CPPASTCaseStatement
+374174,JUMP_TARGET,-1,case VK_END:,9,30,case,7,CPPASTCaseStatement
+374176,JUMP_TARGET,-1,case VK_HOME:,9,31,case,9,CPPASTCaseStatement
+374178,JUMP_TARGET,-1,case VK_LEFT:,9,32,case,11,CPPASTCaseStatement
+374180,JUMP_TARGET,-1,case VK_UP:,9,33,case,13,CPPASTCaseStatement
+374182,JUMP_TARGET,-1,case VK_RIGHT:,9,34,case,15,CPPASTCaseStatement
+374184,JUMP_TARGET,-1,case VK_DOWN:,9,35,case,17,CPPASTCaseStatement
+374186,JUMP_TARGET,-1,case VK_F2:,9,36,case,19,CPPASTCaseStatement
+374188,JUMP_TARGET,-1,case VK_F4:,9,37,case,21,CPPASTCaseStatement
+374190,JUMP_TARGET,-1,case VK_F7:,9,38,case,23,CPPASTCaseStatement
+374192,JUMP_TARGET,-1,case VK_F9:,9,39,case,25,CPPASTCaseStatement
+374194,JUMP_TARGET,-1,case VK_DELETE:,9,40,case,27,CPPASTCaseStatement
+374198,JUMP_TARGET,-1,default:,9,42,default,30,CPPASTDefaultStatement
+374225,JUMP_TARGET,-1,case VK_ESCAPE:,9,55,case,1,CPPASTCaseStatement
+374227,JUMP_TARGET,-1,case VK_PRIOR:,9,56,case,3,CPPASTCaseStatement
+374229,JUMP_TARGET,-1,case VK_NEXT:,9,57,case,5,CPPASTCaseStatement
+374231,JUMP_TARGET,-1,case VK_END:,9,58,case,7,CPPASTCaseStatement
+374233,JUMP_TARGET,-1,case VK_HOME:,9,59,case,9,CPPASTCaseStatement
+374235,JUMP_TARGET,-1,case VK_LEFT:,9,60,case,11,CPPASTCaseStatement
+374237,JUMP_TARGET,-1,case VK_UP:,9,61,case,13,CPPASTCaseStatement
+374239,JUMP_TARGET,-1,case VK_RIGHT:,9,62,case,15,CPPASTCaseStatement
+374241,JUMP_TARGET,-1,case VK_DOWN:,9,63,case,17,CPPASTCaseStatement
+374243,JUMP_TARGET,-1,case VK_INSERT:,9,64,case,19,CPPASTCaseStatement
+374245,JUMP_TARGET,-1,case VK_DELETE:,9,65,case,21,CPPASTCaseStatement
+374247,JUMP_TARGET,-1,case VK_F1:,9,66,case,23,CPPASTCaseStatement
+374249,JUMP_TARGET,-1,case VK_F2:,9,67,case,25,CPPASTCaseStatement
+374251,JUMP_TARGET,-1,case VK_F3:,9,68,case,27,CPPASTCaseStatement
+374253,JUMP_TARGET,-1,case VK_F4:,9,69,case,29,CPPASTCaseStatement
+374255,JUMP_TARGET,-1,case VK_F5:,9,70,case,31,CPPASTCaseStatement
+374257,JUMP_TARGET,-1,case VK_F6:,9,71,case,33,CPPASTCaseStatement
+374259,JUMP_TARGET,-1,case VK_F7:,9,72,case,35,CPPASTCaseStatement
+374261,JUMP_TARGET,-1,case VK_F8:,9,73,case,37,CPPASTCaseStatement
+374263,JUMP_TARGET,-1,case VK_F9:,9,74,case,39,CPPASTCaseStatement
+374267,JUMP_TARGET,-1,default:,9,76,default,42,CPPASTDefaultStatement
+374283,JUMP_TARGET,-1,case VK_END:,9,84,case,1,CPPASTCaseStatement
+374285,JUMP_TARGET,-1,case VK_HOME:,9,85,case,3,CPPASTCaseStatement
+374287,JUMP_TARGET,-1,case VK_LEFT:,9,86,case,5,CPPASTCaseStatement
+374289,JUMP_TARGET,-1,case VK_RIGHT:,9,87,case,7,CPPASTCaseStatement
+374293,JUMP_TARGET,-1,default:,9,89,default,10,CPPASTDefaultStatement
+374309,JUMP_TARGET,-1,case VK_F7:,9,97,case,1,CPPASTCaseStatement
+374311,JUMP_TARGET,-1,case VK_F10:,9,98,case,3,CPPASTCaseStatement
+374315,JUMP_TARGET,-1,default:,9,100,default,6,CPPASTDefaultStatement
+375974,JUMP_TARGET,-1,case KEY_EVENT:,5,106,case,1,CPPASTCaseStatement
+376079,JUMP_TARGET,-1,case MOUSE_EVENT:,5,123,case,5,CPPASTCaseStatement
+376144,JUMP_TARGET,-1,case WINDOW_BUFFER_SIZE_EVENT:,5,136,case,9,CPPASTCaseStatement
+376182,JUMP_TARGET,-1,case MENU_EVENT:,5,146,case,13,CPPASTCaseStatement
+376207,JUMP_TARGET,-1,case FOCUS_EVENT:,5,155,case,17,CPPASTCaseStatement
+376232,JUMP_TARGET,-1,default:,5,164,default,21,CPPASTDefaultStatement
+389620,JUMP_TARGET,-1,case 0:,5,1442,case,1,CPPASTCaseStatement
+389662,JUMP_TARGET,-1,case 1:,5,1449,case,9,CPPASTCaseStatement
+399764,JUMP_TARGET,-1,case ScrollUp:,5,3748,case,1,CPPASTCaseStatement
+399782,JUMP_TARGET,-1,case ScrollDown:,5,3753,case,7,CPPASTCaseStatement
+399800,JUMP_TARGET,-1,case InsertLine:,5,3758,case,13,CPPASTCaseStatement
+399818,JUMP_TARGET,-1,case DeleteLine:,5,3763,case,19,CPPASTCaseStatement
+399836,JUMP_TARGET,-1,case ReverseIndex:,5,3768,case,25,CPPASTCaseStatement
+399862,JUMP_TARGET,-1,default:,5,3776,default,31,CPPASTDefaultStatement
+401976,JUMP_TARGET,-1,case DECIC:,5,4410,case,1,CPPASTCaseStatement
+402032,JUMP_TARGET,-1,case DECDC:,5,4422,case,11,CPPASTCaseStatement
+402080,JUMP_TARGET,-1,case DECFI:,5,4432,case,20,CPPASTCaseStatement
+402128,JUMP_TARGET,-1,case DECBI:,5,4442,case,29,CPPASTCaseStatement
+402804,JUMP_TARGET,-1,case DispatchTypes::EraseType::ToEnd:,5,4606,case,1,CPPASTCaseStatement
+402819,JUMP_TARGET,-1,case DispatchTypes::EraseType::FromBeginning:,5,4610,case,6,CPPASTCaseStatement
+402834,JUMP_TARGET,-1,case DispatchTypes::EraseType::All:,5,4614,case,11,CPPASTCaseStatement
+402849,JUMP_TARGET,-1,default:,5,4618,default,16,CPPASTDefaultStatement
+416896,JUMP_TARGET,-1,case DECFRA:,5,8098,case,1,CPPASTCaseStatement
+416917,JUMP_TARGET,-1,case DECERA:,5,8105,case,8,CPPASTCaseStatement
+416940,JUMP_TARGET,-1,case DECSERA:,5,8112,case,16,CPPASTCaseStatement
+416959,JUMP_TARGET,-1,case DECCARA:,5,8118,case,23,CPPASTCaseStatement
+416998,JUMP_TARGET,-1,case DECRARA:,5,8128,case,33,CPPASTCaseStatement
+417022,JUMP_TARGET,-1,case DECCRA:,5,8136,case,41,CPPASTCaseStatement
+417071,JUMP_TARGET,-1,default:,5,8147,default,50,CPPASTDefaultStatement
+438454,JUMP_TARGET,-1,case GraphicsOptions::Intense:,5,943,case,1,CPPASTCaseStatement
+438469,JUMP_TARGET,-1,case GraphicsOptions::RGBColorOrFaint:,5,947,case,6,CPPASTCaseStatement
+438484,JUMP_TARGET,-1,case GraphicsOptions::Italics:,5,951,case,11,CPPASTCaseStatement
+438499,JUMP_TARGET,-1,case GraphicsOptions::Underline:,5,955,case,16,CPPASTCaseStatement
+438516,JUMP_TARGET,-1,case GraphicsOptions::DoublyUnderlined:,5,959,case,21,CPPASTCaseStatement
+438533,JUMP_TARGET,-1,case GraphicsOptions::Overline:,5,963,case,26,CPPASTCaseStatement
+438548,JUMP_TARGET,-1,case GraphicsOptions::BlinkOrXterm256Index:,5,967,case,31,CPPASTCaseStatement
+438563,JUMP_TARGET,-1,case GraphicsOptions::Negative:,5,971,case,36,CPPASTCaseStatement
+438578,JUMP_TARGET,-1,case GraphicsOptions::Invisible:,5,975,case,41,CPPASTCaseStatement
+438593,JUMP_TARGET,-1,case GraphicsOptions::CrossedOut:,5,979,case,46,CPPASTCaseStatement
+439422,JUMP_TARGET,-1,case GraphicsOptions::Intense:,5,1503,case,1,CPPASTCaseStatement
+439437,JUMP_TARGET,-1,case GraphicsOptions::Underline:,5,1507,case,6,CPPASTCaseStatement
+439454,JUMP_TARGET,-1,case GraphicsOptions::Negative:,5,1511,case,11,CPPASTCaseStatement
+442991,JUMP_TARGET,-1,case FOCUS_EVENT:,13,268,case,1,CPPASTCaseStatement
+443010,JUMP_TARGET,-1,case KEY_EVENT:,13,276,case,4,CPPASTCaseStatement
+443066,JUMP_TARGET,-1,case MENU_EVENT:,13,289,case,7,CPPASTCaseStatement
+443089,JUMP_TARGET,-1,case MOUSE_EVENT:,13,298,case,10,CPPASTCaseStatement
+443137,JUMP_TARGET,-1,case WINDOW_BUFFER_SIZE_EVENT:,13,310,case,13,CPPASTCaseStatement
+443164,JUMP_TARGET,-1,default:,13,319,default,16,CPPASTDefaultStatement
+443194,JUMP_TARGET,-1,case FOCUS_EVENT:,17,338,case,1,CPPASTCaseStatement
+443215,JUMP_TARGET,-1,case KEY_EVENT:,17,344,case,4,CPPASTCaseStatement
+443320,JUMP_TARGET,-1,case MENU_EVENT:,17,355,case,7,CPPASTCaseStatement
+443341,JUMP_TARGET,-1,case MOUSE_EVENT:,17,361,case,10,CPPASTCaseStatement
+443434,JUMP_TARGET,-1,case WINDOW_BUFFER_SIZE_EVENT:,17,371,case,13,CPPASTCaseStatement
+443479,JUMP_TARGET,-1,default:,17,378,default,16,CPPASTDefaultStatement
+459733,JUMP_TARGET,-1,case HostSignals::NotifyApp:,9,87,case,1,CPPASTCaseStatement
+459754,JUMP_TARGET,-1,case HostSignals::SetForeground:,9,95,case,4,CPPASTCaseStatement
+459761,JUMP_TARGET,-1,case HostSignals::EndTask:,9,105,case,7,CPPASTCaseStatement
+459788,JUMP_TARGET,-1,default:,9,113,default,10,CPPASTDefaultStatement
+460080,JUMP_TARGET,-1,case ApiLevel::Win32:,13,311,case,1,CPPASTCaseStatement
+460168,JUMP_TARGET,-1,default:,13,364,default,4,CPPASTDefaultStatement
+462490,JUMP_TARGET,-1,case CIS_EVENT_TYPE_INPUT:,13,266,case,1,CPPASTCaseStatement
+462508,JUMP_TARGET,-1,case CIS_EVENT_TYPE_FOCUS:,13,276,case,5,CPPASTCaseStatement
+462514,JUMP_TARGET,-1,default:,13,279,default,9,CPPASTDefaultStatement
+462630,JUMP_TARGET,-1,case CIS_DISPLAY_MODE_BGFX:,5,325,case,1,CPPASTCaseStatement
+462648,JUMP_TARGET,-1,case CIS_DISPLAY_MODE_DIRECTX:,5,337,case,5,CPPASTCaseStatement
+462788,JUMP_TARGET,-1,case CIS_DISPLAY_MODE_NONE:,5,416,case,9,CPPASTCaseStatement
+462790,JUMP_TARGET,-1,default:,5,417,default,11,CPPASTDefaultStatement
+463338,JUMP_TARGET,-1,case CIS_DISPLAY_MODE_BGFX:,17,44,case,1,CPPASTCaseStatement
+463347,JUMP_TARGET,-1,case CIS_DISPLAY_MODE_DIRECTX:,17,47,case,5,CPPASTCaseStatement
+463356,JUMP_TARGET,-1,default:,17,50,default,9,CPPASTDefaultStatement
+463989,JUMP_TARGET,-1,case CIS_DISPLAY_MODE_BGFX:,5,61,case,1,CPPASTCaseStatement
+464084,JUMP_TARGET,-1,case CIS_DISPLAY_MODE_DIRECTX:,5,91,case,4,CPPASTCaseStatement
+464105,JUMP_TARGET,-1,case CIS_DISPLAY_MODE_NONE:,5,97,case,7,CPPASTCaseStatement
+464109,JUMP_TARGET,-1,default:,5,104,default,10,CPPASTDefaultStatement
+465494,JUMP_TARGET,-1,case WM_INITDIALOG:,5,32,case,1,CPPASTCaseStatement
+465534,JUMP_TARGET,-1,case WM_COMMAND:,5,38,case,8,CPPASTCaseStatement
+465541,JUMP_TARGET,-1,case IDOK:,9,42,case,1,CPPASTCaseStatement
+465652,JUMP_TARGET,-1,case IDCANCEL:,9,72,case,4,CPPASTCaseStatement
+465663,JUMP_TARGET,-1,default:,9,76,default,9,CPPASTDefaultStatement
+465666,JUMP_TARGET,-1,default:,5,81,default,11,CPPASTDefaultStatement
+478114,JUMP_TARGET,-1,case SB_LINEUP:,5,751,case,1,CPPASTCaseStatement
+478122,JUMP_TARGET,-1,case SB_LINEDOWN:,5,757,case,4,CPPASTCaseStatement
+478130,JUMP_TARGET,-1,case SB_PAGEUP:,5,763,case,7,CPPASTCaseStatement
+478144,JUMP_TARGET,-1,case SB_PAGEDOWN:,5,769,case,10,CPPASTCaseStatement
+478158,JUMP_TARGET,-1,case SB_THUMBTRACK:,5,775,case,13,CPPASTCaseStatement
+478174,JUMP_TARGET,-1,case SB_THUMBPOSITION:,5,782,case,16,CPPASTCaseStatement
+478187,JUMP_TARGET,-1,case SB_TOP:,5,789,case,19,CPPASTCaseStatement
+478196,JUMP_TARGET,-1,case SB_BOTTOM:,5,795,case,22,CPPASTCaseStatement
+478210,JUMP_TARGET,-1,default:,5,801,default,25,CPPASTDefaultStatement
+478283,JUMP_TARGET,-1,case SB_LINEUP:,5,830,case,1,CPPASTCaseStatement
+478291,JUMP_TARGET,-1,case SB_LINEDOWN:,5,836,case,4,CPPASTCaseStatement
+478299,JUMP_TARGET,-1,case SB_PAGEUP:,5,842,case,7,CPPASTCaseStatement
+478313,JUMP_TARGET,-1,case SB_PAGEDOWN:,5,848,case,10,CPPASTCaseStatement
+478327,JUMP_TARGET,-1,case SB_THUMBTRACK:,5,854,case,13,CPPASTCaseStatement
+478329,JUMP_TARGET,-1,case SB_THUMBPOSITION:,5,855,case,15,CPPASTCaseStatement
+478338,JUMP_TARGET,-1,case SB_TOP:,5,861,case,18,CPPASTCaseStatement
+478347,JUMP_TARGET,-1,case SB_BOTTOM:,5,867,case,21,CPPASTCaseStatement
+478362,JUMP_TARGET,-1,default:,5,873,default,24,CPPASTDefaultStatement
+480120,JUMP_TARGET,-1,case WM_LBUTTONDOWN:,13,653,case,1,CPPASTCaseStatement
+480122,JUMP_TARGET,-1,case WM_MBUTTONDOWN:,13,654,case,3,CPPASTCaseStatement
+480124,JUMP_TARGET,-1,case WM_RBUTTONDOWN:,13,655,case,5,CPPASTCaseStatement
+480135,JUMP_TARGET,-1,case WM_LBUTTONUP:,13,658,case,9,CPPASTCaseStatement
+480137,JUMP_TARGET,-1,case WM_MBUTTONUP:,13,659,case,11,CPPASTCaseStatement
+480139,JUMP_TARGET,-1,case WM_RBUTTONUP:,13,660,case,13,CPPASTCaseStatement
+480646,JUMP_TARGET,-1,case WM_LBUTTONDOWN:,5,868,case,1,CPPASTCaseStatement
+480663,JUMP_TARGET,-1,case WM_LBUTTONUP:,5,873,case,7,CPPASTCaseStatement
+480665,JUMP_TARGET,-1,case WM_MBUTTONUP:,5,874,case,9,CPPASTCaseStatement
+480667,JUMP_TARGET,-1,case WM_RBUTTONUP:,5,875,case,11,CPPASTCaseStatement
+480676,JUMP_TARGET,-1,case WM_RBUTTONDOWN:,5,879,case,16,CPPASTCaseStatement
+480693,JUMP_TARGET,-1,case WM_MBUTTONDOWN:,5,884,case,22,CPPASTCaseStatement
+480710,JUMP_TARGET,-1,case WM_MOUSEMOVE:,5,889,case,28,CPPASTCaseStatement
+480719,JUMP_TARGET,-1,case WM_LBUTTONDBLCLK:,5,893,case,33,CPPASTCaseStatement
+480728,JUMP_TARGET,-1,case WM_RBUTTONDBLCLK:,5,897,case,38,CPPASTCaseStatement
+480737,JUMP_TARGET,-1,case WM_MBUTTONDBLCLK:,5,901,case,43,CPPASTCaseStatement
+480746,JUMP_TARGET,-1,case WM_MOUSEWHEEL:,5,905,case,48,CPPASTCaseStatement
+480759,JUMP_TARGET,-1,case WM_MOUSEHWHEEL:,5,909,case,53,CPPASTCaseStatement
+480772,JUMP_TARGET,-1,default:,5,913,default,58,CPPASTDefaultStatement
+481940,JUMP_TARGET,-1,case WM_INITDIALOG:,5,162,case,1,CPPASTCaseStatement
+481949,JUMP_TARGET,-1,case WM_COMMAND:,5,168,case,4,CPPASTCaseStatement
+481965,JUMP_TARGET,-1,case IDD_COLOR_SCREEN_TEXT:,9,178,case,1,CPPASTCaseStatement
+481969,JUMP_TARGET,-1,case IDD_COLOR_SCREEN_BKGND:,9,179,case,3,CPPASTCaseStatement
+481973,JUMP_TARGET,-1,case IDD_COLOR_POPUP_TEXT:,9,180,case,5,CPPASTCaseStatement
+481977,JUMP_TARGET,-1,case IDD_COLOR_POPUP_BKGND:,9,181,case,7,CPPASTCaseStatement
+482085,JUMP_TARGET,-1,case IDD_COLOR_RED:,9,203,case,18,CPPASTCaseStatement
+482089,JUMP_TARGET,-1,case IDD_COLOR_GREEN:,9,204,case,20,CPPASTCaseStatement
+482093,JUMP_TARGET,-1,case IDD_COLOR_BLUE:,9,205,case,22,CPPASTCaseStatement
+482102,JUMP_TARGET,-1,case EN_UPDATE:,13,209,case,1,CPPASTCaseStatement
+482115,JUMP_TARGET,-1,case EN_CHANGE:,13,216,case,5,CPPASTCaseStatement
+482243,JUMP_TARGET,-1,case EN_KILLFOCUS:,13,257,case,10,CPPASTCaseStatement
+482286,JUMP_TARGET,-1,case WM_NOTIFY:,5,275,case,7,CPPASTCaseStatement
+482302,JUMP_TARGET,-1,case PSN_APPLY:,9,280,case,1,CPPASTCaseStatement
+482329,JUMP_TARGET,-1,case PSN_RESET:,9,294,case,6,CPPASTCaseStatement
+482351,JUMP_TARGET,-1,case PSN_SETACTIVE:,9,303,case,10,CPPASTCaseStatement
+482357,JUMP_TARGET,-1,case PSN_KILLACTIVE:,9,307,case,14,CPPASTCaseStatement
+482376,JUMP_TARGET,-1,case WM_VSCROLL:,5,322,case,10,CPPASTCaseStatement
+482395,JUMP_TARGET,-1,case WM_HSCROLL:,5,331,case,15,CPPASTCaseStatement
+482411,JUMP_TARGET,-1,case TB_THUMBPOSITION:,13,337,case,1,CPPASTCaseStatement
+482413,JUMP_TARGET,-1,case TB_THUMBTRACK:,13,338,case,3,CPPASTCaseStatement
+482422,JUMP_TARGET,-1,default:,13,343,default,7,CPPASTDefaultStatement
+482442,JUMP_TARGET,-1,case CM_SETCOLOR:,5,354,case,19,CPPASTCaseStatement
+482597,JUMP_TARGET,-1,default:,5,390,default,35,CPPASTDefaultStatement
+482708,JUMP_TARGET,-1,case WM_INITDIALOG:,5,62,case,1,CPPASTCaseStatement
+482972,JUMP_TARGET,-1,case WM_VSCROLL:,5,110,case,34,CPPASTCaseStatement
+482991,JUMP_TARGET,-1,case WM_COMMAND:,5,119,case,39,CPPASTCaseStatement
+483000,JUMP_TARGET,-1,case IDD_SCRBUF_WIDTH:,9,123,case,1,CPPASTCaseStatement
+483004,JUMP_TARGET,-1,case IDD_SCRBUF_HEIGHT:,9,124,case,3,CPPASTCaseStatement
+483008,JUMP_TARGET,-1,case IDD_WINDOW_WIDTH:,9,125,case,5,CPPASTCaseStatement
+483012,JUMP_TARGET,-1,case IDD_WINDOW_HEIGHT:,9,126,case,7,CPPASTCaseStatement
+483016,JUMP_TARGET,-1,case IDD_WINDOW_POSX:,9,127,case,9,CPPASTCaseStatement
+483020,JUMP_TARGET,-1,case IDD_WINDOW_POSY:,9,128,case,11,CPPASTCaseStatement
+483028,JUMP_TARGET,-1,case EN_UPDATE:,13,131,case,1,CPPASTCaseStatement
+483051,JUMP_TARGET,-1,case EN_KILLFOCUS:,13,142,case,5,CPPASTCaseStatement
+483113,JUMP_TARGET,-1,case IDD_LINE_WRAP:,9,169,case,15,CPPASTCaseStatement
+483148,JUMP_TARGET,-1,case IDD_AUTO_POSITION:,9,178,case,18,CPPASTCaseStatement
+483196,JUMP_TARGET,-1,default:,9,193,default,25,CPPASTDefaultStatement
+483199,JUMP_TARGET,-1,case WM_NOTIFY:,5,198,case,44,CPPASTCaseStatement
+483215,JUMP_TARGET,-1,case PSN_APPLY:,9,203,case,1,CPPASTCaseStatement
+483225,JUMP_TARGET,-1,case PSN_KILLACTIVE:,9,210,case,5,CPPASTCaseStatement
+483243,JUMP_TARGET,-1,case PSN_SETACTIVE:,9,222,case,10,CPPASTCaseStatement
+483316,JUMP_TARGET,-1,default:,5,249,default,47,CPPASTDefaultStatement
+483423,JUMP_TARGET,-1,case IDD_LANGUAGELIST:,5,37,case,1,CPPASTCaseStatement
+483430,JUMP_TARGET,-1,case CBN_SELCHANGE:,9,40,case,1,CPPASTCaseStatement
+483480,JUMP_TARGET,-1,default:,9,57,default,4,CPPASTDefaultStatement
+483484,JUMP_TARGET,-1,case IDD_CURSOR_SMALL:,5,62,case,5,CPPASTCaseStatement
+483488,JUMP_TARGET,-1,case IDD_CURSOR_MEDIUM:,5,63,case,7,CPPASTCaseStatement
+483492,JUMP_TARGET,-1,case IDD_CURSOR_LARGE:,5,64,case,9,CPPASTCaseStatement
+483509,JUMP_TARGET,-1,case IDD_HISTORY_NODUP:,5,74,case,14,CPPASTCaseStatement
+483513,JUMP_TARGET,-1,case IDD_QUICKEDIT:,5,75,case,16,CPPASTCaseStatement
+483517,JUMP_TARGET,-1,case IDD_INSERT:,5,76,case,18,CPPASTCaseStatement
+483534,JUMP_TARGET,-1,case IDD_HISTORY_SIZE:,5,82,case,24,CPPASTCaseStatement
+483538,JUMP_TARGET,-1,case IDD_HISTORY_NUM:,5,83,case,26,CPPASTCaseStatement
+483545,JUMP_TARGET,-1,case EN_UPDATE:,9,86,case,1,CPPASTCaseStatement
+483563,JUMP_TARGET,-1,case EN_KILLFOCUS:,9,97,case,5,CPPASTCaseStatement
+483585,JUMP_TARGET,-1,case IDD_FORCEV2:,5,111,case,30,CPPASTCaseStatement
+483605,JUMP_TARGET,-1,case IDD_LINE_SELECTION:,5,119,case,33,CPPASTCaseStatement
+483629,JUMP_TARGET,-1,case IDD_FILTER_ON_PASTE:,5,127,case,36,CPPASTCaseStatement
+483653,JUMP_TARGET,-1,case IDD_INTERCEPT_COPY_PASTE:,5,135,case,39,CPPASTCaseStatement
+483677,JUMP_TARGET,-1,case IDD_CTRL_KEYS_ENABLED:,5,143,case,42,CPPASTCaseStatement
+483702,JUMP_TARGET,-1,case IDD_EDIT_KEYS:,5,152,case,45,CPPASTCaseStatement
+483740,JUMP_TARGET,-1,case WM_INITDIALOG:,5,173,case,1,CPPASTCaseStatement
+484052,JUMP_TARGET,-1,case WM_COMMAND:,5,263,case,30,CPPASTCaseStatement
+484070,JUMP_TARGET,-1,case WM_NOTIFY:,5,268,case,35,CPPASTCaseStatement
+484101,JUMP_TARGET,-1,case NM_CLICK:,13,275,case,1,CPPASTCaseStatement
+484103,JUMP_TARGET,-1,case NM_RETURN:,13,276,case,3,CPPASTCaseStatement
+484151,JUMP_TARGET,-1,case PSN_APPLY:,17,300,case,1,CPPASTCaseStatement
+484161,JUMP_TARGET,-1,case PSN_SETACTIVE:,17,307,case,5,CPPASTCaseStatement
+484167,JUMP_TARGET,-1,case PSN_KILLACTIVE:,17,311,case,9,CPPASTCaseStatement
+484186,JUMP_TARGET,-1,case WM_VSCROLL:,5,329,case,38,CPPASTCaseStatement
+484205,JUMP_TARGET,-1,default:,5,338,default,43,CPPASTDefaultStatement
+484649,JUMP_TARGET,-1,case DelegationConfig::DelegationPairKind::Default:,9,106,case,1,CPPASTCaseStatement
+484665,JUMP_TARGET,-1,case DelegationConfig::DelegationPairKind::Conhost:,9,109,case,5,CPPASTCaseStatement
+484681,JUMP_TARGET,-1,default:,9,112,default,9,CPPASTDefaultStatement
+485347,JUMP_TARGET,-1,case EN_UPDATE:,5,315,case,1,CPPASTCaseStatement
+485349,JUMP_TARGET,-1,case EN_CHANGE:,5,316,case,3,CPPASTCaseStatement
+485376,JUMP_TARGET,-1,case IDD_TERMINAL_CURSOR_USECOLOR:,5,330,case,1,CPPASTCaseStatement
+485380,JUMP_TARGET,-1,case IDD_TERMINAL_INVERSE_CURSOR:,5,331,case,3,CPPASTCaseStatement
+485397,JUMP_TARGET,-1,case IDD_USE_TERMINAL_FG:,5,336,case,9,CPPASTCaseStatement
+485414,JUMP_TARGET,-1,case IDD_USE_TERMINAL_BG:,5,341,case,15,CPPASTCaseStatement
+485431,JUMP_TARGET,-1,case IDD_TERMINAL_FG_RED:,5,347,case,21,CPPASTCaseStatement
+485435,JUMP_TARGET,-1,case IDD_TERMINAL_FG_GREEN:,5,348,case,23,CPPASTCaseStatement
+485439,JUMP_TARGET,-1,case IDD_TERMINAL_FG_BLUE:,5,349,case,25,CPPASTCaseStatement
+485451,JUMP_TARGET,-1,case IDD_TERMINAL_BG_RED:,5,353,case,29,CPPASTCaseStatement
+485455,JUMP_TARGET,-1,case IDD_TERMINAL_BG_GREEN:,5,354,case,31,CPPASTCaseStatement
+485459,JUMP_TARGET,-1,case IDD_TERMINAL_BG_BLUE:,5,355,case,33,CPPASTCaseStatement
+485471,JUMP_TARGET,-1,case IDD_TERMINAL_CURSOR_RED:,5,359,case,37,CPPASTCaseStatement
+485475,JUMP_TARGET,-1,case IDD_TERMINAL_CURSOR_GREEN:,5,360,case,39,CPPASTCaseStatement
+485479,JUMP_TARGET,-1,case IDD_TERMINAL_CURSOR_BLUE:,5,361,case,41,CPPASTCaseStatement
+485491,JUMP_TARGET,-1,case IDD_TERMINAL_LEGACY_CURSOR:,5,365,case,45,CPPASTCaseStatement
+485495,JUMP_TARGET,-1,case IDD_TERMINAL_VERTBAR:,5,366,case,47,CPPASTCaseStatement
+485499,JUMP_TARGET,-1,case IDD_TERMINAL_UNDERSCORE:,5,367,case,49,CPPASTCaseStatement
+485503,JUMP_TARGET,-1,case IDD_TERMINAL_EMPTYBOX:,5,368,case,51,CPPASTCaseStatement
+485507,JUMP_TARGET,-1,case IDD_TERMINAL_SOLIDBOX:,5,369,case,53,CPPASTCaseStatement
+485534,JUMP_TARGET,-1,case IDD_DISABLE_SCROLLFORWARD:,5,386,case,56,CPPASTCaseStatement
+485554,JUMP_TARGET,-1,case IDD_TERMINAL_COMBO_DEFTERM:,5,393,case,59,CPPASTCaseStatement
+485613,JUMP_TARGET,-1,case WM_INITDIALOG:,5,418,case,1,CPPASTCaseStatement
+485621,JUMP_TARGET,-1,case WM_COMMAND:,5,421,case,5,CPPASTCaseStatement
+485636,JUMP_TARGET,-1,case WM_NOTIFY:,5,427,case,9,CPPASTCaseStatement
+485655,JUMP_TARGET,-1,case NM_CLICK:,13,434,case,1,CPPASTCaseStatement
+485657,JUMP_TARGET,-1,case NM_RETURN:,13,435,case,3,CPPASTCaseStatement
+485705,JUMP_TARGET,-1,case PSN_APPLY:,17,459,case,1,CPPASTCaseStatement
+485715,JUMP_TARGET,-1,case PSN_KILLACTIVE:,17,462,case,5,CPPASTCaseStatement
+485735,JUMP_TARGET,-1,case WM_VSCROLL:,5,477,case,12,CPPASTCaseStatement
+485751,JUMP_TARGET,-1,case WM_DESTROY:,5,483,case,16,CPPASTCaseStatement
+486213,JUMP_TARGET,-1,case IDD_SCRBUF_WIDTH:,5,213,case,1,CPPASTCaseStatement
+486257,JUMP_TARGET,-1,case IDD_SCRBUF_HEIGHT:,5,223,case,6,CPPASTCaseStatement
+486295,JUMP_TARGET,-1,case IDD_WINDOW_WIDTH:,5,231,case,11,CPPASTCaseStatement
+486339,JUMP_TARGET,-1,case IDD_WINDOW_HEIGHT:,5,241,case,16,CPPASTCaseStatement
+486377,JUMP_TARGET,-1,case IDD_WINDOW_POSX:,5,249,case,21,CPPASTCaseStatement
+486409,JUMP_TARGET,-1,case IDD_WINDOW_POSY:,5,259,case,25,CPPASTCaseStatement
+486441,JUMP_TARGET,-1,case IDD_AUTO_POSITION:,5,269,case,29,CPPASTCaseStatement
+486451,JUMP_TARGET,-1,case IDD_COLOR_SCREEN_TEXT:,5,272,case,33,CPPASTCaseStatement
+486469,JUMP_TARGET,-1,case IDD_COLOR_SCREEN_BKGND:,5,277,case,37,CPPASTCaseStatement
+486488,JUMP_TARGET,-1,case IDD_COLOR_POPUP_TEXT:,5,282,case,41,CPPASTCaseStatement
+486506,JUMP_TARGET,-1,case IDD_COLOR_POPUP_BKGND:,5,287,case,45,CPPASTCaseStatement
+486525,JUMP_TARGET,-1,case IDD_COLOR_1:,5,292,case,49,CPPASTCaseStatement
+486529,JUMP_TARGET,-1,case IDD_COLOR_2:,5,293,case,51,CPPASTCaseStatement
+486533,JUMP_TARGET,-1,case IDD_COLOR_3:,5,294,case,53,CPPASTCaseStatement
+486537,JUMP_TARGET,-1,case IDD_COLOR_4:,5,295,case,55,CPPASTCaseStatement
+486541,JUMP_TARGET,-1,case IDD_COLOR_5:,5,296,case,57,CPPASTCaseStatement
+486545,JUMP_TARGET,-1,case IDD_COLOR_6:,5,297,case,59,CPPASTCaseStatement
+486549,JUMP_TARGET,-1,case IDD_COLOR_7:,5,298,case,61,CPPASTCaseStatement
+486553,JUMP_TARGET,-1,case IDD_COLOR_8:,5,299,case,63,CPPASTCaseStatement
+486557,JUMP_TARGET,-1,case IDD_COLOR_9:,5,300,case,65,CPPASTCaseStatement
+486561,JUMP_TARGET,-1,case IDD_COLOR_10:,5,301,case,67,CPPASTCaseStatement
+486565,JUMP_TARGET,-1,case IDD_COLOR_11:,5,302,case,69,CPPASTCaseStatement
+486569,JUMP_TARGET,-1,case IDD_COLOR_12:,5,303,case,71,CPPASTCaseStatement
+486573,JUMP_TARGET,-1,case IDD_COLOR_13:,5,304,case,73,CPPASTCaseStatement
+486577,JUMP_TARGET,-1,case IDD_COLOR_14:,5,305,case,75,CPPASTCaseStatement
+486581,JUMP_TARGET,-1,case IDD_COLOR_15:,5,306,case,77,CPPASTCaseStatement
+486585,JUMP_TARGET,-1,case IDD_COLOR_16:,5,307,case,79,CPPASTCaseStatement
+486601,JUMP_TARGET,-1,case IDD_LANGUAGELIST:,5,310,case,83,CPPASTCaseStatement
+486611,JUMP_TARGET,-1,case IDD_QUICKEDIT:,5,316,case,87,CPPASTCaseStatement
+486621,JUMP_TARGET,-1,case IDD_INSERT:,5,319,case,91,CPPASTCaseStatement
+486631,JUMP_TARGET,-1,case IDD_HISTORY_SIZE:,5,322,case,95,CPPASTCaseStatement
+486646,JUMP_TARGET,-1,case IDD_HISTORY_NUM:,5,325,case,99,CPPASTCaseStatement
+486661,JUMP_TARGET,-1,case IDD_HISTORY_NODUP:,5,328,case,103,CPPASTCaseStatement
+486671,JUMP_TARGET,-1,case IDD_CURSOR_SMALL:,5,331,case,107,CPPASTCaseStatement
+486702,JUMP_TARGET,-1,case IDD_CURSOR_MEDIUM:,5,345,case,113,CPPASTCaseStatement
+486733,JUMP_TARGET,-1,case IDD_CURSOR_LARGE:,5,359,case,119,CPPASTCaseStatement
+486764,JUMP_TARGET,-1,default:,5,373,default,125,CPPASTDefaultStatement
+489444,JUMP_TARGET,-1,case CPL_INIT:,5,60,case,1,CPPASTCaseStatement
+489464,JUMP_TARGET,-1,case CPL_GETCOUNT:,5,68,case,7,CPPASTCaseStatement
+489470,JUMP_TARGET,-1,case CPL_INQUIRE:,5,71,case,10,CPPASTCaseStatement
+489507,JUMP_TARGET,-1,case CPL_NEWINQUIRE:,5,81,case,18,CPPASTCaseStatement
+489595,JUMP_TARGET,-1,case CPL_DBLCLK:,5,103,case,28,CPPASTCaseStatement
+489605,JUMP_TARGET,-1,case CPL_EXIT:,5,107,case,32,CPPASTCaseStatement
+489977,JUMP_TARGET,-1,"CreateBoldFont:
+    pelf->elfLogFont.lfQuality = DEFAULT_QUALITY;",1,229,CreateBoldFont,18,CPPASTLabelStatement
+494430,JUMP_TARGET,-1,case _RegPropertyType::Boolean:,5,18,case,1,CPPASTCaseStatement
+494434,JUMP_TARGET,-1,case _RegPropertyType::Dword:,5,19,case,3,CPPASTCaseStatement
+494438,JUMP_TARGET,-1,case _RegPropertyType::Word:,5,20,case,5,CPPASTCaseStatement
+494442,JUMP_TARGET,-1,case _RegPropertyType::Byte:,5,21,case,7,CPPASTCaseStatement
+494446,JUMP_TARGET,-1,case _RegPropertyType::Coordinate:,5,22,case,9,CPPASTCaseStatement
+494452,JUMP_TARGET,-1,case _RegPropertyType::String:,5,24,case,12,CPPASTCaseStatement
+494458,JUMP_TARGET,-1,default:,5,26,default,15,CPPASTDefaultStatement
+496659,JUMP_TARGET,-1,case DWRITE_FONT_FEATURE_TAG_STANDARD_LIGATURES:,17,538,case,1,CPPASTCaseStatement
+496671,JUMP_TARGET,-1,case DWRITE_FONT_FEATURE_TAG_CONTEXTUAL_LIGATURES:,17,541,case,5,CPPASTCaseStatement
+496683,JUMP_TARGET,-1,case DWRITE_FONT_FEATURE_TAG_CONTEXTUAL_ALTERNATES:,17,544,case,9,CPPASTCaseStatement
+496695,JUMP_TARGET,-1,default:,17,547,default,13,CPPASTDefaultStatement
+496775,JUMP_TARGET,-1,case DWRITE_FONT_AXIS_TAG_WEIGHT:,17,573,case,1,CPPASTCaseStatement
+496787,JUMP_TARGET,-1,case DWRITE_FONT_AXIS_TAG_ITALIC:,17,576,case,5,CPPASTCaseStatement
+496799,JUMP_TARGET,-1,case DWRITE_FONT_AXIS_TAG_SLANT:,17,579,case,9,CPPASTCaseStatement
+496811,JUMP_TARGET,-1,default:,17,582,default,13,CPPASTDefaultStatement
+502145,JUMP_TARGET,-1,case DWRITE_GLYPH_IMAGE_FORMATS_NONE:,5,90,case,1,CPPASTCaseStatement
+502148,JUMP_TARGET,-1,case DWRITE_GLYPH_IMAGE_FORMATS_PNG:,5,92,case,4,CPPASTCaseStatement
+502150,JUMP_TARGET,-1,case DWRITE_GLYPH_IMAGE_FORMATS_JPEG:,5,93,case,6,CPPASTCaseStatement
+502152,JUMP_TARGET,-1,case DWRITE_GLYPH_IMAGE_FORMATS_TIFF:,5,94,case,8,CPPASTCaseStatement
+502154,JUMP_TARGET,-1,case DWRITE_GLYPH_IMAGE_FORMATS_PREMULTIPLIED_B8G8R8A8:,5,95,case,10,CPPASTCaseStatement
+502173,JUMP_TARGET,-1,case DWRITE_GLYPH_IMAGE_FORMATS_SVG:,5,98,case,14,CPPASTCaseStatement
+502191,JUMP_TARGET,-1,default:,5,101,default,18,CPPASTDefaultStatement
+504473,JUMP_TARGET,-1,case CursorType::Legacy:,5,558,case,1,CPPASTCaseStatement
+504516,JUMP_TARGET,-1,case CursorType::VerticalBar:,5,565,case,4,CPPASTCaseStatement
+504543,JUMP_TARGET,-1,case CursorType::Underscore:,5,569,case,9,CPPASTCaseStatement
+504585,JUMP_TARGET,-1,case CursorType::EmptyBox:,5,574,case,15,CPPASTCaseStatement
+504638,JUMP_TARGET,-1,case CursorType::FullBox:,5,585,case,18,CPPASTCaseStatement
+504650,JUMP_TARGET,-1,case CursorType::DoubleUnderscore:,5,588,case,22,CPPASTCaseStatement
+504742,JUMP_TARGET,-1,default:,5,599,default,25,CPPASTDefaultStatement
+506232,JUMP_TARGET,-1,case D3D_FEATURE_LEVEL_10_0:,9,398,case,1,CPPASTCaseStatement
+506238,JUMP_TARGET,-1,case D3D_FEATURE_LEVEL_10_1:,9,401,case,5,CPPASTCaseStatement
+506244,JUMP_TARGET,-1,default:,9,404,default,9,CPPASTDefaultStatement
+507733,JUMP_TARGET,-1,"drawGlyphRetry:
+            const auto [fontFaceEntryOuter, fontFaceInserted] = _glyphAtlasMap.insert(fontFaceKey);",9,1036,drawGlyphRetry,11,CPPASTLabelStatement
+509607,JUMP_TARGET,-1,case CursorType::Legacy:,9,1842,case,1,CPPASTCaseStatement
+509653,JUMP_TARGET,-1,case CursorType::VerticalBar:,9,1849,case,4,CPPASTCaseStatement
+509671,JUMP_TARGET,-1,case CursorType::Underscore:,9,1852,case,8,CPPASTCaseStatement
+509706,JUMP_TARGET,-1,case CursorType::EmptyBox:,9,1856,case,13,CPPASTCaseStatement
+509900,JUMP_TARGET,-1,case CursorType::FullBox:,9,1883,case,16,CPPASTCaseStatement
+509905,JUMP_TARGET,-1,case CursorType::DoubleUnderscore:,9,1885,case,19,CPPASTCaseStatement
+509979,JUMP_TARGET,-1,default:,9,1894,default,22,CPPASTDefaultStatement
+514076,JUMP_TARGET,-1,case ReferenceFrame::Absolute:,5,59,case,1,CPPASTCaseStatement
+514084,JUMP_TARGET,-1,case ReferenceFrame::FontSize:,5,61,case,4,CPPASTCaseStatement
+514092,JUMP_TARGET,-1,case ReferenceFrame::AdvanceWidth:,5,63,case,7,CPPASTCaseStatement
+514100,JUMP_TARGET,-1,default:,5,65,default,10,CPPASTDefaultStatement
+517209,JUMP_TARGET,-1,case UnderlineStyle::NoUnderline:,5,956,case,1,CPPASTCaseStatement
+517214,JUMP_TARGET,-1,case UnderlineStyle::SinglyUnderlined:,5,958,case,4,CPPASTCaseStatement
+517226,JUMP_TARGET,-1,case UnderlineStyle::DoublyUnderlined:,5,961,case,8,CPPASTCaseStatement
+517238,JUMP_TARGET,-1,case UnderlineStyle::CurlyUnderlined:,5,964,case,12,CPPASTCaseStatement
+517250,JUMP_TARGET,-1,case UnderlineStyle::DottedUnderlined:,5,967,case,16,CPPASTCaseStatement
+517262,JUMP_TARGET,-1,case UnderlineStyle::DashedUnderlined:,5,970,case,20,CPPASTCaseStatement
+517274,JUMP_TARGET,-1,default:,5,973,default,24,CPPASTDefaultStatement
+520864,JUMP_TARGET,-1,case DWRITE_FONT_AXIS_TAG_WEIGHT:,9,663,case,1,CPPASTCaseStatement
+520872,JUMP_TARGET,-1,case DWRITE_FONT_AXIS_TAG_WIDTH:,9,666,case,5,CPPASTCaseStatement
+520880,JUMP_TARGET,-1,case DWRITE_FONT_AXIS_TAG_ITALIC:,9,669,case,9,CPPASTCaseStatement
+520888,JUMP_TARGET,-1,case DWRITE_FONT_AXIS_TAG_SLANT:,9,672,case,13,CPPASTCaseStatement
+522376,JUMP_TARGET,-1,case D3D_FEATURE_LEVEL_10_0:,5,351,case,1,CPPASTCaseStatement
+522385,JUMP_TARGET,-1,case D3D_FEATURE_LEVEL_10_1:,5,355,case,6,CPPASTCaseStatement
+522394,JUMP_TARGET,-1,default:,5,359,default,11,CPPASTDefaultStatement
+522743,JUMP_TARGET,-1,case DXGI_ALPHA_MODE_PREMULTIPLIED:,5,749,case,1,CPPASTCaseStatement
+522747,JUMP_TARGET,-1,case DXGI_ALPHA_MODE_STRAIGHT:,5,751,case,4,CPPASTCaseStatement
+522751,JUMP_TARGET,-1,case DXGI_ALPHA_MODE_IGNORE:,5,753,case,7,CPPASTCaseStatement
+522755,JUMP_TARGET,-1,case DXGI_ALPHA_MODE_FORCE_DWORD:,5,755,case,10,CPPASTCaseStatement
+522759,JUMP_TARGET,-1,default:,5,757,default,13,CPPASTDefaultStatement
+522760,JUMP_TARGET,-1,case DXGI_ALPHA_MODE_UNSPECIFIED:,5,758,case,14,CPPASTCaseStatement
+522918,JUMP_TARGET,-1,case SwapChainMode::ForHwnd:,5,1205,case,1,CPPASTCaseStatement
+522939,JUMP_TARGET,-1,case SwapChainMode::ForComposition:,5,1212,case,4,CPPASTCaseStatement
+522946,JUMP_TARGET,-1,default:,5,1216,default,7,CPPASTDefaultStatement
+523223,JUMP_TARGET,-1,case SwapChainMode::ForHwnd:,5,2189,case,1,CPPASTCaseStatement
+523234,JUMP_TARGET,-1,case SwapChainMode::ForComposition:,5,2193,case,4,CPPASTCaseStatement
+523260,JUMP_TARGET,-1,default:,5,2201,default,7,CPPASTDefaultStatement
+523394,JUMP_TARGET,-1,case LineRendition::SingleWidth:,5,2353,case,1,CPPASTCaseStatement
+523409,JUMP_TARGET,-1,case LineRendition::DoubleWidth:,5,2357,case,6,CPPASTCaseStatement
+523424,JUMP_TARGET,-1,case LineRendition::DoubleHeightTop:,5,2361,case,11,CPPASTCaseStatement
+523451,JUMP_TARGET,-1,case LineRendition::DoubleHeightBottom:,5,2367,case,17,CPPASTCaseStatement
+527087,JUMP_TARGET,-1,case CursorType::Legacy:,5,709,case,1,CPPASTCaseStatement
+527137,JUMP_TARGET,-1,case CursorType::VerticalBar:,5,726,case,5,CPPASTCaseStatement
+527169,JUMP_TARGET,-1,case CursorType::Underscore:,5,736,case,12,CPPASTCaseStatement
+527189,JUMP_TARGET,-1,case CursorType::DoubleUnderscore:,5,741,case,17,CPPASTCaseStatement
+527241,JUMP_TARGET,-1,case CursorType::EmptyBox:,5,754,case,21,CPPASTCaseStatement
+527356,JUMP_TARGET,-1,case CursorType::FullBox:,5,775,case,25,CPPASTCaseStatement
+527366,JUMP_TARGET,-1,default:,5,779,default,29,CPPASTDefaultStatement
+527782,JUMP_TARGET,-1,case LineRendition::SingleWidth:,5,221,case,1,CPPASTCaseStatement
+527797,JUMP_TARGET,-1,case LineRendition::DoubleWidth:,5,225,case,6,CPPASTCaseStatement
+527812,JUMP_TARGET,-1,case LineRendition::DoubleHeightTop:,5,229,case,11,CPPASTCaseStatement
+527839,JUMP_TARGET,-1,case LineRendition::DoubleHeightBottom:,5,235,case,17,CPPASTCaseStatement
+527985,JUMP_TARGET,-1,case FontType::Soft:,9,308,case,1,CPPASTCaseStatement
+527993,JUMP_TARGET,-1,case FontType::Italic:,9,311,case,5,CPPASTCaseStatement
+528001,JUMP_TARGET,-1,case FontType::Default:,9,314,case,9,CPPASTCaseStatement
+528005,JUMP_TARGET,-1,default:,9,315,default,11,CPPASTDefaultStatement
+530106,JUMP_TARGET,-1,case UnderlineStyle::NoUnderline:,5,385,case,1,CPPASTCaseStatement
+530113,JUMP_TARGET,-1,case UnderlineStyle::SinglyUnderlined:,5,387,case,4,CPPASTCaseStatement
+530120,JUMP_TARGET,-1,case UnderlineStyle::DoublyUnderlined:,5,389,case,7,CPPASTCaseStatement
+530127,JUMP_TARGET,-1,case UnderlineStyle::CurlyUnderlined:,5,391,case,10,CPPASTCaseStatement
+530134,JUMP_TARGET,-1,case UnderlineStyle::DottedUnderlined:,5,393,case,13,CPPASTCaseStatement
+530141,JUMP_TARGET,-1,case UnderlineStyle::DashedUnderlined:,5,395,case,16,CPPASTCaseStatement
+530148,JUMP_TARGET,-1,default:,5,397,default,19,CPPASTDefaultStatement
+531815,JUMP_TARGET,-1,case LineRendition::SingleWidth:,9,140,case,1,CPPASTCaseStatement
+531822,JUMP_TARGET,-1,case LineRendition::DoubleWidth:,9,142,case,4,CPPASTCaseStatement
+531829,JUMP_TARGET,-1,case LineRendition::DoubleHeightTop:,9,144,case,7,CPPASTCaseStatement
+531836,JUMP_TARGET,-1,case LineRendition::DoubleHeightBottom:,9,146,case,10,CPPASTCaseStatement
+539137,JUMP_TARGET,-1,case API_NUMBER_GETCONSOLEINPUT:,5,147,case,1,CPPASTCaseStatement
+539165,JUMP_TARGET,-1,case API_NUMBER_READCONSOLE:,5,154,case,4,CPPASTCaseStatement
+539189,JUMP_TARGET,-1,case API_NUMBER_WRITECONSOLE:,5,160,case,7,CPPASTCaseStatement
+539213,JUMP_TARGET,-1,default:,5,166,default,10,CPPASTDefaultStatement
+541357,JUMP_TARGET,-1,case DispatchTypes::DrcsEraseControl::AllChars:,5,18,case,1,CPPASTCaseStatement
+541363,JUMP_TARGET,-1,case DispatchTypes::DrcsEraseControl::AllRenditions:,5,19,case,3,CPPASTCaseStatement
+541378,JUMP_TARGET,-1,case DispatchTypes::DrcsEraseControl::ReloadedChars:,5,25,case,7,CPPASTCaseStatement
+541386,JUMP_TARGET,-1,default:,5,27,default,10,CPPASTDefaultStatement
+541407,JUMP_TARGET,-1,case DispatchTypes::DrcsFontSet::Default:,9,48,case,1,CPPASTCaseStatement
+541413,JUMP_TARGET,-1,case DispatchTypes::DrcsFontSet::Size80x24:,9,49,case,3,CPPASTCaseStatement
+541426,JUMP_TARGET,-1,case DispatchTypes::DrcsFontSet::Size80x36:,9,53,case,8,CPPASTCaseStatement
+541439,JUMP_TARGET,-1,case DispatchTypes::DrcsFontSet::Size80x48:,9,57,case,13,CPPASTCaseStatement
+541452,JUMP_TARGET,-1,case DispatchTypes::DrcsFontSet::Size132x24:,9,61,case,18,CPPASTCaseStatement
+541465,JUMP_TARGET,-1,case DispatchTypes::DrcsFontSet::Size132x36:,9,65,case,23,CPPASTCaseStatement
+541478,JUMP_TARGET,-1,case DispatchTypes::DrcsFontSet::Size132x48:,9,69,case,28,CPPASTCaseStatement
+541491,JUMP_TARGET,-1,default:,9,73,default,33,CPPASTDefaultStatement
+541502,JUMP_TARGET,-1,case DispatchTypes::DrcsFontUsage::Default:,9,83,case,1,CPPASTCaseStatement
+541508,JUMP_TARGET,-1,case DispatchTypes::DrcsFontUsage::Text:,9,84,case,3,CPPASTCaseStatement
+541518,JUMP_TARGET,-1,case DispatchTypes::DrcsFontUsage::FullCell:,9,87,case,7,CPPASTCaseStatement
+541528,JUMP_TARGET,-1,default:,9,90,default,11,CPPASTDefaultStatement
+541539,JUMP_TARGET,-1,case DispatchTypes::DrcsCellMatrix::Invalid:,9,100,case,1,CPPASTCaseStatement
+541549,JUMP_TARGET,-1,case DispatchTypes::DrcsCellMatrix::Size5x10:,9,103,case,5,CPPASTCaseStatement
+541568,JUMP_TARGET,-1,case DispatchTypes::DrcsCellMatrix::Size6x10:,9,110,case,12,CPPASTCaseStatement
+541591,JUMP_TARGET,-1,case DispatchTypes::DrcsCellMatrix::Size7x10:,9,118,case,19,CPPASTCaseStatement
+541610,JUMP_TARGET,-1,case DispatchTypes::DrcsCellMatrix::Default:,9,125,case,26,CPPASTCaseStatement
+541616,JUMP_TARGET,-1,default:,9,126,default,28,CPPASTDefaultStatement
+541675,JUMP_TARGET,-1,case DispatchTypes::DrcsCharsetSize::Size94:,5,160,case,1,CPPASTCaseStatement
+541689,JUMP_TARGET,-1,case DispatchTypes::DrcsCharsetSize::Size96:,5,163,case,5,CPPASTCaseStatement
+541703,JUMP_TARGET,-1,default:,5,166,default,9,CPPASTDefaultStatement
+543690,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::DeIconifyWindow:,5,104,case,1,CPPASTCaseStatement
+543703,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::IconifyWindow:,5,107,case,5,CPPASTCaseStatement
+543716,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::RefreshWindow:,5,110,case,9,CPPASTCaseStatement
+543731,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::ResizeWindowInCharacters:,5,113,case,13,CPPASTCaseStatement
+543773,JUMP_TARGET,-1,default:,5,122,default,17,CPPASTDefaultStatement
+544233,JUMP_TARGET,-1,case DispatchTypes::MacroEncoding::HexPair:,9,88,case,1,CPPASTCaseStatement
+544245,JUMP_TARGET,-1,case DispatchTypes::MacroEncoding::Text:,9,91,case,5,CPPASTCaseStatement
+544257,JUMP_TARGET,-1,default:,9,94,default,9,CPPASTDefaultStatement
+544263,JUMP_TARGET,-1,case DispatchTypes::MacroDeleteControl::DeleteId:,9,100,case,1,CPPASTCaseStatement
+544273,JUMP_TARGET,-1,case DispatchTypes::MacroDeleteControl::DeleteAll:,9,103,case,5,CPPASTCaseStatement
+544287,JUMP_TARGET,-1,default:,9,109,default,9,CPPASTDefaultStatement
+544328,JUMP_TARGET,-1,case State::ExpectingText:,5,147,case,1,CPPASTCaseStatement
+544337,JUMP_TARGET,-1,case State::ExpectingHexDigit:,5,150,case,5,CPPASTCaseStatement
+544386,JUMP_TARGET,-1,case State::ExpectingSecondHexDigit:,5,169,case,9,CPPASTCaseStatement
+544406,JUMP_TARGET,-1,case State::ExpectingRepeatCount:,5,174,case,15,CPPASTCaseStatement
+544467,JUMP_TARGET,-1,default:,5,191,default,19,CPPASTDefaultStatement
+545221,JUMP_TARGET,-1,"case VTID(""m""):",13,4149,case,1,CPPASTCaseStatement
+545226,JUMP_TARGET,-1,"case VTID(""r""):",13,4152,case,5,CPPASTCaseStatement
+545231,JUMP_TARGET,-1,"case VTID(""s""):",13,4155,case,9,CPPASTCaseStatement
+545236,JUMP_TARGET,-1,"case VTID(""\""q""):",13,4158,case,13,CPPASTCaseStatement
+545241,JUMP_TARGET,-1,"case VTID(""*x""):",13,4161,case,17,CPPASTCaseStatement
+545246,JUMP_TARGET,-1,"case VTID("",|""):",13,4164,case,21,CPPASTCaseStatement
+545254,JUMP_TARGET,-1,default:,13,4167,default,25,CPPASTDefaultStatement
+548492,JUMP_TARGET,-1,case DispatchTypes::EraseType::FromBeginning:,5,870,case,1,CPPASTCaseStatement
+548513,JUMP_TARGET,-1,case DispatchTypes::EraseType::ToEnd:,5,873,case,5,CPPASTCaseStatement
+548536,JUMP_TARGET,-1,case DispatchTypes::EraseType::All:,5,876,case,9,CPPASTCaseStatement
+548559,JUMP_TARGET,-1,default:,5,879,default,13,CPPASTDefaultStatement
+548706,JUMP_TARGET,-1,case DispatchTypes::EraseType::FromBeginning:,5,935,case,1,CPPASTCaseStatement
+548734,JUMP_TARGET,-1,case DispatchTypes::EraseType::ToEnd:,5,939,case,6,CPPASTCaseStatement
+548762,JUMP_TARGET,-1,case DispatchTypes::EraseType::All:,5,943,case,11,CPPASTCaseStatement
+548781,JUMP_TARGET,-1,default:,5,946,default,15,CPPASTDefaultStatement
+548830,JUMP_TARGET,-1,case DispatchTypes::EraseType::FromBeginning:,5,971,case,1,CPPASTCaseStatement
+548849,JUMP_TARGET,-1,case DispatchTypes::EraseType::ToEnd:,5,974,case,5,CPPASTCaseStatement
+548870,JUMP_TARGET,-1,case DispatchTypes::EraseType::All:,5,977,case,9,CPPASTCaseStatement
+548891,JUMP_TARGET,-1,default:,5,980,default,13,CPPASTDefaultStatement
+550069,JUMP_TARGET,-1,case DispatchTypes::ChangeExtent::Default:,5,1353,case,1,CPPASTCaseStatement
+550075,JUMP_TARGET,-1,case DispatchTypes::ChangeExtent::Stream:,5,1354,case,3,CPPASTCaseStatement
+550090,JUMP_TARGET,-1,case DispatchTypes::ChangeExtent::Rectangle:,5,1357,case,7,CPPASTCaseStatement
+550105,JUMP_TARGET,-1,default:,5,1360,default,11,CPPASTDefaultStatement
+550457,JUMP_TARGET,-1,case DispatchTypes::StatusType::OperatingStatus:,5,1487,case,1,CPPASTCaseStatement
+550467,JUMP_TARGET,-1,case DispatchTypes::StatusType::CursorPositionReport:,5,1490,case,5,CPPASTCaseStatement
+550477,JUMP_TARGET,-1,case DispatchTypes::StatusType::ExtendedCursorPositionReport:,5,1493,case,9,CPPASTCaseStatement
+550487,JUMP_TARGET,-1,case DispatchTypes::StatusType::PrinterStatus:,5,1496,case,13,CPPASTCaseStatement
+550497,JUMP_TARGET,-1,case DispatchTypes::StatusType::UserDefinedKeys:,5,1499,case,17,CPPASTCaseStatement
+550507,JUMP_TARGET,-1,case DispatchTypes::StatusType::KeyboardStatus:,5,1502,case,21,CPPASTCaseStatement
+550517,JUMP_TARGET,-1,case DispatchTypes::StatusType::LocatorStatus:,5,1505,case,25,CPPASTCaseStatement
+550527,JUMP_TARGET,-1,case DispatchTypes::StatusType::LocatorIdentity:,5,1508,case,29,CPPASTCaseStatement
+550537,JUMP_TARGET,-1,case DispatchTypes::StatusType::MacroSpaceReport:,5,1511,case,33,CPPASTCaseStatement
+550546,JUMP_TARGET,-1,case DispatchTypes::StatusType::MemoryChecksum:,5,1514,case,37,CPPASTCaseStatement
+550556,JUMP_TARGET,-1,case DispatchTypes::StatusType::DataIntegrity:,5,1517,case,41,CPPASTCaseStatement
+550566,JUMP_TARGET,-1,case DispatchTypes::StatusType::MultipleSessionStatus:,5,1520,case,45,CPPASTCaseStatement
+550576,JUMP_TARGET,-1,default:,5,1523,default,49,CPPASTDefaultStatement
+550644,JUMP_TARGET,-1,case DispatchTypes::ReportingPermission::Unsolicited:,5,1630,case,1,CPPASTCaseStatement
+550657,JUMP_TARGET,-1,case DispatchTypes::ReportingPermission::Solicited:,5,1633,case,5,CPPASTCaseStatement
+550670,JUMP_TARGET,-1,default:,5,1636,default,9,CPPASTDefaultStatement
+551113,JUMP_TARGET,-1,case DispatchTypes::ModeParams::IRM_InsertReplaceMode:,5,1844,case,1,CPPASTCaseStatement
+551129,JUMP_TARGET,-1,case DispatchTypes::ModeParams::LNM_LineFeedNewLineMode:,5,1847,case,5,CPPASTCaseStatement
+551178,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECCKM_CursorKeysMode:,5,1856,case,9,CPPASTCaseStatement
+551197,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECANM_AnsiMode:,5,1859,case,13,CPPASTCaseStatement
+551206,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECCOLM_SetNumberOfColumns:,5,1861,case,16,CPPASTCaseStatement
+551216,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECSCNM_ScreenMode:,5,1864,case,20,CPPASTCaseStatement
+551246,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECOM_OriginMode:,5,1873,case,26,CPPASTCaseStatement
+551265,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECAWM_AutoWrapMode:,5,1878,case,31,CPPASTCaseStatement
+551297,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECARM_AutoRepeatMode:,5,1886,case,36,CPPASTCaseStatement
+551316,JUMP_TARGET,-1,case DispatchTypes::ModeParams::ATT610_StartCursorBlink:,5,1889,case,40,CPPASTCaseStatement
+551339,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECTCEM_TextCursorEnableMode:,5,1892,case,44,CPPASTCaseStatement
+551358,JUMP_TARGET,-1,case DispatchTypes::ModeParams::XTERM_EnableDECCOLMSupport:,5,1895,case,48,CPPASTCaseStatement
+551374,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECNKM_NumericKeypadMode:,5,1898,case,52,CPPASTCaseStatement
+551393,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECBKM_BackarrowKeyMode:,5,1901,case,56,CPPASTCaseStatement
+551412,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECLRMM_LeftRightMarginMode:,5,1904,case,60,CPPASTCaseStatement
+551458,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECECM_EraseColorMode:,5,1915,case,66,CPPASTCaseStatement
+551474,JUMP_TARGET,-1,case DispatchTypes::ModeParams::VT200_MOUSE_MODE:,5,1918,case,70,CPPASTCaseStatement
+551493,JUMP_TARGET,-1,case DispatchTypes::ModeParams::BUTTON_EVENT_MOUSE_MODE:,5,1921,case,74,CPPASTCaseStatement
+551512,JUMP_TARGET,-1,case DispatchTypes::ModeParams::ANY_EVENT_MOUSE_MODE:,5,1924,case,78,CPPASTCaseStatement
+551531,JUMP_TARGET,-1,case DispatchTypes::ModeParams::UTF8_EXTENDED_MODE:,5,1927,case,82,CPPASTCaseStatement
+551550,JUMP_TARGET,-1,case DispatchTypes::ModeParams::SGR_EXTENDED_MODE:,5,1930,case,86,CPPASTCaseStatement
+551569,JUMP_TARGET,-1,case DispatchTypes::ModeParams::FOCUS_EVENT_MODE:,5,1933,case,90,CPPASTCaseStatement
+551591,JUMP_TARGET,-1,case DispatchTypes::ModeParams::ALTERNATE_SCROLL:,5,1938,case,94,CPPASTCaseStatement
+551610,JUMP_TARGET,-1,case DispatchTypes::ModeParams::ASB_AlternateScreenBuffer:,5,1941,case,98,CPPASTCaseStatement
+551620,JUMP_TARGET,-1,case DispatchTypes::ModeParams::XTERM_BracketedPasteMode:,5,1944,case,102,CPPASTCaseStatement
+551642,JUMP_TARGET,-1,case DispatchTypes::ModeParams::W32IM_Win32InputMode:,5,1947,case,106,CPPASTCaseStatement
+551660,JUMP_TARGET,-1,default:,5,1956,default,110,CPPASTDefaultStatement
+551694,JUMP_TARGET,-1,case DispatchTypes::ModeParams::IRM_InsertReplaceMode:,5,1997,case,1,CPPASTCaseStatement
+551710,JUMP_TARGET,-1,case DispatchTypes::ModeParams::LNM_LineFeedNewLineMode:,5,2000,case,5,CPPASTCaseStatement
+551749,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECCKM_CursorKeysMode:,5,2008,case,9,CPPASTCaseStatement
+551767,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECANM_AnsiMode:,5,2011,case,13,CPPASTCaseStatement
+551788,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECCOLM_SetNumberOfColumns:,5,2014,case,17,CPPASTCaseStatement
+551811,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECSCNM_ScreenMode:,5,2021,case,21,CPPASTCaseStatement
+551829,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECOM_OriginMode:,5,2024,case,25,CPPASTCaseStatement
+551845,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECAWM_AutoWrapMode:,5,2027,case,29,CPPASTCaseStatement
+551863,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECARM_AutoRepeatMode:,5,2030,case,33,CPPASTCaseStatement
+551881,JUMP_TARGET,-1,case DispatchTypes::ModeParams::ATT610_StartCursorBlink:,5,2033,case,37,CPPASTCaseStatement
+551900,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECTCEM_TextCursorEnableMode:,5,2036,case,41,CPPASTCaseStatement
+551919,JUMP_TARGET,-1,case DispatchTypes::ModeParams::XTERM_EnableDECCOLMSupport:,5,2039,case,45,CPPASTCaseStatement
+551942,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECNKM_NumericKeypadMode:,5,2046,case,49,CPPASTCaseStatement
+551960,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECBKM_BackarrowKeyMode:,5,2049,case,53,CPPASTCaseStatement
+551978,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECLRMM_LeftRightMarginMode:,5,2052,case,57,CPPASTCaseStatement
+551994,JUMP_TARGET,-1,case DispatchTypes::ModeParams::DECECM_EraseColorMode:,5,2055,case,61,CPPASTCaseStatement
+552010,JUMP_TARGET,-1,case DispatchTypes::ModeParams::VT200_MOUSE_MODE:,5,2058,case,65,CPPASTCaseStatement
+552028,JUMP_TARGET,-1,case DispatchTypes::ModeParams::BUTTON_EVENT_MOUSE_MODE:,5,2061,case,69,CPPASTCaseStatement
+552046,JUMP_TARGET,-1,case DispatchTypes::ModeParams::ANY_EVENT_MOUSE_MODE:,5,2064,case,73,CPPASTCaseStatement
+552064,JUMP_TARGET,-1,case DispatchTypes::ModeParams::UTF8_EXTENDED_MODE:,5,2067,case,77,CPPASTCaseStatement
+552082,JUMP_TARGET,-1,case DispatchTypes::ModeParams::SGR_EXTENDED_MODE:,5,2070,case,81,CPPASTCaseStatement
+552100,JUMP_TARGET,-1,case DispatchTypes::ModeParams::FOCUS_EVENT_MODE:,5,2073,case,85,CPPASTCaseStatement
+552118,JUMP_TARGET,-1,case DispatchTypes::ModeParams::ALTERNATE_SCROLL:,5,2076,case,89,CPPASTCaseStatement
+552136,JUMP_TARGET,-1,case DispatchTypes::ModeParams::ASB_AlternateScreenBuffer:,5,2079,case,93,CPPASTCaseStatement
+552146,JUMP_TARGET,-1,case DispatchTypes::ModeParams::XTERM_BracketedPasteMode:,5,2082,case,97,CPPASTCaseStatement
+552164,JUMP_TARGET,-1,case DispatchTypes::ModeParams::W32IM_Win32InputMode:,5,2085,case,101,CPPASTCaseStatement
+552182,JUMP_TARGET,-1,default:,5,2088,default,105,CPPASTDefaultStatement
+553080,JUMP_TARGET,-1,case DispatchTypes::LineFeedType::DependsOnMode:,5,2546,case,1,CPPASTCaseStatement
+553100,JUMP_TARGET,-1,case DispatchTypes::LineFeedType::WithoutReturn:,5,2549,case,5,CPPASTCaseStatement
+553112,JUMP_TARGET,-1,case DispatchTypes::LineFeedType::WithReturn:,5,2552,case,9,CPPASTCaseStatement
+553124,JUMP_TARGET,-1,default:,5,2555,default,13,CPPASTDefaultStatement
+553731,JUMP_TARGET,-1,case DispatchTypes::TabClearType::ClearCurrentColumn:,5,2784,case,1,CPPASTCaseStatement
+553740,JUMP_TARGET,-1,case DispatchTypes::TabClearType::ClearAllColumns:,5,2787,case,5,CPPASTCaseStatement
+553749,JUMP_TARGET,-1,default:,5,2790,default,9,CPPASTDefaultStatement
+553925,JUMP_TARGET,-1,case DispatchTypes::CodingSystem::ISO2022:,5,2893,case,1,CPPASTCaseStatement
+553945,JUMP_TARGET,-1,case DispatchTypes::CodingSystem::UTF8:,5,2898,case,7,CPPASTCaseStatement
+553967,JUMP_TARGET,-1,default:,5,2903,default,13,CPPASTDefaultStatement
+554708,JUMP_TARGET,-1,case DispatchTypes::CursorStyle::UserDefault:,5,3307,case,1,CPPASTCaseStatement
+554724,JUMP_TARGET,-1,case DispatchTypes::CursorStyle::BlinkingBlock:,5,3311,case,6,CPPASTCaseStatement
+554739,JUMP_TARGET,-1,case DispatchTypes::CursorStyle::SteadyBlock:,5,3315,case,11,CPPASTCaseStatement
+554754,JUMP_TARGET,-1,case DispatchTypes::CursorStyle::BlinkingUnderline:,5,3320,case,16,CPPASTCaseStatement
+554769,JUMP_TARGET,-1,case DispatchTypes::CursorStyle::SteadyUnderline:,5,3324,case,21,CPPASTCaseStatement
+554784,JUMP_TARGET,-1,case DispatchTypes::CursorStyle::BlinkingBar:,5,3329,case,26,CPPASTCaseStatement
+554799,JUMP_TARGET,-1,case DispatchTypes::CursorStyle::SteadyBar:,5,3333,case,31,CPPASTCaseStatement
+554814,JUMP_TARGET,-1,default:,5,3338,default,36,CPPASTDefaultStatement
+554986,JUMP_TARGET,-1,case DispatchTypes::ColorItem::NormalText:,5,3454,case,1,CPPASTCaseStatement
+555009,JUMP_TARGET,-1,case DispatchTypes::ColorItem::WindowFrame:,5,3458,case,6,CPPASTCaseStatement
+555032,JUMP_TARGET,-1,default:,5,3462,default,11,CPPASTDefaultStatement
+555085,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::DeIconifyWindow:,5,3498,case,1,CPPASTCaseStatement
+555098,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::IconifyWindow:,5,3501,case,5,CPPASTCaseStatement
+555111,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::RefreshWindow:,5,3504,case,9,CPPASTCaseStatement
+555126,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::ResizeWindowInCharacters:,5,3507,case,13,CPPASTCaseStatement
+555148,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::ReportTextSizeInCharacters:,5,3510,case,17,CPPASTCaseStatement
+555183,JUMP_TARGET,-1,default:,5,3513,default,21,CPPASTDefaultStatement
+555684,JUMP_TARGET,-1,case L'A':,9,3735,case,1,CPPASTCaseStatement
+555702,JUMP_TARGET,-1,case L'B':,9,3743,case,4,CPPASTCaseStatement
+555711,JUMP_TARGET,-1,case L'C':,9,3748,case,7,CPPASTCaseStatement
+555720,JUMP_TARGET,-1,case L'D':,9,3753,case,10,CPPASTCaseStatement
+555768,JUMP_TARGET,-1,default:,9,3772,default,13,CPPASTDefaultStatement
+556157,JUMP_TARGET,-1,case DispatchTypes::ReportFormat::ColorTableReport:,5,4057,case,1,CPPASTCaseStatement
+556165,JUMP_TARGET,-1,default:,5,4059,default,4,CPPASTDefaultStatement
+556560,JUMP_TARGET,-1,case DispatchTypes::ColorItem::NormalText:,5,4372,case,1,CPPASTCaseStatement
+556585,JUMP_TARGET,-1,case DispatchTypes::ColorItem::WindowFrame:,5,4376,case,6,CPPASTCaseStatement
+556610,JUMP_TARGET,-1,default:,5,4380,default,11,CPPASTDefaultStatement
+556663,JUMP_TARGET,-1,case DispatchTypes::PresentationReportFormat::CursorInformationReport:,5,4408,case,1,CPPASTCaseStatement
+556672,JUMP_TARGET,-1,case DispatchTypes::PresentationReportFormat::TabulationStopReport:,5,4411,case,5,CPPASTCaseStatement
+556681,JUMP_TARGET,-1,default:,5,4414,default,9,CPPASTDefaultStatement
+556692,JUMP_TARGET,-1,case DispatchTypes::PresentationReportFormat::CursorInformationReport:,5,4430,case,1,CPPASTCaseStatement
+556700,JUMP_TARGET,-1,case DispatchTypes::PresentationReportFormat::TabulationStopReport:,5,4432,case,4,CPPASTCaseStatement
+556708,JUMP_TARGET,-1,default:,5,4434,default,7,CPPASTDefaultStatement
+558298,JUMP_TARGET,-1,case ForegroundExtended:,9,106,case,1,CPPASTCaseStatement
+558306,JUMP_TARGET,-1,case BackgroundExtended:,9,109,case,5,CPPASTCaseStatement
+558314,JUMP_TARGET,-1,case UnderlineColor:,9,112,case,9,CPPASTCaseStatement
+558322,JUMP_TARGET,-1,default:,9,115,default,13,CPPASTDefaultStatement
+558547,JUMP_TARGET,-1,case DispatchTypes::GraphicsOptions::RGBColorOrFaint:,5,123,case,1,CPPASTCaseStatement
+558625,JUMP_TARGET,-1,case DispatchTypes::GraphicsOptions::BlinkOrXterm256Index:,5,145,case,4,CPPASTCaseStatement
+558665,JUMP_TARGET,-1,default:,5,161,default,7,CPPASTDefaultStatement
+558706,JUMP_TARGET,-1,case Off:,5,190,case,1,CPPASTCaseStatement
+558726,JUMP_TARGET,-1,case ForegroundDefault:,5,196,case,8,CPPASTCaseStatement
+558734,JUMP_TARGET,-1,case BackgroundDefault:,5,199,case,12,CPPASTCaseStatement
+558742,JUMP_TARGET,-1,case UnderlineColorDefault:,5,202,case,16,CPPASTCaseStatement
+558750,JUMP_TARGET,-1,case Intense:,5,205,case,20,CPPASTCaseStatement
+558759,JUMP_TARGET,-1,case RGBColorOrFaint:,5,208,case,24,CPPASTCaseStatement
+558768,JUMP_TARGET,-1,case NotIntenseOrFaint:,5,211,case,28,CPPASTCaseStatement
+558782,JUMP_TARGET,-1,case Italics:,5,215,case,33,CPPASTCaseStatement
+558791,JUMP_TARGET,-1,case NotItalics:,5,218,case,37,CPPASTCaseStatement
+558800,JUMP_TARGET,-1,case BlinkOrXterm256Index:,5,221,case,41,CPPASTCaseStatement
+558802,JUMP_TARGET,-1,case RapidBlink:,5,222,case,43,CPPASTCaseStatement
+558811,JUMP_TARGET,-1,case Steady:,5,225,case,47,CPPASTCaseStatement
+558820,JUMP_TARGET,-1,case Invisible:,5,228,case,51,CPPASTCaseStatement
+558829,JUMP_TARGET,-1,case Visible:,5,231,case,55,CPPASTCaseStatement
+558838,JUMP_TARGET,-1,case CrossedOut:,5,234,case,59,CPPASTCaseStatement
+558847,JUMP_TARGET,-1,case NotCrossedOut:,5,237,case,63,CPPASTCaseStatement
+558856,JUMP_TARGET,-1,case Negative:,5,240,case,67,CPPASTCaseStatement
+558865,JUMP_TARGET,-1,case Positive:,5,243,case,71,CPPASTCaseStatement
+558874,JUMP_TARGET,-1,case Underline:,5,246,case,75,CPPASTCaseStatement
+558885,JUMP_TARGET,-1,case DoublyUnderlined:,5,249,case,79,CPPASTCaseStatement
+558896,JUMP_TARGET,-1,case NoUnderline:,5,252,case,83,CPPASTCaseStatement
+558907,JUMP_TARGET,-1,case Overline:,5,255,case,87,CPPASTCaseStatement
+558916,JUMP_TARGET,-1,case NoOverline:,5,258,case,91,CPPASTCaseStatement
+558925,JUMP_TARGET,-1,case ForegroundBlack:,5,261,case,95,CPPASTCaseStatement
+558936,JUMP_TARGET,-1,case ForegroundBlue:,5,264,case,99,CPPASTCaseStatement
+558947,JUMP_TARGET,-1,case ForegroundGreen:,5,267,case,103,CPPASTCaseStatement
+558958,JUMP_TARGET,-1,case ForegroundCyan:,5,270,case,107,CPPASTCaseStatement
+558969,JUMP_TARGET,-1,case ForegroundRed:,5,273,case,111,CPPASTCaseStatement
+558980,JUMP_TARGET,-1,case ForegroundMagenta:,5,276,case,115,CPPASTCaseStatement
+558991,JUMP_TARGET,-1,case ForegroundYellow:,5,279,case,119,CPPASTCaseStatement
+559002,JUMP_TARGET,-1,case ForegroundWhite:,5,282,case,123,CPPASTCaseStatement
+559013,JUMP_TARGET,-1,case BackgroundBlack:,5,285,case,127,CPPASTCaseStatement
+559024,JUMP_TARGET,-1,case BackgroundBlue:,5,288,case,131,CPPASTCaseStatement
+559035,JUMP_TARGET,-1,case BackgroundGreen:,5,291,case,135,CPPASTCaseStatement
+559046,JUMP_TARGET,-1,case BackgroundCyan:,5,294,case,139,CPPASTCaseStatement
+559057,JUMP_TARGET,-1,case BackgroundRed:,5,297,case,143,CPPASTCaseStatement
+559068,JUMP_TARGET,-1,case BackgroundMagenta:,5,300,case,147,CPPASTCaseStatement
+559079,JUMP_TARGET,-1,case BackgroundYellow:,5,303,case,151,CPPASTCaseStatement
+559090,JUMP_TARGET,-1,case BackgroundWhite:,5,306,case,155,CPPASTCaseStatement
+559101,JUMP_TARGET,-1,case BrightForegroundBlack:,5,309,case,159,CPPASTCaseStatement
+559112,JUMP_TARGET,-1,case BrightForegroundBlue:,5,312,case,163,CPPASTCaseStatement
+559123,JUMP_TARGET,-1,case BrightForegroundGreen:,5,315,case,167,CPPASTCaseStatement
+559134,JUMP_TARGET,-1,case BrightForegroundCyan:,5,318,case,171,CPPASTCaseStatement
+559145,JUMP_TARGET,-1,case BrightForegroundRed:,5,321,case,175,CPPASTCaseStatement
+559156,JUMP_TARGET,-1,case BrightForegroundMagenta:,5,324,case,179,CPPASTCaseStatement
+559167,JUMP_TARGET,-1,case BrightForegroundYellow:,5,327,case,183,CPPASTCaseStatement
+559178,JUMP_TARGET,-1,case BrightForegroundWhite:,5,330,case,187,CPPASTCaseStatement
+559189,JUMP_TARGET,-1,case BrightBackgroundBlack:,5,333,case,191,CPPASTCaseStatement
+559200,JUMP_TARGET,-1,case BrightBackgroundBlue:,5,336,case,195,CPPASTCaseStatement
+559211,JUMP_TARGET,-1,case BrightBackgroundGreen:,5,339,case,199,CPPASTCaseStatement
+559222,JUMP_TARGET,-1,case BrightBackgroundCyan:,5,342,case,203,CPPASTCaseStatement
+559233,JUMP_TARGET,-1,case BrightBackgroundRed:,5,345,case,207,CPPASTCaseStatement
+559244,JUMP_TARGET,-1,case BrightBackgroundMagenta:,5,348,case,211,CPPASTCaseStatement
+559255,JUMP_TARGET,-1,case BrightBackgroundYellow:,5,351,case,215,CPPASTCaseStatement
+559266,JUMP_TARGET,-1,case BrightBackgroundWhite:,5,354,case,219,CPPASTCaseStatement
+559277,JUMP_TARGET,-1,case ForegroundExtended:,5,357,case,223,CPPASTCaseStatement
+559292,JUMP_TARGET,-1,case BackgroundExtended:,5,359,case,226,CPPASTCaseStatement
+559307,JUMP_TARGET,-1,default:,5,361,default,229,CPPASTDefaultStatement
+559320,JUMP_TARGET,-1,case Underline:,5,383,case,1,CPPASTCaseStatement
+559330,JUMP_TARGET,-1,case ForegroundExtended:,5,386,case,5,CPPASTCaseStatement
+559332,JUMP_TARGET,-1,case BackgroundExtended:,5,387,case,7,CPPASTCaseStatement
+559334,JUMP_TARGET,-1,case UnderlineColor:,5,388,case,9,CPPASTCaseStatement
+559341,JUMP_TARGET,-1,default:,5,391,default,13,CPPASTDefaultStatement
+559438,JUMP_TARGET,-1,case Default:,9,448,case,1,CPPASTCaseStatement
+559446,JUMP_TARGET,-1,case Protected:,9,451,case,5,CPPASTCaseStatement
+559454,JUMP_TARGET,-1,case Unprotected:,9,454,case,9,CPPASTCaseStatement
+563659,JUMP_TARGET,-1,"case VTID(""B""):",5,181,case,1,CPPASTCaseStatement
+563662,JUMP_TARGET,-1,"case VTID(""1""):",5,182,case,3,CPPASTCaseStatement
+563667,JUMP_TARGET,-1,"case VTID(""0""):",5,184,case,6,CPPASTCaseStatement
+563670,JUMP_TARGET,-1,"case VTID(""2""):",5,185,case,8,CPPASTCaseStatement
+563675,JUMP_TARGET,-1,"case VTID(""<""):",5,187,case,11,CPPASTCaseStatement
+563680,JUMP_TARGET,-1,"case VTID(""A""):",5,189,case,14,CPPASTCaseStatement
+563685,JUMP_TARGET,-1,"case VTID(""4""):",5,191,case,17,CPPASTCaseStatement
+563690,JUMP_TARGET,-1,"case VTID(""5""):",5,193,case,20,CPPASTCaseStatement
+563693,JUMP_TARGET,-1,"case VTID(""C""):",5,194,case,22,CPPASTCaseStatement
+563698,JUMP_TARGET,-1,"case VTID(""R""):",5,196,case,25,CPPASTCaseStatement
+563703,JUMP_TARGET,-1,"case VTID(""f""):",5,198,case,28,CPPASTCaseStatement
+563708,JUMP_TARGET,-1,"case VTID(""9""):",5,200,case,31,CPPASTCaseStatement
+563711,JUMP_TARGET,-1,"case VTID(""Q""):",5,201,case,33,CPPASTCaseStatement
+563716,JUMP_TARGET,-1,"case VTID(""K""):",5,203,case,36,CPPASTCaseStatement
+563721,JUMP_TARGET,-1,"case VTID(""Y""):",5,205,case,39,CPPASTCaseStatement
+563726,JUMP_TARGET,-1,"case VTID(""6""):",5,207,case,42,CPPASTCaseStatement
+563729,JUMP_TARGET,-1,"case VTID(""E""):",5,208,case,44,CPPASTCaseStatement
+563734,JUMP_TARGET,-1,"case VTID(""`""):",5,210,case,47,CPPASTCaseStatement
+563739,JUMP_TARGET,-1,"case VTID(""Z""):",5,212,case,50,CPPASTCaseStatement
+563744,JUMP_TARGET,-1,"case VTID(""7""):",5,214,case,53,CPPASTCaseStatement
+563747,JUMP_TARGET,-1,"case VTID(""H""):",5,215,case,55,CPPASTCaseStatement
+563752,JUMP_TARGET,-1,"case VTID(""=""):",5,217,case,58,CPPASTCaseStatement
+563757,JUMP_TARGET,-1,"case VTID(""&4""):",5,219,case,61,CPPASTCaseStatement
+563762,JUMP_TARGET,-1,"case VTID(""&5""):",5,221,case,64,CPPASTCaseStatement
+563767,JUMP_TARGET,-1,"case VTID(""\""?""):",5,223,case,67,CPPASTCaseStatement
+563772,JUMP_TARGET,-1,"case VTID(""\"">""):",5,225,case,70,CPPASTCaseStatement
+563777,JUMP_TARGET,-1,"case VTID(""\""4""):",5,227,case,73,CPPASTCaseStatement
+563782,JUMP_TARGET,-1,"case VTID(""%=""):",5,229,case,76,CPPASTCaseStatement
+563787,JUMP_TARGET,-1,"case VTID(""%0""):",5,231,case,79,CPPASTCaseStatement
+563792,JUMP_TARGET,-1,"case VTID(""%2""):",5,233,case,82,CPPASTCaseStatement
+563797,JUMP_TARGET,-1,"case VTID(""%5""):",5,235,case,85,CPPASTCaseStatement
+563802,JUMP_TARGET,-1,"case VTID(""%6""):",5,237,case,88,CPPASTCaseStatement
+563807,JUMP_TARGET,-1,default:,5,239,default,91,CPPASTDefaultStatement
+563824,JUMP_TARGET,-1,"case VTID(""A""):",5,255,case,1,CPPASTCaseStatement
+563827,JUMP_TARGET,-1,"case VTID(""<""):",5,256,case,3,CPPASTCaseStatement
+563832,JUMP_TARGET,-1,"case VTID(""B""):",5,258,case,6,CPPASTCaseStatement
+563837,JUMP_TARGET,-1,"case VTID(""L""):",5,260,case,9,CPPASTCaseStatement
+563842,JUMP_TARGET,-1,"case VTID(""F""):",5,262,case,12,CPPASTCaseStatement
+563847,JUMP_TARGET,-1,"case VTID(""H""):",5,264,case,15,CPPASTCaseStatement
+563852,JUMP_TARGET,-1,"case VTID(""M""):",5,266,case,18,CPPASTCaseStatement
+563857,JUMP_TARGET,-1,default:,5,268,default,21,CPPASTDefaultStatement
+565598,JUMP_TARGET,-1,case FOCUS_EVENT:,17,265,case,1,CPPASTCaseStatement
+565625,JUMP_TARGET,-1,case KEY_EVENT:,17,276,case,4,CPPASTCaseStatement
+565689,JUMP_TARGET,-1,case MENU_EVENT:,17,292,case,7,CPPASTCaseStatement
+565720,JUMP_TARGET,-1,case MOUSE_EVENT:,17,304,case,10,CPPASTCaseStatement
+565776,JUMP_TARGET,-1,case WINDOW_BUFFER_SIZE_EVENT:,17,319,case,13,CPPASTCaseStatement
+565811,JUMP_TARGET,-1,default:,17,331,default,16,CPPASTDefaultStatement
+565847,JUMP_TARGET,-1,case FOCUS_EVENT:,21,350,case,1,CPPASTCaseStatement
+565868,JUMP_TARGET,-1,case KEY_EVENT:,21,356,case,4,CPPASTCaseStatement
+565973,JUMP_TARGET,-1,case MENU_EVENT:,21,367,case,7,CPPASTCaseStatement
+565994,JUMP_TARGET,-1,case MOUSE_EVENT:,21,373,case,10,CPPASTCaseStatement
+566087,JUMP_TARGET,-1,case WINDOW_BUFFER_SIZE_EVENT:,21,383,case,13,CPPASTCaseStatement
+566132,JUMP_TARGET,-1,default:,21,390,default,16,CPPASTDefaultStatement
+566985,JUMP_TARGET,-1,case CursorDirection::UP:,9,250,case,1,CPPASTCaseStatement
+566997,JUMP_TARGET,-1,case CursorDirection::DOWN:,9,252,case,4,CPPASTCaseStatement
+567009,JUMP_TARGET,-1,case CursorDirection::LEFT:,9,254,case,7,CPPASTCaseStatement
+567021,JUMP_TARGET,-1,case CursorDirection::RIGHT:,9,256,case,10,CPPASTCaseStatement
+567033,JUMP_TARGET,-1,case CursorDirection::NEXTLINE:,9,258,case,13,CPPASTCaseStatement
+567045,JUMP_TARGET,-1,case CursorDirection::PREVLINE:,9,260,case,16,CPPASTCaseStatement
+567165,JUMP_TARGET,-1,case CursorX::LEFT:,9,301,case,1,CPPASTCaseStatement
+567180,JUMP_TARGET,-1,case CursorX::RIGHT:,9,305,case,6,CPPASTCaseStatement
+567199,JUMP_TARGET,-1,case CursorX::XCENTER:,9,309,case,11,CPPASTCaseStatement
+567221,JUMP_TARGET,-1,case CursorY::TOP:,9,317,case,1,CPPASTCaseStatement
+567238,JUMP_TARGET,-1,case CursorY::BOTTOM:,9,321,case,6,CPPASTCaseStatement
+567257,JUMP_TARGET,-1,case CursorY::YCENTER:,9,325,case,11,CPPASTCaseStatement
+569976,JUMP_TARGET,-1,case VK_TAB:,9,92,case,1,CPPASTCaseStatement
+569986,JUMP_TARGET,-1,case VK_BACK:,9,95,case,5,CPPASTCaseStatement
+569996,JUMP_TARGET,-1,case VK_ESCAPE:,9,98,case,9,CPPASTCaseStatement
+570006,JUMP_TARGET,-1,case VK_PAUSE:,9,101,case,13,CPPASTCaseStatement
+570016,JUMP_TARGET,-1,case VK_UP:,9,104,case,17,CPPASTCaseStatement
+570026,JUMP_TARGET,-1,case VK_DOWN:,9,107,case,21,CPPASTCaseStatement
+570036,JUMP_TARGET,-1,case VK_RIGHT:,9,110,case,25,CPPASTCaseStatement
+570046,JUMP_TARGET,-1,case VK_LEFT:,9,113,case,29,CPPASTCaseStatement
+570056,JUMP_TARGET,-1,case VK_HOME:,9,116,case,33,CPPASTCaseStatement
+570066,JUMP_TARGET,-1,case VK_INSERT:,9,119,case,37,CPPASTCaseStatement
+570076,JUMP_TARGET,-1,case VK_DELETE:,9,122,case,41,CPPASTCaseStatement
+570086,JUMP_TARGET,-1,case VK_END:,9,125,case,45,CPPASTCaseStatement
+570096,JUMP_TARGET,-1,case VK_PRIOR:,9,128,case,49,CPPASTCaseStatement
+570106,JUMP_TARGET,-1,case VK_NEXT:,9,131,case,53,CPPASTCaseStatement
+570116,JUMP_TARGET,-1,case VK_F1:,9,134,case,57,CPPASTCaseStatement
+570126,JUMP_TARGET,-1,case VK_F2:,9,137,case,61,CPPASTCaseStatement
+570136,JUMP_TARGET,-1,case VK_F3:,9,140,case,65,CPPASTCaseStatement
+570146,JUMP_TARGET,-1,case VK_F4:,9,143,case,69,CPPASTCaseStatement
+570156,JUMP_TARGET,-1,case VK_F5:,9,146,case,73,CPPASTCaseStatement
+570166,JUMP_TARGET,-1,case VK_F6:,9,149,case,77,CPPASTCaseStatement
+570176,JUMP_TARGET,-1,case VK_F7:,9,152,case,81,CPPASTCaseStatement
+570186,JUMP_TARGET,-1,case VK_F8:,9,155,case,85,CPPASTCaseStatement
+570196,JUMP_TARGET,-1,case VK_F9:,9,158,case,89,CPPASTCaseStatement
+570206,JUMP_TARGET,-1,case VK_F10:,9,161,case,93,CPPASTCaseStatement
+570216,JUMP_TARGET,-1,case VK_F11:,9,164,case,97,CPPASTCaseStatement
+570226,JUMP_TARGET,-1,case VK_F12:,9,167,case,101,CPPASTCaseStatement
+570236,JUMP_TARGET,-1,case VK_CANCEL:,9,170,case,105,CPPASTCaseStatement
+570246,JUMP_TARGET,-1,default:,9,173,default,109,CPPASTDefaultStatement
+570653,JUMP_TARGET,-1,case VK_BACK:,9,288,case,1,CPPASTCaseStatement
+570655,JUMP_TARGET,-1,case VK_OEM_2:,9,290,case,3,CPPASTCaseStatement
+570659,JUMP_TARGET,-1,case VK_PAUSE:,9,295,case,7,CPPASTCaseStatement
+570669,JUMP_TARGET,-1,case VK_UP:,9,298,case,11,CPPASTCaseStatement
+570682,JUMP_TARGET,-1,case VK_DOWN:,9,302,case,16,CPPASTCaseStatement
+570695,JUMP_TARGET,-1,case VK_RIGHT:,9,306,case,21,CPPASTCaseStatement
+570708,JUMP_TARGET,-1,case VK_LEFT:,9,310,case,26,CPPASTCaseStatement
+570721,JUMP_TARGET,-1,case VK_HOME:,9,314,case,31,CPPASTCaseStatement
+570734,JUMP_TARGET,-1,case VK_INSERT:,9,318,case,36,CPPASTCaseStatement
+570747,JUMP_TARGET,-1,case VK_DELETE:,9,322,case,41,CPPASTCaseStatement
+570760,JUMP_TARGET,-1,case VK_END:,9,326,case,46,CPPASTCaseStatement
+570773,JUMP_TARGET,-1,case VK_PRIOR:,9,330,case,51,CPPASTCaseStatement
+570786,JUMP_TARGET,-1,case VK_NEXT:,9,334,case,56,CPPASTCaseStatement
+570799,JUMP_TARGET,-1,case VK_F1:,9,338,case,61,CPPASTCaseStatement
+570812,JUMP_TARGET,-1,case VK_F2:,9,342,case,66,CPPASTCaseStatement
+570825,JUMP_TARGET,-1,case VK_F3:,9,346,case,71,CPPASTCaseStatement
+570838,JUMP_TARGET,-1,case VK_F4:,9,350,case,76,CPPASTCaseStatement
+570851,JUMP_TARGET,-1,case VK_F5:,9,354,case,81,CPPASTCaseStatement
+570864,JUMP_TARGET,-1,case VK_F6:,9,358,case,86,CPPASTCaseStatement
+570877,JUMP_TARGET,-1,case VK_F7:,9,362,case,91,CPPASTCaseStatement
+570890,JUMP_TARGET,-1,case VK_F8:,9,366,case,96,CPPASTCaseStatement
+570903,JUMP_TARGET,-1,case VK_F9:,9,370,case,101,CPPASTCaseStatement
+570916,JUMP_TARGET,-1,case VK_F10:,9,374,case,106,CPPASTCaseStatement
+570929,JUMP_TARGET,-1,case VK_F11:,9,378,case,111,CPPASTCaseStatement
+570942,JUMP_TARGET,-1,case VK_F12:,9,382,case,116,CPPASTCaseStatement
+570955,JUMP_TARGET,-1,case VK_TAB:,9,386,case,121,CPPASTCaseStatement
+570989,JUMP_TARGET,-1,default:,9,401,default,125,CPPASTDefaultStatement
+572416,JUMP_TARGET,-1,case WM_LBUTTONDBLCLK:,5,32,case,1,CPPASTCaseStatement
+572418,JUMP_TARGET,-1,case WM_LBUTTONDOWN:,5,33,case,3,CPPASTCaseStatement
+572420,JUMP_TARGET,-1,case WM_LBUTTONUP:,5,34,case,5,CPPASTCaseStatement
+572422,JUMP_TARGET,-1,case WM_MBUTTONUP:,5,35,case,7,CPPASTCaseStatement
+572424,JUMP_TARGET,-1,case WM_RBUTTONUP:,5,36,case,9,CPPASTCaseStatement
+572426,JUMP_TARGET,-1,case WM_RBUTTONDOWN:,5,37,case,11,CPPASTCaseStatement
+572428,JUMP_TARGET,-1,case WM_RBUTTONDBLCLK:,5,38,case,13,CPPASTCaseStatement
+572430,JUMP_TARGET,-1,case WM_MBUTTONDOWN:,5,39,case,15,CPPASTCaseStatement
+572432,JUMP_TARGET,-1,case WM_MBUTTONDBLCLK:,5,40,case,17,CPPASTCaseStatement
+572434,JUMP_TARGET,-1,case WM_MOUSEWHEEL:,5,41,case,19,CPPASTCaseStatement
+572436,JUMP_TARGET,-1,case WM_MOUSEHWHEEL:,5,42,case,21,CPPASTCaseStatement
+572440,JUMP_TARGET,-1,default:,5,44,default,24,CPPASTDefaultStatement
+572473,JUMP_TARGET,-1,case WM_LBUTTONDBLCLK:,5,82,case,1,CPPASTCaseStatement
+572475,JUMP_TARGET,-1,case WM_LBUTTONDOWN:,5,83,case,3,CPPASTCaseStatement
+572477,JUMP_TARGET,-1,case WM_RBUTTONDOWN:,5,84,case,5,CPPASTCaseStatement
+572479,JUMP_TARGET,-1,case WM_RBUTTONDBLCLK:,5,85,case,7,CPPASTCaseStatement
+572481,JUMP_TARGET,-1,case WM_MBUTTONDOWN:,5,86,case,9,CPPASTCaseStatement
+572483,JUMP_TARGET,-1,case WM_MBUTTONDBLCLK:,5,87,case,11,CPPASTCaseStatement
+572485,JUMP_TARGET,-1,case WM_MOUSEWHEEL:,5,88,case,13,CPPASTCaseStatement
+572487,JUMP_TARGET,-1,case WM_MOUSEHWHEEL:,5,89,case,15,CPPASTCaseStatement
+572491,JUMP_TARGET,-1,default:,5,91,default,18,CPPASTDefaultStatement
+572548,JUMP_TARGET,-1,case WM_LBUTTONDBLCLK:,5,159,case,1,CPPASTCaseStatement
+572550,JUMP_TARGET,-1,case WM_LBUTTONDOWN:,5,160,case,3,CPPASTCaseStatement
+572556,JUMP_TARGET,-1,case WM_LBUTTONUP:,5,163,case,7,CPPASTCaseStatement
+572558,JUMP_TARGET,-1,case WM_MBUTTONUP:,5,164,case,9,CPPASTCaseStatement
+572560,JUMP_TARGET,-1,case WM_RBUTTONUP:,5,165,case,11,CPPASTCaseStatement
+572566,JUMP_TARGET,-1,case WM_RBUTTONDOWN:,5,168,case,15,CPPASTCaseStatement
+572568,JUMP_TARGET,-1,case WM_RBUTTONDBLCLK:,5,169,case,17,CPPASTCaseStatement
+572574,JUMP_TARGET,-1,case WM_MBUTTONDOWN:,5,172,case,21,CPPASTCaseStatement
+572576,JUMP_TARGET,-1,case WM_MBUTTONDBLCLK:,5,173,case,23,CPPASTCaseStatement
+572582,JUMP_TARGET,-1,case WM_MOUSEWHEEL:,5,176,case,27,CPPASTCaseStatement
+572584,JUMP_TARGET,-1,case WM_MOUSEHWHEEL:,5,177,case,29,CPPASTCaseStatement
+572595,JUMP_TARGET,-1,default:,5,180,default,33,CPPASTDefaultStatement
+572649,JUMP_TARGET,-1,case WM_LBUTTONDBLCLK:,5,216,case,1,CPPASTCaseStatement
+572651,JUMP_TARGET,-1,case WM_LBUTTONDOWN:,5,217,case,3,CPPASTCaseStatement
+572653,JUMP_TARGET,-1,case WM_LBUTTONUP:,5,218,case,5,CPPASTCaseStatement
+572659,JUMP_TARGET,-1,case WM_RBUTTONUP:,5,221,case,9,CPPASTCaseStatement
+572661,JUMP_TARGET,-1,case WM_RBUTTONDOWN:,5,222,case,11,CPPASTCaseStatement
+572663,JUMP_TARGET,-1,case WM_RBUTTONDBLCLK:,5,223,case,13,CPPASTCaseStatement
+572669,JUMP_TARGET,-1,case WM_MBUTTONUP:,5,226,case,17,CPPASTCaseStatement
+572671,JUMP_TARGET,-1,case WM_MBUTTONDOWN:,5,227,case,19,CPPASTCaseStatement
+572673,JUMP_TARGET,-1,case WM_MBUTTONDBLCLK:,5,228,case,21,CPPASTCaseStatement
+572679,JUMP_TARGET,-1,case WM_MOUSEMOVE:,5,231,case,25,CPPASTCaseStatement
+572685,JUMP_TARGET,-1,case WM_MOUSEWHEEL:,5,234,case,29,CPPASTCaseStatement
+572687,JUMP_TARGET,-1,case WM_MOUSEHWHEEL:,5,235,case,31,CPPASTCaseStatement
+572698,JUMP_TARGET,-1,default:,5,238,default,35,CPPASTDefaultStatement
+575861,JUMP_TARGET,-1,case L'\b':,9,158,case,1,CPPASTCaseStatement
+575876,JUMP_TARGET,-1,case L'\r':,9,164,case,7,CPPASTCaseStatement
+575891,JUMP_TARGET,-1,case L'\x1b':,9,169,case,13,CPPASTCaseStatement
+575903,JUMP_TARGET,-1,case L'\t':,9,177,case,19,CPPASTCaseStatement
+575915,JUMP_TARGET,-1,default:,9,181,default,24,CPPASTDefaultStatement
+576206,JUMP_TARGET,-1,case CsiActionCodes::MouseDown:,5,392,case,1,CPPASTCaseStatement
+576210,JUMP_TARGET,-1,case CsiActionCodes::MouseUp:,5,393,case,3,CPPASTCaseStatement
+576275,JUMP_TARGET,-1,case CsiActionCodes::CSI_F3:,5,406,case,6,CPPASTCaseStatement
+576302,JUMP_TARGET,-1,case CsiActionCodes::ArrowUp:,5,419,case,9,CPPASTCaseStatement
+576306,JUMP_TARGET,-1,case CsiActionCodes::ArrowDown:,5,420,case,11,CPPASTCaseStatement
+576310,JUMP_TARGET,-1,case CsiActionCodes::ArrowRight:,5,421,case,13,CPPASTCaseStatement
+576314,JUMP_TARGET,-1,case CsiActionCodes::ArrowLeft:,5,422,case,15,CPPASTCaseStatement
+576318,JUMP_TARGET,-1,case CsiActionCodes::Home:,5,423,case,17,CPPASTCaseStatement
+576322,JUMP_TARGET,-1,case CsiActionCodes::End:,5,424,case,19,CPPASTCaseStatement
+576326,JUMP_TARGET,-1,case CsiActionCodes::CSI_F1:,5,425,case,21,CPPASTCaseStatement
+576330,JUMP_TARGET,-1,case CsiActionCodes::CSI_F2:,5,426,case,23,CPPASTCaseStatement
+576334,JUMP_TARGET,-1,case CsiActionCodes::CSI_F4:,5,427,case,25,CPPASTCaseStatement
+576356,JUMP_TARGET,-1,case CsiActionCodes::Generic:,5,432,case,31,CPPASTCaseStatement
+576381,JUMP_TARGET,-1,case CsiActionCodes::CursorBackTab:,5,437,case,37,CPPASTCaseStatement
+576391,JUMP_TARGET,-1,case CsiActionCodes::DTTERM_WindowManipulation:,5,440,case,41,CPPASTCaseStatement
+576417,JUMP_TARGET,-1,case CsiActionCodes::FocusIn:,5,443,case,45,CPPASTCaseStatement
+576429,JUMP_TARGET,-1,case CsiActionCodes::FocusOut:,5,446,case,49,CPPASTCaseStatement
+576441,JUMP_TARGET,-1,case CsiActionCodes::Win32KeyboardInput:,5,449,case,53,CPPASTCaseStatement
+576462,JUMP_TARGET,-1,default:,5,459,default,56,CPPASTDefaultStatement
+577186,JUMP_TARGET,-1,case CsiMouseButtonCodes::Left:,5,847,case,1,CPPASTCaseStatement
+577194,JUMP_TARGET,-1,case CsiMouseButtonCodes::Right:,5,850,case,5,CPPASTCaseStatement
+577202,JUMP_TARGET,-1,case CsiMouseButtonCodes::Middle:,5,853,case,9,CPPASTCaseStatement
+577210,JUMP_TARGET,-1,case CsiMouseButtonCodes::ScrollBack:,5,856,case,13,CPPASTCaseStatement
+577222,JUMP_TARGET,-1,case CsiMouseButtonCodes::ScrollForward:,5,864,case,16,CPPASTCaseStatement
+577234,JUMP_TARGET,-1,case CsiMouseButtonCodes::Released:,5,872,case,19,CPPASTCaseStatement
+577239,JUMP_TARGET,-1,default:,5,876,default,22,CPPASTDefaultStatement
+577245,JUMP_TARGET,-1,case CsiActionCodes::MouseDown:,5,885,case,1,CPPASTCaseStatement
+577322,JUMP_TARGET,-1,case CsiActionCodes::MouseUp:,5,916,case,6,CPPASTCaseStatement
+577331,JUMP_TARGET,-1,default:,5,920,default,10,CPPASTDefaultStatement
+577586,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::RefreshWindow:,9,1074,case,1,CPPASTCaseStatement
+577603,JUMP_TARGET,-1,case DispatchTypes::WindowManipulationType::ResizeWindowInCharacters:,9,1078,case,6,CPPASTCaseStatement
+577620,JUMP_TARGET,-1,default:,9,1082,default,11,CPPASTDefaultStatement
+578449,JUMP_TARGET,-1,case AsciiChars::ENQ:,5,52,case,1,CPPASTCaseStatement
+578454,JUMP_TARGET,-1,case AsciiChars::BEL:,5,57,case,4,CPPASTCaseStatement
+578469,JUMP_TARGET,-1,case AsciiChars::BS:,5,66,case,9,CPPASTCaseStatement
+578479,JUMP_TARGET,-1,case AsciiChars::TAB:,5,69,case,13,CPPASTCaseStatement
+578489,JUMP_TARGET,-1,case AsciiChars::CR:,5,72,case,17,CPPASTCaseStatement
+578498,JUMP_TARGET,-1,case AsciiChars::LF:,5,75,case,21,CPPASTCaseStatement
+578502,JUMP_TARGET,-1,case AsciiChars::FF:,5,76,case,23,CPPASTCaseStatement
+578506,JUMP_TARGET,-1,case AsciiChars::VT:,5,77,case,25,CPPASTCaseStatement
+578520,JUMP_TARGET,-1,case AsciiChars::SI:,5,81,case,29,CPPASTCaseStatement
+578530,JUMP_TARGET,-1,case AsciiChars::SO:,5,84,case,33,CPPASTCaseStatement
+578540,JUMP_TARGET,-1,case AsciiChars::SUB:,5,87,case,37,CPPASTCaseStatement
+578550,JUMP_TARGET,-1,case AsciiChars::DEL:,5,93,case,41,CPPASTCaseStatement
+578560,JUMP_TARGET,-1,default:,5,100,default,45,CPPASTDefaultStatement
+578674,JUMP_TARGET,-1,case EscActionCodes::ST_StringTerminator:,5,213,case,1,CPPASTCaseStatement
+578682,JUMP_TARGET,-1,case EscActionCodes::DECBI_BackIndex:,5,217,case,5,CPPASTCaseStatement
+578693,JUMP_TARGET,-1,case EscActionCodes::DECSC_CursorSave:,5,220,case,9,CPPASTCaseStatement
+578704,JUMP_TARGET,-1,case EscActionCodes::DECRC_CursorRestore:,5,223,case,13,CPPASTCaseStatement
+578715,JUMP_TARGET,-1,case EscActionCodes::DECFI_ForwardIndex:,5,226,case,17,CPPASTCaseStatement
+578726,JUMP_TARGET,-1,case EscActionCodes::DECKPAM_KeypadApplicationMode:,5,229,case,21,CPPASTCaseStatement
+578738,JUMP_TARGET,-1,case EscActionCodes::DECKPNM_KeypadNumericMode:,5,232,case,25,CPPASTCaseStatement
+578750,JUMP_TARGET,-1,case EscActionCodes::NEL_NextLine:,5,235,case,29,CPPASTCaseStatement
+578766,JUMP_TARGET,-1,case EscActionCodes::IND_Index:,5,238,case,33,CPPASTCaseStatement
+578782,JUMP_TARGET,-1,case EscActionCodes::RI_ReverseLineFeed:,5,241,case,37,CPPASTCaseStatement
+578793,JUMP_TARGET,-1,case EscActionCodes::HTS_HorizontalTabSet:,5,244,case,41,CPPASTCaseStatement
+578804,JUMP_TARGET,-1,case EscActionCodes::DECID_IdentifyDevice:,5,247,case,45,CPPASTCaseStatement
+578815,JUMP_TARGET,-1,case EscActionCodes::RIS_ResetToInitialState:,5,250,case,49,CPPASTCaseStatement
+578826,JUMP_TARGET,-1,case EscActionCodes::SS2_SingleShift:,5,253,case,53,CPPASTCaseStatement
+578838,JUMP_TARGET,-1,case EscActionCodes::SS3_SingleShift:,5,256,case,57,CPPASTCaseStatement
+578850,JUMP_TARGET,-1,case EscActionCodes::LS2_LockingShift:,5,259,case,61,CPPASTCaseStatement
+578862,JUMP_TARGET,-1,case EscActionCodes::LS3_LockingShift:,5,262,case,65,CPPASTCaseStatement
+578874,JUMP_TARGET,-1,case EscActionCodes::LS1R_LockingShift:,5,265,case,69,CPPASTCaseStatement
+578886,JUMP_TARGET,-1,case EscActionCodes::LS2R_LockingShift:,5,268,case,73,CPPASTCaseStatement
+578898,JUMP_TARGET,-1,case EscActionCodes::LS3R_LockingShift:,5,271,case,77,CPPASTCaseStatement
+578910,JUMP_TARGET,-1,case EscActionCodes::DECAC1_AcceptC1Controls:,5,274,case,81,CPPASTCaseStatement
+578922,JUMP_TARGET,-1,case EscActionCodes::DECDHL_DoubleHeightLineTop:,5,277,case,85,CPPASTCaseStatement
+578936,JUMP_TARGET,-1,case EscActionCodes::DECDHL_DoubleHeightLineBottom:,5,280,case,89,CPPASTCaseStatement
+578950,JUMP_TARGET,-1,case EscActionCodes::DECSWL_SingleWidthLine:,5,283,case,93,CPPASTCaseStatement
+578964,JUMP_TARGET,-1,case EscActionCodes::DECDWL_DoubleWidthLine:,5,286,case,97,CPPASTCaseStatement
+578978,JUMP_TARGET,-1,case EscActionCodes::DECALN_ScreenAlignmentPattern:,5,289,case,101,CPPASTCaseStatement
+578989,JUMP_TARGET,-1,default:,5,292,default,105,CPPASTDefaultStatement
+579007,JUMP_TARGET,-1,case '%':,9,297,case,1,CPPASTCaseStatement
+579017,JUMP_TARGET,-1,case '(':,9,300,case,5,CPPASTCaseStatement
+579028,JUMP_TARGET,-1,case ')':,9,303,case,9,CPPASTCaseStatement
+579039,JUMP_TARGET,-1,case '*':,9,306,case,13,CPPASTCaseStatement
+579050,JUMP_TARGET,-1,case '+':,9,309,case,17,CPPASTCaseStatement
+579061,JUMP_TARGET,-1,case '-':,9,312,case,21,CPPASTCaseStatement
+579072,JUMP_TARGET,-1,case '.':,9,315,case,25,CPPASTCaseStatement
+579083,JUMP_TARGET,-1,case '/':,9,318,case,29,CPPASTCaseStatement
+579094,JUMP_TARGET,-1,default:,9,321,default,33,CPPASTDefaultStatement
+579126,JUMP_TARGET,-1,case Vt52ActionCodes::CursorUp:,5,355,case,1,CPPASTCaseStatement
+579138,JUMP_TARGET,-1,case Vt52ActionCodes::CursorDown:,5,358,case,5,CPPASTCaseStatement
+579150,JUMP_TARGET,-1,case Vt52ActionCodes::CursorRight:,5,361,case,9,CPPASTCaseStatement
+579162,JUMP_TARGET,-1,case Vt52ActionCodes::CursorLeft:,5,364,case,13,CPPASTCaseStatement
+579174,JUMP_TARGET,-1,case Vt52ActionCodes::EnterGraphicsMode:,5,367,case,17,CPPASTCaseStatement
+579191,JUMP_TARGET,-1,case Vt52ActionCodes::ExitGraphicsMode:,5,370,case,21,CPPASTCaseStatement
+579208,JUMP_TARGET,-1,case Vt52ActionCodes::CursorToHome:,5,373,case,25,CPPASTCaseStatement
+579221,JUMP_TARGET,-1,case Vt52ActionCodes::ReverseLineFeed:,5,376,case,29,CPPASTCaseStatement
+579232,JUMP_TARGET,-1,case Vt52ActionCodes::EraseToEndOfScreen:,5,379,case,33,CPPASTCaseStatement
+579248,JUMP_TARGET,-1,case Vt52ActionCodes::EraseToEndOfLine:,5,382,case,37,CPPASTCaseStatement
+579264,JUMP_TARGET,-1,case Vt52ActionCodes::DirectCursorAddress:,5,385,case,41,CPPASTCaseStatement
+579299,JUMP_TARGET,-1,case Vt52ActionCodes::Identify:,5,390,case,45,CPPASTCaseStatement
+579310,JUMP_TARGET,-1,case Vt52ActionCodes::EnterAlternateKeypadMode:,5,393,case,49,CPPASTCaseStatement
+579322,JUMP_TARGET,-1,case Vt52ActionCodes::ExitAlternateKeypadMode:,5,396,case,53,CPPASTCaseStatement
+579334,JUMP_TARGET,-1,case Vt52ActionCodes::ExitVt52Mode:,5,399,case,57,CPPASTCaseStatement
+579350,JUMP_TARGET,-1,default:,5,402,default,61,CPPASTDefaultStatement
+579384,JUMP_TARGET,-1,case CsiActionCodes::CUU_CursorUp:,5,434,case,1,CPPASTCaseStatement
+579400,JUMP_TARGET,-1,case CsiActionCodes::CUD_CursorDown:,5,437,case,5,CPPASTCaseStatement
+579416,JUMP_TARGET,-1,case CsiActionCodes::CUF_CursorForward:,5,440,case,9,CPPASTCaseStatement
+579432,JUMP_TARGET,-1,case CsiActionCodes::CUB_CursorBackward:,5,443,case,13,CPPASTCaseStatement
+579448,JUMP_TARGET,-1,case CsiActionCodes::CNL_CursorNextLine:,5,446,case,17,CPPASTCaseStatement
+579464,JUMP_TARGET,-1,case CsiActionCodes::CPL_CursorPrevLine:,5,449,case,21,CPPASTCaseStatement
+579480,JUMP_TARGET,-1,case CsiActionCodes::CHA_CursorHorizontalAbsolute:,5,452,case,25,CPPASTCaseStatement
+579484,JUMP_TARGET,-1,case CsiActionCodes::HPA_HorizontalPositionAbsolute:,5,453,case,27,CPPASTCaseStatement
+579500,JUMP_TARGET,-1,case CsiActionCodes::VPA_VerticalLinePositionAbsolute:,5,456,case,31,CPPASTCaseStatement
+579516,JUMP_TARGET,-1,case CsiActionCodes::HPR_HorizontalPositionRelative:,5,459,case,35,CPPASTCaseStatement
+579532,JUMP_TARGET,-1,case CsiActionCodes::VPR_VerticalPositionRelative:,5,462,case,39,CPPASTCaseStatement
+579548,JUMP_TARGET,-1,case CsiActionCodes::CUP_CursorPosition:,5,465,case,43,CPPASTCaseStatement
+579552,JUMP_TARGET,-1,case CsiActionCodes::HVP_HorizontalVerticalPosition:,5,466,case,45,CPPASTCaseStatement
+579573,JUMP_TARGET,-1,case CsiActionCodes::DECSTBM_SetTopBottomMargins:,5,469,case,49,CPPASTCaseStatement
+579602,JUMP_TARGET,-1,case CsiActionCodes::DECSLRM_SetLeftRightMargins:,5,472,case,53,CPPASTCaseStatement
+579631,JUMP_TARGET,-1,case CsiActionCodes::ICH_InsertCharacter:,5,476,case,57,CPPASTCaseStatement
+579647,JUMP_TARGET,-1,case CsiActionCodes::DCH_DeleteCharacter:,5,479,case,61,CPPASTCaseStatement
+579663,JUMP_TARGET,-1,case CsiActionCodes::ED_EraseDisplay:,5,482,case,65,CPPASTCaseStatement
+579675,JUMP_TARGET,-1,case CsiActionCodes::DECSED_SelectiveEraseDisplay:,5,487,case,69,CPPASTCaseStatement
+579687,JUMP_TARGET,-1,case CsiActionCodes::EL_EraseLine:,5,492,case,73,CPPASTCaseStatement
+579699,JUMP_TARGET,-1,case CsiActionCodes::DECSEL_SelectiveEraseLine:,5,497,case,77,CPPASTCaseStatement
+579711,JUMP_TARGET,-1,case CsiActionCodes::SM_SetMode:,5,502,case,81,CPPASTCaseStatement
+579723,JUMP_TARGET,-1,case CsiActionCodes::DECSET_PrivateModeSet:,5,507,case,85,CPPASTCaseStatement
+579735,JUMP_TARGET,-1,case CsiActionCodes::RM_ResetMode:,5,512,case,89,CPPASTCaseStatement
+579747,JUMP_TARGET,-1,case CsiActionCodes::DECRST_PrivateModeReset:,5,517,case,93,CPPASTCaseStatement
+579759,JUMP_TARGET,-1,case CsiActionCodes::SGR_SetGraphicsRendition:,5,522,case,97,CPPASTCaseStatement
+579771,JUMP_TARGET,-1,case CsiActionCodes::DSR_DeviceStatusReport:,5,525,case,101,CPPASTCaseStatement
+579796,JUMP_TARGET,-1,case CsiActionCodes::DSR_PrivateDeviceStatusReport:,5,528,case,105,CPPASTCaseStatement
+579821,JUMP_TARGET,-1,case CsiActionCodes::DA_DeviceAttributes:,5,531,case,109,CPPASTCaseStatement
+579844,JUMP_TARGET,-1,case CsiActionCodes::DA2_SecondaryDeviceAttributes:,5,534,case,113,CPPASTCaseStatement
+579867,JUMP_TARGET,-1,case CsiActionCodes::DA3_TertiaryDeviceAttributes:,5,537,case,117,CPPASTCaseStatement
+579890,JUMP_TARGET,-1,case CsiActionCodes::DECREQTPARM_RequestTerminalParameters:,5,540,case,121,CPPASTCaseStatement
+579906,JUMP_TARGET,-1,case CsiActionCodes::SU_ScrollUp:,5,543,case,125,CPPASTCaseStatement
+579922,JUMP_TARGET,-1,case CsiActionCodes::SD_ScrollDown:,5,546,case,129,CPPASTCaseStatement
+579938,JUMP_TARGET,-1,case CsiActionCodes::ANSISYSRC_CursorRestore:,5,549,case,133,CPPASTCaseStatement
+579949,JUMP_TARGET,-1,case CsiActionCodes::IL_InsertLine:,5,552,case,137,CPPASTCaseStatement
+579965,JUMP_TARGET,-1,case CsiActionCodes::DL_DeleteLine:,5,555,case,141,CPPASTCaseStatement
+579981,JUMP_TARGET,-1,case CsiActionCodes::CHT_CursorForwardTab:,5,558,case,145,CPPASTCaseStatement
+579997,JUMP_TARGET,-1,case CsiActionCodes::CBT_CursorBackTab:,5,561,case,149,CPPASTCaseStatement
+580013,JUMP_TARGET,-1,case CsiActionCodes::TBC_TabClear:,5,564,case,153,CPPASTCaseStatement
+580025,JUMP_TARGET,-1,case CsiActionCodes::DECST8C_SetTabEvery8Columns:,5,569,case,157,CPPASTCaseStatement
+580037,JUMP_TARGET,-1,case CsiActionCodes::ECH_EraseCharacters:,5,574,case,161,CPPASTCaseStatement
+580053,JUMP_TARGET,-1,case CsiActionCodes::DTTERM_WindowManipulation:,5,577,case,165,CPPASTCaseStatement
+580079,JUMP_TARGET,-1,case CsiActionCodes::REP_RepeatCharacter:,5,580,case,169,CPPASTCaseStatement
+580111,JUMP_TARGET,-1,case CsiActionCodes::DECSCUSR_SetCursorStyle:,5,594,case,174,CPPASTCaseStatement
+580127,JUMP_TARGET,-1,case CsiActionCodes::DECSTR_SoftReset:,5,597,case,178,CPPASTCaseStatement
+580138,JUMP_TARGET,-1,case CsiActionCodes::DECSCA_SetCharacterProtectionAttribute:,5,600,case,182,CPPASTCaseStatement
+580150,JUMP_TARGET,-1,case CsiActionCodes::XT_PushSgr:,5,603,case,186,CPPASTCaseStatement
+580154,JUMP_TARGET,-1,case CsiActionCodes::XT_PushSgrAlias:,5,604,case,188,CPPASTCaseStatement
+580166,JUMP_TARGET,-1,case CsiActionCodes::XT_PopSgr:,5,607,case,192,CPPASTCaseStatement
+580170,JUMP_TARGET,-1,case CsiActionCodes::XT_PopSgrAlias:,5,608,case,194,CPPASTCaseStatement
+580181,JUMP_TARGET,-1,case CsiActionCodes::DECRQM_RequestMode:,5,611,case,198,CPPASTCaseStatement
+580201,JUMP_TARGET,-1,case CsiActionCodes::DECRQM_PrivateRequestMode:,5,614,case,202,CPPASTCaseStatement
+580221,JUMP_TARGET,-1,case CsiActionCodes::DECCARA_ChangeAttributesRectangularArea:,5,617,case,206,CPPASTCaseStatement
+580265,JUMP_TARGET,-1,case CsiActionCodes::DECRARA_ReverseAttributesRectangularArea:,5,620,case,210,CPPASTCaseStatement
+580309,JUMP_TARGET,-1,case CsiActionCodes::DECCRA_CopyRectangularArea:,5,623,case,214,CPPASTCaseStatement
+580368,JUMP_TARGET,-1,case CsiActionCodes::DECRQPSR_RequestPresentationStateReport:,5,626,case,218,CPPASTCaseStatement
+580384,JUMP_TARGET,-1,case CsiActionCodes::DECFRA_FillRectangularArea:,5,629,case,222,CPPASTCaseStatement
+580428,JUMP_TARGET,-1,case CsiActionCodes::DECERA_EraseRectangularArea:,5,632,case,226,CPPASTCaseStatement
+580467,JUMP_TARGET,-1,case CsiActionCodes::DECSERA_SelectiveEraseRectangularArea:,5,635,case,230,CPPASTCaseStatement
+580506,JUMP_TARGET,-1,case CsiActionCodes::DECIC_InsertColumn:,5,638,case,234,CPPASTCaseStatement
+580522,JUMP_TARGET,-1,case CsiActionCodes::DECDC_DeleteColumn:,5,641,case,238,CPPASTCaseStatement
+580538,JUMP_TARGET,-1,case CsiActionCodes::DECSACE_SelectAttributeChangeExtent:,5,644,case,242,CPPASTCaseStatement
+580554,JUMP_TARGET,-1,case CsiActionCodes::DECRQCRA_RequestChecksumRectangularArea:,5,647,case,246,CPPASTCaseStatement
+580611,JUMP_TARGET,-1,case CsiActionCodes::DECINVM_InvokeMacro:,5,650,case,250,CPPASTCaseStatement
+580631,JUMP_TARGET,-1,case CsiActionCodes::DECAC_AssignColor:,5,653,case,254,CPPASTCaseStatement
+580665,JUMP_TARGET,-1,case CsiActionCodes::DECPS_PlaySound:,5,656,case,258,CPPASTCaseStatement
+580677,JUMP_TARGET,-1,default:,5,659,default,262,CPPASTDefaultStatement
+580709,JUMP_TARGET,-1,case DcsActionCodes::DECDLD_DownloadDRCS:,5,692,case,1,CPPASTCaseStatement
+580760,JUMP_TARGET,-1,case DcsActionCodes::DECDMAC_DefineMacro:,5,702,case,5,CPPASTCaseStatement
+580790,JUMP_TARGET,-1,case DcsActionCodes::DECRSTS_RestoreTerminalState:,5,705,case,9,CPPASTCaseStatement
+580806,JUMP_TARGET,-1,case DcsActionCodes::DECRQSS_RequestSetting:,5,708,case,13,CPPASTCaseStatement
+580817,JUMP_TARGET,-1,case DcsActionCodes::DECRSPS_RestorePresentationState:,5,711,case,17,CPPASTCaseStatement
+580833,JUMP_TARGET,-1,default:,5,714,default,21,CPPASTDefaultStatement
+580867,JUMP_TARGET,-1,case OscActionCodes::SetIconAndWindowTitle:,5,767,case,1,CPPASTCaseStatement
+580871,JUMP_TARGET,-1,case OscActionCodes::SetWindowIcon:,5,768,case,3,CPPASTCaseStatement
+580875,JUMP_TARGET,-1,case OscActionCodes::SetWindowTitle:,5,769,case,5,CPPASTCaseStatement
+580896,JUMP_TARGET,-1,case OscActionCodes::SetColor:,5,776,case,8,CPPASTCaseStatement
+580965,JUMP_TARGET,-1,case OscActionCodes::SetForegroundColor:,5,789,case,11,CPPASTCaseStatement
+580969,JUMP_TARGET,-1,case OscActionCodes::SetBackgroundColor:,5,790,case,13,CPPASTCaseStatement
+580973,JUMP_TARGET,-1,case OscActionCodes::SetCursorColor:,5,791,case,15,CPPASTCaseStatement
+581125,JUMP_TARGET,-1,case OscActionCodes::SetClipboard:,5,835,case,18,CPPASTCaseStatement
+581155,JUMP_TARGET,-1,case OscActionCodes::ResetCursorColor:,5,846,case,21,CPPASTCaseStatement
+581168,JUMP_TARGET,-1,case OscActionCodes::Hyperlink:,5,851,case,24,CPPASTCaseStatement
+581208,JUMP_TARGET,-1,case OscActionCodes::ConEmuAction:,5,866,case,27,CPPASTCaseStatement
+581221,JUMP_TARGET,-1,case OscActionCodes::ITerm2Action:,5,871,case,30,CPPASTCaseStatement
+581234,JUMP_TARGET,-1,case OscActionCodes::FinalTermAction:,5,876,case,33,CPPASTCaseStatement
+581247,JUMP_TARGET,-1,case OscActionCodes::VsCodeAction:,5,881,case,36,CPPASTCaseStatement
+581260,JUMP_TARGET,-1,default:,5,886,default,39,CPPASTDefaultStatement
+581719,JUMP_TARGET,-1,case SGR_SetGraphicsRendition:,5,1132,case,1,CPPASTCaseStatement
+581723,JUMP_TARGET,-1,case DECCARA_ChangeAttributesRectangularArea:,5,1134,case,4,CPPASTCaseStatement
+581725,JUMP_TARGET,-1,case DECRARA_ReverseAttributesRectangularArea:,5,1135,case,6,CPPASTCaseStatement
+581755,JUMP_TARGET,-1,default:,5,1137,default,9,CPPASTDefaultStatement
+583102,JUMP_TARGET,-1,case 2:,9,133,case,1,CPPASTCaseStatement
+583116,JUMP_TARGET,-1,case 3:,9,136,case,5,CPPASTCaseStatement
+583141,JUMP_TARGET,-1,case 4:,9,140,case,10,CPPASTCaseStatement
+583177,JUMP_TARGET,-1,default:,9,145,default,16,CPPASTDefaultStatement
+584174,JUMP_TARGET,-1,case 0:,19,465,case,1,CPPASTCaseStatement
+584176,JUMP_TARGET,-1,case 1:,19,466,case,3,CPPASTCaseStatement
+584178,JUMP_TARGET,-1,case 2:,19,467,case,5,CPPASTCaseStatement
+584180,JUMP_TARGET,-1,case 3:,19,468,case,7,CPPASTCaseStatement
+584182,JUMP_TARGET,-1,case 4:,19,469,case,9,CPPASTCaseStatement
+584184,JUMP_TARGET,-1,case 5:,19,470,case,11,CPPASTCaseStatement
+584186,JUMP_TARGET,-1,case 6:,19,471,case,13,CPPASTCaseStatement
+584194,JUMP_TARGET,-1,case 7:,19,474,case,17,CPPASTCaseStatement
+584202,JUMP_TARGET,-1,case 8:,19,477,case,21,CPPASTCaseStatement
+584210,JUMP_TARGET,-1,default:,19,480,default,25,CPPASTDefaultStatement
+584352,JUMP_TARGET,-1,case 0:,19,559,case,1,CPPASTCaseStatement
+584354,JUMP_TARGET,-1,case 1:,19,560,case,3,CPPASTCaseStatement
+584356,JUMP_TARGET,-1,case 2:,19,561,case,5,CPPASTCaseStatement
+584358,JUMP_TARGET,-1,case 3:,19,562,case,7,CPPASTCaseStatement
+584360,JUMP_TARGET,-1,case 4:,19,563,case,9,CPPASTCaseStatement
+584362,JUMP_TARGET,-1,case 5:,19,564,case,11,CPPASTCaseStatement
+584364,JUMP_TARGET,-1,case 6:,19,565,case,13,CPPASTCaseStatement
+584372,JUMP_TARGET,-1,case 7:,19,568,case,17,CPPASTCaseStatement
+584380,JUMP_TARGET,-1,case 8:,19,571,case,21,CPPASTCaseStatement
+584388,JUMP_TARGET,-1,default:,19,574,default,25,CPPASTDefaultStatement
+589267,JUMP_TARGET,-1,case VTStates::Ground:,9,1870,case,1,CPPASTCaseStatement
+589274,JUMP_TARGET,-1,case VTStates::Escape:,9,1872,case,4,CPPASTCaseStatement
+589281,JUMP_TARGET,-1,case VTStates::EscapeIntermediate:,9,1874,case,7,CPPASTCaseStatement
+589288,JUMP_TARGET,-1,case VTStates::CsiEntry:,9,1876,case,10,CPPASTCaseStatement
+589295,JUMP_TARGET,-1,case VTStates::CsiIntermediate:,9,1878,case,13,CPPASTCaseStatement
+589302,JUMP_TARGET,-1,case VTStates::CsiIgnore:,9,1880,case,16,CPPASTCaseStatement
+589309,JUMP_TARGET,-1,case VTStates::CsiParam:,9,1882,case,19,CPPASTCaseStatement
+589316,JUMP_TARGET,-1,case VTStates::CsiSubParam:,9,1884,case,22,CPPASTCaseStatement
+589323,JUMP_TARGET,-1,case VTStates::OscParam:,9,1886,case,25,CPPASTCaseStatement
+589330,JUMP_TARGET,-1,case VTStates::OscString:,9,1888,case,28,CPPASTCaseStatement
+589337,JUMP_TARGET,-1,case VTStates::OscTermination:,9,1890,case,31,CPPASTCaseStatement
+589344,JUMP_TARGET,-1,case VTStates::Ss3Entry:,9,1892,case,34,CPPASTCaseStatement
+589351,JUMP_TARGET,-1,case VTStates::Ss3Param:,9,1894,case,37,CPPASTCaseStatement
+589358,JUMP_TARGET,-1,case VTStates::Vt52Param:,9,1896,case,40,CPPASTCaseStatement
+589365,JUMP_TARGET,-1,case VTStates::DcsEntry:,9,1898,case,43,CPPASTCaseStatement
+589372,JUMP_TARGET,-1,case VTStates::DcsIgnore:,9,1900,case,46,CPPASTCaseStatement
+589378,JUMP_TARGET,-1,case VTStates::DcsIntermediate:,9,1902,case,49,CPPASTCaseStatement
+589385,JUMP_TARGET,-1,case VTStates::DcsParam:,9,1904,case,52,CPPASTCaseStatement
+589392,JUMP_TARGET,-1,case VTStates::DcsPassThrough:,9,1906,case,55,CPPASTCaseStatement
+589399,JUMP_TARGET,-1,case VTStates::SosPmApcString:,9,1908,case,58,CPPASTCaseStatement
+589406,JUMP_TARGET,-1,default:,9,1910,default,61,CPPASTDefaultStatement
+589563,JUMP_TARGET,-1,"processStringLoopVtStart:
+        if (i >= string.size())
+        {
+            break;
+        }",5,2111,processStringLoopVtStart,2,CPPASTLabelStatement
+591172,JUMP_TARGET,-1,case KEY_EVENT:,13,289,case,1,CPPASTCaseStatement
+591180,JUMP_TARGET,-1,case MOUSE_EVENT:,13,292,case,5,CPPASTCaseStatement
+591188,JUMP_TARGET,-1,case WINDOW_BUFFER_SIZE_EVENT:,13,295,case,9,CPPASTCaseStatement
+591196,JUMP_TARGET,-1,case MENU_EVENT:,13,298,case,13,CPPASTCaseStatement
+591204,JUMP_TARGET,-1,case FOCUS_EVENT:,13,301,case,17,CPPASTCaseStatement
+591212,JUMP_TARGET,-1,default:,13,304,default,21,CPPASTDefaultStatement
+591498,JUMP_TARGET,-1,case L'\r':,9,425,case,1,CPPASTCaseStatement
+591504,JUMP_TARGET,-1,case L'\x1b':,9,428,case,5,CPPASTCaseStatement
+591510,JUMP_TARGET,-1,case L'\t':,9,431,case,9,CPPASTCaseStatement
+591516,JUMP_TARGET,-1,case L'\b':,9,434,case,13,CPPASTCaseStatement
+601634,JUMP_TARGET,-1,case 0:,5,305,case,1,CPPASTCaseStatement
+601645,JUMP_TARGET,-1,case 1:,5,309,case,6,CPPASTCaseStatement
+601660,JUMP_TARGET,-1,case 2:,5,314,case,12,CPPASTCaseStatement
+601674,JUMP_TARGET,-1,case 3:,5,319,case,18,CPPASTCaseStatement
+609179,JUMP_TARGET,-1,case WM_DPICHANGED:,5,164,case,1,CPPASTCaseStatement
+609189,JUMP_TARGET,-1,case WM_PAINT:,5,168,case,6,CPPASTCaseStatement
+609195,JUMP_TARGET,-1,case WM_TIMER:,5,171,case,10,CPPASTCaseStatement
+609205,JUMP_TARGET,-1,case WM_DESTROY:,5,175,case,15,CPPASTCaseStatement
+609211,JUMP_TARGET,-1,default:,5,178,default,19,CPPASTDefaultStatement
+609731,JUMP_TARGET,-1,case KEY_EVENT:,9,22,case,1,CPPASTCaseStatement
+609793,JUMP_TARGET,-1,case MOUSE_EVENT:,9,43,case,4,CPPASTCaseStatement
+609795,JUMP_TARGET,-1,case WINDOW_BUFFER_SIZE_EVENT:,9,44,case,6,CPPASTCaseStatement
+609797,JUMP_TARGET,-1,case FOCUS_EVENT:,9,45,case,8,CPPASTCaseStatement
+609799,JUMP_TARGET,-1,case MENU_EVENT:,9,46,case,10,CPPASTCaseStatement
+609802,JUMP_TARGET,-1,default:,9,49,default,13,CPPASTDefaultStatement
+609879,JUMP_TARGET,-1,case WAIT_OBJECT_0 + 0:,9,82,case,1,CPPASTCaseStatement
+609887,JUMP_TARGET,-1,case WAIT_OBJECT_0 + 1:,9,87,case,5,CPPASTCaseStatement
+609896,JUMP_TARGET,-1,case WAIT_TIMEOUT:,9,91,case,9,CPPASTCaseStatement
+609901,JUMP_TARGET,-1,default:,9,96,default,13,CPPASTDefaultStatement
+610286,JUMP_TARGET,-1,case WindowingBehavior::UseNew:,9,165,case,1,CPPASTCaseStatement
+610296,JUMP_TARGET,-1,case WindowingBehavior::UseExisting:,9,168,case,5,CPPASTCaseStatement
+610311,JUMP_TARGET,-1,case WindowingBehavior::UseNew:,9,176,case,1,CPPASTCaseStatement
+610318,JUMP_TARGET,-1,case WindowingBehavior::UseExisting:,9,179,case,5,CPPASTCaseStatement
+616865,JUMP_TARGET,-1,case L'g':,9,175,case,1,CPPASTCaseStatement
+616867,JUMP_TARGET,-1,case L'G':,9,176,case,3,CPPASTCaseStatement
+616872,JUMP_TARGET,-1,case L'm':,9,179,case,6,CPPASTCaseStatement
+616874,JUMP_TARGET,-1,case L'M':,9,180,case,8,CPPASTCaseStatement
+616879,JUMP_TARGET,-1,case L'k':,9,183,case,11,CPPASTCaseStatement
+616881,JUMP_TARGET,-1,case L'K':,9,184,case,13,CPPASTCaseStatement
+616887,JUMP_TARGET,-1,default:,9,187,default,17,CPPASTDefaultStatement
+617777,JUMP_TARGET,-1,case VtMode::Italic:,5,562,case,1,CPPASTCaseStatement
+617816,JUMP_TARGET,-1,case VtMode::Color:,5,572,case,4,CPPASTCaseStatement
+617980,JUMP_TARGET,-1,default:,5,608,default,7,CPPASTDefaultStatement
+621230,JUMP_TARGET,-1,case CTRL_C_EVENT:,5,270,case,1,CPPASTCaseStatement
+621232,JUMP_TARGET,-1,case CTRL_BREAK_EVENT:,5,271,case,3,CPPASTCaseStatement
+621535,JUMP_TARGET,-1,case KEY_EVENT:,9,402,case,1,CPPASTCaseStatement
+621556,JUMP_TARGET,-1,case WINDOW_BUFFER_SIZE_EVENT:,9,414,case,4,CPPASTCaseStatement
+621828,JUMP_TARGET,-1,case SECURITY_MANDATORY_LOW_RID:,5,25,case,1,CPPASTCaseStatement
+621832,JUMP_TARGET,-1,case SECURITY_MANDATORY_MEDIUM_RID:,5,27,case,4,CPPASTCaseStatement
+621836,JUMP_TARGET,-1,case SECURITY_MANDATORY_HIGH_RID:,5,29,case,7,CPPASTCaseStatement
+621840,JUMP_TARGET,-1,case SECURITY_MANDATORY_SYSTEM_RID:,5,31,case,10,CPPASTCaseStatement
+621844,JUMP_TARGET,-1,default:,5,33,default,13,CPPASTDefaultStatement
+625014,JUMP_TARGET,-1,case '1':,21,305,case,1,CPPASTCaseStatement
+625020,JUMP_TARGET,-1,case '2':,21,308,case,5,CPPASTCaseStatement
+625026,JUMP_TARGET,-1,case '3':,21,311,case,9,CPPASTCaseStatement
+625032,JUMP_TARGET,-1,case '4':,21,314,case,13,CPPASTCaseStatement
+625038,JUMP_TARGET,-1,case '#':,21,317,case,17,CPPASTCaseStatement
+625044,JUMP_TARGET,-1,case '$':,21,320,case,21,CPPASTCaseStatement
+625050,JUMP_TARGET,-1,default:,21,323,default,25,CPPASTDefaultStatement
+625087,JUMP_TARGET,-1,case 'n':,21,346,case,1,CPPASTCaseStatement
+625089,JUMP_TARGET,-1,case '\t':,21,347,case,3,CPPASTCaseStatement
+625093,JUMP_TARGET,-1,case 't':,21,350,case,7,CPPASTCaseStatement
+625098,JUMP_TARGET,-1,case 'u':,21,354,case,12,CPPASTCaseStatement
+625104,JUMP_TARGET,-1,case 'r':,21,357,case,16,CPPASTCaseStatement
+625108,JUMP_TARGET,-1,default:,21,360,default,20,CPPASTDefaultStatement
+625194,JUMP_TARGET,-1,case TEST_LANG_CYRILLIC:,9,393,case,1,CPPASTCaseStatement
+625200,JUMP_TARGET,-1,case TEST_LANG_CHINESE:,9,396,case,5,CPPASTCaseStatement
+625206,JUMP_TARGET,-1,case TEST_LANG_JAPANESE:,9,399,case,9,CPPASTCaseStatement
+625212,JUMP_TARGET,-1,case TEST_LANG_KOREAN:,9,402,case,13,CPPASTCaseStatement
+625218,JUMP_TARGET,-1,case TEST_LANG_GOOD_POUND:,9,405,case,17,CPPASTCaseStatement
+625224,JUMP_TARGET,-1,case TEST_LANG_BAD_POUND:,9,408,case,21,CPPASTCaseStatement
+625230,JUMP_TARGET,-1,default:,9,411,default,25,CPPASTDefaultStatement
+625453,JUMP_TARGET,-1,case CTRL_C_EVENT:,5,513,case,1,CPPASTCaseStatement
+625455,JUMP_TARGET,-1,case CTRL_BREAK_EVENT:,5,514,case,3,CPPASTCaseStatement
+632105,JUMP_TARGET,-1,case 1:,5,340,case,1,CPPASTCaseStatement
+632116,JUMP_TARGET,-1,case 2:,5,343,case,5,CPPASTCaseStatement
+632144,JUMP_TARGET,-1,default:,5,348,default,11,CPPASTDefaultStatement
+634012,JUMP_TARGET,-1,case TextPatternRangeEndpoint_End:,5,133,case,1,CPPASTCaseStatement
+634016,JUMP_TARGET,-1,case TextPatternRangeEndpoint_Start:,5,135,case,4,CPPASTCaseStatement
+634018,JUMP_TARGET,-1,default:,5,136,default,6,CPPASTDefaultStatement
+634040,JUMP_TARGET,-1,case TextPatternRangeEndpoint_End:,5,156,case,1,CPPASTCaseStatement
+634054,JUMP_TARGET,-1,case TextPatternRangeEndpoint_Start:,5,161,case,6,CPPASTCaseStatement
+634068,JUMP_TARGET,-1,default:,5,166,default,11,CPPASTDefaultStatement
+634239,JUMP_TARGET,-1,case UIA_BackgroundColorAttributeId:,5,336,case,1,CPPASTCaseStatement
+634267,JUMP_TARGET,-1,case UIA_FontWeightAttributeId:,5,345,case,4,CPPASTCaseStatement
+634302,JUMP_TARGET,-1,case UIA_ForegroundColorAttributeId:,5,366,case,7,CPPASTCaseStatement
+634330,JUMP_TARGET,-1,case UIA_IsItalicAttributeId:,5,375,case,10,CPPASTCaseStatement
+634359,JUMP_TARGET,-1,case UIA_StrikethroughStyleAttributeId:,5,384,case,13,CPPASTCaseStatement
+634374,JUMP_TARGET,-1,case TextDecorationLineStyle_None:,9,394,case,1,CPPASTCaseStatement
+634382,JUMP_TARGET,-1,case TextDecorationLineStyle_Single:,9,396,case,4,CPPASTCaseStatement
+634389,JUMP_TARGET,-1,default:,9,398,default,7,CPPASTDefaultStatement
+634394,JUMP_TARGET,-1,case UIA_UnderlineStyleAttributeId:,5,402,case,16,CPPASTCaseStatement
+634409,JUMP_TARGET,-1,case TextDecorationLineStyle_None:,9,412,case,1,CPPASTCaseStatement
+634417,JUMP_TARGET,-1,case TextDecorationLineStyle_Single:,9,414,case,4,CPPASTCaseStatement
+634428,JUMP_TARGET,-1,case TextDecorationLineStyle_Double:,9,416,case,7,CPPASTCaseStatement
+634439,JUMP_TARGET,-1,case TextDecorationLineStyle_Wavy:,9,418,case,10,CPPASTCaseStatement
+634450,JUMP_TARGET,-1,case TextDecorationLineStyle_Dot:,9,420,case,13,CPPASTCaseStatement
+634461,JUMP_TARGET,-1,case TextDecorationLineStyle_Dash:,9,422,case,16,CPPASTCaseStatement
+634472,JUMP_TARGET,-1,default:,9,424,default,19,CPPASTDefaultStatement
+634477,JUMP_TARGET,-1,default:,5,428,default,19,CPPASTDefaultStatement
+634501,JUMP_TARGET,-1,case UIA_BackgroundColorAttributeId:,5,666,case,1,CPPASTCaseStatement
+634523,JUMP_TARGET,-1,case UIA_FontWeightAttributeId:,5,672,case,4,CPPASTCaseStatement
+634544,JUMP_TARGET,-1,case UIA_ForegroundColorAttributeId:,5,682,case,7,CPPASTCaseStatement
+634566,JUMP_TARGET,-1,case UIA_IsItalicAttributeId:,5,688,case,10,CPPASTCaseStatement
+634584,JUMP_TARGET,-1,case UIA_StrikethroughStyleAttributeId:,5,694,case,13,CPPASTCaseStatement
+634605,JUMP_TARGET,-1,case UIA_UnderlineStyleAttributeId:,5,700,case,16,CPPASTCaseStatement
+634623,JUMP_TARGET,-1,case UnderlineStyle::NoUnderline:,9,706,case,1,CPPASTCaseStatement
+634634,JUMP_TARGET,-1,case UnderlineStyle::SinglyUnderlined:,9,709,case,5,CPPASTCaseStatement
+634645,JUMP_TARGET,-1,case UnderlineStyle::DoublyUnderlined:,9,712,case,9,CPPASTCaseStatement
+634656,JUMP_TARGET,-1,case UnderlineStyle::CurlyUnderlined:,9,715,case,13,CPPASTCaseStatement
+634667,JUMP_TARGET,-1,case UnderlineStyle::DottedUnderlined:,9,718,case,17,CPPASTCaseStatement
+634678,JUMP_TARGET,-1,case UnderlineStyle::DashedUnderlined:,9,721,case,21,CPPASTCaseStatement
+634689,JUMP_TARGET,-1,default:,9,725,default,25,CPPASTDefaultStatement
+634697,JUMP_TARGET,-1,default:,5,730,default,19,CPPASTDefaultStatement
+635335,JUMP_TARGET,-1,case ProviderOptions_ServerSideProvider:,13,491,case,1,CPPASTCaseStatement
+635339,JUMP_TARGET,-1,default:,13,493,default,4,CPPASTDefaultStatement
+635352,JUMP_TARGET,-1,case UIA_TextPatternId:,13,516,case,1,CPPASTCaseStatement
+635356,JUMP_TARGET,-1,default:,13,518,default,4,CPPASTDefaultStatement
+635368,JUMP_TARGET,-1,case UIA_ControlTypePropertyId:,13,541,case,1,CPPASTCaseStatement
+635372,JUMP_TARGET,-1,case UIA_NamePropertyId:,13,543,case,4,CPPASTCaseStatement
+635376,JUMP_TARGET,-1,case UIA_AutomationIdPropertyId:,13,545,case,7,CPPASTCaseStatement
+635380,JUMP_TARGET,-1,case UIA_IsControlElementPropertyId:,13,547,case,10,CPPASTCaseStatement
+635384,JUMP_TARGET,-1,case UIA_IsContentElementPropertyId:,13,549,case,13,CPPASTCaseStatement
+635388,JUMP_TARGET,-1,case UIA_IsKeyboardFocusablePropertyId:,13,551,case,16,CPPASTCaseStatement
+635392,JUMP_TARGET,-1,case UIA_HasKeyboardFocusPropertyId:,13,553,case,19,CPPASTCaseStatement
+635396,JUMP_TARGET,-1,case UIA_ProviderDescriptionPropertyId:,13,555,case,22,CPPASTCaseStatement
+635400,JUMP_TARGET,-1,case UIA_IsEnabledPropertyId:,13,557,case,25,CPPASTCaseStatement
+635404,JUMP_TARGET,-1,default:,13,559,default,28,CPPASTDefaultStatement
+635443,JUMP_TARGET,-1,case SupportedTextSelection_Single:,13,720,case,1,CPPASTCaseStatement
+635447,JUMP_TARGET,-1,default:,13,722,default,4,CPPASTDefaultStatement
+635631,JUMP_TARGET,-1,case TextPatternRangeEndpoint_Start:,5,97,case,1,CPPASTCaseStatement
+635635,JUMP_TARGET,-1,case TextPatternRangeEndpoint_End:,5,99,case,4,CPPASTCaseStatement
+635639,JUMP_TARGET,-1,default:,5,101,default,7,CPPASTDefaultStatement
+635650,JUMP_TARGET,-1,case TextUnit_Character:,5,110,case,1,CPPASTCaseStatement
+635654,JUMP_TARGET,-1,case TextUnit_Format:,5,112,case,4,CPPASTCaseStatement
+635658,JUMP_TARGET,-1,case TextUnit_Word:,5,114,case,7,CPPASTCaseStatement
+635662,JUMP_TARGET,-1,case TextUnit_Line:,5,116,case,10,CPPASTCaseStatement
+635666,JUMP_TARGET,-1,case TextUnit_Paragraph:,5,118,case,13,CPPASTCaseStatement
+635670,JUMP_TARGET,-1,case TextUnit_Page:,5,120,case,16,CPPASTCaseStatement
+635674,JUMP_TARGET,-1,case TextUnit_Document:,5,122,case,19,CPPASTCaseStatement
+635678,JUMP_TARGET,-1,default:,5,124,default,22,CPPASTDefaultStatement
+635691,JUMP_TARGET,-1,case VT_BSTR:,5,135,case,1,CPPASTCaseStatement
+635697,JUMP_TARGET,-1,case VT_R8:,5,137,case,4,CPPASTCaseStatement
+635707,JUMP_TARGET,-1,case VT_BOOL:,5,139,case,7,CPPASTCaseStatement
+635717,JUMP_TARGET,-1,case VT_I4:,5,141,case,10,CPPASTCaseStatement
+635727,JUMP_TARGET,-1,case VT_UNKNOWN:,5,143,case,13,CPPASTCaseStatement
+635729,JUMP_TARGET,-1,default:,5,144,default,15,CPPASTDefaultStatement
+635741,JUMP_TARGET,-1,case AttributeType::Mixed:,5,155,case,1,CPPASTCaseStatement
+635747,JUMP_TARGET,-1,case AttributeType::Unsupported:,5,157,case,4,CPPASTCaseStatement
+635753,JUMP_TARGET,-1,case AttributeType::Error:,5,159,case,7,CPPASTCaseStatement
+635759,JUMP_TARGET,-1,case AttributeType::Standard:,5,161,case,10,CPPASTCaseStatement
+635763,JUMP_TARGET,-1,default:,5,162,default,12,CPPASTDefaultStatement
+647170,JUMP_TARGET,-1,case IMAGE_FILE_MACHINE_AMD64:,17,58,case,1,CPPASTCaseStatement
+647176,JUMP_TARGET,-1,case IMAGE_FILE_MACHINE_ARM64:,17,61,case,5,CPPASTCaseStatement
+647182,JUMP_TARGET,-1,case IMAGE_FILE_MACHINE_I386:,17,64,case,9,CPPASTCaseStatement
+647188,JUMP_TARGET,-1,default:,17,67,default,13,CPPASTDefaultStatement

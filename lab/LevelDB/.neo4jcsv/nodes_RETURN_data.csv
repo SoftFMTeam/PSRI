@@ -1,0 +1,906 @@
+99,RETURN,-1,,return std::string(buf);,5,39,3
+125,RETURN,-1,,return size;,5,46,5
+523,RETURN,-1,,return leveldb::test::RunAllTests();,3,117,1
+603,RETURN,-1,,return s;,7,32,1
+788,RETURN,-1,,return s;,3,85,9
+904,RETURN,-1,,"return (*compare_)(state_, a.data(), a.size(), b.data(), b.size());",5,74,1
+929,RETURN,-1,,return (*name_)(state_);,5,78,1
+987,RETURN,-1,,return (*name_)(state_);,5,105,1
+1075,RETURN,-1,,"return (*key_match_)(state_, key.data(), key.size(),
+                         filter.data(), filter.size());",5,122,1
+1115,RETURN,-1,,return false;,5,135,1
+1152,RETURN,-1,,return true;,3,143,3
+1185,RETURN,-1,,return result;,3,149,4
+1213,RETURN,-1,,return NULL;,5,158,1
+1225,RETURN,-1,,return result;,3,162,6
+1377,RETURN,-1,,return result;,3,215,7
+1403,RETURN,-1,,return result;,3,223,4
+1425,RETURN,-1,,return result;,3,230,4
+1463,RETURN,-1,,return strdup(tmp.c_str());,5,246,1
+1471,RETURN,-1,,return NULL;,5,248,1
+1623,RETURN,-1,,return iter->rep->Valid();,3,298,1
+1712,RETURN,-1,,return s.data();,3,324,4
+1739,RETURN,-1,,return s.data();,3,330,4
+1762,RETURN,-1,,return new leveldb_writebatch_t;,3,338,1
+1856,RETURN,-1,,return new leveldb_options_t;,3,387,1
+2082,RETURN,-1,,return result;,3,466,7
+2130,RETURN,-1,,return result;,3,492,8
+2168,RETURN,-1,,return wrapper;,3,519,6
+2174,RETURN,-1,,return new leveldb_readoptions_t;,3,523,1
+2232,RETURN,-1,,return new leveldb_writeoptions_t;,3,548,1
+2271,RETURN,-1,,return c;,3,563,4
+2306,RETURN,-1,,return result;,3,575,5
+2336,RETURN,-1,,return kMajorVersion;,3,588,1
+2342,RETURN,-1,,return kMinorVersion;,3,592,1
+2406,RETURN,-1,,return ret;,5,26,4
+2447,RETURN,-1,,return;,5,47,1
+2710,RETURN,-1,,return r;,3,125,6
+2717,RETURN,-1,,"return ""foo"";",3,129,1
+2733,RETURN,-1,,"return ""TestFilter"";",3,136,1
+2757,RETURN,-1,,return result;,3,146,5
+2803,RETURN,-1,,return fake_filter_result;,3,154,3
+3823,RETURN,-1,,return 0;,3,389,86
+3937,RETURN,-1,,"return DB::Open(options_, dbname_, &db_);",5,57,3
+4556,RETURN,-1,,return result;,7,181,1
+4560,RETURN,-1,,return -1;,7,183,1
+4583,RETURN,-1,,return Slice(*storage);,5,192,4
+4596,RETURN,-1,,"return test::RandomString(&r, kValueSize, storage);",5,198,3
+5909,RETURN,-1,,return leveldb::test::RunAllTests();,3,373,1
+6089,RETURN,-1,,"return Slice(data_.data() + pos_ - len, len);",5,150,3
+6112,RETURN,1,,return;,20,169,1
+8895,RETURN,-1,,return;,7,943,2
+9336,RETURN,-1,,return 0;,3,1019,11
+9433,RETURN,-1,,return &outputs[outputs.size()-1];,30,74,1
+9616,RETURN,-1,,return result;,3,114,11
+9783,RETURN,-1,,return s;,5,188,1
+9836,RETURN,-1,,return s;,3,206,15
+9885,RETURN,-1,,return;,5,222,1
+10093,RETURN,-1,,return s;,5,284,1
+10119,RETURN,-1,,return s;,9,291,1
+10123,RETURN,-1,,"return Status::InvalidArgument(
+          dbname_, ""does not exist (create_if_missing is false)"");",7,294,1
+10137,RETURN,-1,,"return Status::InvalidArgument(
+          dbname_, ""exists (error_if_exists is true)"");",7,299,1
+10158,RETURN,-1,,return s;,5,306,1
+10202,RETURN,-1,,return s;,5,322,1
+10293,RETURN,-1,,"return Status::Corruption(buf, TableFileName(dbname_, *(expected.begin())));",5,340,3
+10358,RETURN,-1,,return s;,7,349,1
+10380,RETURN,-1,,return Status::OK();,3,362,29
+10425,RETURN,-1,,return status;,5,389,2
+10747,RETURN,-1,,return status;,3,485,27
+10940,RETURN,-1,,return s;,3,531,22
+11282,RETURN,-1,,return s;,3,634,4
+11426,RETURN,-1,,return;,5,691,2
+11936,RETURN,-1,,return s;,3,810,10
+12133,RETURN,-1,,return s;,3,862,23
+12252,RETURN,-1,,"return versions_->LogAndApply(compact->compaction->edit(), &mutex_);",3,884,7
+12871,RETURN,-1,,return status;,3,1045,37
+13054,RETURN,-1,,return internal_iter;,3,1095,20
+13062,RETURN,-1,,"return NewInternalIterator(ReadOptions(), &ignored, &ignored_seed);",3,1101,3
+13077,RETURN,-1,,return versions_->MaxNextLevelOverlappingBytes();,3,1106,3
+13238,RETURN,-1,,return s;,3,1153,23
+13256,RETURN,-1,,"return NewDBIterator(
+      this, user_comparator(), iter,
+      (options.snapshot != NULL
+       ? reinterpret_cast<const SnapshotImpl*>(options.snapshot)->number_
+       : latest_snapshot),
+      seed);",3,1160,5
+13304,RETURN,-1,,return snapshots_.New(versions_->LastSequence());,3,1177,3
+13336,RETURN,-1,,"return DB::Put(o, key, val);",3,1187,1
+13350,RETURN,-1,,"return DB::Delete(options, key);",3,1191,1
+13419,RETURN,-1,,return w.status;,5,1206,1
+13614,RETURN,-1,,return status;,3,1264,20
+13774,RETURN,-1,,return result;,3,1313,17
+13976,RETURN,-1,,return s;,3,1378,7
+14007,RETURN,1,,return false;,32,1387,1
+14054,RETURN,-1,,return false;,7,1395,1
+14075,RETURN,-1,,return true;,7,1401,4
+14170,RETURN,-1,,return true;,5,1426,5
+14189,RETURN,-1,,return true;,5,1429,2
+14239,RETURN,-1,,return true;,5,1442,8
+14241,RETURN,-1,,return false;,3,1445,11
+14352,RETURN,-1,,"return Write(opt, &batch);",3,1479,3
+14369,RETURN,-1,,"return Write(opt, &batch);",3,1485,3
+14570,RETURN,-1,,return s;,3,1531,15
+14610,RETURN,-1,,return Status::OK();,5,1543,1
+14712,RETURN,-1,,return result;,3,1565,12
+15026,RETURN,-1,,return internal_comparator_.user_comparator();,5,198,1
+15097,RETURN,-1,,return valid_;,32,65,1
+15105,RETURN,-1,,return (direction_ == kForward) ? ExtractUserKey(iter_->key()) : saved_key_;,5,68,2
+15122,RETURN,-1,,return (direction_ == kForward) ? iter_->value() : saved_value_;,5,72,2
+15142,RETURN,-1,,return iter_->status();,7,76,1
+15149,RETURN,-1,,return status_;,7,78,1
+15231,RETURN,-1,,return rnd_.Uniform(2*config::kReadBytesPeriod);,5,108,1
+15318,RETURN,-1,,return false;,5,140,2
+15322,RETURN,-1,,return true;,5,142,1
+15369,RETURN,-1,,return;,7,162,3
+15455,RETURN,-1,,return;,13,194,3
+15518,RETURN,-1,,return;,9,219,4
+15766,RETURN,-1,,"return new DBIter(db, user_key_comparator, internal_iter, sequence, seed);",3,314,1
+15845,RETURN,-1,,return r;,3,25,3
+15881,RETURN,-1,,return count_;,5,44,3
+15970,RETURN,-1,,"return Status::IOError(""simulated write error"");",7,149,1
+16038,RETURN,-1,,return s;,5,161,5
+16072,RETURN,-1,,return s;,5,185,4
+16134,RETURN,-1,,return false;,7,231,1
+16139,RETURN,-1,,return true;,7,234,2
+16180,RETURN,-1,,return options;,5,255,4
+16186,RETURN,-1,,return reinterpret_cast<DBImpl*>(db_);,5,259,1
+16284,RETURN,-1,,"return DB::Open(opts, dbname_, &db_);",5,290,6
+16299,RETURN,-1,,"return db_->Put(WriteOptions(), k, v);",5,294,1
+16312,RETURN,-1,,"return db_->Delete(WriteOptions(), k);",5,298,1
+16367,RETURN,-1,,return result;,5,311,7
+16527,RETURN,-1,,return result;,5,338,11
+16669,RETURN,-1,,return result;,5,380,9
+16701,RETURN,-1,,return atoi(property.c_str());,5,388,3
+16733,RETURN,-1,,return result;,5,396,4
+16793,RETURN,-1,,return result;,5,413,6
+16815,RETURN,-1,,return static_cast<int>(files.size());,5,419,3
+16842,RETURN,-1,,return size;,5,426,5
+16958,RETURN,-1,,return property;,5,465,3
+16996,RETURN,-1,,return result;,5,475,3
+17082,RETURN,-1,,return true;,9,486,2
+17084,RETURN,-1,,return false;,5,489,6
+17187,RETURN,-1,,return files_renamed;,5,507,8
+21170,RETURN,-1,,return std::string(buf);,3,927,3
+22194,RETURN,-1,,return result;,3,1072,4
+27972,RETURN,-1,,"return DB::Put(o, k, v);",5,1870,1
+27986,RETURN,-1,,"return DB::Delete(o, key);",5,1873,1
+28002,RETURN,-1,,return Status::NotFound(key);,5,1878,2
+28029,RETURN,-1,,"return new ModelIter(saved, true);",7,1884,4
+28047,RETURN,-1,,"return new ModelIter(snapshot_state, false);",7,1888,3
+28066,RETURN,-1,,return snapshot;,5,1894,4
+28090,RETURN,-1,,return batch->Iterate(&handler);,5,1913,3
+28103,RETURN,-1,,return false;,5,1917,1
+28155,RETURN,-1,,return iter_ != map_->end();,34,1936,1
+28233,RETURN,-1,,return iter_->first;,33,1950,1
+28241,RETURN,-1,,return iter_->second;,35,1951,1
+28249,RETURN,-1,,return Status::OK();,37,1952,1
+28290,RETURN,-1,,"return test::RandomKey(rnd, len);",3,1966,3
+28498,RETURN,-1,,return ok;,3,2014,17
+28961,RETURN,-1,,return std::string(buf);,3,2091,3
+29297,RETURN,-1,,return 0;,5,2154,5
+29299,RETURN,-1,,return leveldb::test::RunAllTests();,3,2157,2
+29334,RETURN,-1,,return (seq << 8) | t;,3,15,3
+29401,RETURN,-1,,return result;,3,31,7
+29432,RETURN,-1,,return result;,3,43,4
+29438,RETURN,-1,,"return ""leveldb.InternalKeyComparator"";",3,47,1
+29512,RETURN,-1,,return r;,3,65,4
+29670,RETURN,-1,,return user_policy_->Name();,3,102,1
+29721,RETURN,-1,,"return user_policy_->KeyMayMatch(ExtractUserKey(key), f);",3,118,1
+29896,RETURN,-1,,return key.user_key.size() + 8;,3,83,1
+29929,RETURN,-1,,"return Slice(internal_key.data(), internal_key.size() - 8);",3,100,2
+29978,RETURN,-1,,return static_cast<ValueType>(c);,3,108,8
+30014,RETURN,-1,,return user_comparator_;,47,125,1
+30093,RETURN,-1,,return rep_;,5,156,2
+30099,RETURN,-1,,return ExtractUserKey(rep_);,28,159,1
+30133,RETURN,-1,,"return Compare(a.Encode(), b.Encode());",3,173,1
+30161,RETURN,1,,return false;,14,179,1
+30207,RETURN,-1,,return (c <= static_cast<unsigned char>(kTypeValue));,3,185,11
+30228,RETURN,-1,,"return Slice(start_, end_ - start_);",32,198,1
+30238,RETURN,-1,,"return Slice(kstart_, end_ - kstart_);",32,201,1
+30248,RETURN,-1,,"return Slice(kstart_, end_ - kstart_ - 8);",28,204,1
+30314,RETURN,-1,,return encoded;,3,16,3
+30334,RETURN,-1,,return result;,3,22,4
+30352,RETURN,-1,,return result;,3,28,4
+30943,RETURN,-1,,return leveldb::test::RunAllTests();,3,111,1
+31035,RETURN,-1,,"return ParseFileName(basename, &ignored, type);",3,32,6
+31102,RETURN,-1,,return s;,5,56,1
+31140,RETURN,-1,,return Status::OK();,3,67,13
+31241,RETURN,-1,,return;,5,102,5
+31313,RETURN,-1,,"return PrintLogContents(env, fname, WriteBatchPrinter, dst);",3,119,1
+31384,RETURN,-1,,"return PrintLogContents(env, fname, VersionEditPrinter, dst);",3,140,1
+31459,RETURN,-1,,return s;,5,161,3
+31636,RETURN,-1,,return Status::OK();,3,205,22
+31656,RETURN,-1,,"return Status::InvalidArgument(fname + "": unknown file type"");",5,213,1
+31669,RETURN,-1,,"return DumpLog(env, fname, dst);",28,216,3
+31676,RETURN,-1,,"return DumpDescriptor(env, fname, dst);",28,217,6
+31683,RETURN,-1,,"return DumpTable(env, fname, dst);",28,218,9
+31690,RETURN,-1,,"return Status::InvalidArgument(fname + "": not a dump-able file type"");",3,222,4
+31770,RETURN,-1,,"return """";",5,40,1
+31774,RETURN,-1,,"return filename.substr(0, found);",5,42,1
+31786,RETURN,-1,,return Status::OK();,3,48,1
+31824,RETURN,1,,return s;,5,58,1
+31905,RETURN,-1,,return s;,3,81,14
+31925,RETURN,-1,,return pos_ <= 0 || pos_ == pos_at_last_sync_;,32,98,1
+32041,RETURN,-1,,return filesystem_active_;,37,149,1
+32108,RETURN,-1,,return s;,3,181,4
+32135,RETURN,-1,,return s;,3,190,5
+32166,RETURN,-1,,return s;,3,198,4
+32190,RETURN,-1,,return s;,3,206,4
+32203,RETURN,-1,,return Status::OK();,5,211,1
+32256,RETURN,-1,,return s;,3,224,6
+32308,RETURN,-1,,return s;,3,242,5
+32375,RETURN,-1,,return s;,3,262,5
+32428,RETURN,-1,,return s;,3,276,5
+32451,RETURN,-1,,"return new_files_since_last_dir_sync_.find(filename) !=
+         new_files_since_last_dir_sync_.end();",3,287,3
+32517,RETURN,-1,,return s;,3,303,5
+32593,RETURN,-1,,return ret;,3,324,4
+32663,RETURN,-1,,return s;,3,346,7
+32695,RETURN,-1,,"return Truncate(filename_, sync_pos);",3,356,3
+32857,RETURN,-1,,"return db_->Get(options, key, val);",5,411,7
+32960,RETURN,-1,,return s;,5,433,5
+32982,RETURN,-1,,return Slice(*storage);,5,441,4
+32995,RETURN,-1,,"return test::RandomString(&r, kValueSize, storage);",5,447,3
+33017,RETURN,-1,,"return DB::Open(options_, dbname_, &db_);",5,454,4
+33410,RETURN,-1,,return leveldb::test::RunAllTests();,3,553,1
+33459,RETURN,-1,,return name + buf;,3,24,3
+33473,RETURN,-1,,"return MakeFileName(name, number, ""log"");",3,29,2
+33488,RETURN,-1,,"return MakeFileName(name, number, ""ldb"");",3,34,2
+33503,RETURN,-1,,"return MakeFileName(name, number, ""sst"");",3,39,2
+33527,RETURN,-1,,return dbname + buf;,3,47,4
+33536,RETURN,-1,,"return dbname + ""/CURRENT"";",3,51,1
+33545,RETURN,-1,,"return dbname + ""/LOCK"";",3,55,1
+33559,RETURN,-1,,"return MakeFileName(dbname, number, ""dbtmp"");",3,60,2
+33569,RETURN,-1,,"return dbname + ""/LOG"";",3,64,1
+33578,RETURN,-1,,"return dbname + ""/LOG.old"";",3,69,1
+33663,RETURN,-1,,return false;,7,97,1
+33672,RETURN,-1,,return false;,7,100,1
+33693,RETURN,-1,,return false;,7,109,1
+33740,RETURN,-1,,return false;,7,119,1
+33746,RETURN,-1,,return true;,3,123,4
+33828,RETURN,-1,,return s;,3,141,13
+34763,RETURN,-1,,return leveldb::test::RunAllTests();,3,122,1
+34802,RETURN,-1,,return Status::OK();,5,17,2
+34811,RETURN,-1,,return Status::OK();,28,19,1
+34820,RETURN,-1,,return Status::OK();,28,20,1
+34829,RETURN,-1,,return Status::OK();,27,21,1
+34888,RETURN,-1,,return ok;,3,34,5
+34957,RETURN,-1,,return (ok ? 0 : 1);,3,63,6
+35100,RETURN,-1,,return false;,7,53,2
+35102,RETURN,-1,,return true;,3,57,8
+35119,RETURN,-1,,return false;,7,63,1
+35227,RETURN,-1,,return true;,9,112,8
+35332,RETURN,-1,,return true;,11,148,4
+35344,RETURN,-1,,return false;,9,159,27
+35396,RETURN,-1,,return false;,3,181,10
+35402,RETURN,-1,,return last_record_offset_;,3,185,1
+35505,RETURN,-1,,return kEof;,11,211,4
+35527,RETURN,-1,,return kEof;,9,222,2
+35598,RETURN,-1,,return kBadRecord;,9,237,2
+35600,RETURN,-1,,return kEof;,7,242,5
+35615,RETURN,-1,,return kBadRecord;,7,250,2
+35661,RETURN,-1,,return kBadRecord;,9,265,5
+35688,RETURN,-1,,return kBadRecord;,7,275,2
+35698,RETURN,-1,,return type;,5,279,18
+35854,RETURN,-1,,return result;,3,24,4
+35868,RETURN,-1,,return std::string(buf);,3,31,3
+35880,RETURN,-1,,"return BigString(NumberString(i), rnd->Skewed(17));",3,36,1
+35896,RETURN,-1,,return Status::OK();,30,45,1
+35905,RETURN,-1,,return Status::OK();,30,46,1
+35914,RETURN,-1,,return Status::OK();,29,47,1
+35936,RETURN,-1,,return Status::OK();,7,50,2
+35985,RETURN,-1,,"return Status::Corruption(""read error"");",9,67,3
+36022,RETURN,-1,,return Status::OK();,7,76,6
+36044,RETURN,-1,,"return Status::NotFound(""in-memory file skipped past end"");",9,82,2
+36055,RETURN,-1,,return Status::OK();,7,87,3
+36158,RETURN,-1,,return dest_.contents_.size();,5,138,1
+36196,RETURN,-1,,return record.ToString();,7,149,1
+36203,RETURN,-1,,"return ""EOF"";",7,151,1
+36302,RETURN,-1,,return report_.dropped_bytes_;,5,179,1
+36310,RETURN,-1,,return report_.message_;,5,183,1
+36334,RETURN,-1,,return report_.message_;,7,189,1
+36340,RETURN,-1,,"return ""OK"";",7,191,1
+39751,RETURN,-1,,return leveldb::test::RunAllTests();,3,590,1
+39972,RETURN,-1,,return s;,3,81,9
+40083,RETURN,-1,,return s;,3,108,15
+40187,RETURN,-1,,"return Slice(p, len);",3,18,5
+40208,RETURN,-1,,return arena_.MemoryUsage();,45,31,1
+40229,RETURN,-1,,"return comparator.Compare(a, b);",3,38,5
+40264,RETURN,-1,,return scratch->data();,3,48,4
+40279,RETURN,-1,,return iter_.Valid();,32,55,1
+40333,RETURN,-1,,return GetLengthPrefixedSlice(iter_.key());,31,61,1
+40351,RETURN,-1,,return GetLengthPrefixedSlice(key_slice.data() + key_slice.size());,5,64,3
+40366,RETURN,-1,,return Status::OK();,35,67,1
+40387,RETURN,-1,,return new MemTableIterator(&table_);,3,79,1
+40601,RETURN,-1,,return true;,11,134,4
+40613,RETURN,-1,,return true;,11,138,7
+40615,RETURN,-1,,return false;,3,142,7
+40777,RETURN,-1,,return reinterpret_cast<DBImpl*>(db_);,28,31,1
+40785,RETURN,-1,,return env_;,22,32,1
+40811,RETURN,-1,,return false;,7,39,1
+40815,RETURN,-1,,return true;,7,41,1
+40910,RETURN,-1,,"return db_->Put(WriteOptions(), k, v);",5,67,1
+40960,RETURN,-1,,return result;,5,78,5
+41013,RETURN,-1,,"return dbname_ + ""/"" + current;",5,88,6
+41024,RETURN,-1,,"return LogFileName(dbname_, number);",5,92,1
+41091,RETURN,-1,,return logs.size();,5,100,3
+41100,RETURN,-1,,return GetFiles(kLogFile)[0];,5,104,1
+41182,RETURN,-1,,return result;,5,118,5
+41188,RETURN,-1,,return GetFiles(kLogFile).size();,5,122,1
+41198,RETURN,-1,,return GetFiles(kTableFile).size();,5,126,1
+41232,RETURN,-1,,return result;,5,132,3
+41393,RETURN,-1,,return;,5,162,2
+41529,RETURN,-1,,return;,5,178,2
+41877,RETURN,-1,,return;,5,218,2
+42776,RETURN,-1,,return leveldb::test::RunAllTests();,3,323,1
+42920,RETURN,-1,,return status;,5,91,5
+42969,RETURN,-1,,return status;,7,120,1
+42977,RETURN,-1,,"return Status::IOError(dbname_, ""repair found no files"");",7,123,1
+43061,RETURN,-1,,return status;,5,146,9
+43152,RETURN,-1,,return status;,7,181,1
+43357,RETURN,-1,,return status;,5,241,33
+43395,RETURN,-1,,"return table_cache_->NewIterator(r, meta.number, meta.file_size);",5,255,3
+43512,RETURN,-1,,return;,7,277,4
+43708,RETURN,-1,,return;,7,330,1
+43907,RETURN,-1,,return status;,7,380,1
+44117,RETURN,-1,,return status;,5,431,20
+44222,RETURN,-1,,return repairer.Run();,3,458,3
+44316,RETURN,-1,,"return static_cast<int>(
+        reinterpret_cast<intptr_t>(max_height_.NoBarrier_Load()));",5,111,1
+44342,RETURN,-1,,"return (compare_(a, b) == 0);",50,120,1
+44395,RETURN,-1,,return reinterpret_cast<Node*>(next_[n].Acquire_Load());,5,158,2
+44430,RETURN,-1,,return reinterpret_cast<Node*>(next_[n].NoBarrier_Load());,5,170,2
+44485,RETURN,-1,,return new (mem) Node(key);,3,187,3
+44505,RETURN,-1,,return node_ != NULL;,3,198,1
+44515,RETURN,-1,,return node_->key;,3,204,2
+44639,RETURN,-1,,return height;,3,252,8
+44647,RETURN,-1,,"return (n != NULL) && (compare_(n->key, key) < 0);",3,258,1
+44711,RETURN,-1,,return next;,9,274,1
+44773,RETURN,-1,,return x;,9,293,1
+44819,RETURN,-1,,return x;,9,313,1
+44969,RETURN,-1,,return true;,5,376,1
+44973,RETURN,-1,,return false;,5,378,1
+45008,RETURN,-1,,return -1;,7,20,1
+45018,RETURN,-1,,return +1;,7,22,1
+45023,RETURN,-1,,return 0;,7,24,1
+45802,RETURN,-1,,return (key >> 40);,34,153,1
+45811,RETURN,-1,,return (key >> 8) & 0xffffffffu;,34,154,1
+45822,RETURN,-1,,return key & 0xff;,35,155,1
+45838,RETURN,-1,,"return Hash(reinterpret_cast<char*>(data), sizeof(data), 0);",5,159,3
+45866,RETURN,-1,,"return ((k << 40) | (g << 8) | (HashNumbers(k, g) & 0xff));",5,166,4
+45885,RETURN,-1,,"return hash(k) == (HashNumbers(key(k), gen(k)) & 0xff);",5,170,1
+45911,RETURN,-1,,"return MakeKey(0, 0);",9,177,3
+45917,RETURN,-1,,"return MakeKey(K, 0);",9,180,6
+45922,RETURN,-1,,"return MakeKey(rnd->Next() % K, 0);",9,183,8
+45953,RETURN,-1,,return reinterpret_cast<intptr_t>(generation[k].Acquire_Load());,7,194,1
+46762,RETURN,-1,,return leveldb::test::RunAllTests();,3,377,1
+46807,RETURN,-1,,return list_.next_ == &list_;,24,38,1
+46821,RETURN,-1,,return list_.next_;,52,39,2
+46832,RETURN,-1,,return list_.prev_;,52,40,2
+46883,RETURN,-1,,return s;,5,50,9
+47139,RETURN,-1,,return s;,3,79,8
+47177,RETURN,-1,,return NewErrorIterator(s);,5,93,1
+47217,RETURN,-1,,return result;,3,102,13
+47274,RETURN,-1,,return s;,3,118,6
+47643,RETURN,-1,,return true;,5,92,2
+47647,RETURN,-1,,return false;,5,94,1
+47672,RETURN,-1,,return true;,5,103,2
+47676,RETURN,-1,,return false;,5,105,1
+47960,RETURN,-1,,return result;,3,209,16
+48211,RETURN,-1,,return r;,3,263,12
+48637,RETURN,-1,,return leveldb::test::RunAllTests();,3,45,1
+48683,RETURN,-1,,return options->max_file_size;,3,24,1
+48692,RETURN,-1,,return 10 * TargetFileSize(options);,3,30,1
+48702,RETURN,-1,,return 25 * TargetFileSize(options);,3,37,1
+48729,RETURN,-1,,return result;,3,50,4
+48737,RETURN,-1,,return TargetFileSize(options);,3,55,1
+48771,RETURN,-1,,return sum;,3,63,4
+48911,RETURN,-1,,return right;,3,104,6
+48920,RETURN,-1,,"return (user_key != NULL &&
+          ucmp->Compare(*user_key, f->largest.user_key()) > 0);",3,110,1
+48946,RETURN,-1,,"return (user_key != NULL &&
+          ucmp->Compare(*user_key, f->smallest.user_key()) < 0);",3,117,1
+49019,RETURN,-1,,return true;,9,136,1
+49021,RETURN,-1,,return false;,5,139,2
+49055,RETURN,-1,,return false;,5,152,1
+49057,RETURN,-1,,"return !BeforeFile(ucmp, largest_user_key, files[index]);",3,155,8
+49076,RETURN,-1,,return index_ < flist_->size();,5,172,1
+49155,RETURN,-1,,return (*flist_)[index_]->largest.Encode();,5,195,2
+49189,RETURN,-1,,"return Slice(value_buf_, sizeof(value_buf_));",5,201,4
+49198,RETURN,-1,,return Status::OK();,35,203,1
+49234,RETURN,-1,,"return NewErrorIterator(
+        Status::Corruption(""FileReader invoked with unexpected value""));",5,218,1
+49243,RETURN,-1,,"return cache->NewIterator(options,
+                              DecodeFixed64(file_value.data()),
+                              DecodeFixed64(file_value.data() + 8));",5,221,1
+49267,RETURN,-1,,"return NewTwoLevelIterator(
+      new LevelFileNumIterator(vset_->icmp_, &files_[level]),
+      &GetFileIterator, vset_->table_cache_, options);",3,229,1
+49456,RETURN,-1,,return a->number > b->number;,3,284,1
+49597,RETURN,-1,,return;,9,307,1
+49677,RETURN,-1,,return;,11,325,1
+50017,RETURN,-1,,return s;,9,411,1
+50029,RETURN,-1,,return s;,11,417,6
+50040,RETURN,-1,,return s;,11,420,10
+50052,RETURN,-1,,return s;,11,423,14
+50054,RETURN,-1,,return Status::NotFound(Slice());,3,428,17
+50099,RETURN,-1,,return true;,7,438,3
+50101,RETURN,-1,,return false;,3,441,4
+50116,RETURN,-1,,return false;,5,447,1
+50142,RETURN,-1,,return UpdateStats(state.stats);,5,477,1
+50147,RETURN,-1,,return false;,3,479,7
+50186,RETURN,-1,,"return SomeFileOverlapsRange(vset_->icmp_, (level > 0), files_[level],
+                               smallest_user_key, largest_user_key);",3,498,1
+50284,RETURN,-1,,return level;,3,527,4
+50594,RETURN,-1,,return r;,3,597,3
+50623,RETURN,-1,,return (r < 0);,9,612,1
+50629,RETURN,-1,,return (f1->number < f2->number);,9,615,1
+51596,RETURN,-1,,return s;,3,902,14
+51620,RETURN,-1,,return s;,5,917,1
+51639,RETURN,-1,,"return Status::Corruption(""CURRENT file does not end with newline"");",5,920,1
+51680,RETURN,-1,,return s;,5,928,1
+51971,RETURN,-1,,return s;,3,1024,35
+51985,RETURN,-1,,return false;,5,1030,1
+52020,RETURN,-1,,return false;,5,1040,1
+52063,RETURN,-1,,return false;,5,1049,3
+52083,RETURN,-1,,return true;,3,1055,14
+52315,RETURN,-1,,return log->AddRecord(record);,3,1129,7
+52336,RETURN,-1,,return current_->files_[level].size();,3,1135,3
+52435,RETURN,-1,,return scratch->buffer;,3,1150,3
+52569,RETURN,-1,,return result;,3,1182,4
+52655,RETURN,-1,,return TotalFileSize(current_->files_[level]);,3,1201,3
+52746,RETURN,-1,,return result;,3,1218,5
+53038,RETURN,-1,,return result;,3,1288,15
+53205,RETURN,-1,,return NULL;,5,1323,1
+53262,RETURN,-1,,return c;,3,1342,12
+53601,RETURN,-1,,return NULL;,5,1420,1
+53684,RETURN,-1,,return c;,3,1445,11
+53734,RETURN,-1,,"return (num_input_files(0) == 1 && num_input_files(1) == 0 &&
+          TotalFileSize(grandparents_) <=
+              MaxGrandParentOverlapBytes(vset->options_));",3,1471,3
+53889,RETURN,-1,,return false;,11,1495,1
+53896,RETURN,-1,,return true;,3,1502,4
+53966,RETURN,-1,,return true;,5,1522,2
+53970,RETURN,-1,,return false;,5,1524,1
+54096,RETURN,-1,,return files_[level].size();,35,111,1
+54188,RETURN,-1,,return current_;,30,185,1
+54194,RETURN,-1,,return manifest_file_number_;,41,188,1
+54200,RETURN,-1,,return next_file_number_++;,30,191,1
+54232,RETURN,-1,,return last_sequence_;,35,209,1
+54255,RETURN,-1,,return log_number_;,32,221,1
+54261,RETURN,-1,,return prev_log_number_;,36,225,1
+54291,RETURN,-1,,return (v->compaction_score_ >= 1) || (v->file_to_compact_ != NULL);,5,253,3
+54413,RETURN,-1,,return level_;,23,330,1
+54419,RETURN,-1,,return &edit_;,25,334,1
+54427,RETURN,-1,,return inputs_[which].size();,42,337,1
+54440,RETURN,-1,,return inputs_[which][i];,49,340,1
+54450,RETURN,-1,,return max_output_file_size_;,40,343,1
+54604,RETURN,-1,,"return FindFile(cmp, files_, target.Encode());",5,38,5
+54637,RETURN,-1,,"return SomeFileOverlapsRange(cmp, disjoint_sorted_files_, files_,
+                                 (smallest != NULL ? &s : NULL),
+                                 (largest != NULL ? &l : NULL));",5,45,7
+56463,RETURN,-1,,return leveldb::test::RunAllTests();,3,178,1
+56534,RETURN,-1,,"return Status::Corruption(""malformed WriteBatch (too small)"");",5,45,1
+56597,RETURN,-1,,"return Status::Corruption(""bad WriteBatch Put"");",11,61,1
+56620,RETURN,-1,,"return Status::Corruption(""bad WriteBatch Delete"");",11,68,1
+56628,RETURN,-1,,"return Status::Corruption(""unknown WriteBatch tag"");",9,72,10
+56643,RETURN,-1,,"return Status::Corruption(""WriteBatch has wrong count"");",5,76,1
+56651,RETURN,-1,,return Status::OK();,5,78,1
+56661,RETURN,-1,,return DecodeFixed32(b->rep_.data() + 8);,3,83,1
+56690,RETURN,-1,,return SequenceNumber(DecodeFixed64(b->rep_.data()));,3,91,1
+56830,RETURN,-1,,return b->Iterate(&inserter);,3,133,4
+56947,RETURN,-1,,return Slice(batch->rep_);,5,33,1
+56957,RETURN,-1,,return batch->rep_.size();,5,37,1
+57194,RETURN,-1,,return state;,3,52,17
+57706,RETURN,-1,,return leveldb::test::RunAllTests();,3,119,1
+57911,RETURN,-1,,"return Slice(data_.data() + pos_ - len, len);",5,145,3
+57967,RETURN,-1,,"return Slice(s.data() + start, limit - start);",3,158,7
+58929,RETURN,-1,,return;,9,484,2
+59773,RETURN,-1,,return 0;,3,717,6
+59926,RETURN,-1,,"return Slice(data_.data() + pos_ - len, len);",5,114,3
+59982,RETURN,-1,,"return Slice(s.data() + start, limit - start);",3,127,7
+60891,RETURN,-1,,return;,9,430,2
+61335,RETURN,-1,,return 0;,3,527,6
+61413,RETURN,-1,,return size_;,27,50,1
+61428,RETURN,-1,,"return Status::IOError(""Offset greater than file size."");",7,54,1
+61459,RETURN,-1,,return Status::OK();,7,62,2
+61501,RETURN,-1,,return Status::OK();,7,72,2
+61558,RETURN,-1,,return Status::OK();,5,92,18
+61641,RETURN,-1,,return Status::OK();,5,121,6
+61744,RETURN,-1,,return s;,5,164,4
+61759,RETURN,-1,,"return Status::IOError(""pos_ > file_->Size()"");",7,169,1
+61785,RETURN,-1,,return Status::OK();,5,176,6
+61818,RETURN,-1,,"return file_->Read(offset, n, result, scratch);",5,196,1
+61851,RETURN,-1,,return file_->Append(data);,5,214,1
+61861,RETURN,-1,,return Status::OK();,28,217,1
+61870,RETURN,-1,,return Status::OK();,28,218,1
+61879,RETURN,-1,,return Status::OK();,27,219,1
+61952,RETURN,-1,,"return Status::IOError(fname, ""File not found"");",7,246,2
+61967,RETURN,-1,,return Status::OK();,5,250,5
+61998,RETURN,-1,,"return Status::IOError(fname, ""File not found"");",7,258,2
+62013,RETURN,-1,,return Status::OK();,5,262,5
+62062,RETURN,-1,,return Status::OK();,5,277,9
+62108,RETURN,-1,,return Status::OK();,5,290,9
+62122,RETURN,-1,,return file_map_.find(fname) != file_map_.end();,5,295,3
+62215,RETURN,-1,,return Status::OK();,5,312,5
+62237,RETURN,-1,,return;,7,317,1
+62270,RETURN,-1,,"return Status::IOError(fname, ""File not found"");",7,327,1
+62279,RETURN,-1,,return Status::OK();,5,331,5
+62289,RETURN,-1,,return Status::OK();,5,335,1
+62299,RETURN,-1,,return Status::OK();,5,339,1
+62326,RETURN,-1,,"return Status::IOError(fname, ""File not found"");",7,345,1
+62342,RETURN,-1,,return Status::OK();,5,349,5
+62369,RETURN,-1,,"return Status::IOError(src, ""File not found"");",7,356,1
+62390,RETURN,-1,,return Status::OK();,5,362,7
+62406,RETURN,-1,,return Status::OK();,5,367,2
+62418,RETURN,-1,,return Status::OK();,5,372,2
+62432,RETURN,-1,,return Status::OK();,5,377,2
+62448,RETURN,-1,,return Status::OK();,5,382,2
+62461,RETURN,-1,,return new InMemoryEnv(base_env);,3,395,1
+64852,RETURN,-1,,return leveldb::test::RunAllTests();,3,240,1
+65922,RETURN,-1,,return target_;,25,295,1
+65930,RETURN,-1,,"return target_->NewSequentialFile(f, r);",5,299,1
+65943,RETURN,-1,,"return target_->NewRandomAccessFile(f, r);",5,302,1
+65956,RETURN,-1,,"return target_->NewWritableFile(f, r);",5,305,1
+65969,RETURN,-1,,"return target_->NewAppendableFile(f, r);",5,308,1
+65981,RETURN,-1,,return target_->FileExists(f);,43,310,1
+65993,RETURN,-1,,"return target_->GetChildren(dir, r);",5,312,1
+66005,RETURN,-1,,return target_->DeleteFile(f);,45,314,1
+66016,RETURN,-1,,return target_->CreateDir(d);,44,315,1
+66027,RETURN,-1,,return target_->DeleteDir(d);,44,316,1
+66039,RETURN,-1,,"return target_->GetFileSize(f, s);",5,318,1
+66052,RETURN,-1,,"return target_->RenameFile(s, t);",5,321,1
+66065,RETURN,-1,,"return target_->LockFile(f, l);",5,324,1
+66077,RETURN,-1,,return target_->UnlockFile(l);,36,326,1
+66089,RETURN,-1,,"return target_->Schedule(f, a);",5,328,1
+66102,RETURN,-1,,"return target_->StartThread(f, a);",5,331,1
+66114,RETURN,-1,,return target_->GetTestDirectory(path);,5,334,1
+66126,RETURN,-1,,"return target_->NewLogger(fname, result);",5,337,1
+66137,RETURN,-1,,return target_->NowMicros();,5,340,1
+66383,RETURN,-1,,return data_;,30,40,1
+66389,RETURN,-1,,return size_;,25,43,1
+66395,RETURN,-1,,return size_ == 0;,24,46,1
+66408,RETURN,-1,,return data_[n];,5,52,2
+66441,RETURN,-1,,"return std::string(data_, size_);",34,66,1
+66458,RETURN,-1,,"return ((size_ >= x.size_) &&
+            (memcmp(data_, x.data_, x.size_) == 0));",5,76,1
+66483,RETURN,-1,,"return ((x.size() == y.size()) &&
+          (memcmp(x.data(), y.data(), x.size()) == 0));",3,88,1
+66515,RETURN,-1,,return !(x == y);,3,93,1
+66576,RETURN,-1,,return r;,3,103,6
+66613,RETURN,-1,,return Status();,24,32,1
+66621,RETURN,-1,,"return Status(kNotFound, msg, msg2);",5,36,1
+66632,RETURN,-1,,"return Status(kCorruption, msg, msg2);",5,39,1
+66643,RETURN,-1,,"return Status(kNotSupported, msg, msg2);",5,42,1
+66654,RETURN,-1,,"return Status(kInvalidArgument, msg, msg2);",5,45,1
+66665,RETURN,-1,,"return Status(kIOError, msg, msg2);",5,48,1
+66674,RETURN,-1,,return (state_ == NULL);,21,52,1
+66682,RETURN,-1,,return code() == kNotFound;,29,55,1
+66690,RETURN,-1,,return code() == kCorruption;,31,58,1
+66698,RETURN,-1,,return code() == kIOError;,28,61,1
+66706,RETURN,-1,,return code() == kNotSupported;,38,64,1
+66714,RETURN,-1,,return code() == kInvalidArgument;,36,67,1
+66756,RETURN,-1,,return (state_ == NULL) ? kOk : static_cast<Code>(state_[4]);,5,91,1
+66975,RETURN,-1,,return status().ok();,21,78,1
+67097,RETURN,-1,,return buf;,3,21,3
+67104,RETURN,-1,,"return Key1(i) + ""_xxx"";",3,25,1
+67438,RETURN,-1,,return leveldb::test::RunAllTests();,3,91,1
+67838,RETURN,-1,,return leveldb::test::RunAllTests();,3,58,1
+68236,RETURN,-1,,return false;,3,126,1
+68245,RETURN,-1,,return false;,3,134,1
+68254,RETURN,-1,,return false;,3,143,1
+68262,RETURN,-1,,return false;,3,148,1
+68297,RETURN,-1,,return 0;,3,71,1
+68346,RETURN,-1,,return DecodeFixed32(data_ + size_ - sizeof(uint32_t));,3,20,2
+68425,RETURN,1,,return NULL;,22,57,1
+68478,RETURN,1,,return NULL;,57,65,1
+68490,RETURN,1,,return NULL;,61,66,1
+68502,RETURN,1,,return NULL;,63,67,1
+68517,RETURN,-1,,return NULL;,5,71,1
+68519,RETURN,-1,,return p;,3,73,7
+68537,RETURN,-1,,"return comparator_->Compare(a, b);",5,91,1
+68548,RETURN,-1,,return (value_.data() + value_.size()) - data_;,5,96,1
+68569,RETURN,-1,,return DecodeFixed32(data_ + restarts_ + index * sizeof(uint32_t));,5,101,2
+68619,RETURN,-1,,return current_ < restarts_;,32,128,1
+68627,RETURN,-1,,return status_;,35,129,1
+68635,RETURN,-1,,return key_;,5,132,2
+68643,RETURN,-1,,return value_;,5,136,2
+68679,RETURN,-1,,return;,9,154,3
+68755,RETURN,-1,,return;,9,179,2
+68786,RETURN,-1,,return;,9,197,1
+68794,RETURN,-1,,return;,9,200,1
+68872,RETURN,-1,,return false;,7,234,3
+68901,RETURN,-1,,return false;,7,242,2
+68939,RETURN,-1,,return true;,7,251,5
+68952,RETURN,-1,,"return NewErrorIterator(Status::Corruption(""bad block contents""));",5,258,1
+68968,RETURN,-1,,return NewEmptyIterator();,5,262,1
+68972,RETURN,-1,,"return new Iter(cmp, data_, restart_offset_, num_restarts);",5,264,1
+69007,RETURN,-1,,return size_;,25,24,1
+69098,RETURN,-1,,"return (buffer_.size() +                        // Raw data buffer
+          restarts_.size() * sizeof(uint32_t) +   // Restart array
+          sizeof(uint32_t));",3,58,1
+69149,RETURN,-1,,return Slice(buffer_);,3,70,4
+69351,RETURN,-1,,return buffer_.empty();,5,39,1
+69504,RETURN,-1,,return Slice(result_);,3,49,7
+69531,RETURN,-1,,return;,5,57,2
+69638,RETURN,1,,return;,14,86,1
+69665,RETURN,1,,return;,26,89,1
+69746,RETURN,-1,,"return policy_->KeyMayMatch(key, filter);",7,102,3
+69760,RETURN,-1,,return false;,7,105,1
+69762,RETURN,-1,,return true;,3,108,4
+69866,RETURN,-1,,"return ""TestHashFilter"";",5,20,1
+69955,RETURN,-1,,return true;,9,34,1
+69957,RETURN,-1,,return false;,5,37,4
+70731,RETURN,-1,,return leveldb::test::RunAllTests();,3,127,1
+70797,RETURN,-1,,return Status::OK();,5,26,1
+70804,RETURN,-1,,"return Status::Corruption(""bad block handle"");",5,28,1
+70912,RETURN,-1,,"return Status::Corruption(""not an sstable (bad magic number)"");",5,50,1
+70967,RETURN,-1,,return result;,3,62,14
+71033,RETURN,-1,,return s;,5,81,2
+71047,RETURN,-1,,"return Status::Corruption(""truncated block read"");",5,85,2
+71103,RETURN,-1,,return s;,7,96,3
+71176,RETURN,-1,,"return Status::Corruption(""corrupted compressed block contents"");",9,122,2
+71201,RETURN,-1,,"return Status::Corruption(""corrupted compressed block contents"");",9,128,3
+71230,RETURN,-1,,"return Status::Corruption(""bad block type"");",7,138,10
+71236,RETURN,-1,,return Status::OK();,3,141,17
+71269,RETURN,-1,,return offset_;,29,27,1
+71283,RETURN,-1,,return size_;,27,31,1
+71325,RETURN,-1,,return metaindex_handle_;,49,52,1
+71339,RETURN,-1,,return index_handle_;,5,57,1
+71545,RETURN,-1,,return false;,32,45,1
+71578,RETURN,-1,,return Slice();,38,51,2
+71586,RETURN,-1,,return Slice();,40,52,2
+71592,RETURN,-1,,return status_;,35,53,1
+71599,RETURN,-1,,return new EmptyIterator(Status::OK());,3,60,1
+71611,RETURN,-1,,return new EmptyIterator(status);,3,64,1
+71647,RETURN,-1,,return iter_;,28,24,1
+71674,RETURN,-1,,return valid_;,31,40,1
+71682,RETURN,-1,,return key_;,48,41,2
+71690,RETURN,-1,,return iter_->value();,48,42,2
+71701,RETURN,-1,,return iter_->status();,46,44,2
+71839,RETURN,-1,,return (current_ != NULL);,5,32,1
+72063,RETURN,-1,,return current_->key();,5,116,2
+72074,RETURN,-1,,return current_->value();,5,121,2
+72112,RETURN,-1,,return status;,5,132,3
+72278,RETURN,-1,,return NewEmptyIterator();,5,189,1
+72287,RETURN,-1,,return list[0];,5,191,1
+72293,RETURN,-1,,"return new MergingIterator(cmp, list, n);",5,193,1
+72380,RETURN,-1,,"return Status::Corruption(""file is too short to be an sstable"");",5,44,1
+72413,RETURN,1,,return s;,16,51,1
+72431,RETURN,1,,return s;,16,55,1
+72552,RETURN,-1,,return s;,3,88,16
+72568,RETURN,-1,,return;,5,93,1
+72600,RETURN,-1,,return;,5,105,1
+72681,RETURN,-1,,return;,5,124,1
+72710,RETURN,-1,,return;,5,135,1
+73013,RETURN,-1,,return iter;,3,217,17
+73020,RETURN,-1,,"return NewTwoLevelIterator(
+      rep_->index_block->NewIterator(rep_->options.comparator),
+      &Table::BlockReader, const_cast<Table*>(this), options);",3,221,1
+73172,RETURN,-1,,return s;,3,254,8
+73256,RETURN,-1,,return result;,3,282,7
+73362,RETURN,-1,,"return Status::InvalidArgument(""changing comparator while building table"");",5,81,1
+73385,RETURN,-1,,return Status::OK();,3,89,5
+73409,RETURN,1,,return;,14,95,1
+73559,RETURN,1,,return;,14,126,1
+73568,RETURN,1,,return;,30,127,1
+73842,RETURN,-1,,return rep_->status;,3,196,1
+74037,RETURN,-1,,return r->status;,3,253,13
+74063,RETURN,-1,,return rep_->num_entries;,3,263,1
+74071,RETURN,-1,,return rep_->offset;,3,267,1
+74151,RETURN,-1,,return rev;,3,34,6
+74159,RETURN,-1,,"return ""leveldb.ReverseBytewiseComparator"";",5,41,1
+74167,RETURN,-1,,"return BytewiseComparator()->Compare(Reverse(a), Reverse(b));",5,45,1
+74285,RETURN,-1,,"return cmp->Compare(Slice(a), Slice(b)) < 0;",5,85,1
+74305,RETURN,-1,,return contents_;,41,94,1
+74311,RETURN,-1,,return Status::OK();,28,96,1
+74320,RETURN,-1,,return Status::OK();,28,97,1
+74329,RETURN,-1,,return Status::OK();,27,98,1
+74351,RETURN,-1,,return Status::OK();,5,102,2
+74371,RETURN,-1,,return contents_.size();,27,118,1
+74392,RETURN,-1,,"return Status::InvalidArgument(""invalid Read offset"");",7,123,1
+74429,RETURN,-1,,return Status::OK();,5,130,5
+74552,RETURN,-1,,return data_;,33,173,1
+74558,RETURN,-1,,return NULL;,28,175,1
+74646,RETURN,-1,,return Status::OK();,5,207,12
+74655,RETURN,-1,,return block_->NewIterator(comparator_);,5,210,1
+74833,RETURN,-1,,"return Table::Open(table_options, source_, sink.contents().size(), &table_);",5,250,13
+74853,RETURN,-1,,return table_->NewIterator(ReadOptions());,5,254,1
+74864,RETURN,-1,,return table_->ApproximateOffsetOf(key);,5,258,1
+74906,RETURN,-1,,return iter_->Valid();,32,280,1
+74987,RETURN,-1,,"return Slice(""corrupted key"");",7,297,2
+74990,RETURN,-1,,return key.user_key;,5,299,4
+74998,RETURN,-1,,return iter_->value();,33,302,1
+75007,RETURN,-1,,return status_.ok() ? iter_->status() : status_;,5,304,1
+75108,RETURN,-1,,return Status::OK();,5,338,7
+75117,RETURN,-1,,return new KeyConvertingIterator(memtable_->NewIterator());,5,341,1
+75207,RETURN,-1,,return Status::OK();,5,371,5
+75216,RETURN,-1,,return db_->NewIterator(ReadOptions());,5,374,1
+75226,RETURN,-1,,return db_;,28,377,1
+76129,RETURN,-1,,"return ""END"";",7,589,1
+76133,RETURN,-1,,"return ""'"" + it->first + ""->"" + it->second + ""'"";",7,591,1
+76161,RETURN,-1,,"return ""END"";",7,598,1
+76165,RETURN,-1,,"return ""'"" + it->first + ""->"" + it->second + ""'"";",7,600,1
+76191,RETURN,-1,,"return ""END"";",7,606,1
+76195,RETURN,-1,,"return ""'"" + it->key().ToString() + ""->"" + it->value().ToString() + ""'"";",7,608,1
+76229,RETURN,-1,,"return ""foo"";",7,614,1
+76302,RETURN,-1,,return result;,7,635,6
+76308,RETURN,-1,,return constructor_->db();,20,640,1
+77310,RETURN,-1,,return result;,3,795,4
+77692,RETURN,-1,,"return port::Snappy_Compress(in.data(), in.size(), &out);",3,833,4
+77747,RETURN,-1,,return;,5,839,2
+77989,RETURN,-1,,return leveldb::test::RunAllTests();,3,875,1
+78058,RETURN,-1,,return data_iter_.Valid();,5,35,1
+78069,RETURN,-1,,return data_iter_.key();,5,39,2
+78080,RETURN,-1,,return data_iter_.value();,5,43,2
+78099,RETURN,-1,,return index_iter_.status();,7,48,1
+78123,RETURN,-1,,return data_iter_.status();,7,50,1
+78130,RETURN,-1,,return status_;,7,52,1
+78305,RETURN,-1,,return;,7,130,2
+78349,RETURN,-1,,return;,7,143,2
+78460,RETURN,-1,,"return new TwoLevelIterator(index_iter, block_function, arg, options);",3,179,1
+78548,RETURN,-1,,return result;,5,28,3
+78567,RETURN,-1,,return result;,3,38,8
+78653,RETURN,-1,,return result;,3,57,13
+78682,RETURN,-1,,return result;,3,65,5
+78723,RETURN,-1,,return reinterpret_cast<uintptr_t>(memory_usage_.NoBarrier_Load());,5,30,1
+78778,RETURN,-1,,return result;,5,61,5
+78780,RETURN,-1,,return AllocateFallback(bytes);,3,63,3
+79130,RETURN,-1,,return leveldb::test::RunAllTests();,3,67,1
+79155,RETURN,-1,,"return Hash(key.data(), key.size(), 0xbc9f1d34);",3,14,1
+79201,RETURN,-1,,"return ""leveldb.BuiltinBloomFilter2"";",5,32,1
+79346,RETURN,1,,return false;,18,65,1
+79376,RETURN,-1,,return true;,7,76,1
+79426,RETURN,1,,return false;,57,83,1
+79431,RETURN,-1,,return true;,5,86,16
+79438,RETURN,-1,,return new BloomFilterPolicy(bits_per_key);,3,92,1
+79471,RETURN,-1,,"return Slice(buffer, sizeof(uint32_t));",3,18,2
+79577,RETURN,-1,,return filter_.size();,5,56,1
+79653,RETURN,-1,,"return policy_->KeyMayMatch(s, filter_);",5,74,2
+79691,RETURN,-1,,return result / 10000.0;,5,85,5
+79919,RETURN,-1,,return length;,3,113,2
+80140,RETURN,-1,,return leveldb::test::RunAllTests();,3,161,1
+80198,RETURN,-1,,return *(reinterpret_cast<Slice*>(value));,7,59,1
+80205,RETURN,-1,,"return Slice(key_data, key_length);",7,61,1
+80233,RETURN,-1,,"return *FindPointer(key, hash);",5,77,1
+80288,RETURN,-1,,return old;,5,93,8
+80320,RETURN,-1,,return result;,5,103,6
+80370,RETURN,-1,,return ptr;,5,122,4
+80534,RETURN,-1,,return usage_;,5,171,3
+80813,RETURN,-1,,return reinterpret_cast<Cache::Handle*>(e);,3,261,6
+80980,RETURN,-1,,return reinterpret_cast<Cache::Handle*>(e);,3,302,15
+81012,RETURN,-1,,return e != NULL;,3,315,2
+81101,RETURN,-1,,"return Hash(s.data(), s.size(), 0);",5,345,1
+81117,RETURN,-1,,return hash >> (32 - kNumShardBits);,5,349,1
+81174,RETURN,-1,,"return shard_[Shard(hash)].Insert(key, hash, value, charge, deleter);",5,364,3
+81197,RETURN,-1,,"return shard_[Shard(hash)].Lookup(key, hash);",5,368,3
+81252,RETURN,-1,,return reinterpret_cast<LRUHandle*>(handle)->value;,5,379,1
+81266,RETURN,-1,,return ++(last_id_);,5,383,3
+81319,RETURN,-1,,return total;,5,395,4
+81332,RETURN,-1,,return new ShardedLRUCache(capacity);,3,402,1
+81360,RETURN,-1,,return result;,3,17,3
+81374,RETURN,-1,,return DecodeFixed32(k.data());,3,21,2
+81385,RETURN,-1,,return reinterpret_cast<void*>(v);,41,23,1
+81394,RETURN,-1,,return reinterpret_cast<uintptr_t>(v);,35,24,1
+81478,RETURN,-1,,return r;,5,54,6
+81511,RETURN,-1,,"return cache_->Insert(EncodeKey(key), EncodeValue(value), charge,
+                          &CacheTest::Deleter);",5,63,1
+83033,RETURN,-1,,return leveldb::test::RunAllTests();,3,225,1
+83391,RETURN,-1,,return reinterpret_cast<char*>(ptr);,3,72,6
+83458,RETURN,-1,,return reinterpret_cast<char*>(ptr);,3,89,7
+83526,RETURN,-1,,return len;,3,109,4
+83588,RETURN,-1,,return reinterpret_cast<const char*>(p);,7,125,3
+83592,RETURN,-1,,return NULL;,3,128,4
+83628,RETURN,-1,,return false;,5,136,1
+83640,RETURN,-1,,return true;,5,139,2
+83702,RETURN,-1,,return reinterpret_cast<const char*>(p);,7,154,3
+83706,RETURN,-1,,return NULL;,3,157,4
+83742,RETURN,-1,,return false;,5,165,1
+83754,RETURN,-1,,return true;,5,168,2
+83776,RETURN,1,,return NULL;,18,176,1
+83785,RETURN,1,,return NULL;,24,177,1
+83793,RETURN,-1,,return p + len;,3,179,6
+83831,RETURN,-1,,return true;,5,188,3
+83835,RETURN,-1,,return false;,5,190,1
+83961,RETURN,-1,,return result;,5,63,3
+83965,RETURN,-1,,"return ((static_cast<uint32_t>(static_cast<unsigned char>(ptr[0])))
+        | (static_cast<uint32_t>(static_cast<unsigned char>(ptr[1])) << 8)
+        | (static_cast<uint32_t>(static_cast<unsigned char>(ptr[2])) << 16)
+        | (static_cast<uint32_t>(static_cast<unsigned char>(ptr[3])) << 24));",5,65,1
+84020,RETURN,-1,,return result;,5,77,3
+84036,RETURN,-1,,return (hi << 32) | lo;,5,81,5
+84079,RETURN,-1,,return p + 1;,7,96,2
+84083,RETURN,-1,,"return GetVarint32PtrFallback(p, limit, value);",3,99,2
+85904,RETURN,-1,,return leveldb::test::RunAllTests();,3,195,1
+85943,RETURN,-1,,"return ""leveldb.BytewiseComparator"";",5,22,1
+85951,RETURN,-1,,return a.compare(b);,5,26,1
+86103,RETURN,-1,,return;,9,61,3
+86128,RETURN,-1,,return bytewise;,3,78,2
+87190,RETURN,-1,,return DecodeFixed32(reinterpret_cast<const char*>(p));,3,285,1
+87214,RETURN,-1,,"return port::AcceleratedCRC32C(0, kTestCRCBuffer, kBufSize) == kTestCRCValue;",3,296,7
+87238,RETURN,-1,,"return port::AcceleratedCRC32C(crc, buf, size);",5,302,1
+87586,RETURN,-1,,return l ^ 0xffffffffu;,3,346,18
+87614,RETURN,-1,,"return Extend(0, data, n);",3,21,1
+87628,RETURN,-1,,return ((crc >> 15) | (crc << 17)) + kMaskDelta;,3,33,1
+87649,RETURN,-1,,return ((rot >> 17) | (rot << 15));,3,39,3
+88136,RETURN,-1,,return leveldb::test::RunAllTests();,3,71,1
+88161,RETURN,-1,,"return Status::NotSupported(""NewAppendableFile"", fname);",3,13,1
+88237,RETURN,-1,,return s;,5,46,1
+88286,RETURN,-1,,return s;,3,59,10
+88295,RETURN,-1,,"return DoWriteStringToFile(env, data, fname, false);",3,64,1
+88308,RETURN,-1,,"return DoWriteStringToFile(env, data, fname, true);",3,69,1
+88343,RETURN,-1,,return s;,5,77,1
+88399,RETURN,-1,,return s;,3,94,13
+88476,RETURN,-1,,"return Status::IOError(context, strerror(err_number));",3,38,1
+88501,RETURN,-1,,return false;,7,56,1
+88516,RETURN,-1,,return false;,7,61,1
+88524,RETURN,-1,,return true;,7,64,2
+88544,RETURN,-1,,return reinterpret_cast<intptr_t>(allowed_.Acquire_Load());,5,80,1
+88626,RETURN,-1,,return s;,5,114,6
+88639,RETURN,-1,,"return IOError(filename_, errno);",7,119,1
+88643,RETURN,-1,,return Status::OK();,5,121,2
+88718,RETURN,-1,,"return IOError(filename_, errno);",9,157,1
+88759,RETURN,-1,,return s;,5,172,10
+88822,RETURN,-1,,return s;,5,206,3
+88871,RETURN,-1,,"return IOError(filename_, errno);",7,229,1
+88875,RETURN,-1,,return Status::OK();,5,231,4
+88899,RETURN,-1,,return result;,5,240,4
+88911,RETURN,-1,,"return IOError(filename_, errno);",7,245,1
+88915,RETURN,-1,,return Status::OK();,5,247,2
+89009,RETURN,-1,,return s;,5,274,10
+89026,RETURN,-1,,return s;,7,281,1
+89049,RETURN,-1,,return s;,5,287,5
+89090,RETURN,-1,,"return fcntl(fd, F_SETLK, &f);",3,299,8
+89111,RETURN,-1,,return locked_files_.insert(fname).second;,5,318,3
+89177,RETURN,-1,,"return IOError(fname, errno);",7,340,2
+89190,RETURN,-1,,return Status::OK();,7,343,2
+89302,RETURN,-1,,return s;,5,372,6
+89343,RETURN,-1,,return s;,5,385,5
+89384,RETURN,-1,,return s;,5,398,5
+89391,RETURN,-1,,"return access(fname.c_str(), F_OK) == 0;",5,402,1
+89423,RETURN,-1,,"return IOError(dir, errno);",7,410,1
+89445,RETURN,-1,,return Status::OK();,5,417,8
+89470,RETURN,-1,,return result;,5,425,3
+89493,RETURN,-1,,return result;,5,433,3
+89515,RETURN,-1,,return result;,5,441,3
+89553,RETURN,-1,,return s;,5,453,4
+89580,RETURN,-1,,return result;,5,461,3
+89682,RETURN,-1,,return result;,5,483,6
+89724,RETURN,-1,,return result;,5,495,8
+89779,RETURN,-1,,return Status::OK();,5,513,5
+89809,RETURN,-1,,return thread_id;,5,520,6
+89835,RETURN,-1,,"return IOError(fname, errno);",7,527,2
+89851,RETURN,-1,,return Status::OK();,7,530,2
+89865,RETURN,-1,,return static_cast<uint64_t>(tv.tv_sec) * 1000000 + tv.tv_usec;,5,537,3
+89917,RETURN,-1,,return NULL;,5,556,2
+89944,RETURN,-1,,return mmap_limit;,5,577,1
+89955,RETURN,-1,,return mmap_limit;,3,581,3
+89966,RETURN,-1,,return open_read_only_file_limit;,5,587,1
+90004,RETURN,-1,,return open_read_only_file_limit;,3,599,4
+90168,RETURN,-1,,return NULL;,3,662,5
+90246,RETURN,-1,,return default_env;,3,692,2
+90564,RETURN,-1,,return leveldb::test::RunAllTests();,3,65,2
+90992,RETURN,-1,,return leveldb::test::RunAllTests();,3,105,1
+91133,RETURN,-1,,return h;,3,48,11
+91409,RETURN,-1,,return leveldb::test::RunAllTests();,3,53,1
+91752,RETURN,-1,,return Percentile(50.0);,3,70,1
+91861,RETURN,-1,,return r;,7,88,15
+91863,RETURN,-1,,return max_;,3,91,6
+91874,RETURN,1,,return 0;,20,95,1
+91876,RETURN,-1,,return sum_ / num_;,3,96,2
+91889,RETURN,1,,return 0;,20,100,1
+91905,RETURN,-1,,return sqrt(variance);,3,102,4
+92044,RETURN,-1,,return r;,3,136,13
+92231,RETURN,-1,,return r;,3,39,3
+92243,RETURN,-1,,return r;,3,45,3
+92316,RETURN,-1,,return false;,9,60,1
+92337,RETURN,-1,,return (digits > 0);,3,69,7
+92731,RETURN,-1,,return seed_;,5,44,9
+92738,RETURN,-1,,return Next() % n;,29,48,1
+92747,RETURN,-1,,return (Next() % n) == 0;,23,52,1
+92758,RETURN,-1,,return Uniform(1 << Uniform(max_log + 1));,5,58,1
+92801,RETURN,-1,,return result;,3,16,6
+92906,RETURN,-1,,"return ""OK"";",5,38,1
+92982,RETURN,-1,,return result;,5,71,9
+93047,RETURN,-1,,return true;,3,33,7
+93143,RETURN,-1,,return 0;,3,57,7
+93189,RETURN,-1,,return dir;,3,64,5
+93218,RETURN,-1,,return result;,3,73,6
+93302,RETURN,-1,,return *this;,5,66,2
+93328,RETURN,-1,,return *this;,5,74,2
+93355,RETURN,-1,,"BINARY_OP(IsEq, ==)",3,87,2
+93382,RETURN,-1,,"BINARY_OP(IsNe, !=)",3,88,2
+93409,RETURN,-1,,"BINARY_OP(IsGe, >=)",3,89,2
+93436,RETURN,-1,,"BINARY_OP(IsGt, >)",3,90,2
+93463,RETURN,-1,,"BINARY_OP(IsLe, <=)",3,91,2
+93490,RETURN,-1,,"BINARY_OP(IsLt, <)",3,92,2
+93507,RETURN,-1,,return *this;,5,101,2
+93566,RETURN,-1,,return Slice(*dst);,3,17,3
+93613,RETURN,-1,,return result;,3,30,5
+93667,RETURN,-1,,return Slice(*dst);,3,47,9
+93727,RETURN,-1,,"return Status::IOError(fname, ""fake error"");",7,44,3
+93734,RETURN,-1,,"return target()->NewWritableFile(fname, result);",5,46,2
+93756,RETURN,-1,,"return Status::IOError(fname, ""fake error"");",7,54,3
+93763,RETURN,-1,,"return target()->NewAppendableFile(fname, result);",5,56,2

@@ -1,0 +1,2912 @@
+1011,JUMP_TARGET,-1,"tz_found:
+
+    n = 0;",1,553,tz_found,17,CASTLabelStatement
+1543,JUMP_TARGET,-1,case '?':,13,768,case,1,CASTCaseStatement
+1545,JUMP_TARGET,-1,case 'h':,13,769,case,3,CASTCaseStatement
+1554,JUMP_TARGET,-1,case 'v':,13,774,case,8,CASTCaseStatement
+1560,JUMP_TARGET,-1,case 'V':,13,778,case,12,CASTCaseStatement
+1569,JUMP_TARGET,-1,case 't':,13,783,case,17,CASTCaseStatement
+1575,JUMP_TARGET,-1,case 'T':,13,787,case,21,CASTCaseStatement
+1584,JUMP_TARGET,-1,case 'q':,13,792,case,26,CASTCaseStatement
+1590,JUMP_TARGET,-1,case 'p':,13,796,case,30,CASTCaseStatement
+1619,JUMP_TARGET,-1,case 'e':,13,810,case,36,CASTCaseStatement
+1663,JUMP_TARGET,-1,case 'c':,13,828,case,41,CASTCaseStatement
+1692,JUMP_TARGET,-1,case 'g':,13,842,case,47,CASTCaseStatement
+1721,JUMP_TARGET,-1,case 's':,13,856,case,53,CASTCaseStatement
+1787,JUMP_TARGET,-1,default:,13,880,default,59,CASTDefaultStatement
+1797,JUMP_TARGET,-1,"next:
+
+        continue;",5,886,next,4,CASTLabelStatement
+5219,JUMP_TARGET,-1,"failed:
+
+    rc = NGX_ERROR;",1,326,failed,10,CASTLabelStatement
+5223,JUMP_TARGET,-1,"done:
+
+    if (filename) {
+        if (cf->conf_file->buffer->start) {
+            ngx_free(cf->conf_file->buffer->start);
+        }
+
+        if (ngx_close_file(fd) == NGX_FILE_ERROR) {
+            ngx_log_error(NGX_LOG_ALERT, cf->log, ngx_errno,
+                          ngx_close_file_n "" %s failed"",
+                          filename->data);
+            rc = NGX_ERROR;
+        }
+
+        cf->conf_file = prev;
+    }",1,330,done,12,CASTLabelStatement
+5686,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""invalid number of arguments in \""%s\"" directive"",
+                       name->data);",1,492,invalid,14,CASTLabelStatement
+6161,JUMP_TARGET,-1,case ';':,13,669,case,1,CASTCaseStatement
+6163,JUMP_TARGET,-1,case '{':,13,670,case,3,CASTCaseStatement
+6191,JUMP_TARGET,-1,case '}':,13,683,case,8,CASTCaseStatement
+6211,JUMP_TARGET,-1,case '#':,13,692,case,12,CASTCaseStatement
+6217,JUMP_TARGET,-1,case '\\':,13,696,case,16,CASTCaseStatement
+6226,JUMP_TARGET,-1,"case '""':",13,701,case,21,CASTCaseStatement
+6237,JUMP_TARGET,-1,case '\'':,13,707,case,27,CASTCaseStatement
+6248,JUMP_TARGET,-1,case '$':,13,713,case,33,CASTCaseStatement
+6257,JUMP_TARGET,-1,default:,13,718,default,38,CASTDefaultStatement
+6438,JUMP_TARGET,-1,"case '""':",25,777,case,1,CASTCaseStatement
+6440,JUMP_TARGET,-1,case '\'':,25,778,case,3,CASTCaseStatement
+6442,JUMP_TARGET,-1,case '\\':,25,779,case,5,CASTCaseStatement
+6447,JUMP_TARGET,-1,case 't':,25,783,case,9,CASTCaseStatement
+6458,JUMP_TARGET,-1,case 'r':,25,788,case,14,CASTCaseStatement
+6469,JUMP_TARGET,-1,case 'n':,25,793,case,19,CASTCaseStatement
+8643,JUMP_TARGET,-1,case AF_INET:,5,60,case,1,CASTCaseStatement
+8651,JUMP_TARGET,-1,default:,5,63,default,5,CASTDefaultStatement
+8870,JUMP_TARGET,-1,case AF_INET:,9,191,case,1,CASTCaseStatement
+8888,JUMP_TARGET,-1,default:,9,196,default,6,CASTDefaultStatement
+10285,JUMP_TARGET,-1,case NGX_ERROR_INFO:,13,1242,case,1,CASTCaseStatement
+10291,JUMP_TARGET,-1,case NGX_ERROR_ERR:,13,1246,case,5,CASTCaseStatement
+10297,JUMP_TARGET,-1,default:,13,1250,default,9,CASTDefaultStatement
+10596,JUMP_TARGET,-1,default:,9,1406,default,1,CASTDefaultStatement
+10821,JUMP_TARGET,-1,case NGX_ERROR_IGNORE_EINVAL:,9,1525,case,1,CASTCaseStatement
+10823,JUMP_TARGET,-1,case NGX_ERROR_IGNORE_ECONNRESET:,9,1526,case,3,CASTCaseStatement
+10825,JUMP_TARGET,-1,case NGX_ERROR_INFO:,9,1527,case,5,CASTCaseStatement
+10831,JUMP_TARGET,-1,default:,9,1531,default,9,CASTDefaultStatement
+13292,JUMP_TARGET,-1,"shm_zone_found:
+
+        continue;",5,497,shm_zone_found,10,CASTLabelStatement
+13766,JUMP_TARGET,-1,"live_shm_zone:
+
+        continue;",5,697,live_shm_zone,6,CASTLabelStatement
+13768,JUMP_TARGET,-1,"old_shm_zone_done:
+
+
+    /* close the unnecessary listening sockets */
+
+    ls = old_cycle->listening.elts;",1,702,old_shm_zone_done,114,CASTLabelStatement
+14037,JUMP_TARGET,-1,"failed:
+
+    if (!ngx_is_init_cycle(old_cycle)) {
+        old_ccf = (ngx_core_conf_t *) ngx_get_conf(old_cycle->conf_ctx,
+                                                   ngx_core_module);
+        if (old_ccf->environment) {
+            environ = old_ccf->environment;
+        }
+    }",1,819,failed,129,CASTLabelStatement
+14350,JUMP_TARGET,-1,"old_shm_zone_found:
+
+        continue;",5,914,old_shm_zone_found,7,CASTLabelStatement
+16656,JUMP_TARGET,-1,case NGX_EEXIST:,13,330,case,1,CASTCaseStatement
+16661,JUMP_TARGET,-1,case NGX_EACCES:,13,332,case,4,CASTCaseStatement
+16664,JUMP_TARGET,-1,default:,13,335,default,7,CASTDefaultStatement
+17198,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, ""invalid value \""%V\"""", &value[i]);",1,517,invalid,18,CASTLabelStatement
+17890,JUMP_TARGET,-1,"failed:
+
+    if (ext->delete_file) {
+        if (ngx_delete_file(src->data) == NGX_FILE_ERROR) {
+            ngx_log_error(NGX_LOG_CRIT, ext->log, ngx_errno,
+                          ngx_delete_file_n "" \""%s\"" failed"", src->data);
+        }
+    }",1,775,failed,10,CASTLabelStatement
+18169,JUMP_TARGET,-1,"failed:
+
+    if (nfd != NGX_INVALID_FILE) {
+        if (ngx_close_file(nfd) == NGX_FILE_ERROR) {
+            ngx_log_error(NGX_LOG_ALERT, cf->log, ngx_errno,
+                          ngx_close_file_n "" \""%s\"" failed"", to);
+        }
+    }",1,903,failed,26,CASTLabelStatement
+18659,JUMP_TARGET,-1,"failed:
+
+    rc = NGX_ABORT;",1,1107,failed,17,CASTLabelStatement
+18663,JUMP_TARGET,-1,"done:
+
+    if (buf.len) {
+        ngx_free(buf.data);
+    }",1,1111,done,19,CASTLabelStatement
+19003,JUMP_TARGET,-1,"next:
+
+        elt = (ngx_hash_elt_t *) ngx_align_ptr(&elt->name[0] + elt->len,
+                                               sizeof(void *));",5,41,next,4,CASTLabelStatement
+19697,JUMP_TARGET,-1,"next:
+
+        continue;",5,332,next,4,CASTLabelStatement
+19731,JUMP_TARGET,-1,"found:
+
+    for (i = 0; i < size; i++) {
+        test[i] = sizeof(void *);
+    }",1,346,found,24,CASTLabelStatement
+21255,JUMP_TARGET,-1,"wildcard:
+
+    /* wildcard hash */
+
+    k = ngx_hash_strlow(&key->data[skip], &key->data[skip], last - skip);",1,856,wildcard,28,CASTLabelStatement
+22029,JUMP_TARGET,-1,case AF_INET:,5,200,case,1,CASTCaseStatement
+22093,JUMP_TARGET,-1,default:,5,259,default,7,CASTDefaultStatement
+22108,JUMP_TARGET,-1,case AF_INET:,5,272,case,1,CASTCaseStatement
+22132,JUMP_TARGET,-1,default:,5,287,default,5,CASTDefaultStatement
+22240,JUMP_TARGET,-1,default:,5,450,default,1,CASTDefaultStatement
+22382,JUMP_TARGET,-1,default:,9,544,default,1,CASTDefaultStatement
+22410,JUMP_TARGET,-1,"next:
+        continue;",5,553,next,4,CASTLabelStatement
+22479,JUMP_TARGET,-1,default:,5,611,default,1,CASTDefaultStatement
+23116,JUMP_TARGET,-1,"no_port:
+
+        u->err = NULL;",1,935,no_port,2,CASTLabelStatement
+23634,JUMP_TARGET,-1,default:,9,1299,default,1,CASTDefaultStatement
+23727,JUMP_TARGET,-1,default:,5,1383,default,1,CASTDefaultStatement
+23780,JUMP_TARGET,-1,default:,5,1424,default,1,CASTDefaultStatement
+23803,JUMP_TARGET,-1,default:,5,1453,default,1,CASTDefaultStatement
+23827,JUMP_TARGET,-1,case AF_INET:,5,1471,case,1,CASTCaseStatement
+24547,JUMP_TARGET,-1,"next:
+
+        log = log->next;",5,193,next,7,CASTLabelStatement
+30061,JUMP_TARGET,-1,"again:
+
+    /* find an unused index */
+
+    for (i = 0; cycle->modules[i]; i++) {
+        module = cycle->modules[i];
+
+        if (module->index == index) {
+            index++;
+            goto again;
+        }
+    }",1,287,again,5,CASTLabelStatement
+30148,JUMP_TARGET,-1,"again:
+
+    /* find an unused ctx_index */
+
+    for (i = 0; cycle->modules[i]; i++) {
+        module = cycle->modules[i];
+
+        if (module->type != type) {
+            continue;
+        }
+
+        if (module->ctx_index == index) {
+            index++;
+            goto again;
+        }
+    }",1,324,again,3,CASTLabelStatement
+30434,JUMP_TARGET,-1,case 3:,5,36,case,1,CASTCaseStatement
+30443,JUMP_TARGET,-1,case 2:,5,39,case,4,CASTCaseStatement
+30452,JUMP_TARGET,-1,case 1:,5,42,case,7,CASTCaseStatement
+31399,JUMP_TARGET,-1,"create:
+
+    if (cache->current >= cache->max) {
+        ngx_expire_old_cached_files(cache, 0, pool->log);
+    }",1,360,create,20,CASTLabelStatement
+31507,JUMP_TARGET,-1,"add_event:
+
+    ngx_open_file_add_event(cache, file, of, pool->log);",1,393,add_event,34,CASTLabelStatement
+31515,JUMP_TARGET,-1,"update:
+
+    file->fd = of->fd;",1,397,update,36,CASTLabelStatement
+31613,JUMP_TARGET,-1,"found:
+
+    file->accessed = now;",1,426,found,41,CASTLabelStatement
+31701,JUMP_TARGET,-1,"failed:
+
+    if (file) {
+        ngx_rbtree_delete(&cache->rbtree, &file->node);
+
+        cache->current--;
+
+        if (file->count == 0) {
+
+            if (file->fd != NGX_INVALID_FILE) {
+                if (ngx_close_file(file->fd) == NGX_FILE_ERROR) {
+                    ngx_log_error(NGX_LOG_ALERT, pool->log, ngx_errno,
+                                  ngx_close_file_n "" \""%s\"" failed"",
+                                  file->name);
+                }
+            }
+
+            ngx_free(file->name);
+            ngx_free(file);
+
+        } else {
+            file->close = 1;
+        }
+    }",1,453,failed,47,CASTLabelStatement
+32054,JUMP_TARGET,-1,"done:
+
+    of->uniq = ngx_file_uniq(&fi);",1,933,done,8,CASTLabelStatement
+35810,JUMP_TARGET,-1,case 'K':,5,28,case,1,CASTCaseStatement
+35812,JUMP_TARGET,-1,case 'k':,5,29,case,3,CASTCaseStatement
+35825,JUMP_TARGET,-1,case 'M':,5,35,case,9,CASTCaseStatement
+35827,JUMP_TARGET,-1,case 'm':,5,36,case,11,CASTCaseStatement
+35844,JUMP_TARGET,-1,default:,5,42,default,17,CASTDefaultStatement
+35908,JUMP_TARGET,-1,case 'K':,5,74,case,1,CASTCaseStatement
+35910,JUMP_TARGET,-1,case 'k':,5,75,case,3,CASTCaseStatement
+35923,JUMP_TARGET,-1,case 'M':,5,81,case,9,CASTCaseStatement
+35925,JUMP_TARGET,-1,case 'm':,5,82,case,11,CASTCaseStatement
+35942,JUMP_TARGET,-1,case 'G':,5,88,case,17,CASTCaseStatement
+35944,JUMP_TARGET,-1,case 'g':,5,89,case,19,CASTCaseStatement
+35965,JUMP_TARGET,-1,default:,5,95,default,25,CASTDefaultStatement
+36102,JUMP_TARGET,-1,case 'y':,9,155,case,1,CASTCaseStatement
+36135,JUMP_TARGET,-1,case 'M':,9,164,case,8,CASTCaseStatement
+36168,JUMP_TARGET,-1,case 'w':,9,173,case,15,CASTCaseStatement
+36201,JUMP_TARGET,-1,case 'd':,9,182,case,22,CASTCaseStatement
+36230,JUMP_TARGET,-1,case 'h':,9,191,case,29,CASTCaseStatement
+36255,JUMP_TARGET,-1,case 'm':,9,200,case,36,CASTCaseStatement
+36307,JUMP_TARGET,-1,case 's':,9,220,case,44,CASTCaseStatement
+36326,JUMP_TARGET,-1,case ' ':,9,229,case,51,CASTCaseStatement
+36345,JUMP_TARGET,-1,default:,9,238,default,58,CASTDefaultStatement
+36651,JUMP_TARGET,-1,case 'J':,5,83,case,1,CASTCaseStatement
+36673,JUMP_TARGET,-1,case 'F':,5,87,case,5,CASTCaseStatement
+36679,JUMP_TARGET,-1,case 'M':,5,91,case,9,CASTCaseStatement
+36693,JUMP_TARGET,-1,case 'A':,5,95,case,13,CASTCaseStatement
+36707,JUMP_TARGET,-1,case 'S':,5,99,case,17,CASTCaseStatement
+36713,JUMP_TARGET,-1,case 'O':,5,103,case,21,CASTCaseStatement
+36719,JUMP_TARGET,-1,case 'N':,5,107,case,25,CASTCaseStatement
+36725,JUMP_TARGET,-1,case 'D':,5,111,case,29,CASTCaseStatement
+36731,JUMP_TARGET,-1,default:,5,115,default,33,CASTDefaultStatement
+37714,JUMP_TARGET,-1,"skip:
+
+    for ( /* void */ ; p < last - 1; p++) {
+        if (p[0] == CR && p[1] == LF) {
+            return p + 2;
+        }
+    }",1,132,skip,30,CASTLabelStatement
+37742,JUMP_TARGET,-1,"invalid:
+
+    ngx_log_error(NGX_LOG_ERR, c->log, 0,
+                  ""broken header: \""%*s\"""", (size_t) (last - buf), buf);",1,140,invalid,32,CASTLabelStatement
+37963,JUMP_TARGET,-1,case AF_INET:,5,240,case,1,CASTCaseStatement
+37975,JUMP_TARGET,-1,default:,5,250,default,5,CASTDefaultStatement
+38184,JUMP_TARGET,-1,case NGX_PROXY_PROTOCOL_AF_INET:,5,333,case,1,CASTCaseStatement
+38307,JUMP_TARGET,-1,default:,5,387,default,16,CASTDefaultStatement
+38743,JUMP_TARGET,-1,case 128:,9,66,case,1,CASTCaseStatement
+38749,JUMP_TARGET,-1,case 256:,9,71,case,5,CASTCaseStatement
+38755,JUMP_TARGET,-1,default:,9,76,default,9,CASTDefaultStatement
+40706,JUMP_TARGET,-1,"failed:
+
+    rc->err.len = ngx_snprintf(rc->err.data, rc->err.len, p, &rc->pattern, n)
+                  - rc->err.data;",1,372,failed,31,CASTLabelStatement
+40738,JUMP_TARGET,-1,"nomem:
+
+    rc->err.len = ngx_snprintf(rc->err.data, rc->err.len,
+                               ""regex \""%V\"" compilation failed: no memory"",
+                               &rc->pattern)
+                  - rc->err.data;",1,378,nomem,34,CASTLabelStatement
+42538,JUMP_TARGET,-1,"failed:
+
+    ngx_resolver_free(r, ctx);",1,479,failed,13,CASTLabelStatement
+42739,JUMP_TARGET,-1,"done:
+
+    if (ctx->service.len) {
+        ngx_resolver_expire(r, &r->srv_rbtree, &r->srv_expire_queue);
+
+    } else {
+        ngx_resolver_expire(r, &r->name_rbtree, &r->name_expire_queue);
+    }",1,551,done,12,CASTLabelStatement
+43684,JUMP_TARGET,-1,"failed:
+
+    ngx_rbtree_delete(tree, &rn->node);",1,887,failed,39,CASTLabelStatement
+43738,JUMP_TARGET,-1,default:,5,946,default,1,CASTDefaultStatement
+43955,JUMP_TARGET,-1,default:,9,1031,default,1,CASTDefaultStatement
+44148,JUMP_TARGET,-1,"failed:
+
+    if (rn) {
+        ngx_rbtree_delete(tree, &rn->node);
+
+        if (rn->query) {
+            ngx_resolver_free(r, rn->query);
+        }
+
+        ngx_resolver_free(r, rn);
+    }",1,1100,failed,34,CASTLabelStatement
+44211,JUMP_TARGET,-1,default:,5,1144,default,1,CASTDefaultStatement
+44342,JUMP_TARGET,-1,"done:
+
+    ngx_resolver_expire(r, tree, expire_queue);",1,1191,done,12,CASTLabelStatement
+44641,JUMP_TARGET,-1,"failed:
+
+    ngx_close_connection(rec->udp);",1,1322,failed,7,CASTLabelStatement
+45257,JUMP_TARGET,-1,"failed:
+
+    ngx_close_connection(rec->udp);",1,1582,failed,10,CASTLabelStatement
+45411,JUMP_TARGET,-1,"failed:
+
+    ngx_close_connection(c);",1,1639,failed,18,CASTLabelStatement
+45590,JUMP_TARGET,-1,"failed:
+
+    ngx_close_connection(c);",1,1708,failed,16,CASTLabelStatement
+45859,JUMP_TARGET,-1,"found:
+
+    if (i++ == sizeof(ngx_resolver_hdr_t)) {
+        err = ""zero-length domain name in DNS response"";
+        goto done;
+    }",1,1814,found,33,CASTLabelStatement
+45947,JUMP_TARGET,-1,case NGX_RESOLVE_A:,5,1843,case,1,CASTCaseStatement
+45963,JUMP_TARGET,-1,case NGX_RESOLVE_SRV:,5,1853,case,5,CASTCaseStatement
+45978,JUMP_TARGET,-1,case NGX_RESOLVE_PTR:,5,1860,case,9,CASTCaseStatement
+45988,JUMP_TARGET,-1,default:,5,1866,default,13,CASTDefaultStatement
+46001,JUMP_TARGET,-1,"short_response:
+
+    err = ""short DNS response"";",1,1874,short_response,43,CASTLabelStatement
+46005,JUMP_TARGET,-1,"done:
+
+    ngx_log_error(r->log_level, r->log, 0, err);",1,1878,done,45,CASTLabelStatement
+46016,JUMP_TARGET,-1,"dns_error_name:
+
+    ngx_log_error(r->log_level, r->log, 0,
+                  ""DNS error (%ui: %s), query id:%ui, name:\""%*s\"""",
+                  code, ngx_resolver_strerror(code), ident,
+                  (size_t) rn->nlen, rn->name);",1,1884,dns_error_name,48,CASTLabelStatement
+46039,JUMP_TARGET,-1,"dns_error:
+
+    ngx_log_error(r->log_level, r->log, 0,
+                  ""DNS error (%ui: %s), query id:%ui"",
+                  code, ngx_resolver_strerror(code), ident);",1,1892,dns_error,51,CASTLabelStatement
+46155,JUMP_TARGET,-1,default:,5,1967,default,1,CASTDefaultStatement
+46291,JUMP_TARGET,-1,default:,9,2019,default,1,CASTDefaultStatement
+46476,JUMP_TARGET,-1,"test_length:
+
+        if (i - start < 2) {
+            err = ""invalid name in DNS response"";
+            goto invalid;
+        }",5,2148,test_length,4,CASTLabelStatement
+46488,JUMP_TARGET,-1,"found:
+
+        if (i + sizeof(ngx_resolver_an_t) >= n) {
+            goto short_response;
+        }",5,2155,found,6,CASTLabelStatement
+46612,JUMP_TARGET,-1,case NGX_RESOLVE_A:,9,2185,case,1,CASTCaseStatement
+46643,JUMP_TARGET,-1,case NGX_RESOLVE_CNAME:,9,2227,case,8,CASTCaseStatement
+46652,JUMP_TARGET,-1,case NGX_RESOLVE_DNAME:,9,2233,case,12,CASTCaseStatement
+46655,JUMP_TARGET,-1,default:,9,2237,default,15,CASTDefaultStatement
+46687,JUMP_TARGET,-1,default:,9,2278,default,1,CASTDefaultStatement
+46868,JUMP_TARGET,-1,default:,5,2375,default,1,CASTDefaultStatement
+47289,JUMP_TARGET,-1,"short_response:
+
+    err = ""short DNS response"";",1,2534,short_response,45,CASTLabelStatement
+47293,JUMP_TARGET,-1,"invalid:
+
+    /* unlock name mutex */
+
+    ngx_log_error(r->log_level, r->log, 0, err);",1,2538,invalid,47,CASTLabelStatement
+47304,JUMP_TARGET,-1,"failed:
+
+next:
+
+    /* unlock name mutex */
+
+    return;",1,2546,failed,50,CASTLabelStatement
+47305,JUMP_TARGET,-1,"next:
+
+    /* unlock name mutex */
+
+    return;",1,2548,next,51,CASTLabelStatement
+47693,JUMP_TARGET,-1,"test_length:
+
+        if (i - start < 2) {
+            err = ""invalid name DNS response"";
+            goto invalid;
+        }",5,2690,test_length,4,CASTLabelStatement
+47705,JUMP_TARGET,-1,"found:
+
+        if (i + sizeof(ngx_resolver_an_t) >= n) {
+            goto short_response;
+        }",5,2697,found,6,CASTLabelStatement
+47829,JUMP_TARGET,-1,case NGX_RESOLVE_SRV:,9,2727,case,1,CASTCaseStatement
+47860,JUMP_TARGET,-1,case NGX_RESOLVE_CNAME:,9,2743,case,7,CASTCaseStatement
+47869,JUMP_TARGET,-1,case NGX_RESOLVE_DNAME:,9,2749,case,11,CASTCaseStatement
+47872,JUMP_TARGET,-1,default:,9,2753,default,14,CASTDefaultStatement
+48375,JUMP_TARGET,-1,"short_response:
+
+    err = ""short DNS response"";",1,2919,short_response,44,CASTLabelStatement
+48379,JUMP_TARGET,-1,"invalid:
+
+    /* unlock name mutex */
+
+    ngx_log_error(r->log_level, r->log, 0, err);",1,2923,invalid,46,CASTLabelStatement
+48390,JUMP_TARGET,-1,"failed:
+
+    /* unlock name mutex */
+
+    return;",1,2931,failed,49,CASTLabelStatement
+48679,JUMP_TARGET,-1,"failed:
+
+    ctx->state = NGX_ERROR;",1,3000,failed,17,CASTLabelStatement
+48890,JUMP_TARGET,-1,"done:
+
+    ngx_resolve_name_done(cctx);",1,3060,done,15,CASTLabelStatement
+49043,JUMP_TARGET,-1,"invalid_in_addr_arpa:
+
+#if (NGX_HAVE_INET6)
+
+    i = sizeof(ngx_resolver_hdr_t);
+
+    for (octet = 15; octet >= 0; octet--) {
+        if (buf[i++] != '\1') {
+            goto invalid_ip6_arpa;
+        }
+
+        digit = ngx_hextoi(&buf[i++], 1);
+        if (digit == NGX_ERROR) {
+            goto invalid_ip6_arpa;
+        }
+
+        addr6.s6_addr[octet] = (u_char) digit;
+
+        if (buf[i++] != '\1') {
+            goto invalid_ip6_arpa;
+        }
+
+        digit = ngx_hextoi(&buf[i++], 1);
+        if (digit == NGX_ERROR) {
+            goto invalid_ip6_arpa;
+        }
+
+        addr6.s6_addr[octet] += (u_char) (digit * 16);
+    }
+
+    if (ngx_strcasecmp(&buf[i], (u_char *) ""\3ip6\4arpa"") == 0) {
+        i += sizeof(""\3ip6\4arpa"");
+
+        /* lock addr mutex */
+
+        hash = ngx_crc32_short(addr6.s6_addr, 16);
+        rn = ngx_resolver_lookup_addr6(r, &addr6, hash);
+
+        tree = &r->addr6_rbtree;
+        expire_queue = &r->addr6_expire_queue;
+
+        goto valid;
+    }
+
+invalid_ip...",1,3131,invalid_in_addr_arpa,26,CASTLabelStatement
+49059,JUMP_TARGET,-1,"valid:
+
+    if (rn == NULL || rn->query == NULL) {
+        ngx_log_error(r->log_level, r->log, 0,
+                      ""unexpected DNS response for %V"", &name);
+        ngx_resolver_free(r, name.data);
+        goto failed;
+    }",1,3183,valid,30,CASTLabelStatement
+49259,JUMP_TARGET,-1,"test_length:
+
+        if (i - start < 2) {
+            err = ""invalid name in DNS response"";
+            goto invalid;
+        }",5,3255,test_length,4,CASTLabelStatement
+49271,JUMP_TARGET,-1,"found:
+
+        if (i + sizeof(ngx_resolver_an_t) >= n) {
+            goto short_response;
+        }",5,3262,found,6,CASTLabelStatement
+49394,JUMP_TARGET,-1,case NGX_RESOLVE_PTR:,9,3294,case,1,CASTCaseStatement
+49397,JUMP_TARGET,-1,case NGX_RESOLVE_CNAME:,9,3298,case,4,CASTCaseStatement
+49400,JUMP_TARGET,-1,default:,9,3302,default,7,CASTDefaultStatement
+49424,JUMP_TARGET,-1,"ptr:
+
+    if (ngx_resolver_copy(r, &name, buf, buf + i, buf + n) != NGX_OK) {
+        goto failed;
+    }",1,3317,ptr,41,CASTLabelStatement
+49603,JUMP_TARGET,-1,"short_response:
+
+    err = ""short DNS response"";",1,3367,short_response,54,CASTLabelStatement
+49607,JUMP_TARGET,-1,"invalid:
+
+    /* unlock addr mutex */
+
+    ngx_log_error(r->log_level, r->log, 0, err);",1,3371,invalid,56,CASTLabelStatement
+49618,JUMP_TARGET,-1,"failed:
+
+    /* unlock addr mutex */
+
+    return;",1,3379,failed,59,CASTLabelStatement
+50580,JUMP_TARGET,-1,default:,5,3870,default,1,CASTDefaultStatement
+50697,JUMP_TARGET,-1,default:,5,3917,default,1,CASTDefaultStatement
+50884,JUMP_TARGET,-1,"invalid:
+
+    ngx_log_error(r->log_level, r->log, 0, err);",1,3991,invalid,11,CASTLabelStatement
+50896,JUMP_TARGET,-1,"done:
+
+    if (name == NULL) {
+        return NGX_OK;
+    }",1,3997,done,14,CASTLabelStatement
+51845,JUMP_TARGET,-1,"next_srv:
+
+        i = j;",1,4360,next_srv,7,CASTLabelStatement
+52146,JUMP_TARGET,-1,"failed:
+
+    ngx_close_connection(c);",1,4499,failed,27,CASTLabelStatement
+52492,JUMP_TARGET,-1,"failed:
+
+    ngx_close_connection(c);",1,4684,failed,34,CASTLabelStatement
+60018,JUMP_TARGET,-1,"done:
+
+    ngx_log_debug1(NGX_LOG_DEBUG_ALLOC, ngx_cycle->log, 0,
+                   ""slab alloc: %p"", (void *) p);",1,411,done,25,CASTLabelStatement
+60181,JUMP_TARGET,-1,case NGX_SLAB_SMALL:,5,482,case,1,CASTCaseStatement
+60432,JUMP_TARGET,-1,case NGX_SLAB_EXACT:,5,542,case,12,CASTCaseStatement
+60568,JUMP_TARGET,-1,case NGX_SLAB_BIG:,5,580,case,19,CASTCaseStatement
+60722,JUMP_TARGET,-1,case NGX_SLAB_PAGE:,5,620,case,27,CASTCaseStatement
+60775,JUMP_TARGET,-1,"done:
+
+    pool->stats[slot].used--;",1,651,done,21,CASTLabelStatement
+60785,JUMP_TARGET,-1,"wrong_chunk:
+
+    ngx_slab_error(pool, NGX_LOG_ALERT,
+                   ""ngx_slab_free(): pointer to wrong chunk"");",1,659,wrong_chunk,24,CASTLabelStatement
+60791,JUMP_TARGET,-1,"chunk_already_free:
+
+    ngx_slab_error(pool, NGX_LOG_ALERT,
+                   ""ngx_slab_free(): chunk is already free"");",1,666,chunk_already_free,27,CASTLabelStatement
+60796,JUMP_TARGET,-1,"fail:
+
+    return;",1,671,fail,29,CASTLabelStatement
+61810,JUMP_TARGET,-1,case 'u':,17,206,case,1,CASTCaseStatement
+61818,JUMP_TARGET,-1,case 'm':,17,211,case,6,CASTCaseStatement
+61826,JUMP_TARGET,-1,case 'X':,17,216,case,11,CASTCaseStatement
+61837,JUMP_TARGET,-1,case 'x':,17,222,case,17,CASTCaseStatement
+61848,JUMP_TARGET,-1,case '.':,17,228,case,23,CASTCaseStatement
+61875,JUMP_TARGET,-1,case '*':,17,237,case,28,CASTCaseStatement
+61885,JUMP_TARGET,-1,default:,17,242,default,33,CASTDefaultStatement
+61892,JUMP_TARGET,-1,case 'V':,13,252,case,1,CASTCaseStatement
+61910,JUMP_TARGET,-1,case 'v':,13,260,case,7,CASTCaseStatement
+61928,JUMP_TARGET,-1,case 's':,13,268,case,13,CASTCaseStatement
+61942,JUMP_TARGET,-1,case 'O':,13,276,case,19,CASTCaseStatement
+61955,JUMP_TARGET,-1,case 'P':,13,281,case,24,CASTCaseStatement
+61968,JUMP_TARGET,-1,case 'T':,13,286,case,29,CASTCaseStatement
+61981,JUMP_TARGET,-1,case 'M':,13,291,case,34,CASTCaseStatement
+62016,JUMP_TARGET,-1,case 'z':,13,302,case,39,CASTCaseStatement
+62038,JUMP_TARGET,-1,case 'i':,13,310,case,43,CASTCaseStatement
+62066,JUMP_TARGET,-1,case 'd':,13,323,case,48,CASTCaseStatement
+62086,JUMP_TARGET,-1,case 'l':,13,331,case,52,CASTCaseStatement
+62106,JUMP_TARGET,-1,case 'D':,13,339,case,56,CASTCaseStatement
+62128,JUMP_TARGET,-1,case 'L':,13,347,case,60,CASTCaseStatement
+62146,JUMP_TARGET,-1,case 'A':,13,355,case,64,CASTCaseStatement
+62174,JUMP_TARGET,-1,case 'f':,13,368,case,69,CASTCaseStatement
+62273,JUMP_TARGET,-1,case 'r':,13,409,case,80,CASTCaseStatement
+62286,JUMP_TARGET,-1,case 'p':,13,415,case,85,CASTCaseStatement
+62309,JUMP_TARGET,-1,case 'c':,13,423,case,95,CASTCaseStatement
+62323,JUMP_TARGET,-1,case 'Z':,13,430,case,101,CASTCaseStatement
+62333,JUMP_TARGET,-1,case 'N':,13,436,case,106,CASTCaseStatement
+62343,JUMP_TARGET,-1,case '%':,13,449,case,111,CASTCaseStatement
+62353,JUMP_TARGET,-1,default:,13,455,default,116,CASTDefaultStatement
+65522,JUMP_TARGET,-1,case sw_usual:,9,1692,case,1,CASTCaseStatement
+65556,JUMP_TARGET,-1,case sw_quoted:,9,1708,case,7,CASTCaseStatement
+65613,JUMP_TARGET,-1,case sw_quoted_second:,9,1731,case,15,CASTCaseStatement
+65794,JUMP_TARGET,-1,"done:
+
+    *dst = d;",1,1794,done,12,CASTLabelStatement
+65828,JUMP_TARGET,-1,case '<':,13,1814,case,1,CASTCaseStatement
+65837,JUMP_TARGET,-1,case '>':,13,1818,case,5,CASTCaseStatement
+65846,JUMP_TARGET,-1,case '&':,13,1822,case,9,CASTCaseStatement
+65855,JUMP_TARGET,-1,"case '""':",13,1826,case,13,CASTCaseStatement
+65864,JUMP_TARGET,-1,default:,13,1830,default,17,CASTDefaultStatement
+65883,JUMP_TARGET,-1,case '<':,9,1844,case,1,CASTCaseStatement
+65906,JUMP_TARGET,-1,case '>':,9,1848,case,8,CASTCaseStatement
+65929,JUMP_TARGET,-1,case '&':,9,1852,case,15,CASTCaseStatement
+65957,JUMP_TARGET,-1,"case '""':",9,1857,case,23,CASTCaseStatement
+65990,JUMP_TARGET,-1,default:,9,1862,default,32,CASTDefaultStatement
+66049,JUMP_TARGET,-1,case '\n':,17,1891,case,1,CASTCaseStatement
+66051,JUMP_TARGET,-1,case '\r':,17,1892,case,3,CASTCaseStatement
+66053,JUMP_TARGET,-1,case '\t':,17,1893,case,5,CASTCaseStatement
+66055,JUMP_TARGET,-1,case '\b':,17,1894,case,7,CASTCaseStatement
+66057,JUMP_TARGET,-1,case '\f':,17,1895,case,9,CASTCaseStatement
+66062,JUMP_TARGET,-1,default:,17,1899,default,13,CASTDefaultStatement
+66117,JUMP_TARGET,-1,case '\n':,13,1925,case,1,CASTCaseStatement
+66125,JUMP_TARGET,-1,case '\r':,13,1929,case,5,CASTCaseStatement
+66133,JUMP_TARGET,-1,case '\t':,13,1933,case,9,CASTCaseStatement
+66141,JUMP_TARGET,-1,case '\b':,13,1937,case,13,CASTCaseStatement
+66149,JUMP_TARGET,-1,case '\f':,13,1941,case,17,CASTCaseStatement
+66157,JUMP_TARGET,-1,default:,13,1945,default,21,CASTDefaultStatement
+67496,JUMP_TARGET,-1,"next:
+
+        if (comma == NULL) {
+            break;
+        }",5,220,next,4,CASTLabelStatement
+67843,JUMP_TARGET,-1,"failed:
+
+    if (ngx_close_socket(fd) == -1) {
+        ngx_log_error(NGX_LOG_ALERT, ngx_cycle->log, ngx_socket_errno,
+                      ngx_close_socket_n "" failed"");
+    }",1,351,failed,9,CASTLabelStatement
+71581,JUMP_TARGET,-1,case -1:,13,427,case,1,CASTCaseStatement
+71594,JUMP_TARGET,-1,case 0:,13,433,case,5,CASTCaseStatement
+71606,JUMP_TARGET,-1,default:,13,439,default,9,CASTDefaultStatement
+73912,JUMP_TARGET,-1,case PORT_SOURCE_FD:,9,508,case,1,CASTCaseStatement
+74189,JUMP_TARGET,-1,case PORT_SOURCE_USER:,9,608,case,19,CASTCaseStatement
+74197,JUMP_TARGET,-1,default:,9,614,default,23,CASTDefaultStatement
+74824,JUMP_TARGET,-1,case NGX_IOCP_ACCEPT:,5,326,case,1,CASTCaseStatement
+74835,JUMP_TARGET,-1,case NGX_IOCP_IO:,5,332,case,5,CASTCaseStatement
+74848,JUMP_TARGET,-1,case NGX_IOCP_CONNECT:,5,337,case,10,CASTCaseStatement
+75919,JUMP_TARGET,-1,case EVFILT_READ:,9,600,case,1,CASTCaseStatement
+75921,JUMP_TARGET,-1,case EVFILT_WRITE:,9,601,case,3,CASTCaseStatement
+76031,JUMP_TARGET,-1,case EVFILT_VNODE:,9,637,case,14,CASTCaseStatement
+76039,JUMP_TARGET,-1,case EVFILT_AIO:,9,642,case,18,CASTCaseStatement
+76052,JUMP_TARGET,-1,default:,9,653,default,23,CASTDefaultStatement
+84632,JUMP_TARGET,-1,"failed:
+
+    ngx_close_connection(c);",1,323,failed,45,CASTLabelStatement
+87229,JUMP_TARGET,-1,"cleanup:
+
+    if (ngx_close_file(fd) == NGX_FILE_ERROR) {
+        ngx_conf_log_error(NGX_LOG_ALERT, cf, ngx_errno,
+                           ngx_close_file_n "" \""%s\"" failed"", file->data);
+    }",1,1232,cleanup,24,CASTLabelStatement
+88668,JUMP_TARGET,-1,case NGX_DONE:,9,2255,case,1,CASTCaseStatement
+88686,JUMP_TARGET,-1,case NGX_ERROR:,9,2260,case,6,CASTCaseStatement
+88695,JUMP_TARGET,-1,case NGX_AGAIN:,9,2265,case,9,CASTCaseStatement
+90232,JUMP_TARGET,-1,"failed:
+
+    rc = NGX_ERROR;",1,3254,failed,15,CASTLabelStatement
+90236,JUMP_TARGET,-1,"done:
+
+    if (c->ssl->shutdown_without_free) {
+        c->ssl->shutdown_without_free = 0;
+        c->recv = ngx_recv;
+        return rc;
+    }",1,3258,done,17,CASTLabelStatement
+90381,JUMP_TARGET,-1,case NGX_ERROR_IGNORE_ECONNRESET:,13,3323,case,1,CASTCaseStatement
+90383,JUMP_TARGET,-1,case NGX_ERROR_INFO:,13,3324,case,3,CASTCaseStatement
+90389,JUMP_TARGET,-1,case NGX_ERROR_ERR:,13,3328,case,7,CASTCaseStatement
+90395,JUMP_TARGET,-1,default:,13,3332,default,11,CASTDefaultStatement
+90494,JUMP_TARGET,-1,case NGX_ERROR_IGNORE_ECONNRESET:,13,3438,case,1,CASTCaseStatement
+90496,JUMP_TARGET,-1,case NGX_ERROR_INFO:,13,3439,case,3,CASTCaseStatement
+90502,JUMP_TARGET,-1,case NGX_ERROR_ERR:,13,3443,case,7,CASTCaseStatement
+90508,JUMP_TARGET,-1,default:,13,3447,default,11,CASTDefaultStatement
+90654,JUMP_TARGET,-1,"next:
+
+            (void) ERR_get_error();",9,3514,next,8,CASTLabelStatement
+91086,JUMP_TARGET,-1,"failed:
+
+    EVP_MD_CTX_destroy(md);",1,3712,failed,23,CASTLabelStatement
+91474,JUMP_TARGET,-1,"failed:
+
+    if (cached_sess) {
+        ngx_slab_free_locked(shpool, cached_sess);
+    }",1,3906,failed,47,CASTLabelStatement
+91728,JUMP_TARGET,-1,"done:
+
+    ngx_shmtx_unlock(&shpool->mutex);",1,4019,done,26,CASTLabelStatement
+91916,JUMP_TARGET,-1,"done:
+
+    ngx_shmtx_unlock(&shpool->mutex);",1,4107,done,22,CASTLabelStatement
+92365,JUMP_TARGET,-1,"failed:
+
+    X509_free(cert);",1,4632,failed,5,CASTLabelStatement
+92370,JUMP_TARGET,-1,"found:
+
+    X509_free(cert);",1,4637,found,8,CASTLabelStatement
+92852,JUMP_TARGET,-1,"failed:
+
+    BIO_free(bio);",1,5060,failed,18,CASTLabelStatement
+93198,JUMP_TARGET,-1,"failed:
+
+    BIO_free(bio);",1,5188,failed,19,CASTLabelStatement
+93322,JUMP_TARGET,-1,"failed:
+
+    BIO_free(bio);",1,5242,failed,19,CASTLabelStatement
+96590,JUMP_TARGET,-1,"flush:
+
+        ngx_log_debug2(NGX_LOG_DEBUG_EVENT, p->log, 0,
+                       ""pipe write: out:%p, f:%ui"", out, flush);",5,677,flush,14,CASTLabelStatement
+97189,JUMP_TARGET,-1,"free:
+
+    for (last_free = &p->free_raw_bufs;
+         *last_free != NULL;
+         last_free = &(*last_free)->next)
+    {
+        /* void */
+    }",1,910,free,19,CASTLabelStatement
+98965,JUMP_TARGET,-1,"next:
+
+        if (ngx_event_flags & NGX_USE_KQUEUE_EVENT) {
+            ev->available -= n;
+        }",5,418,next,57,CASTLabelStatement
+99685,JUMP_TARGET,-1,case AF_INET:,5,137,case,1,CASTCaseStatement
+100981,JUMP_TARGET,-1,case sw_login:,13,190,case,1,CASTCaseStatement
+101054,JUMP_TARGET,-1,case sw_passwd:,13,217,case,8,CASTCaseStatement
+101105,JUMP_TARGET,-1,case sw_skip:,13,230,case,12,CASTCaseStatement
+101231,JUMP_TARGET,-1,"cleanup:
+
+    if (ngx_close_file(file.fd) == NGX_FILE_ERROR) {
+        ngx_log_error(NGX_LOG_ALERT, r->connection->log, ngx_errno,
+                      ngx_close_file_n "" \""%s\"" failed"", user_file.data);
+    }",1,271,cleanup,41,CASTLabelStatement
+103117,JUMP_TARGET,-1,case NGX_HTTP_AUTOINDEX_JSON:,5,262,case,1,CASTCaseStatement
+103130,JUMP_TARGET,-1,case NGX_HTTP_AUTOINDEX_JSONP:,5,266,case,5,CASTCaseStatement
+103143,JUMP_TARGET,-1,case NGX_HTTP_AUTOINDEX_XML:,5,270,case,9,CASTCaseStatement
+103164,JUMP_TARGET,-1,default:,5,275,default,14,CASTDefaultStatement
+103536,JUMP_TARGET,-1,case NGX_HTTP_AUTOINDEX_JSON:,5,396,case,1,CASTCaseStatement
+103548,JUMP_TARGET,-1,case NGX_HTTP_AUTOINDEX_JSONP:,5,400,case,5,CASTCaseStatement
+103561,JUMP_TARGET,-1,case NGX_HTTP_AUTOINDEX_XML:,5,404,case,9,CASTCaseStatement
+103572,JUMP_TARGET,-1,default:,5,408,default,13,CASTDefaultStatement
+106883,JUMP_TARGET,-1,"found:
+
+        ngx_qsort(browsers, (size_t) conf->modern_browsers->nelts,
+                  sizeof(ngx_http_modern_browser_t),
+                  ngx_http_modern_browser_sort);",1,486,found,8,CASTLabelStatement
+107208,JUMP_TARGET,-1,"found:
+
+    /*
+     * at this stage the skip field is used to store the browser slot,
+     * it will be used in sorting in merge stage and then will overwritten
+     * with a real value
+     */
+
+    browser->skip = n;",1,585,found,21,CASTLabelStatement
+108120,JUMP_TARGET,-1,"no_charset_map:
+
+    ngx_log_error(NGX_LOG_ERR, r->connection->log, 0,
+                  ""no \""charset_map\"" between the charsets \""%V\"" and \""%V\"""",
+                  &src, &dst);",1,306,no_charset_map,23,CASTLabelStatement
+109086,JUMP_TARGET,-1,"recode:
+
+    do {
+        if (*p != table[*p]) {
+            *p = table[*p];
+        }
+
+        p++;
+
+    } while (p < last);",1,667,recode,6,CASTLabelStatement
+109676,JUMP_TARGET,-1,"recode:
+
+    ll = &cl->next;",1,873,recode,34,CASTLabelStatement
+109994,JUMP_TARGET,-1,"recode:
+
+    /*
+     * we assume that there are about half of characters to be recoded,
+     * so we preallocate ""size / 2 + size / 2 * ctx->length""
+     */
+
+    len = src - buf->pos;",1,994,recode,18,CASTLabelStatement
+112087,JUMP_TARGET,-1,"next:
+        continue;",5,1645,next,5,CASTLabelStatement
+113487,JUMP_TARGET,-1,case NGX_HTTP_PUT:,5,156,case,1,CASTCaseStatement
+113574,JUMP_TARGET,-1,case NGX_HTTP_DELETE:,5,184,case,13,CASTCaseStatement
+113579,JUMP_TARGET,-1,case NGX_HTTP_MKCOL:,5,188,case,16,CASTCaseStatement
+113585,JUMP_TARGET,-1,case NGX_HTTP_COPY:,5,192,case,19,CASTCaseStatement
+113590,JUMP_TARGET,-1,case NGX_HTTP_MOVE:,5,196,case,22,CASTCaseStatement
+114001,JUMP_TARGET,-1,"ok:
+
+    if (ngx_http_map_uri_to_path(r, &path, &root, 0) == NULL) {
+        return NGX_HTTP_INTERNAL_SERVER_ERROR;
+    }",1,339,ok,14,CASTLabelStatement
+114723,JUMP_TARGET,-1,"invalid_destination:
+
+    ngx_log_error(NGX_LOG_ERR, r->connection->log, 0,
+                  ""client sent invalid \""Destination\"" header: \""%V\"""",
+                  &dest->value);",1,620,invalid_destination,37,CASTLabelStatement
+114739,JUMP_TARGET,-1,"destination_done:
+
+    duri.len = last - p;",1,627,destination_done,40,CASTLabelStatement
+114958,JUMP_TARGET,-1,"overwrite_done:
+
+    if (ngx_http_map_uri_to_path(r, &path, &root, 0) == NULL) {
+        return NGX_HTTP_INTERNAL_SERVER_ERROR;
+    }",1,691,overwrite_done,51,CASTLabelStatement
+119651,JUMP_TARGET,-1,"next:
+
+            continue;",9,1159,next,11,CASTLabelStatement
+121023,JUMP_TARGET,-1,"out:
+
+#if (NGX_DEBUG)
+
+    for (cl = out; cl; cl = cl->next) {
+        ngx_log_debug7(NGX_LOG_DEBUG_EVENT, r->connection->log, 0,
+                       ""fastcgi output out l:%d f:%d %p, pos %p, size: %z ""
+                       ""file: %O, size: %O"",
+                       cl->buf->last_buf,
+                       cl->buf->in_file,
+                       cl->buf->start, cl->buf->pos,
+                       cl->buf->last - cl->buf->pos,
+                       cl->buf->file_pos,
+                       cl->buf->file_last - cl->buf->file_pos);
+    }
+
+#endif
+
+    rc = ngx_chain_writer(&r->upstream->writer, out);",1,1595,out,36,CASTLabelStatement
+124324,JUMP_TARGET,-1,case ngx_http_fastcgi_st_version:,9,2654,case,1,CASTCaseStatement
+124347,JUMP_TARGET,-1,case ngx_http_fastcgi_st_type:,9,2664,case,6,CASTCaseStatement
+124352,JUMP_TARGET,-1,case NGX_HTTP_FASTCGI_STDOUT:,13,2666,case,1,CASTCaseStatement
+124356,JUMP_TARGET,-1,case NGX_HTTP_FASTCGI_STDERR:,13,2667,case,3,CASTCaseStatement
+124360,JUMP_TARGET,-1,case NGX_HTTP_FASTCGI_END_REQUEST:,13,2668,case,5,CASTCaseStatement
+124372,JUMP_TARGET,-1,default:,13,2671,default,9,CASTDefaultStatement
+124389,JUMP_TARGET,-1,case ngx_http_fastcgi_st_request_id_hi:,9,2683,case,11,CASTCaseStatement
+124412,JUMP_TARGET,-1,case ngx_http_fastcgi_st_request_id_lo:,9,2693,case,16,CASTCaseStatement
+124435,JUMP_TARGET,-1,case ngx_http_fastcgi_st_content_length_hi:,9,2703,case,21,CASTCaseStatement
+124448,JUMP_TARGET,-1,case ngx_http_fastcgi_st_content_length_lo:,9,2708,case,26,CASTCaseStatement
+124461,JUMP_TARGET,-1,case ngx_http_fastcgi_st_padding_length:,9,2713,case,31,CASTCaseStatement
+124474,JUMP_TARGET,-1,case ngx_http_fastcgi_st_reserved:,9,2718,case,36,CASTCaseStatement
+124505,JUMP_TARGET,-1,case ngx_http_fastcgi_st_data:,9,2730,case,43,CASTCaseStatement
+124507,JUMP_TARGET,-1,case ngx_http_fastcgi_st_padding:,9,2731,case,45,CASTCaseStatement
+125938,JUMP_TARGET,-1,"next:
+
+            h++;",9,3353,next,9,CASTLabelStatement
+127266,JUMP_TARGET,-1,case 0:,9,122,case,1,CASTCaseStatement
+127270,JUMP_TARGET,-1,case NGX_ENOENT:,9,125,case,4,CASTCaseStatement
+127272,JUMP_TARGET,-1,case NGX_ENOTDIR:,9,126,case,6,CASTCaseStatement
+127274,JUMP_TARGET,-1,case NGX_ENAMETOOLONG:,9,127,case,8,CASTCaseStatement
+127283,JUMP_TARGET,-1,case NGX_EACCES:,9,133,case,13,CASTCaseStatement
+127292,JUMP_TARGET,-1,default:,9,143,default,18,CASTDefaultStatement
+127970,JUMP_TARGET,-1,default:,5,225,default,1,CASTDefaultStatement
+128000,JUMP_TARGET,-1,"done:
+
+    *v = *vv;",1,235,done,9,CASTLabelStatement
+128063,JUMP_TARGET,-1,default:,9,293,default,1,CASTDefaultStatement
+128866,JUMP_TARGET,-1,"failed:
+
+    ngx_destroy_pool(ctx.temp_pool);",1,577,failed,45,CASTLabelStatement
+129049,JUMP_TARGET,-1,"done:
+
+    ngx_reset_pool(cf->pool);",1,658,done,11,CASTLabelStatement
+129056,JUMP_TARGET,-1,"failed:
+
+    ngx_reset_pool(cf->pool);",1,664,failed,14,CASTLabelStatement
+129343,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, ""invalid range \""%V\"""", net);",1,773,invalid,29,CASTLabelStatement
+130088,JUMP_TARGET,-1,"next:
+
+        if (h == 0xffff) {
+            break;
+        }",5,974,next,16,CASTLabelStatement
+130272,JUMP_TARGET,-1,"next:
+
+        if (h == 0xffff) {
+            break;
+        }",5,1039,next,8,CASTLabelStatement
+130466,JUMP_TARGET,-1,default:,9,1129,default,1,CASTDefaultStatement
+130542,JUMP_TARGET,-1,default:,5,1202,default,1,CASTDefaultStatement
+131051,JUMP_TARGET,-1,case NGX_OK:,9,1374,case,1,CASTCaseStatement
+131055,JUMP_TARGET,-1,case NGX_ERROR:,9,1376,case,4,CASTCaseStatement
+131059,JUMP_TARGET,-1,default:,9,1378,default,7,CASTDefaultStatement
+131594,JUMP_TARGET,-1,"failed:
+
+    rc = NGX_DECLINED;",1,1562,failed,56,CASTLabelStatement
+131598,JUMP_TARGET,-1,"done:
+
+    if (ngx_close_file(file.fd) == NGX_FILE_ERROR) {
+        ngx_log_error(NGX_LOG_ALERT, cf->log, ngx_errno,
+                      ngx_close_file_n "" \""%s\"" failed"", name->data);
+    }",1,1566,done,58,CASTLabelStatement
+132534,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,380,not_found,15,CASTLabelStatement
+132634,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,434,not_found,18,CASTLabelStatement
+132732,JUMP_TARGET,-1,"no_value:
+
+    GeoIPRecord_delete(gr);",1,478,no_value,18,CASTLabelStatement
+132735,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,482,not_found,20,CASTLabelStatement
+132830,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,526,not_found,18,CASTLabelStatement
+133268,JUMP_TARGET,-1,case GEOIP_COUNTRY_EDITION:,5,711,case,1,CASTCaseStatement
+133272,JUMP_TARGET,-1,default:,5,722,default,4,CASTDefaultStatement
+133391,JUMP_TARGET,-1,case GEOIP_ISP_EDITION:,5,766,case,1,CASTCaseStatement
+133393,JUMP_TARGET,-1,case GEOIP_ORG_EDITION:,5,767,case,3,CASTCaseStatement
+133395,JUMP_TARGET,-1,case GEOIP_DOMAIN_EDITION:,5,768,case,5,CASTCaseStatement
+133397,JUMP_TARGET,-1,case GEOIP_ASNUM_EDITION:,5,769,case,7,CASTCaseStatement
+133401,JUMP_TARGET,-1,default:,5,783,default,10,CASTDefaultStatement
+133520,JUMP_TARGET,-1,case GEOIP_CITY_EDITION_REV0:,5,827,case,1,CASTCaseStatement
+133522,JUMP_TARGET,-1,case GEOIP_CITY_EDITION_REV1:,5,828,case,3,CASTCaseStatement
+133526,JUMP_TARGET,-1,default:,5,840,default,6,CASTDefaultStatement
+137532,JUMP_TARGET,-1,"next:
+
+        if (in->buf->last_buf) {
+            last = 1;
+        }",5,1454,next,7,CASTLabelStatement
+140278,JUMP_TARGET,-1,"done:
+
+        if (ctx->padding) {
+            ctx->state = ngx_http_grpc_st_padding;
+            continue;
+        }",5,2481,done,29,CASTLabelStatement
+140346,JUMP_TARGET,-1,case ngx_http_grpc_st_start:,9,2518,case,1,CASTCaseStatement
+140359,JUMP_TARGET,-1,case ngx_http_grpc_st_length_2:,9,2523,case,6,CASTCaseStatement
+140372,JUMP_TARGET,-1,case ngx_http_grpc_st_length_3:,9,2528,case,11,CASTCaseStatement
+140404,JUMP_TARGET,-1,case ngx_http_grpc_st_type:,9,2541,case,17,CASTCaseStatement
+140415,JUMP_TARGET,-1,case ngx_http_grpc_st_flags:,9,2546,case,22,CASTCaseStatement
+140426,JUMP_TARGET,-1,case ngx_http_grpc_st_stream_id:,9,2551,case,27,CASTCaseStatement
+140441,JUMP_TARGET,-1,case ngx_http_grpc_st_stream_id_2:,9,2556,case,32,CASTCaseStatement
+140454,JUMP_TARGET,-1,case ngx_http_grpc_st_stream_id_3:,9,2561,case,37,CASTCaseStatement
+140467,JUMP_TARGET,-1,case ngx_http_grpc_st_stream_id_4:,9,2566,case,42,CASTCaseStatement
+140514,JUMP_TARGET,-1,case ngx_http_grpc_st_payload:,9,2581,case,50,CASTCaseStatement
+140516,JUMP_TARGET,-1,case ngx_http_grpc_st_padding:,9,2582,case,52,CASTCaseStatement
+140737,JUMP_TARGET,-1,case sw_padding_length:,13,2692,case,1,CASTCaseStatement
+140756,JUMP_TARGET,-1,case sw_dependency:,13,2703,case,6,CASTCaseStatement
+140762,JUMP_TARGET,-1,case sw_dependency_2:,13,2707,case,10,CASTCaseStatement
+140768,JUMP_TARGET,-1,case sw_dependency_3:,13,2711,case,14,CASTCaseStatement
+140774,JUMP_TARGET,-1,case sw_dependency_4:,13,2715,case,18,CASTCaseStatement
+140780,JUMP_TARGET,-1,case sw_weight:,13,2719,case,22,CASTCaseStatement
+140783,JUMP_TARGET,-1,case sw_start:,13,2723,case,25,CASTCaseStatement
+140785,JUMP_TARGET,-1,case sw_fragment:,13,2724,case,27,CASTCaseStatement
+140787,JUMP_TARGET,-1,case sw_padding:,13,2725,case,29,CASTCaseStatement
+140811,JUMP_TARGET,-1,"fragment:
+
+        p++;",5,2736,fragment,7,CASTLabelStatement
+141071,JUMP_TARGET,-1,case sw_start:,9,2864,case,1,CASTCaseStatement
+141377,JUMP_TARGET,-1,case sw_index:,9,3076,case,6,CASTCaseStatement
+141444,JUMP_TARGET,-1,case sw_name_length:,9,3099,case,14,CASTCaseStatement
+141497,JUMP_TARGET,-1,case sw_name_length_2:,9,3118,case,22,CASTCaseStatement
+141520,JUMP_TARGET,-1,case sw_name_length_3:,9,3129,case,28,CASTCaseStatement
+141545,JUMP_TARGET,-1,case sw_name_length_4:,9,3140,case,34,CASTCaseStatement
+141577,JUMP_TARGET,-1,case sw_name:,9,3153,case,40,CASTCaseStatement
+141651,JUMP_TARGET,-1,case sw_name_bytes:,9,3170,case,49,CASTCaseStatement
+141806,JUMP_TARGET,-1,case sw_value_length:,9,3210,case,58,CASTCaseStatement
+141855,JUMP_TARGET,-1,case sw_value_length_2:,9,3227,case,66,CASTCaseStatement
+141878,JUMP_TARGET,-1,case sw_value_length_3:,9,3238,case,72,CASTCaseStatement
+141903,JUMP_TARGET,-1,case sw_value_length_4:,9,3249,case,78,CASTCaseStatement
+141935,JUMP_TARGET,-1,case sw_value:,9,3262,case,84,CASTCaseStatement
+142009,JUMP_TARGET,-1,case sw_value_bytes:,9,3279,case,93,CASTCaseStatement
+142163,JUMP_TARGET,-1,"done:
+
+        p++;",5,3322,done,4,CASTLabelStatement
+142527,JUMP_TARGET,-1,case sw_start:,9,3455,case,1,CASTCaseStatement
+142542,JUMP_TARGET,-1,case sw_error_2:,9,3460,case,6,CASTCaseStatement
+142555,JUMP_TARGET,-1,case sw_error_3:,9,3465,case,11,CASTCaseStatement
+142568,JUMP_TARGET,-1,case sw_error_4:,9,3470,case,16,CASTCaseStatement
+142738,JUMP_TARGET,-1,case sw_start:,9,3550,case,1,CASTCaseStatement
+142753,JUMP_TARGET,-1,case sw_last_stream_id_2:,9,3555,case,6,CASTCaseStatement
+142766,JUMP_TARGET,-1,case sw_last_stream_id_3:,9,3560,case,11,CASTCaseStatement
+142779,JUMP_TARGET,-1,case sw_last_stream_id_4:,9,3565,case,16,CASTCaseStatement
+142790,JUMP_TARGET,-1,case sw_error:,9,3570,case,21,CASTCaseStatement
+142805,JUMP_TARGET,-1,case sw_error_2:,9,3575,case,26,CASTCaseStatement
+142818,JUMP_TARGET,-1,case sw_error_3:,9,3580,case,31,CASTCaseStatement
+142831,JUMP_TARGET,-1,case sw_error_4:,9,3585,case,36,CASTCaseStatement
+142842,JUMP_TARGET,-1,case sw_debug:,9,3590,case,41,CASTCaseStatement
+142988,JUMP_TARGET,-1,case sw_start:,9,3654,case,1,CASTCaseStatement
+143003,JUMP_TARGET,-1,case sw_size_2:,9,3659,case,6,CASTCaseStatement
+143016,JUMP_TARGET,-1,case sw_size_3:,9,3664,case,11,CASTCaseStatement
+143029,JUMP_TARGET,-1,case sw_size_4:,9,3669,case,16,CASTCaseStatement
+143342,JUMP_TARGET,-1,case sw_start:,9,3795,case,1,CASTCaseStatement
+143344,JUMP_TARGET,-1,case sw_id:,9,3796,case,3,CASTCaseStatement
+143357,JUMP_TARGET,-1,case sw_id_2:,9,3801,case,8,CASTCaseStatement
+143368,JUMP_TARGET,-1,case sw_value:,9,3806,case,13,CASTCaseStatement
+143383,JUMP_TARGET,-1,case sw_value_2:,9,3811,case,18,CASTCaseStatement
+143396,JUMP_TARGET,-1,case sw_value_3:,9,3816,case,23,CASTCaseStatement
+143409,JUMP_TARGET,-1,case sw_value_4:,9,3821,case,28,CASTCaseStatement
+145725,JUMP_TARGET,-1,"next:
+
+        h++;",5,4641,next,6,CASTLabelStatement
+146949,JUMP_TARGET,-1,"failed:
+
+    ctx->done = 1;",1,293,failed,12,CASTLabelStatement
+148719,JUMP_TARGET,-1,case NGX_OK:,13,328,case,1,CASTCaseStatement
+148723,JUMP_TARGET,-1,case NGX_DONE:,13,331,case,4,CASTCaseStatement
+148729,JUMP_TARGET,-1,default:,13,335,default,8,CASTDefaultStatement
+148963,JUMP_TARGET,-1,"failed:
+
+    ctx->done = 1;",1,450,failed,13,CASTLabelStatement
+151314,JUMP_TARGET,-1,case 0:,9,161,case,1,CASTCaseStatement
+151318,JUMP_TARGET,-1,case NGX_ENOENT:,9,164,case,4,CASTCaseStatement
+151320,JUMP_TARGET,-1,case NGX_ENOTDIR:,9,165,case,6,CASTCaseStatement
+151322,JUMP_TARGET,-1,case NGX_ENAMETOOLONG:,9,166,case,8,CASTCaseStatement
+151326,JUMP_TARGET,-1,case NGX_EACCES:,9,170,case,11,CASTCaseStatement
+151332,JUMP_TARGET,-1,default:,9,179,default,15,CASTDefaultStatement
+152040,JUMP_TARGET,-1,case NGX_HTTP_OK:,5,188,case,1,CASTCaseStatement
+152042,JUMP_TARGET,-1,case NGX_HTTP_CREATED:,5,189,case,3,CASTCaseStatement
+152044,JUMP_TARGET,-1,case NGX_HTTP_NO_CONTENT:,5,190,case,5,CASTCaseStatement
+152046,JUMP_TARGET,-1,case NGX_HTTP_PARTIAL_CONTENT:,5,191,case,7,CASTCaseStatement
+152048,JUMP_TARGET,-1,case NGX_HTTP_MOVED_PERMANENTLY:,5,192,case,9,CASTCaseStatement
+152050,JUMP_TARGET,-1,case NGX_HTTP_MOVED_TEMPORARILY:,5,193,case,11,CASTCaseStatement
+152052,JUMP_TARGET,-1,case NGX_HTTP_SEE_OTHER:,5,194,case,13,CASTCaseStatement
+152054,JUMP_TARGET,-1,case NGX_HTTP_NOT_MODIFIED:,5,195,case,15,CASTCaseStatement
+152056,JUMP_TARGET,-1,case NGX_HTTP_TEMPORARY_REDIRECT:,5,196,case,17,CASTCaseStatement
+152058,JUMP_TARGET,-1,case NGX_HTTP_PERMANENT_REDIRECT:,5,197,case,19,CASTCaseStatement
+152064,JUMP_TARGET,-1,default:,5,201,default,23,CASTDefaultStatement
+152287,JUMP_TARGET,-1,case NGX_HTTP_OK:,5,279,case,1,CASTCaseStatement
+152289,JUMP_TARGET,-1,case NGX_HTTP_CREATED:,5,280,case,3,CASTCaseStatement
+152291,JUMP_TARGET,-1,case NGX_HTTP_NO_CONTENT:,5,281,case,5,CASTCaseStatement
+152293,JUMP_TARGET,-1,case NGX_HTTP_PARTIAL_CONTENT:,5,282,case,7,CASTCaseStatement
+152295,JUMP_TARGET,-1,case NGX_HTTP_MOVED_PERMANENTLY:,5,283,case,9,CASTCaseStatement
+152297,JUMP_TARGET,-1,case NGX_HTTP_MOVED_TEMPORARILY:,5,284,case,11,CASTCaseStatement
+152299,JUMP_TARGET,-1,case NGX_HTTP_SEE_OTHER:,5,285,case,13,CASTCaseStatement
+152301,JUMP_TARGET,-1,case NGX_HTTP_NOT_MODIFIED:,5,286,case,15,CASTCaseStatement
+152303,JUMP_TARGET,-1,case NGX_HTTP_TEMPORARY_REDIRECT:,5,287,case,17,CASTCaseStatement
+152305,JUMP_TARGET,-1,case NGX_HTTP_PERMANENT_REDIRECT:,5,288,case,19,CASTCaseStatement
+152311,JUMP_TARGET,-1,default:,5,292,default,23,CASTDefaultStatement
+154523,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_START:,5,314,case,1,CASTCaseStatement
+154655,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_READ:,5,355,case,12,CASTCaseStatement
+154682,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_PROCESS:,5,371,case,17,CASTCaseStatement
+154723,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_PASS:,5,386,case,24,CASTCaseStatement
+154731,JUMP_TARGET,-1,default:,5,390,default,27,CASTDefaultStatement
+155581,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_JPEG:,5,676,case,1,CASTCaseStatement
+155791,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_GIF:,5,732,case,12,CASTCaseStatement
+155827,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_PNG:,5,743,case,18,CASTCaseStatement
+155863,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_WEBP:,5,754,case,24,CASTCaseStatement
+155902,JUMP_TARGET,-1,case ' ':,9,766,case,1,CASTCaseStatement
+155961,JUMP_TARGET,-1,case 'L':,9,782,case,8,CASTCaseStatement
+156011,JUMP_TARGET,-1,case 'X':,9,793,case,14,CASTCaseStatement
+156052,JUMP_TARGET,-1,default:,9,798,default,19,CASTDefaultStatement
+156056,JUMP_TARGET,-1,default:,5,804,default,30,CASTDefaultStatement
+156231,JUMP_TARGET,-1,"transparent:
+
+    gdImageColorTransparent(src, -1);",1,873,transparent,38,CASTLabelStatement
+156502,JUMP_TARGET,-1,case 90:,9,954,case,1,CASTCaseStatement
+156504,JUMP_TARGET,-1,case 270:,9,955,case,3,CASTCaseStatement
+156587,JUMP_TARGET,-1,case 180:,9,979,case,14,CASTCaseStatement
+156927,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_JPEG:,5,1101,case,1,CASTCaseStatement
+156944,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_GIF:,5,1106,case,6,CASTCaseStatement
+156961,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_PNG:,5,1111,case,11,CASTCaseStatement
+156978,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_WEBP:,5,1116,case,16,CASTCaseStatement
+156986,JUMP_TARGET,-1,default:,5,1125,default,20,CASTDefaultStatement
+157085,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_JPEG:,5,1179,case,1,CASTCaseStatement
+157121,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_GIF:,5,1191,case,9,CASTCaseStatement
+157134,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_PNG:,5,1196,case,14,CASTCaseStatement
+157147,JUMP_TARGET,-1,case NGX_HTTP_IMAGE_WEBP:,5,1201,case,19,CASTCaseStatement
+157155,JUMP_TARGET,-1,default:,5,1217,default,23,CASTDefaultStatement
+157984,JUMP_TARGET,-1,"failed:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, ""invalid parameter \""%V\"""",
+                       &value[i]);",1,1515,failed,25,CASTLabelStatement
+165475,JUMP_TARGET,-1,"alloc_line:
+
+        line = ngx_pnalloc(r->pool, len);",5,360,alloc_line,11,CASTLabelStatement
+166482,JUMP_TARGET,-1,case NGX_HTTP_LOG_ESCAPE_JSON:,5,929,case,1,CASTCaseStatement
+166497,JUMP_TARGET,-1,case NGX_HTTP_LOG_ESCAPE_NONE:,5,934,case,6,CASTCaseStatement
+166512,JUMP_TARGET,-1,default:,5,939,default,11,CASTDefaultStatement
+167520,JUMP_TARGET,-1,"process_formats:
+
+    if (cf->args->nelts >= 3) {
+        name = value[2];
+
+        if (ngx_strcmp(name.data, ""combined"") == 0) {
+            lmcf->combined_used = 1;
+        }
+
+    } else {
+        ngx_str_set(&name, ""combined"");
+        lmcf->combined_used = 1;
+    }",1,1334,process_formats,28,CASTLabelStatement
+168710,JUMP_TARGET,-1,"found:
+
+                continue;",13,1707,found,9,CASTLabelStatement
+168826,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, ""invalid parameter \""%s\"""", data);",1,1751,invalid,18,CASTLabelStatement
+169083,JUMP_TARGET,-1,"failed:
+
+        ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                           ""invalid \""open_log_file_cache\"" parameter \""%V\"""",
+                           &value[i]);",5,1835,failed,6,CASTLabelStatement
+170621,JUMP_TARGET,-1,"found:
+
+    if (ngx_strcmp(value[0].data, ""default"") == 0) {
+
+        if (ctx->default_value) {
+            ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                               ""duplicate default map parameter"");
+            return NGX_CONF_ERROR;
+        }
+
+        ctx->default_value = var;
+
+        return NGX_CONF_OK;
+    }",1,512,found,41,CASTLabelStatement
+171527,JUMP_TARGET,-1,"found:
+
+    line.data = u->buffer.pos;",1,330,found,12,CASTLabelStatement
+171688,JUMP_TARGET,-1,"flags:
+
+        flags = ngx_atoi(start, p - start - 1);",5,385,flags,8,CASTLabelStatement
+171769,JUMP_TARGET,-1,"length:
+
+        start = p;",5,409,length,12,CASTLabelStatement
+171896,JUMP_TARGET,-1,"no_valid:
+
+    ngx_log_error(NGX_LOG_ERR, r->connection->log, 0,
+                  ""memcached sent invalid response: \""%V\"""", &line);",1,443,no_valid,24,CASTLabelStatement
+174312,JUMP_TARGET,-1,case 0:,9,537,case,1,CASTCaseStatement
+174316,JUMP_TARGET,-1,case NGX_ENOENT:,9,540,case,4,CASTCaseStatement
+174318,JUMP_TARGET,-1,case NGX_ENOTDIR:,9,541,case,6,CASTCaseStatement
+174320,JUMP_TARGET,-1,case NGX_ENAMETOOLONG:,9,542,case,8,CASTCaseStatement
+174329,JUMP_TARGET,-1,case NGX_EACCES:,9,548,case,13,CASTCaseStatement
+174338,JUMP_TARGET,-1,default:,9,558,default,18,CASTDefaultStatement
+174567,JUMP_TARGET,-1,case NGX_DECLINED:,9,632,case,1,CASTCaseStatement
+174590,JUMP_TARGET,-1,case NGX_OK:,9,642,case,7,CASTCaseStatement
+174602,JUMP_TARGET,-1,default:,9,646,default,11,CASTDefaultStatement
+176174,JUMP_TARGET,-1,"next:
+        continue;",5,1049,next,15,CASTLabelStatement
+184104,JUMP_TARGET,-1,"found:
+
+    if (start) {
+        key_prefix = ngx_http_mp4_seek_key_frame(mp4, trak, start_sample);
+
+        start_sample -= key_prefix;
+
+        while (rest < key_prefix) {
+            trak->prefix += rest * duration;
+            key_prefix -= rest;
+
+            entry--;
+            entries++;
+
+            count = ngx_mp4_get_32value(entry->count);
+            duration = ngx_mp4_get_32value(entry->duration);
+            rest = count;
+        }
+
+        trak->prefix += key_prefix * duration;
+        trak->duration += trak->prefix;
+        rest -= key_prefix;
+
+        ngx_mp4_set_32value(entry->count, count - rest);
+        data->pos = (u_char *) entry;
+        trak->time_to_sample_entries = entries;
+        trak->start_sample = start_sample;
+
+        ngx_log_debug2(NGX_LOG_DEBUG_HTTP, mp4->file.log, 0,
+                       ""start_sample:%ui, new count:%uD"",
+                       trak->start_sample, count - rest);
+
+    } else {
+        ngx_mp4_set_32value(entry->count, rest);
+    ...",1,2454,found,21,CASTLabelStatement
+185441,JUMP_TARGET,-1,"found:
+
+    if (start) {
+        data->pos = (u_char *) entry;
+        trak->sync_samples_entries = entries;
+
+    } else {
+        data->last = (u_char *) entry;
+        trak->sync_samples_entries -= entries;
+    }",1,2731,found,14,CASTLabelStatement
+186335,JUMP_TARGET,-1,"found:
+
+    if (start) {
+        ngx_mp4_set_32value(entry->count, count - rest);
+        data->pos = (u_char *) entry;
+        trak->composition_offset_entries = entries;
+
+    } else {
+        ngx_mp4_set_32value(entry->count, rest);
+        data->last = (u_char *) (entry + 1);
+        trak->composition_offset_entries -= entries - 1;
+    }",1,2933,found,16,CASTLabelStatement
+187868,JUMP_TARGET,-1,"found:
+
+    entries++;",1,3193,found,31,CASTLabelStatement
+192868,JUMP_TARGET,-1,"skip:
+
+        while (start < end && *start != ',') { start++; }",5,240,skip,7,CASTLabelStatement
+196938,JUMP_TARGET,-1,"out:
+
+    rc = ngx_chain_writer(&r->upstream->writer, out);",1,1788,out,25,CASTLabelStatement
+203128,JUMP_TARGET,-1,"next:
+
+        h++;",5,4008,next,6,CASTLabelStatement
+206593,JUMP_TARGET,-1,"parse:
+
+    ctx = ngx_pcalloc(r->pool, sizeof(ngx_http_range_filter_ctx_t));",1,218,parse,12,CASTLabelStatement
+206634,JUMP_TARGET,-1,case NGX_OK:,5,231,case,1,CASTCaseStatement
+206673,JUMP_TARGET,-1,case NGX_HTTP_RANGE_NOT_SATISFIABLE:,5,243,case,8,CASTCaseStatement
+206678,JUMP_TARGET,-1,case NGX_ERROR:,5,246,case,11,CASTCaseStatement
+206682,JUMP_TARGET,-1,default:,5,249,default,14,CASTDefaultStatement
+206684,JUMP_TARGET,-1,"next_filter:
+
+    r->headers_out.accept_ranges = ngx_list_push(&r->headers_out.headers);",1,253,next_filter,18,CASTLabelStatement
+207064,JUMP_TARGET,-1,"found:
+
+        if (start < end) {
+            range = ngx_array_push(&ctx->ranges);
+            if (range == NULL) {
+                return NGX_ERROR;
+            }
+
+            range->start = start;
+            range->end = end;
+
+            if (size > NGX_MAX_OFF_T_VALUE - (end - start)) {
+                return NGX_HTTP_RANGE_NOT_SATISFIABLE;
+            }
+
+            size += end - start;
+
+            if (ranges-- == 0) {
+                return NGX_DECLINED;
+            }
+
+        } else if (start == 0) {
+            return NGX_DECLINED;
+        }",5,369,found,12,CASTLabelStatement
+207924,JUMP_TARGET,-1,"overlapped:
+
+    ngx_log_error(NGX_LOG_ALERT, r->connection->log, 0,
+                  ""range in overlapped buffers"");",1,689,overlapped,11,CASTLabelStatement
+208965,JUMP_TARGET,-1,case NGX_HTTP_REALIP_XREALIP:,5,158,case,1,CASTCaseStatement
+208994,JUMP_TARGET,-1,case NGX_HTTP_REALIP_XFWD:,5,169,case,7,CASTCaseStatement
+209019,JUMP_TARGET,-1,case NGX_HTTP_REALIP_PROXY:,5,181,case,13,CASTCaseStatement
+209048,JUMP_TARGET,-1,default:,5,192,default,19,CASTDefaultStatement
+209163,JUMP_TARGET,-1,"found:
+
+    c = r->connection;",1,227,found,18,CASTLabelStatement
+209598,JUMP_TARGET,-1,default:,9,405,default,1,CASTDefaultStatement
+210474,JUMP_TARGET,-1,"valid_scheme:
+
+    i = 0;",1,175,valid_scheme,18,CASTLabelStatement
+210541,JUMP_TARGET,-1,"invalid:
+
+    *v = ngx_http_variable_true_value;",1,238,invalid,24,CASTLabelStatement
+210548,JUMP_TARGET,-1,"uri:
+
+    for ( /* void */ ; p < last; p++) {
+        if (*p == '/') {
+            break;
+        }
+    }",1,244,uri,27,CASTLabelStatement
+210598,JUMP_TARGET,-1,"valid:
+
+    *v = ngx_http_variable_null_value;",1,262,valid,32,CASTLabelStatement
+216581,JUMP_TARGET,-1,"next:
+
+            continue;",9,901,next,11,CASTLabelStatement
+217392,JUMP_TARGET,-1,"done:
+
+            if (u->headers_in.status_n == NGX_HTTP_SWITCHING_PROTOCOLS
+                && r->headers_in.upgrade)
+            {
+                u->upgrade = 1;
+            }",9,1128,done,6,CASTLabelStatement
+218885,JUMP_TARGET,-1,"next:
+
+            h++;",9,1741,next,9,CASTLabelStatement
+220089,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,190,not_found,36,CASTLabelStatement
+220154,JUMP_TARGET,-1,"md5_start:
+
+    while (p < last) {
+        if (*p++ == '/') {
+            end = p - 1;
+            goto url_start;
+        }
+    }",1,222,md5_start,14,CASTLabelStatement
+220174,JUMP_TARGET,-1,"url_start:
+
+    len = last - p;",1,233,url_start,17,CASTLabelStatement
+220277,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,261,not_found,31,CASTLabelStatement
+222692,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""invalid percent value \""%V\"""", &value[0]);",1,241,invalid,16,CASTLabelStatement
+225086,JUMP_TARGET,-1,"ssi_error:
+
+            if (slcf->silent_errors) {
+                continue;
+            }",5,827,ssi_error,10,CASTLabelStatement
+225716,JUMP_TARGET,-1,"tag_started:
+
+            continue;",9,1037,tag_started,8,CASTLabelStatement
+225721,JUMP_TARGET,-1,case ssi_start_state:,9,1044,case,1,CASTCaseStatement
+225724,JUMP_TARGET,-1,case ssi_tag_state:,9,1048,case,4,CASTCaseStatement
+225729,JUMP_TARGET,-1,case '!':,13,1050,case,1,CASTCaseStatement
+225738,JUMP_TARGET,-1,case '<':,13,1055,case,6,CASTCaseStatement
+225744,JUMP_TARGET,-1,default:,13,1059,default,10,CASTDefaultStatement
+225756,JUMP_TARGET,-1,case ssi_comment0_state:,9,1068,case,8,CASTCaseStatement
+225761,JUMP_TARGET,-1,case '-':,13,1070,case,1,CASTCaseStatement
+225770,JUMP_TARGET,-1,case '<':,13,1075,case,6,CASTCaseStatement
+225782,JUMP_TARGET,-1,default:,13,1081,default,12,CASTDefaultStatement
+225794,JUMP_TARGET,-1,case ssi_comment1_state:,9,1090,case,12,CASTCaseStatement
+225799,JUMP_TARGET,-1,case '-':,13,1092,case,1,CASTCaseStatement
+225808,JUMP_TARGET,-1,case '<':,13,1097,case,6,CASTCaseStatement
+225820,JUMP_TARGET,-1,default:,13,1103,default,12,CASTDefaultStatement
+225832,JUMP_TARGET,-1,case ssi_sharp_state:,9,1112,case,16,CASTCaseStatement
+225837,JUMP_TARGET,-1,case '#':,13,1114,case,1,CASTCaseStatement
+225860,JUMP_TARGET,-1,case '<':,13,1122,case,7,CASTCaseStatement
+225872,JUMP_TARGET,-1,default:,13,1128,default,13,CASTDefaultStatement
+225884,JUMP_TARGET,-1,case ssi_precommand_state:,9,1137,case,20,CASTCaseStatement
+225889,JUMP_TARGET,-1,case ' ':,13,1139,case,1,CASTCaseStatement
+225891,JUMP_TARGET,-1,case CR:,13,1140,case,3,CASTCaseStatement
+225893,JUMP_TARGET,-1,case LF:,13,1141,case,5,CASTCaseStatement
+225895,JUMP_TARGET,-1,case '\t':,13,1142,case,7,CASTCaseStatement
+225898,JUMP_TARGET,-1,default:,13,1145,default,10,CASTDefaultStatement
+225963,JUMP_TARGET,-1,case ssi_command_state:,9,1166,case,24,CASTCaseStatement
+225968,JUMP_TARGET,-1,case ' ':,13,1168,case,1,CASTCaseStatement
+225970,JUMP_TARGET,-1,case CR:,13,1169,case,3,CASTCaseStatement
+225972,JUMP_TARGET,-1,case LF:,13,1170,case,5,CASTCaseStatement
+225974,JUMP_TARGET,-1,case '\t':,13,1171,case,7,CASTCaseStatement
+225980,JUMP_TARGET,-1,case '-':,13,1175,case,11,CASTCaseStatement
+225986,JUMP_TARGET,-1,default:,13,1179,default,15,CASTDefaultStatement
+226038,JUMP_TARGET,-1,case ssi_preparam_state:,9,1195,case,28,CASTCaseStatement
+226043,JUMP_TARGET,-1,case ' ':,13,1197,case,1,CASTCaseStatement
+226045,JUMP_TARGET,-1,case CR:,13,1198,case,3,CASTCaseStatement
+226047,JUMP_TARGET,-1,case LF:,13,1199,case,5,CASTCaseStatement
+226049,JUMP_TARGET,-1,case '\t':,13,1200,case,7,CASTCaseStatement
+226052,JUMP_TARGET,-1,case '-':,13,1203,case,10,CASTCaseStatement
+226058,JUMP_TARGET,-1,default:,13,1207,default,14,CASTDefaultStatement
+226187,JUMP_TARGET,-1,case ssi_param_state:,9,1241,case,32,CASTCaseStatement
+226192,JUMP_TARGET,-1,case ' ':,13,1243,case,1,CASTCaseStatement
+226194,JUMP_TARGET,-1,case CR:,13,1244,case,3,CASTCaseStatement
+226196,JUMP_TARGET,-1,case LF:,13,1245,case,5,CASTCaseStatement
+226198,JUMP_TARGET,-1,case '\t':,13,1246,case,7,CASTCaseStatement
+226204,JUMP_TARGET,-1,case '=':,13,1250,case,11,CASTCaseStatement
+226210,JUMP_TARGET,-1,case '-':,13,1254,case,15,CASTCaseStatement
+226235,JUMP_TARGET,-1,default:,13,1263,default,20,CASTDefaultStatement
+226290,JUMP_TARGET,-1,case ssi_preequal_state:,9,1278,case,36,CASTCaseStatement
+226295,JUMP_TARGET,-1,case ' ':,13,1280,case,1,CASTCaseStatement
+226297,JUMP_TARGET,-1,case CR:,13,1281,case,3,CASTCaseStatement
+226299,JUMP_TARGET,-1,case LF:,13,1282,case,5,CASTCaseStatement
+226301,JUMP_TARGET,-1,case '\t':,13,1283,case,7,CASTCaseStatement
+226304,JUMP_TARGET,-1,case '=':,13,1286,case,10,CASTCaseStatement
+226310,JUMP_TARGET,-1,default:,13,1290,default,14,CASTDefaultStatement
+226346,JUMP_TARGET,-1,case ssi_prevalue_state:,9,1306,case,40,CASTCaseStatement
+226351,JUMP_TARGET,-1,case ' ':,13,1308,case,1,CASTCaseStatement
+226353,JUMP_TARGET,-1,case CR:,13,1309,case,3,CASTCaseStatement
+226355,JUMP_TARGET,-1,case LF:,13,1310,case,5,CASTCaseStatement
+226357,JUMP_TARGET,-1,case '\t':,13,1311,case,7,CASTCaseStatement
+226360,JUMP_TARGET,-1,"case '""':",13,1314,case,10,CASTCaseStatement
+226366,JUMP_TARGET,-1,case '\'':,13,1318,case,14,CASTCaseStatement
+226372,JUMP_TARGET,-1,default:,13,1322,default,18,CASTDefaultStatement
+226408,JUMP_TARGET,-1,case ssi_double_quoted_value_state:,9,1338,case,44,CASTCaseStatement
+226413,JUMP_TARGET,-1,"case '""':",13,1340,case,1,CASTCaseStatement
+226419,JUMP_TARGET,-1,case '\\':,13,1344,case,5,CASTCaseStatement
+226429,JUMP_TARGET,-1,default:,13,1350,default,9,CASTDefaultStatement
+226492,JUMP_TARGET,-1,case ssi_quoted_value_state:,9,1366,case,48,CASTCaseStatement
+226497,JUMP_TARGET,-1,case '\'':,13,1368,case,1,CASTCaseStatement
+226503,JUMP_TARGET,-1,case '\\':,13,1372,case,5,CASTCaseStatement
+226513,JUMP_TARGET,-1,default:,13,1378,default,9,CASTDefaultStatement
+226576,JUMP_TARGET,-1,case ssi_quoted_symbol_state:,9,1394,case,52,CASTCaseStatement
+226645,JUMP_TARGET,-1,case ssi_postparam_state:,9,1411,case,58,CASTCaseStatement
+226732,JUMP_TARGET,-1,case ' ':,13,1430,case,1,CASTCaseStatement
+226734,JUMP_TARGET,-1,case CR:,13,1431,case,3,CASTCaseStatement
+226736,JUMP_TARGET,-1,case LF:,13,1432,case,5,CASTCaseStatement
+226738,JUMP_TARGET,-1,case '\t':,13,1433,case,7,CASTCaseStatement
+226744,JUMP_TARGET,-1,case '-':,13,1437,case,11,CASTCaseStatement
+226750,JUMP_TARGET,-1,default:,13,1441,default,15,CASTDefaultStatement
+226782,JUMP_TARGET,-1,case ssi_comment_end0_state:,9,1453,case,63,CASTCaseStatement
+226787,JUMP_TARGET,-1,case '-':,13,1455,case,1,CASTCaseStatement
+226793,JUMP_TARGET,-1,default:,13,1459,default,5,CASTDefaultStatement
+226813,JUMP_TARGET,-1,case ssi_comment_end1_state:,9,1469,case,67,CASTCaseStatement
+226818,JUMP_TARGET,-1,case '>':,13,1471,case,1,CASTCaseStatement
+226862,JUMP_TARGET,-1,default:,13,1483,default,9,CASTDefaultStatement
+226882,JUMP_TARGET,-1,case ssi_error_state:,9,1493,case,71,CASTCaseStatement
+226887,JUMP_TARGET,-1,case '-':,13,1495,case,1,CASTCaseStatement
+226893,JUMP_TARGET,-1,default:,13,1499,default,5,CASTDefaultStatement
+226896,JUMP_TARGET,-1,case ssi_error_end0_state:,9,1505,case,75,CASTCaseStatement
+226901,JUMP_TARGET,-1,case '-':,13,1507,case,1,CASTCaseStatement
+226907,JUMP_TARGET,-1,default:,13,1511,default,5,CASTDefaultStatement
+226913,JUMP_TARGET,-1,case ssi_error_end1_state:,9,1518,case,79,CASTCaseStatement
+226918,JUMP_TARGET,-1,case '>':,13,1520,case,1,CASTCaseStatement
+226964,JUMP_TARGET,-1,default:,13,1532,default,9,CASTDefaultStatement
+227887,JUMP_TARGET,-1,"invalid_variable:
+
+    ngx_log_error(NGX_LOG_ERR, r->connection->log, 0,
+                  ""invalid variable name in \""%V\"""", text);",1,1868,invalid_variable,38,CASTLabelStatement
+228268,JUMP_TARGET,-1,"found:
+
+        psr = ngx_palloc(r->pool, sizeof(ngx_http_post_subrequest_t));",5,2089,found,4,CASTLabelStatement
+228991,JUMP_TARGET,-1,case NGX_HTTP_SSI_URL_ENCODING:,5,2322,case,1,CASTCaseStatement
+229046,JUMP_TARGET,-1,case NGX_HTTP_SSI_ENTITY_ENCODING:,5,2338,case,7,CASTCaseStatement
+229097,JUMP_TARGET,-1,default:,5,2353,default,13,CASTDefaultStatement
+229963,JUMP_TARGET,-1,"invalid_expression:
+
+    ngx_log_error(NGX_LOG_ERR, r->connection->log, 0,
+                  ""invalid expression in \""%V\"""", expr);",1,2631,invalid_expression,38,CASTLabelStatement
+232954,JUMP_TARGET,-1,"found:
+
+    conf->certificate_values = ngx_array_create(cf->pool, nelts,
+                                             sizeof(ngx_http_complex_value_t));",1,936,found,13,CASTLabelStatement
+233563,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""invalid session cache \""%V\"""", &value[i]);",1,1140,invalid,14,CASTLabelStatement
+233796,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""invalid OCSP cache \""%V\"""", &value[1]);",1,1219,invalid,27,CASTLabelStatement
+234398,JUMP_TARGET,-1,case 0:,9,108,case,1,CASTCaseStatement
+234402,JUMP_TARGET,-1,case NGX_ENOENT:,9,111,case,4,CASTCaseStatement
+234404,JUMP_TARGET,-1,case NGX_ENOTDIR:,9,112,case,6,CASTCaseStatement
+234406,JUMP_TARGET,-1,case NGX_ENAMETOOLONG:,9,113,case,8,CASTCaseStatement
+234415,JUMP_TARGET,-1,case NGX_EACCES:,9,119,case,13,CASTCaseStatement
+234424,JUMP_TARGET,-1,default:,9,129,default,18,CASTDefaultStatement
+235386,JUMP_TARGET,-1,case 0:,5,166,case,1,CASTCaseStatement
+235393,JUMP_TARGET,-1,case 1:,5,170,case,5,CASTCaseStatement
+235400,JUMP_TARGET,-1,case 2:,5,174,case,9,CASTCaseStatement
+235407,JUMP_TARGET,-1,case 3:,5,178,case,13,CASTCaseStatement
+235414,JUMP_TARGET,-1,default:,5,183,default,17,CASTDefaultStatement
+237495,JUMP_TARGET,-1,"next:
+
+            i++;",9,678,next,12,CASTLabelStatement
+237562,JUMP_TARGET,-1,"again:
+
+    ctx->offset = offset;",1,707,again,24,CASTLabelStatement
+237585,JUMP_TARGET,-1,"done:
+
+    /* send [ - looked.len, start ] to client */
+
+    ctx->saved.len = ctx->looked.len + ngx_min(start, 0);",1,714,done,29,CASTLabelStatement
+240356,JUMP_TARGET,-1,"next:
+
+        if (++hp->tries > 20) {
+            ngx_http_upstream_rr_peers_unlock(hp->rrp.peers);
+            return hp->get_rr_peer(pc, &hp->rrp);
+        }",5,256,next,21,CASTLabelStatement
+240682,JUMP_TARGET,-1,"done:
+
+        ngx_crc32_init(base_hash);",5,360,done,8,CASTLabelStatement
+241438,JUMP_TARGET,-1,"found:
+
+    hp->rrp.current = best;",1,597,found,25,CASTLabelStatement
+241863,JUMP_TARGET,-1,case AF_INET:,5,121,case,1,CASTCaseStatement
+241892,JUMP_TARGET,-1,default:,5,135,default,7,CASTDefaultStatement
+242192,JUMP_TARGET,-1,"next:
+
+        if (++iphp->tries > 20) {
+            ngx_http_upstream_rr_peers_unlock(iphp->rrp.peers);
+            return iphp->get_rr_peer(pc, &iphp->rrp);
+        }",5,226,next,15,CASTLabelStatement
+242864,JUMP_TARGET,-1,"found:
+
+    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, pc->log, 0,
+                   ""get keepalive peer: using connection %p"", c);",1,280,found,14,CASTLabelStatement
+243262,JUMP_TARGET,-1,"invalid:
+
+    kp->original_free_peer(pc, kp->data, state);",1,407,invalid,36,CASTLabelStatement
+243353,JUMP_TARGET,-1,"close:
+
+    item = c->data;",1,452,close,11,CASTLabelStatement
+244141,JUMP_TARGET,-1,"failed:
+
+    if (peers->next) {
+        ngx_log_debug0(NGX_LOG_DEBUG_HTTP, pc->log, 0,
+                       ""get least conn peer, backup servers"");
+
+        rrp->peers = peers->next;
+
+        n = (rrp->peers->number + (8 * sizeof(uintptr_t) - 1))
+                / (8 * sizeof(uintptr_t));
+
+        for (i = 0; i < n; i++) {
+            rrp->tried[i] = 0;
+        }
+
+        ngx_http_upstream_rr_peers_unlock(peers);
+
+        rc = ngx_http_upstream_get_least_conn_peer(pc, rrp);
+
+        if (rc != NGX_BUSY) {
+            return rc;
+        }
+
+        ngx_http_upstream_rr_peers_wlock(peers);
+    }",1,257,failed,38,CASTLabelStatement
+244814,JUMP_TARGET,-1,"next:
+
+        if (++rp->tries > 20) {
+            ngx_http_upstream_rr_peers_unlock(peers);
+            return ngx_http_upstream_get_round_robin_peer(pc, rrp);
+        }",5,268,next,11,CASTLabelStatement
+245114,JUMP_TARGET,-1,"next:
+
+        if (++rp->tries > 20) {
+            ngx_http_upstream_rr_peers_unlock(peers);
+            return ngx_http_upstream_get_round_robin_peer(pc, rrp);
+        }",5,378,next,13,CASTLabelStatement
+246034,JUMP_TARGET,-1,"done:
+
+    uscf->peer.data = peers;",1,255,done,26,CASTLabelStatement
+246202,JUMP_TARGET,-1,"failed:
+
+    if (dst->server.data) {
+        ngx_slab_free_locked(pool, dst->server.data);
+    }",1,308,failed,13,CASTLabelStatement
+247931,JUMP_TARGET,-1,default:,13,625,default,1,CASTDefaultStatement
+251138,JUMP_TARGET,-1,"next:
+
+            continue;",9,1120,next,13,CASTLabelStatement
+251963,JUMP_TARGET,-1,"done:
+
+            if (u->headers_in.status_n == NGX_HTTP_SWITCHING_PROTOCOLS
+                && r->headers_in.upgrade)
+            {
+                u->upgrade = 1;
+            }",9,1349,done,6,CASTLabelStatement
+253490,JUMP_TARGET,-1,"next:
+
+            h++;",9,2027,next,9,CASTLabelStatement
+256652,JUMP_TARGET,-1,"found:
+
+    n = cf->args->nelts;",1,945,found,31,CASTLabelStatement
+258127,JUMP_TARGET,-1,"fail:
+
+    (void) perl_destruct(perl);",1,657,fail,15,CASTLabelStatement
+259539,JUMP_TARGET,-1,"failed:
+
+    *cf = pcf;",1,341,failed,42,CASTLabelStatement
+260006,JUMP_TARGET,-1,case NGX_HTTP_SERVER_REWRITE_PHASE:,9,491,case,1,CASTCaseStatement
+260030,JUMP_TARGET,-1,case NGX_HTTP_FIND_CONFIG_PHASE:,9,499,case,6,CASTCaseStatement
+260045,JUMP_TARGET,-1,case NGX_HTTP_REWRITE_PHASE:,9,508,case,13,CASTCaseStatement
+260069,JUMP_TARGET,-1,case NGX_HTTP_POST_REWRITE_PHASE:,9,516,case,18,CASTCaseStatement
+260089,JUMP_TARGET,-1,case NGX_HTTP_ACCESS_PHASE:,9,526,case,22,CASTCaseStatement
+260097,JUMP_TARGET,-1,case NGX_HTTP_POST_ACCESS_PHASE:,9,531,case,27,CASTCaseStatement
+260115,JUMP_TARGET,-1,case NGX_HTTP_CONTENT_PHASE:,9,540,case,31,CASTCaseStatement
+260121,JUMP_TARGET,-1,default:,9,544,default,35,CASTDefaultStatement
+260349,JUMP_TARGET,-1,"failed:
+
+    *ctx = saved;",1,616,failed,12,CASTLabelStatement
+261598,JUMP_TARGET,-1,"inclusive:
+
+    if (ngx_queue_empty(&lq->list)) {
+        return node;
+    }",1,1162,inclusive,27,CASTLabelStatement
+262653,JUMP_TARGET,-1,"failed:
+
+    ngx_destroy_pool(ha.temp_pool);",1,1608,failed,25,CASTLabelStatement
+262892,JUMP_TARGET,-1,default:,9,1720,default,1,CASTDefaultStatement
+263513,JUMP_TARGET,-1,"next:
+
+        continue;",5,2010,next,11,CASTLabelStatement
+266366,JUMP_TARGET,-1,case 0:,9,828,case,1,CASTCaseStatement
+266378,JUMP_TARGET,-1,case NGX_HTTP_CONNECTION_CLOSE:,9,832,case,5,CASTCaseStatement
+266386,JUMP_TARGET,-1,case NGX_HTTP_CONNECTION_KEEP_ALIVE:,9,836,case,9,CASTCaseStatement
+272243,JUMP_TARGET,-1,"next:
+        continue;",5,3268,next,9,CASTLabelStatement
+275292,JUMP_TARGET,-1,"next:
+        continue;",5,4472,next,4,CASTLabelStatement
+276064,JUMP_TARGET,-1,case NGX_HTTP_TO_HTTPS:,17,4763,case,1,CASTCaseStatement
+276066,JUMP_TARGET,-1,case NGX_HTTPS_CERT_ERROR:,17,4764,case,3,CASTCaseStatement
+276068,JUMP_TARGET,-1,case NGX_HTTPS_NO_CERT:,17,4765,case,5,CASTCaseStatement
+276070,JUMP_TARGET,-1,case NGX_HTTP_REQUEST_HEADER_TOO_LARGE:,17,4766,case,7,CASTCaseStatement
+276244,JUMP_TARGET,-1,"failed:
+
+        ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                           ""invalid \""open_file_cache\"" parameter \""%V\"""",
+                           &value[i]);",5,4830,failed,4,CASTLabelStatement
+278091,JUMP_TARGET,-1,case 0:,9,364,case,1,CASTCaseStatement
+278095,JUMP_TARGET,-1,case NGX_ENOENT:,9,367,case,4,CASTCaseStatement
+278097,JUMP_TARGET,-1,case NGX_ENOTDIR:,9,368,case,6,CASTCaseStatement
+278100,JUMP_TARGET,-1,default:,9,371,default,9,CASTDefaultStatement
+278191,JUMP_TARGET,-1,"done:
+
+    if (rv == NGX_DECLINED) {
+        return ngx_http_file_cache_lock(r, c);
+    }",1,394,done,40,CASTLabelStatement
+278548,JUMP_TARGET,-1,"wakeup:
+
+    c->waiting = 0;",1,519,wakeup,15,CASTLabelStatement
+279383,JUMP_TARGET,-1,"renew:
+
+    rc = NGX_DECLINED;",1,904,renew,15,CASTLabelStatement
+279422,JUMP_TARGET,-1,"done:
+
+    fcn->expire = ngx_time() + cache->inactive;",1,916,done,24,CASTLabelStatement
+279462,JUMP_TARGET,-1,"failed:
+
+    ngx_shmtx_unlock(&cache->shpool->mutex);",1,926,failed,30,CASTLabelStatement
+281524,JUMP_TARGET,-1,"done:
+
+    if (ngx_close_file(file.fd) == NGX_FILE_ERROR) {
+        ngx_log_error(NGX_LOG_ALERT, r->connection->log, ngx_errno,
+                      ngx_close_file_n "" \""%s\"" failed"", file.name.data);
+    }",1,1556,done,34,CASTLabelStatement
+282534,JUMP_TARGET,-1,"next:
+
+        if (++cache->files >= cache->manager_files) {
+            wait = 0;
+            break;
+        }",1,1884,next,17,CASTLabelStatement
+282964,JUMP_TARGET,-1,"done:
+
+    elapsed = ngx_abs((ngx_msec_int_t) (ngx_current_msec - cache->last));",1,2035,done,15,CASTLabelStatement
+284062,JUMP_TARGET,-1,"invalid_levels:
+
+            ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                               ""invalid \""levels\"" \""%V\"""", &value[i]);",9,2405,invalid_levels,5,CASTLabelStatement
+309788,JUMP_TARGET,-1,case sw_start:,9,143,case,1,CASTCaseStatement
+309828,JUMP_TARGET,-1,case sw_method:,9,157,case,8,CASTCaseStatement
+309852,JUMP_TARGET,-1,case 3:,17,164,case,1,CASTCaseStatement
+309917,JUMP_TARGET,-1,case 4:,17,177,case,6,CASTCaseStatement
+310091,JUMP_TARGET,-1,case 5:,17,210,case,10,CASTCaseStatement
+310229,JUMP_TARGET,-1,case 6:,17,228,case,16,CASTCaseStatement
+310336,JUMP_TARGET,-1,case 7:,17,241,case,21,CASTCaseStatement
+310455,JUMP_TARGET,-1,case 8:,17,254,case,26,CASTCaseStatement
+310523,JUMP_TARGET,-1,case 9:,17,262,case,30,CASTCaseStatement
+310622,JUMP_TARGET,-1,case sw_spaces_before_uri:,9,283,case,13,CASTCaseStatement
+310665,JUMP_TARGET,-1,case ' ':,13,299,case,1,CASTCaseStatement
+310668,JUMP_TARGET,-1,default:,13,301,default,4,CASTDefaultStatement
+310672,JUMP_TARGET,-1,case sw_schema:,9,306,case,20,CASTCaseStatement
+310715,JUMP_TARGET,-1,case ':':,13,319,case,1,CASTCaseStatement
+310726,JUMP_TARGET,-1,default:,13,323,default,6,CASTDefaultStatement
+310730,JUMP_TARGET,-1,case sw_schema_slash:,9,328,case,27,CASTCaseStatement
+310735,JUMP_TARGET,-1,case '/':,13,330,case,1,CASTCaseStatement
+310741,JUMP_TARGET,-1,default:,13,333,default,5,CASTDefaultStatement
+310745,JUMP_TARGET,-1,case sw_schema_slash_slash:,9,338,case,31,CASTCaseStatement
+310750,JUMP_TARGET,-1,case '/':,13,340,case,1,CASTCaseStatement
+310756,JUMP_TARGET,-1,default:,13,343,default,5,CASTDefaultStatement
+310760,JUMP_TARGET,-1,case sw_host_start:,9,348,case,35,CASTCaseStatement
+310779,JUMP_TARGET,-1,case sw_host:,9,361,case,40,CASTCaseStatement
+310815,JUMP_TARGET,-1,case sw_host_end:,9,374,case,45,CASTCaseStatement
+310825,JUMP_TARGET,-1,case ':':,13,379,case,1,CASTCaseStatement
+310831,JUMP_TARGET,-1,case '/':,13,382,case,5,CASTCaseStatement
+310842,JUMP_TARGET,-1,case '?':,13,386,case,10,CASTCaseStatement
+310865,JUMP_TARGET,-1,case ' ':,13,392,case,17,CASTCaseStatement
+310889,JUMP_TARGET,-1,default:,13,401,default,23,CASTDefaultStatement
+310893,JUMP_TARGET,-1,case sw_host_ip_literal:,9,406,case,50,CASTCaseStatement
+310924,JUMP_TARGET,-1,case ':':,13,418,case,1,CASTCaseStatement
+310927,JUMP_TARGET,-1,case ']':,13,420,case,4,CASTCaseStatement
+310933,JUMP_TARGET,-1,case '-':,13,423,case,8,CASTCaseStatement
+310935,JUMP_TARGET,-1,case '.':,13,424,case,10,CASTCaseStatement
+310937,JUMP_TARGET,-1,case '_':,13,425,case,12,CASTCaseStatement
+310939,JUMP_TARGET,-1,case '~':,13,426,case,14,CASTCaseStatement
+310942,JUMP_TARGET,-1,case '!':,13,429,case,17,CASTCaseStatement
+310944,JUMP_TARGET,-1,case '$':,13,430,case,19,CASTCaseStatement
+310946,JUMP_TARGET,-1,case '&':,13,431,case,21,CASTCaseStatement
+310948,JUMP_TARGET,-1,case '\'':,13,432,case,23,CASTCaseStatement
+310950,JUMP_TARGET,-1,case '(':,13,433,case,25,CASTCaseStatement
+310952,JUMP_TARGET,-1,case ')':,13,434,case,27,CASTCaseStatement
+310954,JUMP_TARGET,-1,case '*':,13,435,case,29,CASTCaseStatement
+310956,JUMP_TARGET,-1,case '+':,13,436,case,31,CASTCaseStatement
+310958,JUMP_TARGET,-1,"case ',':",13,437,case,33,CASTCaseStatement
+310960,JUMP_TARGET,-1,case ';':,13,438,case,35,CASTCaseStatement
+310962,JUMP_TARGET,-1,case '=':,13,439,case,37,CASTCaseStatement
+310965,JUMP_TARGET,-1,default:,13,442,default,40,CASTDefaultStatement
+310969,JUMP_TARGET,-1,case sw_port:,9,447,case,57,CASTCaseStatement
+310984,JUMP_TARGET,-1,case '/':,13,453,case,1,CASTCaseStatement
+311000,JUMP_TARGET,-1,case '?':,13,458,case,7,CASTCaseStatement
+311028,JUMP_TARGET,-1,case ' ':,13,465,case,15,CASTCaseStatement
+311057,JUMP_TARGET,-1,default:,13,475,default,22,CASTDefaultStatement
+311061,JUMP_TARGET,-1,case sw_after_slash_in_uri:,9,481,case,62,CASTCaseStatement
+311083,JUMP_TARGET,-1,case ' ':,13,489,case,1,CASTCaseStatement
+311094,JUMP_TARGET,-1,case CR:,13,493,case,6,CASTCaseStatement
+311110,JUMP_TARGET,-1,case LF:,13,498,case,12,CASTCaseStatement
+311123,JUMP_TARGET,-1,case '.':,13,502,case,17,CASTCaseStatement
+311134,JUMP_TARGET,-1,case '%':,13,506,case,22,CASTCaseStatement
+311145,JUMP_TARGET,-1,case '/':,13,510,case,27,CASTCaseStatement
+311156,JUMP_TARGET,-1,case '?':,13,520,case,32,CASTCaseStatement
+311169,JUMP_TARGET,-1,case '#':,13,524,case,37,CASTCaseStatement
+311180,JUMP_TARGET,-1,case '+':,13,528,case,42,CASTCaseStatement
+311188,JUMP_TARGET,-1,default:,13,531,default,46,CASTDefaultStatement
+311205,JUMP_TARGET,-1,case sw_check_uri:,9,541,case,67,CASTCaseStatement
+311224,JUMP_TARGET,-1,case '/':,13,548,case,1,CASTCaseStatement
+311235,JUMP_TARGET,-1,case '.':,13,559,case,6,CASTCaseStatement
+311245,JUMP_TARGET,-1,case ' ':,13,562,case,10,CASTCaseStatement
+311256,JUMP_TARGET,-1,case CR:,13,566,case,15,CASTCaseStatement
+311272,JUMP_TARGET,-1,case LF:,13,571,case,21,CASTCaseStatement
+311285,JUMP_TARGET,-1,case '%':,13,581,case,26,CASTCaseStatement
+311296,JUMP_TARGET,-1,case '?':,13,585,case,31,CASTCaseStatement
+311309,JUMP_TARGET,-1,case '#':,13,589,case,36,CASTCaseStatement
+311320,JUMP_TARGET,-1,case '+':,13,593,case,41,CASTCaseStatement
+311328,JUMP_TARGET,-1,default:,13,596,default,45,CASTDefaultStatement
+311342,JUMP_TARGET,-1,case sw_uri:,9,605,case,72,CASTCaseStatement
+311361,JUMP_TARGET,-1,case ' ':,13,612,case,1,CASTCaseStatement
+311372,JUMP_TARGET,-1,case CR:,13,616,case,6,CASTCaseStatement
+311388,JUMP_TARGET,-1,case LF:,13,621,case,12,CASTCaseStatement
+311401,JUMP_TARGET,-1,case '#':,13,625,case,17,CASTCaseStatement
+311409,JUMP_TARGET,-1,default:,13,628,default,21,CASTDefaultStatement
+311423,JUMP_TARGET,-1,case sw_http_09:,9,637,case,77,CASTCaseStatement
+311428,JUMP_TARGET,-1,case ' ':,13,639,case,1,CASTCaseStatement
+311431,JUMP_TARGET,-1,case CR:,13,641,case,4,CASTCaseStatement
+311442,JUMP_TARGET,-1,case LF:,13,645,case,9,CASTCaseStatement
+311450,JUMP_TARGET,-1,case 'H':,13,648,case,13,CASTCaseStatement
+311463,JUMP_TARGET,-1,default:,13,652,default,18,CASTDefaultStatement
+311467,JUMP_TARGET,-1,case sw_http_H:,9,657,case,81,CASTCaseStatement
+311472,JUMP_TARGET,-1,case 'T':,13,659,case,1,CASTCaseStatement
+311478,JUMP_TARGET,-1,default:,13,662,default,5,CASTDefaultStatement
+311482,JUMP_TARGET,-1,case sw_http_HT:,9,667,case,85,CASTCaseStatement
+311487,JUMP_TARGET,-1,case 'T':,13,669,case,1,CASTCaseStatement
+311493,JUMP_TARGET,-1,default:,13,672,default,5,CASTDefaultStatement
+311497,JUMP_TARGET,-1,case sw_http_HTT:,9,677,case,89,CASTCaseStatement
+311502,JUMP_TARGET,-1,case 'P':,13,679,case,1,CASTCaseStatement
+311508,JUMP_TARGET,-1,default:,13,682,default,5,CASTDefaultStatement
+311512,JUMP_TARGET,-1,case sw_http_HTTP:,9,687,case,93,CASTCaseStatement
+311517,JUMP_TARGET,-1,case '/':,13,689,case,1,CASTCaseStatement
+311523,JUMP_TARGET,-1,default:,13,692,default,5,CASTDefaultStatement
+311527,JUMP_TARGET,-1,case sw_first_major_digit:,9,698,case,97,CASTCaseStatement
+311560,JUMP_TARGET,-1,case sw_major_digit:,9,713,case,104,CASTCaseStatement
+311605,JUMP_TARGET,-1,case sw_first_minor_digit:,9,732,case,111,CASTCaseStatement
+311629,JUMP_TARGET,-1,case sw_minor_digit:,9,742,case,117,CASTCaseStatement
+311689,JUMP_TARGET,-1,case sw_spaces_after_digit:,9,768,case,126,CASTCaseStatement
+311694,JUMP_TARGET,-1,case ' ':,13,770,case,1,CASTCaseStatement
+311697,JUMP_TARGET,-1,case CR:,13,772,case,4,CASTCaseStatement
+311703,JUMP_TARGET,-1,case LF:,13,775,case,8,CASTCaseStatement
+311706,JUMP_TARGET,-1,default:,13,777,default,11,CASTDefaultStatement
+311710,JUMP_TARGET,-1,case sw_almost_done:,9,783,case,130,CASTCaseStatement
+311722,JUMP_TARGET,-1,case LF:,13,786,case,1,CASTCaseStatement
+311725,JUMP_TARGET,-1,default:,13,788,default,4,CASTDefaultStatement
+311740,JUMP_TARGET,-1,"done:
+
+    b->pos = p + 1;",1,799,done,11,CASTLabelStatement
+311849,JUMP_TARGET,-1,case sw_start:,9,857,case,1,CASTCaseStatement
+311864,JUMP_TARGET,-1,case CR:,13,862,case,1,CASTCaseStatement
+311875,JUMP_TARGET,-1,case LF:,13,866,case,6,CASTCaseStatement
+311883,JUMP_TARGET,-1,default:,13,869,default,10,CASTDefaultStatement
+311981,JUMP_TARGET,-1,case sw_name:,9,911,case,7,CASTCaseStatement
+312155,JUMP_TARGET,-1,case sw_space_before_value:,9,975,case,19,CASTCaseStatement
+312160,JUMP_TARGET,-1,case ' ':,13,977,case,1,CASTCaseStatement
+312163,JUMP_TARGET,-1,case CR:,13,979,case,4,CASTCaseStatement
+312179,JUMP_TARGET,-1,case LF:,13,984,case,10,CASTCaseStatement
+312192,JUMP_TARGET,-1,case '\0':,13,988,case,15,CASTCaseStatement
+312201,JUMP_TARGET,-1,default:,13,991,default,19,CASTDefaultStatement
+312212,JUMP_TARGET,-1,case sw_value:,9,999,case,23,CASTCaseStatement
+312217,JUMP_TARGET,-1,case ' ':,13,1001,case,1,CASTCaseStatement
+312228,JUMP_TARGET,-1,case CR:,13,1005,case,6,CASTCaseStatement
+312239,JUMP_TARGET,-1,case LF:,13,1009,case,11,CASTCaseStatement
+312247,JUMP_TARGET,-1,case '\0':,13,1012,case,15,CASTCaseStatement
+312257,JUMP_TARGET,-1,case sw_space_after_value:,9,1019,case,27,CASTCaseStatement
+312262,JUMP_TARGET,-1,case ' ':,13,1021,case,1,CASTCaseStatement
+312265,JUMP_TARGET,-1,case CR:,13,1023,case,4,CASTCaseStatement
+312271,JUMP_TARGET,-1,case LF:,13,1026,case,8,CASTCaseStatement
+312274,JUMP_TARGET,-1,case '\0':,13,1028,case,11,CASTCaseStatement
+312283,JUMP_TARGET,-1,default:,13,1031,default,15,CASTDefaultStatement
+312289,JUMP_TARGET,-1,case sw_ignore_line:,9,1038,case,31,CASTCaseStatement
+312294,JUMP_TARGET,-1,case LF:,13,1040,case,1,CASTCaseStatement
+312300,JUMP_TARGET,-1,default:,13,1043,default,5,CASTDefaultStatement
+312303,JUMP_TARGET,-1,case sw_almost_done:,9,1049,case,35,CASTCaseStatement
+312308,JUMP_TARGET,-1,case LF:,13,1051,case,1,CASTCaseStatement
+312311,JUMP_TARGET,-1,case CR:,13,1053,case,4,CASTCaseStatement
+312314,JUMP_TARGET,-1,default:,13,1055,default,7,CASTDefaultStatement
+312318,JUMP_TARGET,-1,case sw_header_almost_done:,9,1061,case,39,CASTCaseStatement
+312323,JUMP_TARGET,-1,case LF:,13,1063,case,1,CASTCaseStatement
+312326,JUMP_TARGET,-1,default:,13,1065,default,4,CASTDefaultStatement
+312351,JUMP_TARGET,-1,"done:
+
+    b->pos = p + 1;",1,1078,done,18,CASTLabelStatement
+312376,JUMP_TARGET,-1,"header_done:
+
+    b->pos = p + 1;",1,1087,header_done,24,CASTLabelStatement
+312424,JUMP_TARGET,-1,case sw_start:,9,1115,case,1,CASTCaseStatement
+312437,JUMP_TARGET,-1,case sw_after_slash_in_uri:,9,1125,case,6,CASTCaseStatement
+312459,JUMP_TARGET,-1,case '.':,13,1133,case,1,CASTCaseStatement
+312470,JUMP_TARGET,-1,case '%':,13,1137,case,6,CASTCaseStatement
+312481,JUMP_TARGET,-1,case '/':,13,1141,case,11,CASTCaseStatement
+312492,JUMP_TARGET,-1,case '?':,13,1151,case,16,CASTCaseStatement
+312505,JUMP_TARGET,-1,case '#':,13,1155,case,21,CASTCaseStatement
+312516,JUMP_TARGET,-1,case '+':,13,1159,case,26,CASTCaseStatement
+312524,JUMP_TARGET,-1,default:,13,1162,default,30,CASTDefaultStatement
+312541,JUMP_TARGET,-1,case sw_check_uri:,9,1172,case,11,CASTCaseStatement
+312560,JUMP_TARGET,-1,case '/':,13,1179,case,1,CASTCaseStatement
+312571,JUMP_TARGET,-1,case '.':,13,1190,case,6,CASTCaseStatement
+312581,JUMP_TARGET,-1,case '%':,13,1199,case,10,CASTCaseStatement
+312592,JUMP_TARGET,-1,case '?':,13,1203,case,15,CASTCaseStatement
+312605,JUMP_TARGET,-1,case '#':,13,1207,case,20,CASTCaseStatement
+312616,JUMP_TARGET,-1,case '+':,13,1211,case,25,CASTCaseStatement
+312624,JUMP_TARGET,-1,default:,13,1214,default,29,CASTDefaultStatement
+312638,JUMP_TARGET,-1,case sw_uri:,9,1223,case,16,CASTCaseStatement
+312657,JUMP_TARGET,-1,case '#':,13,1230,case,1,CASTCaseStatement
+312665,JUMP_TARGET,-1,default:,13,1233,default,5,CASTDefaultStatement
+312756,JUMP_TARGET,-1,case sw_usual:,9,1290,case,1,CASTCaseStatement
+312785,JUMP_TARGET,-1,case '/':,13,1323,case,1,CASTCaseStatement
+312801,JUMP_TARGET,-1,case '%':,13,1335,case,7,CASTCaseStatement
+312810,JUMP_TARGET,-1,case '?':,13,1339,case,12,CASTCaseStatement
+312818,JUMP_TARGET,-1,case '#':,13,1342,case,16,CASTCaseStatement
+312821,JUMP_TARGET,-1,case '.':,13,1344,case,19,CASTCaseStatement
+312836,JUMP_TARGET,-1,case '+':,13,1348,case,24,CASTCaseStatement
+312843,JUMP_TARGET,-1,default:,13,1351,default,27,CASTDefaultStatement
+312856,JUMP_TARGET,-1,case sw_slash:,9,1359,case,7,CASTCaseStatement
+312888,JUMP_TARGET,-1,case '/':,13,1373,case,1,CASTCaseStatement
+312900,JUMP_TARGET,-1,case '.':,13,1378,case,5,CASTCaseStatement
+312911,JUMP_TARGET,-1,case '%':,13,1382,case,10,CASTCaseStatement
+312920,JUMP_TARGET,-1,case '?':,13,1386,case,15,CASTCaseStatement
+312928,JUMP_TARGET,-1,case '#':,13,1389,case,19,CASTCaseStatement
+312931,JUMP_TARGET,-1,case '+':,13,1391,case,22,CASTCaseStatement
+312938,JUMP_TARGET,-1,default:,13,1394,default,25,CASTDefaultStatement
+312954,JUMP_TARGET,-1,case sw_dot:,9,1403,case,13,CASTCaseStatement
+312986,JUMP_TARGET,-1,case '/':,13,1416,case,1,CASTCaseStatement
+312994,JUMP_TARGET,-1,case '.':,13,1420,case,6,CASTCaseStatement
+313005,JUMP_TARGET,-1,case '%':,13,1424,case,11,CASTCaseStatement
+313014,JUMP_TARGET,-1,case '?':,13,1428,case,16,CASTCaseStatement
+313024,JUMP_TARGET,-1,case '#':,13,1432,case,21,CASTCaseStatement
+313029,JUMP_TARGET,-1,case '+':,13,1435,case,25,CASTCaseStatement
+313036,JUMP_TARGET,-1,default:,13,1438,default,28,CASTDefaultStatement
+313052,JUMP_TARGET,-1,case sw_dot_dot:,9,1447,case,19,CASTCaseStatement
+313084,JUMP_TARGET,-1,case '/':,13,1460,case,1,CASTCaseStatement
+313086,JUMP_TARGET,-1,case '?':,13,1461,case,3,CASTCaseStatement
+313088,JUMP_TARGET,-1,case '#':,13,1462,case,5,CASTCaseStatement
+313139,JUMP_TARGET,-1,case '%':,13,1483,case,13,CASTCaseStatement
+313148,JUMP_TARGET,-1,case '+':,13,1487,case,18,CASTCaseStatement
+313155,JUMP_TARGET,-1,default:,13,1490,default,21,CASTDefaultStatement
+313171,JUMP_TARGET,-1,case sw_quoted:,9,1499,case,25,CASTCaseStatement
+313236,JUMP_TARGET,-1,case sw_quoted_second:,9,1519,case,32,CASTCaseStatement
+313410,JUMP_TARGET,-1,"done:
+
+    r->uri.len = u - r->uri.data;",1,1583,done,18,CASTLabelStatement
+313456,JUMP_TARGET,-1,"args:
+
+    while (p < r->uri_end) {
+        if (*p++ != '#') {
+            continue;
+        }
+
+        r->args.len = p - 1 - r->args_start;
+        r->args.data = r->args_start;
+        r->args_start = NULL;
+
+        break;
+    }",1,1596,args,23,CASTLabelStatement
+313582,JUMP_TARGET,-1,case sw_start:,9,1653,case,1,CASTCaseStatement
+313587,JUMP_TARGET,-1,case 'H':,13,1655,case,1,CASTCaseStatement
+313593,JUMP_TARGET,-1,default:,13,1658,default,5,CASTDefaultStatement
+313597,JUMP_TARGET,-1,case sw_H:,9,1663,case,5,CASTCaseStatement
+313602,JUMP_TARGET,-1,case 'T':,13,1665,case,1,CASTCaseStatement
+313608,JUMP_TARGET,-1,default:,13,1668,default,5,CASTDefaultStatement
+313612,JUMP_TARGET,-1,case sw_HT:,9,1673,case,9,CASTCaseStatement
+313617,JUMP_TARGET,-1,case 'T':,13,1675,case,1,CASTCaseStatement
+313623,JUMP_TARGET,-1,default:,13,1678,default,5,CASTDefaultStatement
+313627,JUMP_TARGET,-1,case sw_HTT:,9,1683,case,13,CASTCaseStatement
+313632,JUMP_TARGET,-1,case 'P':,13,1685,case,1,CASTCaseStatement
+313638,JUMP_TARGET,-1,default:,13,1688,default,5,CASTDefaultStatement
+313642,JUMP_TARGET,-1,case sw_HTTP:,9,1693,case,17,CASTCaseStatement
+313647,JUMP_TARGET,-1,case '/':,13,1695,case,1,CASTCaseStatement
+313653,JUMP_TARGET,-1,default:,13,1698,default,5,CASTDefaultStatement
+313657,JUMP_TARGET,-1,case sw_first_major_digit:,9,1704,case,21,CASTCaseStatement
+313681,JUMP_TARGET,-1,case sw_major_digit:,9,1714,case,27,CASTCaseStatement
+313726,JUMP_TARGET,-1,case sw_first_minor_digit:,9,1732,case,34,CASTCaseStatement
+313750,JUMP_TARGET,-1,case sw_minor_digit:,9,1742,case,40,CASTCaseStatement
+313795,JUMP_TARGET,-1,case sw_status:,9,1760,case,47,CASTCaseStatement
+313846,JUMP_TARGET,-1,case sw_space_after_status:,9,1779,case,54,CASTCaseStatement
+313851,JUMP_TARGET,-1,case ' ':,13,1781,case,1,CASTCaseStatement
+313857,JUMP_TARGET,-1,case '.':,13,1784,case,5,CASTCaseStatement
+313863,JUMP_TARGET,-1,case CR:,13,1787,case,9,CASTCaseStatement
+313869,JUMP_TARGET,-1,case LF:,13,1790,case,13,CASTCaseStatement
+313872,JUMP_TARGET,-1,default:,13,1792,default,16,CASTDefaultStatement
+313876,JUMP_TARGET,-1,case sw_status_text:,9,1798,case,58,CASTCaseStatement
+313881,JUMP_TARGET,-1,case CR:,13,1800,case,1,CASTCaseStatement
+313887,JUMP_TARGET,-1,case LF:,13,1804,case,5,CASTCaseStatement
+313891,JUMP_TARGET,-1,case sw_almost_done:,9,1810,case,62,CASTCaseStatement
+313903,JUMP_TARGET,-1,case LF:,13,1813,case,1,CASTCaseStatement
+313906,JUMP_TARGET,-1,default:,13,1815,default,4,CASTDefaultStatement
+313921,JUMP_TARGET,-1,"done:
+
+    b->pos = p + 1;",1,1826,done,9,CASTLabelStatement
+314275,JUMP_TARGET,-1,"unsafe:
+
+    if (*flags & NGX_HTTP_LOG_UNSAFE) {
+        ngx_log_error(NGX_LOG_ERR, r->connection->log, 0,
+                      ""unsafe URI \""%V\"" was detected"", uri);
+    }",1,1952,unsafe,15,CASTLabelStatement
+314494,JUMP_TARGET,-1,"skip:
+
+            while (start < end) {
+                ch = *start++;
+                if (ch == ';' || ch == ',') {
+                    break;
+                }
+            }",9,2019,skip,10,CASTLabelStatement
+314965,JUMP_TARGET,-1,case sw_chunk_start:,9,2189,case,1,CASTCaseStatement
+315016,JUMP_TARGET,-1,case sw_chunk_size:,9,2206,case,7,CASTCaseStatement
+315092,JUMP_TARGET,-1,case CR:,17,2226,case,1,CASTCaseStatement
+315098,JUMP_TARGET,-1,case LF:,17,2229,case,5,CASTCaseStatement
+315104,JUMP_TARGET,-1,case ';':,17,2232,case,9,CASTCaseStatement
+315106,JUMP_TARGET,-1,case ' ':,17,2233,case,11,CASTCaseStatement
+315108,JUMP_TARGET,-1,case '\t':,17,2234,case,13,CASTCaseStatement
+315114,JUMP_TARGET,-1,default:,17,2237,default,17,CASTDefaultStatement
+315120,JUMP_TARGET,-1,case CR:,13,2245,case,1,CASTCaseStatement
+315126,JUMP_TARGET,-1,case LF:,13,2248,case,5,CASTCaseStatement
+315132,JUMP_TARGET,-1,case ';':,13,2251,case,9,CASTCaseStatement
+315134,JUMP_TARGET,-1,case ' ':,13,2252,case,11,CASTCaseStatement
+315136,JUMP_TARGET,-1,case '\t':,13,2253,case,13,CASTCaseStatement
+315142,JUMP_TARGET,-1,default:,13,2256,default,17,CASTDefaultStatement
+315145,JUMP_TARGET,-1,case sw_chunk_extension:,9,2262,case,16,CASTCaseStatement
+315150,JUMP_TARGET,-1,case CR:,13,2264,case,1,CASTCaseStatement
+315156,JUMP_TARGET,-1,case LF:,13,2267,case,5,CASTCaseStatement
+315162,JUMP_TARGET,-1,case sw_chunk_extension_almost_done:,9,2272,case,20,CASTCaseStatement
+315174,JUMP_TARGET,-1,case sw_chunk_data:,9,2279,case,24,CASTCaseStatement
+315180,JUMP_TARGET,-1,case sw_after_data:,9,2283,case,28,CASTCaseStatement
+315185,JUMP_TARGET,-1,case CR:,13,2285,case,1,CASTCaseStatement
+315191,JUMP_TARGET,-1,case LF:,13,2288,case,5,CASTCaseStatement
+315197,JUMP_TARGET,-1,default:,13,2291,default,9,CASTDefaultStatement
+315200,JUMP_TARGET,-1,case sw_after_data_almost_done:,9,2296,case,32,CASTCaseStatement
+315212,JUMP_TARGET,-1,case sw_last_chunk_extension:,9,2303,case,36,CASTCaseStatement
+315217,JUMP_TARGET,-1,case CR:,13,2305,case,1,CASTCaseStatement
+315223,JUMP_TARGET,-1,case LF:,13,2308,case,5,CASTCaseStatement
+315229,JUMP_TARGET,-1,case sw_last_chunk_extension_almost_done:,9,2313,case,40,CASTCaseStatement
+315241,JUMP_TARGET,-1,case sw_trailer:,9,2320,case,44,CASTCaseStatement
+315246,JUMP_TARGET,-1,case CR:,13,2322,case,1,CASTCaseStatement
+315252,JUMP_TARGET,-1,case LF:,13,2325,case,5,CASTCaseStatement
+315255,JUMP_TARGET,-1,default:,13,2327,default,8,CASTDefaultStatement
+315260,JUMP_TARGET,-1,case sw_trailer_almost_done:,9,2332,case,48,CASTCaseStatement
+315269,JUMP_TARGET,-1,case sw_trailer_header:,9,2338,case,52,CASTCaseStatement
+315274,JUMP_TARGET,-1,case CR:,13,2340,case,1,CASTCaseStatement
+315280,JUMP_TARGET,-1,case LF:,13,2343,case,5,CASTCaseStatement
+315286,JUMP_TARGET,-1,case sw_trailer_header_almost_done:,9,2348,case,56,CASTCaseStatement
+315298,JUMP_TARGET,-1,"data:
+
+    ctx->state = state;",1,2358,data,10,CASTLabelStatement
+315322,JUMP_TARGET,-1,case sw_chunk_start:,5,2369,case,1,CASTCaseStatement
+315330,JUMP_TARGET,-1,case sw_chunk_size:,5,2372,case,5,CASTCaseStatement
+315349,JUMP_TARGET,-1,case sw_chunk_extension:,5,2377,case,9,CASTCaseStatement
+315351,JUMP_TARGET,-1,case sw_chunk_extension_almost_done:,5,2378,case,11,CASTCaseStatement
+315365,JUMP_TARGET,-1,case sw_chunk_data:,5,2381,case,15,CASTCaseStatement
+315377,JUMP_TARGET,-1,case sw_after_data:,5,2384,case,19,CASTCaseStatement
+315379,JUMP_TARGET,-1,case sw_after_data_almost_done:,5,2385,case,21,CASTCaseStatement
+315387,JUMP_TARGET,-1,case sw_last_chunk_extension:,5,2388,case,25,CASTCaseStatement
+315389,JUMP_TARGET,-1,case sw_last_chunk_extension_almost_done:,5,2389,case,27,CASTCaseStatement
+315397,JUMP_TARGET,-1,case sw_trailer:,5,2392,case,31,CASTCaseStatement
+315399,JUMP_TARGET,-1,case sw_trailer_almost_done:,5,2393,case,33,CASTCaseStatement
+315407,JUMP_TARGET,-1,case sw_trailer_header:,5,2396,case,37,CASTCaseStatement
+315409,JUMP_TARGET,-1,case sw_trailer_header_almost_done:,5,2397,case,39,CASTCaseStatement
+315419,JUMP_TARGET,-1,"done:
+
+    ctx->state = 0;",1,2405,done,16,CASTLabelStatement
+315434,JUMP_TARGET,-1,"invalid:
+
+    return NGX_ERROR;",1,2412,invalid,20,CASTLabelStatement
+315782,JUMP_TARGET,-1,"found:
+
+    if (ngx_chain_add_copy(r->pool, &pr->out, in) == NGX_OK) {
+        return NGX_OK;
+    }",1,170,found,10,CASTLabelStatement
+316445,JUMP_TARGET,-1,default:,9,268,default,1,CASTDefaultStatement
+316507,JUMP_TARGET,-1,default:,9,297,default,1,CASTDefaultStatement
+319745,JUMP_TARGET,-1,case '4':,13,1866,case,1,CASTCaseStatement
+319747,JUMP_TARGET,-1,case '5':,13,1867,case,3,CASTCaseStatement
+319757,JUMP_TARGET,-1,case '6':,13,1870,case,7,CASTCaseStatement
+320366,JUMP_TARGET,-1,case '.':,9,2148,case,1,CASTCaseStatement
+320381,JUMP_TARGET,-1,case ':':,9,2155,case,6,CASTCaseStatement
+320395,JUMP_TARGET,-1,case '[':,9,2162,case,10,CASTCaseStatement
+320406,JUMP_TARGET,-1,case ']':,9,2168,case,14,CASTCaseStatement
+320422,JUMP_TARGET,-1,default:,9,2175,default,18,CASTDefaultStatement
+322147,JUMP_TARGET,-1,"closed:
+
+    if (err) {
+        rev->error = 1;
+    }",1,3032,closed,13,CASTLabelStatement
+324930,JUMP_TARGET,-1,"done:
+
+    if (r->request_body_no_buffering
+        && (rc == NGX_OK || rc == NGX_AGAIN))
+    {
+        if (rc == NGX_OK) {
+            r->request_body_no_buffering = 0;
+
+        } else {
+            /* rc == NGX_AGAIN */
+            r->reading_body = 1;
+        }
+
+        r->read_event_handler = ngx_http_block_reading;
+        post_handler(r);
+    }",1,199,done,30,CASTLabelStatement
+329780,JUMP_TARGET,-1,"invalid_variable:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, sc->cf, 0, ""invalid variable name"");",1,606,invalid_variable,8,CASTLabelStatement
+331801,JUMP_TARGET,-1,case ngx_http_script_file_plain:,9,1669,case,1,CASTCaseStatement
+331803,JUMP_TARGET,-1,case ngx_http_script_file_dir:,9,1670,case,3,CASTCaseStatement
+331805,JUMP_TARGET,-1,case ngx_http_script_file_exists:,9,1671,case,5,CASTCaseStatement
+331807,JUMP_TARGET,-1,case ngx_http_script_file_exec:,9,1672,case,7,CASTCaseStatement
+331810,JUMP_TARGET,-1,case ngx_http_script_file_not_plain:,9,1675,case,10,CASTCaseStatement
+331812,JUMP_TARGET,-1,case ngx_http_script_file_not_dir:,9,1676,case,12,CASTCaseStatement
+331814,JUMP_TARGET,-1,case ngx_http_script_file_not_exists:,9,1677,case,14,CASTCaseStatement
+331816,JUMP_TARGET,-1,case ngx_http_script_file_not_exec:,9,1678,case,16,CASTCaseStatement
+331825,JUMP_TARGET,-1,case ngx_http_script_file_plain:,5,1686,case,1,CASTCaseStatement
+331834,JUMP_TARGET,-1,case ngx_http_script_file_not_plain:,5,1692,case,5,CASTCaseStatement
+331843,JUMP_TARGET,-1,case ngx_http_script_file_dir:,5,1698,case,9,CASTCaseStatement
+331852,JUMP_TARGET,-1,case ngx_http_script_file_not_dir:,5,1704,case,13,CASTCaseStatement
+331861,JUMP_TARGET,-1,case ngx_http_script_file_exists:,5,1710,case,17,CASTCaseStatement
+331878,JUMP_TARGET,-1,case ngx_http_script_file_not_exists:,5,1716,case,21,CASTCaseStatement
+331895,JUMP_TARGET,-1,case ngx_http_script_file_exec:,5,1722,case,25,CASTCaseStatement
+331904,JUMP_TARGET,-1,case ngx_http_script_file_not_exec:,5,1728,case,29,CASTCaseStatement
+331913,JUMP_TARGET,-1,"false_value:
+
+    ngx_log_debug0(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,
+                   ""http script file op false"");",1,1735,false_value,26,CASTLabelStatement
+331928,JUMP_TARGET,-1,"true_value:
+
+    *value = ngx_http_variable_true_value;",1,1743,true_value,30,CASTLabelStatement
+332942,JUMP_TARGET,-1,case NGX_HTTP_BAD_REQUEST:,13,430,case,1,CASTCaseStatement
+332944,JUMP_TARGET,-1,case NGX_HTTP_REQUEST_ENTITY_TOO_LARGE:,13,431,case,3,CASTCaseStatement
+332946,JUMP_TARGET,-1,case NGX_HTTP_REQUEST_URI_TOO_LARGE:,13,432,case,5,CASTCaseStatement
+332948,JUMP_TARGET,-1,case NGX_HTTP_TO_HTTPS:,13,433,case,7,CASTCaseStatement
+332950,JUMP_TARGET,-1,case NGX_HTTPS_CERT_ERROR:,13,434,case,9,CASTCaseStatement
+332952,JUMP_TARGET,-1,case NGX_HTTPS_NO_CERT:,13,435,case,11,CASTCaseStatement
+332954,JUMP_TARGET,-1,case NGX_HTTP_INTERNAL_SERVER_ERROR:,13,436,case,13,CASTCaseStatement
+332956,JUMP_TARGET,-1,case NGX_HTTP_NOT_IMPLEMENTED:,13,437,case,15,CASTCaseStatement
+332971,JUMP_TARGET,-1,case NGX_HTTP_BAD_REQUEST:,13,444,case,1,CASTCaseStatement
+332973,JUMP_TARGET,-1,case NGX_HTTP_TO_HTTPS:,13,445,case,3,CASTCaseStatement
+332975,JUMP_TARGET,-1,case NGX_HTTPS_CERT_ERROR:,13,446,case,5,CASTCaseStatement
+332977,JUMP_TARGET,-1,case NGX_HTTPS_NO_CERT:,13,447,case,7,CASTCaseStatement
+333207,JUMP_TARGET,-1,case NGX_HTTP_TO_HTTPS:,13,511,case,1,CASTCaseStatement
+333209,JUMP_TARGET,-1,case NGX_HTTPS_CERT_ERROR:,13,512,case,3,CASTCaseStatement
+333211,JUMP_TARGET,-1,case NGX_HTTPS_NO_CERT:,13,513,case,5,CASTCaseStatement
+333213,JUMP_TARGET,-1,case NGX_HTTP_REQUEST_HEADER_TOO_LARGE:,13,514,case,7,CASTCaseStatement
+333289,JUMP_TARGET,-1,case NGX_OK:,5,557,case,1,CASTCaseStatement
+333291,JUMP_TARGET,-1,case NGX_DONE:,5,558,case,3,CASTCaseStatement
+333295,JUMP_TARGET,-1,default:,5,561,default,6,CASTDefaultStatement
+336013,JUMP_TARGET,-1,"found:
+
+    if (uscf == NULL) {
+        ngx_log_error(NGX_LOG_ALERT, r->connection->log, 0,
+                      ""no upstream configuration"");
+        ngx_http_upstream_finalize_request(r, u,
+                                           NGX_HTTP_INTERNAL_SERVER_ERROR);
+        return;
+    }",1,786,found,33,CASTLabelStatement
+336253,JUMP_TARGET,-1,"failed:
+
+    if (run_posted) {
+        ngx_http_run_posted_requests(c);
+    }",1,1261,failed,22,CASTLabelStatement
+342570,JUMP_TARGET,-1,case NGX_HTTP_UPSTREAM_FT_TIMEOUT:,5,4317,case,1,CASTCaseStatement
+342572,JUMP_TARGET,-1,case NGX_HTTP_UPSTREAM_FT_HTTP_504:,5,4318,case,3,CASTCaseStatement
+342578,JUMP_TARGET,-1,case NGX_HTTP_UPSTREAM_FT_HTTP_500:,5,4322,case,7,CASTCaseStatement
+342584,JUMP_TARGET,-1,case NGX_HTTP_UPSTREAM_FT_HTTP_503:,5,4326,case,11,CASTCaseStatement
+342590,JUMP_TARGET,-1,case NGX_HTTP_UPSTREAM_FT_HTTP_403:,5,4330,case,15,CASTCaseStatement
+342596,JUMP_TARGET,-1,case NGX_HTTP_UPSTREAM_FT_HTTP_404:,5,4334,case,19,CASTCaseStatement
+342602,JUMP_TARGET,-1,case NGX_HTTP_UPSTREAM_FT_HTTP_429:,5,4338,case,23,CASTCaseStatement
+342608,JUMP_TARGET,-1,default:,5,4347,default,27,CASTDefaultStatement
+346349,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""invalid parameter \""%V\"""", &value[i]);",1,6097,invalid,33,CASTLabelStatement
+346361,JUMP_TARGET,-1,"not_supported:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""balancing method does not support parameter \""%V\"""",
+                       &value[i]);",1,6104,not_supported,36,CASTLabelStatement
+346960,JUMP_TARGET,-1,case NGX_OK:,9,6285,case,1,CASTCaseStatement
+346972,JUMP_TARGET,-1,case NGX_DECLINED:,9,6289,case,5,CASTCaseStatement
+346983,JUMP_TARGET,-1,default:,9,6294,default,8,CASTDefaultStatement
+347535,JUMP_TARGET,-1,"exist:
+
+            continue;",9,6494,exist,8,CASTLabelStatement
+350185,JUMP_TARGET,-1,"failed:
+
+    if (peers->next) {
+
+        ngx_log_debug0(NGX_LOG_DEBUG_HTTP, pc->log, 0, ""backup servers"");
+
+        rrp->peers = peers->next;
+
+        n = (rrp->peers->number + (8 * sizeof(uintptr_t) - 1))
+                / (8 * sizeof(uintptr_t));
+
+        for (i = 0; i < n; i++) {
+            rrp->tried[i] = 0;
+        }
+
+        ngx_http_upstream_rr_peers_unlock(peers);
+
+        rc = ngx_http_upstream_get_round_robin_peer(pc, rrp);
+
+        if (rc != NGX_BUSY) {
+            return rc;
+        }
+
+        ngx_http_upstream_rr_peers_wlock(peers);
+    }",1,487,failed,20,CASTLabelStatement
+354123,JUMP_TARGET,-1,default:,5,1255,default,1,CASTDefaultStatement
+357794,JUMP_TARGET,-1,"next:
+        continue;",5,2742,next,7,CASTLabelStatement
+360657,JUMP_TARGET,-1,"error:
+
+    c->error = 1;",1,622,error,29,CASTLabelStatement
+362776,JUMP_TARGET,-1,"rst_stream:
+
+    if (ngx_http_v2_send_rst_stream(h2c, h2c->state.sid, status) != NGX_OK) {
+        return ngx_http_v2_connection_error(h2c, NGX_HTTP_V2_INTERNAL_ERROR);
+    }",1,1387,rst_stream,56,CASTLabelStatement
+364336,JUMP_TARGET,-1,"error:
+
+    h2c->state.stream = NULL;",1,1885,error,26,CASTLabelStatement
+365073,JUMP_TARGET,-1,case NGX_HTTP_V2_CANCEL:,5,2134,case,1,CASTCaseStatement
+365090,JUMP_TARGET,-1,case NGX_HTTP_V2_REFUSED_STREAM:,5,2139,case,5,CASTCaseStatement
+365107,JUMP_TARGET,-1,case NGX_HTTP_V2_INTERNAL_ERROR:,5,2144,case,9,CASTCaseStatement
+365124,JUMP_TARGET,-1,default:,5,2150,default,13,CASTDefaultStatement
+365342,JUMP_TARGET,-1,case NGX_HTTP_V2_INIT_WINDOW_SIZE_SETTING:,9,2232,case,1,CASTCaseStatement
+365375,JUMP_TARGET,-1,case NGX_HTTP_V2_MAX_FRAME_SIZE_SETTING:,9,2246,case,6,CASTCaseStatement
+365410,JUMP_TARGET,-1,case NGX_HTTP_V2_ENABLE_PUSH_SETTING:,9,2262,case,11,CASTCaseStatement
+365442,JUMP_TARGET,-1,case NGX_HTTP_V2_MAX_STREAMS_SETTING:,9,2276,case,16,CASTCaseStatement
+365465,JUMP_TARGET,-1,case NGX_HTTP_V2_HEADER_TABLE_SIZE_SETTING:,9,2283,case,21,CASTCaseStatement
+365475,JUMP_TARGET,-1,default:,9,2288,default,25,CASTDefaultStatement
+367016,JUMP_TARGET,-1,"error:
+
+    if (rc == NGX_ABORT) {
+        /* header handler has already finalized request */
+        ngx_http_run_posted_requests(fc);
+        return NULL;
+    }",1,2859,error,44,CASTLabelStatement
+367038,JUMP_TARGET,-1,"close:
+
+    ngx_http_v2_close_stream(stream, NGX_HTTP_INTERNAL_SERVER_ERROR);",1,2873,close,47,CASTLabelStatement
+367044,JUMP_TARGET,-1,"rst_stream:
+
+    if (ngx_http_v2_send_rst_stream(h2c, h2c->last_push,
+                                    NGX_HTTP_INTERNAL_SERVER_ERROR)
+        != NGX_OK)
+    {
+        h2c->connection->error = 1;
+    }",1,2879,rst_stream,50,CASTLabelStatement
+368755,JUMP_TARGET,-1,case 4:,5,3498,case,1,CASTCaseStatement
+368780,JUMP_TARGET,-1,case 6:,5,3507,case,5,CASTCaseStatement
+368827,JUMP_TARGET,-1,case 9:,5,3522,case,10,CASTCaseStatement
+369155,JUMP_TARGET,-1,"next:
+        test++;",5,3651,next,2,CASTLabelStatement
+370158,JUMP_TARGET,-1,"failed:
+
+    ngx_http_run_posted_requests(fc);",1,3987,failed,13,CASTLabelStatement
+371175,JUMP_TARGET,-1,"update:
+
+    rc = ngx_http_top_request_body_filter(r, cl);",1,4368,update,18,CASTLabelStatement
+372617,JUMP_TARGET,-1,"done:
+
+    if (c->error) {
+        ngx_http_close_connection(c);
+        return;
+    }",1,4946,done,22,CASTLabelStatement
+373864,JUMP_TARGET,-1,case NGX_HTTP_OK:,5,195,case,1,CASTCaseStatement
+373871,JUMP_TARGET,-1,case NGX_HTTP_NO_CONTENT:,5,199,case,5,CASTCaseStatement
+373920,JUMP_TARGET,-1,case NGX_HTTP_PARTIAL_CONTENT:,5,213,case,15,CASTCaseStatement
+373927,JUMP_TARGET,-1,case NGX_HTTP_NOT_MODIFIED:,5,217,case,19,CASTCaseStatement
+373939,JUMP_TARGET,-1,default:,5,222,default,24,CASTDefaultStatement
+373962,JUMP_TARGET,-1,case NGX_HTTP_BAD_REQUEST:,9,228,case,1,CASTCaseStatement
+373969,JUMP_TARGET,-1,case NGX_HTTP_NOT_FOUND:,9,232,case,5,CASTCaseStatement
+373976,JUMP_TARGET,-1,case NGX_HTTP_INTERNAL_SERVER_ERROR:,9,236,case,9,CASTCaseStatement
+373983,JUMP_TARGET,-1,default:,9,240,default,13,CASTDefaultStatement
+375748,JUMP_TARGET,-1,"next_link:
+
+        while (start < end && *start == ' ') { start++; }",5,737,next_link,4,CASTLabelStatement
+376100,JUMP_TARGET,-1,"next_param:
+
+            start = ngx_strlchr(start, last, ';');",9,854,next_param,5,CASTLabelStatement
+379631,JUMP_TARGET,-1,"done:
+
+    ngx_log_debug2(NGX_LOG_DEBUG_HTTP, h2c->connection->log, 0,
+                   ""http2:%ui DATA frame %p was sent"",
+                   stream->node->id, frame);",1,2034,done,9,CASTLabelStatement
+383221,JUMP_TARGET,-1,"found:
+
+    addr = ngx_array_push(&port->addrs);",1,265,found,15,CASTLabelStatement
+383523,JUMP_TARGET,-1,default:,13,367,default,1,CASTDefaultStatement
+384980,JUMP_TARGET,-1,case sw_start:,9,381,case,1,CASTCaseStatement
+384992,JUMP_TARGET,-1,case sw_H:,9,388,case,5,CASTCaseStatement
+385004,JUMP_TARGET,-1,case sw_HT:,9,395,case,9,CASTCaseStatement
+385016,JUMP_TARGET,-1,case sw_HTT:,9,402,case,13,CASTCaseStatement
+385028,JUMP_TARGET,-1,case sw_HTTP:,9,409,case,17,CASTCaseStatement
+385040,JUMP_TARGET,-1,case sw_skip:,9,417,case,21,CASTCaseStatement
+385045,JUMP_TARGET,-1,case CR:,13,419,case,1,CASTCaseStatement
+385051,JUMP_TARGET,-1,case LF:,13,423,case,5,CASTCaseStatement
+385055,JUMP_TARGET,-1,case sw_almost_done:,9,429,case,25,CASTCaseStatement
+385103,JUMP_TARGET,-1,"next:
+
+    p = ctx->response->start - 1;",1,449,next,10,CASTLabelStatement
+385113,JUMP_TARGET,-1,"done:
+
+    ctx->response->pos = p + 1;",1,453,done,12,CASTLabelStatement
+385301,JUMP_TARGET,-1,case NGX_MAIL_POP3_PROTOCOL:,17,527,case,1,CASTCaseStatement
+385317,JUMP_TARGET,-1,case NGX_MAIL_IMAP_PROTOCOL:,17,531,case,5,CASTCaseStatement
+385339,JUMP_TARGET,-1,default:,17,536,default,9,CASTDefaultStatement
+385387,JUMP_TARGET,-1,case NGX_MAIL_POP3_PROTOCOL:,17,553,case,1,CASTCaseStatement
+385415,JUMP_TARGET,-1,case NGX_MAIL_IMAP_PROTOCOL:,17,557,case,9,CASTCaseStatement
+385447,JUMP_TARGET,-1,default:,17,562,default,16,CASTDefaultStatement
+386234,JUMP_TARGET,-1,case NGX_OK:,13,786,case,1,CASTCaseStatement
+386237,JUMP_TARGET,-1,case NGX_DECLINED:,13,789,case,4,CASTCaseStatement
+386257,JUMP_TARGET,-1,default:,13,796,default,7,CASTDefaultStatement
+386632,JUMP_TARGET,-1,case sw_start:,9,940,case,1,CASTCaseStatement
+386637,JUMP_TARGET,-1,case CR:,13,943,case,1,CASTCaseStatement
+386648,JUMP_TARGET,-1,case LF:,13,947,case,6,CASTCaseStatement
+386656,JUMP_TARGET,-1,default:,13,950,default,10,CASTDefaultStatement
+386694,JUMP_TARGET,-1,case sw_name:,9,968,case,5,CASTCaseStatement
+386789,JUMP_TARGET,-1,case sw_space_before_value:,9,1006,case,15,CASTCaseStatement
+386794,JUMP_TARGET,-1,case ' ':,13,1008,case,1,CASTCaseStatement
+386797,JUMP_TARGET,-1,case CR:,13,1010,case,4,CASTCaseStatement
+386813,JUMP_TARGET,-1,case LF:,13,1015,case,10,CASTCaseStatement
+386826,JUMP_TARGET,-1,default:,13,1019,default,15,CASTDefaultStatement
+386837,JUMP_TARGET,-1,case sw_value:,9,1027,case,19,CASTCaseStatement
+386842,JUMP_TARGET,-1,case ' ':,13,1029,case,1,CASTCaseStatement
+386853,JUMP_TARGET,-1,case CR:,13,1033,case,6,CASTCaseStatement
+386864,JUMP_TARGET,-1,case LF:,13,1037,case,11,CASTCaseStatement
+386873,JUMP_TARGET,-1,case sw_space_after_value:,9,1044,case,23,CASTCaseStatement
+386878,JUMP_TARGET,-1,case ' ':,13,1046,case,1,CASTCaseStatement
+386881,JUMP_TARGET,-1,case CR:,13,1048,case,4,CASTCaseStatement
+386887,JUMP_TARGET,-1,case LF:,13,1051,case,8,CASTCaseStatement
+386890,JUMP_TARGET,-1,default:,13,1053,default,11,CASTDefaultStatement
+386896,JUMP_TARGET,-1,case sw_almost_done:,9,1060,case,27,CASTCaseStatement
+386901,JUMP_TARGET,-1,case LF:,13,1062,case,1,CASTCaseStatement
+386904,JUMP_TARGET,-1,default:,13,1064,default,4,CASTDefaultStatement
+386907,JUMP_TARGET,-1,case sw_header_almost_done:,9,1069,case,30,CASTCaseStatement
+386912,JUMP_TARGET,-1,case LF:,13,1071,case,1,CASTCaseStatement
+386915,JUMP_TARGET,-1,default:,13,1073,default,4,CASTDefaultStatement
+386932,JUMP_TARGET,-1,"done:
+
+    ctx->response->pos = p + 1;",1,1084,done,10,CASTLabelStatement
+386949,JUMP_TARGET,-1,"header_done:
+
+    ctx->response->pos = p + 1;",1,1091,header_done,14,CASTLabelStatement
+390282,JUMP_TARGET,-1,default:,9,89,default,1,CASTDefaultStatement
+390340,JUMP_TARGET,-1,default:,9,117,default,1,CASTDefaultStatement
+391685,JUMP_TARGET,-1,"again:
+
+    cscf = ngx_mail_get_module_srv_conf(s, ngx_mail_core_module);",1,815,again,12,CASTLabelStatement
+392555,JUMP_TARGET,-1,case ngx_imap_start:,9,162,case,1,CASTCaseStatement
+392562,JUMP_TARGET,-1,case NGX_IMAP_LOGIN:,13,166,case,1,CASTCaseStatement
+392570,JUMP_TARGET,-1,case NGX_IMAP_AUTHENTICATE:,13,170,case,5,CASTCaseStatement
+392583,JUMP_TARGET,-1,case NGX_IMAP_CAPABILITY:,13,175,case,10,CASTCaseStatement
+392591,JUMP_TARGET,-1,case NGX_IMAP_LOGOUT:,13,179,case,14,CASTCaseStatement
+392605,JUMP_TARGET,-1,case NGX_IMAP_NOOP:,13,184,case,19,CASTCaseStatement
+392608,JUMP_TARGET,-1,case NGX_IMAP_STARTTLS:,13,187,case,22,CASTCaseStatement
+392616,JUMP_TARGET,-1,default:,13,191,default,26,CASTDefaultStatement
+392622,JUMP_TARGET,-1,case ngx_imap_auth_login_username:,9,198,case,5,CASTCaseStatement
+392645,JUMP_TARGET,-1,case ngx_imap_auth_login_password:,9,207,case,12,CASTCaseStatement
+392653,JUMP_TARGET,-1,case ngx_imap_auth_plain:,9,211,case,16,CASTCaseStatement
+392662,JUMP_TARGET,-1,case ngx_imap_auth_cram_md5:,9,215,case,20,CASTCaseStatement
+392670,JUMP_TARGET,-1,case ngx_imap_auth_external:,9,219,case,24,CASTCaseStatement
+392716,JUMP_TARGET,-1,case NGX_DONE:,5,235,case,1,CASTCaseStatement
+392722,JUMP_TARGET,-1,case NGX_ERROR:,5,239,case,5,CASTCaseStatement
+392727,JUMP_TARGET,-1,case NGX_MAIL_PARSE_INVALID_COMMAND:,5,243,case,9,CASTCaseStatement
+393187,JUMP_TARGET,-1,case NGX_MAIL_AUTH_LOGIN:,5,368,case,1,CASTCaseStatement
+393202,JUMP_TARGET,-1,case NGX_MAIL_AUTH_LOGIN_USERNAME:,5,375,case,6,CASTCaseStatement
+393220,JUMP_TARGET,-1,case NGX_MAIL_AUTH_PLAIN:,5,382,case,11,CASTCaseStatement
+393235,JUMP_TARGET,-1,case NGX_MAIL_AUTH_CRAM_MD5:,5,389,case,16,CASTCaseStatement
+393289,JUMP_TARGET,-1,case NGX_MAIL_AUTH_EXTERNAL:,5,410,case,22,CASTCaseStatement
+394093,JUMP_TARGET,-1,case sw_start:,9,39,case,1,CASTCaseStatement
+394103,JUMP_TARGET,-1,case sw_command:,9,45,case,5,CASTCaseStatement
+394349,JUMP_TARGET,-1,case ' ':,17,100,case,1,CASTCaseStatement
+394355,JUMP_TARGET,-1,case CR:,17,103,case,5,CASTCaseStatement
+394361,JUMP_TARGET,-1,case LF:,17,106,case,9,CASTCaseStatement
+394384,JUMP_TARGET,-1,case sw_invalid:,9,118,case,10,CASTCaseStatement
+394387,JUMP_TARGET,-1,case sw_spaces_before_argument:,9,121,case,13,CASTCaseStatement
+394392,JUMP_TARGET,-1,case ' ':,13,123,case,1,CASTCaseStatement
+394395,JUMP_TARGET,-1,case CR:,13,125,case,4,CASTCaseStatement
+394401,JUMP_TARGET,-1,case LF:,13,128,case,8,CASTCaseStatement
+394404,JUMP_TARGET,-1,default:,13,130,default,11,CASTDefaultStatement
+394425,JUMP_TARGET,-1,case sw_argument:,9,140,case,17,CASTCaseStatement
+394430,JUMP_TARGET,-1,case ' ':,13,143,case,1,CASTCaseStatement
+394446,JUMP_TARGET,-1,case CR:,13,158,case,4,CASTCaseStatement
+394448,JUMP_TARGET,-1,case LF:,13,159,case,6,CASTCaseStatement
+394488,JUMP_TARGET,-1,case ' ':,17,169,case,1,CASTCaseStatement
+394494,JUMP_TARGET,-1,case CR:,17,172,case,5,CASTCaseStatement
+394500,JUMP_TARGET,-1,case LF:,17,175,case,9,CASTCaseStatement
+394504,JUMP_TARGET,-1,default:,13,180,default,15,CASTDefaultStatement
+394507,JUMP_TARGET,-1,case sw_almost_done:,9,185,case,21,CASTCaseStatement
+394512,JUMP_TARGET,-1,case LF:,13,187,case,1,CASTCaseStatement
+394515,JUMP_TARGET,-1,default:,13,189,default,4,CASTDefaultStatement
+394531,JUMP_TARGET,-1,"done:
+
+    s->buffer->pos = p + 1;",1,200,done,15,CASTLabelStatement
+394555,JUMP_TARGET,-1,"invalid:
+
+    s->state = sw_invalid;",1,207,invalid,19,CASTLabelStatement
+394648,JUMP_TARGET,-1,case sw_start:,9,257,case,1,CASTCaseStatement
+394658,JUMP_TARGET,-1,case sw_tag:,9,263,case,5,CASTCaseStatement
+394663,JUMP_TARGET,-1,case ' ':,13,265,case,1,CASTCaseStatement
+394691,JUMP_TARGET,-1,case CR:,13,270,case,7,CASTCaseStatement
+394693,JUMP_TARGET,-1,case LF:,13,271,case,9,CASTCaseStatement
+394696,JUMP_TARGET,-1,default:,13,273,default,12,CASTDefaultStatement
+394747,JUMP_TARGET,-1,case sw_invalid:,9,287,case,9,CASTCaseStatement
+394750,JUMP_TARGET,-1,case sw_spaces_before_command:,9,290,case,12,CASTCaseStatement
+394755,JUMP_TARGET,-1,case ' ':,13,292,case,1,CASTCaseStatement
+394758,JUMP_TARGET,-1,case CR:,13,294,case,4,CASTCaseStatement
+394760,JUMP_TARGET,-1,case LF:,13,295,case,6,CASTCaseStatement
+394763,JUMP_TARGET,-1,default:,13,297,default,9,CASTDefaultStatement
+394774,JUMP_TARGET,-1,case sw_command:,9,304,case,16,CASTCaseStatement
+394799,JUMP_TARGET,-1,case 4:,17,311,case,1,CASTCaseStatement
+394859,JUMP_TARGET,-1,case 5:,17,324,case,5,CASTCaseStatement
+394931,JUMP_TARGET,-1,case 6:,17,338,case,9,CASTCaseStatement
+395015,JUMP_TARGET,-1,case 10:,17,372,case,13,CASTCaseStatement
+395147,JUMP_TARGET,-1,case 12:,17,391,case,17,CASTCaseStatement
+395303,JUMP_TARGET,-1,default:,17,412,default,21,CASTDefaultStatement
+395328,JUMP_TARGET,-1,case ' ':,17,420,case,1,CASTCaseStatement
+395334,JUMP_TARGET,-1,case CR:,17,423,case,5,CASTCaseStatement
+395340,JUMP_TARGET,-1,case LF:,17,426,case,9,CASTCaseStatement
+395363,JUMP_TARGET,-1,case sw_spaces_before_argument:,9,438,case,21,CASTCaseStatement
+395368,JUMP_TARGET,-1,case ' ':,13,440,case,1,CASTCaseStatement
+395371,JUMP_TARGET,-1,case CR:,13,442,case,4,CASTCaseStatement
+395377,JUMP_TARGET,-1,case LF:,13,445,case,8,CASTCaseStatement
+395380,JUMP_TARGET,-1,"case '""':",13,447,case,11,CASTCaseStatement
+395408,JUMP_TARGET,-1,case '{':,13,455,case,15,CASTCaseStatement
+395424,JUMP_TARGET,-1,default:,13,461,default,19,CASTDefaultStatement
+395445,JUMP_TARGET,-1,case sw_argument:,9,471,case,25,CASTCaseStatement
+395460,JUMP_TARGET,-1,"case '""':",13,477,case,1,CASTCaseStatement
+395474,JUMP_TARGET,-1,case ' ':,13,483,case,5,CASTCaseStatement
+395476,JUMP_TARGET,-1,case CR:,13,484,case,7,CASTCaseStatement
+395478,JUMP_TARGET,-1,case LF:,13,485,case,9,CASTCaseStatement
+395574,JUMP_TARGET,-1,"case '""':",17,511,case,1,CASTCaseStatement
+395576,JUMP_TARGET,-1,case ' ':,17,512,case,3,CASTCaseStatement
+395582,JUMP_TARGET,-1,case CR:,17,515,case,7,CASTCaseStatement
+395588,JUMP_TARGET,-1,case LF:,17,518,case,11,CASTCaseStatement
+395592,JUMP_TARGET,-1,case '\\':,13,522,case,19,CASTCaseStatement
+395609,JUMP_TARGET,-1,case sw_backslash:,9,531,case,30,CASTCaseStatement
+395614,JUMP_TARGET,-1,case CR:,13,533,case,1,CASTCaseStatement
+395616,JUMP_TARGET,-1,case LF:,13,534,case,3,CASTCaseStatement
+395619,JUMP_TARGET,-1,default:,13,536,default,6,CASTDefaultStatement
+395624,JUMP_TARGET,-1,case sw_literal:,9,541,case,34,CASTCaseStatement
+395668,JUMP_TARGET,-1,case sw_no_sync_literal_argument:,9,556,case,40,CASTCaseStatement
+395685,JUMP_TARGET,-1,case sw_start_literal_argument:,9,564,case,44,CASTCaseStatement
+395690,JUMP_TARGET,-1,case CR:,13,566,case,1,CASTCaseStatement
+395693,JUMP_TARGET,-1,case LF:,13,568,case,4,CASTCaseStatement
+395734,JUMP_TARGET,-1,default:,13,578,default,12,CASTDefaultStatement
+395737,JUMP_TARGET,-1,case sw_literal_argument:,9,583,case,48,CASTCaseStatement
+395791,JUMP_TARGET,-1,case sw_end_literal_argument:,9,599,case,58,CASTCaseStatement
+395796,JUMP_TARGET,-1,case '{':,13,601,case,1,CASTCaseStatement
+395812,JUMP_TARGET,-1,case CR:,13,607,case,5,CASTCaseStatement
+395818,JUMP_TARGET,-1,case LF:,13,610,case,9,CASTCaseStatement
+395821,JUMP_TARGET,-1,default:,13,612,default,12,CASTDefaultStatement
+395827,JUMP_TARGET,-1,case sw_almost_done:,9,618,case,62,CASTCaseStatement
+395832,JUMP_TARGET,-1,case LF:,13,620,case,1,CASTCaseStatement
+395835,JUMP_TARGET,-1,default:,13,622,default,4,CASTDefaultStatement
+395851,JUMP_TARGET,-1,"done:
+
+    s->buffer->pos = p + 1;",1,633,done,14,CASTLabelStatement
+395875,JUMP_TARGET,-1,"invalid:
+
+    s->state = sw_invalid;",1,640,invalid,18,CASTLabelStatement
+396032,JUMP_TARGET,-1,case sw_start:,9,701,case,1,CASTCaseStatement
+396042,JUMP_TARGET,-1,case sw_command:,9,707,case,5,CASTCaseStatement
+396384,JUMP_TARGET,-1,case ' ':,17,791,case,1,CASTCaseStatement
+396390,JUMP_TARGET,-1,case CR:,17,794,case,5,CASTCaseStatement
+396396,JUMP_TARGET,-1,case LF:,17,797,case,9,CASTCaseStatement
+396419,JUMP_TARGET,-1,case sw_invalid:,9,809,case,10,CASTCaseStatement
+396422,JUMP_TARGET,-1,case sw_spaces_before_argument:,9,812,case,13,CASTCaseStatement
+396427,JUMP_TARGET,-1,case ' ':,13,814,case,1,CASTCaseStatement
+396430,JUMP_TARGET,-1,case CR:,13,816,case,4,CASTCaseStatement
+396436,JUMP_TARGET,-1,case LF:,13,819,case,8,CASTCaseStatement
+396439,JUMP_TARGET,-1,default:,13,821,default,11,CASTDefaultStatement
+396460,JUMP_TARGET,-1,case sw_argument:,9,831,case,17,CASTCaseStatement
+396465,JUMP_TARGET,-1,case ' ':,13,833,case,1,CASTCaseStatement
+396467,JUMP_TARGET,-1,case CR:,13,834,case,3,CASTCaseStatement
+396469,JUMP_TARGET,-1,case LF:,13,835,case,5,CASTCaseStatement
+396509,JUMP_TARGET,-1,case ' ':,17,845,case,1,CASTCaseStatement
+396515,JUMP_TARGET,-1,case CR:,17,848,case,5,CASTCaseStatement
+396521,JUMP_TARGET,-1,case LF:,17,851,case,9,CASTCaseStatement
+396525,JUMP_TARGET,-1,default:,13,856,default,14,CASTDefaultStatement
+396528,JUMP_TARGET,-1,case sw_almost_done:,9,861,case,21,CASTCaseStatement
+396533,JUMP_TARGET,-1,case LF:,13,863,case,1,CASTCaseStatement
+396536,JUMP_TARGET,-1,default:,13,865,default,4,CASTDefaultStatement
+396552,JUMP_TARGET,-1,"done:
+
+    s->buffer->pos = p + 1;",1,876,done,15,CASTLabelStatement
+396576,JUMP_TARGET,-1,"invalid:
+
+    s->state = sw_invalid;",1,883,invalid,19,CASTLabelStatement
+397255,JUMP_TARGET,-1,case ngx_pop3_start:,9,172,case,1,CASTCaseStatement
+397262,JUMP_TARGET,-1,case NGX_POP3_USER:,13,176,case,1,CASTCaseStatement
+397270,JUMP_TARGET,-1,case NGX_POP3_CAPA:,13,180,case,5,CASTCaseStatement
+397279,JUMP_TARGET,-1,case NGX_POP3_APOP:,13,184,case,9,CASTCaseStatement
+397287,JUMP_TARGET,-1,case NGX_POP3_AUTH:,13,188,case,13,CASTCaseStatement
+397295,JUMP_TARGET,-1,case NGX_POP3_QUIT:,13,192,case,17,CASTCaseStatement
+397303,JUMP_TARGET,-1,case NGX_POP3_NOOP:,13,196,case,21,CASTCaseStatement
+397306,JUMP_TARGET,-1,case NGX_POP3_STLS:,13,199,case,24,CASTCaseStatement
+397314,JUMP_TARGET,-1,default:,13,203,default,28,CASTDefaultStatement
+397320,JUMP_TARGET,-1,case ngx_pop3_user:,9,210,case,5,CASTCaseStatement
+397327,JUMP_TARGET,-1,case NGX_POP3_PASS:,13,214,case,1,CASTCaseStatement
+397335,JUMP_TARGET,-1,case NGX_POP3_CAPA:,13,218,case,5,CASTCaseStatement
+397344,JUMP_TARGET,-1,case NGX_POP3_QUIT:,13,222,case,9,CASTCaseStatement
+397352,JUMP_TARGET,-1,case NGX_POP3_NOOP:,13,226,case,13,CASTCaseStatement
+397355,JUMP_TARGET,-1,default:,13,229,default,16,CASTDefaultStatement
+397361,JUMP_TARGET,-1,case ngx_pop3_passwd:,9,237,case,9,CASTCaseStatement
+397364,JUMP_TARGET,-1,case ngx_pop3_auth_login_username:,9,240,case,12,CASTCaseStatement
+397384,JUMP_TARGET,-1,case ngx_pop3_auth_login_password:,9,247,case,18,CASTCaseStatement
+397392,JUMP_TARGET,-1,case ngx_pop3_auth_plain:,9,251,case,22,CASTCaseStatement
+397401,JUMP_TARGET,-1,case ngx_pop3_auth_cram_md5:,9,255,case,26,CASTCaseStatement
+397409,JUMP_TARGET,-1,case ngx_pop3_auth_external:,9,259,case,30,CASTCaseStatement
+397439,JUMP_TARGET,-1,case NGX_DONE:,5,271,case,1,CASTCaseStatement
+397445,JUMP_TARGET,-1,case NGX_ERROR:,5,275,case,5,CASTCaseStatement
+397450,JUMP_TARGET,-1,case NGX_MAIL_PARSE_INVALID_COMMAND:,5,279,case,9,CASTCaseStatement
+397468,JUMP_TARGET,-1,case NGX_OK:,5,287,case,14,CASTCaseStatement
+397961,JUMP_TARGET,-1,case NGX_MAIL_AUTH_LOGIN:,5,497,case,1,CASTCaseStatement
+397976,JUMP_TARGET,-1,case NGX_MAIL_AUTH_LOGIN_USERNAME:,5,504,case,6,CASTCaseStatement
+397994,JUMP_TARGET,-1,case NGX_MAIL_AUTH_PLAIN:,5,511,case,11,CASTCaseStatement
+398009,JUMP_TARGET,-1,case NGX_MAIL_AUTH_CRAM_MD5:,5,518,case,16,CASTCaseStatement
+398039,JUMP_TARGET,-1,case NGX_MAIL_AUTH_EXTERNAL:,5,531,case,21,CASTCaseStatement
+399405,JUMP_TARGET,-1,case NGX_MAIL_POP3_PROTOCOL:,5,185,case,1,CASTCaseStatement
+399424,JUMP_TARGET,-1,case NGX_MAIL_IMAP_PROTOCOL:,5,190,case,6,CASTCaseStatement
+399443,JUMP_TARGET,-1,default:,5,195,default,11,CASTDefaultStatement
+399619,JUMP_TARGET,-1,case ngx_pop3_start:,5,279,case,1,CASTCaseStatement
+399714,JUMP_TARGET,-1,case ngx_pop3_user:,5,298,case,14,CASTCaseStatement
+399809,JUMP_TARGET,-1,case ngx_pop3_passwd:,5,317,case,27,CASTCaseStatement
+399899,JUMP_TARGET,-1,default:,5,338,default,41,CASTDefaultStatement
+400078,JUMP_TARGET,-1,case ngx_imap_start:,5,417,case,1,CASTCaseStatement
+400146,JUMP_TARGET,-1,case ngx_imap_login:,5,438,case,11,CASTCaseStatement
+400211,JUMP_TARGET,-1,case ngx_imap_user:,5,457,case,21,CASTCaseStatement
+400292,JUMP_TARGET,-1,case ngx_imap_passwd:,5,476,case,33,CASTCaseStatement
+400382,JUMP_TARGET,-1,default:,5,497,default,47,CASTDefaultStatement
+400565,JUMP_TARGET,-1,case ngx_smtp_start:,5,578,case,1,CASTCaseStatement
+400717,JUMP_TARGET,-1,case ngx_smtp_helo_xclient:,5,616,case,16,CASTCaseStatement
+400914,JUMP_TARGET,-1,case ngx_smtp_xclient_helo:,5,678,case,34,CASTCaseStatement
+400992,JUMP_TARGET,-1,case ngx_smtp_helo_auth:,5,711,case,45,CASTCaseStatement
+400994,JUMP_TARGET,-1,case ngx_smtp_xclient_auth:,5,712,case,47,CASTCaseStatement
+401158,JUMP_TARGET,-1,case ngx_smtp_helo_from:,5,756,case,66,CASTCaseStatement
+401160,JUMP_TARGET,-1,case ngx_smtp_xclient_from:,5,757,case,68,CASTCaseStatement
+401244,JUMP_TARGET,-1,case ngx_smtp_from:,5,777,case,80,CASTCaseStatement
+401328,JUMP_TARGET,-1,case ngx_smtp_helo:,5,797,case,92,CASTCaseStatement
+401330,JUMP_TARGET,-1,case ngx_smtp_xclient:,5,798,case,94,CASTCaseStatement
+401332,JUMP_TARGET,-1,case ngx_smtp_auth_plain:,5,799,case,96,CASTCaseStatement
+401334,JUMP_TARGET,-1,case ngx_smtp_to:,5,800,case,98,CASTCaseStatement
+401468,JUMP_TARGET,-1,default:,5,832,default,114,CASTDefaultStatement
+401874,JUMP_TARGET,-1,case NGX_MAIL_POP3_PROTOCOL:,5,993,case,1,CASTCaseStatement
+401898,JUMP_TARGET,-1,case NGX_MAIL_IMAP_PROTOCOL:,5,999,case,5,CASTCaseStatement
+401903,JUMP_TARGET,-1,case ngx_imap_start:,9,1002,case,1,CASTCaseStatement
+401933,JUMP_TARGET,-1,case ngx_imap_login:,9,1008,case,5,CASTCaseStatement
+401935,JUMP_TARGET,-1,case ngx_imap_user:,9,1009,case,7,CASTCaseStatement
+401947,JUMP_TARGET,-1,case ngx_imap_passwd:,9,1015,case,11,CASTCaseStatement
+401989,JUMP_TARGET,-1,default:,5,1027,default,9,CASTDefaultStatement
+402035,JUMP_TARGET,-1,case ngx_smtp_start:,9,1049,case,1,CASTCaseStatement
+402059,JUMP_TARGET,-1,case ngx_smtp_helo:,9,1055,case,5,CASTCaseStatement
+402061,JUMP_TARGET,-1,case ngx_smtp_helo_xclient:,9,1056,case,7,CASTCaseStatement
+402063,JUMP_TARGET,-1,case ngx_smtp_helo_from:,9,1057,case,9,CASTCaseStatement
+402065,JUMP_TARGET,-1,case ngx_smtp_helo_auth:,9,1058,case,11,CASTCaseStatement
+402067,JUMP_TARGET,-1,case ngx_smtp_from:,9,1059,case,13,CASTCaseStatement
+402091,JUMP_TARGET,-1,case ngx_smtp_xclient:,9,1065,case,17,CASTCaseStatement
+402093,JUMP_TARGET,-1,case ngx_smtp_xclient_from:,9,1066,case,19,CASTCaseStatement
+402095,JUMP_TARGET,-1,case ngx_smtp_xclient_helo:,9,1067,case,21,CASTCaseStatement
+402097,JUMP_TARGET,-1,case ngx_smtp_xclient_auth:,9,1068,case,23,CASTCaseStatement
+402127,JUMP_TARGET,-1,case ngx_smtp_auth_plain:,9,1074,case,27,CASTCaseStatement
+402151,JUMP_TARGET,-1,case ngx_smtp_to:,9,1080,case,31,CASTCaseStatement
+403534,JUMP_TARGET,-1,default:,9,226,default,1,CASTDefaultStatement
+404187,JUMP_TARGET,-1,"found:
+
+    ngx_resolve_name_done(ctx);",1,240,found,7,CASTLabelStatement
+404753,JUMP_TARGET,-1,case ngx_smtp_start:,9,483,case,1,CASTCaseStatement
+404760,JUMP_TARGET,-1,case NGX_SMTP_HELO:,13,487,case,1,CASTCaseStatement
+404762,JUMP_TARGET,-1,case NGX_SMTP_EHLO:,13,488,case,3,CASTCaseStatement
+404770,JUMP_TARGET,-1,case NGX_SMTP_AUTH:,13,492,case,7,CASTCaseStatement
+404778,JUMP_TARGET,-1,case NGX_SMTP_QUIT:,13,496,case,11,CASTCaseStatement
+404792,JUMP_TARGET,-1,case NGX_SMTP_MAIL:,13,501,case,16,CASTCaseStatement
+404800,JUMP_TARGET,-1,case NGX_SMTP_RCPT:,13,505,case,20,CASTCaseStatement
+404808,JUMP_TARGET,-1,case NGX_SMTP_RSET:,13,509,case,24,CASTCaseStatement
+404816,JUMP_TARGET,-1,case NGX_SMTP_NOOP:,13,513,case,28,CASTCaseStatement
+404819,JUMP_TARGET,-1,case NGX_SMTP_STARTTLS:,13,516,case,31,CASTCaseStatement
+404833,JUMP_TARGET,-1,default:,13,521,default,36,CASTDefaultStatement
+404839,JUMP_TARGET,-1,case ngx_smtp_auth_login_username:,9,528,case,5,CASTCaseStatement
+404859,JUMP_TARGET,-1,case ngx_smtp_auth_login_password:,9,535,case,11,CASTCaseStatement
+404867,JUMP_TARGET,-1,case ngx_smtp_auth_plain:,9,539,case,15,CASTCaseStatement
+404876,JUMP_TARGET,-1,case ngx_smtp_auth_cram_md5:,9,543,case,19,CASTCaseStatement
+404884,JUMP_TARGET,-1,case ngx_smtp_auth_external:,9,547,case,23,CASTCaseStatement
+404914,JUMP_TARGET,-1,case NGX_DONE:,5,559,case,1,CASTCaseStatement
+404920,JUMP_TARGET,-1,case NGX_ERROR:,5,563,case,5,CASTCaseStatement
+404925,JUMP_TARGET,-1,case NGX_MAIL_PARSE_INVALID_COMMAND:,5,567,case,9,CASTCaseStatement
+404943,JUMP_TARGET,-1,case NGX_OK:,5,574,case,14,CASTCaseStatement
+405196,JUMP_TARGET,-1,case NGX_MAIL_AUTH_LOGIN:,5,681,case,1,CASTCaseStatement
+405211,JUMP_TARGET,-1,case NGX_MAIL_AUTH_LOGIN_USERNAME:,5,688,case,6,CASTCaseStatement
+405229,JUMP_TARGET,-1,case NGX_MAIL_AUTH_PLAIN:,5,695,case,11,CASTCaseStatement
+405244,JUMP_TARGET,-1,case NGX_MAIL_AUTH_CRAM_MD5:,5,702,case,16,CASTCaseStatement
+405298,JUMP_TARGET,-1,case NGX_MAIL_AUTH_EXTERNAL:,5,723,case,22,CASTCaseStatement
+408539,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""invalid session cache \""%V\"""", &value[i]);",1,729,invalid,14,CASTLabelStatement
+409473,JUMP_TARGET,-1,case -1:,5,18,case,1,CASTCaseStatement
+409483,JUMP_TARGET,-1,case 0:,5,22,case,5,CASTCaseStatement
+409486,JUMP_TARGET,-1,default:,5,25,default,8,CASTDefaultStatement
+410311,JUMP_TARGET,-1,case NGX_EAGAIN:,17,142,case,1,CASTCaseStatement
+410314,JUMP_TARGET,-1,case NGX_EINTR:,17,145,case,4,CASTCaseStatement
+410320,JUMP_TARGET,-1,default:,17,149,default,8,CASTDefaultStatement
+410666,JUMP_TARGET,-1,"failed:
+
+    err = errno;",1,202,failed,12,CASTLabelStatement
+411839,JUMP_TARGET,-1,"eintr:
+
+    n = writev(file->fd, vec->iovs, vec->count);",1,439,eintr,5,CASTLabelStatement
+412065,JUMP_TARGET,-1,"failed:
+
+    if (ngx_close_file(fm->fd) == NGX_FILE_ERROR) {
+        ngx_log_error(NGX_LOG_ALERT, fm->log, ngx_errno,
+                      ngx_close_file_n "" \""%s\"" failed"", fm->name);
+    }",1,645,failed,7,CASTLabelStatement
+413417,JUMP_TARGET,-1,case NGX_EAGAIN:,17,193,case,1,CASTCaseStatement
+413423,JUMP_TARGET,-1,case NGX_EINTR:,17,197,case,5,CASTCaseStatement
+413429,JUMP_TARGET,-1,default:,17,207,default,9,CASTDefaultStatement
+414732,JUMP_TARGET,-1,"eintr:
+
+    ngx_log_debug2(NGX_LOG_DEBUG_EVENT, c->log, 0,
+                   ""sendfile: @%O %uz"", file->file_pos, size);",1,256,eintr,5,CASTLabelStatement
+414770,JUMP_TARGET,-1,case NGX_EAGAIN:,9,267,case,1,CASTCaseStatement
+414781,JUMP_TARGET,-1,case NGX_EINTR:,9,272,case,5,CASTCaseStatement
+414791,JUMP_TARGET,-1,default:,9,277,default,9,CASTDefaultStatement
+415650,JUMP_TARGET,-1,case -1:,5,190,case,1,CASTCaseStatement
+415672,JUMP_TARGET,-1,case 0:,5,196,case,6,CASTCaseStatement
+415684,JUMP_TARGET,-1,default:,5,202,default,12,CASTDefaultStatement
+415747,JUMP_TARGET,-1,case NGX_PROCESS_NORESPAWN:,5,222,case,1,CASTCaseStatement
+415771,JUMP_TARGET,-1,case NGX_PROCESS_JUST_SPAWN:,5,228,case,7,CASTCaseStatement
+415795,JUMP_TARGET,-1,case NGX_PROCESS_RESPAWN:,5,234,case,13,CASTCaseStatement
+415819,JUMP_TARGET,-1,case NGX_PROCESS_JUST_RESPAWN:,5,240,case,19,CASTCaseStatement
+415843,JUMP_TARGET,-1,case NGX_PROCESS_DETACHED:,5,246,case,25,CASTCaseStatement
+416054,JUMP_TARGET,-1,case NGX_PROCESS_MASTER:,5,342,case,1,CASTCaseStatement
+416056,JUMP_TARGET,-1,case NGX_PROCESS_SINGLE:,5,343,case,3,CASTCaseStatement
+416061,JUMP_TARGET,-1,case ngx_signal_value(NGX_SHUTDOWN_SIGNAL):,9,346,case,1,CASTCaseStatement
+416071,JUMP_TARGET,-1,case ngx_signal_value(NGX_TERMINATE_SIGNAL):,9,351,case,6,CASTCaseStatement
+416074,JUMP_TARGET,-1,case SIGINT:,9,352,case,8,CASTCaseStatement
+416083,JUMP_TARGET,-1,case ngx_signal_value(NGX_NOACCEPT_SIGNAL):,9,357,case,13,CASTCaseStatement
+416096,JUMP_TARGET,-1,case ngx_signal_value(NGX_RECONFIGURE_SIGNAL):,9,364,case,17,CASTCaseStatement
+416106,JUMP_TARGET,-1,case ngx_signal_value(NGX_REOPEN_SIGNAL):,9,369,case,22,CASTCaseStatement
+416116,JUMP_TARGET,-1,case ngx_signal_value(NGX_CHANGEBIN_SIGNAL):,9,374,case,27,CASTCaseStatement
+416142,JUMP_TARGET,-1,case SIGALRM:,9,393,case,33,CASTCaseStatement
+416148,JUMP_TARGET,-1,case SIGIO:,9,397,case,37,CASTCaseStatement
+416154,JUMP_TARGET,-1,case SIGCHLD:,9,401,case,41,CASTCaseStatement
+416161,JUMP_TARGET,-1,case NGX_PROCESS_WORKER:,5,408,case,7,CASTCaseStatement
+416163,JUMP_TARGET,-1,case NGX_PROCESS_HELPER:,5,409,case,9,CASTCaseStatement
+416168,JUMP_TARGET,-1,case ngx_signal_value(NGX_NOACCEPT_SIGNAL):,9,412,case,1,CASTCaseStatement
+416179,JUMP_TARGET,-1,case ngx_signal_value(NGX_SHUTDOWN_SIGNAL):,9,418,case,5,CASTCaseStatement
+416189,JUMP_TARGET,-1,case ngx_signal_value(NGX_TERMINATE_SIGNAL):,9,423,case,10,CASTCaseStatement
+416192,JUMP_TARGET,-1,case SIGINT:,9,424,case,12,CASTCaseStatement
+416201,JUMP_TARGET,-1,case ngx_signal_value(NGX_REOPEN_SIGNAL):,9,429,case,17,CASTCaseStatement
+416211,JUMP_TARGET,-1,case ngx_signal_value(NGX_RECONFIGURE_SIGNAL):,9,434,case,22,CASTCaseStatement
+416214,JUMP_TARGET,-1,case ngx_signal_value(NGX_CHANGEBIN_SIGNAL):,9,435,case,24,CASTCaseStatement
+416217,JUMP_TARGET,-1,case SIGIO:,9,436,case,26,CASTCaseStatement
+416585,JUMP_TARGET,-1,case NGX_DEBUG_POINTS_STOP:,5,621,case,1,CASTCaseStatement
+416590,JUMP_TARGET,-1,case NGX_DEBUG_POINTS_ABORT:,5,625,case,5,CASTCaseStatement
+417781,JUMP_TARGET,-1,case ngx_signal_value(NGX_SHUTDOWN_SIGNAL):,5,448,case,1,CASTCaseStatement
+417790,JUMP_TARGET,-1,case ngx_signal_value(NGX_TERMINATE_SIGNAL):,5,452,case,5,CASTCaseStatement
+417799,JUMP_TARGET,-1,case ngx_signal_value(NGX_REOPEN_SIGNAL):,5,456,case,9,CASTCaseStatement
+417808,JUMP_TARGET,-1,default:,5,460,default,13,CASTDefaultStatement
+419397,JUMP_TARGET,-1,case NGX_CMD_QUIT:,9,1056,case,1,CASTCaseStatement
+419403,JUMP_TARGET,-1,case NGX_CMD_TERMINATE:,9,1060,case,5,CASTCaseStatement
+419409,JUMP_TARGET,-1,case NGX_CMD_REOPEN:,9,1064,case,9,CASTCaseStatement
+419415,JUMP_TARGET,-1,case NGX_CMD_OPEN_CHANNEL:,9,1068,case,13,CASTCaseStatement
+419458,JUMP_TARGET,-1,case NGX_CMD_CLOSE_CHANNEL:,9,1078,case,19,CASTCaseStatement
+421140,JUMP_TARGET,-1,case NGX_EAGAIN:,13,170,case,1,CASTCaseStatement
+421143,JUMP_TARGET,-1,case NGX_EINTR:,13,173,case,4,CASTCaseStatement
+421149,JUMP_TARGET,-1,default:,13,177,default,8,CASTDefaultStatement
+422529,JUMP_TARGET,-1,"eintr:
+
+    n = sendmsg(c->fd, &msg, 0);",1,313,eintr,8,CASTLabelStatement
+422562,JUMP_TARGET,-1,case NGX_EAGAIN:,9,324,case,1,CASTCaseStatement
+422573,JUMP_TARGET,-1,case NGX_EINTR:,9,329,case,5,CASTCaseStatement
+422583,JUMP_TARGET,-1,default:,9,334,default,9,CASTDefaultStatement
+423065,JUMP_TARGET,-1,"eintr:
+
+    n = writev(c->fd, vec->iovs, vec->count);",1,187,eintr,3,CASTLabelStatement
+423101,JUMP_TARGET,-1,case NGX_EAGAIN:,9,198,case,1,CASTCaseStatement
+423112,JUMP_TARGET,-1,case NGX_EINTR:,9,203,case,5,CASTCaseStatement
+423122,JUMP_TARGET,-1,default:,9,208,default,9,CASTDefaultStatement
+423726,JUMP_TARGET,-1,"failed:
+
+    if (u != utf16) {
+        err = ngx_errno;
+        ngx_free(u);
+        ngx_set_errno(err);
+    }",1,49,failed,12,CASTLabelStatement
+424324,JUMP_TARGET,-1,"failed:
+
+    if (u != utf16) {
+        err = ngx_errno;
+        ngx_free(u);
+        ngx_set_errno(err);
+    }",1,293,failed,19,CASTLabelStatement
+424549,JUMP_TARGET,-1,"failed:
+
+    if (fm->handle) {
+        if (CloseHandle(fm->handle) == 0) {
+            ngx_log_error(NGX_LOG_ALERT, fm->log, ngx_errno,
+                          ""CloseHandle() of file mapping \""%s\"" failed"",
+                          fm->name);
+        }
+    }",1,378,failed,13,CASTLabelStatement
+425321,JUMP_TARGET,-1,case sw_start:,9,699,case,1,CASTCaseStatement
+425336,JUMP_TARGET,-1,case sw_normal:,9,712,case,5,CASTCaseStatement
+425374,JUMP_TARGET,-1,case sw_after_slash:,9,731,case,11,CASTCaseStatement
+425405,JUMP_TARGET,-1,case sw_after_colon:,9,749,case,18,CASTCaseStatement
+425421,JUMP_TARGET,-1,case sw_after_dot:,9,758,case,22,CASTCaseStatement
+425502,JUMP_TARGET,-1,"invalid:
+
+    ngx_set_errno(NGX_ENOENT);",1,802,invalid,18,CASTLabelStatement
+425505,JUMP_TARGET,-1,"failed:
+
+    if (lu) {
+        err = ngx_errno;
+        ngx_free(lu);
+        ngx_set_errno(err);
+    }",1,806,failed,20,CASTLabelStatement
+426332,JUMP_TARGET,-1,case WAIT_OBJECT_0:,5,96,case,1,CASTCaseStatement
+426464,JUMP_TARGET,-1,case WAIT_OBJECT_0 + 1:,5,134,case,11,CASTCaseStatement
+426497,JUMP_TARGET,-1,case WAIT_TIMEOUT:,5,146,case,16,CASTCaseStatement
+426508,JUMP_TARGET,-1,case WAIT_FAILED:,5,152,case,20,CASTCaseStatement
+426529,JUMP_TARGET,-1,case NGX_PROCESS_RESPAWN:,5,166,case,1,CASTCaseStatement
+426539,JUMP_TARGET,-1,case NGX_PROCESS_JUST_RESPAWN:,5,170,case,5,CASTCaseStatement
+426558,JUMP_TARGET,-1,"failed:
+
+    if (ngx_processes[s].reopen) {
+        ngx_close_handle(ngx_processes[s].reopen);
+    }",1,181,failed,38,CASTLabelStatement
+427424,JUMP_TARGET,-1,case CTRL_C_EVENT:,5,282,case,1,CASTCaseStatement
+427430,JUMP_TARGET,-1,case CTRL_BREAK_EVENT:,5,286,case,5,CASTCaseStatement
+427436,JUMP_TARGET,-1,case CTRL_CLOSE_EVENT:,5,290,case,9,CASTCaseStatement
+427442,JUMP_TARGET,-1,case CTRL_LOGOFF_EVENT:,5,294,case,13,CASTCaseStatement
+427448,JUMP_TARGET,-1,default:,5,298,default,17,CASTDefaultStatement
+428051,JUMP_TARGET,-1,"found:
+
+    for (n = 0; n < ngx_last_process; n++) {
+
+        ngx_log_debug5(NGX_LOG_DEBUG_CORE, cycle->log, 0,
+                       ""process: %d %P %p e:%d j:%d"",
+                       n,
+                       ngx_processes[n].pid,
+                       ngx_processes[n].handle,
+                       ngx_processes[n].exiting,
+                       ngx_processes[n].just_spawn);
+
+        if (ngx_processes[n].handle) {
+            return 1;
+        }
+    }",1,520,found,5,CASTLabelStatement
+428608,JUMP_TARGET,-1,"failed:
+
+    exit(2);",1,756,failed,47,CASTLabelStatement
+429452,JUMP_TARGET,-1,case SERVICE_CONTROL_INTERROGATE:,5,97,case,1,CASTCaseStatement
+429458,JUMP_TARGET,-1,case SERVICE_CONTROL_STOP:,5,101,case,5,CASTCaseStatement
+429464,JUMP_TARGET,-1,case SERVICE_CONTROL_PARAMCHANGE:,5,105,case,9,CASTCaseStatement
+429470,JUMP_TARGET,-1,case NGX_SERVICE_CONTROL_SHUTDOWN:,5,109,case,13,CASTCaseStatement
+429478,JUMP_TARGET,-1,case NGX_SERVICE_CONTROL_REOPEN:,5,113,case,17,CASTCaseStatement
+429486,JUMP_TARGET,-1,default:,5,117,default,21,CASTDefaultStatement
+430198,JUMP_TARGET,-1,case TIME_ZONE_ID_UNKNOWN:,5,71,case,1,CASTCaseStatement
+430205,JUMP_TARGET,-1,case TIME_ZONE_ID_STANDARD:,5,74,case,4,CASTCaseStatement
+430216,JUMP_TARGET,-1,case TIME_ZONE_ID_DAYLIGHT:,5,77,case,7,CASTCaseStatement
+430227,JUMP_TARGET,-1,default:,5,80,default,10,CASTDefaultStatement
+434069,JUMP_TARGET,-1,case NGX_STREAM_PREREAD_PHASE:,9,351,case,1,CASTCaseStatement
+434075,JUMP_TARGET,-1,case NGX_STREAM_CONTENT_PHASE:,9,355,case,5,CASTCaseStatement
+434087,JUMP_TARGET,-1,default:,9,362,default,11,CASTDefaultStatement
+434266,JUMP_TARGET,-1,"found:
+
+    addr = ngx_array_push(&port->addrs);",1,425,found,16,CASTLabelStatement
+434590,JUMP_TARGET,-1,default:,13,538,default,1,CASTDefaultStatement
+435196,JUMP_TARGET,-1,case AF_INET:,5,133,case,1,CASTCaseStatement
+437928,JUMP_TARGET,-1,default:,5,216,default,1,CASTDefaultStatement
+437958,JUMP_TARGET,-1,"done:
+
+    *v = *vv;",1,226,done,9,CASTLabelStatement
+438021,JUMP_TARGET,-1,default:,9,284,default,1,CASTDefaultStatement
+438758,JUMP_TARGET,-1,"failed:
+
+    ngx_destroy_pool(ctx.temp_pool);",1,544,failed,43,CASTLabelStatement
+438884,JUMP_TARGET,-1,"done:
+
+    ngx_reset_pool(cf->pool);",1,608,done,10,CASTLabelStatement
+438891,JUMP_TARGET,-1,"failed:
+
+    ngx_reset_pool(cf->pool);",1,614,failed,13,CASTLabelStatement
+439178,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, ""invalid range \""%V\"""", net);",1,723,invalid,29,CASTLabelStatement
+439923,JUMP_TARGET,-1,"next:
+
+        if (h == 0xffff) {
+            break;
+        }",5,924,next,16,CASTLabelStatement
+440107,JUMP_TARGET,-1,"next:
+
+        if (h == 0xffff) {
+            break;
+        }",5,989,next,8,CASTLabelStatement
+440301,JUMP_TARGET,-1,default:,9,1079,default,1,CASTDefaultStatement
+440377,JUMP_TARGET,-1,default:,5,1152,default,1,CASTDefaultStatement
+440831,JUMP_TARGET,-1,case NGX_OK:,9,1300,case,1,CASTCaseStatement
+440835,JUMP_TARGET,-1,case NGX_ERROR:,9,1302,case,4,CASTCaseStatement
+440839,JUMP_TARGET,-1,default:,9,1304,default,7,CASTDefaultStatement
+441374,JUMP_TARGET,-1,"failed:
+
+    rc = NGX_DECLINED;",1,1490,failed,56,CASTLabelStatement
+441378,JUMP_TARGET,-1,"done:
+
+    if (ngx_close_file(file.fd) == NGX_FILE_ERROR) {
+        ngx_log_error(NGX_LOG_ALERT, cf->log, ngx_errno,
+                      ngx_close_file_n "" \""%s\"" failed"", name->data);
+    }",1,1494,done,58,CASTLabelStatement
+442232,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,342,not_found,15,CASTLabelStatement
+442334,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,396,not_found,18,CASTLabelStatement
+442434,JUMP_TARGET,-1,"no_value:
+
+    GeoIPRecord_delete(gr);",1,440,no_value,18,CASTLabelStatement
+442437,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,444,not_found,20,CASTLabelStatement
+442534,JUMP_TARGET,-1,"not_found:
+
+    v->not_found = 1;",1,488,not_found,18,CASTLabelStatement
+442954,JUMP_TARGET,-1,case GEOIP_COUNTRY_EDITION:,5,660,case,1,CASTCaseStatement
+442958,JUMP_TARGET,-1,default:,5,671,default,4,CASTDefaultStatement
+443077,JUMP_TARGET,-1,case GEOIP_ISP_EDITION:,5,715,case,1,CASTCaseStatement
+443079,JUMP_TARGET,-1,case GEOIP_ORG_EDITION:,5,716,case,3,CASTCaseStatement
+443081,JUMP_TARGET,-1,case GEOIP_DOMAIN_EDITION:,5,717,case,5,CASTCaseStatement
+443083,JUMP_TARGET,-1,case GEOIP_ASNUM_EDITION:,5,718,case,7,CASTCaseStatement
+443087,JUMP_TARGET,-1,default:,5,732,default,10,CASTDefaultStatement
+443206,JUMP_TARGET,-1,case GEOIP_CITY_EDITION_REV0:,5,776,case,1,CASTCaseStatement
+443208,JUMP_TARGET,-1,case GEOIP_CITY_EDITION_REV1:,5,777,case,3,CASTCaseStatement
+443212,JUMP_TARGET,-1,default:,5,789,default,6,CASTDefaultStatement
+443353,JUMP_TARGET,-1,default:,9,83,default,1,CASTDefaultStatement
+443411,JUMP_TARGET,-1,default:,9,111,default,1,CASTDefaultStatement
+446618,JUMP_TARGET,-1,"alloc_line:
+
+        line = ngx_pnalloc(s->connection->pool, len);",5,308,alloc_line,11,CASTLabelStatement
+447215,JUMP_TARGET,-1,case NGX_STREAM_LOG_ESCAPE_JSON:,5,706,case,1,CASTCaseStatement
+447230,JUMP_TARGET,-1,case NGX_STREAM_LOG_ESCAPE_NONE:,5,711,case,6,CASTCaseStatement
+447245,JUMP_TARGET,-1,default:,5,716,default,11,CASTDefaultStatement
+448112,JUMP_TARGET,-1,"process_formats:
+
+    if (cf->args->nelts >= 3) {
+        name = value[2];
+
+    } else {
+        ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                           ""log format is not specified"");
+        return NGX_CONF_ERROR;
+    }",1,1066,process_formats,28,CASTLabelStatement
+449336,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0, ""invalid parameter \""%s\"""", data);",1,1464,invalid,17,CASTLabelStatement
+449593,JUMP_TARGET,-1,"failed:
+
+        ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                           ""invalid \""open_log_file_cache\"" parameter \""%V\"""",
+                           &value[i]);",5,1548,failed,6,CASTLabelStatement
+451062,JUMP_TARGET,-1,"found:
+
+    if (ngx_strcmp(value[0].data, ""default"") == 0) {
+
+        if (ctx->default_value) {
+            ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                               ""duplicate default map parameter"");
+            return NGX_CONF_ERROR;
+        }
+
+        ctx->default_value = var;
+
+        return NGX_CONF_OK;
+    }",1,511,found,41,CASTLabelStatement
+452130,JUMP_TARGET,-1,"found:
+
+    if (uscf == NULL) {
+        ngx_log_error(NGX_LOG_ALERT, c->log, 0, ""no upstream configuration"");
+        ngx_stream_proxy_finalize(s, NGX_STREAM_INTERNAL_SERVER_ERROR);
+        return;
+    }",1,562,found,40,CASTLabelStatement
+455192,JUMP_TARGET,-1,"noupstream:
+
+    ngx_stream_finalize_session(s, rc);",1,2015,noupstream,12,CASTLabelStatement
+455832,JUMP_TARGET,-1,case NGX_OK:,9,2413,case,1,CASTCaseStatement
+455844,JUMP_TARGET,-1,case NGX_DECLINED:,9,2417,case,5,CASTCaseStatement
+455855,JUMP_TARGET,-1,default:,9,2422,default,8,CASTDefaultStatement
+456448,JUMP_TARGET,-1,default:,9,267,default,1,CASTDefaultStatement
+458571,JUMP_TARGET,-1,"invalid_variable:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, sc->cf, 0, ""invalid variable name"");",1,482,invalid_variable,8,CASTLabelStatement
+461191,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""invalid percent value \""%V\"""", &value[0]);",1,239,invalid,16,CASTLabelStatement
+463104,JUMP_TARGET,-1,"found:
+
+    conf->certificate_values = ngx_array_create(cf->pool, nelts,
+                                           sizeof(ngx_stream_complex_value_t));",1,936,found,12,CASTLabelStatement
+463664,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""invalid session cache \""%V\"""", &value[i]);",1,1120,invalid,14,CASTLabelStatement
+464316,JUMP_TARGET,-1,case sw_start:,9,259,case,1,CASTCaseStatement
+464331,JUMP_TARGET,-1,case sw_header:,9,266,case,8,CASTCaseStatement
+464378,JUMP_TARGET,-1,case sw_version:,9,279,case,16,CASTCaseStatement
+464390,JUMP_TARGET,-1,case sw_random:,9,285,case,22,CASTCaseStatement
+464402,JUMP_TARGET,-1,case sw_sid_len:,9,291,case,28,CASTCaseStatement
+464416,JUMP_TARGET,-1,case sw_sid:,9,297,case,34,CASTCaseStatement
+464428,JUMP_TARGET,-1,case sw_cs_len:,9,303,case,40,CASTCaseStatement
+464448,JUMP_TARGET,-1,case sw_cs:,9,309,case,46,CASTCaseStatement
+464460,JUMP_TARGET,-1,case sw_cm_len:,9,315,case,52,CASTCaseStatement
+464474,JUMP_TARGET,-1,case sw_cm:,9,321,case,58,CASTCaseStatement
+464493,JUMP_TARGET,-1,case sw_ext:,9,332,case,65,CASTCaseStatement
+464512,JUMP_TARGET,-1,case sw_ext_header:,9,342,case,72,CASTCaseStatement
+464617,JUMP_TARGET,-1,case sw_sni_len:,9,372,case,81,CASTCaseStatement
+464640,JUMP_TARGET,-1,case sw_sni_host_head:,9,379,case,88,CASTCaseStatement
+464723,JUMP_TARGET,-1,case sw_sni_host:,9,404,case,99,CASTCaseStatement
+464761,JUMP_TARGET,-1,case sw_alpn_len:,9,415,case,107,CASTCaseStatement
+464806,JUMP_TARGET,-1,case sw_alpn_proto_len:,9,428,case,116,CASTCaseStatement
+464865,JUMP_TARGET,-1,case sw_alpn_proto_data:,9,448,case,125,CASTCaseStatement
+464924,JUMP_TARGET,-1,case sw_supver_len:,9,468,case,134,CASTCaseStatement
+465036,JUMP_TARGET,-1,case 0:,5,518,case,1,CASTCaseStatement
+465045,JUMP_TARGET,-1,case 2:,9,520,case,1,CASTCaseStatement
+465053,JUMP_TARGET,-1,case 3:,5,525,case,5,CASTCaseStatement
+465062,JUMP_TARGET,-1,case 0:,9,527,case,1,CASTCaseStatement
+465069,JUMP_TARGET,-1,case 1:,9,530,case,5,CASTCaseStatement
+465076,JUMP_TARGET,-1,case 2:,9,533,case,9,CASTCaseStatement
+465083,JUMP_TARGET,-1,case 3:,9,536,case,13,CASTCaseStatement
+465090,JUMP_TARGET,-1,case 4:,9,539,case,17,CASTCaseStatement
+466839,JUMP_TARGET,-1,"invalid:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""invalid parameter \""%V\"""", &value[i]);",1,546,invalid,33,CASTLabelStatement
+466851,JUMP_TARGET,-1,"not_supported:
+
+    ngx_conf_log_error(NGX_LOG_EMERG, cf, 0,
+                       ""balancing method does not support parameter \""%V\"""",
+                       &value[i]);",1,553,not_supported,36,CASTLabelStatement
+468041,JUMP_TARGET,-1,"next:
+
+        if (++hp->tries > 20) {
+            ngx_stream_upstream_rr_peers_unlock(hp->rrp.peers);
+            return hp->get_rr_peer(pc, &hp->rrp);
+        }",5,255,next,21,CASTLabelStatement
+468367,JUMP_TARGET,-1,"done:
+
+        ngx_crc32_init(base_hash);",5,360,done,8,CASTLabelStatement
+469976,JUMP_TARGET,-1,"failed:
+
+    if (peers->next) {
+        ngx_log_debug0(NGX_LOG_DEBUG_STREAM, pc->log, 0,
+                       ""get least conn peer, backup servers"");
+
+        rrp->peers = peers->next;
+
+        n = (rrp->peers->number + (8 * sizeof(uintptr_t) - 1))
+                / (8 * sizeof(uintptr_t));
+
+        for (i = 0; i < n; i++) {
+            rrp->tried[i] = 0;
+        }
+
+        ngx_stream_upstream_rr_peers_unlock(peers);
+
+        rc = ngx_stream_upstream_get_least_conn_peer(pc, rrp);
+
+        if (rc != NGX_BUSY) {
+            return rc;
+        }
+
+        ngx_stream_upstream_rr_peers_wlock(peers);
+    }",1,253,failed,37,CASTLabelStatement
+470649,JUMP_TARGET,-1,"next:
+
+        if (++rp->tries > 20) {
+            ngx_stream_upstream_rr_peers_unlock(peers);
+            return ngx_stream_upstream_get_round_robin_peer(pc, rrp);
+        }",5,268,next,11,CASTLabelStatement
+470949,JUMP_TARGET,-1,"next:
+
+        if (++rp->tries > 20) {
+            ngx_stream_upstream_rr_peers_unlock(peers);
+            return ngx_stream_upstream_get_round_robin_peer(pc, rrp);
+        }",5,378,next,13,CASTLabelStatement
+473149,JUMP_TARGET,-1,"failed:
+
+    if (peers->next) {
+
+        ngx_log_debug0(NGX_LOG_DEBUG_STREAM, pc->log, 0, ""backup servers"");
+
+        rrp->peers = peers->next;
+
+        n = (rrp->peers->number + (8 * sizeof(uintptr_t) - 1))
+                / (8 * sizeof(uintptr_t));
+
+        for (i = 0; i < n; i++) {
+            rrp->tried[i] = 0;
+        }
+
+        ngx_stream_upstream_rr_peers_unlock(peers);
+
+        rc = ngx_stream_upstream_get_round_robin_peer(pc, rrp);
+
+        if (rc != NGX_BUSY) {
+            return rc;
+        }
+
+        ngx_stream_upstream_rr_peers_wlock(peers);
+    }",1,496,failed,19,CASTLabelStatement
+474414,JUMP_TARGET,-1,"done:
+
+    uscf->peer.data = peers;",1,252,done,26,CASTLabelStatement
+474582,JUMP_TARGET,-1,"failed:
+
+    if (dst->server.data) {
+        ngx_slab_free_locked(pool, dst->server.data);
+    }",1,305,failed,13,CASTLabelStatement
+476071,JUMP_TARGET,-1,default:,5,510,default,1,CASTDefaultStatement
+477780,JUMP_TARGET,-1,"next:
+        continue;",5,1246,next,7,CASTLabelStatement

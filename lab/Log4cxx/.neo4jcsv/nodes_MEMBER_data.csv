@@ -1,0 +1,424 @@
+106,MEMBER,<empty>,<empty>,x,6,,4,x,1,,int
+214,MEMBER,<empty>,<empty>,x,6,,4,x,1,,int
+613,MEMBER,<empty>,<empty>,m_logger,22,,7,m_logger,1,,LoggerPtr
+1474,MEMBER,<empty>,<empty>,(NullWriterAppender),24,,27,,1,,DECLARE_LOG4CXX_OBJECT
+1579,MEMBER,<empty>,<empty>,logger,26,,40,logger,1,,LoggerPtr
+1760,MEMBER,<empty>,<empty>,x,7,,32,x,1,,int
+2603,MEMBER,<empty>,<empty>,headFilter,29,,38,headFilter,2,,ANY
+2604,MEMBER,<empty>,<empty>,tailFilter,29,,39,tailFilter,3,,ANY
+2605,MEMBER,<empty>,<empty>,acceptOnMatch,7,,40,acceptOnMatch,4,,bool
+2786,MEMBER,<empty>,<empty>,appenderList,16,,34,appenderList,1,,AppenderList
+2787,MEMBER,<empty>,<empty>,m_mutex,21,,35,m_mutex,2,,ANY
+3637,MEMBER,<empty>,<empty>,* socket,14,,47,socket,4,,apr_socket_t*
+3638,MEMBER,<empty>,<empty>,socketPool,7,,50,socketPool,5,,Pool
+4123,MEMBER,<empty>,<empty>,* p,12,,42,p,2,,apr_pool_t*
+4124,MEMBER,<empty>,<empty>,mutex,13,,43,mutex,3,,ANY
+4125,MEMBER,<empty>,<empty>,watchdogs,27,,44,watchdogs,4,,ANY
+4126,MEMBER,<empty>,<empty>,startTime,17,,45,startTime,5,,log4cxx_time_t
+4127,MEMBER,<empty>,<empty>,* tlsKey,17,,46,tlsKey,6,,apr_threadkey_t*
+4128,MEMBER,<empty>,<empty>,objects,30,,47,objects,7,,ANY
+4472,MEMBER,<empty>,<empty>,pool,7,,33,pool,1,,Pool
+4473,MEMBER,<empty>,<empty>,mutex,13,,34,mutex,2,,ANY
+4474,MEMBER,<empty>,<empty>,* socket,14,,35,socket,3,,apr_socket_t*
+4924,MEMBER,<empty>,<empty>,pool,7,,42,pool,3,,Pool
+4925,MEMBER,<empty>,<empty>,* socket,14,,43,socket,4,,apr_socket_t*
+5338,MEMBER,<empty>,<empty>,DEFAULT_BUFFER_SIZE = 128,8,,47,DEFAULT_BUFFER_SIZE,1,,ANY
+5347,MEMBER,<empty>,<empty>,maxEvent,38,,55,maxEvent,1,,ANY
+5348,MEMBER,<empty>,<empty>,count,7,,60,count,2,,int
+5390,MEMBER,<empty>,<empty>,buffer,19,,128,buffer,3,,LoggingEventList
+5391,MEMBER,<empty>,<empty>,bufferMutex,13,,133,bufferMutex,4,,ANY
+5392,MEMBER,<empty>,<empty>,bufferNotFull,26,,135,bufferNotFull,5,,ANY
+5393,MEMBER,<empty>,<empty>,bufferNotEmpty,26,,136,bufferNotEmpty,6,,ANY
+5394,MEMBER,<empty>,<empty>,discardMap,13,,141,discardMap,7,,DiscardMap
+5395,MEMBER,<empty>,<empty>,bufferSize,6,,146,bufferSize,8,,int
+5396,MEMBER,<empty>,<empty>,appenders,37,,151,appenders,9,,ANY
+5397,MEMBER,<empty>,<empty>,dispatcher,14,,156,dispatcher,10,,ANY
+5398,MEMBER,<empty>,<empty>,locationInfo,7,,161,locationInfo,11,,bool
+5399,MEMBER,<empty>,<empty>,blocking,7,,166,blocking,12,,bool
+5400,MEMBER,<empty>,<empty>,atExitRegistryRaii,32,,169,atExitRegistryRaii,13,,ANY
+6779,MEMBER,<empty>,<empty>,mutex,24,,52,mutex,4,,ANY
+6780,MEMBER,<empty>,<empty>,actions,42,,53,actions,5,,ANY
+6930,MEMBER,<empty>,<empty>,out,12,,31,out,2,,WriterPtr
+6931,MEMBER,<empty>,<empty>,sz,9,,32,sz,3,,size_t
+6932,MEMBER,<empty>,<empty>,buf,12,,33,buf,4,,LogString
+7110,MEMBER,<empty>,<empty>,buf,11,,35,buf,2,,ByteList
+7111,MEMBER,<empty>,<empty>,pos,9,,36,pos,3,,size_t
+7219,MEMBER,<empty>,<empty>,array,11,,29,array,1,,ByteList
+7318,MEMBER,<empty>,<empty>,* base,6,,30,base,2,,char*
+7319,MEMBER,<empty>,<empty>,pos,9,,31,pos,3,,size_t
+7320,MEMBER,<empty>,<empty>,lim,9,,32,lim,4,,size_t
+7321,MEMBER,<empty>,<empty>,cap,9,,33,cap,5,,size_t
+7529,MEMBER,<empty>,<empty>,formatter,37,,43,formatter,2,,ANY
+7530,MEMBER,<empty>,<empty>,millisecondStart,14,,49,millisecondStart,3,,mutable int
+7531,MEMBER,<empty>,<empty>,slotBegin,25,,54,slotBegin,4,,log4cxx_time_t
+7532,MEMBER,<empty>,<empty>,cache,20,,60,cache,5,,LogString
+7533,MEMBER,<empty>,<empty>,expiration,12,,68,expiration,6,,int
+7534,MEMBER,<empty>,<empty>,previousTime,25,,73,previousTime,7,,log4cxx_time_t
+8751,MEMBER,<empty>,<empty>,state,18,,479,state,3,,ANY
+9618,MEMBER,<empty>,<empty>,state,18,,496,state,3,,ANY
+10957,MEMBER,<empty>,<empty>,m_fatalColor,12,,140,m_fatalColor,2,,LogString
+10958,MEMBER,<empty>,<empty>,m_errorColor,12,,141,m_errorColor,3,,LogString
+10959,MEMBER,<empty>,<empty>,m_warnColor,12,,142,m_warnColor,4,,LogString
+10960,MEMBER,<empty>,<empty>,m_infoColor,12,,143,m_infoColor,5,,LogString
+10961,MEMBER,<empty>,<empty>,m_debugColor,12,,144,m_debugColor,6,,LogString
+10962,MEMBER,<empty>,<empty>,m_traceColor,12,,145,m_traceColor,7,,LogString
+11483,MEMBER,<empty>,<empty>,target,12,,36,target,2,,LogString
+11773,MEMBER,<empty>,<empty>,ea,36,,33,ea,2,,ANY
+11774,MEMBER,<empty>,<empty>,first,6,,34,first,3,,int
+11775,MEMBER,<empty>,<empty>,last,6,,35,last,4,,int
+11776,MEMBER,<empty>,<empty>,numElems,6,,36,numElems,5,,int
+11777,MEMBER,<empty>,<empty>,maxSize,6,,37,maxSize,6,,int
+12150,MEMBER,<empty>,<empty>,* buf,6,,48,buf,5,,void*
+12151,MEMBER,<empty>,<empty>,offset,6,,51,offset,6,,int
+12152,MEMBER,<empty>,<empty>,length,6,,54,length,7,,int
+12153,MEMBER,<empty>,<empty>,address,17,,57,address,8,,InetAddressPtr
+12154,MEMBER,<empty>,<empty>,port,6,,60,port,9,,int
+12637,MEMBER,<empty>,<empty>,df,37,,45,df,2,,ANY
+13041,MEMBER,<empty>,<empty>,* m_driver = nullptr,21,,65,m_driver,2,,apr_dbd_driver_t*
+13042,MEMBER,<empty>,<empty>,* m_databaseHandle = nullptr,14,,66,m_databaseHandle,3,,apr_dbd_t*
+13043,MEMBER,<empty>,<empty>,* preparedStmt = nullptr,23,,67,preparedStmt,4,,apr_dbd_prepared_t*
+13044,MEMBER,<empty>,<empty>,mappedName,28,,68,mappedName,5,,ANY
+13045,MEMBER,<empty>,<empty>,driverName,17,,69,driverName,6,,ANY
+13046,MEMBER,<empty>,<empty>,driverParams,17,,70,driverParams,7,,ANY
+13047,MEMBER,<empty>,<empty>,databaseName,17,,71,databaseName,8,,ANY
+13048,MEMBER,<empty>,<empty>,sqlStatement,17,,72,sqlStatement,9,,ANY
+13049,MEMBER,<empty>,<empty>,m_pool,10,,73,m_pool,10,,Pool
+13050,MEMBER,<empty>,<empty>,converters,59,,74,converters,11,,ANY
+14698,MEMBER,<empty>,<empty>,repository,22,,26,repository,1,,LoggerRepositoryPtr
+14791,MEMBER,<empty>,<empty>,props,22,,63,props,1,,ANY
+14792,MEMBER,<empty>,<empty>,repository,27,,64,repository,2,,ANY
+14793,MEMBER,<empty>,<empty>,loggerFactory,24,,65,loggerFactory,3,,ANY
+18213,MEMBER,<empty>,<empty>,backup,18,,37,backup,1,,AppenderWeakPtr
+18214,MEMBER,<empty>,<empty>,primary,18,,38,primary,2,,AppenderWeakPtr
+18215,MEMBER,<empty>,<empty>,loggers,25,,39,loggers,3,,ANY
+18532,MEMBER,<empty>,<empty>,path,12,,45,path,4,,LogString
+18533,MEMBER,<empty>,<empty>,autoDelete,7,,46,autoDelete,5,,bool
+20258,MEMBER,<empty>,<empty>,pool,7,,36,pool,2,,Pool
+20259,MEMBER,<empty>,<empty>,* fileptr,12,,37,fileptr,3,,apr_file_t*
+20536,MEMBER,<empty>,<empty>,pool,7,,36,pool,2,,Pool
+20537,MEMBER,<empty>,<empty>,* fileptr,12,,37,fileptr,3,,apr_file_t*
+20793,MEMBER,<empty>,<empty>,source,13,,35,source,2,,File
+20794,MEMBER,<empty>,<empty>,destination,13,,36,destination,3,,File
+20795,MEMBER,<empty>,<empty>,renameEmptyFile,7,,37,renameEmptyFile,4,,bool
+20866,MEMBER,<empty>,<empty>,file,7,,41,file,2,,File
+20867,MEMBER,<empty>,<empty>,delay,7,,46,delay,3,,long
+20868,MEMBER,<empty>,<empty>,lastModif,17,,47,lastModif,4,,log4cxx_time_t
+20869,MEMBER,<empty>,<empty>,warnedAlready,7,,48,warnedAlready,5,,bool
+20870,MEMBER,<empty>,<empty>,interrupted,15,,49,interrupted,6,,int
+20871,MEMBER,<empty>,<empty>,pool,7,,50,pool,7,,Pool
+20872,MEMBER,<empty>,<empty>,thread,14,,51,thread,8,,ANY
+20873,MEMBER,<empty>,<empty>,interrupt,26,,52,interrupt,9,,ANY
+20874,MEMBER,<empty>,<empty>,interrupt_mutex,13,,53,interrupt_mutex,10,,ANY
+21279,MEMBER,<empty>,<empty>,headFilter,29,,33,headFilter,1,,ANY
+21280,MEMBER,<empty>,<empty>,tailFilter,29,,38,tailFilter,2,,ANY
+21481,MEMBER,<empty>,<empty>,minIndex,6,,47,minIndex,2,,int
+21482,MEMBER,<empty>,<empty>,maxIndex,6,,48,maxIndex,3,,int
+21483,MEMBER,<empty>,<empty>,explicitActiveFile,7,,49,explicitActiveFile,4,,bool
+21484,MEMBER,<empty>,<empty>,throwIOExceptionOnForkFailure = true,7,,50,throwIOExceptionOnForkFailure,5,,bool
+22541,MEMBER,<empty>,<empty>,conversionPattern,12,,43,conversionPattern,3,,LogString
+22542,MEMBER,<empty>,<empty>,expectedPatternLength,9,,46,expectedPatternLength,4,,size_t
+22959,MEMBER,<empty>,<empty>,minLength,12,,35,minLength,2,,int
+22960,MEMBER,<empty>,<empty>,maxLength,12,,40,maxLength,3,,int
+22961,MEMBER,<empty>,<empty>,leftAlign,13,,45,leftAlign,4,,bool
+23211,MEMBER,<empty>,<empty>,source,13,,39,source,2,,File
+23212,MEMBER,<empty>,<empty>,destination,7,,40,destination,3,,File
+23213,MEMBER,<empty>,<empty>,deleteSource,7,,41,deleteSource,4,,bool
+23214,MEMBER,<empty>,<empty>,throwIOExceptionOnForkFailure = true,7,,42,throwIOExceptionOnForkFailure,5,,bool
+24051,MEMBER,<empty>,<empty>,pool,16,,56,pool,2,,ANY
+24052,MEMBER,<empty>,<empty>,mutex,31,,57,mutex,3,,ANY
+24053,MEMBER,<empty>,<empty>,configuredMutex,21,,58,configuredMutex,4,,ANY
+24054,MEMBER,<empty>,<empty>,configured,7,,59,configured,5,,bool
+24055,MEMBER,<empty>,<empty>,emittedNoAppenderWarning,7,,60,emittedNoAppenderWarning,6,,bool
+24056,MEMBER,<empty>,<empty>,emittedNoResourceBundleWarning,7,,61,emittedNoResourceBundleWarning,7,,bool
+24057,MEMBER,<empty>,<empty>,thresholdInt,6,,62,thresholdInt,8,,int
+24058,MEMBER,<empty>,<empty>,listeners,34,,64,listeners,9,,ANY
+24059,MEMBER,<empty>,<empty>,root,12,,65,root,10,,LoggerPtr
+24060,MEMBER,<empty>,<empty>,threshold,11,,66,threshold,11,,LevelPtr
+24061,MEMBER,<empty>,<empty>,loggers,12,,67,loggers,12,,LoggerMap
+24062,MEMBER,<empty>,<empty>,provisionNodes,19,,68,provisionNodes,13,,ProvisionNodeMap
+24063,MEMBER,<empty>,<empty>,allAppenders,27,,70,allAppenders,14,,ANY
+25568,MEMBER,<empty>,<empty>,locationInfo,7,,43,locationInfo,2,,bool
+25569,MEMBER,<empty>,<empty>,title,12,,45,title,3,,LogString
+25570,MEMBER,<empty>,<empty>,dateFormat,29,,47,dateFormat,4,,ANY
+25571,MEMBER,<empty>,<empty>,expectedPatternLength,9,,50,expectedPatternLength,5,,size_t
+26475,MEMBER,<empty>,<empty>,ipAddrString,12,,33,ipAddrString,1,,LogString
+26476,MEMBER,<empty>,<empty>,hostNameString,12,,34,hostNameString,2,,LogString
+26791,MEMBER,<empty>,<empty>,in,17,,39,in,3,,InputStreamPtr
+26792,MEMBER,<empty>,<empty>,dec,20,,40,dec,4,,CharsetDecoderPtr
+27054,MEMBER,<empty>,<empty>,locationInfo,7,,47,locationInfo,2,,bool
+27055,MEMBER,<empty>,<empty>,prettyPrint,7,,48,prettyPrint,3,,bool
+27056,MEMBER,<empty>,<empty>,dateFormat,29,,50,dateFormat,4,,ANY
+27057,MEMBER,<empty>,<empty>,ppIndentL1,12,,52,ppIndentL1,5,,LogString
+27058,MEMBER,<empty>,<empty>,ppIndentL2,12,,53,ppIndentL2,6,,LogString
+27059,MEMBER,<empty>,<empty>,expectedPatternLength,9,,56,expectedPatternLength,7,,size_t
+27060,MEMBER,<empty>,<empty>,threadInfo,7,,59,threadInfo,8,,bool
+28862,MEMBER,<empty>,<empty>,acceptOnMatch,7,,35,acceptOnMatch,1,,bool
+28863,MEMBER,<empty>,<empty>,levelToMatch,11,,36,levelToMatch,2,,LevelPtr
+29258,MEMBER,<empty>,<empty>,acceptOnMatch,7,,41,acceptOnMatch,2,,bool
+29259,MEMBER,<empty>,<empty>,levelMin,11,,42,levelMin,3,,LevelPtr
+29260,MEMBER,<empty>,<empty>,levelMax,11,,43,levelMax,4,,LevelPtr
+29727,MEMBER,<empty>,<empty>,literal,18,,40,literal,2,,LogString
+29940,MEMBER,<empty>,<empty>,language,18,,41,language,4,,LogString
+29941,MEMBER,<empty>,<empty>,country,18,,42,country,5,,LogString
+29942,MEMBER,<empty>,<empty>,variant,18,,43,variant,6,,LogString
+30285,MEMBER,<empty>,<empty>,acceptOnMatch,10,,42,acceptOnMatch,2,,bool
+30286,MEMBER,<empty>,<empty>,mustMatchAll,10,,43,mustMatchAll,3,,bool
+30287,MEMBER,<empty>,<empty>,lineNumber,10,,44,lineNumber,4,,int
+30288,MEMBER,<empty>,<empty>,methodName,14,,45,methodName,5,,ANY
+30766,MEMBER,<empty>,<empty>,name,12,,52,name,2,,LogString
+30767,MEMBER,<empty>,<empty>,level,11,,58,level,3,,LevelPtr
+30768,MEMBER,<empty>,<empty>,parent,12,,63,parent,4,,LoggerPtr
+30769,MEMBER,<empty>,<empty>,resourceBundle,29,,69,resourceBundle,5,,ANY
+30770,MEMBER,<empty>,<empty>,* repositoryRaw,35,,73,repositoryRaw,6,,ANY*
+30771,MEMBER,<empty>,<empty>,aai,34,,75,aai,7,,ANY
+30772,MEMBER,<empty>,<empty>,additive,7,,84,additive,8,,bool
+32293,MEMBER,<empty>,<empty>,acceptOnMatch,7,,38,acceptOnMatch,2,,bool
+32294,MEMBER,<empty>,<empty>,loggerToMatch,12,,39,loggerToMatch,3,,LogString
+32644,MEMBER,<empty>,<empty>,logger,12,,111,logger,5,,LogString
+32645,MEMBER,<empty>,<empty>,level,11,,114,level,6,,LevelPtr
+32646,MEMBER,<empty>,<empty>,* ndc,19,,117,ndc,7,,LogString*
+32647,MEMBER,<empty>,<empty>,* mdcCopy,18,,120,mdcCopy,8,,ANY*
+32648,MEMBER,<empty>,<empty>,* properties,32,,125,properties,9,,ANY*
+32649,MEMBER,<empty>,<empty>,ndcLookupRequired,15,,132,ndcLookupRequired,10,,mutable bool
+32650,MEMBER,<empty>,<empty>,mdcCopyLookupRequired,15,,139,mdcCopyLookupRequired,11,,mutable bool
+32651,MEMBER,<empty>,<empty>,message,12,,142,message,12,,LogString
+32652,MEMBER,<empty>,<empty>,timeStamp,17,,147,timeStamp,13,,log4cxx_time_t
+32653,MEMBER,<empty>,<empty>,locationInfo,38,,150,locationInfo,14,,ANY
+32654,MEMBER,<empty>,<empty>,& threadName,17,,156,threadName,15,,LogString
+32655,MEMBER,<empty>,<empty>,& threadUserName,17,,163,threadUserName,16,,LogString
+32656,MEMBER,<empty>,<empty>,chronoTimeStamp,53,,165,chronoTimeStamp,17,,ANY
+33333,MEMBER,<empty>,<empty>,debugEnabled,7,,44,debugEnabled,3,,bool
+33334,MEMBER,<empty>,<empty>,quietMode,7,,49,quietMode,4,,bool
+33335,MEMBER,<empty>,<empty>,mutex,13,,50,mutex,5,,ANY
+34809,MEMBER,<empty>,<empty>,acceptOnMatch,10,,37,acceptOnMatch,2,,bool
+34810,MEMBER,<empty>,<empty>,mustMatchAll,10,,38,mustMatchAll,3,,bool
+34811,MEMBER,<empty>,<empty>,keyVals,10,,39,keyVals,4,,KeyVals
+35684,MEMBER,<empty>,<empty>,buf,23,,37,buf,1,,ANY
+35685,MEMBER,<empty>,<empty>,* stream,29,,38,stream,2,,ANY*
+36167,MEMBER,<empty>,<empty>,m_quote,10,,35,m_quote,1,,logchar
+36391,MEMBER,<empty>,<empty>,triggeringPolicy,22,,54,triggeringPolicy,2,,TriggeringPolicyPtr
+36392,MEMBER,<empty>,<empty>,rollingPolicy,19,,59,rollingPolicy,3,,RollingPolicyPtr
+36393,MEMBER,<empty>,<empty>,fileLength,9,,64,fileLength,4,,size_t
+36394,MEMBER,<empty>,<empty>,_event,23,,69,_event,5,,ANY
+37984,MEMBER,<empty>,<empty>,os,19,,602,os,1,,OutputStreamPtr
+37985,MEMBER,<empty>,<empty>,* rfa,34,,607,rfa,2,,MultiprocessRollingFileAppender*
+38156,MEMBER,<empty>,<empty>,(NOPAbbreviator),34,,48,,1,,DECLARE_ABSTRACT_LOG4CXX_OBJECT
+38166,MEMBER,<empty>,<empty>,count,13,,78,count,1,,int
+38167,MEMBER,<empty>,<empty>,(MaxElementAbbreviator),34,,81,,2,,DECLARE_ABSTRACT_LOG4CXX_OBJECT
+38238,MEMBER,<empty>,<empty>,charCount,24,,129,charCount,1,,ANY
+38239,MEMBER,<empty>,<empty>,ellipsis,11,,135,ellipsis,2,,logchar
+38344,MEMBER,<empty>,<empty>,fragments,43,,206,fragments,1,,ANY
+38345,MEMBER,<empty>,<empty>,(PatternAbbreviator),34,,209,,2,,DECLARE_ABSTRACT_LOG4CXX_OBJECT
+38662,MEMBER,<empty>,<empty>,abbreviator,27,,39,abbreviator,2,,NameAbbreviatorPtr
+40281,MEMBER,<empty>,<empty>,WARN_PREFIX,12,,35,WARN_PREFIX,2,,LogString
+40282,MEMBER,<empty>,<empty>,ERROR_PREFIX,12,,36,ERROR_PREFIX,3,,LogString
+40283,MEMBER,<empty>,<empty>,firstTime,15,,37,firstTime,4,,mutable bool
+40428,MEMBER,<empty>,<empty>,m_config,23,,51,m_config,1,,ANY
+41461,MEMBER,<empty>,<empty>,out,18,,37,out,3,,OutputStreamPtr
+41462,MEMBER,<empty>,<empty>,enc,20,,38,enc,4,,CharsetEncoderPtr
+41814,MEMBER,<empty>,<empty>,conversionPattern,12,,71,conversionPattern,3,,LogString
+41815,MEMBER,<empty>,<empty>,patternConverters,35,,76,patternConverters,4,,LoggingEventPatternConverterList
+41816,MEMBER,<empty>,<empty>,patternFields,21,,81,patternFields,5,,FormattingInfoList
+41817,MEMBER,<empty>,<empty>,"m_fatalColor = LOG4CXX_STR(""\\x1B[35m"")",12,,83,m_fatalColor,6,,LogString
+41818,MEMBER,<empty>,<empty>,"m_errorColor = LOG4CXX_STR(""\\x1B[31m"")",12,,84,m_errorColor,7,,LogString
+41819,MEMBER,<empty>,<empty>,"m_warnColor = LOG4CXX_STR(""\\x1B[33m"")",12,,85,m_warnColor,8,,LogString
+41820,MEMBER,<empty>,<empty>,"m_infoColor = LOG4CXX_STR(""\\x1B[32m"")",12,,86,m_infoColor,9,,LogString
+41821,MEMBER,<empty>,<empty>,"m_debugColor = LOG4CXX_STR(""\\x1B[36m"")",12,,87,m_debugColor,10,,LogString
+41822,MEMBER,<empty>,<empty>,"m_traceColor = LOG4CXX_STR(""\\x1B[34m"")",12,,88,m_traceColor,11,,LogString
+41823,MEMBER,<empty>,<empty>,expectedPatternLength,9,,91,expectedPatternLength,12,,size_t
+44624,MEMBER,<empty>,<empty>,BEGIN,4,,383,BEGIN,1,,ANY
+44625,MEMBER,<empty>,<empty>,KEY,4,,384,KEY,2,,ANY
+44626,MEMBER,<empty>,<empty>,KEY_ESCAPE,4,,385,KEY_ESCAPE,3,,ANY
+44627,MEMBER,<empty>,<empty>,KEY_CONTINUE,4,,386,KEY_CONTINUE,4,,ANY
+44628,MEMBER,<empty>,<empty>,KEY_CONTINUE2,4,,387,KEY_CONTINUE2,5,,ANY
+44629,MEMBER,<empty>,<empty>,DELIMITER,4,,388,DELIMITER,6,,ANY
+44630,MEMBER,<empty>,<empty>,ELEMENT,4,,389,ELEMENT,7,,ANY
+44631,MEMBER,<empty>,<empty>,ELEMENT_ESCAPE,4,,390,ELEMENT_ESCAPE,8,,ANY
+44632,MEMBER,<empty>,<empty>,ELEMENT_CONTINUE,4,,391,ELEMENT_CONTINUE,9,,ANY
+44633,MEMBER,<empty>,<empty>,ELEMENT_CONTINUE2,4,,392,ELEMENT_CONTINUE2,10,,ANY
+44634,MEMBER,<empty>,<empty>,COMMENT,4,,393,COMMENT,11,,ANY
+44635,MEMBER,<empty>,<empty>,LexemType,3,,395,LexemType,4,,enum
+44826,MEMBER,<empty>,<empty>,option,18,,42,option,2,,LogString
+47332,MEMBER,<empty>,<empty>,triggeringPolicy,22,,46,triggeringPolicy,2,,TriggeringPolicyPtr
+47333,MEMBER,<empty>,<empty>,rollingPolicy,19,,51,rollingPolicy,3,,RollingPolicyPtr
+47334,MEMBER,<empty>,<empty>,fileLength,9,,56,fileLength,4,,size_t
+47335,MEMBER,<empty>,<empty>,_event,23,,61,_event,5,,ANY
+48770,MEMBER,<empty>,<empty>,os,19,,538,os,1,,OutputStreamPtr
+48771,MEMBER,<empty>,<empty>,* rfa,22,,543,rfa,2,,RollingFileAppender*
+49306,MEMBER,<empty>,<empty>,activeFileName,12,,44,activeFileName,3,,LogString
+49307,MEMBER,<empty>,<empty>,append,7,,49,append,4,,bool
+49308,MEMBER,<empty>,<empty>,synchronous,12,,55,synchronous,5,,ActionPtr
+49309,MEMBER,<empty>,<empty>,asynchronous,12,,61,asynchronous,6,,ActionPtr
+49741,MEMBER,<empty>,<empty>,ch,11,,215,ch,3,,logchar
+49742,MEMBER,<empty>,<empty>,count,7,,216,count,4,,int
+49833,MEMBER,<empty>,<empty>,width,10,,260,width,4,,size_t
+49900,MEMBER,<empty>,<empty>,names,29,,309,names,3,,ANY
+49933,MEMBER,<empty>,<empty>,names,29,,328,names,3,,ANY
+50044,MEMBER,<empty>,<empty>,names,29,,422,names,3,,ANY
+50077,MEMBER,<empty>,<empty>,names,29,,442,names,3,,ANY
+50096,MEMBER,<empty>,<empty>,offset,7,,461,offset,3,,int
+50121,MEMBER,<empty>,<empty>,offset,7,,479,offset,3,,int
+50218,MEMBER,<empty>,<empty>,names,29,,558,names,3,,ANY
+50248,MEMBER,<empty>,<empty>,timeZone,15,,581,timeZone,4,,TimeZonePtr
+50706,MEMBER,<empty>,<empty>,timeZone,14,,807,timeZone,2,,TimeZonePtr
+50707,MEMBER,<empty>,<empty>,pattern,19,,812,pattern,3,,PatternTokenList
+51068,MEMBER,<empty>,<empty>,to,12,,401,to,3,,LogString
+51069,MEMBER,<empty>,<empty>,cc,12,,402,cc,4,,LogString
+51070,MEMBER,<empty>,<empty>,bcc,12,,403,bcc,5,,LogString
+51071,MEMBER,<empty>,<empty>,from,12,,404,from,6,,LogString
+51072,MEMBER,<empty>,<empty>,subject,12,,405,subject,7,,LogString
+51073,MEMBER,<empty>,<empty>,smtpHost,12,,406,smtpHost,8,,LogString
+51074,MEMBER,<empty>,<empty>,smtpUsername,12,,407,smtpUsername,9,,LogString
+51075,MEMBER,<empty>,<empty>,smtpPassword,12,,408,smtpPassword,10,,LogString
+51076,MEMBER,<empty>,<empty>,smtpPort,6,,409,smtpPort,11,,int
+51077,MEMBER,<empty>,<empty>,bufferSize,6,,410,bufferSize,12,,int
+51078,MEMBER,<empty>,<empty>,locationInfo,7,,411,locationInfo,13,,bool
+51079,MEMBER,<empty>,<empty>,cb,24,,412,cb,14,,ANY
+51080,MEMBER,<empty>,<empty>,evaluator,35,,413,evaluator,15,,ANY
+53282,MEMBER,<empty>,<empty>,array,11,,31,array,1,,ByteList
+53283,MEMBER,<empty>,<empty>,socket,12,,32,socket,2,,SocketPtr
+53434,MEMBER,<empty>,<empty>,timeZone,14,,35,timeZone,2,,TimeZonePtr
+53435,MEMBER,<empty>,<empty>,pattern,14,,36,pattern,3,,ANY
+54040,MEMBER,<empty>,<empty>,acceptOnMatch,7,,38,acceptOnMatch,2,,bool
+54041,MEMBER,<empty>,<empty>,stringToMatch,12,,39,stringToMatch,3,,LogString
+54290,MEMBER,<empty>,<empty>,src,12,,31,src,2,,LogString
+54291,MEMBER,<empty>,<empty>,delim,12,,32,delim,3,,LogString
+54292,MEMBER,<empty>,<empty>,pos,9,,33,pos,4,,size_t
+55734,MEMBER,<empty>,<empty>,syslogHost,12,,33,syslogHost,2,,LogString
+55735,MEMBER,<empty>,<empty>,syslogHostPort,6,,34,syslogHostPort,3,,int
+55736,MEMBER,<empty>,<empty>,address,17,,35,address,4,,InetAddressPtr
+55737,MEMBER,<empty>,<empty>,ds,20,,36,ds,5,,DatagramSocketPtr
+56167,MEMBER,<empty>,<empty>,port,6,,44,port,2,,int
+56168,MEMBER,<empty>,<empty>,connections,17,,45,connections,3,,ConnectionList
+56169,MEMBER,<empty>,<empty>,encoding,12,,46,encoding,4,,LogString
+56170,MEMBER,<empty>,<empty>,encoder,41,,47,encoder,5,,ANY
+56171,MEMBER,<empty>,<empty>,serverSocket,41,,48,serverSocket,6,,ANY
+56172,MEMBER,<empty>,<empty>,sh,14,,49,sh,7,,ANY
+56173,MEMBER,<empty>,<empty>,activeConnections,9,,50,activeConnections,8,,size_t
+57289,MEMBER,<empty>,<empty>,ndcStack,25,,31,ndcStack,1,,ANY
+57290,MEMBER,<empty>,<empty>,mdcMap,23,,32,mdcMap,2,,ANY
+57561,MEMBER,<empty>,<empty>,start_pre,17,,48,start_pre,2,,ThreadStartPre
+57562,MEMBER,<empty>,<empty>,started,16,,49,started,3,,ThreadStarted
+57563,MEMBER,<empty>,<empty>,start_post,18,,50,start_post,4,,ThreadStartPost
+57838,MEMBER,<empty>,<empty>,shortReport,13,,40,shortReport,2,,bool
+57955,MEMBER,<empty>,<empty>,nextCheck,18,,57,nextCheck,3,,log4cxx_time_t
+57956,MEMBER,<empty>,<empty>,lastFileName,13,,62,lastFileName,4,,LogString
+57957,MEMBER,<empty>,<empty>,suffixLength,7,,67,suffixLength,5,,int
+57958,MEMBER,<empty>,<empty>,* _mmap,13,,72,_mmap,6,,apr_mmap_t*
+57959,MEMBER,<empty>,<empty>,_mmapPool,29,,77,_mmapPool,7,,ANY
+57960,MEMBER,<empty>,<empty>,* _file_map,13,,82,_file_map,8,,apr_file_t*
+57961,MEMBER,<empty>,<empty>,_mapFileName,15,,87,_mapFileName,9,,ANY
+57962,MEMBER,<empty>,<empty>,* _lock_file,13,,92,_lock_file,10,,apr_file_t*
+57963,MEMBER,<empty>,<empty>,bAlreadyInitialized,8,,102,bAlreadyInitialized,11,,bool
+57964,MEMBER,<empty>,<empty>,bRefreshCurFile,8,,107,bRefreshCurFile,12,,bool
+57965,MEMBER,<empty>,<empty>,_fileNamePattern,13,,112,_fileNamePattern,13,,LogString
+57966,MEMBER,<empty>,<empty>,multiprocess = false,8,,114,multiprocess,14,,bool
+57967,MEMBER,<empty>,<empty>,throwIOExceptionOnForkFailure = true,8,,115,throwIOExceptionOnForkFailure,15,,bool
+58912,MEMBER,<empty>,<empty>,offset,21,,174,offset,3,,apr_int32_t
+61933,MEMBER,<empty>,<empty>,locationInfo,7,,44,locationInfo,2,,bool
+61934,MEMBER,<empty>,<empty>,properties,7,,45,properties,3,,bool
+61935,MEMBER,<empty>,<empty>,expectedPatternLength,9,,48,expectedPatternLength,4,,size_t
+62545,MEMBER,<empty>,<empty>,writer,33,,48,writer,4,,ANY
+62871,MEMBER,<empty>,<empty>,source,13,,39,source,2,,File
+62872,MEMBER,<empty>,<empty>,destination,13,,40,destination,3,,File
+62873,MEMBER,<empty>,<empty>,deleteSource,7,,41,deleteSource,4,,bool
+62874,MEMBER,<empty>,<empty>,throwIOExceptionOnForkFailure = true,7,,42,throwIOExceptionOnForkFailure,5,,bool
+63707,MEMBER,<empty>,<empty>,isDestructed,15,,50,isDestructed,4,,bool
+64711,MEMBER,<empty>,<empty>,NoConfiguration,2,,61,NoConfiguration,1,,ANY
+64712,MEMBER,<empty>,<empty>,BlockSignalsOnly,2,,62,BlockSignalsOnly,2,,ANY
+64713,MEMBER,<empty>,<empty>,NameThreadOnly,2,,63,NameThreadOnly,3,,ANY
+64714,MEMBER,<empty>,<empty>,BlockSignalsAndNameThread,2,,64,BlockSignalsAndNameThread,4,,ANY
+64839,MEMBER,<empty>,<empty>,storage[sizeof(T)],18,,82,storage,8,,ANY
+64920,MEMBER,<empty>,<empty>,None,2,,28,None,1,,uint32_t
+64921,MEMBER,<empty>,<empty>,AddStartingNewline = (0x01 << 0),2,,29,AddStartingNewline,2,,uint32_t
+64922,MEMBER,<empty>,<empty>,AddEndingNewline = (0x01 << 1),2,,30,AddEndingNewline,3,,uint32_t
+64923,MEMBER,<empty>,<empty>,AddNewline = AddStartingNewline | AddEndingNewline,2,,31,AddNewline,4,,uint32_t
+65076,MEMBER,<empty>,<empty>,m_otherCategory,12,,43,m_otherCategory,1,,LoggerPtr
+65077,MEMBER,<empty>,<empty>,m_savedLevel,11,,44,m_savedLevel,2,,LevelPtr
+65183,MEMBER,<empty>,<empty>,m_hadConfiguration,7,,48,m_hadConfiguration,1,,bool
+65184,MEMBER,<empty>,<empty>,m_logger,12,,49,m_logger,2,,LoggerPtr
+65831,MEMBER,<empty>,<empty>,complete,7,,39,complete,3,,bool
+65832,MEMBER,<empty>,<empty>,interrupted,7,,44,interrupted,4,,bool
+65833,MEMBER,<empty>,<empty>,pool,28,,46,pool,5,,ANY
+65834,MEMBER,<empty>,<empty>,mutex,13,,47,mutex,6,,ANY
+65861,MEMBER,<empty>,<empty>,layout,12,,45,layout,4,,LayoutPtr
+65862,MEMBER,<empty>,<empty>,name,12,,48,name,5,,LogString
+65863,MEMBER,<empty>,<empty>,threshold,11,,52,threshold,6,,LevelPtr
+65864,MEMBER,<empty>,<empty>,errorHandler,23,,57,errorHandler,7,,ANY
+65865,MEMBER,<empty>,<empty>,headFilter,17,,61,headFilter,8,,ANY
+65866,MEMBER,<empty>,<empty>,tailFilter,17,,64,tailFilter,9,,ANY
+65867,MEMBER,<empty>,<empty>,closed,7,,69,closed,10,,bool
+65868,MEMBER,<empty>,<empty>,pool,28,,71,pool,11,,ANY
+65869,MEMBER,<empty>,<empty>,mutex,31,,72,mutex,12,,ANY
+65992,MEMBER,<empty>,<empty>,address,17,,47,address,5,,InetAddressPtr
+65993,MEMBER,<empty>,<empty>,localAddress,17,,49,localAddress,6,,InetAddressPtr
+65994,MEMBER,<empty>,<empty>,port,6,,51,port,7,,int
+65995,MEMBER,<empty>,<empty>,localPort,6,,54,localPort,8,,int
+66016,MEMBER,<empty>,<empty>,fileAppend,7,,50,fileAppend,2,,bool
+66017,MEMBER,<empty>,<empty>,fileName,12,,54,fileName,3,,LogString
+66018,MEMBER,<empty>,<empty>,bufferedIO,7,,58,bufferedIO,4,,bool
+66019,MEMBER,<empty>,<empty>,bufferSize,6,,62,bufferSize,5,,int
+66034,MEMBER,<empty>,<empty>,next,12,,34,next,2,,FilterPtr
+66072,MEMBER,<empty>,<empty>,databaseURL,12,,73,databaseURL,2,,LogString
+66073,MEMBER,<empty>,<empty>,databaseUser,12,,78,databaseUser,3,,LogString
+66074,MEMBER,<empty>,<empty>,databasePassword,12,,83,databasePassword,4,,LogString
+66075,MEMBER,<empty>,<empty>,connection,10,,92,connection,5,,SQLHDBC
+66076,MEMBER,<empty>,<empty>,env,10,,93,env,6,,SQLHENV
+66077,MEMBER,<empty>,<empty>,sqlStatement,12,,98,sqlStatement,7,,LogString
+66078,MEMBER,<empty>,<empty>,bufferSize,9,,103,bufferSize,8,,size_t
+66079,MEMBER,<empty>,<empty>,buffer,36,,108,buffer,9,,ANY
+66080,MEMBER,<empty>,<empty>,timeZone,23,,112,timeZone,10,,ANY
+66081,MEMBER,<empty>,<empty>,preparedStatement,11,,117,preparedStatement,11,,SQLHSTMT
+66084,MEMBER,<empty>,<empty>,converter,16,,121,converter,2,,ConverterPtr
+66085,MEMBER,<empty>,<empty>,paramType,16,,122,paramType,3,,SQLSMALLINT
+66086,MEMBER,<empty>,<empty>,paramMaxCharCount,16,,123,paramMaxCharCount,4,,SQLULEN
+66087,MEMBER,<empty>,<empty>,paramValue,16,,124,paramValue,5,,SQLPOINTER
+66088,MEMBER,<empty>,<empty>,paramValueSize,16,,125,paramValueSize,6,,SQLINTEGER
+66089,MEMBER,<empty>,<empty>,strLen_or_Ind,16,,126,strLen_or_Ind,7,,SQLLEN
+66090,MEMBER,<empty>,<empty>,mappedName,27,,128,mappedName,13,,ANY
+66091,MEMBER,<empty>,<empty>,parameterValue,27,,129,parameterValue,14,,ANY
+66104,MEMBER,<empty>,<empty>,atExitRegistryRaii,32,,136,atExitRegistryRaii,17,,ANY
+66125,MEMBER,<empty>,<empty>,name,18,,42,name,3,,LogString
+66126,MEMBER,<empty>,<empty>,style,18,,46,style,4,,LogString
+66147,MEMBER,<empty>,<empty>,patternConverters,26,,36,patternConverters,2,,PatternConverterList
+66148,MEMBER,<empty>,<empty>,patternFields,24,,41,patternFields,3,,FormattingInfoList
+66149,MEMBER,<empty>,<empty>,fileNamePatternStr,15,,46,fileNamePatternStr,4,,LogString
+66150,MEMBER,<empty>,<empty>,createIntermediateDirectories = true,7,,48,createIntermediateDirectories,5,,bool
+66176,MEMBER,<empty>,<empty>,timeout,6,,32,timeout,3,,int
+66197,MEMBER,<empty>,<empty>,address,17,,34,address,3,,InetAddressPtr
+66198,MEMBER,<empty>,<empty>,port,6,,38,port,4,,int
+66233,MEMBER,<empty>,<empty>,remoteHost,12,,61,remoteHost,4,,LogString
+66234,MEMBER,<empty>,<empty>,address,26,,66,address,5,,ANY
+66235,MEMBER,<empty>,<empty>,port,6,,68,port,6,,int
+66236,MEMBER,<empty>,<empty>,reconnectionDelay,6,,69,reconnectionDelay,7,,int
+66237,MEMBER,<empty>,<empty>,locationInfo,7,,70,locationInfo,8,,bool
+66238,MEMBER,<empty>,<empty>,thread,14,,71,thread,9,,ANY
+66239,MEMBER,<empty>,<empty>,interrupt,26,,72,interrupt,10,,ANY
+66240,MEMBER,<empty>,<empty>,interrupt_mutex,13,,73,interrupt_mutex,11,,ANY
+66402,MEMBER,<empty>,<empty>,syslogFacility,6,,87,syslogFacility,4,,int
+66403,MEMBER,<empty>,<empty>,facilityStr,12,,88,facilityStr,5,,LogString
+66404,MEMBER,<empty>,<empty>,facilityPrinting,7,,89,facilityPrinting,6,,bool
+66405,MEMBER,<empty>,<empty>,sw,41,,90,sw,7,,ANY
+66406,MEMBER,<empty>,<empty>,syslogHost,12,,91,syslogHost,8,,LogString
+66407,MEMBER,<empty>,<empty>,syslogHostPort,6,,92,syslogHostPort,9,,int
+66408,MEMBER,<empty>,<empty>,maxMessageLength,6,,93,maxMessageLength,10,,int
+66445,MEMBER,<empty>,<empty>,immediateFlush,20,,87,immediateFlush,5,,ANY
+66446,MEMBER,<empty>,<empty>,encoding,12,,94,encoding,6,,LogString
+66447,MEMBER,<empty>,<empty>,writer,33,,99,writer,7,,ANY
+66448,MEMBER,<empty>,<empty>,atExitRegistryRaii,32,,102,atExitRegistryRaii,8,,ANY
+66507,MEMBER,<empty>,<empty>,(Action),34,,37,,1,,DECLARE_ABSTRACT_LOG4CXX_OBJECT
+66552,MEMBER,<empty>,<empty>,(FileRenameAction),34,,34,,2,,DECLARE_ABSTRACT_LOG4CXX_OBJECT
+66604,MEMBER,<empty>,<empty>,(GZCompressAction),34,,34,,2,,DECLARE_ABSTRACT_LOG4CXX_OBJECT
+66737,MEMBER,<empty>,<empty>,(RolloverDescription),25,,31,,1,,DECLARE_LOG4CXX_OBJECT
+66833,MEMBER,<empty>,<empty>,(ZipCompressAction),34,,34,,2,,DECLARE_ABSTRACT_LOG4CXX_OBJECT
+66895,MEMBER,<empty>,<empty>,Configured,2,,31,Configured,1,,ANY
+66896,MEMBER,<empty>,<empty>,NotConfigured,2,,32,NotConfigured,2,,ANY
+66932,MEMBER,<empty>,<empty>,GENERIC_FAILURE = 0,4,,35,GENERIC_FAILURE,1,,ANY
+66933,MEMBER,<empty>,<empty>,WRITE_FAILURE = 1,4,,36,WRITE_FAILURE,2,,ANY
+66934,MEMBER,<empty>,<empty>,FLUSH_FAILURE = 2,4,,37,FLUSH_FAILURE,3,,ANY
+66935,MEMBER,<empty>,<empty>,CLOSE_FAILURE = 3,4,,38,CLOSE_FAILURE,4,,ANY
+66936,MEMBER,<empty>,<empty>,FILE_OPEN_FAILURE = 4,4,,39,FILE_OPEN_FAILURE,5,,ANY
+66937,MEMBER,<empty>,<empty>,MISSING_LAYOUT = 5,4,,40,MISSING_LAYOUT,6,,ANY
+66938,MEMBER,<empty>,<empty>,ADDRESS_PARSE_FAILURE = 6,4,,41,ADDRESS_PARSE_FAILURE,7,,ANY
+67423,MEMBER,<empty>,<empty>,location,10,,10,location,1,,CFIndex
+67424,MEMBER,<empty>,<empty>,length,10,,11,length,2,,CFIndex

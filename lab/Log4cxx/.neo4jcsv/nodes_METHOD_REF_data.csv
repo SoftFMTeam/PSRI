@@ -1,0 +1,34 @@
+1261,METHOD_REF,1,,"[r,err]() {
+        auto appender = std::make_shared<ConsoleAppender>
+            ( std::make_shared<SimpleLayout>()
+            , err ? ConsoleAppender::getSystemErr() : ConsoleAppender::getSystemOut()
+            );
+        r->getRootLogger()->addAppender(appender);
+    }",27,,35,configure.<lambda>0,2,,examples\cpp\console.cpp:<global>
+5740,METHOD_REF,2,,"[this]()
+			{
+				return priv->buffer.empty();
+			}",35,,271,AsyncAppender.append.<lambda>0,3,,main\cpp\asyncappender.cpp:<global>
+6443,METHOD_REF,2,,"[this]() -> bool
+				{ return 0 < priv->buffer.size() || priv->closed; }",36,,471,AsyncAppender.dispatch.<lambda>1,3,,main\cpp\asyncappender.cpp:<global>
+9950,METHOD_REF,3,,[](const logchar& ch) -> bool { return 0x80 <= (unsigned int)ch; },6,,638,CharsetEncoder.isTriviallyCopyable.<lambda>0,4,,main\cpp\charsetencoder.cpp:<global>
+25419,METHOD_REF,2,,"[this](const LoggerPtr& child) -> int
+	{
+		int result = 0;
+		for (auto& node : m_priv->provisionNodes)
+		{
+			if (node.second.end() != std::find(node.second.begin(), node.second.end(), child))
+				++result;
+		}
+		return result;
+	}",24,,493,Hierarchy.removeLogger.<lambda>0,2,,main\cpp\hierarchy.cpp:<global>
+33081,METHOD_REF,3,,[threadId](const ListItem& item) { return threadId == item.first; },5,,361,LoggingEvent.getCurrentThreadName.<lambda>0,4,,main\cpp\loggingevent.cpp:<global>
+33824,METHOD_REF,2,,"[]() -> ObjectPtr
+		{
+			LoggerRepositoryPtr hierarchy = Hierarchy::create();
+			return std::make_shared<DefaultRepositorySelector>(hierarchy);
+		}",73,,49,"[]() -> ObjectPtr
+		{
+			LoggerRepositoryPtr hierarchy = Hierarchy.create();
+			return std.make_shared<DefaultRepositorySelector>(hierarchy);
+		}.<lambda>0",2,,main\cpp\logmanager.cpp:<global>

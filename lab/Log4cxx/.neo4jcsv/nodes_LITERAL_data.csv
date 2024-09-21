@@ -1,0 +1,3116 @@
+35,LITERAL,-1,,1,11,,14,1,,int
+79,LITERAL,-1,,0,9,,5,1,,int
+95,LITERAL,-1,,0,9,,5,1,,int
+113,LITERAL,-1,,0,9,,9,1,,int
+129,LITERAL,-1,,0,9,,5,1,,int
+187,LITERAL,-1,,0,9,,5,1,,int
+203,LITERAL,-1,,0,9,,5,1,,int
+221,LITERAL,-1,,0,9,,9,1,,int
+237,LITERAL,-1,,0,9,,5,1,,int
+255,LITERAL,1,,5,24,,4,2,,int
+257,LITERAL,-1,,0,9,,5,1,,int
+278,LITERAL,2,,"""name""",26,,10,2,,char[5]
+301,LITERAL,-1,,0,12,,16,1,,int
+334,LITERAL,2,,"""name""",26,,5,2,,char[5]
+377,LITERAL,1,,"""MyApp""",37,,10,2,,char[6]
+383,LITERAL,1,,"""Message %1""",32,,11,1,,char[11]
+385,LITERAL,1,,1,50,,11,2,,int
+396,LITERAL,1,,"""Message %1""",32,,14,1,,char[11]
+398,LITERAL,1,,2,50,,14,2,,int
+425,LITERAL,1,,"""MyApp""",49,,4,2,,char[6]
+437,LITERAL,1,,"""MyApp.foo""",46,,8,2,,char[10]
+440,LITERAL,2,,"""Doing foo at trace level""",27,,9,2,,char[25]
+443,LITERAL,2,,"""Doing foo at debug level""",27,,10,2,,char[25]
+446,LITERAL,2,,"""Doing foo at info level""",26,,11,2,,char[24]
+449,LITERAL,2,,"""Doing foo at warn level""",26,,12,2,,char[24]
+452,LITERAL,2,,"""Doing foo at error level""",27,,13,2,,char[25]
+455,LITERAL,2,,"""Doing foo at fatal level""",27,,14,2,,char[25]
+470,LITERAL,2,,"""Entering application.""",23,,20,2,,char[22]
+474,LITERAL,2,,"""Exiting application.""",23,,22,2,,char[21]
+507,LITERAL,1,,"""MyApp""",37,,7,2,,char[6]
+510,LITERAL,2,,"""Entering application.""",24,,8,2,,char[22]
+518,LITERAL,2,,"""Exiting application.""",24,,11,2,,char[21]
+548,LITERAL,2,,"""static initializer message""",29,,23,2,,char[27]
+556,LITERAL,2,,"""main function message""",27,,28,2,,char[22]
+573,LITERAL,1,,"""com.foo.bar""",35,,6,1,,char[12]
+580,LITERAL,1,,"""Did it again!""",34,,9,1,,char[14]
+582,LITERAL,1,,""" - again!""",62,,9,1,,char[10]
+595,LITERAL,1,,"""com.foo.bar""",35,,5,1,,char[12]
+600,LITERAL,2,,"""Did it again!""",26,,8,2,,char[14]
+912,LITERAL,2,,4096,29,,48,2,,int
+918,LITERAL,1,,0,25,,49,1,,int
+921,LITERAL,2,,'/',41,,49,2,,char
+925,LITERAL,2,,0,22,,50,2,,int
+928,LITERAL,2,,"""auto-configured""",15,,63,2,,char[16]
+956,LITERAL,1,,0,38,,69,2,,int
+959,LITERAL,2,,1,54,,69,2,,int
+970,LITERAL,2,,1,56,,77,2,,int
+981,LITERAL,1,,'.',39,,85,2,,char
+1026,LITERAL,1,,'.',39,,98,2,,char
+1050,LITERAL,1,,"""log4cxx""",19,,110,2,,char[8]
+1055,LITERAL,1,,"""log4j""",19,,111,2,,char[6]
+1066,LITERAL,1,,""".xml""",30,,121,1,,char[5]
+1067,LITERAL,2,,""".properties""",38,,121,2,,char[12]
+1068,LITERAL,3,,0,53,,121,3,,int
+1079,LITERAL,2,,0,11,,126,2,,int
+1114,LITERAL,1,,5,55,,131,2,,int
+1151,LITERAL,1,,5,56,,138,2,,int
+1270,LITERAL,2,,"""""",23,,54,2,,char[1]
+1274,LITERAL,2,,1,17,,55,2,,int
+1277,LITERAL,1,,"""Console test program\nUsage: console [-err] [ puts | putws | cout | wcout | configure | log | wide | byte ]*\n""",14,,56,1,,char[109]
+1281,LITERAL,2,,false,23,,58,2,,bool
+1285,LITERAL,2,,false,16,,59,2,,bool
+1291,LITERAL,2,,1,18,,60,2,,int
+1301,LITERAL,1,,"""-err""",20,,61,1,,char[5]
+1305,LITERAL,2,,0,40,,61,2,,int
+1309,LITERAL,2,,true,19,,62,2,,bool
+1315,LITERAL,1,,"""puts""",27,,63,1,,char[5]
+1319,LITERAL,2,,0,47,,63,2,,int
+1322,LITERAL,1,,"""Hello, fputs\n""",19,,64,1,,char[14]
+1332,LITERAL,1,,"""cout""",27,,69,1,,char[5]
+1336,LITERAL,2,,0,47,,69,2,,int
+1346,LITERAL,2,,"""Hello, cout""",30,,71,2,,char[12]
+1357,LITERAL,2,,"""Hello, cout""",30,,73,2,,char[12]
+1366,LITERAL,1,,"""wcout""",27,,75,1,,char[6]
+1370,LITERAL,2,,0,48,,75,2,,int
+1380,LITERAL,2,,"""Log4cxx has not wcout""",30,,80,2,,char[22]
+1391,LITERAL,2,,"""Log4cxx has not wcout""",30,,86,2,,char[22]
+1400,LITERAL,1,,"""configure""",27,,89,1,,char[10]
+1404,LITERAL,2,,0,52,,89,2,,int
+1410,LITERAL,2,,true,26,,91,2,,bool
+1416,LITERAL,1,,"""log""",27,,92,1,,char[4]
+1420,LITERAL,2,,0,46,,92,2,,int
+1430,LITERAL,2,,true,30,,95,2,,bool
+1440,LITERAL,1,,"""Hello, log4cxx""",52,,97,2,,char[15]
+1444,LITERAL,1,,"""Unrecognized option: """,19,,105,1,,char[22]
+1452,LITERAL,1,,"""\n""",19,,107,1,,char[2]
+1456,LITERAL,-1,,0,12,,111,1,,int
+1484,LITERAL,-1,,false,10,,38,1,,bool
+1511,LITERAL,1,,"""SOMEVALUE""",26,,51,1,,char[10]
+1513,LITERAL,1,,"""somevalue""",52,,51,1,,char[10]
+1529,LITERAL,1,,"""custom-appender.xml""",35,,65,2,,char[20]
+1544,LITERAL,1,,"""NullLogger""",44,,68,2,,char[11]
+1547,LITERAL,2,,"""This is some root message""",28,,70,2,,char[26]
+1550,LITERAL,2,,"""This message will be discarded""",28,,71,2,,char[31]
+1587,LITERAL,2,,2,28,,45,2,,int
+1592,LITERAL,2,,1,35,,47,2,,int
+1598,LITERAL,2,,0,36,,51,2,,int
+1599,LITERAL,2,,"""Wrong number of arguments.""",40,,51,2,,char[27]
+1623,LITERAL,2,,"""Usage: """,30,,60,2,,char[8]
+1625,LITERAL,2,,""" configFile""",33,,61,2,,char[12]
+1630,LITERAL,1,,1,22,,62,1,,int
+1643,LITERAL,2,,4,42,,68,2,,int
+1654,LITERAL,2,,4,62,,69,2,,int
+1655,LITERAL,2,,""".xml""",68,,69,2,,char[5]
+1664,LITERAL,2,,3000,77,,71,3,,int
+1672,LITERAL,2,,3000,77,,75,3,,int
+1680,LITERAL,2,,0,25,,81,2,,int
+1682,LITERAL,-1,,true,23,,82,1,,bool
+1687,LITERAL,1,,"""MSG """,42,,84,1,,char[5]
+1693,LITERAL,1,,1000000,43,,87,1,,int
+1704,LITERAL,1,,"""DelayedLoop""",51,,96,2,,char[12]
+1769,LITERAL,2,,"""[MyStruct x:""",13,,36,2,,char[13]
+1773,LITERAL,2,,"""]""",45,,36,2,,char[2]
+1782,LITERAL,2,,"""""",20,,60,2,,char[1]
+1796,LITERAL,2,,"""This is a {} mesage""",32,,66,2,,char[20]
+1797,LITERAL,3,,"""test""",55,,66,3,,char[5]
+1809,LITERAL,3,,"""Messages can be colored""",58,,68,3,,char[24]
+1812,LITERAL,2,,"""We can also align text to the {:<10} or {:>10}""",32,,70,2,,char[47]
+1813,LITERAL,3,,"""left""",82,,70,3,,char[5]
+1814,LITERAL,4,,"""right""",90,,70,4,,char[6]
+1819,LITERAL,1,,42,17,,72,1,,int
+1822,LITERAL,2,,"""This custom type {} can also be logged, since it implements operator<<""",32,,73,2,,char[71]
+1831,LITERAL,1,,"""Numbers can be formatted with excessive operator<<: """,28,,75,1,,char[53]
+1836,LITERAL,1,,3,28,,76,2,,int
+1837,LITERAL,2,,22.456,34,,76,2,,double
+1838,LITERAL,2,,""" And as hex: """,10,,77,2,,char[14]
+1843,LITERAL,1,,16,24,,78,2,,int
+1844,LITERAL,2,,123,32,,78,2,,int
+1847,LITERAL,2,,"""Numbers can be formatted with a format string {:.1f} and as hex: {:x}""",32,,79,2,,char[70]
+1848,LITERAL,3,,22.456,105,,79,3,,double
+1849,LITERAL,4,,123,113,,79,4,,int
+1851,LITERAL,-1,,0,9,,81,1,,int
+1873,LITERAL,2,,"""""",23,,27,2,,char[1]
+1893,LITERAL,1,,"""[outer]""",22,,34,1,,char[8]
+1896,LITERAL,2,,"""info message""",34,,35,2,,char[13]
+1900,LITERAL,1,,"""[inner]""",26,,37,1,,char[8]
+1903,LITERAL,2,,"""debug message""",39,,38,2,,char[14]
+1906,LITERAL,2,,"""warn message""",34,,40,2,,char[13]
+1936,LITERAL,2,,"""""",23,,30,2,,char[1]
+1958,LITERAL,1,,"""trivial context""",27,,37,2,,char[16]
+1970,LITERAL,2,,"""debug message """,30,,40,2,,char[15]
+1971,LITERAL,2,,1,50,,40,2,,int
+1984,LITERAL,2,,"""info message""",30,,42,2,,char[13]
+1994,LITERAL,2,,"""warn message""",50,,43,2,,char[13]
+2004,LITERAL,2,,"""error message""",51,,44,2,,char[14]
+2014,LITERAL,2,,"""fatal message""",51,,45,2,,char[14]
+2150,LITERAL,2,,false,15,,73,2,,bool
+2156,LITERAL,1,,""".xml""",23,,75,2,,char[5]
+2174,LITERAL,2,,true,11,,77,2,,bool
+2182,LITERAL,1,,""".properties""",29,,78,2,,char[12]
+2304,LITERAL,2,,"""/""",33,,108,2,,char[2]
+2312,LITERAL,1,,"""Checking file """,32,,111,1,,char[15]
+2342,LITERAL,1,,"""Unable to load  """,37,,119,1,,char[17]
+2344,LITERAL,2,,""": trying next""",73,,119,2,,char[14]
+2541,LITERAL,2,,true,22,,59,2,,bool
+2546,LITERAL,2,,true,25,,60,2,,bool
+2567,LITERAL,2,,true,24,,70,2,,bool
+2698,LITERAL,2,,true,18,,74,2,,bool
+2803,LITERAL,2,,0,21,,52,2,,int
+2864,LITERAL,2,,0,23,,71,2,,int
+2915,LITERAL,-1,,0,10,,96,1,,int
+2970,LITERAL,-1,,0,9,,113,1,,int
+2979,LITERAL,2,,0,18,,118,2,,int
+2982,LITERAL,-1,,false,10,,120,1,,bool
+3089,LITERAL,2,,0,18,,147,2,,int
+3286,LITERAL,2,,nullptr,28,,69,2,,ANY
+3335,LITERAL,2,,nullptr,44,,83,2,,ANY
+3345,LITERAL,2,,0,20,,88,2,,int
+3394,LITERAL,1,,"""Attempted to append to closed appender named [""",42,,102,1,,char[47]
+3399,LITERAL,1,,"""].""",33,,103,1,,char[3]
+3419,LITERAL,2,,0,14,,115,2,,int
+3439,LITERAL,2,,nullptr,9,,123,2,,ANY
+3474,LITERAL,2,,nullptr,23,,138,2,,ANY
+3481,LITERAL,1,,"""You have tried to set a null error-handler.""",28,,142,1,,char[44]
+3524,LITERAL,1,,"""THRESHOLD""",16,,160,1,,char[10]
+3526,LITERAL,1,,"""threshold""",42,,160,1,,char[10]
+3733,LITERAL,5,,0,18,,91,5,,int
+3767,LITERAL,3,,0,52,,100,3,,int
+3815,LITERAL,5,,0,4,,118,5,,int
+3849,LITERAL,3,,0,50,,127,3,,int
+3882,LITERAL,2,,0,23,,137,2,,int
+3917,LITERAL,2,,0,19,,146,2,,int
+3929,LITERAL,2,,0,22,,147,2,,int
+3956,LITERAL,5,,0,16,,160,5,,int
+4039,LITERAL,5,,0,18,,192,5,,int
+4090,LITERAL,2,,nullptr,26,,211,2,,ANY
+4117,LITERAL,2,,false,37,,32,2,,bool
+4182,LITERAL,2,,true,17,,97,2,,bool
+4531,LITERAL,3,,1,62,,49,3,,int
+4549,LITERAL,5,,0,10,,60,5,,int
+4606,LITERAL,2,,50,44,,76,2,,int
+4650,LITERAL,2,,0,23,,87,2,,int
+4685,LITERAL,2,,0,19,,96,2,,int
+4721,LITERAL,2,,0,23,,108,2,,int
+4757,LITERAL,2,,0,19,,117,2,,int
+4794,LITERAL,2,,1000,44,,122,2,,int
+4801,LITERAL,2,,1,40,,123,2,,int
+4827,LITERAL,2,,0,37,,135,2,,int
+4868,LITERAL,3,,0,58,,151,3,,int
+4987,LITERAL,5,,0,10,,65,5,,int
+5085,LITERAL,2,,0,15,,97,2,,int
+5141,LITERAL,2,,0,23,,111,2,,int
+5148,LITERAL,2,,0,24,,116,2,,int
+5155,LITERAL,2,,0,27,,118,2,,int
+5223,LITERAL,2,,0,23,,149,2,,int
+5258,LITERAL,2,,0,19,,158,2,,int
+5287,LITERAL,1,,0,14,,472,1,,int
+5343,LITERAL,2,,128,30,,47,2,,int
+5442,LITERAL,1,,"""LOCATIONINFO""",57,,197,1,,char[13]
+5444,LITERAL,1,,"""locationinfo""",86,,197,1,,char[13]
+5452,LITERAL,2,,false,53,,199,3,,bool
+5460,LITERAL,1,,"""BUFFERSIZE""",57,,202,1,,char[11]
+5462,LITERAL,1,,"""buffersize""",84,,202,1,,char[11]
+5478,LITERAL,1,,"""BLOCKING""",57,,207,1,,char[9]
+5480,LITERAL,1,,"""blocking""",82,,207,1,,char[9]
+5488,LITERAL,2,,true,49,,209,3,,bool
+5524,LITERAL,2,,0,26,,225,2,,int
+5605,LITERAL,1,,"""AsyncAppender""",75,,240,1,,char[14]
+5610,LITERAL,3,,this,119,,240,4,,ANY
+5612,LITERAL,-1,,true,9,,242,1,,bool
+5663,LITERAL,2,,0,24,,250,2,,int
+5682,LITERAL,2,,true,18,,265,2,,bool
+5743,LITERAL,2,,false,14,,275,2,,bool
+5858,LITERAL,2,,true,18,,306,2,,bool
+6016,LITERAL,-1,,false,9,,345,1,,bool
+6112,LITERAL,2,,0,13,,376,2,,int
+6117,LITERAL,1,,"""size argument must be non-negative""",46,,378,1,,char[35]
+6151,LITERAL,2,,1,29,,382,2,,int
+6152,LITERAL,2,,1,34,,382,2,,int
+6273,LITERAL,1,,this,10,,417,1,,DiscardSummary*
+6309,LITERAL,1,,"""Discarded """,28,,432,1,,char[11]
+6322,LITERAL,1,,""" messages due to a full event buffer including: """,25,,434,1,,char[49]
+6362,LITERAL,1,,"""Discarded """,28,,447,1,,char[11]
+6375,LITERAL,1,,""" messages due to a full event buffer""",25,,449,1,,char[37]
+6386,LITERAL,1,,"""""",17,,452,1,,char[1]
+6405,LITERAL,2,,true,18,,460,2,,bool
+6639,LITERAL,1,,"""async dispatcher""",44,,507,1,,char[17]
+6641,LITERAL,3,,0,69,,507,4,,int
+6646,LITERAL,2,,false,17,,508,2,,bool
+6665,LITERAL,1,,"""async dispatcher""",44,,515,1,,char[17]
+6668,LITERAL,2,,false,17,,516,2,,bool
+6845,LITERAL,1,,true,51,,29,2,,bool
+6857,LITERAL,1,,"""%r [%t] %p %c %x - %m%n""",81,,33,1,,char[24]
+6975,LITERAL,2,,0,29,,60,2,,int
+7144,LITERAL,1,,1,11,,62,1,,int
+7345,LITERAL,2,,0,16,,48,2,,int
+7361,LITERAL,2,,0,16,,54,2,,int
+7403,LITERAL,1,,"""newLimit""",46,,73,1,,char[9]
+7434,LITERAL,-1,,true,10,,85,1,,bool
+7436,LITERAL,-1,,false,9,,88,1,,bool
+7539,LITERAL,1,,0x30,46,,83,1,,int
+7540,LITERAL,2,,0x31,52,,83,2,,int
+7541,LITERAL,3,,0x32,58,,83,3,,int
+7542,LITERAL,4,,0x33,64,,83,4,,int
+7543,LITERAL,5,,0x34,70,,83,5,,int
+7544,LITERAL,6,,0x35,76,,83,6,,int
+7545,LITERAL,7,,0x36,82,,83,7,,int
+7546,LITERAL,8,,0x37,88,,83,8,,int
+7547,LITERAL,9,,0x38,94,,83,9,,int
+7548,LITERAL,10,,0x39,100,,83,10,,int
+7549,LITERAL,11,,0,106,,83,11,,int
+7553,LITERAL,2,,654000,38,,90,2,,int
+7558,LITERAL,1,,0x36,52,,96,1,,int
+7559,LITERAL,2,,0x35,58,,96,2,,int
+7560,LITERAL,3,,0x34,64,,96,3,,int
+7561,LITERAL,4,,0,70,,96,4,,int
+7565,LITERAL,2,,987000,38,,103,2,,int
+7570,LITERAL,1,,0x39,52,,109,1,,int
+7571,LITERAL,2,,0x38,58,,109,2,,int
+7572,LITERAL,3,,0x37,64,,109,3,,int
+7573,LITERAL,4,,0,70,,109,4,,int
+7578,LITERAL,1,,0x30,50,,115,1,,int
+7579,LITERAL,2,,0x30,56,,115,2,,int
+7580,LITERAL,3,,0x30,62,,115,3,,int
+7581,LITERAL,4,,0,68,,115,4,,int
+7594,LITERAL,1,,"""dateFormat cannot be null""",46,,131,1,,char[26]
+7598,LITERAL,2,,0,20,,134,2,,int
+7603,LITERAL,1,,"""expiration must be non-negative""",46,,136,1,,char[32]
+7622,LITERAL,2,,1000000,37,,158,2,,int
+7623,LITERAL,2,,1000000,48,,158,2,,int
+7631,LITERAL,2,,1000000,16,,162,2,,int
+7641,LITERAL,2,,1000,42,,165,2,,int
+7654,LITERAL,2,,1000,25,,171,2,,int
+7692,LITERAL,2,,0,33,,191,2,,int
+7715,LITERAL,1,,0x41,29,,197,1,,int
+7716,LITERAL,2,,0x42,35,,197,2,,int
+7717,LITERAL,3,,0x43,41,,197,3,,int
+7718,LITERAL,4,,0,47,,197,4,,int
+7725,LITERAL,3,,0,48,,199,3,,int
+7775,LITERAL,2,,0,42,,213,2,,int
+7781,LITERAL,2,,0,42,,214,2,,int
+7787,LITERAL,2,,0,42,,215,2,,int
+7818,LITERAL,2,,0,86,,221,2,,int
+7880,LITERAL,2,,1000000L,33,,267,2,,long int
+7887,LITERAL,2,,0,36,,272,2,,int
+7898,LITERAL,2,,1000,58,,274,2,,int
+7968,LITERAL,2,,1000000,46,,294,2,,int
+7969,LITERAL,2,,1000000,57,,294,2,,int
+7983,LITERAL,2,,1000000,24,,298,2,,int
+7989,LITERAL,2,,0,34,,305,2,,int
+8019,LITERAL,2,,100,32,,322,2,,int
+8025,LITERAL,2,,1,15,,323,2,,int
+8031,LITERAL,2,,10,37,,323,2,,int
+8032,LITERAL,2,,10,43,,323,2,,int
+8038,LITERAL,2,,2,15,,324,2,,int
+8043,LITERAL,2,,10,37,,324,2,,int
+8068,LITERAL,1,,<global>,62,,337,1,,ANY
+8082,LITERAL,1,,<global>,59,,338,1,,ANY
+8108,LITERAL,2,,0x53,20,,363,2,,int
+8113,LITERAL,1,,0x53,26,,364,1,,int
+8114,LITERAL,2,,0x53,32,,364,2,,int
+8115,LITERAL,3,,0x53,38,,364,3,,int
+8116,LITERAL,4,,0,44,,364,4,,int
+8145,LITERAL,2,,3,20,,373,2,,int
+8152,LITERAL,2,,3,49,,373,3,,int
+8154,LITERAL,2,,0,60,,373,2,,int
+8160,LITERAL,2,,3,24,,374,2,,int
+8169,LITERAL,2,,3,30,,375,2,,int
+8175,LITERAL,-1,,1000000,10,,377,1,,int
+8177,LITERAL,-1,,1000,9,,380,1,,int
+8198,LITERAL,2,,0,62,,400,2,,int
+8259,LITERAL,2,,0,21,,249,2,,int
+8331,LITERAL,2,,0,25,,290,2,,int
+8370,LITERAL,2,,0xFFFF,16,,299,2,,int
+8442,LITERAL,2,,0,25,,342,2,,int
+8524,LITERAL,2,,0,25,,390,2,,int
+8557,LITERAL,2,,0x80,15,,400,2,,int
+8642,LITERAL,1,,this,22,,441,1,,ANY
+8649,LITERAL,1,,0,12,,444,1,,int
+8656,LITERAL,2,,0x80,48,,444,2,,int
+8669,LITERAL,1,,1,17,,446,2,,int
+8674,LITERAL,1,,0,11,,451,1,,int
+8680,LITERAL,2,,0,18,,453,2,,int
+8694,LITERAL,1,,this,46,,454,1,,ANY
+8698,LITERAL,1,,0,9,,455,1,,int
+8709,LITERAL,1,,1,35,,460,1,,int
+8721,LITERAL,1,,2,35,,465,1,,int
+8778,LITERAL,2,,0,25,,522,2,,int
+8799,LITERAL,2,,0,25,,539,2,,int
+8831,LITERAL,1,,"""UTF-8""",58,,555,1,,char[6]
+8833,LITERAL,1,,"""utf-8""",80,,555,1,,char[6]
+8840,LITERAL,1,,"""UTF8""",55,,556,1,,char[5]
+8842,LITERAL,1,,"""utf8""",76,,556,1,,char[5]
+8849,LITERAL,1,,"""CP65001""",55,,557,1,,char[8]
+8851,LITERAL,1,,"""cp65001""",79,,557,1,,char[8]
+8872,LITERAL,1,,"""C""",63,,561,1,,char[2]
+8874,LITERAL,1,,"""c""",81,,561,1,,char[2]
+8878,LITERAL,1,,"""646""",26,,562,1,,char[4]
+8885,LITERAL,1,,"""US-ASCII""",55,,563,1,,char[9]
+8887,LITERAL,1,,"""us-ascii""",80,,563,1,,char[9]
+8894,LITERAL,1,,"""ISO646-US""",55,,564,1,,char[10]
+8896,LITERAL,1,,"""iso646-US""",81,,564,1,,char[10]
+8903,LITERAL,1,,"""ANSI_X3.4-1968""",55,,565,1,,char[15]
+8905,LITERAL,1,,"""ansi_x3.4-1968""",86,,565,1,,char[15]
+8912,LITERAL,1,,"""CP20127""",55,,566,1,,char[8]
+8914,LITERAL,1,,"""cp20127""",79,,566,1,,char[8]
+8932,LITERAL,1,,"""ISO-8859-1""",63,,570,1,,char[11]
+8934,LITERAL,1,,"""iso-8859-1""",90,,570,1,,char[11]
+8941,LITERAL,1,,"""ISO-LATIN-1""",55,,571,1,,char[12]
+8943,LITERAL,1,,"""iso-latin-1""",83,,571,1,,char[12]
+8950,LITERAL,1,,"""CP1252""",55,,572,1,,char[7]
+8952,LITERAL,1,,"""cp1252""",78,,572,1,,char[7]
+8968,LITERAL,1,,"""LOCALE""",63,,576,1,,char[7]
+8970,LITERAL,1,,"""locale""",86,,576,1,,char[7]
+8988,LITERAL,1,,0x80,45,,638,1,,int
+9056,LITERAL,2,,0,30,,233,2,,int
+9079,LITERAL,2,,0x7F,16,,238,2,,int
+9140,LITERAL,2,,0,30,,277,2,,int
+9163,LITERAL,2,,0xFF,16,,282,2,,int
+9322,LITERAL,2,,8,50,,359,2,,int
+9336,LITERAL,2,,0xFFFF,15,,363,2,,int
+9383,LITERAL,2,,4,50,,394,2,,int
+9397,LITERAL,2,,0xFFFF,15,,398,2,,int
+9444,LITERAL,2,,4,50,,429,2,,int
+9458,LITERAL,2,,0xFFFF,15,,433,2,,int
+9517,LITERAL,1,,this,22,,467,1,,ANY
+9535,LITERAL,2,,0x80,51,,471,2,,int
+9537,LITERAL,1,,0,59,,471,1,,int
+9584,LITERAL,1,,this,41,,482,1,,ANY
+9591,LITERAL,1,,1,35,,483,1,,int
+9638,LITERAL,2,,0,25,,523,2,,int
+9674,LITERAL,1,,"""UTF-8""",58,,556,1,,char[6]
+9676,LITERAL,1,,"""utf-8""",80,,556,1,,char[6]
+9683,LITERAL,1,,"""CP65001""",58,,557,1,,char[8]
+9685,LITERAL,1,,"""cp65001""",82,,557,1,,char[8]
+9706,LITERAL,1,,"""C""",63,,561,1,,char[2]
+9708,LITERAL,1,,"""c""",81,,561,1,,char[2]
+9712,LITERAL,1,,"""646""",26,,562,1,,char[4]
+9719,LITERAL,1,,"""US-ASCII""",55,,563,1,,char[9]
+9721,LITERAL,1,,"""us-ascii""",80,,563,1,,char[9]
+9728,LITERAL,1,,"""ISO646-US""",55,,564,1,,char[10]
+9730,LITERAL,1,,"""iso646-US""",81,,564,1,,char[10]
+9737,LITERAL,1,,"""ANSI_X3.4-1968""",55,,565,1,,char[15]
+9739,LITERAL,1,,"""ansi_x3.4-1968""",86,,565,1,,char[15]
+9746,LITERAL,1,,"""CP20127""",55,,566,1,,char[8]
+9748,LITERAL,1,,"""cp20127""",79,,566,1,,char[8]
+9766,LITERAL,1,,"""ISO-8859-1""",63,,570,1,,char[11]
+9768,LITERAL,1,,"""iso-8859-1""",90,,570,1,,char[11]
+9775,LITERAL,1,,"""ISO-LATIN-1""",55,,571,1,,char[12]
+9777,LITERAL,1,,"""iso-latin-1""",83,,571,1,,char[12]
+9784,LITERAL,1,,"""CP1252""",55,,572,1,,char[7]
+9786,LITERAL,1,,"""cp1252""",78,,572,1,,char[7]
+9804,LITERAL,1,,"""UTF-16BE""",63,,576,1,,char[9]
+9806,LITERAL,1,,"""utf-16be""",88,,576,1,,char[9]
+9813,LITERAL,1,,"""UTF-16""",58,,577,1,,char[7]
+9815,LITERAL,1,,"""utf-16""",81,,577,1,,char[7]
+9822,LITERAL,1,,"""CP1200""",58,,578,1,,char[7]
+9824,LITERAL,1,,"""cp1200""",81,,578,1,,char[7]
+9840,LITERAL,1,,"""UTF-16LE""",63,,582,1,,char[9]
+9842,LITERAL,1,,"""utf-16le""",88,,582,1,,char[9]
+9858,LITERAL,1,,"""LOCALE""",63,,586,1,,char[7]
+9860,LITERAL,1,,"""locale""",86,,586,1,,char[7]
+10086,LITERAL,1,,"""Cannot create new instances of Class.""",43,,108,1,,char[38]
+10115,LITERAL,2,,0,15,,130,2,,int
+10125,LITERAL,1,,""".$""",65,,132,1,,char[3]
+10138,LITERAL,2,,1,44,,136,2,,int
+10150,LITERAL,2,,0,17,,139,2,,int
+10161,LITERAL,2,,0,18,,144,2,,int
+10179,LITERAL,2,,0,15,,157,2,,int
+10206,LITERAL,-1,,true,9,,168,1,,bool
+10364,LITERAL,2,,0,24,,40,2,,int
+10484,LITERAL,1,,"""\x1B[0m""",32,,52,1,,char[7]
+10514,LITERAL,2,,0,24,,35,2,,int
+10522,LITERAL,1,,"""BLACK""",55,,37,1,,char[6]
+10524,LITERAL,1,,"""black""",77,,37,1,,char[6]
+10528,LITERAL,2,,30,21,,38,2,,int
+10538,LITERAL,1,,"""RED""",61,,39,1,,char[4]
+10540,LITERAL,1,,"""red""",81,,39,1,,char[4]
+10544,LITERAL,2,,31,21,,40,2,,int
+10554,LITERAL,1,,"""GREEN""",61,,41,1,,char[6]
+10556,LITERAL,1,,"""green""",83,,41,1,,char[6]
+10560,LITERAL,2,,32,21,,42,2,,int
+10570,LITERAL,1,,"""YELLOW""",61,,43,1,,char[7]
+10572,LITERAL,1,,"""yellow""",84,,43,1,,char[7]
+10576,LITERAL,2,,33,21,,44,2,,int
+10586,LITERAL,1,,"""BLUE""",61,,45,1,,char[5]
+10588,LITERAL,1,,"""blue""",82,,45,1,,char[5]
+10592,LITERAL,2,,34,21,,46,2,,int
+10602,LITERAL,1,,"""MAGENTA""",61,,47,1,,char[8]
+10604,LITERAL,1,,"""magenta""",85,,47,1,,char[8]
+10608,LITERAL,2,,35,21,,48,2,,int
+10618,LITERAL,1,,"""CYAN""",61,,49,1,,char[5]
+10620,LITERAL,1,,"""cyan""",82,,49,1,,char[5]
+10624,LITERAL,2,,36,21,,50,2,,int
+10634,LITERAL,1,,"""WHITE""",61,,51,1,,char[6]
+10636,LITERAL,1,,"""white""",83,,51,1,,char[6]
+10640,LITERAL,2,,37,21,,52,2,,int
+10644,LITERAL,2,,0,25,,55,2,,int
+10648,LITERAL,1,,"""""",22,,56,1,,char[1]
+10653,LITERAL,2,,false,22,,59,2,,bool
+10657,LITERAL,2,,10,22,,60,2,,int
+10676,LITERAL,2,,0,24,,67,2,,int
+10684,LITERAL,1,,"""BOLD""",62,,69,1,,char[5]
+10686,LITERAL,1,,"""bold""",83,,69,1,,char[5]
+10690,LITERAL,2,,1,21,,70,2,,int
+10700,LITERAL,1,,"""DIM""",68,,71,1,,char[4]
+10702,LITERAL,1,,"""dim""",88,,71,1,,char[4]
+10706,LITERAL,2,,2,21,,72,2,,int
+10716,LITERAL,1,,"""ITALIC""",68,,73,1,,char[7]
+10718,LITERAL,1,,"""italic""",91,,73,1,,char[7]
+10722,LITERAL,2,,3,21,,74,2,,int
+10732,LITERAL,1,,"""UNDERLINE""",68,,75,1,,char[10]
+10734,LITERAL,1,,"""underline""",94,,75,1,,char[10]
+10738,LITERAL,2,,4,21,,76,2,,int
+10748,LITERAL,1,,"""BLINKING""",68,,77,1,,char[9]
+10750,LITERAL,1,,"""blinking""",93,,77,1,,char[9]
+10754,LITERAL,2,,5,21,,78,2,,int
+10764,LITERAL,1,,"""INVERSE""",68,,79,1,,char[8]
+10766,LITERAL,1,,"""inverse""",92,,79,1,,char[8]
+10770,LITERAL,2,,7,21,,80,2,,int
+10780,LITERAL,1,,"""STRIKETHROUGH""",68,,81,1,,char[14]
+10782,LITERAL,1,,"""strikethrough""",98,,81,1,,char[14]
+10786,LITERAL,2,,9,21,,82,2,,int
+10790,LITERAL,2,,0,25,,85,2,,int
+10794,LITERAL,1,,"""""",22,,86,1,,char[1]
+10815,LITERAL,2,,false,18,,95,2,,bool
+10819,LITERAL,2,,false,19,,96,2,,bool
+10823,LITERAL,2,,0,13,,97,2,,int
+10828,LITERAL,2,,0,10,,99,2,,int
+10844,LITERAL,2,,'(',22,,100,2,,char
+10850,LITERAL,2,,true,15,,101,2,,bool
+10853,LITERAL,2,,true,16,,102,2,,bool
+10863,LITERAL,2,,'(',28,,104,2,,char
+10868,LITERAL,1,,"""""",23,,106,1,,char[1]
+10875,LITERAL,2,,')',22,,109,2,,char
+10880,LITERAL,2,,true,16,,110,2,,bool
+10883,LITERAL,2,,false,15,,111,2,,bool
+10905,LITERAL,2,,1,33,,120,2,,int
+10911,LITERAL,1,,"""""",22,,122,1,,char[1]
+10919,LITERAL,1,,"""fg(""",52,,125,1,,char[4]
+10924,LITERAL,2,,true,43,,127,2,,bool
+10935,LITERAL,1,,"""bg(""",58,,128,1,,char[4]
+10940,LITERAL,2,,false,43,,129,2,,bool
+11266,LITERAL,1,,"""NONE""",26,,231,1,,char[5]
+11268,LITERAL,1,,"""none""",26,,232,1,,char[5]
+11282,LITERAL,1,,"""\\x1b""",50,,237,1,,char[5]
+11293,LITERAL,2,,1,28,,238,2,,int
+11294,LITERAL,2,,'m',34,,238,2,,char
+11306,LITERAL,1,,"""\x1b""",30,,245,1,,char[4]
+11312,LITERAL,2,,4,19,,246,2,,int
+11340,LITERAL,1,,"""\x1b[""",30,,255,1,,char[5]
+11347,LITERAL,2,,0,19,,257,2,,int
+11362,LITERAL,2,,'|',19,,258,2,,char
+11385,LITERAL,1,,';',24,,262,2,,char
+11421,LITERAL,1,,';',22,,272,2,,char
+11432,LITERAL,1,,"""m""",30,,275,1,,char[2]
+11534,LITERAL,1,,"""System.out""",52,,73,1,,char[11]
+11544,LITERAL,1,,"""System.err""",52,,79,1,,char[11]
+11567,LITERAL,1,,"""SYSTEM.OUT""",16,,88,1,,char[11]
+11569,LITERAL,1,,"""system.out""",43,,88,1,,char[11]
+11592,LITERAL,1,,"""SYSTEM.ERR""",16,,93,1,,char[11]
+11594,LITERAL,1,,"""system.err""",43,,93,1,,char[11]
+11641,LITERAL,1,,"""[""",40,,110,1,,char[2]
+11644,LITERAL,1,,"""] should be system.out or system.err.""",24,,111,1,,char[38]
+11650,LITERAL,1,,"""Using previously set target, System.out by default.""",27,,112,1,,char[52]
+11672,LITERAL,1,,"""SYSTEM.OUT""",16,,118,1,,char[11]
+11674,LITERAL,1,,"""system.out""",43,,118,1,,char[11]
+11703,LITERAL,1,,"""SYSTEM.ERR""",16,,124,1,,char[11]
+11705,LITERAL,1,,"""system.err""",43,,124,1,,char[11]
+11734,LITERAL,1,,"""TARGET""",16,,136,1,,char[7]
+11736,LITERAL,1,,"""target""",39,,136,1,,char[7]
+11784,LITERAL,2,,1,17,,48,2,,int
+11789,LITERAL,1,,"""The maxSize argument (""",29,,50,1,,char[23]
+11803,LITERAL,1,,""") is not a positive integer.""",26,,53,1,,char[29]
+11839,LITERAL,2,,0,18,,71,2,,int
+11869,LITERAL,2,,0,19,,80,2,,int
+11879,LITERAL,2,,0,10,,92,2,,int
+11887,LITERAL,-1,,0,10,,94,1,,int
+11912,LITERAL,2,,0,25,,108,2,,int
+11935,LITERAL,2,,0,31,,112,2,,int
+11950,LITERAL,2,,0,20,,116,2,,int
+11961,LITERAL,2,,0,16,,129,2,,int
+11966,LITERAL,1,,"""Negative array size [""",29,,131,1,,char[22]
+11980,LITERAL,1,,"""] not allowed.""",26,,134,1,,char[15]
+12013,LITERAL,2,,0,11,,148,2,,int
+12039,LITERAL,2,,0,31,,151,2,,int
+12054,LITERAL,2,,0,20,,155,2,,int
+12064,LITERAL,2,,0,18,,160,2,,int
+12084,LITERAL,2,,0,18,,166,2,,int
+12370,LITERAL,2,,0,30,,71,2,,int
+12380,LITERAL,2,,0,25,,76,2,,int
+12466,LITERAL,2,,0,43,,32,2,,int
+12483,LITERAL,-1,,86400000000ull,9,,49,1,,unsigned longlongint
+12491,LITERAL,1,,1000000LL,9,,54,1,,long long int
+12503,LITERAL,1,,1000000LL,18,,60,1,,long long int
+12504,LITERAL,2,,1,42,,60,2,,int
+12507,LITERAL,1,,1000000LL,47,,60,1,,long long int
+12656,LITERAL,2,,1000000,29,,64,2,,int
+12663,LITERAL,2,,0,24,,66,2,,int
+12677,LITERAL,2,,0,35,,72,2,,int
+12690,LITERAL,1,,"""ISO8601""",17,,76,1,,char[8]
+12692,LITERAL,1,,"""iso8601""",41,,76,1,,char[8]
+12709,LITERAL,1,,"""ABSOLUTE""",17,,81,1,,char[9]
+12711,LITERAL,1,,"""absolute""",42,,81,1,,char[9]
+12728,LITERAL,1,,"""DATE""",17,,86,1,,char[5]
+12730,LITERAL,1,,"""date""",38,,86,1,,char[5]
+12746,LITERAL,1,,0x25,27,,92,2,,int
+12786,LITERAL,1,,"""Could not instantiate SimpleDateFormat with pattern """,20,,104,1,,char[53]
+12806,LITERAL,2,,2,25,,114,2,,int
+12816,LITERAL,2,,1,49,,116,2,,int
+12830,LITERAL,2,,0,29,,125,2,,int
+13019,LITERAL,2,,false,29,,56,2,,bool
+13026,LITERAL,2,,true,18,,59,2,,bool
+13055,LITERAL,2,,nullptr,34,,65,2,,ANY
+13058,LITERAL,2,,nullptr,35,,66,2,,ANY
+13061,LITERAL,2,,nullptr,40,,67,2,,ANY
+13074,LITERAL,1,,"""logger""",9,,85,1,,char[7]
+13086,LITERAL,1,,"""logger""",9,,85,1,,char[7]
+13091,LITERAL,1,,"""class""",9,,86,1,,char[6]
+13103,LITERAL,1,,"""class""",9,,86,1,,char[6]
+13108,LITERAL,1,,"""time""",9,,87,1,,char[5]
+13120,LITERAL,1,,"""time""",9,,87,1,,char[5]
+13125,LITERAL,1,,"""shortfilename""",9,,88,1,,char[14]
+13137,LITERAL,1,,"""shortfilename""",9,,88,1,,char[14]
+13142,LITERAL,1,,"""fullfilename""",9,,89,1,,char[13]
+13154,LITERAL,1,,"""fullfilename""",9,,89,1,,char[13]
+13159,LITERAL,1,,"""location""",9,,90,1,,char[9]
+13171,LITERAL,1,,"""location""",9,,90,1,,char[9]
+13176,LITERAL,1,,"""line""",9,,91,1,,char[5]
+13188,LITERAL,1,,"""line""",9,,91,1,,char[5]
+13193,LITERAL,1,,"""message""",9,,92,1,,char[8]
+13205,LITERAL,1,,"""message""",9,,92,1,,char[8]
+13210,LITERAL,1,,"""method""",9,,93,1,,char[7]
+13222,LITERAL,1,,"""method""",9,,93,1,,char[7]
+13227,LITERAL,1,,"""level""",9,,94,1,,char[6]
+13239,LITERAL,1,,"""level""",9,,94,1,,char[6]
+13244,LITERAL,1,,"""thread""",9,,95,1,,char[7]
+13256,LITERAL,1,,"""thread""",9,,95,1,,char[7]
+13261,LITERAL,1,,"""threadname""",9,,96,1,,char[11]
+13273,LITERAL,1,,"""threadname""",9,,96,1,,char[11]
+13278,LITERAL,1,,"""ndc""",9,,97,1,,char[4]
+13290,LITERAL,1,,"""ndc""",9,,97,1,,char[4]
+13364,LITERAL,2,,nullptr,23,,116,2,,ANY
+13376,LITERAL,2,,nullptr,31,,117,2,,ANY
+13390,LITERAL,1,,"""COLUMNMAPPING""",60,,121,1,,char[14]
+13392,LITERAL,1,,"""columnmapping""",90,,121,1,,char[14]
+13417,LITERAL,1,,"""DRIVERNAME""",65,,125,1,,char[11]
+13419,LITERAL,1,,"""drivername""",92,,125,1,,char[11]
+13445,LITERAL,1,,"""DRIVERPARAMS""",65,,129,1,,char[13]
+13447,LITERAL,1,,"""driverparams""",94,,129,1,,char[13]
+13473,LITERAL,1,,"""DATABASENAME""",65,,133,1,,char[13]
+13475,LITERAL,1,,"""databasename""",94,,133,1,,char[13]
+13501,LITERAL,1,,"""SQL""",65,,137,1,,char[4]
+13503,LITERAL,1,,"""sql""",85,,137,1,,char[4]
+13585,LITERAL,1,,"""Unable to get driver named """,40,,153,1,,char[28]
+13683,LITERAL,1,,"""Unable to open database""",35,,166,1,,char[24]
+13698,LITERAL,1,,"""Unable to open database""",48,,167,1,,char[24]
+13812,LITERAL,5,,"""log_insert""",28,,182,5,,char[11]
+13833,LITERAL,1,,"""Unable to prepare statement: """,39,,185,1,,char[30]
+13930,LITERAL,1,,""" is not a supported ColumnMapping value""",46,,199,1,,char[40]
+13943,LITERAL,1,,"""time""",29,,203,1,,char[5]
+13953,LITERAL,1,,"""yyyy-MM-ddTHH:mm:ss.SSS""",47,,204,1,,char[24]
+14014,LITERAL,2,,nullptr,27,,217,2,,ANY
+14026,LITERAL,2,,nullptr,40,,218,2,,ANY
+14038,LITERAL,2,,nullptr,36,,219,2,,ANY
+14054,LITERAL,1,,"""DBAppender not initialized properly: logging not available""",48,,220,1,,char[59]
+14101,LITERAL,1,,nullptr,20,,234,2,,ANY
+14169,LITERAL,1,,"""Unable to insert: """,39,,244,1,,char[19]
+14250,LITERAL,2,,0,40,,35,2,,int
+14270,LITERAL,2,,1000,42,,49,2,,int
+14278,LITERAL,1,,true,28,,53,2,,bool
+14308,LITERAL,1,,"""log4cxx.xml""",18,,65,1,,char[12]
+14310,LITERAL,1,,"""log4cxx.properties""",18,,66,1,,char[19]
+14312,LITERAL,1,,"""log4j.xml""",18,,67,1,,char[10]
+14314,LITERAL,1,,"""log4j.properties""",18,,68,1,,char[17]
+14320,LITERAL,2,,0,16,,71,2,,int
+14323,LITERAL,2,,4,23,,71,2,,int
+14336,LITERAL,1,,"""Checking file """,37,,75,1,,char[15]
+14377,LITERAL,1,,"""Using configuration file [""",29,,92,1,,char[27]
+14387,LITERAL,1,,"""] for automatic log4cxx configuration""",22,,94,1,,char[38]
+14405,LITERAL,1,,0,4,,102,1,,int
+14424,LITERAL,1,,"""Could not find default configuration file.""",30,,111,1,,char[43]
+14430,LITERAL,1,,"""Could not find configuration file: [""",30,,115,1,,char[37]
+14437,LITERAL,1,,"""].""",23,,117,1,,char[3]
+14454,LITERAL,1,,"""log4j.configuratorClass""",50,,129,1,,char[24]
+14456,LITERAL,1,,"""""",90,,129,1,,char[1]
+14464,LITERAL,1,,"""LOG4CXX_CONFIGURATOR_CLASS""",50,,131,1,,char[27]
+14475,LITERAL,1,,"""LOG4CXX_CONFIGURATION""",81,,139,1,,char[22]
+14479,LITERAL,1,,"""log4j.configuration""",79,,140,1,,char[20]
+14488,LITERAL,1,,"""""",83,,142,1,,char[1]
+14506,LITERAL,1,,"""LOG4CXX_CONFIGURATION_WATCH_SECONDS""",87,,152,1,,char[36]
+14519,LITERAL,2,,0,21,,154,2,,int
+14552,LITERAL,1,,""".properties""",59,,166,1,,char[12]
+14593,LITERAL,1,,"""/""",47,,180,1,,char[2]
+14602,LITERAL,1,,"""Checking file """,37,,183,1,,char[15]
+14646,LITERAL,1,,"""Unable to load file: trying next""",31,,192,1,,char[33]
+14848,LITERAL,1,,"""appender""",17,,145,1,,char[9]
+14858,LITERAL,1,,"""name""",58,,147,1,,char[5]
+14925,LITERAL,1,,"""ref""",70,,176,1,,char[4]
+14988,LITERAL,1,,"""No appender named [""",29,,196,1,,char[20]
+14991,LITERAL,1,,"""] could be found.""",31,,197,1,,char[18]
+15011,LITERAL,1,,"""class""",71,,213,1,,char[6]
+15019,LITERAL,1,,"""Class name: [""",28,,214,1,,char[14]
+15022,LITERAL,1,,"""]""",71,,214,1,,char[2]
+15060,LITERAL,1,,"""name""",70,,222,1,,char[5]
+15086,LITERAL,1,,"""param""",19,,232,1,,char[6]
+15100,LITERAL,1,,"""layout""",24,,237,1,,char[7]
+15117,LITERAL,1,,"""filter""",24,,242,1,,char[7]
+15166,LITERAL,1,,"""errorHandler""",24,,254,1,,char[13]
+15182,LITERAL,1,,"""rollingPolicy""",24,,258,1,,char[14]
+15217,LITERAL,1,,"""triggeringPolicy""",24,,268,1,,char[17]
+15298,LITERAL,1,,"""appender-ref""",24,,289,1,,char[13]
+15309,LITERAL,1,,"""ref""",73,,291,1,,char[4]
+15339,LITERAL,1,,"""Attaching appender named [""",32,,296,1,,char[27]
+15342,LITERAL,1,,"""] to appender named [""",29,,297,1,,char[22]
+15348,LITERAL,1,,"""].""",41,,298,1,,char[3]
+15370,LITERAL,1,,"""Requesting attachment of appender named [""",32,,303,1,,char[42]
+15373,LITERAL,1,,"""] to appender named [""",29,,304,1,,char[22]
+15379,LITERAL,1,,"""] which does not implement AppenderAttachable.""",19,,305,1,,char[47]
+15393,LITERAL,1,,"""Could not create an Appender. Reported error follows.""",29,,317,1,,char[54]
+15396,LITERAL,-1,,0,10,,319,1,,int
+15426,LITERAL,1,,"""class""",45,,336,1,,char[6]
+15431,LITERAL,3,,0,4,,338,4,,int
+15444,LITERAL,2,,0,12,,341,2,,int
+15479,LITERAL,1,,"""param""",19,,353,1,,char[6]
+15493,LITERAL,1,,"""appender-ref""",24,,357,1,,char[13]
+15512,LITERAL,1,,"""logger-ref""",24,,361,1,,char[11]
+15521,LITERAL,1,,"""ref""",68,,363,1,,char[4]
+15547,LITERAL,1,,"""root-ref""",24,,367,1,,char[9]
+15586,LITERAL,2,,0,22,,377,2,,int
+15610,LITERAL,1,,"""class""",61,,392,1,,char[6]
+15629,LITERAL,3,,0,30,,395,4,,int
+15642,LITERAL,2,,0,16,,398,2,,int
+15672,LITERAL,1,,"""param""",19,,408,1,,char[6]
+15707,LITERAL,1,,"""name""",72,,430,1,,char[5]
+15713,LITERAL,1,,"""Retreiving an instance of Logger.""",28,,432,1,,char[34]
+15740,LITERAL,1,,"""additivity""",51,,439,1,,char[11]
+15741,LITERAL,2,,true,4,,440,3,,bool
+15751,LITERAL,1,,"""Setting [""",28,,442,1,,char[10]
+15757,LITERAL,1,,"""] additivity to [""",75,,442,1,,char[18]
+15762,LITERAL,1,,"""true""",39,,443,1,,char[5]
+15765,LITERAL,1,,"""false""",72,,443,1,,char[6]
+15767,LITERAL,1,,"""].""",97,,443,1,,char[3]
+15778,LITERAL,5,,false,70,,445,5,,bool
+15796,LITERAL,1,,"""class""",70,,456,1,,char[6]
+15808,LITERAL,1,,"""Logger Factory tag class attribute not found.""",29,,460,1,,char[46]
+15814,LITERAL,1,,"""No Logger Factory configured.""",29,,461,1,,char[30]
+15824,LITERAL,1,,"""Desired logger factory: [""",29,,465,1,,char[26]
+15827,LITERAL,1,,"""]""",84,,465,1,,char[2]
+15845,LITERAL,3,,0,5,,469,4,,int
+15887,LITERAL,1,,"""param""",19,,479,1,,char[6]
+15917,LITERAL,5,,true,66,,498,5,,bool
+15970,LITERAL,1,,"""appender-ref""",18,,524,1,,char[13]
+15990,LITERAL,1,,"""ref""",73,,527,1,,char[4]
+15994,LITERAL,2,,0,20,,529,2,,int
+16005,LITERAL,1,,"""Adding appender named [""",31,,531,1,,char[24]
+16008,LITERAL,1,,"""] to logger [""",18,,532,1,,char[14]
+16014,LITERAL,1,,"""].""",69,,532,1,,char[3]
+16024,LITERAL,1,,"""Appender named [""",31,,536,1,,char[17]
+16027,LITERAL,1,,"""] not found.""",18,,537,1,,char[13]
+16040,LITERAL,1,,"""level""",23,,543,1,,char[6]
+16055,LITERAL,1,,"""priority""",23,,547,1,,char[9]
+16070,LITERAL,1,,"""param""",23,,551,1,,char[6]
+16097,LITERAL,1,,"""class""",70,,568,1,,char[6]
+16105,LITERAL,1,,"""Parsing layout of class: \""""",28,,569,1,,char[27]
+16108,LITERAL,1,,"""\""""",85,,569,1,,char[2]
+16161,LITERAL,1,,"""param""",19,,583,1,,char[6]
+16181,LITERAL,1,,"""Could not create the Layout. Reported error follows.""",29,,594,1,,char[53]
+16184,LITERAL,-1,,0,10,,596,1,,int
+16201,LITERAL,1,,"""class""",72,,608,1,,char[6]
+16209,LITERAL,1,,"""Parsing triggering policy of class: \""""",28,,609,1,,char[38]
+16212,LITERAL,1,,"""\""""",96,,609,1,,char[2]
+16255,LITERAL,1,,"""param""",19,,622,1,,char[6]
+16269,LITERAL,1,,"""filter""",24,,626,1,,char[7]
+16339,LITERAL,1,,"""Could not create the TriggeringPolicy. Reported error follows.""",29,,649,1,,char[63]
+16342,LITERAL,-1,,0,10,,651,1,,int
+16359,LITERAL,1,,"""class""",72,,663,1,,char[6]
+16367,LITERAL,1,,"""Parsing rolling policy of class: \""""",28,,664,1,,char[35]
+16370,LITERAL,1,,"""\""""",93,,664,1,,char[2]
+16423,LITERAL,1,,"""param""",19,,678,1,,char[6]
+16443,LITERAL,1,,"""Could not create the RollingPolicy. Reported error follows.""",29,,689,1,,char[60]
+16446,LITERAL,-1,,0,10,,691,1,,int
+16469,LITERAL,1,,"""root""",28,,709,1,,char[5]
+16478,LITERAL,1,,"""value""",62,,712,1,,char[6]
+16488,LITERAL,1,,"""Level value for """,28,,713,1,,char[17]
+16491,LITERAL,1,,""" is [""",75,,713,1,,char[6]
+16494,LITERAL,1,,"""].""",109,,713,1,,char[3]
+16503,LITERAL,1,,"""INHERITED""",59,,715,1,,char[10]
+16505,LITERAL,1,,"""inherited""",85,,715,1,,char[10]
+16512,LITERAL,1,,"""NULL""",59,,716,1,,char[5]
+16514,LITERAL,1,,"""null""",80,,716,1,,char[5]
+16524,LITERAL,1,,"""Root level cannot be inherited. Ignoring directive.""",30,,720,1,,char[52]
+16531,LITERAL,1,,0,21,,724,2,,int
+16542,LITERAL,1,,"""class""",64,,729,1,,char[6]
+16571,LITERAL,1,,"""Desired Level sub-class: [""",30,,737,1,,char[27]
+16574,LITERAL,1,,"""]""",86,,737,1,,char[2]
+16608,LITERAL,1,,"""Could not create level [""",18,,749,1,,char[25]
+16611,LITERAL,1,,"""]. Reported error follows.""",18,,750,1,,char[27]
+16621,LITERAL,1,,"""Could not create level [""",18,,758,1,,char[25]
+16632,LITERAL,1,,""" level set to """,41,,765,1,,char[15]
+16656,LITERAL,1,,"""name""",55,,774,1,,char[5]
+16665,LITERAL,1,,"""value""",56,,775,1,,char[6]
+16687,LITERAL,1,,true,29,,782,2,,bool
+16696,LITERAL,1,,"""DOMConfigurator configuring file """,28,,784,1,,char[34]
+16710,LITERAL,1,,"""...""",25,,786,1,,char[4]
+16749,LITERAL,1,,"""Could not read configuration file [""",30,,801,1,,char[36]
+16763,LITERAL,1,,"""]. """,27,,803,1,,char[4]
+16802,LITERAL,1,,"""Loading configuration file [""",36,,814,1,,char[29]
+16808,LITERAL,1,,"""].""",40,,815,1,,char[3]
+16826,LITERAL,5,,2000,62,,818,5,,int
+16837,LITERAL,1,,"""Error parsing file [""",31,,824,1,,char[21]
+16851,LITERAL,1,,"""], """,28,,826,1,,char[4]
+17015,LITERAL,1,,"""log4j:configuration""",25,,1000,1,,char[20]
+17022,LITERAL,1,,"""configuration""",26,,1002,1,,char[14]
+17031,LITERAL,1,,"""DOM element is - not a <configuration> element.""",30,,1011,1,,char[48]
+17042,LITERAL,1,,"""debug""",67,,1016,1,,char[6]
+17046,LITERAL,1,,"""NULL""",59,,1018,1,,char[5]
+17054,LITERAL,1,,"""debug attribute= \""""",28,,1019,1,,char[19]
+17057,LITERAL,1,,"""\"".""",79,,1019,1,,char[3]
+17081,LITERAL,2,,true,72,,1025,3,,bool
+17089,LITERAL,1,,"""Ignoring internalDebug attribute.""",29,,1029,1,,char[34]
+17099,LITERAL,1,,"""configDebug""",65,,1033,1,,char[12]
+17119,LITERAL,1,,"""The \""configDebug\"" attribute is deprecated.""",28,,1037,1,,char[43]
+17125,LITERAL,1,,"""Use the \""internalDebug\"" attribute instead.""",28,,1038,1,,char[43]
+17135,LITERAL,2,,true,70,,1039,3,,bool
+17145,LITERAL,1,,"""threshold""",68,,1042,1,,char[10]
+17153,LITERAL,1,,"""Threshold =\""""",28,,1043,1,,char[13]
+17156,LITERAL,1,,"""\"".""",74,,1043,1,,char[3]
+17187,LITERAL,1,,"""threadConfiguration""",73,,1050,1,,char[20]
+17206,LITERAL,1,,"""NoConfiguration""",41,,1054,1,,char[16]
+17223,LITERAL,1,,"""BlockSignalsOnly""",46,,1058,1,,char[17]
+17240,LITERAL,1,,"""NameThreadOnly""",46,,1062,1,,char[15]
+17257,LITERAL,1,,"""BlockSignalsAndNameThread""",46,,1066,1,,char[26]
+17293,LITERAL,1,,"""categoryFactory""",18,,1080,1,,char[16]
+17324,LITERAL,1,,"""category""",18,,1092,1,,char[9]
+17329,LITERAL,1,,"""logger""",41,,1092,1,,char[7]
+17344,LITERAL,1,,"""root""",23,,1096,1,,char[5]
+17374,LITERAL,1,,"""Could not perform variable substitution.""",28,,1111,1,,char[41]
+17421,LITERAL,1,,2000,63,,1130,1,,int
+17485,LITERAL,2,,0,13,,45,2,,int
+17499,LITERAL,2,,0,18,,55,2,,int
+17515,LITERAL,2,,0,18,,65,2,,int
+17531,LITERAL,2,,0,18,,75,2,,int
+17534,LITERAL,1,,this,10,,77,1,,ANY
+17568,LITERAL,1,,this,10,,103,1,,ANY
+17577,LITERAL,1,,"""RuntimeException: return code = """,26,,108,1,,char[33]
+17610,LITERAL,1,,this,10,,127,1,,ANY
+17633,LITERAL,1,,this,10,,143,1,,ANY
+17665,LITERAL,1,,this,10,,170,1,,ANY
+17675,LITERAL,1,,"""IO Exception : status code = """,26,,176,1,,char[30]
+17689,LITERAL,1,,"""(""",23,,179,1,,char[2]
+17712,LITERAL,1,,""")""",23,,184,1,,char[2]
+17737,LITERAL,1,,this,10,,203,1,,ANY
+17746,LITERAL,1,,"""MissingResourceException: resource key = \""""",26,,208,1,,char[43]
+17757,LITERAL,1,,"""\"".""",23,,210,1,,char[3]
+17782,LITERAL,1,,this,10,,227,1,,ANY
+17790,LITERAL,1,,"""Pool exception""",21,,232,1,,char[15]
+17813,LITERAL,1,,this,10,,249,1,,ANY
+17821,LITERAL,1,,"""Transcoder exception""",21,,254,1,,char[21]
+17848,LITERAL,1,,this,10,,275,1,,ANY
+17857,LITERAL,1,,"""InterruptedException: stat = """,26,,280,1,,char[30]
+17895,LITERAL,1,,this,10,,304,1,,ANY
+17904,LITERAL,1,,"""Thread exception: stat = """,26,,309,1,,char[26]
+17937,LITERAL,1,,this,10,,328,1,,ANY
+17960,LITERAL,1,,this,10,,344,1,,ANY
+17983,LITERAL,1,,this,10,,361,1,,ANY
+17992,LITERAL,1,,"""Class not found: """,26,,366,1,,char[18]
+18021,LITERAL,1,,this,10,,385,1,,ANY
+18043,LITERAL,1,,this,10,,402,1,,ANY
+18071,LITERAL,1,,this,10,,421,1,,ANY
+18094,LITERAL,1,,this,10,,436,1,,ANY
+18116,LITERAL,1,,this,10,,451,1,,ANY
+18139,LITERAL,1,,this,10,,466,1,,ANY
+18162,LITERAL,1,,this,10,,481,1,,ANY
+18184,LITERAL,1,,this,10,,497,1,,ANY
+18236,LITERAL,1,,"""FB: Adding logger [""",41,,51,1,,char[20]
+18242,LITERAL,1,,"""].""",37,,52,1,,char[3]
+18261,LITERAL,4,,0,31,,60,4,,int
+18278,LITERAL,1,,"""FB: The following error reported: """,41,,67,1,,char[35]
+18286,LITERAL,1,,"""FB: INITIATING FALLBACK PROCEDURE.""",28,,69,1,,char[35]
+18330,LITERAL,1,,"""FB: Searching for [""",42,,81,1,,char[20]
+18336,LITERAL,1,,"""] in logger [""",45,,82,1,,char[14]
+18342,LITERAL,1,,"""].""",33,,83,1,,char[3]
+18356,LITERAL,1,,"""FB: Replacing [""",42,,84,1,,char[16]
+18362,LITERAL,1,,"""] by [""",45,,85,1,,char[7]
+18368,LITERAL,1,,"""] in logger [""",44,,86,1,,char[14]
+18374,LITERAL,1,,"""].""",33,,87,1,,char[3]
+18390,LITERAL,1,,"""FB: Adding appender [""",42,,89,1,,char[22]
+18396,LITERAL,1,,"""] to logger """,44,,90,1,,char[13]
+18420,LITERAL,1,,"""FB: Setting primary appender to [""",41,,98,1,,char[34]
+18426,LITERAL,1,,"""].""",39,,99,1,,char[3]
+18446,LITERAL,1,,"""FB: Setting backup appender to [""",41,,105,1,,char[33]
+18452,LITERAL,1,,"""].""",38,,106,1,,char[3]
+18545,LITERAL,2,,0,13,,59,2,,int
+18591,LITERAL,1,,this,6,,124,1,,ANY
+18597,LITERAL,1,,this,11,,126,1,,ANY
+18620,LITERAL,1,,this,10,,132,1,,ANY
+18655,LITERAL,1,,this,10,,153,1,,ANY
+18664,LITERAL,1,,0x2F,30,,158,1,,int
+18665,LITERAL,2,,0x5C,36,,158,2,,int
+18666,LITERAL,3,,0,42,,158,3,,int
+18693,LITERAL,2,,1,42,,163,2,,int
+18780,LITERAL,3,,0,4,,199,3,,int
+18803,LITERAL,2,,0,28,,205,2,,int
+18811,LITERAL,2,,'\\',13,,207,2,,char
+18816,LITERAL,2,,'/',9,,209,2,,char
+18897,LITERAL,-1,,0,9,,243,1,,int
+18927,LITERAL,-1,,0,9,,258,1,,int
+19047,LITERAL,1,,'/',65,,307,1,,char
+19058,LITERAL,1,,'\\',64,,308,1,,char
+19095,LITERAL,2,,0,48,,324,2,,int
+19104,LITERAL,2,,0,31,,326,3,,int
+19344,LITERAL,1,,false,21,,110,1,,bool
+19359,LITERAL,1,,"""FILE""",57,,117,1,,char[5]
+19361,LITERAL,1,,"""file""",78,,117,1,,char[5]
+19368,LITERAL,1,,"""FILENAME""",57,,118,1,,char[9]
+19370,LITERAL,1,,"""filename""",82,,118,1,,char[9]
+19413,LITERAL,1,,"""APPEND""",62,,123,1,,char[7]
+19415,LITERAL,1,,"""append""",85,,123,1,,char[7]
+19452,LITERAL,2,,true,57,,126,3,,bool
+19462,LITERAL,1,,"""BUFFEREDIO""",62,,128,1,,char[11]
+19464,LITERAL,1,,"""bufferedio""",89,,128,1,,char[11]
+19501,LITERAL,2,,false,57,,131,3,,bool
+19511,LITERAL,1,,"""IMMEDIATEFLUSH""",62,,133,1,,char[15]
+19513,LITERAL,1,,"""immediateflush""",93,,133,1,,char[15]
+19551,LITERAL,2,,false,58,,136,3,,bool
+19561,LITERAL,1,,"""BUFFERSIZE""",62,,138,1,,char[11]
+19563,LITERAL,1,,"""buffersize""",89,,138,1,,char[11]
+19601,LITERAL,1,,8,58,,141,1,,int
+19602,LITERAL,2,,1024,62,,141,2,,int
+19645,LITERAL,2,,0,15,,157,2,,int
+19712,LITERAL,1,,"""setFile(""",30,,168,1,,char[9]
+19731,LITERAL,1,,1,15,,170,2,,int
+19734,LITERAL,2,,0x2C,28,,170,2,,int
+19755,LITERAL,1,,""") call failed.""",27,,172,1,,char[15]
+19786,LITERAL,1,,"""File option not set for appender [""",39,,179,1,,char[35]
+19798,LITERAL,1,,"""].""",33,,180,1,,char[3]
+19804,LITERAL,1,,"""Are you using FileAppender instead of ConsoleAppender?""",28,,181,1,,char[55]
+19808,LITERAL,2,,0,16,,184,2,,int
+19823,LITERAL,2,,0x5C,22,,204,2,,int
+19852,LITERAL,2,,0,32,,212,2,,int
+19862,LITERAL,2,,1,40,,213,2,,int
+19870,LITERAL,2,,1,16,,219,2,,int
+19878,LITERAL,2,,1,18,,221,3,,int
+19884,LITERAL,2,,0,14,,224,2,,int
+19908,LITERAL,1,,false,21,,275,1,,bool
+19913,LITERAL,2,,false,18,,280,2,,bool
+19921,LITERAL,1,,"""utf-16""",16,,283,1,,char[7]
+19923,LITERAL,1,,"""UTF-16""",39,,283,1,,char[7]
+19946,LITERAL,2,,true,15,,296,2,,bool
+20019,LITERAL,2,,0xFE,25,,336,2,,int
+20022,LITERAL,2,,0xFF,38,,336,2,,int
+20026,LITERAL,2,,2,23,,337,2,,int
+20205,LITERAL,2,,0,24,,30,2,,int
+20219,LITERAL,1,,"""yyyy-MM-dd""",36,,33,1,,char[11]
+20430,LITERAL,1,,1,16,,111,1,,int
+20607,LITERAL,2,,0,24,,71,2,,int
+20703,LITERAL,1,,1,22,,113,1,,int
+20728,LITERAL,2,,0,18,,120,2,,int
+20859,LITERAL,2,,60000,36,,31,2,,int
+20911,LITERAL,1,,"""Stopping file watchdog""",28,,75,1,,char[23]
+20916,LITERAL,2,,0xFFFF,24,,76,2,,int
+20957,LITERAL,1,,"""Checking [""",28,,92,1,,char[11]
+20969,LITERAL,1,,"""]""",21,,94,1,,char[2]
+21001,LITERAL,1,,"""[""",43,,102,1,,char[2]
+21009,LITERAL,1,,"""] does not exist.""",19,,104,1,,char[18]
+21014,LITERAL,2,,true,28,,105,2,,bool
+21044,LITERAL,2,,false,28,,116,2,,bool
+21052,LITERAL,1,,"""Checking [""",28,,123,1,,char[11]
+21064,LITERAL,1,,"""] at """,21,,125,1,,char[6]
+21081,LITERAL,1,,""" ms interval""",21,,127,1,,char[13]
+21129,LITERAL,2,,this,45,,134,3,,ANY
+21135,LITERAL,1,,"""Stop checking [""",29,,138,1,,char[16]
+21147,LITERAL,1,,"""]""",22,,140,1,,char[2]
+21171,LITERAL,2,,0,25,,149,2,,int
+21184,LITERAL,1,,"""FileWatchdog""",72,,150,1,,char[13]
+21189,LITERAL,3,,this,109,,150,4,,ANY
+21199,LITERAL,2,,0xFFFF,32,,156,2,,int
+21303,LITERAL,-1,,false,10,,60,1,,bool
+21334,LITERAL,-1,,false,12,,68,1,,bool
+21340,LITERAL,-1,,true,12,,71,1,,bool
+21347,LITERAL,-1,,true,9,,78,1,,bool
+21489,LITERAL,2,,true,39,,50,2,,bool
+21547,LITERAL,1,,"""MININDEX""",16,,76,1,,char[9]
+21549,LITERAL,1,,"""minindex""",16,,77,1,,char[9]
+21567,LITERAL,2,,1,50,,79,3,,int
+21577,LITERAL,1,,"""MAXINDEX""",16,,82,1,,char[9]
+21579,LITERAL,1,,"""maxindex""",16,,83,1,,char[9]
+21597,LITERAL,2,,7,50,,85,3,,int
+21607,LITERAL,1,,"""THROWIOEXCEPTIONONFORKFAILURE""",16,,88,1,,char[30]
+21609,LITERAL,1,,"""throwioexceptiononforkfailure""",16,,89,1,,char[30]
+21627,LITERAL,2,,true,75,,91,3,,bool
+21674,LITERAL,1,,"""MaxIndex  cannot be smaller than MinIndex.""",16,,109,1,,char[43]
+21726,LITERAL,1,,"""Large window sizes are not allowed.""",28,,115,1,,char[36]
+21782,LITERAL,2,,false,29,,136,2,,bool
+21789,LITERAL,2,,0,35,,138,2,,int
+21802,LITERAL,2,,true,30,,140,2,,bool
+21880,LITERAL,2,,0,23,,167,2,,int
+21977,LITERAL,1,,""".gz""",51,,198,1,,char[4]
+21988,LITERAL,2,,3,37,,200,2,,int
+22010,LITERAL,3,,true,6,,204,3,,bool
+22037,LITERAL,1,,""".zip""",56,,208,1,,char[5]
+22048,LITERAL,2,,4,37,,210,2,,int
+22070,LITERAL,3,,true,6,,214,3,,bool
+22109,LITERAL,3,,false,5,,222,3,,bool
+22166,LITERAL,2,,0,21,,259,2,,int
+22203,LITERAL,2,,3,49,,268,2,,int
+22204,LITERAL,2,,3,52,,268,3,,int
+22206,LITERAL,1,,""".gz""",67,,268,1,,char[4]
+22207,LITERAL,2,,0,78,,268,2,,int
+22211,LITERAL,2,,3,18,,270,2,,int
+22225,LITERAL,2,,4,54,,272,2,,int
+22226,LITERAL,2,,4,57,,272,3,,int
+22228,LITERAL,1,,""".zip""",72,,272,1,,char[5]
+22229,LITERAL,2,,0,84,,272,2,,int
+22233,LITERAL,2,,4,18,,274,2,,int
+22261,LITERAL,1,,0,43,,282,2,,int
+22276,LITERAL,2,,false,17,,284,2,,bool
+22288,LITERAL,2,,0,22,,287,2,,int
+22320,LITERAL,2,,true,14,,300,2,,bool
+22338,LITERAL,-1,,false,13,,314,1,,bool
+22362,LITERAL,2,,1,40,,324,2,,int
+22382,LITERAL,1,,0,26,,333,2,,int
+22408,LITERAL,3,,true,94,,336,3,,bool
+22445,LITERAL,-1,,false,12,,357,1,,bool
+22452,LITERAL,1,,"""Exception during purge in RollingFileAppender""",29,,362,1,,char[46]
+22454,LITERAL,-1,,false,11,,364,1,,bool
+22456,LITERAL,-1,,true,9,,368,1,,bool
+22463,LITERAL,1,,"""i""",2,,378,1,,char[2]
+22475,LITERAL,1,,"""i""",2,,378,1,,char[2]
+22482,LITERAL,1,,"""index""",2,,379,1,,char[6]
+22494,LITERAL,1,,"""index""",2,,379,1,,char[6]
+22592,LITERAL,1,,"""CONVERSIONPATTERN""",16,,76,1,,char[18]
+22594,LITERAL,1,,"""conversionpattern""",16,,77,1,,char[18]
+22618,LITERAL,2,,2,70,,85,2,,int
+22648,LITERAL,1,,"""{}({})""",34,,93,2,,char[7]
+22732,LITERAL,1,,"""d""",17,,117,2,,char[2]
+22741,LITERAL,1,,"""c""",17,,118,2,,char[2]
+22747,LITERAL,1,,"""logger""",17,,119,2,,char[7]
+22753,LITERAL,1,,"""f""",17,,120,2,,char[2]
+22765,LITERAL,1,,"""shortfilename""",17,,121,2,,char[14]
+22777,LITERAL,1,,"""F""",17,,122,2,,char[2]
+22789,LITERAL,1,,"""filename""",17,,123,2,,char[9]
+22801,LITERAL,1,,"""l""",17,,124,2,,char[2]
+22807,LITERAL,1,,"""location""",17,,125,2,,char[9]
+22813,LITERAL,1,,"""L""",17,,126,2,,char[2]
+22825,LITERAL,1,,"""line""",17,,127,2,,char[5]
+22837,LITERAL,1,,"""m""",17,,128,2,,char[2]
+22843,LITERAL,1,,"""message""",17,,129,2,,char[8]
+22849,LITERAL,1,,"""M""",17,,130,2,,char[2]
+22861,LITERAL,1,,"""method""",17,,131,2,,char[7]
+22873,LITERAL,1,,"""n""",17,,132,2,,char[2]
+22879,LITERAL,1,,"""newline""",17,,133,2,,char[8]
+22885,LITERAL,1,,"""p""",17,,134,2,,char[2]
+22891,LITERAL,1,,"""level""",17,,135,2,,char[6]
+22897,LITERAL,1,,"""r""",17,,136,2,,char[2]
+22906,LITERAL,1,,"""t""",17,,137,2,,char[2]
+22912,LITERAL,1,,"""thread""",17,,138,2,,char[7]
+22918,LITERAL,1,,"""T""",17,,139,2,,char[2]
+22924,LITERAL,1,,"""threadname""",17,,140,2,,char[11]
+22930,LITERAL,1,,"""x""",17,,141,2,,char[2]
+22936,LITERAL,1,,"""ndc""",17,,142,2,,char[4]
+22988,LITERAL,1,,false,84,,70,1,,bool
+22989,LITERAL,2,,0,91,,70,2,,int
+23064,LITERAL,2,,0x20,59,,93,2,,int
+23077,LITERAL,3,,0x20,61,,97,4,,int
+23157,LITERAL,1,,1,20,,50,2,,int
+23160,LITERAL,2,,0x28,33,,50,2,,int
+23178,LITERAL,1,,1,20,,54,2,,int
+23181,LITERAL,2,,0x29,33,,54,2,,int
+23219,LITERAL,2,,true,39,,42,2,,bool
+23397,LITERAL,1,,true,35,,120,2,,bool
+23406,LITERAL,1,,4,24,,123,1,,int
+23413,LITERAL,2,,0,11,,124,2,,int
+23419,LITERAL,2,,"""gzip""",15,,125,2,,char[5]
+23425,LITERAL,2,,"""-c""",15,,126,2,,char[3]
+23461,LITERAL,2,,"""gzip""",32,,131,2,,char[5]
+23509,LITERAL,1,,"""Failed to fork gzip during log rotation; leaving log file uncompressed""",29,,146,1,,char[71]
+23524,LITERAL,1,,"""Failed to close abandoned .gz file; ignoring""",30,,150,1,,char[45]
+23526,LITERAL,-1,,true,11,,152,1,,bool
+23558,LITERAL,1,,false,35,,163,2,,bool
+23586,LITERAL,-1,,true,10,,170,1,,bool
+23588,LITERAL,-1,,false,9,,173,1,,bool
+23644,LITERAL,2,,'0',28,,42,2,,char
+23648,LITERAL,2,,' ',34,,43,2,,char
+23664,LITERAL,2,,0,24,,50,2,,int
+23670,LITERAL,2,,16,51,,50,2,,int
+23675,LITERAL,2,,0,16,,51,2,,int
+23693,LITERAL,1,,8,36,,56,2,,int
+23710,LITERAL,1,,0,122,,56,2,,int
+23718,LITERAL,1,,0,24,,58,2,,int
+23720,LITERAL,1,,"""  """,42,,58,1,,char[3]
+23726,LITERAL,2,,0,18,,61,2,,int
+23729,LITERAL,2,,8,28,,61,2,,int
+23743,LITERAL,1,,"""  """,28,,63,1,,char[3]
+23747,LITERAL,2,,8,16,,64,2,,int
+23752,LITERAL,1,,""" """,29,,65,1,,char[2]
+23767,LITERAL,1,,2,37,,70,2,,int
+23790,LITERAL,1,,0,158,,70,2,,int
+23801,LITERAL,2,,8,15,,72,2,,int
+23806,LITERAL,1,,""" """,28,,73,1,,char[2]
+23810,LITERAL,1,,""" """,26,,77,1,,char[2]
+23816,LITERAL,2,,8,18,,80,2,,int
+23819,LITERAL,2,,16,28,,80,2,,int
+23833,LITERAL,1,,"""  """,28,,82,1,,char[3]
+23837,LITERAL,2,,15,16,,83,2,,int
+23842,LITERAL,1,,""" """,29,,84,1,,char[2]
+23857,LITERAL,1,,2,37,,89,2,,int
+23880,LITERAL,1,,0,158,,89,2,,int
+23884,LITERAL,2,,15,15,,90,2,,int
+23889,LITERAL,1,,""" """,28,,91,1,,char[2]
+23893,LITERAL,1,,"""  |""",26,,96,1,,char[4]
+23899,LITERAL,2,,0,18,,97,2,,int
+23902,LITERAL,2,,16,28,,97,2,,int
+23941,LITERAL,1,,""".""",28,,105,1,,char[2]
+23945,LITERAL,1,,"""|""",26,,108,1,,char[2]
+23970,LITERAL,2,,0,16,,495,2,,int
+24172,LITERAL,1,,"""Ignoring attempt to add an existent listener.""",28,,104,1,,char[46]
+24266,LITERAL,2,,false,21,,130,2,,bool
+24290,LITERAL,2,,true,38,,134,2,,bool
+24303,LITERAL,1,,"""No appender could be found for logger (""",41,,140,1,,char[40]
+24309,LITERAL,1,,""").""",38,,141,1,,char[3]
+24315,LITERAL,1,,"""Please initialize the log4cxx system properly.""",28,,142,1,,char[47]
+24369,LITERAL,2,,0,11,,165,2,,int
+24397,LITERAL,2,,0,40,,174,3,,int
+24401,LITERAL,2,,0,11,,176,2,,int
+24416,LITERAL,1,,"""No level could be found named \""""",41,,182,1,,char[32]
+24419,LITERAL,1,,"""\"".""",29,,183,1,,char[3]
+24451,LITERAL,2,,true,24,,194,2,,bool
+24459,LITERAL,1,,true,16,,200,1,,bool
+24670,LITERAL,1,,this,24,,262,2,,ANY
+24811,LITERAL,2,,this,53,,299,2,,ANY
+24855,LITERAL,2,,true,24,,316,2,,bool
+24893,LITERAL,1,,0,35,,327,2,,int
+24939,LITERAL,1,,0,22,,339,2,,int
+24944,LITERAL,1,,true,27,,340,2,,bool
+24949,LITERAL,1,,0,31,,341,2,,int
+24975,LITERAL,2,,false,23,,357,2,,bool
+25088,LITERAL,2,,false,21,,386,2,,bool
+25098,LITERAL,1,,0x2E,36,,390,2,,int
+25101,LITERAL,2,,1,61,,390,2,,int
+25110,LITERAL,2,,0,35,,391,2,,int
+25117,LITERAL,1,,0x2E,25,,392,2,,int
+25120,LITERAL,2,,1,45,,392,2,,int
+25129,LITERAL,1,,0,34,,394,2,,int
+25153,LITERAL,2,,true,18,,400,2,,bool
+25195,LITERAL,1,,1,24,,414,1,,int
+25423,LITERAL,2,,false,16,,503,2,,bool
+25463,LITERAL,1,,1,24,,508,1,,int
+25495,LITERAL,1,,0,40,,514,1,,int
+25533,LITERAL,2,,true,12,,521,2,,bool
+25592,LITERAL,2,,2,70,,60,2,,int
+25610,LITERAL,1,,"""TITLE""",16,,71,1,,char[6]
+25612,LITERAL,1,,"""title""",38,,71,1,,char[6]
+25625,LITERAL,1,,"""LOCATIONINFO""",16,,76,1,,char[13]
+25627,LITERAL,1,,"""locationinfo""",45,,76,1,,char[13]
+25635,LITERAL,2,,false,53,,78,3,,bool
+25642,LITERAL,2,,2,71,,79,2,,int
+25675,LITERAL,1,,"""<tr>""",28,,89,1,,char[5]
+25686,LITERAL,1,,"""<td>""",28,,91,1,,char[5]
+25704,LITERAL,1,,"""</td>""",28,,96,1,,char[6]
+25715,LITERAL,1,,"""<td title=\""""",28,,99,1,,char[12]
+25732,LITERAL,1,,""" thread\"">""",28,,102,1,,char[10]
+25743,LITERAL,1,,"""</td>""",28,,104,1,,char[6]
+25754,LITERAL,1,,"""<td title=\""Level\"">""",28,,107,1,,char[19]
+25773,LITERAL,1,,"""<font color=\""#339933\"">""",29,,111,1,,char[23]
+25790,LITERAL,1,,"""</font>""",29,,113,1,,char[8]
+25811,LITERAL,1,,"""<font color=\""#993300\""><strong>""",29,,117,1,,char[31]
+25828,LITERAL,1,,"""</strong></font>""",29,,119,1,,char[17]
+25847,LITERAL,1,,"""</td>""",28,,126,1,,char[6]
+25858,LITERAL,1,,"""<td title=\""""",28,,129,1,,char[12]
+25872,LITERAL,1,,""" logger\"">""",28,,131,1,,char[10]
+25887,LITERAL,1,,"""</td>""",28,,133,1,,char[6]
+25903,LITERAL,1,,"""<td>""",29,,138,1,,char[5]
+25927,LITERAL,1,,1,17,,142,2,,int
+25930,LITERAL,2,,0x3A,30,,142,2,,int
+25944,LITERAL,2,,0,15,,145,2,,int
+25958,LITERAL,1,,"""</td>""",29,,150,1,,char[6]
+25969,LITERAL,1,,"""<td title=\""Message\"">""",28,,154,1,,char[21]
+25984,LITERAL,1,,"""</td>""",28,,156,1,,char[6]
+25995,LITERAL,1,,"""</tr>""",28,,158,1,,char[6]
+26014,LITERAL,1,,"""<tr><td bgcolor=\""#EEEEEE\"" """,29,,165,1,,char[27]
+26020,LITERAL,1,,"""style=\""font-size : xx-small;\"" colspan=\""6\"" """,29,,166,1,,char[43]
+26026,LITERAL,1,,"""title=\""Nested Diagnostic Context\"">""",29,,167,1,,char[35]
+26032,LITERAL,1,,"""NDC: """,29,,168,1,,char[6]
+26044,LITERAL,1,,"""</td></tr>""",29,,170,1,,char[11]
+26061,LITERAL,1,,"""<!DOCTYPE HTML PUBLIC """,28,,177,1,,char[23]
+26067,LITERAL,1,,"""\""-//W3C//DTD HTML 4.01 Transitional//EN\"" """,28,,178,1,,char[42]
+26073,LITERAL,1,,"""\""http://www.w3.org/TR/html4/loose.dtd\"">""",28,,179,1,,char[40]
+26084,LITERAL,1,,"""<html>""",28,,181,1,,char[7]
+26095,LITERAL,1,,"""<head>""",28,,183,1,,char[7]
+26106,LITERAL,1,,"""<title>""",28,,185,1,,char[8]
+26119,LITERAL,1,,"""</title>""",28,,187,1,,char[9]
+26130,LITERAL,1,,"""<style type=\""text/css\"">""",28,,189,1,,char[24]
+26141,LITERAL,1,,"""<!--""",28,,191,1,,char[5]
+26152,LITERAL,1,,"""body, table {font-family: arial,sans-serif; font-size: x-small;}""",28,,193,1,,char[65]
+26163,LITERAL,1,,"""th {background: #336699; color: #FFFFFF; text-align: left;}""",28,,195,1,,char[60]
+26174,LITERAL,1,,"""-->""",28,,197,1,,char[4]
+26185,LITERAL,1,,"""</style>""",28,,199,1,,char[9]
+26196,LITERAL,1,,"""</head>""",28,,201,1,,char[8]
+26207,LITERAL,1,,"""<body bgcolor=\""#FFFFFF\"" topmargin=\""6\"" leftmargin=\""6\"">""",28,,203,1,,char[54]
+26218,LITERAL,1,,"""<hr size=\""1\"" noshade>""",28,,205,1,,char[22]
+26229,LITERAL,1,,"""Log session start time """,28,,207,1,,char[24]
+26247,LITERAL,1,,"""<br>""",28,,211,1,,char[5]
+26258,LITERAL,1,,"""<br>""",28,,213,1,,char[5]
+26269,LITERAL,1,,"""<table cellspacing=\""0\"" cellpadding=\""4\"" border=\""1\"" bordercolor=\""#224466\"" width=\""100%\"">""",28,,215,1,,char[86]
+26280,LITERAL,1,,"""<tr>""",28,,217,1,,char[5]
+26291,LITERAL,1,,"""<th>Time</th>""",28,,219,1,,char[14]
+26302,LITERAL,1,,"""<th>Thread</th>""",28,,221,1,,char[16]
+26313,LITERAL,1,,"""<th>Level</th>""",28,,223,1,,char[15]
+26324,LITERAL,1,,"""<th>Logger</th>""",28,,225,1,,char[16]
+26340,LITERAL,1,,"""<th>File:Line</th>""",29,,230,1,,char[19]
+26351,LITERAL,1,,"""<th>Message</th>""",28,,234,1,,char[17]
+26362,LITERAL,1,,"""</tr>""",28,,236,1,,char[6]
+26379,LITERAL,1,,"""</table>""",28,,242,1,,char[9]
+26390,LITERAL,1,,"""<br>""",28,,244,1,,char[5]
+26401,LITERAL,1,,"""</body></html>""",28,,246,1,,char[15]
+26446,LITERAL,1,,"""text/html""",21,,271,1,,char[10]
+26452,LITERAL,-1,,false,9,,276,1,,bool
+26497,LITERAL,1,,this,10,,50,1,,ANY
+26530,LITERAL,2,,0,28,,72,2,,int
+26542,LITERAL,4,,0,14,,75,4,,int
+26543,LITERAL,5,,0,17,,75,5,,int
+26556,LITERAL,1,,"""Cannot get information about host: """,29,,79,1,,char[36]
+26616,LITERAL,3,,0,52,,104,3,,int
+26701,LITERAL,1,,"""127.0.0.1""",31,,149,1,,char[10]
+26709,LITERAL,1,,"""0.0.0.0""",31,,156,1,,char[8]
+26729,LITERAL,1,,"""/""",25,,166,1,,char[2]
+26799,LITERAL,2,,0,13,,46,2,,int
+26804,LITERAL,1,,"""in parameter may not be null.""",42,,48,1,,char[30]
+26814,LITERAL,2,,0,13,,55,2,,int
+26819,LITERAL,1,,"""in parameter may not be null.""",42,,57,1,,char[30]
+26823,LITERAL,2,,0,14,,60,2,,int
+26828,LITERAL,1,,"""dec parameter may not be null.""",42,,62,1,,char[31]
+26852,LITERAL,2,,4096,25,,77,2,,int
+26871,LITERAL,2,,0,34,,82,2,,int
+26891,LITERAL,2,,0,15,,87,2,,int
+26902,LITERAL,2,,0,25,,92,2,,int
+27127,LITERAL,1,,"""application/json""",21,,101,1,,char[17]
+27139,LITERAL,2,,2,70,,106,2,,int
+27153,LITERAL,1,,"""LOCATIONINFO""",16,,112,1,,char[13]
+27155,LITERAL,1,,"""locationinfo""",45,,112,1,,char[13]
+27163,LITERAL,2,,false,53,,114,3,,bool
+27173,LITERAL,1,,"""THREADINFO""",16,,117,1,,char[11]
+27175,LITERAL,1,,"""threadinfo""",43,,117,1,,char[11]
+27183,LITERAL,2,,false,51,,119,3,,bool
+27193,LITERAL,1,,"""PRETTYPRINT""",16,,122,1,,char[12]
+27195,LITERAL,1,,"""prettyprint""",44,,122,1,,char[12]
+27203,LITERAL,2,,false,52,,124,3,,bool
+27231,LITERAL,1,,"""{""",28,,133,1,,char[2]
+27242,LITERAL,1,,""" """,64,,134,1,,char[2]
+27258,LITERAL,1,,"""timestamp""",48,,141,1,,char[10]
+27264,LITERAL,1,,""": """,28,,142,1,,char[3]
+27286,LITERAL,1,,""",""",28,,146,1,,char[2]
+27297,LITERAL,1,,""" """,64,,147,1,,char[2]
+27318,LITERAL,1,,"""thread""",49,,155,1,,char[7]
+27324,LITERAL,1,,""": """,29,,156,1,,char[3]
+27336,LITERAL,1,,""",""",29,,158,1,,char[2]
+27347,LITERAL,1,,""" """,65,,159,1,,char[2]
+27363,LITERAL,1,,"""level""",48,,167,1,,char[6]
+27369,LITERAL,1,,""": """,28,,168,1,,char[3]
+27387,LITERAL,1,,""",""",28,,172,1,,char[2]
+27398,LITERAL,1,,""" """,64,,173,1,,char[2]
+27414,LITERAL,1,,"""logger""",48,,180,1,,char[7]
+27420,LITERAL,1,,""": """,28,,181,1,,char[3]
+27432,LITERAL,1,,""",""",28,,183,1,,char[2]
+27443,LITERAL,1,,""" """,64,,184,1,,char[2]
+27459,LITERAL,1,,"""message""",48,,191,1,,char[8]
+27465,LITERAL,1,,""": """,28,,192,1,,char[3]
+27488,LITERAL,1,,""",""",29,,200,1,,char[2]
+27499,LITERAL,1,,""" """,65,,201,1,,char[2]
+27514,LITERAL,1,,""" """,64,,205,1,,char[2]
+27520,LITERAL,1,,"""}""",28,,206,1,,char[2]
+27545,LITERAL,1,,0x22,16,,219,2,,int
+27550,LITERAL,1,,0x08,3,,223,1,,int
+27551,LITERAL,2,,0x09,3,,224,2,,int
+27552,LITERAL,3,,0x0a,3,,225,3,,int
+27553,LITERAL,4,,0x0c,3,,226,4,,int
+27554,LITERAL,5,,0x0d,3,,227,5,,int
+27555,LITERAL,6,,0x22,3,,228,6,,int
+27556,LITERAL,7,,0x5c,3,,229,7,,int
+27557,LITERAL,8,,0x00,3,,230,8,,int
+27561,LITERAL,2,,0,17,,233,2,,int
+27598,LITERAL,-1,,0x08,9,,245,2,,int
+27603,LITERAL,1,,0x5c,19,,247,2,,int
+27608,LITERAL,1,,'b',19,,248,2,,char
+27611,LITERAL,-1,,0x09,9,,251,7,,int
+27616,LITERAL,1,,0x5c,19,,253,2,,int
+27621,LITERAL,1,,'t',19,,254,2,,char
+27624,LITERAL,-1,,0x0a,9,,257,12,,int
+27629,LITERAL,1,,0x5c,19,,259,2,,int
+27634,LITERAL,1,,'n',19,,260,2,,char
+27637,LITERAL,-1,,0x0c,9,,263,17,,int
+27642,LITERAL,1,,0x5c,19,,265,2,,int
+27647,LITERAL,1,,'f',19,,266,2,,char
+27650,LITERAL,-1,,0x0d,9,,269,22,,int
+27655,LITERAL,1,,0x5c,19,,271,2,,int
+27660,LITERAL,1,,'r',19,,272,2,,char
+27663,LITERAL,-1,,0x22,9,,275,27,,int
+27668,LITERAL,1,,0x5c,19,,277,2,,int
+27673,LITERAL,1,,0x22,19,,278,2,,int
+27676,LITERAL,-1,,0x5c,9,,281,32,,int
+27681,LITERAL,1,,0x5c,19,,283,2,,int
+27686,LITERAL,1,,0x5c,19,,284,2,,int
+27701,LITERAL,2,,1,19,,292,2,,int
+27749,LITERAL,1,,0x22,16,,310,2,,int
+27775,LITERAL,1,,""",""",25,,323,1,,char[2]
+27786,LITERAL,1,,""" """,61,,324,1,,char[2]
+27802,LITERAL,1,,"""context_map""",45,,331,1,,char[12]
+27808,LITERAL,1,,""": {""",25,,332,1,,char[4]
+27819,LITERAL,1,,""" """,61,,333,1,,char[2]
+27859,LITERAL,1,,""": """,26,,344,1,,char[3]
+27875,LITERAL,2,,1,12,,350,2,,int
+27886,LITERAL,1,,""",""",27,,352,1,,char[2]
+27897,LITERAL,1,,""" """,63,,353,1,,char[2]
+27910,LITERAL,1,,""" """,63,,357,1,,char[2]
+27928,LITERAL,1,,"""}""",25,,366,1,,char[2]
+27950,LITERAL,1,,""",""",25,,379,1,,char[2]
+27961,LITERAL,1,,""" """,61,,380,1,,char[2]
+27977,LITERAL,1,,"""context_stack""",45,,387,1,,char[14]
+27983,LITERAL,1,,""": [""",25,,388,1,,char[4]
+27994,LITERAL,1,,""" """,61,,389,1,,char[2]
+28020,LITERAL,1,,""" """,61,,397,1,,char[2]
+28038,LITERAL,1,,"""]""",25,,404,1,,char[2]
+28061,LITERAL,1,,"""location_info""",45,,415,1,,char[14]
+28067,LITERAL,1,,""": {""",25,,416,1,,char[4]
+28078,LITERAL,1,,""" """,61,,417,1,,char[2]
+28101,LITERAL,1,,"""file""",45,,425,1,,char[5]
+28107,LITERAL,1,,""": """,25,,426,1,,char[3]
+28122,LITERAL,1,,""",""",25,,429,1,,char[2]
+28133,LITERAL,1,,""" """,61,,430,1,,char[2]
+28149,LITERAL,1,,"""line""",45,,437,1,,char[5]
+28155,LITERAL,1,,""": """,25,,438,1,,char[3]
+28175,LITERAL,1,,""",""",25,,442,1,,char[2]
+28186,LITERAL,1,,""" """,61,,443,1,,char[2]
+28202,LITERAL,1,,"""class""",45,,450,1,,char[6]
+28208,LITERAL,1,,""": """,25,,451,1,,char[3]
+28223,LITERAL,1,,""",""",25,,454,1,,char[2]
+28234,LITERAL,1,,""" """,61,,455,1,,char[2]
+28250,LITERAL,1,,"""method""",45,,462,1,,char[7]
+28256,LITERAL,1,,""": """,25,,463,1,,char[3]
+28276,LITERAL,1,,""" """,61,,466,1,,char[2]
+28294,LITERAL,1,,"""}""",25,,473,1,,char[2]
+28316,LITERAL,1,,"""text/plain""",21,,30,1,,char[11]
+28347,LITERAL,1,,"""example.logger""",17,,43,1,,char[15]
+28402,LITERAL,1,,"""FATAL""",95,,41,1,,char[6]
+28403,LITERAL,3,,0,105,,41,3,,int
+28425,LITERAL,1,,"""ERROR""",95,,47,1,,char[6]
+28426,LITERAL,3,,3,105,,47,3,,int
+28448,LITERAL,1,,"""WARN""",93,,53,1,,char[5]
+28449,LITERAL,3,,4,102,,53,3,,int
+28471,LITERAL,1,,"""INFO""",93,,59,1,,char[5]
+28472,LITERAL,3,,6,102,,59,3,,int
+28494,LITERAL,1,,"""DEBUG""",95,,65,1,,char[6]
+28495,LITERAL,3,,7,105,,65,3,,int
+28517,LITERAL,1,,"""TRACE""",95,,71,1,,char[6]
+28518,LITERAL,3,,7,105,,71,3,,int
+28540,LITERAL,1,,"""ALL""",91,,78,1,,char[4]
+28541,LITERAL,3,,7,99,,78,3,,int
+28688,LITERAL,2,,4,13,,220,2,,int
+28697,LITERAL,1,,"""INFO""",59,,222,1,,char[5]
+28699,LITERAL,1,,"""info""",80,,222,1,,char[5]
+28710,LITERAL,1,,"""WARN""",59,,227,1,,char[5]
+28712,LITERAL,1,,"""warn""",80,,227,1,,char[5]
+28721,LITERAL,2,,5,14,,234,2,,int
+28730,LITERAL,1,,"""DEBUG""",60,,236,1,,char[6]
+28732,LITERAL,1,,"""debug""",82,,236,1,,char[6]
+28743,LITERAL,1,,"""TRACE""",60,,241,1,,char[6]
+28745,LITERAL,1,,"""trace""",82,,241,1,,char[6]
+28756,LITERAL,1,,"""ERROR""",60,,246,1,,char[6]
+28758,LITERAL,1,,"""error""",82,,246,1,,char[6]
+28769,LITERAL,1,,"""FATAL""",60,,251,1,,char[6]
+28771,LITERAL,1,,"""fatal""",82,,251,1,,char[6]
+28780,LITERAL,2,,3,15,,258,2,,int
+28789,LITERAL,1,,"""OFF""",61,,260,1,,char[4]
+28791,LITERAL,1,,"""off""",81,,260,1,,char[4]
+28802,LITERAL,1,,"""ALL""",61,,265,1,,char[4]
+28804,LITERAL,1,,"""all""",81,,265,1,,char[4]
+28820,LITERAL,1,,this,19,,279,1,,ANY
+28835,LITERAL,1,,this,19,,284,1,,ANY
+28879,LITERAL,2,,true,24,,44,2,,bool
+28897,LITERAL,1,,"""LEVELTOMATCH""",16,,55,1,,char[13]
+28899,LITERAL,1,,"""leveltomatch""",45,,55,1,,char[13]
+28912,LITERAL,1,,"""ACCEPTONMATCH""",16,,60,1,,char[14]
+28914,LITERAL,1,,"""acceptonmatch""",46,,60,1,,char[14]
+29009,LITERAL,2,,0,28,,79,2,,int
+29180,LITERAL,1,,"""level trace""",24,,68,1,,char[12]
+29187,LITERAL,1,,"""level debug""",24,,71,1,,char[12]
+29194,LITERAL,1,,"""level info""",24,,74,1,,char[11]
+29201,LITERAL,1,,"""level warn""",24,,77,1,,char[11]
+29208,LITERAL,1,,"""level error""",24,,80,1,,char[12]
+29215,LITERAL,1,,"""level fatal""",24,,83,1,,char[12]
+29221,LITERAL,1,,"""level """,34,,86,1,,char[7]
+29231,LITERAL,1,,"""level""",21,,90,1,,char[6]
+29282,LITERAL,1,,"""LEVELMIN""",16,,61,1,,char[9]
+29284,LITERAL,1,,"""levelmin""",41,,61,1,,char[9]
+29321,LITERAL,1,,"""LEVELMAX""",16,,66,1,,char[9]
+29323,LITERAL,1,,"""levelmax""",41,,66,1,,char[9]
+29360,LITERAL,1,,"""ACCEPTONMATCH""",16,,71,1,,char[14]
+29362,LITERAL,1,,"""acceptonmatch""",46,,71,1,,char[14]
+29408,LITERAL,2,,0,24,,80,2,,int
+29445,LITERAL,2,,0,24,,86,2,,int
+29745,LITERAL,2,,1,26,,54,2,,int
+29749,LITERAL,2,,0,39,,54,2,,int
+29750,LITERAL,2,,0x20,45,,54,2,,int
+29911,LITERAL,-1,,0,9,,74,1,,int
+30003,LITERAL,2,,"""?""",38,,29,2,,char[2]
+30007,LITERAL,2,,"""?::?""",45,,30,2,,char[5]
+30052,LITERAL,1,,this,11,,86,1,,ANY
+30066,LITERAL,1,,1,16,,96,1,,int
+30099,LITERAL,1,,'(',29,,126,2,,char
+30121,LITERAL,1,,"""::""",30,,133,2,,char[3]
+30135,LITERAL,1,,0,13,,137,2,,int
+30138,LITERAL,2,,2,27,,137,2,,int
+30148,LITERAL,1,,' ',30,,141,2,,char
+30162,LITERAL,1,,0,14,,145,2,,int
+30165,LITERAL,2,,1,28,,145,2,,int
+30182,LITERAL,1,,'(',29,,156,2,,char
+30204,LITERAL,1,,"""::""",30,,163,2,,char[3]
+30226,LITERAL,1,,' ',38,,168,2,,char
+30240,LITERAL,1,,0,14,,172,2,,int
+30243,LITERAL,2,,1,28,,172,2,,int
+30250,LITERAL,1,,0,12,,178,2,,int
+30311,LITERAL,1,,""":""",36,,60,1,,char[2]
+30320,LITERAL,1,,"""ACCEPTONMATCH""",57,,61,1,,char[14]
+30322,LITERAL,1,,"""acceptonmatch""",87,,61,1,,char[14]
+30359,LITERAL,1,,"""OPERATOR""",62,,65,1,,char[9]
+30361,LITERAL,1,,"""operator""",87,,65,1,,char[9]
+30381,LITERAL,1,,"""AND""",74,,67,1,,char[4]
+30383,LITERAL,1,,"""and""",94,,67,1,,char[4]
+30384,LITERAL,2,,true,104,,67,2,,bool
+30385,LITERAL,3,,false,111,,67,3,,bool
+30395,LITERAL,1,,"""LINENUMBER""",62,,69,1,,char[11]
+30397,LITERAL,1,,"""linenumber""",89,,69,1,,char[11]
+30416,LITERAL,1,,1,53,,71,1,,int
+30426,LITERAL,1,,"""METHOD""",62,,73,1,,char[7]
+30428,LITERAL,1,,"""method""",85,,73,1,,char[7]
+30464,LITERAL,1,,1,27,,83,1,,int
+30494,LITERAL,1,,1,58,,89,1,,int
+30509,LITERAL,2,,0,88,,90,2,,int
+30518,LITERAL,2,,false,17,,94,2,,bool
+30564,LITERAL,2,,0,102,,96,2,,int
+30806,LITERAL,1,,this,29,,104,2,,ANY
+30865,LITERAL,1,,this,30,,122,2,,ANY
+30879,LITERAL,2,,0,15,,129,2,,int
+30885,LITERAL,2,,this,30,,131,2,,ANY
+30888,LITERAL,2,,0,13,,132,2,,int
+30929,LITERAL,2,,0,16,,145,2,,int
+30938,LITERAL,2,,this,50,,147,2,,ANY
+31174,LITERAL,2,,this,25,,232,2,,ANY
+31177,LITERAL,2,,0,36,,232,2,,int
+31196,LITERAL,2,,0,27,,234,2,,int
+31207,LITERAL,1,,"""No level specified for logger or ancestors.""",41,,240,1,,char[44]
+31233,LITERAL,2,,this,25,,258,2,,ANY
+31236,LITERAL,2,,0,36,,258,2,,int
+31255,LITERAL,2,,0,36,,260,2,,int
+31264,LITERAL,-1,,0,9,,267,1,,int
+31277,LITERAL,2,,0,12,,277,2,,int
+31300,LITERAL,1,,"""No resource is associated with key \""""",41,,289,1,,char[37]
+31303,LITERAL,1,,"""\"".""",23,,290,1,,char[3]
+31360,LITERAL,-1,,false,10,,319,1,,bool
+31391,LITERAL,-1,,false,10,,331,1,,bool
+31424,LITERAL,-1,,false,10,,343,1,,bool
+31452,LITERAL,-1,,false,10,,356,1,,bool
+31483,LITERAL,-1,,false,10,,368,1,,bool
+31514,LITERAL,-1,,false,10,,380,1,,bool
+31545,LITERAL,-1,,false,10,,392,1,,bool
+31638,LITERAL,1,,0,32,,458,1,,int
+31665,LITERAL,1,,1,32,,468,1,,int
+31669,LITERAL,2,,0,9,,469,2,,int
+31701,LITERAL,1,,2,32,,481,1,,int
+31705,LITERAL,2,,0,9,,482,2,,int
+31710,LITERAL,2,,1,9,,483,2,,int
+31746,LITERAL,1,,3,32,,496,1,,int
+31750,LITERAL,2,,0,9,,497,2,,int
+31755,LITERAL,2,,1,9,,498,2,,int
+31760,LITERAL,2,,2,9,,499,2,,int
+31801,LITERAL,1,,this,33,,511,2,,ANY
+31829,LITERAL,1,,this,32,,521,2,,ANY
+31862,LITERAL,2,,0,26,,535,2,,int
+31925,LITERAL,1,,this,24,,561,2,,ANY
+32348,LITERAL,1,,"""LOGGERTOMATCH""",16,,67,1,,char[14]
+32350,LITERAL,1,,"""loggertomatch""",46,,67,1,,char[14]
+32363,LITERAL,1,,"""ACCEPTONMATCH""",16,,72,1,,char[14]
+32365,LITERAL,1,,"""acceptonmatch""",46,,72,1,,char[14]
+32510,LITERAL,2,,0,24,,40,2,,int
+32716,LITERAL,2,,false,31,,213,2,,bool
+32746,LITERAL,-1,,true,10,,225,1,,bool
+32748,LITERAL,-1,,false,9,,228,1,,bool
+32761,LITERAL,2,,0,25,,235,2,,int
+32807,LITERAL,-1,,true,12,,244,1,,bool
+32826,LITERAL,2,,0,25,,257,2,,int
+32876,LITERAL,2,,0,15,,271,2,,int
+32925,LITERAL,2,,false,35,,289,2,,bool
+32936,LITERAL,2,,0,15,,293,2,,int
+32967,LITERAL,2,,0,28,,306,2,,int
+32970,LITERAL,-1,,false,10,,308,1,,bool
+32999,LITERAL,-1,,true,10,,316,1,,bool
+33001,LITERAL,-1,,false,9,,319,1,,bool
+33012,LITERAL,2,,0,28,,326,2,,int
+33052,LITERAL,2,,0,26,,350,2,,int
+33121,LITERAL,1,,"""0x00000000""",33,,382,1,,char[11]
+33132,LITERAL,1,,"""(noname)""",55,,392,1,,char[9]
+33158,LITERAL,2,,0,28,,441,2,,int
+33295,LITERAL,-1,,false,9,,57,1,,bool
+33330,LITERAL,2,,true,15,,41,2,,bool
+33346,LITERAL,1,,"""LOG4CXX_DEBUG""",74,,56,1,,char[14]
+33348,LITERAL,1,,"""false""",104,,56,1,,char[6]
+33358,LITERAL,2,,false,66,,57,3,,bool
+33679,LITERAL,1,,"""log4cxx: """,28,,161,1,,char[10]
+33689,LITERAL,1,,1,13,,164,2,,int
+33692,LITERAL,2,,0x0A,26,,164,2,,int
+33706,LITERAL,1,,"""log4cxx: """,28,,171,1,,char[10]
+33717,LITERAL,2,,0,13,,174,2,,int
+33732,LITERAL,1,,"""std::exception::what() == null""",26,,180,1,,char[31]
+33737,LITERAL,1,,1,13,,183,2,,int
+33740,LITERAL,2,,0x0A,26,,183,2,,int
+33810,LITERAL,2,,0,27,,45,2,,int
+33839,LITERAL,2,,0,28,,60,2,,int
+33849,LITERAL,1,,"""Attempted to reset the LoggerFactory without possessing the guard.""",46,,62,1,,char[67]
+33853,LITERAL,2,,0,18,,65,2,,int
+33858,LITERAL,1,,"""RepositorySelector must be non-null.""",46,,67,1,,char[37]
+34047,LITERAL,2,,false,16,,217,2,,bool
+34346,LITERAL,2,,true,12,,151,2,,bool
+34523,LITERAL,1,,this,12,,242,1,,ANY
+34526,LITERAL,1,,this,10,,243,1,,ANY
+34536,LITERAL,1,,this,10,,249,1,,ANY
+34546,LITERAL,1,,this,10,,255,1,,ANY
+34556,LITERAL,1,,this,10,,261,1,,ANY
+34569,LITERAL,1,,this,10,,267,1,,ANY
+34577,LITERAL,2,,0,16,,272,2,,int
+34597,LITERAL,2,,0,16,,285,2,,int
+34632,LITERAL,2,,0,16,,299,2,,int
+34657,LITERAL,2,,0,16,,312,2,,int
+34722,LITERAL,2,,true,13,,324,2,,bool
+34730,LITERAL,2,,0,16,,330,2,,int
+34773,LITERAL,-1,,false,9,,37,1,,bool
+34833,LITERAL,1,,"""ACCEPTONMATCH""",57,,54,1,,char[14]
+34835,LITERAL,1,,"""acceptonmatch""",87,,54,1,,char[14]
+34872,LITERAL,1,,"""OPERATOR""",62,,58,1,,char[9]
+34874,LITERAL,1,,"""operator""",87,,58,1,,char[9]
+34894,LITERAL,1,,"""AND""",74,,60,1,,char[4]
+34896,LITERAL,1,,"""and""",94,,60,1,,char[4]
+34897,LITERAL,2,,true,104,,60,2,,bool
+34898,LITERAL,3,,false,111,,60,3,,bool
+34955,LITERAL,2,,true,17,,76,2,,bool
+35015,LITERAL,2,,false,14,,85,2,,bool
+35020,LITERAL,2,,true,14,,89,2,,bool
+35280,LITERAL,2,,0,14,,59,2,,int
+35313,LITERAL,-1,,true,11,,68,1,,bool
+35319,LITERAL,-1,,false,9,,74,1,,bool
+35360,LITERAL,2,,0,14,,95,2,,int
+35399,LITERAL,-1,,true,11,,105,1,,bool
+35401,LITERAL,-1,,false,9,,109,1,,bool
+35440,LITERAL,2,,0,14,,131,2,,int
+35546,LITERAL,2,,true,16,,57,2,,bool
+35561,LITERAL,1,,"""{""",42,,60,1,,char[2]
+35563,LITERAL,1,,""",""",61,,60,1,,char[2]
+35575,LITERAL,1,,""":""",34,,62,1,,char[2]
+35591,LITERAL,2,,false,12,,66,2,,bool
+35601,LITERAL,1,,"""}""",34,,69,1,,char[2]
+35651,LITERAL,2,,1,33,,79,2,,int
+35652,LITERAL,2,,1,36,,79,3,,int
+35658,LITERAL,2,,2,28,,80,2,,int
+35701,LITERAL,1,,this,8,,54,1,,ANY
+35706,LITERAL,1,,this,4,,66,1,,ANY
+35716,LITERAL,1,,this,17,,68,1,,ANY
+35722,LITERAL,1,,this,4,,69,1,,ANY
+35730,LITERAL,1,,this,32,,69,1,,ANY
+35735,LITERAL,1,,this,4,,70,1,,ANY
+35742,LITERAL,1,,this,11,,72,1,,ANY
+35750,LITERAL,1,,this,7,,79,1,,ANY
+35755,LITERAL,1,,this,4,,81,1,,ANY
+35765,LITERAL,1,,this,27,,81,1,,ANY
+35771,LITERAL,1,,this,4,,82,1,,ANY
+35774,LITERAL,1,,0,24,,82,2,,int
+35778,LITERAL,1,,this,4,,83,1,,ANY
+35788,LITERAL,1,,this,4,,84,1,,ANY
+35793,LITERAL,1,,this,10,,86,1,,ANY
+35814,LITERAL,2,,0,24,,103,2,,int
+35833,LITERAL,1,,this,10,,112,1,,ANY
+35846,LITERAL,2,,0,19,,119,2,,int
+35850,LITERAL,2,,"""null""",15,,121,2,,char[5]
+35856,LITERAL,2,,0,24,,124,2,,int
+35875,LITERAL,1,,this,10,,133,1,,ANY
+35896,LITERAL,2,,0,24,,142,2,,int
+35904,LITERAL,1,,1,22,,144,2,,int
+35914,LITERAL,1,,1,22,,148,2,,int
+35926,LITERAL,1,,this,10,,152,1,,ANY
+35991,LITERAL,2,,0,28,,182,2,,int
+36001,LITERAL,1,,this,21,,187,1,,ANY
+36019,LITERAL,1,,this,28,,194,1,,ANY
+36033,LITERAL,1,,this,28,,198,1,,ANY
+36047,LITERAL,1,,this,28,,202,1,,ANY
+36061,LITERAL,1,,this,28,,206,1,,ANY
+36075,LITERAL,1,,this,28,,210,1,,ANY
+36089,LITERAL,1,,this,28,,214,1,,ANY
+36103,LITERAL,1,,this,28,,218,1,,ANY
+36117,LITERAL,1,,this,28,,222,1,,ANY
+36131,LITERAL,1,,this,28,,226,1,,ANY
+36145,LITERAL,1,,this,28,,230,1,,ANY
+36189,LITERAL,2,,0,34,,52,2,,int
+36217,LITERAL,2,,1,72,,55,2,,int
+36225,LITERAL,2,,1,29,,57,2,,int
+36432,LITERAL,1,,""".%i""",52,,93,1,,char[4]
+36698,LITERAL,2,,0,25,,157,2,,int
+36712,LITERAL,1,,"""Exception will initializing RollingFileAppender named """,27,,165,1,,char[55]
+36737,LITERAL,1,,"""flock: unlock failed""",29,,179,1,,char[21]
+36863,LITERAL,2,,true,26,,232,2,,bool
+36868,LITERAL,1,,'\0',36,,233,1,,char
+36873,LITERAL,1,,'\0',37,,234,1,,char
+36878,LITERAL,1,,'\0',32,,235,1,,char
+36893,LITERAL,1,,2048,58,,236,1,,int
+36896,LITERAL,1,,2048,73,,236,1,,int
+36915,LITERAL,1,,2048,59,,237,1,,int
+36918,LITERAL,1,,2048,74,,237,1,,int
+36946,LITERAL,1,,2048,21,,247,1,,int
+36947,LITERAL,3,,"""%u""",35,,247,3,,char[3]
+36973,LITERAL,2,,""".lock""",83,,252,2,,char[6]
+37006,LITERAL,1,,"""lockfile return error: open lockfile failed. """,33,,258,1,,char[46]
+37018,LITERAL,2,,false,22,,261,2,,bool
+37038,LITERAL,1,,"""apr_file_lock: lock failed. """,34,,270,1,,char[29]
+37050,LITERAL,2,,false,23,,273,2,,bool
+37078,LITERAL,1,,this,50,,279,2,,ANY
+37119,LITERAL,1,,"""Can't cast writer to FileOutputStream""",33,,291,1,,char[38]
+37121,LITERAL,-1,,false,13,,292,1,,bool
+37146,LITERAL,1,,"""apr_file_info_get failed""",31,,299,1,,char[25]
+37175,LITERAL,1,,"""apr_stat failed.""",31,,307,1,,char[17]
+37224,LITERAL,1,,this,70,,319,1,,ANY
+37228,LITERAL,1,,this,87,,319,1,,ANY
+37248,LITERAL,2,,true,23,,327,2,,bool
+37259,LITERAL,2,,false,19,,331,2,,bool
+37278,LITERAL,1,,"""Exception on rollover""",35,,339,1,,char[22]
+37308,LITERAL,3,,0,48,,342,4,,int
+37356,LITERAL,2,,0,30,,354,2,,int
+37410,LITERAL,2,,true,42,,374,2,,bool
+37466,LITERAL,2,,true,23,,388,2,,bool
+37477,LITERAL,2,,false,19,,392,2,,bool
+37496,LITERAL,1,,"""Exception during rollover""",35,,400,1,,char[26]
+37526,LITERAL,3,,0,48,,403,4,,int
+37572,LITERAL,2,,0,30,,415,2,,int
+37594,LITERAL,-1,,true,14,,433,1,,bool
+37601,LITERAL,1,,"""Exception during rollover""",31,,438,1,,char[26]
+37631,LITERAL,3,,0,44,,441,4,,int
+37639,LITERAL,-1,,false,9,,454,1,,bool
+37658,LITERAL,2,,true,69,,463,2,,bool
+37708,LITERAL,1,,this,4,,481,2,,ANY
+37735,LITERAL,1,,"""Exception during rollover attempt.""",29,,495,1,,char[35]
+37791,LITERAL,1,,"""Can't cast writer to FileOutputStream""",30,,509,1,,char[38]
+37817,LITERAL,1,,"""apr_file_info_get failed""",28,,517,1,,char[25]
+37845,LITERAL,1,,"""apr_stat failed. file:""",19,,524,1,,char[23]
+37953,LITERAL,1,,true,30,,567,2,,bool
+38002,LITERAL,2,,0,10,,627,2,,int
+38028,LITERAL,2,,0,15,,645,2,,int
+38070,LITERAL,2,,this,67,,670,2,,ANY
+38182,LITERAL,2,,1,46,,104,2,,int
+38191,LITERAL,2,,0,45,,106,2,,int
+38201,LITERAL,1,,0x2E,21,,108,2,,int
+38204,LITERAL,2,,1,43,,108,2,,int
+38234,LITERAL,2,,1,60,,116,2,,int
+38270,LITERAL,1,,this,12,,162,1,,ANY
+38284,LITERAL,1,,0x2E,44,,173,2,,int
+38326,LITERAL,2,,0x00,22,,182,2,,int
+38333,LITERAL,2,,1,27,,184,3,,int
+38361,LITERAL,2,,0,34,,240,2,,int
+38370,LITERAL,2,,1,62,,240,2,,int
+38400,LITERAL,2,,1,34,,250,2,,int
+38434,LITERAL,2,,0,25,,269,2,,int
+38449,LITERAL,2,,0,27,,275,2,,int
+38456,LITERAL,2,,0,28,,280,2,,int
+38470,LITERAL,2,,0x30,45,,283,2,,int
+38475,LITERAL,2,,0x39,22,,284,2,,int
+38511,LITERAL,2,,0,30,,300,2,,int
+38529,LITERAL,2,,0x2A,24,,306,2,,int
+38544,LITERAL,2,,0x30,26,,313,2,,int
+38549,LITERAL,2,,0x39,26,,314,2,,int
+38557,LITERAL,2,,0x30,33,,316,2,,int
+38564,LITERAL,2,,0,18,,321,2,,int
+38567,LITERAL,2,,0,15,,325,2,,int
+38584,LITERAL,2,,0x2E,21,,331,2,,int
+38588,LITERAL,2,,0,17,,333,2,,int
+38602,LITERAL,1,,0x2E,23,,338,2,,int
+38681,LITERAL,2,,0,23,,56,2,,int
+38690,LITERAL,2,,0,50,,58,2,,int
+38772,LITERAL,2,,0,14,,50,2,,int
+38810,LITERAL,2,,0,14,,67,2,,int
+38866,LITERAL,2,,0,14,,94,2,,int
+38892,LITERAL,-1,,true,11,,101,1,,bool
+38898,LITERAL,-1,,false,9,,107,1,,bool
+38906,LITERAL,2,,0,13,,112,2,,int
+38917,LITERAL,2,,0,14,,115,2,,int
+38933,LITERAL,2,,0,15,,119,2,,int
+38955,LITERAL,2,,0,14,,132,2,,int
+39002,LITERAL,2,,false,16,,152,2,,bool
+39013,LITERAL,2,,0,14,,155,2,,int
+39045,LITERAL,2,,true,13,,163,2,,bool
+39066,LITERAL,2,,0,14,,176,2,,int
+39109,LITERAL,2,,0,14,,195,2,,int
+39136,LITERAL,-1,,true,11,,202,1,,bool
+39142,LITERAL,-1,,false,9,,208,1,,bool
+39174,LITERAL,2,,true,15,,229,2,,bool
+39185,LITERAL,2,,0,14,,232,2,,int
+39262,LITERAL,1,,"""null""",33,,50,1,,char[5]
+39385,LITERAL,1,,""" - """,19,,90,2,,char[4]
+39390,LITERAL,1,,"""log4cxx built without ODBC support""",19,,110,2,,char[35]
+39426,LITERAL,1,,"""logger""",3,,156,1,,char[7]
+39438,LITERAL,1,,"""logger""",3,,156,1,,char[7]
+39443,LITERAL,1,,"""class""",3,,157,1,,char[6]
+39455,LITERAL,1,,"""class""",3,,157,1,,char[6]
+39460,LITERAL,1,,"""time""",3,,158,1,,char[5]
+39472,LITERAL,1,,"""time""",3,,158,1,,char[5]
+39477,LITERAL,1,,"""shortfilename""",3,,159,1,,char[14]
+39489,LITERAL,1,,"""shortfilename""",3,,159,1,,char[14]
+39494,LITERAL,1,,"""fullfilename""",3,,160,1,,char[13]
+39506,LITERAL,1,,"""fullfilename""",3,,160,1,,char[13]
+39511,LITERAL,1,,"""location""",3,,161,1,,char[9]
+39523,LITERAL,1,,"""location""",3,,161,1,,char[9]
+39528,LITERAL,1,,"""line""",3,,162,1,,char[5]
+39540,LITERAL,1,,"""line""",3,,162,1,,char[5]
+39545,LITERAL,1,,"""message""",3,,163,1,,char[8]
+39557,LITERAL,1,,"""message""",3,,163,1,,char[8]
+39562,LITERAL,1,,"""method""",3,,164,1,,char[7]
+39574,LITERAL,1,,"""method""",3,,164,1,,char[7]
+39579,LITERAL,1,,"""level""",3,,165,1,,char[6]
+39591,LITERAL,1,,"""level""",3,,165,1,,char[6]
+39596,LITERAL,1,,"""thread""",3,,166,1,,char[7]
+39608,LITERAL,1,,"""thread""",3,,166,1,,char[7]
+39613,LITERAL,1,,"""threadname""",3,,167,1,,char[11]
+39625,LITERAL,1,,"""threadname""",3,,167,1,,char[11]
+39630,LITERAL,1,,"""mdc""",3,,168,1,,char[4]
+39642,LITERAL,1,,"""mdc""",3,,168,1,,char[4]
+39647,LITERAL,1,,"""ndc""",3,,169,1,,char[4]
+39659,LITERAL,1,,"""ndc""",3,,169,1,,char[4]
+39678,LITERAL,1,,"""BUFFERSIZE""",57,,176,1,,char[11]
+39680,LITERAL,1,,"""buffersize""",84,,176,1,,char[11]
+39690,LITERAL,2,,1,55,,178,3,,int
+39700,LITERAL,1,,"""PASSWORD""",62,,180,1,,char[9]
+39702,LITERAL,1,,"""password""",87,,180,1,,char[9]
+39715,LITERAL,1,,"""SQL""",62,,184,1,,char[4]
+39717,LITERAL,1,,"""sql""",82,,184,1,,char[4]
+39732,LITERAL,1,,"""URL""",62,,188,1,,char[4]
+39734,LITERAL,1,,"""url""",82,,188,1,,char[4]
+39741,LITERAL,1,,"""DSN""",57,,189,1,,char[4]
+39743,LITERAL,1,,"""dsn""",77,,189,1,,char[4]
+39750,LITERAL,1,,"""CONNECTIONSTRING""",57,,190,1,,char[17]
+39752,LITERAL,1,,"""connectionstring""",90,,190,1,,char[17]
+39765,LITERAL,1,,"""USER""",62,,194,1,,char[5]
+39767,LITERAL,1,,"""user""",83,,194,1,,char[5]
+39780,LITERAL,1,,"""COLUMNMAPPING""",62,,198,1,,char[14]
+39782,LITERAL,1,,"""columnmapping""",92,,198,1,,char[14]
+39811,LITERAL,-1,,false,9,,212,1,,bool
+39822,LITERAL,1,,"""Can not activate ODBCAppender unless compiled with ODBC support.""",28,,218,1,,char[65]
+39854,LITERAL,-1,,0,9,,371,1,,int
+39892,LITERAL,1,,"""Error closing connection""",42,,390,1,,char[25]
+39908,LITERAL,2,,true,18,,408,2,,bool
+39956,LITERAL,1,,"""ODBCAppender column mappings not defined""",43,,589,1,,char[41]
+40010,LITERAL,2,,1,26,,631,2,,int
+40011,LITERAL,2,,2,31,,631,2,,int
+40047,LITERAL,2,,0x10000,12,,639,2,,int
+40065,LITERAL,2,,16,45,,645,2,,int
+40073,LITERAL,2,,1,43,,646,2,,int
+40079,LITERAL,1,,0xD800,25,,647,1,,int
+40083,LITERAL,2,,0xF,40,,647,2,,int
+40084,LITERAL,2,,6,48,,647,2,,int
+40088,LITERAL,2,,0xFFFF,60,,647,2,,int
+40089,LITERAL,2,,10,71,,647,2,,int
+40094,LITERAL,1,,0xDC00,25,,648,1,,int
+40097,LITERAL,2,,0x3FF,40,,648,2,,int
+40115,LITERAL,2,,0,13,,654,2,,int
+40328,LITERAL,2,,false,23,,65,2,,bool
+40360,LITERAL,2,,false,23,,81,2,,bool
+40476,LITERAL,2,,0x5C,12,,88,2,,int
+40487,LITERAL,-1,,0x6E,10,,94,2,,int
+40490,LITERAL,2,,0x0A,10,,95,2,,int
+40493,LITERAL,-1,,0x72,10,,98,6,,int
+40496,LITERAL,2,,0x0D,10,,99,2,,int
+40499,LITERAL,-1,,0x74,10,,102,10,,int
+40502,LITERAL,2,,0x09,10,,103,2,,int
+40505,LITERAL,-1,,0x66,10,,106,14,,int
+40508,LITERAL,2,,0x0C,10,,107,2,,int
+40516,LITERAL,1,,1,15,,115,2,,int
+40532,LITERAL,2,,4,24,,124,2,,int
+40543,LITERAL,1,,0,51,,126,2,,int
+40544,LITERAL,2,,4,54,,126,3,,int
+40546,LITERAL,1,,"""TRUE""",17,,127,1,,char[5]
+40548,LITERAL,1,,"""true""",38,,127,1,,char[5]
+40551,LITERAL,-1,,true,11,,129,1,,bool
+40560,LITERAL,2,,5,35,,133,2,,int
+40571,LITERAL,1,,0,51,,135,2,,int
+40572,LITERAL,2,,5,54,,135,3,,int
+40574,LITERAL,1,,"""FALSE""",17,,136,1,,char[6]
+40576,LITERAL,1,,"""false""",39,,136,1,,char[6]
+40579,LITERAL,-1,,false,11,,138,1,,bool
+40636,LITERAL,1,,"""bB""",45,,166,1,,char[3]
+40646,LITERAL,2,,0,42,,168,2,,int
+40651,LITERAL,2,,1,21,,170,2,,int
+40660,LITERAL,2,,0x6B,19,,173,2,,int
+40665,LITERAL,2,,0x4B,49,,173,2,,int
+40669,LITERAL,2,,1024,17,,175,2,,int
+40678,LITERAL,2,,0x6D,24,,177,2,,int
+40683,LITERAL,2,,0x4D,54,,177,2,,int
+40688,LITERAL,1,,1024,17,,179,1,,int
+40689,LITERAL,2,,1024,24,,179,2,,int
+40698,LITERAL,2,,0x67,24,,181,2,,int
+40703,LITERAL,2,,0x47,53,,181,2,,int
+40709,LITERAL,1,,1024,17,,183,1,,int
+40710,LITERAL,2,,1024,24,,183,2,,int
+40711,LITERAL,2,,1024,31,,183,2,,int
+40719,LITERAL,1,,0,25,,186,2,,int
+40721,LITERAL,2,,1,36,,186,2,,int
+40726,LITERAL,2,,1,18,,189,2,,int
+40764,LITERAL,1,,"""Bad option value [""",42,,207,1,,char[19]
+40767,LITERAL,1,,"""].""",26,,208,1,,char[3]
+40782,LITERAL,1,,0x24,38,,216,1,,int
+40783,LITERAL,2,,0x7B,44,,216,2,,int
+40784,LITERAL,3,,0,50,,216,3,,int
+40791,LITERAL,2,,0x7D,28,,218,2,,int
+40795,LITERAL,2,,2,33,,219,2,,int
+40799,LITERAL,2,,1,32,,220,2,,int
+40803,LITERAL,2,,0,13,,222,2,,int
+40805,LITERAL,-1,,true,9,,224,1,,bool
+40826,LITERAL,2,,0,13,,231,2,,int
+40881,LITERAL,1,,1,19,,250,1,,int
+40884,LITERAL,2,,0x22,32,,250,2,,int
+40895,LITERAL,1,,"""\"" has no closing brace. Opening brace at position """,28,,252,1,,char[51]
+40908,LITERAL,1,,1,16,,255,2,,int
+40911,LITERAL,2,,0x2E,29,,255,2,,int
+41017,LITERAL,1,,"""#""",44,,306,1,,char[2]
+41044,LITERAL,1,,"""OptionConverter::toLevel: no class name specified, level=[""",30,,317,1,,char[59]
+41047,LITERAL,1,,"""]""",19,,319,1,,char[2]
+41064,LITERAL,2,,1,45,,325,2,,int
+41072,LITERAL,1,,0,37,,326,2,,int
+41085,LITERAL,1,,"""OptionConverter::toLevel: class=[""",41,,327,1,,char[34]
+41088,LITERAL,1,,"""], level=[""",25,,328,1,,char[11]
+41091,LITERAL,1,,"""]""",65,,328,1,,char[2]
+41133,LITERAL,1,,"""custom level class [""",41,,344,1,,char[21]
+41136,LITERAL,1,,"""] not found.""",26,,345,1,,char[13]
+41147,LITERAL,1,,"""class [""",16,,350,1,,char[8]
+41150,LITERAL,1,,"""], level [""",49,,350,1,,char[11]
+41153,LITERAL,1,,"""] conversion) failed.""",16,,351,1,,char[22]
+41165,LITERAL,1,,"""class [""",16,,356,1,,char[8]
+41168,LITERAL,1,,"""], level [""",49,,356,1,,char[11]
+41171,LITERAL,1,,"""] conversion) failed.""",16,,357,1,,char[22]
+41201,LITERAL,1,,"""Could not find value for key """,29,,373,1,,char[30]
+41269,LITERAL,1,,"""Could not instantiate class [""",30,,401,1,,char[30]
+41272,LITERAL,1,,"""].""",29,,402,1,,char[3]
+41308,LITERAL,1,,"""Preferred configurator class: """,29,,430,1,,char[31]
+41338,LITERAL,2,,0,23,,435,2,,int
+41347,LITERAL,1,,"""Could not instantiate configurator [""",30,,437,1,,char[37]
+41350,LITERAL,1,,"""].""",27,,438,1,,char[3]
+41362,LITERAL,1,,0,6,,447,1,,int
+41469,LITERAL,2,,0,14,,44,2,,int
+41474,LITERAL,1,,"""out parameter may not be null.""",42,,46,1,,char[31]
+41484,LITERAL,2,,0,14,,54,2,,int
+41489,LITERAL,1,,"""out parameter may not be null.""",42,,56,1,,char[31]
+41493,LITERAL,2,,0,14,,59,2,,int
+41498,LITERAL,1,,"""enc parameter may not be null.""",42,,61,1,,char[31]
+41829,LITERAL,1,,"""\\x1B[35m""",39,,83,1,,char[9]
+41833,LITERAL,1,,"""\\x1B[31m""",39,,84,1,,char[9]
+41837,LITERAL,1,,"""\\x1B[33m""",38,,85,1,,char[9]
+41841,LITERAL,1,,"""\\x1B[32m""",38,,86,1,,char[9]
+41845,LITERAL,1,,"""\\x1B[36m""",39,,87,1,,char[9]
+41849,LITERAL,1,,"""\\x1B[34m""",39,,88,1,,char[9]
+41974,LITERAL,1,,"""CONVERSIONPATTERN""",16,,144,1,,char[18]
+41976,LITERAL,1,,"""conversionpattern""",16,,145,1,,char[18]
+41996,LITERAL,1,,"""ERRORCOLOR""",24,,149,1,,char[11]
+41998,LITERAL,1,,"""errorcolor""",24,,150,1,,char[11]
+42010,LITERAL,1,,"""Setting error color to """,29,,152,1,,char[24]
+42025,LITERAL,1,,"""FATALCOLOR""",24,,155,1,,char[11]
+42027,LITERAL,1,,"""fatalcolor""",24,,156,1,,char[11]
+42043,LITERAL,1,,"""WARNCOLOR""",24,,159,1,,char[10]
+42045,LITERAL,1,,"""warncolor""",24,,160,1,,char[10]
+42061,LITERAL,1,,"""INFOCOLOR""",24,,163,1,,char[10]
+42063,LITERAL,1,,"""infocolor""",24,,164,1,,char[10]
+42079,LITERAL,1,,"""DEBUGCOLOR""",24,,167,1,,char[11]
+42081,LITERAL,1,,"""debugcolor""",24,,168,1,,char[11]
+42097,LITERAL,1,,"""TRACECOLOR""",24,,171,1,,char[11]
+42099,LITERAL,1,,"""tracecolor""",24,,172,1,,char[11]
+42125,LITERAL,1,,"""%m%n""",21,,183,1,,char[5]
+42226,LITERAL,2,,2,70,,210,2,,int
+42233,LITERAL,1,,"""c""",2,,220,1,,char[2]
+42245,LITERAL,1,,"""c""",2,,220,1,,char[2]
+42250,LITERAL,1,,"""logger""",2,,221,1,,char[7]
+42262,LITERAL,1,,"""logger""",2,,221,1,,char[7]
+42267,LITERAL,1,,"""C""",2,,223,1,,char[2]
+42279,LITERAL,1,,"""C""",2,,223,1,,char[2]
+42284,LITERAL,1,,"""class""",2,,224,1,,char[6]
+42296,LITERAL,1,,"""class""",2,,224,1,,char[6]
+42310,LITERAL,1,,"""Y""",60,,226,1,,char[2]
+42319,LITERAL,2,,this,127,,226,3,,ANY
+42326,LITERAL,1,,"""y""",2,,227,1,,char[2]
+42338,LITERAL,1,,"""y""",2,,227,1,,char[2]
+42343,LITERAL,1,,"""d""",2,,229,1,,char[2]
+42355,LITERAL,1,,"""d""",2,,229,1,,char[2]
+42360,LITERAL,1,,"""date""",2,,230,1,,char[5]
+42372,LITERAL,1,,"""date""",2,,230,1,,char[5]
+42377,LITERAL,1,,"""f""",2,,232,1,,char[2]
+42389,LITERAL,1,,"""f""",2,,232,1,,char[2]
+42394,LITERAL,1,,"""F""",2,,234,1,,char[2]
+42406,LITERAL,1,,"""F""",2,,234,1,,char[2]
+42411,LITERAL,1,,"""file""",2,,235,1,,char[5]
+42423,LITERAL,1,,"""file""",2,,235,1,,char[5]
+42428,LITERAL,1,,"""l""",2,,237,1,,char[2]
+42440,LITERAL,1,,"""l""",2,,237,1,,char[2]
+42445,LITERAL,1,,"""L""",2,,239,1,,char[2]
+42457,LITERAL,1,,"""L""",2,,239,1,,char[2]
+42462,LITERAL,1,,"""line""",2,,240,1,,char[5]
+42474,LITERAL,1,,"""line""",2,,240,1,,char[5]
+42479,LITERAL,1,,"""m""",2,,242,1,,char[2]
+42491,LITERAL,1,,"""m""",2,,242,1,,char[2]
+42496,LITERAL,1,,"""message""",2,,243,1,,char[8]
+42508,LITERAL,1,,"""message""",2,,243,1,,char[8]
+42513,LITERAL,1,,"""n""",2,,245,1,,char[2]
+42525,LITERAL,1,,"""n""",2,,245,1,,char[2]
+42530,LITERAL,1,,"""M""",2,,247,1,,char[2]
+42542,LITERAL,1,,"""M""",2,,247,1,,char[2]
+42547,LITERAL,1,,"""method""",2,,248,1,,char[7]
+42559,LITERAL,1,,"""method""",2,,248,1,,char[7]
+42564,LITERAL,1,,"""p""",2,,250,1,,char[2]
+42576,LITERAL,1,,"""p""",2,,250,1,,char[2]
+42581,LITERAL,1,,"""level""",2,,251,1,,char[6]
+42593,LITERAL,1,,"""level""",2,,251,1,,char[6]
+42598,LITERAL,1,,"""r""",2,,253,1,,char[2]
+42610,LITERAL,1,,"""r""",2,,253,1,,char[2]
+42615,LITERAL,1,,"""relative""",2,,254,1,,char[9]
+42627,LITERAL,1,,"""relative""",2,,254,1,,char[9]
+42632,LITERAL,1,,"""t""",2,,256,1,,char[2]
+42644,LITERAL,1,,"""t""",2,,256,1,,char[2]
+42649,LITERAL,1,,"""thread""",2,,257,1,,char[7]
+42661,LITERAL,1,,"""thread""",2,,257,1,,char[7]
+42666,LITERAL,1,,"""T""",2,,259,1,,char[2]
+42678,LITERAL,1,,"""T""",2,,259,1,,char[2]
+42683,LITERAL,1,,"""threadname""",2,,260,1,,char[11]
+42695,LITERAL,1,,"""threadname""",2,,260,1,,char[11]
+42700,LITERAL,1,,"""x""",2,,262,1,,char[2]
+42712,LITERAL,1,,"""x""",2,,262,1,,char[2]
+42717,LITERAL,1,,"""ndc""",2,,263,1,,char[4]
+42729,LITERAL,1,,"""ndc""",2,,263,1,,char[4]
+42734,LITERAL,1,,"""X""",2,,265,1,,char[2]
+42746,LITERAL,1,,"""X""",2,,265,1,,char[2]
+42751,LITERAL,1,,"""J""",2,,266,1,,char[2]
+42763,LITERAL,1,,"""J""",2,,266,1,,char[2]
+42768,LITERAL,1,,"""properties""",2,,267,1,,char[11]
+42780,LITERAL,1,,"""properties""",2,,267,1,,char[11]
+42785,LITERAL,1,,"""throwable""",2,,269,1,,char[10]
+42797,LITERAL,1,,"""throwable""",2,,269,1,,char[10]
+42890,LITERAL,2,,0x25,44,,27,2,,int
+42904,LITERAL,2,,0x41,16,,43,2,,int
+42907,LITERAL,2,,0x5A,40,,43,2,,int
+42911,LITERAL,2,,0x61,10,,44,2,,int
+42914,LITERAL,2,,0x7A,34,,44,2,,int
+42918,LITERAL,2,,0x30,10,,45,2,,int
+42921,LITERAL,2,,0x39,34,,45,2,,int
+42933,LITERAL,2,,0x5F,13,,55,2,,int
+42973,LITERAL,1,,1,17,,78,2,,int
+42992,LITERAL,1,,1,18,,84,2,,int
+43000,LITERAL,1,,1,25,,85,2,,int
+43027,LITERAL,2,,0x7B,50,,98,2,,int
+43036,LITERAL,1,,0x7D,29,,100,2,,int
+43054,LITERAL,2,,1,34,,107,2,,int
+43059,LITERAL,2,,1,47,,107,2,,int
+43069,LITERAL,2,,1,13,,109,2,,int
+43096,LITERAL,2,,0,13,,127,2,,int
+43128,LITERAL,1,,1,28,,141,2,,int
+43147,LITERAL,1,,1,29,,151,2,,int
+43193,LITERAL,1,,1,29,,164,2,,int
+43210,LITERAL,1,,1,28,,171,2,,int
+43219,LITERAL,1,,1,27,,177,2,,int
+43225,LITERAL,-1,,0x2D,11,,181,2,,int
+43236,LITERAL,1,,true,10,,183,1,,bool
+43247,LITERAL,-1,,0x2E,11,,188,6,,int
+43257,LITERAL,2,,0x30,17,,195,2,,int
+43260,LITERAL,2,,0x39,42,,195,2,,int
+43278,LITERAL,2,,0x30,48,,198,2,,int
+43334,LITERAL,1,,1,27,,222,2,,int
+43340,LITERAL,2,,0x30,15,,224,2,,int
+43343,LITERAL,2,,0x39,40,,224,2,,int
+43365,LITERAL,2,,10,43,,228,2,,int
+43368,LITERAL,2,,0x30,54,,228,2,,int
+43378,LITERAL,2,,0x2E,19,,231,2,,int
+43431,LITERAL,1,,1,27,,252,2,,int
+43437,LITERAL,2,,0x30,15,,254,2,,int
+43440,LITERAL,2,,0x39,40,,254,2,,int
+43462,LITERAL,2,,0x30,13,,258,2,,int
+43473,LITERAL,1,,"""Error in pattern, was expecting digit.""",32,,263,1,,char[39]
+43484,LITERAL,1,,1,27,,271,2,,int
+43490,LITERAL,2,,0x30,15,,273,2,,int
+43493,LITERAL,2,,0x39,40,,273,2,,int
+43519,LITERAL,2,,10,43,,277,2,,int
+43522,LITERAL,2,,0x30,54,,277,2,,int
+43571,LITERAL,2,,0,33,,298,2,,int
+43612,LITERAL,2,,0,44,,316,2,,int
+43622,LITERAL,1,,0,40,,318,2,,int
+43672,LITERAL,1,,"""Unrecognized format specifier """,38,,329,1,,char[31]
+43708,LITERAL,1,,"""Empty conversion specifier""",29,,346,1,,char[27]
+43759,LITERAL,1,,"""Unrecognized conversion specifier [""",30,,364,1,,char[36]
+43770,LITERAL,1,,"""] in conversion pattern.""",27,,366,1,,char[25]
+43811,LITERAL,2,,0,34,,377,2,,int
+44034,LITERAL,2,,false,20,,35,2,,bool
+44055,LITERAL,-1,,0x20,13,,49,2,,int
+44057,LITERAL,-1,,0x09,13,,50,4,,int
+44059,LITERAL,-1,,0x0A,13,,51,6,,int
+44061,LITERAL,-1,,0x0D,13,,52,8,,int
+44070,LITERAL,2,,true,21,,55,2,,bool
+44073,LITERAL,-1,,0x23,13,,60,12,,int
+44075,LITERAL,-1,,0x21,13,,61,14,,int
+44087,LITERAL,2,,true,21,,66,2,,bool
+44101,LITERAL,-1,,0x5C,13,,81,2,,int
+44113,LITERAL,2,,true,21,,86,2,,bool
+44116,LITERAL,-1,,0x09,13,,91,7,,int
+44118,LITERAL,-1,,0x20,13,,92,9,,int
+44120,LITERAL,-1,,0x3A,13,,93,11,,int
+44122,LITERAL,-1,,0x3D,13,,94,13,,int
+44134,LITERAL,2,,true,21,,99,2,,bool
+44137,LITERAL,-1,,0x0A,13,,104,18,,int
+44139,LITERAL,-1,,0x0D,13,,105,20,,int
+44169,LITERAL,2,,true,21,,113,2,,bool
+44176,LITERAL,1,,1,20,,119,2,,int
+44186,LITERAL,2,,true,21,,123,2,,bool
+44195,LITERAL,-1,,0x74,13,,134,2,,int
+44200,LITERAL,1,,1,20,,135,2,,int
+44201,LITERAL,2,,0x09,23,,135,3,,int
+44207,LITERAL,-1,,0x6E,13,,139,7,,int
+44212,LITERAL,1,,1,20,,140,2,,int
+44213,LITERAL,2,,0x0A,23,,140,3,,int
+44219,LITERAL,-1,,0x72,13,,144,12,,int
+44224,LITERAL,1,,1,20,,145,2,,int
+44225,LITERAL,2,,0x0D,23,,145,3,,int
+44231,LITERAL,-1,,0x0A,13,,149,17,,int
+44237,LITERAL,-1,,0x0D,13,,153,21,,int
+44247,LITERAL,1,,1,20,,158,2,,int
+44260,LITERAL,2,,true,19,,164,2,,bool
+44268,LITERAL,-1,,0x20,13,,172,2,,int
+44270,LITERAL,-1,,0x09,13,,173,4,,int
+44279,LITERAL,2,,true,21,,176,2,,bool
+44293,LITERAL,-1,,0x0A,13,,191,2,,int
+44302,LITERAL,2,,true,21,,194,2,,bool
+44319,LITERAL,-1,,0x09,13,,210,2,,int
+44321,LITERAL,-1,,0x20,13,,211,4,,int
+44323,LITERAL,-1,,0x3A,13,,212,6,,int
+44325,LITERAL,-1,,0x3D,13,,213,8,,int
+44334,LITERAL,2,,true,21,,216,2,,bool
+44348,LITERAL,-1,,0x5C,13,,231,2,,int
+44360,LITERAL,2,,true,21,,236,2,,bool
+44363,LITERAL,-1,,0x0A,13,,241,7,,int
+44365,LITERAL,-1,,0x0D,13,,242,9,,int
+44407,LITERAL,2,,true,21,,251,2,,bool
+44414,LITERAL,1,,1,24,,257,2,,int
+44424,LITERAL,2,,true,21,,261,2,,bool
+44433,LITERAL,-1,,0x74,13,,272,2,,int
+44438,LITERAL,1,,1,24,,273,2,,int
+44439,LITERAL,2,,0x09,27,,273,3,,int
+44445,LITERAL,-1,,0x6E,13,,277,7,,int
+44450,LITERAL,1,,1,24,,278,2,,int
+44451,LITERAL,2,,0x0A,27,,278,3,,int
+44457,LITERAL,-1,,0x72,13,,282,12,,int
+44462,LITERAL,1,,1,24,,283,2,,int
+44463,LITERAL,2,,0x0D,27,,283,3,,int
+44469,LITERAL,-1,,0x0A,13,,287,17,,int
+44475,LITERAL,-1,,0x0D,13,,291,21,,int
+44485,LITERAL,1,,1,24,,296,2,,int
+44499,LITERAL,2,,true,19,,303,2,,bool
+44507,LITERAL,-1,,0x20,13,,311,2,,int
+44509,LITERAL,-1,,0x09,13,,312,4,,int
+44518,LITERAL,2,,true,21,,315,2,,bool
+44532,LITERAL,-1,,0x0A,13,,330,2,,int
+44541,LITERAL,2,,true,21,,333,2,,bool
+44558,LITERAL,2,,0x0A,16,,347,2,,int
+44561,LITERAL,2,,0x0D,29,,347,2,,int
+44574,LITERAL,2,,true,19,,354,2,,bool
+44603,LITERAL,2,,0,9,,372,2,,int
+44605,LITERAL,-1,,false,12,,373,1,,bool
+44610,LITERAL,2,,0,11,,376,2,,int
+44620,LITERAL,-1,,true,11,,378,1,,bool
+44748,LITERAL,1,,this,26,,437,1,,ANY
+44844,LITERAL,2,,0,24,,57,2,,int
+44858,LITERAL,1,,"""Properties""",17,,60,1,,char[11]
+44860,LITERAL,1,,"""""",44,,60,1,,char[1]
+44866,LITERAL,1,,"""Property{""",38,,64,1,,char[10]
+44873,LITERAL,2,,0,31,,65,2,,int
+44879,LITERAL,1,,"""}""",35,,66,1,,char[2]
+44892,LITERAL,2,,0,77,,67,2,,int
+44915,LITERAL,2,,0,31,,75,2,,int
+44921,LITERAL,1,,1,21,,77,2,,int
+44924,LITERAL,2,,0x7B,34,,77,2,,int
+44953,LITERAL,1,,1,22,,85,2,,int
+44956,LITERAL,2,,0x7B,35,,85,2,,int
+44967,LITERAL,1,,1,22,,87,2,,int
+44970,LITERAL,2,,0x2C,35,,87,2,,int
+44982,LITERAL,1,,1,22,,89,2,,int
+44985,LITERAL,2,,0x7D,35,,89,2,,int
+44990,LITERAL,1,,1,21,,92,2,,int
+44993,LITERAL,2,,0x7D,34,,92,2,,int
+45110,LITERAL,1,,true,27,,90,2,,bool
+45143,LITERAL,1,,"""Could not read configuration file [""",42,,102,1,,char[36]
+45149,LITERAL,1,,"""]: """,45,,103,1,,char[4]
+45165,LITERAL,1,,"""Loading configuration file [""",36,,109,1,,char[29]
+45171,LITERAL,1,,"""].""",46,,110,1,,char[3]
+45191,LITERAL,1,,"""Could not parse configuration file [""",42,,116,1,,char[37]
+45197,LITERAL,1,,"""]: """,45,,117,1,,char[4]
+45297,LITERAL,1,,true,27,,162,2,,bool
+45301,LITERAL,1,,"""log4j.debug""",57,,164,1,,char[12]
+45325,LITERAL,2,,true,66,,169,3,,bool
+45329,LITERAL,1,,"""log4j.threshold""",64,,172,1,,char[16]
+45368,LITERAL,1,,"""Hierarchy threshold set to [""",42,,179,1,,char[29]
+45377,LITERAL,1,,"""].""",18,,181,1,,char[3]
+45385,LITERAL,1,,"""log4j.threadConfiguration""",72,,184,1,,char[26]
+45390,LITERAL,1,,"""NoConfiguration""",47,,186,1,,char[16]
+45407,LITERAL,1,,"""BlockSignalsOnly""",52,,190,1,,char[17]
+45424,LITERAL,1,,"""NameThreadOnly""",52,,194,1,,char[15]
+45441,LITERAL,1,,"""BlockSignalsAndNameThread""",52,,198,1,,char[26]
+45465,LITERAL,1,,"""Finished configuring.""",28,,207,1,,char[22]
+45484,LITERAL,1,,"""log4j.loggerFactory""",66,,218,1,,char[20]
+45504,LITERAL,1,,"""Setting logger factory to [""",29,,225,1,,char[28]
+45511,LITERAL,1,,"""].""",22,,227,1,,char[3]
+45551,LITERAL,1,,"""log4j.factory.""",63,,233,1,,char[15]
+45570,LITERAL,1,,"""log4j.rootCategory""",68,,242,1,,char[19]
+45574,LITERAL,1,,"""log4j.rootLogger""",66,,243,1,,char[17]
+45615,LITERAL,1,,"""Could not find root logger information. Is this OK?""",29,,258,1,,char[52]
+45628,LITERAL,1,,"""root""",67,,264,1,,char[5]
+45635,LITERAL,6,,true,72,,265,6,,bool
+45645,LITERAL,1,,"""log4j.category.""",63,,272,1,,char[16]
+45649,LITERAL,1,,"""log4j.logger.""",61,,273,1,,char[14]
+45695,LITERAL,2,,0,36,,284,2,,int
+45702,LITERAL,2,,0,68,,284,2,,int
+45712,LITERAL,2,,0,37,,288,2,,int
+45739,LITERAL,2,,0,48,,292,2,,int
+45796,LITERAL,1,,"""log4j.additivity.""",65,,311,1,,char[18]
+45822,LITERAL,1,,"""Handling """,40,,316,1,,char[10]
+45829,LITERAL,1,,"""=[""",30,,317,1,,char[3]
+45832,LITERAL,1,,"""]""",59,,317,1,,char[2]
+45848,LITERAL,2,,true,55,,322,3,,bool
+45858,LITERAL,1,,"""Setting additivity for \""""",42,,323,1,,char[25]
+45863,LITERAL,1,,"""\"" to true""",35,,325,1,,char[10]
+45865,LITERAL,1,,"""\"" to false""",17,,326,1,,char[11]
+45869,LITERAL,-1,,true,9,,331,1,,bool
+45891,LITERAL,1,,"""Parsing for [""",41,,341,1,,char[14]
+45894,LITERAL,1,,"""] with value=[""",17,,343,1,,char[15]
+45897,LITERAL,1,,"""].""",25,,344,1,,char[3]
+45902,LITERAL,1,,""",""",40,,347,1,,char[2]
+45912,LITERAL,1,,""",""",31,,351,1,,char[2]
+45913,LITERAL,2,,0,40,,351,2,,int
+45943,LITERAL,1,,"""Level token is [""",41,,360,1,,char[17]
+45946,LITERAL,1,,"""].""",30,,361,1,,char[3]
+45955,LITERAL,1,,"""INHERITED""",60,,367,1,,char[10]
+45957,LITERAL,1,,"""inherited""",86,,367,1,,char[10]
+45964,LITERAL,1,,"""NULL""",60,,368,1,,char[5]
+45966,LITERAL,1,,"""null""",81,,368,1,,char[5]
+45971,LITERAL,1,,"""root""",68,,370,1,,char[5]
+45985,LITERAL,1,,"""The root logger cannot be set to null.""",30,,374,1,,char[39]
+45992,LITERAL,1,,0,22,,378,2,,int
+46002,LITERAL,1,,"""Logger """,43,,379,1,,char[8]
+46005,LITERAL,1,,""" set to null""",33,,380,1,,char[13]
+46031,LITERAL,1,,"""Logger """,42,,387,1,,char[8]
+46034,LITERAL,1,,""" set to """,32,,388,1,,char[9]
+46076,LITERAL,1,,""",""",59,,402,1,,char[2]
+46086,LITERAL,1,,"""Parsing appender named """,29,,407,1,,char[24]
+46089,LITERAL,1,,"""\"".""",33,,408,1,,char[3]
+46098,LITERAL,2,,0,19,,411,2,,int
+46125,LITERAL,2,,0,18,,425,2,,int
+46136,LITERAL,1,,"""Appender \""""",41,,427,1,,char[11]
+46139,LITERAL,1,,"""\"" was already parsed.""",33,,428,1,,char[22]
+46145,LITERAL,1,,"""log4j.appender.""",63,,433,1,,char[16]
+46161,LITERAL,1,,""".layout""",48,,437,1,,char[8]
+46180,LITERAL,4,,0,47,,441,5,,int
+46205,LITERAL,1,,"""DailyRollingFileAppender""",84,,446,1,,char[25]
+46223,LITERAL,1,,""".datePattern""",73,,449,1,,char[13]
+46239,LITERAL,1,,""".fileDatePattern""",35,,451,1,,char[17]
+46254,LITERAL,1,,"""Could not instantiate appender named \""""",41,,456,1,,char[39]
+46257,LITERAL,1,,"""\"".""",33,,457,1,,char[3]
+46259,LITERAL,-1,,0,10,,458,1,,int
+46301,LITERAL,4,,0,53,,472,5,,int
+46314,LITERAL,2,,0,18,,475,2,,int
+46330,LITERAL,1,,"""Parsing layout options for \""""",43,,478,1,,char[29]
+46333,LITERAL,1,,"""\"".""",35,,479,1,,char[3]
+46343,LITERAL,1,,""".""",77,,481,1,,char[2]
+46354,LITERAL,1,,"""End of parsing for \""""",43,,482,1,,char[21]
+46357,LITERAL,1,,"""\"".""",36,,483,1,,char[3]
+46379,LITERAL,1,,""".rollingPolicy""",54,,490,1,,char[15]
+46411,LITERAL,4,,0,65,,496,5,,int
+46438,LITERAL,1,,"""Parsing rolling policy options for \""""",44,,502,1,,char[37]
+46441,LITERAL,1,,"""\"".""",36,,503,1,,char[3]
+46451,LITERAL,1,,""".""",89,,504,1,,char[2]
+46459,LITERAL,1,,""".triggeringPolicy""",57,,508,1,,char[18]
+46491,LITERAL,4,,0,71,,514,5,,int
+46518,LITERAL,1,,"""Parsing triggering policy options for \""""",44,,520,1,,char[40]
+46521,LITERAL,1,,"""\"".""",36,,521,1,,char[3]
+46531,LITERAL,1,,""".""",95,,522,1,,char[2]
+46542,LITERAL,1,,""".""",71,,527,1,,char[2]
+46553,LITERAL,1,,"""Parsed \""""",41,,528,1,,char[9]
+46556,LITERAL,1,,"""\"" options.""",33,,529,1,,char[11]
+46620,LITERAL,2,,this,77,,39,2,,ANY
+46653,LITERAL,2,,0,27,,52,2,,int
+46759,LITERAL,2,,0,27,,61,2,,int
+46767,LITERAL,1,,0x2E,17,,64,2,,int
+46770,LITERAL,2,,1,39,,64,2,,int
+46798,LITERAL,1,,"""layout""",27,,72,1,,char[7]
+46801,LITERAL,2,,0,15,,73,2,,int
+46836,LITERAL,2,,0,13,,95,2,,int
+46855,LITERAL,1,,"""Setting option name=[""",29,,97,1,,char[22]
+46858,LITERAL,1,,"""], value=[""",25,,98,1,,char[11]
+46861,LITERAL,1,,"""]""",61,,98,1,,char[2]
+46887,LITERAL,2,,0,13,,106,2,,int
+46963,LITERAL,1,,1000,50,,34,1,,int
+47026,LITERAL,2,,1000,82,,49,2,,int
+47093,LITERAL,1,,"""_""",49,,40,1,,char[2]
+47099,LITERAL,1,,"""_""",39,,41,1,,char[2]
+47105,LITERAL,1,,"""_""",38,,42,1,,char[2]
+47130,LITERAL,1,,"""_""",49,,48,1,,char[2]
+47136,LITERAL,1,,"""_""",39,,49,1,,char[2]
+47159,LITERAL,1,,"""_""",49,,55,1,,char[2]
+47222,LITERAL,2,,0,14,,78,2,,int
+47226,LITERAL,2,,0,18,,82,2,,int
+47238,LITERAL,1,,""".properties""",31,,86,1,,char[12]
+47242,LITERAL,2,,0,24,,88,2,,int
+47261,LITERAL,2,,0,25,,104,2,,int
+47282,LITERAL,2,,0,24,,117,2,,int
+47290,LITERAL,1,,"""Missing resource bundle """,29,,120,1,,char[25]
+47354,LITERAL,1,,"""MAXFILESIZE""",16,,80,1,,char[12]
+47356,LITERAL,1,,"""maxfilesize""",44,,80,1,,char[12]
+47363,LITERAL,1,,"""MAXIMUMFILESIZE""",16,,82,1,,char[16]
+47365,LITERAL,1,,"""maximumfilesize""",48,,82,1,,char[16]
+47379,LITERAL,1,,"""MAXBACKUPINDEX""",16,,87,1,,char[15]
+47381,LITERAL,1,,"""maxbackupindex""",47,,87,1,,char[15]
+47388,LITERAL,1,,"""MAXIMUMBACKUPINDEX""",16,,89,1,,char[19]
+47390,LITERAL,1,,"""maximumbackupindex""",51,,89,1,,char[19]
+47407,LITERAL,1,,"""FILEDATEPATTERN""",16,,94,1,,char[16]
+47409,LITERAL,1,,"""filedatepattern""",48,,94,1,,char[16]
+47428,LITERAL,2,,1,15,,106,2,,int
+47500,LITERAL,1,,""".%i""",52,,118,1,,char[4]
+47527,LITERAL,1,,10,18,,126,1,,int
+47528,LITERAL,2,,1024,23,,126,2,,int
+47529,LITERAL,2,,1024,30,,126,2,,int
+47626,LITERAL,2,,1,84,,145,2,,int
+47638,LITERAL,2,,false,19,,151,2,,bool
+47642,LITERAL,2,,false,19,,152,2,,bool
+47648,LITERAL,2,,0,18,,154,2,,int
+47663,LITERAL,2,,0x27,25,,156,2,,int
+47678,LITERAL,1,,1,19,,162,2,,int
+47681,LITERAL,2,,0x7D,32,,162,2,,int
+47684,LITERAL,2,,false,17,,163,2,,bool
+47698,LITERAL,1,,0x25,32,,170,1,,int
+47699,LITERAL,2,,0x64,38,,170,2,,int
+47700,LITERAL,3,,0x7B,44,,170,3,,int
+47701,LITERAL,4,,0,50,,170,4,,int
+47709,LITERAL,2,,true,17,,172,2,,bool
+47714,LITERAL,1,,1,18,,175,2,,int
+47725,LITERAL,1,,1,17,,181,2,,int
+47728,LITERAL,2,,0x7D,30,,181,2,,int
+47808,LITERAL,1,,"""No rolling policy configured for the appender named [""",28,,204,1,,char[54]
+47820,LITERAL,1,,"""].""",32,,205,1,,char[3]
+47835,LITERAL,1,,""".%i""",52,,207,1,,char[4]
+47917,LITERAL,1,,"""No triggering policy configured for the appender named [""",28,,226,1,,char[57]
+47929,LITERAL,1,,"""].""",32,,227,1,,char[3]
+48119,LITERAL,2,,0,25,,273,2,,int
+48133,LITERAL,1,,"""Exception will initializing RollingFileAppender named """,27,,281,1,,char[55]
+48201,LITERAL,1,,this,70,,319,1,,ANY
+48205,LITERAL,1,,this,87,,319,1,,ANY
+48225,LITERAL,2,,true,23,,327,2,,bool
+48236,LITERAL,2,,false,19,,331,2,,bool
+48260,LITERAL,1,,"""Exception on rollover: """,43,,340,1,,char[24]
+48286,LITERAL,3,,0,48,,343,4,,int
+48332,LITERAL,2,,0,30,,355,2,,int
+48386,LITERAL,2,,true,42,,375,2,,bool
+48442,LITERAL,2,,true,23,,389,2,,bool
+48453,LITERAL,2,,false,19,,393,2,,bool
+48477,LITERAL,1,,"""Exception during rollover: """,43,,402,1,,char[28]
+48503,LITERAL,3,,0,48,,405,4,,int
+48549,LITERAL,2,,0,30,,417,2,,int
+48569,LITERAL,-1,,true,14,,433,1,,bool
+48581,LITERAL,1,,"""Exception during rollover: """,39,,439,1,,char[28]
+48607,LITERAL,3,,0,44,,442,4,,int
+48609,LITERAL,-1,,false,9,,447,1,,bool
+48630,LITERAL,1,,this,4,,459,2,,ANY
+48662,LITERAL,1,,"""Exception during rollover attempt: """,37,,474,1,,char[36]
+48788,LITERAL,2,,0,10,,563,2,,int
+48814,LITERAL,2,,0,15,,581,2,,int
+48841,LITERAL,2,,this,67,,601,2,,ANY
+48943,LITERAL,2,,0,44,,52,2,,int
+48951,LITERAL,1,,"""The FileNamePattern option must be set before using FixedWindowRollingPolicy.""",29,,58,1,,char[78]
+48955,LITERAL,1,,"""See also http://logging.apache.org/log4j/codes.html#tbr_fnp_not_set""",30,,59,1,,char[68]
+48981,LITERAL,1,,"""FILENAMEPATTERN""",16,,70,1,,char[16]
+48983,LITERAL,1,,"""filenamepattern""",16,,71,1,,char[16]
+48999,LITERAL,1,,"""CREATEINTERMEDIATEDIRECTORIES""",16,,75,1,,char[30]
+49001,LITERAL,1,,"""createintermediatedirectories""",16,,76,1,,char[30]
+49012,LITERAL,2,,false,77,,78,3,,bool
+49393,LITERAL,2,,0,16,,40,2,,int
+49400,LITERAL,1,,"""You have tried to set a null level to root.""",29,,42,1,,char[44]
+49605,LITERAL,2,,12,20,,113,2,,int
+49610,LITERAL,2,,12,23,,114,2,,int
+49632,LITERAL,2,,0,18,,126,2,,int
+49639,LITERAL,2,,0,21,,128,2,,int
+49645,LITERAL,2,,256,27,,168,2,,int
+49649,LITERAL,2,,0,16,,170,2,,int
+49654,LITERAL,2,,0,25,,171,2,,int
+49705,LITERAL,1,,1,24,,184,2,,int
+49708,LITERAL,2,,0x3F,37,,184,2,,int
+49759,LITERAL,1,,1,13,,230,2,,int
+49762,LITERAL,2,,0x41,26,,230,2,,int
+49767,LITERAL,1,,1,13,,231,2,,int
+49770,LITERAL,2,,0x44,26,,231,2,,int
+49830,LITERAL,2,,0x30,81,,255,2,,int
+49845,LITERAL,1,,1900,11,,274,1,,int
+49865,LITERAL,2,,1,23,,289,2,,int
+49878,LITERAL,3,,'b',54,,300,3,,char
+49879,LITERAL,4,,0x62,59,,300,4,,int
+49880,LITERAL,5,,"""%b""",65,,300,5,,char[3]
+49911,LITERAL,3,,'B',54,,319,3,,char
+49912,LITERAL,4,,0x42,59,,319,4,,int
+49913,LITERAL,5,,"""%B""",65,,319,5,,char[3]
+49948,LITERAL,2,,7,24,,342,2,,int
+49965,LITERAL,2,,7,24,,357,2,,int
+50009,LITERAL,1,,1,12,,402,1,,int
+50022,LITERAL,3,,'a',52,,413,3,,char
+50023,LITERAL,4,,0x61,57,,413,4,,int
+50024,LITERAL,5,,"""%a""",63,,413,5,,char[3]
+50055,LITERAL,3,,'A',52,,433,3,,char
+50056,LITERAL,4,,0x41,57,,433,4,,int
+50057,LITERAL,5,,"""%A""",63,,433,5,,char[3]
+50115,LITERAL,2,,12,28,,475,2,,int
+50117,LITERAL,2,,12,44,,475,2,,int
+50166,LITERAL,2,,1000,24,,523,2,,int
+50194,LITERAL,3,,'p',56,,549,3,,char
+50195,LITERAL,4,,0x70,61,,549,4,,int
+50196,LITERAL,5,,"""%p""",67,,549,5,,char[3]
+50215,LITERAL,2,,12,33,,554,2,,int
+50265,LITERAL,2,,0,25,,595,2,,int
+50271,LITERAL,1,,1,15,,597,2,,int
+50274,LITERAL,2,,0x5A,28,,597,2,,int
+50295,LITERAL,1,,"""+0000""",28,,603,1,,char[6]
+50299,LITERAL,2,,0,16,,605,2,,int
+50305,LITERAL,2,,0x2D,19,,607,2,,int
+50317,LITERAL,2,,3600,35,,612,2,,int
+50325,LITERAL,2,,2,32,,613,2,,int
+50338,LITERAL,2,,0,44,,618,2,,int
+50356,LITERAL,2,,3600,37,,624,2,,int
+50357,LITERAL,2,,60,46,,624,2,,int
+50365,LITERAL,2,,4,31,,625,2,,int
+50378,LITERAL,2,,0,42,,630,2,,int
+50404,LITERAL,-1,,0x47,8,,655,2,,int
+50413,LITERAL,-1,,0x79,8,,659,6,,int
+50421,LITERAL,-1,,0x4D,8,,663,10,,int
+50425,LITERAL,2,,2,19,,664,2,,int
+50437,LITERAL,2,,3,24,,668,2,,int
+50455,LITERAL,-1,,0x77,8,,679,14,,int
+50463,LITERAL,-1,,0x57,8,,683,18,,int
+50471,LITERAL,-1,,0x44,8,,687,22,,int
+50479,LITERAL,-1,,0x64,8,,691,26,,int
+50487,LITERAL,-1,,0x46,8,,695,30,,int
+50495,LITERAL,-1,,0x45,8,,699,34,,int
+50499,LITERAL,2,,3,19,,700,2,,int
+50517,LITERAL,-1,,0x61,8,,711,38,,int
+50526,LITERAL,-1,,0x48,8,,715,42,,int
+50532,LITERAL,3,,0,45,,716,3,,int
+50535,LITERAL,-1,,0x6B,8,,719,46,,int
+50541,LITERAL,3,,1,45,,720,3,,int
+50544,LITERAL,-1,,0x4B,8,,723,50,,int
+50550,LITERAL,3,,0,37,,724,3,,int
+50553,LITERAL,-1,,0x68,8,,727,54,,int
+50559,LITERAL,3,,1,37,,728,3,,int
+50562,LITERAL,-1,,0x6D,8,,731,58,,int
+50570,LITERAL,-1,,0x73,8,,735,62,,int
+50578,LITERAL,-1,,0x53,8,,739,66,,int
+50582,LITERAL,2,,6,19,,740,2,,int
+50598,LITERAL,-1,,0x7A,8,,754,70,,int
+50606,LITERAL,-1,,0x5A,8,,758,74,,int
+50653,LITERAL,2,,1,16,,777,2,,int
+50693,LITERAL,2,,1,14,,790,2,,int
+50921,LITERAL,1,,""" - """,28,,34,1,,char[4]
+50996,LITERAL,1,,"""MAXFILESIZE""",16,,58,1,,char[12]
+50998,LITERAL,1,,"""maxfilesize""",16,,59,1,,char[12]
+51009,LITERAL,1,,10,52,,61,1,,int
+51010,LITERAL,2,,1024,57,,61,2,,int
+51011,LITERAL,2,,1024,64,,61,2,,int
+51119,LITERAL,-1,,true,9,,447,1,,bool
+51357,LITERAL,1,,"""BUFFERSIZE""",57,,528,1,,char[11]
+51359,LITERAL,1,,"""buffersize""",84,,528,1,,char[11]
+51367,LITERAL,2,,512,47,,530,3,,int
+51377,LITERAL,1,,"""EVALUATORCLASS""",62,,532,1,,char[15]
+51379,LITERAL,1,,"""evaluatorclass""",93,,532,1,,char[15]
+51392,LITERAL,1,,"""FROM""",62,,536,1,,char[5]
+51394,LITERAL,1,,"""from""",83,,536,1,,char[5]
+51407,LITERAL,1,,"""SMTPHOST""",62,,540,1,,char[9]
+51409,LITERAL,1,,"""smtphost""",87,,540,1,,char[9]
+51422,LITERAL,1,,"""SMTPUSERNAME""",62,,544,1,,char[13]
+51424,LITERAL,1,,"""smtpusername""",91,,544,1,,char[13]
+51437,LITERAL,1,,"""SMTPPASSWORD""",62,,548,1,,char[13]
+51439,LITERAL,1,,"""smtppassword""",91,,548,1,,char[13]
+51452,LITERAL,1,,"""SUBJECT""",62,,552,1,,char[8]
+51454,LITERAL,1,,"""subject""",86,,552,1,,char[8]
+51467,LITERAL,1,,"""TO""",62,,556,1,,char[3]
+51469,LITERAL,1,,"""to""",81,,556,1,,char[3]
+51482,LITERAL,1,,"""CC""",62,,560,1,,char[3]
+51484,LITERAL,1,,"""cc""",81,,560,1,,char[3]
+51497,LITERAL,1,,"""BCC""",62,,564,1,,char[4]
+51499,LITERAL,1,,"""bcc""",82,,564,1,,char[4]
+51512,LITERAL,1,,"""SMTPPORT""",62,,568,1,,char[9]
+51514,LITERAL,1,,"""smtpport""",87,,568,1,,char[9]
+51522,LITERAL,2,,25,45,,570,3,,int
+51557,LITERAL,1,,0x7F,7,,585,1,,int
+51570,LITERAL,1,,""" contains non-ASCII character""",37,,587,1,,char[30]
+51572,LITERAL,-1,,false,11,,588,1,,bool
+51574,LITERAL,-1,,true,9,,592,1,,bool
+51583,LITERAL,2,,true,18,,600,2,,bool
+51596,LITERAL,2,,0,23,,602,2,,int
+51612,LITERAL,1,,"""No layout set for appender named [""",42,,604,1,,char[35]
+51624,LITERAL,1,,"""].""",108,,604,1,,char[3]
+51627,LITERAL,2,,false,14,,605,2,,bool
+51640,LITERAL,2,,0,26,,608,2,,int
+51658,LITERAL,1,,"""No TriggeringEventEvaluator is set for appender [""",42,,610,1,,char[50]
+51670,LITERAL,1,,"""].""",30,,611,1,,char[3]
+51673,LITERAL,2,,false,14,,612,2,,bool
+51705,LITERAL,1,,"""No smtpHost is set for appender [""",42,,617,1,,char[34]
+51717,LITERAL,1,,"""].""",30,,618,1,,char[3]
+51720,LITERAL,2,,false,14,,619,2,,bool
+51780,LITERAL,1,,"""No recipient address is set for appender [""",42,,624,1,,char[43]
+51792,LITERAL,1,,"""].""",30,,625,1,,char[3]
+51795,LITERAL,2,,false,14,,626,2,,bool
+51810,LITERAL,1,,"""to""",48,,629,1,,char[3]
+51825,LITERAL,1,,"""cc""",48,,630,1,,char[3]
+51840,LITERAL,1,,"""bcc""",49,,631,1,,char[4]
+51855,LITERAL,1,,"""from""",50,,632,1,,char[5]
+51870,LITERAL,1,,"""log4cxx built without SMTP support.""",41,,635,1,,char[36]
+51873,LITERAL,2,,false,13,,636,2,,bool
+51944,LITERAL,-1,,false,9,,701,1,,bool
+51962,LITERAL,2,,true,18,,709,2,,bool
+52081,LITERAL,2,,0,29,,787,2,,int
+52389,LITERAL,2,,true,18,,78,2,,bool
+52479,LITERAL,2,,0,24,,94,2,,int
+52489,LITERAL,1,,"""No remote host is set for Appender named \""""",39,,96,1,,char[43]
+52501,LITERAL,1,,"""\"".""",30,,97,1,,char[3]
+52513,LITERAL,1,,"""Connecting to [""",30,,105,1,,char[16]
+52528,LITERAL,1,,""":""",48,,106,1,,char[2]
+52548,LITERAL,1,,"""].""",23,,108,1,,char[3]
+52591,LITERAL,1,,"""Could not connect to [""",32,,115,1,,char[23]
+52606,LITERAL,1,,""":""",48,,116,1,,char[2]
+52626,LITERAL,1,,"""].""",23,,118,1,,char[3]
+52647,LITERAL,1,,"""REMOTEHOST""",57,,128,1,,char[11]
+52649,LITERAL,1,,"""remotehost""",84,,128,1,,char[11]
+52662,LITERAL,1,,"""PORT""",62,,132,1,,char[5]
+52664,LITERAL,1,,"""port""",83,,132,1,,char[5]
+52682,LITERAL,1,,"""LOCATIONINFO""",62,,136,1,,char[13]
+52684,LITERAL,1,,"""locationinfo""",91,,136,1,,char[13]
+52692,LITERAL,2,,false,53,,138,3,,bool
+52702,LITERAL,1,,"""RECONNECTIONDELAY""",62,,140,1,,char[18]
+52704,LITERAL,1,,"""reconnectiondelay""",96,,140,1,,char[18]
+52765,LITERAL,1,,"""Connector thread not alive: starting monitor.""",29,,156,1,,char[46]
+52785,LITERAL,1,,"""SocketAppend""",72,,158,1,,char[13]
+52790,LITERAL,3,,this,123,,158,4,,ANY
+52808,LITERAL,1,,"""Attempting connection to [""",30,,171,1,,char[27]
+52823,LITERAL,1,,""":""",48,,172,1,,char[2]
+52843,LITERAL,1,,"""].""",23,,174,1,,char[3]
+52883,LITERAL,1,,"""Connection established. Exiting connector thread.""",30,,178,1,,char[50]
+52893,LITERAL,1,,"""Remote host """,30,,183,1,,char[13]
+52908,LITERAL,1,,""" refused connection.""",19,,185,1,,char[21]
+52916,LITERAL,1,,"""Could not connect to [""",30,,189,1,,char[23]
+52931,LITERAL,1,,""":""",48,,190,1,,char[2]
+52951,LITERAL,1,,"""].""",23,,192,1,,char[3]
+52970,LITERAL,2,,0,34,,196,2,,int
+52975,LITERAL,1,,"""Waiting """,30,,198,1,,char[9]
+52997,LITERAL,1,,""" ms before retrying [""",23,,200,1,,char[22]
+53012,LITERAL,1,,""":""",48,,201,1,,char[2]
+53032,LITERAL,1,,"""].""",23,,203,1,,char[3]
+53094,LITERAL,2,,this,51,,208,3,,ANY
+53324,LITERAL,2,,0,29,,55,2,,int
+53335,LITERAL,2,,0,41,,57,2,,int
+53355,LITERAL,1,,0,24,,59,2,,int
+53368,LITERAL,2,,0,24,,65,2,,int
+53483,LITERAL,2,,255,30,,58,2,,int
+53596,LITERAL,-1,,false,11,,39,1,,bool
+53601,LITERAL,2,,0,20,,43,2,,int
+53674,LITERAL,-1,,false,11,,58,1,,bool
+53735,LITERAL,1,,' ',49,,77,2,,char
+53756,LITERAL,1,,' ',46,,84,2,,char
+53758,LITERAL,2,,1,59,,84,2,,int
+53784,LITERAL,-1,,false,10,,92,1,,bool
+53791,LITERAL,1,,0,19,,95,2,,int
+53797,LITERAL,2,,0,50,,95,2,,int
+53835,LITERAL,2,,0,78,,102,2,,int
+53837,LITERAL,-1,,false,9,,105,1,,bool
+53891,LITERAL,1,,"""true""",26,,144,1,,char[5]
+53899,LITERAL,1,,"""false""",26,,148,1,,char[6]
+53944,LITERAL,2,,0,10,,176,2,,int
+53950,LITERAL,2,,0,23,,178,2,,int
+53960,LITERAL,2,,0x7B,21,,180,2,,int
+53966,LITERAL,2,,1,51,,180,2,,int
+53967,LITERAL,2,,0x30,57,,180,2,,int
+53973,LITERAL,2,,1,16,,181,2,,int
+53974,LITERAL,2,,0x39,22,,181,2,,int
+53980,LITERAL,2,,2,52,,181,2,,int
+53981,LITERAL,2,,0x7D,58,,181,2,,int
+53991,LITERAL,2,,1,26,,183,2,,int
+53992,LITERAL,2,,0x30,31,,183,2,,int
+54002,LITERAL,2,,3,9,,185,2,,int
+54063,LITERAL,1,,"""STRINGTOMATCH""",16,,56,1,,char[14]
+54065,LITERAL,1,,"""stringtomatch""",46,,56,1,,char[14]
+54088,LITERAL,1,,"""ACCEPTONMATCH""",16,,61,1,,char[14]
+54090,LITERAL,1,,"""acceptonmatch""",46,,61,1,,char[14]
+54444,LITERAL,1,,this,2,,45,1,,ANY
+54454,LITERAL,1,,this,2,,53,1,,ANY
+54465,LITERAL,1,,this,2,,60,1,,ANY
+54489,LITERAL,2,,true,18,,72,2,,bool
+54513,LITERAL,2,,nullptr,15,,76,2,,ANY
+54559,LITERAL,1,,"""\""""",29,,87,1,,char[2]
+54581,LITERAL,1,,"""\"" is an unknown syslog facility. Defaulting to \""USER\"".""",26,,89,1,,char[55]
+54611,LITERAL,1,,"""user:""",36,,92,1,,char[6]
+54626,LITERAL,1,,""":""",37,,96,1,,char[2]
+54639,LITERAL,1,,"""kern""",23,,110,1,,char[5]
+54644,LITERAL,1,,"""user""",23,,113,1,,char[5]
+54649,LITERAL,1,,"""mail""",23,,116,1,,char[5]
+54654,LITERAL,1,,"""daemon""",23,,119,1,,char[7]
+54659,LITERAL,1,,"""auth""",23,,122,1,,char[5]
+54664,LITERAL,1,,"""syslog""",23,,125,1,,char[7]
+54669,LITERAL,1,,"""lpr""",23,,128,1,,char[4]
+54674,LITERAL,1,,"""news""",23,,131,1,,char[5]
+54679,LITERAL,1,,"""uucp""",23,,134,1,,char[5]
+54684,LITERAL,1,,"""cron""",23,,137,1,,char[5]
+54689,LITERAL,1,,"""local0""",23,,150,1,,char[7]
+54694,LITERAL,1,,"""local1""",23,,153,1,,char[7]
+54699,LITERAL,1,,"""local2""",23,,156,1,,char[7]
+54704,LITERAL,1,,"""local3""",23,,159,1,,char[7]
+54709,LITERAL,1,,"""local4""",23,,162,1,,char[7]
+54714,LITERAL,1,,"""local5""",23,,165,1,,char[7]
+54719,LITERAL,1,,"""local6""",23,,168,1,,char[7]
+54724,LITERAL,1,,"""local7""",23,,171,1,,char[7]
+54740,LITERAL,1,,"""KERN""",52,,181,1,,char[5]
+54742,LITERAL,1,,"""kern""",73,,181,1,,char[5]
+54755,LITERAL,1,,"""USER""",57,,185,1,,char[5]
+54757,LITERAL,1,,"""user""",78,,185,1,,char[5]
+54770,LITERAL,1,,"""MAIL""",57,,189,1,,char[5]
+54772,LITERAL,1,,"""mail""",78,,189,1,,char[5]
+54785,LITERAL,1,,"""DAEMON""",57,,193,1,,char[7]
+54787,LITERAL,1,,"""daemon""",80,,193,1,,char[7]
+54800,LITERAL,1,,"""AUTH""",57,,197,1,,char[5]
+54802,LITERAL,1,,"""auth""",78,,197,1,,char[5]
+54815,LITERAL,1,,"""SYSLOG""",57,,201,1,,char[7]
+54817,LITERAL,1,,"""syslog""",80,,201,1,,char[7]
+54830,LITERAL,1,,"""LPR""",57,,205,1,,char[4]
+54832,LITERAL,1,,"""lpr""",77,,205,1,,char[4]
+54845,LITERAL,1,,"""NEWS""",57,,209,1,,char[5]
+54847,LITERAL,1,,"""news""",78,,209,1,,char[5]
+54860,LITERAL,1,,"""UUCP""",57,,213,1,,char[5]
+54862,LITERAL,1,,"""uucp""",78,,213,1,,char[5]
+54875,LITERAL,1,,"""CRON""",57,,217,1,,char[5]
+54877,LITERAL,1,,"""cron""",78,,217,1,,char[5]
+54890,LITERAL,1,,"""LOCAL0""",57,,236,1,,char[7]
+54892,LITERAL,1,,"""local0""",80,,236,1,,char[7]
+54905,LITERAL,1,,"""LOCAL1""",57,,240,1,,char[7]
+54907,LITERAL,1,,"""local1""",80,,240,1,,char[7]
+54920,LITERAL,1,,"""LOCAL2""",57,,244,1,,char[7]
+54922,LITERAL,1,,"""local2""",80,,244,1,,char[7]
+54935,LITERAL,1,,"""LOCAL3""",57,,248,1,,char[7]
+54937,LITERAL,1,,"""local3""",80,,248,1,,char[7]
+54950,LITERAL,1,,"""LOCAL4""",57,,252,1,,char[7]
+54952,LITERAL,1,,"""local4""",80,,252,1,,char[7]
+54965,LITERAL,1,,"""LOCAL5""",57,,256,1,,char[7]
+54967,LITERAL,1,,"""local5""",80,,256,1,,char[7]
+54980,LITERAL,1,,"""LOCAL6""",57,,260,1,,char[7]
+54982,LITERAL,1,,"""local6""",80,,260,1,,char[7]
+54995,LITERAL,1,,"""LOCAL7""",57,,264,1,,char[7]
+54997,LITERAL,1,,"""local7""",80,,264,1,,char[7]
+55007,LITERAL,1,,1,10,,270,1,,int
+55102,LITERAL,2,,12,64,,300,2,,int
+55134,LITERAL,2,,1,17,,312,2,,int
+55161,LITERAL,3,,"""(%d/%d)""",36,,319,3,,char[8]
+55196,LITERAL,2,,0,19,,350,2,,int
+55212,LITERAL,1,,"""No syslog host is set for SyslogAppedender named \""""",42,,352,1,,char[51]
+55224,LITERAL,1,,"""\"".""",30,,353,1,,char[3]
+55246,LITERAL,1,,1,18,,361,1,,int
+55247,LITERAL,2,,0x3C,21,,361,2,,int
+55276,LITERAL,1,,1,15,,363,2,,int
+55279,LITERAL,2,,0x3E,28,,363,2,,int
+55344,LITERAL,1,,"""SYSLOGHOST""",57,,381,1,,char[11]
+55346,LITERAL,1,,"""sysloghost""",84,,381,1,,char[11]
+55359,LITERAL,1,,"""FACILITY""",62,,385,1,,char[9]
+55361,LITERAL,1,,"""facility""",87,,385,1,,char[9]
+55374,LITERAL,1,,"""MAXMESSAGELENGTH""",62,,389,1,,char[17]
+55376,LITERAL,1,,"""maxmessagelength""",95,,389,1,,char[17]
+55384,LITERAL,2,,1024,53,,391,3,,int
+55410,LITERAL,2,,0,19,,401,2,,int
+55425,LITERAL,2,,nullptr,15,,403,2,,ANY
+55434,LITERAL,1,,1,20,,407,1,,int
+55438,LITERAL,2,,0,34,,409,2,,int
+55445,LITERAL,1,,':',26,,410,2,,char
+55465,LITERAL,2,,1,61,,414,2,,int
+55475,LITERAL,2,,0,21,,427,2,,int
+55582,LITERAL,1,,1,31,,451,1,,int
+55591,LITERAL,1,,"""[""",29,,453,1,,char[2]
+55594,LITERAL,1,,"""] is an unknown syslog facility. Defaulting to [USER].""",16,,454,1,,char[55]
+55609,LITERAL,1,,this,2,,458,1,,ANY
+55763,LITERAL,1,,"""Could not find """,42,,48,1,,char[16]
+55766,LITERAL,1,,""". All logging will FAIL.""",16,,49,1,,char[25]
+55788,LITERAL,1,,"""Could not instantiate DatagramSocket to """,42,,58,1,,char[41]
+55791,LITERAL,1,,""". All logging will FAIL.""",16,,59,1,,char[25]
+55808,LITERAL,2,,0,20,,67,2,,int
+55813,LITERAL,2,,0,44,,67,2,,int
+55887,LITERAL,1,,"""key is empty""",46,,36,1,,char[13]
+55893,LITERAL,1,,"""java.io.tmpdir""",26,,41,1,,char[15]
+55927,LITERAL,1,,"""user.dir""",26,,55,1,,char[9]
+56044,LITERAL,-1,,false,9,,59,1,,bool
+56113,LITERAL,-1,,false,9,,59,1,,bool
+56177,LITERAL,2,,23,42,,56,2,,int
+56181,LITERAL,2,,20,45,,59,2,,int
+56246,LITERAL,1,,1000,37,,76,2,,int
+56266,LITERAL,1,,"""TelnetAppender""",67,,79,1,,char[15]
+56271,LITERAL,3,,this,122,,79,4,,ANY
+56285,LITERAL,1,,"""PORT""",57,,85,1,,char[5]
+56287,LITERAL,1,,"""port""",78,,85,1,,char[5]
+56305,LITERAL,1,,"""ENCODING""",62,,89,1,,char[9]
+56307,LITERAL,1,,"""encoding""",87,,89,1,,char[9]
+56452,LITERAL,2,,true,18,,122,2,,bool
+56494,LITERAL,2,,0,16,,130,2,,int
+56574,LITERAL,2,,0,29,,153,2,,int
+56620,LITERAL,2,,0,16,,163,2,,int
+56644,LITERAL,2,,0,13,,173,2,,int
+56671,LITERAL,2,,2,34,,182,2,,int
+56749,LITERAL,2,,0,14,,201,2,,int
+56780,LITERAL,1,,"""\r\n""",26,,205,1,,char[3]
+56789,LITERAL,2,,2,35,,206,2,,int
+56873,LITERAL,1,,1,29,,223,1,,int
+56874,LITERAL,2,,0x3F,32,,223,2,,int
+56916,LITERAL,-1,,true,9,,239,1,,bool
+56956,LITERAL,1,,"""Log closed.\r\n""",40,,249,1,,char[14]
+56997,LITERAL,1,,"""Too many connections.\r\n""",40,,260,1,,char[24]
+57086,LITERAL,1,,"""TelnetAppender v1.0 (""",31,,284,1,,char[22]
+57095,LITERAL,2,,1,42,,285,2,,int
+57101,LITERAL,1,,""" active connections)\r\n\r\n""",24,,286,1,,char[25]
+57139,LITERAL,1,,"""Encountered error while in SocketHandler loop.""",31,,301,1,,char[47]
+57197,LITERAL,2,,0,25,,27,2,,int
+57220,LITERAL,2,,0,17,,63,2,,int
+57344,LITERAL,2,,0,14,,102,2,,int
+57352,LITERAL,2,,0,14,,107,2,,int
+57374,LITERAL,2,,0,14,,120,2,,int
+57382,LITERAL,2,,0,14,,125,2,,int
+57421,LITERAL,1,,1,23,,136,2,,int
+57424,LITERAL,2,,0x20,36,,136,2,,int
+57452,LITERAL,2,,0,14,,147,2,,int
+57460,LITERAL,2,,0,14,,152,2,,int
+57473,LITERAL,-1,,0,9,,176,1,,int
+57552,LITERAL,2,,nullptr,15,,43,2,,ANY
+57555,LITERAL,2,,nullptr,13,,44,2,,ANY
+57558,LITERAL,2,,nullptr,16,,45,2,,ANY
+57575,LITERAL,2,,this,68,,62,3,,ANY
+57576,LITERAL,2,,nullptr,3,,63,2,,ANY
+57585,LITERAL,2,,this,56,,64,3,,ANY
+57621,LITERAL,1,,nullptr,28,,81,2,,ANY
+57622,LITERAL,2,,nullptr,37,,81,3,,ANY
+57623,LITERAL,3,,nullptr,46,,81,4,,ANY
+57637,LITERAL,1,,nullptr,28,,85,2,,ANY
+57662,LITERAL,3,,nullptr,4,,90,4,,ANY
+57685,LITERAL,2,,nullptr,4,,95,3,,ANY
+57856,LITERAL,2,,0,23,,57,2,,int
+57862,LITERAL,2,,0,36,,57,2,,int
+57865,LITERAL,1,,"""short""",59,,57,1,,char[6]
+57866,LITERAL,2,,0,72,,57,2,,int
+57877,LITERAL,2,,true,112,,59,2,,bool
+57889,LITERAL,2,,false,106,,63,2,,bool
+57904,LITERAL,-1,,true,9,,80,1,,bool
+57972,LITERAL,2,,false,23,,114,2,,bool
+57975,LITERAL,2,,true,40,,115,2,,bool
+57983,LITERAL,-1,,0,9,,249,1,,int
+57990,LITERAL,-1,,true,9,,253,1,,bool
+58003,LITERAL,-1,,0,9,,259,1,,int
+58009,LITERAL,-1,,0,9,,263,1,,int
+58018,LITERAL,-1,,"""""",9,,267,1,,char[1]
+58038,LITERAL,2,,0,38,,281,2,,int
+58048,LITERAL,1,,"""The FileNamePattern option must be set before using TimeBasedRollingPolicy. """,16,,288,1,,char[77]
+58087,LITERAL,2,,0,25,,330,2,,int
+58096,LITERAL,2,,3,39,,332,2,,int
+58113,LITERAL,2,,3,68,,334,2,,int
+58114,LITERAL,2,,3,71,,334,3,,int
+58116,LITERAL,1,,""".gz""",86,,334,1,,char[4]
+58117,LITERAL,2,,0,97,,334,2,,int
+58123,LITERAL,2,,3,27,,336,2,,int
+58135,LITERAL,2,,4,45,,338,2,,int
+58150,LITERAL,2,,4,111,,338,2,,int
+58151,LITERAL,2,,4,114,,338,3,,int
+58153,LITERAL,1,,""".zip""",129,,338,1,,char[5]
+58154,LITERAL,2,,0,141,,338,2,,int
+58160,LITERAL,2,,4,27,,340,2,,int
+58167,LITERAL,1,,"""d""",2,,352,1,,char[2]
+58179,LITERAL,1,,"""d""",2,,352,1,,char[2]
+58186,LITERAL,1,,"""date""",2,,353,1,,char[5]
+58198,LITERAL,1,,"""date""",2,,353,1,,char[5]
+58270,LITERAL,2,,0,35,,378,2,,int
+58291,LITERAL,2,,true,29,,385,2,,bool
+58307,LITERAL,1,,0,34,,387,2,,int
+58387,LITERAL,1,,0,31,,438,2,,int
+58404,LITERAL,1,,0,22,,440,2,,int
+58458,LITERAL,3,,true,71,,455,3,,bool
+58467,LITERAL,2,,3,30,,459,2,,int
+58492,LITERAL,3,,true,74,,462,3,,bool
+58508,LITERAL,2,,4,30,,467,2,,int
+58533,LITERAL,3,,true,74,,470,3,,bool
+58609,LITERAL,1,,"""THROWIOEXCEPTIONONFORKFAILURE""",16,,539,1,,char[30]
+58611,LITERAL,1,,"""throwioexceptiononforkfailure""",16,,540,1,,char[30]
+58622,LITERAL,2,,true,77,,542,3,,bool
+58687,LITERAL,2,,0,33,,60,2,,int
+58691,LITERAL,2,,0,61,,60,2,,int
+58700,LITERAL,2,,1,51,,62,2,,int
+58755,LITERAL,2,,0,33,,99,2,,int
+58759,LITERAL,2,,0,61,,99,2,,int
+58768,LITERAL,2,,1,51,,101,2,,int
+58804,LITERAL,2,,255,30,,121,2,,int
+58811,LITERAL,2,,0,25,,125,2,,int
+58817,LITERAL,4,,"""%Z""",51,,126,4,,char[3]
+58823,LITERAL,2,,0,20,,128,2,,int
+58830,LITERAL,4,,"""%z""",52,,130,4,,char[3]
+58837,LITERAL,2,,0,23,,133,2,,int
+58870,LITERAL,2,,0,33,,158,2,,int
+58874,LITERAL,2,,0,61,,158,2,,int
+58883,LITERAL,2,,1,51,,160,2,,int
+58959,LITERAL,1,,0x47,26,,203,1,,int
+58960,LITERAL,2,,0x4D,32,,203,2,,int
+58961,LITERAL,3,,0x54,38,,203,3,,int
+58962,LITERAL,4,,0,44,,203,4,,int
+58986,LITERAL,2,,5,22,,210,2,,int
+58992,LITERAL,1,,0,38,,210,2,,int
+58993,LITERAL,2,,3,41,,210,3,,int
+58999,LITERAL,2,,0,15,,212,2,,int
+59003,LITERAL,2,,0,17,,213,2,,int
+59007,LITERAL,2,,1,14,,214,2,,int
+59012,LITERAL,2,,3,10,,216,2,,int
+59013,LITERAL,2,,0x2D,16,,216,2,,int
+59018,LITERAL,1,,1,12,,218,1,,int
+59025,LITERAL,1,,4,29,,221,2,,int
+59032,LITERAL,2,,7,23,,223,2,,int
+59041,LITERAL,1,,0x3A,32,,225,2,,int
+59064,LITERAL,2,,2,61,,229,2,,int
+59075,LITERAL,1,,0,44,,230,2,,int
+59081,LITERAL,2,,2,62,,230,2,,int
+59096,LITERAL,2,,1,57,,234,2,,int
+59107,LITERAL,1,,0,44,,235,2,,int
+59133,LITERAL,2,,0,14,,248,2,,int
+59139,LITERAL,1,,1,13,,250,2,,int
+59142,LITERAL,2,,0x2B,26,,250,2,,int
+59149,LITERAL,1,,1,13,,254,2,,int
+59152,LITERAL,2,,0x2D,26,,254,2,,int
+59159,LITERAL,2,,1,22,,257,2,,int
+59165,LITERAL,1,,1,13,,259,2,,int
+59168,LITERAL,2,,0x30,26,,259,2,,int
+59178,LITERAL,1,,1,12,,263,2,,int
+59181,LITERAL,2,,0x3A,25,,263,2,,int
+59196,LITERAL,2,,1,22,,267,2,,int
+59202,LITERAL,1,,1,13,,269,2,,int
+59205,LITERAL,2,,0x30,26,,269,2,,int
+59219,LITERAL,2,,3600,40,,273,2,,int
+59222,LITERAL,2,,60,57,,273,2,,int
+59317,LITERAL,2,,0xFFFF,13,,51,2,,int
+59328,LITERAL,1,,1,15,,57,2,,int
+59362,LITERAL,2,,0xFFFF,13,,74,2,,int
+59373,LITERAL,1,,1,15,,80,2,,int
+59427,LITERAL,2,,0x80,11,,109,2,,int
+59432,LITERAL,2,,0,7,,111,2,,int
+59437,LITERAL,-1,,1,10,,112,1,,int
+59443,LITERAL,2,,0x800,16,,114,2,,int
+59448,LITERAL,2,,0,7,,116,2,,int
+59452,LITERAL,1,,0xC0,20,,116,1,,int
+59455,LITERAL,2,,6,34,,116,2,,int
+59459,LITERAL,2,,1,7,,117,2,,int
+59463,LITERAL,1,,0x80,20,,117,1,,int
+59466,LITERAL,2,,0x3F,33,,117,2,,int
+59468,LITERAL,-1,,2,10,,118,1,,int
+59474,LITERAL,2,,0x10000,16,,120,2,,int
+59479,LITERAL,2,,0,7,,122,2,,int
+59483,LITERAL,1,,0xE0,20,,122,1,,int
+59486,LITERAL,2,,12,34,,122,2,,int
+59490,LITERAL,2,,1,7,,123,2,,int
+59494,LITERAL,1,,0x80,20,,123,1,,int
+59498,LITERAL,2,,6,35,,123,2,,int
+59499,LITERAL,2,,0x3F,40,,123,2,,int
+59503,LITERAL,2,,2,7,,124,2,,int
+59507,LITERAL,1,,0x80,20,,124,1,,int
+59510,LITERAL,2,,0x3F,33,,124,2,,int
+59512,LITERAL,-1,,3,10,,125,1,,int
+59518,LITERAL,2,,0x10FFFF,17,,127,2,,int
+59523,LITERAL,2,,0,7,,129,2,,int
+59527,LITERAL,1,,0xF0,20,,129,1,,int
+59530,LITERAL,2,,18,34,,129,2,,int
+59534,LITERAL,2,,1,7,,130,2,,int
+59538,LITERAL,1,,0x80,20,,130,1,,int
+59542,LITERAL,2,,12,35,,130,2,,int
+59543,LITERAL,2,,0x3F,41,,130,2,,int
+59547,LITERAL,2,,2,7,,131,2,,int
+59551,LITERAL,1,,0x80,20,,131,1,,int
+59555,LITERAL,2,,6,35,,131,2,,int
+59556,LITERAL,2,,0x3F,40,,131,2,,int
+59560,LITERAL,2,,3,7,,132,2,,int
+59564,LITERAL,1,,0x80,20,,132,1,,int
+59567,LITERAL,2,,0x3F,33,,132,2,,int
+59569,LITERAL,-1,,4,10,,133,1,,int
+59575,LITERAL,2,,0,7,,140,2,,int
+59578,LITERAL,2,,0xEF,19,,140,2,,int
+59582,LITERAL,2,,1,7,,141,2,,int
+59585,LITERAL,2,,0xBF,19,,141,2,,int
+59589,LITERAL,2,,2,7,,142,2,,int
+59592,LITERAL,2,,0xBF,19,,142,2,,int
+59594,LITERAL,-1,,3,10,,143,1,,int
+59629,LITERAL,2,,0xFFFF,12,,156,2,,int
+59634,LITERAL,2,,0,7,,158,2,,int
+59639,LITERAL,2,,8,26,,158,2,,int
+59643,LITERAL,2,,1,7,,159,2,,int
+59648,LITERAL,2,,0xFF,25,,159,2,,int
+59650,LITERAL,-1,,2,10,,160,1,,int
+59654,LITERAL,2,,0x10FFFF,12,,163,2,,int
+59664,LITERAL,2,,16,45,,165,2,,int
+59665,LITERAL,2,,1,51,,165,2,,int
+59669,LITERAL,2,,0,7,,166,2,,int
+59673,LITERAL,1,,0xD8,20,,166,1,,int
+59676,LITERAL,2,,2,33,,166,2,,int
+59680,LITERAL,2,,1,7,,167,2,,int
+59687,LITERAL,2,,0x03,26,,167,2,,int
+59688,LITERAL,2,,6,35,,167,2,,int
+59692,LITERAL,2,,10,48,,167,2,,int
+59693,LITERAL,2,,0x3F,54,,167,2,,int
+59697,LITERAL,2,,2,7,,168,2,,int
+59701,LITERAL,1,,0xDC,20,,168,1,,int
+59705,LITERAL,2,,0x30,34,,168,2,,int
+59706,LITERAL,2,,4,43,,168,2,,int
+59710,LITERAL,2,,3,7,,169,2,,int
+59715,LITERAL,2,,0xFF,25,,169,2,,int
+59717,LITERAL,-1,,4,10,,170,1,,int
+59721,LITERAL,2,,0,6,,173,2,,int
+59725,LITERAL,2,,1,15,,173,2,,int
+59728,LITERAL,2,,0xFF,27,,173,2,,int
+59730,LITERAL,-1,,2,9,,174,1,,int
+59765,LITERAL,2,,0xFFFF,12,,185,2,,int
+59770,LITERAL,2,,1,7,,187,2,,int
+59775,LITERAL,2,,8,26,,187,2,,int
+59779,LITERAL,2,,0,7,,188,2,,int
+59784,LITERAL,2,,0xFF,25,,188,2,,int
+59786,LITERAL,-1,,2,10,,189,1,,int
+59790,LITERAL,2,,0x10FFFF,12,,192,2,,int
+59800,LITERAL,2,,16,45,,194,2,,int
+59801,LITERAL,2,,1,51,,194,2,,int
+59805,LITERAL,2,,1,7,,195,2,,int
+59809,LITERAL,1,,0xD8,20,,195,1,,int
+59812,LITERAL,2,,2,33,,195,2,,int
+59816,LITERAL,2,,0,7,,196,2,,int
+59823,LITERAL,2,,0x03,26,,196,2,,int
+59824,LITERAL,2,,6,35,,196,2,,int
+59828,LITERAL,2,,10,48,,196,2,,int
+59829,LITERAL,2,,0x3F,54,,196,2,,int
+59833,LITERAL,2,,3,7,,197,2,,int
+59837,LITERAL,1,,0xDC,20,,197,1,,int
+59841,LITERAL,2,,0x30,34,,197,2,,int
+59842,LITERAL,2,,4,43,,197,2,,int
+59846,LITERAL,2,,2,7,,198,2,,int
+59851,LITERAL,2,,0xFF,25,,198,2,,int
+59853,LITERAL,-1,,4,10,,199,1,,int
+59857,LITERAL,2,,0,6,,202,2,,int
+59861,LITERAL,2,,1,15,,202,2,,int
+59864,LITERAL,2,,0xFF,27,,202,2,,int
+59866,LITERAL,-1,,2,9,,203,1,,int
+59885,LITERAL,2,,0x7F,13,,213,2,,int
+59894,LITERAL,2,,0xC0,13,,221,2,,int
+59895,LITERAL,2,,0x80,22,,221,2,,int
+59913,LITERAL,2,,0xC0,14,,227,2,,int
+59914,LITERAL,2,,0x80,23,,227,2,,int
+59920,LITERAL,-1,,0xFFFF,11,,230,1,,int
+59925,LITERAL,2,,0xE0,14,,233,2,,int
+59926,LITERAL,2,,0xC0,23,,233,2,,int
+59932,LITERAL,2,,0xC0,15,,235,2,,int
+59933,LITERAL,2,,0x80,24,,235,2,,int
+59942,LITERAL,2,,0x1F,31,,237,2,,int
+59943,LITERAL,2,,6,40,,237,2,,int
+59946,LITERAL,2,,0x3F,52,,237,2,,int
+59950,LITERAL,2,,0x80,15,,239,2,,int
+59958,LITERAL,-1,,0xFFFF,11,,246,1,,int
+59977,LITERAL,2,,0xC0,15,,256,2,,int
+59978,LITERAL,2,,0x80,24,,256,2,,int
+59984,LITERAL,-1,,0xFFFF,12,,259,1,,int
+59989,LITERAL,2,,0xF0,15,,262,2,,int
+59990,LITERAL,2,,0xE0,24,,262,2,,int
+60000,LITERAL,2,,0x0F,27,,264,2,,int
+60001,LITERAL,2,,12,36,,264,2,,int
+60005,LITERAL,2,,0x3F,16,,265,2,,int
+60006,LITERAL,2,,6,25,,265,2,,int
+60009,LITERAL,2,,0x3F,15,,266,2,,int
+60013,LITERAL,2,,0x800,15,,268,2,,int
+60019,LITERAL,-1,,0xFFFF,13,,271,1,,int
+60040,LITERAL,2,,0xC0,16,,281,2,,int
+60041,LITERAL,2,,0x80,25,,281,2,,int
+60047,LITERAL,-1,,0xFFFF,13,,284,1,,int
+60057,LITERAL,2,,0x07,31,,287,2,,int
+60058,LITERAL,2,,18,40,,287,2,,int
+60062,LITERAL,2,,0x3F,16,,288,2,,int
+60063,LITERAL,2,,12,25,,288,2,,int
+60067,LITERAL,2,,0x3F,16,,289,2,,int
+60068,LITERAL,2,,6,25,,289,2,,int
+60071,LITERAL,2,,0x3F,15,,290,2,,int
+60075,LITERAL,2,,0xFFFF,14,,292,2,,int
+60083,LITERAL,-1,,0xFFFF,9,,302,1,,int
+60149,LITERAL,2,,0x80,50,,325,2,,int
+60157,LITERAL,1,,1,14,,328,2,,int
+60199,LITERAL,2,,0,28,,338,2,,int
+60221,LITERAL,1,,1,16,,344,2,,int
+60232,LITERAL,2,,1,35,,345,2,,int
+60301,LITERAL,2,,0x80,49,,379,2,,int
+60309,LITERAL,1,,1,14,,382,2,,int
+60374,LITERAL,1,,1,16,,401,2,,int
+60400,LITERAL,2,,0xD800,12,,421,2,,int
+60403,LITERAL,2,,0xDFFF,28,,421,2,,int
+60408,LITERAL,2,,0xFFFF,14,,426,2,,int
+60419,LITERAL,2,,0xDC00,17,,433,2,,int
+60426,LITERAL,2,,1,27,,438,2,,int
+60444,LITERAL,2,,0xDC00,15,,447,2,,int
+60447,LITERAL,2,,0xDFFF,32,,447,2,,int
+60451,LITERAL,2,,2,13,,449,2,,int
+60458,LITERAL,2,,0xD800,19,,450,2,,int
+60459,LITERAL,2,,0x400,29,,450,2,,int
+60462,LITERAL,2,,0xDC00,44,,450,2,,int
+60463,LITERAL,2,,0x10000,54,,450,2,,int
+60465,LITERAL,-1,,0xFFFF,9,,458,1,,int
+60475,LITERAL,2,,0x10000,11,,464,2,,int
+60481,LITERAL,1,,1,14,,466,2,,int
+60492,LITERAL,2,,16,44,,470,2,,int
+60500,LITERAL,2,,1,42,,471,2,,int
+60506,LITERAL,1,,0xD800,24,,472,1,,int
+60510,LITERAL,2,,0xF,39,,472,2,,int
+60511,LITERAL,2,,6,47,,472,2,,int
+60515,LITERAL,2,,0xFFFF,59,,472,2,,int
+60516,LITERAL,2,,10,70,,472,2,,int
+60521,LITERAL,1,,0xDC00,24,,473,1,,int
+60524,LITERAL,2,,0x3FF,39,,473,2,,int
+60529,LITERAL,1,,1,14,,474,2,,int
+60535,LITERAL,1,,1,14,,475,2,,int
+60567,LITERAL,1,,' ',24,,684,1,,char
+60568,LITERAL,2,,'!',29,,684,2,,char
+60569,LITERAL,3,,"'""'",34,,684,3,,char
+60570,LITERAL,4,,'#',39,,684,4,,char
+60571,LITERAL,5,,'$',44,,684,5,,char
+60572,LITERAL,6,,'%',49,,684,6,,char
+60573,LITERAL,7,,'&',54,,684,7,,char
+60574,LITERAL,8,,'\'',59,,684,8,,char
+60575,LITERAL,9,,'(',65,,684,9,,char
+60576,LITERAL,10,,')',70,,684,10,,char
+60577,LITERAL,11,,'*',75,,684,11,,char
+60578,LITERAL,12,,'+',80,,684,12,,char
+60579,LITERAL,13,,"','",85,,684,13,,char
+60580,LITERAL,14,,'-',90,,684,14,,char
+60581,LITERAL,15,,'.',95,,684,15,,char
+60582,LITERAL,16,,'/',100,,684,16,,char
+60583,LITERAL,17,,'0',4,,685,17,,char
+60584,LITERAL,18,,'1',9,,685,18,,char
+60585,LITERAL,19,,'2',14,,685,19,,char
+60586,LITERAL,20,,'3',19,,685,20,,char
+60587,LITERAL,21,,'4',24,,685,21,,char
+60588,LITERAL,22,,'5',29,,685,22,,char
+60589,LITERAL,23,,'6',34,,685,23,,char
+60590,LITERAL,24,,'7',39,,685,24,,char
+60591,LITERAL,25,,'8',44,,685,25,,char
+60592,LITERAL,26,,'9',49,,685,26,,char
+60593,LITERAL,27,,':',54,,685,27,,char
+60594,LITERAL,28,,';',59,,685,28,,char
+60595,LITERAL,29,,'<',64,,685,29,,char
+60596,LITERAL,30,,'=',69,,685,30,,char
+60597,LITERAL,31,,'>',74,,685,31,,char
+60598,LITERAL,32,,'?',79,,685,32,,char
+60599,LITERAL,33,,'@',4,,686,33,,char
+60600,LITERAL,34,,'A',9,,686,34,,char
+60601,LITERAL,35,,'B',14,,686,35,,char
+60602,LITERAL,36,,'C',19,,686,36,,char
+60603,LITERAL,37,,'D',24,,686,37,,char
+60604,LITERAL,38,,'E',29,,686,38,,char
+60605,LITERAL,39,,'F',34,,686,39,,char
+60606,LITERAL,40,,'G',40,,686,40,,char
+60607,LITERAL,41,,'H',45,,686,41,,char
+60608,LITERAL,42,,'I',50,,686,42,,char
+60609,LITERAL,43,,'J',55,,686,43,,char
+60610,LITERAL,44,,'K',60,,686,44,,char
+60611,LITERAL,45,,'L',65,,686,45,,char
+60612,LITERAL,46,,'M',70,,686,46,,char
+60613,LITERAL,47,,'N',75,,686,47,,char
+60614,LITERAL,48,,'O',80,,686,48,,char
+60615,LITERAL,49,,'P',4,,687,49,,char
+60616,LITERAL,50,,'Q',9,,687,50,,char
+60617,LITERAL,51,,'R',14,,687,51,,char
+60618,LITERAL,52,,'S',19,,687,52,,char
+60619,LITERAL,53,,'T',24,,687,53,,char
+60620,LITERAL,54,,'U',29,,687,54,,char
+60621,LITERAL,55,,'V',34,,687,55,,char
+60622,LITERAL,56,,'W',40,,687,56,,char
+60623,LITERAL,57,,'X',45,,687,57,,char
+60624,LITERAL,58,,'Y',50,,687,58,,char
+60625,LITERAL,59,,'Z',55,,687,59,,char
+60626,LITERAL,60,,'[',60,,687,60,,char
+60627,LITERAL,61,,'\\',65,,687,61,,char
+60628,LITERAL,62,,']',71,,687,62,,char
+60629,LITERAL,63,,'^',76,,687,63,,char
+60630,LITERAL,64,,'_',81,,687,64,,char
+60631,LITERAL,65,,'`',4,,688,65,,char
+60632,LITERAL,66,,'a',9,,688,66,,char
+60633,LITERAL,67,,'b',14,,688,67,,char
+60634,LITERAL,68,,'c',19,,688,68,,char
+60635,LITERAL,69,,'d',24,,688,69,,char
+60636,LITERAL,70,,'e',29,,688,70,,char
+60637,LITERAL,71,,'f',34,,688,71,,char
+60638,LITERAL,72,,'g',40,,688,72,,char
+60639,LITERAL,73,,'h',45,,688,73,,char
+60640,LITERAL,74,,'i',50,,688,74,,char
+60641,LITERAL,75,,'j',55,,688,75,,char
+60642,LITERAL,76,,'k',60,,688,76,,char
+60643,LITERAL,77,,'l',65,,688,77,,char
+60644,LITERAL,78,,'m',70,,688,78,,char
+60645,LITERAL,79,,'n',75,,688,79,,char
+60646,LITERAL,80,,'o',80,,688,80,,char
+60647,LITERAL,81,,'p',4,,689,81,,char
+60648,LITERAL,82,,'q',9,,689,82,,char
+60649,LITERAL,83,,'r',14,,689,83,,char
+60650,LITERAL,84,,'s',19,,689,84,,char
+60651,LITERAL,85,,'t',24,,689,85,,char
+60652,LITERAL,86,,'u',29,,689,86,,char
+60653,LITERAL,87,,'v',34,,689,87,,char
+60654,LITERAL,88,,'w',40,,689,88,,char
+60655,LITERAL,89,,'x',45,,689,89,,char
+60656,LITERAL,90,,'y',50,,689,90,,char
+60657,LITERAL,91,,'z',55,,689,91,,char
+60658,LITERAL,92,,'{',60,,689,92,,char
+60659,LITERAL,93,,'|',65,,689,93,,char
+60660,LITERAL,94,,'}',70,,689,94,,char
+60661,LITERAL,95,,'~',75,,689,95,,char
+60686,LITERAL,2,,0x20,16,,697,2,,int
+60690,LITERAL,2,,0x7F,32,,697,2,,int
+60696,LITERAL,1,,1,15,,699,2,,int
+60702,LITERAL,2,,0x20,37,,699,2,,int
+60709,LITERAL,1,,1,15,,703,2,,int
+60736,LITERAL,2,,0,24,,33,2,,int
+60743,LITERAL,1,,0x22,25,,38,1,,int
+60744,LITERAL,2,,0x26,39,,38,2,,int
+60745,LITERAL,3,,0x3C,53,,38,3,,int
+60746,LITERAL,4,,0x3E,67,,38,4,,int
+60747,LITERAL,5,,0x00,81,,38,5,,int
+60751,LITERAL,2,,0,17,,39,2,,int
+60788,LITERAL,-1,,0x22,9,,51,2,,int
+60794,LITERAL,1,,"""&quot;""",28,,52,1,,char[7]
+60797,LITERAL,-1,,0x26,9,,55,6,,int
+60803,LITERAL,1,,"""&amp;""",28,,56,1,,char[6]
+60806,LITERAL,-1,,0x3C,9,,59,10,,int
+60812,LITERAL,1,,"""&lt;""",28,,60,1,,char[5]
+60815,LITERAL,-1,,0x3E,9,,63,14,,int
+60821,LITERAL,1,,"""&gt;""",28,,64,1,,char[5]
+60828,LITERAL,1,,1,16,,68,2,,int
+60837,LITERAL,2,,1,21,,72,2,,int
+60890,LITERAL,1,,"""]]>""",57,,93,1,,char[4]
+60894,LITERAL,1,,"""]]>]]&gt;<![CDATA[""",65,,94,1,,char[19]
+60898,LITERAL,2,,3,45,,96,2,,int
+60905,LITERAL,2,,0,24,,99,2,,int
+60932,LITERAL,2,,0,31,,112,2,,int
+61083,LITERAL,2,,0,15,,65,2,,int
+61096,LITERAL,2,,0,23,,67,2,,int
+61114,LITERAL,1,,"""No layout set for the appender named [""",29,,70,1,,char[39]
+61126,LITERAL,1,,"""].""",32,,71,1,,char[3]
+61141,LITERAL,2,,0,23,,75,2,,int
+61161,LITERAL,1,,"""No writer set for the appender named [""",29,,78,1,,char[39]
+61173,LITERAL,1,,"""].""",32,,79,1,,char[3]
+61179,LITERAL,2,,0,16,,83,2,,int
+61207,LITERAL,2,,false,29,,110,2,,bool
+61211,LITERAL,2,,false,31,,111,2,,bool
+61215,LITERAL,2,,false,31,,112,2,,bool
+61237,LITERAL,1,,"""Not allowed to write to a closed appender.""",29,,118,1,,char[43]
+61240,LITERAL,2,,true,19,,119,2,,bool
+61242,LITERAL,-1,,false,10,,122,1,,bool
+61255,LITERAL,2,,0,23,,125,2,,int
+61278,LITERAL,1,,"""No output stream or file set for the appender named [""",27,,130,1,,char[54]
+61290,LITERAL,1,,"""].""",31,,131,1,,char[3]
+61293,LITERAL,2,,true,21,,132,2,,bool
+61295,LITERAL,-1,,false,10,,135,1,,bool
+61308,LITERAL,2,,0,23,,138,2,,int
+61331,LITERAL,1,,"""No layout set for the appender named [""",27,,143,1,,char[39]
+61343,LITERAL,1,,"""].""",31,,144,1,,char[3]
+61346,LITERAL,2,,true,21,,145,2,,bool
+61348,LITERAL,-1,,false,10,,147,1,,bool
+61350,LITERAL,-1,,true,9,,150,1,,bool
+61400,LITERAL,2,,true,18,,173,2,,bool
+61467,LITERAL,2,,0,20,,193,2,,int
+61476,LITERAL,1,,"""Could not close writer for WriterAppender named """,40,,197,1,,char[49]
+61518,LITERAL,1,,"""utf-16""",17,,223,1,,char[7]
+61520,LITERAL,1,,"""UTF-16""",40,,223,1,,char[7]
+61529,LITERAL,1,,"""UTF-16BE""",53,,225,1,,char[9]
+61555,LITERAL,1,,"""Error initializing output writer.""",29,,235,1,,char[34]
+61561,LITERAL,1,,"""Unsupported encoding?""",29,,236,1,,char[22]
+61826,LITERAL,-1,,true,9,,304,1,,bool
+61840,LITERAL,1,,"""ENCODING""",57,,309,1,,char[9]
+61842,LITERAL,1,,"""encoding""",82,,309,1,,char[9]
+61946,LITERAL,2,,2,70,,56,2,,int
+61964,LITERAL,1,,"""LOCATIONINFO""",57,,64,1,,char[13]
+61966,LITERAL,1,,"""locationinfo""",86,,64,1,,char[13]
+61974,LITERAL,2,,false,53,,66,3,,bool
+61981,LITERAL,2,,2,71,,67,2,,int
+61989,LITERAL,1,,"""PROPERTIES""",57,,70,1,,char[11]
+61991,LITERAL,1,,"""properties""",84,,70,1,,char[11]
+61999,LITERAL,2,,false,51,,72,3,,bool
+62006,LITERAL,2,,2,71,,73,2,,int
+62034,LITERAL,1,,"""<log4j:event logger=\""""",28,,82,1,,char[22]
+62049,LITERAL,1,,"""\"" timestamp=\""""",28,,84,1,,char[14]
+62059,LITERAL,2,,1000L,49,,85,2,,long int
+62067,LITERAL,1,,"""\"" level=\""""",28,,86,1,,char[10]
+62085,LITERAL,1,,"""\"" thread=\""""",28,,88,1,,char[11]
+62100,LITERAL,1,,"""\"">""",28,,90,1,,char[3]
+62111,LITERAL,1,,"""<log4j:message><![CDATA[""",28,,93,1,,char[25]
+62126,LITERAL,1,,"""]]></log4j:message>""",28,,97,1,,char[20]
+62145,LITERAL,1,,"""<log4j:NDC><![CDATA[""",29,,104,1,,char[21]
+62157,LITERAL,1,,"""]]></log4j:NDC>""",29,,106,1,,char[16]
+62173,LITERAL,1,,"""<log4j:locationInfo class=\""""",29,,112,1,,char[28]
+62198,LITERAL,1,,"""\"" method=\""""",29,,116,1,,char[11]
+62216,LITERAL,1,,"""\"" file=\""""",29,,119,1,,char[9]
+62234,LITERAL,1,,"""\"" line=\""""",29,,122,1,,char[9]
+62250,LITERAL,1,,"""\""/>""",29,,124,1,,char[4]
+62290,LITERAL,1,,"""<log4j:properties>""",30,,135,1,,char[19]
+62332,LITERAL,1,,"""<log4j:data name=\""""",32,,147,1,,char[19]
+62344,LITERAL,1,,"""\"" value=\""""",32,,149,1,,char[10]
+62356,LITERAL,1,,"""\""/>""",32,,151,1,,char[4]
+62398,LITERAL,1,,"""<log4j:data name=\""""",32,,165,1,,char[19]
+62410,LITERAL,1,,"""\"" value=\""""",32,,167,1,,char[10]
+62422,LITERAL,1,,"""\""/>""",32,,169,1,,char[4]
+62433,LITERAL,1,,"""</log4j:properties>""",30,,174,1,,char[20]
+62444,LITERAL,1,,"""</log4j:event>""",28,,179,1,,char[15]
+62551,LITERAL,2,,4560,55,,56,2,,int
+62555,LITERAL,2,,30000,55,,59,2,,int
+62559,LITERAL,2,,1024,55,,61,2,,int
+62748,LITERAL,2,,nullptr,20,,116,2,,ANY
+62828,LITERAL,2,,nullptr,20,,138,2,,ANY
+62834,LITERAL,1,,"""Detected problem with connection: """,29,,139,1,,char[35]
+62839,LITERAL,2,,0,33,,141,2,,int
+62879,LITERAL,2,,true,39,,42,2,,bool
+62912,LITERAL,-1,,false,10,,59,1,,bool
+62998,LITERAL,1,,5,23,,102,1,,int
+63005,LITERAL,2,,0,10,,103,2,,int
+63011,LITERAL,2,,"""zip""",14,,105,2,,char[4]
+63017,LITERAL,2,,"""-q""",14,,106,2,,char[3]
+63106,LITERAL,2,,"""zip""",31,,117,2,,char[4]
+63154,LITERAL,1,,"""Failed to fork zip during log rotation; leaving log file uncompressed""",28,,132,1,,char[70]
+63156,LITERAL,-1,,true,10,,133,1,,bool
+63200,LITERAL,-1,,true,9,,149,1,,bool
+64929,LITERAL,1,,0x01,24,,29,1,,int
+64930,LITERAL,2,,0,32,,29,2,,int
+64934,LITERAL,1,,0x01,22,,30,1,,int
+64935,LITERAL,2,,1,30,,30,2,,int
+65271,LITERAL,2,,false,25,,108,2,,bool
+66155,LITERAL,2,,true,39,,48,2,,bool
+66257,LITERAL,2,,0,18,,33,2,,int
+66270,LITERAL,2,,0,24,,36,2,,int
+66296,LITERAL,1,,2,26,,42,1,,int
+66297,LITERAL,2,,20,26,,42,2,,int
+66302,LITERAL,1,,1,11,,43,1,,int
+66305,LITERAL,1,,0,6,,44,1,,int
+66310,LITERAL,1,,2,11,,45,1,,int
+66320,LITERAL,2,,0,17,,48,2,,int
+66353,LITERAL,2,,0,10,,56,2,,int
+66361,LITERAL,2,,0,14,,59,2,,int
+66364,LITERAL,1,,3,11,,60,1,,int
+66366,LITERAL,-1,,0,9,,62,1,,int
+66943,LITERAL,2,,0,22,,35,2,,int
+66946,LITERAL,2,,1,20,,36,2,,int
+66949,LITERAL,2,,2,20,,37,2,,int
+66952,LITERAL,2,,3,20,,38,2,,int
+66955,LITERAL,2,,4,24,,39,2,,int
+66958,LITERAL,2,,5,21,,40,2,,int
+66961,LITERAL,2,,6,28,,41,2,,int
+67279,LITERAL,2,,0,19,,44,2,,int
+67304,LITERAL,2,,0,18,,51,2,,int
+67343,LITERAL,2,,1,70,,59,2,,int
+67350,LITERAL,2,,0,21,,60,2,,int
+67358,LITERAL,1,,0,28,,61,1,,int
+67391,LITERAL,2,,1,74,,66,2,,int

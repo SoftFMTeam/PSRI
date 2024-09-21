@@ -1,0 +1,677 @@
+19,MEMBER,<empty>,<empty>,dbname_,15,,15,dbname_,1,,ANY
+20,MEMBER,<empty>,<empty>,* tiny_cache_,8,,16,tiny_cache_,2,,Cache*
+21,MEMBER,<empty>,<empty>,options_,11,,17,options_,3,,Options
+22,MEMBER,<empty>,<empty>,* db_,5,,18,db_,4,,DB*
+846,MEMBER,<empty>,<empty>,*               rep,35,,46,rep,1,,DB*
+848,MEMBER,<empty>,<empty>,*         rep,41,,47,rep,1,,Iterator*
+850,MEMBER,<empty>,<empty>,rep,51,,48,rep,1,,WriteBatch
+852,MEMBER,<empty>,<empty>,*   rep,47,,49,rep,1,,Snapshot*
+854,MEMBER,<empty>,<empty>,rep,51,,50,rep,1,,ReadOptions
+856,MEMBER,<empty>,<empty>,rep,51,,51,rep,1,,WriteOptions
+858,MEMBER,<empty>,<empty>,rep,51,,52,rep,1,,Options
+860,MEMBER,<empty>,<empty>,*            rep,38,,53,rep,1,,Cache*
+862,MEMBER,<empty>,<empty>,*   rep,47,,54,rep,1,,SequentialFile*
+864,MEMBER,<empty>,<empty>,* rep,49,,55,rep,1,,RandomAccessFile*
+866,MEMBER,<empty>,<empty>,*     rep,45,,56,rep,1,,WritableFile*
+868,MEMBER,<empty>,<empty>,*           rep,39,,57,rep,1,,Logger*
+870,MEMBER,<empty>,<empty>,*         rep,41,,58,rep,1,,FileLock*
+872,MEMBER,<empty>,<empty>,* state_,7,,61,state_,1,,void*
+948,MEMBER,<empty>,<empty>,* state_,7,,87,state_,1,,void*
+1099,MEMBER,<empty>,<empty>,* rep,6,,128,rep,1,,Env*
+1100,MEMBER,<empty>,<empty>,is_default,8,,129,is_default,2,,bool
+3870,MEMBER,<empty>,<empty>,env_,18,,29,env_,1,,ANY
+3871,MEMBER,<empty>,<empty>,dbname_,15,,30,dbname_,2,,ANY
+3872,MEMBER,<empty>,<empty>,* tiny_cache_,8,,31,tiny_cache_,3,,Cache*
+3873,MEMBER,<empty>,<empty>,options_,11,,32,options_,4,,Options
+3874,MEMBER,<empty>,<empty>,* db_,5,,33,db_,5,,DB*
+6027,MEMBER,<empty>,<empty>,data_,15,,125,data_,1,,ANY
+6028,MEMBER,<empty>,<empty>,pos_,7,,126,pos_,2,,int
+6140,MEMBER,<empty>,<empty>,start_,10,,178,start_,1,,double
+6141,MEMBER,<empty>,<empty>,finish_,10,,179,finish_,2,,double
+6142,MEMBER,<empty>,<empty>,seconds_,10,,180,seconds_,3,,double
+6143,MEMBER,<empty>,<empty>,done_,7,,181,done_,4,,int
+6144,MEMBER,<empty>,<empty>,next_report_,7,,182,next_report_,5,,int
+6145,MEMBER,<empty>,<empty>,bytes_,11,,183,bytes_,6,,int64_t
+6146,MEMBER,<empty>,<empty>,last_op_finish_,10,,184,last_op_finish_,7,,double
+6147,MEMBER,<empty>,<empty>,hist_,13,,185,hist_,8,,Histogram
+6148,MEMBER,<empty>,<empty>,message_,15,,186,message_,9,,ANY
+6487,MEMBER,<empty>,<empty>,mu,15,,285,mu,1,,ANY
+6488,MEMBER,<empty>,<empty>,cv,17,,286,cv,2,,ANY
+6489,MEMBER,<empty>,<empty>,total,7,,287,total,3,,int
+6490,MEMBER,<empty>,<empty>,num_initialized,7,,295,num_initialized,4,,int
+6491,MEMBER,<empty>,<empty>,num_done,7,,296,num_done,5,,int
+6492,MEMBER,<empty>,<empty>,start,8,,297,start,6,,bool
+6498,MEMBER,<empty>,<empty>,tid,7,,304,tid,1,,int
+6499,MEMBER,<empty>,<empty>,rand,10,,305,rand,2,,Random
+6500,MEMBER,<empty>,<empty>,stats,9,,306,stats,3,,Stats
+6501,MEMBER,<empty>,<empty>,* shared,14,,307,shared,4,,SharedState*
+6508,MEMBER,<empty>,<empty>,* cache_,8,,319,cache_,1,,Cache*
+6509,MEMBER,<empty>,<empty>,* filter_policy_,21,,320,filter_policy_,2,,FilterPolicy*
+6510,MEMBER,<empty>,<empty>,* db_,5,,321,db_,3,,DB*
+6511,MEMBER,<empty>,<empty>,num_,7,,322,num_,4,,int
+6512,MEMBER,<empty>,<empty>,value_size_,7,,323,value_size_,5,,int
+6513,MEMBER,<empty>,<empty>,entries_per_batch_,7,,324,entries_per_batch_,6,,int
+6514,MEMBER,<empty>,<empty>,write_options_,16,,325,write_options_,7,,WriteOptions
+6515,MEMBER,<empty>,<empty>,reads_,7,,326,reads_,8,,int
+6516,MEMBER,<empty>,<empty>,heap_counter_,7,,327,heap_counter_,9,,int
+7225,MEMBER,<empty>,<empty>,* bm,14,,552,bm,1,,Benchmark*
+7226,MEMBER,<empty>,<empty>,* shared,16,,553,shared,2,,SharedState*
+7227,MEMBER,<empty>,<empty>,* thread,16,,554,thread,3,,ThreadState*
+9409,MEMBER,<empty>,<empty>,status,10,,42,status,1,,Status
+9410,MEMBER,<empty>,<empty>,* batch,13,,43,batch,2,,WriteBatch*
+9411,MEMBER,<empty>,<empty>,sync,8,,44,sync,3,,bool
+9412,MEMBER,<empty>,<empty>,done,8,,45,done,4,,bool
+9413,MEMBER,<empty>,<empty>,cv,17,,46,cv,5,,ANY
+9420,MEMBER,<empty>,<empty>,* const compaction,13,,52,compaction,1,,Compaction*
+9421,MEMBER,<empty>,<empty>,smallest_snapshot,18,,58,smallest_snapshot,2,,SequenceNumber
+9423,MEMBER,<empty>,<empty>,number,14,,62,number,1,,uint64_t
+9424,MEMBER,<empty>,<empty>,file_size,14,,63,file_size,2,,uint64_t
+9425,MEMBER,<empty>,<empty>,smallest,17,,64,smallest,3,,InternalKey
+9426,MEMBER,<empty>,<empty>,largest,27,,64,largest,4,,InternalKey
+9427,MEMBER,<empty>,<empty>,outputs,23,,66,outputs,4,,ANY
+9428,MEMBER,<empty>,<empty>,* outfile,15,,69,outfile,5,,WritableFile*
+9429,MEMBER,<empty>,<empty>,* builder,15,,70,builder,6,,TableBuilder*
+9430,MEMBER,<empty>,<empty>,total_bytes,12,,72,total_bytes,7,,uint64_t
+12877,MEMBER,<empty>,<empty>,* mu,14,,1050,mu,1,,ANY*
+12878,MEMBER,<empty>,<empty>,* version,10,,1051,version,2,,Version*
+12879,MEMBER,<empty>,<empty>,* mem,11,,1052,mem,3,,MemTable*
+12880,MEMBER,<empty>,<empty>,* imm,11,,1053,imm,4,,MemTable*
+14946,MEMBER,<empty>,<empty>,* const env_,6,,122,env_,41,,Env*
+14947,MEMBER,<empty>,<empty>,internal_comparator_,31,,123,internal_comparator_,42,,InternalKeyComparator
+14948,MEMBER,<empty>,<empty>,internal_filter_policy_,30,,124,internal_filter_policy_,43,,InternalFilterPolicy
+14949,MEMBER,<empty>,<empty>,options_,17,,125,options_,44,,Options
+14950,MEMBER,<empty>,<empty>,owns_info_log_,8,,126,owns_info_log_,45,,bool
+14951,MEMBER,<empty>,<empty>,owns_cache_,8,,127,owns_cache_,46,,bool
+14952,MEMBER,<empty>,<empty>,dbname_,21,,128,dbname_,47,,ANY
+14953,MEMBER,<empty>,<empty>,* table_cache_,13,,131,table_cache_,48,,TableCache*
+14954,MEMBER,<empty>,<empty>,* db_lock_,11,,134,db_lock_,49,,FileLock*
+14955,MEMBER,<empty>,<empty>,mutex_,15,,137,mutex_,50,,ANY
+14956,MEMBER,<empty>,<empty>,shutting_down_,23,,138,shutting_down_,51,,ANY
+14957,MEMBER,<empty>,<empty>,bg_cv_,17,,139,bg_cv_,52,,ANY
+14958,MEMBER,<empty>,<empty>,* mem_,11,,140,mem_,53,,MemTable*
+14959,MEMBER,<empty>,<empty>,* imm_,11,,141,imm_,54,,MemTable*
+14960,MEMBER,<empty>,<empty>,has_imm_,23,,142,has_imm_,55,,ANY
+14961,MEMBER,<empty>,<empty>,* logfile_,15,,143,logfile_,56,,WritableFile*
+14962,MEMBER,<empty>,<empty>,logfile_number_,12,,144,logfile_number_,57,,uint64_t
+14963,MEMBER,<empty>,<empty>,* log_,14,,145,log_,58,,ANY*
+14964,MEMBER,<empty>,<empty>,seed_,12,,146,seed_,59,,uint32_t
+14965,MEMBER,<empty>,<empty>,writers_,23,,149,writers_,60,,ANY
+14966,MEMBER,<empty>,<empty>,* tmp_batch_,13,,150,tmp_batch_,61,,WriteBatch*
+14967,MEMBER,<empty>,<empty>,snapshots_,16,,152,snapshots_,62,,SnapshotList
+14968,MEMBER,<empty>,<empty>,pending_outputs_,22,,156,pending_outputs_,63,,ANY
+14969,MEMBER,<empty>,<empty>,bg_compaction_scheduled_,8,,159,bg_compaction_scheduled_,64,,bool
+14971,MEMBER,<empty>,<empty>,level,9,,163,level,1,,int
+14972,MEMBER,<empty>,<empty>,done,10,,164,done,2,,bool
+14973,MEMBER,<empty>,<empty>,* begin,22,,165,begin,3,,InternalKey*
+14974,MEMBER,<empty>,<empty>,* end,22,,166,end,4,,InternalKey*
+14975,MEMBER,<empty>,<empty>,tmp_storage,17,,167,tmp_storage,5,,InternalKey
+14976,MEMBER,<empty>,<empty>,* manual_compaction_,19,,169,manual_compaction_,66,,ManualCompaction*
+14977,MEMBER,<empty>,<empty>,* versions_,13,,171,versions_,67,,VersionSet*
+14978,MEMBER,<empty>,<empty>,bg_error_,10,,174,bg_error_,68,,Status
+14980,MEMBER,<empty>,<empty>,micros,13,,179,micros,1,,int64_t
+14981,MEMBER,<empty>,<empty>,bytes_read,13,,180,bytes_read,2,,int64_t
+14982,MEMBER,<empty>,<empty>,bytes_written,13,,181,bytes_written,3,,int64_t
+15013,MEMBER,<empty>,<empty>,stats_[config::kNumLevels],19,,191,stats_,70,,ANY
+15078,MEMBER,<empty>,<empty>,kForward,5,,47,kForward,1,,ANY
+15079,MEMBER,<empty>,<empty>,kReverse,5,,48,kReverse,2,,ANY
+15243,MEMBER,<empty>,<empty>,* db_,9,,111,db_,19,,DBImpl*
+15244,MEMBER,<empty>,<empty>,* const user_comparator_,19,,112,user_comparator_,20,,Comparator*
+15245,MEMBER,<empty>,<empty>,* const iter_,11,,113,iter_,21,,Iterator*
+15246,MEMBER,<empty>,<empty>,sequence_,24,,114,sequence_,22,,SequenceNumber
+15247,MEMBER,<empty>,<empty>,status_,10,,116,status_,23,,Status
+15248,MEMBER,<empty>,<empty>,saved_key_,15,,117,saved_key_,24,,ANY
+15249,MEMBER,<empty>,<empty>,saved_value_,15,,118,saved_value_,25,,ANY
+15250,MEMBER,<empty>,<empty>,direction_,13,,119,direction_,26,,Direction
+15251,MEMBER,<empty>,<empty>,valid_,8,,120,valid_,27,,bool
+15252,MEMBER,<empty>,<empty>,rnd_,10,,122,rnd_,28,,Random
+15253,MEMBER,<empty>,<empty>,bytes_counter_,11,,123,bytes_counter_,29,,ssize_t
+15851,MEMBER,<empty>,<empty>,mu_,15,,31,mu_,1,,ANY
+15852,MEMBER,<empty>,<empty>,count_,7,,32,count_,2,,int
+15912,MEMBER,<empty>,<empty>,delay_data_sync_,23,,61,delay_data_sync_,1,,ANY
+15913,MEMBER,<empty>,<empty>,data_sync_error_,23,,64,data_sync_error_,2,,ANY
+15914,MEMBER,<empty>,<empty>,no_space_,23,,67,no_space_,3,,ANY
+15915,MEMBER,<empty>,<empty>,non_writable_,23,,70,non_writable_,4,,ANY
+15916,MEMBER,<empty>,<empty>,manifest_sync_error_,23,,73,manifest_sync_error_,5,,ANY
+15917,MEMBER,<empty>,<empty>,manifest_write_error_,23,,76,manifest_write_error_,6,,ANY
+15918,MEMBER,<empty>,<empty>,count_random_reads_,8,,78,count_random_reads_,7,,bool
+15919,MEMBER,<empty>,<empty>,random_read_counter_,17,,79,random_read_counter_,8,,AtomicCounter
+16077,MEMBER,<empty>,<empty>,* filter_policy_,21,,191,filter_policy_,1,,FilterPolicy*
+16079,MEMBER,<empty>,<empty>,kDefault,5,,195,kDefault,1,,ANY
+16080,MEMBER,<empty>,<empty>,kReuse,5,,196,kReuse,2,,ANY
+16081,MEMBER,<empty>,<empty>,kFilter,5,,197,kFilter,3,,ANY
+16082,MEMBER,<empty>,<empty>,kUncompressed,5,,198,kUncompressed,4,,ANY
+16083,MEMBER,<empty>,<empty>,kEnd,5,,199,kEnd,5,,ANY
+16084,MEMBER,<empty>,<empty>,option_config_,7,,201,option_config_,3,,int
+16085,MEMBER,<empty>,<empty>,dbname_,15,,204,dbname_,4,,ANY
+16086,MEMBER,<empty>,<empty>,* env_,13,,205,env_,5,,SpecialEnv*
+16087,MEMBER,<empty>,<empty>,* db_,5,,206,db_,6,,DB*
+16088,MEMBER,<empty>,<empty>,last_options_,11,,208,last_options_,7,,Options
+27480,MEMBER,<empty>,<empty>,* test,9,,1766,test,1,,DBTest*
+27481,MEMBER,<empty>,<empty>,stop,23,,1767,stop,2,,ANY
+27482,MEMBER,<empty>,<empty>,counter[kNumThreads],23,,1768,counter,3,,port.AtomicPointer[4]
+27483,MEMBER,<empty>,<empty>,thread_done[kNumThreads],23,,1769,thread_done,4,,port.AtomicPointer[4]
+27493,MEMBER,<empty>,<empty>,* state,10,,1773,state,1,,MTState*
+27494,MEMBER,<empty>,<empty>,id,7,,1774,id,2,,int
+27957,MEMBER,<empty>,<empty>,map_,11,,1864,map_,1,,KVMap
+28256,MEMBER,<empty>,<empty>,* const map_,16,,1954,map_,12,,KVMap*
+28257,MEMBER,<empty>,<empty>,owned_,16,,1955,owned_,13,,bool
+28258,MEMBER,<empty>,<empty>,iter_,27,,1956,iter_,14,,ANY
+28259,MEMBER,<empty>,<empty>,options_,17,,1958,options_,15,,Options
+28260,MEMBER,<empty>,<empty>,map_,9,,1959,map_,16,,KVMap
+29849,MEMBER,<empty>,<empty>,kTypeDeletion = 0x0,3,,52,kTypeDeletion,1,,ANY
+29850,MEMBER,<empty>,<empty>,kTypeValue = 0x1,3,,53,kTypeValue,2,,ANY
+29875,MEMBER,<empty>,<empty>,user_key,9,,71,user_key,1,,Slice
+29876,MEMBER,<empty>,<empty>,sequence,18,,72,sequence,2,,SequenceNumber
+29877,MEMBER,<empty>,<empty>,type,13,,73,type,3,,ValueType
+29985,MEMBER,<empty>,<empty>,* user_comparator_,19,,115,user_comparator_,1,,Comparator*
+30025,MEMBER,<empty>,<empty>,* const user_policy_,21,,133,user_policy_,1,,FilterPolicy*
+30049,MEMBER,<empty>,<empty>,rep_,15,,146,rep_,1,,ANY
+30258,MEMBER,<empty>,<empty>,* start_,13,,214,start_,6,,char*
+30259,MEMBER,<empty>,<empty>,* kstart_,13,,215,kstart_,7,,char*
+30260,MEMBER,<empty>,<empty>,* end_,13,,216,end_,8,,char*
+30261,MEMBER,<empty>,<empty>,space_[200],8,,217,space_,9,,char[200]
+31044,MEMBER,<empty>,<empty>,* dst_,15,,38,dst_,1,,WritableFile*
+31148,MEMBER,<empty>,<empty>,* dst_,15,,73,dst_,1,,WritableFile*
+31910,MEMBER,<empty>,<empty>,filename_,15,,85,filename_,1,,ANY
+31911,MEMBER,<empty>,<empty>,pos_,11,,86,pos_,2,,ssize_t
+31912,MEMBER,<empty>,<empty>,pos_at_last_sync_,11,,87,pos_at_last_sync_,3,,ssize_t
+31913,MEMBER,<empty>,<empty>,pos_at_last_flush_,11,,88,pos_at_last_flush_,4,,ssize_t
+31968,MEMBER,<empty>,<empty>,state_,13,,119,state_,7,,FileState
+31969,MEMBER,<empty>,<empty>,* target_,15,,120,target_,8,,WritableFile*
+31970,MEMBER,<empty>,<empty>,writable_file_opened_,8,,121,writable_file_opened_,9,,bool
+31971,MEMBER,<empty>,<empty>,* env_,24,,122,env_,10,,FaultInjectionTestEnv*
+32053,MEMBER,<empty>,<empty>,mutex_,15,,153,mutex_,16,,ANY
+32054,MEMBER,<empty>,<empty>,db_file_state_,36,,154,db_file_state_,17,,ANY
+32055,MEMBER,<empty>,<empty>,new_files_since_last_dir_sync_,25,,155,new_files_since_last_dir_sync_,18,,ANY
+32056,MEMBER,<empty>,<empty>,filesystem_active_,8,,156,filesystem_active_,19,,bool
+32703,MEMBER,<empty>,<empty>,VAL_EXPECT_NO_ERROR,30,,361,VAL_EXPECT_NO_ERROR,1,,ANY
+32704,MEMBER,<empty>,<empty>,VAL_EXPECT_ERROR,51,,361,VAL_EXPECT_ERROR,2,,ANY
+32706,MEMBER,<empty>,<empty>,RESET_DROP_UNSYNCED_DATA,22,,362,RESET_DROP_UNSYNCED_DATA,1,,ANY
+32707,MEMBER,<empty>,<empty>,RESET_DELETE_UNSYNCED_FILES,48,,362,RESET_DELETE_UNSYNCED_FILES,2,,ANY
+32708,MEMBER,<empty>,<empty>,* env_,24,,364,env_,3,,FaultInjectionTestEnv*
+32709,MEMBER,<empty>,<empty>,dbname_,15,,365,dbname_,4,,ANY
+32710,MEMBER,<empty>,<empty>,* tiny_cache_,8,,366,tiny_cache_,5,,Cache*
+32711,MEMBER,<empty>,<empty>,options_,11,,367,options_,6,,Options
+32712,MEMBER,<empty>,<empty>,* db_,5,,368,db_,7,,DB*
+33850,MEMBER,<empty>,<empty>,kLogFile,3,,21,kLogFile,1,,ANY
+33851,MEMBER,<empty>,<empty>,kDBLockFile,3,,22,kDBLockFile,2,,ANY
+33852,MEMBER,<empty>,<empty>,kTableFile,3,,23,kTableFile,3,,ANY
+33853,MEMBER,<empty>,<empty>,kDescriptorFile,3,,24,kDescriptorFile,4,,ANY
+33854,MEMBER,<empty>,<empty>,kCurrentFile,3,,25,kCurrentFile,5,,ANY
+33855,MEMBER,<empty>,<empty>,kTempFile,3,,26,kTempFile,6,,ANY
+33856,MEMBER,<empty>,<empty>,kInfoLogFile,3,,27,kInfoLogFile,7,,ANY
+34972,MEMBER,<empty>,<empty>,kZeroType = 0,3,,16,kZeroType,1,,ANY
+34973,MEMBER,<empty>,<empty>,kFullType = 1,3,,18,kFullType,2,,ANY
+34974,MEMBER,<empty>,<empty>,kFirstType = 2,3,,21,kFirstType,3,,ANY
+34975,MEMBER,<empty>,<empty>,kMiddleType = 3,3,,22,kMiddleType,4,,ANY
+34976,MEMBER,<empty>,<empty>,kLastType = 4,3,,23,kLastType,5,,ANY
+35752,MEMBER,<empty>,<empty>,* const file_,17,,61,file_,6,,SequentialFile*
+35753,MEMBER,<empty>,<empty>,* const reporter_,11,,62,reporter_,7,,Reporter*
+35754,MEMBER,<empty>,<empty>,checksum_,14,,63,checksum_,8,,bool
+35755,MEMBER,<empty>,<empty>,* const backing_store_,7,,64,backing_store_,9,,char*
+35756,MEMBER,<empty>,<empty>,buffer_,9,,65,buffer_,10,,Slice
+35757,MEMBER,<empty>,<empty>,eof_,8,,66,eof_,11,,bool
+35758,MEMBER,<empty>,<empty>,last_record_offset_,12,,69,last_record_offset_,12,,uint64_t
+35759,MEMBER,<empty>,<empty>,end_of_buffer_offset_,12,,71,end_of_buffer_offset_,13,,uint64_t
+35760,MEMBER,<empty>,<empty>,initial_offset_,18,,74,initial_offset_,14,,uint64_t
+35761,MEMBER,<empty>,<empty>,resyncing_,8,,79,resyncing_,15,,bool
+35763,MEMBER,<empty>,<empty>,kEof = kMaxRecordType + 1,5,,83,kEof,1,,ANY
+35764,MEMBER,<empty>,<empty>,kBadRecord = kMaxRecordType + 2,5,,89,kBadRecord,2,,ANY
+35893,MEMBER,<empty>,<empty>,contents_,17,,43,contents_,1,,ANY
+35944,MEMBER,<empty>,<empty>,contents_,11,,56,contents_,1,,Slice
+35945,MEMBER,<empty>,<empty>,force_error_,10,,57,force_error_,2,,bool
+35946,MEMBER,<empty>,<empty>,returned_partial_,10,,58,returned_partial_,3,,bool
+36063,MEMBER,<empty>,<empty>,dropped_bytes_,12,,93,dropped_bytes_,1,,size_t
+36064,MEMBER,<empty>,<empty>,message_,17,,94,message_,2,,ANY
+36086,MEMBER,<empty>,<empty>,dest_,14,,103,dest_,4,,StringDest
+36087,MEMBER,<empty>,<empty>,source_,16,,104,source_,5,,StringSource
+36088,MEMBER,<empty>,<empty>,report_,19,,105,report_,6,,ReportCollector
+36089,MEMBER,<empty>,<empty>,reading_,8,,106,reading_,7,,bool
+36090,MEMBER,<empty>,<empty>,* writer_,9,,107,writer_,8,,Writer*
+36091,MEMBER,<empty>,<empty>,* reader_,9,,108,reader_,9,,Reader*
+36092,MEMBER,<empty>,<empty>,initial_offset_record_sizes_[],17,,111,initial_offset_record_sizes_,10,,static size_t[6]
+36093,MEMBER,<empty>,<empty>,initial_offset_last_record_offsets_[],19,,112,initial_offset_last_record_offsets_,11,,static uint64_t[6]
+36094,MEMBER,<empty>,<empty>,num_initial_offset_records_,14,,113,num_initial_offset_records_,12,,int
+40124,MEMBER,<empty>,<empty>,* dest_,15,,36,dest_,5,,WritableFile*
+40125,MEMBER,<empty>,<empty>,block_offset_,7,,37,block_offset_,6,,int
+40126,MEMBER,<empty>,<empty>,type_crc_[kMaxRecordType + 1],12,,42,type_crc_,7,,uint32_t[5]
+40373,MEMBER,<empty>,<empty>,iter_,29,,70,iter_,11,,ANY
+40374,MEMBER,<empty>,<empty>,tmp_,15,,71,tmp_,12,,ANY
+40695,MEMBER,<empty>,<empty>,comparator,33,,67,comparator,1,,InternalKeyComparator
+40710,MEMBER,<empty>,<empty>,comparator_,17,,76,comparator_,13,,KeyComparator
+40711,MEMBER,<empty>,<empty>,refs_,7,,77,refs_,14,,int
+40712,MEMBER,<empty>,<empty>,arena_,9,,78,arena_,15,,Arena
+40713,MEMBER,<empty>,<empty>,table_,9,,79,table_,16,,Table
+41352,MEMBER,<empty>,<empty>,dbname_,15,,154,dbname_,20,,ANY
+41353,MEMBER,<empty>,<empty>,* env_,6,,155,env_,21,,Env*
+41354,MEMBER,<empty>,<empty>,* db_,5,,156,db_,22,,DB*
+42925,MEMBER,<empty>,<empty>,meta,18,,96,meta,1,,FileMetaData
+42926,MEMBER,<empty>,<empty>,max_sequence,20,,97,max_sequence,2,,SequenceNumber
+42927,MEMBER,<empty>,<empty>,dbname_,21,,100,dbname_,5,,ANY
+42928,MEMBER,<empty>,<empty>,* const env_,6,,101,env_,6,,Env*
+42929,MEMBER,<empty>,<empty>,icmp_,31,,102,icmp_,7,,InternalKeyComparator
+42930,MEMBER,<empty>,<empty>,ipolicy_,30,,103,ipolicy_,8,,InternalFilterPolicy
+42931,MEMBER,<empty>,<empty>,options_,17,,104,options_,9,,Options
+42932,MEMBER,<empty>,<empty>,owns_info_log_,8,,105,owns_info_log_,10,,bool
+42933,MEMBER,<empty>,<empty>,owns_cache_,8,,106,owns_cache_,11,,bool
+42934,MEMBER,<empty>,<empty>,* table_cache_,13,,107,table_cache_,12,,TableCache*
+42935,MEMBER,<empty>,<empty>,edit_,15,,108,edit_,13,,VersionEdit
+42936,MEMBER,<empty>,<empty>,manifests_,28,,110,manifests_,14,,ANY
+42937,MEMBER,<empty>,<empty>,table_numbers_,25,,111,table_numbers_,15,,ANY
+42938,MEMBER,<empty>,<empty>,logs_,25,,112,logs_,16,,ANY
+42939,MEMBER,<empty>,<empty>,tables_,26,,113,tables_,17,,ANY
+42940,MEMBER,<empty>,<empty>,next_file_number_,12,,114,next_file_number_,18,,uint64_t
+44299,MEMBER,<empty>,<empty>,* list_,19,,92,list_,9,,SkipList*
+44300,MEMBER,<empty>,<empty>,* node_,9,,93,node_,10,,Node*
+44302,MEMBER,<empty>,<empty>,kMaxHeight = 12,10,,98,kMaxHeight,1,,ANY
+44310,MEMBER,<empty>,<empty>,compare_,20,,101,compare_,7,,Comparator
+44311,MEMBER,<empty>,<empty>,* const arena_,8,,102,arena_,8,,Arena*
+44312,MEMBER,<empty>,<empty>,* const head_,7,,104,head_,9,,Node*
+44313,MEMBER,<empty>,<empty>,max_height_,23,,108,max_height_,10,,ANY
+44327,MEMBER,<empty>,<empty>,rnd_,10,,116,rnd_,12,,Random
+44387,MEMBER,<empty>,<empty>,key,13,,150,key,2,,Key
+44458,MEMBER,<empty>,<empty>,next_[1],23,,179,next_,7,,port.AtomicPointer[1]
+45798,MEMBER,<empty>,<empty>,K = 4,25,,151,K,1,,uint32_t
+45934,MEMBER,<empty>,<empty>,generation[K],25,,189,generation,1,,port.AtomicPointer[4]
+45989,MEMBER,<empty>,<empty>,current_,9,,205,current_,10,,State
+45990,MEMBER,<empty>,<empty>,arena_,9,,207,arena_,11,,Arena
+45991,MEMBER,<empty>,<empty>,list_,29,,211,list_,12,,"SkipList<Key,Comparator>"
+46365,MEMBER,<empty>,<empty>,t_,18,,299,t_,1,,ConcurrentTest
+46366,MEMBER,<empty>,<empty>,seed_,7,,300,seed_,2,,int
+46367,MEMBER,<empty>,<empty>,quit_flag_,23,,301,quit_flag_,3,,ANY
+46369,MEMBER,<empty>,<empty>,STARTING,5,,304,STARTING,1,,ANY
+46370,MEMBER,<empty>,<empty>,RUNNING,5,,305,RUNNING,2,,ANY
+46371,MEMBER,<empty>,<empty>,DONE,5,,306,DONE,3,,ANY
+46419,MEMBER,<empty>,<empty>,mu_,15,,331,mu_,8,,ANY
+46420,MEMBER,<empty>,<empty>,state_,15,,332,state_,9,,ReaderState
+46421,MEMBER,<empty>,<empty>,state_cv_,17,,333,state_cv_,10,,ANY
+46783,MEMBER,<empty>,<empty>,number_,18,,19,number_,1,,SequenceNumber
+46785,MEMBER,<empty>,<empty>,* prev_,15,,25,prev_,3,,SnapshotImpl*
+46786,MEMBER,<empty>,<empty>,* next_,15,,26,next_,4,,SnapshotImpl*
+46787,MEMBER,<empty>,<empty>,* list_,15,,28,list_,5,,SnapshotList*
+46918,MEMBER,<empty>,<empty>,list_,16,,62,list_,7,,SnapshotImpl
+46936,MEMBER,<empty>,<empty>,* file,19,,15,file,1,,RandomAccessFile*
+46937,MEMBER,<empty>,<empty>,* table,8,,16,table,2,,Table*
+47349,MEMBER,<empty>,<empty>,* const env_,6,,51,env_,6,,Env*
+47350,MEMBER,<empty>,<empty>,dbname_,21,,52,dbname_,7,,ANY
+47351,MEMBER,<empty>,<empty>,* options_,16,,53,options_,8,,Options*
+47352,MEMBER,<empty>,<empty>,* cache_,8,,54,cache_,9,,Cache*
+47373,MEMBER,<empty>,<empty>,kComparator           = 1,3,,15,kComparator,1,,ANY
+47374,MEMBER,<empty>,<empty>,kLogNumber            = 2,3,,16,kLogNumber,2,,ANY
+47375,MEMBER,<empty>,<empty>,kNextFileNumber       = 3,3,,17,kNextFileNumber,3,,ANY
+47376,MEMBER,<empty>,<empty>,kLastSequence         = 4,3,,18,kLastSequence,4,,ANY
+47377,MEMBER,<empty>,<empty>,kCompactPointer       = 5,3,,19,kCompactPointer,5,,ANY
+47378,MEMBER,<empty>,<empty>,kDeletedFile          = 6,3,,20,kDeletedFile,6,,ANY
+47379,MEMBER,<empty>,<empty>,kNewFile              = 7,3,,21,kNewFile,7,,ANY
+47380,MEMBER,<empty>,<empty>,kPrevLogNumber        = 9,3,,23,kPrevLogNumber,8,,ANY
+48231,MEMBER,<empty>,<empty>,refs,7,,18,refs,1,,int
+48232,MEMBER,<empty>,<empty>,allowed_seeks,7,,19,allowed_seeks,2,,int
+48233,MEMBER,<empty>,<empty>,number,12,,20,number,3,,uint64_t
+48234,MEMBER,<empty>,<empty>,file_size,12,,21,file_size,4,,uint64_t
+48235,MEMBER,<empty>,<empty>,smallest,15,,22,smallest,5,,InternalKey
+48236,MEMBER,<empty>,<empty>,largest,15,,23,largest,6,,InternalKey
+48401,MEMBER,<empty>,<empty>,comparator_,15,,89,comparator_,17,,ANY
+48402,MEMBER,<empty>,<empty>,log_number_,12,,90,log_number_,18,,uint64_t
+48403,MEMBER,<empty>,<empty>,prev_log_number_,12,,91,prev_log_number_,19,,uint64_t
+48404,MEMBER,<empty>,<empty>,next_file_number_,12,,92,next_file_number_,20,,uint64_t
+48405,MEMBER,<empty>,<empty>,last_sequence_,18,,93,last_sequence_,21,,SequenceNumber
+48406,MEMBER,<empty>,<empty>,has_comparator_,8,,94,has_comparator_,22,,bool
+48407,MEMBER,<empty>,<empty>,has_log_number_,8,,95,has_log_number_,23,,bool
+48408,MEMBER,<empty>,<empty>,has_prev_log_number_,8,,96,has_prev_log_number_,24,,bool
+48409,MEMBER,<empty>,<empty>,has_next_file_number_,8,,97,has_next_file_number_,25,,bool
+48410,MEMBER,<empty>,<empty>,has_last_sequence_,8,,98,has_last_sequence_,26,,bool
+48411,MEMBER,<empty>,<empty>,compact_pointers_,46,,100,compact_pointers_,27,,ANY
+48412,MEMBER,<empty>,<empty>,deleted_files_,18,,101,deleted_files_,28,,DeletedFileSet
+48413,MEMBER,<empty>,<empty>,new_files_,47,,102,new_files_,29,,ANY
+49205,MEMBER,<empty>,<empty>,icmp_,31,,205,icmp_,11,,InternalKeyComparator
+49206,MEMBER,<empty>,<empty>,* const flist_,35,,206,flist_,12,,ANY*
+49207,MEMBER,<empty>,<empty>,index_,12,,207,index_,13,,uint32_t
+49208,MEMBER,<empty>,<empty>,value_buf_[16],16,,210,value_buf_,14,,char[16]
+49366,MEMBER,<empty>,<empty>,kNotFound,3,,256,kNotFound,1,,ANY
+49367,MEMBER,<empty>,<empty>,kFound,3,,257,kFound,2,,ANY
+49368,MEMBER,<empty>,<empty>,kDeleted,3,,258,kDeleted,3,,ANY
+49369,MEMBER,<empty>,<empty>,kCorrupt,3,,259,kCorrupt,4,,ANY
+49371,MEMBER,<empty>,<empty>,state,14,,262,state,1,,SaverState
+49372,MEMBER,<empty>,<empty>,* ucmp,19,,263,ucmp,2,,Comparator*
+49373,MEMBER,<empty>,<empty>,user_key,9,,264,user_key,3,,Slice
+49374,MEMBER,<empty>,<empty>,* value,14,,265,value,4,,ANY*
+50600,MEMBER,<empty>,<empty>,* internal_comparator,32,,607,internal_comparator,1,,InternalKeyComparator*
+50641,MEMBER,<empty>,<empty>,deleted_files,24,,622,deleted_files,1,,ANY
+50642,MEMBER,<empty>,<empty>,* added_files,12,,623,added_files,2,,FileSet*
+50643,MEMBER,<empty>,<empty>,* vset_,13,,626,vset_,4,,VersionSet*
+50644,MEMBER,<empty>,<empty>,* base_,10,,627,base_,5,,Version*
+50645,MEMBER,<empty>,<empty>,levels_[config::kNumLevels],14,,628,levels_,6,,ANY
+54044,MEMBER,<empty>,<empty>,* seek_file,17,,70,seek_file,1,,FileMetaData*
+54045,MEMBER,<empty>,<empty>,seek_file_level,9,,71,seek_file_level,2,,int
+54126,MEMBER,<empty>,<empty>,* vset_,13,,132,vset_,18,,VersionSet*
+54127,MEMBER,<empty>,<empty>,* next_,10,,133,next_,19,,Version*
+54128,MEMBER,<empty>,<empty>,* prev_,10,,134,prev_,20,,Version*
+54129,MEMBER,<empty>,<empty>,refs_,7,,135,refs_,21,,int
+54130,MEMBER,<empty>,<empty>,files_[config::kNumLevels],30,,138,files_,22,,std.vector<FileMetaData*>[7]
+54131,MEMBER,<empty>,<empty>,* file_to_compact_,15,,141,file_to_compact_,23,,FileMetaData*
+54132,MEMBER,<empty>,<empty>,file_to_compact_level_,7,,142,file_to_compact_level_,24,,int
+54133,MEMBER,<empty>,<empty>,compaction_score_,10,,147,compaction_score_,25,,double
+54134,MEMBER,<empty>,<empty>,compaction_level_,7,,148,compaction_level_,26,,int
+54317,MEMBER,<empty>,<empty>,buffer[100],10,,267,buffer,1,,char[100]
+54373,MEMBER,<empty>,<empty>,* const env_,6,,297,env_,35,,Env*
+54374,MEMBER,<empty>,<empty>,dbname_,21,,298,dbname_,36,,ANY
+54375,MEMBER,<empty>,<empty>,* const options_,16,,299,options_,37,,Options*
+54376,MEMBER,<empty>,<empty>,* const table_cache_,13,,300,table_cache_,38,,TableCache*
+54377,MEMBER,<empty>,<empty>,icmp_,31,,301,icmp_,39,,InternalKeyComparator
+54378,MEMBER,<empty>,<empty>,next_file_number_,12,,302,next_file_number_,40,,uint64_t
+54379,MEMBER,<empty>,<empty>,manifest_file_number_,12,,303,manifest_file_number_,41,,uint64_t
+54380,MEMBER,<empty>,<empty>,last_sequence_,12,,304,last_sequence_,42,,uint64_t
+54381,MEMBER,<empty>,<empty>,log_number_,12,,305,log_number_,43,,uint64_t
+54382,MEMBER,<empty>,<empty>,prev_log_number_,12,,306,prev_log_number_,44,,uint64_t
+54383,MEMBER,<empty>,<empty>,* descriptor_file_,15,,309,descriptor_file_,45,,WritableFile*
+54384,MEMBER,<empty>,<empty>,* descriptor_log_,14,,310,descriptor_log_,46,,ANY*
+54385,MEMBER,<empty>,<empty>,dummy_versions_,11,,311,dummy_versions_,47,,Version
+54386,MEMBER,<empty>,<empty>,* current_,10,,312,current_,48,,Version*
+54387,MEMBER,<empty>,<empty>,compact_pointer_[config::kNumLevels],15,,316,compact_pointer_,49,,std.string[7]
+54485,MEMBER,<empty>,<empty>,level_,7,,371,level_,15,,int
+54486,MEMBER,<empty>,<empty>,max_output_file_size_,12,,372,max_output_file_size_,16,,uint64_t
+54487,MEMBER,<empty>,<empty>,* input_version_,10,,373,input_version_,17,,Version*
+54488,MEMBER,<empty>,<empty>,edit_,15,,374,edit_,18,,VersionEdit
+54489,MEMBER,<empty>,<empty>,inputs_[2],30,,377,inputs_,19,,std.vector<FileMetaData*>[2]
+54490,MEMBER,<empty>,<empty>,grandparents_,30,,381,grandparents_,20,,ANY
+54491,MEMBER,<empty>,<empty>,grandparent_index_,10,,382,grandparent_index_,21,,size_t
+54492,MEMBER,<empty>,<empty>,seen_key_,8,,383,seen_key_,22,,bool
+54493,MEMBER,<empty>,<empty>,overlapped_bytes_,11,,384,overlapped_bytes_,23,,int64_t
+54494,MEMBER,<empty>,<empty>,level_ptrs_[config::kNumLevels],10,,393,level_ptrs_,24,,size_t[7]
+54520,MEMBER,<empty>,<empty>,files_,30,,14,files_,1,,ANY
+54521,MEMBER,<empty>,<empty>,disjoint_sorted_files_,8,,15,disjoint_sorted_files_,2,,bool
+56778,MEMBER,<empty>,<empty>,sequence_,18,,114,sequence_,1,,SequenceNumber
+56779,MEMBER,<empty>,<empty>,* mem_,11,,115,mem_,2,,MemTable*
+57849,MEMBER,<empty>,<empty>,data_,15,,120,data_,1,,ANY
+57850,MEMBER,<empty>,<empty>,pos_,7,,121,pos_,2,,int
+57981,MEMBER,<empty>,<empty>,* db_,10,,165,db_,1,,sqlite3*
+57982,MEMBER,<empty>,<empty>,db_num_,7,,166,db_num_,2,,int
+57983,MEMBER,<empty>,<empty>,num_,7,,167,num_,3,,int
+57984,MEMBER,<empty>,<empty>,reads_,7,,168,reads_,4,,int
+57985,MEMBER,<empty>,<empty>,start_,10,,169,start_,5,,double
+57986,MEMBER,<empty>,<empty>,last_op_finish_,10,,170,last_op_finish_,6,,double
+57987,MEMBER,<empty>,<empty>,bytes_,11,,171,bytes_,7,,int64_t
+57988,MEMBER,<empty>,<empty>,message_,15,,172,message_,8,,ANY
+57989,MEMBER,<empty>,<empty>,hist_,13,,173,hist_,9,,Histogram
+57990,MEMBER,<empty>,<empty>,gen_,19,,174,gen_,10,,RandomGenerator
+57991,MEMBER,<empty>,<empty>,rand_,10,,175,rand_,11,,Random
+57992,MEMBER,<empty>,<empty>,done_,7,,178,done_,12,,int
+57993,MEMBER,<empty>,<empty>,next_report_,7,,179,next_report_,13,,int
+58312,MEMBER,<empty>,<empty>,SEQUENTIAL,5,,307,SEQUENTIAL,1,,ANY
+58313,MEMBER,<empty>,<empty>,RANDOM,5,,308,RANDOM,2,,ANY
+58315,MEMBER,<empty>,<empty>,FRESH,5,,311,FRESH,1,,ANY
+58316,MEMBER,<empty>,<empty>,EXISTING,5,,312,EXISTING,2,,ANY
+59864,MEMBER,<empty>,<empty>,data_,15,,89,data_,1,,ANY
+59865,MEMBER,<empty>,<empty>,pos_,7,,90,pos_,2,,int
+59996,MEMBER,<empty>,<empty>,* db_,23,,134,db_,1,,ANY*
+59997,MEMBER,<empty>,<empty>,db_num_,7,,135,db_num_,2,,int
+59998,MEMBER,<empty>,<empty>,num_,7,,136,num_,3,,int
+59999,MEMBER,<empty>,<empty>,reads_,7,,137,reads_,4,,int
+60000,MEMBER,<empty>,<empty>,start_,10,,138,start_,5,,double
+60001,MEMBER,<empty>,<empty>,last_op_finish_,10,,139,last_op_finish_,6,,double
+60002,MEMBER,<empty>,<empty>,bytes_,11,,140,bytes_,7,,int64_t
+60003,MEMBER,<empty>,<empty>,message_,15,,141,message_,8,,ANY
+60004,MEMBER,<empty>,<empty>,hist_,13,,142,hist_,9,,Histogram
+60005,MEMBER,<empty>,<empty>,gen_,19,,143,gen_,10,,RandomGenerator
+60006,MEMBER,<empty>,<empty>,rand_,10,,144,rand_,11,,Random
+60007,MEMBER,<empty>,<empty>,comp_,55,,145,comp_,12,,ANY
+60008,MEMBER,<empty>,<empty>,done_,7,,148,done_,13,,int
+60009,MEMBER,<empty>,<empty>,next_report_,7,,149,next_report_,14,,int
+60355,MEMBER,<empty>,<empty>,SEQUENTIAL,5,,283,SEQUENTIAL,1,,ANY
+60356,MEMBER,<empty>,<empty>,RANDOM,5,,284,RANDOM,2,,ANY
+60358,MEMBER,<empty>,<empty>,FRESH,5,,287,FRESH,1,,ANY
+60359,MEMBER,<empty>,<empty>,EXISTING,5,,288,EXISTING,2,,ANY
+61683,MEMBER,<empty>,<empty>,refs_mutex_,15,,137,refs_mutex_,10,,ANY
+61684,MEMBER,<empty>,<empty>,refs_,7,,138,refs_,11,,int
+61685,MEMBER,<empty>,<empty>,blocks_,22,,143,blocks_,12,,ANY
+61686,MEMBER,<empty>,<empty>,size_,12,,144,size_,13,,uint64_t
+61688,MEMBER,<empty>,<empty>,kBlockSize = 8 * 1024,10,,146,kBlockSize,1,,ANY
+61792,MEMBER,<empty>,<empty>,* file_,12,,180,file_,5,,FileState*
+61793,MEMBER,<empty>,<empty>,pos_,12,,181,pos_,6,,uint64_t
+61829,MEMBER,<empty>,<empty>,* file_,12,,200,file_,4,,FileState*
+61886,MEMBER,<empty>,<empty>,* file_,12,,222,file_,7,,FileState*
+62456,MEMBER,<empty>,<empty>,mutex_,15,,388,mutex_,20,,ANY
+62457,MEMBER,<empty>,<empty>,file_map_,14,,389,file_map_,21,,FileSystem
+62500,MEMBER,<empty>,<empty>,* env_,6,,18,env_,1,,Env*
+65186,MEMBER,<empty>,<empty>,leveldb_no_compression = 0,3,,204,leveldb_no_compression,1,,ANY
+65187,MEMBER,<empty>,<empty>,leveldb_snappy_compression = 1,3,,205,leveldb_snappy_compression,2,,ANY
+65392,MEMBER,<empty>,<empty>,* rep_,6,,101,rep_,16,,Rep*
+65474,MEMBER,<empty>,<empty>,start,9,,34,start,1,,Slice
+65475,MEMBER,<empty>,<empty>,limit,9,,35,limit,2,,Slice
+66154,MEMBER,<empty>,<empty>,* target_,6,,346,target_,23,,Env*
+66261,MEMBER,<empty>,<empty>,function,21,,80,function,1,,CleanupFunction
+66262,MEMBER,<empty>,<empty>,* arg1,9,,81,arg1,2,,void*
+66263,MEMBER,<empty>,<empty>,* arg2,9,,82,arg2,3,,void*
+66264,MEMBER,<empty>,<empty>,* next,12,,83,next,4,,Cleanup*
+66265,MEMBER,<empty>,<empty>,cleanup_,11,,85,cleanup_,15,,Cleanup
+66300,MEMBER,<empty>,<empty>,kNoCompression     = 0x0,3,,26,kNoCompression,1,,ANY
+66301,MEMBER,<empty>,<empty>,kSnappyCompression = 0x1,3,,27,kSnappyCompression,2,,ANY
+66313,MEMBER,<empty>,<empty>,* comparator,19,,41,comparator,1,,Comparator*
+66314,MEMBER,<empty>,<empty>,create_if_missing,8,,45,create_if_missing,2,,bool
+66315,MEMBER,<empty>,<empty>,error_if_exists,8,,49,error_if_exists,3,,bool
+66316,MEMBER,<empty>,<empty>,paranoid_checks,8,,57,paranoid_checks,4,,bool
+66317,MEMBER,<empty>,<empty>,* env,6,,62,env,5,,Env*
+66318,MEMBER,<empty>,<empty>,* info_log,9,,68,info_log,6,,Logger*
+66319,MEMBER,<empty>,<empty>,write_buffer_size,10,,83,write_buffer_size,7,,size_t
+66320,MEMBER,<empty>,<empty>,max_open_files,7,,90,max_open_files,8,,int
+66321,MEMBER,<empty>,<empty>,* block_cache,8,,98,block_cache,9,,Cache*
+66322,MEMBER,<empty>,<empty>,block_size,10,,106,block_size,10,,size_t
+66323,MEMBER,<empty>,<empty>,block_restart_interval,7,,113,block_restart_interval,11,,int
+66324,MEMBER,<empty>,<empty>,max_file_size,10,,125,max_file_size,12,,size_t
+66325,MEMBER,<empty>,<empty>,compression,19,,141,compression,13,,CompressionType
+66326,MEMBER,<empty>,<empty>,reuse_logs,8,,147,reuse_logs,14,,bool
+66327,MEMBER,<empty>,<empty>,* filter_policy,21,,154,filter_policy,15,,FilterPolicy*
+66333,MEMBER,<empty>,<empty>,verify_checksums,8,,165,verify_checksums,1,,bool
+66334,MEMBER,<empty>,<empty>,fill_cache,8,,170,fill_cache,2,,bool
+66335,MEMBER,<empty>,<empty>,* snapshot,17,,177,snapshot,3,,Snapshot*
+66341,MEMBER,<empty>,<empty>,sync,8,,204,sync,1,,bool
+66477,MEMBER,<empty>,<empty>,* data_,13,,81,data_,14,,char*
+66478,MEMBER,<empty>,<empty>,size_,10,,82,size_,15,,size_t
+66724,MEMBER,<empty>,<empty>,* state_,13,,79,state_,18,,char*
+66726,MEMBER,<empty>,<empty>,kOk = 0,5,,82,kOk,1,,ANY
+66727,MEMBER,<empty>,<empty>,kNotFound = 1,5,,83,kNotFound,2,,ANY
+66728,MEMBER,<empty>,<empty>,kCorruption = 2,5,,84,kCorruption,3,,ANY
+66729,MEMBER,<empty>,<empty>,kNotSupported = 3,5,,85,kNotSupported,4,,ANY
+66730,MEMBER,<empty>,<empty>,kInvalidArgument = 4,5,,86,kInvalidArgument,5,,ANY
+66731,MEMBER,<empty>,<empty>,kIOError = 5,5,,87,kIOError,6,,ANY
+66867,MEMBER,<empty>,<empty>,* rep_,6,,60,rep_,6,,Rep*
+66996,MEMBER,<empty>,<empty>,* rep_,6,,83,rep_,15,,Rep*
+67064,MEMBER,<empty>,<empty>,rep_,15,,57,rep_,9,,ANY
+67935,MEMBER,<empty>,<empty>,rep_,12,,77,rep_,1,,intptr_t
+68189,MEMBER,<empty>,<empty>,mu_,19,,93,mu_,7,,pthread_mutex_t
+68222,MEMBER,<empty>,<empty>,cv_,18,,108,cv_,6,,pthread_cond_t
+68223,MEMBER,<empty>,<empty>,* mu_,8,,109,mu_,7,,Mutex*
+68524,MEMBER,<empty>,<empty>,* const comparator_,19,,78,comparator_,1,,Comparator*
+68525,MEMBER,<empty>,<empty>,* const data_,13,,79,data_,2,,char*
+68526,MEMBER,<empty>,<empty>,restarts_,18,,80,restarts_,3,,uint32_t
+68527,MEMBER,<empty>,<empty>,num_restarts_,18,,81,num_restarts_,4,,uint32_t
+68528,MEMBER,<empty>,<empty>,current_,12,,84,current_,5,,uint32_t
+68529,MEMBER,<empty>,<empty>,restart_index_,12,,85,restart_index_,6,,uint32_t
+68530,MEMBER,<empty>,<empty>,key_,15,,86,key_,7,,ANY
+68531,MEMBER,<empty>,<empty>,value_,9,,87,value_,8,,Slice
+68532,MEMBER,<empty>,<empty>,status_,10,,88,status_,9,,Status
+69020,MEMBER,<empty>,<empty>,* data_,13,,30,data_,6,,char*
+69021,MEMBER,<empty>,<empty>,size_,10,,31,size_,7,,size_t
+69022,MEMBER,<empty>,<empty>,restart_offset_,12,,32,restart_offset_,8,,uint32_t
+69023,MEMBER,<empty>,<empty>,owned_,8,,33,owned_,9,,bool
+69358,MEMBER,<empty>,<empty>,*        options_,16,,43,options_,7,,Options*
+69359,MEMBER,<empty>,<empty>,buffer_,25,,44,buffer_,8,,ANY
+69360,MEMBER,<empty>,<empty>,restarts_,25,,45,restarts_,9,,ANY
+69361,MEMBER,<empty>,<empty>,counter_,25,,46,counter_,10,,int
+69362,MEMBER,<empty>,<empty>,finished_,25,,47,finished_,11,,bool
+69363,MEMBER,<empty>,<empty>,last_key_,25,,48,last_key_,12,,ANY
+69809,MEMBER,<empty>,<empty>,* policy_,21,,40,policy_,6,,FilterPolicy*
+69810,MEMBER,<empty>,<empty>,keys_,15,,41,keys_,7,,ANY
+69811,MEMBER,<empty>,<empty>,start_,23,,42,start_,8,,ANY
+69812,MEMBER,<empty>,<empty>,result_,15,,43,result_,9,,ANY
+69813,MEMBER,<empty>,<empty>,tmp_keys_,22,,44,tmp_keys_,10,,ANY
+69814,MEMBER,<empty>,<empty>,filter_offsets_,25,,45,filter_offsets_,11,,ANY
+69838,MEMBER,<empty>,<empty>,* policy_,21,,59,policy_,3,,FilterPolicy*
+69839,MEMBER,<empty>,<empty>,* data_,13,,60,data_,4,,char*
+69840,MEMBER,<empty>,<empty>,* offset_,13,,61,offset_,5,,char*
+69841,MEMBER,<empty>,<empty>,num_,10,,62,num_,6,,size_t
+69842,MEMBER,<empty>,<empty>,base_lg_,10,,63,base_lg_,7,,size_t
+69962,MEMBER,<empty>,<empty>,policy_,18,,43,policy_,1,,TestHashFilter
+71306,MEMBER,<empty>,<empty>,kMaxEncodedLength = 10 + 10,10,,38,kMaxEncodedLength,1,,ANY
+71316,MEMBER,<empty>,<empty>,offset_,12,,41,offset_,9,,uint64_t
+71317,MEMBER,<empty>,<empty>,size_,12,,42,size_,10,,uint64_t
+71362,MEMBER,<empty>,<empty>,kEncodedLength = 2*BlockHandle::kMaxEncodedLength + 8,5,,70,kEncodedLength,1,,ANY
+71376,MEMBER,<empty>,<empty>,metaindex_handle_,15,,74,metaindex_handle_,9,,BlockHandle
+71377,MEMBER,<empty>,<empty>,index_handle_,15,,75,index_handle_,10,,BlockHandle
+71387,MEMBER,<empty>,<empty>,data,9,,87,data,1,,Slice
+71388,MEMBER,<empty>,<empty>,cachable,8,,88,cachable,2,,bool
+71389,MEMBER,<empty>,<empty>,heap_allocated,8,,89,heap_allocated,3,,bool
+71596,MEMBER,<empty>,<empty>,status_,10,,55,status_,11,,Status
+71784,MEMBER,<empty>,<empty>,* iter_,11,,59,iter_,16,,Iterator*
+71785,MEMBER,<empty>,<empty>,valid_,8,,60,valid_,17,,bool
+71786,MEMBER,<empty>,<empty>,key_,9,,61,key_,18,,Slice
+72124,MEMBER,<empty>,<empty>,* comparator_,19,,142,comparator_,14,,Comparator*
+72125,MEMBER,<empty>,<empty>,* children_,18,,143,children_,15,,IteratorWrapper*
+72126,MEMBER,<empty>,<empty>,n_,7,,144,n_,16,,int
+72127,MEMBER,<empty>,<empty>,* current_,18,,145,current_,17,,IteratorWrapper*
+72129,MEMBER,<empty>,<empty>,kForward,5,,149,kForward,1,,ANY
+72130,MEMBER,<empty>,<empty>,kReverse,5,,150,kReverse,2,,ANY
+72131,MEMBER,<empty>,<empty>,direction_,13,,152,direction_,19,,Direction
+72355,MEMBER,<empty>,<empty>,options,11,,27,options,2,,Options
+72356,MEMBER,<empty>,<empty>,status,10,,28,status,3,,Status
+72357,MEMBER,<empty>,<empty>,* file,19,,29,file,4,,RandomAccessFile*
+72358,MEMBER,<empty>,<empty>,cache_id,12,,30,cache_id,5,,uint64_t
+72359,MEMBER,<empty>,<empty>,* filter,20,,31,filter,6,,FilterBlockReader*
+72360,MEMBER,<empty>,<empty>,* filter_data,13,,32,filter_data,7,,char*
+72361,MEMBER,<empty>,<empty>,metaindex_handle,15,,34,metaindex_handle,8,,BlockHandle
+72362,MEMBER,<empty>,<empty>,* index_block,8,,35,index_block,9,,Block*
+73289,MEMBER,<empty>,<empty>,options,11,,21,options,1,,Options
+73290,MEMBER,<empty>,<empty>,index_block_options,11,,22,index_block_options,2,,Options
+73291,MEMBER,<empty>,<empty>,* file,15,,23,file,3,,WritableFile*
+73292,MEMBER,<empty>,<empty>,offset,12,,24,offset,4,,uint64_t
+73293,MEMBER,<empty>,<empty>,status,10,,25,status,5,,Status
+73294,MEMBER,<empty>,<empty>,data_block,16,,26,data_block,6,,BlockBuilder
+73295,MEMBER,<empty>,<empty>,index_block,16,,27,index_block,7,,BlockBuilder
+73296,MEMBER,<empty>,<empty>,last_key,15,,28,last_key,8,,ANY
+73297,MEMBER,<empty>,<empty>,num_entries,11,,29,num_entries,9,,int64_t
+73298,MEMBER,<empty>,<empty>,closed,8,,30,closed,10,,bool
+73299,MEMBER,<empty>,<empty>,* filter_block,21,,31,filter_block,11,,FilterBlockBuilder*
+73300,MEMBER,<empty>,<empty>,pending_index_entry,8,,42,pending_index_entry,12,,bool
+73301,MEMBER,<empty>,<empty>,pending_handle,15,,43,pending_handle,13,,BlockHandle
+73302,MEMBER,<empty>,<empty>,compressed_output,15,,45,compressed_output,14,,ANY
+74271,MEMBER,<empty>,<empty>,* cmp,19,,80,cmp,1,,Comparator*
+74358,MEMBER,<empty>,<empty>,contents_,15,,106,contents_,7,,ANY
+74436,MEMBER,<empty>,<empty>,contents_,15,,134,contents_,5,,ANY
+74562,MEMBER,<empty>,<empty>,data_,9,,178,data_,9,,KVMap
+74663,MEMBER,<empty>,<empty>,* comparator_,19,,214,comparator_,5,,Comparator*
+74664,MEMBER,<empty>,<empty>,data_,15,,215,data_,6,,ANY
+74665,MEMBER,<empty>,<empty>,* block_,8,,216,block_,7,,Block*
+74886,MEMBER,<empty>,<empty>,* source_,15,,269,source_,7,,StringSource*
+74887,MEMBER,<empty>,<empty>,* table_,8,,270,table_,8,,Table*
+75020,MEMBER,<empty>,<empty>,status_,18,,308,status_,12,,Status
+75021,MEMBER,<empty>,<empty>,* iter_,11,,309,iter_,13,,Iterator*
+75126,MEMBER,<empty>,<empty>,internal_comparator_,25,,345,internal_comparator_,5,,InternalKeyComparator
+75127,MEMBER,<empty>,<empty>,* memtable_,11,,346,memtable_,6,,MemTable*
+75334,MEMBER,<empty>,<empty>,* comparator_,19,,395,comparator_,7,,Comparator*
+75335,MEMBER,<empty>,<empty>,* db_,5,,396,db_,8,,DB*
+75337,MEMBER,<empty>,<empty>,TABLE_TEST,3,,400,TABLE_TEST,1,,ANY
+75338,MEMBER,<empty>,<empty>,BLOCK_TEST,3,,401,BLOCK_TEST,2,,ANY
+75339,MEMBER,<empty>,<empty>,MEMTABLE_TEST,3,,402,MEMTABLE_TEST,3,,ANY
+75340,MEMBER,<empty>,<empty>,DB_TEST,3,,403,DB_TEST,4,,ANY
+75342,MEMBER,<empty>,<empty>,type,12,,407,type,1,,TestType
+75343,MEMBER,<empty>,<empty>,reverse_compare,8,,408,reverse_compare,2,,bool
+75344,MEMBER,<empty>,<empty>,restart_interval,7,,409,restart_interval,3,,int
+76315,MEMBER,<empty>,<empty>,options_,11,,643,options_,14,,Options
+76316,MEMBER,<empty>,<empty>,* constructor_,14,,644,constructor_,15,,Constructor*
+78171,MEMBER,<empty>,<empty>,block_function_,17,,65,block_function_,17,,BlockFunction
+78172,MEMBER,<empty>,<empty>,* arg_,7,,66,arg_,18,,void*
+78173,MEMBER,<empty>,<empty>,options_,21,,67,options_,19,,ReadOptions
+78174,MEMBER,<empty>,<empty>,status_,10,,68,status_,20,,Status
+78175,MEMBER,<empty>,<empty>,index_iter_,19,,69,index_iter_,21,,IteratorWrapper
+78176,MEMBER,<empty>,<empty>,data_iter_,19,,70,data_iter_,22,,IteratorWrapper
+78177,MEMBER,<empty>,<empty>,data_block_handle_,15,,73,data_block_handle_,23,,ANY
+78742,MEMBER,<empty>,<empty>,* alloc_ptr_,7,,38,alloc_ptr_,8,,char*
+78743,MEMBER,<empty>,<empty>,alloc_bytes_remaining_,10,,39,alloc_bytes_remaining_,9,,size_t
+78744,MEMBER,<empty>,<empty>,blocks_,22,,42,blocks_,10,,ANY
+78745,MEMBER,<empty>,<empty>,memory_usage_,23,,45,memory_usage_,11,,ANY
+79169,MEMBER,<empty>,<empty>,bits_per_key_,10,,19,bits_per_key_,1,,size_t
+79170,MEMBER,<empty>,<empty>,k_,10,,20,k_,2,,size_t
+79479,MEMBER,<empty>,<empty>,* policy_,21,,23,policy_,1,,FilterPolicy*
+79480,MEMBER,<empty>,<empty>,filter_,15,,24,filter_,2,,ANY
+79481,MEMBER,<empty>,<empty>,keys_,28,,25,keys_,3,,ANY
+80175,MEMBER,<empty>,<empty>,* value,7,,43,value,1,,void*
+80182,MEMBER,<empty>,<empty>,* next_hash,12,,45,next_hash,3,,LRUHandle*
+80183,MEMBER,<empty>,<empty>,* next,12,,46,next,4,,LRUHandle*
+80184,MEMBER,<empty>,<empty>,* prev,12,,47,prev,5,,LRUHandle*
+80185,MEMBER,<empty>,<empty>,charge,10,,48,charge,6,,size_t
+80186,MEMBER,<empty>,<empty>,key_length,10,,49,key_length,7,,size_t
+80187,MEMBER,<empty>,<empty>,in_cache,8,,50,in_cache,8,,bool
+80188,MEMBER,<empty>,<empty>,refs,12,,51,refs,9,,uint32_t
+80189,MEMBER,<empty>,<empty>,hash,12,,52,hash,10,,uint32_t
+80190,MEMBER,<empty>,<empty>,key_data[1],8,,53,key_data,11,,char[1]
+80324,MEMBER,<empty>,<empty>,length_,12,,109,length_,6,,uint32_t
+80325,MEMBER,<empty>,<empty>,elems_,12,,110,elems_,7,,uint32_t
+80326,MEMBER,<empty>,<empty>,** list_,12,,111,list_,8,,LRUHandle**
+80564,MEMBER,<empty>,<empty>,capacity_,10,,182,capacity_,15,,size_t
+80565,MEMBER,<empty>,<empty>,mutex_,23,,185,mutex_,16,,ANY
+80566,MEMBER,<empty>,<empty>,usage_,10,,186,usage_,17,,size_t
+80567,MEMBER,<empty>,<empty>,lru_,13,,191,lru_,18,,LRUHandle
+80568,MEMBER,<empty>,<empty>,in_use_,13,,195,in_use_,19,,LRUHandle
+80569,MEMBER,<empty>,<empty>,table_,15,,197,table_,20,,HandleTable
+81095,MEMBER,<empty>,<empty>,shard_[kNumShards],12,,340,shard_,1,,ANY
+81096,MEMBER,<empty>,<empty>,id_mutex_,15,,341,id_mutex_,2,,ANY
+81097,MEMBER,<empty>,<empty>,last_id_,12,,342,last_id_,3,,uint64_t
+81401,MEMBER,<empty>,<empty>,* current_,19,,28,current_,1,,CacheTest*
+81424,MEMBER,<empty>,<empty>,kCacheSize = 1000,20,,35,kCacheSize,3,,int
+81425,MEMBER,<empty>,<empty>,deleted_keys_,20,,36,deleted_keys_,4,,ANY
+81426,MEMBER,<empty>,<empty>,deleted_values_,20,,37,deleted_values_,5,,ANY
+81427,MEMBER,<empty>,<empty>,* cache_,8,,38,cache_,6,,Cache*
+88540,MEMBER,<empty>,<empty>,mu_,15,,76,mu_,4,,ANY
+88541,MEMBER,<empty>,<empty>,allowed_,23,,77,allowed_,5,,ANY
+88576,MEMBER,<empty>,<empty>,filename_,15,,94,filename_,1,,ANY
+88577,MEMBER,<empty>,<empty>,* file_,7,,95,file_,2,,FILE*
+88651,MEMBER,<empty>,<empty>,filename_,15,,128,filename_,1,,ANY
+88652,MEMBER,<empty>,<empty>,temporary_fd_,8,,129,temporary_fd_,2,,bool
+88653,MEMBER,<empty>,<empty>,fd_,7,,130,fd_,3,,int
+88654,MEMBER,<empty>,<empty>,* limiter_,10,,131,limiter_,4,,Limiter*
+88764,MEMBER,<empty>,<empty>,filename_,15,,179,filename_,1,,ANY
+88765,MEMBER,<empty>,<empty>,* mmapped_region_,7,,180,mmapped_region_,2,,void*
+88766,MEMBER,<empty>,<empty>,length_,10,,181,length_,3,,size_t
+88767,MEMBER,<empty>,<empty>,* limiter_,10,,182,limiter_,4,,Limiter*
+88827,MEMBER,<empty>,<empty>,filename_,15,,212,filename_,1,,ANY
+88828,MEMBER,<empty>,<empty>,* file_,7,,213,file_,2,,FILE*
+89099,MEMBER,<empty>,<empty>,fd_,7,,304,fd_,1,,int
+89100,MEMBER,<empty>,<empty>,name_,15,,305,name_,2,,ANY
+89102,MEMBER,<empty>,<empty>,mu_,15,,313,mu_,1,,ANY
+89103,MEMBER,<empty>,<empty>,locked_files_,25,,314,locked_files_,2,,ANY
+89921,MEMBER,<empty>,<empty>,mu_,19,,559,mu_,26,,pthread_mutex_t
+89922,MEMBER,<empty>,<empty>,bgsignal_,18,,560,bgsignal_,27,,pthread_cond_t
+89923,MEMBER,<empty>,<empty>,bgthread_,13,,561,bgthread_,28,,pthread_t
+89924,MEMBER,<empty>,<empty>,started_bgthread_,8,,562,started_bgthread_,29,,bool
+89926,MEMBER,<empty>,<empty>,* arg,23,,565,arg,1,,void*
+89933,MEMBER,<empty>,<empty>,queue_,11,,567,queue_,32,,BGQueue
+89934,MEMBER,<empty>,<empty>,locks_,18,,569,locks_,33,,PosixLockTable
+89935,MEMBER,<empty>,<empty>,mmap_limit_,11,,570,mmap_limit_,34,,Limiter
+89936,MEMBER,<empty>,<empty>,fd_limit_,11,,571,fd_limit_,35,,Limiter
+90149,MEMBER,<empty>,<empty>,* arg,7,,655,arg,2,,void*
+90277,MEMBER,<empty>,<empty>,* env_,6,,19,env_,1,,Env*
+90617,MEMBER,<empty>,<empty>,mu_,15,,18,mu_,1,,ANY
+90618,MEMBER,<empty>,<empty>,events_,15,,19,events_,2,,ANY
+90619,MEMBER,<empty>,<empty>,* env_,6,,22,env_,3,,Env*
+90835,MEMBER,<empty>,<empty>,mu,15,,70,mu,1,,ANY
+90836,MEMBER,<empty>,<empty>,val,7,,71,val,2,,int
+90837,MEMBER,<empty>,<empty>,num_running,7,,72,num_running,3,,int
+92083,MEMBER,<empty>,<empty>,min_,10,,24,min_,7,,double
+92084,MEMBER,<empty>,<empty>,max_,10,,25,max_,8,,double
+92085,MEMBER,<empty>,<empty>,num_,10,,26,num_,9,,double
+92086,MEMBER,<empty>,<empty>,sum_,10,,27,sum_,10,,double
+92087,MEMBER,<empty>,<empty>,sum_squares_,10,,28,sum_squares_,11,,double
+92089,MEMBER,<empty>,<empty>,kNumBuckets = 154,10,,30,kNumBuckets,1,,ANY
+92097,MEMBER,<empty>,<empty>,kBucketLimit[kNumBuckets],23,,31,kBucketLimit,13,,double[154]
+92098,MEMBER,<empty>,<empty>,buckets_[kNumBuckets],10,,32,buckets_,14,,double[154]
+92419,MEMBER,<empty>,<empty>,*const mu_,15,,32,mu_,3,,ANY*
+92463,MEMBER,<empty>,<empty>,* file_,7,,21,file_,1,,FILE*
+92678,MEMBER,<empty>,<empty>,seed_,12,,17,seed_,1,,uint32_t
+93005,MEMBER,<empty>,<empty>,* base,13,,17,base,1,,char*
+93006,MEMBER,<empty>,<empty>,* name,13,,18,name,2,,char*
+93254,MEMBER,<empty>,<empty>,ok_,8,,44,ok_,1,,bool
+93255,MEMBER,<empty>,<empty>,* fname_,13,,45,fname_,2,,char*
+93256,MEMBER,<empty>,<empty>,line_,7,,46,line_,3,,int
+93257,MEMBER,<empty>,<empty>,ss_,21,,47,ss_,4,,ANY
+93708,MEMBER,<empty>,<empty>,writable_file_error_,8,,32,writable_file_error_,1,,bool
+93709,MEMBER,<empty>,<empty>,num_writable_file_errors_,7,,33,num_writable_file_errors_,2,,int

@@ -1,0 +1,1994 @@
+22,CONTROL_STRUCTURE,-1,,if (retcode == SQL_SUCCESS || retcode == SQL_SUCCESS_WITH_INFO),4,IF,11,4,CPPASTIfStatement
+366,CONTROL_STRUCTURE,-1,,try,2,TRY,9,6,CPPASTTryBlockStatement
+496,CONTROL_STRUCTURE,-1,,try,2,TRY,6,3,CPPASTTryBlockStatement
+701,CONTROL_STRUCTURE,-1,,if (status == spi::ConfigurationStatus::NotConfigured),2,IF,59,13,CPPASTIfStatement
+941,CONTROL_STRUCTURE,-1,,if (std::string::npos != slashIndex),2,IF,67,15,CPPASTIfStatement
+982,CONTROL_STRUCTURE,-1,,if (std::string::npos != dotIndex),3,IF,86,5,CPPASTIfStatement
+1007,CONTROL_STRUCTURE,-1,,else,7,ELSE,97,3,CPPASTIfStatement
+1009,CONTROL_STRUCTURE,1,,if (!programFileName.empty()),7,IF,97,1,CPPASTIfStatement
+1027,CONTROL_STRUCTURE,-1,,if (std::string::npos != dotIndex),3,IF,99,3,CPPASTIfStatement
+1071,CONTROL_STRUCTURE,-1,,for (auto baseName:DefaultConfigurationFileNames(altPrefix)),2,FOR,125,5,CPPASTRangeBasedForStatement
+1080,CONTROL_STRUCTURE,-1,,for (;extension[i];++i),3,FOR,127,3,CPPASTForStatement
+1095,CONTROL_STRUCTURE,-1,,if (current_working_dir_candidate.exists(pool)),4,IF,129,3,CPPASTIfStatement
+1115,CONTROL_STRUCTURE,-1,,break;,5,BREAK,132,3,CPPASTBreakStatement
+1116,CONTROL_STRUCTURE,-1,,if (!altPrefix.empty()),4,IF,134,4,CPPASTIfStatement
+1132,CONTROL_STRUCTURE,-1,,if (alt_dir_candidate.exists(pool)),5,IF,136,3,CPPASTIfStatement
+1152,CONTROL_STRUCTURE,-1,,break;,6,BREAK,139,3,CPPASTBreakStatement
+1153,CONTROL_STRUCTURE,-1,,if (extension[i]),3,IF,143,4,CPPASTIfStatement
+1271,CONTROL_STRUCTURE,-1,,if (argc <= 1),5,IF,55,2,CPPASTIfStatement
+1286,CONTROL_STRUCTURE,-1,,for (int i = 1;i < argc;i++),5,FOR,60,7,CPPASTForStatement
+1298,CONTROL_STRUCTURE,-1,,"if (strcmp(""-err"", argv[i]) == 0)",9,IF,61,1,CPPASTIfStatement
+1310,CONTROL_STRUCTURE,-1,,else,16,ELSE,63,3,CPPASTIfStatement
+1312,CONTROL_STRUCTURE,1,,"if (strcmp(""puts"", argv[i]) == 0)",16,IF,63,1,CPPASTIfStatement
+1327,CONTROL_STRUCTURE,-1,,else,16,ELSE,69,3,CPPASTIfStatement
+1329,CONTROL_STRUCTURE,1,,"if (strcmp(""cout"", argv[i]) == 0)",16,IF,69,1,CPPASTIfStatement
+1338,CONTROL_STRUCTURE,-1,,if (err),13,IF,70,1,CPPASTIfStatement
+1350,CONTROL_STRUCTURE,-1,,else,20,ELSE,72,3,CPPASTCompoundStatement
+1361,CONTROL_STRUCTURE,-1,,else,16,ELSE,75,3,CPPASTIfStatement
+1363,CONTROL_STRUCTURE,1,,"if (strcmp(""wcout"", argv[i]) == 0)",16,IF,75,1,CPPASTIfStatement
+1372,CONTROL_STRUCTURE,-1,,if (err),13,IF,76,1,CPPASTIfStatement
+1384,CONTROL_STRUCTURE,-1,,else,20,ELSE,82,3,CPPASTCompoundStatement
+1395,CONTROL_STRUCTURE,-1,,else,16,ELSE,89,3,CPPASTIfStatement
+1397,CONTROL_STRUCTURE,1,,"if (strcmp(""configure"", argv[i]) == 0)",16,IF,89,1,CPPASTIfStatement
+1411,CONTROL_STRUCTURE,-1,,else,16,ELSE,92,3,CPPASTIfStatement
+1413,CONTROL_STRUCTURE,1,,"if (strcmp(""log"", argv[i]) == 0)",16,IF,92,1,CPPASTIfStatement
+1422,CONTROL_STRUCTURE,-1,,if (!configured),13,IF,93,1,CPPASTIfStatement
+1441,CONTROL_STRUCTURE,-1,,else,16,ELSE,104,3,CPPASTCompoundStatement
+1502,CONTROL_STRUCTURE,-1,,"if (helpers::StringHelper::equalsIgnoreCase(option,
+										   LOG4CXX_STR(""SOMEVALUE""), LOG4CXX_STR(""somevalue"")))",3,IF,50,1,CPPASTIfStatement
+1584,CONTROL_STRUCTURE,-1,,if (argc == 2),17,IF,45,1,CPPASTIfStatement
+1593,CONTROL_STRUCTURE,-1,,else,17,ELSE,50,3,CPPASTCompoundStatement
+1636,CONTROL_STRUCTURE,-1,,"if (configFile.length() > 4 &&
+                     configFile.substr(configFile.length() - 4) == "".xml"")",17,IF,68,1,CPPASTIfStatement
+1665,CONTROL_STRUCTURE,-1,,else,17,ELSE,74,3,CPPASTCompoundStatement
+1681,CONTROL_STRUCTURE,-1,,while (true),17,WHILE,82,3,<empty>
+1690,CONTROL_STRUCTURE,-1,,try,25,TRY,85,2,CPPASTTryBlockStatement
+1719,CONTROL_STRUCTURE,-1,,try,5,TRY,102,4,CPPASTTryBlockStatement
+1878,CONTROL_STRUCTURE,-1,,try,5,TRY,29,4,CPPASTTryBlockStatement
+1941,CONTROL_STRUCTURE,-1,,try,5,TRY,32,4,CPPASTTryBlockStatement
+2063,CONTROL_STRUCTURE,-1,,if (!fi.exists()),2,IF,40,3,CPPASTIfStatement
+2091,CONTROL_STRUCTURE,-1,,if (!fi.exists()),2,IF,48,3,CPPASTIfStatement
+2117,CONTROL_STRUCTURE,-1,,if (fi.exists()),2,IF,56,3,CPPASTIfStatement
+2151,CONTROL_STRUCTURE,-1,,"if (filename.endsWith("".xml""))",2,IF,75,5,CPPASTIfStatement
+2175,CONTROL_STRUCTURE,-1,,else,8,ELSE,78,3,CPPASTIfStatement
+2177,CONTROL_STRUCTURE,1,,"if (filename.endsWith("".properties""))",8,IF,78,1,CPPASTIfStatement
+2196,CONTROL_STRUCTURE,-1,,if (stat == LOG4CXX_NS::spi::ConfigurationStatus::Configured),2,IF,82,6,CPPASTIfStatement
+2249,CONTROL_STRUCTURE,-1,,if (isXML),3,IF,91,8,CPPASTIfStatement
+2266,CONTROL_STRUCTURE,-1,,else,8,ELSE,94,3,CPPASTCompoundStatement
+2290,CONTROL_STRUCTURE,-1,,for (QString dir:directories),2,FOR,106,1,CPPASTRangeBasedForStatement
+2294,CONTROL_STRUCTURE,-1,,for (QString fname:filenames),3,FOR,107,1,CPPASTRangeBasedForStatement
+2315,CONTROL_STRUCTURE,-1,,if (candidate.exists()),4,IF,113,7,CPPASTIfStatement
+2326,CONTROL_STRUCTURE,-1,,if (configStatus == LOG4CXX_NS::spi::ConfigurationStatus::Configured),5,IF,116,3,CPPASTIfStatement
+2401,CONTROL_STRUCTURE,-1,,switch(type),2,SWITCH,32,5,CPPASTSwitchStatement
+2417,CONTROL_STRUCTURE,-1,,break;,4,BREAK,36,4,CPPASTBreakStatement
+2431,CONTROL_STRUCTURE,-1,,break;,4,BREAK,40,8,CPPASTBreakStatement
+2445,CONTROL_STRUCTURE,-1,,break;,4,BREAK,45,12,CPPASTBreakStatement
+2459,CONTROL_STRUCTURE,-1,,break;,4,BREAK,50,16,CPPASTBreakStatement
+2524,CONTROL_STRUCTURE,-1,,if (!m_priv->interrupted),2,IF,48,2,CPPASTIfStatement
+2530,CONTROL_STRUCTURE,-1,,try,3,TRY,50,1,CPPASTTryBlockStatement
+2619,CONTROL_STRUCTURE,-1,,if (priv->headFilter == NULL),2,IF,54,1,CPPASTIfStatement
+2657,CONTROL_STRUCTURE,-1,,else,2,ELSE,60,3,CPPASTCompoundStatement
+2711,CONTROL_STRUCTURE,-1,,while (f != NULL),2,WHILE,77,5,<empty>
+2735,CONTROL_STRUCTURE,-1,,if (accepted),2,IF,83,6,CPPASTIfStatement
+2738,CONTROL_STRUCTURE,-1,,if (static_cast<AndFilterPrivate *>(m_priv.get())->acceptOnMatch),3,IF,85,1,CPPASTIfStatement
+2800,CONTROL_STRUCTURE,-1,,if (newAppender == 0),2,IF,52,1,CPPASTIfStatement
+2838,CONTROL_STRUCTURE,-1,,if (it == m_priv->appenderList.end()),2,IF,61,5,CPPASTIfStatement
+2869,CONTROL_STRUCTURE,-1,,for (auto appender:allAppenders),2,FOR,77,5,CPPASTRangeBasedForStatement
+2908,CONTROL_STRUCTURE,-1,,if (name.empty()),2,IF,94,1,CPPASTIfStatement
+2939,CONTROL_STRUCTURE,-1,,for (it = m_priv->appenderList.begin();it != itEnd;it++),2,FOR,103,7,CPPASTForStatement
+2959,CONTROL_STRUCTURE,-1,,if (name == appender->getName()),3,IF,107,2,CPPASTIfStatement
+2976,CONTROL_STRUCTURE,-1,,if (appender == 0),2,IF,118,1,CPPASTIfStatement
+3051,CONTROL_STRUCTURE,-1,,for (it = m_priv->appenderList.begin();it != itEnd;it++),2,FOR,136,6,CPPASTForStatement
+3086,CONTROL_STRUCTURE,-1,,if (appender == 0),2,IF,147,1,CPPASTIfStatement
+3124,CONTROL_STRUCTURE,-1,,if (it != m_priv->appenderList.end()),2,IF,156,5,CPPASTIfStatement
+3146,CONTROL_STRUCTURE,-1,,if (name.empty()),2,IF,164,1,CPPASTIfStatement
+3176,CONTROL_STRUCTURE,-1,,for (it = m_priv->appenderList.begin();it != itEnd;it++),2,FOR,173,7,CPPASTForStatement
+3196,CONTROL_STRUCTURE,-1,,if (name == appender->getName()),3,IF,177,2,CPPASTIfStatement
+3257,CONTROL_STRUCTURE,-1,,if (m_priv->closed),2,IF,57,1,CPPASTIfStatement
+3281,CONTROL_STRUCTURE,-1,,if (m_priv->headFilter == nullptr),2,IF,69,2,CPPASTIfStatement
+3297,CONTROL_STRUCTURE,-1,,else,2,ELSE,74,3,CPPASTCompoundStatement
+3380,CONTROL_STRUCTURE,-1,,if (m_priv->closed),2,IF,100,1,CPPASTIfStatement
+3401,CONTROL_STRUCTURE,-1,,if (!isAsSevereAsThreshold(event->getLevel())),2,IF,107,2,CPPASTIfStatement
+3416,CONTROL_STRUCTURE,-1,,while (f != 0),2,WHILE,115,5,<empty>
+3421,CONTROL_STRUCTURE,-1,,switch(f->decide(event)),3,SWITCH,117,1,CPPASTSwitchStatement
+3440,CONTROL_STRUCTURE,-1,,break;,5,BREAK,124,7,CPPASTBreakStatement
+3471,CONTROL_STRUCTURE,-1,,if (errorHandler1 == nullptr),2,IF,138,2,CPPASTIfStatement
+3482,CONTROL_STRUCTURE,-1,,else,2,ELSE,145,3,CPPASTCompoundStatement
+3517,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""THRESHOLD""), LOG4CXX_STR(""threshold"")))",2,IF,159,1,CPPASTIfStatement
+3694,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,76,5,CPPASTIfStatement
+3738,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,93,6,CPPASTIfStatement
+3776,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,103,10,CPPASTIfStatement
+3820,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,120,6,CPPASTIfStatement
+3858,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,130,10,CPPASTIfStatement
+3870,CONTROL_STRUCTURE,-1,,if (_priv->socket != 0),2,IF,137,1,CPPASTIfStatement
+3898,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),3,IF,141,3,CPPASTIfStatement
+3961,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,162,6,CPPASTIfStatement
+3983,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,170,8,CPPASTIfStatement
+4044,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,194,8,CPPASTIfStatement
+4066,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,202,10,CPPASTIfStatement
+4199,CONTROL_STRUCTURE,-1,,while (!m_priv->watchdogs.empty()),2,WHILE,108,2,<empty>
+4329,CONTROL_STRUCTURE,-1,,for (std::list<FileWatchdog*>::iterator iter = instance.m_priv->watchdogs.begin();iter != instance.m_priv->watchdogs.end();iter++),2,FOR,156,4,CPPASTForStatement
+4355,CONTROL_STRUCTURE,-1,,if (*iter == watchdog),3,IF,160,1,CPPASTIfStatement
+4424,CONTROL_STRUCTURE,-1,,if (m_priv->objects.end() == pItem),2,IF,178,4,CPPASTIfStatement
+4509,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,44,3,CPPASTIfStatement
+4532,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,51,5,CPPASTIfStatement
+4563,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,62,8,CPPASTIfStatement
+4585,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,70,10,CPPASTIfStatement
+4607,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,78,12,CPPASTIfStatement
+4638,CONTROL_STRUCTURE,-1,,if (_priv->socket != 0),2,IF,87,2,CPPASTIfStatement
+4666,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),3,IF,91,3,CPPASTIfStatement
+4709,CONTROL_STRUCTURE,-1,,if (_priv->socket == 0),2,IF,108,2,CPPASTIfStatement
+4805,CONTROL_STRUCTURE,-1,,if (APR_STATUS_IS_TIMEUP(status)),2,IF,125,15,CPPASTIfStatement
+4811,CONTROL_STRUCTURE,-1,,else,7,ELSE,129,3,CPPASTIfStatement
+4813,CONTROL_STRUCTURE,1,,if (status != APR_SUCCESS),7,IF,129,1,CPPASTIfStatement
+4828,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,137,18,CPPASTIfStatement
+4853,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,145,21,CPPASTIfStatement
+4869,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,153,23,CPPASTIfStatement
+4961,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,54,3,CPPASTIfStatement
+5001,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,67,7,CPPASTIfStatement
+5023,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,75,9,CPPASTIfStatement
+5046,CONTROL_STRUCTURE,-1,,if (status == APR_SUCCESS),2,IF,86,4,CPPASTIfStatement
+5067,CONTROL_STRUCTURE,-1,,if (sa->hostname != NULL),3,IF,92,4,CPPASTIfStatement
+5092,CONTROL_STRUCTURE,-1,,if (status == APR_SUCCESS),3,IF,100,8,CPPASTIfStatement
+5129,CONTROL_STRUCTURE,-1,,if (_priv->socket == 0),2,IF,111,1,CPPASTIfStatement
+5149,CONTROL_STRUCTURE,-1,,while (buf.remaining() > 0),2,WHILE,118,4,<empty>
+5197,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),3,IF,137,7,CPPASTIfStatement
+5211,CONTROL_STRUCTURE,-1,,if (_priv->socket != 0),2,IF,149,1,CPPASTIfStatement
+5239,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),3,IF,153,3,CPPASTIfStatement
+5435,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""LOCATIONINFO""), LOG4CXX_STR(""locationinfo"")))",2,IF,197,1,CPPASTIfStatement
+5453,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""BUFFERSIZE""), LOG4CXX_STR(""buffersize"")))",2,IF,202,2,CPPASTIfStatement
+5471,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""BLOCKING""), LOG4CXX_STR(""blocking"")))",2,IF,207,3,CPPASTIfStatement
+5489,CONTROL_STRUCTURE,-1,,else,2,ELSE,212,3,CPPASTCompoundStatement
+5512,CONTROL_STRUCTURE,-1,,if (priv->bufferSize <= 0),2,IF,225,1,CPPASTIfStatement
+5570,CONTROL_STRUCTURE,-1,,if (!priv->dispatcher.joinable()),2,IF,238,6,CPPASTIfStatement
+5611,CONTROL_STRUCTURE,-1,,while (true),2,WHILE,242,7,<empty>
+5630,CONTROL_STRUCTURE,-1,,if (previousSize < (size_t)priv->bufferSize),3,IF,246,3,CPPASTIfStatement
+5660,CONTROL_STRUCTURE,-1,,if (previousSize == 0),4,IF,250,2,CPPASTIfStatement
+5678,CONTROL_STRUCTURE,-1,,break;,4,BREAK,255,3,CPPASTBreakStatement
+5683,CONTROL_STRUCTURE,-1,,"if (priv->blocking
+			&& !priv->closed
+			&& (priv->dispatcher.get_id() != std::this_thread::get_id()))",3,IF,267,6,CPPASTIfStatement
+5744,CONTROL_STRUCTURE,-1,,if (discard),3,IF,282,7,CPPASTIfStatement
+5771,CONTROL_STRUCTURE,-1,,if (iter == priv->discardMap.end()),4,IF,287,5,CPPASTIfStatement
+5810,CONTROL_STRUCTURE,-1,,else,4,ELSE,293,3,CPPASTCompoundStatement
+5820,CONTROL_STRUCTURE,-1,,break;,4,BREAK,297,6,CPPASTBreakStatement
+5885,CONTROL_STRUCTURE,-1,,if (static_cast<AsyncAppenderPriv *>(m_priv.get())->dispatcher.joinable()),2,IF,311,2,CPPASTIfStatement
+5930,CONTROL_STRUCTURE,-1,,for (AppenderList::iterator iter = appenderList.begin();iter != appenderList.end();iter++),3,FOR,319,3,CPPASTForStatement
+6109,CONTROL_STRUCTURE,-1,,if (size < 0),2,IF,376,1,CPPASTIfStatement
+6279,CONTROL_STRUCTURE,-1,,if (event->getLevel()->toInt() > maxEvent->getLevel()->toInt()),2,IF,422,1,CPPASTIfStatement
+6406,CONTROL_STRUCTURE,-1,,while (isActive),2,WHILE,462,3,<empty>
+6457,CONTROL_STRUCTURE,-1,,for (LoggingEventList::iterator eventIter = priv->buffer.begin();eventIter != priv->buffer.end();eventIter++),4,FOR,476,4,CPPASTForStatement
+6499,CONTROL_STRUCTURE,-1,,for (DiscardMap::iterator discardIter = priv->discardMap.begin();discardIter != priv->discardMap.end();discardIter++),4,FOR,483,5,CPPASTForStatement
+6585,CONTROL_STRUCTURE,-1,,for (LoggingEventList::iterator iter = events.begin();iter != events.end();iter++),3,FOR,495,4,CPPASTForStatement
+6603,CONTROL_STRUCTURE,-1,,try,4,TRY,499,1,CPPASTTryBlockStatement
+6622,CONTROL_STRUCTURE,-1,,if (isActive),5,IF,505,1,CPPASTIfStatement
+6648,CONTROL_STRUCTURE,-1,,if (isActive),5,IF,513,1,CPPASTIfStatement
+6696,CONTROL_STRUCTURE,-1,,while (!actions.empty()),4,WHILE,31,2,<empty>
+6850,CONTROL_STRUCTURE,-1,,if (!layout),2,IF,31,4,CPPASTIfStatement
+6967,CONTROL_STRUCTURE,-1,,if (m_priv->buf.length() > 0),2,IF,60,1,CPPASTIfStatement
+7011,CONTROL_STRUCTURE,-1,,if (m_priv->buf.length() + str.length() > m_priv->sz),2,IF,69,1,CPPASTIfStatement
+7056,CONTROL_STRUCTURE,-1,,if (str.length() > m_priv->sz),2,IF,75,2,CPPASTIfStatement
+7074,CONTROL_STRUCTURE,-1,,else,2,ELSE,80,3,CPPASTCompoundStatement
+7130,CONTROL_STRUCTURE,-1,,if (m_priv->pos >= m_priv->buf.size()),2,IF,60,1,CPPASTIfStatement
+7145,CONTROL_STRUCTURE,-1,,else,2,ELSE,65,3,CPPASTCompoundStatement
+7367,CONTROL_STRUCTURE,-1,,if (newPosition < m_priv->lim),2,IF,59,1,CPPASTIfStatement
+7379,CONTROL_STRUCTURE,-1,,else,2,ELSE,64,3,CPPASTCompoundStatement
+7393,CONTROL_STRUCTURE,-1,,if (newLimit > m_priv->cap),2,IF,71,1,CPPASTIfStatement
+7414,CONTROL_STRUCTURE,-1,,if (m_priv->pos < m_priv->lim),2,IF,82,1,CPPASTIfStatement
+7586,CONTROL_STRUCTURE,-1,,if (dateFormat == NULL),2,IF,129,1,CPPASTIfStatement
+7595,CONTROL_STRUCTURE,-1,,if (expiration1 < 0),2,IF,134,2,CPPASTIfStatement
+7624,CONTROL_STRUCTURE,-1,,if (slotBegin > time),2,IF,160,3,CPPASTIfStatement
+7649,CONTROL_STRUCTURE,-1,,if (millis == magic1 / 1000),2,IF,171,10,CPPASTIfStatement
+7672,CONTROL_STRUCTURE,-1,,if (plusMagic.length() != formatted.length()),2,IF,184,13,CPPASTIfStatement
+7685,CONTROL_STRUCTURE,-1,,else,2,ELSE,189,3,CPPASTCompoundStatement
+7687,CONTROL_STRUCTURE,-1,,for (LogString::size_type i = 0;i < formatted.length();i++),3,FOR,191,1,CPPASTForStatement
+7702,CONTROL_STRUCTURE,-1,,if (formatted[i] != plusMagic[i]),4,IF,193,1,CPPASTIfStatement
+7759,CONTROL_STRUCTURE,-1,,"if (plusZero.length() == formatted.length()
+					&& regionMatches(magicString,       0, plusMagic,   possibleRetVal, magicLength)
+					&& regionMatches(formattedMillis,   0, formatted,   possibleRetVal, magicLength)
+					&& regionMatches(zeroString,        0, plusZero,    possibleRetVal, magicLength)
+					// The following will and should fail for patterns with more than one SSS because
+					// we only seem to be able to change one SSS in e.g. format and need to reformat the
+					// whole string in other cases.
+					&& (formatted.length() == possibleRetVal + magicLength
+						|| plusZero.compare(possibleRetVal + magicLength,
+							LogString::npos, plusMagic, possibleRetVal + magicLength, LogString::npos) == 0))",5,IF,212,14,CPPASTIfStatement
+7822,CONTROL_STRUCTURE,-1,,else,5,ELSE,226,3,CPPASTCompoundStatement
+7835,CONTROL_STRUCTURE,-1,,if (now == m_priv->previousTime),2,IF,250,1,CPPASTIfStatement
+7850,CONTROL_STRUCTURE,-1,,if (m_priv->millisecondStart != UNRECOGNIZED_MILLISECONDS),2,IF,260,2,CPPASTIfStatement
+7857,CONTROL_STRUCTURE,-1,,"if (now < m_priv->slotBegin + m_priv->expiration
+			&& now >= m_priv->slotBegin
+			&& now < m_priv->slotBegin + 1000000L)",3,IF,265,1,CPPASTIfStatement
+7882,CONTROL_STRUCTURE,-1,,if (m_priv->millisecondStart >= 0),4,IF,272,1,CPPASTIfStatement
+7970,CONTROL_STRUCTURE,-1,,if (m_priv->slotBegin > m_priv->previousTime),2,IF,296,8,CPPASTIfStatement
+7984,CONTROL_STRUCTURE,-1,,if (m_priv->millisecondStart >= 0),2,IF,305,9,CPPASTIfStatement
+8132,CONTROL_STRUCTURE,-1,,"if (firstS == LogString::npos ||
+		(len >= firstS + 3 && pattern.compare(firstS, 3, SSS) == 0
+			&& (len == firstS + 3 ||
+				pattern.find(S, firstS + 3) == LogString::npos)))",2,IF,372,9,CPPASTIfStatement
+8256,CONTROL_STRUCTURE,-1,,if (remaining > 0),4,IF,249,3,CPPASTIfStatement
+8325,CONTROL_STRUCTURE,-1,,if (in.remaining() > 0),4,IF,290,1,CPPASTIfStatement
+8350,CONTROL_STRUCTURE,-1,,while (iter != tmp.end()),5,WHILE,295,5,<empty>
+8367,CONTROL_STRUCTURE,-1,,if (sv == 0xFFFF),6,IF,299,3,CPPASTIfStatement
+8393,CONTROL_STRUCTURE,-1,,else,6,ELSE,306,3,CPPASTCompoundStatement
+8436,CONTROL_STRUCTURE,-1,,if (in.remaining() > 0),4,IF,342,1,CPPASTIfStatement
+8462,CONTROL_STRUCTURE,-1,,while (src < srcEnd),5,WHILE,348,5,<empty>
+8518,CONTROL_STRUCTURE,-1,,if (in.remaining() > 0),4,IF,390,3,CPPASTIfStatement
+8544,CONTROL_STRUCTURE,-1,,while (src < srcEnd),5,WHILE,396,5,<empty>
+8554,CONTROL_STRUCTURE,-1,,if (sv < 0x80),6,IF,400,3,CPPASTIfStatement
+8567,CONTROL_STRUCTURE,-1,,else,6,ELSE,406,3,CPPASTCompoundStatement
+8572,CONTROL_STRUCTURE,-1,,break;,7,BREAK,408,2,CPPASTBreakStatement
+8635,CONTROL_STRUCTURE,-1,,if (std::mbsinit(&this->state)),4,IF,441,9,CPPASTIfStatement
+8645,CONTROL_STRUCTURE,-1,,"for (;0 < remain && ((unsigned int) *p) < 0x80;--remain, ++i, p++)",5,FOR,444,1,CPPASTForStatement
+8672,CONTROL_STRUCTURE,-1,,while (0 < remain),4,WHILE,451,10,<empty>
+8696,CONTROL_STRUCTURE,-1,,if (0 == n),5,IF,455,5,CPPASTIfStatement
+8703,CONTROL_STRUCTURE,-1,,break;,6,BREAK,458,2,CPPASTBreakStatement
+8704,CONTROL_STRUCTURE,-1,,if (static_cast<std::size_t>(-1) == n),5,IF,460,6,CPPASTIfStatement
+8715,CONTROL_STRUCTURE,-1,,break;,6,BREAK,463,2,CPPASTBreakStatement
+8716,CONTROL_STRUCTURE,-1,,if (static_cast<std::size_t>(-2) == n),5,IF,465,7,CPPASTIfStatement
+8724,CONTROL_STRUCTURE,-1,,break;,6,BREAK,467,1,CPPASTBreakStatement
+8772,CONTROL_STRUCTURE,-1,,if (decoder.value() == 0),2,IF,522,3,CPPASTIfStatement
+8793,CONTROL_STRUCTURE,-1,,if (decoder.value() == 0),2,IF,539,3,CPPASTIfStatement
+8822,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""UTF-8""), LOG4CXX_STR(""utf-8"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""UTF8""), LOG4CXX_STR(""utf8"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""CP65001""), LOG4CXX_STR(""cp65001"")))",2,IF,555,1,CPPASTIfStatement
+8858,CONTROL_STRUCTURE,-1,,else,7,ELSE,561,3,CPPASTIfStatement
+8860,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""C""), LOG4CXX_STR(""c"")) ||
+		charset == LOG4CXX_STR(""646"") ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""US-ASCII""), LOG4CXX_STR(""us-ascii"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""ISO646-US""), LOG4CXX_STR(""iso646-US"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""ANSI_X3.4-1968""), LOG4CXX_STR(""ansi_x3.4-1968"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""CP20127""), LOG4CXX_STR(""cp20127"")))",7,IF,561,1,CPPASTIfStatement
+8921,CONTROL_STRUCTURE,-1,,else,7,ELSE,570,3,CPPASTIfStatement
+8923,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""ISO-8859-1""), LOG4CXX_STR(""iso-8859-1"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""ISO-LATIN-1""), LOG4CXX_STR(""iso-latin-1"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""CP1252""), LOG4CXX_STR(""cp1252"")))",7,IF,570,1,CPPASTIfStatement
+8959,CONTROL_STRUCTURE,-1,,else,7,ELSE,576,3,CPPASTIfStatement
+8961,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""LOCALE""), LOG4CXX_STR(""locale"")))",7,IF,576,1,CPPASTIfStatement
+9041,CONTROL_STRUCTURE,-1,,if (iter != in.end()),4,IF,231,3,CPPASTIfStatement
+9049,CONTROL_STRUCTURE,-1,,while (out.remaining() > 0 && iter != in.end()),5,WHILE,233,1,<empty>
+9076,CONTROL_STRUCTURE,-1,,if (sv <= 0x7F),6,IF,238,5,CPPASTIfStatement
+9088,CONTROL_STRUCTURE,-1,,else,6,ELSE,243,3,CPPASTCompoundStatement
+9096,CONTROL_STRUCTURE,-1,,break;,7,BREAK,246,3,CPPASTBreakStatement
+9125,CONTROL_STRUCTURE,-1,,if (iter != in.end()),4,IF,275,3,CPPASTIfStatement
+9133,CONTROL_STRUCTURE,-1,,while (out.remaining() > 0 && iter != in.end()),5,WHILE,277,1,<empty>
+9160,CONTROL_STRUCTURE,-1,,if (sv <= 0xFF),6,IF,282,5,CPPASTIfStatement
+9172,CONTROL_STRUCTURE,-1,,else,6,ELSE,287,3,CPPASTCompoundStatement
+9180,CONTROL_STRUCTURE,-1,,break;,7,BREAK,290,3,CPPASTBreakStatement
+9205,CONTROL_STRUCTURE,-1,,if (iter != in.end()),4,IF,318,1,CPPASTIfStatement
+9227,CONTROL_STRUCTURE,-1,,if (requested > out.remaining() / sizeof(logchar)),5,IF,322,3,CPPASTIfStatement
+9309,CONTROL_STRUCTURE,-1,,while (iter != in.end() && out.remaining() >= 8),4,WHILE,359,1,<empty>
+9333,CONTROL_STRUCTURE,-1,,if (sv == 0xFFFF),5,IF,363,3,CPPASTIfStatement
+9370,CONTROL_STRUCTURE,-1,,while (iter != in.end() && out.remaining() >= 4),4,WHILE,394,1,<empty>
+9394,CONTROL_STRUCTURE,-1,,if (sv == 0xFFFF),5,IF,398,3,CPPASTIfStatement
+9431,CONTROL_STRUCTURE,-1,,while (iter != in.end() && out.remaining() >= 4),4,WHILE,429,1,<empty>
+9455,CONTROL_STRUCTURE,-1,,if (sv == 0xFFFF),5,IF,433,3,CPPASTIfStatement
+9510,CONTROL_STRUCTURE,-1,,if (std::mbsinit(&this->state)),4,IF,467,7,CPPASTIfStatement
+9520,CONTROL_STRUCTURE,-1,,"for (;iter != in.end() && ((unsigned int) *iter) < 0x80 && 0 < remain;iter++, remain--, current++)",5,FOR,470,1,CPPASTForStatement
+9552,CONTROL_STRUCTURE,-1,,while (iter != in.end() && MB_CUR_MAX <= remain),4,WHILE,479,8,<empty>
+9586,CONTROL_STRUCTURE,-1,,if (static_cast<std::size_t>(-1) == n),5,IF,483,5,CPPASTIfStatement
+9597,CONTROL_STRUCTURE,-1,,break;,6,BREAK,486,2,CPPASTBreakStatement
+9632,CONTROL_STRUCTURE,-1,,if (encoder.value() == 0),2,IF,523,3,CPPASTIfStatement
+9666,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""UTF-8""), LOG4CXX_STR(""utf-8""))
+		|| StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""CP65001""), LOG4CXX_STR(""cp65001"")))",2,IF,556,1,CPPASTIfStatement
+9692,CONTROL_STRUCTURE,-1,,else,7,ELSE,561,3,CPPASTIfStatement
+9694,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""C""), LOG4CXX_STR(""c"")) ||
+		charset == LOG4CXX_STR(""646"") ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""US-ASCII""), LOG4CXX_STR(""us-ascii"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""ISO646-US""), LOG4CXX_STR(""iso646-US"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""ANSI_X3.4-1968""), LOG4CXX_STR(""ansi_x3.4-1968"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""CP20127""), LOG4CXX_STR(""cp20127"")))",7,IF,561,1,CPPASTIfStatement
+9755,CONTROL_STRUCTURE,-1,,else,7,ELSE,570,3,CPPASTIfStatement
+9757,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""ISO-8859-1""), LOG4CXX_STR(""iso-8859-1"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""ISO-LATIN-1""), LOG4CXX_STR(""iso-latin-1"")) ||
+		StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""CP1252""), LOG4CXX_STR(""cp1252"")))",7,IF,570,1,CPPASTIfStatement
+9793,CONTROL_STRUCTURE,-1,,else,7,ELSE,576,3,CPPASTIfStatement
+9795,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""UTF-16BE""), LOG4CXX_STR(""utf-16be""))
+		|| StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""UTF-16""), LOG4CXX_STR(""utf-16""))
+		|| StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""CP1200""), LOG4CXX_STR(""cp1200"")))",7,IF,576,1,CPPASTIfStatement
+9831,CONTROL_STRUCTURE,-1,,else,7,ELSE,582,3,CPPASTIfStatement
+9833,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""UTF-16LE""), LOG4CXX_STR(""utf-16le"")))",7,IF,582,1,CPPASTIfStatement
+9849,CONTROL_STRUCTURE,-1,,else,7,ELSE,586,3,CPPASTIfStatement
+9851,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(charset, LOG4CXX_STR(""LOCALE""), LOG4CXX_STR(""locale"")))",7,IF,586,1,CPPASTIfStatement
+9897,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS && iter != src.end()),2,IF,615,3,CPPASTIfStatement
+9923,CONTROL_STRUCTURE,-1,,if (dynamic_cast<LocaleCharsetEncoder*>(enc.get())),2,IF,635,2,CPPASTIfStatement
+9951,CONTROL_STRUCTURE,-1,,else,3,ELSE,642,3,CPPASTExpressionStatement
+10112,CONTROL_STRUCTURE,-1,,if (clazz == 0),2,IF,130,5,CPPASTIfStatement
+10126,CONTROL_STRUCTURE,-1,,if (pos != LogString::npos),3,IF,134,3,CPPASTIfStatement
+10147,CONTROL_STRUCTURE,-1,,if (clazz == 0),4,IF,139,4,CPPASTIfStatement
+10158,CONTROL_STRUCTURE,-1,,if (clazz == 0),5,IF,144,3,CPPASTIfStatement
+10168,CONTROL_STRUCTURE,-1,,else,3,ELSE,151,3,CPPASTCompoundStatement
+10176,CONTROL_STRUCTURE,-1,,if (clazz == 0),2,IF,157,6,CPPASTIfStatement
+10358,CONTROL_STRUCTURE,-1,,if (options.size() == 0),2,IF,40,1,CPPASTIfStatement
+10515,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(color, LOG4CXX_STR(""BLACK""), LOG4CXX_STR(""black"")))",2,IF,37,3,CPPASTIfStatement
+10529,CONTROL_STRUCTURE,-1,,else,8,ELSE,39,3,CPPASTIfStatement
+10531,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(color, LOG4CXX_STR(""RED""), LOG4CXX_STR(""red"")))",8,IF,39,1,CPPASTIfStatement
+10545,CONTROL_STRUCTURE,-1,,else,8,ELSE,41,3,CPPASTIfStatement
+10547,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(color, LOG4CXX_STR(""GREEN""), LOG4CXX_STR(""green"")))",8,IF,41,1,CPPASTIfStatement
+10561,CONTROL_STRUCTURE,-1,,else,8,ELSE,43,3,CPPASTIfStatement
+10563,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(color, LOG4CXX_STR(""YELLOW""), LOG4CXX_STR(""yellow"")))",8,IF,43,1,CPPASTIfStatement
+10577,CONTROL_STRUCTURE,-1,,else,8,ELSE,45,3,CPPASTIfStatement
+10579,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(color, LOG4CXX_STR(""BLUE""), LOG4CXX_STR(""blue"")))",8,IF,45,1,CPPASTIfStatement
+10593,CONTROL_STRUCTURE,-1,,else,8,ELSE,47,3,CPPASTIfStatement
+10595,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(color, LOG4CXX_STR(""MAGENTA""), LOG4CXX_STR(""magenta"")))",8,IF,47,1,CPPASTIfStatement
+10609,CONTROL_STRUCTURE,-1,,else,8,ELSE,49,3,CPPASTIfStatement
+10611,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(color, LOG4CXX_STR(""CYAN""), LOG4CXX_STR(""cyan"")))",8,IF,49,1,CPPASTIfStatement
+10625,CONTROL_STRUCTURE,-1,,else,8,ELSE,51,3,CPPASTIfStatement
+10627,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(color, LOG4CXX_STR(""WHITE""), LOG4CXX_STR(""white"")))",8,IF,51,1,CPPASTIfStatement
+10641,CONTROL_STRUCTURE,-1,,if (numberToConvert == 0),2,IF,55,4,CPPASTIfStatement
+10650,CONTROL_STRUCTURE,-1,,if (isForeground == false),2,IF,59,6,CPPASTIfStatement
+10677,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(graphicsMode, LOG4CXX_STR(""BOLD""), LOG4CXX_STR(""bold"")))",2,IF,69,3,CPPASTIfStatement
+10691,CONTROL_STRUCTURE,-1,,else,8,ELSE,71,3,CPPASTIfStatement
+10693,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(graphicsMode, LOG4CXX_STR(""DIM""), LOG4CXX_STR(""dim"")))",8,IF,71,1,CPPASTIfStatement
+10707,CONTROL_STRUCTURE,-1,,else,8,ELSE,73,3,CPPASTIfStatement
+10709,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(graphicsMode, LOG4CXX_STR(""ITALIC""), LOG4CXX_STR(""italic"")))",8,IF,73,1,CPPASTIfStatement
+10723,CONTROL_STRUCTURE,-1,,else,8,ELSE,75,3,CPPASTIfStatement
+10725,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(graphicsMode, LOG4CXX_STR(""UNDERLINE""), LOG4CXX_STR(""underline"")))",8,IF,75,1,CPPASTIfStatement
+10739,CONTROL_STRUCTURE,-1,,else,8,ELSE,77,3,CPPASTIfStatement
+10741,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(graphicsMode, LOG4CXX_STR(""BLINKING""), LOG4CXX_STR(""blinking"")))",8,IF,77,1,CPPASTIfStatement
+10755,CONTROL_STRUCTURE,-1,,else,8,ELSE,79,3,CPPASTIfStatement
+10757,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(graphicsMode, LOG4CXX_STR(""INVERSE""), LOG4CXX_STR(""inverse"")))",8,IF,79,1,CPPASTIfStatement
+10771,CONTROL_STRUCTURE,-1,,else,8,ELSE,81,3,CPPASTIfStatement
+10773,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(graphicsMode, LOG4CXX_STR(""STRIKETHROUGH""), LOG4CXX_STR(""strikethrough"")))",8,IF,81,1,CPPASTIfStatement
+10787,CONTROL_STRUCTURE,-1,,if (numberToConvert == 0),2,IF,85,4,CPPASTIfStatement
+10824,CONTROL_STRUCTURE,-1,,for (x = 0;x < sequence.length();x++),2,FOR,99,8,CPPASTForStatement
+10838,CONTROL_STRUCTURE,-1,,if (sequence[x] == '(' && !inParens),3,IF,100,1,CPPASTIfStatement
+10854,CONTROL_STRUCTURE,-1,,continue;,4,CONTINUE,103,3,CPPASTContinueStatement
+10855,CONTROL_STRUCTURE,-1,,else,9,ELSE,104,3,CPPASTIfStatement
+10857,CONTROL_STRUCTURE,1,,if (sequence[x] == '(' && inParens),9,IF,104,1,CPPASTIfStatement
+10869,CONTROL_STRUCTURE,-1,,if (sequence[x] == ')' && inParens),3,IF,109,2,CPPASTIfStatement
+10884,CONTROL_STRUCTURE,-1,,break;,4,BREAK,112,3,CPPASTBreakStatement
+10885,CONTROL_STRUCTURE,-1,,if (inParens),3,IF,115,3,CPPASTIfStatement
+10895,CONTROL_STRUCTURE,-1,,if ((x != (sequence.length() - 1) || inParens) && hasParens),2,IF,120,9,CPPASTIfStatement
+10912,CONTROL_STRUCTURE,-1,,"if (StringHelper::startsWith(sequence, LOG4CXX_STR(""fg("")))",2,IF,125,10,CPPASTIfStatement
+10926,CONTROL_STRUCTURE,-1,,else,8,ELSE,128,3,CPPASTIfStatement
+10928,CONTROL_STRUCTURE,1,,"if (StringHelper::startsWith(sequence, LOG4CXX_STR(""bg("")))",8,IF,128,1,CPPASTIfStatement
+10942,CONTROL_STRUCTURE,-1,,else,7,ELSE,130,3,CPPASTCompoundStatement
+10993,CONTROL_STRUCTURE,-1,,switch(lvl->toInt()),2,SWITCH,169,3,CPPASTSwitchStatement
+11019,CONTROL_STRUCTURE,-1,,break;,4,BREAK,173,4,CPPASTBreakStatement
+11040,CONTROL_STRUCTURE,-1,,break;,4,BREAK,177,8,CPPASTBreakStatement
+11061,CONTROL_STRUCTURE,-1,,break;,4,BREAK,181,12,CPPASTBreakStatement
+11082,CONTROL_STRUCTURE,-1,,break;,4,BREAK,185,16,CPPASTBreakStatement
+11103,CONTROL_STRUCTURE,-1,,break;,4,BREAK,189,20,CPPASTBreakStatement
+11124,CONTROL_STRUCTURE,-1,,break;,4,BREAK,193,24,CPPASTBreakStatement
+11126,CONTROL_STRUCTURE,-1,,break;,4,BREAK,196,26,CPPASTBreakStatement
+11250,CONTROL_STRUCTURE,-1,,"if (StringHelper::trim(color).empty() ||
+			StringHelper::equalsIgnoreCase(color,
+										   LOG4CXX_STR(""NONE""),
+										   LOG4CXX_STR(""none"")))",2,IF,229,4,CPPASTIfStatement
+11275,CONTROL_STRUCTURE,-1,,"if (StringHelper::startsWith(lower, LOG4CXX_STR(""\\x1b"")))",2,IF,237,5,CPPASTIfStatement
+11284,CONTROL_STRUCTURE,-1,,if (color[color.size() - 1] != 'm'),3,IF,238,1,CPPASTIfStatement
+11307,CONTROL_STRUCTURE,-1,,for (size_t x = 4;x < color.size();x++),3,FOR,246,4,CPPASTForStatement
+11329,CONTROL_STRUCTURE,-1,,else,7,ELSE,249,3,CPPASTCompoundStatement
+11342,CONTROL_STRUCTURE,-1,,for (size_t x = 0;x < color.size();x++),3,FOR,257,4,CPPASTForStatement
+11357,CONTROL_STRUCTURE,-1,,if (color[x] == '|'),4,IF,258,1,CPPASTIfStatement
+11374,CONTROL_STRUCTURE,-1,,if (!toAppend.empty()),5,IF,261,4,CPPASTIfStatement
+11391,CONTROL_STRUCTURE,-1,,else,9,ELSE,265,3,CPPASTCompoundStatement
+11410,CONTROL_STRUCTURE,-1,,if (!toAppend.empty()),3,IF,271,8,CPPASTIfStatement
+11560,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(v,
+			LOG4CXX_STR(""SYSTEM.OUT""), LOG4CXX_STR(""system.out"")))",2,IF,87,3,CPPASTIfStatement
+11583,CONTROL_STRUCTURE,-1,,else,7,ELSE,92,3,CPPASTIfStatement
+11585,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(v,
+			LOG4CXX_STR(""SYSTEM.ERR""), LOG4CXX_STR(""system.err"")))",7,IF,92,1,CPPASTIfStatement
+11608,CONTROL_STRUCTURE,-1,,else,2,ELSE,98,3,CPPASTCompoundStatement
+11656,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(_priv->target,
+			LOG4CXX_STR(""SYSTEM.OUT""), LOG4CXX_STR(""system.out"")))",2,IF,117,1,CPPASTIfStatement
+11685,CONTROL_STRUCTURE,-1,,else,7,ELSE,123,3,CPPASTIfStatement
+11687,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(_priv->target,
+			LOG4CXX_STR(""SYSTEM.ERR""), LOG4CXX_STR(""system.err"")))",7,IF,123,1,CPPASTIfStatement
+11727,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""TARGET""), LOG4CXX_STR(""target"")))",2,IF,135,1,CPPASTIfStatement
+11740,CONTROL_STRUCTURE,-1,,else,2,ELSE,141,3,CPPASTCompoundStatement
+11781,CONTROL_STRUCTURE,-1,,if (maxSize1 < 1),2,IF,48,1,CPPASTIfStatement
+11825,CONTROL_STRUCTURE,-1,,if (++m_priv->last == m_priv->maxSize),2,IF,69,2,CPPASTIfStatement
+11840,CONTROL_STRUCTURE,-1,,if (m_priv->numElems < m_priv->maxSize),2,IF,74,3,CPPASTIfStatement
+11853,CONTROL_STRUCTURE,-1,,else,7,ELSE,78,3,CPPASTIfStatement
+11855,CONTROL_STRUCTURE,1,,if (++m_priv->first == m_priv->maxSize),7,IF,78,1,CPPASTIfStatement
+11875,CONTROL_STRUCTURE,-1,,if (i < 0 || i >= m_priv->numElems),2,IF,92,1,CPPASTIfStatement
+11907,CONTROL_STRUCTURE,-1,,if (m_priv->numElems > 0),2,IF,108,2,CPPASTIfStatement
+11936,CONTROL_STRUCTURE,-1,,if (++m_priv->first == m_priv->maxSize),3,IF,114,4,CPPASTIfStatement
+11958,CONTROL_STRUCTURE,-1,,if (newSize < 0),2,IF,129,1,CPPASTIfStatement
+11984,CONTROL_STRUCTURE,-1,,if (newSize == m_priv->numElems),2,IF,138,2,CPPASTIfStatement
+12009,CONTROL_STRUCTURE,-1,,for (i = 0;i < loopLen;i++),2,FOR,148,8,CPPASTForStatement
+12040,CONTROL_STRUCTURE,-1,,if (++m_priv->first == m_priv->numElems),3,IF,153,3,CPPASTIfStatement
+12075,CONTROL_STRUCTURE,-1,,if (loopLen == newSize),2,IF,164,13,CPPASTIfStatement
+12085,CONTROL_STRUCTURE,-1,,else,2,ELSE,169,3,CPPASTCompoundStatement
+12321,CONTROL_STRUCTURE,-1,,try,2,TRY,35,1,CPPASTTryBlockStatement
+12657,CONTROL_STRUCTURE,-1,,if (options.size() == 0),2,IF,66,4,CPPASTIfStatement
+12671,CONTROL_STRUCTURE,-1,,else,2,ELSE,71,3,CPPASTCompoundStatement
+12678,CONTROL_STRUCTURE,-1,,"if (dateFormatStr.empty() ||
+			StringHelper::equalsIgnoreCase(dateFormatStr,
+				LOG4CXX_STR(""ISO8601""), LOG4CXX_STR(""iso8601"")))",3,IF,74,3,CPPASTIfStatement
+12700,CONTROL_STRUCTURE,-1,,else,8,ELSE,80,3,CPPASTIfStatement
+12702,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(dateFormatStr,
+				LOG4CXX_STR(""ABSOLUTE""), LOG4CXX_STR(""absolute"")))",8,IF,80,1,CPPASTIfStatement
+12719,CONTROL_STRUCTURE,-1,,else,8,ELSE,85,3,CPPASTIfStatement
+12721,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(dateFormatStr,
+				LOG4CXX_STR(""DATE""), LOG4CXX_STR(""date"")))",8,IF,85,1,CPPASTIfStatement
+12738,CONTROL_STRUCTURE,-1,,else,3,ELSE,91,3,CPPASTCompoundStatement
+12740,CONTROL_STRUCTURE,-1,,if (dateFormatStr.find(0x25 /*'%'*/) == std::string::npos),4,IF,92,1,CPPASTIfStatement
+12753,CONTROL_STRUCTURE,-1,,try,5,TRY,94,1,CPPASTTryBlockStatement
+12789,CONTROL_STRUCTURE,-1,,else,4,ELSE,109,3,CPPASTCompoundStatement
+12800,CONTROL_STRUCTURE,-1,,if (options.size() >= 2),3,IF,114,4,CPPASTIfStatement
+12817,CONTROL_STRUCTURE,-1,,if (tz != NULL),4,IF,118,3,CPPASTIfStatement
+12827,CONTROL_STRUCTURE,-1,,if (maximumCacheValidity > 0),2,IF,125,5,CPPASTIfStatement
+12902,CONTROL_STRUCTURE,-1,,if (date != NULL),2,IF,157,3,CPPASTIfStatement
+12911,CONTROL_STRUCTURE,-1,,else,2,ELSE,162,3,CPPASTCompoundStatement
+12923,CONTROL_STRUCTURE,-1,,if (event != NULL),3,IF,165,3,CPPASTIfStatement
+13020,CONTROL_STRUCTURE,-1,,if (!initialized),3,IF,57,3,CPPASTIfStatement
+13067,CONTROL_STRUCTURE,-1,,if (specs.empty()),5,IF,83,2,CPPASTIfStatement
+13309,CONTROL_STRUCTURE,-1,,if (_priv->m_driver && _priv->m_databaseHandle),5,IF,113,1,CPPASTIfStatement
+13383,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""COLUMNMAPPING""), LOG4CXX_STR(""columnmapping"")))",5,IF,121,1,CPPASTIfStatement
+13408,CONTROL_STRUCTURE,-1,,else,10,ELSE,125,3,CPPASTIfStatement
+13410,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""DRIVERNAME""), LOG4CXX_STR(""drivername"")))",10,IF,125,1,CPPASTIfStatement
+13436,CONTROL_STRUCTURE,-1,,else,10,ELSE,129,3,CPPASTIfStatement
+13438,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""DRIVERPARAMS""), LOG4CXX_STR(""driverparams"")))",10,IF,129,1,CPPASTIfStatement
+13464,CONTROL_STRUCTURE,-1,,else,10,ELSE,133,3,CPPASTIfStatement
+13466,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""DATABASENAME""), LOG4CXX_STR(""databasename"")))",10,IF,133,1,CPPASTIfStatement
+13492,CONTROL_STRUCTURE,-1,,else,10,ELSE,137,3,CPPASTIfStatement
+13494,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""SQL""), LOG4CXX_STR(""sql"")))",10,IF,137,1,CPPASTIfStatement
+13520,CONTROL_STRUCTURE,-1,,else,5,ELSE,142,3,CPPASTCompoundStatement
+13576,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),5,IF,152,3,CPPASTIfStatement
+13673,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),5,IF,165,5,CPPASTIfStatement
+13700,CONTROL_STRUCTURE,-1,,if (!_priv->databaseName.empty()),5,IF,171,6,CPPASTIfStatement
+13824,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),5,IF,184,8,CPPASTIfStatement
+13890,CONTROL_STRUCTURE,-1,,for (auto& name:static_cast<DBAppenderPriv *>(m_priv.get())->mappedName),5,FOR,195,11,CPPASTRangeBasedForStatement
+13915,CONTROL_STRUCTURE,-1,,if (specs.end() == pItem),9,IF,198,3,CPPASTIfStatement
+13931,CONTROL_STRUCTURE,-1,,else,9,ELSE,201,3,CPPASTCompoundStatement
+13940,CONTROL_STRUCTURE,-1,,"if (LOG4CXX_STR(""time"") == pItem->first)",13,IF,203,2,CPPASTIfStatement
+14000,CONTROL_STRUCTURE,-1,,"if (_priv->m_driver == nullptr ||
+            _priv->m_databaseHandle == nullptr ||
+            _priv->preparedStmt == nullptr)",5,IF,217,5,CPPASTIfStatement
+14056,CONTROL_STRUCTURE,-1,,for (auto& converter:static_cast<DBAppenderPriv *>(m_priv.get())->converters),5,FOR,224,6,CPPASTRangeBasedForStatement
+14085,CONTROL_STRUCTURE,-1,,for (std::string& str:ls_args),2,FOR,231,7,CPPASTRangeBasedForStatement
+14160,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),5,IF,243,10,CPPASTIfStatement
+14286,CONTROL_STRUCTURE,-1,,if (configurationFileName.empty()),2,IF,57,6,CPPASTIfStatement
+14297,CONTROL_STRUCTURE,-1,,if (configurationFileName.empty()),2,IF,62,9,CPPASTIfStatement
+14315,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 4;i++),3,FOR,71,3,CPPASTForStatement
+14349,CONTROL_STRUCTURE,-1,,if (candidate.exists(pool)),4,IF,78,7,CPPASTIfStatement
+14359,CONTROL_STRUCTURE,-1,,break;,5,BREAK,81,2,CPPASTBreakStatement
+14360,CONTROL_STRUCTURE,-1,,else,2,ELSE,86,3,CPPASTCompoundStatement
+14367,CONTROL_STRUCTURE,-1,,if (configuration.exists(pool)),2,IF,90,10,CPPASTIfStatement
+14411,CONTROL_STRUCTURE,-1,,else,2,ELSE,108,3,CPPASTCompoundStatement
+14413,CONTROL_STRUCTURE,-1,,if (configurationFileName.empty()),3,IF,109,1,CPPASTIfStatement
+14425,CONTROL_STRUCTURE,-1,,else,3,ELSE,114,3,CPPASTCompoundStatement
+14520,CONTROL_STRUCTURE,-1,,if (!optionStr.empty()),2,IF,155,7,CPPASTIfStatement
+14543,CONTROL_STRUCTURE,-1,,"if (helpers::StringHelper::endsWith(filename, LOG4CXX_STR("".properties"")))",2,IF,166,1,CPPASTIfStatement
+14578,CONTROL_STRUCTURE,-1,,for (LogString dir:directories),2,FOR,178,3,CPPASTRangeBasedForStatement
+14582,CONTROL_STRUCTURE,-1,,for (LogString fname:filenames),3,FOR,179,1,CPPASTRangeBasedForStatement
+14613,CONTROL_STRUCTURE,-1,,if (candidate.exists(pool)),4,IF,186,9,CPPASTIfStatement
+14625,CONTROL_STRUCTURE,-1,,if (configStatus == LOG4CXX_NS::spi::ConfigurationStatus::Configured),5,IF,189,3,CPPASTIfStatement
+14843,CONTROL_STRUCTURE,-1,,if (tagName == APPENDER_TAG),2,IF,145,4,CPPASTIfStatement
+14850,CONTROL_STRUCTURE,-1,,"if (appenderName == getAttribute(utf8Decoder, element, NAME_ATTR))",3,IF,147,1,CPPASTIfStatement
+14868,CONTROL_STRUCTURE,-1,,if (element->first_child && !appender),2,IF,153,5,CPPASTIfStatement
+14887,CONTROL_STRUCTURE,-1,,if (element->next && !appender),2,IF,158,6,CPPASTIfStatement
+14935,CONTROL_STRUCTURE,-1,,if (match != appenders.end()),2,IF,180,6,CPPASTIfStatement
+14948,CONTROL_STRUCTURE,-1,,else,7,ELSE,184,3,CPPASTIfStatement
+14950,CONTROL_STRUCTURE,1,,if (doc),7,IF,184,1,CPPASTIfStatement
+14964,CONTROL_STRUCTURE,-1,,if (appender),3,IF,188,2,CPPASTIfStatement
+14977,CONTROL_STRUCTURE,-1,,if (!appender),2,IF,194,7,CPPASTIfStatement
+15023,CONTROL_STRUCTURE,-1,,try,2,TRY,216,4,CPPASTTryBlockStatement
+15061,CONTROL_STRUCTURE,-1,,for (apr_xml_elem* currentElement = appenderElement->first_child;currentElement;currentElement = currentElement->next),3,FOR,224,8,CPPASTForStatement
+15081,CONTROL_STRUCTURE,-1,,if (tagName == PARAM_TAG),4,IF,232,3,CPPASTIfStatement
+15093,CONTROL_STRUCTURE,-1,,else,9,ELSE,237,3,CPPASTIfStatement
+15095,CONTROL_STRUCTURE,1,,if (tagName == LAYOUT_TAG),9,IF,237,1,CPPASTIfStatement
+15110,CONTROL_STRUCTURE,-1,,else,9,ELSE,242,3,CPPASTIfStatement
+15112,CONTROL_STRUCTURE,1,,if (tagName == FILTER_TAG),9,IF,242,1,CPPASTIfStatement
+15135,CONTROL_STRUCTURE,-1,,for (std::vector<LOG4CXX_NS::spi::FilterPtr>::iterator iter = filters.begin();iter != filters.end();iter++),5,FOR,247,3,CPPASTForStatement
+15159,CONTROL_STRUCTURE,-1,,else,9,ELSE,254,3,CPPASTIfStatement
+15161,CONTROL_STRUCTURE,1,,if (tagName == ERROR_HANDLER_TAG),9,IF,254,1,CPPASTIfStatement
+15175,CONTROL_STRUCTURE,-1,,else,9,ELSE,258,3,CPPASTIfStatement
+15177,CONTROL_STRUCTURE,1,,if (tagName == ROLLING_POLICY_TAG),9,IF,258,1,CPPASTIfStatement
+15200,CONTROL_STRUCTURE,-1,,if (rfa != NULL),5,IF,263,5,CPPASTIfStatement
+15210,CONTROL_STRUCTURE,-1,,else,9,ELSE,268,3,CPPASTIfStatement
+15212,CONTROL_STRUCTURE,1,,if (tagName == TRIGGERING_POLICY_TAG),9,IF,268,1,CPPASTIfStatement
+15245,CONTROL_STRUCTURE,-1,,if (rfa != NULL),5,IF,274,7,CPPASTIfStatement
+15255,CONTROL_STRUCTURE,-1,,else,5,ELSE,279,3,CPPASTCompoundStatement
+15271,CONTROL_STRUCTURE,-1,,if (smtpa != NULL),6,IF,282,3,CPPASTIfStatement
+15291,CONTROL_STRUCTURE,-1,,else,9,ELSE,289,3,CPPASTIfStatement
+15293,CONTROL_STRUCTURE,1,,if (tagName == APPENDER_REF_TAG),9,IF,289,1,CPPASTIfStatement
+15310,CONTROL_STRUCTURE,-1,,if (appender->instanceof(AppenderAttachable::getStaticClass())),5,IF,293,3,CPPASTIfStatement
+15359,CONTROL_STRUCTURE,-1,,else,5,ELSE,302,3,CPPASTCompoundStatement
+15441,CONTROL_STRUCTURE,-1,,if (eh != 0),2,IF,341,4,CPPASTIfStatement
+15454,CONTROL_STRUCTURE,-1,,for (apr_xml_elem* currentElement = element->first_child;currentElement;currentElement = currentElement->next),3,FOR,347,4,CPPASTForStatement
+15474,CONTROL_STRUCTURE,-1,,if (tagName == PARAM_TAG),4,IF,353,3,CPPASTIfStatement
+15486,CONTROL_STRUCTURE,-1,,else,9,ELSE,357,3,CPPASTIfStatement
+15488,CONTROL_STRUCTURE,1,,if (tagName == APPENDER_REF_TAG),9,IF,357,1,CPPASTIfStatement
+15505,CONTROL_STRUCTURE,-1,,else,9,ELSE,361,3,CPPASTIfStatement
+15507,CONTROL_STRUCTURE,1,,if (tagName == LOGGER_REF),9,IF,361,1,CPPASTIfStatement
+15540,CONTROL_STRUCTURE,-1,,else,9,ELSE,367,3,CPPASTIfStatement
+15542,CONTROL_STRUCTURE,1,,if (tagName == ROOT_REF),9,IF,367,1,CPPASTIfStatement
+15583,CONTROL_STRUCTURE,-1,,if (appSkeleton != 0),3,IF,377,7,CPPASTIfStatement
+15639,CONTROL_STRUCTURE,-1,,if (filter != 0),2,IF,398,6,CPPASTIfStatement
+15647,CONTROL_STRUCTURE,-1,,for (apr_xml_elem* currentElement = element->first_child;currentElement;currentElement = currentElement->next),3,FOR,402,3,CPPASTForStatement
+15667,CONTROL_STRUCTURE,-1,,if (tagName == PARAM_TAG),4,IF,408,3,CPPASTIfStatement
+15797,CONTROL_STRUCTURE,-1,,if (className.empty()),2,IF,458,3,CPPASTIfStatement
+15815,CONTROL_STRUCTURE,-1,,else,2,ELSE,464,3,CPPASTCompoundStatement
+15862,CONTROL_STRUCTURE,-1,,for (apr_xml_elem* currentElement = factoryElement->first_child;currentElement;currentElement = currentElement->next),3,FOR,473,6,CPPASTForStatement
+15882,CONTROL_STRUCTURE,-1,,if (tagName == PARAM_TAG),4,IF,479,3,CPPASTIfStatement
+15945,CONTROL_STRUCTURE,-1,,for (apr_xml_elem* currentElement = loggerElement->first_child;currentElement;currentElement = currentElement->next),2,FOR,518,5,CPPASTForStatement
+15965,CONTROL_STRUCTURE,-1,,if (tagName == APPENDER_REF_TAG),3,IF,524,3,CPPASTIfStatement
+15991,CONTROL_STRUCTURE,-1,,if (appender != 0),4,IF,529,5,CPPASTIfStatement
+16015,CONTROL_STRUCTURE,-1,,else,4,ELSE,535,3,CPPASTCompoundStatement
+16033,CONTROL_STRUCTURE,-1,,else,8,ELSE,543,3,CPPASTIfStatement
+16035,CONTROL_STRUCTURE,1,,if (tagName == LEVEL_TAG),8,IF,543,1,CPPASTIfStatement
+16048,CONTROL_STRUCTURE,-1,,else,8,ELSE,547,3,CPPASTIfStatement
+16050,CONTROL_STRUCTURE,1,,if (tagName == PRIORITY_TAG),8,IF,547,1,CPPASTIfStatement
+16063,CONTROL_STRUCTURE,-1,,else,8,ELSE,551,3,CPPASTIfStatement
+16065,CONTROL_STRUCTURE,1,,if (tagName == PARAM_TAG),8,IF,551,1,CPPASTIfStatement
+16109,CONTROL_STRUCTURE,-1,,try,2,TRY,571,4,CPPASTTryBlockStatement
+16136,CONTROL_STRUCTURE,-1,,for (apr_xml_elem* currentElement = layout_element->first_child;currentElement;currentElement = currentElement->next),3,FOR,577,7,CPPASTForStatement
+16156,CONTROL_STRUCTURE,-1,,if (tagName == PARAM_TAG),4,IF,583,3,CPPASTIfStatement
+16213,CONTROL_STRUCTURE,-1,,try,2,TRY,611,4,CPPASTTryBlockStatement
+16230,CONTROL_STRUCTURE,-1,,for (apr_xml_elem* currentElement = layout_element->first_child;currentElement;currentElement = currentElement->next),3,FOR,616,5,CPPASTForStatement
+16250,CONTROL_STRUCTURE,-1,,if (tagName == PARAM_TAG),4,IF,622,3,CPPASTIfStatement
+16262,CONTROL_STRUCTURE,-1,,else,9,ELSE,626,3,CPPASTIfStatement
+16264,CONTROL_STRUCTURE,1,,if (tagName == FILTER_TAG),9,IF,626,1,CPPASTIfStatement
+16297,CONTROL_STRUCTURE,-1,,if (fbtp != NULL),5,IF,632,5,CPPASTIfStatement
+16302,CONTROL_STRUCTURE,-1,,for (std::vector<LOG4CXX_NS::spi::FilterPtr>::iterator iter = filters.begin();iter != filters.end();iter++),6,FOR,634,1,CPPASTForStatement
+16371,CONTROL_STRUCTURE,-1,,try,2,TRY,666,4,CPPASTTryBlockStatement
+16398,CONTROL_STRUCTURE,-1,,for (apr_xml_elem* currentElement = layout_element->first_child;currentElement;currentElement = currentElement->next),3,FOR,672,7,CPPASTForStatement
+16418,CONTROL_STRUCTURE,-1,,if (tagName == PARAM_TAG),4,IF,678,3,CPPASTIfStatement
+16463,CONTROL_STRUCTURE,-1,,if (isRoot),2,IF,707,3,CPPASTIfStatement
+16495,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(levelStr, LOG4CXX_STR(""INHERITED""), LOG4CXX_STR(""inherited""))
+		|| StringHelper::equalsIgnoreCase(levelStr, LOG4CXX_STR(""NULL""), LOG4CXX_STR(""null"")))",2,IF,715,7,CPPASTIfStatement
+16516,CONTROL_STRUCTURE,-1,,if (isRoot),3,IF,718,1,CPPASTIfStatement
+16525,CONTROL_STRUCTURE,-1,,else,3,ELSE,723,3,CPPASTCompoundStatement
+16532,CONTROL_STRUCTURE,-1,,else,2,ELSE,728,3,CPPASTCompoundStatement
+16543,CONTROL_STRUCTURE,-1,,if (className.empty()),3,IF,731,3,CPPASTIfStatement
+16562,CONTROL_STRUCTURE,-1,,else,3,ELSE,736,3,CPPASTCompoundStatement
+16575,CONTROL_STRUCTURE,-1,,try,4,TRY,739,2,CPPASTTryBlockStatement
+16738,CONTROL_STRUCTURE,-1,,if (rv != APR_SUCCESS),2,IF,796,13,CPPASTIfStatement
+16786,CONTROL_STRUCTURE,-1,,else,2,ELSE,810,3,CPPASTCompoundStatement
+16827,CONTROL_STRUCTURE,-1,,if (rv != APR_SUCCESS),3,IF,820,9,CPPASTIfStatement
+16869,CONTROL_STRUCTURE,-1,,if (parser),4,IF,831,10,CPPASTIfStatement
+16900,CONTROL_STRUCTURE,-1,,else,3,ELSE,842,3,CPPASTCompoundStatement
+16961,CONTROL_STRUCTURE,-1,,if (xdog),2,IF,912,3,CPPASTIfStatement
+17010,CONTROL_STRUCTURE,-1,,if (rootElementName != CONFIGURATION_TAG),2,IF,1000,3,CPPASTIfStatement
+17017,CONTROL_STRUCTURE,-1,,if (rootElementName == OLD_CONFIGURATION_TAG),3,IF,1002,1,CPPASTIfStatement
+17024,CONTROL_STRUCTURE,-1,,else,3,ELSE,1010,3,CPPASTCompoundStatement
+17058,CONTROL_STRUCTURE,-1,,if (!debugAttrib.empty() && debugAttrib != NULL_STRING.value()),2,IF,1023,9,CPPASTIfStatement
+17082,CONTROL_STRUCTURE,-1,,else,2,ELSE,1028,3,CPPASTCompoundStatement
+17100,CONTROL_STRUCTURE,-1,,if (!confDebug.empty() && confDebug != NULL_STRING.value()),2,IF,1035,12,CPPASTIfStatement
+17157,CONTROL_STRUCTURE,-1,,if (!thresholdStr.empty() && thresholdStr != NULL_STRING.value()),2,IF,1045,16,CPPASTIfStatement
+17188,CONTROL_STRUCTURE,-1,,if (!threadSignalValue.empty() && threadSignalValue != NULL_STRING.value()),2,IF,1052,19,CPPASTIfStatement
+17202,CONTROL_STRUCTURE,-1,,"if (threadSignalValue == LOG4CXX_STR(""NoConfiguration""))",3,IF,1054,1,CPPASTIfStatement
+17217,CONTROL_STRUCTURE,-1,,else,8,ELSE,1058,3,CPPASTIfStatement
+17219,CONTROL_STRUCTURE,1,,"if (threadSignalValue == LOG4CXX_STR(""BlockSignalsOnly""))",8,IF,1058,1,CPPASTIfStatement
+17234,CONTROL_STRUCTURE,-1,,else,8,ELSE,1062,3,CPPASTIfStatement
+17236,CONTROL_STRUCTURE,1,,"if (threadSignalValue == LOG4CXX_STR(""NameThreadOnly""))",8,IF,1062,1,CPPASTIfStatement
+17251,CONTROL_STRUCTURE,-1,,else,8,ELSE,1066,3,CPPASTIfStatement
+17253,CONTROL_STRUCTURE,1,,"if (threadSignalValue == LOG4CXX_STR(""BlockSignalsAndNameThread""))",8,IF,1066,1,CPPASTIfStatement
+17269,CONTROL_STRUCTURE,-1,,for (currentElement = element->first_child;currentElement;currentElement = currentElement->next),2,FOR,1074,21,CPPASTForStatement
+17288,CONTROL_STRUCTURE,-1,,if (tagName == CATEGORY_FACTORY_TAG),3,IF,1080,3,CPPASTIfStatement
+17299,CONTROL_STRUCTURE,-1,,for (currentElement = element->first_child;currentElement;currentElement = currentElement->next),2,FOR,1086,22,CPPASTForStatement
+17318,CONTROL_STRUCTURE,-1,,if (tagName == CATEGORY || tagName == LOGGER),3,IF,1092,3,CPPASTIfStatement
+17337,CONTROL_STRUCTURE,-1,,else,8,ELSE,1096,3,CPPASTIfStatement
+17339,CONTROL_STRUCTURE,1,,if (tagName == ROOT_TAG),8,IF,1096,1,CPPASTIfStatement
+17357,CONTROL_STRUCTURE,-1,,try,2,TRY,1105,1,CPPASTTryBlockStatement
+17386,CONTROL_STRUCTURE,-1,,for (apr_xml_attr* attr = element->attr;attr;attr = attr->next),2,FOR,1124,2,CPPASTForStatement
+17401,CONTROL_STRUCTURE,-1,,if (attrName == attr->name),3,IF,1128,1,CPPASTIfStatement
+17466,CONTROL_STRUCTURE,-1,,if (len > MSG_SIZE),2,IF,35,4,CPPASTIfStatement
+18305,CONTROL_STRUCTURE,-1,,if (!primaryLocked || !backupLocked),2,IF,74,7,CPPASTIfStatement
+18313,CONTROL_STRUCTURE,-1,,for (LoggerPtr l:m_priv->loggers),2,FOR,79,8,CPPASTRangeBasedForStatement
+18474,CONTROL_STRUCTURE,-1,,if (hierarchy),2,IF,113,7,CPPASTIfStatement
+18542,CONTROL_STRUCTURE,-1,,if (src != 0),2,IF,59,2,CPPASTIfStatement
+18589,CONTROL_STRUCTURE,-1,,if (this == &src),2,IF,124,1,CPPASTIfStatement
+18625,CONTROL_STRUCTURE,-1,,if (m_priv->autoDelete),2,IF,138,1,CPPASTIfStatement
+18677,CONTROL_STRUCTURE,-1,,if (lastSlash != LogString::npos),2,IF,161,5,CPPASTIfStatement
+18718,CONTROL_STRUCTURE,-1,,if (style == APR_FILEPATH_ENCODING_UTF8),2,IF,175,6,CPPASTIfStatement
+18733,CONTROL_STRUCTURE,-1,,else,2,ELSE,180,3,CPPASTCompoundStatement
+18794,CONTROL_STRUCTURE,-1,,for (char* c = src;*c != 0;c++),2,FOR,205,1,CPPASTForStatement
+18807,CONTROL_STRUCTURE,-1,,if (*c == '\\'),3,IF,207,1,CPPASTIfStatement
+18885,CONTROL_STRUCTURE,-1,,if (rv == APR_SUCCESS),2,IF,238,4,CPPASTIfStatement
+18917,CONTROL_STRUCTURE,-1,,if (rv == APR_SUCCESS),2,IF,253,4,CPPASTIfStatement
+18955,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),2,IF,272,6,CPPASTIfStatement
+18978,CONTROL_STRUCTURE,-1,,while (stat == APR_SUCCESS),3,WHILE,278,5,<empty>
+18983,CONTROL_STRUCTURE,-1,,if (entry.name != NULL),4,IF,280,1,CPPASTIfStatement
+18991,CONTROL_STRUCTURE,-1,,if (style == APR_FILEPATH_ENCODING_UTF8),5,IF,284,2,CPPASTIfStatement
+19004,CONTROL_STRUCTURE,-1,,else,5,ELSE,289,3,CPPASTCompoundStatement
+19059,CONTROL_STRUCTURE,-1,,if (slashPos == LogString::npos),2,IF,310,5,CPPASTIfStatement
+19069,CONTROL_STRUCTURE,-1,,else,2,ELSE,315,3,CPPASTCompoundStatement
+19071,CONTROL_STRUCTURE,-1,,if (backPos != LogString::npos && backPos > slashPos),3,IF,316,1,CPPASTIfStatement
+19086,CONTROL_STRUCTURE,-1,,if (slashPos != LogString::npos && slashPos > 0),2,IF,324,7,CPPASTIfStatement
+19340,CONTROL_STRUCTURE,-1,,if (bufferedIO1),2,IF,108,3,CPPASTIfStatement
+19351,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""FILE""), LOG4CXX_STR(""file""))
+		|| StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""FILENAME""), LOG4CXX_STR(""filename"")))",2,IF,117,1,CPPASTIfStatement
+19404,CONTROL_STRUCTURE,-1,,else,7,ELSE,123,3,CPPASTIfStatement
+19406,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""APPEND""), LOG4CXX_STR(""append"")))",7,IF,123,1,CPPASTIfStatement
+19453,CONTROL_STRUCTURE,-1,,else,7,ELSE,128,3,CPPASTIfStatement
+19455,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""BUFFEREDIO""), LOG4CXX_STR(""bufferedio"")))",7,IF,128,1,CPPASTIfStatement
+19502,CONTROL_STRUCTURE,-1,,else,7,ELSE,133,3,CPPASTIfStatement
+19504,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""IMMEDIATEFLUSH""), LOG4CXX_STR(""immediateflush"")))",7,IF,133,1,CPPASTIfStatement
+19552,CONTROL_STRUCTURE,-1,,else,7,ELSE,138,3,CPPASTIfStatement
+19554,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""BUFFERSIZE""), LOG4CXX_STR(""buffersize"")))",7,IF,138,1,CPPASTIfStatement
+19603,CONTROL_STRUCTURE,-1,,else,2,ELSE,144,3,CPPASTCompoundStatement
+19646,CONTROL_STRUCTURE,-1,,if (!_priv->fileName.empty()),2,IF,159,3,CPPASTIfStatement
+19662,CONTROL_STRUCTURE,-1,,try,3,TRY,161,1,CPPASTTryBlockStatement
+19774,CONTROL_STRUCTURE,-1,,else,2,ELSE,177,3,CPPASTCompoundStatement
+19805,CONTROL_STRUCTURE,-1,,if (errors == 0),2,IF,184,4,CPPASTIfStatement
+19832,CONTROL_STRUCTURE,-1,,if (i != LogString::npos),2,IF,207,5,CPPASTIfStatement
+19842,CONTROL_STRUCTURE,-1,,"for (;i != LogString::npos && i > 0;i = tmp.find_last_of(backslash, i - 1))",3,FOR,211,3,CPPASTForStatement
+19864,CONTROL_STRUCTURE,-1,,if (tmp[i - 1] == backslash),4,IF,219,1,CPPASTIfStatement
+19881,CONTROL_STRUCTURE,-1,,if (i == 0),5,IF,224,3,CPPASTIfStatement
+19886,CONTROL_STRUCTURE,-1,,break;,6,BREAK,226,1,CPPASTBreakStatement
+19887,CONTROL_STRUCTURE,-1,,else,4,ELSE,230,3,CPPASTCompoundStatement
+19904,CONTROL_STRUCTURE,-1,,if (bufferedIO1),2,IF,273,1,CPPASTIfStatement
+19914,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(getEncoding(),
+			LOG4CXX_STR(""utf-16""), LOG4CXX_STR(""UTF-16"")))",2,IF,282,5,CPPASTIfStatement
+19925,CONTROL_STRUCTURE,-1,,if (append1),3,IF,288,1,CPPASTIfStatement
+19942,CONTROL_STRUCTURE,-1,,else,3,ELSE,295,3,CPPASTCompoundStatement
+19948,CONTROL_STRUCTURE,-1,,try,2,TRY,302,7,CPPASTTryBlockStatement
+19970,CONTROL_STRUCTURE,-1,,if (!parentName.empty()),3,IF,310,3,CPPASTIfStatement
+19983,CONTROL_STRUCTURE,-1,,if (!parentDir.exists(p) && parentDir.mkdirs(p)),4,IF,315,3,CPPASTIfStatement
+20004,CONTROL_STRUCTURE,-1,,else,4,ELSE,320,3,CPPASTCompoundStatement
+20007,CONTROL_STRUCTURE,-1,,else,3,ELSE,325,3,CPPASTCompoundStatement
+20010,CONTROL_STRUCTURE,-1,,if (writeBOM),2,IF,334,8,CPPASTIfStatement
+20037,CONTROL_STRUCTURE,-1,,if (bufferedIO1),2,IF,343,11,CPPASTIfStatement
+20199,CONTROL_STRUCTURE,-1,,if (options.size() == 0),2,IF,30,1,CPPASTIfStatement
+20310,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),2,IF,62,7,CPPASTIfStatement
+20347,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),2,IF,76,7,CPPASTIfStatement
+20359,CONTROL_STRUCTURE,-1,,if (m_priv->fileptr != NULL && !APRInitializer::isDestructed),2,IF,85,1,CPPASTIfStatement
+20386,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),2,IF,96,3,CPPASTIfStatement
+20396,CONTROL_STRUCTURE,-1,,else,2,ELSE,101,3,CPPASTCompoundStatement
+20431,CONTROL_STRUCTURE,-1,,if (!APR_STATUS_IS_EOF(stat)),2,IF,113,7,CPPASTIfStatement
+20436,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,115,1,CPPASTIfStatement
+20587,CONTROL_STRUCTURE,-1,,if (append),2,IF,60,5,CPPASTIfStatement
+20593,CONTROL_STRUCTURE,-1,,else,2,ELSE,65,3,CPPASTCompoundStatement
+20620,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),2,IF,74,12,CPPASTIfStatement
+20634,CONTROL_STRUCTURE,-1,,if (m_priv->fileptr != NULL && !APRInitializer::isDestructed),2,IF,84,1,CPPASTIfStatement
+20655,CONTROL_STRUCTURE,-1,,if (m_priv->fileptr != NULL),2,IF,92,1,CPPASTIfStatement
+20669,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,96,3,CPPASTIfStatement
+20693,CONTROL_STRUCTURE,-1,,if (m_priv->fileptr == NULL),2,IF,111,1,CPPASTIfStatement
+20725,CONTROL_STRUCTURE,-1,,while (nbytes > 0),2,WHILE,120,8,<empty>
+20742,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,125,3,CPPASTIfStatement
+20882,CONTROL_STRUCTURE,-1,,if (m_priv->thread.joinable()),2,IF,63,1,CPPASTIfStatement
+20976,CONTROL_STRUCTURE,-1,,if (!m_priv->file.exists(pool1)),2,IF,98,7,CPPASTIfStatement
+20986,CONTROL_STRUCTURE,-1,,if (!m_priv->warnedAlready),3,IF,100,1,CPPASTIfStatement
+21015,CONTROL_STRUCTURE,-1,,else,2,ELSE,109,3,CPPASTCompoundStatement
+21027,CONTROL_STRUCTURE,-1,,if (thisMod > m_priv->lastModif),3,IF,112,3,CPPASTIfStatement
+21087,CONTROL_STRUCTURE,-1,,while (!is_interrupted()),2,WHILE,130,8,<empty>
+21103,CONTROL_STRUCTURE,-1,,"if (!m_priv->interrupt.wait_for( lock, std::chrono::milliseconds( m_priv->delay ),
+			std::bind(&FileWatchdog::is_interrupted, this) ))",3,IF,133,2,CPPASTIfStatement
+21158,CONTROL_STRUCTURE,-1,,if (!m_priv->thread.joinable()),2,IF,147,2,CPPASTIfStatement
+21295,CONTROL_STRUCTURE,-1,,if (m_priv->headFilter == NULL),2,IF,58,1,CPPASTIfStatement
+21304,CONTROL_STRUCTURE,-1,,for (LOG4CXX_NS::spi::FilterPtr f = m_priv->headFilter;f != NULL;f = f->getNext()),2,FOR,63,2,CPPASTForStatement
+21322,CONTROL_STRUCTURE,-1,,switch(f->decide(event)),3,SWITCH,65,1,CPPASTSwitchStatement
+21345,CONTROL_STRUCTURE,-1,,break;,5,BREAK,74,9,CPPASTBreakStatement
+21353,CONTROL_STRUCTURE,-1,,if (m_priv->headFilter == NULL),2,IF,87,1,CPPASTIfStatement
+21370,CONTROL_STRUCTURE,-1,,else,2,ELSE,93,3,CPPASTCompoundStatement
+21412,CONTROL_STRUCTURE,-1,,for (LOG4CXX_NS::spi::FilterPtr f = m_priv->headFilter;f != NULL;f = f->getNext()),2,FOR,116,1,CPPASTForStatement
+21540,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""MININDEX""),
+			LOG4CXX_STR(""minindex"")))",2,IF,75,1,CPPASTIfStatement
+21568,CONTROL_STRUCTURE,-1,,else,7,ELSE,81,3,CPPASTIfStatement
+21570,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""MAXINDEX""),
+			LOG4CXX_STR(""maxindex"")))",7,IF,81,1,CPPASTIfStatement
+21598,CONTROL_STRUCTURE,-1,,else,7,ELSE,87,3,CPPASTIfStatement
+21600,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""THROWIOEXCEPTIONONFORKFAILURE""),
+			LOG4CXX_STR(""throwioexceptiononforkfailure"")))",7,IF,87,1,CPPASTIfStatement
+21628,CONTROL_STRUCTURE,-1,,else,2,ELSE,94,3,CPPASTCompoundStatement
+21646,CONTROL_STRUCTURE,-1,,if (priv->maxIndex < priv->minIndex),2,IF,106,2,CPPASTIfStatement
+21696,CONTROL_STRUCTURE,-1,,if ((priv->maxIndex - priv->minIndex) > MAX_WINDOW_SIZE),2,IF,113,3,CPPASTIfStatement
+21754,CONTROL_STRUCTURE,-1,,if (itc == NULL),2,IF,121,6,CPPASTIfStatement
+21783,CONTROL_STRUCTURE,-1,,if (currentActiveFile.length() > 0),2,IF,138,4,CPPASTIfStatement
+21806,CONTROL_STRUCTURE,-1,,if (!priv->explicitActiveFile),2,IF,144,5,CPPASTIfStatement
+21868,CONTROL_STRUCTURE,-1,,if (priv->maxIndex < 0),2,IF,167,2,CPPASTIfStatement
+21897,CONTROL_STRUCTURE,-1,,if (!priv->explicitActiveFile),2,IF,174,5,CPPASTIfStatement
+21912,CONTROL_STRUCTURE,-1,,"if (!purge(purgeStart, priv->maxIndex, pool))",2,IF,179,6,CPPASTIfStatement
+21952,CONTROL_STRUCTURE,-1,,if (getCreateIntermediateDirectories()),2,IF,192,16,CPPASTIfStatement
+21970,CONTROL_STRUCTURE,-1,,"if (StringHelper::endsWith(renameTo, LOG4CXX_STR("".gz"")))",2,IF,198,17,CPPASTIfStatement
+22028,CONTROL_STRUCTURE,-1,,else,7,ELSE,208,3,CPPASTIfStatement
+22030,CONTROL_STRUCTURE,1,,"if (StringHelper::endsWith(renameTo, LOG4CXX_STR("".zip"")))",7,IF,208,1,CPPASTIfStatement
+22192,CONTROL_STRUCTURE,-1,,"if (lowFilename.compare(lowFilename.length() - 3, 3, LOG4CXX_STR("".gz"")) == 0)",2,IF,268,10,CPPASTIfStatement
+22212,CONTROL_STRUCTURE,-1,,else,7,ELSE,272,3,CPPASTIfStatement
+22214,CONTROL_STRUCTURE,1,,"if (lowFilename.compare(lowFilename.length() - 4, 4, LOG4CXX_STR("".zip"")) == 0)",7,IF,272,1,CPPASTIfStatement
+22234,CONTROL_STRUCTURE,-1,,for (int i = lowIndex;i <= highIndex;i++),2,FOR,277,11,CPPASTForStatement
+22285,CONTROL_STRUCTURE,-1,,if (suffixLength > 0),3,IF,287,11,CPPASTIfStatement
+22290,CONTROL_STRUCTURE,-1,,if (exists),4,IF,289,1,CPPASTIfStatement
+22293,CONTROL_STRUCTURE,-1,,if (toRenameBase.exists(p)),5,IF,291,1,CPPASTIfStatement
+22305,CONTROL_STRUCTURE,-1,,else,4,ELSE,297,3,CPPASTCompoundStatement
+22321,CONTROL_STRUCTURE,-1,,if (exists),3,IF,304,12,CPPASTIfStatement
+22324,CONTROL_STRUCTURE,-1,,if (i == highIndex),4,IF,310,1,CPPASTIfStatement
+22329,CONTROL_STRUCTURE,-1,,if (!toRename->deleteFile(p)),5,IF,312,1,CPPASTIfStatement
+22339,CONTROL_STRUCTURE,-1,,break;,5,BREAK,317,2,CPPASTBreakStatement
+22373,CONTROL_STRUCTURE,-1,,if (isBase),4,IF,330,9,CPPASTIfStatement
+22412,CONTROL_STRUCTURE,-1,,else,3,ELSE,340,3,CPPASTCompoundStatement
+22414,CONTROL_STRUCTURE,-1,,break;,4,BREAK,341,1,CPPASTBreakStatement
+22415,CONTROL_STRUCTURE,-1,,for (std::vector<FileRenameActionPtr>::reverse_iterator iter = renames.rbegin();iter != renames.rend();iter++),2,FOR,348,12,CPPASTForStatement
+22433,CONTROL_STRUCTURE,-1,,try,3,TRY,353,1,CPPASTTryBlockStatement
+22435,CONTROL_STRUCTURE,-1,,if (!(*iter)->execute(p)),4,IF,355,1,CPPASTIfStatement
+22583,CONTROL_STRUCTURE,-1,,"if (helpers::StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""CONVERSIONPATTERN""),
+			LOG4CXX_STR(""conversionpattern"")))",2,IF,75,1,CPPASTIfStatement
+23010,CONTROL_STRUCTURE,-1,,if (rawLength > m_priv->maxLength),2,IF,84,3,CPPASTIfStatement
+23039,CONTROL_STRUCTURE,-1,,else,7,ELSE,89,3,CPPASTIfStatement
+23041,CONTROL_STRUCTURE,1,,if (rawLength < m_priv->minLength),7,IF,89,1,CPPASTIfStatement
+23048,CONTROL_STRUCTURE,-1,,if (m_priv->leftAlign),3,IF,91,1,CPPASTIfStatement
+23065,CONTROL_STRUCTURE,-1,,else,3,ELSE,96,3,CPPASTCompoundStatement
+23238,CONTROL_STRUCTURE,-1,,if (static_cast<GZCompressActionPrivate *>(m_priv.get())->source.exists(p)),2,IF,59,1,CPPASTIfStatement
+23269,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,65,6,CPPASTIfStatement
+23284,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,72,8,CPPASTIfStatement
+23297,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,79,10,CPPASTIfStatement
+23336,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,92,15,CPPASTIfStatement
+23350,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,99,17,CPPASTIfStatement
+23365,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),3,IF,110,20,CPPASTIfStatement
+23376,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),4,IF,114,2,CPPASTIfStatement
+23466,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS && priv->throwIOExceptionOnForkFailure),3,IF,133,32,CPPASTIfStatement
+23485,CONTROL_STRUCTURE,-1,,else,9,ELSE,136,3,CPPASTIfStatement
+23487,CONTROL_STRUCTURE,1,,if (stat != APR_SUCCESS && !priv->throwIOExceptionOnForkFailure),9,IF,136,1,CPPASTIfStatement
+23514,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),4,IF,148,3,CPPASTIfStatement
+23537,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,158,35,CPPASTIfStatement
+23559,CONTROL_STRUCTURE,-1,,if (static_cast<GZCompressActionPrivate *>(m_priv.get())->deleteSource),3,IF,165,37,CPPASTIfStatement
+23649,CONTROL_STRUCTURE,-1,,if (flags & HexdumpFlags::AddStartingNewline),2,IF,46,9,CPPASTIfStatement
+23659,CONTROL_STRUCTURE,-1,,for (uint32_t offset = 0;offset < len;offset += 16),2,FOR,50,10,CPPASTForStatement
+23672,CONTROL_STRUCTURE,-1,,if (offset != 0),3,IF,51,1,CPPASTIfStatement
+23721,CONTROL_STRUCTURE,-1,,for (int byte = 0;byte < 8;byte++),3,FOR,61,4,CPPASTForStatement
+23733,CONTROL_STRUCTURE,-1,,if (offset + byte >= len),4,IF,62,1,CPPASTIfStatement
+23744,CONTROL_STRUCTURE,-1,,if (byte != 8),5,IF,64,2,CPPASTIfStatement
+23753,CONTROL_STRUCTURE,-1,,continue;,5,CONTINUE,67,3,CPPASTContinueStatement
+23798,CONTROL_STRUCTURE,-1,,if (byte != 8),4,IF,72,4,CPPASTIfStatement
+23811,CONTROL_STRUCTURE,-1,,for (int byte = 8;byte < 16;byte++),3,FOR,80,6,CPPASTForStatement
+23823,CONTROL_STRUCTURE,-1,,if (offset + byte >= len),4,IF,81,1,CPPASTIfStatement
+23834,CONTROL_STRUCTURE,-1,,if (byte != 15),5,IF,83,2,CPPASTIfStatement
+23843,CONTROL_STRUCTURE,-1,,continue;,5,CONTINUE,86,3,CPPASTContinueStatement
+23881,CONTROL_STRUCTURE,-1,,if (byte != 15),4,IF,90,3,CPPASTIfStatement
+23894,CONTROL_STRUCTURE,-1,,for (int byte = 0;byte < 16;byte++),3,FOR,97,8,CPPASTForStatement
+23906,CONTROL_STRUCTURE,-1,,if (offset + byte >= len),4,IF,98,1,CPPASTIfStatement
+23913,CONTROL_STRUCTURE,-1,,break;,5,BREAK,99,1,CPPASTBreakStatement
+23914,CONTROL_STRUCTURE,-1,,if (std::isprint(bytes_u8[offset + byte])),4,IF,101,2,CPPASTIfStatement
+23936,CONTROL_STRUCTURE,-1,,else,9,ELSE,104,3,CPPASTCompoundStatement
+23946,CONTROL_STRUCTURE,-1,,if (flags & HexdumpFlags::AddEndingNewline),2,IF,111,11,CPPASTIfStatement
+23971,CONTROL_STRUCTURE,-1,,for (auto& node:m_priv->provisionNodes),3,FOR,496,3,CPPASTRangeBasedForStatement
+23977,CONTROL_STRUCTURE,-1,,"if (node.second.end() != std::find(node.second.begin(), node.second.end(), child))",4,IF,498,1,CPPASTIfStatement
+24084,CONTROL_STRUCTURE,-1,,for (auto& item:m_priv->loggers),2,FOR,83,2,CPPASTRangeBasedForStatement
+24090,CONTROL_STRUCTURE,-1,,if (auto& pLogger = item.second),3,IF,85,1,CPPASTIfStatement
+24107,CONTROL_STRUCTURE,-1,,if (m_priv->root),2,IF,91,3,CPPASTIfStatement
+24141,CONTROL_STRUCTURE,-1,,"if (std::find(m_priv->listeners.begin(), m_priv->listeners.end(), listener) != m_priv->listeners.end())",2,IF,102,2,CPPASTIfStatement
+24173,CONTROL_STRUCTURE,-1,,else,2,ELSE,107,3,CPPASTCompoundStatement
+24219,CONTROL_STRUCTURE,-1,,if (found != m_priv->listeners.end()),5,IF,117,4,CPPASTIfStatement
+24291,CONTROL_STRUCTURE,-1,,if (emitWarning),2,IF,138,4,CPPASTIfStatement
+24344,CONTROL_STRUCTURE,-1,,if (it != m_priv->loggers.end()),2,IF,154,5,CPPASTIfStatement
+24366,CONTROL_STRUCTURE,-1,,if (l != 0),2,IF,165,1,CPPASTIfStatement
+24398,CONTROL_STRUCTURE,-1,,if (l != 0),2,IF,176,3,CPPASTIfStatement
+24405,CONTROL_STRUCTURE,-1,,else,2,ELSE,181,3,CPPASTCompoundStatement
+24438,CONTROL_STRUCTURE,-1,,if (m_priv->thresholdInt != Level::ALL_INT),2,IF,192,3,CPPASTIfStatement
+24488,CONTROL_STRUCTURE,-1,,for (it = clonedList.begin();it != itEnd;it++),2,FOR,210,8,CPPASTForStatement
+24546,CONTROL_STRUCTURE,-1,,for (it = clonedList.begin();it != itEnd;it++),2,FOR,228,7,CPPASTForStatement
+24635,CONTROL_STRUCTURE,-1,,if (it != m_priv->loggers.end()),2,IF,255,7,CPPASTIfStatement
+24650,CONTROL_STRUCTURE,-1,,if (!result && factory),2,IF,259,8,CPPASTIfStatement
+24693,CONTROL_STRUCTURE,-1,,if (it2 != m_priv->provisionNodes.end()),3,IF,267,7,CPPASTIfStatement
+24740,CONTROL_STRUCTURE,-1,,for (auto& item:m_priv->loggers),2,FOR,285,3,CPPASTRangeBasedForStatement
+24746,CONTROL_STRUCTURE,-1,,if (auto pLogger = item.second),3,IF,287,1,CPPASTIfStatement
+24778,CONTROL_STRUCTURE,-1,,if (!m_priv->root),2,IF,296,2,CPPASTIfStatement
+24844,CONTROL_STRUCTURE,-1,,if (!m_priv->configured),2,IF,313,2,CPPASTIfStatement
+24872,CONTROL_STRUCTURE,-1,,if (m_priv->root),2,IF,324,2,CPPASTIfStatement
+24910,CONTROL_STRUCTURE,-1,,for (it = m_priv->loggers.begin();it != itEnd;it++),2,FOR,335,8,CPPASTForStatement
+24926,CONTROL_STRUCTURE,-1,,if (auto pLogger = it->second),3,IF,337,1,CPPASTIfStatement
+24976,CONTROL_STRUCTURE,-1,,if (m_priv->root),2,IF,360,2,CPPASTIfStatement
+24997,CONTROL_STRUCTURE,-1,,for (it = m_priv->loggers.begin();it != itEnd;it++),2,FOR,365,6,CPPASTForStatement
+25013,CONTROL_STRUCTURE,-1,,if (auto pLogger = it->second),3,IF,367,1,CPPASTIfStatement
+25026,CONTROL_STRUCTURE,-1,,if (m_priv->root),2,IF,372,7,CPPASTIfStatement
+25037,CONTROL_STRUCTURE,-1,,for (it = m_priv->loggers.begin();it != itEnd;it++),2,FOR,375,8,CPPASTForStatement
+25053,CONTROL_STRUCTURE,-1,,if (auto pLogger = it->second),3,IF,377,1,CPPASTIfStatement
+25089,CONTROL_STRUCTURE,-1,,"for (size_t i = name.find_last_of(0x2E /* '.' */, length - 1);(i != LogString::npos) && (i != 0);i = name.find_last_of(0x2E /* '.' */, i - 1))",2,FOR,390,7,CPPASTForStatement
+25141,CONTROL_STRUCTURE,-1,,if (it != m_priv->loggers.end()),3,IF,398,5,CPPASTIfStatement
+25161,CONTROL_STRUCTURE,-1,,break;,4,BREAK,402,3,CPPASTBreakStatement
+25162,CONTROL_STRUCTURE,-1,,else,3,ELSE,405,3,CPPASTCompoundStatement
+25174,CONTROL_STRUCTURE,-1,,if (it2 != m_priv->provisionNodes.end()),4,IF,408,3,CPPASTIfStatement
+25191,CONTROL_STRUCTURE,-1,,else,4,ELSE,413,3,CPPASTCompoundStatement
+25209,CONTROL_STRUCTURE,-1,,if (!parentFound),2,IF,422,8,CPPASTIfStatement
+25232,CONTROL_STRUCTURE,-1,,for (it = pn.begin();it != itEnd;it++),2,FOR,432,4,CPPASTForStatement
+25251,CONTROL_STRUCTURE,-1,,"if (!StringHelper::startsWith(l->getParent()->getName(), logger->getName()))",3,IF,438,3,CPPASTIfStatement
+25287,CONTROL_STRUCTURE,-1,,for (auto& item:m_priv->loggers),2,FOR,449,1,CPPASTRangeBasedForStatement
+25293,CONTROL_STRUCTURE,-1,,for (auto l = item.second;l;l = l->getParent()),3,FOR,451,1,CPPASTForStatement
+25309,CONTROL_STRUCTURE,-1,,if (l->getParent().get() == parent),4,IF,453,1,CPPASTIfStatement
+25326,CONTROL_STRUCTURE,-1,,break;,5,BREAK,456,2,CPPASTBreakStatement
+25347,CONTROL_STRUCTURE,-1,,if (lock.owns_lock()),2,IF,465,2,CPPASTIfStatement
+25446,CONTROL_STRUCTURE,-1,,if (it == m_priv->loggers.end()),2,IF,506,8,CPPASTIfStatement
+25456,CONTROL_STRUCTURE,-1,,else,7,ELSE,508,3,CPPASTIfStatement
+25458,CONTROL_STRUCTURE,1,,if (ifNotUsed && 1 + parentRefCount(it->second) < it->second.use_count()),7,IF,508,1,CPPASTIfStatement
+25475,CONTROL_STRUCTURE,-1,,else,2,ELSE,511,3,CPPASTCompoundStatement
+25477,CONTROL_STRUCTURE,-1,,for (auto& node:m_priv->provisionNodes),3,FOR,512,1,CPPASTRangeBasedForStatement
+25483,CONTROL_STRUCTURE,-1,,for (size_t i = node.second.size();0 < i;),4,FOR,514,1,CPPASTForStatement
+25498,CONTROL_STRUCTURE,-1,,if (node.second[--i] == it->second),5,IF,516,1,CPPASTIfStatement
+25603,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""TITLE""), LOG4CXX_STR(""title"")))",2,IF,70,1,CPPASTIfStatement
+25616,CONTROL_STRUCTURE,-1,,else,7,ELSE,75,3,CPPASTIfStatement
+25618,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""LOCATIONINFO""), LOG4CXX_STR(""locationinfo"")))",7,IF,75,1,CPPASTIfStatement
+25755,CONTROL_STRUCTURE,-1,,if (event->getLevel()->equals(Level::getDebug())),2,IF,109,18,CPPASTIfStatement
+25791,CONTROL_STRUCTURE,-1,,else,7,ELSE,115,3,CPPASTIfStatement
+25793,CONTROL_STRUCTURE,1,,if (event->getLevel()->isGreaterOrEqual(Level::getWarn())),7,IF,115,1,CPPASTIfStatement
+25829,CONTROL_STRUCTURE,-1,,else,2,ELSE,122,3,CPPASTCompoundStatement
+25893,CONTROL_STRUCTURE,-1,,if (m_priv->locationInfo),2,IF,136,27,CPPASTIfStatement
+25941,CONTROL_STRUCTURE,-1,,if (line != 0),3,IF,145,9,CPPASTIfStatement
+26002,CONTROL_STRUCTURE,-1,,if (event->getNDC(ndcVal)),2,IF,163,35,CPPASTIfStatement
+26330,CONTROL_STRUCTURE,-1,,if (m_priv->locationInfo),2,IF,228,49,CPPASTIfStatement
+26548,CONTROL_STRUCTURE,-1,,if (status != APR_SUCCESS),2,IF,77,7,CPPASTIfStatement
+26581,CONTROL_STRUCTURE,-1,,while (currentAddr != NULL),2,WHILE,88,11,<empty>
+26594,CONTROL_STRUCTURE,-1,,if (status == APR_SUCCESS),3,IF,95,4,CPPASTIfStatement
+26617,CONTROL_STRUCTURE,-1,,if (status == APR_SUCCESS),3,IF,106,8,CPPASTIfStatement
+26663,CONTROL_STRUCTURE,-1,,if (!address.empty()),2,IF,126,4,CPPASTIfStatement
+26717,CONTROL_STRUCTURE,-1,,if (!rv.empty()),2,IF,165,3,CPPASTIfStatement
+26796,CONTROL_STRUCTURE,-1,,if (in1 == 0),2,IF,46,1,CPPASTIfStatement
+26811,CONTROL_STRUCTURE,-1,,if (in1 == 0),2,IF,55,1,CPPASTIfStatement
+26820,CONTROL_STRUCTURE,-1,,if (dec1 == 0),2,IF,60,2,CPPASTIfStatement
+26862,CONTROL_STRUCTURE,-1,,while (m_priv->in->read(buf) >= 0),2,WHILE,82,6,<empty>
+26888,CONTROL_STRUCTURE,-1,,if (stat != 0),3,IF,87,4,CPPASTIfStatement
+26896,CONTROL_STRUCTURE,-1,,if (buf.remaining() > 0),3,IF,92,5,CPPASTIfStatement
+26925,CONTROL_STRUCTURE,-1,,else,3,ELSE,98,3,CPPASTCompoundStatement
+27007,CONTROL_STRUCTURE,-1,,if (i != NULL),2,IF,49,3,CPPASTIfStatement
+27146,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""LOCATIONINFO""), LOG4CXX_STR(""locationinfo"")))",2,IF,111,1,CPPASTIfStatement
+27164,CONTROL_STRUCTURE,-1,,else,7,ELSE,116,3,CPPASTIfStatement
+27166,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""THREADINFO""), LOG4CXX_STR(""threadinfo"")))",7,IF,116,1,CPPASTIfStatement
+27184,CONTROL_STRUCTURE,-1,,else,7,ELSE,121,3,CPPASTIfStatement
+27186,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""PRETTYPRINT""), LOG4CXX_STR(""prettyprint"")))",7,IF,121,1,CPPASTIfStatement
+27243,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,136,4,CPPASTIfStatement
+27298,CONTROL_STRUCTURE,-1,,if (m_priv->threadInfo),2,IF,149,12,CPPASTIfStatement
+27303,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),3,IF,151,1,CPPASTIfStatement
+27348,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,162,13,CPPASTIfStatement
+27399,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,175,21,CPPASTIfStatement
+27444,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,186,27,CPPASTIfStatement
+27478,CONTROL_STRUCTURE,-1,,if (m_priv->locationInfo),2,IF,198,33,CPPASTIfStatement
+27571,CONTROL_STRUCTURE,-1,,while (found != LogString::npos),2,WHILE,236,8,<empty>
+27578,CONTROL_STRUCTURE,-1,,if (found > start),3,IF,238,1,CPPASTIfStatement
+27592,CONTROL_STRUCTURE,-1,,switch(input[found]),3,SWITCH,243,2,CPPASTSwitchStatement
+27609,CONTROL_STRUCTURE,-1,,break;,5,BREAK,249,5,CPPASTBreakStatement
+27622,CONTROL_STRUCTURE,-1,,break;,5,BREAK,255,10,CPPASTBreakStatement
+27635,CONTROL_STRUCTURE,-1,,break;,5,BREAK,261,15,CPPASTBreakStatement
+27648,CONTROL_STRUCTURE,-1,,break;,5,BREAK,267,20,CPPASTBreakStatement
+27661,CONTROL_STRUCTURE,-1,,break;,5,BREAK,273,25,CPPASTBreakStatement
+27674,CONTROL_STRUCTURE,-1,,break;,5,BREAK,279,30,CPPASTBreakStatement
+27687,CONTROL_STRUCTURE,-1,,break;,5,BREAK,285,35,CPPASTBreakStatement
+27696,CONTROL_STRUCTURE,-1,,break;,5,BREAK,289,38,CPPASTBreakStatement
+27702,CONTROL_STRUCTURE,-1,,if (found < input.size()),3,IF,294,4,CPPASTIfStatement
+27718,CONTROL_STRUCTURE,-1,,else,3,ELSE,299,3,CPPASTCompoundStatement
+27725,CONTROL_STRUCTURE,-1,,if (start < input.size()),2,IF,304,9,CPPASTIfStatement
+27763,CONTROL_STRUCTURE,-1,,if (keys.empty()),2,IF,318,3,CPPASTIfStatement
+27787,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,326,6,CPPASTIfStatement
+27820,CONTROL_STRUCTURE,-1,,for (LoggingEvent::KeySet::iterator it = keys.begin();it != keys.end();++it),2,FOR,335,10,CPPASTForStatement
+27838,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),3,IF,338,1,CPPASTIfStatement
+27871,CONTROL_STRUCTURE,-1,,if (it + 1 != keys.end()),3,IF,350,7,CPPASTIfStatement
+27898,CONTROL_STRUCTURE,-1,,else,3,ELSE,356,3,CPPASTCompoundStatement
+27911,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,361,11,CPPASTIfStatement
+27936,CONTROL_STRUCTURE,-1,,if (!event->getNDC(ndcVal)),2,IF,374,2,CPPASTIfStatement
+27962,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,382,5,CPPASTIfStatement
+27995,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,391,9,CPPASTIfStatement
+28021,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,399,12,CPPASTIfStatement
+28046,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,410,1,CPPASTIfStatement
+28086,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,420,7,CPPASTIfStatement
+28134,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,432,14,CPPASTIfStatement
+28187,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,445,22,CPPASTIfStatement
+28235,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,457,29,CPPASTIfStatement
+28277,CONTROL_STRUCTURE,-1,,if (m_priv->prettyPrint),2,IF,468,35,CPPASTIfStatement
+28591,CONTROL_STRUCTURE,-1,,switch(val),2,SWITCH,110,1,CPPASTSwitchStatement
+28685,CONTROL_STRUCTURE,-1,,if (len == 4),2,IF,220,5,CPPASTIfStatement
+28690,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(trimmed, LOG4CXX_STR(""INFO""), LOG4CXX_STR(""info"")))",3,IF,222,1,CPPASTIfStatement
+28703,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(trimmed, LOG4CXX_STR(""WARN""), LOG4CXX_STR(""warn"")))",3,IF,227,2,CPPASTIfStatement
+28716,CONTROL_STRUCTURE,-1,,else,2,ELSE,233,3,CPPASTCompoundStatement
+28718,CONTROL_STRUCTURE,-1,,if (len == 5),3,IF,234,1,CPPASTIfStatement
+28723,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(trimmed, LOG4CXX_STR(""DEBUG""), LOG4CXX_STR(""debug"")))",4,IF,236,1,CPPASTIfStatement
+28736,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(trimmed, LOG4CXX_STR(""TRACE""), LOG4CXX_STR(""trace"")))",4,IF,241,2,CPPASTIfStatement
+28749,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(trimmed, LOG4CXX_STR(""ERROR""), LOG4CXX_STR(""error"")))",4,IF,246,3,CPPASTIfStatement
+28762,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(trimmed, LOG4CXX_STR(""FATAL""), LOG4CXX_STR(""fatal"")))",4,IF,251,4,CPPASTIfStatement
+28775,CONTROL_STRUCTURE,-1,,else,3,ELSE,257,3,CPPASTCompoundStatement
+28777,CONTROL_STRUCTURE,-1,,if (len == 3),4,IF,258,1,CPPASTIfStatement
+28782,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(trimmed, LOG4CXX_STR(""OFF""), LOG4CXX_STR(""off"")))",5,IF,260,1,CPPASTIfStatement
+28795,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(trimmed, LOG4CXX_STR(""ALL""), LOG4CXX_STR(""all"")))",5,IF,265,2,CPPASTIfStatement
+28890,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""LEVELTOMATCH""), LOG4CXX_STR(""leveltomatch"")))",2,IF,54,1,CPPASTIfStatement
+28903,CONTROL_STRUCTURE,-1,,else,7,ELSE,59,3,CPPASTIfStatement
+28905,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""ACCEPTONMATCH""), LOG4CXX_STR(""acceptonmatch"")))",7,IF,59,1,CPPASTIfStatement
+28996,CONTROL_STRUCTURE,-1,,if (priv->levelToMatch != 0 && priv->levelToMatch->equals(event->getLevel())),2,IF,79,1,CPPASTIfStatement
+29028,CONTROL_STRUCTURE,-1,,if (static_cast<LevelMatchFilterPrivate *>(m_priv.get())->acceptOnMatch),3,IF,81,1,CPPASTIfStatement
+29044,CONTROL_STRUCTURE,-1,,else,3,ELSE,86,3,CPPASTCompoundStatement
+29050,CONTROL_STRUCTURE,-1,,else,2,ELSE,91,3,CPPASTCompoundStatement
+29156,CONTROL_STRUCTURE,-1,,if (e != NULL),2,IF,61,3,CPPASTIfStatement
+29171,CONTROL_STRUCTURE,-1,,switch(lint),3,SWITCH,65,3,CPPASTSwitchStatement
+29275,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""LEVELMIN""), LOG4CXX_STR(""levelmin"")))",2,IF,60,1,CPPASTIfStatement
+29312,CONTROL_STRUCTURE,-1,,else,7,ELSE,65,3,CPPASTIfStatement
+29314,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""LEVELMAX""), LOG4CXX_STR(""levelmax"")))",7,IF,65,1,CPPASTIfStatement
+29351,CONTROL_STRUCTURE,-1,,else,7,ELSE,70,3,CPPASTIfStatement
+29353,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""ACCEPTONMATCH""), LOG4CXX_STR(""acceptonmatch"")))",7,IF,70,1,CPPASTIfStatement
+29395,CONTROL_STRUCTURE,-1,,if (priv->levelMin != 0 && !event->getLevel()->isGreaterOrEqual(priv->levelMin)),2,IF,80,1,CPPASTIfStatement
+29432,CONTROL_STRUCTURE,-1,,if (priv->levelMax != 0 && event->getLevel()->toInt() > priv->levelMax->toInt()),2,IF,86,2,CPPASTIfStatement
+29472,CONTROL_STRUCTURE,-1,,if (static_cast<LevelRangeFilterPrivate *>(m_priv.get())->acceptOnMatch),2,IF,95,3,CPPASTIfStatement
+29488,CONTROL_STRUCTURE,-1,,else,2,ELSE,102,3,CPPASTCompoundStatement
+29738,CONTROL_STRUCTURE,-1,,if (literal.length() == 1 && literal[0] == 0x20),2,IF,54,1,CPPASTIfStatement
+29899,CONTROL_STRUCTURE,-1,,try,2,TRY,66,1,CPPASTTryBlockStatement
+30100,CONTROL_STRUCTURE,-1,,if (parenPos != std::string::npos),2,IF,128,5,CPPASTIfStatement
+30122,CONTROL_STRUCTURE,-1,,if (colonPos != std::string::npos),2,IF,135,8,CPPASTIfStatement
+30139,CONTROL_STRUCTURE,-1,,else,2,ELSE,140,3,CPPASTCompoundStatement
+30149,CONTROL_STRUCTURE,-1,,if (spacePos != std::string::npos),3,IF,143,3,CPPASTIfStatement
+30183,CONTROL_STRUCTURE,-1,,if (parenPos != std::string::npos),2,IF,158,5,CPPASTIfStatement
+30205,CONTROL_STRUCTURE,-1,,if (colonPos != std::string::npos),2,IF,165,8,CPPASTIfStatement
+30227,CONTROL_STRUCTURE,-1,,if (spacePos != std::string::npos),3,IF,170,4,CPPASTIfStatement
+30313,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""ACCEPTONMATCH""), LOG4CXX_STR(""acceptonmatch"")))",2,IF,61,2,CPPASTIfStatement
+30350,CONTROL_STRUCTURE,-1,,else,7,ELSE,65,3,CPPASTIfStatement
+30352,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""OPERATOR""), LOG4CXX_STR(""operator"")))",7,IF,65,1,CPPASTIfStatement
+30386,CONTROL_STRUCTURE,-1,,else,7,ELSE,69,3,CPPASTIfStatement
+30388,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""LINENUMBER""), LOG4CXX_STR(""linenumber"")))",7,IF,69,1,CPPASTIfStatement
+30417,CONTROL_STRUCTURE,-1,,else,7,ELSE,73,3,CPPASTIfStatement
+30419,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""METHOD""), LOG4CXX_STR(""method"")))",7,IF,73,1,CPPASTIfStatement
+30450,CONTROL_STRUCTURE,-1,,"if (priv->lineNumber == -1 &&
+			priv->methodName.empty())",2,IF,83,1,CPPASTIfStatement
+30483,CONTROL_STRUCTURE,-1,,"if (event->getLocationInformation().getLineNumber() == -1 ||
+			event->getLocationInformation().getMethodName().compare(LocationInfo::NA_METHOD) == 0)",2,IF,89,2,CPPASTIfStatement
+30565,CONTROL_STRUCTURE,-1,,if (static_cast<LocationInfoFilterPrivate *>(m_priv.get())->mustMatchAll),2,IF,98,9,CPPASTIfStatement
+30582,CONTROL_STRUCTURE,-1,,else,7,ELSE,100,3,CPPASTCompoundStatement
+30589,CONTROL_STRUCTURE,-1,,if (static_cast<LocationInfoFilterPrivate *>(m_priv.get())->acceptOnMatch),2,IF,104,10,CPPASTIfStatement
+30610,CONTROL_STRUCTURE,-1,,else,2,ELSE,109,3,CPPASTCompoundStatement
+30795,CONTROL_STRUCTURE,-1,,if (auto rep = getHierarchy()),2,IF,102,2,CPPASTIfStatement
+30828,CONTROL_STRUCTURE,-1,,for (std::vector<AppenderPtr>::const_iterator it = appenders.cbegin();it != appenders.cend();it++),2,FOR,114,3,CPPASTForStatement
+30854,CONTROL_STRUCTURE,-1,,if (auto rep = getHierarchy()),3,IF,120,2,CPPASTIfStatement
+30880,CONTROL_STRUCTURE,-1,,for (const Logger* logger = this;logger != 0;logger = logger->m_priv->parent.get()),2,FOR,131,3,CPPASTForStatement
+30912,CONTROL_STRUCTURE,-1,,if (!logger->m_priv->additive),3,IF,137,2,CPPASTIfStatement
+30920,CONTROL_STRUCTURE,-1,,break;,4,BREAK,139,1,CPPASTBreakStatement
+30925,CONTROL_STRUCTURE,-1,,if (writes == 0 && rep),2,IF,145,6,CPPASTIfStatement
+30947,CONTROL_STRUCTURE,-1,,for (AppenderList::iterator it = appenders.begin();it != appenders.end();++it),2,FOR,155,3,CPPASTForStatement
+30977,CONTROL_STRUCTURE,-1,,if (!getHierarchy()),2,IF,163,1,CPPASTIfStatement
+31017,CONTROL_STRUCTURE,-1,,if (!getHierarchy()),2,IF,178,1,CPPASTIfStatement
+31070,CONTROL_STRUCTURE,-1,,if (!getHierarchy()),2,IF,197,1,CPPASTIfStatement
+31107,CONTROL_STRUCTURE,-1,,if (!getHierarchy()),2,IF,207,1,CPPASTIfStatement
+31169,CONTROL_STRUCTURE,-1,,for (const Logger* l = this;l != 0;l = l->m_priv->parent.get()),2,FOR,232,1,CPPASTForStatement
+31189,CONTROL_STRUCTURE,-1,,if (l->m_priv->level != 0),3,IF,234,1,CPPASTIfStatement
+31228,CONTROL_STRUCTURE,-1,,for (const Logger* l = this;l != 0;l = l->m_priv->parent.get()),2,FOR,258,1,CPPASTForStatement
+31248,CONTROL_STRUCTURE,-1,,if (l->m_priv->resourceBundle != 0),3,IF,260,1,CPPASTIfStatement
+31274,CONTROL_STRUCTURE,-1,,if (rb == 0),2,IF,277,3,CPPASTIfStatement
+31281,CONTROL_STRUCTURE,-1,,else,2,ELSE,282,3,CPPASTCompoundStatement
+31283,CONTROL_STRUCTURE,-1,,try,3,TRY,283,1,CPPASTTryBlockStatement
+31347,CONTROL_STRUCTURE,-1,,if (!rep || rep->isDisabled(Level::TRACE_INT)),2,IF,317,3,CPPASTIfStatement
+31378,CONTROL_STRUCTURE,-1,,if (!rep || rep->isDisabled(Level::DEBUG_INT)),2,IF,329,3,CPPASTIfStatement
+31410,CONTROL_STRUCTURE,-1,,if (!rep || rep->isDisabled(level1->toInt())),2,IF,341,3,CPPASTIfStatement
+31439,CONTROL_STRUCTURE,-1,,if (!rep || rep->isDisabled(Level::INFO_INT)),2,IF,354,3,CPPASTIfStatement
+31470,CONTROL_STRUCTURE,-1,,if (!rep || rep->isDisabled(Level::ERROR_INT)),2,IF,366,3,CPPASTIfStatement
+31501,CONTROL_STRUCTURE,-1,,if (!rep || rep->isDisabled(Level::WARN_INT)),2,IF,378,3,CPPASTIfStatement
+31532,CONTROL_STRUCTURE,-1,,if (!rep || rep->isDisabled(Level::FATAL_INT)),2,IF,390,3,CPPASTIfStatement
+31567,CONTROL_STRUCTURE,-1,,if (!rep || rep->isDisabled(level1->toInt())),2,IF,430,3,CPPASTIfStatement
+31581,CONTROL_STRUCTURE,-1,,if (level1->isGreaterOrEqual(getEffectiveLevel())),2,IF,435,4,CPPASTIfStatement
+31594,CONTROL_STRUCTURE,-1,,if (pattern.empty()),3,IF,440,4,CPPASTIfStatement
+31603,CONTROL_STRUCTURE,-1,,else,3,ELSE,445,3,CPPASTCompoundStatement
+31790,CONTROL_STRUCTURE,-1,,if (rep),2,IF,509,6,CPPASTIfStatement
+31793,CONTROL_STRUCTURE,-1,,for (AppenderPtr appender:currentAppenders),3,FOR,510,1,CPPASTRangeBasedForStatement
+31818,CONTROL_STRUCTURE,-1,,if (auto rep = getHierarchy()),2,IF,519,2,CPPASTIfStatement
+31849,CONTROL_STRUCTURE,-1,,if (appender),2,IF,528,3,CPPASTIfStatement
+31899,CONTROL_STRUCTURE,-1,,if (m_priv->level != level1),2,IF,556,1,CPPASTIfStatement
+31912,CONTROL_STRUCTURE,-1,,if (auto rep = dynamic_cast<Hierarchy*>(getHierarchy())),3,IF,560,3,CPPASTIfStatement
+32017,CONTROL_STRUCTURE,-1,,if (isTraceEnabled()),2,IF,610,1,CPPASTIfStatement
+32034,CONTROL_STRUCTURE,-1,,if (isTraceEnabled()),2,IF,619,1,CPPASTIfStatement
+32051,CONTROL_STRUCTURE,-1,,if (isDebugEnabled()),2,IF,627,1,CPPASTIfStatement
+32068,CONTROL_STRUCTURE,-1,,if (isDebugEnabled()),2,IF,635,1,CPPASTIfStatement
+32085,CONTROL_STRUCTURE,-1,,if (isErrorEnabled()),2,IF,644,1,CPPASTIfStatement
+32102,CONTROL_STRUCTURE,-1,,if (isErrorEnabled()),2,IF,653,1,CPPASTIfStatement
+32119,CONTROL_STRUCTURE,-1,,if (isFatalEnabled()),2,IF,661,1,CPPASTIfStatement
+32136,CONTROL_STRUCTURE,-1,,if (isFatalEnabled()),2,IF,669,1,CPPASTIfStatement
+32153,CONTROL_STRUCTURE,-1,,if (isInfoEnabled()),2,IF,677,1,CPPASTIfStatement
+32170,CONTROL_STRUCTURE,-1,,if (isInfoEnabled()),2,IF,685,1,CPPASTIfStatement
+32188,CONTROL_STRUCTURE,-1,,if (isEnabledFor(level1)),2,IF,694,1,CPPASTIfStatement
+32202,CONTROL_STRUCTURE,-1,,if (isEnabledFor(level1)),2,IF,702,1,CPPASTIfStatement
+32216,CONTROL_STRUCTURE,-1,,if (isEnabledFor(level1)),2,IF,711,1,CPPASTIfStatement
+32230,CONTROL_STRUCTURE,-1,,if (isWarnEnabled()),2,IF,719,1,CPPASTIfStatement
+32247,CONTROL_STRUCTURE,-1,,if (isWarnEnabled()),2,IF,727,1,CPPASTIfStatement
+32341,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""LOGGERTOMATCH""), LOG4CXX_STR(""loggertomatch"")))",2,IF,66,1,CPPASTIfStatement
+32354,CONTROL_STRUCTURE,-1,,else,7,ELSE,71,3,CPPASTIfStatement
+32356,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""ACCEPTONMATCH""), LOG4CXX_STR(""acceptonmatch"")))",7,IF,71,1,CPPASTIfStatement
+32416,CONTROL_STRUCTURE,-1,,if (matchOccured),2,IF,83,3,CPPASTIfStatement
+32419,CONTROL_STRUCTURE,-1,,if (static_cast<LoggerMatchFilterPrivate *>(m_priv.get())->acceptOnMatch),3,IF,85,1,CPPASTIfStatement
+32435,CONTROL_STRUCTURE,-1,,else,3,ELSE,90,3,CPPASTCompoundStatement
+32441,CONTROL_STRUCTURE,-1,,else,2,ELSE,95,3,CPPASTCompoundStatement
+32504,CONTROL_STRUCTURE,-1,,if (options.size() == 0),2,IF,40,1,CPPASTIfStatement
+32707,CONTROL_STRUCTURE,-1,,if (m_priv->ndcLookupRequired),2,IF,211,1,CPPASTIfStatement
+32718,CONTROL_STRUCTURE,-1,,if (NDC::get(val)),3,IF,216,3,CPPASTIfStatement
+32732,CONTROL_STRUCTURE,-1,,if (m_priv->ndc),2,IF,222,2,CPPASTIfStatement
+32755,CONTROL_STRUCTURE,-1,,if (m_priv->mdcCopy != 0 && !m_priv->mdcCopy->empty()),2,IF,235,1,CPPASTIfStatement
+32780,CONTROL_STRUCTURE,-1,,if (it != m_priv->mdcCopy->end()),3,IF,239,3,CPPASTIfStatement
+32790,CONTROL_STRUCTURE,-1,,if (!it->second.empty()),4,IF,241,1,CPPASTIfStatement
+32820,CONTROL_STRUCTURE,-1,,if (m_priv->mdcCopy != 0 && !m_priv->mdcCopy->empty()),2,IF,257,2,CPPASTIfStatement
+32836,CONTROL_STRUCTURE,-1,,for (it = m_priv->mdcCopy->begin();it != m_priv->mdcCopy->end();it++),3,FOR,261,2,CPPASTForStatement
+32864,CONTROL_STRUCTURE,-1,,else,2,ELSE,268,3,CPPASTCompoundStatement
+32873,CONTROL_STRUCTURE,-1,,if (data != 0),3,IF,271,3,CPPASTIfStatement
+32885,CONTROL_STRUCTURE,-1,,for (MDC::Map::const_iterator it = m.begin();it != m.end();it++),4,FOR,275,3,CPPASTForStatement
+32916,CONTROL_STRUCTURE,-1,,if (m_priv->mdcCopyLookupRequired),2,IF,287,1,CPPASTIfStatement
+32933,CONTROL_STRUCTURE,-1,,if (data != 0),3,IF,293,4,CPPASTIfStatement
+32948,CONTROL_STRUCTURE,-1,,else,3,ELSE,298,3,CPPASTCompoundStatement
+32962,CONTROL_STRUCTURE,-1,,if (m_priv->properties == 0),2,IF,306,1,CPPASTIfStatement
+32981,CONTROL_STRUCTURE,-1,,if (it != m_priv->properties->end()),2,IF,313,4,CPPASTIfStatement
+33007,CONTROL_STRUCTURE,-1,,if (m_priv->properties != 0),2,IF,326,2,CPPASTIfStatement
+33015,CONTROL_STRUCTURE,-1,,for (it = m_priv->properties->begin();it != m_priv->properties->end();it++),3,FOR,330,2,CPPASTForStatement
+33082,CONTROL_STRUCTURE,-1,,if (thread_id_map.end() == pThreadId),2,IF,362,10,CPPASTIfStatement
+33109,CONTROL_STRUCTURE,-1,,if (!thread_id_string.empty()),2,IF,366,13,CPPASTIfStatement
+33133,CONTROL_STRUCTURE,-1,,if (!thread_name.empty()),2,IF,394,3,CPPASTIfStatement
+33153,CONTROL_STRUCTURE,-1,,if (m_priv->properties == 0),2,IF,441,1,CPPASTIfStatement
+33281,CONTROL_STRUCTURE,-1,,if (le != NULL),2,IF,49,3,CPPASTIfStatement
+33415,CONTROL_STRUCTURE,-1,,if (p && !p->quietMode),2,IF,80,3,CPPASTIfStatement
+33423,CONTROL_STRUCTURE,-1,,if (!p->debugEnabled),3,IF,82,1,CPPASTIfStatement
+33459,CONTROL_STRUCTURE,-1,,if (p && !p->quietMode),2,IF,96,3,CPPASTIfStatement
+33467,CONTROL_STRUCTURE,-1,,if (!p->debugEnabled),3,IF,98,1,CPPASTIfStatement
+33504,CONTROL_STRUCTURE,-1,,if (p && !p->quietMode),2,IF,111,3,CPPASTIfStatement
+33541,CONTROL_STRUCTURE,-1,,if (p && !p->quietMode),2,IF,122,3,CPPASTIfStatement
+33610,CONTROL_STRUCTURE,-1,,if (p && !p->quietMode),2,IF,141,3,CPPASTIfStatement
+33647,CONTROL_STRUCTURE,-1,,if (p && !p->quietMode),2,IF,151,3,CPPASTIfStatement
+33714,CONTROL_STRUCTURE,-1,,if (raw != 0),2,IF,174,5,CPPASTIfStatement
+33725,CONTROL_STRUCTURE,-1,,else,2,ELSE,179,3,CPPASTCompoundStatement
+33833,CONTROL_STRUCTURE,-1,,if ((LogManager::guard != 0) && (LogManager::guard != guard1)),2,IF,60,1,CPPASTIfStatement
+33850,CONTROL_STRUCTURE,-1,,if (selector == 0),2,IF,65,2,CPPASTIfStatement
+34048,CONTROL_STRUCTURE,-1,,if (auto r = dynamic_cast<Hierarchy*>(getLoggerRepository().get())),2,IF,218,3,CPPASTIfStatement
+34166,CONTROL_STRUCTURE,-1,,if (initset.precision() == initclear.precision()),2,IF,79,8,CPPASTIfStatement
+34185,CONTROL_STRUCTURE,-1,,if (initset.width() == initclear.width()),2,IF,84,9,CPPASTIfStatement
+34231,CONTROL_STRUCTURE,-1,,if (isEnabled()),2,IF,106,1,CPPASTIfStatement
+34461,CONTROL_STRUCTURE,-1,,if (oldLevel != enabled),2,IF,197,5,CPPASTIfStatement
+34483,CONTROL_STRUCTURE,-1,,if (LOG4CXX_UNLIKELY(enabled)),2,IF,211,1,CPPASTIfStatement
+34574,CONTROL_STRUCTURE,-1,,if (stream == 0),2,IF,272,1,CPPASTIfStatement
+34594,CONTROL_STRUCTURE,-1,,if (stream != 0),2,IF,285,1,CPPASTIfStatement
+34611,CONTROL_STRUCTURE,-1,,if (!msg.empty()),3,IF,289,2,CPPASTIfStatement
+34629,CONTROL_STRUCTURE,-1,,if (stream != 0),2,IF,299,1,CPPASTIfStatement
+34654,CONTROL_STRUCTURE,-1,,if (stream != 0),2,IF,312,1,CPPASTIfStatement
+34727,CONTROL_STRUCTURE,-1,,if (stream != 0),2,IF,330,1,CPPASTIfStatement
+34733,CONTROL_STRUCTURE,-1,,"if (logstream_base::set_stream_state(*stream, ch))",3,IF,334,2,CPPASTIfStatement
+34826,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""ACCEPTONMATCH""), LOG4CXX_STR(""acceptonmatch"")))",2,IF,54,1,CPPASTIfStatement
+34863,CONTROL_STRUCTURE,-1,,else,7,ELSE,58,3,CPPASTIfStatement
+34865,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""OPERATOR""), LOG4CXX_STR(""operator"")))",7,IF,58,1,CPPASTIfStatement
+34899,CONTROL_STRUCTURE,-1,,else,7,ELSE,62,3,CPPASTIfStatement
+34901,CONTROL_STRUCTURE,1,,if (!option.empty() && !value.empty()),7,IF,62,1,CPPASTIfStatement
+34933,CONTROL_STRUCTURE,-1,,if (static_cast<MapFilterPrivate *>(m_priv.get())->keyVals.empty()),2,IF,71,1,CPPASTIfStatement
+34956,CONTROL_STRUCTURE,-1,,for (KeyVals::const_iterator it = priv->keyVals.begin();it != priv->keyVals.end();++it),2,FOR,78,4,CPPASTForStatement
+35001,CONTROL_STRUCTURE,-1,,if (curval.empty() || curval != it->second),3,IF,83,3,CPPASTIfStatement
+35016,CONTROL_STRUCTURE,-1,,else,3,ELSE,88,3,CPPASTCompoundStatement
+35021,CONTROL_STRUCTURE,-1,,if (priv->mustMatchAll != matched),3,IF,92,4,CPPASTIfStatement
+35035,CONTROL_STRUCTURE,-1,,break;,4,BREAK,94,1,CPPASTBreakStatement
+35036,CONTROL_STRUCTURE,-1,,if (static_cast<MapFilterPrivate *>(m_priv.get())->acceptOnMatch),2,IF,98,5,CPPASTIfStatement
+35057,CONTROL_STRUCTURE,-1,,else,2,ELSE,103,3,CPPASTCompoundStatement
+35277,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,59,3,CPPASTIfStatement
+35297,CONTROL_STRUCTURE,-1,,if (it != map.end()),3,IF,65,5,CPPASTIfStatement
+35329,CONTROL_STRUCTURE,-1,,"if (get(lkey, lvalue))",2,IF,82,3,CPPASTIfStatement
+35357,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,95,3,CPPASTIfStatement
+35370,CONTROL_STRUCTURE,-1,,if ((it = map.find(key)) != map.end()),3,IF,100,4,CPPASTIfStatement
+35411,CONTROL_STRUCTURE,-1,,"if (remove(lkey, lvalue))",2,IF,117,3,CPPASTIfStatement
+35437,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,131,3,CPPASTIfStatement
+35492,CONTROL_STRUCTURE,-1,,if (options.empty()),2,IF,40,1,CPPASTIfStatement
+35535,CONTROL_STRUCTURE,-1,,if (m_priv->name.empty()),2,IF,55,3,CPPASTIfStatement
+35547,CONTROL_STRUCTURE,-1,,for (auto key:event->getMDCKeySet()),3,FOR,58,3,CPPASTRangeBasedForStatement
+35592,CONTROL_STRUCTURE,-1,,if (!first),3,IF,68,4,CPPASTIfStatement
+35602,CONTROL_STRUCTURE,-1,,else,3,ELSE,72,3,CPPASTExpressionStatement
+35612,CONTROL_STRUCTURE,-1,,if (!m_priv->style.empty()),2,IF,73,4,CPPASTIfStatement
+35631,CONTROL_STRUCTURE,-1,,"while ((endIndex = toAppendTo.find(quote, startIndex)) != toAppendTo.npos)",3,WHILE,77,4,<empty>
+35698,CONTROL_STRUCTURE,-1,,if (!this->stream),3,IF,54,1,CPPASTIfStatement
+35748,CONTROL_STRUCTURE,-1,,if (this->stream),3,IF,79,1,CPPASTIfStatement
+35809,CONTROL_STRUCTURE,-1,,if (m_priv->stream == 0),2,IF,103,1,CPPASTIfStatement
+35823,CONTROL_STRUCTURE,-1,,else,2,ELSE,108,3,CPPASTCompoundStatement
+35843,CONTROL_STRUCTURE,-1,,if (actualMsg == 0),2,IF,119,3,CPPASTIfStatement
+35851,CONTROL_STRUCTURE,-1,,if (m_priv->stream == 0),2,IF,124,4,CPPASTIfStatement
+35865,CONTROL_STRUCTURE,-1,,else,2,ELSE,129,3,CPPASTCompoundStatement
+35891,CONTROL_STRUCTURE,-1,,if (m_priv->stream == 0),2,IF,142,1,CPPASTIfStatement
+35906,CONTROL_STRUCTURE,-1,,else,2,ELSE,147,3,CPPASTCompoundStatement
+36190,CONTROL_STRUCTURE,-1,,"while ((endIndex = input.find(m_quote, startIndex)) != input.npos)",4,WHILE,53,6,<empty>
+36244,CONTROL_STRUCTURE,-1,,if (options.empty() || options.front().empty()),2,IF,73,1,CPPASTIfStatement
+36404,CONTROL_STRUCTURE,-1,,if (_priv->rollingPolicy == NULL),2,IF,90,1,CPPASTIfStatement
+36445,CONTROL_STRUCTURE,-1,,if (_priv->triggeringPolicy == NULL),2,IF,100,2,CPPASTIfStatement
+36478,CONTROL_STRUCTURE,-1,,if (trig != NULL),3,IF,104,3,CPPASTIfStatement
+36495,CONTROL_STRUCTURE,-1,,if (_priv->triggeringPolicy == NULL),2,IF,110,3,CPPASTIfStatement
+36572,CONTROL_STRUCTURE,-1,,try,3,TRY,120,4,CPPASTTryBlockStatement
+36593,CONTROL_STRUCTURE,-1,,if (rollover1 != NULL),4,IF,125,3,CPPASTIfStatement
+36604,CONTROL_STRUCTURE,-1,,if (syncAction != NULL),5,IF,129,3,CPPASTIfStatement
+36650,CONTROL_STRUCTURE,-1,,if (asyncAction != NULL),5,IF,142,8,CPPASTIfStatement
+36666,CONTROL_STRUCTURE,-1,,if (getAppend()),4,IF,151,6,CPPASTIfStatement
+36685,CONTROL_STRUCTURE,-1,,else,4,ELSE,156,3,CPPASTCompoundStatement
+36719,CONTROL_STRUCTURE,-1,,if (lock_file),2,IF,173,1,CPPASTIfStatement
+36727,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,177,3,CPPASTIfStatement
+36775,CONTROL_STRUCTURE,-1,,if (_priv->rollingPolicy != NULL),2,IF,213,1,CPPASTIfStatement
+36827,CONTROL_STRUCTURE,-1,,if (basePolicy),4,IF,223,10,CPPASTIfStatement
+36830,CONTROL_STRUCTURE,-1,,if (basePolicy->getPatternConverterList().size()),5,IF,225,1,CPPASTIfStatement
+36937,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),4,IF,242,25,CPPASTIfStatement
+36997,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),4,IF,256,32,CPPASTIfStatement
+37022,CONTROL_STRUCTURE,-1,,else,4,ELSE,265,3,CPPASTCompoundStatement
+37029,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),5,IF,268,2,CPPASTIfStatement
+37051,CONTROL_STRUCTURE,-1,,else,5,ELSE,276,3,CPPASTCompoundStatement
+37053,CONTROL_STRUCTURE,-1,,if (static_cast<MultiprocessRollingFileAppenderPriv *>(m_priv.get())->_event),6,IF,277,1,CPPASTIfStatement
+37089,CONTROL_STRUCTURE,-1,,if (bAlreadyRolled),4,IF,284,33,CPPASTIfStatement
+37110,CONTROL_STRUCTURE,-1,,if (!fos),5,IF,290,9,CPPASTIfStatement
+37136,CONTROL_STRUCTURE,-1,,if (st1 != APR_SUCCESS),5,IF,297,13,CPPASTIfStatement
+37165,CONTROL_STRUCTURE,-1,,if (st2 != APR_SUCCESS),5,IF,305,17,CPPASTIfStatement
+37201,CONTROL_STRUCTURE,-1,,if (!bAlreadyRolled),4,IF,314,34,CPPASTIfStatement
+37205,CONTROL_STRUCTURE,-1,,try,5,TRY,317,1,CPPASTTryBlockStatement
+37231,CONTROL_STRUCTURE,-1,,if (rollover1 != NULL),6,IF,321,3,CPPASTIfStatement
+37236,CONTROL_STRUCTURE,-1,,if (rollover1->getActiveFileName() == getFile()),7,IF,323,1,CPPASTIfStatement
+37249,CONTROL_STRUCTURE,-1,,if (rollover1->getSynchronous() != NULL),8,IF,329,4,CPPASTIfStatement
+37260,CONTROL_STRUCTURE,-1,,try,9,TRY,333,2,CPPASTTryBlockStatement
+37309,CONTROL_STRUCTURE,-1,,if (success),8,IF,346,5,CPPASTIfStatement
+37312,CONTROL_STRUCTURE,-1,,if (rollover1->getAppend()),9,IF,348,1,CPPASTIfStatement
+37343,CONTROL_STRUCTURE,-1,,else,9,ELSE,353,3,CPPASTCompoundStatement
+37363,CONTROL_STRUCTURE,-1,,if (asyncAction != NULL),9,IF,362,4,CPPASTIfStatement
+37403,CONTROL_STRUCTURE,-1,,else,8,ELSE,372,3,CPPASTCompoundStatement
+37432,CONTROL_STRUCTURE,-1,,else,7,ELSE,378,3,CPPASTCompoundStatement
+37467,CONTROL_STRUCTURE,-1,,if (rollover1->getSynchronous() != NULL),8,IF,390,11,CPPASTIfStatement
+37478,CONTROL_STRUCTURE,-1,,try,9,TRY,394,2,CPPASTTryBlockStatement
+37527,CONTROL_STRUCTURE,-1,,if (success),8,IF,407,12,CPPASTIfStatement
+37530,CONTROL_STRUCTURE,-1,,if (rollover1->getAppend()),9,IF,409,1,CPPASTIfStatement
+37559,CONTROL_STRUCTURE,-1,,else,9,ELSE,414,3,CPPASTCompoundStatement
+37579,CONTROL_STRUCTURE,-1,,if (asyncAction != NULL),9,IF,423,4,CPPASTIfStatement
+37632,CONTROL_STRUCTURE,-1,,else,4,ELSE,446,3,CPPASTCompoundStatement
+37694,CONTROL_STRUCTURE,-1,,"if (static_cast<MultiprocessRollingFileAppenderPriv *>(m_priv.get())->triggeringPolicy->isTriggeringEvent(this, event, getFile(), getFileLength()))",2,IF,479,1,CPPASTIfStatement
+37713,CONTROL_STRUCTURE,-1,,try,3,TRY,488,1,CPPASTTryBlockStatement
+37782,CONTROL_STRUCTURE,-1,,if (!fos),2,IF,508,10,CPPASTIfStatement
+37807,CONTROL_STRUCTURE,-1,,if (st1 != APR_SUCCESS),2,IF,515,14,CPPASTIfStatement
+37836,CONTROL_STRUCTURE,-1,,if (st2 != APR_SUCCESS),2,IF,522,16,CPPASTIfStatement
+37878,CONTROL_STRUCTURE,-1,,if (bAlreadyRolled),2,IF,531,19,CPPASTIfStatement
+37946,CONTROL_STRUCTURE,-1,,if (timeBased),2,IF,566,4,CPPASTIfStatement
+38025,CONTROL_STRUCTURE,-1,,if (rfa != 0),4,IF,645,2,CPPASTIfStatement
+38183,CONTROL_STRUCTURE,-1,,for (LogString::size_type i = count;i > 0;i--),4,FOR,106,3,CPPASTForStatement
+38205,CONTROL_STRUCTURE,-1,,if ((end == LogString::npos) || (end < nameStart)),5,IF,110,2,CPPASTIfStatement
+38286,CONTROL_STRUCTURE,-1,,if (nextDot != LogString::npos),4,IF,175,3,CPPASTIfStatement
+38293,CONTROL_STRUCTURE,-1,,if ((nextDot - startPos) > charCount),5,IF,177,1,CPPASTIfStatement
+38323,CONTROL_STRUCTURE,-1,,if (ellipsis != 0x00),6,IF,182,3,CPPASTIfStatement
+38356,CONTROL_STRUCTURE,-1,,for (LogString::size_type i = 0;(i < (fragments.size() - 1)) && (pos < buf.length());i++),4,FOR,240,3,CPPASTForStatement
+38401,CONTROL_STRUCTURE,-1,,while (pos < buf.length()),4,WHILE,252,6,<empty>
+38428,CONTROL_STRUCTURE,-1,,if (pattern.length() > 0),2,IF,269,1,CPPASTIfStatement
+38443,CONTROL_STRUCTURE,-1,,if (trimmed.length() == 0),3,IF,275,3,CPPASTIfStatement
+38457,CONTROL_STRUCTURE,-1,,"while ((i < trimmed.length()) && (trimmed[i] >= 0x30 /* '0' */)
+			&& (trimmed[i] <= 0x39 /* '9' */))",3,WHILE,282,6,<empty>
+38479,CONTROL_STRUCTURE,-1,,if (i == trimmed.length()),3,IF,292,7,CPPASTIfStatement
+38512,CONTROL_STRUCTURE,-1,,while (pos < trimmed.length()),3,WHILE,302,13,<empty>
+38524,CONTROL_STRUCTURE,-1,,if (trimmed[pos] == 0x2A),4,IF,306,3,CPPASTIfStatement
+38536,CONTROL_STRUCTURE,-1,,else,4,ELSE,312,3,CPPASTCompoundStatement
+38538,CONTROL_STRUCTURE,-1,,"if ((trimmed[pos] >= 0x30 /* '0' */)
+					&& (trimmed[pos] <= 0x39 /* '9' */))",5,IF,313,1,CPPASTIfStatement
+38560,CONTROL_STRUCTURE,-1,,else,5,ELSE,320,3,CPPASTCompoundStatement
+38568,CONTROL_STRUCTURE,-1,,if (ellipsisPos < trimmed.length()),4,IF,327,5,CPPASTIfStatement
+38581,CONTROL_STRUCTURE,-1,,if (ellipsis == 0x2E),5,IF,331,2,CPPASTIfStatement
+38604,CONTROL_STRUCTURE,-1,,if (pos == LogString::npos),4,IF,340,8,CPPASTIfStatement
+38611,CONTROL_STRUCTURE,-1,,break;,5,BREAK,342,1,CPPASTBreakStatement
+38675,CONTROL_STRUCTURE,-1,,if (options.size() > 0),2,IF,56,1,CPPASTIfStatement
+38769,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,50,3,CPPASTIfStatement
+38781,CONTROL_STRUCTURE,-1,,while (!stack.empty()),3,WHILE,54,3,<empty>
+38807,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,67,3,CPPASTIfStatement
+38819,CONTROL_STRUCTURE,-1,,if (!stack.empty()),3,IF,71,3,CPPASTIfStatement
+38838,CONTROL_STRUCTURE,-1,,if (stack != NULL),2,IF,82,1,CPPASTIfStatement
+38863,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,94,3,CPPASTIfStatement
+38875,CONTROL_STRUCTURE,-1,,if (!stack.empty()),3,IF,98,3,CPPASTIfStatement
+38914,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,115,5,CPPASTIfStatement
+38930,CONTROL_STRUCTURE,-1,,if (size == 0),3,IF,119,2,CPPASTIfStatement
+38952,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,132,3,CPPASTIfStatement
+38964,CONTROL_STRUCTURE,-1,,if (!stack.empty()),3,IF,136,3,CPPASTIfStatement
+39010,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,155,5,CPPASTIfStatement
+39022,CONTROL_STRUCTURE,-1,,if (!stack.empty()),3,IF,159,3,CPPASTIfStatement
+39063,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,176,3,CPPASTIfStatement
+39075,CONTROL_STRUCTURE,-1,,if (!stack.empty()),3,IF,180,3,CPPASTIfStatement
+39106,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,195,3,CPPASTIfStatement
+39118,CONTROL_STRUCTURE,-1,,if (!stack.empty()),3,IF,199,3,CPPASTIfStatement
+39182,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,232,5,CPPASTIfStatement
+39200,CONTROL_STRUCTURE,-1,,if (empty),3,IF,237,4,CPPASTIfStatement
+39249,CONTROL_STRUCTURE,-1,,if (!event->getNDC(toAppendTo)),2,IF,48,1,CPPASTIfStatement
+39419,CONTROL_STRUCTURE,-1,,if (specs.empty()),2,IF,154,2,CPPASTIfStatement
+39671,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""BUFFERSIZE""), LOG4CXX_STR(""buffersize"")))",2,IF,176,1,CPPASTIfStatement
+39691,CONTROL_STRUCTURE,-1,,else,7,ELSE,180,3,CPPASTIfStatement
+39693,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""PASSWORD""), LOG4CXX_STR(""password"")))",7,IF,180,1,CPPASTIfStatement
+39706,CONTROL_STRUCTURE,-1,,else,7,ELSE,184,3,CPPASTIfStatement
+39708,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""SQL""), LOG4CXX_STR(""sql"")))",7,IF,184,1,CPPASTIfStatement
+39721,CONTROL_STRUCTURE,-1,,else,7,ELSE,188,3,CPPASTIfStatement
+39723,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""URL""), LOG4CXX_STR(""url""))
+		|| StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""DSN""), LOG4CXX_STR(""dsn""))
+		|| StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""CONNECTIONSTRING""), LOG4CXX_STR(""connectionstring"")))",7,IF,188,1,CPPASTIfStatement
+39756,CONTROL_STRUCTURE,-1,,else,7,ELSE,194,3,CPPASTIfStatement
+39758,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""USER""), LOG4CXX_STR(""user"")))",7,IF,194,1,CPPASTIfStatement
+39771,CONTROL_STRUCTURE,-1,,else,7,ELSE,198,3,CPPASTIfStatement
+39773,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""COLUMNMAPPING""), LOG4CXX_STR(""columnmapping"")))",7,IF,198,1,CPPASTIfStatement
+39798,CONTROL_STRUCTURE,-1,,else,2,ELSE,203,3,CPPASTCompoundStatement
+39859,CONTROL_STRUCTURE,-1,,if (static_cast<ODBCAppenderPriv *>(m_priv.get())->closed),2,IF,377,1,CPPASTIfStatement
+39873,CONTROL_STRUCTURE,-1,,try,2,TRY,384,3,CPPASTTryBlockStatement
+39914,CONTROL_STRUCTURE,-1,,for (auto& logEvent:static_cast<ODBCAppenderPriv *>(m_priv.get())->buffer),2,FOR,586,1,CPPASTRangeBasedForStatement
+39927,CONTROL_STRUCTURE,-1,,if (static_cast<ODBCAppenderPriv *>(m_priv.get())->parameterValue.empty()),3,IF,588,1,CPPASTIfStatement
+40019,CONTROL_STRUCTURE,-1,,for (LogString::const_iterator i = src.begin();i != src.end();),2,FOR,634,4,CPPASTForStatement
+40044,CONTROL_STRUCTURE,-1,,if (sv < 0x10000),3,IF,639,3,CPPASTIfStatement
+40056,CONTROL_STRUCTURE,-1,,else,3,ELSE,644,3,CPPASTCompoundStatement
+40313,CONTROL_STRUCTURE,-1,,if (m_priv->firstTime),2,IF,62,1,CPPASTIfStatement
+40346,CONTROL_STRUCTURE,-1,,if (m_priv->firstTime),2,IF,78,1,CPPASTIfStatement
+40460,CONTROL_STRUCTURE,-1,,while (i != s.end()),2,WHILE,84,5,<empty>
+40473,CONTROL_STRUCTURE,-1,,if (c == 0x5C),3,IF,88,2,CPPASTIfStatement
+40483,CONTROL_STRUCTURE,-1,,switch(c),4,SWITCH,92,2,CPPASTSwitchStatement
+40491,CONTROL_STRUCTURE,-1,,break;,6,BREAK,96,4,CPPASTBreakStatement
+40497,CONTROL_STRUCTURE,-1,,break;,6,BREAK,100,8,CPPASTBreakStatement
+40503,CONTROL_STRUCTURE,-1,,break;,6,BREAK,104,12,CPPASTBreakStatement
+40509,CONTROL_STRUCTURE,-1,,break;,6,BREAK,108,16,CPPASTBreakStatement
+40511,CONTROL_STRUCTURE,-1,,break;,6,BREAK,111,18,CPPASTBreakStatement
+40526,CONTROL_STRUCTURE,-1,,if (value.length() >= 4),2,IF,124,1,CPPASTIfStatement
+40534,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(value.substr(0, 4),
+				LOG4CXX_STR(""TRUE""), LOG4CXX_STR(""true"")))",3,IF,126,1,CPPASTIfStatement
+40552,CONTROL_STRUCTURE,-1,,if (dEfault && value.length() >= 5),2,IF,133,2,CPPASTIfStatement
+40562,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(value.substr(0, 5),
+				LOG4CXX_STR(""FALSE""), LOG4CXX_STR(""false"")))",3,IF,135,1,CPPASTIfStatement
+40595,CONTROL_STRUCTURE,-1,,if (trimmed.empty()),2,IF,149,3,CPPASTIfStatement
+40620,CONTROL_STRUCTURE,-1,,if (s.empty()),2,IF,161,1,CPPASTIfStatement
+40637,CONTROL_STRUCTURE,-1,,if (index != LogString::npos && index > 0),2,IF,168,4,CPPASTIfStatement
+40654,CONTROL_STRUCTURE,-1,,if (s[index] == 0x6B /* 'k' */ || s[index] == 0x4B),3,IF,173,4,CPPASTIfStatement
+40670,CONTROL_STRUCTURE,-1,,else,8,ELSE,177,3,CPPASTIfStatement
+40672,CONTROL_STRUCTURE,1,,if (s[index] == 0x6D /* 'm' */ || s[index] == 0x4D),8,IF,177,1,CPPASTIfStatement
+40690,CONTROL_STRUCTURE,-1,,else,8,ELSE,181,3,CPPASTIfStatement
+40692,CONTROL_STRUCTURE,1,,if (s[index] == 0x67 /* 'g'*/ || s[index] == 0x47),8,IF,181,1,CPPASTIfStatement
+40740,CONTROL_STRUCTURE,-1,,if (value.empty()),2,IF,196,3,CPPASTIfStatement
+40748,CONTROL_STRUCTURE,-1,,try,2,TRY,201,4,CPPASTTryBlockStatement
+40804,CONTROL_STRUCTURE,-1,,while (true),2,WHILE,224,14,<empty>
+40816,CONTROL_STRUCTURE,-1,,if (j == val.npos),3,IF,228,3,CPPASTIfStatement
+40823,CONTROL_STRUCTURE,-1,,if (i == 0),4,IF,231,1,CPPASTIfStatement
+40830,CONTROL_STRUCTURE,-1,,else,4,ELSE,237,3,CPPASTCompoundStatement
+40849,CONTROL_STRUCTURE,-1,,else,3,ELSE,244,3,CPPASTCompoundStatement
+40872,CONTROL_STRUCTURE,-1,,if (k == val.npos),4,IF,248,4,CPPASTIfStatement
+40915,CONTROL_STRUCTURE,-1,,else,4,ELSE,259,3,CPPASTCompoundStatement
+40936,CONTROL_STRUCTURE,-1,,if (replacement.empty()),5,IF,266,6,CPPASTIfStatement
+40949,CONTROL_STRUCTURE,-1,,if (!replacement.empty()),5,IF,271,7,CPPASTIfStatement
+40978,CONTROL_STRUCTURE,-1,,if (!key.empty()),2,IF,290,1,CPPASTIfStatement
+40992,CONTROL_STRUCTURE,-1,,if (!value.empty()),3,IF,294,3,CPPASTIfStatement
+41018,CONTROL_STRUCTURE,-1,,if (hashIndex == LogString::npos),2,IF,308,3,CPPASTIfStatement
+41025,CONTROL_STRUCTURE,-1,,if (value.empty()),3,IF,310,1,CPPASTIfStatement
+41033,CONTROL_STRUCTURE,-1,,else,3,ELSE,315,3,CPPASTCompoundStatement
+41092,CONTROL_STRUCTURE,-1,,if (levelName.empty()),2,IF,331,9,CPPASTIfStatement
+41105,CONTROL_STRUCTURE,-1,,try,2,TRY,336,10,CPPASTTryBlockStatement
+41187,CONTROL_STRUCTURE,-1,,if (className.empty()),2,IF,370,3,CPPASTIfStatement
+41224,CONTROL_STRUCTURE,-1,,if (!className.empty()),2,IF,385,1,CPPASTIfStatement
+41231,CONTROL_STRUCTURE,-1,,try,3,TRY,387,1,CPPASTTryBlockStatement
+41249,CONTROL_STRUCTURE,-1,,if (!newObject->instanceof(superClass)),4,IF,392,5,CPPASTIfStatement
+41295,CONTROL_STRUCTURE,-1,,if (!clazz.empty()),2,IF,428,6,CPPASTIfStatement
+41335,CONTROL_STRUCTURE,-1,,if (configurator == 0),3,IF,435,7,CPPASTIfStatement
+41352,CONTROL_STRUCTURE,-1,,else,2,ELSE,443,3,CPPASTCompoundStatement
+41360,CONTROL_STRUCTURE,-1,,if (0 < delay),2,IF,447,7,CPPASTIfStatement
+41386,CONTROL_STRUCTURE,-1,,else,3,ELSE,455,3,CPPASTExpressionStatement
+41466,CONTROL_STRUCTURE,-1,,if (out1 == 0),2,IF,44,1,CPPASTIfStatement
+41481,CONTROL_STRUCTURE,-1,,if (out1 == 0),2,IF,54,1,CPPASTIfStatement
+41490,CONTROL_STRUCTURE,-1,,if (enc1 == 0),2,IF,59,2,CPPASTIfStatement
+41533,CONTROL_STRUCTURE,-1,,if (str.empty()),2,IF,81,1,CPPASTIfStatement
+41540,CONTROL_STRUCTURE,-1,,"if (CharsetEncoder::isTriviallyCopyable(str, m_priv->enc))",2,IF,83,2,CPPASTIfStatement
+41573,CONTROL_STRUCTURE,-1,,else,2,ELSE,89,3,CPPASTCompoundStatement
+41601,CONTROL_STRUCTURE,-1,,while (iter != str.end()),3,WHILE,107,11,<empty>
+41912,CONTROL_STRUCTURE,-1,,"for (std::vector<LoggingEventPatternConverterPtr>::const_iterator
+		converterIter = m_priv->patternConverters.begin();converterIter != m_priv->patternConverters.end();converterIter++, formatterIter++)",2,FOR,129,4,CPPASTForStatement
+41967,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""CONVERSIONPATTERN""),
+			LOG4CXX_STR(""conversionpattern"")))",2,IF,143,1,CPPASTIfStatement
+41987,CONTROL_STRUCTURE,-1,,else,8,ELSE,148,3,CPPASTIfStatement
+41989,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+											LOG4CXX_STR(""ERRORCOLOR""),
+											LOG4CXX_STR(""errorcolor"")))",8,IF,148,1,CPPASTIfStatement
+42016,CONTROL_STRUCTURE,-1,,else,8,ELSE,154,3,CPPASTIfStatement
+42018,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+											LOG4CXX_STR(""FATALCOLOR""),
+											LOG4CXX_STR(""fatalcolor"")))",8,IF,154,1,CPPASTIfStatement
+42034,CONTROL_STRUCTURE,-1,,else,8,ELSE,158,3,CPPASTIfStatement
+42036,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+											LOG4CXX_STR(""WARNCOLOR""),
+											LOG4CXX_STR(""warncolor"")))",8,IF,158,1,CPPASTIfStatement
+42052,CONTROL_STRUCTURE,-1,,else,8,ELSE,162,3,CPPASTIfStatement
+42054,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+											LOG4CXX_STR(""INFOCOLOR""),
+											LOG4CXX_STR(""infocolor"")))",8,IF,162,1,CPPASTIfStatement
+42070,CONTROL_STRUCTURE,-1,,else,8,ELSE,166,3,CPPASTIfStatement
+42072,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+											LOG4CXX_STR(""DEBUGCOLOR""),
+											LOG4CXX_STR(""debugcolor"")))",8,IF,166,1,CPPASTIfStatement
+42088,CONTROL_STRUCTURE,-1,,else,8,ELSE,170,3,CPPASTIfStatement
+42090,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+											LOG4CXX_STR(""TRACECOLOR""),
+											LOG4CXX_STR(""tracecolor"")))",8,IF,170,1,CPPASTIfStatement
+42116,CONTROL_STRUCTURE,-1,,if (pat.empty()),2,IF,181,3,CPPASTIfStatement
+42179,CONTROL_STRUCTURE,-1,,for (std::vector<PatternConverterPtr>::const_iterator converterIter = converters.begin();converterIter != converters.end();converterIter++),2,FOR,198,8,CPPASTForStatement
+42208,CONTROL_STRUCTURE,-1,,if (eventConverter != NULL),3,IF,205,3,CPPASTIfStatement
+42943,CONTROL_STRUCTURE,-1,,if (!convBuf.empty()),2,IF,63,1,CPPASTIfStatement
+42962,CONTROL_STRUCTURE,-1,,if (!isUnicodeIdentifierStart(lastChar)),2,IF,73,2,CPPASTIfStatement
+42975,CONTROL_STRUCTURE,-1,,"while ((i < pattern.length())
+		&& isUnicodeIdentifierPart(pattern[i]))",2,WHILE,80,4,<empty>
+43015,CONTROL_STRUCTURE,-1,,while ((i < pattern.length()) && (pattern[i] == 0x7B /* '{' */)),2,WHILE,98,1,<empty>
+43038,CONTROL_STRUCTURE,-1,,if (end == pattern.npos),3,IF,102,3,CPPASTIfStatement
+43045,CONTROL_STRUCTURE,-1,,break;,4,BREAK,104,1,CPPASTBreakStatement
+43103,CONTROL_STRUCTURE,-1,,while (i < patternLength),2,WHILE,130,11,<empty>
+43114,CONTROL_STRUCTURE,-1,,switch(state),3,SWITCH,134,2,CPPASTSwitchStatement
+43119,CONTROL_STRUCTURE,-1,,if (i == patternLength),5,IF,139,3,CPPASTIfStatement
+43130,CONTROL_STRUCTURE,-1,,continue;,6,CONTINUE,143,2,CPPASTContinueStatement
+43131,CONTROL_STRUCTURE,-1,,if (c == ESCAPE_CHAR),5,IF,146,4,CPPASTIfStatement
+43136,CONTROL_STRUCTURE,-1,,if (pattern[i] == ESCAPE_CHAR),6,IF,149,1,CPPASTIfStatement
+43151,CONTROL_STRUCTURE,-1,,else,6,ELSE,155,3,CPPASTCompoundStatement
+43153,CONTROL_STRUCTURE,-1,,if (!currentLiteral.empty()),7,IF,156,1,CPPASTIfStatement
+43204,CONTROL_STRUCTURE,-1,,else,5,ELSE,170,3,CPPASTCompoundStatement
+43212,CONTROL_STRUCTURE,-1,,break;,5,BREAK,174,5,CPPASTBreakStatement
+43221,CONTROL_STRUCTURE,-1,,switch(c),5,SWITCH,179,9,CPPASTSwitchStatement
+43245,CONTROL_STRUCTURE,-1,,break;,7,BREAK,186,4,CPPASTBreakStatement
+43251,CONTROL_STRUCTURE,-1,,break;,7,BREAK,191,8,CPPASTBreakStatement
+43253,CONTROL_STRUCTURE,-1,,if ((c >= 0x30 /* '0' */) && (c <= 0x39 /* '9' */)),7,IF,195,10,CPPASTIfStatement
+43286,CONTROL_STRUCTURE,-1,,else,7,ELSE,203,3,CPPASTCompoundStatement
+43308,CONTROL_STRUCTURE,-1,,if (!currentLiteral.empty()),8,IF,212,4,CPPASTIfStatement
+43327,CONTROL_STRUCTURE,-1,,break;,5,BREAK,219,10,CPPASTBreakStatement
+43336,CONTROL_STRUCTURE,-1,,if ((c >= 0x30 /* '0' */) && (c <= 0x39 /* '9' */)),5,IF,224,14,CPPASTIfStatement
+43373,CONTROL_STRUCTURE,-1,,else,10,ELSE,231,3,CPPASTIfStatement
+43375,CONTROL_STRUCTURE,1,,if (c == 0x2E),10,IF,231,1,CPPASTIfStatement
+43383,CONTROL_STRUCTURE,-1,,else,5,ELSE,236,3,CPPASTCompoundStatement
+43405,CONTROL_STRUCTURE,-1,,if (!currentLiteral.empty()),6,IF,243,4,CPPASTIfStatement
+43424,CONTROL_STRUCTURE,-1,,break;,5,BREAK,249,15,CPPASTBreakStatement
+43433,CONTROL_STRUCTURE,-1,,if ((c >= 0x30 /* '0' */) && (c <= 0x39 /* '9' */)),5,IF,254,19,CPPASTIfStatement
+43466,CONTROL_STRUCTURE,-1,,else,5,ELSE,262,3,CPPASTCompoundStatement
+43477,CONTROL_STRUCTURE,-1,,break;,5,BREAK,268,20,CPPASTBreakStatement
+43486,CONTROL_STRUCTURE,-1,,if ((c >= 0x30 /* '0' */) && (c <= 0x39 /* '9' */)),5,IF,273,24,CPPASTIfStatement
+43523,CONTROL_STRUCTURE,-1,,else,5,ELSE,280,3,CPPASTCompoundStatement
+43545,CONTROL_STRUCTURE,-1,,if (!currentLiteral.empty()),6,IF,287,4,CPPASTIfStatement
+43564,CONTROL_STRUCTURE,-1,,break;,5,BREAK,293,25,CPPASTBreakStatement
+43565,CONTROL_STRUCTURE,-1,,if (currentLiteral.length() != 0),2,IF,298,12,CPPASTIfStatement
+43601,CONTROL_STRUCTURE,-1,,for (size_t i = converterId.length();i > 0;i--),2,FOR,316,3,CPPASTForStatement
+43632,CONTROL_STRUCTURE,-1,,if (iter != rules.end()),3,IF,321,4,CPPASTIfStatement
+43697,CONTROL_STRUCTURE,-1,,if (convBuf.empty()),2,IF,344,3,CPPASTIfStatement
+43726,CONTROL_STRUCTURE,-1,,else,2,ELSE,352,3,CPPASTCompoundStatement
+43751,CONTROL_STRUCTURE,-1,,if (pc == NULL),3,IF,362,7,CPPASTIfStatement
+43793,CONTROL_STRUCTURE,-1,,else,3,ELSE,373,3,CPPASTCompoundStatement
+43805,CONTROL_STRUCTURE,-1,,if (currentLiteral.length() > 0),4,IF,377,3,CPPASTIfStatement
+43830,CONTROL_STRUCTURE,-1,,if (!currentLiteral.empty()),2,IF,386,4,CPPASTIfStatement
+43884,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),2,IF,37,3,CPPASTIfStatement
+43906,CONTROL_STRUCTURE,-1,,if (release),2,IF,50,1,CPPASTIfStatement
+43928,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),2,IF,67,4,CPPASTIfStatement
+44035,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",4,IF,37,8,CPPASTIfStatement
+44042,CONTROL_STRUCTURE,-1,,while (!finished),4,WHILE,42,9,<empty>
+44046,CONTROL_STRUCTURE,-1,,switch(lexemType),5,SWITCH,44,1,CPPASTSwitchStatement
+44051,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,47,3,CPPASTSwitchStatement
+44062,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,53,9,CPPASTIfStatement
+44071,CONTROL_STRUCTURE,-1,,break;,9,BREAK,58,10,CPPASTBreakStatement
+44079,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,64,16,CPPASTIfStatement
+44088,CONTROL_STRUCTURE,-1,,break;,9,BREAK,69,17,CPPASTBreakStatement
+44093,CONTROL_STRUCTURE,-1,,break;,9,BREAK,73,20,CPPASTBreakStatement
+44094,CONTROL_STRUCTURE,-1,,break;,7,BREAK,76,4,CPPASTBreakStatement
+44097,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,79,7,CPPASTSwitchStatement
+44105,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,84,4,CPPASTIfStatement
+44114,CONTROL_STRUCTURE,-1,,break;,9,BREAK,89,5,CPPASTBreakStatement
+44126,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,97,15,CPPASTIfStatement
+44135,CONTROL_STRUCTURE,-1,,break;,9,BREAK,102,16,CPPASTBreakStatement
+44161,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,111,24,CPPASTIfStatement
+44170,CONTROL_STRUCTURE,-1,,break;,9,BREAK,116,25,CPPASTBreakStatement
+44178,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,121,28,CPPASTIfStatement
+44187,CONTROL_STRUCTURE,-1,,break;,9,BREAK,126,29,CPPASTBreakStatement
+44188,CONTROL_STRUCTURE,-1,,break;,7,BREAK,129,8,CPPASTBreakStatement
+44191,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,132,11,CPPASTSwitchStatement
+44205,CONTROL_STRUCTURE,-1,,break;,9,BREAK,137,5,CPPASTBreakStatement
+44217,CONTROL_STRUCTURE,-1,,break;,9,BREAK,142,10,CPPASTBreakStatement
+44229,CONTROL_STRUCTURE,-1,,break;,9,BREAK,147,15,CPPASTBreakStatement
+44235,CONTROL_STRUCTURE,-1,,break;,9,BREAK,151,19,CPPASTBreakStatement
+44241,CONTROL_STRUCTURE,-1,,break;,9,BREAK,155,23,CPPASTBreakStatement
+44252,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",7,IF,162,12,CPPASTIfStatement
+44261,CONTROL_STRUCTURE,-1,,break;,7,BREAK,167,13,CPPASTBreakStatement
+44264,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,170,16,CPPASTSwitchStatement
+44271,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,174,5,CPPASTIfStatement
+44280,CONTROL_STRUCTURE,-1,,break;,9,BREAK,179,6,CPPASTBreakStatement
+44285,CONTROL_STRUCTURE,-1,,break;,9,BREAK,183,9,CPPASTBreakStatement
+44286,CONTROL_STRUCTURE,-1,,break;,7,BREAK,186,17,CPPASTBreakStatement
+44289,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,189,20,CPPASTSwitchStatement
+44294,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,192,3,CPPASTIfStatement
+44306,CONTROL_STRUCTURE,-1,,break;,9,BREAK,198,5,CPPASTBreakStatement
+44311,CONTROL_STRUCTURE,-1,,break;,9,BREAK,202,8,CPPASTBreakStatement
+44312,CONTROL_STRUCTURE,-1,,break;,7,BREAK,205,21,CPPASTBreakStatement
+44315,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,208,24,CPPASTSwitchStatement
+44326,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,214,9,CPPASTIfStatement
+44335,CONTROL_STRUCTURE,-1,,break;,9,BREAK,219,10,CPPASTBreakStatement
+44340,CONTROL_STRUCTURE,-1,,break;,9,BREAK,223,13,CPPASTBreakStatement
+44341,CONTROL_STRUCTURE,-1,,break;,7,BREAK,226,25,CPPASTBreakStatement
+44344,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,229,28,CPPASTSwitchStatement
+44352,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,234,4,CPPASTIfStatement
+44361,CONTROL_STRUCTURE,-1,,break;,9,BREAK,239,5,CPPASTBreakStatement
+44399,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,249,14,CPPASTIfStatement
+44408,CONTROL_STRUCTURE,-1,,break;,9,BREAK,254,15,CPPASTBreakStatement
+44416,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,259,18,CPPASTIfStatement
+44425,CONTROL_STRUCTURE,-1,,break;,9,BREAK,264,19,CPPASTBreakStatement
+44426,CONTROL_STRUCTURE,-1,,break;,7,BREAK,267,29,CPPASTBreakStatement
+44429,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,270,32,CPPASTSwitchStatement
+44443,CONTROL_STRUCTURE,-1,,break;,9,BREAK,275,5,CPPASTBreakStatement
+44455,CONTROL_STRUCTURE,-1,,break;,9,BREAK,280,10,CPPASTBreakStatement
+44467,CONTROL_STRUCTURE,-1,,break;,9,BREAK,285,15,CPPASTBreakStatement
+44473,CONTROL_STRUCTURE,-1,,break;,9,BREAK,289,19,CPPASTBreakStatement
+44479,CONTROL_STRUCTURE,-1,,break;,9,BREAK,293,23,CPPASTBreakStatement
+44490,CONTROL_STRUCTURE,-1,,break;,9,BREAK,298,27,CPPASTBreakStatement
+44491,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",7,IF,301,33,CPPASTIfStatement
+44500,CONTROL_STRUCTURE,-1,,break;,7,BREAK,306,34,CPPASTBreakStatement
+44503,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,309,37,CPPASTSwitchStatement
+44510,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,313,5,CPPASTIfStatement
+44519,CONTROL_STRUCTURE,-1,,break;,9,BREAK,318,6,CPPASTBreakStatement
+44524,CONTROL_STRUCTURE,-1,,break;,9,BREAK,322,9,CPPASTBreakStatement
+44525,CONTROL_STRUCTURE,-1,,break;,7,BREAK,325,38,CPPASTBreakStatement
+44528,CONTROL_STRUCTURE,-1,,switch(c),7,SWITCH,328,41,CPPASTSwitchStatement
+44533,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",9,IF,331,3,CPPASTIfStatement
+44545,CONTROL_STRUCTURE,-1,,break;,9,BREAK,337,5,CPPASTBreakStatement
+44550,CONTROL_STRUCTURE,-1,,break;,9,BREAK,341,8,CPPASTBreakStatement
+44551,CONTROL_STRUCTURE,-1,,break;,7,BREAK,344,42,CPPASTBreakStatement
+44554,CONTROL_STRUCTURE,-1,,if (c == 0x0A || c == 0x0D),7,IF,347,45,CPPASTIfStatement
+44566,CONTROL_STRUCTURE,-1,,"if (!get(in, c))",7,IF,352,46,CPPASTIfStatement
+44575,CONTROL_STRUCTURE,-1,,break;,7,BREAK,357,47,CPPASTBreakStatement
+44576,CONTROL_STRUCTURE,-1,,if (!key.empty()),4,IF,361,10,CPPASTIfStatement
+44595,CONTROL_STRUCTURE,-1,,if (in.empty()),4,IF,370,1,CPPASTIfStatement
+44769,CONTROL_STRUCTURE,-1,,for (it = properties->begin();it != properties->end();it++),2,FOR,447,4,CPPASTForStatement
+44838,CONTROL_STRUCTURE,-1,,if (options.size() == 0),2,IF,57,1,CPPASTIfStatement
+44900,CONTROL_STRUCTURE,-1,,if (priv->option.length() == 0),2,IF,75,1,CPPASTIfStatement
+44931,CONTROL_STRUCTURE,-1,,for (LoggingEvent::KeySet::const_iterator iter = keySet.begin();iter != keySet.end();iter++),3,FOR,81,4,CPPASTForStatement
+44994,CONTROL_STRUCTURE,-1,,else,2,ELSE,96,3,CPPASTCompoundStatement
+45112,CONTROL_STRUCTURE,-1,,try,2,TRY,94,3,CPPASTTryBlockStatement
+45157,CONTROL_STRUCTURE,-1,,try,2,TRY,107,4,CPPASTTryBlockStatement
+45252,CONTROL_STRUCTURE,-1,,if (pdog),2,IF,143,1,CPPASTIfStatement
+45309,CONTROL_STRUCTURE,-1,,if (!value.empty()),2,IF,167,6,CPPASTIfStatement
+45339,CONTROL_STRUCTURE,-1,,if (!thresholdStr.empty()),2,IF,176,11,CPPASTIfStatement
+45386,CONTROL_STRUCTURE,-1,,"if (threadConfigurationValue == LOG4CXX_STR(""NoConfiguration""))",2,IF,186,14,CPPASTIfStatement
+45401,CONTROL_STRUCTURE,-1,,else,7,ELSE,190,3,CPPASTIfStatement
+45403,CONTROL_STRUCTURE,1,,"if (threadConfigurationValue == LOG4CXX_STR(""BlockSignalsOnly""))",7,IF,190,1,CPPASTIfStatement
+45418,CONTROL_STRUCTURE,-1,,else,7,ELSE,194,3,CPPASTIfStatement
+45420,CONTROL_STRUCTURE,1,,"if (threadConfigurationValue == LOG4CXX_STR(""NameThreadOnly""))",7,IF,194,1,CPPASTIfStatement
+45435,CONTROL_STRUCTURE,-1,,else,7,ELSE,198,3,CPPASTIfStatement
+45437,CONTROL_STRUCTURE,1,,"if (threadConfigurationValue == LOG4CXX_STR(""BlockSignalsAndNameThread""))",7,IF,198,1,CPPASTIfStatement
+45494,CONTROL_STRUCTURE,-1,,if (!factoryClassName.empty()),2,IF,223,5,CPPASTIfStatement
+45587,CONTROL_STRUCTURE,-1,,if (value.empty()),2,IF,250,9,CPPASTIfStatement
+45604,CONTROL_STRUCTURE,-1,,if (value.empty()),2,IF,256,10,CPPASTIfStatement
+45616,CONTROL_STRUCTURE,-1,,else,2,ELSE,261,3,CPPASTCompoundStatement
+45676,CONTROL_STRUCTURE,-1,,while (it != itEnd),2,WHILE,280,10,<empty>
+45687,CONTROL_STRUCTURE,-1,,if (key.find(CATEGORY_PREFIX) == 0 || key.find(LOGGER_PREFIX) == 0),3,IF,284,3,CPPASTIfStatement
+45705,CONTROL_STRUCTURE,-1,,if (key.find(CATEGORY_PREFIX) == 0),4,IF,288,2,CPPASTIfStatement
+45727,CONTROL_STRUCTURE,-1,,else,9,ELSE,292,3,CPPASTIfStatement
+45729,CONTROL_STRUCTURE,1,,if (key.find(LOGGER_PREFIX.value()) == 0),9,IF,292,1,CPPASTIfStatement
+45833,CONTROL_STRUCTURE,-1,,if (!value.empty()),2,IF,320,6,CPPASTIfStatement
+45903,CONTROL_STRUCTURE,-1,,"if (!(value.find(LOG4CXX_STR("","")) == 0 || value.empty()))",2,IF,351,4,CPPASTIfStatement
+45919,CONTROL_STRUCTURE,-1,,if (!st.hasMoreTokens()),3,IF,354,1,CPPASTIfStatement
+45947,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(levelStr, LOG4CXX_STR(""INHERITED""), LOG4CXX_STR(""inherited""))
+			|| StringHelper::equalsIgnoreCase(levelStr, LOG4CXX_STR(""NULL""), LOG4CXX_STR(""null"")))",3,IF,367,5,CPPASTIfStatement
+45972,CONTROL_STRUCTURE,-1,,if (loggerName == INTERNAL_ROOT_NAME.value()),4,IF,372,3,CPPASTIfStatement
+45986,CONTROL_STRUCTURE,-1,,else,4,ELSE,377,3,CPPASTCompoundStatement
+46006,CONTROL_STRUCTURE,-1,,else,3,ELSE,384,3,CPPASTCompoundStatement
+46051,CONTROL_STRUCTURE,-1,,while (st.hasMoreTokens()),2,WHILE,398,8,<empty>
+46067,CONTROL_STRUCTURE,-1,,"if (appenderName.empty() || appenderName == LOG4CXX_STR("",""))",3,IF,402,2,CPPASTIfStatement
+46078,CONTROL_STRUCTURE,-1,,continue;,4,CONTINUE,404,1,CPPASTContinueStatement
+46095,CONTROL_STRUCTURE,-1,,if (appender != 0),3,IF,411,5,CPPASTIfStatement
+46122,CONTROL_STRUCTURE,-1,,if (appender != 0),2,IF,425,3,CPPASTIfStatement
+46190,CONTROL_STRUCTURE,-1,,"if (!appender &&
+		StringHelper::endsWith(OptionConverter::findAndSubst(prefix, props), LOG4CXX_STR(""DailyRollingFileAppender"")))",2,IF,445,12,CPPASTIfStatement
+46225,CONTROL_STRUCTURE,-1,,if (!datePattern.empty()),3,IF,450,4,CPPASTIfStatement
+46241,CONTROL_STRUCTURE,-1,,if (!appender),2,IF,454,13,CPPASTIfStatement
+46265,CONTROL_STRUCTURE,-1,,if (appender->instanceof(OptionHandler::getStaticClass())),2,IF,463,15,CPPASTIfStatement
+46276,CONTROL_STRUCTURE,-1,,if (appender->requiresLayout()),3,IF,467,2,CPPASTIfStatement
+46311,CONTROL_STRUCTURE,-1,,if (layout != 0),4,IF,475,4,CPPASTIfStatement
+46370,CONTROL_STRUCTURE,-1,,if (rolling),3,IF,488,5,CPPASTIfStatement
+46380,CONTROL_STRUCTURE,-1,,"if (!OptionConverter::findAndSubst(rollingPolicyKey, props).empty())",4,IF,491,3,CPPASTIfStatement
+46421,CONTROL_STRUCTURE,-1,,if (rollingPolicy),5,IF,498,4,CPPASTIfStatement
+46460,CONTROL_STRUCTURE,-1,,"if (!OptionConverter::findAndSubst(triggeringPolicyKey, props).empty())",4,IF,509,6,CPPASTIfStatement
+46501,CONTROL_STRUCTURE,-1,,if (triggeringPolicy),5,IF,516,4,CPPASTIfStatement
+46621,CONTROL_STRUCTURE,-1,,"do
+	{
+		resource = resourceBundle->properties.getProperty(key);
+
+		if (!resource.empty())
+		{
+			return resource;
+		}
+
+		resourceBundle = dynamic_cast<PropertyResourceBundle*>(resourceBundle->parent.get());
+	}
+	while (resourceBundle != 0);",2,DO,41,4,CPPASTDoStatement
+46632,CONTROL_STRUCTURE,-1,,if (!resource.empty()),3,IF,45,2,CPPASTIfStatement
+46730,CONTROL_STRUCTURE,-1,,for (it = names.begin();it != names.end();it++),2,FOR,56,5,CPPASTForStatement
+46752,CONTROL_STRUCTURE,-1,,if (key.find(prefix) == 0),3,IF,61,3,CPPASTIfStatement
+46761,CONTROL_STRUCTURE,-1,,"if (key.find(0x2E /* '.' */, len + 1) != LogString::npos)",4,IF,64,1,CPPASTIfStatement
+46775,CONTROL_STRUCTURE,-1,,continue;,5,CONTINUE,66,1,CPPASTContinueStatement
+46792,CONTROL_STRUCTURE,-1,,"if (key == LOG4CXX_STR(""layout"")
+				&& obj != 0
+				&& obj->instanceof(Appender::getStaticClass()))",4,IF,72,5,CPPASTIfStatement
+46811,CONTROL_STRUCTURE,-1,,continue;,5,CONTINUE,76,1,CPPASTContinueStatement
+46825,CONTROL_STRUCTURE,-1,,if (value.empty()),2,IF,90,1,CPPASTIfStatement
+46832,CONTROL_STRUCTURE,-1,,if (obj != 0 && obj->instanceof(OptionHandler::getStaticClass())),2,IF,95,2,CPPASTIfStatement
+46883,CONTROL_STRUCTURE,-1,,if (obj != 0 && obj->instanceof(OptionHandler::getStaticClass())),2,IF,106,1,CPPASTIfStatement
+47071,CONTROL_STRUCTURE,-1,,if (!locale.getVariant().empty()),2,IF,38,5,CPPASTIfStatement
+47110,CONTROL_STRUCTURE,-1,,if (!locale.getCountry().empty()),2,IF,46,6,CPPASTIfStatement
+47141,CONTROL_STRUCTURE,-1,,if (!locale.getLanguage().empty()),2,IF,53,7,CPPASTIfStatement
+47169,CONTROL_STRUCTURE,-1,,for (std::vector<LogString>::iterator it = bundlesNames.begin();it != bundlesNames.end();it++),2,FOR,61,9,CPPASTForStatement
+47192,CONTROL_STRUCTURE,-1,,try,3,TRY,70,3,CPPASTTryBlockStatement
+47223,CONTROL_STRUCTURE,-1,,if (current == 0),3,IF,82,4,CPPASTIfStatement
+47239,CONTROL_STRUCTURE,-1,,if (bundleStream == 0),4,IF,88,3,CPPASTIfStatement
+47244,CONTROL_STRUCTURE,-1,,continue;,5,CONTINUE,90,1,CPPASTContinueStatement
+47245,CONTROL_STRUCTURE,-1,,try,4,TRY,93,4,CPPASTTryBlockStatement
+47258,CONTROL_STRUCTURE,-1,,if (resourceBundle == 0),3,IF,104,5,CPPASTIfStatement
+47269,CONTROL_STRUCTURE,-1,,else,3,ELSE,110,3,CPPASTCompoundStatement
+47279,CONTROL_STRUCTURE,-1,,if (resourceBundle == 0),2,IF,117,10,CPPASTIfStatement
+47346,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""MAXFILESIZE""), LOG4CXX_STR(""maxfilesize""))
+		|| StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""MAXIMUMFILESIZE""), LOG4CXX_STR(""maximumfilesize"")))",2,IF,79,1,CPPASTIfStatement
+47369,CONTROL_STRUCTURE,-1,,else,7,ELSE,86,3,CPPASTIfStatement
+47371,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""MAXBACKUPINDEX""), LOG4CXX_STR(""maxbackupindex""))
+		|| StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""MAXIMUMBACKUPINDEX""), LOG4CXX_STR(""maximumbackupindex"")))",7,IF,86,1,CPPASTIfStatement
+47398,CONTROL_STRUCTURE,-1,,else,7,ELSE,93,3,CPPASTIfStatement
+47400,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""FILEDATEPATTERN""), LOG4CXX_STR(""filedatepattern"")))",7,IF,93,1,CPPASTIfStatement
+47413,CONTROL_STRUCTURE,-1,,else,2,ELSE,99,3,CPPASTCompoundStatement
+47429,CONTROL_STRUCTURE,-1,,if (auto fwrp = LOG4CXX_NS::cast<FixedWindowRollingPolicy>(_priv->rollingPolicy)),2,IF,107,3,CPPASTIfStatement
+47483,CONTROL_STRUCTURE,-1,,if (!fwrp),2,IF,115,3,CPPASTIfStatement
+47530,CONTROL_STRUCTURE,-1,,if (auto sbtp = LOG4CXX_NS::cast<SizeBasedTriggeringPolicy>(_priv->triggeringPolicy)),2,IF,127,3,CPPASTIfStatement
+47584,CONTROL_STRUCTURE,-1,,if (!sbtp),2,IF,135,3,CPPASTIfStatement
+47643,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < datePattern.length();i++),2,FOR,154,7,CPPASTForStatement
+47658,CONTROL_STRUCTURE,-1,,if (datePattern[i] == 0x27),3,IF,156,1,CPPASTIfStatement
+47669,CONTROL_STRUCTURE,-1,,if (inLiteral && inPattern),4,IF,160,2,CPPASTIfStatement
+47685,CONTROL_STRUCTURE,-1,,else,3,ELSE,167,3,CPPASTCompoundStatement
+47687,CONTROL_STRUCTURE,-1,,if (!inLiteral && !inPattern),4,IF,168,1,CPPASTIfStatement
+47718,CONTROL_STRUCTURE,-1,,if (inPattern),2,IF,179,8,CPPASTIfStatement
+47755,CONTROL_STRUCTURE,-1,,if (!tbrp),2,IF,189,3,CPPASTIfStatement
+47788,CONTROL_STRUCTURE,-1,,if (!_priv->rollingPolicy),2,IF,202,1,CPPASTIfStatement
+47848,CONTROL_STRUCTURE,-1,,if (!_priv->triggeringPolicy),2,IF,214,2,CPPASTIfStatement
+47880,CONTROL_STRUCTURE,-1,,if (trig != NULL),3,IF,218,3,CPPASTIfStatement
+47897,CONTROL_STRUCTURE,-1,,if (!_priv->triggeringPolicy),2,IF,224,3,CPPASTIfStatement
+47993,CONTROL_STRUCTURE,-1,,try,3,TRY,236,4,CPPASTTryBlockStatement
+48014,CONTROL_STRUCTURE,-1,,if (rollover1 != NULL),4,IF,241,3,CPPASTIfStatement
+48025,CONTROL_STRUCTURE,-1,,if (syncAction != NULL),5,IF,245,3,CPPASTIfStatement
+48071,CONTROL_STRUCTURE,-1,,if (asyncAction != NULL),5,IF,258,8,CPPASTIfStatement
+48087,CONTROL_STRUCTURE,-1,,if (getAppend()),4,IF,267,6,CPPASTIfStatement
+48106,CONTROL_STRUCTURE,-1,,else,4,ELSE,272,3,CPPASTCompoundStatement
+48167,CONTROL_STRUCTURE,-1,,if (_priv->rollingPolicy != NULL),2,IF,313,1,CPPASTIfStatement
+48182,CONTROL_STRUCTURE,-1,,try,5,TRY,317,1,CPPASTTryBlockStatement
+48208,CONTROL_STRUCTURE,-1,,if (rollover1 != NULL),6,IF,321,3,CPPASTIfStatement
+48213,CONTROL_STRUCTURE,-1,,if (rollover1->getActiveFileName() == getFile()),7,IF,323,1,CPPASTIfStatement
+48226,CONTROL_STRUCTURE,-1,,if (rollover1->getSynchronous() != NULL),8,IF,329,4,CPPASTIfStatement
+48237,CONTROL_STRUCTURE,-1,,try,9,TRY,333,2,CPPASTTryBlockStatement
+48287,CONTROL_STRUCTURE,-1,,if (success),8,IF,347,5,CPPASTIfStatement
+48290,CONTROL_STRUCTURE,-1,,if (rollover1->getAppend()),9,IF,349,1,CPPASTIfStatement
+48319,CONTROL_STRUCTURE,-1,,else,9,ELSE,354,3,CPPASTCompoundStatement
+48339,CONTROL_STRUCTURE,-1,,if (asyncAction != NULL),9,IF,363,4,CPPASTIfStatement
+48379,CONTROL_STRUCTURE,-1,,else,8,ELSE,373,3,CPPASTCompoundStatement
+48408,CONTROL_STRUCTURE,-1,,else,7,ELSE,379,3,CPPASTCompoundStatement
+48443,CONTROL_STRUCTURE,-1,,if (rollover1->getSynchronous() != NULL),8,IF,391,11,CPPASTIfStatement
+48454,CONTROL_STRUCTURE,-1,,try,9,TRY,395,2,CPPASTTryBlockStatement
+48504,CONTROL_STRUCTURE,-1,,if (success),8,IF,409,12,CPPASTIfStatement
+48507,CONTROL_STRUCTURE,-1,,if (rollover1->getAppend()),9,IF,411,1,CPPASTIfStatement
+48536,CONTROL_STRUCTURE,-1,,else,9,ELSE,416,3,CPPASTCompoundStatement
+48556,CONTROL_STRUCTURE,-1,,if (asyncAction != NULL),9,IF,425,4,CPPASTIfStatement
+48616,CONTROL_STRUCTURE,-1,,"if (static_cast<RollingFileAppenderPriv *>(m_priv.get())->triggeringPolicy->isTriggeringEvent(this, event, getFile(), getFileLength()))",2,IF,457,1,CPPASTIfStatement
+48635,CONTROL_STRUCTURE,-1,,try,3,TRY,466,1,CPPASTTryBlockStatement
+48811,CONTROL_STRUCTURE,-1,,if (rfa != 0),4,IF,581,2,CPPASTIfStatement
+48935,CONTROL_STRUCTURE,-1,,if (m_priv->fileNamePatternStr.length() > 0),2,IF,52,1,CPPASTIfStatement
+48946,CONTROL_STRUCTURE,-1,,else,2,ELSE,57,3,CPPASTCompoundStatement
+48974,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""FILENAMEPATTERN""),
+			LOG4CXX_STR(""filenamepattern"")))",2,IF,69,1,CPPASTIfStatement
+48990,CONTROL_STRUCTURE,-1,,else,8,ELSE,74,3,CPPASTIfStatement
+48992,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""CREATEINTERMEDIATEDIRECTORIES""),
+			LOG4CXX_STR(""createintermediatedirectories"")))",8,IF,74,1,CPPASTIfStatement
+49101,CONTROL_STRUCTURE,-1,,"for (std::vector<PatternConverterPtr>::const_iterator
+		converterIter = m_priv->patternConverters.begin();converterIter != m_priv->patternConverters.end();converterIter++, formatterIter++)",2,FOR,120,3,CPPASTForStatement
+49154,CONTROL_STRUCTURE,-1,,"for (std::vector<PatternConverterPtr>::const_iterator
+		converterIter = m_priv->patternConverters.begin();converterIter != m_priv->patternConverters.end();converterIter++)",2,FOR,134,1,CPPASTForStatement
+49191,CONTROL_STRUCTURE,-1,,if (intPattern != NULL),3,IF,143,5,CPPASTIfStatement
+49206,CONTROL_STRUCTURE,-1,,"for (std::vector<PatternConverterPtr>::const_iterator
+		converterIter = m_priv->patternConverters.begin();converterIter != m_priv->patternConverters.end();converterIter++)",2,FOR,155,1,CPPASTForStatement
+49243,CONTROL_STRUCTURE,-1,,if (datePattern != NULL),3,IF,164,5,CPPASTIfStatement
+49390,CONTROL_STRUCTURE,-1,,if (level1 == 0),2,IF,40,1,CPPASTIfStatement
+49401,CONTROL_STRUCTURE,-1,,else,2,ELSE,45,3,CPPASTCompoundStatement
+49655,CONTROL_STRUCTURE,-1,,for (;valueIter != values.end();valueIter++),4,FOR,173,13,CPPASTForStatement
+49682,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),5,IF,178,4,CPPASTIfStatement
+49699,CONTROL_STRUCTURE,-1,,else,5,ELSE,183,3,CPPASTCompoundStatement
+49811,CONTROL_STRUCTURE,-1,,if (initialLength + width > finalLength),4,IF,253,6,CPPASTIfStatement
+50260,CONTROL_STRUCTURE,-1,,if (tm.tm_gmtoff == 0),4,IF,595,1,CPPASTIfStatement
+50275,CONTROL_STRUCTURE,-1,,else,4,ELSE,600,3,CPPASTCompoundStatement
+50296,CONTROL_STRUCTURE,-1,,if (off < 0),5,IF,605,6,CPPASTIfStatement
+50326,CONTROL_STRUCTURE,-1,,for (size_t i = hours.length();i-- > 0;),5,FOR,618,11,CPPASTForStatement
+50366,CONTROL_STRUCTURE,-1,,for (size_t j = min.length();j-- > 0;),5,FOR,630,16,CPPASTForStatement
+50400,CONTROL_STRUCTURE,-1,,switch(spec),2,SWITCH,653,3,CPPASTSwitchStatement
+50411,CONTROL_STRUCTURE,-1,,break;,4,BREAK,657,4,CPPASTBreakStatement
+50419,CONTROL_STRUCTURE,-1,,break;,4,BREAK,661,8,CPPASTBreakStatement
+50422,CONTROL_STRUCTURE,-1,,if (repeat <= 2),4,IF,664,11,CPPASTIfStatement
+50432,CONTROL_STRUCTURE,-1,,else,9,ELSE,668,3,CPPASTIfStatement
+50434,CONTROL_STRUCTURE,1,,if (repeat <= 3),9,IF,668,1,CPPASTIfStatement
+50445,CONTROL_STRUCTURE,-1,,else,4,ELSE,673,3,CPPASTCompoundStatement
+50453,CONTROL_STRUCTURE,-1,,break;,4,BREAK,677,12,CPPASTBreakStatement
+50461,CONTROL_STRUCTURE,-1,,break;,4,BREAK,681,16,CPPASTBreakStatement
+50469,CONTROL_STRUCTURE,-1,,break;,4,BREAK,685,20,CPPASTBreakStatement
+50477,CONTROL_STRUCTURE,-1,,break;,4,BREAK,689,24,CPPASTBreakStatement
+50485,CONTROL_STRUCTURE,-1,,break;,4,BREAK,693,28,CPPASTBreakStatement
+50493,CONTROL_STRUCTURE,-1,,break;,4,BREAK,697,32,CPPASTBreakStatement
+50496,CONTROL_STRUCTURE,-1,,if (repeat <= 3),4,IF,700,35,CPPASTIfStatement
+50507,CONTROL_STRUCTURE,-1,,else,4,ELSE,705,3,CPPASTCompoundStatement
+50515,CONTROL_STRUCTURE,-1,,break;,4,BREAK,709,36,CPPASTBreakStatement
+50524,CONTROL_STRUCTURE,-1,,break;,4,BREAK,713,40,CPPASTBreakStatement
+50533,CONTROL_STRUCTURE,-1,,break;,4,BREAK,717,44,CPPASTBreakStatement
+50542,CONTROL_STRUCTURE,-1,,break;,4,BREAK,721,48,CPPASTBreakStatement
+50551,CONTROL_STRUCTURE,-1,,break;,4,BREAK,725,52,CPPASTBreakStatement
+50560,CONTROL_STRUCTURE,-1,,break;,4,BREAK,729,56,CPPASTBreakStatement
+50568,CONTROL_STRUCTURE,-1,,break;,4,BREAK,733,60,CPPASTBreakStatement
+50576,CONTROL_STRUCTURE,-1,,break;,4,BREAK,737,64,CPPASTBreakStatement
+50579,CONTROL_STRUCTURE,-1,,if (repeat == 6),4,IF,740,67,CPPASTIfStatement
+50589,CONTROL_STRUCTURE,-1,,else,4,ELSE,745,3,CPPASTCompoundStatement
+50596,CONTROL_STRUCTURE,-1,,break;,4,BREAK,752,68,CPPASTBreakStatement
+50604,CONTROL_STRUCTURE,-1,,break;,4,BREAK,756,72,CPPASTBreakStatement
+50612,CONTROL_STRUCTURE,-1,,break;,4,BREAK,760,76,CPPASTBreakStatement
+50636,CONTROL_STRUCTURE,-1,,if (!fmt.empty()),2,IF,774,1,CPPASTIfStatement
+50659,CONTROL_STRUCTURE,-1,,for (iter++;iter != fmt.end();iter++),3,FOR,780,7,CPPASTForStatement
+50672,CONTROL_STRUCTURE,-1,,if (* iter == prevChar),4,IF,782,1,CPPASTIfStatement
+50680,CONTROL_STRUCTURE,-1,,else,4,ELSE,787,3,CPPASTCompoundStatement
+50717,CONTROL_STRUCTURE,-1,,for (PatternTokenList::iterator iter = m_priv->pattern.begin();iter != m_priv->pattern.end();iter++),2,FOR,824,2,CPPASTForStatement
+50759,CONTROL_STRUCTURE,-1,,for (PatternTokenList::iterator iter = m_priv->pattern.begin();iter != m_priv->pattern.end();iter++),2,FOR,834,2,CPPASTForStatement
+50793,CONTROL_STRUCTURE,-1,,for (PatternTokenList::iterator iter = m_priv->pattern.begin();iter != m_priv->pattern.end();iter++),2,FOR,843,1,CPPASTForStatement
+50838,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),2,IF,855,4,CPPASTIfStatement
+50843,CONTROL_STRUCTURE,-1,,for (PatternTokenList::const_iterator iter = m_priv->pattern.begin();iter != m_priv->pattern.end();iter++),3,FOR,857,1,CPPASTForStatement
+50989,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""MAXFILESIZE""),
+			LOG4CXX_STR(""maxfilesize"")))",2,IF,57,1,CPPASTIfStatement
+51350,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""BUFFERSIZE""), LOG4CXX_STR(""buffersize"")))",2,IF,528,1,CPPASTIfStatement
+51368,CONTROL_STRUCTURE,-1,,else,7,ELSE,532,3,CPPASTIfStatement
+51370,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""EVALUATORCLASS""), LOG4CXX_STR(""evaluatorclass"")))",7,IF,532,1,CPPASTIfStatement
+51383,CONTROL_STRUCTURE,-1,,else,7,ELSE,536,3,CPPASTIfStatement
+51385,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""FROM""), LOG4CXX_STR(""from"")))",7,IF,536,1,CPPASTIfStatement
+51398,CONTROL_STRUCTURE,-1,,else,7,ELSE,540,3,CPPASTIfStatement
+51400,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""SMTPHOST""), LOG4CXX_STR(""smtphost"")))",7,IF,540,1,CPPASTIfStatement
+51413,CONTROL_STRUCTURE,-1,,else,7,ELSE,544,3,CPPASTIfStatement
+51415,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""SMTPUSERNAME""), LOG4CXX_STR(""smtpusername"")))",7,IF,544,1,CPPASTIfStatement
+51428,CONTROL_STRUCTURE,-1,,else,7,ELSE,548,3,CPPASTIfStatement
+51430,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""SMTPPASSWORD""), LOG4CXX_STR(""smtppassword"")))",7,IF,548,1,CPPASTIfStatement
+51443,CONTROL_STRUCTURE,-1,,else,7,ELSE,552,3,CPPASTIfStatement
+51445,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""SUBJECT""), LOG4CXX_STR(""subject"")))",7,IF,552,1,CPPASTIfStatement
+51458,CONTROL_STRUCTURE,-1,,else,7,ELSE,556,3,CPPASTIfStatement
+51460,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""TO""), LOG4CXX_STR(""to"")))",7,IF,556,1,CPPASTIfStatement
+51473,CONTROL_STRUCTURE,-1,,else,7,ELSE,560,3,CPPASTIfStatement
+51475,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""CC""), LOG4CXX_STR(""cc"")))",7,IF,560,1,CPPASTIfStatement
+51488,CONTROL_STRUCTURE,-1,,else,7,ELSE,564,3,CPPASTIfStatement
+51490,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""BCC""), LOG4CXX_STR(""bcc"")))",7,IF,564,1,CPPASTIfStatement
+51503,CONTROL_STRUCTURE,-1,,else,7,ELSE,568,3,CPPASTIfStatement
+51505,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""SMTPPORT""), LOG4CXX_STR(""smtpport"")))",7,IF,568,1,CPPASTIfStatement
+51523,CONTROL_STRUCTURE,-1,,else,2,ELSE,573,3,CPPASTCompoundStatement
+51537,CONTROL_STRUCTURE,-1,,for (LogString::const_iterator iter = value.begin();iter != value.end();iter++),2,FOR,581,1,CPPASTForStatement
+51555,CONTROL_STRUCTURE,-1,,if (0x7F < (unsigned int) *iter),3,IF,585,1,CPPASTIfStatement
+51584,CONTROL_STRUCTURE,-1,,if (_priv->layout == 0),2,IF,602,3,CPPASTIfStatement
+51628,CONTROL_STRUCTURE,-1,,if (_priv->evaluator == 0),2,IF,608,4,CPPASTIfStatement
+51674,CONTROL_STRUCTURE,-1,,if (static_cast<SMTPPriv *>(m_priv.get())->smtpHost.empty()),2,IF,615,5,CPPASTIfStatement
+51721,CONTROL_STRUCTURE,-1,,if (_priv->to.empty() && _priv->cc.empty() && _priv->bcc.empty()),2,IF,622,6,CPPASTIfStatement
+51874,CONTROL_STRUCTURE,-1,,if (activate),2,IF,639,13,CPPASTIfStatement
+51888,CONTROL_STRUCTURE,-1,,if (!checkEntryConditions()),2,IF,651,1,CPPASTIfStatement
+51921,CONTROL_STRUCTURE,-1,,if (static_cast<SMTPPriv *>(m_priv.get())->evaluator->isTriggeringEvent(event)),2,IF,664,7,CPPASTIfStatement
+52365,CONTROL_STRUCTURE,-1,,if (static_cast<SocketAppenderSkeletonPriv *>(m_priv.get())->closed),2,IF,73,2,CPPASTIfStatement
+52434,CONTROL_STRUCTURE,-1,,if (static_cast<SocketAppenderSkeletonPriv *>(m_priv.get())->thread.joinable()),2,IF,86,6,CPPASTIfStatement
+52467,CONTROL_STRUCTURE,-1,,if (_priv->address == 0),2,IF,94,1,CPPASTIfStatement
+52502,CONTROL_STRUCTURE,-1,,else,2,ELSE,100,3,CPPASTCompoundStatement
+52506,CONTROL_STRUCTURE,-1,,try,3,TRY,103,2,CPPASTTryBlockStatement
+52640,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""REMOTEHOST""), LOG4CXX_STR(""remotehost"")))",2,IF,128,1,CPPASTIfStatement
+52653,CONTROL_STRUCTURE,-1,,else,7,ELSE,132,3,CPPASTIfStatement
+52655,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""PORT""), LOG4CXX_STR(""port"")))",7,IF,132,1,CPPASTIfStatement
+52673,CONTROL_STRUCTURE,-1,,else,7,ELSE,136,3,CPPASTIfStatement
+52675,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""LOCATIONINFO""), LOG4CXX_STR(""locationinfo"")))",7,IF,136,1,CPPASTIfStatement
+52693,CONTROL_STRUCTURE,-1,,else,7,ELSE,140,3,CPPASTIfStatement
+52695,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""RECONNECTIONDELAY""), LOG4CXX_STR(""reconnectiondelay"")))",7,IF,140,1,CPPASTIfStatement
+52713,CONTROL_STRUCTURE,-1,,else,2,ELSE,145,3,CPPASTCompoundStatement
+52744,CONTROL_STRUCTURE,-1,,if (!_priv->thread.joinable()),2,IF,154,2,CPPASTIfStatement
+52797,CONTROL_STRUCTURE,-1,,while (!is_closed()),2,WHILE,167,3,<empty>
+52801,CONTROL_STRUCTURE,-1,,try,3,TRY,169,1,CPPASTTryBlockStatement
+52958,CONTROL_STRUCTURE,-1,,if (_priv->reconnectionDelay > 0),3,IF,196,2,CPPASTIfStatement
+53057,CONTROL_STRUCTURE,-1,,"if (static_cast<SocketAppenderSkeletonPriv *>(m_priv.get())->interrupt.wait_for(lock, std::chrono::milliseconds(static_cast<SocketAppenderSkeletonPriv *>(m_priv.get())->reconnectionDelay), std::bind(&SocketAppenderSkeleton::is_closed, this)))",4,IF,207,9,CPPASTIfStatement
+53096,CONTROL_STRUCTURE,1,,break;,5,BREAK,209,1,CPPASTBreakStatement
+53316,CONTROL_STRUCTURE,-1,,if (m_priv->array.size() > 0),2,IF,55,1,CPPASTIfStatement
+53362,CONTROL_STRUCTURE,-1,,if (buf.remaining() > 0),2,IF,65,1,CPPASTIfStatement
+53475,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),2,IF,56,4,CPPASTIfStatement
+53501,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),3,IF,63,6,CPPASTIfStatement
+53559,CONTROL_STRUCTURE,-1,,"for (LogString::const_iterator iter = s1.begin();iter != s1.end();iter++, upper++, lower++)",2,FOR,33,1,CPPASTForStatement
+53582,CONTROL_STRUCTURE,-1,,if (*iter != *upper && *iter != * lower),3,IF,37,1,CPPASTIfStatement
+53630,CONTROL_STRUCTURE,-1,,"for (;iter != s1.end() && u != upper.end() && l != lower.end();iter++, u++, l++)",2,FOR,52,7,CPPASTForStatement
+53660,CONTROL_STRUCTURE,-1,,if (*iter != *u && *iter != *l),3,IF,56,1,CPPASTIfStatement
+53736,CONTROL_STRUCTURE,-1,,if (pos == std::string::npos),2,IF,79,3,CPPASTIfStatement
+53772,CONTROL_STRUCTURE,-1,,if (s.length() < prefix.length()),2,IF,90,1,CPPASTIfStatement
+53804,CONTROL_STRUCTURE,-1,,if (suffix.length() <= s.length()),2,IF,100,1,CPPASTIfStatement
+53883,CONTROL_STRUCTURE,-1,,if (val),2,IF,142,1,CPPASTIfStatement
+53892,CONTROL_STRUCTURE,-1,,else,2,ELSE,147,3,CPPASTCompoundStatement
+53945,CONTROL_STRUCTURE,-1,,while (pattern[i] != 0),2,WHILE,178,4,<empty>
+53952,CONTROL_STRUCTURE,-1,,"if (pattern[i] == 0x7B /* '{' */ && pattern[i + 1] >= 0x30 /* '0' */ &&
+			pattern[i + 1] <= 0x39 /* '9' */ && pattern[i + 2] == 0x7D)",3,IF,180,1,CPPASTIfStatement
+54003,CONTROL_STRUCTURE,-1,,else,3,ELSE,188,3,CPPASTCompoundStatement
+54056,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""STRINGTOMATCH""), LOG4CXX_STR(""stringtomatch"")))",2,IF,55,1,CPPASTIfStatement
+54079,CONTROL_STRUCTURE,-1,,else,7,ELSE,60,3,CPPASTIfStatement
+54081,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""ACCEPTONMATCH""), LOG4CXX_STR(""acceptonmatch"")))",7,IF,60,1,CPPASTIfStatement
+54130,CONTROL_STRUCTURE,-1,,if (msg.empty() || priv->stringToMatch.empty()),2,IF,72,3,CPPASTIfStatement
+54154,CONTROL_STRUCTURE,-1,,if (msg.find(priv->stringToMatch) == LogString::npos),2,IF,78,4,CPPASTIfStatement
+54178,CONTROL_STRUCTURE,-1,,else,2,ELSE,83,3,CPPASTCompoundStatement
+54180,CONTROL_STRUCTURE,-1,,if (static_cast<StringMatchFilterPrivate *>(m_priv.get())->acceptOnMatch),3,IF,85,1,CPPASTIfStatement
+54196,CONTROL_STRUCTURE,-1,,else,3,ELSE,90,3,CPPASTCompoundStatement
+54334,CONTROL_STRUCTURE,-1,,if (m_priv->pos != LogString::npos),2,IF,54,1,CPPASTIfStatement
+54358,CONTROL_STRUCTURE,-1,,if (nextPos != LogString::npos),3,IF,58,3,CPPASTIfStatement
+54379,CONTROL_STRUCTURE,-1,,if (m_priv->pos == LogString::npos),4,IF,62,2,CPPASTIfStatement
+54490,CONTROL_STRUCTURE,-1,,if (static_cast<SyslogAppenderPriv *>(m_priv.get())->sw),2,IF,74,2,CPPASTIfStatement
+54540,CONTROL_STRUCTURE,-1,,if (static_cast<SyslogAppenderPriv *>(m_priv.get())->facilityStr.empty()),2,IF,84,2,CPPASTIfStatement
+54612,CONTROL_STRUCTURE,-1,,else,2,ELSE,95,3,CPPASTCompoundStatement
+54632,CONTROL_STRUCTURE,-1,,switch(syslogFacility),2,SWITCH,107,1,CPPASTSwitchStatement
+54733,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""KERN""), LOG4CXX_STR(""kern"")))",2,IF,181,1,CPPASTIfStatement
+54746,CONTROL_STRUCTURE,-1,,else,7,ELSE,185,3,CPPASTIfStatement
+54748,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""USER""), LOG4CXX_STR(""user"")))",7,IF,185,1,CPPASTIfStatement
+54761,CONTROL_STRUCTURE,-1,,else,7,ELSE,189,3,CPPASTIfStatement
+54763,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""MAIL""), LOG4CXX_STR(""mail"")))",7,IF,189,1,CPPASTIfStatement
+54776,CONTROL_STRUCTURE,-1,,else,7,ELSE,193,3,CPPASTIfStatement
+54778,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""DAEMON""), LOG4CXX_STR(""daemon"")))",7,IF,193,1,CPPASTIfStatement
+54791,CONTROL_STRUCTURE,-1,,else,7,ELSE,197,3,CPPASTIfStatement
+54793,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""AUTH""), LOG4CXX_STR(""auth"")))",7,IF,197,1,CPPASTIfStatement
+54806,CONTROL_STRUCTURE,-1,,else,7,ELSE,201,3,CPPASTIfStatement
+54808,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""SYSLOG""), LOG4CXX_STR(""syslog"")))",7,IF,201,1,CPPASTIfStatement
+54821,CONTROL_STRUCTURE,-1,,else,7,ELSE,205,3,CPPASTIfStatement
+54823,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""LPR""), LOG4CXX_STR(""lpr"")))",7,IF,205,1,CPPASTIfStatement
+54836,CONTROL_STRUCTURE,-1,,else,7,ELSE,209,3,CPPASTIfStatement
+54838,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""NEWS""), LOG4CXX_STR(""news"")))",7,IF,209,1,CPPASTIfStatement
+54851,CONTROL_STRUCTURE,-1,,else,7,ELSE,213,3,CPPASTIfStatement
+54853,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""UUCP""), LOG4CXX_STR(""uucp"")))",7,IF,213,1,CPPASTIfStatement
+54866,CONTROL_STRUCTURE,-1,,else,7,ELSE,217,3,CPPASTIfStatement
+54868,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""CRON""), LOG4CXX_STR(""cron"")))",7,IF,217,1,CPPASTIfStatement
+54881,CONTROL_STRUCTURE,-1,,else,7,ELSE,236,3,CPPASTIfStatement
+54883,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""LOCAL0""), LOG4CXX_STR(""local0"")))",7,IF,236,1,CPPASTIfStatement
+54896,CONTROL_STRUCTURE,-1,,else,7,ELSE,240,3,CPPASTIfStatement
+54898,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""LOCAL1""), LOG4CXX_STR(""local1"")))",7,IF,240,1,CPPASTIfStatement
+54911,CONTROL_STRUCTURE,-1,,else,7,ELSE,244,3,CPPASTIfStatement
+54913,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""LOCAL2""), LOG4CXX_STR(""local2"")))",7,IF,244,1,CPPASTIfStatement
+54926,CONTROL_STRUCTURE,-1,,else,7,ELSE,248,3,CPPASTIfStatement
+54928,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""LOCAL3""), LOG4CXX_STR(""local3"")))",7,IF,248,1,CPPASTIfStatement
+54941,CONTROL_STRUCTURE,-1,,else,7,ELSE,252,3,CPPASTIfStatement
+54943,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""LOCAL4""), LOG4CXX_STR(""local4"")))",7,IF,252,1,CPPASTIfStatement
+54956,CONTROL_STRUCTURE,-1,,else,7,ELSE,256,3,CPPASTIfStatement
+54958,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""LOCAL5""), LOG4CXX_STR(""local5"")))",7,IF,256,1,CPPASTIfStatement
+54971,CONTROL_STRUCTURE,-1,,else,7,ELSE,260,3,CPPASTIfStatement
+54973,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""LOCAL6""), LOG4CXX_STR(""local6"")))",7,IF,260,1,CPPASTIfStatement
+54986,CONTROL_STRUCTURE,-1,,else,7,ELSE,264,3,CPPASTIfStatement
+54988,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(s, LOG4CXX_STR(""LOCAL7""), LOG4CXX_STR(""local7"")))",7,IF,264,1,CPPASTIfStatement
+55001,CONTROL_STRUCTURE,-1,,else,2,ELSE,269,3,CPPASTCompoundStatement
+55014,CONTROL_STRUCTURE,-1,,if (!isAsSevereAsThreshold(event->getLevel())),2,IF,276,1,CPPASTIfStatement
+55054,CONTROL_STRUCTURE,-1,,if (msg.size() > _priv->maxMessageLength),2,IF,294,7,CPPASTIfStatement
+55078,CONTROL_STRUCTURE,-1,,while (start != msg.end()),3,WHILE,298,3,<empty>
+55103,CONTROL_STRUCTURE,-1,,if (end > msg.end()),4,IF,302,3,CPPASTIfStatement
+55135,CONTROL_STRUCTURE,-1,,"for (std::vector<LogString>::iterator it = packets.begin();it != packets.end();it++, current++)",3,FOR,314,6,CPPASTForStatement
+55177,CONTROL_STRUCTURE,-1,,else,2,ELSE,325,3,CPPASTCompoundStatement
+55184,CONTROL_STRUCTURE,-1,,if (_priv->sw == 0),2,IF,350,8,CPPASTIfStatement
+55226,CONTROL_STRUCTURE,-1,,for (std::vector<LogString>::iterator it = packets.begin();it != packets.end();it++),2,FOR,357,9,CPPASTForStatement
+55280,CONTROL_STRUCTURE,-1,,if (static_cast<SyslogAppenderPriv *>(m_priv.get())->facilityPrinting),3,IF,365,5,CPPASTIfStatement
+55337,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""SYSLOGHOST""), LOG4CXX_STR(""sysloghost"")))",2,IF,381,1,CPPASTIfStatement
+55350,CONTROL_STRUCTURE,-1,,else,7,ELSE,385,3,CPPASTIfStatement
+55352,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""FACILITY""), LOG4CXX_STR(""facility"")))",7,IF,385,1,CPPASTIfStatement
+55365,CONTROL_STRUCTURE,-1,,else,7,ELSE,389,3,CPPASTIfStatement
+55367,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""MAXMESSAGELENGTH""), LOG4CXX_STR(""maxmessagelength"")))",7,IF,389,1,CPPASTIfStatement
+55385,CONTROL_STRUCTURE,-1,,else,2,ELSE,394,3,CPPASTCompoundStatement
+55398,CONTROL_STRUCTURE,-1,,if (_priv->sw != 0),2,IF,401,1,CPPASTIfStatement
+55446,CONTROL_STRUCTURE,-1,,if (colonPos != LogString::npos),2,IF,412,9,CPPASTIfStatement
+55472,CONTROL_STRUCTURE,-1,,if (slHostPort >= 0),3,IF,427,1,CPPASTIfStatement
+55498,CONTROL_STRUCTURE,-1,,else,3,ELSE,432,3,CPPASTCompoundStatement
+55547,CONTROL_STRUCTURE,-1,,if (facilityName.empty()),2,IF,444,1,CPPASTIfStatement
+55567,CONTROL_STRUCTURE,-1,,if (_priv->syslogFacility == LOG_UNDEF),2,IF,451,3,CPPASTIfStatement
+55742,CONTROL_STRUCTURE,-1,,try,2,TRY,42,1,CPPASTTryBlockStatement
+55768,CONTROL_STRUCTURE,-1,,try,2,TRY,52,2,CPPASTTryBlockStatement
+55802,CONTROL_STRUCTURE,-1,,if (m_priv->ds != 0 && m_priv->address != 0),2,IF,67,1,CPPASTIfStatement
+55878,CONTROL_STRUCTURE,-1,,if (lkey.empty()),2,IF,34,1,CPPASTIfStatement
+55889,CONTROL_STRUCTURE,-1,,"if (lkey == LOG4CXX_STR(""java.io.tmpdir""))",2,IF,41,3,CPPASTIfStatement
+55910,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),3,IF,47,6,CPPASTIfStatement
+55923,CONTROL_STRUCTURE,-1,,"if (lkey == LOG4CXX_STR(""user.dir""))",2,IF,55,4,CPPASTIfStatement
+55945,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),3,IF,62,6,CPPASTIfStatement
+55980,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),2,IF,115,11,CPPASTIfStatement
+56194,CONTROL_STRUCTURE,-1,,if (_priv->serverSocket == NULL),2,IF,73,1,CPPASTIfStatement
+56278,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""PORT""), LOG4CXX_STR(""port"")))",2,IF,85,1,CPPASTIfStatement
+56296,CONTROL_STRUCTURE,-1,,else,7,ELSE,89,3,CPPASTIfStatement
+56298,CONTROL_STRUCTURE,1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""ENCODING""), LOG4CXX_STR(""encoding"")))",7,IF,89,1,CPPASTIfStatement
+56311,CONTROL_STRUCTURE,-1,,else,2,ELSE,94,3,CPPASTCompoundStatement
+56428,CONTROL_STRUCTURE,-1,,if (static_cast<TelnetAppenderPriv *>(m_priv.get())->closed),2,IF,117,2,CPPASTIfStatement
+56454,CONTROL_STRUCTURE,-1,,for (ConnectionList::iterator iter = _priv->connections.begin();iter != _priv->connections.end();iter++),2,FOR,126,5,CPPASTForStatement
+56490,CONTROL_STRUCTURE,-1,,if (*iter != 0),3,IF,130,1,CPPASTIfStatement
+56505,CONTROL_STRUCTURE,-1,,if (_priv->serverSocket != NULL),2,IF,137,6,CPPASTIfStatement
+56519,CONTROL_STRUCTURE,-1,,try,3,TRY,139,1,CPPASTTryBlockStatement
+56535,CONTROL_STRUCTURE,-1,,if (static_cast<TelnetAppenderPriv *>(m_priv.get())->sh.joinable()),2,IF,148,7,CPPASTIfStatement
+56580,CONTROL_STRUCTURE,-1,,for (ConnectionList::iterator iter = _priv->connections.begin();iter != _priv->connections.end();iter++),2,FOR,159,1,CPPASTForStatement
+56616,CONTROL_STRUCTURE,-1,,if (*iter != 0),3,IF,163,1,CPPASTIfStatement
+56622,CONTROL_STRUCTURE,-1,,try,4,TRY,165,1,CPPASTTryBlockStatement
+56690,CONTROL_STRUCTURE,-1,,while (msgIter != msg.end()),2,WHILE,188,9,<empty>
+56746,CONTROL_STRUCTURE,-1,,if (count > 0),2,IF,201,3,CPPASTIfStatement
+56827,CONTROL_STRUCTURE,-1,,while (msgIter != msg.end()),3,WHILE,214,13,<empty>
+56864,CONTROL_STRUCTURE,-1,,if (CharsetEncoder::isError(stat)),4,IF,221,6,CPPASTIfStatement
+56915,CONTROL_STRUCTURE,-1,,while (true),2,WHILE,239,1,<empty>
+56918,CONTROL_STRUCTURE,-1,,try,3,TRY,241,1,CPPASTTryBlockStatement
+56949,CONTROL_STRUCTURE,-1,,if (done),4,IF,246,5,CPPASTIfStatement
+56962,CONTROL_STRUCTURE,-1,,break;,5,BREAK,252,4,CPPASTBreakStatement
+56976,CONTROL_STRUCTURE,-1,,if (count >= _priv->connections.size()),4,IF,257,8,CPPASTIfStatement
+57003,CONTROL_STRUCTURE,-1,,else,4,ELSE,264,3,CPPASTCompoundStatement
+57024,CONTROL_STRUCTURE,-1,,for (ConnectionList::iterator iter = _priv->connections.begin();iter != _priv->connections.end();iter++),5,FOR,270,2,CPPASTForStatement
+57060,CONTROL_STRUCTURE,-1,,if (*iter == NULL),6,IF,274,1,CPPASTIfStatement
+57081,CONTROL_STRUCTURE,-1,,break;,7,BREAK,279,3,CPPASTBreakStatement
+57107,CONTROL_STRUCTURE,-1,,if (static_cast<TelnetAppenderPriv *>(m_priv.get())->closed),4,IF,292,1,CPPASTIfStatement
+57119,CONTROL_STRUCTURE,-1,,break;,5,BREAK,294,1,CPPASTBreakStatement
+57121,CONTROL_STRUCTURE,-1,,if (!_priv->closed),4,IF,299,1,CPPASTIfStatement
+57141,CONTROL_STRUCTURE,-1,,else,4,ELSE,304,3,CPPASTCompoundStatement
+57143,CONTROL_STRUCTURE,-1,,break;,5,BREAK,305,1,CPPASTBreakStatement
+57341,CONTROL_STRUCTURE,-1,,if (data == 0),2,IF,102,3,CPPASTIfStatement
+57349,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,107,4,CPPASTIfStatement
+57371,CONTROL_STRUCTURE,-1,,if (data == 0),2,IF,120,3,CPPASTIfStatement
+57379,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,125,4,CPPASTIfStatement
+57391,CONTROL_STRUCTURE,-1,,if (stack.empty()),3,IF,129,3,CPPASTIfStatement
+57407,CONTROL_STRUCTURE,-1,,else,3,ELSE,134,3,CPPASTCompoundStatement
+57449,CONTROL_STRUCTURE,-1,,if (data == 0),2,IF,147,3,CPPASTIfStatement
+57457,CONTROL_STRUCTURE,-1,,if (data != 0),2,IF,152,4,CPPASTIfStatement
+57610,CONTROL_STRUCTURE,-1,,if (type == ThreadConfigurationType::NoConfiguration),2,IF,79,3,CPPASTIfStatement
+57624,CONTROL_STRUCTURE,-1,,else,7,ELSE,83,3,CPPASTIfStatement
+57626,CONTROL_STRUCTURE,1,,if (type == ThreadConfigurationType::NameThreadOnly),7,IF,83,1,CPPASTIfStatement
+57663,CONTROL_STRUCTURE,-1,,else,7,ELSE,92,3,CPPASTIfStatement
+57665,CONTROL_STRUCTURE,1,,if (type == ThreadConfigurationType::BlockSignalsOnly),7,IF,92,1,CPPASTIfStatement
+57695,CONTROL_STRUCTURE,-1,,else,7,ELSE,98,3,CPPASTIfStatement
+57697,CONTROL_STRUCTURE,1,,if (type == ThreadConfigurationType::BlockSignalsAndNameThread),7,IF,98,1,CPPASTIfStatement
+57849,CONTROL_STRUCTURE,-1,,"if (options.size() > 0 && options[0].compare(LOG4CXX_STR(""short"")) == 0)",2,IF,57,1,CPPASTIfStatement
+58032,CONTROL_STRUCTURE,-1,,if (getFileNamePattern().length() > 0),2,IF,281,1,CPPASTIfStatement
+58041,CONTROL_STRUCTURE,-1,,else,2,ELSE,286,3,CPPASTCompoundStatement
+58054,CONTROL_STRUCTURE,-1,,if (dtc == NULL),2,IF,294,4,CPPASTIfStatement
+58078,CONTROL_STRUCTURE,-1,,if (m_priv->multiprocess),2,IF,304,10,CPPASTIfStatement
+58088,CONTROL_STRUCTURE,-1,,if (m_priv->lastFileName.length() >= 3),2,IF,332,12,CPPASTIfStatement
+58098,CONTROL_STRUCTURE,-1,,"if (m_priv->lastFileName.compare(m_priv->lastFileName.length() - 3, 3, LOG4CXX_STR("".gz"")) == 0)",3,IF,334,1,CPPASTIfStatement
+58124,CONTROL_STRUCTURE,-1,,else,8,ELSE,338,3,CPPASTIfStatement
+58126,CONTROL_STRUCTURE,1,,"if (m_priv->lastFileName.length() >= 4 && m_priv->lastFileName.compare(m_priv->lastFileName.length() - 4, 4, LOG4CXX_STR("".zip"")) == 0)",8,IF,338,1,CPPASTIfStatement
+58264,CONTROL_STRUCTURE,-1,,if (currentActiveFile.length() > 0),2,IF,378,13,CPPASTIfStatement
+58285,CONTROL_STRUCTURE,-1,,else,2,ELSE,384,3,CPPASTCompoundStatement
+58362,CONTROL_STRUCTURE,-1,,if (m_priv->multiprocess),2,IF,407,11,CPPASTIfStatement
+58367,CONTROL_STRUCTURE,-1,,if (newFileName == m_priv->lastFileName),2,IF,429,12,CPPASTIfStatement
+58413,CONTROL_STRUCTURE,-1,,if (getCreateIntermediateDirectories()),2,IF,442,19,CPPASTIfStatement
+58433,CONTROL_STRUCTURE,-1,,if (currentActiveFile != lastBaseName),2,IF,452,20,CPPASTIfStatement
+58462,CONTROL_STRUCTURE,-1,,if (m_priv->suffixLength == 3),2,IF,459,21,CPPASTIfStatement
+58503,CONTROL_STRUCTURE,-1,,if (m_priv->suffixLength == 4),2,IF,467,22,CPPASTIfStatement
+58544,CONTROL_STRUCTURE,-1,,if (m_priv->multiprocess),2,IF,475,23,CPPASTIfStatement
+58549,CONTROL_STRUCTURE,-1,,else,7,ELSE,490,3,CPPASTCompoundStatement
+58577,CONTROL_STRUCTURE,-1,,if (m_priv->multiprocess),2,IF,503,1,CPPASTIfStatement
+58602,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option,
+			LOG4CXX_STR(""THROWIOEXCEPTIONONFORKFAILURE""),
+			LOG4CXX_STR(""throwioexceptiononforkfailure"")))",2,IF,538,1,CPPASTIfStatement
+58623,CONTROL_STRUCTURE,-1,,else,2,ELSE,545,3,CPPASTCompoundStatement
+58682,CONTROL_STRUCTURE,-1,,if (LOG4CXX_UNLIKELY(input < 0 && apr_time_usec(input) < 0)),4,IF,60,2,CPPASTIfStatement
+58716,CONTROL_STRUCTURE,-1,,else,4,ELSE,67,3,CPPASTCompoundStatement
+58750,CONTROL_STRUCTURE,-1,,if (LOG4CXX_UNLIKELY(input < 0 && apr_time_usec(input) < 0)),4,IF,99,2,CPPASTIfStatement
+58784,CONTROL_STRUCTURE,-1,,else,4,ELSE,106,3,CPPASTCompoundStatement
+58820,CONTROL_STRUCTURE,-1,,if (tzLength == 0),4,IF,128,8,CPPASTIfStatement
+58865,CONTROL_STRUCTURE,-1,,if (LOG4CXX_UNLIKELY(input < 0 && apr_time_usec(input) < 0)),4,IF,158,2,CPPASTIfStatement
+58900,CONTROL_STRUCTURE,-1,,else,4,ELSE,165,3,CPPASTCompoundStatement
+58963,CONTROL_STRUCTURE,-1,,if (id == gmt),2,IF,205,3,CPPASTIfStatement
+58979,CONTROL_STRUCTURE,-1,,"if (id.length() >= 5 && id.substr( 0, 3 ) == gmt)",2,IF,210,4,CPPASTIfStatement
+59008,CONTROL_STRUCTURE,-1,,if (id[3] == 0x2D),3,IF,216,7,CPPASTIfStatement
+59026,CONTROL_STRUCTURE,-1,,if (id.length() >= 7),3,IF,223,10,CPPASTIfStatement
+59042,CONTROL_STRUCTURE,-1,,if (colonPos == LogString::npos),4,IF,227,3,CPPASTIfStatement
+59082,CONTROL_STRUCTURE,-1,,else,4,ELSE,233,3,CPPASTCompoundStatement
+59109,CONTROL_STRUCTURE,-1,,else,3,ELSE,239,3,CPPASTCompoundStatement
+59130,CONTROL_STRUCTURE,-1,,if (sign > 0),3,IF,248,16,CPPASTIfStatement
+59143,CONTROL_STRUCTURE,-1,,else,3,ELSE,253,3,CPPASTCompoundStatement
+59153,CONTROL_STRUCTURE,-1,,if (hh.length() == 1),3,IF,257,17,CPPASTIfStatement
+59190,CONTROL_STRUCTURE,-1,,if (mm.length() == 1),3,IF,267,22,CPPASTIfStatement
+59242,CONTROL_STRUCTURE,-1,,if (ltz->getID() == id),2,IF,279,7,CPPASTIfStatement
+59300,CONTROL_STRUCTURE,-1,,while (iter != src.end()),2,WHILE,47,3,<empty>
+59314,CONTROL_STRUCTURE,-1,,if (sv != 0xFFFF),3,IF,51,3,CPPASTIfStatement
+59322,CONTROL_STRUCTURE,-1,,else,3,ELSE,56,3,CPPASTCompoundStatement
+59345,CONTROL_STRUCTURE,-1,,while (iter != src.end()),2,WHILE,70,3,<empty>
+59359,CONTROL_STRUCTURE,-1,,if (sv != 0xFFFF),3,IF,74,3,CPPASTIfStatement
+59367,CONTROL_STRUCTURE,-1,,else,3,ELSE,79,3,CPPASTCompoundStatement
+59424,CONTROL_STRUCTURE,-1,,if (ch < 0x80),2,IF,109,1,CPPASTIfStatement
+59438,CONTROL_STRUCTURE,-1,,else,7,ELSE,114,3,CPPASTIfStatement
+59440,CONTROL_STRUCTURE,1,,if (ch < 0x800),7,IF,114,1,CPPASTIfStatement
+59469,CONTROL_STRUCTURE,-1,,else,7,ELSE,120,3,CPPASTIfStatement
+59471,CONTROL_STRUCTURE,1,,if (ch < 0x10000),7,IF,120,1,CPPASTIfStatement
+59513,CONTROL_STRUCTURE,-1,,else,7,ELSE,127,3,CPPASTIfStatement
+59515,CONTROL_STRUCTURE,1,,if (ch <= 0x10FFFF),7,IF,127,1,CPPASTIfStatement
+59570,CONTROL_STRUCTURE,-1,,else,2,ELSE,136,3,CPPASTCompoundStatement
+59626,CONTROL_STRUCTURE,-1,,if (ch <= 0xFFFF),2,IF,156,1,CPPASTIfStatement
+59651,CONTROL_STRUCTURE,-1,,if (ch <= 0x10FFFF),2,IF,163,2,CPPASTIfStatement
+59762,CONTROL_STRUCTURE,-1,,if (ch <= 0xFFFF),2,IF,185,1,CPPASTIfStatement
+59787,CONTROL_STRUCTURE,-1,,if (ch <= 0x10FFFF),2,IF,192,2,CPPASTIfStatement
+59882,CONTROL_STRUCTURE,-1,,if (ch1 <= 0x7F),2,IF,213,5,CPPASTIfStatement
+59889,CONTROL_STRUCTURE,-1,,if ((ch1 & 0xC0) != 0x80 && iter != src.end()),2,IF,221,6,CPPASTIfStatement
+59909,CONTROL_STRUCTURE,-1,,if ((ch2 & 0xC0) != 0x80),3,IF,227,3,CPPASTIfStatement
+59921,CONTROL_STRUCTURE,-1,,if ((ch1 & 0xE0) == 0xC0),3,IF,233,4,CPPASTIfStatement
+59928,CONTROL_STRUCTURE,-1,,if ((ch2 & 0xC0) == 0x80),4,IF,235,1,CPPASTIfStatement
+59947,CONTROL_STRUCTURE,-1,,if (rv >= 0x80),5,IF,239,3,CPPASTIfStatement
+59959,CONTROL_STRUCTURE,-1,,if (iter != src.end()),3,IF,249,5,CPPASTIfStatement
+59973,CONTROL_STRUCTURE,-1,,if ((ch3 & 0xC0) != 0x80),4,IF,256,3,CPPASTIfStatement
+59985,CONTROL_STRUCTURE,-1,,if ((ch1 & 0xF0) == 0xE0),4,IF,262,4,CPPASTIfStatement
+60010,CONTROL_STRUCTURE,-1,,if (rv <= 0x800),5,IF,268,3,CPPASTIfStatement
+60022,CONTROL_STRUCTURE,-1,,if (iter != src.end()),4,IF,277,5,CPPASTIfStatement
+60036,CONTROL_STRUCTURE,-1,,if ((ch4 & 0xC0) != 0x80),5,IF,281,3,CPPASTIfStatement
+60072,CONTROL_STRUCTURE,-1,,if (rv > 0xFFFF),5,IF,292,6,CPPASTIfStatement
+60135,CONTROL_STRUCTURE,-1,,for (;iter != src.end() && ((unsigned char) *iter) < 0x80;iter++),2,FOR,324,6,CPPASTForStatement
+60160,CONTROL_STRUCTURE,-1,,if (iter != src.end()),2,IF,333,7,CPPASTIfStatement
+60193,CONTROL_STRUCTURE,-1,,while (buf.remaining() > 0),3,WHILE,338,5,<empty>
+60210,CONTROL_STRUCTURE,-1,,if (CharsetDecoder::isError(stat)),4,IF,342,3,CPPASTIfStatement
+60287,CONTROL_STRUCTURE,-1,,for (;iter != src.end() && ((unsigned int) *iter) < 0x80;iter++),2,FOR,378,6,CPPASTForStatement
+60312,CONTROL_STRUCTURE,-1,,if (iter != src.end()),2,IF,387,7,CPPASTIfStatement
+60325,CONTROL_STRUCTURE,-1,,while (iter != src.end()),3,WHILE,392,4,<empty>
+60363,CONTROL_STRUCTURE,-1,,if (CharsetEncoder::isError(stat)),4,IF,399,6,CPPASTIfStatement
+60396,CONTROL_STRUCTURE,-1,,if (ch1 < 0xD800 || ch1 > 0xDFFF),2,IF,421,3,CPPASTIfStatement
+60405,CONTROL_STRUCTURE,-1,,if (ch1 != 0xFFFF),3,IF,426,1,CPPASTIfStatement
+60414,CONTROL_STRUCTURE,-1,,else,7,ELSE,433,3,CPPASTIfStatement
+60416,CONTROL_STRUCTURE,1,,if (ch1 < 0xDC00),7,IF,433,1,CPPASTIfStatement
+60427,CONTROL_STRUCTURE,-1,,if (iter2 != in.end()),3,IF,440,3,CPPASTIfStatement
+60440,CONTROL_STRUCTURE,-1,,if (ch2 >= 0xDC00 && ch2 <= 0xDFFF),4,IF,447,3,CPPASTIfStatement
+60472,CONTROL_STRUCTURE,-1,,if (sv < 0x10000),2,IF,464,1,CPPASTIfStatement
+60483,CONTROL_STRUCTURE,-1,,else,2,ELSE,469,3,CPPASTCompoundStatement
+60663,CONTROL_STRUCTURE,-1,,for (LogString::const_iterator iter = val.begin();iter != val.end();iter++),2,FOR,693,4,CPPASTForStatement
+60681,CONTROL_STRUCTURE,-1,,if (*iter >= 0x20 && *iter < 0x7F),3,IF,697,1,CPPASTIfStatement
+60703,CONTROL_STRUCTURE,-1,,else,3,ELSE,702,3,CPPASTCompoundStatement
+60730,CONTROL_STRUCTURE,-1,,if (input.length() == 0),2,IF,33,1,CPPASTIfStatement
+60761,CONTROL_STRUCTURE,-1,,while (special != LogString::npos),2,WHILE,42,8,<empty>
+60768,CONTROL_STRUCTURE,-1,,if (special > start),3,IF,44,1,CPPASTIfStatement
+60782,CONTROL_STRUCTURE,-1,,switch(input[special]),3,SWITCH,49,2,CPPASTSwitchStatement
+60795,CONTROL_STRUCTURE,-1,,break;,5,BREAK,53,4,CPPASTBreakStatement
+60804,CONTROL_STRUCTURE,-1,,break;,5,BREAK,57,8,CPPASTBreakStatement
+60813,CONTROL_STRUCTURE,-1,,break;,5,BREAK,61,12,CPPASTBreakStatement
+60822,CONTROL_STRUCTURE,-1,,break;,5,BREAK,65,16,CPPASTBreakStatement
+60832,CONTROL_STRUCTURE,-1,,break;,5,BREAK,69,19,CPPASTBreakStatement
+60838,CONTROL_STRUCTURE,-1,,if (special < input.size()),3,IF,74,4,CPPASTIfStatement
+60854,CONTROL_STRUCTURE,-1,,else,3,ELSE,79,3,CPPASTCompoundStatement
+60861,CONTROL_STRUCTURE,-1,,if (start < input.size()),2,IF,84,9,CPPASTIfStatement
+60899,CONTROL_STRUCTURE,-1,,if (input.length() == 0),2,IF,99,7,CPPASTIfStatement
+60916,CONTROL_STRUCTURE,-1,,if (end == LogString::npos),2,IF,106,10,CPPASTIfStatement
+60933,CONTROL_STRUCTURE,-1,,while (end != LogString::npos),2,WHILE,114,13,<empty>
+60959,CONTROL_STRUCTURE,-1,,if (start < input.length()),3,IF,120,4,CPPASTIfStatement
+60975,CONTROL_STRUCTURE,-1,,else,3,ELSE,125,3,CPPASTCompoundStatement
+61084,CONTROL_STRUCTURE,-1,,if (_priv->layout == 0),2,IF,67,3,CPPASTIfStatement
+61129,CONTROL_STRUCTURE,-1,,if (_priv->writer == 0),2,IF,75,4,CPPASTIfStatement
+61176,CONTROL_STRUCTURE,-1,,if (errors == 0),2,IF,83,5,CPPASTIfStatement
+61192,CONTROL_STRUCTURE,-1,,if (!checkEntryConditions()),2,IF,94,1,CPPASTIfStatement
+61216,CONTROL_STRUCTURE,-1,,if (static_cast<WriterAppenderPriv *>(m_priv.get())->closed),2,IF,114,7,CPPASTIfStatement
+61228,CONTROL_STRUCTURE,-1,,if (!warnedClosed),3,IF,116,1,CPPASTIfStatement
+61243,CONTROL_STRUCTURE,-1,,if (_priv->writer == 0),2,IF,125,8,CPPASTIfStatement
+61257,CONTROL_STRUCTURE,-1,,if (!warnedNoWriter),3,IF,127,1,CPPASTIfStatement
+61296,CONTROL_STRUCTURE,-1,,if (_priv->layout == 0),2,IF,138,9,CPPASTIfStatement
+61310,CONTROL_STRUCTURE,-1,,if (!warnedNoLayout),3,IF,140,1,CPPASTIfStatement
+61374,CONTROL_STRUCTURE,-1,,if (static_cast<WriterAppenderPriv *>(m_priv.get())->closed),2,IF,168,2,CPPASTIfStatement
+61406,CONTROL_STRUCTURE,-1,,if (_priv->writer != NULL),2,IF,182,1,CPPASTIfStatement
+61420,CONTROL_STRUCTURE,-1,,try,3,TRY,184,1,CPPASTTryBlockStatement
+61497,CONTROL_STRUCTURE,-1,,if (enc.empty()),2,IF,216,4,CPPASTIfStatement
+61509,CONTROL_STRUCTURE,-1,,else,2,ELSE,221,3,CPPASTCompoundStatement
+61511,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(enc,
+				LOG4CXX_STR(""utf-16""), LOG4CXX_STR(""UTF-16"")))",3,IF,222,1,CPPASTIfStatement
+61530,CONTROL_STRUCTURE,-1,,else,3,ELSE,228,3,CPPASTCompoundStatement
+61539,CONTROL_STRUCTURE,-1,,if (encoder == NULL),3,IF,232,2,CPPASTIfStatement
+61623,CONTROL_STRUCTURE,-1,,if (_priv->writer != NULL),2,IF,258,3,CPPASTIfStatement
+61652,CONTROL_STRUCTURE,-1,,if (static_cast<WriterAppenderPriv *>(m_priv.get())->immediateFlush),3,IF,262,2,CPPASTIfStatement
+61683,CONTROL_STRUCTURE,-1,,if (_priv->layout != NULL),2,IF,272,1,CPPASTIfStatement
+61733,CONTROL_STRUCTURE,-1,,if (_priv->layout != NULL),2,IF,282,1,CPPASTIfStatement
+61833,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""ENCODING""), LOG4CXX_STR(""encoding"")))",2,IF,309,1,CPPASTIfStatement
+61846,CONTROL_STRUCTURE,-1,,else,2,ELSE,314,3,CPPASTCompoundStatement
+61957,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""LOCATIONINFO""), LOG4CXX_STR(""locationinfo"")))",2,IF,64,1,CPPASTIfStatement
+61982,CONTROL_STRUCTURE,-1,,"if (StringHelper::equalsIgnoreCase(option, LOG4CXX_STR(""PROPERTIES""), LOG4CXX_STR(""properties"")))",2,IF,70,2,CPPASTIfStatement
+62133,CONTROL_STRUCTURE,-1,,if (event->getNDC(ndc)),2,IF,102,17,CPPASTIfStatement
+62163,CONTROL_STRUCTURE,-1,,if (m_priv->locationInfo),2,IF,110,18,CPPASTIfStatement
+62256,CONTROL_STRUCTURE,-1,,if (m_priv->properties),2,IF,128,19,CPPASTIfStatement
+62273,CONTROL_STRUCTURE,-1,,if (!(keySet.empty() && propertySet.empty())),3,IF,133,5,CPPASTIfStatement
+62296,CONTROL_STRUCTURE,-1,,for (LoggingEvent::KeySet::const_iterator i = keySet.begin();i != keySet.end();i++),4,FOR,138,3,CPPASTForStatement
+62319,CONTROL_STRUCTURE,-1,,"if (event->getMDC(key, value))",5,IF,145,4,CPPASTIfStatement
+62362,CONTROL_STRUCTURE,-1,,for (LoggingEvent::KeySet::const_iterator i2 = propertySet.begin();i2 != propertySet.end();i2++),4,FOR,156,4,CPPASTForStatement
+62385,CONTROL_STRUCTURE,-1,,"if (event->getProperty(key, value))",5,IF,163,4,CPPASTIfStatement
+62709,CONTROL_STRUCTURE,-1,,if (static_cast<XMLSocketAppenderPriv *>(m_priv.get())->writer),2,IF,111,1,CPPASTIfStatement
+62721,CONTROL_STRUCTURE,-1,,try,3,TRY,113,1,CPPASTTryBlockStatement
+62756,CONTROL_STRUCTURE,-1,,if (static_cast<XMLSocketAppenderPriv *>(m_priv.get())->writer),2,IF,126,1,CPPASTIfStatement
+62785,CONTROL_STRUCTURE,-1,,try,3,TRY,131,3,CPPASTTryBlockStatement
+62836,CONTROL_STRUCTURE,-1,,if (getReconnectionDelay() > 0),4,IF,141,3,CPPASTIfStatement
+62894,CONTROL_STRUCTURE,-1,,if (!priv->source.exists(p)),2,IF,57,1,CPPASTIfStatement
+62928,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),2,IF,66,7,CPPASTIfStatement
+62943,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),2,IF,73,9,CPPASTIfStatement
+62956,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),2,IF,80,11,CPPASTIfStatement
+62971,CONTROL_STRUCTURE,-1,,if (stat == APR_SUCCESS),2,IF,91,14,CPPASTIfStatement
+62982,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS),3,IF,95,2,CPPASTIfStatement
+63070,CONTROL_STRUCTURE,-1,,if (static_cast<ZipCompressActionPrivate *>(m_priv.get())->destination.exists(p)),2,IF,111,24,CPPASTIfStatement
+63111,CONTROL_STRUCTURE,-1,,if (stat != APR_SUCCESS && priv->throwIOExceptionOnForkFailure),2,IF,119,27,CPPASTIfStatement
+63130,CONTROL_STRUCTURE,-1,,else,8,ELSE,122,3,CPPASTIfStatement
+63132,CONTROL_STRUCTURE,1,,if (stat != APR_SUCCESS && !priv->throwIOExceptionOnForkFailure),8,IF,122,1,CPPASTIfStatement
+63165,CONTROL_STRUCTURE,-1,,if (exitCode != APR_SUCCESS),2,IF,139,30,CPPASTIfStatement
+63173,CONTROL_STRUCTURE,-1,,if (static_cast<ZipCompressActionPrivate *>(m_priv.get())->deleteSource),2,IF,144,31,CPPASTIfStatement
+64288,CONTROL_STRUCTURE,-1,,if (!incoming),2,IF,129,1,CPPASTIfStatement
+64312,CONTROL_STRUCTURE,-1,,if (casted),2,IF,136,4,CPPASTIfStatement
+65245,CONTROL_STRUCTURE,-1,,if (m_logger && !m_hadConfiguration),3,IF,100,1,CPPASTIfStatement
+65267,CONTROL_STRUCTURE,-1,,else,3,ELSE,107,3,CPPASTCompoundStatement
+66258,CONTROL_STRUCTURE,-1,,if (!str),2,IF,34,3,CPPASTIfStatement
+66262,CONTROL_STRUCTURE,-1,,else,7,ELSE,36,3,CPPASTWhileStatement
+66264,CONTROL_STRUCTURE,1,,while (*str++ != 0 && result < strsz),7,WHILE,36,1,<empty>
+66285,CONTROL_STRUCTURE,-1,,if (!src || !destArg || RSIZE_MAX < destsz),2,IF,42,1,CPPASTIfStatement
+66303,CONTROL_STRUCTURE,-1,,if (0 == destsz),2,IF,44,2,CPPASTIfStatement
+66321,CONTROL_STRUCTURE,-1,,while (*dest && index < destsz),2,WHILE,49,8,<empty>
+66333,CONTROL_STRUCTURE,-1,,while (*src && index < destsz),2,WHILE,51,9,<empty>
+66354,CONTROL_STRUCTURE,-1,,if (*src),2,IF,57,11,CPPASTIfStatement
+67280,CONTROL_STRUCTURE,-1,,while (data[result]),2,WHILE,45,5,<empty>
+67305,CONTROL_STRUCTURE,-1,,while (index < range.length),2,WHILE,52,5,<empty>
+67351,CONTROL_STRUCTURE,-1,,for (UniChar* p = result;0 < numChars;--numChars),2,FOR,61,4,CPPASTForStatement
+67394,CONTROL_STRUCTURE,-1,,for (UniChar *p = result;*p++ = *cStr++;),2,FOR,67,3,CPPASTForStatement

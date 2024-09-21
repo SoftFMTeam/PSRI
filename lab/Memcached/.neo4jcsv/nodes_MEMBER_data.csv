@@ -1,0 +1,1240 @@
+862,MEMBER,<empty>,<empty>,bucket,14,,293,bucket,1,,uint64_t
+863,MEMBER,<empty>,<empty>,*it,10,,294,it,2,,item*
+864,MEMBER,<empty>,<empty>,*next,10,,295,next,3,,item*
+865,MEMBER,<empty>,<empty>,bucket_locked,10,,296,bucket_locked,4,,bool
+1163,MEMBER,<empty>,<empty>,*user,10,,21,user,1,,char*
+1164,MEMBER,<empty>,<empty>,ulen,12,,22,ulen,2,,size_t
+1165,MEMBER,<empty>,<empty>,*pass,10,,23,pass,3,,char*
+1166,MEMBER,<empty>,<empty>,plen,12,,24,plen,4,,size_t
+1497,MEMBER,<empty>,<empty>,AUTHFILE_OK = 0,5,,5,AUTHFILE_OK,1,,ANY
+1498,MEMBER,<empty>,<empty>,AUTHFILE_OOM,5,,6,AUTHFILE_OOM,2,,ANY
+1499,MEMBER,<empty>,<empty>,AUTHFILE_STATFAIL,5,,7,AUTHFILE_STATFAIL,3,,ANY
+1500,MEMBER,<empty>,<empty>,AUTHFILE_OPENFAIL,5,,8,AUTHFILE_OPENFAIL,4,,ANY
+1501,MEMBER,<empty>,<empty>,AUTHFILE_MALFORMED,5,,9,AUTHFILE_MALFORMED,5,,ANY
+2710,MEMBER,<empty>,<empty>,size,23,,6,size,1,,long unsigned int
+2711,MEMBER,<empty>,<empty>,a_start,18,,9,a_start,2,,unsigned int
+2712,MEMBER,<empty>,<empty>,a_end,27,,9,a_end,3,,unsigned int
+2713,MEMBER,<empty>,<empty>,b_end,18,,12,b_end,4,,unsigned int
+2714,MEMBER,<empty>,<empty>,b_inuse,9,,15,b_inuse,5,,int
+2715,MEMBER,<empty>,<empty>,data[],19,,17,data,6,,unsigned char[]
+3395,MEMBER,<empty>,<empty>,cache_free_s *,5,,13,stqe_next,2,,cache_free_s*
+3396,MEMBER,<empty>,<empty>,c_next,32,,13,c_next,2,,struct
+3398,MEMBER,<empty>,<empty>,mutex,21,,24,mutex,1,,pthread_mutex_t
+3399,MEMBER,<empty>,<empty>,*name,10,,26,name,2,,char*
+3402,MEMBER,<empty>,<empty>,cache_free_s *,5,,28,stqh_first,2,,cache_free_s*
+3404,MEMBER,<empty>,<empty>,cache_free_s * *,5,,28,stqh_last,4,,cache_free_s**
+3405,MEMBER,<empty>,<empty>,head,43,,28,head,4,,cache_head
+3406,MEMBER,<empty>,<empty>,bufsize,12,,30,bufsize,5,,size_t
+3407,MEMBER,<empty>,<empty>,freetotal,9,,32,freetotal,6,,int
+3408,MEMBER,<empty>,<empty>,total,9,,34,total,7,,int
+3409,MEMBER,<empty>,<empty>,freecurr,9,,36,freecurr,8,,int
+3410,MEMBER,<empty>,<empty>,limit,9,,38,limit,9,,int
+3490,MEMBER,<empty>,<empty>,*c,10,,28,c,1,,void*
+3491,MEMBER,<empty>,<empty>,sfd,9,,29,sfd,2,,int
+3492,MEMBER,<empty>,<empty>,*buf,14,,30,buf,3,,bipbuf_t*
+3493,MEMBER,<empty>,<empty>,*cbuf,10,,31,cbuf,4,,char*
+3528,MEMBER,<empty>,<empty>,init,23,,43,init,1,,crawler_init_func
+3529,MEMBER,<empty>,<empty>,eval,23,,44,eval,2,,crawler_eval_func
+3530,MEMBER,<empty>,<empty>,doneclass,28,,45,doneclass,3,,crawler_doneclass_func
+3531,MEMBER,<empty>,<empty>,finalize,27,,46,finalize,4,,crawler_finalize_func
+3532,MEMBER,<empty>,<empty>,needs_lock,10,,47,needs_lock,5,,bool
+3533,MEMBER,<empty>,<empty>,needs_client,10,,48,needs_client,6,,bool
+3536,MEMBER,<empty>,<empty>,*data,10,,52,data,1,,void*
+3537,MEMBER,<empty>,<empty>,c,22,,53,c,2,,crawler_client_t
+3538,MEMBER,<empty>,<empty>,*mod,26,,54,mod,3,,crawler_module_reg_t*
+6050,MEMBER,<empty>,<empty>,histo[61],14,,7,histo,1,,uint64_t[61]
+6051,MEMBER,<empty>,<empty>,ttl_hourplus,14,,8,ttl_hourplus,2,,uint64_t
+6052,MEMBER,<empty>,<empty>,noexp,14,,9,noexp,3,,uint64_t
+6053,MEMBER,<empty>,<empty>,reclaimed,14,,10,reclaimed,4,,uint64_t
+6054,MEMBER,<empty>,<empty>,seen,14,,11,seen,5,,uint64_t
+6055,MEMBER,<empty>,<empty>,start_time,16,,12,start_time,6,,rel_time_t
+6056,MEMBER,<empty>,<empty>,end_time,16,,13,end_time,7,,rel_time_t
+6057,MEMBER,<empty>,<empty>,run_complete,10,,14,run_complete,8,,bool
+6066,MEMBER,<empty>,<empty>,lock,21,,18,lock,1,,pthread_mutex_t
+6067,MEMBER,<empty>,<empty>,crawlerstats[POWER_LARGEST],20,,19,crawlerstats,2,,crawlerstats_t[]
+6068,MEMBER,<empty>,<empty>,start_time,16,,21,start_time,3,,rel_time_t
+6069,MEMBER,<empty>,<empty>,end_time,16,,22,end_time,4,,rel_time_t
+6070,MEMBER,<empty>,<empty>,crawl_complete,10,,23,crawl_complete,5,,bool
+6071,MEMBER,<empty>,<empty>,is_external,10,,24,is_external,6,,bool
+6079,MEMBER,<empty>,<empty>,CRAWLER_OK=0,5,,28,CRAWLER_OK,1,,ANY
+6080,MEMBER,<empty>,<empty>,CRAWLER_RUNNING,19,,28,CRAWLER_RUNNING,2,,ANY
+6081,MEMBER,<empty>,<empty>,CRAWLER_BADCLASS,36,,28,CRAWLER_BADCLASS,3,,ANY
+6082,MEMBER,<empty>,<empty>,CRAWLER_NOTSTARTED,54,,28,CRAWLER_NOTSTARTED,4,,ANY
+6083,MEMBER,<empty>,<empty>,CRAWLER_ERROR,74,,28,CRAWLER_ERROR,5,,ANY
+7236,MEMBER,<empty>,<empty>,*next,25,,46,next,2,,__store_wbuf*
+7237,MEMBER,<empty>,<empty>,*buf,10,,47,buf,3,,char*
+7238,MEMBER,<empty>,<empty>,*buf_pos,10,,48,buf_pos,4,,char*
+7239,MEMBER,<empty>,<empty>,free,18,,49,free,5,,unsigned int
+7240,MEMBER,<empty>,<empty>,size,18,,50,size,6,,unsigned int
+7241,MEMBER,<empty>,<empty>,offset,18,,51,offset,7,,unsigned int
+7242,MEMBER,<empty>,<empty>,full,10,,52,full,8,,bool
+7243,MEMBER,<empty>,<empty>,flushed,10,,53,flushed,9,,bool
+7246,MEMBER,<empty>,<empty>,mutex,21,,57,mutex,1,,pthread_mutex_t
+7247,MEMBER,<empty>,<empty>,obj_count,14,,58,obj_count,2,,uint64_t
+7248,MEMBER,<empty>,<empty>,bytes_used,14,,59,bytes_used,3,,uint64_t
+7249,MEMBER,<empty>,<empty>,offset,14,,60,offset,4,,uint64_t
+7250,MEMBER,<empty>,<empty>,version,18,,61,version,5,,unsigned int
+7251,MEMBER,<empty>,<empty>,refcount,18,,62,refcount,6,,unsigned int
+7252,MEMBER,<empty>,<empty>,allocated,18,,63,allocated,7,,unsigned int
+7253,MEMBER,<empty>,<empty>,written,18,,64,written,8,,unsigned int
+7254,MEMBER,<empty>,<empty>,bucket,18,,65,bucket,9,,unsigned int
+7255,MEMBER,<empty>,<empty>,free_bucket,18,,66,free_bucket,10,,unsigned int
+7256,MEMBER,<empty>,<empty>,fd,9,,67,fd,11,,int
+7257,MEMBER,<empty>,<empty>,id,20,,68,id,12,,short unsigned
+7258,MEMBER,<empty>,<empty>,active,10,,69,active,13,,bool
+7259,MEMBER,<empty>,<empty>,closed,10,,70,closed,14,,bool
+7260,MEMBER,<empty>,<empty>,free,10,,71,free,15,,bool
+7261,MEMBER,<empty>,<empty>,*wbuf,17,,72,wbuf,16,,_store_wbuf*
+7263,MEMBER,<empty>,<empty>,*next,24,,73,next,18,,_store_page*
+7268,MEMBER,<empty>,<empty>,mutex,21,,78,mutex,1,,pthread_mutex_t
+7269,MEMBER,<empty>,<empty>,cond,20,,79,cond,2,,pthread_cond_t
+7270,MEMBER,<empty>,<empty>,*queue,12,,80,queue,3,,obj_io*
+7271,MEMBER,<empty>,<empty>,*queue_tail,12,,81,queue_tail,4,,obj_io*
+7272,MEMBER,<empty>,<empty>,*e,18,,82,e,5,,store_engine*
+7273,MEMBER,<empty>,<empty>,depth,18,,83,depth,6,,unsigned int
+7276,MEMBER,<empty>,<empty>,mutex,21,,87,mutex,1,,pthread_mutex_t
+7277,MEMBER,<empty>,<empty>,cond,20,,88,cond,2,,pthread_cond_t
+7278,MEMBER,<empty>,<empty>,*e,18,,89,e,3,,store_engine*
+7281,MEMBER,<empty>,<empty>,mutex,21,,93,mutex,1,,pthread_mutex_t
+7282,MEMBER,<empty>,<empty>,*pages,16,,94,pages,2,,store_page*
+7283,MEMBER,<empty>,<empty>,*wbuf_stack,17,,95,wbuf_stack,3,,_store_wbuf*
+7284,MEMBER,<empty>,<empty>,*io_stack,12,,96,io_stack,4,,obj_io*
+7285,MEMBER,<empty>,<empty>,*io_threads,21,,97,io_threads,5,,store_io_thread*
+7286,MEMBER,<empty>,<empty>,*maint_thread,24,,98,maint_thread,6,,store_maint_thread*
+7287,MEMBER,<empty>,<empty>,*page_freelist,16,,99,page_freelist,7,,store_page*
+7288,MEMBER,<empty>,<empty>,**page_buckets,16,,100,page_buckets,8,,store_page**
+7289,MEMBER,<empty>,<empty>,**free_page_buckets,16,,101,free_page_buckets,9,,store_page**
+7290,MEMBER,<empty>,<empty>,page_size,12,,102,page_size,10,,size_t
+7291,MEMBER,<empty>,<empty>,version,18,,103,version,11,,unsigned int
+7292,MEMBER,<empty>,<empty>,last_io_thread,18,,104,last_io_thread,12,,unsigned int
+7293,MEMBER,<empty>,<empty>,io_threadcount,18,,105,io_threadcount,13,,unsigned int
+7294,MEMBER,<empty>,<empty>,page_count,18,,106,page_count,14,,unsigned int
+7295,MEMBER,<empty>,<empty>,page_free,18,,107,page_free,15,,unsigned int
+7296,MEMBER,<empty>,<empty>,page_bucketcount,18,,108,page_bucketcount,16,,unsigned int
+7297,MEMBER,<empty>,<empty>,free_page_bucketcount,18,,109,free_page_bucketcount,17,,unsigned int
+7298,MEMBER,<empty>,<empty>,io_depth,18,,110,io_depth,18,,unsigned int
+7299,MEMBER,<empty>,<empty>,stats_mutex,21,,111,stats_mutex,19,,pthread_mutex_t
+7301,MEMBER,<empty>,<empty>,stats,27,,112,stats,21,,extstore_stats
+10672,MEMBER,<empty>,<empty>,version,14,,8,version,1,,uint64_t
+10673,MEMBER,<empty>,<empty>,bytes_used,14,,9,bytes_used,2,,uint64_t
+10674,MEMBER,<empty>,<empty>,bucket,18,,10,bucket,3,,unsigned int
+10675,MEMBER,<empty>,<empty>,free_bucket,18,,11,free_bucket,4,,unsigned int
+10677,MEMBER,<empty>,<empty>,page_allocs,14,,21,page_allocs,1,,uint64_t
+10678,MEMBER,<empty>,<empty>,page_count,14,,22,page_count,2,,uint64_t
+10679,MEMBER,<empty>,<empty>,page_evictions,14,,23,page_evictions,3,,uint64_t
+10680,MEMBER,<empty>,<empty>,page_reclaims,14,,24,page_reclaims,4,,uint64_t
+10681,MEMBER,<empty>,<empty>,page_size,14,,25,page_size,5,,uint64_t
+10682,MEMBER,<empty>,<empty>,pages_free,14,,26,pages_free,6,,uint64_t
+10683,MEMBER,<empty>,<empty>,pages_used,14,,27,pages_used,7,,uint64_t
+10684,MEMBER,<empty>,<empty>,objects_evicted,14,,28,objects_evicted,8,,uint64_t
+10685,MEMBER,<empty>,<empty>,objects_read,14,,29,objects_read,9,,uint64_t
+10686,MEMBER,<empty>,<empty>,objects_written,14,,30,objects_written,10,,uint64_t
+10687,MEMBER,<empty>,<empty>,objects_used,14,,31,objects_used,11,,uint64_t
+10688,MEMBER,<empty>,<empty>,bytes_evicted,14,,32,bytes_evicted,12,,uint64_t
+10689,MEMBER,<empty>,<empty>,bytes_written,14,,33,bytes_written,13,,uint64_t
+10690,MEMBER,<empty>,<empty>,bytes_read,14,,34,bytes_read,14,,uint64_t
+10691,MEMBER,<empty>,<empty>,bytes_used,14,,35,bytes_used,15,,uint64_t
+10692,MEMBER,<empty>,<empty>,bytes_fragmented,14,,36,bytes_fragmented,16,,uint64_t
+10693,MEMBER,<empty>,<empty>,io_queue,14,,37,io_queue,17,,uint64_t
+10695,MEMBER,<empty>,<empty>,*page_data,31,,38,page_data,19,,extstore_page_data*
+10697,MEMBER,<empty>,<empty>,page_size,18,,45,page_size,1,,unsigned int
+10698,MEMBER,<empty>,<empty>,page_count,18,,46,page_count,2,,unsigned int
+10699,MEMBER,<empty>,<empty>,page_buckets,18,,47,page_buckets,3,,unsigned int
+10700,MEMBER,<empty>,<empty>,free_page_buckets,18,,48,free_page_buckets,4,,unsigned int
+10701,MEMBER,<empty>,<empty>,wbuf_size,18,,49,wbuf_size,5,,unsigned int
+10702,MEMBER,<empty>,<empty>,wbuf_count,18,,50,wbuf_count,6,,unsigned int
+10703,MEMBER,<empty>,<empty>,io_threadcount,18,,51,io_threadcount,7,,unsigned int
+10704,MEMBER,<empty>,<empty>,io_depth,18,,52,io_depth,8,,unsigned int
+10706,MEMBER,<empty>,<empty>,page_count,18,,56,page_count,1,,unsigned int
+10707,MEMBER,<empty>,<empty>,*file,10,,57,file,2,,char*
+10708,MEMBER,<empty>,<empty>,fd,9,,58,fd,3,,int
+10709,MEMBER,<empty>,<empty>,offset,14,,59,offset,4,,uint64_t
+10710,MEMBER,<empty>,<empty>,bucket,18,,60,bucket,5,,unsigned int
+10711,MEMBER,<empty>,<empty>,free_bucket,18,,61,free_bucket,6,,unsigned int
+10713,MEMBER,<empty>,<empty>,*next,31,,62,next,8,,extstore_conf_file*
+10715,MEMBER,<empty>,<empty>,OBJ_IO_READ = 0,5,,66,OBJ_IO_READ,1,,ANY
+10716,MEMBER,<empty>,<empty>,OBJ_IO_WRITE,5,,67,OBJ_IO_WRITE,2,,ANY
+10734,MEMBER,<empty>,<empty>,*data,10,,78,data,1,,void*
+10736,MEMBER,<empty>,<empty>,*next,20,,79,next,3,,_obj_io*
+10737,MEMBER,<empty>,<empty>,*buf,10,,80,buf,4,,char*
+10739,MEMBER,<empty>,<empty>,*iov,18,,81,iov,6,,iovec*
+10740,MEMBER,<empty>,<empty>,iovcnt,18,,82,iovcnt,7,,unsigned int
+10741,MEMBER,<empty>,<empty>,page_version,18,,83,page_version,8,,unsigned int
+10742,MEMBER,<empty>,<empty>,len,18,,84,len,9,,unsigned int
+10743,MEMBER,<empty>,<empty>,offset,18,,85,offset,10,,unsigned int
+10744,MEMBER,<empty>,<empty>,page_id,20,,86,page_id,11,,short unsigned
+10746,MEMBER,<empty>,<empty>,mode,22,,87,mode,13,,obj_io_mode
+10747,MEMBER,<empty>,<empty>,cb,15,,89,cb,14,,obj_io_cb
+10749,MEMBER,<empty>,<empty>,EXTSTORE_INIT_BAD_WBUF_SIZE = 1,5,,93,EXTSTORE_INIT_BAD_WBUF_SIZE,1,,ANY
+10750,MEMBER,<empty>,<empty>,EXTSTORE_INIT_NEED_MORE_WBUF,5,,94,EXTSTORE_INIT_NEED_MORE_WBUF,2,,ANY
+10751,MEMBER,<empty>,<empty>,EXTSTORE_INIT_NEED_MORE_BUCKETS,5,,95,EXTSTORE_INIT_NEED_MORE_BUCKETS,3,,ANY
+10752,MEMBER,<empty>,<empty>,EXTSTORE_INIT_PAGE_WBUF_ALIGNMENT,5,,96,EXTSTORE_INIT_PAGE_WBUF_ALIGNMENT,4,,ANY
+10753,MEMBER,<empty>,<empty>,EXTSTORE_INIT_TOO_MANY_PAGES,5,,97,EXTSTORE_INIT_TOO_MANY_PAGES,5,,ANY
+10754,MEMBER,<empty>,<empty>,EXTSTORE_INIT_OOM,5,,98,EXTSTORE_INIT_OOM,6,,ANY
+10755,MEMBER,<empty>,<empty>,EXTSTORE_INIT_OPEN_FAIL,5,,99,EXTSTORE_INIT_OPEN_FAIL,7,,ANY
+10756,MEMBER,<empty>,<empty>,EXTSTORE_INIT_THREAD_FAIL,5,,100,EXTSTORE_INIT_THREAD_FAIL,8,,ANY
+10962,MEMBER,<empty>,<empty>,JENKINS_HASH=0,5,,8,JENKINS_HASH,1,,ANY
+10963,MEMBER,<empty>,<empty>,MURMUR3_HASH,21,,8,MURMUR3_HASH,2,,ANY
+10964,MEMBER,<empty>,<empty>,XXH3_HASH,35,,8,XXH3_HASH,3,,ANY
+11047,MEMBER,<empty>,<empty>,evicted,14,,32,evicted,1,,uint64_t
+11048,MEMBER,<empty>,<empty>,evicted_nonzero,14,,33,evicted_nonzero,2,,uint64_t
+11049,MEMBER,<empty>,<empty>,reclaimed,14,,34,reclaimed,3,,uint64_t
+11050,MEMBER,<empty>,<empty>,outofmemory,14,,35,outofmemory,4,,uint64_t
+11051,MEMBER,<empty>,<empty>,tailrepairs,14,,36,tailrepairs,5,,uint64_t
+11052,MEMBER,<empty>,<empty>,expired_unfetched,14,,37,expired_unfetched,6,,uint64_t
+11053,MEMBER,<empty>,<empty>,evicted_unfetched,14,,38,evicted_unfetched,7,,uint64_t
+11054,MEMBER,<empty>,<empty>,evicted_active,14,,39,evicted_active,8,,uint64_t
+11055,MEMBER,<empty>,<empty>,crawler_reclaimed,14,,40,crawler_reclaimed,9,,uint64_t
+11056,MEMBER,<empty>,<empty>,crawler_items_checked,14,,41,crawler_items_checked,10,,uint64_t
+11057,MEMBER,<empty>,<empty>,lrutail_reflocked,14,,42,lrutail_reflocked,11,,uint64_t
+11058,MEMBER,<empty>,<empty>,moves_to_cold,14,,43,moves_to_cold,12,,uint64_t
+11059,MEMBER,<empty>,<empty>,moves_to_warm,14,,44,moves_to_warm,13,,uint64_t
+11060,MEMBER,<empty>,<empty>,moves_within_lru,14,,45,moves_within_lru,14,,uint64_t
+11061,MEMBER,<empty>,<empty>,direct_reclaims,14,,46,direct_reclaims,15,,uint64_t
+11062,MEMBER,<empty>,<empty>,hits_to_hot,14,,47,hits_to_hot,16,,uint64_t
+11063,MEMBER,<empty>,<empty>,hits_to_warm,14,,48,hits_to_warm,17,,uint64_t
+11064,MEMBER,<empty>,<empty>,hits_to_cold,14,,49,hits_to_cold,18,,uint64_t
+11065,MEMBER,<empty>,<empty>,hits_to_temp,14,,50,hits_to_temp,19,,uint64_t
+11066,MEMBER,<empty>,<empty>,mem_requested,14,,51,mem_requested,20,,uint64_t
+11067,MEMBER,<empty>,<empty>,evicted_time,16,,52,evicted_time,21,,rel_time_t
+11198,MEMBER,<empty>,<empty>,*prev,26,,89,prev,2,,_lru_bump_buf*
+11200,MEMBER,<empty>,<empty>,*next,26,,90,next,4,,_lru_bump_buf*
+11201,MEMBER,<empty>,<empty>,mutex,21,,91,mutex,5,,pthread_mutex_t
+11202,MEMBER,<empty>,<empty>,*buf,14,,92,buf,6,,bipbuf_t*
+11203,MEMBER,<empty>,<empty>,dropped,14,,93,dropped,7,,uint64_t
+11206,MEMBER,<empty>,<empty>,*it,10,,97,it,1,,item*
+11207,MEMBER,<empty>,<empty>,hv,14,,98,hv,2,,uint32_t
+18867,MEMBER,<empty>,<empty>,*it,10,,43,it,1,,item*
+18868,MEMBER,<empty>,<empty>,hv,14,,44,hv,2,,uint32_t
+18945,MEMBER,<empty>,<empty>,evicted,13,,68,evicted,1,,int64_t
+18946,MEMBER,<empty>,<empty>,outofmemory,13,,69,outofmemory,2,,int64_t
+18947,MEMBER,<empty>,<empty>,age,14,,70,age,3,,uint32_t
+22267,MEMBER,<empty>,<empty>,LOGGER_ASCII_CMD = 0,5,,17,LOGGER_ASCII_CMD,1,,ANY
+22268,MEMBER,<empty>,<empty>,LOGGER_EVICTION,5,,18,LOGGER_EVICTION,2,,ANY
+22269,MEMBER,<empty>,<empty>,LOGGER_ITEM_GET,5,,19,LOGGER_ITEM_GET,3,,ANY
+22270,MEMBER,<empty>,<empty>,LOGGER_ITEM_STORE,5,,20,LOGGER_ITEM_STORE,4,,ANY
+22271,MEMBER,<empty>,<empty>,LOGGER_CRAWLER_STATUS,5,,21,LOGGER_CRAWLER_STATUS,5,,ANY
+22272,MEMBER,<empty>,<empty>,LOGGER_SLAB_MOVE,5,,22,LOGGER_SLAB_MOVE,6,,ANY
+22273,MEMBER,<empty>,<empty>,LOGGER_CONNECTION_NEW,5,,23,LOGGER_CONNECTION_NEW,7,,ANY
+22274,MEMBER,<empty>,<empty>,LOGGER_CONNECTION_CLOSE,5,,24,LOGGER_CONNECTION_CLOSE,8,,ANY
+22283,MEMBER,<empty>,<empty>,LOGGER_RET_OK = 0,5,,45,LOGGER_RET_OK,1,,ANY
+22284,MEMBER,<empty>,<empty>,LOGGER_RET_NOSPACE,5,,46,LOGGER_RET_NOSPACE,2,,ANY
+22285,MEMBER,<empty>,<empty>,LOGGER_RET_ERR,5,,47,LOGGER_RET_ERR,3,,ANY
+22294,MEMBER,<empty>,<empty>,LOGGER_PARSE_ENTRY_OK = 0,5,,51,LOGGER_PARSE_ENTRY_OK,1,,ANY
+22295,MEMBER,<empty>,<empty>,LOGGER_PARSE_ENTRY_FULLBUF,5,,52,LOGGER_PARSE_ENTRY_FULLBUF,2,,ANY
+22296,MEMBER,<empty>,<empty>,LOGGER_PARSE_ENTRY_FAILED,5,,53,LOGGER_PARSE_ENTRY_FAILED,3,,ANY
+22323,MEMBER,<empty>,<empty>,reqlen,9,,63,reqlen,1,,int
+22324,MEMBER,<empty>,<empty>,eflags,14,,64,eflags,2,,uint16_t
+22325,MEMBER,<empty>,<empty>,log_cb,18,,65,log_cb,3,,entry_log_cb
+22326,MEMBER,<empty>,<empty>,parse_cb,20,,66,parse_cb,4,,entry_parse_cb
+22327,MEMBER,<empty>,<empty>,*format,10,,67,format,5,,char*
+22329,MEMBER,<empty>,<empty>,exptime,19,,72,exptime,1,,long long int
+22330,MEMBER,<empty>,<empty>,nbytes,9,,73,nbytes,2,,int
+22331,MEMBER,<empty>,<empty>,latime,14,,74,latime,3,,uint32_t
+22332,MEMBER,<empty>,<empty>,it_flags,14,,75,it_flags,4,,uint16_t
+22333,MEMBER,<empty>,<empty>,nkey,13,,76,nkey,5,,uint8_t
+22334,MEMBER,<empty>,<empty>,clsid,13,,77,clsid,6,,uint8_t
+22335,MEMBER,<empty>,<empty>,key[],10,,78,key,7,,char[]
+22342,MEMBER,<empty>,<empty>,was_found,13,,92,was_found,1,,uint8_t
+22343,MEMBER,<empty>,<empty>,nkey,13,,93,nkey,2,,uint8_t
+22344,MEMBER,<empty>,<empty>,clsid,13,,94,clsid,3,,uint8_t
+22345,MEMBER,<empty>,<empty>,nbytes,9,,95,nbytes,4,,int
+22346,MEMBER,<empty>,<empty>,sfd,9,,96,sfd,5,,int
+22347,MEMBER,<empty>,<empty>,key[],10,,97,key,6,,char[]
+22354,MEMBER,<empty>,<empty>,status,9,,101,status,1,,int
+22355,MEMBER,<empty>,<empty>,cmd,9,,102,cmd,2,,int
+22356,MEMBER,<empty>,<empty>,ttl,16,,103,ttl,3,,rel_time_t
+22357,MEMBER,<empty>,<empty>,nkey,13,,104,nkey,4,,uint8_t
+22358,MEMBER,<empty>,<empty>,clsid,13,,105,clsid,5,,uint8_t
+22359,MEMBER,<empty>,<empty>,nbytes,9,,106,nbytes,6,,int
+22360,MEMBER,<empty>,<empty>,sfd,9,,107,sfd,7,,int
+22361,MEMBER,<empty>,<empty>,key[],10,,108,key,8,,char[]
+22368,MEMBER,<empty>,<empty>,transport,9,,112,transport,1,,int
+22369,MEMBER,<empty>,<empty>,reason,9,,113,reason,2,,int
+22370,MEMBER,<empty>,<empty>,sfd,9,,114,sfd,3,,int
+22372,MEMBER,<empty>,<empty>,addr,25,,115,addr,5,,sockaddr_in6
+22375,MEMBER,<empty>,<empty>,event,25,,136,event,2,,log_entry_type
+22376,MEMBER,<empty>,<empty>,pad,13,,137,pad,3,,uint8_t
+22377,MEMBER,<empty>,<empty>,eflags,14,,138,eflags,4,,uint16_t
+22378,MEMBER,<empty>,<empty>,gid,14,,139,gid,5,,uint64_t
+22380,MEMBER,<empty>,<empty>,tv,20,,140,tv,7,,timeval
+22381,MEMBER,<empty>,<empty>,size,9,,141,size,8,,int
+22383,MEMBER,<empty>,<empty>,end,14,,143,end,1,,char
+22384,MEMBER,<empty>,<empty>,data[],7,,144,data,10,,[]
+22392,MEMBER,<empty>,<empty>,*prev,20,,160,prev,2,,_logger*
+22394,MEMBER,<empty>,<empty>,*next,20,,161,next,4,,_logger*
+22395,MEMBER,<empty>,<empty>,mutex,21,,162,mutex,5,,pthread_mutex_t
+22396,MEMBER,<empty>,<empty>,written,14,,163,written,6,,uint64_t
+22397,MEMBER,<empty>,<empty>,dropped,14,,164,dropped,7,,uint64_t
+22398,MEMBER,<empty>,<empty>,blocked,14,,165,blocked,8,,uint64_t
+22399,MEMBER,<empty>,<empty>,fetcher_ratio,14,,166,fetcher_ratio,9,,uint16_t
+22400,MEMBER,<empty>,<empty>,mutation_ratio,14,,167,mutation_ratio,10,,uint16_t
+22401,MEMBER,<empty>,<empty>,eflags,14,,168,eflags,11,,uint16_t
+22402,MEMBER,<empty>,<empty>,*buf,14,,169,buf,12,,bipbuf_t*
+22403,MEMBER,<empty>,<empty>,*entry_map,25,,170,entry_map,13,,entry_details*
+22406,MEMBER,<empty>,<empty>,LOGGER_WATCHER_STDERR = 0,5,,174,LOGGER_WATCHER_STDERR,1,,ANY
+22407,MEMBER,<empty>,<empty>,LOGGER_WATCHER_CLIENT = 1,5,,175,LOGGER_WATCHER_CLIENT,2,,ANY
+22419,MEMBER,<empty>,<empty>,*c,10,,179,c,1,,void*
+22420,MEMBER,<empty>,<empty>,sfd,9,,180,sfd,2,,int
+22421,MEMBER,<empty>,<empty>,id,9,,181,id,3,,int
+22422,MEMBER,<empty>,<empty>,skipped,14,,182,skipped,4,,uint64_t
+22423,MEMBER,<empty>,<empty>,min_gid,14,,183,min_gid,5,,uint64_t
+22424,MEMBER,<empty>,<empty>,failed_flush,10,,184,failed_flush,6,,bool
+22426,MEMBER,<empty>,<empty>,t,30,,185,t,8,,logger_watcher_type
+22427,MEMBER,<empty>,<empty>,eflags,14,,186,eflags,9,,uint16_t
+22428,MEMBER,<empty>,<empty>,*buf,14,,187,buf,10,,bipbuf_t*
+22431,MEMBER,<empty>,<empty>,worker_dropped,14,,192,worker_dropped,1,,uint64_t
+22432,MEMBER,<empty>,<empty>,worker_written,14,,193,worker_written,2,,uint64_t
+22433,MEMBER,<empty>,<empty>,watcher_skipped,14,,194,watcher_skipped,3,,uint64_t
+22434,MEMBER,<empty>,<empty>,watcher_sent,14,,195,watcher_sent,4,,uint64_t
+22435,MEMBER,<empty>,<empty>,watcher_count,14,,196,watcher_count,5,,uint64_t
+22455,MEMBER,<empty>,<empty>,LOGGER_ADD_WATCHER_TOO_MANY = 0,5,,219,LOGGER_ADD_WATCHER_TOO_MANY,1,,ANY
+22456,MEMBER,<empty>,<empty>,LOGGER_ADD_WATCHER_OK,5,,220,LOGGER_ADD_WATCHER_OK,2,,ANY
+22457,MEMBER,<empty>,<empty>,LOGGER_ADD_WATCHER_FAILED,5,,221,LOGGER_ADD_WATCHER_FAILED,3,,ANY
+25574,MEMBER,<empty>,<empty>,count[2],16,,68,count,1,,unsigned int[2]
+25575,MEMBER,<empty>,<empty>,abcd[4],16,,69,abcd,2,,unsigned int[4]
+25576,MEMBER,<empty>,<empty>,buf[64],16,,70,buf,3,,unsigned char[64]
+25707,MEMBER,<empty>,<empty>,READ_DATA_RECEIVED,5,,75,READ_DATA_RECEIVED,1,,ANY
+25708,MEMBER,<empty>,<empty>,READ_NO_DATA_RECEIVED,5,,76,READ_NO_DATA_RECEIVED,2,,ANY
+25709,MEMBER,<empty>,<empty>,READ_ERROR,5,,77,READ_ERROR,3,,ANY
+25710,MEMBER,<empty>,<empty>,READ_MEMORY_ERROR,5,,78,READ_MEMORY_ERROR,4,,ANY
+25798,MEMBER,<empty>,<empty>,TRANSMIT_COMPLETE,5,,126,TRANSMIT_COMPLETE,1,,ANY
+25799,MEMBER,<empty>,<empty>,TRANSMIT_INCOMPLETE,5,,127,TRANSMIT_INCOMPLETE,2,,ANY
+25800,MEMBER,<empty>,<empty>,TRANSMIT_SOFT_ERROR,5,,128,TRANSMIT_SOFT_ERROR,3,,ANY
+25801,MEMBER,<empty>,<empty>,TRANSMIT_HARD_ERROR,5,,129,TRANSMIT_HARD_ERROR,4,,ANY
+40448,MEMBER,<empty>,<empty>,*mmap_base,10,,4473,mmap_base,1,,void*
+40449,MEMBER,<empty>,<empty>,old_base,14,,4474,old_base,2,,uint64_t
+40450,MEMBER,<empty>,<empty>,*slab_config,10,,4475,slab_config,3,,char*
+40451,MEMBER,<empty>,<empty>,time_delta,13,,4476,time_delta,4,,int64_t
+40452,MEMBER,<empty>,<empty>,process_started,14,,4477,process_started,5,,uint64_t
+40453,MEMBER,<empty>,<empty>,current_time,14,,4478,current_time,6,,uint32_t
+44170,MEMBER,<empty>,<empty>,conn_listening,5,,200,conn_listening,1,,ANY
+44171,MEMBER,<empty>,<empty>,conn_new_cmd,5,,201,conn_new_cmd,2,,ANY
+44172,MEMBER,<empty>,<empty>,conn_waiting,5,,202,conn_waiting,3,,ANY
+44173,MEMBER,<empty>,<empty>,conn_read,5,,203,conn_read,4,,ANY
+44174,MEMBER,<empty>,<empty>,conn_parse_cmd,5,,204,conn_parse_cmd,5,,ANY
+44175,MEMBER,<empty>,<empty>,conn_write,5,,205,conn_write,6,,ANY
+44176,MEMBER,<empty>,<empty>,conn_nread,5,,206,conn_nread,7,,ANY
+44177,MEMBER,<empty>,<empty>,conn_swallow,5,,207,conn_swallow,8,,ANY
+44178,MEMBER,<empty>,<empty>,conn_closing,5,,208,conn_closing,9,,ANY
+44179,MEMBER,<empty>,<empty>,conn_mwrite,5,,209,conn_mwrite,10,,ANY
+44180,MEMBER,<empty>,<empty>,conn_closed,5,,210,conn_closed,11,,ANY
+44181,MEMBER,<empty>,<empty>,conn_watch,5,,211,conn_watch,12,,ANY
+44182,MEMBER,<empty>,<empty>,conn_io_queue,5,,212,conn_io_queue,13,,ANY
+44183,MEMBER,<empty>,<empty>,conn_max_state,5,,213,conn_max_state,14,,ANY
+44185,MEMBER,<empty>,<empty>,bin_no_state,5,,217,bin_no_state,1,,ANY
+44186,MEMBER,<empty>,<empty>,bin_reading_set_header,5,,218,bin_reading_set_header,2,,ANY
+44187,MEMBER,<empty>,<empty>,bin_reading_cas_header,5,,219,bin_reading_cas_header,3,,ANY
+44188,MEMBER,<empty>,<empty>,bin_read_set_value,5,,220,bin_read_set_value,4,,ANY
+44189,MEMBER,<empty>,<empty>,bin_reading_get_key,5,,221,bin_reading_get_key,5,,ANY
+44190,MEMBER,<empty>,<empty>,bin_reading_stat,5,,222,bin_reading_stat,6,,ANY
+44191,MEMBER,<empty>,<empty>,bin_reading_del_header,5,,223,bin_reading_del_header,7,,ANY
+44192,MEMBER,<empty>,<empty>,bin_reading_incr_header,5,,224,bin_reading_incr_header,8,,ANY
+44193,MEMBER,<empty>,<empty>,bin_read_flush_exptime,5,,225,bin_read_flush_exptime,9,,ANY
+44194,MEMBER,<empty>,<empty>,bin_reading_sasl_auth,5,,226,bin_reading_sasl_auth,10,,ANY
+44195,MEMBER,<empty>,<empty>,bin_reading_sasl_auth_data,5,,227,bin_reading_sasl_auth_data,11,,ANY
+44196,MEMBER,<empty>,<empty>,bin_reading_touch_key,5,,228,bin_reading_touch_key,12,,ANY
+44198,MEMBER,<empty>,<empty>,ascii_prot = 3,5,,232,ascii_prot,1,,ANY
+44199,MEMBER,<empty>,<empty>,binary_prot,5,,233,binary_prot,2,,ANY
+44200,MEMBER,<empty>,<empty>,negotiating_prot,5,,234,negotiating_prot,3,,ANY
+44209,MEMBER,<empty>,<empty>,local_transport,5,,241,local_transport,1,,ANY
+44210,MEMBER,<empty>,<empty>,tcp_transport,5,,242,tcp_transport,2,,ANY
+44211,MEMBER,<empty>,<empty>,udp_transport,5,,243,udp_transport,3,,ANY
+44213,MEMBER,<empty>,<empty>,PAUSE_WORKER_THREADS = 0,5,,247,PAUSE_WORKER_THREADS,1,,ANY
+44214,MEMBER,<empty>,<empty>,PAUSE_ALL_THREADS,5,,248,PAUSE_ALL_THREADS,2,,ANY
+44215,MEMBER,<empty>,<empty>,RESUME_ALL_THREADS,5,,249,RESUME_ALL_THREADS,3,,ANY
+44216,MEMBER,<empty>,<empty>,RESUME_WORKER_THREADS,5,,250,RESUME_WORKER_THREADS,4,,ANY
+44225,MEMBER,<empty>,<empty>,NOT_STOP,5,,254,NOT_STOP,1,,ANY
+44226,MEMBER,<empty>,<empty>,GRACE_STOP,5,,255,GRACE_STOP,2,,ANY
+44227,MEMBER,<empty>,<empty>,EXIT_NORMALLY,5,,256,EXIT_NORMALLY,3,,ANY
+44229,MEMBER,<empty>,<empty>,ERROR_CLOSE,5,,260,ERROR_CLOSE,1,,ANY
+44230,MEMBER,<empty>,<empty>,NORMAL_CLOSE,5,,261,NORMAL_CLOSE,2,,ANY
+44231,MEMBER,<empty>,<empty>,IDLE_TIMEOUT_CLOSE,5,,262,IDLE_TIMEOUT_CLOSE,3,,ANY
+44232,MEMBER,<empty>,<empty>,SHUTDOWN_CLOSE,5,,263,SHUTDOWN_CLOSE,4,,ANY
+44234,MEMBER,<empty>,<empty>,NOT_STORED=0,5,,277,NOT_STORED,1,,ANY
+44235,MEMBER,<empty>,<empty>,STORED,19,,277,STORED,2,,ANY
+44236,MEMBER,<empty>,<empty>,EXISTS,27,,277,EXISTS,3,,ANY
+44237,MEMBER,<empty>,<empty>,NOT_FOUND,35,,277,NOT_FOUND,4,,ANY
+44238,MEMBER,<empty>,<empty>,TOO_LARGE,46,,277,TOO_LARGE,5,,ANY
+44239,MEMBER,<empty>,<empty>,NO_MEMORY,57,,277,NO_MEMORY,6,,ANY
+44248,MEMBER,<empty>,<empty>,OK,5,,281,OK,1,,ANY
+44249,MEMBER,<empty>,<empty>,NON_NUMERIC,9,,281,NON_NUMERIC,2,,ANY
+44250,MEMBER,<empty>,<empty>,EOM,22,,281,EOM,3,,ANY
+44251,MEMBER,<empty>,<empty>,DELTA_ITEM_NOT_FOUND,27,,281,DELTA_ITEM_NOT_FOUND,4,,ANY
+44252,MEMBER,<empty>,<empty>,DELTA_ITEM_CAS_MISMATCH,49,,281,DELTA_ITEM_CAS_MISMATCH,5,,ANY
+44254,MEMBER,<empty>,<empty>,uint64_t,5,,305,set_cmds,1,,uint64_t
+44255,MEMBER,<empty>,<empty>,uint64_t,5,,305,get_hits,2,,uint64_t
+44256,MEMBER,<empty>,<empty>,uint64_t,5,,305,touch_hits,3,,uint64_t
+44257,MEMBER,<empty>,<empty>,uint64_t,5,,305,delete_hits,4,,uint64_t
+44258,MEMBER,<empty>,<empty>,uint64_t,5,,305,cas_hits,5,,uint64_t
+44259,MEMBER,<empty>,<empty>,uint64_t,5,,305,cas_badval,6,,uint64_t
+44260,MEMBER,<empty>,<empty>,uint64_t,5,,305,incr_hits,7,,uint64_t
+44261,MEMBER,<empty>,<empty>,uint64_t,5,,305,decr_hits,8,,uint64_t
+44263,MEMBER,<empty>,<empty>,mutex,23,,357,mutex,1,,pthread_mutex_t
+44264,MEMBER,<empty>,<empty>,uint64_t,5,,359,get_cmds,2,,uint64_t
+44265,MEMBER,<empty>,<empty>,uint64_t,5,,359,get_misses,3,,uint64_t
+44266,MEMBER,<empty>,<empty>,uint64_t,5,,359,get_expired,4,,uint64_t
+44267,MEMBER,<empty>,<empty>,uint64_t,5,,359,get_flushed,5,,uint64_t
+44268,MEMBER,<empty>,<empty>,uint64_t,5,,359,touch_cmds,6,,uint64_t
+44269,MEMBER,<empty>,<empty>,uint64_t,5,,359,touch_misses,7,,uint64_t
+44270,MEMBER,<empty>,<empty>,uint64_t,5,,359,delete_misses,8,,uint64_t
+44271,MEMBER,<empty>,<empty>,uint64_t,5,,359,incr_misses,9,,uint64_t
+44272,MEMBER,<empty>,<empty>,uint64_t,5,,359,decr_misses,10,,uint64_t
+44273,MEMBER,<empty>,<empty>,uint64_t,5,,359,cas_misses,11,,uint64_t
+44274,MEMBER,<empty>,<empty>,uint64_t,5,,359,meta_cmds,12,,uint64_t
+44275,MEMBER,<empty>,<empty>,uint64_t,5,,359,bytes_read,13,,uint64_t
+44276,MEMBER,<empty>,<empty>,uint64_t,5,,359,bytes_written,14,,uint64_t
+44277,MEMBER,<empty>,<empty>,uint64_t,5,,359,flush_cmds,15,,uint64_t
+44278,MEMBER,<empty>,<empty>,uint64_t,5,,359,conn_yields,16,,uint64_t
+44279,MEMBER,<empty>,<empty>,uint64_t,5,,359,auth_cmds,17,,uint64_t
+44280,MEMBER,<empty>,<empty>,uint64_t,5,,359,auth_errors,18,,uint64_t
+44281,MEMBER,<empty>,<empty>,uint64_t,5,,359,idle_kicks,19,,uint64_t
+44282,MEMBER,<empty>,<empty>,uint64_t,5,,359,response_obj_oom,20,,uint64_t
+44283,MEMBER,<empty>,<empty>,uint64_t,5,,359,response_obj_count,21,,uint64_t
+44284,MEMBER,<empty>,<empty>,uint64_t,5,,359,response_obj_bytes,22,,uint64_t
+44285,MEMBER,<empty>,<empty>,uint64_t,5,,359,read_buf_oom,23,,uint64_t
+44286,MEMBER,<empty>,<empty>,uint64_t,5,,359,store_too_large,24,,uint64_t
+44287,MEMBER,<empty>,<empty>,uint64_t,5,,359,store_no_memory,25,,uint64_t
+44291,MEMBER,<empty>,<empty>,slab_stats[MAX_NUMBER_OF_SLAB_CLASSES],23,,367,slab_stats,29,,slab_stats[64]
+44292,MEMBER,<empty>,<empty>,lru_hits[POWER_LARGEST],14,,368,lru_hits,30,,uint64_t[256]
+44293,MEMBER,<empty>,<empty>,read_buf_count,14,,369,read_buf_count,31,,uint64_t
+44294,MEMBER,<empty>,<empty>,read_buf_bytes,14,,370,read_buf_bytes,32,,uint64_t
+44295,MEMBER,<empty>,<empty>,read_buf_bytes_free,14,,371,read_buf_bytes_free,33,,uint64_t
+44311,MEMBER,<empty>,<empty>,total_items,19,,378,total_items,1,,uint64_t
+44312,MEMBER,<empty>,<empty>,total_conns,19,,379,total_conns,2,,uint64_t
+44313,MEMBER,<empty>,<empty>,rejected_conns,19,,380,rejected_conns,3,,uint64_t
+44314,MEMBER,<empty>,<empty>,malloc_fails,19,,381,malloc_fails,4,,uint64_t
+44315,MEMBER,<empty>,<empty>,listen_disabled_num,19,,382,listen_disabled_num,5,,uint64_t
+44316,MEMBER,<empty>,<empty>,slabs_moved,19,,383,slabs_moved,6,,uint64_t
+44317,MEMBER,<empty>,<empty>,slab_reassign_rescues,19,,384,slab_reassign_rescues,7,,uint64_t
+44318,MEMBER,<empty>,<empty>,slab_reassign_evictions_nomem,19,,385,slab_reassign_evictions_nomem,8,,uint64_t
+44319,MEMBER,<empty>,<empty>,slab_reassign_inline_reclaim,19,,386,slab_reassign_inline_reclaim,9,,uint64_t
+44320,MEMBER,<empty>,<empty>,slab_reassign_chunk_rescues,19,,387,slab_reassign_chunk_rescues,10,,uint64_t
+44321,MEMBER,<empty>,<empty>,slab_reassign_busy_items,19,,388,slab_reassign_busy_items,11,,uint64_t
+44322,MEMBER,<empty>,<empty>,slab_reassign_busy_deletes,19,,389,slab_reassign_busy_deletes,12,,uint64_t
+44323,MEMBER,<empty>,<empty>,lru_crawler_starts,19,,390,lru_crawler_starts,13,,uint64_t
+44324,MEMBER,<empty>,<empty>,lru_maintainer_juggles,19,,391,lru_maintainer_juggles,14,,uint64_t
+44325,MEMBER,<empty>,<empty>,time_in_listen_disabled_us,19,,392,time_in_listen_disabled_us,15,,uint64_t
+44326,MEMBER,<empty>,<empty>,log_worker_dropped,19,,393,log_worker_dropped,16,,uint64_t
+44327,MEMBER,<empty>,<empty>,log_worker_written,19,,394,log_worker_written,17,,uint64_t
+44328,MEMBER,<empty>,<empty>,log_watcher_skipped,19,,395,log_watcher_skipped,18,,uint64_t
+44329,MEMBER,<empty>,<empty>,log_watcher_sent,19,,396,log_watcher_sent,19,,uint64_t
+44330,MEMBER,<empty>,<empty>,extstore_compact_lost,19,,398,extstore_compact_lost,20,,uint64_t
+44331,MEMBER,<empty>,<empty>,extstore_compact_rescues,19,,399,extstore_compact_rescues,21,,uint64_t
+44332,MEMBER,<empty>,<empty>,extstore_compact_skipped,19,,400,extstore_compact_skipped,22,,uint64_t
+44333,MEMBER,<empty>,<empty>,ssl_handshake_errors,19,,403,ssl_handshake_errors,23,,uint64_t
+44334,MEMBER,<empty>,<empty>,ssl_new_sessions,19,,404,ssl_new_sessions,24,,uint64_t
+44336,MEMBER,<empty>,<empty>,maxconns_entered,20,,406,maxconns_entered,26,,timeval
+44337,MEMBER,<empty>,<empty>,unexpected_napi_ids,19,,407,unexpected_napi_ids,27,,uint64_t
+44338,MEMBER,<empty>,<empty>,round_robin_fallback,19,,408,round_robin_fallback,28,,uint64_t
+44340,MEMBER,<empty>,<empty>,curr_items,19,,416,curr_items,1,,uint64_t
+44341,MEMBER,<empty>,<empty>,curr_bytes,19,,417,curr_bytes,2,,uint64_t
+44342,MEMBER,<empty>,<empty>,curr_conns,19,,418,curr_conns,3,,uint64_t
+44343,MEMBER,<empty>,<empty>,hash_bytes,19,,419,hash_bytes,4,,uint64_t
+44344,MEMBER,<empty>,<empty>,conn_structs,19,,420,conn_structs,5,,unsigned int
+44345,MEMBER,<empty>,<empty>,reserved_fds,19,,421,reserved_fds,6,,unsigned int
+44346,MEMBER,<empty>,<empty>,hash_power_level,19,,422,hash_power_level,7,,unsigned int
+44347,MEMBER,<empty>,<empty>,log_watchers,19,,423,log_watchers,8,,unsigned int
+44348,MEMBER,<empty>,<empty>,hash_is_expanding,19,,424,hash_is_expanding,9,,bool
+44349,MEMBER,<empty>,<empty>,accepting_conns,19,,425,accepting_conns,10,,bool
+44350,MEMBER,<empty>,<empty>,slab_reassign_running,19,,426,slab_reassign_running,11,,bool
+44351,MEMBER,<empty>,<empty>,lru_crawler_running,19,,427,lru_crawler_running,12,,bool
+44353,MEMBER,<empty>,<empty>,maxbytes,12,,437,maxbytes,1,,size_t
+44354,MEMBER,<empty>,<empty>,maxconns,9,,438,maxconns,2,,int
+44355,MEMBER,<empty>,<empty>,port,9,,439,port,3,,int
+44356,MEMBER,<empty>,<empty>,udpport,9,,440,udpport,4,,int
+44357,MEMBER,<empty>,<empty>,*inter,10,,441,inter,5,,char*
+44358,MEMBER,<empty>,<empty>,verbose,9,,442,verbose,6,,int
+44359,MEMBER,<empty>,<empty>,oldest_live,16,,443,oldest_live,7,,rel_time_t
+44360,MEMBER,<empty>,<empty>,oldest_cas,14,,444,oldest_cas,8,,uint64_t
+44361,MEMBER,<empty>,<empty>,evict_to_free,9,,445,evict_to_free,9,,int
+44362,MEMBER,<empty>,<empty>,*socketpath,10,,446,socketpath,10,,char*
+44363,MEMBER,<empty>,<empty>,*auth_file,10,,447,auth_file,11,,char*
+44364,MEMBER,<empty>,<empty>,access,9,,448,access,12,,int
+44365,MEMBER,<empty>,<empty>,factor,12,,449,factor,13,,double
+44366,MEMBER,<empty>,<empty>,chunk_size,9,,450,chunk_size,14,,int
+44367,MEMBER,<empty>,<empty>,num_threads,9,,451,num_threads,15,,int
+44368,MEMBER,<empty>,<empty>,num_threads_per_udp,9,,452,num_threads_per_udp,16,,int
+44369,MEMBER,<empty>,<empty>,prefix_delimiter,10,,453,prefix_delimiter,17,,char
+44370,MEMBER,<empty>,<empty>,detail_enabled,9,,454,detail_enabled,18,,int
+44371,MEMBER,<empty>,<empty>,reqs_per_event,9,,455,reqs_per_event,19,,int
+44372,MEMBER,<empty>,<empty>,use_cas,10,,457,use_cas,20,,bool
+44374,MEMBER,<empty>,<empty>,binding_protocol,19,,458,binding_protocol,22,,protocol
+44375,MEMBER,<empty>,<empty>,backlog,9,,459,backlog,23,,int
+44376,MEMBER,<empty>,<empty>,item_size_max,9,,460,item_size_max,24,,int
+44377,MEMBER,<empty>,<empty>,slab_chunk_size_max,9,,461,slab_chunk_size_max,25,,int
+44378,MEMBER,<empty>,<empty>,slab_page_size,9,,462,slab_page_size,26,,int
+44379,MEMBER,<empty>,<empty>,sig_hup,27,,463,sig_hup,27,,sig_atomic_t
+44380,MEMBER,<empty>,<empty>,sasl,10,,464,sasl,28,,bool
+44381,MEMBER,<empty>,<empty>,maxconns_fast,10,,465,maxconns_fast,29,,bool
+44382,MEMBER,<empty>,<empty>,lru_crawler,10,,466,lru_crawler,30,,bool
+44383,MEMBER,<empty>,<empty>,lru_maintainer_thread,10,,467,lru_maintainer_thread,31,,bool
+44384,MEMBER,<empty>,<empty>,lru_segmented,10,,468,lru_segmented,32,,bool
+44385,MEMBER,<empty>,<empty>,slab_reassign,10,,469,slab_reassign,33,,bool
+44386,MEMBER,<empty>,<empty>,slab_automove,9,,470,slab_automove,34,,int
+44387,MEMBER,<empty>,<empty>,slab_automove_ratio,12,,471,slab_automove_ratio,35,,double
+44388,MEMBER,<empty>,<empty>,slab_automove_window,18,,472,slab_automove_window,36,,unsigned int
+44389,MEMBER,<empty>,<empty>,hashpower_init,9,,473,hashpower_init,37,,int
+44390,MEMBER,<empty>,<empty>,shutdown_command,10,,474,shutdown_command,38,,bool
+44391,MEMBER,<empty>,<empty>,tail_repair_time,9,,475,tail_repair_time,39,,int
+44392,MEMBER,<empty>,<empty>,flush_enabled,10,,476,flush_enabled,40,,bool
+44393,MEMBER,<empty>,<empty>,dump_enabled,10,,477,dump_enabled,41,,bool
+44394,MEMBER,<empty>,<empty>,*hash_algorithm,10,,478,hash_algorithm,42,,char*
+44395,MEMBER,<empty>,<empty>,lru_crawler_sleep,9,,479,lru_crawler_sleep,43,,int
+44396,MEMBER,<empty>,<empty>,lru_crawler_tocrawl,14,,480,lru_crawler_tocrawl,44,,uint32_t
+44397,MEMBER,<empty>,<empty>,hot_lru_pct,9,,481,hot_lru_pct,45,,int
+44398,MEMBER,<empty>,<empty>,warm_lru_pct,9,,482,warm_lru_pct,46,,int
+44399,MEMBER,<empty>,<empty>,hot_max_factor,12,,483,hot_max_factor,47,,double
+44400,MEMBER,<empty>,<empty>,warm_max_factor,12,,484,warm_max_factor,48,,double
+44401,MEMBER,<empty>,<empty>,crawls_persleep,9,,485,crawls_persleep,49,,int
+44402,MEMBER,<empty>,<empty>,temp_lru,10,,486,temp_lru,50,,bool
+44403,MEMBER,<empty>,<empty>,temporary_ttl,14,,487,temporary_ttl,51,,uint32_t
+44404,MEMBER,<empty>,<empty>,idle_timeout,9,,488,idle_timeout,52,,int
+44405,MEMBER,<empty>,<empty>,logger_watcher_buf_size,18,,489,logger_watcher_buf_size,53,,unsigned int
+44406,MEMBER,<empty>,<empty>,logger_buf_size,18,,490,logger_buf_size,54,,unsigned int
+44407,MEMBER,<empty>,<empty>,read_buf_mem_limit,18,,491,read_buf_mem_limit,55,,unsigned int
+44408,MEMBER,<empty>,<empty>,drop_privileges,10,,492,drop_privileges,56,,bool
+44409,MEMBER,<empty>,<empty>,watch_enabled,10,,493,watch_enabled,57,,bool
+44410,MEMBER,<empty>,<empty>,relaxed_privileges,10,,494,relaxed_privileges,58,,bool
+44411,MEMBER,<empty>,<empty>,meta_response_old,10,,495,meta_response_old,59,,bool
+44412,MEMBER,<empty>,<empty>,ext_io_threadcount,18,,497,ext_io_threadcount,60,,unsigned int
+44413,MEMBER,<empty>,<empty>,ext_page_size,18,,498,ext_page_size,61,,unsigned int
+44414,MEMBER,<empty>,<empty>,ext_item_size,18,,499,ext_item_size,62,,unsigned int
+44415,MEMBER,<empty>,<empty>,ext_item_age,18,,500,ext_item_age,63,,unsigned int
+44416,MEMBER,<empty>,<empty>,ext_low_ttl,18,,501,ext_low_ttl,64,,unsigned int
+44417,MEMBER,<empty>,<empty>,ext_recache_rate,18,,502,ext_recache_rate,65,,unsigned int
+44418,MEMBER,<empty>,<empty>,ext_wbuf_size,18,,503,ext_wbuf_size,66,,unsigned int
+44419,MEMBER,<empty>,<empty>,ext_compact_under,18,,504,ext_compact_under,67,,unsigned int
+44420,MEMBER,<empty>,<empty>,ext_drop_under,18,,505,ext_drop_under,68,,unsigned int
+44421,MEMBER,<empty>,<empty>,ext_max_sleep,18,,506,ext_max_sleep,69,,unsigned int
+44422,MEMBER,<empty>,<empty>,ext_max_frag,12,,507,ext_max_frag,70,,double
+44423,MEMBER,<empty>,<empty>,slab_automove_freeratio,12,,508,slab_automove_freeratio,71,,double
+44424,MEMBER,<empty>,<empty>,ext_drop_unread,10,,509,ext_drop_unread,72,,bool
+44425,MEMBER,<empty>,<empty>,ext_global_pool_min,18,,511,ext_global_pool_min,73,,unsigned int
+44426,MEMBER,<empty>,<empty>,ssl_enabled,10,,514,ssl_enabled,74,,bool
+44427,MEMBER,<empty>,<empty>,*ssl_ctx,13,,515,ssl_ctx,75,,SSL_CTX*
+44428,MEMBER,<empty>,<empty>,*ssl_chain_cert,10,,516,ssl_chain_cert,76,,char*
+44429,MEMBER,<empty>,<empty>,*ssl_key,10,,517,ssl_key,77,,char*
+44430,MEMBER,<empty>,<empty>,ssl_verify_mode,9,,518,ssl_verify_mode,78,,int
+44431,MEMBER,<empty>,<empty>,ssl_keyformat,9,,519,ssl_keyformat,79,,int
+44432,MEMBER,<empty>,<empty>,*ssl_ciphers,10,,520,ssl_ciphers,80,,char*
+44433,MEMBER,<empty>,<empty>,*ssl_ca_cert,10,,521,ssl_ca_cert,81,,char*
+44434,MEMBER,<empty>,<empty>,ssl_last_cert_refresh_time,16,,522,ssl_last_cert_refresh_time,82,,rel_time_t
+44435,MEMBER,<empty>,<empty>,ssl_wbuf_size,18,,523,ssl_wbuf_size,83,,unsigned int
+44436,MEMBER,<empty>,<empty>,ssl_session_cache,10,,524,ssl_session_cache,84,,bool
+44437,MEMBER,<empty>,<empty>,ssl_kernel_tls,10,,525,ssl_kernel_tls,85,,bool
+44438,MEMBER,<empty>,<empty>,ssl_min_version,9,,526,ssl_min_version,86,,int
+44439,MEMBER,<empty>,<empty>,num_napi_ids,9,,528,num_napi_ids,87,,int
+44440,MEMBER,<empty>,<empty>,*memory_file,10,,529,memory_file,88,,char*
+44441,MEMBER,<empty>,<empty>,proxy_enabled,10,,531,proxy_enabled,89,,bool
+44442,MEMBER,<empty>,<empty>,proxy_uring,10,,532,proxy_uring,90,,bool
+44443,MEMBER,<empty>,<empty>,*proxy_startfile,10,,533,proxy_startfile,91,,char*
+44444,MEMBER,<empty>,<empty>,*proxy_ctx,10,,534,proxy_ctx,92,,void*
+44445,MEMBER,<empty>,<empty>,sock_cookie_id,14,,537,sock_cookie_id,93,,uint32_t
+44455,MEMBER,<empty>,<empty>,*next,21,,577,next,2,,_stritem*
+44457,MEMBER,<empty>,<empty>,*prev,21,,578,prev,4,,_stritem*
+44459,MEMBER,<empty>,<empty>,*h_next,21,,580,h_next,6,,_stritem*
+44460,MEMBER,<empty>,<empty>,time,21,,581,time,7,,rel_time_t
+44461,MEMBER,<empty>,<empty>,exptime,21,,582,exptime,8,,rel_time_t
+44462,MEMBER,<empty>,<empty>,nbytes,21,,583,nbytes,9,,int
+44463,MEMBER,<empty>,<empty>,refcount,21,,584,refcount,10,,short unsigned
+44464,MEMBER,<empty>,<empty>,it_flags,21,,585,it_flags,11,,uint16_t
+44465,MEMBER,<empty>,<empty>,slabs_clsid,21,,586,slabs_clsid,12,,uint8_t
+44466,MEMBER,<empty>,<empty>,nkey,21,,587,nkey,13,,uint8_t
+44468,MEMBER,<empty>,<empty>,cas,18,,591,cas,1,,uint64_t
+44469,MEMBER,<empty>,<empty>,end,14,,592,end,2,,char
+44470,MEMBER,<empty>,<empty>,data[],7,,593,data,15,,[]
+44478,MEMBER,<empty>,<empty>,CRAWLER_AUTOEXPIRE=0,5,,602,CRAWLER_AUTOEXPIRE,1,,ANY
+44479,MEMBER,<empty>,<empty>,CRAWLER_EXPIRED,27,,602,CRAWLER_EXPIRED,2,,ANY
+44480,MEMBER,<empty>,<empty>,CRAWLER_METADUMP,44,,602,CRAWLER_METADUMP,3,,ANY
+44490,MEMBER,<empty>,<empty>,*next,21,,606,next,2,,_stritem*
+44492,MEMBER,<empty>,<empty>,*prev,21,,607,prev,4,,_stritem*
+44494,MEMBER,<empty>,<empty>,*h_next,21,,608,h_next,6,,_stritem*
+44495,MEMBER,<empty>,<empty>,time,21,,609,time,7,,rel_time_t
+44496,MEMBER,<empty>,<empty>,exptime,21,,610,exptime,8,,rel_time_t
+44497,MEMBER,<empty>,<empty>,nbytes,21,,611,nbytes,9,,int
+44498,MEMBER,<empty>,<empty>,refcount,21,,612,refcount,10,,short unsigned
+44499,MEMBER,<empty>,<empty>,it_flags,21,,613,it_flags,11,,uint16_t
+44500,MEMBER,<empty>,<empty>,slabs_clsid,21,,614,slabs_clsid,12,,uint8_t
+44501,MEMBER,<empty>,<empty>,nkey,21,,615,nkey,13,,uint8_t
+44502,MEMBER,<empty>,<empty>,remaining,21,,616,remaining,14,,uint32_t
+44503,MEMBER,<empty>,<empty>,reclaimed,21,,617,reclaimed,15,,uint64_t
+44504,MEMBER,<empty>,<empty>,unfetched,21,,618,unfetched,16,,uint64_t
+44505,MEMBER,<empty>,<empty>,checked,21,,619,checked,17,,uint64_t
+44509,MEMBER,<empty>,<empty>,*next,22,,624,next,2,,_strchunk*
+44511,MEMBER,<empty>,<empty>,*prev,22,,625,prev,4,,_strchunk*
+44513,MEMBER,<empty>,<empty>,*head,22,,626,head,6,,_stritem*
+44514,MEMBER,<empty>,<empty>,size,22,,627,size,7,,int
+44515,MEMBER,<empty>,<empty>,used,22,,628,used,8,,int
+44516,MEMBER,<empty>,<empty>,nbytes,22,,629,nbytes,9,,int
+44517,MEMBER,<empty>,<empty>,refcount,22,,630,refcount,10,,short unsigned
+44518,MEMBER,<empty>,<empty>,it_flags,22,,631,it_flags,11,,uint16_t
+44519,MEMBER,<empty>,<empty>,slabs_clsid,22,,632,slabs_clsid,12,,uint8_t
+44520,MEMBER,<empty>,<empty>,orig_clsid,22,,633,orig_clsid,13,,uint8_t
+44521,MEMBER,<empty>,<empty>,data[],10,,634,data,14,,char[]
+44543,MEMBER,<empty>,<empty>,*ctx,10,,688,ctx,1,,void*
+44544,MEMBER,<empty>,<empty>,*stack_ctx,10,,689,stack_ctx,2,,void*
+44545,MEMBER,<empty>,<empty>,count,9,,690,count,3,,int
+44546,MEMBER,<empty>,<empty>,type,9,,691,type,4,,int
+44548,MEMBER,<empty>,<empty>,*ctx,10,,695,ctx,1,,void*
+44549,MEMBER,<empty>,<empty>,submit_cb,23,,696,submit_cb,2,,io_queue_stack_cb
+44550,MEMBER,<empty>,<empty>,complete_cb,23,,697,complete_cb,3,,io_queue_stack_cb
+44551,MEMBER,<empty>,<empty>,return_cb,17,,698,return_cb,4,,io_queue_cb
+44552,MEMBER,<empty>,<empty>,finalize_cb,17,,699,finalize_cb,5,,io_queue_cb
+44553,MEMBER,<empty>,<empty>,type,9,,700,type,6,,int
+44558,MEMBER,<empty>,<empty>,thread_id,15,,705,thread_id,1,,pthread_t
+44560,MEMBER,<empty>,<empty>,*base,23,,706,base,3,,event_base*
+44562,MEMBER,<empty>,<empty>,notify_event,18,,707,notify_event,5,,event
+44563,MEMBER,<empty>,<empty>,notify_event_fd,9,,709,notify_event_fd,6,,int
+44564,MEMBER,<empty>,<empty>,notify_receive_fd,9,,711,notify_receive_fd,7,,int
+44565,MEMBER,<empty>,<empty>,notify_send_fd,9,,712,notify_send_fd,8,,int
+44567,MEMBER,<empty>,<empty>,stats,25,,714,stats,10,,thread_stats
+44568,MEMBER,<empty>,<empty>,io_queues[IO_QUEUE_COUNT],19,,715,io_queues,11,,io_queue_cb_s[3]
+44570,MEMBER,<empty>,<empty>,*ev_queue,23,,716,ev_queue,13,,conn_queue*
+44571,MEMBER,<empty>,<empty>,*rbuf_cache,13,,717,rbuf_cache,14,,cache_t*
+44572,MEMBER,<empty>,<empty>,*open_bundle,20,,718,open_bundle,15,,mc_resp_bundle*
+44573,MEMBER,<empty>,<empty>,*io_cache,13,,719,io_cache,16,,cache_t*
+44574,MEMBER,<empty>,<empty>,*storage,10,,721,storage,17,,void*
+44575,MEMBER,<empty>,<empty>,*l,12,,723,l,18,,logger*
+44576,MEMBER,<empty>,<empty>,*lru_bump_buf,10,,724,lru_bump_buf,19,,void*
+44577,MEMBER,<empty>,<empty>,*ssl_wbuf,12,,726,ssl_wbuf,20,,char*
+44578,MEMBER,<empty>,<empty>,napi_id,9,,728,napi_id,21,,int
+44579,MEMBER,<empty>,<empty>,*L,10,,730,L,22,,void*
+44580,MEMBER,<empty>,<empty>,*proxy_hooks,10,,731,proxy_hooks,23,,void*
+44581,MEMBER,<empty>,<empty>,*proxy_user_stats,10,,732,proxy_user_stats,24,,void*
+44582,MEMBER,<empty>,<empty>,*proxy_int_stats,10,,733,proxy_int_stats,25,,void*
+44583,MEMBER,<empty>,<empty>,proxy_rng[4],14,,734,proxy_rng,26,,uint32_t[4]
+44596,MEMBER,<empty>,<empty>,*bundle,20,,744,bundle,1,,mc_resp_bundle*
+44598,MEMBER,<empty>,<empty>,*next,21,,745,next,3,,_mc_resp*
+44599,MEMBER,<empty>,<empty>,wbytes,9,,746,wbytes,4,,int
+44600,MEMBER,<empty>,<empty>,tosend,9,,747,tosend,5,,int
+44601,MEMBER,<empty>,<empty>,*write_and_free,10,,748,write_and_free,6,,void*
+44602,MEMBER,<empty>,<empty>,*io_pending,18,,749,io_pending,7,,io_pending_t*
+44603,MEMBER,<empty>,<empty>,*item,10,,751,item,8,,item*
+44605,MEMBER,<empty>,<empty>,iov[MC_RESP_IOVCOUNT],18,,752,iov,10,,iovec[4]
+44606,MEMBER,<empty>,<empty>,chunked_total,9,,753,chunked_total,11,,int
+44607,MEMBER,<empty>,<empty>,iovcnt,13,,754,iovcnt,12,,uint8_t
+44608,MEMBER,<empty>,<empty>,chunked_data_iov,13,,755,chunked_data_iov,13,,uint8_t
+44609,MEMBER,<empty>,<empty>,skip,10,,760,skip,14,,bool
+44610,MEMBER,<empty>,<empty>,free,10,,761,free,15,,bool
+44611,MEMBER,<empty>,<empty>,request_id,17,,763,request_id,16,,uint16_t
+44612,MEMBER,<empty>,<empty>,udp_sequence,17,,764,udp_sequence,17,,uint16_t
+44613,MEMBER,<empty>,<empty>,udp_total,17,,765,udp_total,18,,uint16_t
+44615,MEMBER,<empty>,<empty>,request_addr,25,,766,request_addr,20,,sockaddr_in6
+44616,MEMBER,<empty>,<empty>,request_addr_size,15,,767,request_addr_size,21,,socklen_t
+44617,MEMBER,<empty>,<empty>,wbuf[WRITE_BUFFER_SIZE],10,,769,wbuf,22,,char[1024]
+44632,MEMBER,<empty>,<empty>,refcount,13,,774,refcount,1,,uint8_t
+44633,MEMBER,<empty>,<empty>,next_check,13,,775,next_check,2,,uint8_t
+44635,MEMBER,<empty>,<empty>,*next,28,,776,next,4,,_mc_resp_bundle*
+44637,MEMBER,<empty>,<empty>,*prev,28,,777,prev,6,,_mc_resp_bundle*
+44638,MEMBER,<empty>,<empty>,r[],13,,778,r,7,,_mc_resp[]
+44647,MEMBER,<empty>,<empty>,io_queue_type,9,,784,io_queue_type,1,,int
+44648,MEMBER,<empty>,<empty>,*thread,21,,785,thread,2,,LIBEVENT_THREAD*
+44649,MEMBER,<empty>,<empty>,*c,10,,786,c,3,,conn*
+44650,MEMBER,<empty>,<empty>,*resp,13,,787,resp,4,,mc_resp*
+44651,MEMBER,<empty>,<empty>,data[120],10,,788,data,5,,char[120]
+44659,MEMBER,<empty>,<empty>,*sasl_conn,17,,795,sasl_conn,1,,sasl_conn_t*
+44660,MEMBER,<empty>,<empty>,sfd,12,,796,sfd,2,,int
+44661,MEMBER,<empty>,<empty>,sasl_started,10,,797,sasl_started,3,,bool
+44662,MEMBER,<empty>,<empty>,authenticated,10,,798,authenticated,4,,bool
+44663,MEMBER,<empty>,<empty>,set_stale,10,,799,set_stale,5,,bool
+44664,MEMBER,<empty>,<empty>,mset_res,10,,800,mset_res,6,,bool
+44665,MEMBER,<empty>,<empty>,close_after_write,10,,801,close_after_write,7,,bool
+44666,MEMBER,<empty>,<empty>,rbuf_malloced,10,,802,rbuf_malloced,8,,bool
+44667,MEMBER,<empty>,<empty>,item_malloced,10,,803,item_malloced,9,,bool
+44668,MEMBER,<empty>,<empty>,*ssl,12,,805,ssl,10,,SSL*
+44669,MEMBER,<empty>,<empty>,*ssl_wbuf,12,,806,ssl_wbuf,11,,char*
+44670,MEMBER,<empty>,<empty>,ssl_enabled,10,,807,ssl_enabled,12,,bool
+44672,MEMBER,<empty>,<empty>,state,23,,809,state,14,,conn_states
+44674,MEMBER,<empty>,<empty>,substate,24,,810,substate,16,,bin_substates
+44675,MEMBER,<empty>,<empty>,last_cmd_time,16,,811,last_cmd_time,17,,rel_time_t
+44677,MEMBER,<empty>,<empty>,event,18,,812,event,19,,event
+44678,MEMBER,<empty>,<empty>,ev_flags,12,,813,ev_flags,20,,short
+44679,MEMBER,<empty>,<empty>,which,12,,814,which,21,,short
+44680,MEMBER,<empty>,<empty>,*rbuf,12,,816,rbuf,22,,char*
+44681,MEMBER,<empty>,<empty>,*rcurr,12,,817,rcurr,23,,char*
+44682,MEMBER,<empty>,<empty>,rsize,12,,818,rsize,24,,int
+44683,MEMBER,<empty>,<empty>,rbytes,12,,819,rbytes,25,,int
+44684,MEMBER,<empty>,<empty>,*resp,13,,821,resp,26,,mc_resp*
+44685,MEMBER,<empty>,<empty>,*resp_head,13,,822,resp_head,27,,mc_resp*
+44686,MEMBER,<empty>,<empty>,*ritem,12,,823,ritem,28,,char*
+44687,MEMBER,<empty>,<empty>,rlbytes,12,,824,rlbytes,29,,int
+44688,MEMBER,<empty>,<empty>,*item,12,,832,item,30,,void*
+44689,MEMBER,<empty>,<empty>,sbytes,12,,835,sbytes,31,,int
+44690,MEMBER,<empty>,<empty>,io_queues_submitted,9,,837,io_queues_submitted,32,,int
+44691,MEMBER,<empty>,<empty>,io_queues[IO_QUEUE_COUNT],16,,838,io_queues,33,,io_queue_s[3]
+44692,MEMBER,<empty>,<empty>,proxy_coro_ref,18,,840,proxy_coro_ref,34,,unsigned int
+44693,MEMBER,<empty>,<empty>,recache_counter,18,,843,recache_counter,35,,unsigned int
+44695,MEMBER,<empty>,<empty>,protocol,19,,845,protocol,37,,protocol
+44697,MEMBER,<empty>,<empty>,transport,28,,846,transport,39,,network_transport
+44699,MEMBER,<empty>,<empty>,close_reason,24,,847,close_reason,41,,close_reasons
+44700,MEMBER,<empty>,<empty>,request_id,12,,850,request_id,42,,int
+44702,MEMBER,<empty>,<empty>,request_addr,25,,851,request_addr,44,,sockaddr_in6
+44703,MEMBER,<empty>,<empty>,request_addr_size,15,,852,request_addr_size,45,,socklen_t
+44704,MEMBER,<empty>,<empty>,noreply,12,,854,noreply,46,,bool
+44706,MEMBER,<empty>,<empty>,*buffer,14,,857,buffer,1,,char*
+44707,MEMBER,<empty>,<empty>,size,16,,858,size,2,,size_t
+44708,MEMBER,<empty>,<empty>,offset,16,,859,offset,3,,size_t
+44709,MEMBER,<empty>,<empty>,stats,7,,860,stats,48,,struct
+44710,MEMBER,<empty>,<empty>,binary_header,36,,864,binary_header,49,,protocol_binary_request_header
+44711,MEMBER,<empty>,<empty>,cas,14,,865,cas,50,,uint64_t
+44712,MEMBER,<empty>,<empty>,tag,14,,866,tag,51,,uint64_t
+44713,MEMBER,<empty>,<empty>,cmd,11,,867,cmd,52,,short
+44714,MEMBER,<empty>,<empty>,opaque,9,,868,opaque,53,,int
+44715,MEMBER,<empty>,<empty>,keylen,9,,869,keylen,54,,int
+44716,MEMBER,<empty>,<empty>,*next,12,,870,next,55,,conn*
+44717,MEMBER,<empty>,<empty>,*thread,21,,871,thread,56,,LIBEVENT_THREAD*
+44756,MEMBER,<empty>,<empty>,*slab_start,10,,893,slab_start,1,,void*
+44757,MEMBER,<empty>,<empty>,*slab_end,10,,894,slab_end,2,,void*
+44758,MEMBER,<empty>,<empty>,*slab_pos,10,,895,slab_pos,3,,void*
+44759,MEMBER,<empty>,<empty>,s_clsid,9,,896,s_clsid,4,,int
+44760,MEMBER,<empty>,<empty>,d_clsid,9,,897,d_clsid,5,,int
+44761,MEMBER,<empty>,<empty>,busy_items,14,,898,busy_items,6,,uint32_t
+44762,MEMBER,<empty>,<empty>,rescues,14,,899,rescues,7,,uint32_t
+44763,MEMBER,<empty>,<empty>,evictions_nomem,14,,900,evictions_nomem,8,,uint32_t
+44764,MEMBER,<empty>,<empty>,inline_reclaim,14,,901,inline_reclaim,9,,uint32_t
+44765,MEMBER,<empty>,<empty>,chunk_rescues,14,,902,chunk_rescues,10,,uint32_t
+44766,MEMBER,<empty>,<empty>,busy_deletes,14,,903,busy_deletes,11,,uint32_t
+44767,MEMBER,<empty>,<empty>,busy_loops,14,,904,busy_loops,12,,uint32_t
+44768,MEMBER,<empty>,<empty>,done,13,,905,done,13,,uint8_t
+44769,MEMBER,<empty>,<empty>,*completed,13,,906,completed,14,,uint8_t*
+53919,MEMBER,<empty>,<empty>,*value,10,,50,value,1,,char*
+53920,MEMBER,<empty>,<empty>,length,12,,51,length,2,,size_t
+56688,MEMBER,<empty>,<empty>,has_error :1,18,,896,has_error,1,,unsigned int
+56689,MEMBER,<empty>,<empty>,no_update :1,18,,897,no_update,2,,unsigned int
+56690,MEMBER,<empty>,<empty>,locked :1,18,,898,locked,3,,unsigned int
+56691,MEMBER,<empty>,<empty>,vivify :1,18,,899,vivify,4,,unsigned int
+56692,MEMBER,<empty>,<empty>,la :1,18,,900,la,5,,unsigned int
+56693,MEMBER,<empty>,<empty>,hit :1,18,,901,hit,6,,unsigned int
+56694,MEMBER,<empty>,<empty>,value :1,18,,902,value,7,,unsigned int
+56695,MEMBER,<empty>,<empty>,set_stale :1,18,,903,set_stale,8,,unsigned int
+56696,MEMBER,<empty>,<empty>,no_reply :1,18,,904,no_reply,9,,unsigned int
+56697,MEMBER,<empty>,<empty>,has_cas :1,18,,905,has_cas,10,,unsigned int
+56698,MEMBER,<empty>,<empty>,new_ttl :1,18,,906,new_ttl,11,,unsigned int
+56699,MEMBER,<empty>,<empty>,key_binary:1,18,,907,key_binary,12,,unsigned int
+56700,MEMBER,<empty>,<empty>,mode,10,,908,mode,13,,char
+56701,MEMBER,<empty>,<empty>,exptime,16,,909,exptime,14,,rel_time_t
+56702,MEMBER,<empty>,<empty>,autoviv_exptime,16,,910,autoviv_exptime,15,,rel_time_t
+56703,MEMBER,<empty>,<empty>,recache_time,16,,911,recache_time,16,,rel_time_t
+56704,MEMBER,<empty>,<empty>,client_flags,14,,912,client_flags,17,,uint32_t
+56705,MEMBER,<empty>,<empty>,req_cas_id,14,,913,req_cas_id,18,,uint64_t
+56706,MEMBER,<empty>,<empty>,delta,14,,914,delta,19,,uint64_t
+56707,MEMBER,<empty>,<empty>,initial,14,,915,initial,20,,uint64_t
+64267,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_REQ = 0x80,9,,54,PROTOCOL_BINARY_REQ,1,,ANY
+64268,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RES = 0x81,9,,55,PROTOCOL_BINARY_RES,2,,ANY
+64281,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_SUCCESS = 0x00,9,,63,PROTOCOL_BINARY_RESPONSE_SUCCESS,1,,ANY
+64282,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_KEY_ENOENT = 0x01,9,,64,PROTOCOL_BINARY_RESPONSE_KEY_ENOENT,2,,ANY
+64283,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_KEY_EEXISTS = 0x02,9,,65,PROTOCOL_BINARY_RESPONSE_KEY_EEXISTS,3,,ANY
+64284,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_E2BIG = 0x03,9,,66,PROTOCOL_BINARY_RESPONSE_E2BIG,4,,ANY
+64285,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_EINVAL = 0x04,9,,67,PROTOCOL_BINARY_RESPONSE_EINVAL,5,,ANY
+64286,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_NOT_STORED = 0x05,9,,68,PROTOCOL_BINARY_RESPONSE_NOT_STORED,6,,ANY
+64287,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_DELTA_BADVAL = 0x06,9,,69,PROTOCOL_BINARY_RESPONSE_DELTA_BADVAL,7,,ANY
+64288,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_AUTH_ERROR = 0x20,9,,70,PROTOCOL_BINARY_RESPONSE_AUTH_ERROR,8,,ANY
+64289,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_AUTH_CONTINUE = 0x21,9,,71,PROTOCOL_BINARY_RESPONSE_AUTH_CONTINUE,9,,ANY
+64290,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_UNKNOWN_COMMAND = 0x81,9,,72,PROTOCOL_BINARY_RESPONSE_UNKNOWN_COMMAND,10,,ANY
+64291,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RESPONSE_ENOMEM = 0x82,9,,73,PROTOCOL_BINARY_RESPONSE_ENOMEM,11,,ANY
+64331,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_GET = 0x00,9,,81,PROTOCOL_BINARY_CMD_GET,1,,ANY
+64332,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_SET = 0x01,9,,82,PROTOCOL_BINARY_CMD_SET,2,,ANY
+64333,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_ADD = 0x02,9,,83,PROTOCOL_BINARY_CMD_ADD,3,,ANY
+64334,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_REPLACE = 0x03,9,,84,PROTOCOL_BINARY_CMD_REPLACE,4,,ANY
+64335,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_DELETE = 0x04,9,,85,PROTOCOL_BINARY_CMD_DELETE,5,,ANY
+64336,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_INCREMENT = 0x05,9,,86,PROTOCOL_BINARY_CMD_INCREMENT,6,,ANY
+64337,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_DECREMENT = 0x06,9,,87,PROTOCOL_BINARY_CMD_DECREMENT,7,,ANY
+64338,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_QUIT = 0x07,9,,88,PROTOCOL_BINARY_CMD_QUIT,8,,ANY
+64339,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_FLUSH = 0x08,9,,89,PROTOCOL_BINARY_CMD_FLUSH,9,,ANY
+64340,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_GETQ = 0x09,9,,90,PROTOCOL_BINARY_CMD_GETQ,10,,ANY
+64341,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_NOOP = 0x0a,9,,91,PROTOCOL_BINARY_CMD_NOOP,11,,ANY
+64342,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_VERSION = 0x0b,9,,92,PROTOCOL_BINARY_CMD_VERSION,12,,ANY
+64343,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_GETK = 0x0c,9,,93,PROTOCOL_BINARY_CMD_GETK,13,,ANY
+64344,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_GETKQ = 0x0d,9,,94,PROTOCOL_BINARY_CMD_GETKQ,14,,ANY
+64345,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_APPEND = 0x0e,9,,95,PROTOCOL_BINARY_CMD_APPEND,15,,ANY
+64346,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_PREPEND = 0x0f,9,,96,PROTOCOL_BINARY_CMD_PREPEND,16,,ANY
+64347,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_STAT = 0x10,9,,97,PROTOCOL_BINARY_CMD_STAT,17,,ANY
+64348,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_SETQ = 0x11,9,,98,PROTOCOL_BINARY_CMD_SETQ,18,,ANY
+64349,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_ADDQ = 0x12,9,,99,PROTOCOL_BINARY_CMD_ADDQ,19,,ANY
+64350,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_REPLACEQ = 0x13,9,,100,PROTOCOL_BINARY_CMD_REPLACEQ,20,,ANY
+64351,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_DELETEQ = 0x14,9,,101,PROTOCOL_BINARY_CMD_DELETEQ,21,,ANY
+64352,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_INCREMENTQ = 0x15,9,,102,PROTOCOL_BINARY_CMD_INCREMENTQ,22,,ANY
+64353,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_DECREMENTQ = 0x16,9,,103,PROTOCOL_BINARY_CMD_DECREMENTQ,23,,ANY
+64354,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_QUITQ = 0x17,9,,104,PROTOCOL_BINARY_CMD_QUITQ,24,,ANY
+64355,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_FLUSHQ = 0x18,9,,105,PROTOCOL_BINARY_CMD_FLUSHQ,25,,ANY
+64356,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_APPENDQ = 0x19,9,,106,PROTOCOL_BINARY_CMD_APPENDQ,26,,ANY
+64357,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_PREPENDQ = 0x1a,9,,107,PROTOCOL_BINARY_CMD_PREPENDQ,27,,ANY
+64358,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_TOUCH = 0x1c,9,,108,PROTOCOL_BINARY_CMD_TOUCH,28,,ANY
+64359,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_GAT = 0x1d,9,,109,PROTOCOL_BINARY_CMD_GAT,29,,ANY
+64360,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_GATQ = 0x1e,9,,110,PROTOCOL_BINARY_CMD_GATQ,30,,ANY
+64361,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_GATK = 0x23,9,,111,PROTOCOL_BINARY_CMD_GATK,31,,ANY
+64362,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_GATKQ = 0x24,9,,112,PROTOCOL_BINARY_CMD_GATKQ,32,,ANY
+64363,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_SASL_LIST_MECHS = 0x20,9,,114,PROTOCOL_BINARY_CMD_SASL_LIST_MECHS,33,,ANY
+64364,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_SASL_AUTH = 0x21,9,,115,PROTOCOL_BINARY_CMD_SASL_AUTH,34,,ANY
+64365,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_SASL_STEP = 0x22,9,,116,PROTOCOL_BINARY_CMD_SASL_STEP,35,,ANY
+64366,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RGET      = 0x30,9,,122,PROTOCOL_BINARY_CMD_RGET,36,,ANY
+64367,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RSET      = 0x31,9,,123,PROTOCOL_BINARY_CMD_RSET,37,,ANY
+64368,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RSETQ     = 0x32,9,,124,PROTOCOL_BINARY_CMD_RSETQ,38,,ANY
+64369,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RAPPEND   = 0x33,9,,125,PROTOCOL_BINARY_CMD_RAPPEND,39,,ANY
+64370,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RAPPENDQ  = 0x34,9,,126,PROTOCOL_BINARY_CMD_RAPPENDQ,40,,ANY
+64371,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RPREPEND  = 0x35,9,,127,PROTOCOL_BINARY_CMD_RPREPEND,41,,ANY
+64372,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RPREPENDQ = 0x36,9,,128,PROTOCOL_BINARY_CMD_RPREPENDQ,42,,ANY
+64373,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RDELETE   = 0x37,9,,129,PROTOCOL_BINARY_CMD_RDELETE,43,,ANY
+64374,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RDELETEQ  = 0x38,9,,130,PROTOCOL_BINARY_CMD_RDELETEQ,44,,ANY
+64375,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RINCR     = 0x39,9,,131,PROTOCOL_BINARY_CMD_RINCR,45,,ANY
+64376,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RINCRQ    = 0x3a,9,,132,PROTOCOL_BINARY_CMD_RINCRQ,46,,ANY
+64377,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RDECR     = 0x3b,9,,133,PROTOCOL_BINARY_CMD_RDECR,47,,ANY
+64378,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_CMD_RDECRQ    = 0x3c,9,,134,PROTOCOL_BINARY_CMD_RDECRQ,48,,ANY
+64529,MEMBER,<empty>,<empty>,PROTOCOL_BINARY_RAW_BYTES = 0x00,9,,144,PROTOCOL_BINARY_RAW_BYTES,1,,ANY
+64540,MEMBER,<empty>,<empty>,magic,21,,153,magic,1,,uint8_t
+64541,MEMBER,<empty>,<empty>,opcode,21,,154,opcode,2,,uint8_t
+64542,MEMBER,<empty>,<empty>,keylen,22,,155,keylen,3,,uint16_t
+64543,MEMBER,<empty>,<empty>,extlen,21,,156,extlen,4,,uint8_t
+64544,MEMBER,<empty>,<empty>,datatype,21,,157,datatype,5,,uint8_t
+64545,MEMBER,<empty>,<empty>,reserved,22,,158,reserved,6,,uint16_t
+64546,MEMBER,<empty>,<empty>,bodylen,22,,159,bodylen,7,,uint32_t
+64547,MEMBER,<empty>,<empty>,opaque,22,,160,opaque,8,,uint32_t
+64548,MEMBER,<empty>,<empty>,cas,22,,161,cas,9,,uint64_t
+64549,MEMBER,<empty>,<empty>,request,11,,162,request,2,,struct
+64550,MEMBER,<empty>,<empty>,bytes[24],17,,163,bytes,3,,uint8_t[24]
+64560,MEMBER,<empty>,<empty>,magic,21,,172,magic,1,,uint8_t
+64561,MEMBER,<empty>,<empty>,opcode,21,,173,opcode,2,,uint8_t
+64562,MEMBER,<empty>,<empty>,keylen,22,,174,keylen,3,,uint16_t
+64563,MEMBER,<empty>,<empty>,extlen,21,,175,extlen,4,,uint8_t
+64564,MEMBER,<empty>,<empty>,datatype,21,,176,datatype,5,,uint8_t
+64565,MEMBER,<empty>,<empty>,status,22,,177,status,6,,uint16_t
+64566,MEMBER,<empty>,<empty>,bodylen,22,,178,bodylen,7,,uint32_t
+64567,MEMBER,<empty>,<empty>,opaque,22,,179,opaque,8,,uint32_t
+64568,MEMBER,<empty>,<empty>,cas,22,,180,cas,9,,uint64_t
+64569,MEMBER,<empty>,<empty>,response,11,,181,response,2,,struct
+64570,MEMBER,<empty>,<empty>,bytes[24],17,,182,bytes,3,,uint8_t[24]
+64580,MEMBER,<empty>,<empty>,header,44,,190,header,1,,protocol_binary_request_header
+64581,MEMBER,<empty>,<empty>,message,11,,191,message,2,,struct
+64582,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_request_header)],17,,192,bytes,3,,uint8_t[]
+64593,MEMBER,<empty>,<empty>,header,45,,200,header,1,,protocol_binary_response_header
+64594,MEMBER,<empty>,<empty>,message,11,,201,message,2,,struct
+64595,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_response_header)],17,,202,bytes,3,,uint8_t[]
+64610,MEMBER,<empty>,<empty>,header,45,,221,header,1,,protocol_binary_response_header
+64612,MEMBER,<empty>,<empty>,flags,26,,223,flags,1,,uint32_t
+64613,MEMBER,<empty>,<empty>,body,15,,224,body,3,,struct
+64614,MEMBER,<empty>,<empty>,message,11,,225,message,2,,struct
+64615,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_response_header) + 4],17,,226,bytes,3,,uint8_t[]
+64633,MEMBER,<empty>,<empty>,header,44,,253,header,1,,protocol_binary_request_header
+64635,MEMBER,<empty>,<empty>,expiration,26,,255,expiration,1,,uint32_t
+64636,MEMBER,<empty>,<empty>,body,15,,256,body,3,,struct
+64637,MEMBER,<empty>,<empty>,message,11,,257,message,2,,struct
+64638,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_request_header) + 4],17,,258,bytes,3,,uint8_t[]
+64652,MEMBER,<empty>,<empty>,header,44,,273,header,1,,protocol_binary_request_header
+64654,MEMBER,<empty>,<empty>,flags,26,,275,flags,1,,uint32_t
+64655,MEMBER,<empty>,<empty>,expiration,26,,276,expiration,2,,uint32_t
+64656,MEMBER,<empty>,<empty>,body,15,,277,body,3,,struct
+64657,MEMBER,<empty>,<empty>,message,11,,278,message,2,,struct
+64658,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_request_header) + 8],17,,279,bytes,3,,uint8_t[]
+64678,MEMBER,<empty>,<empty>,header,44,,311,header,1,,protocol_binary_request_header
+64680,MEMBER,<empty>,<empty>,delta,26,,313,delta,1,,uint64_t
+64681,MEMBER,<empty>,<empty>,initial,26,,314,initial,2,,uint64_t
+64682,MEMBER,<empty>,<empty>,expiration,26,,315,expiration,3,,uint32_t
+64683,MEMBER,<empty>,<empty>,body,15,,316,body,3,,struct
+64684,MEMBER,<empty>,<empty>,message,11,,317,message,2,,struct
+64685,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_request_header) + 20],17,,318,bytes,3,,uint8_t[]
+64699,MEMBER,<empty>,<empty>,header,45,,329,header,1,,protocol_binary_response_header
+64701,MEMBER,<empty>,<empty>,value,26,,331,value,1,,uint64_t
+64702,MEMBER,<empty>,<empty>,body,15,,332,body,3,,struct
+64703,MEMBER,<empty>,<empty>,message,11,,333,message,2,,struct
+64704,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_response_header) + 8],17,,334,bytes,3,,uint8_t[]
+64728,MEMBER,<empty>,<empty>,header,44,,394,header,1,,protocol_binary_request_header
+64730,MEMBER,<empty>,<empty>,expiration,26,,396,expiration,1,,uint32_t
+64731,MEMBER,<empty>,<empty>,body,15,,397,body,3,,struct
+64732,MEMBER,<empty>,<empty>,message,11,,398,message,2,,struct
+64733,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_request_header) + 4],17,,399,bytes,3,,uint8_t[]
+64747,MEMBER,<empty>,<empty>,header,44,,412,header,1,,protocol_binary_request_header
+64749,MEMBER,<empty>,<empty>,expiration,26,,414,expiration,1,,uint32_t
+64750,MEMBER,<empty>,<empty>,body,15,,415,body,3,,struct
+64751,MEMBER,<empty>,<empty>,message,11,,416,message,2,,struct
+64752,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_request_header) + 4],17,,417,bytes,3,,uint8_t[]
+64772,MEMBER,<empty>,<empty>,header,45,,442,header,1,,protocol_binary_response_header
+64774,MEMBER,<empty>,<empty>,size,26,,444,size,1,,uint16_t
+64775,MEMBER,<empty>,<empty>,reserved,26,,445,reserved,2,,uint8_t
+64776,MEMBER,<empty>,<empty>,flags,26,,446,flags,3,,uint8_t
+64777,MEMBER,<empty>,<empty>,max_results,26,,447,max_results,4,,uint32_t
+64778,MEMBER,<empty>,<empty>,body,15,,448,body,3,,struct
+64779,MEMBER,<empty>,<empty>,message,11,,449,message,2,,struct
+64780,MEMBER,<empty>,<empty>,bytes[sizeof(protocol_binary_request_header) + 4],17,,450,bytes,3,,uint8_t[]
+64844,MEMBER,<empty>,<empty>,P_OK = 0,5,,121,P_OK,1,,ANY
+64845,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_MG,2,,ANY
+64846,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_MS,3,,ANY
+64847,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_MD,4,,ANY
+64848,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_MN,5,,ANY
+64849,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_MA,6,,ANY
+64850,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_ME,7,,ANY
+64851,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_GET,8,,ANY
+64852,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_GAT,9,,ANY
+64853,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_SET,10,,ANY
+64854,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_ADD,11,,ANY
+64855,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_CAS,12,,ANY
+64856,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_GETS,13,,ANY
+64857,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_GATS,14,,ANY
+64858,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_INCR,15,,ANY
+64859,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_DECR,16,,ANY
+64860,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_TOUCH,17,,ANY
+64861,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_APPEND,18,,ANY
+64862,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_DELETE,19,,ANY
+64863,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_REPLACE,20,,ANY
+64864,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_PREPEND,21,,ANY
+64865,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_END_STORAGE,22,,ANY
+64866,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_QUIT,23,,ANY
+64867,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_STATS,24,,ANY
+64868,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_SLABS,25,,ANY
+64869,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_WATCH,26,,ANY
+64870,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_LRU,27,,ANY
+64871,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_VERSION,28,,ANY
+64872,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_SHUTDOWN,29,,ANY
+64873,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_EXTSTORE,30,,ANY
+64874,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_FLUSH_ALL,31,,ANY
+64875,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_VERBOSITY,32,,ANY
+64876,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_LRU_CRAWLER,33,,ANY
+64877,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_REFRESH_CERTS,34,,ANY
+64878,MEMBER,<empty>,<empty>,CMD_FIELDS,5,,122,CMD_CACHE_MEMLIMIT,35,,ANY
+64879,MEMBER,<empty>,<empty>,CMD_SIZE,5,,123,CMD_SIZE,36,,ANY
+64880,MEMBER,<empty>,<empty>,CMD_ANY,5,,124,CMD_ANY,37,,ANY
+64881,MEMBER,<empty>,<empty>,CMD_ANY_STORAGE,5,,125,CMD_ANY_STORAGE,38,,ANY
+64882,MEMBER,<empty>,<empty>,CMD_FINAL,5,,126,CMD_FINAL,39,,ANY
+64891,MEMBER,<empty>,<empty>,CMD_TYPE_GENERIC = 0,5,,133,CMD_TYPE_GENERIC,1,,ANY
+64892,MEMBER,<empty>,<empty>,CMD_TYPE_GET,5,,134,CMD_TYPE_GET,2,,ANY
+64893,MEMBER,<empty>,<empty>,CMD_TYPE_META,5,,135,CMD_TYPE_META,3,,ANY
+64902,MEMBER,<empty>,<empty>,P_BE_FAIL_TIMEOUT = 0,5,,139,P_BE_FAIL_TIMEOUT,1,,ANY
+64903,MEMBER,<empty>,<empty>,P_BE_FAIL_DISCONNECTED,5,,140,P_BE_FAIL_DISCONNECTED,2,,ANY
+64904,MEMBER,<empty>,<empty>,P_BE_FAIL_CONNECTING,5,,141,P_BE_FAIL_CONNECTING,3,,ANY
+64905,MEMBER,<empty>,<empty>,P_BE_FAIL_WRITING,5,,142,P_BE_FAIL_WRITING,4,,ANY
+64906,MEMBER,<empty>,<empty>,P_BE_FAIL_READING,5,,143,P_BE_FAIL_READING,5,,ANY
+64907,MEMBER,<empty>,<empty>,P_BE_FAIL_PARSING,5,,144,P_BE_FAIL_PARSING,6,,ANY
+64920,MEMBER,<empty>,<empty>,counters[CMD_FINAL],14,,164,counters,1,,uint64_t[38]
+64928,MEMBER,<empty>,<empty>,num_stats,12,,168,num_stats,1,,size_t
+64929,MEMBER,<empty>,<empty>,**names,10,,169,names,2,,char**
+64930,MEMBER,<empty>,<empty>,*counters,14,,170,counters,3,,uint64_t*
+64932,MEMBER,<empty>,<empty>,config_reloads,14,,174,config_reloads,1,,uint64_t
+64933,MEMBER,<empty>,<empty>,config_reload_fails,14,,175,config_reload_fails,2,,uint64_t
+64934,MEMBER,<empty>,<empty>,backend_total,14,,176,backend_total,3,,uint64_t
+64935,MEMBER,<empty>,<empty>,backend_disconn,14,,177,backend_disconn,4,,uint64_t
+64936,MEMBER,<empty>,<empty>,backend_requests,14,,178,backend_requests,5,,uint64_t
+64937,MEMBER,<empty>,<empty>,backend_responses,14,,179,backend_responses,6,,uint64_t
+64938,MEMBER,<empty>,<empty>,backend_errors,14,,180,backend_errors,7,,uint64_t
+64939,MEMBER,<empty>,<empty>,backend_marked_bad,14,,181,backend_marked_bad,8,,uint64_t
+64940,MEMBER,<empty>,<empty>,backend_failed,14,,182,backend_failed,9,,uint64_t
+64943,MEMBER,<empty>,<empty>,connect,20,,186,connect,2,,timeval
+64945,MEMBER,<empty>,<empty>,retry,20,,187,retry,4,,timeval
+64947,MEMBER,<empty>,<empty>,read,20,,188,read,6,,timeval
+64949,MEMBER,<empty>,<empty>,connect_ur,30,,190,connect_ur,8,,__kernel_timespec
+64951,MEMBER,<empty>,<empty>,retry_ur,30,,191,retry_ur,10,,__kernel_timespec
+64953,MEMBER,<empty>,<empty>,read_ur,30,,192,read_ur,12,,__kernel_timespec
+64954,MEMBER,<empty>,<empty>,backend_failure_limit,9,,194,backend_failure_limit,13,,int
+64955,MEMBER,<empty>,<empty>,tcp_keepalive,10,,195,tcp_keepalive,14,,bool
+64958,MEMBER,<empty>,<empty>,mcp_pool_s *,9,,198,stqh_first,2,,mcp_pool_s*
+64960,MEMBER,<empty>,<empty>,mcp_pool_s * *,9,,198,stqh_last,4,,mcp_pool_s**
+64963,MEMBER,<empty>,<empty>,*proxy_state,15,,200,proxy_state,1,,lua_State*
+64964,MEMBER,<empty>,<empty>,*proxy_code,10,,201,proxy_code,2,,void*
+64965,MEMBER,<empty>,<empty>,*proxy_threads,26,,202,proxy_threads,3,,proxy_event_thread_t*
+64966,MEMBER,<empty>,<empty>,config_lock,21,,203,config_lock,4,,pthread_mutex_t
+64967,MEMBER,<empty>,<empty>,config_cond,20,,204,config_cond,5,,pthread_cond_t
+64968,MEMBER,<empty>,<empty>,config_tid,15,,205,config_tid,6,,pthread_t
+64969,MEMBER,<empty>,<empty>,worker_lock,21,,206,worker_lock,7,,pthread_mutex_t
+64970,MEMBER,<empty>,<empty>,worker_cond,20,,207,worker_cond,8,,pthread_cond_t
+64971,MEMBER,<empty>,<empty>,manager_tid,15,,208,manager_tid,9,,pthread_t
+64972,MEMBER,<empty>,<empty>,manager_lock,21,,209,manager_lock,10,,pthread_mutex_t
+64973,MEMBER,<empty>,<empty>,manager_cond,20,,210,manager_cond,11,,pthread_cond_t
+64974,MEMBER,<empty>,<empty>,manager_head,17,,211,manager_head,12,,pool_head_t
+64975,MEMBER,<empty>,<empty>,worker_done,10,,212,worker_done,13,,bool
+64976,MEMBER,<empty>,<empty>,worker_failed,10,,213,worker_failed,14,,bool
+64977,MEMBER,<empty>,<empty>,use_uring,10,,214,use_uring,15,,bool
+64979,MEMBER,<empty>,<empty>,global_stats,31,,215,global_stats,17,,proxy_global_stats
+64981,MEMBER,<empty>,<empty>,user_stats,29,,216,user_stats,19,,proxy_user_stats
+64983,MEMBER,<empty>,<empty>,tunables,27,,217,tunables,21,,proxy_tunables
+64984,MEMBER,<empty>,<empty>,stats_lock,21,,218,stats_lock,22,,pthread_mutex_t
+64987,MEMBER,<empty>,<empty>,tag,14,,222,tag,1,,uint64_t
+64988,MEMBER,<empty>,<empty>,lua_ref,9,,223,lua_ref,2,,int
+64990,MEMBER,<empty>,<empty>,lua_ref,9,,227,lua_ref,1,,int
+64991,MEMBER,<empty>,<empty>,tagcount,9,,228,tagcount,2,,int
+64993,MEMBER,<empty>,<empty>,*tagged,30,,229,tagged,4,,proxy_hook_tagged*
+65002,MEMBER,<empty>,<empty>,func,19,,236,func,1,,key_hash_func
+65018,MEMBER,<empty>,<empty>,selector_func,24,,241,selector_func,1,,hash_selector_func
+65019,MEMBER,<empty>,<empty>,*ctx,10,,242,ctx,2,,void*
+65021,MEMBER,<empty>,<empty>,mcp_backend_read = 0,5,,246,mcp_backend_read,1,,ANY
+65022,MEMBER,<empty>,<empty>,mcp_backend_parse,5,,247,mcp_backend_parse,2,,ANY
+65023,MEMBER,<empty>,<empty>,mcp_backend_read_end,5,,248,mcp_backend_read_end,3,,ANY
+65024,MEMBER,<empty>,<empty>,mcp_backend_want_read,5,,249,mcp_backend_want_read,4,,ANY
+65025,MEMBER,<empty>,<empty>,mcp_backend_next,5,,250,mcp_backend_next,5,,ANY
+65040,MEMBER,<empty>,<empty>,flags,14,,260,flags,1,,uint64_t
+65042,MEMBER,<empty>,<empty>,*request,16,,266,request,1,,char*
+65043,MEMBER,<empty>,<empty>,*vbuf,10,,267,vbuf,2,,void*
+65044,MEMBER,<empty>,<empty>,command,13,,268,command,3,,uint8_t
+65045,MEMBER,<empty>,<empty>,cmd_type,13,,269,cmd_type,4,,uint8_t
+65046,MEMBER,<empty>,<empty>,ntokens,13,,270,ntokens,5,,uint8_t
+65047,MEMBER,<empty>,<empty>,keytoken,13,,271,keytoken,6,,uint8_t
+65048,MEMBER,<empty>,<empty>,parsed,14,,272,parsed,7,,uint32_t
+65049,MEMBER,<empty>,<empty>,reqlen,14,,273,reqlen,8,,uint32_t
+65050,MEMBER,<empty>,<empty>,vlen,9,,274,vlen,9,,int
+65051,MEMBER,<empty>,<empty>,klen,14,,275,klen,10,,uint32_t
+65052,MEMBER,<empty>,<empty>,tokens[PARSER_MAX_TOKENS],14,,276,tokens,11,,uint16_t[24]
+65053,MEMBER,<empty>,<empty>,has_space,10,,277,has_space,12,,bool
+65054,MEMBER,<empty>,<empty>,noreply,10,,278,noreply,13,,bool
+65057,MEMBER,<empty>,<empty>,meta,34,,280,meta,2,,mcp_parser_meta_s
+65058,MEMBER,<empty>,<empty>,t,7,,281,t,15,,union
+65068,MEMBER,<empty>,<empty>,pr,18,,288,pr,1,,mcp_parser_t
+65070,MEMBER,<empty>,<empty>,start,20,,289,start,3,,timeval
+65071,MEMBER,<empty>,<empty>,*be,19,,290,be,4,,mcp_backend_t*
+65072,MEMBER,<empty>,<empty>,ascii_multiget,10,,291,ascii_multiget,5,,bool
+65073,MEMBER,<empty>,<empty>,was_modified,10,,292,was_modified,6,,bool
+65074,MEMBER,<empty>,<empty>,tokent_ref,9,,293,tokent_ref,7,,int
+65075,MEMBER,<empty>,<empty>,request[],10,,294,request,8,,char[]
+65083,MEMBER,<empty>,<empty>,_io_pending_proxy_t *,9,,297,stqh_first,2,,_io_pending_proxy_t*
+65085,MEMBER,<empty>,<empty>,_io_pending_proxy_t * *,9,,297,stqh_last,4,,_io_pending_proxy_t**
+65088,MEMBER,<empty>,<empty>,depth,9,,309,depth,1,,int
+65089,MEMBER,<empty>,<empty>,failed_count,9,,310,failed_count,2,,int
+65090,MEMBER,<empty>,<empty>,mutex,21,,311,mutex,3,,pthread_mutex_t
+65091,MEMBER,<empty>,<empty>,*event_thread,26,,312,event_thread,4,,proxy_event_thread_t*
+65092,MEMBER,<empty>,<empty>,*client,10,,313,client,5,,void*
+65095,MEMBER,<empty>,<empty>,mcp_backend_s *,5,,314,stqe_next,2,,mcp_backend_s*
+65096,MEMBER,<empty>,<empty>,be_next,33,,314,be_next,7,,struct
+65097,MEMBER,<empty>,<empty>,io_head,15,,315,io_head,8,,io_head_t
+65098,MEMBER,<empty>,<empty>,*rbuf,10,,316,rbuf,9,,char*
+65099,MEMBER,<empty>,<empty>,rbufused,12,,317,rbufused,10,,size_t
+65101,MEMBER,<empty>,<empty>,event,18,,318,event,12,,event
+65102,MEMBER,<empty>,<empty>,ur_rd_ev,19,,320,ur_rd_ev,13,,proxy_event_t
+65103,MEMBER,<empty>,<empty>,ur_wr_ev,19,,321,ur_wr_ev,14,,proxy_event_t
+65104,MEMBER,<empty>,<empty>,ur_te_ev,19,,322,ur_te_ev,15,,proxy_event_t
+65106,MEMBER,<empty>,<empty>,state,29,,324,state,17,,mcp_backend_states
+65107,MEMBER,<empty>,<empty>,connect_flags,9,,325,connect_flags,18,,int
+65108,MEMBER,<empty>,<empty>,connecting,10,,326,connecting,19,,bool
+65109,MEMBER,<empty>,<empty>,can_write,10,,327,can_write,20,,bool
+65110,MEMBER,<empty>,<empty>,stacked,10,,328,stacked,21,,bool
+65111,MEMBER,<empty>,<empty>,bad,10,,329,bad,22,,bool
+65113,MEMBER,<empty>,<empty>,write_iovs[BE_IOV_MAX],18,,330,write_iovs,24,,iovec[]
+65114,MEMBER,<empty>,<empty>,name[MAX_NAMELEN+1],10,,331,name,25,,char[256]
+65115,MEMBER,<empty>,<empty>,port[MAX_PORTLEN+1],10,,332,port,26,,char[7]
+65138,MEMBER,<empty>,<empty>,mcp_backend_s *,9,,334,stqh_first,2,,mcp_backend_s*
+65140,MEMBER,<empty>,<empty>,mcp_backend_s * *,9,,334,stqh_last,4,,mcp_backend_s**
+65143,MEMBER,<empty>,<empty>,thread_id,15,,337,thread_id,1,,pthread_t
+65145,MEMBER,<empty>,<empty>,*base,23,,338,base,3,,event_base*
+65147,MEMBER,<empty>,<empty>,notify_event,18,,339,notify_event,5,,event
+65149,MEMBER,<empty>,<empty>,clock_event,18,,340,clock_event,7,,event
+65151,MEMBER,<empty>,<empty>,ring,21,,342,ring,9,,io_uring
+65152,MEMBER,<empty>,<empty>,ur_notify_event,19,,343,ur_notify_event,10,,proxy_event_t
+65153,MEMBER,<empty>,<empty>,ur_clock_event,19,,344,ur_clock_event,11,,proxy_event_t
+65154,MEMBER,<empty>,<empty>,event_counter,15,,345,event_counter,12,,eventfd_t
+65155,MEMBER,<empty>,<empty>,use_uring,10,,346,use_uring,13,,bool
+65156,MEMBER,<empty>,<empty>,mutex,21,,348,mutex,14,,pthread_mutex_t
+65157,MEMBER,<empty>,<empty>,cond,20,,349,cond,15,,pthread_cond_t
+65158,MEMBER,<empty>,<empty>,io_head_in,15,,350,io_head_in,16,,io_head_t
+65159,MEMBER,<empty>,<empty>,be_head,15,,351,be_head,17,,be_head_t
+65160,MEMBER,<empty>,<empty>,event_fd,9,,353,event_fd,18,,int
+65161,MEMBER,<empty>,<empty>,notify_receive_fd,9,,355,notify_receive_fd,19,,int
+65162,MEMBER,<empty>,<empty>,notify_send_fd,9,,356,notify_send_fd,20,,int
+65163,MEMBER,<empty>,<empty>,*ctx,17,,358,ctx,21,,proxy_ctx_t*
+65165,MEMBER,<empty>,<empty>,tunables,27,,359,tunables,23,,proxy_tunables
+65167,MEMBER,<empty>,<empty>,RESP_MODE_NORMAL = 0,5,,363,RESP_MODE_NORMAL,1,,ANY
+65168,MEMBER,<empty>,<empty>,RESP_MODE_NOREPLY,5,,364,RESP_MODE_NOREPLY,2,,ANY
+65169,MEMBER,<empty>,<empty>,RESP_MODE_METAQUIET,5,,365,RESP_MODE_METAQUIET,3,,ANY
+65178,MEMBER,<empty>,<empty>,resp,17,,370,resp,1,,mcmc_resp_t
+65179,MEMBER,<empty>,<empty>,*buf,10,,371,buf,2,,char*
+65180,MEMBER,<empty>,<empty>,blen,12,,372,blen,3,,size_t
+65181,MEMBER,<empty>,<empty>,status,9,,373,status,4,,int
+65182,MEMBER,<empty>,<empty>,bread,9,,374,bread,5,,int
+65183,MEMBER,<empty>,<empty>,cmd,13,,375,cmd,6,,uint8_t
+65185,MEMBER,<empty>,<empty>,mode,24,,376,mode,8,,mcp_resp_mode
+65186,MEMBER,<empty>,<empty>,be_name[MAX_NAMELEN+1],10,,377,be_name,9,,char[256]
+65187,MEMBER,<empty>,<empty>,be_port[MAX_PORTLEN+1],10,,378,be_port,10,,char[7]
+65206,MEMBER,<empty>,<empty>,io_queue_type,9,,384,io_queue_type,1,,int
+65207,MEMBER,<empty>,<empty>,*thread,21,,385,thread,2,,LIBEVENT_THREAD*
+65208,MEMBER,<empty>,<empty>,*c,10,,386,c,3,,conn*
+65209,MEMBER,<empty>,<empty>,*resp,13,,387,resp,4,,mc_resp*
+65211,MEMBER,<empty>,<empty>,*next,32,,389,next,6,,_io_pending_proxy_t*
+65214,MEMBER,<empty>,<empty>,_io_pending_proxy_t *,5,,390,stqe_next,2,,_io_pending_proxy_t*
+65215,MEMBER,<empty>,<empty>,io_next,39,,390,io_next,8,,struct
+65216,MEMBER,<empty>,<empty>,coro_ref,9,,391,coro_ref,9,,int
+65217,MEMBER,<empty>,<empty>,mcpres_ref,9,,392,mcpres_ref,10,,int
+65218,MEMBER,<empty>,<empty>,*coro,15,,393,coro,11,,lua_State*
+65219,MEMBER,<empty>,<empty>,*backend,19,,394,backend,12,,mcp_backend_t*
+65221,MEMBER,<empty>,<empty>,iov[2],18,,395,iov,14,,iovec[2]
+65222,MEMBER,<empty>,<empty>,iovcnt,9,,396,iovcnt,15,,int
+65223,MEMBER,<empty>,<empty>,iovbytes,18,,397,iovbytes,16,,unsigned int
+65224,MEMBER,<empty>,<empty>,await_ref,9,,398,await_ref,17,,int
+65225,MEMBER,<empty>,<empty>,*client_resp,16,,399,client_resp,18,,mcp_resp_t*
+65226,MEMBER,<empty>,<empty>,flushed,10,,400,flushed,19,,bool
+65227,MEMBER,<empty>,<empty>,ascii_multiget,10,,401,ascii_multiget,20,,bool
+65228,MEMBER,<empty>,<empty>,is_await,10,,402,is_await,21,,bool
+65229,MEMBER,<empty>,<empty>,await_first,10,,403,await_first,22,,bool
+65237,MEMBER,<empty>,<empty>,ref,9,,410,ref,1,,int
+65238,MEMBER,<empty>,<empty>,*be,19,,411,be,2,,mcp_backend_t*
+65244,MEMBER,<empty>,<empty>,phc,30,,417,phc,2,,proxy_hash_caller
+65245,MEMBER,<empty>,<empty>,key_filter,26,,418,key_filter,3,,key_hash_filter_func
+65246,MEMBER,<empty>,<empty>,key_hasher,19,,419,key_hasher,4,,key_hash_func
+65247,MEMBER,<empty>,<empty>,lock,21,,420,lock,5,,pthread_mutex_t
+65248,MEMBER,<empty>,<empty>,*ctx,17,,421,ctx,6,,proxy_ctx_t*
+65251,MEMBER,<empty>,<empty>,mcp_pool_s *,5,,422,stqe_next,2,,mcp_pool_s*
+65252,MEMBER,<empty>,<empty>,next,30,,422,next,8,,struct
+65253,MEMBER,<empty>,<empty>,key_filter_conf[KEY_HASH_FILTER_MAX+1],10,,423,key_filter_conf,9,,char[6]
+65254,MEMBER,<empty>,<empty>,hash_seed,14,,424,hash_seed,10,,uint64_t
+65255,MEMBER,<empty>,<empty>,refcount,9,,425,refcount,11,,int
+65256,MEMBER,<empty>,<empty>,phc_ref,9,,426,phc_ref,12,,int
+65257,MEMBER,<empty>,<empty>,self_ref,9,,427,self_ref,13,,int
+65258,MEMBER,<empty>,<empty>,pool_size,9,,428,pool_size,14,,int
+65259,MEMBER,<empty>,<empty>,pool[],19,,429,pool,15,,mcp_pool_be_t[]
+65272,MEMBER,<empty>,<empty>,*main,16,,433,main,1,,mcp_pool_t*
+65285,MEMBER,<empty>,<empty>,AWAIT_GOOD = 0,5,,442,AWAIT_GOOD,1,,ANY
+65286,MEMBER,<empty>,<empty>,AWAIT_ANY,5,,443,AWAIT_ANY,2,,ANY
+65287,MEMBER,<empty>,<empty>,AWAIT_OK,5,,444,AWAIT_OK,3,,ANY
+65288,MEMBER,<empty>,<empty>,AWAIT_FIRST,5,,445,AWAIT_FIRST,4,,ANY
+65467,MEMBER,<empty>,<empty>,pending,9,,6,pending,1,,int
+65468,MEMBER,<empty>,<empty>,wait_for,9,,7,wait_for,2,,int
+65469,MEMBER,<empty>,<empty>,req_ref,9,,8,req_ref,3,,int
+65470,MEMBER,<empty>,<empty>,argtable_ref,9,,9,argtable_ref,4,,int
+65471,MEMBER,<empty>,<empty>,restable_ref,9,,10,restable_ref,5,,int
+65472,MEMBER,<empty>,<empty>,coro_ref,9,,11,coro_ref,6,,int
+65474,MEMBER,<empty>,<empty>,type,22,,12,type,8,,mcp_await_e
+65475,MEMBER,<empty>,<empty>,completed,10,,13,completed,9,,bool
+65476,MEMBER,<empty>,<empty>,*rq,19,,14,rq,10,,mcp_request_t*
+65477,MEMBER,<empty>,<empty>,*resp,13,,15,resp,11,,mc_resp*
+66471,MEMBER,<empty>,<empty>,size,12,,8,size,1,,size_t
+66472,MEMBER,<empty>,<empty>,used,12,,9,used,2,,size_t
+66473,MEMBER,<empty>,<empty>,*buf,10,,10,buf,3,,char*
+67879,MEMBER,<empty>,<empty>,phc,30,,6,phc,2,,proxy_hash_caller
+67880,MEMBER,<empty>,<empty>,buckets,18,,7,buckets,3,,unsigned int
+77048,MEMBER,<empty>,<empty>,point,18,,38,point,1,,unsigned int
+77049,MEMBER,<empty>,<empty>,id,18,,39,id,2,,unsigned int
+77053,MEMBER,<empty>,<empty>,phc,30,,43,phc,2,,proxy_hash_caller
+77054,MEMBER,<empty>,<empty>,total_buckets,18,,44,total_buckets,3,,unsigned int
+77055,MEMBER,<empty>,<empty>,continuum[],12,,45,continuum,4,,cpoint[]
+78534,MEMBER,<empty>,<empty>,*data,10,,16,data,1,,void*
+78536,MEMBER,<empty>,<empty>,*next,29,,17,next,3,,_restart_data_cb*
+78537,MEMBER,<empty>,<empty>,ccb,22,,18,ccb,4,,restart_check_cb
+78538,MEMBER,<empty>,<empty>,scb,21,,19,scb,5,,restart_save_cb
+78539,MEMBER,<empty>,<empty>,tag[RESTART_TAG_MAXLEN],10,,20,tag,6,,char[255]
+78649,MEMBER,<empty>,<empty>,*f,10,,61,f,1,,FILE*
+78650,MEMBER,<empty>,<empty>,*cb,21,,62,cb,2,,restart_data_cb*
+78651,MEMBER,<empty>,<empty>,*line,10,,63,line,3,,char*
+78652,MEMBER,<empty>,<empty>,done,10,,64,done,4,,bool
+79763,MEMBER,<empty>,<empty>,RESTART_OK=0,5,,14,RESTART_OK,1,,ANY
+79764,MEMBER,<empty>,<empty>,RESTART_NOTAG,19,,14,RESTART_NOTAG,2,,ANY
+79765,MEMBER,<empty>,<empty>,RESTART_BADLINE,34,,14,RESTART_BADLINE,3,,ANY
+79766,MEMBER,<empty>,<empty>,RESTART_DONE,51,,14,RESTART_DONE,4,,ANY
+80051,MEMBER,<empty>,<empty>,age,14,,17,age,1,,uint64_t
+80052,MEMBER,<empty>,<empty>,dirty,14,,18,dirty,2,,uint64_t
+80053,MEMBER,<empty>,<empty>,evicted_ratio,11,,19,evicted_ratio,3,,float
+80054,MEMBER,<empty>,<empty>,evicted_seen,14,,20,evicted_seen,4,,uint64_t
+80057,MEMBER,<empty>,<empty>,*window_data,24,,24,window_data,2,,window_data*
+80058,MEMBER,<empty>,<empty>,window_size,14,,25,window_size,3,,uint32_t
+80059,MEMBER,<empty>,<empty>,window_cur,14,,26,window_cur,4,,uint32_t
+80060,MEMBER,<empty>,<empty>,max_age_ratio,12,,27,max_age_ratio,5,,double
+80061,MEMBER,<empty>,<empty>,iam_before[MAX_NUMBER_OF_SLAB_CLASSES],25,,28,iam_before,6,,item_stats_automove[64]
+80062,MEMBER,<empty>,<empty>,iam_after[MAX_NUMBER_OF_SLAB_CLASSES],25,,29,iam_after,7,,item_stats_automove[64]
+80063,MEMBER,<empty>,<empty>,sam_before[MAX_NUMBER_OF_SLAB_CLASSES],25,,30,sam_before,8,,slab_stats_automove[64]
+80064,MEMBER,<empty>,<empty>,sam_after[MAX_NUMBER_OF_SLAB_CLASSES],25,,31,sam_after,9,,slab_stats_automove[64]
+80733,MEMBER,<empty>,<empty>,init,29,,14,init,1,,slab_automove_init_func
+80734,MEMBER,<empty>,<empty>,free,29,,15,free,2,,slab_automove_free_func
+80735,MEMBER,<empty>,<empty>,run,28,,16,run,3,,slab_automove_run_func
+80751,MEMBER,<empty>,<empty>,age,14,,18,age,1,,uint64_t
+80752,MEMBER,<empty>,<empty>,dirty,14,,19,dirty,2,,uint64_t
+80753,MEMBER,<empty>,<empty>,evicted,14,,20,evicted,3,,uint64_t
+80754,MEMBER,<empty>,<empty>,excess_free,18,,21,excess_free,4,,unsigned int
+80755,MEMBER,<empty>,<empty>,relaxed,18,,22,relaxed,5,,unsigned int
+80758,MEMBER,<empty>,<empty>,*window_data,24,,26,window_data,2,,window_data*
+80760,MEMBER,<empty>,<empty>,*settings,21,,27,settings,4,,settings*
+80761,MEMBER,<empty>,<empty>,window_size,14,,28,window_size,5,,uint32_t
+80762,MEMBER,<empty>,<empty>,window_cur,14,,29,window_cur,6,,uint32_t
+80763,MEMBER,<empty>,<empty>,item_size,14,,30,item_size,7,,uint32_t
+80764,MEMBER,<empty>,<empty>,max_age_ratio,12,,31,max_age_ratio,8,,double
+80765,MEMBER,<empty>,<empty>,free_ratio,12,,32,free_ratio,9,,double
+80766,MEMBER,<empty>,<empty>,pool_filled_once,10,,33,pool_filled_once,10,,bool
+80767,MEMBER,<empty>,<empty>,global_pool_watermark,18,,34,global_pool_watermark,11,,unsigned int
+80768,MEMBER,<empty>,<empty>,iam_before[MAX_NUMBER_OF_SLAB_CLASSES],25,,35,iam_before,12,,item_stats_automove[64]
+80769,MEMBER,<empty>,<empty>,iam_after[MAX_NUMBER_OF_SLAB_CLASSES],25,,36,iam_after,13,,item_stats_automove[64]
+80770,MEMBER,<empty>,<empty>,sam_before[MAX_NUMBER_OF_SLAB_CLASSES],25,,37,sam_before,14,,slab_stats_automove[64]
+80771,MEMBER,<empty>,<empty>,sam_after[MAX_NUMBER_OF_SLAB_CLASSES],25,,38,sam_after,15,,slab_stats_automove[64]
+81603,MEMBER,<empty>,<empty>,size,18,,30,size,1,,unsigned int
+81604,MEMBER,<empty>,<empty>,perslab,18,,31,perslab,2,,unsigned int
+81605,MEMBER,<empty>,<empty>,*slots,10,,33,slots,3,,void*
+81606,MEMBER,<empty>,<empty>,sl_curr,18,,34,sl_curr,4,,unsigned int
+81607,MEMBER,<empty>,<empty>,slabs,18,,36,slabs,5,,unsigned int
+81608,MEMBER,<empty>,<empty>,**slab_list,10,,38,slab_list,6,,void**
+81609,MEMBER,<empty>,<empty>,list_size,18,,39,list_size,7,,unsigned int
+84239,MEMBER,<empty>,<empty>,MOVE_PASS=0,5,,834,MOVE_PASS,1,,ANY
+84240,MEMBER,<empty>,<empty>,MOVE_FROM_SLAB,18,,834,MOVE_FROM_SLAB,2,,ANY
+84241,MEMBER,<empty>,<empty>,MOVE_FROM_LRU,34,,834,MOVE_FROM_LRU,3,,ANY
+84242,MEMBER,<empty>,<empty>,MOVE_BUSY,49,,834,MOVE_BUSY,4,,ANY
+84243,MEMBER,<empty>,<empty>,MOVE_LOCKED,60,,834,MOVE_LOCKED,5,,ANY
+85798,MEMBER,<empty>,<empty>,chunks_per_page,18,,35,chunks_per_page,1,,unsigned int
+85799,MEMBER,<empty>,<empty>,chunk_size,18,,36,chunk_size,2,,unsigned int
+85800,MEMBER,<empty>,<empty>,free_chunks,14,,37,free_chunks,3,,long int
+85801,MEMBER,<empty>,<empty>,total_pages,14,,38,total_pages,4,,long int
+85847,MEMBER,<empty>,<empty>,REASSIGN_OK=0,5,,56,REASSIGN_OK,1,,ANY
+85848,MEMBER,<empty>,<empty>,REASSIGN_RUNNING,20,,56,REASSIGN_RUNNING,2,,ANY
+85849,MEMBER,<empty>,<empty>,REASSIGN_BADCLASS,38,,56,REASSIGN_BADCLASS,3,,ANY
+85850,MEMBER,<empty>,<empty>,REASSIGN_NOSPARE,57,,56,REASSIGN_NOSPARE,4,,ANY
+85851,MEMBER,<empty>,<empty>,REASSIGN_SRC_DST_SAME,5,,57,REASSIGN_SRC_DST_SAME,5,,ANY
+86414,MEMBER,<empty>,<empty>,*prefix,10,,43,prefix,1,,char*
+86415,MEMBER,<empty>,<empty>,prefix_len,12,,44,prefix_len,2,,size_t
+86416,MEMBER,<empty>,<empty>,num_gets,14,,45,num_gets,3,,uint64_t
+86417,MEMBER,<empty>,<empty>,num_sets,14,,46,num_sets,4,,uint64_t
+86418,MEMBER,<empty>,<empty>,num_deletes,14,,47,num_deletes,5,,uint64_t
+86419,MEMBER,<empty>,<empty>,num_hits,14,,48,num_hits,6,,uint64_t
+86420,MEMBER,<empty>,<empty>,*next,18,,49,next,7,,PREFIX_STATS*
+86612,MEMBER,<empty>,<empty>,TEST_SKIP,20,,35,TEST_SKIP,1,,ANY
+86613,MEMBER,<empty>,<empty>,TEST_PASS,31,,35,TEST_PASS,2,,ANY
+86614,MEMBER,<empty>,<empty>,TEST_FAIL,42,,35,TEST_FAIL,3,,ANY
+86616,MEMBER,<empty>,<empty>,sock,9,,38,sock,1,,int
+86617,MEMBER,<empty>,<empty>,*ssl_ctx,15,,40,ssl_ctx,2,,SSL_CTX*
+86618,MEMBER,<empty>,<empty>,*ssl,12,,41,ssl,3,,SSL*
+93657,MEMBER,<empty>,<empty>,*description,16,,2244,description,1,,char*
+93658,MEMBER,<empty>,<empty>,function,15,,2245,function,2,,TEST_FUNC
+94009,MEMBER,<empty>,<empty>,queue_new_conn,5,,36,queue_new_conn,1,,ANY
+94010,MEMBER,<empty>,<empty>,queue_pause,5,,37,queue_pause,2,,ANY
+94011,MEMBER,<empty>,<empty>,queue_timeout,5,,38,queue_timeout,3,,ANY
+94012,MEMBER,<empty>,<empty>,queue_redispatch,5,,39,queue_redispatch,4,,ANY
+94013,MEMBER,<empty>,<empty>,queue_stop,5,,40,queue_stop,5,,ANY
+94014,MEMBER,<empty>,<empty>,queue_return_io,5,,41,queue_return_io,6,,ANY
+94018,MEMBER,<empty>,<empty>,sfd,23,,48,sfd,1,,int
+94020,MEMBER,<empty>,<empty>,init_state,23,,49,init_state,3,,conn_states
+94021,MEMBER,<empty>,<empty>,event_flags,23,,50,event_flags,4,,int
+94022,MEMBER,<empty>,<empty>,read_buffer_size,23,,51,read_buffer_size,5,,int
+94024,MEMBER,<empty>,<empty>,transport,32,,52,transport,7,,network_transport
+94026,MEMBER,<empty>,<empty>,mode,32,,53,mode,9,,conn_queue_item_modes
+94027,MEMBER,<empty>,<empty>,*c,10,,54,c,10,,conn*
+94028,MEMBER,<empty>,<empty>,*ssl,13,,55,ssl,11,,void*
+94029,MEMBER,<empty>,<empty>,conntag,14,,56,conntag,12,,uint64_t
+94031,MEMBER,<empty>,<empty>,bproto,19,,57,bproto,14,,protocol
+94032,MEMBER,<empty>,<empty>,*io,18,,58,io,15,,io_pending_t*
+94035,MEMBER,<empty>,<empty>,conn_queue_item *,5,,59,stqe_next,2,,conn_queue_item*
+94036,MEMBER,<empty>,<empty>,i_next,35,,59,i_next,17,,struct
+94042,MEMBER,<empty>,<empty>,conn_queue_item *,5,,65,stqh_first,2,,conn_queue_item*
+94044,MEMBER,<empty>,<empty>,conn_queue_item * *,5,,65,stqh_last,4,,conn_queue_item**
+94045,MEMBER,<empty>,<empty>,head,48,,65,head,2,,conn_ev_head
+94046,MEMBER,<empty>,<empty>,lock,21,,66,lock,3,,pthread_mutex_t
+94047,MEMBER,<empty>,<empty>,*cache,13,,67,cache,4,,cache_t*
+98731,MEMBER,<empty>,<empty>,fd,9,,37,fd,1,,int
+98732,MEMBER,<empty>,<empty>,gai_status,9,,38,gai_status,2,,int
+98733,MEMBER,<empty>,<empty>,last_sys_error,9,,39,last_sys_error,3,,int
+98734,MEMBER,<empty>,<empty>,sent_bytes_partial,9,,40,sent_bytes_partial,4,,int
+98735,MEMBER,<empty>,<empty>,fail_code,9,,41,fail_code,5,,int
+98736,MEMBER,<empty>,<empty>,error,9,,42,error,6,,int
+98737,MEMBER,<empty>,<empty>,status_flags,14,,43,status_flags,7,,uint32_t
+98738,MEMBER,<empty>,<empty>,state,9,,44,state,8,,int
+98739,MEMBER,<empty>,<empty>,buffer_used,12,,47,buffer_used,9,,size_t
+98740,MEMBER,<empty>,<empty>,buffer_request_len,12,,48,buffer_request_len,10,,size_t
+98741,MEMBER,<empty>,<empty>,*buffer_head,10,,49,buffer_head,11,,char*
+100254,MEMBER,<empty>,<empty>,type,20,,48,type,1,,short unsigned
+100255,MEMBER,<empty>,<empty>,code,20,,49,code,2,,short unsigned
+100256,MEMBER,<empty>,<empty>,*value,10,,50,value,3,,char*
+100257,MEMBER,<empty>,<empty>,reslen,12,,51,reslen,4,,size_t
+100258,MEMBER,<empty>,<empty>,vlen_read,12,,52,vlen_read,5,,size_t
+100259,MEMBER,<empty>,<empty>,vlen,12,,53,vlen,6,,size_t
+100262,MEMBER,<empty>,<empty>,*rline,18,,57,rline,1,,char*
+100263,MEMBER,<empty>,<empty>,rlen,20,,58,rlen,2,,size_t
+100265,MEMBER,<empty>,<empty>,*key,18,,62,key,1,,char*
+100266,MEMBER,<empty>,<empty>,klen,20,,63,klen,2,,size_t
+100267,MEMBER,<empty>,<empty>,flags,22,,64,flags,3,,uint32_t
+100268,MEMBER,<empty>,<empty>,cas,22,,65,cas,4,,uint64_t
+100270,MEMBER,<empty>,<empty>,*stat,18,,70,stat,1,,char*
+100271,MEMBER,<empty>,<empty>,slen,20,,71,slen,2,,size_t
+100392,MEMBER,<empty>,<empty>,XXH_OK=0,16,,287,XXH_OK,1,,ANY
+100393,MEMBER,<empty>,<empty>,XXH_ERROR,26,,287,XXH_ERROR,2,,ANY
+100447,MEMBER,<empty>,<empty>,digest[4],19,,519,digest,1,,unsigned char[4]
+100511,MEMBER,<empty>,<empty>,digest[sizeof(XXH64_hash_t)],32,,635,digest,1,,unsigned char[]
+100601,MEMBER,<empty>,<empty>,low64,18,,786,low64,1,,XXH64_hash_t
+100602,MEMBER,<empty>,<empty>,high64,18,,787,high64,2,,XXH64_hash_t
+100668,MEMBER,<empty>,<empty>,digest[sizeof(XXH128_hash_t)],32,,837,digest,1,,unsigned char[]

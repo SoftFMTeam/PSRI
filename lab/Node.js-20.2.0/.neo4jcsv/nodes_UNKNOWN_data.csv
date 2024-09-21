@@ -1,0 +1,2728 @@
+1241,UNKNOWN,1,,EnvironmentFlags::Flags,25,<empty>,,198,1,CPPASTTypeId,,<empty>
+1255,UNKNOWN,1,,bool*,20,<empty>,,218,1,CPPASTTypeId,,<empty>
+1928,UNKNOWN,1,,uint8_t,19,<empty>,,246,1,CPPASTTypeId,,<empty>
+1968,UNKNOWN,1,,int,27,<empty>,,257,1,CPPASTTypeId,,<empty>
+2732,UNKNOWN,1,,int,35,<empty>,,933,1,CPPASTTypeId,,<empty>
+4117,UNKNOWN,1,,uint64_t,38,<empty>,,531,1,CPPASTTypeId,,<empty>
+4233,UNKNOWN,1,,v8::TracingController*,19,<empty>,,593,1,CPPASTTypeId,,<empty>
+5107,UNKNOWN,1,,void*,24,<empty>,,885,1,CPPASTTypeId,,<empty>
+5134,UNKNOWN,1,,int,20,<empty>,,898,1,CPPASTTypeId,,<empty>
+5182,UNKNOWN,1,,ExitCode,54,<empty>,,921,1,CPPASTTypeId,,<empty>
+5949,UNKNOWN,1,,int32_t,28,<empty>,,47,1,CPPASTTypeId,,<empty>
+5990,UNKNOWN,1,,int,22,<empty>,,58,1,CPPASTTypeId,,<empty>
+6040,UNKNOWN,1,,int32_t,28,<empty>,,74,1,CPPASTTypeId,,<empty>
+6092,UNKNOWN,1,,int,27,<empty>,,88,1,CPPASTTypeId,,<empty>
+6186,UNKNOWN,1,,AsyncCleanupHookInfo*,44,<empty>,,135,1,CPPASTTypeId,,<empty>
+6215,UNKNOWN,1,,AsyncCleanupHookInfo*,44,<empty>,,143,1,CPPASTTypeId,,<empty>
+6556,UNKNOWN,1,,Environment*,47,<empty>,,571,1,CPPASTTypeId,,<empty>
+6817,UNKNOWN,-1,,),32,<empty>,,118,2,CPPASTProblemStatement,,<empty>
+6846,UNKNOWN,-1,,),32,<empty>,,140,2,CPPASTProblemStatement,,<empty>
+7195,UNKNOWN,1,,DestroyParam*,22,<empty>,,205,1,CPPASTTypeId,,<empty>
+7991,UNKNOWN,1,,PropertyAttribute,19,<empty>,,381,1,CPPASTTypeId,,<empty>
+8639,UNKNOWN,-1,,),32,<empty>,,546,2,CPPASTProblemStatement,,<empty>
+8787,UNKNOWN,-1,,),32,<empty>,,623,2,CPPASTProblemStatement,,<empty>
+8961,UNKNOWN,-1,,"snprintf(buf,
+           sizeof(buf),
+           ""%s(%"" PRIu64 "":%.0f)"",
+           MemoryInfoName(),
+           env()->thread_id(),
+           async_id_);",3,<empty>,,688,2,CPPASTProblemStatement,,<empty>
+9041,UNKNOWN,3,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(async_wrap,
+                                    node::AsyncWrap::CreatePerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(async_wrap,
+                              node::AsyncWrap::CreatePerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(async_wrap,
+                                node::AsyncWrap::RegisterExternalReferences)",1,<empty>,,720,3,CPPASTProblemDeclaration,,<empty>
+9164,UNKNOWN,1,,void*,41,<empty>,,20,1,CPPASTTypeId,,<empty>
+9172,UNKNOWN,1,,void*,47,<empty>,,21,1,CPPASTTypeId,,<empty>
+9195,UNKNOWN,1,,void*,52,<empty>,,27,1,CPPASTTypeId,,<empty>
+9459,UNKNOWN,1,,BaseObject*,34,<empty>,,128,1,CPPASTTypeId,,<empty>
+9630,UNKNOWN,1,,char*,35,<empty>,,1457,1,CPPASTTypeId,,<empty>
+9634,UNKNOWN,1,,struct sockaddr_in*,34,<empty>,,1458,1,CPPASTTypeId,,<empty>
+9653,UNKNOWN,1,,char*,35,<empty>,,1460,1,CPPASTTypeId,,<empty>
+9657,UNKNOWN,1,,struct sockaddr_in6*,34,<empty>,,1461,1,CPPASTTypeId,,<empty>
+9775,UNKNOWN,1,,uint32_t,22,<empty>,,82,1,CPPASTTypeId,,<empty>
+9782,UNKNOWN,1,,uint32_t,59,<empty>,,82,1,CPPASTTypeId,,<empty>
+9881,UNKNOWN,1,,ChannelWrap*,38,<empty>,,114,1,CPPASTTypeId,,<empty>
+10229,UNKNOWN,1,,ares_addrttl*,47,<empty>,,220,1,CPPASTTypeId,,<empty>
+10243,UNKNOWN,1,,ares_addr6ttl*,50,<empty>,,227,1,CPPASTTypeId,,<empty>
+12213,UNKNOWN,1,,ChannelWrap*,38,<empty>,,683,1,CPPASTTypeId,,<empty>
+12409,UNKNOWN,1,,void*,39,<empty>,,748,1,CPPASTTypeId,,<empty>
+12422,UNKNOWN,1,,uv_handle_t*,44,<empty>,,750,1,CPPASTTypeId,,<empty>
+12882,UNKNOWN,1,,uint32_t,26,<empty>,,924,1,CPPASTTypeId,,<empty>
+13129,UNKNOWN,1,,uint32_t,36,<empty>,,968,1,CPPASTTypeId,,<empty>
+15113,UNKNOWN,1,,GetAddrInfoReqWrap*,19,<empty>,,1434,1,CPPASTTypeId,,<empty>
+15271,UNKNOWN,1,,GetNameInfoReqWrap*,19,<empty>,,1507,1,CPPASTTypeId,,<empty>
+15769,UNKNOWN,1,,sockaddr_in*,49,<empty>,,1626,1,CPPASTTypeId,,<empty>
+15779,UNKNOWN,1,,sockaddr_in6*,49,<empty>,,1627,1,CPPASTTypeId,,<empty>
+15821,UNKNOWN,1,,struct sockaddr*,49,<empty>,,1637,1,CPPASTTypeId,,<empty>
+15923,UNKNOWN,1,,const void*,37,<empty>,,1665,1,CPPASTTypeId,,<empty>
+17280,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(cares_wrap, node::cares_wrap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(cares_wrap,
+                                node::cares_wrap::RegisterExternalReferences)",1,<empty>,,1981,2,CPPASTProblemDeclaration,,<empty>
+17530,UNKNOWN,1,,WrapType*,37,<empty>,,35,1,CPPASTTypeId,,<empty>
+17542,UNKNOWN,1,,UVType*,50,<empty>,,37,1,CPPASTTypeId,,<empty>
+17614,UNKNOWN,1,,uv_stream_t*,44,<empty>,,59,1,CPPASTTypeId,,<empty>
+17675,UNKNOWN,1,,ConnectWrap*,51,<empty>,,80,1,CPPASTTypeId,,<empty>
+17684,UNKNOWN,1,,WrapType*,32,<empty>,,82,1,CPPASTTypeId,,<empty>
+17949,UNKNOWN,1,,const unsigned char*,28,<empty>,,79,1,CPPASTTypeId,,<empty>
+17999,UNKNOWN,1,,char*,45,<empty>,,95,1,CPPASTTypeId,,<empty>
+18283,UNKNOWN,1,,size_t,42,<empty>,,195,1,CPPASTTypeId,,<empty>
+18430,UNKNOWN,1,,const unsigned char*,28,<empty>,,237,1,CPPASTTypeId,,<empty>
+18496,UNKNOWN,1,,unsigned,19,<empty>,,259,1,CPPASTTypeId,,<empty>
+19126,UNKNOWN,1,,AESKeyVariant,19,<empty>,,477,1,CPPASTTypeId,,<empty>
+19473,UNKNOWN,1,,size_t,19,<empty>,,565,1,CPPASTTypeId,,<empty>
+19502,UNKNOWN,-1,,),15,<empty>,,584,2,CPPASTProblemStatement,,<empty>
+19518,UNKNOWN,-1,,),13,<empty>,,595,3,CPPASTProblemStatement,,<empty>
+19660,UNKNOWN,1,,int,54,<empty>,,48,1,CPPASTTypeId,,<empty>
+19951,UNKNOWN,1,,size_t,41,<empty>,,153,1,CPPASTTypeId,,<empty>
+20042,UNKNOWN,1,,void**,27,<empty>,,190,1,CPPASTTypeId,,<empty>
+20837,UNKNOWN,1,,NodeBIO*,22,<empty>,,495,1,CPPASTTypeId,,<empty>
+21965,UNKNOWN,1,,double,3,<empty>,,322,1,CPPASTTypeId,,<empty>
+21971,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,322,1,CPPASTTypeId,,<empty>
+22064,UNKNOWN,1,,double,3,<empty>,,323,1,CPPASTTypeId,,<empty>
+22070,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,323,1,CPPASTTypeId,,<empty>
+22590,UNKNOWN,1,,int,19,<empty>,,497,1,CPPASTTypeId,,<empty>
+23231,UNKNOWN,1,,unsigned char*,47,<empty>,,724,1,CPPASTTypeId,,<empty>
+23499,UNKNOWN,1,,const unsigned char*,41,<empty>,,815,1,CPPASTTypeId,,<empty>
+23534,UNKNOWN,1,,unsigned char*,40,<empty>,,826,1,CPPASTTypeId,,<empty>
+23543,UNKNOWN,1,,const unsigned char*,45,<empty>,,828,1,CPPASTTypeId,,<empty>
+23548,UNKNOWN,1,,size_t,24,<empty>,,831,1,CPPASTTypeId,,<empty>
+23726,UNKNOWN,1,,size_t,21,<empty>,,896,1,CPPASTTypeId,,<empty>
+23812,UNKNOWN,1,,unsigned char*,41,<empty>,,919,1,CPPASTTypeId,,<empty>
+23823,UNKNOWN,1,,size_t,26,<empty>,,922,1,CPPASTTypeId,,<empty>
+23901,UNKNOWN,1,,unsigned char*,39,<empty>,,940,1,CPPASTTypeId,,<empty>
+24149,UNKNOWN,1,,unsigned char*,23,<empty>,,1019,1,CPPASTTypeId,,<empty>
+24685,UNKNOWN,1,,uint8_t,40,<empty>,,123,1,CPPASTTypeId,,<empty>
+25202,UNKNOWN,1,,const char*,58,<empty>,,85,1,CPPASTTypeId,,<empty>
+25214,UNKNOWN,1,,const char*,24,<empty>,,88,1,CPPASTTypeId,,<empty>
+25265,UNKNOWN,1,,const char*,42,<empty>,,103,1,CPPASTTypeId,,<empty>
+25518,UNKNOWN,1,,const char*,27,<empty>,,173,1,CPPASTTypeId,,<empty>
+25619,UNKNOWN,1,,const char*,27,<empty>,,201,1,CPPASTTypeId,,<empty>
+26119,UNKNOWN,-1,,"StackOfX509 CloneSSLCerts(X509Pointer&& cert,
+                          const STACK_OF(X509)* const ssl_certs) {
+  StackOfX509 peer_certs(sk_X509_new(nullptr));
+  if (!peer_certs) return StackOfX509();
+  if (cert && !sk_X509_push(peer_certs.get(), cert.release()))
+    return StackOfX509();
+  for (int i = 0; i < sk_X509_num(ssl_certs); i++) {
+    X509Pointer cert(X509_dup(sk_X509_value(ssl_certs, i)));
+    if (!cert || !sk_X509_push(peer_certs.get(), cert.get()))
+      return StackOfX509();
+    // `cert` is now managed by the stack.
+    cert.release();
+  }
+  return peer_certs;
+}",1,<empty>,,317,9,CPPASTProblemDeclaration,,<empty>
+26620,UNKNOWN,1,,unsigned char*,48,<empty>,,466,1,CPPASTTypeId,,<empty>
+26680,UNKNOWN,1,,uint64_t,40,<empty>,,477,1,CPPASTTypeId,,<empty>
+26683,UNKNOWN,-1,,"BIO_printf(bio.get(), ""0x%"" PRIx64, exponent_word);",3,<empty>,,478,3,CPPASTProblemStatement,,<empty>
+26763,UNKNOWN,1,,unsigned char*,48,<empty>,,504,1,CPPASTTypeId,,<empty>
+26875,UNKNOWN,-1,,1,13,<empty>,,525,2,CPPASTProblemStatement,,<empty>
+26876,UNKNOWN,-1,,"eku(static_cast<STACK_OF(ASN1_OBJECT)*>(
+      X509_get_ext_d2i(cert, NID_ext_key_usage, nullptr, nullptr)));",15,<empty>,,525,3,CPPASTProblemStatement,,<empty>
+27099,UNKNOWN,1,,unsigned char,25,<empty>,,610,1,CPPASTTypeId,,<empty>
+27194,UNKNOWN,1,,char,28,<empty>,,645,1,CPPASTTypeId,,<empty>
+27304,UNKNOWN,1,,const char*,38,<empty>,,673,1,CPPASTTypeId,,<empty>
+27323,UNKNOWN,1,,const char*,38,<empty>,,680,1,CPPASTTypeId,,<empty>
+27485,UNKNOWN,1,,size_t,42,<empty>,,732,1,CPPASTTypeId,,<empty>
+27778,UNKNOWN,1,,GENERAL_NAMES*,38,<empty>,,821,1,CPPASTTypeId,,<empty>
+27857,UNKNOWN,1,,AUTHORITY_INFO_ACCESS*,19,<empty>,,847,1,CPPASTTypeId,,<empty>
+28313,UNKNOWN,1,,const char*,47,<empty>,,1003,1,CPPASTTypeId,,<empty>
+29002,UNKNOWN,1,,unsigned char*,45,<empty>,,1182,1,CPPASTTypeId,,<empty>
+29866,UNKNOWN,-1,,"int SSL_CTX_use_certificate_chain(SSL_CTX* ctx,
+                                  X509Pointer&& x,
+                                  STACK_OF(X509)* extra_certs,
+                                  X509Pointer* cert,
+                                  X509Pointer* issuer_) {
+  CHECK(!*issuer_);
+  CHECK(!*cert);
+  X509* issuer = nullptr;
+
+  int ret = SSL_CTX_use_certificate(ctx, x.get());
+
+  if (ret) {
+    // If we could set up our certificate, now proceed to
+    // the CA certificates.
+    SSL_CTX_clear_extra_chain_certs(ctx);
+
+    for (int i = 0; i < sk_X509_num(extra_certs); i++) {
+      X509* ca = sk_X509_value(extra_certs, i);
+
+      // NOTE: Increments reference count on `ca`
+      if (!SSL_CTX_add1_chain_cert(ctx, ca)) {
+        ret = 0;
+        issuer = nullptr;
+        break;
+      }
+      // Note that we must not free r if it was successfully
+      // added to the chain (while we must free the main
+      // certificate, since its reference count is increased
+      // by SSL_CT...",1,<empty>,,81,1,CPPASTProblemDeclaration,,<empty>
+30112,UNKNOWN,1,,const uint8_t*,30,<empty>,,250,1,CPPASTTypeId,,<empty>
+30459,UNKNOWN,1,,PropertyAttribute,21,<empty>,,326,1,CPPASTTypeId,,<empty>
+32476,UNKNOWN,1,,uint32_t,41,<empty>,,927,1,CPPASTTypeId,,<empty>
+32515,UNKNOWN,1,,uint32_t,41,<empty>,,938,1,CPPASTTypeId,,<empty>
+32576,UNKNOWN,1,,long,35,<empty>,,952,1,CPPASTTypeId,,<empty>
+32624,UNKNOWN,1,,const unsigned char*,24,<empty>,,966,1,CPPASTTypeId,,<empty>
+33410,UNKNOWN,1,,SecureContext*,35,<empty>,,1174,1,CPPASTTypeId,,<empty>
+33451,UNKNOWN,1,,char*,28,<empty>,,1185,1,CPPASTTypeId,,<empty>
+33468,UNKNOWN,1,,char*,28,<empty>,,1189,1,CPPASTTypeId,,<empty>
+33794,UNKNOWN,1,,SecureContext*,35,<empty>,,1273,1,CPPASTTypeId,,<empty>
+34020,UNKNOWN,1,,unsigned char*,48,<empty>,,1330,1,CPPASTTypeId,,<empty>
+34184,UNKNOWN,1,,PropertyAttribute,21,<empty>,,68,1,CPPASTTypeId,,<empty>
+34724,UNKNOWN,1,,const unsigned char*,34,<empty>,,166,1,CPPASTTypeId,,<empty>
+34808,UNKNOWN,1,,const unsigned char*,34,<empty>,,190,1,CPPASTTypeId,,<empty>
+34838,UNKNOWN,1,,const unsigned char*,34,<empty>,,198,1,CPPASTTypeId,,<empty>
+35297,UNKNOWN,1,,int,24,<empty>,,311,1,CPPASTTypeId,,<empty>
+35305,UNKNOWN,1,,unsigned char*,37,<empty>,,313,1,CPPASTTypeId,,<empty>
+35443,UNKNOWN,1,,int,24,<empty>,,343,1,CPPASTTypeId,,<empty>
+35451,UNKNOWN,1,,unsigned char*,37,<empty>,,345,1,CPPASTTypeId,,<empty>
+35641,UNKNOWN,1,,unsigned char*,41,<empty>,,407,1,CPPASTTypeId,,<empty>
+35722,UNKNOWN,1,,char*,42,<empty>,,436,1,CPPASTTypeId,,<empty>
+37172,UNKNOWN,1,,double,55,<empty>,,153,1,CPPASTTypeId,,<empty>
+37198,UNKNOWN,1,,double,55,<empty>,,159,1,CPPASTTypeId,,<empty>
+37574,UNKNOWN,1,,double,3,<empty>,,88,1,CPPASTTypeId,,<empty>
+37580,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,88,1,CPPASTTypeId,,<empty>
+37673,UNKNOWN,1,,double,3,<empty>,,89,1,CPPASTTypeId,,<empty>
+37679,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,89,1,CPPASTTypeId,,<empty>
+38310,UNKNOWN,1,,point_conversion_form_t,46,<empty>,,255,1,CPPASTTypeId,,<empty>
+38413,UNKNOWN,1,,int,24,<empty>,,280,1,CPPASTTypeId,,<empty>
+38421,UNKNOWN,1,,unsigned char*,31,<empty>,,282,1,CPPASTTypeId,,<empty>
+38935,UNKNOWN,1,,point_conversion_form_t,46,<empty>,,429,1,CPPASTTypeId,,<empty>
+41955,UNKNOWN,1,,uint32_t,21,<empty>,,265,1,CPPASTTypeId,,<empty>
+42533,UNKNOWN,1,,const unsigned char*,28,<empty>,,137,1,CPPASTTypeId,,<empty>
+43003,UNKNOWN,1,,const unsigned char*,47,<empty>,,98,1,CPPASTTypeId,,<empty>
+43121,UNKNOWN,1,,const char*,44,<empty>,,138,1,CPPASTTypeId,,<empty>
+43263,UNKNOWN,1,,SignConfiguration::Mode,17,<empty>,,184,1,CPPASTTypeId,,<empty>
+44076,UNKNOWN,1,,PKFormatType,35,<empty>,,58,1,CPPASTTypeId,,<empty>
+44107,UNKNOWN,1,,PKEncodingType,56,<empty>,,62,1,CPPASTTypeId,,<empty>
+44230,UNKNOWN,1,,char*,44,<empty>,,107,1,CPPASTTypeId,,<empty>
+44323,UNKNOWN,1,,const unsigned char*,47,<empty>,,148,1,CPPASTTypeId,,<empty>
+44643,UNKNOWN,1,,const unsigned char*,49,<empty>,,233,1,CPPASTTypeId,,<empty>
+44683,UNKNOWN,1,,const unsigned char*,32,<empty>,,241,1,CPPASTTypeId,,<empty>
+44736,UNKNOWN,1,,const unsigned char*,49,<empty>,,253,1,CPPASTTypeId,,<empty>
+44890,UNKNOWN,1,,char*,23,<empty>,,309,1,CPPASTTypeId,,<empty>
+44916,UNKNOWN,1,,char*,31,<empty>,,317,1,CPPASTTypeId,,<empty>
+44969,UNKNOWN,1,,unsigned char*,34,<empty>,,336,1,CPPASTTypeId,,<empty>
+45090,UNKNOWN,1,,unsigned char*,34,<empty>,,376,1,CPPASTTypeId,,<empty>
+45631,UNKNOWN,1,,double,62,<empty>,,538,1,CPPASTTypeId,,<empty>
+46527,UNKNOWN,1,,const unsigned char*,32,<empty>,,788,1,CPPASTTypeId,,<empty>
+47135,UNKNOWN,1,,KeyType,30,<empty>,,975,1,CPPASTTypeId,,<empty>
+47594,UNKNOWN,1,,KeyType,30,<empty>,,1098,1,CPPASTTypeId,,<empty>
+48092,UNKNOWN,1,,uint32_t,19,<empty>,,1245,1,CPPASTTypeId,,<empty>
+48164,UNKNOWN,1,,unsigned int,34,<empty>,,1262,1,CPPASTTypeId,,<empty>
+48209,UNKNOWN,1,,unsigned int,34,<empty>,,1272,1,CPPASTTypeId,,<empty>
+49069,UNKNOWN,1,,double,3,<empty>,,1454,1,CPPASTTypeId,,<empty>
+49075,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1454,1,CPPASTTypeId,,<empty>
+49168,UNKNOWN,1,,double,3,<empty>,,1455,1,CPPASTTypeId,,<empty>
+49174,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1455,1,CPPASTTypeId,,<empty>
+49267,UNKNOWN,1,,double,3,<empty>,,1456,1,CPPASTTypeId,,<empty>
+49273,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1456,1,CPPASTTypeId,,<empty>
+49366,UNKNOWN,1,,double,3,<empty>,,1457,1,CPPASTTypeId,,<empty>
+49372,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1457,1,CPPASTTypeId,,<empty>
+49465,UNKNOWN,1,,double,3,<empty>,,1459,1,CPPASTTypeId,,<empty>
+49471,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1459,1,CPPASTTypeId,,<empty>
+49564,UNKNOWN,1,,double,3,<empty>,,1460,1,CPPASTTypeId,,<empty>
+49570,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1460,1,CPPASTTypeId,,<empty>
+49663,UNKNOWN,1,,double,3,<empty>,,1461,1,CPPASTTypeId,,<empty>
+49669,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1461,1,CPPASTTypeId,,<empty>
+49762,UNKNOWN,1,,double,3,<empty>,,1462,1,CPPASTTypeId,,<empty>
+49768,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1462,1,CPPASTTypeId,,<empty>
+49861,UNKNOWN,1,,double,3,<empty>,,1463,1,CPPASTTypeId,,<empty>
+49867,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1463,1,CPPASTTypeId,,<empty>
+49960,UNKNOWN,1,,double,3,<empty>,,1464,1,CPPASTTypeId,,<empty>
+49966,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1464,1,CPPASTTypeId,,<empty>
+50059,UNKNOWN,1,,double,3,<empty>,,1465,1,CPPASTTypeId,,<empty>
+50065,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1465,1,CPPASTTypeId,,<empty>
+50158,UNKNOWN,1,,double,3,<empty>,,1466,1,CPPASTTypeId,,<empty>
+50164,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1466,1,CPPASTTypeId,,<empty>
+50257,UNKNOWN,1,,double,3,<empty>,,1467,1,CPPASTTypeId,,<empty>
+50263,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1467,1,CPPASTTypeId,,<empty>
+50356,UNKNOWN,1,,double,3,<empty>,,1468,1,CPPASTTypeId,,<empty>
+50362,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1468,1,CPPASTTypeId,,<empty>
+50455,UNKNOWN,1,,double,3,<empty>,,1469,1,CPPASTTypeId,,<empty>
+50461,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1469,1,CPPASTTypeId,,<empty>
+50554,UNKNOWN,1,,double,3,<empty>,,1470,1,CPPASTTypeId,,<empty>
+50560,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1470,1,CPPASTTypeId,,<empty>
+50653,UNKNOWN,1,,double,3,<empty>,,1471,1,CPPASTTypeId,,<empty>
+50659,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1471,1,CPPASTTypeId,,<empty>
+50752,UNKNOWN,1,,double,3,<empty>,,1472,1,CPPASTTypeId,,<empty>
+50758,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1472,1,CPPASTTypeId,,<empty>
+50851,UNKNOWN,1,,double,3,<empty>,,1473,1,CPPASTTypeId,,<empty>
+50857,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1473,1,CPPASTTypeId,,<empty>
+50950,UNKNOWN,1,,double,3,<empty>,,1474,1,CPPASTTypeId,,<empty>
+50956,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1474,1,CPPASTTypeId,,<empty>
+51634,UNKNOWN,1,,unsigned char*,24,<empty>,,80,1,CPPASTTypeId,,<empty>
+51805,UNKNOWN,1,,int,26,<empty>,,118,1,CPPASTTypeId,,<empty>
+52468,UNKNOWN,1,,RSAKeyVariant,19,<empty>,,138,1,CPPASTTypeId,,<empty>
+52948,UNKNOWN,1,,RSAKeyVariant,19,<empty>,,257,1,CPPASTTypeId,,<empty>
+53100,UNKNOWN,1,,RSAKeyVariant,19,<empty>,,311,1,CPPASTTypeId,,<empty>
+53310,UNKNOWN,1,,const RSA*,23,<empty>,,377,1,CPPASTTypeId,,<empty>
+54076,UNKNOWN,1,,const RSA*,23,<empty>,,526,1,CPPASTTypeId,,<empty>
+54120,UNKNOWN,1,,double,55,<empty>,,538,1,CPPASTTypeId,,<empty>
+54156,UNKNOWN,1,,unsigned char*,37,<empty>,,550,1,CPPASTTypeId,,<empty>
+54166,UNKNOWN,1,,int,24,<empty>,,552,1,CPPASTTypeId,,<empty>
+54381,UNKNOWN,1,,double,59,<empty>,,623,1,CPPASTTypeId,,<empty>
+55208,UNKNOWN,1,,size_t,32,<empty>,,88,1,CPPASTTypeId,,<empty>
+55278,UNKNOWN,1,,unsigned char*,46,<empty>,,99,1,CPPASTTypeId,,<empty>
+55521,UNKNOWN,1,,unsigned char*,33,<empty>,,162,1,CPPASTTypeId,,<empty>
+55527,UNKNOWN,1,,unsigned char*,33,<empty>,,163,1,CPPASTTypeId,,<empty>
+56420,UNKNOWN,1,,DSASigEnc,19,<empty>,,435,1,CPPASTTypeId,,<empty>
+56922,UNKNOWN,1,,DSASigEnc,19,<empty>,,564,1,CPPASTTypeId,,<empty>
+57106,UNKNOWN,1,,SignConfiguration::Mode,19,<empty>,,621,1,CPPASTTypeId,,<empty>
+57321,UNKNOWN,1,,DSASigEnc,21,<empty>,,663,1,CPPASTTypeId,,<empty>
+58579,UNKNOWN,1,,std::string*,21,<empty>,,310,1,CPPASTTypeId,,<empty>
+58697,UNKNOWN,1,,TLSWrap*,28,<empty>,,72,1,CPPASTTypeId,,<empty>
+58719,UNKNOWN,1,,TLSWrap*,28,<empty>,,80,1,CPPASTTypeId,,<empty>
+58802,UNKNOWN,1,,const char*,28,<empty>,,94,1,CPPASTTypeId,,<empty>
+58908,UNKNOWN,1,,TLSWrap*,28,<empty>,,115,1,CPPASTTypeId,,<empty>
+58996,UNKNOWN,1,,TLSWrap*,28,<empty>,,132,1,CPPASTTypeId,,<empty>
+59072,UNKNOWN,1,,unsigned char*,24,<empty>,,151,1,CPPASTTypeId,,<empty>
+59106,UNKNOWN,1,,const char*,24,<empty>,,161,1,CPPASTTypeId,,<empty>
+59160,UNKNOWN,1,,TLSWrap*,28,<empty>,,182,1,CPPASTTypeId,,<empty>
+59349,UNKNOWN,1,,TLSWrap*,28,<empty>,,226,1,CPPASTTypeId,,<empty>
+59370,UNKNOWN,1,,unsigned char**,49,<empty>,,231,1,CPPASTTypeId,,<empty>
+59400,UNKNOWN,1,,TLSWrap*,28,<empty>,,248,1,CPPASTTypeId,,<empty>
+59578,UNKNOWN,1,,void*,19,<empty>,,313,1,CPPASTTypeId,,<empty>
+60120,UNKNOWN,1,,SSL*,25,<empty>,,503,1,CPPASTTypeId,,<empty>
+60126,UNKNOWN,1,,TLSWrap*,28,<empty>,,504,1,CPPASTTypeId,,<empty>
+60647,UNKNOWN,1,,int,23,<empty>,,704,1,CPPASTTypeId,,<empty>
+61025,UNKNOWN,1,,int,49,<empty>,,814,1,CPPASTTypeId,,<empty>
+61104,UNKNOWN,1,,int64_t,38,<empty>,,842,1,CPPASTTypeId,,<empty>
+61115,UNKNOWN,1,,AsyncWrap*,22,<empty>,,847,1,CPPASTTypeId,,<empty>
+61422,UNKNOWN,1,,char*,26,<empty>,,974,1,CPPASTTypeId,,<empty>
+61542,UNKNOWN,1,,int,49,<empty>,,994,1,CPPASTTypeId,,<empty>
+61699,UNKNOWN,1,,uint8_t*,38,<empty>,,1067,1,CPPASTTypeId,,<empty>
+62095,UNKNOWN,1,,TLSWrap*,28,<empty>,,1222,1,CPPASTTypeId,,<empty>
+62247,UNKNOWN,1,,TLSWrap*,28,<empty>,,1261,1,CPPASTTypeId,,<empty>
+62597,UNKNOWN,1,,TLSWrap*,28,<empty>,,1341,1,CPPASTTypeId,,<empty>
+62747,UNKNOWN,1,,TLSWrap*,28,<empty>,,1382,1,CPPASTTypeId,,<empty>
+63993,UNKNOWN,1,,unsigned char*,34,<empty>,,1655,1,CPPASTTypeId,,<empty>
+64683,UNKNOWN,1,,unsigned char*,23,<empty>,,1845,1,CPPASTTypeId,,<empty>
+64878,UNKNOWN,1,,const char*,44,<empty>,,1893,1,CPPASTTypeId,,<empty>
+65321,UNKNOWN,1,,double,3,<empty>,,2013,1,CPPASTTypeId,,<empty>
+65327,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,2013,1,CPPASTTypeId,,<empty>
+65424,UNKNOWN,1,,PropertyAttribute,19,<empty>,,2030,1,CPPASTTypeId,,<empty>
+65867,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(tls_wrap, node::crypto::TLSWrap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(
+    tls_wrap, node::crypto::TLSWrap::RegisterExternalReferences)",1,<empty>,,2148,2,CPPASTProblemDeclaration,,<empty>
+65958,UNKNOWN,-1,,MUST_USE_RESULT,1,<empty>,,63,2,CPPASTProblemDeclaration,,<empty>
+65967,UNKNOWN,1,,unsigned char*,36,<empty>,,64,1,CPPASTTypeId,,<empty>
+66003,UNKNOWN,1,,int,65,<empty>,,74,1,CPPASTTypeId,,<empty>
+66024,UNKNOWN,1,,const ByteSource**,47,<empty>,,98,1,CPPASTTypeId,,<empty>
+66035,UNKNOWN,1,,size_t,33,<empty>,,100,1,CPPASTTypeId,,<empty>
+66206,UNKNOWN,1,,int,29,<empty>,,187,1,CPPASTTypeId,,<empty>
+66304,UNKNOWN,1,,int,19,<empty>,,238,1,CPPASTTypeId,,<empty>
+67801,UNKNOWN,1,,const char*,24,<empty>,,654,1,CPPASTTypeId,,<empty>
+67921,UNKNOWN,1,,unsigned char*,32,<empty>,,685,1,CPPASTTypeId,,<empty>
+67963,UNKNOWN,1,,CryptoJobMode,22,<empty>,,698,1,CPPASTTypeId,,<empty>
+68194,UNKNOWN,1,,double,3,<empty>,,748,1,CPPASTTypeId,,<empty>
+68200,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,748,1,CPPASTTypeId,,<empty>
+68293,UNKNOWN,1,,double,3,<empty>,,749,1,CPPASTTypeId,,<empty>
+68299,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,749,1,CPPASTTypeId,,<empty>
+68749,UNKNOWN,-1,,"MaybeLocal<Object> X509Certificate::New(
+    Environment* env,
+    X509Pointer cert,
+    STACK_OF(X509)* issuer_chain) {
+  std::shared_ptr<ManagedX509> mcert(new ManagedX509(std::move(cert)));
+  return New(env, std::move(mcert), issuer_chain);
+}",1,<empty>,,108,8,CPPASTProblemDeclaration,,<empty>
+68750,UNKNOWN,-1,,"MaybeLocal<Object> X509Certificate::New(
+    Environment* env,
+    std::shared_ptr<ManagedX509> cert,
+    STACK_OF(X509)* issuer_chain) {
+  EscapableHandleScope scope(env->isolate());
+  Local<Function> ctor;
+  if (!GetConstructorTemplate(env)->GetFunction(env->context()).ToLocal(&ctor))
+    return MaybeLocal<Object>();
+
+  Local<Object> obj;
+  if (!ctor->NewInstance(env->context()).ToLocal(&obj))
+    return MaybeLocal<Object>();
+
+  new X509Certificate(env, obj, std::move(cert), issuer_chain);
+  return scope.Escape(obj);
+}",1,<empty>,,116,9,CPPASTProblemDeclaration,,<empty>
+68801,UNKNOWN,1,,int,19,<empty>,,153,1,CPPASTTypeId,,<empty>
+68804,UNKNOWN,1,,int,44,<empty>,,153,1,CPPASTTypeId,,<empty>
+70231,UNKNOWN,-1,,"X509Certificate::X509Certificate(
+    Environment* env,
+    Local<Object> object,
+    std::shared_ptr<ManagedX509> cert,
+    STACK_OF(X509)* issuer_chain)
+    : BaseObject(env, object),
+      cert_(std::move(cert)) {
+  MakeWeak();
+
+  if (issuer_chain != nullptr && sk_X509_num(issuer_chain)) {
+    X509Pointer cert(X509_dup(sk_X509_value(issuer_chain, 0)));
+    sk_X509_delete(issuer_chain, 0);
+    Local<Object> obj = sk_X509_num(issuer_chain)
+        ? X509Certificate::New(env, std::move(cert), issuer_chain)
+            .ToLocalChecked()
+        : X509Certificate::New(env, std::move(cert))
+            .ToLocalChecked();
+    issuer_cert_.reset(Unwrap<X509Certificate>(obj));
+  }
+}",1,<empty>,,484,33,CPPASTProblemDeclaration,,<empty>
+71402,UNKNOWN,-1,,),33,<empty>,,166,17,CPPASTProblemDeclaration,,<empty>
+71404,UNKNOWN,-1,,),30,<empty>,,167,19,CPPASTProblemDeclaration,,<empty>
+71632,UNKNOWN,1,,EntryImpl&,37,<empty>,,316,1,CPPASTTypeId,,<empty>
+71643,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(IdempotentDataQueueReader)
+  SET_SELF_SIZE(IdempotentDataQueueReader)
+
+ private:
+  std::shared_ptr<DataQueueImpl> data_queue_;",3,<empty>,,321,8,CPPASTProblemDeclaration,,<empty>
+71924,UNKNOWN,1,,EntryImpl&,37,<empty>,,474,1,CPPASTTypeId,,<empty>
+71935,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(NonIdempotentDataQueueReader)
+  SET_SELF_SIZE(NonIdempotentDataQueueReader)
+
+ private:
+  std::shared_ptr<DataQueueImpl> data_queue_;",3,<empty>,,479,8,CPPASTProblemDeclaration,,<empty>
+72043,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+    SET_MEMORY_INFO_NAME(EmptyReader)
+    SET_SELF_SIZE(EmptyReader)
+
+   private:
+    bool ended_ = false;",5,<empty>,,526,2,CPPASTProblemDeclaration,,<empty>
+72107,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(EmptyEntry)
+  SET_SELF_SIZE(EmptyEntry)",3,<empty>,,557,11,CPPASTProblemDeclaration,,<empty>
+72166,UNKNOWN,1,,uint8_t*,28,<empty>,,592,1,CPPASTTypeId,,<empty>
+72206,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+    SET_MEMORY_INFO_NAME(InMemoryReader)
+    SET_SELF_SIZE(InMemoryReader)
+
+   private:
+    InMemoryEntry& entry_;",5,<empty>,,604,3,CPPASTProblemDeclaration,,<empty>
+72352,UNKNOWN,-1,,),37,<empty>,,673,14,CPPASTProblemDeclaration,,<empty>
+72354,UNKNOWN,-1,,),30,<empty>,,674,16,CPPASTProblemDeclaration,,<empty>
+72478,UNKNOWN,-1,,),38,<empty>,,736,13,CPPASTProblemDeclaration,,<empty>
+72480,UNKNOWN,-1,,),31,<empty>,,737,15,CPPASTProblemDeclaration,,<empty>
+72515,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+    SET_MEMORY_INFO_NAME(ReaderImpl)
+    SET_SELF_SIZE(ReaderImpl)
+
+   private:
+    std::shared_ptr<DataQueue::Reader> inner_;",5,<empty>,,758,3,CPPASTProblemDeclaration,,<empty>
+72679,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(FdEntry)
+  SET_SELF_SIZE(FdEntry)
+
+ private:
+  Environment* env_;",3,<empty>,,835,8,CPPASTProblemDeclaration,,<empty>
+72997,UNKNOWN,1,,uint8_t*,30,<empty>,,936,1,CPPASTTypeId,,<empty>
+73007,UNKNOWN,1,,uint64_t,29,<empty>,,937,1,CPPASTTypeId,,<empty>
+73128,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+    SET_MEMORY_INFO_NAME(FdEntry::Reader)
+    SET_SELF_SIZE(ReaderImpl)
+
+   private:
+    struct PendingPull {
+      Next next;
+      std::shared_ptr<ReaderImpl> self;
+      PendingPull(Next next, std::shared_ptr<ReaderImpl> self)
+          : next(std::move(next)), self(std::move(self)) {}
+    };",5,<empty>,,971,7,CPPASTProblemDeclaration,,<empty>
+73142,UNKNOWN,1,,ReaderImpl*,30,<empty>,,991,1,CPPASTTypeId,,<empty>
+73494,UNKNOWN,1,,Info*,30,<empty>,,339,1,CPPASTTypeId,,<empty>
+73532,UNKNOWN,1,,void*,39,<empty>,,347,1,CPPASTTypeId,,<empty>
+73587,UNKNOWN,1,,void**,39,<empty>,,362,1,CPPASTTypeId,,<empty>
+73732,UNKNOWN,-1,,),27,<empty>,,82,6,CPPASTProblemStatement,,<empty>
+73787,UNKNOWN,1,,PSYMBOL_INFO,43,<empty>,,173,1,CPPASTTypeId,,<empty>
+73904,UNKNOWN,1,,DWORD64,49,<empty>,,250,1,CPPASTTypeId,,<empty>
+74410,UNKNOWN,1,,InternalFieldInfo*,48,<empty>,,80,1,CPPASTTypeId,,<empty>
+74517,UNKNOWN,1,,char*,36,<empty>,,98,1,CPPASTTypeId,,<empty>
+74653,UNKNOWN,1,,char*,32,<empty>,,133,1,CPPASTTypeId,,<empty>
+75156,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(
+    encoding_binding,
+    node::encoding_binding::BindingData::CreatePerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(
+    encoding_binding,
+    node::encoding_binding::BindingData::CreatePerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(
+    encoding_binding,
+    node::encoding_binding::BindingData::RegisterTimerExternalReferences)",1,<empty>,,252,2,CPPASTProblemDeclaration,,<empty>
+75429,UNKNOWN,1,,Environment**,57,<empty>,,1214,1,CPPASTTypeId,,<empty>
+75532,UNKNOWN,1,,void*,65,<empty>,,65,1,CPPASTTypeId,,<empty>
+75534,UNKNOWN,1,,const void*,17,<empty>,,66,1,CPPASTTypeId,,<empty>
+76364,UNKNOWN,-1,,),43,<empty>,,315,7,CPPASTProblemStatement,,<empty>
+76366,UNKNOWN,-1,,),35,<empty>,,316,9,CPPASTProblemStatement,,<empty>
+76368,UNKNOWN,-1,,),35,<empty>,,317,11,CPPASTProblemStatement,,<empty>
+76370,UNKNOWN,-1,,),40,<empty>,,318,13,CPPASTProblemStatement,,<empty>
+76401,UNKNOWN,-1,,),36,<empty>,,339,18,CPPASTProblemStatement,,<empty>
+76403,UNKNOWN,-1,,),41,<empty>,,340,20,CPPASTProblemStatement,,<empty>
+76441,UNKNOWN,-1,,),43,<empty>,,370,7,CPPASTProblemStatement,,<empty>
+76443,UNKNOWN,-1,,),35,<empty>,,371,9,CPPASTProblemStatement,,<empty>
+76445,UNKNOWN,-1,,),35,<empty>,,372,11,CPPASTProblemStatement,,<empty>
+76447,UNKNOWN,-1,,),40,<empty>,,373,13,CPPASTProblemStatement,,<empty>
+76529,UNKNOWN,-1,,),42,<empty>,,442,4,CPPASTProblemStatement,,<empty>
+76531,UNKNOWN,-1,,),39,<empty>,,455,6,CPPASTProblemStatement,,<empty>
+76533,UNKNOWN,-1,,),34,<empty>,,467,8,CPPASTProblemStatement,,<empty>
+76535,UNKNOWN,-1,,),34,<empty>,,477,10,CPPASTProblemStatement,,<empty>
+76537,UNKNOWN,-1,,),30,<empty>,,491,12,CPPASTProblemStatement,,<empty>
+76612,UNKNOWN,-1,,),34,<empty>,,527,2,CPPASTProblemStatement,,<empty>
+76614,UNKNOWN,-1,,),34,<empty>,,529,4,CPPASTProblemStatement,,<empty>
+76881,UNKNOWN,1,,uv_handle_t*,31,<empty>,,628,1,CPPASTTypeId,,<empty>
+76888,UNKNOWN,1,,uv_handle_t*,29,<empty>,,630,1,CPPASTTypeId,,<empty>
+76922,UNKNOWN,1,,char*,42,<empty>,,637,1,CPPASTTypeId,,<empty>
+77168,UNKNOWN,1,,uint32_t,19,<empty>,,755,1,CPPASTTypeId,,<empty>
+77656,UNKNOWN,1,,uv_handle_t*,29,<empty>,,929,1,CPPASTTypeId,,<empty>
+77665,UNKNOWN,1,,uv_handle_t*,29,<empty>,,932,1,CPPASTTypeId,,<empty>
+77698,UNKNOWN,1,,uv_handle_t*,29,<empty>,,955,1,CPPASTTypeId,,<empty>
+77703,UNKNOWN,1,,uv_handle_t*,29,<empty>,,956,1,CPPASTTypeId,,<empty>
+77708,UNKNOWN,1,,uv_handle_t*,29,<empty>,,957,1,CPPASTTypeId,,<empty>
+77771,UNKNOWN,1,,uv_handle_t*,36,<empty>,,1003,1,CPPASTTypeId,,<empty>
+77775,UNKNOWN,1,,uv_handle_t*,36,<empty>,,1004,1,CPPASTTypeId,,<empty>
+77779,UNKNOWN,1,,uv_handle_t*,36,<empty>,,1005,1,CPPASTTypeId,,<empty>
+77783,UNKNOWN,1,,uv_handle_t*,36,<empty>,,1006,1,CPPASTTypeId,,<empty>
+77788,UNKNOWN,1,,uv_handle_t*,36,<empty>,,1007,1,CPPASTTypeId,,<empty>
+77793,UNKNOWN,1,,uv_handle_t*,36,<empty>,,1008,1,CPPASTTypeId,,<empty>
+78274,UNKNOWN,1,,uv_handle_t*,29,<empty>,,1236,1,CPPASTTypeId,,<empty>
+78280,UNKNOWN,1,,uv_handle_t*,31,<empty>,,1238,1,CPPASTTypeId,,<empty>
+78422,UNKNOWN,1,,uv_handle_t*,37,<empty>,,1285,1,CPPASTTypeId,,<empty>
+78628,UNKNOWN,1,,uint32_t,60,<empty>,,1350,1,CPPASTTypeId,,<empty>
+78639,UNKNOWN,1,,double,47,<empty>,,1352,1,CPPASTTypeId,,<empty>
+79494,UNKNOWN,-1,,"fprintf(stderr, ""(node:%d, thread:%"" PRIu64 "") "",
+              uv_os_getpid(), thread_id());",7,<empty>,,1609,1,CPPASTProblemStatement,,<empty>
+79499,UNKNOWN,1,,int,25,<empty>,,1615,1,CPPASTTypeId,,<empty>
+80005,UNKNOWN,1,,Environment*,34,<empty>,,1754,1,CPPASTTypeId,,<empty>
+80023,UNKNOWN,1,,Environment*,34,<empty>,,1762,1,CPPASTTypeId,,<empty>
+80025,UNKNOWN,-1,,"Debug(env,
+        DebugCategory::DIAGNOSTICS,
+        ""Invoked NearHeapLimitCallback, processing=%d, ""
+        ""current_limit=%"" PRIu64 "", ""
+        ""initial_limit=%"" PRIu64 ""\n"",
+        env->is_in_heapsnapshot_heap_limit_callback_,
+        static_cast<uint64_t>(current_heap_limit),
+        static_cast<uint64_t>(initial_heap_limit));",3,<empty>,,1764,3,CPPASTProblemStatement,,<empty>
+80109,UNKNOWN,-1,,"Debug(env,
+        DebugCategory::DIAGNOSTICS,
+        ""max_young_gen_size=%"" PRIu64 "", ""
+        ""young_gen_size=%"" PRIu64 "", ""
+        ""old_gen_size=%"" PRIu64 "", ""
+        ""total_size=%"" PRIu64 ""\n"",
+        static_cast<uint64_t>(max_young_gen_size),
+        static_cast<uint64_t>(young_gen_size),
+        static_cast<uint64_t>(old_gen_size),
+        static_cast<uint64_t>(young_gen_size + old_gen_size));",3,<empty>,,1789,14,CPPASTProblemStatement,,<empty>
+80118,UNKNOWN,-1,,"Debug(env,
+        DebugCategory::DIAGNOSTICS,
+        ""Estimated available memory=%"" PRIu64 "", ""
+        ""estimated overhead=%"" PRIu64 ""\n"",
+        static_cast<uint64_t>(available),
+        static_cast<uint64_t>(estimated_overhead));",3,<empty>,,1804,19,CPPASTProblemStatement,,<empty>
+80130,UNKNOWN,-1,,"Debug(env,
+          DebugCategory::DIAGNOSTICS,
+          ""Not generating snapshots in nested callback. ""
+          ""new_limit=%"" PRIu64 ""\n"",
+          static_cast<uint64_t>(new_limit));",5,<empty>,,1823,1,CPPASTProblemStatement,,<empty>
+80233,UNKNOWN,-1,,"Debug(env,
+        DebugCategory::DIAGNOSTICS,
+        ""%"" PRIu32 ""/%"" PRIu32 "" snapshots taken.\n"",
+        env->heap_limit_snapshot_taken_,
+        env->heap_snapshot_near_heap_limit_);",3,<empty>,,1862,38,CPPASTProblemStatement,,<empty>
+80525,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(FSEventWrap)
+  SET_SELF_SIZE(FSEventWrap)
+
+ private:
+  static const encoding kDefaultEncoding = UTF8;",3,<empty>,,62,6,CPPASTProblemDeclaration,,<empty>
+80686,UNKNOWN,1,,PropertyAttribute,19,<empty>,,119,1,CPPASTTypeId,,<empty>
+80906,UNKNOWN,1,,uv_handle_t*,31,<empty>,,174,1,CPPASTTypeId,,<empty>
+80931,UNKNOWN,1,,FSEventWrap*,35,<empty>,,183,1,CPPASTTypeId,,<empty>
+81123,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(fs_event_wrap,
+                                    node::FSEventWrap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(fs_event_wrap,
+                                node::FSEventWrap::RegisterExternalReferences)",1,<empty>,,243,2,CPPASTProblemDeclaration,,<empty>
+81382,UNKNOWN,1,,HandleWrap*,48,<empty>,,137,1,CPPASTTypeId,,<empty>
+81602,UNKNOWN,2,,"NODE_BINDING_EXTERNAL_REFERENCE(handle_wrap,
+                                node::HandleWrap::RegisterExternalReferences)",1,<empty>,,189,2,CPPASTProblemDeclaration,,<empty>
+81739,UNKNOWN,1,,size_t,26,<empty>,,68,1,CPPASTTypeId,,<empty>
+82116,UNKNOWN,1,,double,54,<empty>,,147,1,CPPASTTypeId,,<empty>
+82166,UNKNOWN,1,,JSGraphJSNode*,31,<empty>,,155,1,CPPASTTypeId,,<empty>
+82355,UNKNOWN,1,,double,63,<empty>,,192,1,CPPASTTypeId,,<empty>
+82535,UNKNOWN,1,,size_t,29,<empty>,,250,1,CPPASTTypeId,,<empty>
+82620,UNKNOWN,1,,ssize_t,23,<empty>,,296,1,CPPASTTypeId,,<empty>
+82643,UNKNOWN,1,,int,26,<empty>,,300,1,CPPASTTypeId,,<empty>
+82732,UNKNOWN,-1,,),42,<empty>,,338,15,CPPASTProblemDeclaration,,<empty>
+82734,UNKNOWN,-1,,),35,<empty>,,339,17,CPPASTProblemDeclaration,,<empty>
+82876,UNKNOWN,1,,HeapSnapshot*,14,<empty>,,391,1,CPPASTTypeId,,<empty>
+83025,UNKNOWN,1,,uint8_t*,19,<empty>,,424,1,CPPASTTypeId,,<empty>
+83305,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(heap_utils, node::heap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(heap_utils,
+                                node::heap::RegisterExternalReferences)",1,<empty>,,489,2,CPPASTProblemDeclaration,,<empty>
+83349,UNKNOWN,1,,double,51,<empty>,,167,1,CPPASTTypeId,,<empty>
+83422,UNKNOWN,1,,double,51,<empty>,,607,1,CPPASTTypeId,,<empty>
+83567,UNKNOWN,1,,double,30,<empty>,,68,1,CPPASTTypeId,,<empty>
+83639,UNKNOWN,1,,double,30,<empty>,,84,1,CPPASTTypeId,,<empty>
+83711,UNKNOWN,1,,double,30,<empty>,,98,1,CPPASTTypeId,,<empty>
+83808,UNKNOWN,1,,double,30,<empty>,,119,1,CPPASTTypeId,,<empty>
+83924,UNKNOWN,1,,double,30,<empty>,,142,1,CPPASTTypeId,,<empty>
+84183,UNKNOWN,1,,int64_t,21,<empty>,,204,1,CPPASTTypeId,,<empty>
+85252,UNKNOWN,1,,uv_handle_t*,29,<empty>,,483,1,CPPASTTypeId,,<empty>
+85334,UNKNOWN,1,,double,30,<empty>,,507,1,CPPASTTypeId,,<empty>
+85406,UNKNOWN,1,,double,30,<empty>,,523,1,CPPASTTypeId,,<empty>
+85478,UNKNOWN,1,,double,30,<empty>,,537,1,CPPASTTypeId,,<empty>
+85575,UNKNOWN,1,,double,30,<empty>,,557,1,CPPASTTypeId,,<empty>
+85691,UNKNOWN,1,,double,30,<empty>,,581,1,CPPASTTypeId,,<empty>
+85997,UNKNOWN,1,,DeletableWrapper<T>*,21,<empty>,,26,1,CPPASTTypeId,,<empty>
+86650,UNKNOWN,1,,uint16_t*,36,<empty>,,294,1,CPPASTTypeId,,<empty>
+87030,UNKNOWN,1,,const uint16_t*,48,<empty>,,29,1,CPPASTTypeId,,<empty>
+87106,UNKNOWN,1,,const uint16_t*,47,<empty>,,50,1,CPPASTTypeId,,<empty>
+87180,UNKNOWN,1,,const char*,41,<empty>,,66,1,CPPASTTypeId,,<empty>
+87193,UNKNOWN,1,,const char16_t*,24,<empty>,,70,1,CPPASTTypeId,,<empty>
+87322,UNKNOWN,1,,const uint8_t*,26,<empty>,,105,1,CPPASTTypeId,,<empty>
+87352,UNKNOWN,1,,const char*,39,<empty>,,116,1,CPPASTTypeId,,<empty>
+87373,UNKNOWN,1,,const char*,39,<empty>,,121,1,CPPASTTypeId,,<empty>
+87386,UNKNOWN,1,,const char16_t*,39,<empty>,,125,1,CPPASTTypeId,,<empty>
+87435,UNKNOWN,1,,const uint8_t*,27,<empty>,,141,1,CPPASTTypeId,,<empty>
+87907,UNKNOWN,1,,DeletableFrontendWrapper*,21,<empty>,,68,1,CPPASTTypeId,,<empty>
+89529,UNKNOWN,1,,Environment*,38,<empty>,,713,1,CPPASTTypeId,,<empty>
+89559,UNKNOWN,1,,Environment*,32,<empty>,,728,1,CPPASTTypeId,,<empty>
+89677,UNKNOWN,1,,Agent*,15,<empty>,,73,1,CPPASTTypeId,,<empty>
+90736,UNKNOWN,1,,uint64_t,37,<empty>,,553,1,CPPASTTypeId,,<empty>
+91129,UNKNOWN,1,,uv_handle_t*,31,<empty>,,707,1,CPPASTTypeId,,<empty>
+91999,UNKNOWN,1,,uv_async_t*,42,<empty>,,377,1,CPPASTTypeId,,<empty>
+92103,UNKNOWN,1,,char*,45,<empty>,,37,1,CPPASTTypeId,,<empty>
+92616,UNKNOWN,1,,InspectorIo*,15,<empty>,,281,1,CPPASTTypeId,,<empty>
+92909,UNKNOWN,1,,uv_handle_t*,29,<empty>,,375,1,CPPASTTypeId,,<empty>
+93369,UNKNOWN,-1,,),44,<empty>,,157,11,CPPASTProblemDeclaration,,<empty>
+93371,UNKNOWN,-1,,),37,<empty>,,158,13,CPPASTProblemDeclaration,,<empty>
+93671,UNKNOWN,1,,void*,27,<empty>,,236,1,CPPASTTypeId,,<empty>
+93986,UNKNOWN,1,,int,37,<empty>,,289,1,CPPASTTypeId,,<empty>
+94409,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(inspector, node::inspector::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(inspector,
+                                node::inspector::RegisterExternalReferences)",1,<empty>,,405,2,CPPASTProblemDeclaration,,<empty>
+94416,UNKNOWN,1,,Environment*,37,<empty>,,418,1,CPPASTTypeId,,<empty>
+94509,UNKNOWN,1,,const uint8_t*,24,<empty>,,55,1,CPPASTTypeId,,<empty>
+94780,UNKNOWN,-1,,"Debug(env,
+          DebugCategory::INSPECTOR_PROFILER,
+          ""Writing profile response (id = %"" PRIu64 "")\n"",
+          static_cast<uint64_t>(id));",5,<empty>,,131,1,CPPASTProblemStatement,,<empty>
+94890,UNKNOWN,1,,uint64_t,19,<empty>,,174,1,CPPASTTypeId,,<empty>
+96053,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(profiler, node::profiler::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(profiler,
+                                node::profiler::RegisterExternalReferences)",1,<empty>,,528,2,CPPASTProblemDeclaration,,<empty>
+96144,UNKNOWN,1,,uv_tcp_t*,47,<empty>,,38,1,CPPASTTypeId,,<empty>
+96340,UNKNOWN,1,,const unsigned char*,29,<empty>,,150,1,CPPASTTypeId,,<empty>
+96350,UNKNOWN,1,,unsigned char*,29,<empty>,,152,1,CPPASTTypeId,,<empty>
+96668,UNKNOWN,1,,char,33,<empty>,,262,1,CPPASTTypeId,,<empty>
+96971,UNKNOWN,1,,unsigned char,39,<empty>,,343,1,CPPASTTypeId,,<empty>
+97000,UNKNOWN,1,,size_t,39,<empty>,,354,1,CPPASTTypeId,,<empty>
+97185,UNKNOWN,1,,WsHandler*,38,<empty>,,420,1,CPPASTTypeId,,<empty>
+97928,UNKNOWN,1,,struct sockaddr*,49,<empty>,,674,1,CPPASTTypeId,,<empty>
+97951,UNKNOWN,1,,const sockaddr_in6*,47,<empty>,,679,1,CPPASTTypeId,,<empty>
+97967,UNKNOWN,1,,const sockaddr_in*,46,<empty>,,682,1,CPPASTTypeId,,<empty>
+98011,UNKNOWN,1,,uv_stream_t*,39,<empty>,,701,1,CPPASTTypeId,,<empty>
+98090,UNKNOWN,1,,uv_stream_t*,42,<empty>,,730,1,CPPASTTypeId,,<empty>
+98190,UNKNOWN,1,,uv_handle_t*,42,<empty>,,767,1,CPPASTTypeId,,<empty>
+98768,UNKNOWN,1,,uint8_t*,29,<empty>,,136,1,CPPASTTypeId,,<empty>
+98789,UNKNOWN,1,,Byte*,36,<empty>,,139,1,CPPASTTypeId,,<empty>
+98976,UNKNOWN,1,,uv_handle_t*,31,<empty>,,211,1,CPPASTTypeId,,<empty>
+99001,UNKNOWN,1,,uv_tcp_t*,47,<empty>,,219,1,CPPASTTypeId,,<empty>
+100017,UNKNOWN,1,,struct sockaddr*,49,<empty>,,525,1,CPPASTTypeId,,<empty>
+100041,UNKNOWN,1,,const sockaddr_in6*,29,<empty>,,530,1,CPPASTTypeId,,<empty>
+100051,UNKNOWN,1,,const sockaddr_in*,29,<empty>,,532,1,CPPASTTypeId,,<empty>
+100093,UNKNOWN,1,,uv_stream_t*,38,<empty>,,543,1,CPPASTTypeId,,<empty>
+101258,UNKNOWN,1,,int,5,<empty>,,69,1,CPPASTTypeId,,<empty>
+101316,UNKNOWN,1,,int,5,<empty>,,69,1,CPPASTTypeId,,<empty>
+101466,UNKNOWN,1,,v8::PropertyAttribute,22,<empty>,,100,1,CPPASTTypeId,,<empty>
+101475,UNKNOWN,1,,napi_deferred,27,<empty>,,105,1,CPPASTTypeId,,<empty>
+101484,UNKNOWN,1,,v8impl::Persistent<v8::Value>*,27,<empty>,,110,1,CPPASTTypeId,,<empty>
+101528,UNKNOWN,1,,napi_handle_scope,27,<empty>,,143,1,CPPASTTypeId,,<empty>
+101537,UNKNOWN,1,,HandleScopeWrapper*,27,<empty>,,147,1,CPPASTTypeId,,<empty>
+101546,UNKNOWN,1,,napi_escapable_handle_scope,27,<empty>,,153,1,CPPASTTypeId,,<empty>
+101555,UNKNOWN,1,,EscapableHandleScopeWrapper*,27,<empty>,,159,1,CPPASTTypeId,,<empty>
+101943,UNKNOWN,1,,v8impl::Reference*,19,<empty>,,212,1,CPPASTTypeId,,<empty>
+102097,UNKNOWN,1,,CallbackBundle*,42,<empty>,,263,1,CPPASTTypeId,,<empty>
+102154,UNKNOWN,1,,CallbackBundle*,32,<empty>,,298,1,CPPASTTypeId,,<empty>
+102177,UNKNOWN,1,,napi_callback_info,58,<empty>,,305,1,CPPASTTypeId,,<empty>
+102179,UNKNOWN,1,,CallbackWrapper*,21,<empty>,,306,1,CPPASTTypeId,,<empty>
+102747,UNKNOWN,1,,napi_ref,32,<empty>,,439,1,CPPASTTypeId,,<empty>
+103468,UNKNOWN,1,,int,5,<empty>,,731,1,CPPASTTypeId,,<empty>
+103522,UNKNOWN,1,,int,5,<empty>,,731,1,CPPASTTypeId,,<empty>
+103746,UNKNOWN,1,,int,3,<empty>,,765,1,CPPASTTypeId,,<empty>
+103800,UNKNOWN,1,,int,3,<empty>,,765,1,CPPASTTypeId,,<empty>
+104255,UNKNOWN,1,,napi_key_filter,19,<empty>,,846,1,CPPASTTypeId,,<empty>
+104422,UNKNOWN,1,,v8::PropertyFilter,26,<empty>,,867,1,CPPASTTypeId,,<empty>
+104438,UNKNOWN,1,,v8::PropertyFilter,26,<empty>,,871,1,CPPASTTypeId,,<empty>
+104454,UNKNOWN,1,,v8::PropertyFilter,26,<empty>,,875,1,CPPASTTypeId,,<empty>
+104470,UNKNOWN,1,,v8::PropertyFilter,26,<empty>,,879,1,CPPASTTypeId,,<empty>
+104486,UNKNOWN,1,,v8::PropertyFilter,26,<empty>,,883,1,CPPASTTypeId,,<empty>
+105958,UNKNOWN,1,,int,3,<empty>,,1047,1,CPPASTTypeId,,<empty>
+106012,UNKNOWN,1,,int,3,<empty>,,1047,1,CPPASTTypeId,,<empty>
+106262,UNKNOWN,1,,int,3,<empty>,,1070,1,CPPASTTypeId,,<empty>
+106316,UNKNOWN,1,,int,3,<empty>,,1070,1,CPPASTTypeId,,<empty>
+106489,UNKNOWN,1,,int,3,<empty>,,1090,1,CPPASTTypeId,,<empty>
+106543,UNKNOWN,1,,int,3,<empty>,,1090,1,CPPASTTypeId,,<empty>
+109207,UNKNOWN,1,,const uint8_t*,51,<empty>,,1400,1,CPPASTTypeId,,<empty>
+109353,UNKNOWN,1,,int,61,<empty>,,1421,1,CPPASTTypeId,,<empty>
+109487,UNKNOWN,1,,const uint16_t*,51,<empty>,,1440,1,CPPASTTypeId,,<empty>
+109754,UNKNOWN,1,,double,49,<empty>,,1492,1,CPPASTTypeId,,<empty>
+110460,UNKNOWN,1,,int,7,<empty>,,1613,1,CPPASTTypeId,,<empty>
+110514,UNKNOWN,1,,int,7,<empty>,,1613,1,CPPASTTypeId,,<empty>
+110558,UNKNOWN,1,,int,5,<empty>,,1617,1,CPPASTTypeId,,<empty>
+110612,UNKNOWN,1,,int,5,<empty>,,1617,1,CPPASTTypeId,,<empty>
+111594,UNKNOWN,1,,v8impl::CallbackWrapper*,24,<empty>,,1780,1,CPPASTTypeId,,<empty>
+111722,UNKNOWN,1,,v8impl::CallbackWrapper*,24,<empty>,,1807,1,CPPASTTypeId,,<empty>
+111927,UNKNOWN,1,,v8::Local<v8::Value>*,24,<empty>,,1836,1,CPPASTTypeId,,<empty>
+111929,UNKNOWN,1,,napi_value*,58,<empty>,,1836,1,CPPASTTypeId,,<empty>
+112187,UNKNOWN,1,,int,3,<empty>,,1877,1,CPPASTTypeId,,<empty>
+112241,UNKNOWN,1,,int,3,<empty>,,1877,1,CPPASTTypeId,,<empty>
+112383,UNKNOWN,1,,int,3,<empty>,,1895,1,CPPASTTypeId,,<empty>
+112437,UNKNOWN,1,,int,3,<empty>,,1895,1,CPPASTTypeId,,<empty>
+112579,UNKNOWN,1,,int,3,<empty>,,1913,1,CPPASTTypeId,,<empty>
+112633,UNKNOWN,1,,int,3,<empty>,,1913,1,CPPASTTypeId,,<empty>
+112775,UNKNOWN,1,,int,3,<empty>,,1931,1,CPPASTTypeId,,<empty>
+112829,UNKNOWN,1,,int,3,<empty>,,1931,1,CPPASTTypeId,,<empty>
+114158,UNKNOWN,1,,uint8_t*,61,<empty>,,2161,1,CPPASTTypeId,,<empty>
+114499,UNKNOWN,1,,uint16_t*,63,<empty>,,2240,1,CPPASTTypeId,,<empty>
+115576,UNKNOWN,1,,const uint64_t*,39,<empty>,,2359,1,CPPASTTypeId,,<empty>
+115958,UNKNOWN,1,,uint64_t*,40,<empty>,,2395,1,CPPASTTypeId,,<empty>
+116281,UNKNOWN,1,,napi_ref,30,<empty>,,2449,1,CPPASTTypeId,,<empty>
+116324,UNKNOWN,1,,v8impl::Reference*,27,<empty>,,2461,1,CPPASTTypeId,,<empty>
+116370,UNKNOWN,1,,v8impl::Reference*,51,<empty>,,2479,1,CPPASTTypeId,,<empty>
+116432,UNKNOWN,1,,v8impl::Reference*,51,<empty>,,2501,1,CPPASTTypeId,,<empty>
+116523,UNKNOWN,1,,v8impl::Reference*,51,<empty>,,2528,1,CPPASTTypeId,,<empty>
+117068,UNKNOWN,1,,v8::Local<v8::Value>*,24,<empty>,,2631,1,CPPASTTypeId,,<empty>
+117070,UNKNOWN,1,,napi_value*,58,<empty>,,2631,1,CPPASTTypeId,,<empty>
+119187,UNKNOWN,1,,uint8_t*,25,<empty>,,2908,1,CPPASTTypeId,,<empty>
+119632,UNKNOWN,1,,uint8_t*,25,<empty>,,2988,1,CPPASTTypeId,,<empty>
+120677,UNKNOWN,1,,napi_ref,32,<empty>,,3143,1,CPPASTTypeId,,<empty>
+120757,UNKNOWN,1,,v8impl::RefBase*,43,<empty>,,3166,1,CPPASTTypeId,,<empty>
+120831,UNKNOWN,1,,v8impl::RefBase*,40,<empty>,,3183,1,CPPASTTypeId,,<empty>
+121482,UNKNOWN,1,,napi_value,27,<empty>,,295,1,CPPASTTypeId,,<empty>
+121501,UNKNOWN,1,,void*,22,<empty>,,300,1,CPPASTTypeId,,<empty>
+121748,UNKNOWN,1,,AsyncWrap*,22,<empty>,,35,1,CPPASTTypeId,,<empty>
+122263,UNKNOWN,1,,Wrap*,25,<empty>,,157,1,CPPASTTypeId,,<empty>
+122346,UNKNOWN,1,,ssize_t,21,<empty>,,177,1,CPPASTTypeId,,<empty>
+122369,UNKNOWN,1,,int,24,<empty>,,182,1,CPPASTTypeId,,<empty>
+122479,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(js_stream, node::JSStream::Initialize)",1,<empty>,,219,2,CPPASTProblemDeclaration,,<empty>
+122569,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(JSUDPWrap)
+  SET_SELF_SIZE(JSUDPWrap)",3,<empty>,,49,13,CPPASTProblemDeclaration,,<empty>
+122581,UNKNOWN,1,,UDPWrapBase*,38,<empty>,,59,1,CPPASTTypeId,,<empty>
+123157,UNKNOWN,1,,int,24,<empty>,,171,1,CPPASTTypeId,,<empty>
+123169,UNKNOWN,1,,sockaddr*,38,<empty>,,173,1,CPPASTTypeId,,<empty>
+123337,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(js_udp_wrap, node::JSUDPWrap::Initialize)",1,<empty>,,220,2,CPPASTProblemDeclaration,,<empty>
+123837,UNKNOWN,1,,size_t,32,<empty>,,28,1,CPPASTTypeId,,<empty>
+124760,UNKNOWN,1,,uint8_t*,25,<empty>,,180,1,CPPASTTypeId,,<empty>
+127158,UNKNOWN,1,,const char*,39,<empty>,,755,1,CPPASTTypeId,,<empty>
+127519,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(module_wrap,
+                                    node::loader::ModuleWrap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(
+    module_wrap, node::loader::ModuleWrap::RegisterExternalReferences)",1,<empty>,,831,2,CPPASTProblemDeclaration,,<empty>
+127541,UNKNOWN,1,,Environment*,38,<empty>,,256,1,CPPASTTypeId,,<empty>
+127731,UNKNOWN,1,,Environment*,34,<empty>,,221,1,CPPASTTypeId,,<empty>
+127802,UNKNOWN,-1,,"fprintf(stderr,
+          ""(node:%d) [Thread %"" PRIu64 ""] Atomics.wait(%p + %zx, %"" PRId64
+          "", %.f) %s\n"",
+          static_cast<int>(uv_os_getpid()),
+          env->thread_id(),
+          array_buffer->Data(),
+          offset_in_bytes,
+          value,
+          timeout_in_ms,
+          message);",3,<empty>,,233,6,CPPASTProblemStatement,,<empty>
+128499,UNKNOWN,1,,int,22,<empty>,,756,1,CPPASTTypeId,,<empty>
+128706,UNKNOWN,1,,int,22,<empty>,,887,1,CPPASTTypeId,,<empty>
+128918,UNKNOWN,1,,size_t,52,<empty>,,942,1,CPPASTTypeId,,<empty>
+128957,UNKNOWN,1,,int,21,<empty>,,1060,1,CPPASTTypeId,,<empty>
+129558,UNKNOWN,1,,int,22,<empty>,,1266,1,CPPASTTypeId,,<empty>
+129581,UNKNOWN,3,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(inspector, Initialize)",1,<empty>,,1279,3,CPPASTProblemDeclaration,,<empty>
+129949,UNKNOWN,1,,uint64_t,59,<empty>,,358,1,CPPASTTypeId,,<empty>
+129955,UNKNOWN,1,,ProcessInitializationFlags::Flags,25,<empty>,,360,1,CPPASTTypeId,,<empty>
+130266,UNKNOWN,1,,uint64_t,29,<empty>,,607,1,CPPASTTypeId,,<empty>
+131462,UNKNOWN,1,,node_napi_env__*,40,<empty>,,91,1,CPPASTTypeId,,<empty>
+131509,UNKNOWN,1,,napi_env,35,<empty>,,193,1,CPPASTTypeId,,<empty>
+131530,UNKNOWN,1,,uv_async_t*,52,<empty>,,321,1,CPPASTTypeId,,<empty>
+131566,UNKNOWN,1,,uv_async_t*,50,<empty>,,449,1,CPPASTTypeId,,<empty>
+131831,UNKNOWN,1,,BufferFinalizer*,21,<empty>,,129,1,CPPASTTypeId,,<empty>
+131998,UNKNOWN,1,,void*,19,<empty>,,194,1,CPPASTTypeId,,<empty>
+132269,UNKNOWN,1,,uv_handle_t*,28,<empty>,,317,1,CPPASTTypeId,,<empty>
+132286,UNKNOWN,1,,uv_handle_t*,31,<empty>,,336,1,CPPASTTypeId,,<empty>
+132297,UNKNOWN,1,,uv_handle_t*,29,<empty>,,342,1,CPPASTTypeId,,<empty>
+132577,UNKNOWN,1,,uv_handle_t*,26,<empty>,,445,1,CPPASTTypeId,,<empty>
+132694,UNKNOWN,1,,ThreadSafeFunction*,22,<empty>,,495,1,CPPASTTypeId,,<empty>
+132848,UNKNOWN,1,,napi_callback_scope,26,<empty>,,582,1,CPPASTTypeId,,<empty>
+132929,UNKNOWN,1,,CallbackScope*,54,<empty>,,606,1,CPPASTTypeId,,<empty>
+132985,UNKNOWN,1,,const napi_module*,19,<empty>,,649,1,CPPASTTypeId,,<empty>
+133001,UNKNOWN,1,,napi_addon_register_func,24,<empty>,,661,1,CPPASTTypeId,,<empty>
+133366,UNKNOWN,1,,node_napi_env,17,<empty>,,798,1,CPPASTTypeId,,<empty>
+133382,UNKNOWN,1,,napi_async_cleanup_hook_handle__*,21,<empty>,,804,1,CPPASTTypeId,,<empty>
+133585,UNKNOWN,1,,node_napi_env,15,<empty>,,848,1,CPPASTTypeId,,<empty>
+133614,UNKNOWN,1,,char*,39,<empty>,,861,1,CPPASTTypeId,,<empty>
+133624,UNKNOWN,1,,char*,39,<empty>,,863,1,CPPASTTypeId,,<empty>
+133640,UNKNOWN,1,,char*,38,<empty>,,867,1,CPPASTTypeId,,<empty>
+133650,UNKNOWN,1,,char*,38,<empty>,,869,1,CPPASTTypeId,,<empty>
+133708,UNKNOWN,1,,v8impl::AsyncContext*,24,<empty>,,886,1,CPPASTTypeId,,<empty>
+133772,UNKNOWN,1,,node_napi_env,61,<empty>,,903,1,CPPASTTypeId,,<empty>
+134012,UNKNOWN,1,,node_napi_env,49,<empty>,,934,1,CPPASTTypeId,,<empty>
+134021,UNKNOWN,1,,napi_async_context,30,<empty>,,939,1,CPPASTTypeId,,<empty>
+134066,UNKNOWN,1,,v8impl::AsyncContext*,24,<empty>,,950,1,CPPASTTypeId,,<empty>
+134333,UNKNOWN,1,,v8::Local<v8::Value>*,26,<empty>,,986,1,CPPASTTypeId,,<empty>
+134335,UNKNOWN,1,,napi_value*,60,<empty>,,986,1,CPPASTTypeId,,<empty>
+134346,UNKNOWN,1,,v8impl::AsyncContext*,26,<empty>,,990,1,CPPASTTypeId,,<empty>
+134358,UNKNOWN,1,,v8::Local<v8::Value>*,26,<empty>,,995,1,CPPASTTypeId,,<empty>
+134360,UNKNOWN,1,,napi_value*,60,<empty>,,995,1,CPPASTTypeId,,<empty>
+134682,UNKNOWN,1,,char*,37,<empty>,,1054,1,CPPASTTypeId,,<empty>
+134821,UNKNOWN,1,,const char*,52,<empty>,,1078,1,CPPASTTypeId,,<empty>
+135441,UNKNOWN,1,,node_napi_env,59,<empty>,,1244,1,CPPASTTypeId,,<empty>
+135452,UNKNOWN,1,,napi_async_work,30,<empty>,,1251,1,CPPASTTypeId,,<empty>
+135500,UNKNOWN,1,,uvimpl::Work*,41,<empty>,,1261,1,CPPASTTypeId,,<empty>
+135549,UNKNOWN,1,,node_napi_env,28,<empty>,,1269,1,CPPASTTypeId,,<empty>
+135620,UNKNOWN,1,,uvimpl::Work*,38,<empty>,,1281,1,CPPASTTypeId,,<empty>
+135669,UNKNOWN,1,,uvimpl::Work*,38,<empty>,,1293,1,CPPASTTypeId,,<empty>
+136057,UNKNOWN,1,,node_napi_env,55,<empty>,,1345,1,CPPASTTypeId,,<empty>
+136087,UNKNOWN,1,,napi_threadsafe_function,34,<empty>,,1356,1,CPPASTTypeId,,<empty>
+136109,UNKNOWN,1,,v8impl::ThreadSafeFunction*,30,<empty>,,1368,1,CPPASTTypeId,,<empty>
+136127,UNKNOWN,1,,v8impl::ThreadSafeFunction*,27,<empty>,,1377,1,CPPASTTypeId,,<empty>
+136143,UNKNOWN,1,,v8impl::ThreadSafeFunction*,27,<empty>,,1384,1,CPPASTTypeId,,<empty>
+136158,UNKNOWN,1,,v8impl::ThreadSafeFunction*,27,<empty>,,1390,1,CPPASTTypeId,,<empty>
+136174,UNKNOWN,1,,v8impl::ThreadSafeFunction*,27,<empty>,,1396,1,CPPASTTypeId,,<empty>
+136189,UNKNOWN,1,,v8impl::ThreadSafeFunction*,27,<empty>,,1402,1,CPPASTTypeId,,<empty>
+136234,UNKNOWN,1,,node_napi_env,25,<empty>,,1410,1,CPPASTTypeId,,<empty>
+137145,UNKNOWN,57,,NODE_BUILTIN_BINDINGS(V),1,<empty>,,99,57,CPPASTProblemDeclaration,,<empty>
+137147,UNKNOWN,59,,),38,<empty>,,105,59,CPPASTProblemDeclaration,,<empty>
+137162,UNKNOWN,1,,struct node_module*,45,<empty>,,255,1,CPPASTTypeId,,<empty>
+137380,UNKNOWN,1,,void*,27,<empty>,,362,1,CPPASTTypeId,,<empty>
+137473,UNKNOWN,-1,,"""",45,<empty>,,400,3,CPPASTProblemStatement,,<empty>
+137477,UNKNOWN,1,,InitializerCallback,27,<empty>,,401,1,CPPASTTypeId,,<empty>
+137493,UNKNOWN,-1,,),45,<empty>,,406,3,CPPASTProblemStatement,,<empty>
+137497,UNKNOWN,1,,napi_addon_register_func,27,<empty>,,407,1,CPPASTTypeId,,<empty>
+137510,UNKNOWN,1,,node_api_addon_get_api_version_func,27,<empty>,,413,1,CPPASTTypeId,,<empty>
+137718,UNKNOWN,-1,,),40,<empty>,,582,2,CPPASTProblemStatement,,<empty>
+137733,UNKNOWN,-1,,),40,<empty>,,594,3,CPPASTProblemStatement,,<empty>
+138308,UNKNOWN,-1,,NODE_BUILTIN_BINDINGS(V),3,<empty>,,710,57,CPPASTProblemStatement,,<empty>
+138326,UNKNOWN,61,,"NODE_BINDING_EXTERNAL_REFERENCE(binding,
+                                node::binding::RegisterExternalReferences)",1,<empty>,,722,61,CPPASTProblemDeclaration,,<empty>
+138400,UNKNOWN,1,,uint8_t*,34,<empty>,,193,1,CPPASTTypeId,,<empty>
+138415,UNKNOWN,1,,uint8_t*,53,<empty>,,194,1,CPPASTTypeId,,<empty>
+138541,UNKNOWN,1,,uint8_t*,30,<empty>,,354,1,CPPASTTypeId,,<empty>
+138834,UNKNOWN,1,,uint8_t*,30,<empty>,,75,1,CPPASTTypeId,,<empty>
+138859,UNKNOWN,1,,uint8_t*,21,<empty>,,78,1,CPPASTTypeId,,<empty>
+139655,UNKNOWN,1,,uint64_t,61,<empty>,,258,1,CPPASTTypeId,,<empty>
+140350,UNKNOWN,1,,int,25,<empty>,,463,1,CPPASTTypeId,,<empty>
+140652,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(blob,
+                                    node::Blob::CreatePerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(blob, node::Blob::CreatePerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(blob, node::Blob::RegisterExternalReferences)",1,<empty>,,568,2,CPPASTProblemDeclaration,,<empty>
+140870,UNKNOWN,1,,CallbackInfo*,21,<empty>,,123,1,CPPASTTypeId,,<empty>
+141128,UNKNOWN,1,,CallbackInfo*,36,<empty>,,155,1,CPPASTTypeId,,<empty>
+141218,UNKNOWN,1,,int64_t,44,<empty>,,181,1,CPPASTTypeId,,<empty>
+141257,UNKNOWN,-1,,"inline MUST_USE_RESULT Maybe<bool> ParseArrayIndex(Environment* env,
+                                                   Local<Value> arg,
+                                                   size_t def,
+                                                   size_t* ret) {
+  if (arg->IsUndefined()) {
+    *ret = def;
+    return Just(true);
+  }
+
+  int64_t tmp_i;
+  if (!arg->IntegerValue(env->context()).To(&tmp_i))
+    return Nothing<bool>();
+
+  if (tmp_i < 0)
+    return Just(false);
+
+  // Check that the result fits in a size_t.
+  // coverity[pointless_expression]
+  if (static_cast<uint64_t>(tmp_i) > std::numeric_limits<size_t>::max())
+    return Just(false);
+
+  *ret = static_cast<size_t>(tmp_i);
+  return Just(true);
+}",1,<empty>,,208,7,CPPASTProblemDeclaration,,<empty>
+141299,UNKNOWN,1,,char*,22,<empty>,,250,1,CPPASTTypeId,,<empty>
+141527,UNKNOWN,1,,char*,21,<empty>,,320,1,CPPASTTypeId,,<empty>
+142259,UNKNOWN,1,,enum encoding,35,<empty>,,529,1,CPPASTTypeId,,<empty>
+143144,UNKNOWN,1,,char*,36,<empty>,,663,1,CPPASTTypeId,,<empty>
+143511,UNKNOWN,1,,const uint8_t*,42,<empty>,,748,1,CPPASTTypeId,,<empty>
+144009,UNKNOWN,1,,int64_t,36,<empty>,,844,1,CPPASTTypeId,,<empty>
+144129,UNKNOWN,1,,enum encoding,35,<empty>,,882,1,CPPASTTypeId,,<empty>
+144252,UNKNOWN,1,,double,43,<empty>,,906,1,CPPASTTypeId,,<empty>
+144290,UNKNOWN,1,,size_t,31,<empty>,,917,1,CPPASTTypeId,,<empty>
+144390,UNKNOWN,1,,const uint16_t*,28,<empty>,,939,1,CPPASTTypeId,,<empty>
+144414,UNKNOWN,1,,const uint16_t*,46,<empty>,,944,1,CPPASTTypeId,,<empty>
+144436,UNKNOWN,1,,const uint16_t*,46,<empty>,,951,1,CPPASTTypeId,,<empty>
+144442,UNKNOWN,1,,const uint16_t*,46,<empty>,,953,1,CPPASTTypeId,,<empty>
+144487,UNKNOWN,1,,const uint8_t*,44,<empty>,,964,1,CPPASTTypeId,,<empty>
+144491,UNKNOWN,1,,const uint8_t*,44,<empty>,,966,1,CPPASTTypeId,,<empty>
+144544,UNKNOWN,1,,const uint8_t*,44,<empty>,,978,1,CPPASTTypeId,,<empty>
+144567,UNKNOWN,1,,int,52,<empty>,,988,1,CPPASTTypeId,,<empty>
+144606,UNKNOWN,1,,enum encoding,35,<empty>,,997,1,CPPASTTypeId,,<empty>
+144736,UNKNOWN,1,,double,43,<empty>,,1018,1,CPPASTTypeId,,<empty>
+144774,UNKNOWN,1,,size_t,31,<empty>,,1029,1,CPPASTTypeId,,<empty>
+144834,UNKNOWN,1,,const uint16_t*,26,<empty>,,1043,1,CPPASTTypeId,,<empty>
+144840,UNKNOWN,1,,const uint16_t*,26,<empty>,,1045,1,CPPASTTypeId,,<empty>
+144858,UNKNOWN,1,,const uint8_t*,26,<empty>,,1052,1,CPPASTTypeId,,<empty>
+144862,UNKNOWN,1,,const uint8_t*,26,<empty>,,1054,1,CPPASTTypeId,,<empty>
+144881,UNKNOWN,1,,int,52,<empty>,,1061,1,CPPASTTypeId,,<empty>
+145005,UNKNOWN,1,,size_t,31,<empty>,,1081,1,CPPASTTypeId,,<empty>
+145055,UNKNOWN,1,,const char*,38,<empty>,,1090,1,CPPASTTypeId,,<empty>
+145067,UNKNOWN,1,,int,47,<empty>,,1091,1,CPPASTTypeId,,<empty>
+145803,UNKNOWN,1,,uint8_t*,31,<empty>,,1254,1,CPPASTTypeId,,<empty>
+145811,UNKNOWN,1,,uint8_t*,30,<empty>,,1255,1,CPPASTTypeId,,<empty>
+146219,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(buffer, node::Buffer::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(buffer,
+                                node::Buffer::RegisterExternalReferences)",1,<empty>,,1372,2,CPPASTProblemDeclaration,,<empty>
+146806,UNKNOWN,1,,char16_t*,28,<empty>,,231,1,CPPASTTypeId,,<empty>
+148369,UNKNOWN,2,,"NODE_BINDING_PER_ISOLATE_INIT(
+    builtins, node::builtins::BuiltinLoader::CreatePerIsolateProperties)
+NODE_BINDING_CONTEXT_AWARE_INTERNAL(
+    builtins, node::builtins::BuiltinLoader::CreatePerContextProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(
+    builtins, node::builtins::BuiltinLoader::RegisterExternalReferences)",1,<empty>,,724,2,CPPASTProblemDeclaration,,<empty>
+148469,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(config, node::Initialize)",1,<empty>,,83,2,CPPASTProblemDeclaration,,<empty>
+149787,UNKNOWN,1,,v8::PropertyAttribute,29,<empty>,,293,1,CPPASTTypeId,,<empty>
+150340,UNKNOWN,1,,ContextifyContext*,22,<empty>,,442,1,CPPASTTypeId,,<empty>
+150522,UNKNOWN,1,,int,19,<empty>,,494,1,CPPASTTypeId,,<empty>
+150525,UNKNOWN,1,,int,19,<empty>,,495,1,CPPASTTypeId,,<empty>
+150552,UNKNOWN,1,,int,20,<empty>,,501,1,CPPASTTypeId,,<empty>
+150555,UNKNOWN,1,,int,19,<empty>,,502,1,CPPASTTypeId,,<empty>
+150843,UNKNOWN,1,,int,19,<empty>,,586,1,CPPASTTypeId,,<empty>
+150846,UNKNOWN,1,,int,23,<empty>,,587,1,CPPASTTypeId,,<empty>
+151598,UNKNOWN,1,,uint8_t*,33,<empty>,,819,1,CPPASTTypeId,,<empty>
+151946,UNKNOWN,1,,const char*,41,<empty>,,919,1,CPPASTTypeId,,<empty>
+152099,UNKNOWN,1,,const char*,26,<empty>,,957,1,CPPASTTypeId,,<empty>
+152878,UNKNOWN,1,,uint8_t*,33,<empty>,,1185,1,CPPASTTypeId,,<empty>
+153579,UNKNOWN,1,,v8::MeasureMemoryMode,23,<empty>,,1354,1,CPPASTTypeId,,<empty>
+153591,UNKNOWN,1,,v8::MeasureMemoryExecution,38,<empty>,,1356,1,CPPASTTypeId,,<empty>
+153982,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(
+    contextify, node::contextify::CreatePerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(contextify,
+                              node::contextify::CreatePerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(contextify,
+                                node::contextify::RegisterExternalReferences)",1,<empty>,,1466,2,CPPASTProblemDeclaration,,<empty>
+154272,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(credentials, node::credentials::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(credentials,
+                                node::credentials::RegisterExternalReferences)",1,<empty>,,486,2,CPPASTProblemDeclaration,,<empty>
+154570,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(crypto, node::crypto::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(crypto,
+                                node::crypto::RegisterExternalReferences)",1,<empty>,,95,2,CPPASTProblemDeclaration,,<empty>
+154849,UNKNOWN,1,,const uint8_t *,3,<empty>,,139,1,CPPASTTypeId,,<empty>
+154876,UNKNOWN,1,,intptr_t,3,<empty>,,139,1,CPPASTTypeId,,<empty>
+154911,UNKNOWN,1,,unsigned int,3,<empty>,,139,1,CPPASTTypeId,,<empty>
+154954,UNKNOWN,1,,const uint8_t *,3,<empty>,,141,1,CPPASTTypeId,,<empty>
+154981,UNKNOWN,1,,intptr_t,3,<empty>,,141,1,CPPASTTypeId,,<empty>
+155016,UNKNOWN,1,,unsigned int,3,<empty>,,141,1,CPPASTTypeId,,<empty>
+155075,UNKNOWN,1,,int,3,<empty>,,177,1,CPPASTTypeId,,<empty>
+155095,UNKNOWN,1,,const uint8_t *,3,<empty>,,177,1,CPPASTTypeId,,<empty>
+155122,UNKNOWN,1,,intptr_t,3,<empty>,,177,1,CPPASTTypeId,,<empty>
+155137,UNKNOWN,1,,unsigned int,3,<empty>,,177,1,CPPASTTypeId,,<empty>
+155140,UNKNOWN,1,,unsigned int,3,<empty>,,177,1,CPPASTTypeId,,<empty>
+155177,UNKNOWN,1,,int,3,<empty>,,177,1,CPPASTTypeId,,<empty>
+155271,UNKNOWN,1,,const uint8_t *,5,<empty>,,197,1,CPPASTTypeId,,<empty>
+155298,UNKNOWN,1,,intptr_t,5,<empty>,,197,1,CPPASTTypeId,,<empty>
+155313,UNKNOWN,1,,unsigned int,5,<empty>,,197,1,CPPASTTypeId,,<empty>
+155316,UNKNOWN,1,,unsigned int,5,<empty>,,197,1,CPPASTTypeId,,<empty>
+155399,UNKNOWN,1,,const uint8_t *,5,<empty>,,203,1,CPPASTTypeId,,<empty>
+155426,UNKNOWN,1,,intptr_t,5,<empty>,,203,1,CPPASTTypeId,,<empty>
+155461,UNKNOWN,1,,unsigned int,5,<empty>,,203,1,CPPASTTypeId,,<empty>
+155508,UNKNOWN,1,,const uint8_t *,5,<empty>,,206,1,CPPASTTypeId,,<empty>
+155535,UNKNOWN,1,,intptr_t,5,<empty>,,206,1,CPPASTTypeId,,<empty>
+155570,UNKNOWN,1,,unsigned int,5,<empty>,,206,1,CPPASTTypeId,,<empty>
+155721,UNKNOWN,1,,int,3,<empty>,,243,1,CPPASTTypeId,,<empty>
+155741,UNKNOWN,1,,const uint8_t *,3,<empty>,,243,1,CPPASTTypeId,,<empty>
+155768,UNKNOWN,1,,intptr_t,3,<empty>,,243,1,CPPASTTypeId,,<empty>
+155783,UNKNOWN,1,,unsigned int,3,<empty>,,243,1,CPPASTTypeId,,<empty>
+155786,UNKNOWN,1,,unsigned int,3,<empty>,,243,1,CPPASTTypeId,,<empty>
+155823,UNKNOWN,1,,int,3,<empty>,,243,1,CPPASTTypeId,,<empty>
+155879,UNKNOWN,1,,uv_dir_t*,31,<empty>,,260,1,CPPASTTypeId,,<empty>
+155903,UNKNOWN,1,,int,38,<empty>,,266,1,CPPASTTypeId,,<empty>
+155994,UNKNOWN,1,,uint64_t,38,<empty>,,294,1,CPPASTTypeId,,<empty>
+156070,UNKNOWN,1,,const uint8_t *,5,<empty>,,304,1,CPPASTTypeId,,<empty>
+156097,UNKNOWN,1,,intptr_t,5,<empty>,,304,1,CPPASTTypeId,,<empty>
+156112,UNKNOWN,1,,unsigned int,5,<empty>,,304,1,CPPASTTypeId,,<empty>
+156115,UNKNOWN,1,,unsigned int,5,<empty>,,304,1,CPPASTTypeId,,<empty>
+156198,UNKNOWN,1,,const uint8_t *,5,<empty>,,310,1,CPPASTTypeId,,<empty>
+156225,UNKNOWN,1,,intptr_t,5,<empty>,,310,1,CPPASTTypeId,,<empty>
+156260,UNKNOWN,1,,unsigned int,5,<empty>,,310,1,CPPASTTypeId,,<empty>
+156310,UNKNOWN,1,,const uint8_t *,5,<empty>,,313,1,CPPASTTypeId,,<empty>
+156337,UNKNOWN,1,,intptr_t,5,<empty>,,313,1,CPPASTTypeId,,<empty>
+156372,UNKNOWN,1,,unsigned int,5,<empty>,,313,1,CPPASTTypeId,,<empty>
+156437,UNKNOWN,1,,int,40,<empty>,,331,1,CPPASTTypeId,,<empty>
+156509,UNKNOWN,1,,int,3,<empty>,,347,1,CPPASTTypeId,,<empty>
+156529,UNKNOWN,1,,const uint8_t *,3,<empty>,,347,1,CPPASTTypeId,,<empty>
+156556,UNKNOWN,1,,intptr_t,3,<empty>,,347,1,CPPASTTypeId,,<empty>
+156571,UNKNOWN,1,,unsigned int,3,<empty>,,347,1,CPPASTTypeId,,<empty>
+156574,UNKNOWN,1,,unsigned int,3,<empty>,,347,1,CPPASTTypeId,,<empty>
+156611,UNKNOWN,1,,int,3,<empty>,,347,1,CPPASTTypeId,,<empty>
+156635,UNKNOWN,1,,uv_dir_t*,31,<empty>,,355,1,CPPASTTypeId,,<empty>
+156749,UNKNOWN,1,,const uint8_t *,5,<empty>,,377,1,CPPASTTypeId,,<empty>
+156776,UNKNOWN,1,,intptr_t,5,<empty>,,377,1,CPPASTTypeId,,<empty>
+156791,UNKNOWN,1,,unsigned int,5,<empty>,,377,1,CPPASTTypeId,,<empty>
+156794,UNKNOWN,1,,unsigned int,5,<empty>,,377,1,CPPASTTypeId,,<empty>
+156884,UNKNOWN,1,,const uint8_t *,5,<empty>,,384,1,CPPASTTypeId,,<empty>
+156911,UNKNOWN,1,,intptr_t,5,<empty>,,384,1,CPPASTTypeId,,<empty>
+156946,UNKNOWN,1,,unsigned int,5,<empty>,,384,1,CPPASTTypeId,,<empty>
+156994,UNKNOWN,1,,const uint8_t *,5,<empty>,,387,1,CPPASTTypeId,,<empty>
+157021,UNKNOWN,1,,intptr_t,5,<empty>,,387,1,CPPASTTypeId,,<empty>
+157056,UNKNOWN,1,,unsigned int,5,<empty>,,387,1,CPPASTTypeId,,<empty>
+157076,UNKNOWN,1,,uv_dir_t*,33,<empty>,,393,1,CPPASTTypeId,,<empty>
+157225,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(fs_dir, node::fs_dir::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(fs_dir,
+                                node::fs_dir::RegisterExternalReferences)",1,<empty>,,431,2,CPPASTProblemDeclaration,,<empty>
+158890,UNKNOWN,2,,"NODE_BINDING_EXTERNAL_REFERENCE(env_var, node::RegisterEnvVarExternalReferences)",1,<empty>,,490,2,CPPASTProblemDeclaration,,<empty>
+159405,UNKNOWN,1,,size_t,19,<empty>,,160,1,CPPASTTypeId,,<empty>
+161389,UNKNOWN,-1,,),19,<empty>,,1063,13,CPPASTProblemStatement,,<empty>
+161868,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(errors, node::errors::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(errors,
+                                node::errors::RegisterExternalReferences)",1,<empty>,,1229,2,CPPASTProblemDeclaration,,<empty>
+161914,UNKNOWN,1,,intptr_t,53,<empty>,,11,1,CPPASTTypeId,,<empty>
+161933,UNKNOWN,-1,,),36,<empty>,,22,3,CPPASTProblemStatement,,<empty>
+162037,UNKNOWN,1,,int,5,<empty>,,482,1,CPPASTTypeId,,<empty>
+162058,UNKNOWN,1,,const uint8_t *,5,<empty>,,482,1,CPPASTTypeId,,<empty>
+162085,UNKNOWN,1,,intptr_t,5,<empty>,,482,1,CPPASTTypeId,,<empty>
+162100,UNKNOWN,1,,unsigned int,5,<empty>,,482,1,CPPASTTypeId,,<empty>
+162103,UNKNOWN,1,,unsigned int,5,<empty>,,482,1,CPPASTTypeId,,<empty>
+162140,UNKNOWN,1,,int,5,<empty>,,482,1,CPPASTTypeId,,<empty>
+162197,UNKNOWN,1,,int,44,<empty>,,492,1,CPPASTTypeId,,<empty>
+162231,UNKNOWN,1,,int,7,<empty>,,609,1,CPPASTTypeId,,<empty>
+162251,UNKNOWN,1,,const uint8_t *,7,<empty>,,609,1,CPPASTTypeId,,<empty>
+162278,UNKNOWN,1,,intptr_t,7,<empty>,,609,1,CPPASTTypeId,,<empty>
+162293,UNKNOWN,1,,unsigned int,7,<empty>,,609,1,CPPASTTypeId,,<empty>
+162296,UNKNOWN,1,,unsigned int,7,<empty>,,609,1,CPPASTTypeId,,<empty>
+162333,UNKNOWN,1,,int,7,<empty>,,609,1,CPPASTTypeId,,<empty>
+162491,UNKNOWN,1,,FileHandleCloseWrap*,45,<empty>,,686,1,CPPASTTypeId,,<empty>
+162504,UNKNOWN,1,,int,5,<empty>,,688,1,CPPASTTypeId,,<empty>
+162524,UNKNOWN,1,,const uint8_t *,5,<empty>,,688,1,CPPASTTypeId,,<empty>
+162551,UNKNOWN,1,,intptr_t,5,<empty>,,688,1,CPPASTTypeId,,<empty>
+162566,UNKNOWN,1,,unsigned int,5,<empty>,,688,1,CPPASTTypeId,,<empty>
+162569,UNKNOWN,1,,unsigned int,5,<empty>,,688,1,CPPASTTypeId,,<empty>
+162606,UNKNOWN,1,,int,5,<empty>,,688,1,CPPASTTypeId,,<empty>
+162615,UNKNOWN,1,,FileHandle*,38,<empty>,,690,1,CPPASTTypeId,,<empty>
+162628,UNKNOWN,1,,int,30,<empty>,,693,1,CPPASTTypeId,,<empty>
+162676,UNKNOWN,1,,int,35,<empty>,,1724,1,CPPASTTypeId,,<empty>
+162684,UNKNOWN,1,,intptr_t,34,<empty>,,1725,1,CPPASTTypeId,,<empty>
+162838,UNKNOWN,1,,int,27,<empty>,,1678,1,CPPASTTypeId,,<empty>
+163012,UNKNOWN,1,,void*,40,<empty>,,1720,1,CPPASTTypeId,,<empty>
+163014,UNKNOWN,1,,intptr_t,59,<empty>,,1720,1,CPPASTTypeId,,<empty>
+163776,UNKNOWN,1,,const uint8_t *,5,<empty>,,319,1,CPPASTTypeId,,<empty>
+163803,UNKNOWN,1,,intptr_t,5,<empty>,,319,1,CPPASTTypeId,,<empty>
+163838,UNKNOWN,1,,unsigned int,5,<empty>,,319,1,CPPASTTypeId,,<empty>
+163880,UNKNOWN,1,,const uint8_t *,5,<empty>,,321,1,CPPASTTypeId,,<empty>
+163907,UNKNOWN,1,,intptr_t,5,<empty>,,321,1,CPPASTTypeId,,<empty>
+163942,UNKNOWN,1,,unsigned int,5,<empty>,,321,1,CPPASTTypeId,,<empty>
+164034,UNKNOWN,1,,const uint8_t *,3,<empty>,,346,1,CPPASTTypeId,,<empty>
+164061,UNKNOWN,1,,intptr_t,3,<empty>,,346,1,CPPASTTypeId,,<empty>
+164096,UNKNOWN,1,,unsigned int,3,<empty>,,346,1,CPPASTTypeId,,<empty>
+164142,UNKNOWN,1,,const uint8_t *,3,<empty>,,348,1,CPPASTTypeId,,<empty>
+164169,UNKNOWN,1,,intptr_t,3,<empty>,,348,1,CPPASTTypeId,,<empty>
+164204,UNKNOWN,1,,unsigned int,3,<empty>,,348,1,CPPASTTypeId,,<empty>
+164631,UNKNOWN,1,,const uint8_t *,3,<empty>,,498,1,CPPASTTypeId,,<empty>
+164658,UNKNOWN,1,,intptr_t,3,<empty>,,498,1,CPPASTTypeId,,<empty>
+164673,UNKNOWN,1,,unsigned int,3,<empty>,,498,1,CPPASTTypeId,,<empty>
+164676,UNKNOWN,1,,unsigned int,3,<empty>,,498,1,CPPASTTypeId,,<empty>
+165058,UNKNOWN,1,,const uint8_t *,3,<empty>,,599,1,CPPASTTypeId,,<empty>
+165085,UNKNOWN,1,,intptr_t,3,<empty>,,599,1,CPPASTTypeId,,<empty>
+165100,UNKNOWN,1,,unsigned int,3,<empty>,,599,1,CPPASTTypeId,,<empty>
+165103,UNKNOWN,1,,unsigned int,3,<empty>,,599,1,CPPASTTypeId,,<empty>
+165198,UNKNOWN,1,,FileHandleCloseWrap*,43,<empty>,,681,1,CPPASTTypeId,,<empty>
+165226,UNKNOWN,1,,const uint8_t *,3,<empty>,,684,1,CPPASTTypeId,,<empty>
+165253,UNKNOWN,1,,intptr_t,3,<empty>,,684,1,CPPASTTypeId,,<empty>
+165268,UNKNOWN,1,,unsigned int,3,<empty>,,684,1,CPPASTTypeId,,<empty>
+165271,UNKNOWN,1,,unsigned int,3,<empty>,,684,1,CPPASTTypeId,,<empty>
+165489,UNKNOWN,1,,int,52,<empty>,,766,1,CPPASTTypeId,,<empty>
+165563,UNKNOWN,1,,int,3,<empty>,,790,1,CPPASTTypeId,,<empty>
+165583,UNKNOWN,1,,const uint8_t *,3,<empty>,,790,1,CPPASTTypeId,,<empty>
+165610,UNKNOWN,1,,intptr_t,3,<empty>,,790,1,CPPASTTypeId,,<empty>
+165625,UNKNOWN,1,,unsigned int,3,<empty>,,790,1,CPPASTTypeId,,<empty>
+165628,UNKNOWN,1,,unsigned int,3,<empty>,,790,1,CPPASTTypeId,,<empty>
+165665,UNKNOWN,1,,int,3,<empty>,,790,1,CPPASTTypeId,,<empty>
+165712,UNKNOWN,1,,int,3,<empty>,,799,1,CPPASTTypeId,,<empty>
+165732,UNKNOWN,1,,const uint8_t *,3,<empty>,,799,1,CPPASTTypeId,,<empty>
+165759,UNKNOWN,1,,intptr_t,3,<empty>,,799,1,CPPASTTypeId,,<empty>
+165774,UNKNOWN,1,,unsigned int,3,<empty>,,799,1,CPPASTTypeId,,<empty>
+165777,UNKNOWN,1,,unsigned int,3,<empty>,,799,1,CPPASTTypeId,,<empty>
+165814,UNKNOWN,1,,int,3,<empty>,,799,1,CPPASTTypeId,,<empty>
+165857,UNKNOWN,1,,int,3,<empty>,,809,1,CPPASTTypeId,,<empty>
+165877,UNKNOWN,1,,const uint8_t *,3,<empty>,,809,1,CPPASTTypeId,,<empty>
+165904,UNKNOWN,1,,intptr_t,3,<empty>,,809,1,CPPASTTypeId,,<empty>
+165919,UNKNOWN,1,,unsigned int,3,<empty>,,809,1,CPPASTTypeId,,<empty>
+165922,UNKNOWN,1,,unsigned int,3,<empty>,,809,1,CPPASTTypeId,,<empty>
+165959,UNKNOWN,1,,int,3,<empty>,,809,1,CPPASTTypeId,,<empty>
+165975,UNKNOWN,1,,uv_statfs_t*,41,<empty>,,812,1,CPPASTTypeId,,<empty>
+166003,UNKNOWN,1,,int,3,<empty>,,819,1,CPPASTTypeId,,<empty>
+166023,UNKNOWN,1,,const uint8_t *,3,<empty>,,819,1,CPPASTTypeId,,<empty>
+166050,UNKNOWN,1,,intptr_t,3,<empty>,,819,1,CPPASTTypeId,,<empty>
+166065,UNKNOWN,1,,unsigned int,3,<empty>,,819,1,CPPASTTypeId,,<empty>
+166068,UNKNOWN,1,,unsigned int,3,<empty>,,819,1,CPPASTTypeId,,<empty>
+166105,UNKNOWN,1,,int,3,<empty>,,819,1,CPPASTTypeId,,<empty>
+166114,UNKNOWN,1,,int,28,<empty>,,821,1,CPPASTTypeId,,<empty>
+166182,UNKNOWN,1,,int,3,<empty>,,832,1,CPPASTTypeId,,<empty>
+166202,UNKNOWN,1,,const uint8_t *,3,<empty>,,832,1,CPPASTTypeId,,<empty>
+166229,UNKNOWN,1,,intptr_t,3,<empty>,,832,1,CPPASTTypeId,,<empty>
+166244,UNKNOWN,1,,unsigned int,3,<empty>,,832,1,CPPASTTypeId,,<empty>
+166247,UNKNOWN,1,,unsigned int,3,<empty>,,832,1,CPPASTTypeId,,<empty>
+166284,UNKNOWN,1,,int,3,<empty>,,832,1,CPPASTTypeId,,<empty>
+166307,UNKNOWN,1,,int,50,<empty>,,836,1,CPPASTTypeId,,<empty>
+166354,UNKNOWN,1,,int,3,<empty>,,858,1,CPPASTTypeId,,<empty>
+166374,UNKNOWN,1,,const uint8_t *,3,<empty>,,858,1,CPPASTTypeId,,<empty>
+166401,UNKNOWN,1,,intptr_t,3,<empty>,,858,1,CPPASTTypeId,,<empty>
+166416,UNKNOWN,1,,unsigned int,3,<empty>,,858,1,CPPASTTypeId,,<empty>
+166419,UNKNOWN,1,,unsigned int,3,<empty>,,858,1,CPPASTTypeId,,<empty>
+166456,UNKNOWN,1,,int,3,<empty>,,858,1,CPPASTTypeId,,<empty>
+166573,UNKNOWN,1,,int,3,<empty>,,879,1,CPPASTTypeId,,<empty>
+166593,UNKNOWN,1,,const uint8_t *,3,<empty>,,879,1,CPPASTTypeId,,<empty>
+166620,UNKNOWN,1,,intptr_t,3,<empty>,,879,1,CPPASTTypeId,,<empty>
+166635,UNKNOWN,1,,unsigned int,3,<empty>,,879,1,CPPASTTypeId,,<empty>
+166638,UNKNOWN,1,,unsigned int,3,<empty>,,879,1,CPPASTTypeId,,<empty>
+166675,UNKNOWN,1,,int,3,<empty>,,879,1,CPPASTTypeId,,<empty>
+166763,UNKNOWN,1,,int,3,<empty>,,899,1,CPPASTTypeId,,<empty>
+166783,UNKNOWN,1,,const uint8_t *,3,<empty>,,899,1,CPPASTTypeId,,<empty>
+166810,UNKNOWN,1,,intptr_t,3,<empty>,,899,1,CPPASTTypeId,,<empty>
+166825,UNKNOWN,1,,unsigned int,3,<empty>,,899,1,CPPASTTypeId,,<empty>
+166828,UNKNOWN,1,,unsigned int,3,<empty>,,899,1,CPPASTTypeId,,<empty>
+166865,UNKNOWN,1,,int,3,<empty>,,899,1,CPPASTTypeId,,<empty>
+166900,UNKNOWN,1,,const char*,44,<empty>,,906,1,CPPASTTypeId,,<empty>
+166955,UNKNOWN,1,,int,3,<empty>,,919,1,CPPASTTypeId,,<empty>
+166975,UNKNOWN,1,,const uint8_t *,3,<empty>,,919,1,CPPASTTypeId,,<empty>
+167002,UNKNOWN,1,,intptr_t,3,<empty>,,919,1,CPPASTTypeId,,<empty>
+167017,UNKNOWN,1,,unsigned int,3,<empty>,,919,1,CPPASTTypeId,,<empty>
+167020,UNKNOWN,1,,unsigned int,3,<empty>,,919,1,CPPASTTypeId,,<empty>
+167057,UNKNOWN,1,,int,3,<empty>,,919,1,CPPASTTypeId,,<empty>
+167372,UNKNOWN,1,,const uint8_t *,5,<empty>,,984,1,CPPASTTypeId,,<empty>
+167399,UNKNOWN,1,,intptr_t,5,<empty>,,984,1,CPPASTTypeId,,<empty>
+167414,UNKNOWN,1,,unsigned int,5,<empty>,,984,1,CPPASTTypeId,,<empty>
+167417,UNKNOWN,1,,unsigned int,5,<empty>,,984,1,CPPASTTypeId,,<empty>
+167508,UNKNOWN,1,,const uint8_t *,5,<empty>,,991,1,CPPASTTypeId,,<empty>
+167535,UNKNOWN,1,,intptr_t,5,<empty>,,991,1,CPPASTTypeId,,<empty>
+167570,UNKNOWN,1,,unsigned int,5,<empty>,,991,1,CPPASTTypeId,,<empty>
+167616,UNKNOWN,1,,const uint8_t *,5,<empty>,,993,1,CPPASTTypeId,,<empty>
+167643,UNKNOWN,1,,intptr_t,5,<empty>,,993,1,CPPASTTypeId,,<empty>
+167678,UNKNOWN,1,,unsigned int,5,<empty>,,993,1,CPPASTTypeId,,<empty>
+167758,UNKNOWN,1,,const uint8_t *,5,<empty>,,1010,1,CPPASTTypeId,,<empty>
+167785,UNKNOWN,1,,intptr_t,5,<empty>,,1010,1,CPPASTTypeId,,<empty>
+167800,UNKNOWN,1,,unsigned int,5,<empty>,,1010,1,CPPASTTypeId,,<empty>
+167803,UNKNOWN,1,,unsigned int,5,<empty>,,1010,1,CPPASTTypeId,,<empty>
+167883,UNKNOWN,1,,const uint8_t *,5,<empty>,,1016,1,CPPASTTypeId,,<empty>
+167910,UNKNOWN,1,,intptr_t,5,<empty>,,1016,1,CPPASTTypeId,,<empty>
+167945,UNKNOWN,1,,unsigned int,5,<empty>,,1016,1,CPPASTTypeId,,<empty>
+167989,UNKNOWN,1,,const uint8_t *,5,<empty>,,1018,1,CPPASTTypeId,,<empty>
+168016,UNKNOWN,1,,intptr_t,5,<empty>,,1018,1,CPPASTTypeId,,<empty>
+168051,UNKNOWN,1,,unsigned int,5,<empty>,,1018,1,CPPASTTypeId,,<empty>
+168246,UNKNOWN,1,,size_t,24,<empty>,,1074,1,CPPASTTypeId,,<empty>
+168545,UNKNOWN,1,,const uv_stat_t*,44,<empty>,,1135,1,CPPASTTypeId,,<empty>
+168665,UNKNOWN,1,,const uint8_t *,5,<empty>,,1158,1,CPPASTTypeId,,<empty>
+168692,UNKNOWN,1,,intptr_t,5,<empty>,,1158,1,CPPASTTypeId,,<empty>
+168707,UNKNOWN,1,,unsigned int,5,<empty>,,1158,1,CPPASTTypeId,,<empty>
+168710,UNKNOWN,1,,unsigned int,5,<empty>,,1158,1,CPPASTTypeId,,<empty>
+168800,UNKNOWN,1,,const uint8_t *,5,<empty>,,1165,1,CPPASTTypeId,,<empty>
+168827,UNKNOWN,1,,intptr_t,5,<empty>,,1165,1,CPPASTTypeId,,<empty>
+168862,UNKNOWN,1,,unsigned int,5,<empty>,,1165,1,CPPASTTypeId,,<empty>
+168910,UNKNOWN,1,,const uint8_t *,5,<empty>,,1167,1,CPPASTTypeId,,<empty>
+168937,UNKNOWN,1,,intptr_t,5,<empty>,,1167,1,CPPASTTypeId,,<empty>
+168972,UNKNOWN,1,,unsigned int,5,<empty>,,1167,1,CPPASTTypeId,,<empty>
+168991,UNKNOWN,1,,const uv_stat_t*,21,<empty>,,1173,1,CPPASTTypeId,,<empty>
+169090,UNKNOWN,1,,const uint8_t *,5,<empty>,,1191,1,CPPASTTypeId,,<empty>
+169117,UNKNOWN,1,,intptr_t,5,<empty>,,1191,1,CPPASTTypeId,,<empty>
+169132,UNKNOWN,1,,unsigned int,5,<empty>,,1191,1,CPPASTTypeId,,<empty>
+169135,UNKNOWN,1,,unsigned int,5,<empty>,,1191,1,CPPASTTypeId,,<empty>
+169225,UNKNOWN,1,,const uint8_t *,5,<empty>,,1198,1,CPPASTTypeId,,<empty>
+169252,UNKNOWN,1,,intptr_t,5,<empty>,,1198,1,CPPASTTypeId,,<empty>
+169287,UNKNOWN,1,,unsigned int,5,<empty>,,1198,1,CPPASTTypeId,,<empty>
+169335,UNKNOWN,1,,const uint8_t *,5,<empty>,,1201,1,CPPASTTypeId,,<empty>
+169362,UNKNOWN,1,,intptr_t,5,<empty>,,1201,1,CPPASTTypeId,,<empty>
+169397,UNKNOWN,1,,unsigned int,5,<empty>,,1201,1,CPPASTTypeId,,<empty>
+169416,UNKNOWN,1,,const uv_stat_t*,21,<empty>,,1207,1,CPPASTTypeId,,<empty>
+169521,UNKNOWN,1,,const uint8_t *,5,<empty>,,1225,1,CPPASTTypeId,,<empty>
+169548,UNKNOWN,1,,intptr_t,5,<empty>,,1225,1,CPPASTTypeId,,<empty>
+169563,UNKNOWN,1,,unsigned int,5,<empty>,,1225,1,CPPASTTypeId,,<empty>
+169566,UNKNOWN,1,,unsigned int,5,<empty>,,1225,1,CPPASTTypeId,,<empty>
+169646,UNKNOWN,1,,const uint8_t *,5,<empty>,,1231,1,CPPASTTypeId,,<empty>
+169673,UNKNOWN,1,,intptr_t,5,<empty>,,1231,1,CPPASTTypeId,,<empty>
+169708,UNKNOWN,1,,unsigned int,5,<empty>,,1231,1,CPPASTTypeId,,<empty>
+169755,UNKNOWN,1,,const uint8_t *,5,<empty>,,1233,1,CPPASTTypeId,,<empty>
+169782,UNKNOWN,1,,intptr_t,5,<empty>,,1233,1,CPPASTTypeId,,<empty>
+169817,UNKNOWN,1,,unsigned int,5,<empty>,,1233,1,CPPASTTypeId,,<empty>
+169836,UNKNOWN,1,,const uv_stat_t*,21,<empty>,,1239,1,CPPASTTypeId,,<empty>
+169935,UNKNOWN,1,,const uint8_t *,5,<empty>,,1257,1,CPPASTTypeId,,<empty>
+169962,UNKNOWN,1,,intptr_t,5,<empty>,,1257,1,CPPASTTypeId,,<empty>
+169977,UNKNOWN,1,,unsigned int,5,<empty>,,1257,1,CPPASTTypeId,,<empty>
+169980,UNKNOWN,1,,unsigned int,5,<empty>,,1257,1,CPPASTTypeId,,<empty>
+170070,UNKNOWN,1,,const uint8_t *,5,<empty>,,1270,1,CPPASTTypeId,,<empty>
+170097,UNKNOWN,1,,intptr_t,5,<empty>,,1270,1,CPPASTTypeId,,<empty>
+170132,UNKNOWN,1,,unsigned int,5,<empty>,,1270,1,CPPASTTypeId,,<empty>
+170180,UNKNOWN,1,,const uint8_t *,5,<empty>,,1273,1,CPPASTTypeId,,<empty>
+170207,UNKNOWN,1,,intptr_t,5,<empty>,,1273,1,CPPASTTypeId,,<empty>
+170242,UNKNOWN,1,,unsigned int,5,<empty>,,1273,1,CPPASTTypeId,,<empty>
+170261,UNKNOWN,1,,const uv_statfs_t*,21,<empty>,,1281,1,CPPASTTypeId,,<empty>
+170408,UNKNOWN,1,,const uint8_t *,5,<empty>,,1312,1,CPPASTTypeId,,<empty>
+170435,UNKNOWN,1,,intptr_t,5,<empty>,,1312,1,CPPASTTypeId,,<empty>
+170450,UNKNOWN,1,,unsigned int,5,<empty>,,1312,1,CPPASTTypeId,,<empty>
+170453,UNKNOWN,1,,unsigned int,5,<empty>,,1312,1,CPPASTTypeId,,<empty>
+170561,UNKNOWN,1,,const uint8_t *,5,<empty>,,1323,1,CPPASTTypeId,,<empty>
+170588,UNKNOWN,1,,intptr_t,5,<empty>,,1323,1,CPPASTTypeId,,<empty>
+170623,UNKNOWN,1,,unsigned int,5,<empty>,,1323,1,CPPASTTypeId,,<empty>
+170671,UNKNOWN,1,,const uint8_t *,5,<empty>,,1326,1,CPPASTTypeId,,<empty>
+170698,UNKNOWN,1,,intptr_t,5,<empty>,,1326,1,CPPASTTypeId,,<empty>
+170733,UNKNOWN,1,,unsigned int,5,<empty>,,1326,1,CPPASTTypeId,,<empty>
+170854,UNKNOWN,1,,const uint8_t *,5,<empty>,,1355,1,CPPASTTypeId,,<empty>
+170881,UNKNOWN,1,,intptr_t,5,<empty>,,1355,1,CPPASTTypeId,,<empty>
+170896,UNKNOWN,1,,unsigned int,5,<empty>,,1355,1,CPPASTTypeId,,<empty>
+170899,UNKNOWN,1,,unsigned int,5,<empty>,,1355,1,CPPASTTypeId,,<empty>
+171006,UNKNOWN,1,,const uint8_t *,5,<empty>,,1366,1,CPPASTTypeId,,<empty>
+171033,UNKNOWN,1,,intptr_t,5,<empty>,,1366,1,CPPASTTypeId,,<empty>
+171068,UNKNOWN,1,,unsigned int,5,<empty>,,1366,1,CPPASTTypeId,,<empty>
+171115,UNKNOWN,1,,const uint8_t *,5,<empty>,,1369,1,CPPASTTypeId,,<empty>
+171142,UNKNOWN,1,,intptr_t,5,<empty>,,1369,1,CPPASTTypeId,,<empty>
+171177,UNKNOWN,1,,unsigned int,5,<empty>,,1369,1,CPPASTTypeId,,<empty>
+171270,UNKNOWN,1,,const uint8_t *,5,<empty>,,1389,1,CPPASTTypeId,,<empty>
+171297,UNKNOWN,1,,intptr_t,5,<empty>,,1389,1,CPPASTTypeId,,<empty>
+171312,UNKNOWN,1,,unsigned int,5,<empty>,,1389,1,CPPASTTypeId,,<empty>
+171315,UNKNOWN,1,,unsigned int,5,<empty>,,1389,1,CPPASTTypeId,,<empty>
+171405,UNKNOWN,1,,const uint8_t *,5,<empty>,,1396,1,CPPASTTypeId,,<empty>
+171432,UNKNOWN,1,,intptr_t,5,<empty>,,1396,1,CPPASTTypeId,,<empty>
+171467,UNKNOWN,1,,unsigned int,5,<empty>,,1396,1,CPPASTTypeId,,<empty>
+171515,UNKNOWN,1,,const uint8_t *,5,<empty>,,1399,1,CPPASTTypeId,,<empty>
+171542,UNKNOWN,1,,intptr_t,5,<empty>,,1399,1,CPPASTTypeId,,<empty>
+171577,UNKNOWN,1,,unsigned int,5,<empty>,,1399,1,CPPASTTypeId,,<empty>
+171590,UNKNOWN,1,,const char*,41,<empty>,,1403,1,CPPASTTypeId,,<empty>
+171776,UNKNOWN,1,,const uint8_t *,5,<empty>,,1444,1,CPPASTTypeId,,<empty>
+171803,UNKNOWN,1,,intptr_t,5,<empty>,,1444,1,CPPASTTypeId,,<empty>
+171818,UNKNOWN,1,,unsigned int,5,<empty>,,1444,1,CPPASTTypeId,,<empty>
+171821,UNKNOWN,1,,unsigned int,5,<empty>,,1444,1,CPPASTTypeId,,<empty>
+171928,UNKNOWN,1,,const uint8_t *,5,<empty>,,1456,1,CPPASTTypeId,,<empty>
+171955,UNKNOWN,1,,intptr_t,5,<empty>,,1456,1,CPPASTTypeId,,<empty>
+171990,UNKNOWN,1,,unsigned int,5,<empty>,,1456,1,CPPASTTypeId,,<empty>
+172037,UNKNOWN,1,,const uint8_t *,5,<empty>,,1459,1,CPPASTTypeId,,<empty>
+172064,UNKNOWN,1,,intptr_t,5,<empty>,,1459,1,CPPASTTypeId,,<empty>
+172099,UNKNOWN,1,,unsigned int,5,<empty>,,1459,1,CPPASTTypeId,,<empty>
+172191,UNKNOWN,1,,const uint8_t *,5,<empty>,,1477,1,CPPASTTypeId,,<empty>
+172218,UNKNOWN,1,,intptr_t,5,<empty>,,1477,1,CPPASTTypeId,,<empty>
+172233,UNKNOWN,1,,unsigned int,5,<empty>,,1477,1,CPPASTTypeId,,<empty>
+172236,UNKNOWN,1,,unsigned int,5,<empty>,,1477,1,CPPASTTypeId,,<empty>
+172317,UNKNOWN,1,,const uint8_t *,5,<empty>,,1483,1,CPPASTTypeId,,<empty>
+172344,UNKNOWN,1,,intptr_t,5,<empty>,,1483,1,CPPASTTypeId,,<empty>
+172379,UNKNOWN,1,,unsigned int,5,<empty>,,1483,1,CPPASTTypeId,,<empty>
+172424,UNKNOWN,1,,const uint8_t *,5,<empty>,,1486,1,CPPASTTypeId,,<empty>
+172451,UNKNOWN,1,,intptr_t,5,<empty>,,1486,1,CPPASTTypeId,,<empty>
+172486,UNKNOWN,1,,unsigned int,5,<empty>,,1486,1,CPPASTTypeId,,<empty>
+172561,UNKNOWN,1,,const uint8_t *,5,<empty>,,1501,1,CPPASTTypeId,,<empty>
+172588,UNKNOWN,1,,intptr_t,5,<empty>,,1501,1,CPPASTTypeId,,<empty>
+172603,UNKNOWN,1,,unsigned int,5,<empty>,,1501,1,CPPASTTypeId,,<empty>
+172606,UNKNOWN,1,,unsigned int,5,<empty>,,1501,1,CPPASTTypeId,,<empty>
+172686,UNKNOWN,1,,const uint8_t *,5,<empty>,,1507,1,CPPASTTypeId,,<empty>
+172713,UNKNOWN,1,,intptr_t,5,<empty>,,1507,1,CPPASTTypeId,,<empty>
+172748,UNKNOWN,1,,unsigned int,5,<empty>,,1507,1,CPPASTTypeId,,<empty>
+172792,UNKNOWN,1,,const uint8_t *,5,<empty>,,1509,1,CPPASTTypeId,,<empty>
+172819,UNKNOWN,1,,intptr_t,5,<empty>,,1509,1,CPPASTTypeId,,<empty>
+172854,UNKNOWN,1,,unsigned int,5,<empty>,,1509,1,CPPASTTypeId,,<empty>
+172929,UNKNOWN,1,,const uint8_t *,5,<empty>,,1524,1,CPPASTTypeId,,<empty>
+172956,UNKNOWN,1,,intptr_t,5,<empty>,,1524,1,CPPASTTypeId,,<empty>
+172971,UNKNOWN,1,,unsigned int,5,<empty>,,1524,1,CPPASTTypeId,,<empty>
+172974,UNKNOWN,1,,unsigned int,5,<empty>,,1524,1,CPPASTTypeId,,<empty>
+173054,UNKNOWN,1,,const uint8_t *,5,<empty>,,1530,1,CPPASTTypeId,,<empty>
+173081,UNKNOWN,1,,intptr_t,5,<empty>,,1530,1,CPPASTTypeId,,<empty>
+173116,UNKNOWN,1,,unsigned int,5,<empty>,,1530,1,CPPASTTypeId,,<empty>
+173160,UNKNOWN,1,,const uint8_t *,5,<empty>,,1532,1,CPPASTTypeId,,<empty>
+173187,UNKNOWN,1,,intptr_t,5,<empty>,,1532,1,CPPASTTypeId,,<empty>
+173222,UNKNOWN,1,,unsigned int,5,<empty>,,1532,1,CPPASTTypeId,,<empty>
+173302,UNKNOWN,1,,const uint8_t *,5,<empty>,,1549,1,CPPASTTypeId,,<empty>
+173329,UNKNOWN,1,,intptr_t,5,<empty>,,1549,1,CPPASTTypeId,,<empty>
+173344,UNKNOWN,1,,unsigned int,5,<empty>,,1549,1,CPPASTTypeId,,<empty>
+173347,UNKNOWN,1,,unsigned int,5,<empty>,,1549,1,CPPASTTypeId,,<empty>
+173437,UNKNOWN,1,,const uint8_t *,5,<empty>,,1556,1,CPPASTTypeId,,<empty>
+173464,UNKNOWN,1,,intptr_t,5,<empty>,,1556,1,CPPASTTypeId,,<empty>
+173499,UNKNOWN,1,,unsigned int,5,<empty>,,1556,1,CPPASTTypeId,,<empty>
+173544,UNKNOWN,1,,const uint8_t *,5,<empty>,,1558,1,CPPASTTypeId,,<empty>
+173571,UNKNOWN,1,,intptr_t,5,<empty>,,1558,1,CPPASTTypeId,,<empty>
+173606,UNKNOWN,1,,unsigned int,5,<empty>,,1558,1,CPPASTTypeId,,<empty>
+173686,UNKNOWN,1,,const uint8_t *,5,<empty>,,1575,1,CPPASTTypeId,,<empty>
+173713,UNKNOWN,1,,intptr_t,5,<empty>,,1575,1,CPPASTTypeId,,<empty>
+173728,UNKNOWN,1,,unsigned int,5,<empty>,,1575,1,CPPASTTypeId,,<empty>
+173731,UNKNOWN,1,,unsigned int,5,<empty>,,1575,1,CPPASTTypeId,,<empty>
+173821,UNKNOWN,1,,const uint8_t *,5,<empty>,,1582,1,CPPASTTypeId,,<empty>
+173848,UNKNOWN,1,,intptr_t,5,<empty>,,1582,1,CPPASTTypeId,,<empty>
+173883,UNKNOWN,1,,unsigned int,5,<empty>,,1582,1,CPPASTTypeId,,<empty>
+173928,UNKNOWN,1,,const uint8_t *,5,<empty>,,1585,1,CPPASTTypeId,,<empty>
+173955,UNKNOWN,1,,intptr_t,5,<empty>,,1585,1,CPPASTTypeId,,<empty>
+173990,UNKNOWN,1,,unsigned int,5,<empty>,,1585,1,CPPASTTypeId,,<empty>
+174565,UNKNOWN,1,,const uint8_t *,5,<empty>,,1790,1,CPPASTTypeId,,<empty>
+174592,UNKNOWN,1,,intptr_t,5,<empty>,,1790,1,CPPASTTypeId,,<empty>
+174607,UNKNOWN,1,,unsigned int,5,<empty>,,1790,1,CPPASTTypeId,,<empty>
+174610,UNKNOWN,1,,unsigned int,5,<empty>,,1790,1,CPPASTTypeId,,<empty>
+174707,UNKNOWN,1,,const uint8_t *,5,<empty>,,1798,1,CPPASTTypeId,,<empty>
+174734,UNKNOWN,1,,intptr_t,5,<empty>,,1798,1,CPPASTTypeId,,<empty>
+174769,UNKNOWN,1,,unsigned int,5,<empty>,,1798,1,CPPASTTypeId,,<empty>
+174932,UNKNOWN,1,,const uint8_t *,5,<empty>,,1820,1,CPPASTTypeId,,<empty>
+174959,UNKNOWN,1,,intptr_t,5,<empty>,,1820,1,CPPASTTypeId,,<empty>
+174994,UNKNOWN,1,,unsigned int,5,<empty>,,1820,1,CPPASTTypeId,,<empty>
+175076,UNKNOWN,1,,const uint8_t *,5,<empty>,,1838,1,CPPASTTypeId,,<empty>
+175103,UNKNOWN,1,,intptr_t,5,<empty>,,1838,1,CPPASTTypeId,,<empty>
+175118,UNKNOWN,1,,unsigned int,5,<empty>,,1838,1,CPPASTTypeId,,<empty>
+175121,UNKNOWN,1,,unsigned int,5,<empty>,,1838,1,CPPASTTypeId,,<empty>
+175211,UNKNOWN,1,,const uint8_t *,5,<empty>,,1845,1,CPPASTTypeId,,<empty>
+175238,UNKNOWN,1,,intptr_t,5,<empty>,,1845,1,CPPASTTypeId,,<empty>
+175273,UNKNOWN,1,,unsigned int,5,<empty>,,1845,1,CPPASTTypeId,,<empty>
+175321,UNKNOWN,1,,const uint8_t *,5,<empty>,,1848,1,CPPASTTypeId,,<empty>
+175348,UNKNOWN,1,,intptr_t,5,<empty>,,1848,1,CPPASTTypeId,,<empty>
+175383,UNKNOWN,1,,unsigned int,5,<empty>,,1848,1,CPPASTTypeId,,<empty>
+175396,UNKNOWN,1,,const char*,41,<empty>,,1853,1,CPPASTTypeId,,<empty>
+175572,UNKNOWN,1,,const uint8_t *,5,<empty>,,1889,1,CPPASTTypeId,,<empty>
+175599,UNKNOWN,1,,intptr_t,5,<empty>,,1889,1,CPPASTTypeId,,<empty>
+175614,UNKNOWN,1,,unsigned int,5,<empty>,,1889,1,CPPASTTypeId,,<empty>
+175617,UNKNOWN,1,,unsigned int,5,<empty>,,1889,1,CPPASTTypeId,,<empty>
+175708,UNKNOWN,1,,const uint8_t *,5,<empty>,,1903,1,CPPASTTypeId,,<empty>
+175735,UNKNOWN,1,,intptr_t,5,<empty>,,1903,1,CPPASTTypeId,,<empty>
+175770,UNKNOWN,1,,unsigned int,5,<empty>,,1903,1,CPPASTTypeId,,<empty>
+175819,UNKNOWN,1,,const uint8_t *,5,<empty>,,1906,1,CPPASTTypeId,,<empty>
+175846,UNKNOWN,1,,intptr_t,5,<empty>,,1906,1,CPPASTTypeId,,<empty>
+175881,UNKNOWN,1,,unsigned int,5,<empty>,,1906,1,CPPASTTypeId,,<empty>
+176324,UNKNOWN,1,,const uint8_t *,5,<empty>,,2015,1,CPPASTTypeId,,<empty>
+176351,UNKNOWN,1,,intptr_t,5,<empty>,,2015,1,CPPASTTypeId,,<empty>
+176366,UNKNOWN,1,,unsigned int,5,<empty>,,2015,1,CPPASTTypeId,,<empty>
+176369,UNKNOWN,1,,unsigned int,5,<empty>,,2015,1,CPPASTTypeId,,<empty>
+176461,UNKNOWN,1,,const uint8_t *,5,<empty>,,2022,1,CPPASTTypeId,,<empty>
+176488,UNKNOWN,1,,intptr_t,5,<empty>,,2022,1,CPPASTTypeId,,<empty>
+176523,UNKNOWN,1,,unsigned int,5,<empty>,,2022,1,CPPASTTypeId,,<empty>
+176573,UNKNOWN,1,,const uint8_t *,5,<empty>,,2025,1,CPPASTTypeId,,<empty>
+176600,UNKNOWN,1,,intptr_t,5,<empty>,,2025,1,CPPASTTypeId,,<empty>
+176635,UNKNOWN,1,,unsigned int,5,<empty>,,2025,1,CPPASTTypeId,,<empty>
+176783,UNKNOWN,1,,const uint8_t *,5,<empty>,,2052,1,CPPASTTypeId,,<empty>
+176810,UNKNOWN,1,,intptr_t,5,<empty>,,2052,1,CPPASTTypeId,,<empty>
+176825,UNKNOWN,1,,unsigned int,5,<empty>,,2052,1,CPPASTTypeId,,<empty>
+176828,UNKNOWN,1,,unsigned int,5,<empty>,,2052,1,CPPASTTypeId,,<empty>
+176920,UNKNOWN,1,,const uint8_t *,5,<empty>,,2059,1,CPPASTTypeId,,<empty>
+176947,UNKNOWN,1,,intptr_t,5,<empty>,,2059,1,CPPASTTypeId,,<empty>
+176982,UNKNOWN,1,,unsigned int,5,<empty>,,2059,1,CPPASTTypeId,,<empty>
+177032,UNKNOWN,1,,const uint8_t *,5,<empty>,,2062,1,CPPASTTypeId,,<empty>
+177059,UNKNOWN,1,,intptr_t,5,<empty>,,2062,1,CPPASTTypeId,,<empty>
+177094,UNKNOWN,1,,unsigned int,5,<empty>,,2062,1,CPPASTTypeId,,<empty>
+177250,UNKNOWN,1,,const uint8_t *,5,<empty>,,2094,1,CPPASTTypeId,,<empty>
+177277,UNKNOWN,1,,intptr_t,5,<empty>,,2094,1,CPPASTTypeId,,<empty>
+177292,UNKNOWN,1,,unsigned int,5,<empty>,,2094,1,CPPASTTypeId,,<empty>
+177295,UNKNOWN,1,,unsigned int,5,<empty>,,2094,1,CPPASTTypeId,,<empty>
+177403,UNKNOWN,1,,const uint8_t *,5,<empty>,,2106,1,CPPASTTypeId,,<empty>
+177430,UNKNOWN,1,,intptr_t,5,<empty>,,2106,1,CPPASTTypeId,,<empty>
+177465,UNKNOWN,1,,unsigned int,5,<empty>,,2106,1,CPPASTTypeId,,<empty>
+177513,UNKNOWN,1,,const uint8_t *,5,<empty>,,2109,1,CPPASTTypeId,,<empty>
+177540,UNKNOWN,1,,intptr_t,5,<empty>,,2109,1,CPPASTTypeId,,<empty>
+177575,UNKNOWN,1,,unsigned int,5,<empty>,,2109,1,CPPASTTypeId,,<empty>
+177678,UNKNOWN,1,,uint64_t,24,<empty>,,2140,1,CPPASTTypeId,,<empty>
+177685,UNKNOWN,1,,size_t,34,<empty>,,2141,1,CPPASTTypeId,,<empty>
+177698,UNKNOWN,1,,size_t,34,<empty>,,2144,1,CPPASTTypeId,,<empty>
+177773,UNKNOWN,1,,const uint8_t *,5,<empty>,,2156,1,CPPASTTypeId,,<empty>
+177800,UNKNOWN,1,,intptr_t,5,<empty>,,2156,1,CPPASTTypeId,,<empty>
+177815,UNKNOWN,1,,unsigned int,5,<empty>,,2156,1,CPPASTTypeId,,<empty>
+177818,UNKNOWN,1,,unsigned int,5,<empty>,,2156,1,CPPASTTypeId,,<empty>
+177902,UNKNOWN,1,,const uint8_t *,5,<empty>,,2162,1,CPPASTTypeId,,<empty>
+177929,UNKNOWN,1,,intptr_t,5,<empty>,,2162,1,CPPASTTypeId,,<empty>
+177964,UNKNOWN,1,,unsigned int,5,<empty>,,2162,1,CPPASTTypeId,,<empty>
+178015,UNKNOWN,1,,const uint8_t *,5,<empty>,,2165,1,CPPASTTypeId,,<empty>
+178042,UNKNOWN,1,,intptr_t,5,<empty>,,2165,1,CPPASTTypeId,,<empty>
+178077,UNKNOWN,1,,unsigned int,5,<empty>,,2165,1,CPPASTTypeId,,<empty>
+178251,UNKNOWN,1,,const uint8_t *,5,<empty>,,2202,1,CPPASTTypeId,,<empty>
+178278,UNKNOWN,1,,intptr_t,5,<empty>,,2202,1,CPPASTTypeId,,<empty>
+178293,UNKNOWN,1,,unsigned int,5,<empty>,,2202,1,CPPASTTypeId,,<empty>
+178296,UNKNOWN,1,,unsigned int,5,<empty>,,2202,1,CPPASTTypeId,,<empty>
+178383,UNKNOWN,1,,const uint8_t *,5,<empty>,,2208,1,CPPASTTypeId,,<empty>
+178410,UNKNOWN,1,,intptr_t,5,<empty>,,2208,1,CPPASTTypeId,,<empty>
+178445,UNKNOWN,1,,unsigned int,5,<empty>,,2208,1,CPPASTTypeId,,<empty>
+178499,UNKNOWN,1,,const uint8_t *,5,<empty>,,2211,1,CPPASTTypeId,,<empty>
+178526,UNKNOWN,1,,intptr_t,5,<empty>,,2211,1,CPPASTTypeId,,<empty>
+178561,UNKNOWN,1,,unsigned int,5,<empty>,,2211,1,CPPASTTypeId,,<empty>
+178705,UNKNOWN,1,,char*,24,<empty>,,2256,1,CPPASTTypeId,,<empty>
+178740,UNKNOWN,1,,char*,30,<empty>,,2260,1,CPPASTTypeId,,<empty>
+178742,UNKNOWN,1,,uint16_t*,48,<empty>,,2260,1,CPPASTTypeId,,<empty>
+178836,UNKNOWN,1,,const uint8_t *,5,<empty>,,2275,1,CPPASTTypeId,,<empty>
+178863,UNKNOWN,1,,intptr_t,5,<empty>,,2275,1,CPPASTTypeId,,<empty>
+178878,UNKNOWN,1,,unsigned int,5,<empty>,,2275,1,CPPASTTypeId,,<empty>
+178881,UNKNOWN,1,,unsigned int,5,<empty>,,2275,1,CPPASTTypeId,,<empty>
+179055,UNKNOWN,1,,const uint8_t *,5,<empty>,,2307,1,CPPASTTypeId,,<empty>
+179082,UNKNOWN,1,,intptr_t,5,<empty>,,2307,1,CPPASTTypeId,,<empty>
+179117,UNKNOWN,1,,unsigned int,5,<empty>,,2307,1,CPPASTTypeId,,<empty>
+179168,UNKNOWN,1,,const uint8_t *,5,<empty>,,2310,1,CPPASTTypeId,,<empty>
+179195,UNKNOWN,1,,intptr_t,5,<empty>,,2310,1,CPPASTTypeId,,<empty>
+179230,UNKNOWN,1,,unsigned int,5,<empty>,,2310,1,CPPASTTypeId,,<empty>
+179343,UNKNOWN,1,,uint64_t,24,<empty>,,2344,1,CPPASTTypeId,,<empty>
+179350,UNKNOWN,1,,size_t,34,<empty>,,2345,1,CPPASTTypeId,,<empty>
+179363,UNKNOWN,1,,size_t,34,<empty>,,2348,1,CPPASTTypeId,,<empty>
+179463,UNKNOWN,1,,const uint8_t *,5,<empty>,,2361,1,CPPASTTypeId,,<empty>
+179490,UNKNOWN,1,,intptr_t,5,<empty>,,2361,1,CPPASTTypeId,,<empty>
+179505,UNKNOWN,1,,unsigned int,5,<empty>,,2361,1,CPPASTTypeId,,<empty>
+179508,UNKNOWN,1,,unsigned int,5,<empty>,,2361,1,CPPASTTypeId,,<empty>
+179592,UNKNOWN,1,,const uint8_t *,5,<empty>,,2367,1,CPPASTTypeId,,<empty>
+179619,UNKNOWN,1,,intptr_t,5,<empty>,,2367,1,CPPASTTypeId,,<empty>
+179654,UNKNOWN,1,,unsigned int,5,<empty>,,2367,1,CPPASTTypeId,,<empty>
+179705,UNKNOWN,1,,const uint8_t *,5,<empty>,,2370,1,CPPASTTypeId,,<empty>
+179732,UNKNOWN,1,,intptr_t,5,<empty>,,2370,1,CPPASTTypeId,,<empty>
+179767,UNKNOWN,1,,unsigned int,5,<empty>,,2370,1,CPPASTTypeId,,<empty>
+179941,UNKNOWN,1,,const uint8_t *,5,<empty>,,2408,1,CPPASTTypeId,,<empty>
+179968,UNKNOWN,1,,intptr_t,5,<empty>,,2408,1,CPPASTTypeId,,<empty>
+179983,UNKNOWN,1,,unsigned int,5,<empty>,,2408,1,CPPASTTypeId,,<empty>
+179986,UNKNOWN,1,,unsigned int,5,<empty>,,2408,1,CPPASTTypeId,,<empty>
+180073,UNKNOWN,1,,const uint8_t *,5,<empty>,,2414,1,CPPASTTypeId,,<empty>
+180100,UNKNOWN,1,,intptr_t,5,<empty>,,2414,1,CPPASTTypeId,,<empty>
+180135,UNKNOWN,1,,unsigned int,5,<empty>,,2414,1,CPPASTTypeId,,<empty>
+180189,UNKNOWN,1,,const uint8_t *,5,<empty>,,2417,1,CPPASTTypeId,,<empty>
+180216,UNKNOWN,1,,intptr_t,5,<empty>,,2417,1,CPPASTTypeId,,<empty>
+180251,UNKNOWN,1,,unsigned int,5,<empty>,,2417,1,CPPASTTypeId,,<empty>
+180360,UNKNOWN,1,,const uint8_t *,5,<empty>,,2442,1,CPPASTTypeId,,<empty>
+180387,UNKNOWN,1,,intptr_t,5,<empty>,,2442,1,CPPASTTypeId,,<empty>
+180402,UNKNOWN,1,,unsigned int,5,<empty>,,2442,1,CPPASTTypeId,,<empty>
+180405,UNKNOWN,1,,unsigned int,5,<empty>,,2442,1,CPPASTTypeId,,<empty>
+180496,UNKNOWN,1,,const uint8_t *,5,<empty>,,2449,1,CPPASTTypeId,,<empty>
+180523,UNKNOWN,1,,intptr_t,5,<empty>,,2449,1,CPPASTTypeId,,<empty>
+180558,UNKNOWN,1,,unsigned int,5,<empty>,,2449,1,CPPASTTypeId,,<empty>
+180604,UNKNOWN,1,,const uint8_t *,5,<empty>,,2452,1,CPPASTTypeId,,<empty>
+180631,UNKNOWN,1,,intptr_t,5,<empty>,,2452,1,CPPASTTypeId,,<empty>
+180666,UNKNOWN,1,,unsigned int,5,<empty>,,2452,1,CPPASTTypeId,,<empty>
+180760,UNKNOWN,1,,const uint8_t *,5,<empty>,,2474,1,CPPASTTypeId,,<empty>
+180787,UNKNOWN,1,,intptr_t,5,<empty>,,2474,1,CPPASTTypeId,,<empty>
+180802,UNKNOWN,1,,unsigned int,5,<empty>,,2474,1,CPPASTTypeId,,<empty>
+180805,UNKNOWN,1,,unsigned int,5,<empty>,,2474,1,CPPASTTypeId,,<empty>
+180886,UNKNOWN,1,,const uint8_t *,5,<empty>,,2480,1,CPPASTTypeId,,<empty>
+180913,UNKNOWN,1,,intptr_t,5,<empty>,,2480,1,CPPASTTypeId,,<empty>
+180948,UNKNOWN,1,,unsigned int,5,<empty>,,2480,1,CPPASTTypeId,,<empty>
+180993,UNKNOWN,1,,const uint8_t *,5,<empty>,,2483,1,CPPASTTypeId,,<empty>
+181020,UNKNOWN,1,,intptr_t,5,<empty>,,2483,1,CPPASTTypeId,,<empty>
+181055,UNKNOWN,1,,unsigned int,5,<empty>,,2483,1,CPPASTTypeId,,<empty>
+181113,UNKNOWN,1,,uv_uid_t,36,<empty>,,2503,1,CPPASTTypeId,,<empty>
+181132,UNKNOWN,1,,uv_gid_t,36,<empty>,,2506,1,CPPASTTypeId,,<empty>
+181173,UNKNOWN,1,,const uint8_t *,5,<empty>,,2510,1,CPPASTTypeId,,<empty>
+181200,UNKNOWN,1,,intptr_t,5,<empty>,,2510,1,CPPASTTypeId,,<empty>
+181215,UNKNOWN,1,,unsigned int,5,<empty>,,2510,1,CPPASTTypeId,,<empty>
+181218,UNKNOWN,1,,unsigned int,5,<empty>,,2510,1,CPPASTTypeId,,<empty>
+181310,UNKNOWN,1,,const uint8_t *,5,<empty>,,2517,1,CPPASTTypeId,,<empty>
+181337,UNKNOWN,1,,intptr_t,5,<empty>,,2517,1,CPPASTTypeId,,<empty>
+181372,UNKNOWN,1,,unsigned int,5,<empty>,,2517,1,CPPASTTypeId,,<empty>
+181419,UNKNOWN,1,,const uint8_t *,5,<empty>,,2520,1,CPPASTTypeId,,<empty>
+181446,UNKNOWN,1,,intptr_t,5,<empty>,,2520,1,CPPASTTypeId,,<empty>
+181481,UNKNOWN,1,,unsigned int,5,<empty>,,2520,1,CPPASTTypeId,,<empty>
+181535,UNKNOWN,1,,uv_uid_t,36,<empty>,,2538,1,CPPASTTypeId,,<empty>
+181554,UNKNOWN,1,,uv_gid_t,36,<empty>,,2541,1,CPPASTTypeId,,<empty>
+181594,UNKNOWN,1,,const uint8_t *,5,<empty>,,2545,1,CPPASTTypeId,,<empty>
+181621,UNKNOWN,1,,intptr_t,5,<empty>,,2545,1,CPPASTTypeId,,<empty>
+181636,UNKNOWN,1,,unsigned int,5,<empty>,,2545,1,CPPASTTypeId,,<empty>
+181639,UNKNOWN,1,,unsigned int,5,<empty>,,2545,1,CPPASTTypeId,,<empty>
+181721,UNKNOWN,1,,const uint8_t *,5,<empty>,,2551,1,CPPASTTypeId,,<empty>
+181748,UNKNOWN,1,,intptr_t,5,<empty>,,2551,1,CPPASTTypeId,,<empty>
+181783,UNKNOWN,1,,unsigned int,5,<empty>,,2551,1,CPPASTTypeId,,<empty>
+181829,UNKNOWN,1,,const uint8_t *,5,<empty>,,2554,1,CPPASTTypeId,,<empty>
+181856,UNKNOWN,1,,intptr_t,5,<empty>,,2554,1,CPPASTTypeId,,<empty>
+181891,UNKNOWN,1,,unsigned int,5,<empty>,,2554,1,CPPASTTypeId,,<empty>
+181949,UNKNOWN,1,,uv_uid_t,36,<empty>,,2571,1,CPPASTTypeId,,<empty>
+181968,UNKNOWN,1,,uv_gid_t,36,<empty>,,2574,1,CPPASTTypeId,,<empty>
+182009,UNKNOWN,1,,const uint8_t *,5,<empty>,,2578,1,CPPASTTypeId,,<empty>
+182036,UNKNOWN,1,,intptr_t,5,<empty>,,2578,1,CPPASTTypeId,,<empty>
+182051,UNKNOWN,1,,unsigned int,5,<empty>,,2578,1,CPPASTTypeId,,<empty>
+182054,UNKNOWN,1,,unsigned int,5,<empty>,,2578,1,CPPASTTypeId,,<empty>
+182146,UNKNOWN,1,,const uint8_t *,5,<empty>,,2585,1,CPPASTTypeId,,<empty>
+182173,UNKNOWN,1,,intptr_t,5,<empty>,,2585,1,CPPASTTypeId,,<empty>
+182208,UNKNOWN,1,,unsigned int,5,<empty>,,2585,1,CPPASTTypeId,,<empty>
+182255,UNKNOWN,1,,const uint8_t *,5,<empty>,,2588,1,CPPASTTypeId,,<empty>
+182282,UNKNOWN,1,,intptr_t,5,<empty>,,2588,1,CPPASTTypeId,,<empty>
+182317,UNKNOWN,1,,unsigned int,5,<empty>,,2588,1,CPPASTTypeId,,<empty>
+182435,UNKNOWN,1,,const uint8_t *,5,<empty>,,2612,1,CPPASTTypeId,,<empty>
+182462,UNKNOWN,1,,intptr_t,5,<empty>,,2612,1,CPPASTTypeId,,<empty>
+182477,UNKNOWN,1,,unsigned int,5,<empty>,,2612,1,CPPASTTypeId,,<empty>
+182480,UNKNOWN,1,,unsigned int,5,<empty>,,2612,1,CPPASTTypeId,,<empty>
+182572,UNKNOWN,1,,const uint8_t *,5,<empty>,,2619,1,CPPASTTypeId,,<empty>
+182599,UNKNOWN,1,,intptr_t,5,<empty>,,2619,1,CPPASTTypeId,,<empty>
+182634,UNKNOWN,1,,unsigned int,5,<empty>,,2619,1,CPPASTTypeId,,<empty>
+182681,UNKNOWN,1,,const uint8_t *,5,<empty>,,2622,1,CPPASTTypeId,,<empty>
+182708,UNKNOWN,1,,intptr_t,5,<empty>,,2622,1,CPPASTTypeId,,<empty>
+182743,UNKNOWN,1,,unsigned int,5,<empty>,,2622,1,CPPASTTypeId,,<empty>
+182856,UNKNOWN,1,,const uint8_t *,5,<empty>,,2643,1,CPPASTTypeId,,<empty>
+182883,UNKNOWN,1,,intptr_t,5,<empty>,,2643,1,CPPASTTypeId,,<empty>
+182898,UNKNOWN,1,,unsigned int,5,<empty>,,2643,1,CPPASTTypeId,,<empty>
+182901,UNKNOWN,1,,unsigned int,5,<empty>,,2643,1,CPPASTTypeId,,<empty>
+182983,UNKNOWN,1,,const uint8_t *,5,<empty>,,2649,1,CPPASTTypeId,,<empty>
+183010,UNKNOWN,1,,intptr_t,5,<empty>,,2649,1,CPPASTTypeId,,<empty>
+183045,UNKNOWN,1,,unsigned int,5,<empty>,,2649,1,CPPASTTypeId,,<empty>
+183091,UNKNOWN,1,,const uint8_t *,5,<empty>,,2652,1,CPPASTTypeId,,<empty>
+183118,UNKNOWN,1,,intptr_t,5,<empty>,,2652,1,CPPASTTypeId,,<empty>
+183153,UNKNOWN,1,,unsigned int,5,<empty>,,2652,1,CPPASTTypeId,,<empty>
+183271,UNKNOWN,1,,const uint8_t *,5,<empty>,,2675,1,CPPASTTypeId,,<empty>
+183298,UNKNOWN,1,,intptr_t,5,<empty>,,2675,1,CPPASTTypeId,,<empty>
+183313,UNKNOWN,1,,unsigned int,5,<empty>,,2675,1,CPPASTTypeId,,<empty>
+183316,UNKNOWN,1,,unsigned int,5,<empty>,,2675,1,CPPASTTypeId,,<empty>
+183408,UNKNOWN,1,,const uint8_t *,5,<empty>,,2682,1,CPPASTTypeId,,<empty>
+183435,UNKNOWN,1,,intptr_t,5,<empty>,,2682,1,CPPASTTypeId,,<empty>
+183470,UNKNOWN,1,,unsigned int,5,<empty>,,2682,1,CPPASTTypeId,,<empty>
+183517,UNKNOWN,1,,const uint8_t *,5,<empty>,,2685,1,CPPASTTypeId,,<empty>
+183544,UNKNOWN,1,,intptr_t,5,<empty>,,2685,1,CPPASTTypeId,,<empty>
+183579,UNKNOWN,1,,unsigned int,5,<empty>,,2685,1,CPPASTTypeId,,<empty>
+183672,UNKNOWN,1,,const uint8_t *,5,<empty>,,2705,1,CPPASTTypeId,,<empty>
+183699,UNKNOWN,1,,intptr_t,5,<empty>,,2705,1,CPPASTTypeId,,<empty>
+183714,UNKNOWN,1,,unsigned int,5,<empty>,,2705,1,CPPASTTypeId,,<empty>
+183717,UNKNOWN,1,,unsigned int,5,<empty>,,2705,1,CPPASTTypeId,,<empty>
+183807,UNKNOWN,1,,const uint8_t *,5,<empty>,,2712,1,CPPASTTypeId,,<empty>
+183834,UNKNOWN,1,,intptr_t,5,<empty>,,2712,1,CPPASTTypeId,,<empty>
+183869,UNKNOWN,1,,unsigned int,5,<empty>,,2712,1,CPPASTTypeId,,<empty>
+183914,UNKNOWN,1,,const uint8_t *,5,<empty>,,2715,1,CPPASTTypeId,,<empty>
+183941,UNKNOWN,1,,intptr_t,5,<empty>,,2715,1,CPPASTTypeId,,<empty>
+183976,UNKNOWN,1,,unsigned int,5,<empty>,,2715,1,CPPASTTypeId,,<empty>
+184258,UNKNOWN,1,,InternalFieldInfo*,48,<empty>,,2798,1,CPPASTTypeId,,<empty>
+184585,UNKNOWN,1,,int32_t,32,<empty>,,2881,1,CPPASTTypeId,,<empty>
+185119,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(fs, node::fs::CreatePerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(fs, node::fs::CreatePerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(fs, node::fs::RegisterExternalReferences)",1,<empty>,,3002,2,CPPASTProblemDeclaration,,<empty>
+185576,UNKNOWN,1,,PaddingStrategy,21,<empty>,,164,1,CPPASTTypeId,,<empty>
+185630,UNKNOWN,1,,uint64_t,40,<empty>,,202,1,CPPASTTypeId,,<empty>
+185642,UNKNOWN,1,,size_t,21,<empty>,,207,1,CPPASTTypeId,,<empty>
+185669,UNKNOWN,-1,,),19,<empty>,,228,8,CPPASTProblemStatement,,<empty>
+185797,UNKNOWN,1,,uint8_t*,49,<empty>,,280,1,CPPASTTypeId,,<empty>
+185875,UNKNOWN,-1,,),19,<empty>,,299,4,CPPASTProblemStatement,,<empty>
+185892,UNKNOWN,-1,,),19,<empty>,,313,6,CPPASTProblemStatement,,<empty>
+186105,UNKNOWN,1,,char*,37,<empty>,,386,1,CPPASTTypeId,,<empty>
+186125,UNKNOWN,1,,nghttp2_origin_entry*,24,<empty>,,390,1,CPPASTTypeId,,<empty>
+186133,UNKNOWN,1,,char*,24,<empty>,,393,1,CPPASTTypeId,,<empty>
+186152,UNKNOWN,1,,uint8_t*,33,<empty>,,396,1,CPPASTTypeId,,<empty>
+186213,UNKNOWN,1,,uint8_t*,38,<empty>,,413,1,CPPASTTypeId,,<empty>
+186569,UNKNOWN,1,,int64_t,34,<empty>,,551,1,CPPASTTypeId,,<empty>
+186619,UNKNOWN,1,,double,3,<empty>,,569,1,CPPASTTypeId,,<empty>
+186656,UNKNOWN,1,,double,3,<empty>,,570,1,CPPASTTypeId,,<empty>
+186693,UNKNOWN,1,,double,3,<empty>,,571,1,CPPASTTypeId,,<empty>
+186881,UNKNOWN,1,,double,3,<empty>,,608,1,CPPASTTypeId,,<empty>
+186918,UNKNOWN,1,,double,3,<empty>,,609,1,CPPASTTypeId,,<empty>
+186955,UNKNOWN,1,,double,3,<empty>,,610,1,CPPASTTypeId,,<empty>
+186992,UNKNOWN,1,,double,3,<empty>,,611,1,CPPASTTypeId,,<empty>
+187029,UNKNOWN,1,,double,3,<empty>,,612,1,CPPASTTypeId,,<empty>
+187066,UNKNOWN,1,,double,3,<empty>,,613,1,CPPASTTypeId,,<empty>
+187103,UNKNOWN,1,,double,3,<empty>,,614,1,CPPASTTypeId,,<empty>
+187140,UNKNOWN,1,,double,3,<empty>,,615,1,CPPASTTypeId,,<empty>
+187465,UNKNOWN,1,,size_t,49,<empty>,,739,1,CPPASTTypeId,,<empty>
+187660,UNKNOWN,1,,uint8_t*,47,<empty>,,813,1,CPPASTTypeId,,<empty>
+187685,UNKNOWN,1,,size_t,26,<empty>,,823,1,CPPASTTypeId,,<empty>
+187755,UNKNOWN,1,,int32_t,41,<empty>,,853,1,CPPASTTypeId,,<empty>
+187823,UNKNOWN,1,,Http2Session*,39,<empty>,,885,1,CPPASTTypeId,,<empty>
+187935,UNKNOWN,1,,Http2Session*,39,<empty>,,924,1,CPPASTTypeId,,<empty>
+187996,UNKNOWN,1,,Http2Session*,39,<empty>,,949,1,CPPASTTypeId,,<empty>
+188101,UNKNOWN,1,,Http2Session*,39,<empty>,,989,1,CPPASTTypeId,,<empty>
+188305,UNKNOWN,1,,Http2Session*,39,<empty>,,1062,1,CPPASTTypeId,,<empty>
+188398,UNKNOWN,1,,Http2Session*,39,<empty>,,1098,1,CPPASTTypeId,,<empty>
+188421,UNKNOWN,1,,Http2Session*,39,<empty>,,1108,1,CPPASTTypeId,,<empty>
+188566,UNKNOWN,1,,Http2Session*,39,<empty>,,1162,1,CPPASTTypeId,,<empty>
+188645,UNKNOWN,1,,ssize_t,21,<empty>,,1193,1,CPPASTTypeId,,<empty>
+188669,UNKNOWN,1,,char*,35,<empty>,,1202,1,CPPASTTypeId,,<empty>
+188671,UNKNOWN,1,,uint8_t*,53,<empty>,,1202,1,CPPASTTypeId,,<empty>
+188764,UNKNOWN,1,,Http2Session*,39,<empty>,,1242,1,CPPASTTypeId,,<empty>
+188819,UNKNOWN,1,,Http2Session*,39,<empty>,,1268,1,CPPASTTypeId,,<empty>
+188904,UNKNOWN,1,,Http2Stream*,37,<empty>,,1289,1,CPPASTTypeId,,<empty>
+189402,UNKNOWN,1,,char*,45,<empty>,,1450,1,CPPASTTypeId,,<empty>
+189470,UNKNOWN,1,,nghttp2_ext_altsvc*,44,<empty>,,1469,1,CPPASTTypeId,,<empty>
+189534,UNKNOWN,1,,nghttp2_ext_origin*,44,<empty>,,1491,1,CPPASTTypeId,,<empty>
+189719,UNKNOWN,1,,const char*,24,<empty>,,1534,1,CPPASTTypeId,,<empty>
+190276,UNKNOWN,1,,char*,28,<empty>,,1783,1,CPPASTTypeId,,<empty>
+190350,UNKNOWN,1,,Http2Session*,39,<empty>,,1818,1,CPPASTTypeId,,<empty>
+190517,UNKNOWN,1,,char*,30,<empty>,,1857,1,CPPASTTypeId,,<empty>
+190660,UNKNOWN,1,,size_t,24,<empty>,,1908,1,CPPASTTypeId,,<empty>
+190732,UNKNOWN,1,,char*,24,<empty>,,1927,1,CPPASTTypeId,,<empty>
+190746,UNKNOWN,1,,char*,24,<empty>,,1930,1,CPPASTTypeId,,<empty>
+190787,UNKNOWN,1,,char*,41,<empty>,,1948,1,CPPASTTypeId,,<empty>
+190793,UNKNOWN,1,,unsigned int,41,<empty>,,1949,1,CPPASTTypeId,,<empty>
+191133,UNKNOWN,1,,int64_t,37,<empty>,,2074,1,CPPASTTypeId,,<empty>
+192023,UNKNOWN,1,,Http2Session*,39,<empty>,,2475,1,CPPASTTypeId,,<empty>
+192334,UNKNOWN,1,,const uint8_t*,28,<empty>,,2554,1,CPPASTTypeId,,<empty>
+192611,UNKNOWN,1,,double,19,<empty>,,2643,1,CPPASTTypeId,,<empty>
+192619,UNKNOWN,1,,double,19,<empty>,,2645,1,CPPASTTypeId,,<empty>
+192627,UNKNOWN,1,,double,19,<empty>,,2647,1,CPPASTTypeId,,<empty>
+192661,UNKNOWN,1,,SessionType,19,<empty>,,2657,1,CPPASTTypeId,,<empty>
+192856,UNKNOWN,1,,int,23,<empty>,,2702,1,CPPASTTypeId,,<empty>
+193219,UNKNOWN,1,,int,23,<empty>,,2796,1,CPPASTTypeId,,<empty>
+193431,UNKNOWN,1,,int,23,<empty>,,2855,1,CPPASTTypeId,,<empty>
+194427,UNKNOWN,1,,const char*,41,<empty>,,3121,1,CPPASTTypeId,,<empty>
+195012,UNKNOWN,1,,double,3,<empty>,,3207,1,CPPASTTypeId,,<empty>
+195018,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3207,1,CPPASTTypeId,,<empty>
+195111,UNKNOWN,1,,double,3,<empty>,,3208,1,CPPASTTypeId,,<empty>
+195117,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3208,1,CPPASTTypeId,,<empty>
+195210,UNKNOWN,1,,double,3,<empty>,,3209,1,CPPASTTypeId,,<empty>
+195216,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3209,1,CPPASTTypeId,,<empty>
+195309,UNKNOWN,1,,double,3,<empty>,,3210,1,CPPASTTypeId,,<empty>
+195315,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3210,1,CPPASTTypeId,,<empty>
+195408,UNKNOWN,1,,double,3,<empty>,,3211,1,CPPASTTypeId,,<empty>
+195414,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3211,1,CPPASTTypeId,,<empty>
+195507,UNKNOWN,1,,double,3,<empty>,,3212,1,CPPASTTypeId,,<empty>
+195513,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3212,1,CPPASTTypeId,,<empty>
+195606,UNKNOWN,1,,double,3,<empty>,,3214,1,CPPASTTypeId,,<empty>
+195612,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3214,1,CPPASTTypeId,,<empty>
+195705,UNKNOWN,1,,double,3,<empty>,,3215,1,CPPASTTypeId,,<empty>
+195711,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3215,1,CPPASTTypeId,,<empty>
+195804,UNKNOWN,1,,double,3,<empty>,,3216,1,CPPASTTypeId,,<empty>
+195810,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3216,1,CPPASTTypeId,,<empty>
+195903,UNKNOWN,1,,double,3,<empty>,,3217,1,CPPASTTypeId,,<empty>
+195909,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3217,1,CPPASTTypeId,,<empty>
+196352,UNKNOWN,-1,,),27,<empty>,,3308,84,CPPASTProblemStatement,,<empty>
+196354,UNKNOWN,-1,,),20,<empty>,,3312,86,CPPASTProblemStatement,,<empty>
+196428,UNKNOWN,1,,double,3,<empty>,,3318,1,CPPASTTypeId,,<empty>
+196434,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,3318,1,CPPASTTypeId,,<empty>
+196455,UNKNOWN,-1,,),23,<empty>,,3322,89,CPPASTProblemStatement,,<empty>
+196457,UNKNOWN,-1,,),23,<empty>,,3327,91,CPPASTProblemStatement,,<empty>
+196459,UNKNOWN,-1,,),22,<empty>,,3331,93,CPPASTProblemStatement,,<empty>
+196475,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(http2, node::http2::Initialize)",1,<empty>,,3343,2,CPPASTProblemDeclaration,,<empty>
+196654,UNKNOWN,1,,nv_t*,38,<empty>,,36,1,CPPASTTypeId,,<empty>
+196680,UNKNOWN,1,,uint8_t*,33,<empty>,,41,1,CPPASTTypeId,,<empty>
+196755,UNKNOWN,1,,uint8_t*,36,<empty>,,58,1,CPPASTTypeId,,<empty>
+196781,UNKNOWN,1,,uint8_t*,37,<empty>,,61,1,CPPASTTypeId,,<empty>
+197292,UNKNOWN,-1,,),42,<empty>,,98,3,CPPASTProblemDeclaration,,<empty>
+197307,UNKNOWN,-1,,),28,<empty>,,106,8,CPPASTProblemDeclaration,,<empty>
+197309,UNKNOWN,-1,,),35,<empty>,,107,10,CPPASTProblemDeclaration,,<empty>
+197560,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+    SET_MEMORY_INFO_NAME(ConnectionsList)
+    SET_SELF_SIZE(ConnectionsList)
+
+ private:
+    ConnectionsList(Environment* env, Local<Object> object)
+      : BaseObject(env, object) {
+        MakeWeak();
+      }",5,<empty>,,224,10,CPPASTProblemDeclaration,,<empty>
+197571,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(Parser)
+  SET_SELF_SIZE(Parser)
+
+  int on_message_begin() {
+    // Important: Pop from the lists BEFORE resetting the last_message_start_
+    // otherwise std::set.erase will fail.
+    if (connectionsList_ != nullptr) {
+      connectionsList_->Pop(this);
+      connectionsList_->PopActive(this);
+    }
+
+    num_fields_ = num_values_ = 0;
+    headers_completed_ = false;
+    last_message_start_ = uv_hrtime();
+    url_.Reset();
+    status_message_.Reset();
+
+    if (connectionsList_ != nullptr) {
+      connectionsList_->Push(this);
+      connectionsList_->PushActive(this);
+    }
+
+    Local<Value> cb = object()->Get(env()->context(), kOnMessageBegin)
+                              .ToLocalChecked();
+    if (cb->IsFunction()) {
+      InternalCallbackScope callback_scope(
+        this, InternalCallbackScope::kSkipTaskQueues);
+
+      MaybeLocal<Value> r = cb.As<Function>()->Call(
+        env()->context(), object(), 0, nullptr);
+
+      if (r.IsEmpty()...",3,<empty>,,250,4,CPPASTProblemDeclaration,,<empty>
+198040,UNKNOWN,1,,int,24,<empty>,,447,1,CPPASTTypeId,,<empty>
+198576,UNKNOWN,1,,uint64_t,23,<empty>,,617,1,CPPASTTypeId,,<empty>
+198658,UNKNOWN,1,,llhttp_type_t,21,<empty>,,634,1,CPPASTTypeId,,<empty>
+199332,UNKNOWN,1,,int,42,<empty>,,861,1,CPPASTTypeId,,<empty>
+200131,UNKNOWN,1,,uint64_t,17,<empty>,,1099,1,CPPASTTypeId,,<empty>
+200147,UNKNOWN,1,,uint64_t,17,<empty>,,1101,1,CPPASTTypeId,,<empty>
+200733,UNKNOWN,-1,,),20,<empty>,,1236,28,CPPASTProblemStatement,,<empty>
+200913,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(http_parser, node::InitializeHttpParser)",1,<empty>,,1273,2,CPPASTProblemDeclaration,,<empty>
+201458,UNKNOWN,1,,uint32_t,51,<empty>,,48,1,CPPASTTypeId,,<empty>
+201919,UNKNOWN,1,,const uint8_t*,24,<empty>,,218,1,CPPASTTypeId,,<empty>
+203033,UNKNOWN,1,,MessagePort*,24,<empty>,,530,1,CPPASTTypeId,,<empty>
+203213,UNKNOWN,1,,char*,45,<empty>,,583,1,CPPASTTypeId,,<empty>
+203485,UNKNOWN,1,,int,66,<empty>,,683,1,CPPASTTypeId,,<empty>
+203800,UNKNOWN,1,,size_t,45,<empty>,,789,1,CPPASTTypeId,,<empty>
+206824,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(messaging, node::worker::InitMessaging)
+NODE_BINDING_EXTERNAL_REFERENCE(messaging,
+                                node::worker::RegisterExternalReferences)",1,<empty>,,1578,2,CPPASTProblemDeclaration,,<empty>
+207105,UNKNOWN,1,,ObjectWrap*,36,<empty>,,53,1,CPPASTTypeId,,<empty>
+207109,UNKNOWN,1,,T*,24,<empty>,,54,1,CPPASTTypeId,,<empty>
+209064,UNKNOWN,1,,int,22,<empty>,,1011,1,CPPASTTypeId,,<empty>
+209463,UNKNOWN,1,,double,25,<empty>,,1134,1,CPPASTTypeId,,<empty>
+209486,UNKNOWN,1,,double,25,<empty>,,1139,1,CPPASTTypeId,,<empty>
+209728,UNKNOWN,1,,int,45,<empty>,,1185,1,CPPASTTypeId,,<empty>
+209752,UNKNOWN,1,,int,54,<empty>,,1189,1,CPPASTTypeId,,<empty>
+210323,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(options, node::options_parser::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(
+    options, node::options_parser::RegisterExternalReferences)",1,<empty>,,1343,2,CPPASTProblemDeclaration,,<empty>
+210683,UNKNOWN,1,,double,42,<empty>,,122,1,CPPASTTypeId,,<empty>
+210699,UNKNOWN,1,,double,42,<empty>,,124,1,CPPASTTypeId,,<empty>
+210715,UNKNOWN,1,,double,42,<empty>,,126,1,CPPASTTypeId,,<empty>
+210731,UNKNOWN,1,,double,42,<empty>,,128,1,CPPASTTypeId,,<empty>
+210747,UNKNOWN,1,,double,42,<empty>,,130,1,CPPASTTypeId,,<empty>
+210785,UNKNOWN,1,,double,31,<empty>,,139,1,CPPASTTypeId,,<empty>
+210804,UNKNOWN,1,,double,31,<empty>,,145,1,CPPASTTypeId,,<empty>
+210913,UNKNOWN,1,,double*,33,<empty>,,168,1,CPPASTTypeId,,<empty>
+211070,UNKNOWN,1,,unsigned char,26,<empty>,,211,1,CPPASTTypeId,,<empty>
+211079,UNKNOWN,1,,unsigned char,26,<empty>,,212,1,CPPASTTypeId,,<empty>
+211088,UNKNOWN,1,,unsigned char,26,<empty>,,213,1,CPPASTTypeId,,<empty>
+211097,UNKNOWN,1,,unsigned char,26,<empty>,,214,1,CPPASTTypeId,,<empty>
+211106,UNKNOWN,1,,unsigned char,26,<empty>,,215,1,CPPASTTypeId,,<empty>
+211115,UNKNOWN,1,,unsigned char,26,<empty>,,216,1,CPPASTTypeId,,<empty>
+212161,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(os, node::os::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(os, node::os::RegisterExternalReferences)",1,<empty>,,433,2,CPPASTProblemDeclaration,,<empty>
+212396,UNKNOWN,1,,double,45,<empty>,,93,1,CPPASTTypeId,,<empty>
+212441,UNKNOWN,1,,PerformanceMilestone,19,<empty>,,107,1,CPPASTTypeId,,<empty>
+212516,UNKNOWN,1,,Environment*,34,<empty>,,126,1,CPPASTTypeId,,<empty>
+212644,UNKNOWN,1,,Environment*,34,<empty>,,168,1,CPPASTTypeId,,<empty>
+212734,UNKNOWN,1,,PerformanceGCKind,51,<empty>,,189,1,CPPASTTypeId,,<empty>
+212737,UNKNOWN,1,,PerformanceGCFlags,51,<empty>,,190,1,CPPASTTypeId,,<empty>
+212756,UNKNOWN,1,,Environment*,34,<empty>,,198,1,CPPASTTypeId,,<empty>
+212814,UNKNOWN,1,,void*,53,<empty>,,211,1,CPPASTTypeId,,<empty>
+212825,UNKNOWN,1,,void*,53,<empty>,,213,1,CPPASTTypeId,,<empty>
+213410,UNKNOWN,1,,double,3,<empty>,,340,1,CPPASTTypeId,,<empty>
+213416,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,340,1,CPPASTTypeId,,<empty>
+213509,UNKNOWN,1,,double,3,<empty>,,341,1,CPPASTTypeId,,<empty>
+213515,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,341,1,CPPASTTypeId,,<empty>
+213608,UNKNOWN,1,,double,3,<empty>,,342,1,CPPASTTypeId,,<empty>
+213614,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,342,1,CPPASTTypeId,,<empty>
+213707,UNKNOWN,1,,double,3,<empty>,,343,1,CPPASTTypeId,,<empty>
+213713,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,343,1,CPPASTTypeId,,<empty>
+213806,UNKNOWN,1,,double,3,<empty>,,345,1,CPPASTTypeId,,<empty>
+213812,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,345,1,CPPASTTypeId,,<empty>
+213905,UNKNOWN,1,,double,3,<empty>,,347,1,CPPASTTypeId,,<empty>
+213911,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,347,1,CPPASTTypeId,,<empty>
+214004,UNKNOWN,1,,double,3,<empty>,,349,1,CPPASTTypeId,,<empty>
+214010,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,349,1,CPPASTTypeId,,<empty>
+214103,UNKNOWN,1,,double,3,<empty>,,351,1,CPPASTTypeId,,<empty>
+214109,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,351,1,CPPASTTypeId,,<empty>
+214202,UNKNOWN,1,,double,3,<empty>,,353,1,CPPASTTypeId,,<empty>
+214208,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,353,1,CPPASTTypeId,,<empty>
+214301,UNKNOWN,1,,double,3,<empty>,,355,1,CPPASTTypeId,,<empty>
+214307,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,355,1,CPPASTTypeId,,<empty>
+214400,UNKNOWN,1,,double,3,<empty>,,357,1,CPPASTTypeId,,<empty>
+214406,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,357,1,CPPASTTypeId,,<empty>
+214427,UNKNOWN,-1,,),33,<empty>,,362,22,CPPASTProblemStatement,,<empty>
+214429,UNKNOWN,-1,,),32,<empty>,,367,24,CPPASTProblemStatement,,<empty>
+214434,UNKNOWN,1,,PropertyAttribute,19,<empty>,,371,1,CPPASTTypeId,,<empty>
+214519,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(
+    performance, node::performance::CreatePerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(performance,
+                              node::performance::CreatePerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(performance,
+                                node::performance::RegisterExternalReferences)",1,<empty>,,394,2,CPPASTProblemDeclaration,,<empty>
+214569,UNKNOWN,1,,DelayedTaskScheduler*,19,<empty>,,64,1,CPPASTTypeId,,<empty>
+214588,UNKNOWN,1,,uv_timer_t*,31,<empty>,,158,1,CPPASTTypeId,,<empty>
+214605,UNKNOWN,1,,uv_async_t*,26,<empty>,,316,1,CPPASTTypeId,,<empty>
+214611,UNKNOWN,1,,PerIsolatePlatformData*,21,<empty>,,318,1,CPPASTTypeId,,<empty>
+214655,UNKNOWN,1,,DelayedTask*,25,<empty>,,481,1,CPPASTTypeId,,<empty>
+214673,UNKNOWN,1,,uv_handle_t*,33,<empty>,,478,1,CPPASTTypeId,,<empty>
+214724,UNKNOWN,1,,PlatformWorkerData*,31,<empty>,,29,1,CPPASTTypeId,,<empty>
+215001,UNKNOWN,1,,uv_handle_t*,33,<empty>,,116,1,CPPASTTypeId,,<empty>
+215118,UNKNOWN,1,,Task*,44,<empty>,,155,1,CPPASTTypeId,,<empty>
+215126,UNKNOWN,1,,uv_handle_t*,31,<empty>,,157,1,CPPASTTypeId,,<empty>
+215336,UNKNOWN,1,,void*,36,<empty>,,234,1,CPPASTTypeId,,<empty>
+215340,UNKNOWN,1,,uv_handle_t*,29,<empty>,,235,1,CPPASTTypeId,,<empty>
+215357,UNKNOWN,1,,PerIsolatePlatformData*,36,<empty>,,244,1,CPPASTTypeId,,<empty>
+215514,UNKNOWN,1,,uv_handle_t*,29,<empty>,,313,1,CPPASTTypeId,,<empty>
+215980,UNKNOWN,1,,void*,39,<empty>,,468,1,CPPASTTypeId,,<empty>
+216001,UNKNOWN,1,,uv_handle_t*,31,<empty>,,473,1,CPPASTTypeId,,<empty>
+216491,UNKNOWN,5,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,5,CPPASTProblemDeclaration,,<empty>
+216493,UNKNOWN,7,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,7,CPPASTProblemDeclaration,,<empty>
+216495,UNKNOWN,9,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,9,CPPASTProblemDeclaration,,<empty>
+216497,UNKNOWN,11,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,11,CPPASTProblemDeclaration,,<empty>
+216499,UNKNOWN,13,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,13,CPPASTProblemDeclaration,,<empty>
+216501,UNKNOWN,15,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,15,CPPASTProblemDeclaration,,<empty>
+216503,UNKNOWN,17,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,17,CPPASTProblemDeclaration,,<empty>
+216505,UNKNOWN,19,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,19,CPPASTProblemDeclaration,,<empty>
+216507,UNKNOWN,21,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,21,CPPASTProblemDeclaration,,<empty>
+216509,UNKNOWN,23,,NODE_OFFSET_POSTMORTEM_METADATA(V),3,<empty>,,46,23,CPPASTProblemDeclaration,,<empty>
+216704,UNKNOWN,1,,const uint8_t*,57,<empty>,,27,1,CPPASTTypeId,,<empty>
+216867,UNKNOWN,1,,const uint8_t*,50,<empty>,,63,1,CPPASTTypeId,,<empty>
+216895,UNKNOWN,1,,const uint8_t*,50,<empty>,,69,1,CPPASTTypeId,,<empty>
+217054,UNKNOWN,1,,volatile void**,35,<empty>,,74,1,CPPASTTypeId,,<empty>
+217211,UNKNOWN,1,,double*,32,<empty>,,122,1,CPPASTTypeId,,<empty>
+217478,UNKNOWN,1,,double,41,<empty>,,179,1,CPPASTTypeId,,<empty>
+217531,UNKNOWN,1,,double*,32,<empty>,,195,1,CPPASTTypeId,,<empty>
+217558,UNKNOWN,1,,double,27,<empty>,,202,1,CPPASTTypeId,,<empty>
+217565,UNKNOWN,1,,double,27,<empty>,,203,1,CPPASTTypeId,,<empty>
+217575,UNKNOWN,1,,double,27,<empty>,,204,1,CPPASTTypeId,,<empty>
+217585,UNKNOWN,1,,double,27,<empty>,,205,1,CPPASTTypeId,,<empty>
+217600,UNKNOWN,1,,double,25,<empty>,,209,1,CPPASTTypeId,,<empty>
+217627,UNKNOWN,1,,double,43,<empty>,,215,1,CPPASTTypeId,,<empty>
+217722,UNKNOWN,1,,mode_t,23,<empty>,,237,1,CPPASTTypeId,,<empty>
+217742,UNKNOWN,1,,mode_t,29,<empty>,,240,1,CPPASTTypeId,,<empty>
+217774,UNKNOWN,1,,double,19,<empty>,,251,1,CPPASTTypeId,,<empty>
+218161,UNKNOWN,1,,double*,32,<empty>,,328,1,CPPASTTypeId,,<empty>
+218209,UNKNOWN,1,,double,27,<empty>,,332,1,CPPASTTypeId,,<empty>
+218218,UNKNOWN,1,,double,27,<empty>,,333,1,CPPASTTypeId,,<empty>
+218227,UNKNOWN,1,,double,27,<empty>,,334,1,CPPASTTypeId,,<empty>
+218236,UNKNOWN,1,,double,27,<empty>,,335,1,CPPASTTypeId,,<empty>
+218245,UNKNOWN,1,,double,27,<empty>,,336,1,CPPASTTypeId,,<empty>
+218254,UNKNOWN,1,,double,27,<empty>,,337,1,CPPASTTypeId,,<empty>
+218263,UNKNOWN,1,,double,27,<empty>,,338,1,CPPASTTypeId,,<empty>
+218272,UNKNOWN,1,,double,27,<empty>,,339,1,CPPASTTypeId,,<empty>
+218281,UNKNOWN,1,,double,28,<empty>,,340,1,CPPASTTypeId,,<empty>
+218290,UNKNOWN,1,,double,28,<empty>,,341,1,CPPASTTypeId,,<empty>
+218299,UNKNOWN,1,,double,28,<empty>,,342,1,CPPASTTypeId,,<empty>
+218308,UNKNOWN,1,,double,28,<empty>,,343,1,CPPASTTypeId,,<empty>
+218317,UNKNOWN,1,,double,28,<empty>,,344,1,CPPASTTypeId,,<empty>
+218326,UNKNOWN,1,,double,28,<empty>,,345,1,CPPASTTypeId,,<empty>
+218382,UNKNOWN,1,,ExitCode,24,<empty>,,462,1,CPPASTTypeId,,<empty>
+218540,UNKNOWN,1,,BindingData*,22,<empty>,,502,1,CPPASTTypeId,,<empty>
+218580,UNKNOWN,1,,uint32_t*,34,<empty>,,523,1,CPPASTTypeId,,<empty>
+218639,UNKNOWN,1,,uint64_t*,34,<empty>,,533,1,CPPASTTypeId,,<empty>
+219036,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(process_methods,
+                                    node::process::CreatePerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(process_methods,
+                              node::process::CreatePerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(process_methods,
+                                node::process::RegisterExternalReferences)",1,<empty>,,647,2,CPPASTProblemDeclaration,,<empty>
+219235,UNKNOWN,1,,int,35,<empty>,,73,1,CPPASTTypeId,,<empty>
+219414,UNKNOWN,-1,,),23,<empty>,,124,19,CPPASTProblemStatement,,<empty>
+219666,UNKNOWN,-1,,),24,<empty>,,222,14,CPPASTProblemStatement,,<empty>
+219761,UNKNOWN,2,,"NODE_BINDING_EXTERNAL_REFERENCE(process_object,
+                                node::RegisterProcessExternalReferences)",1,<empty>,,257,2,CPPASTProblemDeclaration,,<empty>
+219863,UNKNOWN,-1,,),39,<empty>,,33,2,CPPASTProblemStatement,,<empty>
+220224,UNKNOWN,-1,,),39,<empty>,,104,7,CPPASTProblemStatement,,<empty>
+220558,UNKNOWN,-1,,),37,<empty>,,288,15,CPPASTProblemDeclaration,,<empty>
+221224,UNKNOWN,1,,void*,56,<empty>,,197,1,CPPASTTypeId,,<empty>
+221243,UNKNOWN,1,,bool,21,<empty>,,202,1,CPPASTTypeId,,<empty>
+221256,UNKNOWN,1,,int64_t,43,<empty>,,204,1,CPPASTTypeId,,<empty>
+221392,UNKNOWN,1,,void**,22,<empty>,,263,1,CPPASTTypeId,,<empty>
+221704,UNKNOWN,1,,unsigned char,28,<empty>,,345,1,CPPASTTypeId,,<empty>
+221713,UNKNOWN,1,,unsigned char,28,<empty>,,346,1,CPPASTTypeId,,<empty>
+221722,UNKNOWN,1,,unsigned char,28,<empty>,,347,1,CPPASTTypeId,,<empty>
+221731,UNKNOWN,1,,unsigned char,28,<empty>,,348,1,CPPASTTypeId,,<empty>
+221740,UNKNOWN,1,,unsigned char,28,<empty>,,349,1,CPPASTTypeId,,<empty>
+221749,UNKNOWN,1,,unsigned char,28,<empty>,,350,1,CPPASTTypeId,,<empty>
+222318,UNKNOWN,1,,StackTrace::StackTraceOptions,19,<empty>,,473,1,CPPASTTypeId,,<empty>
+222678,UNKNOWN,1,,uintptr_t,61,<empty>,,557,1,CPPASTTypeId,,<empty>
+223481,UNKNOWN,-1,,),23,<empty>,,806,7,CPPASTProblemStatement,,<empty>
+224918,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(report, node::report::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(report,
+                                node::report::RegisterExternalReferences)",1,<empty>,,220,2,CPPASTProblemDeclaration,,<empty>
+224979,UNKNOWN,1,,sockaddr_in*,43,<empty>,,26,1,CPPASTTypeId,,<empty>
+224984,UNKNOWN,1,,sockaddr_in6*,43,<empty>,,27,1,CPPASTTypeId,,<empty>
+225024,UNKNOWN,1,,void*,35,<empty>,,34,1,CPPASTTypeId,,<empty>
+225028,UNKNOWN,1,,sockaddr_in*,44,<empty>,,35,1,CPPASTTypeId,,<empty>
+225032,UNKNOWN,1,,void*,35,<empty>,,36,1,CPPASTTypeId,,<empty>
+225036,UNKNOWN,1,,sockaddr_in6*,44,<empty>,,37,1,CPPASTTypeId,,<empty>
+225089,UNKNOWN,1,,sockaddr*,44,<empty>,,53,1,CPPASTTypeId,,<empty>
+225096,UNKNOWN,1,,uv_any_handle*,44,<empty>,,54,1,CPPASTTypeId,,<empty>
+225204,UNKNOWN,1,,uv_any_handle*,44,<empty>,,85,1,CPPASTTypeId,,<empty>
+225382,UNKNOWN,1,,uv_any_handle*,44,<empty>,,123,1,CPPASTTypeId,,<empty>
+225520,UNKNOWN,1,,JSONWriter*,36,<empty>,,160,1,CPPASTTypeId,,<empty>
+225526,UNKNOWN,1,,uv_any_handle*,44,<empty>,,161,1,CPPASTTypeId,,<empty>
+225544,UNKNOWN,1,,bool,50,<empty>,,165,1,CPPASTTypeId,,<empty>
+225553,UNKNOWN,1,,bool,54,<empty>,,166,1,CPPASTTypeId,,<empty>
+225563,UNKNOWN,1,,uint64_t,59,<empty>,,168,1,CPPASTTypeId,,<empty>
+225641,UNKNOWN,1,,int64_t,41,<empty>,,190,1,CPPASTTypeId,,<empty>
+225812,UNKNOWN,1,,int,47,<empty>,,235,1,CPPASTTypeId,,<empty>
+225881,UNKNOWN,1,,bool,39,<empty>,,256,1,CPPASTTypeId,,<empty>
+225893,UNKNOWN,1,,bool,39,<empty>,,258,1,CPPASTTypeId,,<empty>
+225913,UNKNOWN,1,,uv_udp_t*,53,<empty>,,263,1,CPPASTTypeId,,<empty>
+225922,UNKNOWN,1,,uv_udp_t*,54,<empty>,,266,1,CPPASTTypeId,,<empty>
+225950,UNKNOWN,1,,const char*,36,<empty>,,79,1,CPPASTTypeId,,<empty>
+225961,UNKNOWN,1,,const uint32_t*,44,<empty>,,82,1,CPPASTTypeId,,<empty>
+225973,UNKNOWN,1,,const SeaFlags*,26,<empty>,,85,1,CPPASTTypeId,,<empty>
+226039,UNKNOWN,1,,SeaFlags,22,<empty>,,49,1,CPPASTTypeId,,<empty>
+226042,UNKNOWN,1,,uint32_t,44,<empty>,,49,1,CPPASTTypeId,,<empty>
+226045,UNKNOWN,1,,uint32_t,44,<empty>,,50,1,CPPASTTypeId,,<empty>
+226055,UNKNOWN,1,,SeaFlags,22,<empty>,,54,1,CPPASTTypeId,,<empty>
+226058,UNKNOWN,1,,uint32_t,44,<empty>,,54,1,CPPASTTypeId,,<empty>
+226061,UNKNOWN,1,,uint32_t,44,<empty>,,55,1,CPPASTTypeId,,<empty>
+226156,UNKNOWN,1,,bool,42,<empty>,,116,1,CPPASTTypeId,,<empty>
+226443,UNKNOWN,1,,const char*,38,<empty>,,210,1,CPPASTTypeId,,<empty>
+226462,UNKNOWN,1,,const char*,26,<empty>,,212,1,CPPASTTypeId,,<empty>
+226607,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(sea, node::sea::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(sea, node::sea::RegisterExternalReferences)",1,<empty>,,261,2,CPPASTProblemDeclaration,,<empty>
+226716,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(SerializerContext)
+  SET_SELF_SIZE(SerializerContext)
+
+ private:
+  ValueSerializer serializer_;",3,<empty>,,58,16,CPPASTProblemDeclaration,,<empty>
+226779,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(DeserializerContext)
+  SET_SELF_SIZE(DeserializerContext)
+
+ private:
+  const uint8_t* data_;",3,<empty>,,87,13,CPPASTProblemDeclaration,,<empty>
+227210,UNKNOWN,1,,char*,43,<empty>,,213,1,CPPASTTypeId,,<empty>
+228050,UNKNOWN,1,,uint32_t,29,<empty>,,408,1,CPPASTTypeId,,<empty>
+228058,UNKNOWN,1,,uint32_t,29,<empty>,,409,1,CPPASTTypeId,,<empty>
+228225,UNKNOWN,1,,const uint8_t*,46,<empty>,,443,1,CPPASTTypeId,,<empty>
+228247,UNKNOWN,1,,uint32_t,39,<empty>,,447,1,CPPASTTypeId,,<empty>
+228615,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(serdes, node::serdes::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(serdes,
+                                node::serdes::RegisterExternalReferences)",1,<empty>,,541,2,CPPASTProblemDeclaration,,<empty>
+228795,UNKNOWN,-1,,),37,<empty>,,101,10,CPPASTProblemDeclaration,,<empty>
+228908,UNKNOWN,1,,SnapshotableObject*,43,<empty>,,1154,1,CPPASTTypeId,,<empty>
+228926,UNKNOWN,1,,int,36,<empty>,,1160,1,CPPASTTypeId,,<empty>
+228964,UNKNOWN,1,,int,38,<empty>,,1169,1,CPPASTTypeId,,<empty>
+229496,UNKNOWN,1,,size_t,52,<empty>,,195,1,CPPASTTypeId,,<empty>
+230367,UNKNOWN,1,,SnapshotMetadata::Type,29,<empty>,,534,1,CPPASTTypeId,,<empty>
+230428,UNKNOWN,-1,,"Debug(""Write snapshot type %"" PRIu8 ""\n"", static_cast<uint8_t>(data.type));",3,<empty>,,557,4,CPPASTProblemStatement,,<empty>
+230436,UNKNOWN,1,,uint8_t,57,<empty>,,558,1,CPPASTTypeId,,<empty>
+230476,UNKNOWN,-1,,"Debug(""Write V8 cached data version tag %"" PRIx32 ""\n"",
+        data.v8_cache_version_tag);",3,<empty>,,565,12,CPPASTProblemStatement,,<empty>
+230502,UNKNOWN,-1,,"w.Debug(""Write magic %"" PRIx32 ""\n"", kMagic);",3,<empty>,,589,5,CPPASTProblemStatement,,<empty>
+230703,UNKNOWN,-1,,"r.Debug(""Read magic %"" PRIx32 ""\n"", magic);",3,<empty>,,636,7,CPPASTProblemStatement,,<empty>
+230882,UNKNOWN,-1,,"fprintf(stderr,
+            ""Failed to load the startup snapshot because it was built with ""
+            ""a different version of V8 or with different V8 configurations.\n""
+            ""Expected tag %"" PRIx32 "", read %"" PRIx32 ""\n"",
+            current_cache_version,
+            metadata.v8_cache_version_tag);",5,<empty>,,689,1,CPPASTProblemStatement,,<empty>
+231032,UNKNOWN,1,,double,53,<empty>,,730,1,CPPASTTypeId,,<empty>
+231049,UNKNOWN,1,,double,54,<empty>,,732,1,CPPASTTypeId,,<empty>
+231061,UNKNOWN,1,,double,49,<empty>,,735,1,CPPASTTypeId,,<empty>
+231277,UNKNOWN,1,,v8::StartupData*,18,<empty>,,841,1,CPPASTTypeId,,<empty>
+231441,UNKNOWN,1,,uint8_t,55,<empty>,,903,1,CPPASTTypeId,,<empty>
+231454,UNKNOWN,1,,SnapshotMetadata::Type,19,<empty>,,910,1,CPPASTTypeId,,<empty>
+231810,UNKNOWN,-1,,),32,<empty>,,1041,2,CPPASTProblemStatement,,<empty>
+231845,UNKNOWN,1,,int,34,<empty>,,1057,1,CPPASTTypeId,,<empty>
+231850,UNKNOWN,1,,int,34,<empty>,,1059,1,CPPASTTypeId,,<empty>
+231877,UNKNOWN,1,,Environment*,38,<empty>,,1068,1,CPPASTTypeId,,<empty>
+231883,UNKNOWN,1,,const InternalFieldInfoBase*,24,<empty>,,1070,1,CPPASTTypeId,,<empty>
+231893,UNKNOWN,-1,,),32,<empty>,,1088,2,CPPASTProblemStatement,,<empty>
+231896,UNKNOWN,-1,,"fprintf(stderr,
+              ""Unknown embedder object type %"" PRIu8 "", possibly caused by ""
+              ""mismatched Node.js versions\n"",
+              static_cast<uint8_t>(info->type));",7,<empty>,,1095,1,CPPASTProblemStatement,,<empty>
+231933,UNKNOWN,1,,int,34,<empty>,,1119,1,CPPASTTypeId,,<empty>
+231960,UNKNOWN,1,,BaseObject*,22,<empty>,,1125,1,CPPASTTypeId,,<empty>
+231967,UNKNOWN,1,,SnapshotableObject*,41,<empty>,,1126,1,CPPASTTypeId,,<empty>
+232000,UNKNOWN,1,,int,34,<empty>,,1136,1,CPPASTTypeId,,<empty>
+232008,UNKNOWN,1,,const char*,39,<empty>,,1137,1,CPPASTTypeId,,<empty>
+232011,UNKNOWN,1,,int,34,<empty>,,1138,1,CPPASTTypeId,,<empty>
+232398,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(mksnapshot, node::mksnapshot::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(mksnapshot,
+                                node::mksnapshot::RegisterExternalReferences)",1,<empty>,,1275,2,CPPASTProblemDeclaration,,<empty>
+232479,UNKNOWN,1,,size_t,26,<empty>,,33,1,CPPASTTypeId,,<empty>
+232516,UNKNOWN,1,,sockaddr_in*,28,<empty>,,50,1,CPPASTTypeId,,<empty>
+232527,UNKNOWN,1,,sockaddr_in6*,28,<empty>,,55,1,CPPASTTypeId,,<empty>
+232565,UNKNOWN,1,,sockaddr_storage*,38,<empty>,,74,1,CPPASTTypeId,,<empty>
+232592,UNKNOWN,1,,const sockaddr_in*,28,<empty>,,82,1,CPPASTTypeId,,<empty>
+232616,UNKNOWN,1,,const sockaddr_in6*,28,<empty>,,88,1,CPPASTTypeId,,<empty>
+232625,UNKNOWN,1,,const uint64_t*,28,<empty>,,90,1,CPPASTTypeId,,<empty>
+232710,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,123,1,CPPASTTypeId,,<empty>
+232719,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,125,1,CPPASTTypeId,,<empty>
+232748,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,133,1,CPPASTTypeId,,<empty>
+232757,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,135,1,CPPASTTypeId,,<empty>
+232785,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,143,1,CPPASTTypeId,,<empty>
+232794,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,145,1,CPPASTTypeId,,<empty>
+232803,UNKNOWN,1,,const uint8_t*,24,<empty>,,148,1,CPPASTTypeId,,<empty>
+232840,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,160,1,CPPASTTypeId,,<empty>
+232849,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,162,1,CPPASTTypeId,,<empty>
+232914,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,178,1,CPPASTTypeId,,<empty>
+232923,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,180,1,CPPASTTypeId,,<empty>
+232981,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,193,1,CPPASTTypeId,,<empty>
+232990,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,195,1,CPPASTTypeId,,<empty>
+232999,UNKNOWN,1,,const uint8_t*,24,<empty>,,198,1,CPPASTTypeId,,<empty>
+233086,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,222,1,CPPASTTypeId,,<empty>
+233095,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,224,1,CPPASTTypeId,,<empty>
+233170,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,244,1,CPPASTTypeId,,<empty>
+233179,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,246,1,CPPASTTypeId,,<empty>
+233204,UNKNOWN,1,,const uint8_t*,40,<empty>,,251,1,CPPASTTypeId,,<empty>
+233214,UNKNOWN,1,,const uint8_t*,40,<empty>,,253,1,CPPASTTypeId,,<empty>
+233284,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,272,1,CPPASTTypeId,,<empty>
+233293,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,274,1,CPPASTTypeId,,<empty>
+233351,UNKNOWN,1,,const uint8_t*,40,<empty>,,284,1,CPPASTTypeId,,<empty>
+233407,UNKNOWN,1,,const sockaddr_in6*,24,<empty>,,300,1,CPPASTTypeId,,<empty>
+233416,UNKNOWN,1,,const sockaddr_in*,24,<empty>,,302,1,CPPASTTypeId,,<empty>
+233425,UNKNOWN,1,,const uint8_t*,24,<empty>,,305,1,CPPASTTypeId,,<empty>
+235512,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(
+    block_list, node::SocketAddressBlockListWrap::Initialize)",1,<empty>,,887,2,CPPASTProblemDeclaration,,<empty>
+235913,UNKNOWN,-1,,),34,<empty>,,25,4,CPPASTProblemStatement,,<empty>
+235916,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(symbols, node::symbols::Initialize)",1,<empty>,,32,2,CPPASTProblemDeclaration,,<empty>
+236729,UNKNOWN,1,,double,3,<empty>,,207,1,CPPASTTypeId,,<empty>
+236735,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,207,1,CPPASTTypeId,,<empty>
+236828,UNKNOWN,1,,double,3,<empty>,,208,1,CPPASTTypeId,,<empty>
+236834,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,208,1,CPPASTTypeId,,<empty>
+236927,UNKNOWN,1,,double,3,<empty>,,209,1,CPPASTTypeId,,<empty>
+236933,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,209,1,CPPASTTypeId,,<empty>
+237026,UNKNOWN,1,,double,3,<empty>,,210,1,CPPASTTypeId,,<empty>
+237032,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,210,1,CPPASTTypeId,,<empty>
+237099,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(task_queue, node::task_queue::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(task_queue,
+                                node::task_queue::RegisterExternalReferences)",1,<empty>,,229,2,CPPASTProblemDeclaration,,<empty>
+237194,UNKNOWN,-1,,),39,<empty>,,47,9,CPPASTProblemDeclaration,,<empty>
+237196,UNKNOWN,-1,,),32,<empty>,,48,11,CPPASTProblemDeclaration,,<empty>
+237681,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(trace_events,
+                                    node::NodeCategorySet::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(
+    trace_events, node::NodeCategorySet::RegisterExternalReferences)",1,<empty>,,170,2,CPPASTProblemDeclaration,,<empty>
+238505,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(types, node::InitializeTypes)
+NODE_BINDING_EXTERNAL_REFERENCE(types, node::RegisterTypesExternalReferences)",1,<empty>,,88,2,CPPASTProblemDeclaration,,<empty>
+239502,UNKNOWN,1,,enum url_update_action,47,<empty>,,246,1,CPPASTTypeId,,<empty>
+239967,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(
+    url, node::url::BindingData::CreatePerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(
+    url, node::url::BindingData::CreatePerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(
+    url, node::url::BindingData::RegisterExternalReferences)",1,<empty>,,373,2,CPPASTProblemDeclaration,,<empty>
+240012,UNKNOWN,-1,,"CHAR_TEST(16, IsUnicodeTrail, (ch & 0xFC00) == 0xDC00)
+
+// If a UTF-16 character is a surrogate.
+CHAR_TEST(16, IsUnicodeSurrogate, (ch & 0xF800) == 0xD800)
+
+// If a UTF-16 surrogate is a low/trailing one.
+CHAR_TEST(16, IsUnicodeSurrogateTrail, (ch & 0x400) != 0)
+
+static void GetOwnNonIndexProperties(
+    const FunctionCallbackInfo<Value>& args) {
+  Environment* env = Environment::GetCurrent(args);
+  Local<Context> context = env->context();
+
+  CHECK(args[0]->IsObject());
+  CHECK(args[1]->IsUint32());
+
+  Local<Object> object = args[0].As<Object>();
+
+  Local<Array> properties;
+
+  PropertyFilter filter =
+    static_cast<PropertyFilter>(args[1].As<Uint32>()->Value());
+
+  if (!object->GetPropertyNames(
+        context, KeyCollectionMode::kOwnOnly,
+        filter,
+        IndexFilter::kSkipIndices)
+          .ToLocal(&properties)) {
+    return;
+  }
+  args.GetReturnValue().Set(properties);
+}",1,<empty>,,43,3,CPPASTProblemDeclaration,,<empty>
+240095,UNKNOWN,1,,uint64_t,37,<empty>,,93,1,CPPASTTypeId,,<empty>
+240640,UNKNOWN,1,,InternalFieldInfo*,51,<empty>,,242,1,CPPASTTypeId,,<empty>
+241276,UNKNOWN,-1,,),44,<empty>,,385,3,CPPASTProblemStatement,,<empty>
+241718,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(util, node::util::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(util, node::util::RegisterExternalReferences)",1,<empty>,,480,2,CPPASTProblemDeclaration,,<empty>
+242005,UNKNOWN,1,,InternalFieldInfo*,48,<empty>,,159,1,CPPASTTypeId,,<empty>
+242186,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242196,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242206,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242216,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242226,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242236,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242246,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242256,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242266,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242276,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242286,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242296,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242306,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242316,UNKNOWN,1,,double,3,<empty>,,203,1,CPPASTTypeId,,<empty>
+242355,UNKNOWN,1,,size_t,36,<empty>,,213,1,CPPASTTypeId,,<empty>
+242385,UNKNOWN,1,,double,3,<empty>,,219,1,CPPASTTypeId,,<empty>
+242395,UNKNOWN,1,,double,3,<empty>,,219,1,CPPASTTypeId,,<empty>
+242405,UNKNOWN,1,,double,3,<empty>,,219,1,CPPASTTypeId,,<empty>
+242415,UNKNOWN,1,,double,3,<empty>,,219,1,CPPASTTypeId,,<empty>
+242458,UNKNOWN,1,,double,3,<empty>,,230,1,CPPASTTypeId,,<empty>
+242468,UNKNOWN,1,,double,3,<empty>,,230,1,CPPASTTypeId,,<empty>
+242478,UNKNOWN,1,,double,3,<empty>,,230,1,CPPASTTypeId,,<empty>
+242488,UNKNOWN,1,,double,3,<empty>,,230,1,CPPASTTypeId,,<empty>
+242521,UNKNOWN,1,,size_t,46,<empty>,,238,1,CPPASTTypeId,,<empty>
+242791,UNKNOWN,1,,GCProfiler*,38,<empty>,,302,1,CPPASTTypeId,,<empty>
+242853,UNKNOWN,1,,GCProfiler*,38,<empty>,,320,1,CPPASTTypeId,,<empty>
+243089,UNKNOWN,1,,void*,53,<empty>,,388,1,CPPASTTypeId,,<empty>
+243100,UNKNOWN,1,,void*,53,<empty>,,390,1,CPPASTTypeId,,<empty>
+244019,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(v8, node::v8_utils::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(v8, node::v8_utils::RegisterExternalReferences)",1,<empty>,,507,2,CPPASTProblemDeclaration,,<empty>
+244552,UNKNOWN,1,,const char**,16,<empty>,,144,1,CPPASTTypeId,,<empty>
+244635,UNKNOWN,1,,const char**,29,<empty>,,156,1,CPPASTTypeId,,<empty>
+244876,UNKNOWN,1,,char*,23,<empty>,,189,1,CPPASTTypeId,,<empty>
+244901,UNKNOWN,1,,char*,21,<empty>,,194,1,CPPASTTypeId,,<empty>
+244934,UNKNOWN,1,,char*,23,<empty>,,199,1,CPPASTTypeId,,<empty>
+244944,UNKNOWN,1,,char*,23,<empty>,,200,1,CPPASTTypeId,,<empty>
+245069,UNKNOWN,1,,WASI*,33,<empty>,,246,1,CPPASTTypeId,,<empty>
+245125,UNKNOWN,1,,char*,30,<empty>,,258,1,CPPASTTypeId,,<empty>
+245420,UNKNOWN,1,,char*,32,<empty>,,378,1,CPPASTTypeId,,<empty>
+245574,UNKNOWN,1,,uint32_t,23,<empty>,,412,1,CPPASTTypeId,,<empty>
+245927,UNKNOWN,1,,uint32_t,37,<empty>,,488,1,CPPASTTypeId,,<empty>
+247575,UNKNOWN,1,,uvwasi_oflags_t,53,<empty>,,970,1,CPPASTTypeId,,<empty>
+247580,UNKNOWN,1,,uvwasi_fdflags_t,53,<empty>,,973,1,CPPASTTypeId,,<empty>
+249224,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(wasi, node::wasi::InitializePreview1)",1,<empty>,,1334,2,CPPASTProblemDeclaration,,<empty>
+249651,UNKNOWN,1,,const uint8_t*,48,<empty>,,124,1,CPPASTTypeId,,<empty>
+249898,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(wasm_web_api,
+                                    node::wasm_web_api::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(wasm_web_api,
+                                node::wasm_web_api::RegisterExternalReferences)",1,<empty>,,210,2,CPPASTProblemDeclaration,,<empty>
+249964,UNKNOWN,1,,TraceSigintWatchdog*,49,<empty>,,190,1,CPPASTTypeId,,<empty>
+250084,UNKNOWN,1,,uv_handle_t*,29,<empty>,,73,1,CPPASTTypeId,,<empty>
+250102,UNKNOWN,1,,Watchdog*,30,<empty>,,83,1,CPPASTTypeId,,<empty>
+250112,UNKNOWN,1,,uv_handle_t*,29,<empty>,,91,1,CPPASTTypeId,,<empty>
+250398,UNKNOWN,1,,uv_handle_t*,29,<empty>,,179,1,CPPASTTypeId,,<empty>
+250509,UNKNOWN,-1,,BOOL,1,<empty>,,253,15,CPPASTProblemDeclaration,,<empty>
+250771,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(watchdog, node::watchdog::Initialize)",1,<empty>,,437,2,CPPASTProblemDeclaration,,<empty>
+250798,UNKNOWN,1,,bool*,22,<empty>,,216,1,CPPASTTypeId,,<empty>
+250847,UNKNOWN,1,,ExitCode,28,<empty>,,361,1,CPPASTTypeId,,<empty>
+250897,UNKNOWN,1,,Worker*,29,<empty>,,668,1,CPPASTTypeId,,<empty>
+250903,UNKNOWN,1,,uintptr_t,50,<empty>,,669,1,CPPASTTypeId,,<empty>
+251169,UNKNOWN,1,,double,57,<empty>,,85,1,CPPASTTypeId,,<empty>
+251233,UNKNOWN,1,,uint32_t*,49,<empty>,,106,1,CPPASTTypeId,,<empty>
+251247,UNKNOWN,1,,size_t,21,<empty>,,110,1,CPPASTTypeId,,<empty>
+251277,UNKNOWN,1,,size_t,21,<empty>,,118,1,CPPASTTypeId,,<empty>
+251307,UNKNOWN,1,,size_t,21,<empty>,,126,1,CPPASTTypeId,,<empty>
+251628,UNKNOWN,1,,Worker*,32,<empty>,,250,1,CPPASTTypeId,,<empty>
+251662,UNKNOWN,-1,,"Debug(env,
+          DebugCategory::DIAGNOSTICS,
+          ""Throwing ERR_WORKER_OUT_OF_MEMORY, ""
+          ""new_limit=%"" PRIu64 ""\n"",
+          static_cast<uint64_t>(new_limit));",5,<empty>,,258,2,CPPASTProblemStatement,,<empty>
+251788,UNKNOWN,1,,int,29,<empty>,,323,1,CPPASTTypeId,,<empty>
+251884,UNKNOWN,1,,EnvironmentFlags::Flags,25,<empty>,,354,1,CPPASTTypeId,,<empty>
+252013,UNKNOWN,1,,int,25,<empty>,,394,1,CPPASTTypeId,,<empty>
+252155,UNKNOWN,1,,int,52,<empty>,,439,1,CPPASTTypeId,,<empty>
+253087,UNKNOWN,1,,size_t,23,<empty>,,653,1,CPPASTTypeId,,<empty>
+253140,UNKNOWN,1,,void*,18,<empty>,,685,1,CPPASTTypeId,,<empty>
+253416,UNKNOWN,1,,int,21,<empty>,,762,1,CPPASTTypeId,,<empty>
+253460,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(WorkerHeapSnapshotTaker)
+  SET_SELF_SIZE(WorkerHeapSnapshotTaker)",3,<empty>,,790,2,CPPASTProblemDeclaration,,<empty>
+254000,UNKNOWN,1,,double,46,<empty>,,954,1,CPPASTTypeId,,<empty>
+254154,UNKNOWN,1,,double,3,<empty>,,977,1,CPPASTTypeId,,<empty>
+254160,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,977,1,CPPASTTypeId,,<empty>
+254253,UNKNOWN,1,,double,3,<empty>,,978,1,CPPASTTypeId,,<empty>
+254259,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,978,1,CPPASTTypeId,,<empty>
+254352,UNKNOWN,1,,double,3,<empty>,,979,1,CPPASTTypeId,,<empty>
+254358,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,979,1,CPPASTTypeId,,<empty>
+254451,UNKNOWN,1,,double,3,<empty>,,980,1,CPPASTTypeId,,<empty>
+254457,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,980,1,CPPASTTypeId,,<empty>
+254550,UNKNOWN,1,,double,3,<empty>,,981,1,CPPASTTypeId,,<empty>
+254556,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,981,1,CPPASTTypeId,,<empty>
+254658,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(
+    worker, node::worker::CreateWorkerPerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(worker,
+                              node::worker::CreateWorkerPerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(worker,
+                                node::worker::RegisterExternalReferences)",1,<empty>,,1002,2,CPPASTProblemDeclaration,,<empty>
+254922,UNKNOWN,-1,,),35,<empty>,,150,14,CPPASTProblemDeclaration,,<empty>
+254924,UNKNOWN,-1,,),28,<empty>,,151,16,CPPASTProblemDeclaration,,<empty>
+255115,UNKNOWN,-1,,),44,<empty>,,220,8,CPPASTProblemDeclaration,,<empty>
+255117,UNKNOWN,-1,,),37,<empty>,,221,10,CPPASTProblemDeclaration,,<empty>
+255118,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()  // state_ is covered through allocation tracking.
+
+ private:
+  bool last_result_ = false;",3,<empty>,,222,11,CPPASTProblemDeclaration,,<empty>
+255151,UNKNOWN,-1,,),44,<empty>,,240,8,CPPASTProblemDeclaration,,<empty>
+255153,UNKNOWN,-1,,),37,<empty>,,241,10,CPPASTProblemDeclaration,,<empty>
+255154,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()  // state_ is covered through allocation tracking.
+
+ private:
+  BrotliDecoderResult last_result_ = BROTLI_DECODER_RESULT_SUCCESS;",3,<empty>,,242,11,CPPASTProblemDeclaration,,<empty>
+255871,UNKNOWN,1,,size_t,47,<empty>,,486,1,CPPASTTypeId,,<empty>
+255874,UNKNOWN,1,,size_t,47,<empty>,,487,1,CPPASTTypeId,,<empty>
+255894,UNKNOWN,1,,CompressionStream*,42,<empty>,,493,1,CPPASTTypeId,,<empty>
+255912,UNKNOWN,1,,size_t*,23,<empty>,,496,1,CPPASTTypeId,,<empty>
+255947,UNKNOWN,1,,CompressionStream*,42,<empty>,,504,1,CPPASTTypeId,,<empty>
+255954,UNKNOWN,1,,char*,38,<empty>,,505,1,CPPASTTypeId,,<empty>
+255963,UNKNOWN,1,,size_t*,42,<empty>,,506,1,CPPASTTypeId,,<empty>
+256005,UNKNOWN,1,,size_t,59,<empty>,,518,1,CPPASTTypeId,,<empty>
+256137,UNKNOWN,1,,node_zlib_mode,21,<empty>,,566,1,CPPASTTypeId,,<empty>
+256302,UNKNOWN,1,,uint32_t*,42,<empty>,,609,1,CPPASTTypeId,,<empty>
+256340,UNKNOWN,1,,unsigned char*,28,<empty>,,617,1,CPPASTTypeId,,<empty>
+256383,UNKNOWN,1,,CompressionStream*,48,<empty>,,627,1,CPPASTTypeId,,<empty>
+256499,UNKNOWN,-1,,),34,<empty>,,648,6,CPPASTProblemDeclaration,,<empty>
+256501,UNKNOWN,-1,,),27,<empty>,,649,8,CPPASTProblemDeclaration,,<empty>
+256547,UNKNOWN,1,,node_zlib_mode,21,<empty>,,672,1,CPPASTTypeId,,<empty>
+256600,UNKNOWN,1,,uint32_t*,47,<empty>,,682,1,CPPASTTypeId,,<empty>
+256653,UNKNOWN,1,,CompressionStream<CompressionContext>*,23,<empty>,,693,1,CPPASTTypeId,,<empty>
+256686,UNKNOWN,1,,uint32_t*,45,<empty>,,701,1,CPPASTTypeId,,<empty>
+256714,UNKNOWN,1,,size_t,33,<empty>,,704,1,CPPASTTypeId,,<empty>
+256726,UNKNOWN,1,,uint32_t,34,<empty>,,705,1,CPPASTTypeId,,<empty>
+256780,UNKNOWN,-1,,),47,<empty>,,725,8,CPPASTProblemDeclaration,,<empty>
+256782,UNKNOWN,-1,,),40,<empty>,,726,10,CPPASTProblemDeclaration,,<empty>
+257094,UNKNOWN,1,,Bytef*,30,<empty>,,868,1,CPPASTTypeId,,<empty>
+257096,UNKNOWN,1,,const Bytef*,55,<empty>,,868,1,CPPASTTypeId,,<empty>
+257108,UNKNOWN,1,,Bytef*,37,<empty>,,870,1,CPPASTTypeId,,<empty>
+257644,UNKNOWN,1,,const uint8_t*,31,<empty>,,1103,1,CPPASTTypeId,,<empty>
+257649,UNKNOWN,1,,uint8_t*,32,<empty>,,1104,1,CPPASTTypeId,,<empty>
+257665,UNKNOWN,1,,BrotliEncoderOperation,24,<empty>,,1111,1,CPPASTTypeId,,<empty>
+257789,UNKNOWN,1,,BrotliEncoderParameter,46,<empty>,,1164,1,CPPASTTypeId,,<empty>
+257952,UNKNOWN,1,,BrotliDecoderParameter,46,<empty>,,1229,1,CPPASTTypeId,,<empty>
+257984,UNKNOWN,1,,int,41,<empty>,,1243,1,CPPASTTypeId,,<empty>
+258314,UNKNOWN,1,,double,3,<empty>,,1312,1,CPPASTTypeId,,<empty>
+258320,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1312,1,CPPASTTypeId,,<empty>
+258413,UNKNOWN,1,,double,3,<empty>,,1313,1,CPPASTTypeId,,<empty>
+258419,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1313,1,CPPASTTypeId,,<empty>
+258512,UNKNOWN,1,,double,3,<empty>,,1314,1,CPPASTTypeId,,<empty>
+258518,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1314,1,CPPASTTypeId,,<empty>
+258611,UNKNOWN,1,,double,3,<empty>,,1315,1,CPPASTTypeId,,<empty>
+258617,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1315,1,CPPASTTypeId,,<empty>
+258710,UNKNOWN,1,,double,3,<empty>,,1316,1,CPPASTTypeId,,<empty>
+258716,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1316,1,CPPASTTypeId,,<empty>
+258809,UNKNOWN,1,,double,3,<empty>,,1317,1,CPPASTTypeId,,<empty>
+258815,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1317,1,CPPASTTypeId,,<empty>
+258908,UNKNOWN,1,,double,3,<empty>,,1320,1,CPPASTTypeId,,<empty>
+258914,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1320,1,CPPASTTypeId,,<empty>
+259007,UNKNOWN,1,,double,3,<empty>,,1321,1,CPPASTTypeId,,<empty>
+259013,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1321,1,CPPASTTypeId,,<empty>
+259106,UNKNOWN,1,,double,3,<empty>,,1322,1,CPPASTTypeId,,<empty>
+259112,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1322,1,CPPASTTypeId,,<empty>
+259205,UNKNOWN,1,,double,3,<empty>,,1323,1,CPPASTTypeId,,<empty>
+259211,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1323,1,CPPASTTypeId,,<empty>
+259304,UNKNOWN,1,,double,3,<empty>,,1324,1,CPPASTTypeId,,<empty>
+259310,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1324,1,CPPASTTypeId,,<empty>
+259403,UNKNOWN,1,,double,3,<empty>,,1325,1,CPPASTTypeId,,<empty>
+259409,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1325,1,CPPASTTypeId,,<empty>
+259502,UNKNOWN,1,,double,3,<empty>,,1326,1,CPPASTTypeId,,<empty>
+259508,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1326,1,CPPASTTypeId,,<empty>
+259601,UNKNOWN,1,,double,3,<empty>,,1327,1,CPPASTTypeId,,<empty>
+259607,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1327,1,CPPASTTypeId,,<empty>
+259700,UNKNOWN,1,,double,3,<empty>,,1328,1,CPPASTTypeId,,<empty>
+259706,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1328,1,CPPASTTypeId,,<empty>
+259799,UNKNOWN,1,,double,3,<empty>,,1330,1,CPPASTTypeId,,<empty>
+259805,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1330,1,CPPASTTypeId,,<empty>
+259898,UNKNOWN,1,,double,3,<empty>,,1331,1,CPPASTTypeId,,<empty>
+259904,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1331,1,CPPASTTypeId,,<empty>
+259997,UNKNOWN,1,,double,3,<empty>,,1332,1,CPPASTTypeId,,<empty>
+260003,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1332,1,CPPASTTypeId,,<empty>
+260096,UNKNOWN,1,,double,3,<empty>,,1333,1,CPPASTTypeId,,<empty>
+260102,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1333,1,CPPASTTypeId,,<empty>
+260195,UNKNOWN,1,,double,3,<empty>,,1334,1,CPPASTTypeId,,<empty>
+260201,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1334,1,CPPASTTypeId,,<empty>
+260294,UNKNOWN,1,,double,3,<empty>,,1335,1,CPPASTTypeId,,<empty>
+260300,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1335,1,CPPASTTypeId,,<empty>
+260393,UNKNOWN,1,,double,3,<empty>,,1336,1,CPPASTTypeId,,<empty>
+260399,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1336,1,CPPASTTypeId,,<empty>
+260492,UNKNOWN,1,,double,3,<empty>,,1337,1,CPPASTTypeId,,<empty>
+260498,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1337,1,CPPASTTypeId,,<empty>
+260591,UNKNOWN,1,,double,3,<empty>,,1338,1,CPPASTTypeId,,<empty>
+260597,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1338,1,CPPASTTypeId,,<empty>
+260690,UNKNOWN,1,,double,3,<empty>,,1339,1,CPPASTTypeId,,<empty>
+260696,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1339,1,CPPASTTypeId,,<empty>
+260789,UNKNOWN,1,,double,3,<empty>,,1341,1,CPPASTTypeId,,<empty>
+260795,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1341,1,CPPASTTypeId,,<empty>
+260888,UNKNOWN,1,,double,3,<empty>,,1342,1,CPPASTTypeId,,<empty>
+260894,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1342,1,CPPASTTypeId,,<empty>
+260987,UNKNOWN,1,,double,3,<empty>,,1343,1,CPPASTTypeId,,<empty>
+260993,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1343,1,CPPASTTypeId,,<empty>
+261086,UNKNOWN,1,,double,3,<empty>,,1344,1,CPPASTTypeId,,<empty>
+261092,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1344,1,CPPASTTypeId,,<empty>
+261185,UNKNOWN,1,,double,3,<empty>,,1345,1,CPPASTTypeId,,<empty>
+261191,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1345,1,CPPASTTypeId,,<empty>
+261284,UNKNOWN,1,,double,3,<empty>,,1346,1,CPPASTTypeId,,<empty>
+261290,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1346,1,CPPASTTypeId,,<empty>
+261383,UNKNOWN,1,,double,3,<empty>,,1347,1,CPPASTTypeId,,<empty>
+261389,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1347,1,CPPASTTypeId,,<empty>
+261482,UNKNOWN,1,,double,3,<empty>,,1348,1,CPPASTTypeId,,<empty>
+261488,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1348,1,CPPASTTypeId,,<empty>
+261581,UNKNOWN,1,,double,3,<empty>,,1349,1,CPPASTTypeId,,<empty>
+261587,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1349,1,CPPASTTypeId,,<empty>
+261679,UNKNOWN,1,,double,3,<empty>,,1351,1,CPPASTTypeId,,<empty>
+261685,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1351,1,CPPASTTypeId,,<empty>
+261777,UNKNOWN,1,,double,3,<empty>,,1352,1,CPPASTTypeId,,<empty>
+261783,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1352,1,CPPASTTypeId,,<empty>
+261875,UNKNOWN,1,,double,3,<empty>,,1353,1,CPPASTTypeId,,<empty>
+261881,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1353,1,CPPASTTypeId,,<empty>
+261973,UNKNOWN,1,,double,3,<empty>,,1354,1,CPPASTTypeId,,<empty>
+261979,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1354,1,CPPASTTypeId,,<empty>
+262071,UNKNOWN,1,,double,3,<empty>,,1355,1,CPPASTTypeId,,<empty>
+262082,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1355,1,CPPASTTypeId,,<empty>
+262174,UNKNOWN,1,,double,3,<empty>,,1356,1,CPPASTTypeId,,<empty>
+262182,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1356,1,CPPASTTypeId,,<empty>
+262274,UNKNOWN,1,,double,3,<empty>,,1357,1,CPPASTTypeId,,<empty>
+262280,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1357,1,CPPASTTypeId,,<empty>
+262372,UNKNOWN,1,,double,3,<empty>,,1358,1,CPPASTTypeId,,<empty>
+262378,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1358,1,CPPASTTypeId,,<empty>
+262470,UNKNOWN,1,,double,3,<empty>,,1359,1,CPPASTTypeId,,<empty>
+262476,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1359,1,CPPASTTypeId,,<empty>
+262568,UNKNOWN,1,,double,3,<empty>,,1360,1,CPPASTTypeId,,<empty>
+262575,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1360,1,CPPASTTypeId,,<empty>
+262667,UNKNOWN,1,,double,3,<empty>,,1361,1,CPPASTTypeId,,<empty>
+262673,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1361,1,CPPASTTypeId,,<empty>
+262765,UNKNOWN,1,,double,3,<empty>,,1362,1,CPPASTTypeId,,<empty>
+262771,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1362,1,CPPASTTypeId,,<empty>
+262864,UNKNOWN,1,,double,3,<empty>,,1365,1,CPPASTTypeId,,<empty>
+262870,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1365,1,CPPASTTypeId,,<empty>
+262963,UNKNOWN,1,,double,3,<empty>,,1366,1,CPPASTTypeId,,<empty>
+262969,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1366,1,CPPASTTypeId,,<empty>
+263062,UNKNOWN,1,,double,3,<empty>,,1367,1,CPPASTTypeId,,<empty>
+263068,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1367,1,CPPASTTypeId,,<empty>
+263161,UNKNOWN,1,,double,3,<empty>,,1368,1,CPPASTTypeId,,<empty>
+263167,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1368,1,CPPASTTypeId,,<empty>
+263260,UNKNOWN,1,,double,3,<empty>,,1369,1,CPPASTTypeId,,<empty>
+263266,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1369,1,CPPASTTypeId,,<empty>
+263359,UNKNOWN,1,,double,3,<empty>,,1370,1,CPPASTTypeId,,<empty>
+263365,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1370,1,CPPASTTypeId,,<empty>
+263458,UNKNOWN,1,,double,3,<empty>,,1371,1,CPPASTTypeId,,<empty>
+263464,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1371,1,CPPASTTypeId,,<empty>
+263557,UNKNOWN,1,,double,3,<empty>,,1372,1,CPPASTTypeId,,<empty>
+263563,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1372,1,CPPASTTypeId,,<empty>
+263656,UNKNOWN,1,,double,3,<empty>,,1373,1,CPPASTTypeId,,<empty>
+263662,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1373,1,CPPASTTypeId,,<empty>
+263755,UNKNOWN,1,,double,3,<empty>,,1374,1,CPPASTTypeId,,<empty>
+263761,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1374,1,CPPASTTypeId,,<empty>
+263854,UNKNOWN,1,,double,3,<empty>,,1375,1,CPPASTTypeId,,<empty>
+263860,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1375,1,CPPASTTypeId,,<empty>
+263953,UNKNOWN,1,,double,3,<empty>,,1376,1,CPPASTTypeId,,<empty>
+263959,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1376,1,CPPASTTypeId,,<empty>
+264052,UNKNOWN,1,,double,3,<empty>,,1377,1,CPPASTTypeId,,<empty>
+264058,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1377,1,CPPASTTypeId,,<empty>
+264151,UNKNOWN,1,,double,3,<empty>,,1378,1,CPPASTTypeId,,<empty>
+264157,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1378,1,CPPASTTypeId,,<empty>
+264250,UNKNOWN,1,,double,3,<empty>,,1379,1,CPPASTTypeId,,<empty>
+264256,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1379,1,CPPASTTypeId,,<empty>
+264349,UNKNOWN,1,,double,3,<empty>,,1380,1,CPPASTTypeId,,<empty>
+264355,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1380,1,CPPASTTypeId,,<empty>
+264448,UNKNOWN,1,,double,3,<empty>,,1381,1,CPPASTTypeId,,<empty>
+264454,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1381,1,CPPASTTypeId,,<empty>
+264547,UNKNOWN,1,,double,3,<empty>,,1382,1,CPPASTTypeId,,<empty>
+264553,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1382,1,CPPASTTypeId,,<empty>
+264646,UNKNOWN,1,,double,3,<empty>,,1383,1,CPPASTTypeId,,<empty>
+264652,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1383,1,CPPASTTypeId,,<empty>
+264745,UNKNOWN,1,,double,3,<empty>,,1384,1,CPPASTTypeId,,<empty>
+264751,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1384,1,CPPASTTypeId,,<empty>
+264844,UNKNOWN,1,,double,3,<empty>,,1385,1,CPPASTTypeId,,<empty>
+264850,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1385,1,CPPASTTypeId,,<empty>
+264943,UNKNOWN,1,,double,3,<empty>,,1386,1,CPPASTTypeId,,<empty>
+264949,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1386,1,CPPASTTypeId,,<empty>
+265042,UNKNOWN,1,,double,3,<empty>,,1387,1,CPPASTTypeId,,<empty>
+265048,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1387,1,CPPASTTypeId,,<empty>
+265141,UNKNOWN,1,,double,3,<empty>,,1388,1,CPPASTTypeId,,<empty>
+265147,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1388,1,CPPASTTypeId,,<empty>
+265240,UNKNOWN,1,,double,3,<empty>,,1389,1,CPPASTTypeId,,<empty>
+265246,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1389,1,CPPASTTypeId,,<empty>
+265339,UNKNOWN,1,,double,3,<empty>,,1390,1,CPPASTTypeId,,<empty>
+265345,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1390,1,CPPASTTypeId,,<empty>
+265438,UNKNOWN,1,,double,3,<empty>,,1391,1,CPPASTTypeId,,<empty>
+265444,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1391,1,CPPASTTypeId,,<empty>
+265537,UNKNOWN,1,,double,3,<empty>,,1392,1,CPPASTTypeId,,<empty>
+265543,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1392,1,CPPASTTypeId,,<empty>
+265636,UNKNOWN,1,,double,3,<empty>,,1393,1,CPPASTTypeId,,<empty>
+265642,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1393,1,CPPASTTypeId,,<empty>
+265735,UNKNOWN,1,,double,3,<empty>,,1394,1,CPPASTTypeId,,<empty>
+265741,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1394,1,CPPASTTypeId,,<empty>
+265834,UNKNOWN,1,,double,3,<empty>,,1395,1,CPPASTTypeId,,<empty>
+265840,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1395,1,CPPASTTypeId,,<empty>
+265933,UNKNOWN,1,,double,3,<empty>,,1397,1,CPPASTTypeId,,<empty>
+265939,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1397,1,CPPASTTypeId,,<empty>
+266032,UNKNOWN,1,,double,3,<empty>,,1398,1,CPPASTTypeId,,<empty>
+266038,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1398,1,CPPASTTypeId,,<empty>
+266131,UNKNOWN,1,,double,3,<empty>,,1399,1,CPPASTTypeId,,<empty>
+266137,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1399,1,CPPASTTypeId,,<empty>
+266230,UNKNOWN,1,,double,3,<empty>,,1400,1,CPPASTTypeId,,<empty>
+266236,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1400,1,CPPASTTypeId,,<empty>
+266329,UNKNOWN,1,,double,3,<empty>,,1401,1,CPPASTTypeId,,<empty>
+266335,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1401,1,CPPASTTypeId,,<empty>
+266428,UNKNOWN,1,,double,3,<empty>,,1402,1,CPPASTTypeId,,<empty>
+266434,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1402,1,CPPASTTypeId,,<empty>
+266527,UNKNOWN,1,,double,3,<empty>,,1403,1,CPPASTTypeId,,<empty>
+266533,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1403,1,CPPASTTypeId,,<empty>
+266626,UNKNOWN,1,,double,3,<empty>,,1404,1,CPPASTTypeId,,<empty>
+266632,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1404,1,CPPASTTypeId,,<empty>
+266725,UNKNOWN,1,,double,3,<empty>,,1406,1,CPPASTTypeId,,<empty>
+266731,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1406,1,CPPASTTypeId,,<empty>
+266824,UNKNOWN,1,,double,3,<empty>,,1408,1,CPPASTTypeId,,<empty>
+266830,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1408,1,CPPASTTypeId,,<empty>
+266923,UNKNOWN,1,,double,3,<empty>,,1409,1,CPPASTTypeId,,<empty>
+266929,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1409,1,CPPASTTypeId,,<empty>
+267022,UNKNOWN,1,,double,3,<empty>,,1410,1,CPPASTTypeId,,<empty>
+267028,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1410,1,CPPASTTypeId,,<empty>
+267121,UNKNOWN,1,,double,3,<empty>,,1411,1,CPPASTTypeId,,<empty>
+267127,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1411,1,CPPASTTypeId,,<empty>
+267220,UNKNOWN,1,,double,3,<empty>,,1412,1,CPPASTTypeId,,<empty>
+267226,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1412,1,CPPASTTypeId,,<empty>
+267319,UNKNOWN,1,,double,3,<empty>,,1413,1,CPPASTTypeId,,<empty>
+267325,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1413,1,CPPASTTypeId,,<empty>
+267418,UNKNOWN,1,,double,3,<empty>,,1414,1,CPPASTTypeId,,<empty>
+267424,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1414,1,CPPASTTypeId,,<empty>
+267517,UNKNOWN,1,,double,3,<empty>,,1415,1,CPPASTTypeId,,<empty>
+267523,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1415,1,CPPASTTypeId,,<empty>
+267616,UNKNOWN,1,,double,3,<empty>,,1416,1,CPPASTTypeId,,<empty>
+267622,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1416,1,CPPASTTypeId,,<empty>
+267715,UNKNOWN,1,,double,3,<empty>,,1417,1,CPPASTTypeId,,<empty>
+267721,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1417,1,CPPASTTypeId,,<empty>
+267814,UNKNOWN,1,,double,3,<empty>,,1418,1,CPPASTTypeId,,<empty>
+267820,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1418,1,CPPASTTypeId,,<empty>
+267913,UNKNOWN,1,,double,3,<empty>,,1419,1,CPPASTTypeId,,<empty>
+267919,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1419,1,CPPASTTypeId,,<empty>
+268012,UNKNOWN,1,,double,3,<empty>,,1420,1,CPPASTTypeId,,<empty>
+268018,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1420,1,CPPASTTypeId,,<empty>
+268111,UNKNOWN,1,,double,3,<empty>,,1421,1,CPPASTTypeId,,<empty>
+268117,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1421,1,CPPASTTypeId,,<empty>
+268210,UNKNOWN,1,,double,3,<empty>,,1422,1,CPPASTTypeId,,<empty>
+268216,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1422,1,CPPASTTypeId,,<empty>
+268309,UNKNOWN,1,,double,3,<empty>,,1423,1,CPPASTTypeId,,<empty>
+268315,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1423,1,CPPASTTypeId,,<empty>
+268408,UNKNOWN,1,,double,3,<empty>,,1424,1,CPPASTTypeId,,<empty>
+268414,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1424,1,CPPASTTypeId,,<empty>
+268507,UNKNOWN,1,,double,3,<empty>,,1425,1,CPPASTTypeId,,<empty>
+268513,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1425,1,CPPASTTypeId,,<empty>
+268606,UNKNOWN,1,,double,3,<empty>,,1426,1,CPPASTTypeId,,<empty>
+268612,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1426,1,CPPASTTypeId,,<empty>
+268705,UNKNOWN,1,,double,3,<empty>,,1427,1,CPPASTTypeId,,<empty>
+268711,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1427,1,CPPASTTypeId,,<empty>
+268804,UNKNOWN,1,,double,3,<empty>,,1428,1,CPPASTTypeId,,<empty>
+268810,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,1428,1,CPPASTTypeId,,<empty>
+268832,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(zlib, node::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(zlib, node::RegisterExternalReferences)",1,<empty>,,1433,2,CPPASTProblemDeclaration,,<empty>
+268927,UNKNOWN,1,,const uv_stat_t*,44,<empty>,,20,1,CPPASTTypeId,,<empty>
+269543,UNKNOWN,-1,,),16,<empty>,,63,2,CPPASTProblemStatement,,<empty>
+269552,UNKNOWN,-1,,),16,<empty>,,71,2,CPPASTProblemStatement,,<empty>
+269598,UNKNOWN,-1,,),27,<empty>,,84,5,CPPASTProblemStatement,,<empty>
+269600,UNKNOWN,-1,,),30,<empty>,,88,7,CPPASTProblemStatement,,<empty>
+269602,UNKNOWN,-1,,),31,<empty>,,92,9,CPPASTProblemStatement,,<empty>
+269799,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(permission, node::permission::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(permission,
+                                node::permission::RegisterExternalReferences)",1,<empty>,,150,2,CPPASTProblemDeclaration,,<empty>
+270182,UNKNOWN,1,,double,3,<empty>,,100,1,CPPASTTypeId,,<empty>
+270188,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,100,1,CPPASTTypeId,,<empty>
+270281,UNKNOWN,1,,double,3,<empty>,,101,1,CPPASTTypeId,,<empty>
+270287,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,101,1,CPPASTTypeId,,<empty>
+270380,UNKNOWN,1,,double,3,<empty>,,102,1,CPPASTTypeId,,<empty>
+270386,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,102,1,CPPASTTypeId,,<empty>
+270479,UNKNOWN,1,,double,3,<empty>,,103,1,CPPASTTypeId,,<empty>
+270485,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,103,1,CPPASTTypeId,,<empty>
+270578,UNKNOWN,1,,double,3,<empty>,,104,1,CPPASTTypeId,,<empty>
+270584,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,104,1,CPPASTTypeId,,<empty>
+270693,UNKNOWN,1,,PipeWrap::SocketType,43,<empty>,,131,1,CPPASTTypeId,,<empty>
+270894,UNKNOWN,1,,uv_stream_t*,40,<empty>,,203,1,CPPASTTypeId,,<empty>
+271075,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(pipe_wrap, node::PipeWrap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(pipe_wrap,
+                                node::PipeWrap::RegisterExternalReferences)",1,<empty>,,257,2,CPPASTProblemDeclaration,,<empty>
+271175,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(ProcessWrap)
+  SET_SELF_SIZE(ProcessWrap)
+
+ private:
+  static void New(const FunctionCallbackInfo<Value>& args) {
+    // This constructor should not be exposed to public javascript.
+    // Therefore we assert that we are not trying to call this as a
+    // normal function.
+    CHECK(args.IsConstructCall());
+    Environment* env = Environment::GetCurrent(args);
+    new ProcessWrap(env, args.This());
+  }",3,<empty>,,70,2,CPPASTProblemDeclaration,,<empty>
+271385,UNKNOWN,1,,uv_stdio_flags,47,<empty>,,124,1,CPPASTTypeId,,<empty>
+271425,UNKNOWN,1,,uv_stdio_flags,47,<empty>,,128,1,CPPASTTypeId,,<empty>
+271516,UNKNOWN,1,,int,30,<empty>,,139,1,CPPASTTypeId,,<empty>
+271670,UNKNOWN,1,,uv_uid_t,33,<empty>,,169,1,CPPASTTypeId,,<empty>
+271728,UNKNOWN,1,,uv_gid_t,33,<empty>,,179,1,CPPASTTypeId,,<empty>
+272358,UNKNOWN,1,,double,47,<empty>,,313,1,CPPASTTypeId,,<empty>
+272381,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(process_wrap, node::ProcessWrap::Initialize)",1,<empty>,,327,2,CPPASTProblemDeclaration,,<empty>
+272740,UNKNOWN,1,,int64_t,25,<empty>,,62,1,CPPASTTypeId,,<empty>
+273299,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(SignalWrap)
+  SET_SELF_SIZE(SignalWrap)
+
+ private:
+  static void New(const FunctionCallbackInfo<Value>& args) {
+    // This constructor should not be exposed to public javascript.
+    // Therefore we assert that we are not trying to call this as a
+    // normal function.
+    CHECK(args.IsConstructCall());
+    Environment* env = Environment::GetCurrent(args);
+    new SignalWrap(env, args.This());
+  }",3,<empty>,,74,3,CPPASTProblemDeclaration,,<empty>
+273519,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(signal_wrap, node::SignalWrap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(signal_wrap,
+                                node::SignalWrap::RegisterExternalReferences)",1,<empty>,,177,2,CPPASTProblemDeclaration,,<empty>
+273581,UNKNOWN,1,,unsigned int,24,<empty>,,65,1,CPPASTTypeId,,<empty>
+273861,UNKNOWN,1,,uv_stdio_flags,22,<empty>,,214,1,CPPASTTypeId,,<empty>
+273879,UNKNOWN,1,,uv_stream_t*,27,<empty>,,225,1,CPPASTTypeId,,<empty>
+273887,UNKNOWN,1,,uv_handle_t*,27,<empty>,,230,1,CPPASTTypeId,,<empty>
+274020,UNKNOWN,1,,int,26,<empty>,,281,1,CPPASTTypeId,,<empty>
+274091,UNKNOWN,1,,SyncProcessStdioPipe*,24,<empty>,,319,1,CPPASTTypeId,,<empty>
+274112,UNKNOWN,1,,SyncProcessStdioPipe*,26,<empty>,,328,1,CPPASTTypeId,,<empty>
+274132,UNKNOWN,1,,SyncProcessStdioPipe*,24,<empty>,,335,1,CPPASTTypeId,,<empty>
+274153,UNKNOWN,1,,SyncProcessStdioPipe*,24,<empty>,,342,1,CPPASTTypeId,,<empty>
+274181,UNKNOWN,1,,SyncProcessStdioPipe*,24,<empty>,,357,1,CPPASTTypeId,,<empty>
+274421,UNKNOWN,1,,uv_handle_t*,31,<empty>,,484,1,CPPASTTypeId,,<empty>
+274538,UNKNOWN,1,,uv_handle_t*,26,<empty>,,537,1,CPPASTTypeId,,<empty>
+274633,UNKNOWN,1,,uv_handle_t*,53,<empty>,,590,1,CPPASTTypeId,,<empty>
+274718,UNKNOWN,1,,int,33,<empty>,,645,1,CPPASTTypeId,,<empty>
+274882,UNKNOWN,1,,double,46,<empty>,,696,1,CPPASTTypeId,,<empty>
+275255,UNKNOWN,1,,char**,47,<empty>,,767,1,CPPASTTypeId,,<empty>
+275355,UNKNOWN,1,,char**,48,<empty>,,784,1,CPPASTTypeId,,<empty>
+275399,UNKNOWN,1,,uv_uid_t,43,<empty>,,791,1,CPPASTTypeId,,<empty>
+275448,UNKNOWN,1,,uv_gid_t,43,<empty>,,800,1,CPPASTTypeId,,<empty>
+275597,UNKNOWN,1,,uint64_t,28,<empty>,,829,1,CPPASTTypeId,,<empty>
+275990,UNKNOWN,1,,unsigned int,39,<empty>,,918,1,CPPASTTypeId,,<empty>
+276509,UNKNOWN,1,,char**,27,<empty>,,1065,1,CPPASTTypeId,,<empty>
+276594,UNKNOWN,1,,SyncProcessRunner*,46,<empty>,,1090,1,CPPASTTypeId,,<empty>
+276600,UNKNOWN,1,,uv_handle_t*,29,<empty>,,1091,1,CPPASTTypeId,,<empty>
+276618,UNKNOWN,1,,SyncProcessRunner*,46,<empty>,,1097,1,CPPASTTypeId,,<empty>
+276633,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(spawn_sync,
+                                    node::SyncProcessRunner::Initialize)",1,<empty>,,1108,2,CPPASTProblemDeclaration,,<empty>
+277554,UNKNOWN,1,,char*,23,<empty>,,267,1,CPPASTTypeId,,<empty>
+277800,UNKNOWN,1,,uv_stream_t*,36,<empty>,,318,1,CPPASTTypeId,,<empty>
+278094,UNKNOWN,1,,char*,24,<empty>,,403,1,CPPASTTypeId,,<empty>
+278134,UNKNOWN,1,,char*,48,<empty>,,410,1,CPPASTTypeId,,<empty>
+278149,UNKNOWN,1,,char*,33,<empty>,,418,1,CPPASTTypeId,,<empty>
+278177,UNKNOWN,1,,uv_stream_t*,36,<empty>,,425,1,CPPASTTypeId,,<empty>
+278256,UNKNOWN,1,,int32_t,25,<empty>,,452,1,CPPASTTypeId,,<empty>
+278292,UNKNOWN,1,,int32_t,61,<empty>,,464,1,CPPASTTypeId,,<empty>
+278453,UNKNOWN,1,,PropertyAttribute,19,<empty>,,520,1,CPPASTTypeId,,<empty>
+278790,UNKNOWN,1,,double,41,<empty>,,613,1,CPPASTTypeId,,<empty>
+278835,UNKNOWN,1,,double,41,<empty>,,621,1,CPPASTTypeId,,<empty>
+278976,UNKNOWN,1,,StreamBase*,34,<empty>,,661,1,CPPASTTypeId,,<empty>
+278996,UNKNOWN,1,,StreamBase*,36,<empty>,,667,1,CPPASTTypeId,,<empty>
+279053,UNKNOWN,1,,size_t,24,<empty>,,680,1,CPPASTTypeId,,<empty>
+279105,UNKNOWN,1,,StreamBase*,36,<empty>,,695,1,CPPASTTypeId,,<empty>
+279214,UNKNOWN,1,,StreamBase*,36,<empty>,,724,1,CPPASTTypeId,,<empty>
+279900,UNKNOWN,1,,StreamBase*,22,<empty>,,42,1,CPPASTTypeId,,<empty>
+279911,UNKNOWN,1,,StreamBase*,22,<empty>,,46,1,CPPASTTypeId,,<empty>
+280119,UNKNOWN,1,,char*,45,<empty>,,144,1,CPPASTTypeId,,<empty>
+280849,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(stream_pipe, node::InitializeStreamPipe)",1,<empty>,,335,2,CPPASTProblemDeclaration,,<empty>
+280866,UNKNOWN,1,,LibuvStreamWrap*,21,<empty>,,206,1,CPPASTTypeId,,<empty>
+280886,UNKNOWN,1,,LibuvStreamWrap*,45,<empty>,,210,1,CPPASTTypeId,,<empty>
+281185,UNKNOWN,1,,double,3,<empty>,,103,1,CPPASTTypeId,,<empty>
+281191,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,103,1,CPPASTTypeId,,<empty>
+281284,UNKNOWN,1,,double,3,<empty>,,104,1,CPPASTTypeId,,<empty>
+281290,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,104,1,CPPASTTypeId,,<empty>
+281383,UNKNOWN,1,,double,3,<empty>,,105,1,CPPASTTypeId,,<empty>
+281389,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,105,1,CPPASTTypeId,,<empty>
+281482,UNKNOWN,1,,double,3,<empty>,,106,1,CPPASTTypeId,,<empty>
+281488,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,106,1,CPPASTTypeId,,<empty>
+281656,UNKNOWN,1,,PropertyAttribute,21,<empty>,,155,1,CPPASTTypeId,,<empty>
+281728,UNKNOWN,1,,uv_handle_t*,32,<empty>,,177,1,CPPASTTypeId,,<empty>
+281751,UNKNOWN,1,,uv_handle_t*,41,<empty>,,189,1,CPPASTTypeId,,<empty>
+281759,UNKNOWN,1,,AsyncWrap*,22,<empty>,,194,1,CPPASTTypeId,,<empty>
+281869,UNKNOWN,1,,uv_stream_t*,42,<empty>,,245,1,CPPASTTypeId,,<empty>
+281919,UNKNOWN,1,,uv_pipe_t*,46,<empty>,,260,1,CPPASTTypeId,,<empty>
+281927,UNKNOWN,1,,uv_pipe_t*,50,<empty>,,261,1,CPPASTTypeId,,<empty>
+282177,UNKNOWN,1,,LibuvShutdownWrap*,45,<empty>,,337,1,CPPASTTypeId,,<empty>
+282197,UNKNOWN,1,,LibuvShutdownWrap*,45,<empty>,,343,1,CPPASTTypeId,,<empty>
+282342,UNKNOWN,1,,LibuvWriteWrap*,35,<empty>,,396,1,CPPASTTypeId,,<empty>
+282365,UNKNOWN,1,,LibuvWriteWrap*,42,<empty>,,408,1,CPPASTTypeId,,<empty>
+282398,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(stream_wrap,
+                                    node::LibuvStreamWrap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(
+    stream_wrap, node::LibuvStreamWrap::RegisterExternalReferences)",1,<empty>,,418,2,CPPASTProblemDeclaration,,<empty>
+282442,UNKNOWN,1,,TypeName*,21,<empty>,,59,1,CPPASTTypeId,,<empty>
+282721,UNKNOWN,1,,const uint8_t*,47,<empty>,,173,1,CPPASTTypeId,,<empty>
+283783,UNKNOWN,1,,uint8_t,36,<empty>,,254,1,CPPASTTypeId,,<empty>
+283796,UNKNOWN,1,,uint8_t,36,<empty>,,255,1,CPPASTTypeId,,<empty>
+283839,UNKNOWN,1,,uint16_t*,42,<empty>,,266,1,CPPASTTypeId,,<empty>
+283890,UNKNOWN,1,,uintptr_t,29,<empty>,,280,1,CPPASTTypeId,,<empty>
+283904,UNKNOWN,1,,size_t,47,<empty>,,283,1,CPPASTTypeId,,<empty>
+284063,UNKNOWN,1,,uint8_t*,47,<empty>,,325,1,CPPASTTypeId,,<empty>
+284541,UNKNOWN,1,,uintptr_t,49,<empty>,,484,1,CPPASTTypeId,,<empty>
+284549,UNKNOWN,1,,uintptr_t,49,<empty>,,485,1,CPPASTTypeId,,<empty>
+284597,UNKNOWN,1,,const uintptr_t*,44,<empty>,,506,1,CPPASTTypeId,,<empty>
+284603,UNKNOWN,1,,uintptr_t*,38,<empty>,,507,1,CPPASTTypeId,,<empty>
+284707,UNKNOWN,1,,uint8_t,31,<empty>,,533,1,CPPASTTypeId,,<empty>
+285191,UNKNOWN,1,,uint8_t,42,<empty>,,663,1,CPPASTTypeId,,<empty>
+285201,UNKNOWN,1,,uint8_t,42,<empty>,,664,1,CPPASTTypeId,,<empty>
+285214,UNKNOWN,1,,uint16_t,32,<empty>,,665,1,CPPASTTypeId,,<empty>
+285231,UNKNOWN,1,,uintptr_t,28,<empty>,,669,1,CPPASTTypeId,,<empty>
+285270,UNKNOWN,1,,uint16_t*,39,<empty>,,678,1,CPPASTTypeId,,<empty>
+285281,UNKNOWN,1,,const uint16_t*,37,<empty>,,681,1,CPPASTTypeId,,<empty>
+285371,UNKNOWN,1,,char*,34,<empty>,,709,1,CPPASTTypeId,,<empty>
+285673,UNKNOWN,1,,size_t,39,<empty>,,106,1,CPPASTTypeId,,<empty>
+286145,UNKNOWN,1,,StringDecoder*,24,<empty>,,268,1,CPPASTTypeId,,<empty>
+286224,UNKNOWN,1,,StringDecoder*,24,<empty>,,283,1,CPPASTTypeId,,<empty>
+286438,UNKNOWN,1,,int32_t,3,<empty>,,314,1,CPPASTTypeId,,<empty>
+286456,UNKNOWN,1,,int32_t,3,<empty>,,315,1,CPPASTTypeId,,<empty>
+286474,UNKNOWN,1,,int32_t,3,<empty>,,316,1,CPPASTTypeId,,<empty>
+286492,UNKNOWN,1,,int32_t,3,<empty>,,317,1,CPPASTTypeId,,<empty>
+286510,UNKNOWN,1,,int32_t,3,<empty>,,318,1,CPPASTTypeId,,<empty>
+286528,UNKNOWN,1,,int32_t,3,<empty>,,319,1,CPPASTTypeId,,<empty>
+286546,UNKNOWN,1,,int32_t,3,<empty>,,320,1,CPPASTTypeId,,<empty>
+286564,UNKNOWN,1,,int32_t,3,<empty>,,321,1,CPPASTTypeId,,<empty>
+286627,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(string_decoder,
+                                    node::InitializeStringDecoder)
+NODE_BINDING_EXTERNAL_REFERENCE(string_decoder,
+                                node::RegisterStringDecoderExternalReferences)",1,<empty>,,345,2,CPPASTProblemDeclaration,,<empty>
+287064,UNKNOWN,1,,double,3,<empty>,,123,1,CPPASTTypeId,,<empty>
+287070,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,123,1,CPPASTTypeId,,<empty>
+287163,UNKNOWN,1,,double,3,<empty>,,124,1,CPPASTTypeId,,<empty>
+287169,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,124,1,CPPASTTypeId,,<empty>
+287262,UNKNOWN,1,,double,3,<empty>,,125,1,CPPASTTypeId,,<empty>
+287268,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,125,1,CPPASTTypeId,,<empty>
+287407,UNKNOWN,1,,TCPWrap::SocketType,42,<empty>,,159,1,CPPASTTypeId,,<empty>
+287480,UNKNOWN,1,,int,28,<empty>,,190,1,CPPASTTypeId,,<empty>
+287556,UNKNOWN,1,,unsigned int,36,<empty>,,204,1,CPPASTTypeId,,<empty>
+287632,UNKNOWN,1,,int,24,<empty>,,231,1,CPPASTTypeId,,<empty>
+287770,UNKNOWN,1,,const sockaddr*,40,<empty>,,264,1,CPPASTTypeId,,<empty>
+287863,UNKNOWN,1,,uv_stream_t*,40,<empty>,,288,1,CPPASTTypeId,,<empty>
+287893,UNKNOWN,1,,int,26,<empty>,,298,1,CPPASTTypeId,,<empty>
+288062,UNKNOWN,1,,const sockaddr*,47,<empty>,,342,1,CPPASTTypeId,,<empty>
+288266,UNKNOWN,1,,const sockaddr_in6*,27,<empty>,,401,1,CPPASTTypeId,,<empty>
+288416,UNKNOWN,1,,const sockaddr_in*,27,<empty>,,429,1,CPPASTTypeId,,<empty>
+288530,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(tcp_wrap, node::TCPWrap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(tcp_wrap,
+                                node::TCPWrap::RegisterExternalReferences)",1,<empty>,,453,2,CPPASTProblemDeclaration,,<empty>
+288605,UNKNOWN,1,,uv_handle_t*,38,<empty>,,17,1,CPPASTTypeId,,<empty>
+288627,UNKNOWN,1,,uv_timer_t*,36,<empty>,,23,1,CPPASTTypeId,,<empty>
+288663,UNKNOWN,1,,uv_handle_t*,27,<empty>,,33,1,CPPASTTypeId,,<empty>
+288680,UNKNOWN,1,,uv_handle_t*,29,<empty>,,38,1,CPPASTTypeId,,<empty>
+288808,UNKNOWN,1,,TimerWrapHandle*,15,<empty>,,80,1,CPPASTTypeId,,<empty>
+288941,UNKNOWN,1,,double,22,<empty>,,42,1,CPPASTTypeId,,<empty>
+289426,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(
+    timers, node::timers::BindingData::CreatePerContextProperties)
+NODE_BINDING_PER_ISOLATE_INIT(
+    timers, node::timers::BindingData::CreatePerIsolateProperties)
+NODE_BINDING_EXTERNAL_REFERENCE(
+    timers, node::timers::BindingData::RegisterTimerExternalReferences)",1,<empty>,,199,2,CPPASTProblemDeclaration,,<empty>
+289464,UNKNOWN,1,,Agent*,32,<empty>,,98,1,CPPASTTypeId,,<empty>
+289598,UNKNOWN,1,,uv_handle_t*,29,<empty>,,62,1,CPPASTTypeId,,<empty>
+289654,UNKNOWN,1,,uv_handle_t*,29,<empty>,,81,1,CPPASTTypeId,,<empty>
+290154,UNKNOWN,1,,unsigned int,7,<empty>,,242,1,CPPASTTypeId,,<empty>
+290594,UNKNOWN,1,,uv_async_t*,40,<empty>,,190,1,CPPASTTypeId,,<empty>
+290630,UNKNOWN,1,,uv_async_t*,38,<empty>,,184,1,CPPASTTypeId,,<empty>
+290634,UNKNOWN,1,,uv_handle_t*,31,<empty>,,186,1,CPPASTTypeId,,<empty>
+290902,UNKNOWN,1,,uint64_t,24,<empty>,,83,1,CPPASTTypeId,,<empty>
+290926,UNKNOWN,1,,uint32_t,28,<empty>,,90,1,CPPASTTypeId,,<empty>
+290937,UNKNOWN,1,,uint32_t,28,<empty>,,92,1,CPPASTTypeId,,<empty>
+291139,UNKNOWN,1,,NodeTraceBuffer*,41,<empty>,,165,1,CPPASTTypeId,,<empty>
+291204,UNKNOWN,1,,uv_handle_t*,29,<empty>,,180,1,CPPASTTypeId,,<empty>
+291430,UNKNOWN,1,,uv_async_t*,53,<empty>,,232,1,CPPASTTypeId,,<empty>
+291465,UNKNOWN,1,,uv_async_t*,47,<empty>,,226,1,CPPASTTypeId,,<empty>
+291469,UNKNOWN,1,,uv_handle_t*,35,<empty>,,228,1,CPPASTTypeId,,<empty>
+291905,UNKNOWN,1,,char*,22,<empty>,,173,1,CPPASTTypeId,,<empty>
+292014,UNKNOWN,1,,char*,22,<empty>,,208,1,CPPASTTypeId,,<empty>
+292062,UNKNOWN,1,,uv_handle_t*,29,<empty>,,222,1,CPPASTTypeId,,<empty>
+292540,UNKNOWN,1,,unsigned int,15,<empty>,,392,1,CPPASTTypeId,,<empty>
+292556,UNKNOWN,1,,unsigned int,15,<empty>,,395,1,CPPASTTypeId,,<empty>
+292573,UNKNOWN,1,,void,6,<empty>,,400,1,CPPASTTypeId,,<empty>
+292582,UNKNOWN,1,,void,6,<empty>,,403,1,CPPASTTypeId,,<empty>
+292591,UNKNOWN,1,,void,6,<empty>,,406,1,CPPASTTypeId,,<empty>
+292600,UNKNOWN,1,,void,6,<empty>,,409,1,CPPASTTypeId,,<empty>
+292609,UNKNOWN,1,,void,6,<empty>,,413,1,CPPASTTypeId,,<empty>
+292618,UNKNOWN,1,,void,6,<empty>,,417,1,CPPASTTypeId,,<empty>
+292627,UNKNOWN,1,,void,6,<empty>,,421,1,CPPASTTypeId,,<empty>
+292636,UNKNOWN,1,,void,6,<empty>,,425,1,CPPASTTypeId,,<empty>
+292713,UNKNOWN,1,,unsigned char,39,<empty>,,464,1,CPPASTTypeId,,<empty>
+292723,UNKNOWN,1,,v8::ConvertableToTraceFormat*,48,<empty>,,465,1,CPPASTTypeId,,<empty>
+292725,UNKNOWN,1,,intptr_t,21,<empty>,,466,1,CPPASTTypeId,,<empty>
+292741,UNKNOWN,1,,unsigned char,39,<empty>,,468,1,CPPASTTypeId,,<empty>
+292751,UNKNOWN,1,,v8::ConvertableToTraceFormat*,48,<empty>,,469,1,CPPASTTypeId,,<empty>
+292753,UNKNOWN,1,,intptr_t,21,<empty>,,470,1,CPPASTTypeId,,<empty>
+292794,UNKNOWN,-1,,"static V8_INLINE uint64_t AddTraceEventWithTimestampImpl(
+    char phase, const uint8_t* category_group_enabled, const char* name,
+    const char* scope, uint64_t id, uint64_t bind_id, int32_t num_args,
+    const char** arg_names, const uint8_t* arg_types,
+    const uint64_t* arg_values, unsigned int flags, int64_t timestamp) {
+  std::unique_ptr<v8::ConvertableToTraceFormat> arg_convertables[2];
+  if (num_args > 0 && arg_types[0] == TRACE_VALUE_TYPE_CONVERTABLE) {
+    arg_convertables[0].reset(reinterpret_cast<v8::ConvertableToTraceFormat*>(
+        static_cast<intptr_t>(arg_values[0])));
+  }
+  if (num_args > 1 && arg_types[1] == TRACE_VALUE_TYPE_CONVERTABLE) {
+    arg_convertables[1].reset(reinterpret_cast<v8::ConvertableToTraceFormat*>(
+        static_cast<intptr_t>(arg_values[1])));
+  }
+  // DCHECK_LE(num_args, 2);
+  v8::TracingController* controller =
+      node::tracing::TraceEventHelper::GetTracingController();
+  if (controller == nullptr) return 0;
+  return controller->AddTra...",1,<empty>,,481,12,CPPASTProblemDeclaration,,<empty>
+292795,UNKNOWN,-1,,"static V8_INLINE void AddMetadataEventImpl(
+    const uint8_t* category_group_enabled, const char* name, int32_t num_args,
+    const char** arg_names, const uint8_t* arg_types,
+    const uint64_t* arg_values, unsigned int flags) {
+  std::unique_ptr<v8::ConvertableToTraceFormat> arg_convertibles[2];
+  if (num_args > 0 && arg_types[0] == TRACE_VALUE_TYPE_CONVERTABLE) {
+    arg_convertibles[0].reset(reinterpret_cast<v8::ConvertableToTraceFormat*>(
+        static_cast<intptr_t>(arg_values[0])));
+  }
+  if (num_args > 1 && arg_types[1] == TRACE_VALUE_TYPE_CONVERTABLE) {
+    arg_convertibles[1].reset(reinterpret_cast<v8::ConvertableToTraceFormat*>(
+        static_cast<intptr_t>(arg_values[1])));
+  }
+  node::tracing::Agent* agent =
+      node::tracing::TraceEventHelper::GetAgent();
+  if (agent == nullptr) return;
+  return agent->GetTracingController()->AddMetadataEvent(
+      category_group_enabled, name, num_args, arg_names, arg_types, arg_values,
+      arg_convertibles, flags);
+}",1,<empty>,,504,13,CPPASTProblemDeclaration,,<empty>
+292805,UNKNOWN,1,,unsigned char,1,<empty>,,545,1,CPPASTTypeId,,<empty>
+292811,UNKNOWN,1,,uint64_t,1,<empty>,,545,1,CPPASTTypeId,,<empty>
+292824,UNKNOWN,1,,unsigned char,1,<empty>,,546,1,CPPASTTypeId,,<empty>
+292830,UNKNOWN,1,,uint64_t,1,<empty>,,546,1,CPPASTTypeId,,<empty>
+292843,UNKNOWN,1,,unsigned char,1,<empty>,,547,1,CPPASTTypeId,,<empty>
+292849,UNKNOWN,1,,uint64_t,1,<empty>,,547,1,CPPASTTypeId,,<empty>
+292862,UNKNOWN,1,,unsigned char,1,<empty>,,548,1,CPPASTTypeId,,<empty>
+292868,UNKNOWN,1,,uint64_t,1,<empty>,,548,1,CPPASTTypeId,,<empty>
+292881,UNKNOWN,1,,unsigned char,1,<empty>,,549,1,CPPASTTypeId,,<empty>
+292887,UNKNOWN,1,,uint64_t,1,<empty>,,549,1,CPPASTTypeId,,<empty>
+292900,UNKNOWN,1,,unsigned char,1,<empty>,,550,1,CPPASTTypeId,,<empty>
+292906,UNKNOWN,1,,uint64_t,1,<empty>,,550,1,CPPASTTypeId,,<empty>
+292919,UNKNOWN,1,,unsigned char,1,<empty>,,551,1,CPPASTTypeId,,<empty>
+292925,UNKNOWN,1,,uint64_t,1,<empty>,,551,1,CPPASTTypeId,,<empty>
+292938,UNKNOWN,1,,unsigned char,1,<empty>,,552,1,CPPASTTypeId,,<empty>
+292944,UNKNOWN,1,,uint64_t,1,<empty>,,552,1,CPPASTTypeId,,<empty>
+292963,UNKNOWN,1,,unsigned char,1,<empty>,,553,1,CPPASTTypeId,,<empty>
+292988,UNKNOWN,1,,unsigned char,1,<empty>,,554,1,CPPASTTypeId,,<empty>
+293013,UNKNOWN,1,,unsigned char,1,<empty>,,555,1,CPPASTTypeId,,<empty>
+293038,UNKNOWN,1,,unsigned char,1,<empty>,,557,1,CPPASTTypeId,,<empty>
+293063,UNKNOWN,1,,unsigned char,1,<empty>,,559,1,CPPASTTypeId,,<empty>
+293084,UNKNOWN,1,,unsigned char,11,<empty>,,567,1,CPPASTTypeId,,<empty>
+293090,UNKNOWN,1,,uint64_t,24,<empty>,,568,1,CPPASTTypeId,,<empty>
+293092,UNKNOWN,1,,intptr_t,51,<empty>,,568,1,CPPASTTypeId,,<empty>
+293274,UNKNOWN,-1,,"static V8_INLINE uint64_t AddTraceEventWithTimestamp(
+    char phase, const uint8_t* category_group_enabled, const char* name,
+    const char* scope, uint64_t id, uint64_t bind_id, unsigned int flags,
+    int64_t timestamp) {
+  return TRACE_EVENT_API_ADD_TRACE_EVENT_WITH_TIMESTAMP(
+      phase, category_group_enabled, name, scope, id, bind_id, kZeroNumArgs,
+      nullptr, nullptr, nullptr, flags, timestamp);
+}",1,<empty>,,627,32,CPPASTProblemDeclaration,,<empty>
+293275,UNKNOWN,-1,,"template <class ARG1_TYPE>
+static V8_INLINE uint64_t AddTraceEventWithTimestamp(
+    char phase, const uint8_t* category_group_enabled, const char* name,
+    const char* scope, uint64_t id, uint64_t bind_id, unsigned int flags,
+    int64_t timestamp, const char* arg1_name, ARG1_TYPE&& arg1_val) {
+  const int num_args = 1;
+  uint8_t arg_type;
+  uint64_t arg_value;
+  SetTraceValue(std::forward<ARG1_TYPE>(arg1_val), &arg_type, &arg_value);
+  return TRACE_EVENT_API_ADD_TRACE_EVENT_WITH_TIMESTAMP(
+      phase, category_group_enabled, name, scope, id, bind_id, num_args,
+      &arg1_name, &arg_type, &arg_value, flags, timestamp);
+}",1,<empty>,,636,33,CPPASTProblemDeclaration,,<empty>
+293276,UNKNOWN,-1,,"template <class ARG1_TYPE, class ARG2_TYPE>
+static V8_INLINE uint64_t AddTraceEventWithTimestamp(
+    char phase, const uint8_t* category_group_enabled, const char* name,
+    const char* scope, uint64_t id, uint64_t bind_id, unsigned int flags,
+    int64_t timestamp, const char* arg1_name, ARG1_TYPE&& arg1_val,
+    const char* arg2_name, ARG2_TYPE&& arg2_val) {
+  const int num_args = 2;
+  const char* arg_names[2] = {arg1_name, arg2_name};
+  unsigned char arg_types[2];
+  uint64_t arg_values[2];
+  SetTraceValue(std::forward<ARG1_TYPE>(arg1_val), &arg_types[0],
+                &arg_values[0]);
+  SetTraceValue(std::forward<ARG2_TYPE>(arg2_val), &arg_types[1],
+                &arg_values[1]);
+  return TRACE_EVENT_API_ADD_TRACE_EVENT_WITH_TIMESTAMP(
+      phase, category_group_enabled, name, scope, id, bind_id, num_args,
+      arg_names, arg_types, arg_values, flags, timestamp);
+}",1,<empty>,,650,34,CPPASTProblemDeclaration,,<empty>
+293277,UNKNOWN,-1,,"template <class ARG1_TYPE>
+static V8_INLINE void AddMetadataEvent(
+    const uint8_t* category_group_enabled, const char* name,
+    const char* arg1_name, ARG1_TYPE&& arg1_val) {
+  const int num_args = 1;
+  uint8_t arg_type;
+  uint64_t arg_value;
+  SetTraceValue(std::forward<ARG1_TYPE>(arg1_val), &arg_type, &arg_value);
+  AddMetadataEventImpl(
+      category_group_enabled, name, num_args, &arg1_name, &arg_type, &arg_value,
+      TRACE_EVENT_FLAG_NONE);
+}",1,<empty>,,669,35,CPPASTProblemDeclaration,,<empty>
+293458,UNKNOWN,1,,unsigned,27,<empty>,,77,1,CPPASTTypeId,,<empty>
+293460,UNKNOWN,1,,unsigned char,49,<empty>,,77,1,CPPASTTypeId,,<empty>
+294444,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(tty_wrap, node::TTYWrap::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(tty_wrap,
+                                node::TTYWrap::RegisterExternalReferences)",1,<empty>,,159,2,CPPASTProblemDeclaration,,<empty>
+294605,UNKNOWN,-1,,"SET_NO_MEMORY_INFO()
+  SET_MEMORY_INFO_NAME(SendWrap)
+  SET_SELF_SIZE(SendWrap)
+
+ private:
+  const bool have_callback_;",3,<empty>,,80,4,CPPASTProblemDeclaration,,<empty>
+294691,UNKNOWN,1,,UDPWrapBase*,22,<empty>,,127,1,CPPASTTypeId,,<empty>
+294735,UNKNOWN,1,,UDPWrapBase*,51,<empty>,,142,1,CPPASTTypeId,,<empty>
+294798,UNKNOWN,1,,PropertyAttribute,19,<empty>,,163,1,CPPASTTypeId,,<empty>
+295095,UNKNOWN,1,,double,3,<empty>,,225,1,CPPASTTypeId,,<empty>
+295101,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,225,1,CPPASTTypeId,,<empty>
+295194,UNKNOWN,1,,double,3,<empty>,,226,1,CPPASTTypeId,,<empty>
+295200,UNKNOWN,1,,v8::PropertyAttribute,3,<empty>,,226,1,CPPASTTypeId,,<empty>
+295285,UNKNOWN,1,,uv_handle_t*,32,<empty>,,245,1,CPPASTTypeId,,<empty>
+295318,UNKNOWN,1,,sockaddr_in*,58,<empty>,,256,1,CPPASTTypeId,,<empty>
+295327,UNKNOWN,1,,sockaddr_in6*,58,<empty>,,258,1,CPPASTTypeId,,<empty>
+295440,UNKNOWN,1,,const sockaddr*,40,<empty>,,283,1,CPPASTTypeId,,<empty>
+295557,UNKNOWN,1,,const sockaddr*,43,<empty>,,311,1,CPPASTTypeId,,<empty>
+295600,UNKNOWN,1,,int,24,<empty>,,324,1,CPPASTTypeId,,<empty>
+295735,UNKNOWN,1,,uv_handle_t*,42,<empty>,,359,1,CPPASTTypeId,,<empty>
+295744,UNKNOWN,1,,int,26,<empty>,,360,1,CPPASTTypeId,,<empty>
+296400,UNKNOWN,1,,sockaddr*,31,<empty>,,539,1,CPPASTTypeId,,<empty>
+296439,UNKNOWN,1,,int,23,<empty>,,547,1,CPPASTTypeId,,<empty>
+296590,UNKNOWN,1,,size_t,30,<empty>,,582,1,CPPASTTypeId,,<empty>
+296825,UNKNOWN,1,,SendWrap*,48,<empty>,,672,1,CPPASTTypeId,,<empty>
+296902,UNKNOWN,1,,uv_udp_t*,48,<empty>,,690,1,CPPASTTypeId,,<empty>
+297020,UNKNOWN,1,,int32_t,41,<empty>,,722,1,CPPASTTypeId,,<empty>
+297060,UNKNOWN,1,,size_t,26,<empty>,,733,1,CPPASTTypeId,,<empty>
+297331,UNKNOWN,1,,double,41,<empty>,,795,1,CPPASTTypeId,,<empty>
+297370,UNKNOWN,1,,double,41,<empty>,,804,1,CPPASTTypeId,,<empty>
+297374,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(udp_wrap, node::UDPWrap::Initialize)",1,<empty>,,809,2,CPPASTProblemDeclaration,,<empty>
+298138,UNKNOWN,1,,size_t,30,<empty>,,275,1,CPPASTTypeId,,<empty>
+299685,UNKNOWN,1,,PropertyAttribute,19,<empty>,,119,1,CPPASTTypeId,,<empty>
+299787,UNKNOWN,2,,"NODE_BINDING_CONTEXT_AWARE_INTERNAL(uv, node::uv::Initialize)
+NODE_BINDING_EXTERNAL_REFERENCE(uv, node::uv::RegisterExternalReferences)",1,<empty>,,140,2,CPPASTProblemDeclaration,,<empty>

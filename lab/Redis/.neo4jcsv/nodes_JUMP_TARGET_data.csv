@@ -1,0 +1,1272 @@
+3088,JUMP_TARGET,-1,"cleanup:
+    sdsfreesplitres(argv, argc);",1,965,cleanup,11,CASTLabelStatement
+6882,JUMP_TARGET,-1,"cleanup:
+    ACLFreeUser(tempu);",1,2076,cleanup,19,CASTLabelStatement
+8053,JUMP_TARGET,-1,"cleanup:
+    if (fd != -1) close(fd);",1,2453,cleanup,28,CASTLabelStatement
+8449,JUMP_TARGET,-1,case ACL_DENIED_CMD:,13,2584,case,1,CASTCaseStatement
+8464,JUMP_TARGET,-1,case ACL_DENIED_KEY:,13,2585,case,5,CASTCaseStatement
+8481,JUMP_TARGET,-1,case ACL_DENIED_CHANNEL:,13,2586,case,9,CASTCaseStatement
+8498,JUMP_TARGET,-1,case ACL_DENIED_AUTH:,13,2587,case,13,CASTCaseStatement
+8515,JUMP_TARGET,-1,default:,13,2588,default,17,CASTDefaultStatement
+8680,JUMP_TARGET,-1,case ACL_DENIED_CMD:,5,2644,case,1,CASTCaseStatement
+8694,JUMP_TARGET,-1,case ACL_DENIED_KEY:,5,2647,case,4,CASTCaseStatement
+8714,JUMP_TARGET,-1,case ACL_DENIED_CHANNEL:,5,2654,case,7,CASTCaseStatement
+10042,JUMP_TARGET,-1,case ACL_DENIED_CMD:,13,2973,case,1,CASTCaseStatement
+10050,JUMP_TARGET,-1,case ACL_DENIED_KEY:,13,2974,case,5,CASTCaseStatement
+10058,JUMP_TARGET,-1,case ACL_DENIED_CHANNEL:,13,2975,case,9,CASTCaseStatement
+10066,JUMP_TARGET,-1,case ACL_DENIED_AUTH:,13,2976,case,13,CASTCaseStatement
+10074,JUMP_TARGET,-1,default:,13,2977,default,17,CASTDefaultStatement
+10090,JUMP_TARGET,-1,case ACL_LOG_CTX_TOPLEVEL:,13,2984,case,1,CASTCaseStatement
+10098,JUMP_TARGET,-1,case ACL_LOG_CTX_MULTI:,13,2985,case,5,CASTCaseStatement
+10106,JUMP_TARGET,-1,case ACL_LOG_CTX_LUA:,13,2986,case,9,CASTCaseStatement
+10114,JUMP_TARGET,-1,case ACL_LOG_CTX_MODULE:,13,2987,case,13,CASTCaseStatement
+10122,JUMP_TARGET,-1,default:,13,2988,default,17,CASTDefaultStatement
+12032,JUMP_TARGET,-1,"err:
+    if (eventLoop) {
+        zfree(eventLoop->events);
+        zfree(eventLoop->fired);
+        zfree(eventLoop);
+    }",1,92,err,19,CASTLabelStatement
+16725,JUMP_TARGET,-1,"error:
+    if (s != ANET_ERR) {
+        close(s);
+        s = ANET_ERR;
+    }",1,362,error,17,CASTLabelStatement
+16742,JUMP_TARGET,-1,"end:
+    freeaddrinfo(servinfo);",1,368,end,19,CASTLabelStatement
+17189,JUMP_TARGET,-1,"error:
+    if (s != -1) close(s);",1,478,error,18,CASTLabelStatement
+17204,JUMP_TARGET,-1,"end:
+    freeaddrinfo(servinfo);",1,481,end,21,CASTLabelStatement
+17746,JUMP_TARGET,-1,"error:
+    if (ip) {
+        if (ip_len >= 2) {
+            ip[0] = '?';
+            ip[1] = '\0';
+        } else if (ip_len == 1) {
+            ip[0] = '\0';
+        }
+    }",1,617,error,7,CASTLabelStatement
+17871,JUMP_TARGET,-1,"error:
+    close(fds[0]);",1,680,error,11,CASTLabelStatement
+19050,JUMP_TARGET,-1,"loaderr:
+    /* Sanitizer suppression: may report a false positive if we goto loaderr
+     * and exit(1) without freeing these allocations. */
+    if (argv) sdsfreesplitres(argv, argc);",1,369,loaderr,23,CASTLabelStatement
+19928,JUMP_TARGET,-1,"cleanup:
+    if (fd != -1) close(fd);",1,588,cleanup,21,CASTLabelStatement
+20877,JUMP_TARGET,-1,"cleanup:
+    if (new_aof_name) sdsfree(new_aof_name);",1,848,cleanup,24,CASTLabelStatement
+22127,JUMP_TARGET,-1,"try_fsync:
+    /* Don't fsync if no-appendfsync-on-rewrite is set to yes and there are
+     * children doing I/O in the background. */
+    if (server.aof_no_fsync_on_rewrite && hasActiveChildProcess())
+        return;",1,1246,try_fsync,19,CASTLabelStatement
+23441,JUMP_TARGET,-1,"loaded_ok: /* DB loaded, cleanup and return success (AOF_OK or AOF_TRUNCATED). */
+    loadingIncrProgress(ftello(fp) - last_progress_report_size);",1,1601,loaded_ok,32,CASTLabelStatement
+23453,JUMP_TARGET,-1,"readerr: /* Read error. If feof(fp) is true, fall through to unexpected EOF. */
+    if (!feof(fp)) {
+        serverLog(LL_WARNING,""Unrecoverable error reading the append only file %s: %s"", filename, strerror(errno));
+        ret = AOF_FAILED;
+        goto cleanup;
+    }",1,1606,readerr,36,CASTLabelStatement
+23486,JUMP_TARGET,-1,"uxeof: /* Unexpected AOF end of file. */
+    if (server.aof_load_truncated) {
+        serverLog(LL_WARNING,""!!! Warning: short read while loading the AOF file %s!!!"", filename);
+        serverLog(LL_WARNING,""!!! Truncating the AOF %s at offset %llu !!!"",
+            filename, (unsigned long long) valid_up_to);
+        if (valid_up_to == -1 || truncate(aof_filepath,valid_up_to) == -1) {
+            if (valid_up_to == -1) {
+                serverLog(LL_WARNING,""Last valid command offset is invalid"");
+            } else {
+                serverLog(LL_WARNING,""Error truncating the AOF file %s: %s"",
+                    filename, strerror(errno));
+            }
+        } else {
+            /* Make sure the AOF file descriptor points to the end of the
+             * file after the truncate call. */
+            if (server.aof_fd != -1 && lseek(server.aof_fd,0,SEEK_END) == -1) {
+                serverLog(LL_WARNING,""Can't seek the end of the AOF file %s: %s"",
+                    filename, st...",1,1613,uxeof,38,CASTLabelStatement
+23686,JUMP_TARGET,-1,"fmterr: /* Format error. */
+    serverLog(LL_WARNING, ""Bad file format reading the append only file %s: ""
+        ""make a backup of your AOF file, then use ./redis-check-aof --fix <filename.manifest>"", filename);",1,1645,fmterr,43,CASTLabelStatement
+23711,JUMP_TARGET,-1,"cleanup:
+    if (fakeClient) freeClient(fakeClient);",1,1651,cleanup,46,CASTLabelStatement
+24266,JUMP_TARGET,-1,"cleanup:
+    stopLoading(ret == AOF_OK || ret == AOF_TRUNCATED);",1,1781,cleanup,26,CASTLabelStatement
+26000,JUMP_TARGET,-1,"werr:
+    dictReleaseIterator(iter);",1,2242,werr,10,CASTLabelStatement
+26468,JUMP_TARGET,-1,"werr:
+    if (di) dictReleaseIterator(di);",1,2345,werr,13,CASTLabelStatement
+26699,JUMP_TARGET,-1,"werr:
+    serverLog(LL_WARNING,""Write error writing append only file on disk: %s"", strerror(errno));",1,2412,werr,20,CASTLabelStatement
+27943,JUMP_TARGET,-1,"cleanup:
+    aofRemoveTempFile(server.child_pid);",1,2725,cleanup,2,CASTLabelStatement
+30238,JUMP_TARGET,-1,"handle_wrap:
+    {
+        uint64_t mask = ((uint64_t)-1) << bits;
+        uint64_t res = value+incr;
+
+        res &= ~mask;
+        *limit = res;
+    }",1,314,handle_wrap,9,CASTLabelStatement
+30418,JUMP_TARGET,-1,"handle_wrap:
+    {
+        uint64_t msb = (uint64_t)1 << (bits-1);
+        uint64_t a = value, b = incr, c;
+        c = a+b; /* Perform addition as unsigned so that's defined. */
+
+        /* If the sign bit is set, propagate to all the higher order
+         * bits, to cap the negative value. If it's clear, mask to
+         * the positive integer limit. */
+        if (bits < 64) {
+            uint64_t mask = ((uint64_t)-1) << bits;
+            if (c & msb) {
+                c |= mask;
+            } else {
+                c &= ~mask;
+            }
+        }
+        *limit = c;
+    }",1,358,handle_wrap,11,CASTLabelStatement
+32027,JUMP_TARGET,-1,case BITOP_AND:,17,754,case,1,CASTCaseStatement
+32040,JUMP_TARGET,-1,case BITOP_OR:,17,758,case,6,CASTCaseStatement
+32053,JUMP_TARGET,-1,case BITOP_XOR:,17,762,case,11,CASTCaseStatement
+33083,JUMP_TARGET,-1,"result:
+        /* If we are looking for clear bits, and the user specified an exact
+         * range with start-end, we can't consider the right of the range as
+         * zero padded (as we do when no explicit end is given).
+         *
+         * So if redisBitpos() returns the first bit outside the range,
+         * we return -1 to the caller, to mean, in the specified range there
+         * is not a single ""0"" bit. */
+        if (end_given && bit == 0 && pos == (long long)bytes<<3) {
+            addReplyLongLong(c,-1);
+            return;
+        }",5,988,result,11,CASTLabelStatement
+35226,JUMP_TARGET,-1,case OBJ_LIST:,9,437,case,1,CASTCaseStatement
+35232,JUMP_TARGET,-1,case OBJ_ZSET:,9,438,case,4,CASTCaseStatement
+35238,JUMP_TARGET,-1,case OBJ_MODULE:,9,439,case,7,CASTCaseStatement
+35244,JUMP_TARGET,-1,case OBJ_STREAM:,9,440,case,10,CASTCaseStatement
+35250,JUMP_TARGET,-1,default:,9,441,default,13,CASTDefaultStatement
+37412,JUMP_TARGET,-1,case REDISMODULE_REPLY_STRING:,9,355,case,1,CASTCaseStatement
+37416,JUMP_TARGET,-1,case REDISMODULE_REPLY_ERROR:,9,356,case,3,CASTCaseStatement
+37420,JUMP_TARGET,-1,case REDISMODULE_REPLY_ARRAY:,9,357,case,5,CASTCaseStatement
+37424,JUMP_TARGET,-1,case REDISMODULE_REPLY_SET:,9,358,case,7,CASTCaseStatement
+37428,JUMP_TARGET,-1,case REDISMODULE_REPLY_MAP:,9,359,case,9,CASTCaseStatement
+37432,JUMP_TARGET,-1,case REDISMODULE_REPLY_ATTRIBUTE:,9,360,case,11,CASTCaseStatement
+37440,JUMP_TARGET,-1,default:,9,362,default,14,CASTDefaultStatement
+39355,JUMP_TARGET,-1,case '\\':,9,393,case,1,CASTCaseStatement
+39357,JUMP_TARGET,-1,"case '""':",9,394,case,3,CASTCaseStatement
+39367,JUMP_TARGET,-1,case '\n':,9,397,case,7,CASTCaseStatement
+39376,JUMP_TARGET,-1,case '\f':,9,398,case,11,CASTCaseStatement
+39385,JUMP_TARGET,-1,case '\r':,9,399,case,15,CASTCaseStatement
+39394,JUMP_TARGET,-1,case '\t':,9,400,case,19,CASTCaseStatement
+39403,JUMP_TARGET,-1,case '\b':,9,401,case,23,CASTCaseStatement
+39412,JUMP_TARGET,-1,default:,9,402,default,27,CASTDefaultStatement
+41794,JUMP_TARGET,-1,"fmterr:
+    serverLog(LL_WARNING,
+        ""Unrecoverable error: corrupted cluster config file \""%s\""."", line);",1,686,fmterr,19,CASTLabelStatement
+42103,JUMP_TARGET,-1,"cleanup:
+    if (fd != -1) close(fd);",1,763,cleanup,22,CASTLabelStatement
+53915,JUMP_TARGET,-1,case CLUSTER_CANT_FAILOVER_DATA_AGE:,5,4076,case,1,CASTCaseStatement
+53923,JUMP_TARGET,-1,case CLUSTER_CANT_FAILOVER_WAITING_DELAY:,5,4081,case,5,CASTCaseStatement
+53931,JUMP_TARGET,-1,case CLUSTER_CANT_FAILOVER_EXPIRED:,5,4084,case,9,CASTCaseStatement
+53939,JUMP_TARGET,-1,case CLUSTER_CANT_FAILOVER_WAITING_VOTES:,5,4087,case,13,CASTCaseStatement
+53947,JUMP_TARGET,-1,default:,5,4090,default,17,CASTDefaultStatement
+58221,JUMP_TARGET,-1,case CLUSTER_ENDPOINT_TYPE_IP:,5,5466,case,1,CASTCaseStatement
+58227,JUMP_TARGET,-1,case CLUSTER_ENDPOINT_TYPE_HOSTNAME:,5,5467,case,4,CASTCaseStatement
+58241,JUMP_TARGET,-1,case CLUSTER_ENDPOINT_TYPE_UNKNOWN_ENDPOINT:,5,5468,case,7,CASTCaseStatement
+58255,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_PING:,5,5475,case,1,CASTCaseStatement
+58261,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_PONG:,5,5476,case,4,CASTCaseStatement
+58267,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_MEET:,5,5477,case,7,CASTCaseStatement
+58273,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_FAIL:,5,5478,case,10,CASTCaseStatement
+58279,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_PUBLISH:,5,5479,case,13,CASTCaseStatement
+58285,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_PUBLISHSHARD:,5,5480,case,16,CASTCaseStatement
+58291,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_FAILOVER_AUTH_REQUEST:,5,5481,case,19,CASTCaseStatement
+58297,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_FAILOVER_AUTH_ACK:,5,5482,case,22,CASTCaseStatement
+58303,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_UPDATE:,5,5483,case,25,CASTCaseStatement
+58309,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_MFSTART:,5,5484,case,28,CASTCaseStatement
+58315,JUMP_TARGET,-1,case CLUSTERMSG_TYPE_MODULE:,5,5485,case,31,CASTCaseStatement
+63963,JUMP_TARGET,-1,"try_again:
+    write_error = 0;",1,6881,try_again,41,CASTLabelStatement
+64868,JUMP_TARGET,-1,"socket_err:
+    /* Cleanup we want to perform in both the retry and no retry case.
+     * Note: Closing the migrate socket will also force SELECT next time. */
+    sdsfree(cmd.io.buffer.ptr);",1,7104,socket_err,79,CASTLabelStatement
+69223,JUMP_TARGET,-1,"loaderr:
+    if (argv) sdsfreesplitres(argv,argc);",1,635,loaderr,25,CASTLabelStatement
+69638,JUMP_TARGET,-1,case BOOL_CONFIG:,9,764,case,1,CASTCaseStatement
+69653,JUMP_TARGET,-1,case SDS_CONFIG:,9,766,case,4,CASTCaseStatement
+69668,JUMP_TARGET,-1,case NUMERIC_CONFIG:,9,768,case,7,CASTCaseStatement
+69683,JUMP_TARGET,-1,case ENUM_CONFIG:,9,770,case,10,CASTCaseStatement
+69698,JUMP_TARGET,-1,default:,9,772,default,13,CASTDefaultStatement
+70462,JUMP_TARGET,-1,"err:
+    if (deny_loading_error) {
+        /* We give the loading error precedence because it may be handled by clients differently, unlike a plain -ERR. */
+        addReplyErrorObject(c,shared.loadingerr);
+    } else if (invalid_arg_name) {
+        addReplyErrorFormat(c,""Unknown option or number of arguments for CONFIG SET - '%s'"", invalid_arg_name);
+    } else if (errstr) {
+        addReplyErrorFormat(c,""CONFIG SET failed (possibly related to argument '%s') - %s"", err_arg_name, errstr);
+    } else {
+        addReplyErrorFormat(c,""CONFIG SET failed (possibly related to argument '%s')"", err_arg_name);
+    }",1,943,err,42,CASTLabelStatement
+70496,JUMP_TARGET,-1,"end:
+    zfree(set_configs);",1,954,end,44,CASTLabelStatement
+73015,JUMP_TARGET,-1,"cleanup:
+    old_errno = errno;",1,1729,cleanup,20,CASTLabelStatement
+78275,JUMP_TARGET,-1,"configerr:
+    zfree(server.latency_tracking_info_percentiles);",1,2977,configerr,8,CASTLabelStatement
+106337,JUMP_TARGET,-1,case OBJ_STRING:,9,1427,case,1,CASTCaseStatement
+106346,JUMP_TARGET,-1,case OBJ_LIST:,9,1428,case,5,CASTCaseStatement
+106355,JUMP_TARGET,-1,case OBJ_SET:,9,1429,case,9,CASTCaseStatement
+106364,JUMP_TARGET,-1,case OBJ_ZSET:,9,1430,case,13,CASTCaseStatement
+106373,JUMP_TARGET,-1,case OBJ_HASH:,9,1431,case,17,CASTCaseStatement
+106382,JUMP_TARGET,-1,case OBJ_STREAM:,9,1432,case,21,CASTCaseStatement
+106391,JUMP_TARGET,-1,case OBJ_MODULE:,9,1433,case,25,CASTCaseStatement
+106411,JUMP_TARGET,-1,default:,9,1437,default,30,CASTDefaultStatement
+108151,JUMP_TARGET,-1,"invalid_spec:
+        if (search_flags & GET_KEYSPEC_RETURN_PARTIAL) {
+            continue;
+        } else {
+            result->numkeys = 0;
+            return -1;
+        }",1,1976,invalid_spec,15,CASTLabelStatement
+113636,JUMP_TARGET,-1,case OBJ_ENCODING_SKIPLIST:,9,930,case,1,CASTCaseStatement
+113653,JUMP_TARGET,-1,case OBJ_ENCODING_HT:,9,936,case,5,CASTCaseStatement
+120737,JUMP_TARGET,-1,"end:
+    return stored > count ? count : stored;",1,1123,end,18,CASTLabelStatement
+126381,JUMP_TARGET,-1,"protoerr:
+    *err = protocol_error;",1,992,protoerr,27,CASTLabelStatement
+126386,JUMP_TARGET,-1,"keep_reading:
+    sdsfreesplitres(argv,argc);",1,994,keep_reading,29,CASTLabelStatement
+126524,JUMP_TARGET,-1,case LUA_TSTRING:,5,1048,case,1,CASTCaseStatement
+126545,JUMP_TARGET,-1,case LUA_TBOOLEAN:,5,1055,case,5,CASTCaseStatement
+126558,JUMP_TARGET,-1,case LUA_TNUMBER:,5,1058,case,9,CASTCaseStatement
+126571,JUMP_TARGET,-1,case LUA_TNIL:,5,1061,case,13,CASTCaseStatement
+126580,JUMP_TARGET,-1,case LUA_TTABLE:,5,1064,case,17,CASTCaseStatement
+126724,JUMP_TARGET,-1,case LUA_TFUNCTION:,5,1103,case,21,CASTCaseStatement
+126726,JUMP_TARGET,-1,case LUA_TUSERDATA:,5,1104,case,23,CASTCaseStatement
+126728,JUMP_TARGET,-1,case LUA_TTHREAD:,5,1105,case,25,CASTCaseStatement
+126730,JUMP_TARGET,-1,case LUA_TLIGHTUSERDATA:,5,1106,case,27,CASTCaseStatement
+126789,JUMP_TARGET,-1,default:,5,1117,default,31,CASTDefaultStatement
+126899,JUMP_TARGET,-1,case ':':,5,1157,case,1,CASTCaseStatement
+126907,JUMP_TARGET,-1,case '$':,5,1158,case,5,CASTCaseStatement
+126915,JUMP_TARGET,-1,case '+':,5,1159,case,9,CASTCaseStatement
+126923,JUMP_TARGET,-1,case '-':,5,1160,case,13,CASTCaseStatement
+126931,JUMP_TARGET,-1,case '*':,5,1161,case,17,CASTCaseStatement
+126939,JUMP_TARGET,-1,case '~':,5,1162,case,21,CASTCaseStatement
+126947,JUMP_TARGET,-1,case '%':,5,1163,case,25,CASTCaseStatement
+126955,JUMP_TARGET,-1,case '_':,5,1164,case,29,CASTCaseStatement
+126963,JUMP_TARGET,-1,case '#':,5,1165,case,33,CASTCaseStatement
+126971,JUMP_TARGET,-1,"case ',':",5,1166,case,37,CASTCaseStatement
+130595,JUMP_TARGET,-1,"cant_free:
+    if (result == EVICT_FAIL) {
+        /* At this point, we have run out of evictable items.  It's possible
+         * that some items are being freed in the lazyfree thread.  Perform a
+         * short wait here if such jobs exist, but don't wait long.  */
+        mstime_t lazyfree_latency;
+        latencyStartMonitor(lazyfree_latency);
+        while (bioPendingJobsOfType(BIO_LAZY_FREE) &&
+              elapsedUs(evictionTimer) < eviction_time_limit_us) {
+            if (getMaxmemoryState(NULL,NULL,NULL,NULL) == C_OK) {
+                result = EVICT_OK;
+                break;
+            }
+            usleep(eviction_time_limit_us < 1000 ? eviction_time_limit_us : 1000);
+        }
+        latencyEndMonitor(lazyfree_latency);
+        latencyAddSampleIfNeeded(""eviction-lazyfree"",lazyfree_latency);
+    }",1,722,cant_free,25,CASTLabelStatement
+130715,JUMP_TARGET,-1,"update_metrics:
+    if (result == EVICT_RUNNING || result == EVICT_FAIL) {
+        if (server.stat_last_eviction_exceeded_time == 0)
+            elapsedStart(&server.stat_last_eviction_exceeded_time);
+    } else if (result == EVICT_OK) {
+        if (server.stat_last_eviction_exceeded_time != 0) {
+            server.stat_total_eviction_exceeded_time += elapsedUs(server.stat_last_eviction_exceeded_time);
+            server.stat_last_eviction_exceeded_time = 0;
+        }
+    }",1,744,update_metrics,29,CASTLabelStatement
+132867,JUMP_TARGET,-1,"done:
+    /* restore original globals */
+    lua_getmetatable(lua, LUA_GLOBALSINDEX);",1,143,done,21,CASTLabelStatement
+133212,JUMP_TARGET,-1,"done:
+    return ret;",1,267,done,10,CASTLabelStatement
+133422,JUMP_TARGET,-1,"error:
+    if (name) sdsfree(name);",1,342,error,18,CASTLabelStatement
+133522,JUMP_TARGET,-1,"error:
+    if (name) sdsfree(name);",1,377,error,17,CASTLabelStatement
+134986,JUMP_TARGET,-1,"done:
+    if (iter) dictReleaseIterator(iter);",1,389,done,24,CASTLabelStatement
+136337,JUMP_TARGET,-1,"load_error:
+    if (err) {
+        addReplyErrorSds(c, err);
+    } else {
+        addReply(c, shared.ok);
+    }",1,793,load_error,20,CASTLabelStatement
+136784,JUMP_TARGET,-1,"error:
+    if (name) sdsfree(name);",1,947,error,31,CASTLabelStatement
+137083,JUMP_TARGET,-1,"error:
+    if (iter) dictReleaseIterator(iter);",1,1032,error,35,CASTLabelStatement
+144145,JUMP_TARGET,-1,case 7:,5,433,case,1,CASTCaseStatement
+144156,JUMP_TARGET,-1,case 6:,5,434,case,4,CASTCaseStatement
+144167,JUMP_TARGET,-1,case 5:,5,435,case,7,CASTCaseStatement
+144178,JUMP_TARGET,-1,case 4:,5,436,case,10,CASTCaseStatement
+144189,JUMP_TARGET,-1,case 3:,5,437,case,13,CASTCaseStatement
+144200,JUMP_TARGET,-1,case 2:,5,438,case,16,CASTCaseStatement
+144211,JUMP_TARGET,-1,case 1:,5,439,case,19,CASTCaseStatement
+146033,JUMP_TARGET,-1,"updated:
+    /* Step 4: Merge adjacent values if possible.
+     *
+     * The representation was updated, however the resulting representation
+     * may not be optimal: adjacent VAL opcodes can sometimes be merged into
+     * a single one. */
+    p = prev ? prev : sparse;",1,850,updated,52,CASTLabelStatement
+146224,JUMP_TARGET,-1,"promote: /* Promote to dense representation. */
+    if (hllSparseToDense(o) == C_ERR) return -1;",1,893,promote,60,CASTLabelStatement
+146817,JUMP_TARGET,-1,case HLL_DENSE:,5,1066,case,1,CASTCaseStatement
+146828,JUMP_TARGET,-1,case HLL_SPARSE:,5,1067,case,4,CASTCaseStatement
+146837,JUMP_TARGET,-1,default:,5,1068,default,7,CASTDefaultStatement
+147424,JUMP_TARGET,-1,"invalid:
+    addReplyError(c,""-WRONGTYPE Key is not a valid ""
+               ""HyperLogLog string value."");",1,1185,invalid,10,CASTLabelStatement
+147538,JUMP_TARGET,-1,case 1:,9,1213,case,1,CASTCaseStatement
+147543,JUMP_TARGET,-1,case -1:,9,1216,case,5,CASTCaseStatement
+148171,JUMP_TARGET,-1,case HLL_DENSE:,9,1385,case,1,CASTCaseStatement
+148184,JUMP_TARGET,-1,case HLL_SPARSE:,9,1386,case,5,CASTCaseStatement
+148738,JUMP_TARGET,-1,"cleanup:
+    sdsfree(bitcounters);",1,1504,cleanup,23,CASTLabelStatement
+149232,JUMP_TARGET,-1,"arityerr:
+    addReplyErrorFormat(c,
+        ""Wrong number of arguments for the '%s' subcommand"",cmd);",1,1614,arityerr,13,CASTLabelStatement
+152930,JUMP_TARGET,-1,"nodataerr:
+    /* Common error when the user asks for an event we have no latency
+     * information about. */
+    addReplyErrorFormat(c,
+        ""No samples available for event '%s'"", (char*) c->argv[2]->ptr);",1,722,nodataerr,4,CASTLabelStatement
+161816,JUMP_TARGET,-1,case 0:,13,58,case,1,CASTCaseStatement
+161822,JUMP_TARGET,-1,case 1:,13,59,case,5,CASTCaseStatement
+161828,JUMP_TARGET,-1,case 2:,13,60,case,9,CASTCaseStatement
+161834,JUMP_TARGET,-1,case 3:,13,61,case,13,CASTCaseStatement
+161840,JUMP_TARGET,-1,default:,13,62,default,17,CASTDefaultStatement
+163321,JUMP_TARGET,-1,case 32:,15,96,case,1,CASTCaseStatement
+163330,JUMP_TARGET,-1,case 31:,39,96,case,4,CASTCaseStatement
+163339,JUMP_TARGET,-1,case 30:,63,96,case,7,CASTCaseStatement
+163348,JUMP_TARGET,-1,case 29:,87,96,case,10,CASTCaseStatement
+163357,JUMP_TARGET,-1,case 28:,15,97,case,13,CASTCaseStatement
+163366,JUMP_TARGET,-1,case 27:,39,97,case,16,CASTCaseStatement
+163375,JUMP_TARGET,-1,case 26:,63,97,case,19,CASTCaseStatement
+163384,JUMP_TARGET,-1,case 25:,87,97,case,22,CASTCaseStatement
+163393,JUMP_TARGET,-1,case 24:,15,98,case,25,CASTCaseStatement
+163402,JUMP_TARGET,-1,case 23:,39,98,case,28,CASTCaseStatement
+163411,JUMP_TARGET,-1,case 22:,63,98,case,31,CASTCaseStatement
+163420,JUMP_TARGET,-1,case 21:,87,98,case,34,CASTCaseStatement
+163429,JUMP_TARGET,-1,case 20:,15,99,case,37,CASTCaseStatement
+163438,JUMP_TARGET,-1,case 19:,39,99,case,40,CASTCaseStatement
+163447,JUMP_TARGET,-1,case 18:,63,99,case,43,CASTCaseStatement
+163456,JUMP_TARGET,-1,case 17:,87,99,case,46,CASTCaseStatement
+163465,JUMP_TARGET,-1,case 16:,15,100,case,49,CASTCaseStatement
+163474,JUMP_TARGET,-1,case 15:,39,100,case,52,CASTCaseStatement
+163483,JUMP_TARGET,-1,case 14:,63,100,case,55,CASTCaseStatement
+163492,JUMP_TARGET,-1,case 13:,87,100,case,58,CASTCaseStatement
+163501,JUMP_TARGET,-1,case 12:,15,101,case,61,CASTCaseStatement
+163510,JUMP_TARGET,-1,case 11:,39,101,case,64,CASTCaseStatement
+163519,JUMP_TARGET,-1,case 10:,63,101,case,67,CASTCaseStatement
+163528,JUMP_TARGET,-1,case  9:,87,101,case,70,CASTCaseStatement
+163537,JUMP_TARGET,-1,case  8:,15,102,case,73,CASTCaseStatement
+163546,JUMP_TARGET,-1,case  7:,39,102,case,76,CASTCaseStatement
+163555,JUMP_TARGET,-1,case  6:,63,102,case,79,CASTCaseStatement
+163564,JUMP_TARGET,-1,case  5:,87,102,case,82,CASTCaseStatement
+163573,JUMP_TARGET,-1,case  4:,15,103,case,85,CASTCaseStatement
+163582,JUMP_TARGET,-1,case  3:,39,103,case,88,CASTCaseStatement
+163591,JUMP_TARGET,-1,case  2:,63,103,case,91,CASTCaseStatement
+163600,JUMP_TARGET,-1,case  1:,87,103,case,94,CASTCaseStatement
+163705,JUMP_TARGET,-1,default:,15,152,default,1,CASTDefaultStatement
+163736,JUMP_TARGET,-1,case 9:,15,171,case,5,CASTCaseStatement
+163745,JUMP_TARGET,-1,case 8:,15,172,case,8,CASTCaseStatement
+163754,JUMP_TARGET,-1,case 7:,15,173,case,11,CASTCaseStatement
+163763,JUMP_TARGET,-1,case 6:,15,174,case,14,CASTCaseStatement
+163772,JUMP_TARGET,-1,case 5:,15,175,case,17,CASTCaseStatement
+163781,JUMP_TARGET,-1,case 4:,15,176,case,20,CASTCaseStatement
+163790,JUMP_TARGET,-1,case 3:,15,177,case,23,CASTCaseStatement
+163799,JUMP_TARGET,-1,case 2:,15,178,case,26,CASTCaseStatement
+163808,JUMP_TARGET,-1,case 1:,15,179,case,29,CASTCaseStatement
+163817,JUMP_TARGET,-1,case 0:,15,180,case,32,CASTCaseStatement
+165885,JUMP_TARGET,-1,case REDISMODULE_KEYTYPE_LIST:,5,692,case,1,CASTCaseStatement
+165893,JUMP_TARGET,-1,case REDISMODULE_KEYTYPE_ZSET:,5,695,case,5,CASTCaseStatement
+165901,JUMP_TARGET,-1,case REDISMODULE_KEYTYPE_HASH:,5,698,case,9,CASTCaseStatement
+165909,JUMP_TARGET,-1,case REDISMODULE_KEYTYPE_STREAM:,5,701,case,13,CASTCaseStatement
+165917,JUMP_TARGET,-1,default:,5,704,default,17,CASTDefaultStatement
+165971,JUMP_TARGET,-1,case OBJ_LIST:,5,716,case,1,CASTCaseStatement
+165980,JUMP_TARGET,-1,case OBJ_STREAM:,5,717,case,5,CASTCaseStatement
+165993,JUMP_TARGET,-1,default:,5,721,default,10,CASTDefaultStatement
+166089,JUMP_TARGET,-1,case OBJ_LIST:,5,750,case,1,CASTCaseStatement
+166100,JUMP_TARGET,-1,case OBJ_SET:,5,751,case,5,CASTCaseStatement
+166111,JUMP_TARGET,-1,case OBJ_ZSET:,5,752,case,9,CASTCaseStatement
+166122,JUMP_TARGET,-1,case OBJ_HASH:,5,753,case,13,CASTCaseStatement
+166133,JUMP_TARGET,-1,case OBJ_STREAM:,5,754,case,17,CASTCaseStatement
+166144,JUMP_TARGET,-1,default:,5,755,default,21,CASTDefaultStatement
+168910,JUMP_TARGET,-1,case REDISMODULE_KSPEC_BS_UNKNOWN:,13,1884,case,1,CASTCaseStatement
+168922,JUMP_TARGET,-1,case REDISMODULE_KSPEC_BS_INDEX:,13,1887,case,5,CASTCaseStatement
+168953,JUMP_TARGET,-1,case REDISMODULE_KSPEC_BS_KEYWORD:,13,1891,case,10,CASTCaseStatement
+169004,JUMP_TARGET,-1,default:,13,1896,default,16,CASTDefaultStatement
+169018,JUMP_TARGET,-1,case REDISMODULE_KSPEC_FK_OMITTED:,13,1902,case,1,CASTCaseStatement
+169069,JUMP_TARGET,-1,case REDISMODULE_KSPEC_FK_UNKNOWN:,13,1909,case,8,CASTCaseStatement
+169081,JUMP_TARGET,-1,case REDISMODULE_KSPEC_FK_RANGE:,13,1912,case,12,CASTCaseStatement
+169150,JUMP_TARGET,-1,case REDISMODULE_KSPEC_FK_KEYNUM:,13,1918,case,19,CASTCaseStatement
+169219,JUMP_TARGET,-1,default:,13,1924,default,26,CASTDefaultStatement
+169534,JUMP_TARGET,-1,case REDISMODULE_KSPEC_BS_UNKNOWN:,13,2013,case,1,CASTCaseStatement
+169537,JUMP_TARGET,-1,case REDISMODULE_KSPEC_BS_INDEX:,13,2014,case,4,CASTCaseStatement
+169540,JUMP_TARGET,-1,case REDISMODULE_KSPEC_BS_KEYWORD:,13,2015,case,7,CASTCaseStatement
+169575,JUMP_TARGET,-1,default:,13,2023,default,11,CASTDefaultStatement
+169605,JUMP_TARGET,-1,case REDISMODULE_KSPEC_FK_OMITTED:,13,2032,case,1,CASTCaseStatement
+169608,JUMP_TARGET,-1,case REDISMODULE_KSPEC_FK_UNKNOWN:,13,2033,case,4,CASTCaseStatement
+169611,JUMP_TARGET,-1,case REDISMODULE_KSPEC_FK_RANGE:,13,2034,case,7,CASTCaseStatement
+169614,JUMP_TARGET,-1,case REDISMODULE_KSPEC_FK_KEYNUM:,13,2035,case,10,CASTCaseStatement
+169617,JUMP_TARGET,-1,default:,13,2036,default,13,CASTDefaultStatement
+170375,JUMP_TARGET,-1,case REDISMODULE_ARG_TYPE_STRING:,5,2175,case,1,CASTCaseStatement
+170379,JUMP_TARGET,-1,case REDISMODULE_ARG_TYPE_INTEGER:,5,2176,case,4,CASTCaseStatement
+170383,JUMP_TARGET,-1,case REDISMODULE_ARG_TYPE_DOUBLE:,5,2177,case,7,CASTCaseStatement
+170387,JUMP_TARGET,-1,case REDISMODULE_ARG_TYPE_KEY:,5,2178,case,10,CASTCaseStatement
+170391,JUMP_TARGET,-1,case REDISMODULE_ARG_TYPE_PATTERN:,5,2179,case,13,CASTCaseStatement
+170395,JUMP_TARGET,-1,case REDISMODULE_ARG_TYPE_UNIX_TIME:,5,2180,case,16,CASTCaseStatement
+170399,JUMP_TARGET,-1,case REDISMODULE_ARG_TYPE_PURE_TOKEN:,5,2181,case,19,CASTCaseStatement
+170403,JUMP_TARGET,-1,case REDISMODULE_ARG_TYPE_ONEOF:,5,2182,case,22,CASTCaseStatement
+170407,JUMP_TARGET,-1,case REDISMODULE_ARG_TYPE_BLOCK:,5,2183,case,25,CASTCaseStatement
+170411,JUMP_TARGET,-1,default:,5,2184,default,28,CASTDefaultStatement
+171239,JUMP_TARGET,-1,case REDISMODULE_AM_STRING:,9,2502,case,1,CASTCaseStatement
+171246,JUMP_TARGET,-1,case REDISMODULE_AM_REPLY:,9,2503,case,5,CASTCaseStatement
+171253,JUMP_TARGET,-1,case REDISMODULE_AM_KEY:,9,2504,case,9,CASTCaseStatement
+171260,JUMP_TARGET,-1,case REDISMODULE_AM_DICT:,9,2505,case,13,CASTCaseStatement
+171268,JUMP_TARGET,-1,case REDISMODULE_AM_INFO:,9,2506,case,17,CASTCaseStatement
+172192,JUMP_TARGET,-1,case COLLECTION_REPLY_ARRAY:,9,3061,case,1,CASTCaseStatement
+172202,JUMP_TARGET,-1,case COLLECTION_REPLY_MAP:,9,3064,case,5,CASTCaseStatement
+172216,JUMP_TARGET,-1,case COLLECTION_REPLY_SET:,9,3067,case,9,CASTCaseStatement
+172230,JUMP_TARGET,-1,case COLLECTION_REPLY_ATTRIBUTE:,9,3070,case,13,CASTCaseStatement
+172238,JUMP_TARGET,-1,default:,9,3073,default,17,CASTDefaultStatement
+172253,JUMP_TARGET,-1,case COLLECTION_REPLY_ARRAY:,9,3077,case,1,CASTCaseStatement
+172261,JUMP_TARGET,-1,case COLLECTION_REPLY_MAP:,9,3080,case,5,CASTCaseStatement
+172269,JUMP_TARGET,-1,case COLLECTION_REPLY_SET:,9,3083,case,9,CASTCaseStatement
+172277,JUMP_TARGET,-1,case COLLECTION_REPLY_ATTRIBUTE:,9,3086,case,13,CASTCaseStatement
+172285,JUMP_TARGET,-1,default:,9,3089,default,17,CASTDefaultStatement
+172473,JUMP_TARGET,-1,case COLLECTION_REPLY_ARRAY:,5,3199,case,1,CASTCaseStatement
+172488,JUMP_TARGET,-1,case COLLECTION_REPLY_MAP:,5,3202,case,5,CASTCaseStatement
+172503,JUMP_TARGET,-1,case COLLECTION_REPLY_SET:,5,3205,case,9,CASTCaseStatement
+172518,JUMP_TARGET,-1,case COLLECTION_REPLY_ATTRIBUTE:,5,3208,case,13,CASTCaseStatement
+172533,JUMP_TARGET,-1,default:,5,3211,default,17,CASTDefaultStatement
+174230,JUMP_TARGET,-1,case OBJ_ZSET:,5,3966,case,1,CASTCaseStatement
+174237,JUMP_TARGET,-1,case OBJ_STREAM:,5,3967,case,5,CASTCaseStatement
+174525,JUMP_TARGET,-1,case OBJ_ZSET:,9,4043,case,1,CASTCaseStatement
+174532,JUMP_TARGET,-1,case OBJ_STREAM:,9,4046,case,5,CASTCaseStatement
+174628,JUMP_TARGET,-1,case OBJ_STRING:,5,4072,case,1,CASTCaseStatement
+174636,JUMP_TARGET,-1,case OBJ_LIST:,5,4073,case,4,CASTCaseStatement
+174644,JUMP_TARGET,-1,case OBJ_SET:,5,4074,case,7,CASTCaseStatement
+174652,JUMP_TARGET,-1,case OBJ_ZSET:,5,4075,case,10,CASTCaseStatement
+174660,JUMP_TARGET,-1,case OBJ_HASH:,5,4076,case,13,CASTCaseStatement
+174668,JUMP_TARGET,-1,case OBJ_MODULE:,5,4077,case,16,CASTCaseStatement
+174676,JUMP_TARGET,-1,case OBJ_STREAM:,5,4078,case,19,CASTCaseStatement
+174684,JUMP_TARGET,-1,default:,5,4079,default,22,CASTDefaultStatement
+174714,JUMP_TARGET,-1,case OBJ_STRING:,5,4091,case,1,CASTCaseStatement
+174723,JUMP_TARGET,-1,case OBJ_LIST:,5,4092,case,4,CASTCaseStatement
+174732,JUMP_TARGET,-1,case OBJ_SET:,5,4093,case,7,CASTCaseStatement
+174741,JUMP_TARGET,-1,case OBJ_ZSET:,5,4094,case,10,CASTCaseStatement
+174750,JUMP_TARGET,-1,case OBJ_HASH:,5,4095,case,13,CASTCaseStatement
+174759,JUMP_TARGET,-1,case OBJ_STREAM:,5,4096,case,16,CASTCaseStatement
+174768,JUMP_TARGET,-1,default:,5,4097,default,19,CASTDefaultStatement
+180655,JUMP_TARGET,-1,case REDISMODULE_REPLY_STRING:,9,5977,case,1,CASTCaseStatement
+180659,JUMP_TARGET,-1,case REDISMODULE_REPLY_ERROR:,9,5978,case,3,CASTCaseStatement
+180674,JUMP_TARGET,-1,case REDISMODULE_REPLY_INTEGER:,9,5981,case,7,CASTCaseStatement
+180694,JUMP_TARGET,-1,default:,9,5986,default,10,CASTDefaultStatement
+181157,JUMP_TARGET,-1,"fmterr:
+    for (j = 0; j < argc; j++)
+        decrRefCount(argv[j]);",1,6095,fmterr,16,CASTLabelStatement
+182311,JUMP_TARGET,-1,"cleanup:
+    if (reply) autoMemoryAdd(ctx,REDISMODULE_AM_REPLY,reply);",1,6504,cleanup,56,CASTLabelStatement
+183557,JUMP_TARGET,-1,"saveerr:
+    io->error = 1;",1,7044,saveerr,11,CASTLabelStatement
+183611,JUMP_TARGET,-1,"loaderr:
+    moduleRDBLoadError(io);",1,7060,loaderr,10,CASTLabelStatement
+183711,JUMP_TARGET,-1,"saveerr:
+    io->error = 1;",1,7098,saveerr,11,CASTLabelStatement
+183783,JUMP_TARGET,-1,"saveerr:
+    io->error = 1;",1,7117,saveerr,11,CASTLabelStatement
+183845,JUMP_TARGET,-1,"loaderr:
+    moduleRDBLoadError(io);",1,7131,loaderr,9,CASTLabelStatement
+183933,JUMP_TARGET,-1,"saveerr:
+    io->error = 1;",1,7176,saveerr,11,CASTLabelStatement
+183986,JUMP_TARGET,-1,"loaderr:
+    moduleRDBLoadError(io);",1,7191,loaderr,10,CASTLabelStatement
+184053,JUMP_TARGET,-1,"saveerr:
+    io->error = 1;",1,7212,saveerr,11,CASTLabelStatement
+184106,JUMP_TARGET,-1,"loaderr:
+    moduleRDBLoadError(io);",1,7227,loaderr,10,CASTLabelStatement
+189835,JUMP_TARGET,-1,case REDISMODULE_ACL_LOG_AUTH:,9,9683,case,1,CASTCaseStatement
+189843,JUMP_TARGET,-1,case REDISMODULE_ACL_LOG_KEY:,9,9684,case,5,CASTCaseStatement
+189851,JUMP_TARGET,-1,case REDISMODULE_ACL_LOG_CHANNEL:,9,9685,case,9,CASTCaseStatement
+189859,JUMP_TARGET,-1,case REDISMODULE_ACL_LOG_CMD:,9,9686,case,13,CASTCaseStatement
+189867,JUMP_TARGET,-1,default:,9,9687,default,17,CASTDefaultStatement
+193934,JUMP_TARGET,-1,case REDISMODULE_EVENT_REPLICATION_ROLE_CHANGED:,5,11555,case,1,CASTCaseStatement
+193944,JUMP_TARGET,-1,case REDISMODULE_EVENT_PERSISTENCE:,5,11557,case,4,CASTCaseStatement
+193954,JUMP_TARGET,-1,case REDISMODULE_EVENT_FLUSHDB:,5,11559,case,7,CASTCaseStatement
+193964,JUMP_TARGET,-1,case REDISMODULE_EVENT_LOADING:,5,11561,case,10,CASTCaseStatement
+193974,JUMP_TARGET,-1,case REDISMODULE_EVENT_CLIENT_CHANGE:,5,11563,case,13,CASTCaseStatement
+193984,JUMP_TARGET,-1,case REDISMODULE_EVENT_SHUTDOWN:,5,11565,case,16,CASTCaseStatement
+193994,JUMP_TARGET,-1,case REDISMODULE_EVENT_REPLICA_CHANGE:,5,11567,case,19,CASTCaseStatement
+194004,JUMP_TARGET,-1,case REDISMODULE_EVENT_MASTER_LINK_CHANGE:,5,11569,case,22,CASTCaseStatement
+194014,JUMP_TARGET,-1,case REDISMODULE_EVENT_CRON_LOOP:,5,11571,case,25,CASTCaseStatement
+194024,JUMP_TARGET,-1,case REDISMODULE_EVENT_MODULE_CHANGE:,5,11573,case,28,CASTCaseStatement
+194034,JUMP_TARGET,-1,case REDISMODULE_EVENT_LOADING_PROGRESS:,5,11575,case,31,CASTCaseStatement
+194044,JUMP_TARGET,-1,case REDISMODULE_EVENT_SWAPDB:,5,11577,case,34,CASTCaseStatement
+194054,JUMP_TARGET,-1,case REDISMODULE_EVENT_REPL_ASYNC_LOAD:,5,11579,case,37,CASTCaseStatement
+194064,JUMP_TARGET,-1,case REDISMODULE_EVENT_FORK_CHILD:,5,11581,case,40,CASTCaseStatement
+194074,JUMP_TARGET,-1,case REDISMODULE_EVENT_EVENTLOOP:,5,11583,case,43,CASTCaseStatement
+194084,JUMP_TARGET,-1,case REDISMODULE_EVENT_CONFIG:,5,11585,case,46,CASTCaseStatement
+194094,JUMP_TARGET,-1,case REDISMODULE_EVENT_KEY:,5,11587,case,49,CASTCaseStatement
+194104,JUMP_TARGET,-1,default:,5,11589,default,52,CASTDefaultStatement
+198752,JUMP_TARGET,-1,case REDISMODULE_RDB_STREAM_FILE:,5,12865,case,1,CASTCaseStatement
+198763,JUMP_TARGET,-1,default:,5,12868,default,5,CASTDefaultStatement
+209511,JUMP_TARGET,-1,case ACL_DENIED_CMD:,13,209,case,1,CASTCaseStatement
+209519,JUMP_TARGET,-1,case ACL_DENIED_KEY:,13,212,case,5,CASTCaseStatement
+209527,JUMP_TARGET,-1,case ACL_DENIED_CHANNEL:,13,215,case,9,CASTCaseStatement
+209535,JUMP_TARGET,-1,default:,13,219,default,13,CASTDefaultStatement
+210172,JUMP_TARGET,-1,"skip_client:
+        continue;",5,413,skip_client,8,CASTLabelStatement
+210577,JUMP_TARGET,-1,case OBJ_ENCODING_RAW:,5,59,case,1,CASTCaseStatement
+210586,JUMP_TARGET,-1,case OBJ_ENCODING_EMBSTR:,5,60,case,4,CASTCaseStatement
+210596,JUMP_TARGET,-1,default:,5,61,default,7,CASTDefaultStatement
+210631,JUMP_TARGET,-1,case OBJ_ENCODING_RAW:,5,70,case,1,CASTCaseStatement
+210640,JUMP_TARGET,-1,case OBJ_ENCODING_EMBSTR:,5,71,case,4,CASTCaseStatement
+210649,JUMP_TARGET,-1,default:,5,72,default,7,CASTDefaultStatement
+219853,JUMP_TARGET,-1,"done:
+    beforeNextClient(c);",1,2716,done,23,CASTLabelStatement
+224538,JUMP_TARGET,-1,case CLIENT_TYPE_NORMAL:,5,3837,case,1,CASTCaseStatement
+224544,JUMP_TARGET,-1,case CLIENT_TYPE_SLAVE:,5,3838,case,4,CASTCaseStatement
+224550,JUMP_TARGET,-1,case CLIENT_TYPE_PUBSUB:,5,3839,case,7,CASTCaseStatement
+224556,JUMP_TARGET,-1,case CLIENT_TYPE_MASTER:,5,3840,case,10,CASTCaseStatement
+224562,JUMP_TARGET,-1,default:,5,3841,default,13,CASTDefaultStatement
+226845,JUMP_TARGET,-1,case 'A':,9,46,case,1,CASTCaseStatement
+226891,JUMP_TARGET,-1,case 'g':,9,47,case,5,CASTCaseStatement
+226901,JUMP_TARGET,-1,case '$':,9,48,case,9,CASTCaseStatement
+226911,JUMP_TARGET,-1,case 'l':,9,49,case,13,CASTCaseStatement
+226921,JUMP_TARGET,-1,case 's':,9,50,case,17,CASTCaseStatement
+226931,JUMP_TARGET,-1,case 'h':,9,51,case,21,CASTCaseStatement
+226941,JUMP_TARGET,-1,case 'z':,9,52,case,25,CASTCaseStatement
+226951,JUMP_TARGET,-1,case 'x':,9,53,case,29,CASTCaseStatement
+226961,JUMP_TARGET,-1,case 'e':,9,54,case,33,CASTCaseStatement
+226971,JUMP_TARGET,-1,case 'K':,9,55,case,37,CASTCaseStatement
+226981,JUMP_TARGET,-1,case 'E':,9,56,case,41,CASTCaseStatement
+226991,JUMP_TARGET,-1,case 't':,9,57,case,45,CASTCaseStatement
+227001,JUMP_TARGET,-1,case 'm':,9,58,case,49,CASTCaseStatement
+227011,JUMP_TARGET,-1,case 'd':,9,59,case,53,CASTCaseStatement
+227021,JUMP_TARGET,-1,case 'n':,9,60,case,57,CASTCaseStatement
+227031,JUMP_TARGET,-1,default:,9,61,default,61,CASTDefaultStatement
+228047,JUMP_TARGET,-1,case OBJ_ENCODING_RAW:,5,220,case,1,CASTCaseStatement
+228060,JUMP_TARGET,-1,case OBJ_ENCODING_EMBSTR:,5,222,case,4,CASTCaseStatement
+228073,JUMP_TARGET,-1,case OBJ_ENCODING_INT:,5,224,case,7,CASTCaseStatement
+228100,JUMP_TARGET,-1,default:,5,229,default,13,CASTDefaultStatement
+228465,JUMP_TARGET,-1,case OBJ_ENCODING_HT:,5,327,case,1,CASTCaseStatement
+228476,JUMP_TARGET,-1,case OBJ_ENCODING_INTSET:,5,330,case,5,CASTCaseStatement
+228480,JUMP_TARGET,-1,case OBJ_ENCODING_LISTPACK:,5,331,case,7,CASTCaseStatement
+228489,JUMP_TARGET,-1,default:,5,334,default,11,CASTDefaultStatement
+228509,JUMP_TARGET,-1,case OBJ_ENCODING_SKIPLIST:,5,342,case,1,CASTCaseStatement
+228529,JUMP_TARGET,-1,case OBJ_ENCODING_LISTPACK:,5,348,case,8,CASTCaseStatement
+228538,JUMP_TARGET,-1,default:,5,351,default,12,CASTDefaultStatement
+228557,JUMP_TARGET,-1,case OBJ_ENCODING_HT:,5,358,case,1,CASTCaseStatement
+228568,JUMP_TARGET,-1,case OBJ_ENCODING_LISTPACK:,5,361,case,5,CASTCaseStatement
+228577,JUMP_TARGET,-1,default:,5,364,default,9,CASTDefaultStatement
+228687,JUMP_TARGET,-1,case OBJ_STRING:,9,395,case,1,CASTCaseStatement
+228694,JUMP_TARGET,-1,case OBJ_LIST:,9,396,case,5,CASTCaseStatement
+228701,JUMP_TARGET,-1,case OBJ_SET:,9,397,case,9,CASTCaseStatement
+228708,JUMP_TARGET,-1,case OBJ_ZSET:,9,398,case,13,CASTCaseStatement
+228715,JUMP_TARGET,-1,case OBJ_HASH:,9,399,case,17,CASTCaseStatement
+228722,JUMP_TARGET,-1,case OBJ_MODULE:,9,400,case,21,CASTCaseStatement
+228729,JUMP_TARGET,-1,case OBJ_STREAM:,9,401,case,25,CASTCaseStatement
+228736,JUMP_TARGET,-1,default:,9,402,default,29,CASTDefaultStatement
+231037,JUMP_TARGET,-1,case OBJ_ENCODING_RAW:,5,958,case,1,CASTCaseStatement
+231043,JUMP_TARGET,-1,case OBJ_ENCODING_INT:,5,959,case,4,CASTCaseStatement
+231049,JUMP_TARGET,-1,case OBJ_ENCODING_HT:,5,960,case,7,CASTCaseStatement
+231055,JUMP_TARGET,-1,case OBJ_ENCODING_QUICKLIST:,5,961,case,10,CASTCaseStatement
+231061,JUMP_TARGET,-1,case OBJ_ENCODING_LISTPACK:,5,962,case,13,CASTCaseStatement
+231067,JUMP_TARGET,-1,case OBJ_ENCODING_INTSET:,5,963,case,16,CASTCaseStatement
+231073,JUMP_TARGET,-1,case OBJ_ENCODING_SKIPLIST:,5,964,case,19,CASTCaseStatement
+231079,JUMP_TARGET,-1,case OBJ_ENCODING_EMBSTR:,5,965,case,22,CASTCaseStatement
+231085,JUMP_TARGET,-1,case OBJ_ENCODING_STREAM:,5,966,case,25,CASTCaseStatement
+231091,JUMP_TARGET,-1,default:,5,967,default,28,CASTDefaultStatement
+234457,JUMP_TARGET,-1,"loop:	SWAPINIT(a, es)",1,106,loop,12,CASTLabelStatement
+247725,JUMP_TARGET,-1,"oom:
+    /* This code path handles out of memory after part of the sub-tree was
+     * already modified. Set the node as a key, and then remove it. However we
+     * do that only if the node is a terminal node, otherwise if the OOM
+     * happened reallocating a node in the middle, we don't need to free
+     * anything. */
+    if (h->size == 0) {
+        h->isnull = 1;
+        h->iskey = 1;
+        rax->numele++; /* Compensate the next remove. */
+        assert(raxRemove(rax,s,i,NULL) != 0);
+    }",1,886,oom,18,CASTLabelStatement
+253306,JUMP_TARGET,-1,"writeerr:
+    return -1;",1,366,writeerr,15,CASTLabelStatement
+253626,JUMP_TARGET,-1,"err:
+    zfree(c);",1,431,err,21,CASTLabelStatement
+253956,JUMP_TARGET,-1,case RDB_ENC_INT8:,9,529,case,1,CASTCaseStatement
+253960,JUMP_TARGET,-1,case RDB_ENC_INT16:,9,530,case,3,CASTCaseStatement
+253964,JUMP_TARGET,-1,case RDB_ENC_INT32:,9,531,case,5,CASTCaseStatement
+253974,JUMP_TARGET,-1,case RDB_ENC_LZF:,9,533,case,8,CASTCaseStatement
+253983,JUMP_TARGET,-1,default:,9,535,default,11,CASTDefaultStatement
+254336,JUMP_TARGET,-1,case 255:,5,618,case,1,CASTCaseStatement
+254344,JUMP_TARGET,-1,case 254:,5,619,case,5,CASTCaseStatement
+254352,JUMP_TARGET,-1,case 253:,5,620,case,9,CASTCaseStatement
+254360,JUMP_TARGET,-1,default:,5,621,default,13,CASTDefaultStatement
+254493,JUMP_TARGET,-1,case OBJ_STRING:,5,663,case,1,CASTCaseStatement
+254503,JUMP_TARGET,-1,case OBJ_LIST:,5,665,case,4,CASTCaseStatement
+254540,JUMP_TARGET,-1,case OBJ_SET:,5,670,case,7,CASTCaseStatement
+254603,JUMP_TARGET,-1,case OBJ_ZSET:,5,679,case,10,CASTCaseStatement
+254649,JUMP_TARGET,-1,case OBJ_HASH:,5,686,case,13,CASTCaseStatement
+254695,JUMP_TARGET,-1,case OBJ_STREAM:,5,693,case,16,CASTCaseStatement
+254705,JUMP_TARGET,-1,case OBJ_MODULE:,5,695,case,19,CASTCaseStatement
+254715,JUMP_TARGET,-1,default:,5,697,default,22,CASTDefaultStatement
+257186,JUMP_TARGET,-1,"error:
+    sdsfree(aux_save_headers_rio.io.buffer.ptr);",1,1274,error,18,CASTLabelStatement
+257272,JUMP_TARGET,-1,"werr:
+    dictReleaseIterator(iter);",1,1295,werr,13,CASTLabelStatement
+257589,JUMP_TARGET,-1,"werr:
+    dictReleaseIterator(di);",1,1363,werr,33,CASTLabelStatement
+257782,JUMP_TARGET,-1,"werr:
+    if (error) *error = errno;",1,1411,werr,19,CASTLabelStatement
+257884,JUMP_TARGET,-1,"werr: /* Write error. */
+    /* Set 'error' only if not already set by rdbSaveRio() call. */
+    if (error && *error == 0) *error = errno;",1,1438,werr,12,CASTLabelStatement
+258102,JUMP_TARGET,-1,"werr:
+    saved_errno = errno;",1,1490,werr,18,CASTLabelStatement
+260708,JUMP_TARGET,-1,case RDB_TYPE_HASH_ZIPMAP:,13,2261,case,1,CASTCaseStatement
+260902,JUMP_TARGET,-1,case RDB_TYPE_LIST_ZIPLIST:,13,2315,case,6,CASTCaseStatement
+260986,JUMP_TARGET,-1,case RDB_TYPE_SET_INTSET:,13,2345,case,9,CASTCaseStatement
+261051,JUMP_TARGET,-1,case RDB_TYPE_SET_LISTPACK:,13,2359,case,17,CASTCaseStatement
+261131,JUMP_TARGET,-1,case RDB_TYPE_ZSET_ZIPLIST:,13,2380,case,26,CASTCaseStatement
+261224,JUMP_TARGET,-1,case RDB_TYPE_ZSET_LISTPACK:,13,2407,case,29,CASTCaseStatement
+261297,JUMP_TARGET,-1,case RDB_TYPE_HASH_ZIPLIST:,13,2426,case,38,CASTCaseStatement
+261390,JUMP_TARGET,-1,case RDB_TYPE_HASH_LISTPACK:,13,2453,case,41,CASTCaseStatement
+261463,JUMP_TARGET,-1,default:,13,2472,default,50,CASTDefaultStatement
+262666,JUMP_TARGET,-1,"emptykey:
+    if (error) *error = RDB_LOAD_ERR_EMPTY_KEY;",1,2851,emptykey,14,CASTLabelStatement
+263128,JUMP_TARGET,-1,"done:
+    if (final_payload) sdsfree(final_payload);",1,2995,done,11,CASTLabelStatement
+264842,JUMP_TARGET,-1,"eoferr:
+    serverLog(LL_WARNING,
+        ""Short read or OOM loading DB. Unrecoverable error, aborting now."");",1,3362,eoferr,32,CASTLabelStatement
+265359,JUMP_TARGET,-1,case RDB_CHILD_TYPE_DISK:,5,3470,case,1,CASTCaseStatement
+265367,JUMP_TARGET,-1,case RDB_CHILD_TYPE_SOCKET:,5,3473,case,5,CASTCaseStatement
+265375,JUMP_TARGET,-1,default:,5,3476,default,9,CASTDefaultStatement
+267001,JUMP_TARGET,-1,"cleanup:
+    freeReplyObject(reply);",1,305,cleanup,13,CASTLabelStatement
+267159,JUMP_TARGET,-1,case 0:,9,343,case,1,CASTCaseStatement
+267168,JUMP_TARGET,-1,case 1:,9,344,case,5,CASTCaseStatement
+267183,JUMP_TARGET,-1,"fail:
+    if (reply && reply->type == REDIS_REPLY_ERROR &&
+        !strncmp(reply->str,""NOAUTH"",6)) {
+        if (hostsocket == NULL)
+            fprintf(stderr, ""Node %s:%d replied with error:\n%s\n"", ip, port, reply->str);
+        else
+            fprintf(stderr, ""Node %s replied with error:\n%s\n"", hostsocket, reply->str);
+        abort_test = 1;
+    }",1,350,fail,24,CASTLabelStatement
+270717,JUMP_TARGET,-1,case 0:,13,1158,case,1,CASTCaseStatement
+270723,JUMP_TARGET,-1,case 1:,13,1159,case,5,CASTCaseStatement
+270729,JUMP_TARGET,-1,case 2:,13,1160,case,9,CASTCaseStatement
+270735,JUMP_TARGET,-1,case 3:,13,1161,case,13,CASTCaseStatement
+271237,JUMP_TARGET,-1,"cleanup:
+    if (ctx) redisFree(ctx);",1,1278,cleanup,22,CASTLabelStatement
+271644,JUMP_TARGET,-1,"cleanup:
+    freeReplyObject(reply);",1,1371,cleanup,31,CASTLabelStatement
+272668,JUMP_TARGET,-1,"invalid:
+    printf(""Invalid option \""%s\"" or option argument missing\n\n"",argv[i]);",1,1580,invalid,8,CASTLabelStatement
+272674,JUMP_TARGET,-1,"usage:
+    tls_usage =
+#ifdef USE_OPENSSL
+"" --tls              Establish a secure TLS connection.\n""
+"" --sni <host>       Server name indication for TLS.\n""
+"" --cacert <file>    CA Certificate file to verify with.\n""
+"" --cacertdir <dir>  Directory where trusted CA certificates are stored.\n""
+""                    If neither cacert nor cacertdir are specified, the default\n""
+""                    system-wide trusted root certs configuration will apply.\n""
+"" --insecure         Allow insecure TLS connection by skipping cert validation.\n""
+"" --cert <file>      Client certificate to authenticate with.\n""
+"" --key <file>       Private key file to authenticate with.\n""
+"" --tls-ciphers <list> Sets the list of preferred ciphers (TLSv1.2 and below)\n""
+""                    in order of preference from highest to lowest separated by colon (\"":\"").\n""
+""                    See the ciphers(1ssl) manpage for more information about the syntax of this string.\n""
+#ifdef TLS1_3_VERSION
+"" --tls-ciphersuites...",1,1583,usage,10,CASTLabelStatement
+275636,JUMP_TARGET,-1,case AOF_MULTI_PART:,5,549,case,1,CASTCaseStatement
+275643,JUMP_TARGET,-1,case AOF_RESP:,5,552,case,5,CASTCaseStatement
+275650,JUMP_TARGET,-1,case AOF_RDB_PREAMBLE:,5,555,case,9,CASTCaseStatement
+275659,JUMP_TARGET,-1,"invalid_args:
+    printf(""Usage: %s [--fix|--truncate-to-timestamp $timestamp] <file.manifest|file.aof>\n"",
+        argv[0]);",1,562,invalid_args,13,CASTLabelStatement
+276743,JUMP_TARGET,-1,"eoferr: /* unexpected end of file is handled here with a fatal exit */
+    if (rdbstate.error_set) {
+        rdbCheckError(rdbstate.error);
+    } else {
+        rdbCheckError(""Unexpected EOF reading RDB file"");
+    }",1,376,eoferr,31,CASTLabelStatement
+276757,JUMP_TARGET,-1,"err:
+    if (closefile) fclose(fp);",1,382,err,33,CASTLabelStatement
+280788,JUMP_TARGET,-1,case ARG_TYPE_ONEOF:,6,1155,case,1,CASTCaseStatement
+280802,JUMP_TARGET,-1,case ARG_TYPE_BLOCK:,5,1159,case,5,CASTCaseStatement
+280816,JUMP_TARGET,-1,case ARG_TYPE_PURE_TOKEN:,5,1163,case,9,CASTCaseStatement
+280819,JUMP_TARGET,-1,default:,5,1166,default,12,CASTDefaultStatement
+280912,JUMP_TARGET,-1,case ARG_TYPE_ONEOF:,6,1196,case,1,CASTCaseStatement
+280970,JUMP_TARGET,-1,case ARG_TYPE_BLOCK:,5,1209,case,5,CASTCaseStatement
+280984,JUMP_TARGET,-1,case ARG_TYPE_PURE_TOKEN:,5,1213,case,9,CASTCaseStatement
+280987,JUMP_TARGET,-1,default:,5,1216,default,12,CASTDefaultStatement
+281065,JUMP_TARGET,-1,case ARG_TYPE_BLOCK:,5,1239,case,1,CASTCaseStatement
+281116,JUMP_TARGET,-1,case ARG_TYPE_ONEOF:,5,1251,case,4,CASTCaseStatement
+281167,JUMP_TARGET,-1,case ARG_TYPE_INTEGER:,5,1262,case,7,CASTCaseStatement
+281169,JUMP_TARGET,-1,case ARG_TYPE_UNIX_TIME:,5,1263,case,9,CASTCaseStatement
+281209,JUMP_TARGET,-1,case ARG_TYPE_DOUBLE:,5,1277,case,12,CASTCaseStatement
+281249,JUMP_TARGET,-1,default:,5,1291,default,15,CASTDefaultStatement
+282860,JUMP_TARGET,-1,case REDIS_REPLY_ARRAY:,5,1782,case,1,CASTCaseStatement
+282862,JUMP_TARGET,-1,case REDIS_REPLY_SET:,5,1783,case,3,CASTCaseStatement
+282864,JUMP_TARGET,-1,case REDIS_REPLY_PUSH:,5,1784,case,5,CASTCaseStatement
+282891,JUMP_TARGET,-1,case REDIS_REPLY_MAP:,5,1788,case,10,CASTCaseStatement
+282918,JUMP_TARGET,-1,default:,5,1792,default,15,CASTDefaultStatement
+282936,JUMP_TARGET,-1,case REDIS_REPLY_ERROR:,5,1800,case,1,CASTCaseStatement
+282947,JUMP_TARGET,-1,case REDIS_REPLY_STATUS:,5,1803,case,5,CASTCaseStatement
+282962,JUMP_TARGET,-1,case REDIS_REPLY_INTEGER:,5,1807,case,10,CASTCaseStatement
+282973,JUMP_TARGET,-1,case REDIS_REPLY_DOUBLE:,5,1810,case,14,CASTCaseStatement
+282984,JUMP_TARGET,-1,case REDIS_REPLY_STRING:,5,1813,case,18,CASTCaseStatement
+282986,JUMP_TARGET,-1,case REDIS_REPLY_VERB:,5,1814,case,20,CASTCaseStatement
+283028,JUMP_TARGET,-1,case REDIS_REPLY_NIL:,5,1826,case,24,CASTCaseStatement
+283036,JUMP_TARGET,-1,case REDIS_REPLY_BOOL:,5,1829,case,28,CASTCaseStatement
+283049,JUMP_TARGET,-1,case REDIS_REPLY_ARRAY:,5,1832,case,32,CASTCaseStatement
+283051,JUMP_TARGET,-1,case REDIS_REPLY_MAP:,5,1833,case,34,CASTCaseStatement
+283053,JUMP_TARGET,-1,case REDIS_REPLY_SET:,5,1834,case,36,CASTCaseStatement
+283055,JUMP_TARGET,-1,case REDIS_REPLY_PUSH:,5,1835,case,38,CASTCaseStatement
+283329,JUMP_TARGET,-1,default:,5,1908,default,42,CASTDefaultStatement
+283683,JUMP_TARGET,-1,case REDIS_REPLY_NIL:,5,1983,case,1,CASTCaseStatement
+283686,JUMP_TARGET,-1,case REDIS_REPLY_ERROR:,5,1986,case,4,CASTCaseStatement
+283705,JUMP_TARGET,-1,case REDIS_REPLY_STATUS:,5,1990,case,9,CASTCaseStatement
+283707,JUMP_TARGET,-1,case REDIS_REPLY_STRING:,5,1991,case,11,CASTCaseStatement
+283709,JUMP_TARGET,-1,case REDIS_REPLY_VERB:,5,1992,case,13,CASTCaseStatement
+283781,JUMP_TARGET,-1,case REDIS_REPLY_BOOL:,5,2012,case,17,CASTCaseStatement
+283794,JUMP_TARGET,-1,case REDIS_REPLY_INTEGER:,5,2015,case,21,CASTCaseStatement
+283805,JUMP_TARGET,-1,case REDIS_REPLY_DOUBLE:,5,2018,case,25,CASTCaseStatement
+283816,JUMP_TARGET,-1,case REDIS_REPLY_SET:,5,2021,case,29,CASTCaseStatement
+283818,JUMP_TARGET,-1,case REDIS_REPLY_ARRAY:,5,2022,case,31,CASTCaseStatement
+283820,JUMP_TARGET,-1,case REDIS_REPLY_PUSH:,5,2023,case,33,CASTCaseStatement
+283865,JUMP_TARGET,-1,case REDIS_REPLY_MAP:,5,2031,case,37,CASTCaseStatement
+283936,JUMP_TARGET,-1,default:,5,2044,default,41,CASTDefaultStatement
+283962,JUMP_TARGET,-1,case REDIS_REPLY_ERROR:,5,2056,case,1,CASTCaseStatement
+283981,JUMP_TARGET,-1,case REDIS_REPLY_STATUS:,5,2060,case,6,CASTCaseStatement
+283994,JUMP_TARGET,-1,case REDIS_REPLY_INTEGER:,5,2063,case,10,CASTCaseStatement
+284005,JUMP_TARGET,-1,case REDIS_REPLY_DOUBLE:,5,2066,case,14,CASTCaseStatement
+284016,JUMP_TARGET,-1,case REDIS_REPLY_STRING:,5,2069,case,18,CASTCaseStatement
+284018,JUMP_TARGET,-1,case REDIS_REPLY_VERB:,5,2070,case,20,CASTCaseStatement
+284031,JUMP_TARGET,-1,case REDIS_REPLY_NIL:,5,2073,case,24,CASTCaseStatement
+284039,JUMP_TARGET,-1,case REDIS_REPLY_BOOL:,5,2076,case,28,CASTCaseStatement
+284052,JUMP_TARGET,-1,case REDIS_REPLY_ARRAY:,5,2079,case,32,CASTCaseStatement
+284054,JUMP_TARGET,-1,case REDIS_REPLY_SET:,5,2080,case,34,CASTCaseStatement
+284056,JUMP_TARGET,-1,case REDIS_REPLY_PUSH:,5,2081,case,36,CASTCaseStatement
+284058,JUMP_TARGET,-1,case REDIS_REPLY_MAP:,5,2082,case,38,CASTCaseStatement
+284106,JUMP_TARGET,-1,default:,5,2090,default,42,CASTDefaultStatement
+284209,JUMP_TARGET,-1,case REDIS_REPLY_ERROR:,5,2124,case,1,CASTCaseStatement
+284229,JUMP_TARGET,-1,case REDIS_REPLY_STATUS:,5,2128,case,6,CASTCaseStatement
+284243,JUMP_TARGET,-1,case REDIS_REPLY_INTEGER:,5,2131,case,10,CASTCaseStatement
+284254,JUMP_TARGET,-1,case REDIS_REPLY_DOUBLE:,5,2134,case,14,CASTCaseStatement
+284265,JUMP_TARGET,-1,case REDIS_REPLY_STRING:,5,2137,case,18,CASTCaseStatement
+284267,JUMP_TARGET,-1,case REDIS_REPLY_VERB:,5,2138,case,20,CASTCaseStatement
+284281,JUMP_TARGET,-1,case REDIS_REPLY_NIL:,5,2141,case,24,CASTCaseStatement
+284289,JUMP_TARGET,-1,case REDIS_REPLY_BOOL:,5,2144,case,28,CASTCaseStatement
+284302,JUMP_TARGET,-1,case REDIS_REPLY_ARRAY:,5,2147,case,32,CASTCaseStatement
+284304,JUMP_TARGET,-1,case REDIS_REPLY_SET:,5,2148,case,34,CASTCaseStatement
+284306,JUMP_TARGET,-1,case REDIS_REPLY_PUSH:,5,2149,case,36,CASTCaseStatement
+284356,JUMP_TARGET,-1,case REDIS_REPLY_MAP:,5,2157,case,42,CASTCaseStatement
+284484,JUMP_TARGET,-1,default:,5,2184,default,48,CASTDefaultStatement
+291379,JUMP_TARGET,-1,"cleanup:
+    if (reply) freeReplyObject(reply);",1,4039,cleanup,6,CASTLabelStatement
+291960,JUMP_TARGET,-1,"result:
+    freeReplyObject(info);",1,4193,result,14,CASTLabelStatement
+292556,JUMP_TARGET,-1,"cleanup:
+    zfree(offenders);",1,4372,cleanup,21,CASTLabelStatement
+293745,JUMP_TARGET,-1,"cleanup:
+    zfree(argvlen);",1,4658,cleanup,27,CASTLabelStatement
+294129,JUMP_TARGET,-1,"cleanup:
+    freeReplyObject(reply);",1,4739,cleanup,8,CASTLabelStatement
+294794,JUMP_TARGET,-1,"cleanup:
+    if (r1) freeReplyObject(r1);",1,4892,cleanup,39,CASTLabelStatement
+295221,JUMP_TARGET,-1,"cleanup:
+    zfree(argv);",1,4979,cleanup,49,CASTLabelStatement
+295711,JUMP_TARGET,-1,"next:
+        if (reply != NULL) freeReplyObject(reply);",1,5134,next,20,CASTLabelStatement
+296155,JUMP_TARGET,-1,"cleanup:
+    if (reply != NULL) freeReplyObject(reply);",1,5252,cleanup,11,CASTLabelStatement
+296526,JUMP_TARGET,-1,case 0:,13,5344,case,1,CASTCaseStatement
+296532,JUMP_TARGET,-1,case 1:,13,5345,case,5,CASTCaseStatement
+296538,JUMP_TARGET,-1,case 2:,13,5346,case,9,CASTCaseStatement
+296544,JUMP_TARGET,-1,case 3:,13,5347,case,13,CASTCaseStatement
+296550,JUMP_TARGET,-1,case 4:,13,5348,case,17,CASTCaseStatement
+296556,JUMP_TARGET,-1,case 5:,13,5349,case,21,CASTCaseStatement
+296562,JUMP_TARGET,-1,case 6:,13,5350,case,25,CASTCaseStatement
+296568,JUMP_TARGET,-1,case 7:,13,5351,case,29,CASTCaseStatement
+297232,JUMP_TARGET,-1,"cleanup:
+    if (reply) freeReplyObject(reply);",1,5485,cleanup,14,CASTLabelStatement
+297469,JUMP_TARGET,-1,"invalid_friend:
+            if (!(friend->flags & CLUSTER_MANAGER_FLAG_SLAVE))
+                cluster_manager.unreachable_masters++;",1,5548,invalid_friend,8,CASTLabelStatement
+298042,JUMP_TARGET,-1,"cleanup:
+    if (reply != NULL) freeReplyObject(reply);",1,5675,cleanup,20,CASTLabelStatement
+298421,JUMP_TARGET,-1,"cleanup:
+    if (reply != NULL) freeReplyObject(reply);",1,5750,cleanup,12,CASTLabelStatement
+299307,JUMP_TARGET,-1,case 0:,9,5984,case,1,CASTCaseStatement
+299313,JUMP_TARGET,-1,case 1:,9,5985,case,5,CASTCaseStatement
+299319,JUMP_TARGET,-1,default:,9,5986,default,9,CASTDefaultStatement
+299749,JUMP_TARGET,-1,"cleanup:
+    if (none) listRelease(none);",1,6116,cleanup,28,CASTLabelStatement
+301045,JUMP_TARGET,-1,"unhandled_case:
+            success = 0;",1,6440,unhandled_case,1,CASTLabelStatement
+301062,JUMP_TARGET,-1,"cleanup:
+    listRelease(owners);",1,6449,cleanup,33,CASTLabelStatement
+302307,JUMP_TARGET,-1,case CLUSTER_MANAGER_LOG_LVL_INFO:,9,6748,case,1,CASTCaseStatement
+302316,JUMP_TARGET,-1,case CLUSTER_MANAGER_LOG_LVL_WARN:,9,6749,case,5,CASTCaseStatement
+302325,JUMP_TARGET,-1,case CLUSTER_MANAGER_LOG_LVL_ERR:,9,6750,case,9,CASTCaseStatement
+302334,JUMP_TARGET,-1,case CLUSTER_MANAGER_LOG_LVL_SUCCESS:,9,6751,case,13,CASTCaseStatement
+302343,JUMP_TARGET,-1,default:,9,6752,default,17,CASTDefaultStatement
+303207,JUMP_TARGET,-1,"assign_replicas:
+    for (i = 0; i < masters_count; i++) {
+        clusterManagerNode *master = masters[i];
+        int assigned_replicas = 0;
+        while (assigned_replicas < replicas) {
+            if (available_count == 0) break;
+            clusterManagerNode *found = NULL, *slave = NULL;
+            int firstNodeIdx = -1;
+            for (j = 0; j < interleaved_len; j++) {
+                clusterManagerNode *n = interleaved[j];
+                if (n == NULL) continue;
+                if (strcmp(n->ip, master->ip)) {
+                    found = n;
+                    interleaved[j] = NULL;
+                    break;
+                }
+                if (firstNodeIdx < 0) firstNodeIdx = j;
+            }
+            if (found) slave = found;
+            else if (firstNodeIdx >= 0) {
+                slave = interleaved[firstNodeIdx];
+                interleaved_len -= (firstNodeIdx + 1);
+                interleaved += (firstNodeIdx + 1);
+            }
+            if (slave != NUL...",1,6971,assign_replicas,49,CASTLabelStatement
+303878,JUMP_TARGET,-1,"cleanup:
+    /* Free everything */
+    zfree(masters);",1,7130,cleanup,58,CASTLabelStatement
+304503,JUMP_TARGET,-1,"cleanup:
+    if (!added && new_node) freeClusterManagerNode(new_node);",1,7286,cleanup,50,CASTLabelStatement
+304529,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, CLUSTER_MANAGER_INVALID_HOST_ARG);",1,7292,invalid_args,56,CASTLabelStatement
+304799,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, CLUSTER_MANAGER_INVALID_HOST_ARG);",1,7359,invalid_args,31,CASTLabelStatement
+304849,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, CLUSTER_MANAGER_INVALID_HOST_ARG);",1,7372,invalid_args,11,CASTLabelStatement
+304900,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, CLUSTER_MANAGER_INVALID_HOST_ARG);",1,7385,invalid_args,11,CASTLabelStatement
+305650,JUMP_TARGET,-1,"cleanup:
+    listRelease(sources);",1,7573,cleanup,55,CASTLabelStatement
+305657,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, CLUSTER_MANAGER_INVALID_HOST_ARG);",1,7577,invalid_args,59,CASTLabelStatement
+306381,JUMP_TARGET,-1,"end_move:
+            clusterManagerReleaseReshardTable(table);",1,7758,end_move,14,CASTLabelStatement
+306417,JUMP_TARGET,-1,"cleanup:
+    if (involved != NULL) listRelease(involved);",1,7768,cleanup,53,CASTLabelStatement
+306434,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, CLUSTER_MANAGER_INVALID_HOST_ARG);",1,7772,invalid_args,57,CASTLabelStatement
+306624,JUMP_TARGET,-1,reply_err:;,1,7818,reply_err,20,CASTLabelStatement
+306670,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, CLUSTER_MANAGER_INVALID_HOST_ARG);",1,7830,invalid_args,24,CASTLabelStatement
+307354,JUMP_TARGET,-1,"cleanup:
+    if (reply_err)
+        clusterManagerLogErr(""Source %s:%d replied with error:\n%s\n"",
+                             src_ip, src_port, reply_err);",1,7977,cleanup,61,CASTLabelStatement
+307383,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, ""%s"", invalid_args_msg);",1,7985,invalid_args,67,CASTLabelStatement
+307619,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, CLUSTER_MANAGER_INVALID_HOST_ARG);",1,8029,invalid_args,23,CASTLabelStatement
+307853,JUMP_TARGET,-1,"cleanup:
+    sdsfree(json);",1,8080,cleanup,37,CASTLabelStatement
+307889,JUMP_TARGET,-1,"invalid_args:
+    fprintf(stderr, CLUSTER_MANAGER_INVALID_HOST_ARG);",1,8093,invalid_args,42,CASTLabelStatement
+312344,JUMP_TARGET,-1,case 0:,9,9435,case,1,CASTCaseStatement
+312347,JUMP_TARGET,-1,case 1:,9,9436,case,4,CASTCaseStatement
+312352,JUMP_TARGET,-1,case 2:,9,9439,case,8,CASTCaseStatement
+312357,JUMP_TARGET,-1,case 3:,9,9442,case,12,CASTCaseStatement
+312362,JUMP_TARGET,-1,case 4:,9,9445,case,16,CASTCaseStatement
+312715,JUMP_TARGET,-1,case REDIS_REPLY_ERROR:,25,9546,case,1,CASTCaseStatement
+312724,JUMP_TARGET,-1,case REDIS_REPLY_NIL:,25,9549,case,5,CASTCaseStatement
+312729,JUMP_TARGET,-1,default:,25,9552,default,9,CASTDefaultStatement
+322930,JUMP_TARGET,-1,"need_full_resync:
+    /* We need a full resync for some reason... Note that we can't
+     * reply to PSYNC right now if a full SYNC is needed. The reply
+     * must include the master offset at the time the RDB file we transfer
+     * is generated, so we need to delay the reply to that moment. */
+    return C_ERR;",1,829,need_full_resync,20,CASTLabelStatement
+327607,JUMP_TARGET,-1,"error:
+    cancelReplicationHandshake(1);",1,2293,error,41,CASTLabelStatement
+329407,JUMP_TARGET,-1,"no_response_error: /* Handle receiveSynchronousResponse() error when master has no reply */
+    serverLog(LL_WARNING, ""Master did not respond to command during SYNC handshake"");",1,2904,no_response_error,36,CASTLabelStatement
+329426,JUMP_TARGET,-1,"error:
+    if (dfd != -1) close(dfd);",1,2908,error,38,CASTLabelStatement
+329480,JUMP_TARGET,-1,"write_error: /* Handle sendCommand() errors. */
+    serverLog(LL_WARNING,""Sending command to master in replication handshake: %s"", err);",1,2921,write_error,48,CASTLabelStatement
+330389,JUMP_TARGET,-1,case REPL_STATE_NONE:,13,3244,case,1,CASTCaseStatement
+330395,JUMP_TARGET,-1,case REPL_STATE_CONNECT:,13,3245,case,5,CASTCaseStatement
+330401,JUMP_TARGET,-1,case REPL_STATE_CONNECTING:,13,3246,case,9,CASTCaseStatement
+330407,JUMP_TARGET,-1,case REPL_STATE_TRANSFER:,13,3247,case,13,CASTCaseStatement
+330413,JUMP_TARGET,-1,case REPL_STATE_CONNECTED:,13,3248,case,17,CASTCaseStatement
+330419,JUMP_TARGET,-1,default:,13,3249,default,21,CASTDefaultStatement
+332556,JUMP_TARGET,-1,case NO_FAILOVER:,9,3998,case,1,CASTCaseStatement
+332560,JUMP_TARGET,-1,case FAILOVER_IN_PROGRESS:,9,3999,case,4,CASTCaseStatement
+332564,JUMP_TARGET,-1,case FAILOVER_WAIT_FOR_SYNC:,9,4000,case,7,CASTCaseStatement
+332568,JUMP_TARGET,-1,default:,9,4001,default,10,CASTDefaultStatement
+334122,JUMP_TARGET,-1,case '$':,9,212,case,1,CASTCaseStatement
+334128,JUMP_TARGET,-1,case '+':,9,213,case,4,CASTCaseStatement
+334134,JUMP_TARGET,-1,case '-':,9,214,case,7,CASTCaseStatement
+334140,JUMP_TARGET,-1,case ':':,9,215,case,10,CASTCaseStatement
+334146,JUMP_TARGET,-1,case '*':,9,216,case,13,CASTCaseStatement
+334152,JUMP_TARGET,-1,case '~':,9,217,case,16,CASTCaseStatement
+334158,JUMP_TARGET,-1,case '%':,9,218,case,19,CASTCaseStatement
+334164,JUMP_TARGET,-1,case '#':,9,219,case,22,CASTCaseStatement
+334170,JUMP_TARGET,-1,"case ',':",9,220,case,25,CASTCaseStatement
+334176,JUMP_TARGET,-1,case '_':,9,221,case,28,CASTCaseStatement
+334182,JUMP_TARGET,-1,case '(':,9,222,case,31,CASTCaseStatement
+334188,JUMP_TARGET,-1,case '=':,9,223,case,34,CASTCaseStatement
+334194,JUMP_TARGET,-1,case '|':,9,224,case,37,CASTCaseStatement
+334200,JUMP_TARGET,-1,default:,9,225,default,40,CASTDefaultStatement
+338555,JUMP_TARGET,-1,"error:
+    afterErrorReply(c, *err, sdslen(*err), 0);",1,570,error,23,CASTLabelStatement
+340134,JUMP_TARGET,-1,case LUA_TSTRING:,5,611,case,1,CASTCaseStatement
+340149,JUMP_TARGET,-1,case LUA_TBOOLEAN:,5,614,case,5,CASTCaseStatement
+340184,JUMP_TARGET,-1,case LUA_TNUMBER:,5,621,case,9,CASTCaseStatement
+340195,JUMP_TARGET,-1,case LUA_TTABLE:,5,624,case,13,CASTCaseStatement
+340640,JUMP_TARGET,-1,default:,5,777,default,59,CASTDefaultStatement
+341299,JUMP_TARGET,-1,"cleanup:
+    /* Clean up. Command code may have changed argv/argc so we use the
+     * argv/argc of the client instead of the local variables. */
+    freeLuaRedisArgv(c->argv, c->argc, c->argv_len);",1,975,cleanup,25,CASTLabelStatement
+342739,JUMP_TARGET,-1,case 0:,5,1528,case,1,CASTCaseStatement
+342746,JUMP_TARGET,-1,case 1:,5,1532,case,4,CASTCaseStatement
+342771,JUMP_TARGET,-1,case 2:,5,1538,case,7,CASTCaseStatement
+342806,JUMP_TARGET,-1,default:,5,1545,default,10,CASTDefaultStatement
+343518,JUMP_TARGET,-1,case SDS_TYPE_5:,9,47,case,1,CASTCaseStatement
+343525,JUMP_TARGET,-1,case SDS_TYPE_8:,9,49,case,4,CASTCaseStatement
+343532,JUMP_TARGET,-1,case SDS_TYPE_16:,9,51,case,7,CASTCaseStatement
+343539,JUMP_TARGET,-1,case SDS_TYPE_32:,9,53,case,10,CASTCaseStatement
+343546,JUMP_TARGET,-1,case SDS_TYPE_64:,9,55,case,13,CASTCaseStatement
+343800,JUMP_TARGET,-1,case SDS_TYPE_5:,9,130,case,1,CASTCaseStatement
+343816,JUMP_TARGET,-1,case SDS_TYPE_8:,9,134,case,4,CASTCaseStatement
+343848,JUMP_TARGET,-1,case SDS_TYPE_16:,9,141,case,7,CASTCaseStatement
+343880,JUMP_TARGET,-1,case SDS_TYPE_32:,9,148,case,10,CASTCaseStatement
+343912,JUMP_TARGET,-1,case SDS_TYPE_64:,9,155,case,13,CASTCaseStatement
+344576,JUMP_TARGET,-1,case SDS_TYPE_5:,9,424,case,1,CASTCaseStatement
+344639,JUMP_TARGET,-1,case SDS_TYPE_8:,9,432,case,4,CASTCaseStatement
+344691,JUMP_TARGET,-1,case SDS_TYPE_16:,9,438,case,7,CASTCaseStatement
+344743,JUMP_TARGET,-1,case SDS_TYPE_32:,9,444,case,10,CASTCaseStatement
+344797,JUMP_TARGET,-1,case SDS_TYPE_64:,9,450,case,13,CASTCaseStatement
+344850,JUMP_TARGET,-1,default:,9,456,default,16,CASTDefaultStatement
+345258,JUMP_TARGET,-1,case '%':,9,649,case,1,CASTCaseStatement
+345277,JUMP_TARGET,-1,case 's':,13,654,case,1,CASTCaseStatement
+345279,JUMP_TARGET,-1,case 'S':,13,655,case,3,CASTCaseStatement
+345316,JUMP_TARGET,-1,case 'i':,13,665,case,12,CASTCaseStatement
+345318,JUMP_TARGET,-1,case 'I':,13,666,case,14,CASTCaseStatement
+345355,JUMP_TARGET,-1,case 'u':,13,682,case,20,CASTCaseStatement
+345357,JUMP_TARGET,-1,case 'U':,13,683,case,22,CASTCaseStatement
+345394,JUMP_TARGET,-1,default:,13,699,default,28,CASTDefaultStatement
+345406,JUMP_TARGET,-1,default:,9,705,default,8,CASTDefaultStatement
+345898,JUMP_TARGET,-1,"cleanup:
+    {
+        int i;
+        for (i = 0; i < elements; i++) sdsfree(tokens[i]);
+        s_free(tokens);
+        *count = 0;
+        return NULL;
+    }",1,886,cleanup,18,CASTLabelStatement
+345975,JUMP_TARGET,-1,case '\\':,9,915,case,1,CASTCaseStatement
+345977,JUMP_TARGET,-1,"case '""':",9,916,case,3,CASTCaseStatement
+345987,JUMP_TARGET,-1,case '\n':,9,919,case,7,CASTCaseStatement
+345996,JUMP_TARGET,-1,case '\r':,9,920,case,11,CASTCaseStatement
+346005,JUMP_TARGET,-1,case '\t':,9,921,case,15,CASTCaseStatement
+346014,JUMP_TARGET,-1,case '\a':,9,922,case,19,CASTCaseStatement
+346023,JUMP_TARGET,-1,case '\b':,9,923,case,23,CASTCaseStatement
+346032,JUMP_TARGET,-1,default:,9,924,default,27,CASTDefaultStatement
+346169,JUMP_TARGET,-1,case '0':,5,967,case,1,CASTCaseStatement
+346173,JUMP_TARGET,-1,case '1':,5,968,case,4,CASTCaseStatement
+346177,JUMP_TARGET,-1,case '2':,5,969,case,7,CASTCaseStatement
+346181,JUMP_TARGET,-1,case '3':,5,970,case,10,CASTCaseStatement
+346185,JUMP_TARGET,-1,case '4':,5,971,case,13,CASTCaseStatement
+346189,JUMP_TARGET,-1,case '5':,5,972,case,16,CASTCaseStatement
+346193,JUMP_TARGET,-1,case '6':,5,973,case,19,CASTCaseStatement
+346197,JUMP_TARGET,-1,case '7':,5,974,case,22,CASTCaseStatement
+346201,JUMP_TARGET,-1,case '8':,5,975,case,25,CASTCaseStatement
+346205,JUMP_TARGET,-1,case '9':,5,976,case,28,CASTCaseStatement
+346209,JUMP_TARGET,-1,case 'a':,5,977,case,31,CASTCaseStatement
+346211,JUMP_TARGET,-1,case 'A':,15,977,case,33,CASTCaseStatement
+346215,JUMP_TARGET,-1,case 'b':,5,978,case,36,CASTCaseStatement
+346217,JUMP_TARGET,-1,case 'B':,15,978,case,38,CASTCaseStatement
+346221,JUMP_TARGET,-1,case 'c':,5,979,case,41,CASTCaseStatement
+346223,JUMP_TARGET,-1,case 'C':,15,979,case,43,CASTCaseStatement
+346227,JUMP_TARGET,-1,case 'd':,5,980,case,46,CASTCaseStatement
+346229,JUMP_TARGET,-1,case 'D':,15,980,case,48,CASTCaseStatement
+346233,JUMP_TARGET,-1,case 'e':,5,981,case,51,CASTCaseStatement
+346235,JUMP_TARGET,-1,case 'E':,15,981,case,53,CASTCaseStatement
+346239,JUMP_TARGET,-1,case 'f':,5,982,case,56,CASTCaseStatement
+346241,JUMP_TARGET,-1,case 'F':,15,982,case,58,CASTCaseStatement
+346245,JUMP_TARGET,-1,default:,5,983,default,61,CASTDefaultStatement
+346386,JUMP_TARGET,-1,case 'n':,25,1039,case,1,CASTCaseStatement
+346392,JUMP_TARGET,-1,case 'r':,25,1040,case,5,CASTCaseStatement
+346398,JUMP_TARGET,-1,case 't':,25,1041,case,9,CASTCaseStatement
+346404,JUMP_TARGET,-1,case 'b':,25,1042,case,13,CASTCaseStatement
+346410,JUMP_TARGET,-1,case 'a':,25,1043,case,17,CASTCaseStatement
+346416,JUMP_TARGET,-1,default:,25,1044,default,21,CASTDefaultStatement
+346543,JUMP_TARGET,-1,case ' ':,21,1075,case,1,CASTCaseStatement
+346545,JUMP_TARGET,-1,case '\n':,21,1076,case,3,CASTCaseStatement
+346547,JUMP_TARGET,-1,case '\r':,21,1077,case,5,CASTCaseStatement
+346549,JUMP_TARGET,-1,case '\t':,21,1078,case,7,CASTCaseStatement
+346551,JUMP_TARGET,-1,case '\0':,21,1079,case,9,CASTCaseStatement
+346557,JUMP_TARGET,-1,"case '""':",21,1082,case,13,CASTCaseStatement
+346563,JUMP_TARGET,-1,case '\'':,21,1085,case,17,CASTCaseStatement
+346569,JUMP_TARGET,-1,default:,21,1088,default,21,CASTDefaultStatement
+346624,JUMP_TARGET,-1,"err:
+    while((*argc)--)
+        sdsfree(vector[*argc]);",1,1107,err,9,CASTLabelStatement
+346947,JUMP_TARGET,-1,"error:
+    sdsfree(res);",1,1225,error,7,CASTLabelStatement
+347032,JUMP_TARGET,-1,case SDS_TYPE_5:,9,90,case,1,CASTCaseStatement
+347043,JUMP_TARGET,-1,case SDS_TYPE_8:,9,92,case,4,CASTCaseStatement
+347059,JUMP_TARGET,-1,case SDS_TYPE_16:,9,94,case,7,CASTCaseStatement
+347075,JUMP_TARGET,-1,case SDS_TYPE_32:,9,96,case,10,CASTCaseStatement
+347091,JUMP_TARGET,-1,case SDS_TYPE_64:,9,98,case,13,CASTCaseStatement
+347128,JUMP_TARGET,-1,case SDS_TYPE_5:,9,107,case,1,CASTCaseStatement
+347135,JUMP_TARGET,-1,case SDS_TYPE_8:,9,110,case,4,CASTCaseStatement
+347160,JUMP_TARGET,-1,case SDS_TYPE_16:,9,114,case,7,CASTCaseStatement
+347185,JUMP_TARGET,-1,case SDS_TYPE_32:,9,118,case,10,CASTCaseStatement
+347210,JUMP_TARGET,-1,case SDS_TYPE_64:,9,122,case,13,CASTCaseStatement
+347257,JUMP_TARGET,-1,case SDS_TYPE_5:,9,133,case,1,CASTCaseStatement
+347283,JUMP_TARGET,-1,case SDS_TYPE_8:,9,139,case,5,CASTCaseStatement
+347301,JUMP_TARGET,-1,case SDS_TYPE_16:,9,142,case,9,CASTCaseStatement
+347319,JUMP_TARGET,-1,case SDS_TYPE_32:,9,145,case,13,CASTCaseStatement
+347337,JUMP_TARGET,-1,case SDS_TYPE_64:,9,148,case,17,CASTCaseStatement
+347375,JUMP_TARGET,-1,case SDS_TYPE_5:,9,157,case,1,CASTCaseStatement
+347412,JUMP_TARGET,-1,case SDS_TYPE_8:,9,164,case,5,CASTCaseStatement
+347430,JUMP_TARGET,-1,case SDS_TYPE_16:,9,167,case,9,CASTCaseStatement
+347448,JUMP_TARGET,-1,case SDS_TYPE_32:,9,170,case,13,CASTCaseStatement
+347466,JUMP_TARGET,-1,case SDS_TYPE_64:,9,173,case,17,CASTCaseStatement
+347503,JUMP_TARGET,-1,case SDS_TYPE_5:,9,183,case,1,CASTCaseStatement
+347514,JUMP_TARGET,-1,case SDS_TYPE_8:,9,185,case,4,CASTCaseStatement
+347530,JUMP_TARGET,-1,case SDS_TYPE_16:,9,187,case,7,CASTCaseStatement
+347546,JUMP_TARGET,-1,case SDS_TYPE_32:,9,189,case,10,CASTCaseStatement
+347562,JUMP_TARGET,-1,case SDS_TYPE_64:,9,191,case,13,CASTCaseStatement
+347600,JUMP_TARGET,-1,case SDS_TYPE_5:,9,200,case,1,CASTCaseStatement
+347605,JUMP_TARGET,-1,case SDS_TYPE_8:,9,203,case,4,CASTCaseStatement
+347623,JUMP_TARGET,-1,case SDS_TYPE_16:,9,206,case,8,CASTCaseStatement
+347641,JUMP_TARGET,-1,case SDS_TYPE_32:,9,209,case,12,CASTCaseStatement
+347659,JUMP_TARGET,-1,case SDS_TYPE_64:,9,212,case,16,CASTCaseStatement
+352594,JUMP_TARGET,-1,case EBUSY:,5,1720,case,1,CASTCaseStatement
+352599,JUMP_TARGET,-1,case SRI_MASTER:,9,1722,case,1,CASTCaseStatement
+352607,JUMP_TARGET,-1,case SRI_SLAVE:,9,1724,case,4,CASTCaseStatement
+352615,JUMP_TARGET,-1,case SRI_SENTINEL:,9,1726,case,7,CASTCaseStatement
+352623,JUMP_TARGET,-1,default:,9,1728,default,10,CASTDefaultStatement
+352641,JUMP_TARGET,-1,case ENOENT:,5,1733,case,5,CASTCaseStatement
+352645,JUMP_TARGET,-1,case EINVAL:,5,1735,case,8,CASTCaseStatement
+352649,JUMP_TARGET,-1,default:,5,1737,default,11,CASTDefaultStatement
+353041,JUMP_TARGET,-1,"loaderr:
+    fprintf(stderr, ""\n*** FATAL CONFIG FILE ERROR (Redis %s) ***\n"",
+        REDIS_VERSION);",1,1848,loaderr,16,CASTLabelStatement
+357282,JUMP_TARGET,-1,"cleanup:
+    sdsfreesplitres(token,numtokens);",1,2969,cleanup,12,CASTLabelStatement
+357989,JUMP_TARGET,-1,case LL_DEBUG:,5,3191,case,1,CASTCaseStatement
+357995,JUMP_TARGET,-1,case LL_VERBOSE:,5,3192,case,4,CASTCaseStatement
+358001,JUMP_TARGET,-1,case LL_NOTICE:,5,3193,case,7,CASTCaseStatement
+358007,JUMP_TARGET,-1,case LL_WARNING:,5,3194,case,10,CASTCaseStatement
+358013,JUMP_TARGET,-1,case LL_NOTHING:,5,3195,case,13,CASTCaseStatement
+358635,JUMP_TARGET,-1,"exit:
+    dictRelease(set_configs);",1,3317,exit,17,CASTLabelStatement
+358639,JUMP_TARGET,-1,"badfmt:
+    addReplyErrorFormat(c, ""Invalid value '%s' to SENTINEL CONFIG SET '%s'"",
+                        (char *) val->ptr, option);",1,3321,badfmt,20,CASTLabelStatement
+358914,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_NONE:,5,3388,case,1,CASTCaseStatement
+358920,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_WAIT_START:,5,3389,case,4,CASTCaseStatement
+358926,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_SELECT_SLAVE:,5,3390,case,7,CASTCaseStatement
+358932,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_SEND_SLAVEOF_NOONE:,5,3391,case,10,CASTCaseStatement
+358938,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_WAIT_PROMOTION:,5,3392,case,13,CASTCaseStatement
+358944,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_RECONF_SLAVES:,5,3393,case,16,CASTCaseStatement
+358950,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_UPDATE_CONFIG:,5,3394,case,19,CASTCaseStatement
+358956,JUMP_TARGET,-1,default:,5,3395,default,22,CASTDefaultStatement
+360395,JUMP_TARGET,-1,"badfmt: /* Bad format errors */
+    addReplyErrorFormat(c,""Invalid argument '%s' for SENTINEL DEBUG '%s'"",
+        (char*)c->argv[badarg]->ptr,option);",1,3735,badfmt,8,CASTLabelStatement
+362291,JUMP_TARGET,-1,"numargserr:
+    addReplyErrorArity(c);",1,4239,numargserr,3,CASTLabelStatement
+363318,JUMP_TARGET,-1,case 2:,9,4493,case,1,CASTCaseStatement
+363351,JUMP_TARGET,-1,case 3:,9,4497,case,5,CASTCaseStatement
+363392,JUMP_TARGET,-1,default:,9,4502,default,9,CASTDefaultStatement
+363416,JUMP_TARGET,-1,"badfmt: /* Bad format errors */
+    addReplyErrorFormat(c,""Invalid argument '%s' for SENTINEL SET '%s'"",
+        (char*)c->argv[badarg]->ptr,option);",1,4510,badfmt,13,CASTLabelStatement
+363430,JUMP_TARGET,-1,"seterr:
+    /* TODO: Handle the case of both bad input and save error, possibly handling
+     * SENTINEL SET atomically. */
+    if (changes) sentinelFlushConfig();",1,4513,seterr,15,CASTLabelStatement
+366231,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_WAIT_START:,9,5337,case,1,CASTCaseStatement
+366238,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_SELECT_SLAVE:,9,5340,case,5,CASTCaseStatement
+366245,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_SEND_SLAVEOF_NOONE:,9,5343,case,9,CASTCaseStatement
+366252,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_WAIT_PROMOTION:,9,5346,case,13,CASTCaseStatement
+366259,JUMP_TARGET,-1,case SENTINEL_FAILOVER_STATE_RECONF_SLAVES:,9,5349,case,17,CASTCaseStatement
+367041,JUMP_TARGET,-1,"err:
+    if (!log_to_stdout) close(fd);",1,187,err,16,CASTLabelStatement
+368077,JUMP_TARGET,-1,case CHILD_TYPE_RDB:,9,649,case,1,CASTCaseStatement
+368083,JUMP_TARGET,-1,case CHILD_TYPE_AOF:,9,650,case,4,CASTCaseStatement
+368089,JUMP_TARGET,-1,case CHILD_TYPE_LDB:,9,651,case,7,CASTCaseStatement
+368095,JUMP_TARGET,-1,case CHILD_TYPE_MODULE:,9,652,case,10,CASTCaseStatement
+368101,JUMP_TARGET,-1,default:,9,653,default,13,CASTDefaultStatement
+381733,JUMP_TARGET,-1,"error:
+    serverLog(LL_WARNING, ""Errors trying to shut down the server. Check the logs for more information."");",1,4456,error,30,CASTLabelStatement
+382875,JUMP_TARGET,-1,case KSPEC_BS_UNKNOWN:,13,4779,case,1,CASTCaseStatement
+382893,JUMP_TARGET,-1,case KSPEC_BS_INDEX:,13,4787,case,9,CASTCaseStatement
+382927,JUMP_TARGET,-1,case KSPEC_BS_KEYWORD:,13,4797,case,19,CASTCaseStatement
+382977,JUMP_TARGET,-1,default:,13,4809,default,31,CASTDefaultStatement
+383005,JUMP_TARGET,-1,case KSPEC_FK_UNKNOWN:,13,4815,case,1,CASTCaseStatement
+383023,JUMP_TARGET,-1,case KSPEC_FK_RANGE:,13,4823,case,9,CASTCaseStatement
+383089,JUMP_TARGET,-1,case KSPEC_FK_KEYNUM:,13,4837,case,23,CASTCaseStatement
+383155,JUMP_TARGET,-1,default:,13,4851,default,37,CASTDefaultStatement
+383942,JUMP_TARGET,-1,case (COMMAND_LIST_FILTER_MODULE):,9,5067,case,1,CASTCaseStatement
+383982,JUMP_TARGET,-1,case (COMMAND_LIST_FILTER_ACLCAT):,9,5073,case,5,CASTCaseStatement
+384037,JUMP_TARGET,-1,case (COMMAND_LIST_FILTER_PATTERN):,9,5084,case,8,CASTCaseStatement
+384057,JUMP_TARGET,-1,default:,9,5086,default,11,CASTDefaultStatement
+384871,JUMP_TARGET,-1,case SLAVE_STATE_WAIT_BGSAVE_START:,5,5300,case,1,CASTCaseStatement
+384875,JUMP_TARGET,-1,case SLAVE_STATE_WAIT_BGSAVE_END:,5,5301,case,3,CASTCaseStatement
+384881,JUMP_TARGET,-1,case SLAVE_STATE_SEND_BULK:,5,5303,case,6,CASTCaseStatement
+384887,JUMP_TARGET,-1,case SLAVE_STATE_ONLINE:,5,5305,case,9,CASTCaseStatement
+384893,JUMP_TARGET,-1,default:,5,5307,default,12,CASTDefaultStatement
+388344,JUMP_TARGET,-1,case SIGINT:,5,6489,case,1,CASTCaseStatement
+388350,JUMP_TARGET,-1,case SIGTERM:,5,6492,case,5,CASTCaseStatement
+388356,JUMP_TARGET,-1,default:,5,6495,default,9,CASTDefaultStatement
+389822,JUMP_TARGET,-1,case SUPERVISED_UPSTART:,9,6975,case,1,CASTCaseStatement
+389830,JUMP_TARGET,-1,case SUPERVISED_SYSTEMD:,9,6978,case,5,CASTCaseStatement
+389838,JUMP_TARGET,-1,default:,9,6981,default,9,CASTDefaultStatement
+409073,JUMP_TARGET,-1,case 7:,5,157,case,1,CASTCaseStatement
+409084,JUMP_TARGET,-1,case 6:,5,158,case,4,CASTCaseStatement
+409095,JUMP_TARGET,-1,case 5:,5,159,case,7,CASTCaseStatement
+409106,JUMP_TARGET,-1,case 4:,5,160,case,10,CASTCaseStatement
+409117,JUMP_TARGET,-1,case 3:,5,161,case,13,CASTCaseStatement
+409128,JUMP_TARGET,-1,case 2:,5,162,case,16,CASTCaseStatement
+409139,JUMP_TARGET,-1,case 1:,5,163,case,19,CASTCaseStatement
+409149,JUMP_TARGET,-1,case 0:,5,164,case,23,CASTCaseStatement
+409950,JUMP_TARGET,-1,case 7:,5,218,case,1,CASTCaseStatement
+409962,JUMP_TARGET,-1,case 6:,5,219,case,4,CASTCaseStatement
+409974,JUMP_TARGET,-1,case 5:,5,220,case,7,CASTCaseStatement
+409986,JUMP_TARGET,-1,case 4:,5,221,case,10,CASTCaseStatement
+409998,JUMP_TARGET,-1,case 3:,5,222,case,13,CASTCaseStatement
+410010,JUMP_TARGET,-1,case 2:,5,223,case,16,CASTCaseStatement
+410022,JUMP_TARGET,-1,case 1:,5,224,case,19,CASTCaseStatement
+410033,JUMP_TARGET,-1,case 0:,5,225,case,23,CASTCaseStatement
+412822,JUMP_TARGET,-1,"noobj:
+    decrRefCount(keyobj);",1,129,noobj,36,CASTLabelStatement
+413537,JUMP_TARGET,-1,case OBJ_LIST:,5,325,case,1,CASTCaseStatement
+413546,JUMP_TARGET,-1,case OBJ_SET:,5,326,case,5,CASTCaseStatement
+413555,JUMP_TARGET,-1,case OBJ_ZSET:,5,327,case,9,CASTCaseStatement
+413587,JUMP_TARGET,-1,default:,5,328,default,13,CASTDefaultStatement
+422306,JUMP_TARGET,-1,case OBJ_ENCODING_LISTPACK:,9,455,case,1,CASTCaseStatement
+422321,JUMP_TARGET,-1,case OBJ_ENCODING_QUICKLIST:,9,458,case,5,CASTCaseStatement
+422336,JUMP_TARGET,-1,default:,9,461,default,9,CASTDefaultStatement
+432180,JUMP_TARGET,-1,case OBJ_ENCODING_STREAM:,9,162,case,1,CASTCaseStatement
+432188,JUMP_TARGET,-1,default:,9,165,default,5,CASTDefaultStatement
+437761,JUMP_TARGET,-1,"invalid:
+    if (c) addReplyError(c,""Invalid stream ID specified as stream ""
+                           ""command argument"");",1,1929,invalid,17,CASTLabelStatement
+439571,JUMP_TARGET,-1,"cleanup: /* Cleanup. */
+
+    /* The command is propagated (in the READGROUP form) as a side effect
+     * of calling lower level APIs. So stop any implicit propagation. */
+    preventCommandPropagation(c);",1,2437,cleanup,36,CASTLabelStatement
+441208,JUMP_TARGET,-1,"cleanup:
+    if (ids != static_ids) zfree(ids);",1,2865,cleanup,18,CASTLabelStatement
+442625,JUMP_TARGET,-1,"cleanup:
+    if (ids != static_ids) zfree(ids);",1,3318,cleanup,49,CASTLabelStatement
+443559,JUMP_TARGET,-1,"cleanup:
+    if (ids != static_ids) zfree(ids);",1,3572,cleanup,20,CASTLabelStatement
+449325,JUMP_TARGET,-1,"cleanup:
+    if (obja) decrRefCount(obja);",1,946,cleanup,67,CASTLabelStatement
+451514,JUMP_TARGET,-1,case '+':,5,577,case,1,CASTCaseStatement
+451542,JUMP_TARGET,-1,case '-':,5,582,case,7,CASTCaseStatement
+451570,JUMP_TARGET,-1,case '(':,5,587,case,13,CASTCaseStatement
+451591,JUMP_TARGET,-1,case '[':,5,591,case,18,CASTCaseStatement
+451612,JUMP_TARGET,-1,default:,5,595,default,23,CASTDefaultStatement
+455815,JUMP_TARGET,-1,"reply_to_client:
+    if (incr) { /* ZINCRBY or INCR option. */
+        if (processed)
+            addReplyDouble(c,score);
+        else
+            addReplyNull(c);
+    } else { /* ZADD. */
+        addReplyLongLong(c,ch ? added+updated : added);
+    }",1,1818,reply_to_client,48,CASTLabelStatement
+455839,JUMP_TARGET,-1,"cleanup:
+    zfree(scores);",1,1828,cleanup,50,CASTLabelStatement
+456279,JUMP_TARGET,-1,case ZRANGE_AUTO:,9,1935,case,1,CASTCaseStatement
+456281,JUMP_TARGET,-1,case ZRANGE_RANK:,9,1936,case,3,CASTCaseStatement
+456300,JUMP_TARGET,-1,case ZRANGE_SCORE:,9,1939,case,7,CASTCaseStatement
+456315,JUMP_TARGET,-1,case ZRANGE_LEX:,9,1942,case,11,CASTCaseStatement
+456366,JUMP_TARGET,-1,case ZRANGE_AUTO:,9,1953,case,1,CASTCaseStatement
+456368,JUMP_TARGET,-1,case ZRANGE_RANK:,9,1954,case,3,CASTCaseStatement
+456386,JUMP_TARGET,-1,case ZRANGE_SCORE:,9,1957,case,7,CASTCaseStatement
+456400,JUMP_TARGET,-1,case ZRANGE_LEX:,9,1960,case,11,CASTCaseStatement
+456512,JUMP_TARGET,-1,"cleanup:
+    if (rangetype == ZRANGE_LEX) zslFreeLexRange(&lexrange);",1,1983,cleanup,22,CASTLabelStatement
+460352,JUMP_TARGET,-1,case ZRANGE_CONSUMER_TYPE_CLIENT:,5,3056,case,1,CASTCaseStatement
+460375,JUMP_TARGET,-1,case ZRANGE_CONSUMER_TYPE_INTERNAL:,5,3063,case,8,CASTCaseStatement
+462402,JUMP_TARGET,-1,case ZRANGE_AUTO:,5,3692,case,1,CASTCaseStatement
+462404,JUMP_TARGET,-1,case ZRANGE_RANK:,5,3693,case,3,CASTCaseStatement
+462439,JUMP_TARGET,-1,case ZRANGE_SCORE:,5,3702,case,7,CASTCaseStatement
+462465,JUMP_TARGET,-1,case ZRANGE_LEX:,5,3710,case,11,CASTCaseStatement
+462546,JUMP_TARGET,-1,case ZRANGE_AUTO:,5,3739,case,1,CASTCaseStatement
+462548,JUMP_TARGET,-1,case ZRANGE_RANK:,5,3740,case,3,CASTCaseStatement
+462562,JUMP_TARGET,-1,case ZRANGE_SCORE:,5,3745,case,7,CASTCaseStatement
+462575,JUMP_TARGET,-1,case ZRANGE_LEX:,5,3750,case,11,CASTCaseStatement
+462591,JUMP_TARGET,-1,"cleanup:
+
+    if (rangetype == ZRANGE_LEX) {
+        zslFreeLexRange(&lexrange);
+    }",1,3758,cleanup,34,CASTLabelStatement
+468308,JUMP_TARGET,-1,case '*':,9,61,case,1,CASTCaseStatement
+468365,JUMP_TARGET,-1,case '?':,9,90,case,9,CASTCaseStatement
+468372,JUMP_TARGET,-1,case '[':,9,94,case,14,CASTCaseStatement
+468589,JUMP_TARGET,-1,case '\\':,9,156,case,17,CASTCaseStatement
+468600,JUMP_TARGET,-1,default:,9,162,default,20,CASTDefaultStatement
+469299,JUMP_TARGET,-1,"err:
+    /* force add Null termination */
+    if (dstlen > 0)
+        dst[0] = '\0';",1,369,err,9,CASTLabelStatement
+469428,JUMP_TARGET,-1,"err:
+    /* force add Null termination */
+    if (dstlen > 0)
+        dst[0] = '\0';",1,416,err,12,CASTLabelStatement
+470324,JUMP_TARGET,-1,"err:
+    /* force add Null termination */
+    if (dstlen > 0)
+        dst[0] = '\0';",1,760,err,30,CASTLabelStatement
+470450,JUMP_TARGET,-1,case LD_STR_AUTO:,9,813,case,1,CASTCaseStatement
+470468,JUMP_TARGET,-1,case LD_STR_HEX:,9,817,case,6,CASTCaseStatement
+470486,JUMP_TARGET,-1,case LD_STR_HUMAN:,9,821,case,11,CASTCaseStatement
+470562,JUMP_TARGET,-1,default:,9,843,default,18,CASTDefaultStatement
+470571,JUMP_TARGET,-1,"err:
+    /* force add Null termination */
+    if (len > 0)
+        buf[0] = '\0';",1,848,err,6,CASTLabelStatement
+471742,JUMP_TARGET,-1,case ZIP_INT_8B:,5,344,case,1,CASTCaseStatement
+471748,JUMP_TARGET,-1,case ZIP_INT_16B:,5,345,case,4,CASTCaseStatement
+471758,JUMP_TARGET,-1,case ZIP_INT_24B:,5,346,case,7,CASTCaseStatement
+471768,JUMP_TARGET,-1,case ZIP_INT_32B:,5,347,case,10,CASTCaseStatement
+471778,JUMP_TARGET,-1,case ZIP_INT_64B:,5,348,case,13,CASTCaseStatement

@@ -1,0 +1,2006 @@
+396,METHOD_REF,2,,"[&]() {
+    if (env_->is_stopping()) {
+      MarkAsFailed();
+      env_->async_hooks()->clear_async_id_stack();
+    }
+  }",33,,103,node.InternalCallbackScope.Close.<lambda>0,2,,api\callback.cc:<global>
+415,METHOD_REF,1,,[&]() { isolate->SetIdle(true); },28,,114,node.InternalCallbackScope.Close.<lambda>1,1,,api\callback.cc:<global>
+484,METHOD_REF,1,,[&]() { env_->RunWeakRefCleanup(); },39,,133,node.InternalCallbackScope.Close.<lambda>2,1,,api\callback.cc:<global>
+1456,METHOD_REF,1,,[](Realm* realm) { realm->VerifyNoStrongBaseObjects(); },21,,75,node.SpinEventLoopInternal.<lambda>0,2,,api\embed_helpers.cc:<global>
+1634,METHOD_REF,1,,"[&]() {
+      if (bootstrapCatch.HasCaught()) {
+        errors->push_back(FormatCaughtException(
+            isolate, isolate->GetCurrentContext(), bootstrapCatch));
+      }
+    }",41,,136,node.CommonEnvironmentSetup.CommonEnvironmentSetup.<lambda>1,1,,api\embed_helpers.cc:<global>
+1770,METHOD_REF,6,,"[&](const CommonEnvironmentSetup* setup) -> Environment* {
+        return CreateEnvironment(
+            setup->isolate_data(),
+            setup->context(),
+            args,
+            exec_args,
+            static_cast<EnvironmentFlags::Flags>(env_flags));
+      }",7,,192,"new CommonEnvironmentSetup(
+      platform,
+      errors,
+      nullptr,
+      true,
+      [&](const CommonEnvironmentSetup* setup) -> Environment* {
+        return CreateEnvironment(
+            setup->isolate_data(),
+            setup->context(),
+            args,
+            exec_args,
+            static_cast<EnvironmentFlags.Flags>(env_flags));
+      }).<lambda>2",6,,api\embed_helpers.cc:<global>
+1837,METHOD_REF,2,,"[](void* data) {
+      *static_cast<bool*>(data) = true;
+    }",58,,217,node.CommonEnvironmentSetup.~CommonEnvironmentSetup.<lambda>3,3,,api\embed_helpers.cc:<global>
+3500,METHOD_REF,3,,ShouldAbortOnUncaughtException,7,,260,node.ShouldAbortOnUncaughtException,3,,bool
+3546,METHOD_REF,3,,PrepareStackTraceCallback,42,,270,node.PrepareStackTraceCallback,3,,MaybeLocal<Value>
+3575,METHOD_REF,3,,AllowWasmCodeGenerationCallback,45,,279,node.AllowWasmCodeGenerationCallback,3,,bool
+4157,METHOD_REF,2,,"[&](const StartExecutionCallbackInfo& info) -> MaybeLocal<Value> {
+        Local<Value> main_script =
+            ToV8Value(env->context(), main_script_source_utf8).ToLocalChecked();
+        return info.run_cjs->Call(
+            env->context(), Null(env->isolate()), 1, &main_script);
+      }",12,,556,node.LoadEnvironment.<lambda>0,2,,api\environment.cc:<global>
+4620,METHOD_REF,2,,ProtoThrower,33,,717,node.ProtoThrower,3,,void
+5213,METHOD_REF,1,,"[=](Environment* env, ExitCode exit_code) {
+    movedHandler(env, static_cast<int>(exit_code));
+  }",33,,932,node.SetProcessExitHandler.<lambda>1,2,,api\environment.cc:<global>
+6232,METHOD_REF,2,,FinishAsyncCleanupHook,24,,146,node.FinishAsyncCleanupHook,3,,void
+6282,METHOD_REF,1,,RunAsyncCleanupHook,23,,160,node.RunAsyncCleanupHook,2,,void
+6319,METHOD_REF,1,,RunAsyncCleanupHook,40,,168,node.RunAsyncCleanupHook,2,,void
+6335,METHOD_REF,1,,"[fun, arg](Environment* env) {
+    // Disallow JavaScript execution during interrupt.
+    Isolate::DisallowJavascriptExecutionScope scope(
+        env->isolate(),
+        Isolate::DisallowJavascriptExecutionScope::CRASH_ON_FAILURE);
+    fun(arg);
+  }",25,,172,node.RequestInterrupt.<lambda>0,2,,api\hooks.cc:<global>
+6576,METHOD_REF,2,,"[](void* arg) {
+          DestroyAsyncIdsCallback(static_cast<Environment*>(arg));
+        }",9,,569,node.AsyncWrap.EmitDestroy..<lambda>1,3,,async_wrap.cc:<global>
+7422,METHOD_REF,1,,DestroyParamCleanupHook,26,,245,node.DestroyParamCleanupHook,2,,void
+8689,METHOD_REF,1,,"[](Environment* env) {
+      env->context()->GetMicrotaskQueue()->EnqueueMicrotask(
+        env->isolate(),
+        [](void* arg) {
+          DestroyAsyncIdsCallback(static_cast<Environment*>(arg));
+        }, env);
+      }",27,,566,node.AsyncWrap.EmitDestroy.<lambda>0,2,,async_wrap.cc:<global>
+9258,METHOD_REF,2,,"[](const WeakCallbackInfo<BaseObject>& data) {
+        BaseObject* obj = data.GetParameter();
+        // Clear the persistent handle so that ~BaseObject() doesn't attempt
+        // to mess with internal fields, since the JS object may have
+        // transitioned into an invalid state.
+        // Refs: https://github.com/nodejs/node/issues/18897
+        obj->persistent_handle_.Reset();
+        CHECK_IMPLIES(obj->has_pointer_data(),
+                      obj->pointer_data()->strong_ptr_count == 0);
+        obj->OnGCCollect();
+      }",7,,55,node.BaseObject.MakeWeak.<lambda>0,3,,base_object.cc:<global>
+9953,METHOD_REF,3,,ares_poll_cb,19,,143,node.cares_wrap.anonymous_namespace_5.ares_poll_cb,3,,void
+9979,METHOD_REF,2,,ares_poll_close_cb,54,,153,node.cares_wrap.anonymous_namespace_6.ares_poll_close_cb,3,,void
+12457,METHOD_REF,2,,[](uv_timer_t* handle) { delete handle; },37,,763,node.cares_wrap.ChannelWrap.CloseTimer.<lambda>0,3,,cares_wrap.cc:<global>
+15092,METHOD_REF,1,,[&]() { uv_freeaddrinfo(res); },31,,1432,node.cares_wrap.anonymous_namespace_23.AfterGetAddrInfo.<lambda>1,1,,cares_wrap.cc:<global>
+15172,METHOD_REF,2,,"[&] (bool want_ipv4, bool want_ipv6) -> Maybe<bool> {
+      for (auto p = res; p != nullptr; p = p->ai_next) {
+        CHECK_EQ(p->ai_socktype, SOCK_STREAM);
+
+        const char* addr;
+        if (want_ipv4 && p->ai_family == AF_INET) {
+          addr = reinterpret_cast<char*>(
+              &(reinterpret_cast<struct sockaddr_in*>(p->ai_addr)->sin_addr));
+        } else if (want_ipv6 && p->ai_family == AF_INET6) {
+          addr = reinterpret_cast<char*>(
+              &(reinterpret_cast<struct sockaddr_in6*>(p->ai_addr)->sin6_addr));
+        } else {
+          continue;
+        }
+
+        char ip[INET6_ADDRSTRLEN];
+        if (uv_inet_ntop(p->ai_family, addr, ip, sizeof(ip)))
+          continue;
+
+        Local<String> s = OneByteString(env->isolate(), ip);
+        if (results->Set(env->context(), n, s).IsNothing())
+          return Nothing<bool>();
+        n++;
+      }
+      return Just(true);
+    }",16,,1451,node.cares_wrap.anonymous_namespace_24.AfterGetAddrInfo.<lambda>2,2,,cares_wrap.cc:<global>
+15650,METHOD_REF,2,,AfterGetAddrInfo,23,,1606,node.cares_wrap.anonymous_namespace_28.AfterGetAddrInfo,3,,void
+15806,METHOD_REF,2,,AfterGetNameInfo,32,,1636,node.cares_wrap.anonymous_namespace_30.AfterGetNameInfo,3,,void
+15882,METHOD_REF,1,,[&]() { ares_free_data(servers); },31,,1658,node.cares_wrap.anonymous_namespace_32.GetServers.<lambda>3,1,,cares_wrap.cc:<global>
+16777,METHOD_REF,4,,GetAddrInfo,45,,1884,node.cares_wrap.anonymous_namespace_37.GetAddrInfo,4,,void
+16782,METHOD_REF,4,,GetNameInfo,45,,1885,node.cares_wrap.anonymous_namespace_38.GetNameInfo,4,,void
+16787,METHOD_REF,4,,CanonicalizeIP,60,,1886,node.cares_wrap.anonymous_namespace_39.CanonicalizeIP,4,,void
+16792,METHOD_REF,4,,StrError,42,,1888,node.cares_wrap.anonymous_namespace_40.StrError,4,,void
+17127,METHOD_REF,4,,GetServers,67,,1943,node.cares_wrap.anonymous_namespace_41.GetServers,4,,void
+17132,METHOD_REF,4,,SetServers,55,,1944,node.cares_wrap.anonymous_namespace_42.SetServers,4,,void
+17137,METHOD_REF,4,,SetLocalAddress,60,,1945,node.cares_wrap.anonymous_namespace_43.SetLocalAddress,4,,void
+17142,METHOD_REF,4,,Cancel,51,,1946,node.cares_wrap.anonymous_namespace_44.Cancel,4,,void
+17157,METHOD_REF,1,,GetAddrInfo,22,,1952,node.cares_wrap.anonymous_namespace_45.GetAddrInfo,2,,void
+17162,METHOD_REF,1,,GetNameInfo,22,,1953,node.cares_wrap.anonymous_namespace_46.GetNameInfo,2,,void
+17167,METHOD_REF,1,,CanonicalizeIP,22,,1954,node.cares_wrap.anonymous_namespace_47.CanonicalizeIP,2,,void
+17172,METHOD_REF,1,,StrError,22,,1955,node.cares_wrap.anonymous_namespace_48.StrError,2,,void
+17249,METHOD_REF,1,,GetServers,22,,1972,node.cares_wrap.anonymous_namespace_49.GetServers,2,,void
+17254,METHOD_REF,1,,SetServers,22,,1973,node.cares_wrap.anonymous_namespace_50.SetServers,2,,void
+17259,METHOD_REF,1,,SetLocalAddress,22,,1974,node.cares_wrap.anonymous_namespace_51.SetLocalAddress,2,,void
+17264,METHOD_REF,1,,Cancel,22,,1975,node.cares_wrap.anonymous_namespace_52.Cancel,2,,void
+17375,METHOD_REF,3,,"[](const CleanupHookCallback& a, const CleanupHookCallback& b) {
+              // Sort in descending order so that the most recently inserted
+              // callbacks are run first.
+              return a.insertion_order_counter_ > b.insertion_order_counter_;
+            }",13,,17,node.CleanupQueue.Drain.<lambda>0,4,,cleanup_queue.cc:<global>
+20096,METHOD_REF,0,,"[&]() {
+    BIO_METHOD* method = BIO_meth_new(BIO_TYPE_MEM, ""node.js SSL buffer"");
+    BIO_meth_set_write(method, Write);
+    BIO_meth_set_read(method, Read);
+    BIO_meth_set_puts(method, Puts);
+    BIO_meth_set_gets(method, Gets);
+    BIO_meth_set_ctrl(method, Ctrl);
+    BIO_meth_set_create(method, New);
+    BIO_meth_set_destroy(method, Free);
+    return method;
+  }",37,,224,node.crypto.NodeBIO.GetMethod.<lambda>0,1,,crypto\crypto_bio.cc:<global>
+23614,METHOD_REF,2,,"[](CipherBase* cipher,
+                              const FunctionCallbackInfo<Value>& args,
+                              const char* data, size_t size) {
+    std::unique_ptr<BackingStore> out;
+    Environment* env = Environment::GetCurrent(args);
+
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+
+    UpdateResult r = cipher->Update(data, size, &out);
+
+    if (r != kSuccess) {
+      if (r == kErrorState) {
+        ThrowCryptoError(env, ERR_get_error(),
+                         ""Trying to add data in unsupported state"");
+      }
+      return;
+    }
+
+    Local<ArrayBuffer> ab = ArrayBuffer::New(env->isolate(), std::move(out));
+    args.GetReturnValue().Set(
+        Buffer::New(env, ab, 0, ab->ByteLength()).FromMaybe(Local<Value>()));
+  }",28,,847,"args, [](CipherBase* cipher,
+                              const FunctionCallbackInfo<Value>& args,
+                              const char* data, size_t size) {
+    std.unique_ptr<BackingStore> out;
+    Environment* env = Environment.GetCurrent(args);
+
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+
+    UpdateResult r = cipher->Update(data, size, &out);
+
+    if (r != kSuccess) {
+      if (r == kErrorState) {
+        ThrowCryptoError(env, ERR_get_error(),
+                         ""Trying to add data in unsupported state"");
+      }
+      return;
+    }
+
+    Local<ArrayBuffer> ab = ArrayBuffer.New(env->isolate(), std.move(out));
+    args.GetReturnValue().Set(
+        Buffer.New(env, ab, 0, ab->ByteLength()).FromMaybe(Local<Value>()));
+  }.<lambda>0",2,,crypto\crypto_cipher.cc:<global>
+28281,METHOD_REF,1,,[&]() { OPENSSL_free(value_str); },40,,999,node.crypto.GetX509NameObject.<lambda>0,1,,crypto\crypto_common.cc:<global>
+34474,METHOD_REF,2,,"[&](Local<String> name, FunctionCallback callback) {
+    Local<FunctionTemplate> t = NewFunctionTemplate(isolate, callback);
+
+    const PropertyAttribute attributes =
+        static_cast<PropertyAttribute>(ReadOnly | DontDelete);
+
+    t->InstanceTemplate()->SetInternalFieldCount(
+        DiffieHellman::kInternalFieldCount);
+
+    SetProtoMethod(isolate, t, ""generateKeys"", GenerateKeys);
+    SetProtoMethod(isolate, t, ""computeSecret"", ComputeSecret);
+    SetProtoMethodNoSideEffect(isolate, t, ""getPrime"", GetPrime);
+    SetProtoMethodNoSideEffect(isolate, t, ""getGenerator"", GetGenerator);
+    SetProtoMethodNoSideEffect(isolate, t, ""getPublicKey"", GetPublicKey);
+    SetProtoMethodNoSideEffect(isolate, t, ""getPrivateKey"", GetPrivateKey);
+    SetProtoMethod(isolate, t, ""setPublicKey"", SetPublicKey);
+    SetProtoMethod(isolate, t, ""setPrivateKey"", SetPrivateKey);
+
+    Local<FunctionTemplate> verify_error_getter_templ =
+        FunctionTemplate::New(isolate,
+                              Di...",15,,64,node.crypto.DiffieHellman.Initialize.<lambda>0,2,,crypto\crypto_dh.cc:<global>
+35529,METHOD_REF,2,,"[](const DH* dh) -> const BIGNUM* {
+    const BIGNUM* p;
+    DH_get0_pqg(dh, &p, nullptr, nullptr);
+    return p;
+  }",18,,355,node.crypto.DiffieHellman.GetPrime.<lambda>1,2,,crypto\crypto_dh.cc:<global>
+35538,METHOD_REF,2,,"[](const DH* dh) -> const BIGNUM* {
+    const BIGNUM* g;
+    DH_get0_pqg(dh, nullptr, nullptr, &g);
+    return g;
+  }",18,,363,node.crypto.DiffieHellman.GetGenerator.<lambda>2,2,,crypto\crypto_dh.cc:<global>
+35547,METHOD_REF,2,,"[](const DH* dh) -> const BIGNUM* {
+    const BIGNUM* pub_key;
+    DH_get0_key(dh, &pub_key, nullptr);
+    return pub_key;
+  }",18,,371,node.crypto.DiffieHellman.GetPublicKey.<lambda>3,2,,crypto\crypto_dh.cc:<global>
+35556,METHOD_REF,2,,"[](const DH* dh) -> const BIGNUM* {
+    const BIGNUM* priv_key;
+    DH_get0_key(dh, nullptr, &priv_key);
+    return priv_key;
+  }",18,,379,node.crypto.DiffieHellman.GetPrivateKey.<lambda>4,2,,crypto\crypto_dh.cc:<global>
+35871,METHOD_REF,2,,"[](DH* dh, BIGNUM* num) { return DH_set0_key(dh, num, nullptr); }",10,,461,node.crypto.DiffieHellman.SetPublicKey.<lambda>5,2,,crypto\crypto_dh.cc:<global>
+35880,METHOD_REF,2,,"[](DH* dh, BIGNUM* num) { return DH_set0_key(dh, nullptr, num); }",10,,467,node.crypto.DiffieHellman.SetPrivateKey.<lambda>6,2,,crypto\crypto_dh.cc:<global>
+37838,METHOD_REF,4,,"[env](auto& curve) {
+    return OneByteString(env->isolate(), OBJ_nid2sn(curve.nid));
+  }",61,,115,node.crypto.ECDH.GetCurves.<lambda>0,5,,crypto\crypto_ec.cc:<global>
+41567,METHOD_REF,2,,"[](Hash* hash, const FunctionCallbackInfo<Value>& args,
+                        const char* data, size_t size) {
+    Environment* env = Environment::GetCurrent(args);
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+    bool r = hash->HashUpdate(data, size);
+    args.GetReturnValue().Set(r);
+  }",22,,141,"args, [](Hash* hash, const FunctionCallbackInfo<Value>& args,
+                        const char* data, size_t size) {
+    Environment* env = Environment.GetCurrent(args);
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+    bool r = hash->HashUpdate(data, size);
+    args.GetReturnValue().Set(r);
+  }.<lambda>0",2,,crypto\crypto_hash.cc:<global>
+43028,METHOD_REF,2,,"[](Hmac* hmac, const FunctionCallbackInfo<Value>& args,
+                        const char* data, size_t size) {
+    Environment* env = Environment::GetCurrent(args);
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+    bool r = hmac->HmacUpdate(data, size);
+    args.GetReturnValue().Set(r);
+  }",22,,103,"args, [](Hmac* hmac, const FunctionCallbackInfo<Value>& args,
+                        const char* data, size_t size) {
+    Environment* env = Environment.GetCurrent(args);
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+    bool r = hmac->HmacUpdate(data, size);
+    args.GetReturnValue().Set(r);
+  }.<lambda>0",2,,crypto\crypto_hmac.cc:<global>
+44242,METHOD_REF,4,,"[](const unsigned char** p, long l) {  // NOLINT(runtime/int)
+        return d2i_PUBKEY(nullptr, p, l);
+      }",7,,115,node.crypto.anonymous_namespace_4.ParsePublicKeyPEM.<lambda>0,4,,crypto\crypto_keys.cc:<global>
+44264,METHOD_REF,4,,"[](const unsigned char** p, long l) {  // NOLINT(runtime/int)
+        return d2i_PublicKey(EVP_PKEY_RSA, nullptr, p, l);
+      }",7,,124,node.crypto.anonymous_namespace_5.ParsePublicKeyPEM.<lambda>1,4,,crypto\crypto_keys.cc:<global>
+44285,METHOD_REF,4,,"[](const unsigned char** p, long l) {  // NOLINT(runtime/int)
+        X509Pointer x509(d2i_X509(nullptr, p, l));
+        return x509 ? X509_get_pubkey(x509.get()) : nullptr;
+      }",7,,133,node.crypto.anonymous_namespace_6.ParsePublicKeyPEM.<lambda>2,4,,crypto\crypto_keys.cc:<global>
+56197,METHOD_REF,2,,"[](Sign* sign, const FunctionCallbackInfo<Value>& args,
+                        const char* data, size_t size) {
+    Environment* env = Environment::GetCurrent(args);
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+    Error err = sign->Update(data, size);
+    crypto::CheckThrow(sign->env(), err);
+  }",22,,376,"args, [](Sign* sign, const FunctionCallbackInfo<Value>& args,
+                        const char* data, size_t size) {
+    Environment* env = Environment.GetCurrent(args);
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+    Error err = sign->Update(data, size);
+    crypto.CheckThrow(sign->env(), err);
+  }.<lambda>0",2,,crypto\crypto_sig.cc:<global>
+56655,METHOD_REF,2,,"[](Verify* verify,
+                          const FunctionCallbackInfo<Value>& args,
+                          const char* data, size_t size) {
+    Environment* env = Environment::GetCurrent(args);
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+    Error err = verify->Update(data, size);
+    crypto::CheckThrow(verify->env(), err);
+  }",24,,492,"args, [](Verify* verify,
+                          const FunctionCallbackInfo<Value>& args,
+                          const char* data, size_t size) {
+    Environment* env = Environment.GetCurrent(args);
+    if (UNLIKELY(size > INT_MAX))
+      return THROW_ERR_OUT_OF_RANGE(env, ""data is too long"");
+    Error err = verify->Update(data, size);
+    crypto.CheckThrow(verify->env(), err);
+  }.<lambda>1",2,,crypto\crypto_sig.cc:<global>
+58542,METHOD_REF,4,,TimingSafeEqual,50,,51,node.crypto.Timing.TimingSafeEqual,4,,void
+58552,METHOD_REF,1,,TimingSafeEqual,22,,54,node.crypto.Timing.TimingSafeEqual,2,,void
+59518,METHOD_REF,2,,TLSExtStatusCallback,49,,287,node.crypto.anonymous_namespace_9.TLSExtStatusCallback,2,,int
+59570,METHOD_REF,1,,"[](const char* str, size_t len, void* opaque) {
+        static_cast<std::string*>(opaque)->assign(str, len);
+        return 0;
+      }",7,,309,node.crypto.anonymous_namespace_12.GetBIOError.<lambda>0,1,,crypto\crypto_tls.cc:<global>
+60366,METHOD_REF,1,,"[this, strong_ref](Environment* env) {
+          InvokeQueued(0);
+        }",29,,591,node.crypto.TLSWrap.EncOut.<lambda>1,2,,crypto\crypto_tls.cc:<global>
+60475,METHOD_REF,1,,"[this, strong_ref](Environment* env) {
+      OnStreamAfterWrite(nullptr, 0);
+    }",25,,623,node.crypto.TLSWrap.EncOut.<lambda>2,2,,crypto\crypto_tls.cc:<global>
+60878,METHOD_REF,4,,[](char c) { return c == ' ' ? '_' : ToUpper(c); },26,,769,node.crypto.TLSWrap.ClearOut.<lambda>3,5,,crypto\crypto_tls.cc:<global>
+61341,METHOD_REF,1,,"[this, strong_ref](Environment* env) {
+          OnStreamAfterWrite(WriteWrap::FromObject(current_empty_write_), 0);
+        }",29,,936,node.crypto.TLSWrap.DoWrite.<lambda>4,2,,crypto\crypto_tls.cc:<global>
+61967,METHOD_REF,2,,"[](int write_p, int version, int
+          content_type, const void* buf, size_t len, SSL* ssl, void* arg)
+        -> void {
+        // BIO_write(), etc., called by SSL_trace, may error. The error should
+        // be ignored, trace is a ""best effort"", and its usually because stderr
+        // is a non-blocking pipe, and its buffer has overflowed. Leaving errors
+        // on the stack that can get picked up by later SSL_ calls causes
+        // unwanted failures in SSL_ calls, so keep the error stack unchanged.
+        MarkPopErrorOnReturn mark_pop_error_on_return;
+        SSL_trace(write_p,  version, content_type, buf, len, ssl, arg);
+    }",44,,1165,node.crypto.TLSWrap.EnableTrace.<lambda>5,2,,crypto\crypto_tls.cc:<global>
+66112,METHOD_REF,2,,InitCryptoOnce,23,,143,node.crypto.InitCryptoOnce,2,,bool
+66625,METHOD_REF,3,,"[](void* data, size_t length, void* deleter_data) {
+        OPENSSL_clear_free(deleter_data, length);
+      }",7,,358,node.crypto.ByteSource.ReleaseToBackingStore.<lambda>0,4,,crypto\crypto_util.cc:<global>
+68015,METHOD_REF,3,,"[](void* data, size_t len, void* deleter_data) {
+            OPENSSL_secure_clear_free(data, len);
+          }",11,,721,node.crypto.anonymous_namespace_2.SecureBuffer.<lambda>1,4,,crypto\crypto_util.cc:<global>
+68104,METHOD_REF,4,,GetFipsCrypto,59,,744,node.crypto.GetFipsCrypto,4,,void
+68109,METHOD_REF,4,,SetFipsCrypto,47,,745,node.crypto.SetFipsCrypto,4,,void
+68114,METHOD_REF,4,,TestFipsCrypto,60,,746,node.crypto.TestFipsCrypto,4,,void
+68317,METHOD_REF,4,,SecureBuffer,46,,751,node.crypto.anonymous_namespace_4.SecureBuffer,4,,void
+68322,METHOD_REF,4,,SecureHeapUsed,48,,752,node.crypto.anonymous_namespace_5.SecureHeapUsed,4,,void
+68337,METHOD_REF,1,,GetFipsCrypto,22,,759,node.crypto.GetFipsCrypto,2,,void
+68342,METHOD_REF,1,,SetFipsCrypto,22,,760,node.crypto.SetFipsCrypto,2,,void
+68347,METHOD_REF,1,,TestFipsCrypto,22,,761,node.crypto.TestFipsCrypto,2,,void
+68352,METHOD_REF,1,,SecureBuffer,22,,762,node.crypto.anonymous_namespace_6.SecureBuffer,2,,void
+68357,METHOD_REF,1,,SecureHeapUsed,22,,763,node.crypto.anonymous_namespace_7.SecureHeapUsed,2,,void
+70607,METHOD_REF,4,,[](uint64_t) {},49,,272,node.anonymous_namespace_37.IdempotentDataQueueReader.Pull..<lambda>4,5,,node.anonymous_namespace_25.IdempotentDataQueueReader
+70758,METHOD_REF,4,,[](uint64_t) {},49,,432,node.anonymous_namespace_53.NonIdempotentDataQueueReader.Pull..<lambda>11,5,,node.anonymous_namespace_39.NonIdempotentDataQueueReader
+71486,METHOD_REF,4,,[](uint64_t) {},60,,211,node.anonymous_namespace_32.IdempotentDataQueueReader.Pull.<lambda>0,5,,node.anonymous_namespace_25.IdempotentDataQueueReader
+71524,METHOD_REF,4,,[](uint64_t) {},62,,224,node.anonymous_namespace_33.IdempotentDataQueueReader.Pull.<lambda>1,5,,node.anonymous_namespace_25.IdempotentDataQueueReader
+71552,METHOD_REF,4,,[](uint64_t) {},46,,240,node.anonymous_namespace_35.IdempotentDataQueueReader.Pull.<lambda>2,5,,node.anonymous_namespace_25.IdempotentDataQueueReader
+71567,METHOD_REF,1,,"[this, next = std::move(next)](
+            int status, const DataQueue::Vec* vecs, uint64_t count, Done done) {
+          pull_pending_ = false;
+          // In each of these cases, we do not expect that the source will
+          // actually have provided any actual data.
+          CHECK_IMPLIES(status == bob::Status::STATUS_BLOCK ||
+                            status == bob::Status::STATUS_WAIT ||
+                            status == bob::Status::STATUS_EOS,
+                        vecs == nullptr && count == 0);
+          if (status == bob::Status::STATUS_EOS) {
+            uint32_t current = current_index_.value() + 1;
+            current_reader_ = nullptr;
+            // We have reached the end of this entry. If this is the last entry,
+            // then we are done. Otherwise, we advance the current_index_, clear
+            // the current_reader_ and wait for the next read.
+
+            if (current == data_queue_->entries_.size()) {
+              // Yes, this was the final ...",9,,247,node.anonymous_namespace_36.IdempotentDataQueueReader.Pull.<lambda>3,2,,node.anonymous_namespace_25.IdempotentDataQueueReader
+71723,METHOD_REF,4,,[](uint64_t) {},60,,364,node.anonymous_namespace_46.NonIdempotentDataQueueReader.Pull.<lambda>5,5,,node.anonymous_namespace_39.NonIdempotentDataQueueReader
+71758,METHOD_REF,4,,[](uint64_t) {},64,,377,node.anonymous_namespace_47.NonIdempotentDataQueueReader.Pull.<lambda>6,5,,node.anonymous_namespace_39.NonIdempotentDataQueueReader
+71801,METHOD_REF,4,,[](uint64_t) {},54,,390,node.anonymous_namespace_48.NonIdempotentDataQueueReader.Pull.<lambda>7,5,,node.anonymous_namespace_39.NonIdempotentDataQueueReader
+71825,METHOD_REF,4,,[](uint64_t) {},60,,403,node.anonymous_namespace_49.NonIdempotentDataQueueReader.Pull.<lambda>8,5,,node.anonymous_namespace_39.NonIdempotentDataQueueReader
+71848,METHOD_REF,4,,[](uint64_t) {},46,,409,node.anonymous_namespace_51.NonIdempotentDataQueueReader.Pull.<lambda>9,5,,node.anonymous_namespace_39.NonIdempotentDataQueueReader
+71863,METHOD_REF,1,,"[this, next = std::move(next)](
+            int status, const DataQueue::Vec* vecs, uint64_t count, Done done) {
+          pull_pending_ = false;
+
+          // In each of these cases, we do not expect that the source will
+          // actually have provided any actual data.
+          CHECK_IMPLIES(status == bob::Status::STATUS_BLOCK ||
+                            status == bob::Status::STATUS_WAIT ||
+                            status == bob::Status::STATUS_EOS,
+                        vecs == nullptr && count == 0);
+          if (status == bob::Status::STATUS_EOS) {
+            data_queue_->entries_.erase(data_queue_->entries_.begin());
+            ended_ = data_queue_->entries_.empty();
+            current_reader_ = nullptr;
+            if (!ended_) status = bob::Status::STATUS_CONTINUE;
+            std::move(next)(status, nullptr, 0, [](uint64_t) {});
+            return;
+          }
+
+          // Now that we have updated this readers state, we can forward
+          // everything ...",9,,417,node.anonymous_namespace_52.NonIdempotentDataQueueReader.Pull.<lambda>10,2,,node.anonymous_namespace_39.NonIdempotentDataQueueReader
+72005,METHOD_REF,4,,[](uint64_t) {},62,,516,node.anonymous_namespace_60.EmptyEntry.EmptyReader.Pull.<lambda>12,5,,node.anonymous_namespace_58.EmptyEntry.EmptyReader
+72028,METHOD_REF,4,,[](uint64_t) {},53,,522,node.anonymous_namespace_61.EmptyEntry.EmptyReader.Pull.<lambda>13,5,,node.anonymous_namespace_58.EmptyEntry.EmptyReader
+72144,METHOD_REF,4,,[](uint64_t) {},62,,586,node.anonymous_namespace_77.InMemoryEntry.InMemoryReader.Pull.<lambda>14,5,,node.anonymous_namespace_74.InMemoryEntry.InMemoryReader
+72263,METHOD_REF,2,,"[&](uint64_t start,
+                               uint64_t len) -> std::unique_ptr<Entry> {
+      if (len == 0) {
+        return std::make_unique<EmptyEntry>();
+      }
+
+      return std::make_unique<InMemoryEntry>(backing_store_, start, len);
+    }",28,,637,node.anonymous_namespace_85.InMemoryEntry.slice.<lambda>15,2,,node.anonymous_namespace_71.InMemoryEntry
+72521,METHOD_REF,1,,[&] { uv_fs_req_cleanup(&req); },33,,791,node.anonymous_namespace_107.FdEntry.Create.<lambda>16,1,,node.anonymous_namespace_105.FdEntry
+72714,METHOD_REF,1,,[&] { uv_fs_req_cleanup(&req); },33,,853,node.anonymous_namespace_117.FdEntry.CheckModified.<lambda>17,1,,node.anonymous_namespace_105.FdEntry
+72744,METHOD_REF,1,,[&] { uv_fs_req_cleanup(&req); },35,,870,node.anonymous_namespace_120.FdEntry.ReaderImpl.Create.<lambda>18,1,,node.anonymous_namespace_118.FdEntry.ReaderImpl
+72855,METHOD_REF,1,,cleanup,38,,891,node.anonymous_namespace_123.FdEntry.ReaderImpl.cleanup,2,,void
+72868,METHOD_REF,1,,cleanup,41,,895,node.anonymous_namespace_125.FdEntry.ReaderImpl.cleanup,2,,void
+72943,METHOD_REF,4,,[](uint64_t) {},56,,921,node.anonymous_namespace_131.FdEntry.ReaderImpl.OnStreamRead.<lambda>19,5,,node.anonymous_namespace_118.FdEntry.ReaderImpl
+72968,METHOD_REF,4,,[](uint64_t) {},64,,927,node.anonymous_namespace_132.FdEntry.ReaderImpl.OnStreamRead.<lambda>20,5,,node.anonymous_namespace_118.FdEntry.ReaderImpl
+72982,METHOD_REF,4,,[](uint64_t) {},54,,929,node.anonymous_namespace_133.FdEntry.ReaderImpl.OnStreamRead.<lambda>21,5,,node.anonymous_namespace_118.FdEntry.ReaderImpl
+73017,METHOD_REF,4,,[store](uint64_t) {},42,,939,node.anonymous_namespace_135.FdEntry.ReaderImpl.OnStreamRead.<lambda>22,5,,node.anonymous_namespace_118.FdEntry.ReaderImpl
+73066,METHOD_REF,4,,[](uint64_t) {},54,,953,node.anonymous_namespace_137.FdEntry.ReaderImpl.Pull.<lambda>23,5,,node.anonymous_namespace_118.FdEntry.ReaderImpl
+73092,METHOD_REF,4,,[](uint64_t) {},48,,959,node.anonymous_namespace_139.FdEntry.ReaderImpl.Pull.<lambda>24,5,,node.anonymous_namespace_118.FdEntry.ReaderImpl
+73177,METHOD_REF,4,,[](uint64_t) {},62,,1000,node.anonymous_namespace_143.FdEntry.ReaderImpl.DrainAndClose.<lambda>25,5,,node.anonymous_namespace_118.FdEntry.ReaderImpl
+73213,METHOD_REF,1,,[this] { pending_pulls_.pop_front(); },31,,1018,node.anonymous_namespace_145.FdEntry.ReaderImpl.DequeuePendingPull.<lambda>26,1,,node.anonymous_namespace_118.FdEntry.ReaderImpl
+73256,METHOD_REF,2,,"[&size](auto& item) {
+    if (item == nullptr || !item->is_idempotent()) {
+      return true;  // true means the entry is not valid here.
+    }
+
+    // To keep from having to iterate over the entries
+    // again, we'll try calculating the size. If any
+    // of the entries are unable to provide a size, then
+    // we assume we cannot safely treat this entry as
+    // idempotent even if it claims to be.
+    if (item->size().has_value()) {
+      size += item->size().value();
+    } else {
+      return true;  // true means the entry is not valid here.
+    }
+
+    return false;
+  }",26,,1037,node.DataQueue.CreateIdempotent.<lambda>27,2,,dataqueue\queue.cc:<global>
+74166,METHOD_REF,2,,"[](uv_handle_t* handle, void* arg) {
+    Info* info = static_cast<Info*>(arg);
+    NativeSymbolDebuggingContext* sym_ctx = info->ctx.get();
+    FILE* stream = info->stream;
+    info->num_handles++;
+
+    fprintf(stream, ""[%p] %s%s\n"", handle, uv_handle_type_name(handle->type),
+            uv_is_active(handle) ? "" (active)"" : """");
+
+    void* close_cb = reinterpret_cast<void*>(handle->close_cb);
+    fprintf(stream, ""\tClose callback: %p %s\n"",
+        close_cb, sym_ctx->LookupSymbol(close_cb).Display().c_str());
+
+    fprintf(stream, ""\tData: %p %s\n"",
+        handle->data, sym_ctx->LookupSymbol(handle->data).Display().c_str());
+
+    // We are also interested in the first field of what `handle->data`
+    // points to, because for C++ code that is usually the virtual table pointer
+    // and gives us information about the exact kind of object we're looking at.
+    void* first_field = nullptr;
+    // `handle->data` might be any value, including `nullptr`, or something
+    // cast from a c...",17,,338,node.PrintLibuvHandleInformation.<lambda>0,2,,debug_utils.cc:<global>
+74198,METHOD_REF,2,,"[&]() {
+    // The return value is ignored because there's no good way to handle it.
+    fwrite(str.data(), str.size(), 1, file);
+  }",24,,477,node.FWrite.<lambda>1,2,,debug_utils.cc:<global>
+75270,METHOD_REF,2,,"[](uv_handle_t* handle) {
+#ifdef DEBUG
+      memset(handle, 0xab, uv_handle_size(handle->type));
+#endif
+    }",30,,992,node.Environment.RegisterHandleCleanups..<lambda>4,3,,env.cc:<global>
+76079,METHOD_REF,3,,[&](auto&& el) { return el.IsEmpty(); },34,,218,node.Environment.UntrackContext.<lambda>0,4,,env.cc:<global>
+77676,METHOD_REF,3,,"[](uv_async_t* async) {
+        Environment* env = ContainerOf(
+            &Environment::task_queues_async_, async);
+        HandleScope handle_scope(env->isolate());
+        Context::Scope context_scope(env->context());
+        env->RunAndClearNativeImmediates();
+      }",7,,947,node.Environment.InitializeLibuv.<lambda>1,3,,env.cc:<global>
+77738,METHOD_REF,1,,"[](Environment* env) {
+    env->set_can_call_into_js(false);
+    uv_stop(env->event_loop());
+  }",26,,981,node.Environment.ExitEnv.<lambda>2,1,,env.cc:<global>
+77745,METHOD_REF,2,,"[](Environment* env, uv_handle_t* handle,
+                                        void* arg) {
+    handle->data = env;
+
+    env->CloseHandle(handle, [](uv_handle_t* handle) {
+#ifdef DEBUG
+      memset(handle, 0xab, uv_handle_size(handle->type));
+#endif
+    });
+  }",38,,988,node.Environment.RegisterHandleCleanups.<lambda>3,2,,env.cc:<global>
+77749,METHOD_REF,2,,"[&](uv_handle_t* handle) {
+    RegisterHandleCleanup(handle, close_and_finish, nullptr);
+  }",26,,999,node.Environment.RegisterHandleCleanups.<lambda>5,2,,env.cc:<global>
+77855,METHOD_REF,2,,"[](uv_prepare_t* handle) {
+    Environment* env = ContainerOf(&Environment::idle_prepare_handle_, handle);
+    env->isolate()->SetIdle(true);
+  }",43,,1039,node.Environment.StartProfilerIdleNotifier.<lambda>6,2,,env.cc:<global>
+77859,METHOD_REF,2,,"[](uv_check_t* handle) {
+    Environment* env = ContainerOf(&Environment::idle_check_handle_, handle);
+    env->isolate()->SetIdle(false);
+  }",39,,1043,node.Environment.StartProfilerIdleNotifier.<lambda>7,2,,env.cc:<global>
+78148,METHOD_REF,2,,"[&](NativeImmediateQueue* queue) {
+    TryCatchScope try_catch(this);
+    DebugSealHandleScope seal_handle_scope(isolate());
+    while (auto head = queue->Shift()) {
+      bool is_refed = head->flags() & CallbackFlags::kRefed;
+      if (is_refed)
+        ref_count++;
+
+      if (is_refed || !only_refed)
+        head->Call(this);
+
+      head.reset();  // Destroy now so that this is also observed by try_catch.
+
+      if (UNLIKELY(try_catch.HasCaught())) {
+        if (!try_catch.HasTerminated() && can_call_into_js())
+          errors::TriggerUncaughtException(isolate(), try_catch);
+
+        return true;
+      }
+    }
+    return false;
+  }",21,,1149,node.Environment.RunAndClearNativeImmediates.<lambda>8,2,,env.cc:<global>
+78225,METHOD_REF,1,,"[](Isolate* isolate, void* data) {
+    std::unique_ptr<Environment*> env_ptr { static_cast<Environment**>(data) };
+    Environment* env = *env_ptr;
+    if (env == nullptr) {
+      // The Environment has already been destroyed. That should be okay; any
+      // callback added before the Environment shuts down would have been
+      // handled during cleanup.
+      return;
+    }
+    env->interrupt_data_.store(nullptr);
+    env->RunAndClearInterrupts();
+  }",31,,1212,node.Environment.RequestInterruptFromV8.<lambda>9,2,,env.cc:<global>
+78567,METHOD_REF,2,,[](uv_idle_t*){ },44,,1332,node.Environment.ToggleImmediateRef.<lambda>10,2,,env.cc:<global>
+80625,METHOD_REF,4,,Start,39,,107,node.anonymous_namespace_14.FSEventWrap.Start,4,,void
+80640,METHOD_REF,2,,GetInitialized,29,,111,node.anonymous_namespace_15.FSEventWrap.GetInitialized,3,,void
+80692,METHOD_REF,1,,Start,22,,127,node.anonymous_namespace_17.FSEventWrap.Start,2,,void
+80697,METHOD_REF,1,,GetInitialized,22,,128,node.anonymous_namespace_18.FSEventWrap.GetInitialized,2,,void
+80849,METHOD_REF,2,,OnEvent,43,,164,node.anonymous_namespace_21.FSEventWrap.OnEvent,2,,void
+83253,METHOD_REF,4,,BuildEmbedderGraph,52,,474,node.heap.BuildEmbedderGraph,4,,void
+83258,METHOD_REF,4,,TriggerHeapSnapshot,53,,475,node.heap.TriggerHeapSnapshot,4,,void
+83273,METHOD_REF,1,,BuildEmbedderGraph,22,,481,node.heap.BuildEmbedderGraph,2,,void
+83278,METHOD_REF,1,,TriggerHeapSnapshot,22,,482,node.heap.TriggerHeapSnapshot,2,,void
+84029,METHOD_REF,1,,"[map, env](double key, int64_t value) {
+    USE(map->Set(
+          env->context(),
+          Number::New(env->isolate(), key),
+          Number::New(env->isolate(), static_cast<double>(value))));
+  }",29,,163,node.HistogramBase.GetPercentiles.<lambda>0,2,,histogram.cc:<global>
+84074,METHOD_REF,1,,"[map, env](double key, int64_t value) {
+    USE(map->Set(
+          env->context(),
+          Number::New(env->isolate(), key),
+          BigInt::New(env->isolate(), value)));
+  }",29,,178,node.HistogramBase.GetPercentilesBigInt.<lambda>1,2,,histogram.cc:<global>
+85796,METHOD_REF,1,,"[map, env](double key, int64_t value) {
+    USE(map->Set(
+          env->context(),
+          Number::New(env->isolate(), key),
+          Number::New(env->isolate(), static_cast<double>(value))));
+  }",29,,603,node.IntervalHistogram.GetPercentiles.<lambda>2,2,,histogram.cc:<global>
+85841,METHOD_REF,1,,"[map, env](double key, int64_t value) {
+    USE(map->Set(
+          env->context(),
+          Number::New(env->isolate(), key),
+          BigInt::New(env->isolate(), value)));
+  }",29,,618,node.IntervalHistogram.GetPercentilesBigInt.<lambda>3,2,,histogram.cc:<global>
+86323,METHOD_REF,1,,"[m = StringBuffer::create(message)]
+        (InspectorSessionDelegate* delegate) {
+      delegate->SendMessageToFrontend(m->string());
+    }",9,,187,node.inspector.anonymous_namespace_37.ThreadSafeDelegate.SendMessageToFrontend.<lambda>0,2,,node.inspector.anonymous_namespace_34.ThreadSafeDelegate
+86382,METHOD_REF,1,,"[weak_self](Environment*) {
+      if (auto iface = weak_self.lock()) iface->DispatchMessages();
+    }",37,,214,node.inspector.MainThreadInterface.Post.<lambda>1,2,,inspector\main_thread_interface.cc:<global>
+89527,METHOD_REF,2,,"[](uv_async_t*) {
+        CHECK(start_io_thread_async_initialized.exchange(false));
+      }",48,,721,node.inspector.Agent.Start..<lambda>2,3,,inspector_agent.cc:<global>
+90708,METHOD_REF,2,,[=]() { callback(data); },47,,551,node.inspector.NodeInspectorClient.startRepeatingTimer.<lambda>0,3,,node.inspector.NodeInspectorClient
+91123,METHOD_REF,1,,"[](void* data) {
+      Environment* env = static_cast<Environment*>(data);
+
+      {
+        Mutex::ScopedLock lock(start_io_thread_async_mutex);
+        start_io_thread_async.data = nullptr;
+      }
+
+      // This is global, will never get freed
+      env->CloseHandle(&start_io_thread_async, [](uv_async_t*) {
+        CHECK(start_io_thread_async_initialized.exchange(false));
+      });
+    }",33,,712,node.inspector.Agent.Start.<lambda>1,2,,inspector_agent.cc:<global>
+91127,METHOD_REF,2,,"[](void* env) {
+    Agent* agent = static_cast<Environment*>(env)->inspector_agent();
+    if (agent->IsActive()) {
+      agent->WaitForDisconnect();
+    }
+  }",23,,727,node.inspector.Agent.Start.<lambda>3,2,,inspector_agent.cc:<global>
+91730,METHOD_REF,1,,"[this](Environment*) {
+    StartIoThread();
+  }",33,,939,node.inspector.Agent.RequestIoThreadStart.<lambda>4,2,,inspector_agent.cc:<global>
+92218,METHOD_REF,3,,"[](uv_async_t* async) {
+      RequestQueueData* wrapper =
+          node::ContainerOf(&RequestQueueData::async_, async);
+      wrapper->DoDispatch();
+    }",44,,101,node.inspector.anonymous_namespace_11.RequestQueueData.RequestQueueData.<lambda>0,3,,node.inspector.anonymous_namespace_9.RequestQueueData
+92895,METHOD_REF,2,,"[](uv_handle_t* handle) {
+    uv_async_t* async = reinterpret_cast<uv_async_t*>(handle);
+    RequestQueueData* wrapper =
+        node::ContainerOf(&RequestQueueData::async_, async);
+    delete wrapper;
+  }",12,,376,node.inspector.RequestQueueData.CloseAndFree.<lambda>1,2,,inspector_io.cc:<global>
+94138,METHOD_REF,2,,InspectorConsoleCall,27,,325,node.inspector.anonymous_namespace_53.InspectorConsoleCall,2,,void
+94181,METHOD_REF,4,,SetConsoleExtensionInstaller,13,,338,node.inspector.anonymous_namespace_54.SetConsoleExtensionInstaller,4,,void
+94186,METHOD_REF,4,,CallAndPauseOnStart,53,,339,node.inspector.anonymous_namespace_55.CallAndPauseOnStart,4,,void
+94191,METHOD_REF,4,,Open,38,,340,node.inspector.anonymous_namespace_56.Open,4,,void
+94196,METHOD_REF,4,,Url,49,,341,node.inspector.anonymous_namespace_57.Url,4,,void
+94201,METHOD_REF,4,,WaitForDebugger,49,,342,node.inspector.anonymous_namespace_58.WaitForDebugger,4,,void
+94206,METHOD_REF,4,,AsyncTaskScheduledWrapper,52,,344,node.inspector.anonymous_namespace_59.AsyncTaskScheduledWrapper,4,,void
+94226,METHOD_REF,4,,RegisterAsyncHookWrapper,51,,358,node.inspector.anonymous_namespace_60.RegisterAsyncHookWrapper,4,,void
+94231,METHOD_REF,4,,IsEnabled,55,,359,node.inspector.anonymous_namespace_61.IsEnabled,4,,void
+94290,METHOD_REF,1,,InspectorConsoleCall,22,,379,node.inspector.anonymous_namespace_62.InspectorConsoleCall,2,,void
+94295,METHOD_REF,1,,SetConsoleExtensionInstaller,22,,380,node.inspector.anonymous_namespace_63.SetConsoleExtensionInstaller,2,,void
+94300,METHOD_REF,1,,CallAndPauseOnStart,22,,381,node.inspector.anonymous_namespace_64.CallAndPauseOnStart,2,,void
+94305,METHOD_REF,1,,Open,22,,382,node.inspector.anonymous_namespace_65.Open,2,,void
+94310,METHOD_REF,1,,Url,22,,383,node.inspector.anonymous_namespace_66.Url,2,,void
+94315,METHOD_REF,1,,WaitForDebugger,22,,384,node.inspector.anonymous_namespace_67.WaitForDebugger,2,,void
+94320,METHOD_REF,1,,AsyncTaskScheduledWrapper,22,,386,node.inspector.anonymous_namespace_68.AsyncTaskScheduledWrapper,2,,void
+94340,METHOD_REF,1,,RegisterAsyncHookWrapper,22,,391,node.inspector.anonymous_namespace_69.RegisterAsyncHookWrapper,2,,void
+94345,METHOD_REF,1,,IsEnabled,22,,392,node.inspector.anonymous_namespace_70.IsEnabled,2,,void
+95550,METHOD_REF,2,,"[](void* env) {
+    EndStartedProfilers(static_cast<Environment*>(env));
+  }",15,,417,node.profiler.StartProfilers.<lambda>0,2,,inspector_profiler.cc:<global>
+95991,METHOD_REF,4,,SetCoverageDirectory,54,,511,node.profiler.SetCoverageDirectory,4,,void
+95996,METHOD_REF,4,,SetSourceMapCacheGetter,51,,513,node.profiler.SetSourceMapCacheGetter,4,,void
+96001,METHOD_REF,4,,TakeCoverage,46,,514,node.profiler.TakeCoverage,4,,void
+96006,METHOD_REF,4,,StopCoverage,46,,515,node.profiler.StopCoverage,4,,void
+96016,METHOD_REF,1,,SetCoverageDirectory,22,,519,node.profiler.SetCoverageDirectory,2,,void
+96021,METHOD_REF,1,,SetSourceMapCacheGetter,22,,520,node.profiler.SetSourceMapCacheGetter,2,,void
+96026,METHOD_REF,1,,TakeCoverage,22,,521,node.profiler.TakeCoverage,2,,void
+96031,METHOD_REF,1,,StopCoverage,22,,522,node.profiler.StopCoverage,2,,void
+96515,METHOD_REF,3,,[](auto b) { return b == 0; },48,,204,node.inspector.anonymous_namespace_12.IsIPAddress.<lambda>0,4,,inspector_socket.cc:<global>
+97206,METHOD_REF,2,,OnCloseFrameWritten,14,,432,node.inspector.anonymous_namespace_30.WsHandler.OnCloseFrameWritten,2,,void
+97321,METHOD_REF,2,,OnHeaderField,39,,490,node.inspector.anonymous_namespace_40.HttpHandler.OnHeaderField,2,,int
+97326,METHOD_REF,2,,OnHeaderValue,39,,491,node.inspector.anonymous_namespace_41.HttpHandler.OnHeaderValue,2,,int
+97331,METHOD_REF,2,,OnMessageComplete,43,,492,node.inspector.anonymous_namespace_42.HttpHandler.OnMessageComplete,2,,int
+97336,METHOD_REF,2,,OnPath,30,,493,node.inspector.anonymous_namespace_43.HttpHandler.OnPath,2,,int
+97439,METHOD_REF,2,,ThenCloseAndReportFailure,14,,524,node.inspector.anonymous_namespace_47.HttpHandler.ThenCloseAndReportFailure,2,,void
+98027,METHOD_REF,2,,allocate_buffer,30,,707,node.inspector.anonymous_namespace_76.allocate_buffer,2,,void
+98178,METHOD_REF,2,,OnClosed,20,,768,node.inspector.TcpHolder.OnClosed,2,,void
+98960,METHOD_REF,2,,FreeOnCloseCallback,60,,211,node.inspector.ServerSocket.FreeOnCloseCallback,2,,void
+102092,METHOD_REF,5,,Delete,46,,254,v8impl.anonymous_namespace_21.CallbackBundle.Delete,6,,void
+102216,METHOD_REF,1,,"[&](napi_env env) { result = cb(env, cbinfo_wrapper); }",25,,314,v8impl.anonymous_namespace_34.CallbackWrapperBase.InvokeCallback.<lambda>0,2,,v8impl.anonymous_namespace_31.CallbackWrapperBase
+102217,METHOD_REF,2,,"[&](napi_env env, v8::Local<v8::Value> value) {
+                          exceptionOccurred = true;
+                          if (env->terminatedOrTerminating()) {
+                            return;
+                          }
+                          env->isolate->ThrowException(value);
+                        }",25,,315,v8impl.anonymous_namespace_35.CallbackWrapperBase.InvokeCallback.<lambda>1,3,,v8impl.anonymous_namespace_31.CallbackWrapperBase
+102317,METHOD_REF,2,,Invoke,43,,347,v8impl.anonymous_namespace_40.FunctionCallbackWrapper.Invoke,3,,void
+102413,METHOD_REF,2,,Invoke,55,,363,v8impl.anonymous_namespace_43.FunctionCallbackWrapper.Invoke,3,,void
+122058,METHOD_REF,1,,"[&](napi_env env) { cb(env, data, hint); }",20,,105,napi_env__.CallFinalizer.<lambda>0,1,,napi_env__
+124024,METHOD_REF,2,,New,60,,204,node.JSUDPWrap.New,2,,void
+124056,METHOD_REF,4,,EmitReceived,46,,210,node.JSUDPWrap.EmitReceived,4,,void
+124061,METHOD_REF,4,,OnSendDone,44,,211,node.JSUDPWrap.OnSendDone,4,,void
+124066,METHOD_REF,4,,OnAfterBind,45,,212,node.JSUDPWrap.OnAfterBind,4,,void
+126397,METHOD_REF,2,,"[&]() {
+    MaybeLocal<Value> result = module->Evaluate(context);
+    if (!result.IsEmpty() && microtask_queue)
+      microtask_queue->PerformCheckpoint(isolate);
+    return result;
+  }",14,,384,node.loader.ModuleWrap.Evaluate.<lambda>0,2,,module_wrap.cc:<global>
+128583,METHOD_REF,1,,"[](void* data) {
+      Environment* env = static_cast<Environment*>(data);
+      env->isolate()->SetAtomicsWaitCallback(nullptr, nullptr);
+    }",20,,255,node.Environment.InitializeDiagnostics.<lambda>0,1,,node.cc:<global>
+128662,METHOD_REF,1,,[&]() { env->set_embedder_entry_point({}); },22,,284,node.StartExecution.<lambda>1,1,,node.cc:<global>
+130202,METHOD_REF,1,,"[&]() {
+    TearDownOncePerProcess();
+
+    if (snapshot_data != nullptr &&
+        snapshot_data->data_ownership == SnapshotData::DataOwnership::kOwned) {
+      delete snapshot_data;
+    }
+  }",39,,1232,node.StartInternal.<lambda>2,1,,node.cc:<global>
+131416,METHOD_REF,4,,"[&](const CommonEnvironmentSetup* setup) -> Environment* {
+        return CreateEnvironment(
+            setup->isolate_data(), setup->context(),
+            std::forward<EnvironmentArgs>(env_args)...);
+      }",7,,904,"new CommonEnvironmentSetup(
+      platform, errors,
+      [&](const CommonEnvironmentSetup* setup) -> Environment* {
+        return CreateEnvironment(
+            setup->isolate_data(), setup->context(),
+            std.forward<EnvironmentArgs>(env_args)...);
+      }).<lambda>0",4,,node.hpp:<global>
+131454,METHOD_REF,6,,"[&](const CommonEnvironmentSetup* setup) -> Environment* {
+        return CreateEnvironment(setup->isolate_data(),
+                                 setup->context(),
+                                 std::forward<EnvironmentArgs>(env_args)...);
+      }",7,,926,"new CommonEnvironmentSetup(
+      platform,
+      errors,
+      snapshot_data,
+      Flags.kNoFlags,
+      [&](const CommonEnvironmentSetup* setup) -> Environment* {
+        return CreateEnvironment(setup->isolate_data(),
+                                 setup->context(),
+                                 std.forward<EnvironmentArgs>(env_args)...);
+      }).<lambda>1",6,,node.hpp:<global>
+132440,METHOD_REF,1,,"[&](napi_env env) { cb(env, data, hint); }",7,,48,node_napi_env__.CallFinalizer.<lambda>0,1,,node_api.cc:<global>
+132466,METHOD_REF,1,,"[this](node::Environment* node_env) {
+      finalization_scheduled = false;
+      Unref();
+      DrainFinalizerQueue();
+    }",30,,60,node_napi_env__.EnqueueFinalizer.<lambda>1,2,,node_api.cc:<global>
+132534,METHOD_REF,2,,"[](napi_env env_, v8::Local<v8::Value> local_err) {
+    node_napi_env__* env = static_cast<node_napi_env__*>(env_);
+    if (env->terminatedOrTerminating()) {
+      return;
+    }
+    node::Environment* node_env = env->node_env();
+    if (!node_env->options()->force_node_api_uncaught_exceptions_policy &&
+        !enforceUncaughtExceptionPolicy) {
+      ProcessEmitDeprecationWarning(
+          node_env,
+          ""Uncaught N-API callback exception detected, please run node ""
+          ""with option --force-node-api-uncaught-exceptions-policy=true""
+          ""to handle those exceptions properly."",
+          ""DEP0168"");
+      return;
+    }
+    // If there was an unhandled exception in the complete callback,
+    // report it as a fatal exception. (There is no JavaScript on the
+    // callstack that can possibly handle it.)
+    env->trigger_fatal_exception(local_err);
+  }",24,,90,node_napi_env__.CallbackIntoModule.<lambda>2,2,,node_api.cc:<global>
+132729,METHOD_REF,1,,[](void* arg) { static_cast<napi_env>(arg)->Unref(); },7,,193,v8impl.anonymous_namespace_10.NewEnv.<lambda>3,2,,node_api.cc:<global>
+132764,METHOD_REF,2,,Cleanup,51,,225,v8impl.anonymous_namespace_13.ThreadSafeFunction.Cleanup,3,,void
+132781,METHOD_REF,2,,Cleanup,54,,230,v8impl.anonymous_namespace_15.ThreadSafeFunction.Cleanup,3,,void
+132971,METHOD_REF,3,,AsyncCb,37,,308,v8impl.anonymous_namespace_23.ThreadSafeFunction.AsyncCb,3,,void
+133005,METHOD_REF,2,,"[](uv_handle_t* handle) -> void {
+            ThreadSafeFunction* ts_fn =
+                node::ContainerOf(&ThreadSafeFunction::async,
+                                  reinterpret_cast<uv_async_t*>(handle));
+            delete ts_fn;
+          }",11,,318,v8impl.anonymous_namespace_24.ThreadSafeFunction.Init.<lambda>4,3,,v8impl.anonymous_namespace_11.ThreadSafeFunction
+133238,METHOD_REF,1,,"[&](napi_env env) { call_js_cb(env, js_callback, context, data); }",11,,416,v8impl.anonymous_namespace_34.ThreadSafeFunction.DispatchOne.<lambda>5,2,,v8impl.anonymous_namespace_11.ThreadSafeFunction
+133313,METHOD_REF,2,,"[](uv_handle_t* handle) -> void {
+          ThreadSafeFunction* ts_fn =
+              node::ContainerOf(&ThreadSafeFunction::async,
+                                reinterpret_cast<uv_async_t*>(handle));
+          ts_fn->Finalize();
+        }",9,,446,v8impl.anonymous_namespace_38.ThreadSafeFunction.CloseHandlesAndMaybeDelete.<lambda>6,3,,v8impl.anonymous_namespace_11.ThreadSafeFunction
+133911,METHOD_REF,1,,"[&](napi_env env) {
+    _exports = init(env, v8impl::JsValueFromV8LocalValue(exports));
+  }",23,,726,napi_module_register_by_symbol.<lambda>7,2,,node_api.cc:<global>
+134077,METHOD_REF,2,,Hook,61,,790,napi_async_cleanup_hook_handle__.Hook,3,,void
+134112,METHOD_REF,1,,[env = env_](node::Environment*) { env->Unref(); },9,,801,napi_async_cleanup_hook_handle__.~napi_async_cleanup_hook_handle__.<lambda>8,2,,napi_async_cleanup_hook_handle__
+136028,METHOD_REF,1,,"[&](napi_env env) {
+      _complete(env, ConvertUVErrorCode(status), _data);
+    }",36,,1195,anonymous_namespace_82.uvimpl.Work.AfterThreadPoolWork.<lambda>9,2,,anonymous_namespace_75.uvimpl.Work
+138487,METHOD_REF,3,,"[&](DLib* dlib) {
+    static Mutex dlib_load_mutex;
+    Mutex::ScopedLock lock(dlib_load_mutex);
+
+    const bool is_opened = dlib->Open();
+
+    // Objects containing v14 or later modules will have registered themselves
+    // on the pending list.  Activate all of them now.  At present, only one
+    // module per object is supported.
+    node_module* mp = thread_local_modpending;
+    thread_local_modpending = nullptr;
+
+    if (!is_opened) {
+      std::string errmsg = dlib->errmsg_.c_str();
+      dlib->Close();
+#ifdef _WIN32
+      // Windows needs to add the filename into the error message
+      errmsg += *filename;
+#endif  // _WIN32
+      THROW_ERR_DLOPEN_FAILED(env, ""%s"", errmsg.c_str());
+      return false;
+    }
+
+    if (mp != nullptr) {
+      if (mp->nm_context_register_func == nullptr) {
+        if (env->force_context_aware()) {
+          dlib->Close();
+          THROW_ERR_NON_CONTEXT_AWARE_DISABLED(env);
+          return false;
+        }
+      }
+      mp->nm_dso_handle = dlib->...",39,,455,node.binding.DLOpen.<lambda>0,4,,node_binding.cc:<global>
+139133,METHOD_REF,1,,GetLinkedBinding,22,,713,node.binding.GetLinkedBinding,2,,void
+139138,METHOD_REF,1,,GetInternalBinding,22,,714,node.binding.GetInternalBinding,2,,void
+140169,METHOD_REF,2,,"[env](v8::Local<v8::ArrayBuffer> buf,
+                                            size_t byte_length,
+                                            size_t byte_offset = 0) {
+      if (buf->IsDetachable()) {
+        std::shared_ptr<BackingStore> store = buf->GetBackingStore();
+        USE(buf->Detach(Local<Value>()));
+        return DataQueue::CreateInMemoryEntryFromBackingStore(
+            store, byte_offset, byte_length);
+      }
+
+      // If the ArrayBuffer is not detachable, we will copy from it instead.
+      std::shared_ptr<BackingStore> store =
+          ArrayBuffer::NewBackingStore(env->isolate(), byte_length);
+      uint8_t* ptr = static_cast<uint8_t*>(buf->Data()) + byte_offset;
+      std::copy(ptr, ptr + byte_length, static_cast<uint8_t*>(store->Data()));
+      return DataQueue::CreateInMemoryEntryFromBackingStore(
+          store, 0, byte_length);
+    }",39,,179,node.Blob.New.<lambda>0,2,,node_blob.cc:<global>
+140730,METHOD_REF,2,,"[impl](int status,
+                     const DataQueue::Vec* vecs,
+                     size_t count,
+                     bob::Done doneCb) mutable {
+    auto dropMe = std::unique_ptr<Impl>(impl);
+    Environment* env = impl->env;
+    HandleScope handleScope(env->isolate());
+    Local<Function> fn = impl->callback.Get(env->isolate());
+
+    if (status == bob::STATUS_EOS) impl->reader->eos_ = true;
+
+    if (count > 0) {
+      // Copy the returns vectors into a single ArrayBuffer.
+      size_t total = 0;
+      for (size_t n = 0; n < count; n++) total += vecs[n].len;
+
+      std::shared_ptr<BackingStore> store =
+          v8::ArrayBuffer::NewBackingStore(env->isolate(), total);
+      auto ptr = static_cast<uint8_t*>(store->Data());
+      for (size_t n = 0; n < count; n++) {
+        std::copy(vecs[n].base, vecs[n].base + vecs[n].len, ptr);
+        ptr += vecs[n].len;
+      }
+      // Since we copied the data buffers, signal that we're done with them.
+      std::move(doneCb)(0);
+      Lo...",15,,335,node.Blob.Reader.Pull.<lambda>1,2,,node_blob.cc:<global>
+141535,METHOD_REF,4,,[](size_t len) {},41,,22,node.bob.SourceImpl<T>.Pull.<lambda>0,5,,node_bob-inl.hpp:<global>
+141841,METHOD_REF,3,,"[](void*, size_t, void* arg) {
+        static_cast<CallbackInfo*>(arg)->OnBackingStoreFree();
+      }",50,,122,node.Buffer.anonymous_namespace_10.CallbackInfo.CreateTrackedArrayBuffer.<lambda>0,4,,node_buffer.cc:<global>
+142016,METHOD_REF,1,,CleanupHook,29,,180,node.Buffer.anonymous_namespace_14.CallbackInfo.CleanupHook,2,,void
+142059,METHOD_REF,1,,"[self = std::move(self)](Environment* env) {
+    CHECK_EQ(self->env_, env);  // Consistency check.
+
+    self->CallAndResetCallback();
+  }",32,,198,node.Buffer.anonymous_namespace_16.CallbackInfo.OnBackingStoreFree.<lambda>1,2,,node_buffer.cc:<global>
+142972,METHOD_REF,2,,"[](void* data, size_t length, void* deleter_data) {
+    free(data);
+  }",24,,509,node.Buffer.New.<lambda>2,2,,node_buffer.cc:<global>
+146281,METHOD_REF,3,,"[](void*, size_t, void*) {}",38,,1179,node.Buffer.anonymous_namespace_43.GetZeroFillToggle.<lambda>3,4,,node_buffer.cc:<global>
+146650,METHOD_REF,4,,SetBufferPrototype,52,,1266,node.Buffer.anonymous_namespace_55.SetBufferPrototype,4,,void
+146655,METHOD_REF,4,,CreateFromString,62,,1267,node.Buffer.anonymous_namespace_56.CreateFromString,4,,void
+146660,METHOD_REF,4,,SlowByteLengthUtf8,29,,1272,node.Buffer.anonymous_namespace_57.SlowByteLengthUtf8,4,,void
+146667,METHOD_REF,4,,Copy,38,,1274,node.Buffer.anonymous_namespace_58.Copy,4,,void
+146672,METHOD_REF,4,,Compare,53,,1275,node.Buffer.anonymous_namespace_59.Compare,4,,void
+146677,METHOD_REF,4,,CompareOffset,59,,1276,node.Buffer.anonymous_namespace_60.CompareOffset,4,,void
+146682,METHOD_REF,4,,Fill,38,,1277,node.Buffer.anonymous_namespace_61.Fill,4,,void
+146687,METHOD_REF,4,,IndexOfBuffer,59,,1278,node.Buffer.anonymous_namespace_62.IndexOfBuffer,4,,void
+146692,METHOD_REF,4,,IndexOfNumber,59,,1279,node.Buffer.anonymous_namespace_63.IndexOfNumber,4,,void
+146697,METHOD_REF,4,,IndexOfString,59,,1280,node.Buffer.anonymous_namespace_64.IndexOfString,4,,void
+146702,METHOD_REF,4,,DetachArrayBuffer,51,,1282,node.Buffer.anonymous_namespace_65.DetachArrayBuffer,4,,void
+146707,METHOD_REF,4,,CopyArrayBuffer,49,,1283,node.Buffer.anonymous_namespace_66.CopyArrayBuffer,4,,void
+146712,METHOD_REF,4,,Swap16,40,,1285,node.Buffer.anonymous_namespace_67.Swap16,4,,void
+146717,METHOD_REF,4,,Swap32,40,,1286,node.Buffer.anonymous_namespace_68.Swap32,4,,void
+146722,METHOD_REF,4,,Swap64,40,,1287,node.Buffer.anonymous_namespace_69.Swap64,4,,void
+146727,METHOD_REF,4,,IsUtf8,52,,1289,node.Buffer.anonymous_namespace_70.IsUtf8,4,,void
+146732,METHOD_REF,4,,IsAscii,53,,1290,node.Buffer.anonymous_namespace_71.IsAscii,4,,void
+146843,METHOD_REF,4,,GetZeroFillToggle,51,,1321,node.Buffer.anonymous_namespace_72.GetZeroFillToggle,4,,void
+146853,METHOD_REF,1,,SetBufferPrototype,22,,1327,node.Buffer.anonymous_namespace_73.SetBufferPrototype,2,,void
+146858,METHOD_REF,1,,CreateFromString,22,,1328,node.Buffer.anonymous_namespace_74.CreateFromString,2,,void
+146863,METHOD_REF,1,,SlowByteLengthUtf8,22,,1330,node.Buffer.anonymous_namespace_75.SlowByteLengthUtf8,2,,void
+146876,METHOD_REF,1,,FastByteLengthUtf8,22,,1332,node.Buffer.anonymous_namespace_76.FastByteLengthUtf8,2,,uint32_t
+146886,METHOD_REF,1,,Compare,22,,1334,node.Buffer.anonymous_namespace_77.Compare,2,,void
+146891,METHOD_REF,1,,CompareOffset,22,,1335,node.Buffer.anonymous_namespace_78.CompareOffset,2,,void
+146896,METHOD_REF,1,,Fill,22,,1336,node.Buffer.anonymous_namespace_79.Fill,2,,void
+146901,METHOD_REF,1,,IndexOfBuffer,22,,1337,node.Buffer.anonymous_namespace_80.IndexOfBuffer,2,,void
+146906,METHOD_REF,1,,IndexOfNumber,22,,1338,node.Buffer.anonymous_namespace_81.IndexOfNumber,2,,void
+146911,METHOD_REF,1,,IndexOfString,22,,1339,node.Buffer.anonymous_namespace_82.IndexOfString,2,,void
+146916,METHOD_REF,1,,Swap16,22,,1341,node.Buffer.anonymous_namespace_83.Swap16,2,,void
+146921,METHOD_REF,1,,Swap32,22,,1342,node.Buffer.anonymous_namespace_84.Swap32,2,,void
+146926,METHOD_REF,1,,Swap64,22,,1343,node.Buffer.anonymous_namespace_85.Swap64,2,,void
+146931,METHOD_REF,1,,IsUtf8,22,,1345,node.Buffer.anonymous_namespace_86.IsUtf8,2,,void
+146936,METHOD_REF,1,,IsAscii,22,,1346,node.Buffer.anonymous_namespace_87.IsAscii,2,,void
+147011,METHOD_REF,1,,GetZeroFillToggle,22,,1363,node.Buffer.anonymous_namespace_88.GetZeroFillToggle,2,,void
+147016,METHOD_REF,1,,DetachArrayBuffer,22,,1365,node.Buffer.anonymous_namespace_89.DetachArrayBuffer,2,,void
+147021,METHOD_REF,1,,CopyArrayBuffer,22,,1366,node.Buffer.anonymous_namespace_90.CopyArrayBuffer,2,,void
+151674,METHOD_REF,2,,"[&] (PropertyDescriptor* desc_for_sandbox) {
+        if (desc.has_enumerable()) {
+          desc_for_sandbox->set_enumerable(desc.enumerable());
+        }
+        if (desc.has_configurable()) {
+          desc_for_sandbox->set_configurable(desc.configurable());
+        }
+        // Set the property on the sandbox.
+        USE(sandbox->DefineProperty(context, property, *desc_for_sandbox));
+      }",7,,598,node.contextify.ContextifyContext.PropertyDefinerCallback.<lambda>0,2,,node_contextify.cc:<global>
+153223,METHOD_REF,2,,"[&]() {
+    MaybeLocal<Value> result = script->Run(context);
+    if (!result.IsEmpty() && mtask_queue)
+      mtask_queue->PerformCheckpoint(env->isolate());
+    return result;
+  }",14,,1053,node.contextify.ContextifyScript.EvalMachine.<lambda>1,2,,node_contextify.cc:<global>
+154540,METHOD_REF,4,,StartSigintWatchdog,53,,1404,node.contextify.StartSigintWatchdog,4,,void
+154545,METHOD_REF,4,,StopSigintWatchdog,52,,1405,node.contextify.StopSigintWatchdog,4,,void
+154550,METHOD_REF,4,,WatchdogHasPendingSigint,52,,1408,node.contextify.WatchdogHasPendingSigint,4,,void
+154592,METHOD_REF,4,,MeasureMemory,47,,1418,node.contextify.MeasureMemory,4,,void
+154759,METHOD_REF,1,,StartSigintWatchdog,22,,1459,node.contextify.StartSigintWatchdog,2,,void
+154764,METHOD_REF,1,,StopSigintWatchdog,22,,1460,node.contextify.StopSigintWatchdog,2,,void
+154769,METHOD_REF,1,,WatchdogHasPendingSigint,22,,1461,node.contextify.WatchdogHasPendingSigint,2,,void
+154774,METHOD_REF,1,,MeasureMemory,22,,1462,node.contextify.MeasureMemory,2,,void
+155836,METHOD_REF,1,,"[detail](Environment* env) {
+      const char* msg = ""Closing directory handle on garbage collection failed"";
+      // This exception will end up being fatal for the process because
+      // it is being thrown from within the SetImmediate handler and
+      // there is no JS stack to bubble it to. In other words, tearing
+      // down the process is the only reasonable thing we can do here.
+      HandleScope handle_scope(env->isolate());
+      env->ThrowUVException(detail.ret, ""close"", msg);
+    }",25,,152,node.fs_dir.DirHandle.GCClose.<lambda>0,2,,node_dir.cc:<global>
+155842,METHOD_REF,1,,"[](Environment* env) {
+    ProcessEmitWarning(env,
+                       ""Closing directory handle on garbage collection"");
+  }",23,,168,node.fs_dir.DirHandle.GCClose.<lambda>1,2,,node_dir.cc:<global>
+157638,METHOD_REF,6,,AfterOpenDir,63,,379,node.fs_dir.AfterOpenDir,6,,void
+157925,METHOD_REF,4,,OpenDir,41,,407,node.fs_dir.OpenDir,4,,void
+157996,METHOD_REF,1,,OpenDir,22,,421,node.fs_dir.OpenDir,2,,void
+158425,METHOD_REF,1,,"[&]() { uv_os_free_environ(items, count); }",31,,193,node.RealEnvStore.Enumerate.<lambda>0,1,,node_env_var.cc:<global>
+159627,METHOD_REF,1,,EnvGetter,7,,467,node.EnvGetter,1,,void
+159628,METHOD_REF,2,,EnvSetter,7,,468,node.EnvSetter,2,,void
+159629,METHOD_REF,3,,EnvQuery,7,,469,node.EnvQuery,3,,void
+159630,METHOD_REF,4,,EnvDeleter,7,,470,node.EnvDeleter,4,,void
+159631,METHOD_REF,5,,EnvEnumerator,7,,471,node.EnvEnumerator,5,,void
+159632,METHOD_REF,6,,EnvDefiner,7,,472,node.EnvDefiner,6,,void
+159657,METHOD_REF,1,,EnvGetter,22,,481,node.EnvGetter,2,,void
+159662,METHOD_REF,1,,EnvSetter,22,,482,node.EnvSetter,2,,void
+159667,METHOD_REF,1,,EnvQuery,22,,483,node.EnvQuery,2,,void
+159672,METHOD_REF,1,,EnvDeleter,22,,484,node.EnvDeleter,2,,void
+159677,METHOD_REF,1,,EnvEnumerator,22,,485,node.EnvEnumerator,2,,void
+159682,METHOD_REF,1,,EnvDefiner,22,,486,node.EnvDefiner,2,,void
+160924,METHOD_REF,2,,"[&]() {
+#if HAVE_INSPECTOR
+    env->inspector_agent()->ReportUncaughtException(error, message);
+#endif
+  }",30,,376,node.ReportFatalException.<lambda>0,2,,node_errors.cc:<global>
+160968,METHOD_REF,2,,"[&](Local<Function> enhancer) {
+      Local<Value> enhanced;
+      Local<Value> argv[] = {err_obj};
+      if (!enhancer.IsEmpty() &&
+          enhancer
+              ->Call(env->context(), Undefined(isolate), arraysize(argv), argv)
+              .ToLocal(&enhanced)) {
+        stack_trace = enhanced;
+      }
+    }",25,,396,node.ReportFatalException.<lambda>1,2,,node_errors.cc:<global>
+162087,METHOD_REF,1,,SetPrepareStackTraceCallback,22,,1020,node.errors.SetPrepareStackTraceCallback,2,,void
+162092,METHOD_REF,1,,SetGetSourceMapErrorSource,22,,1021,node.errors.SetGetSourceMapErrorSource,2,,void
+162097,METHOD_REF,1,,SetSourceMapsEnabled,22,,1022,node.errors.SetSourceMapsEnabled,2,,void
+162102,METHOD_REF,1,,SetMaybeCacheGeneratedSourceMap,22,,1023,node.errors.SetMaybeCacheGeneratedSourceMap,2,,void
+162107,METHOD_REF,1,,SetEnhanceStackForFatalException,22,,1024,node.errors.SetEnhanceStackForFatalException,2,,void
+162112,METHOD_REF,1,,NoSideEffectsToString,22,,1025,node.errors.NoSideEffectsToString,2,,void
+162117,METHOD_REF,1,,TriggerUncaughtException,22,,1026,node.errors.TriggerUncaughtException,2,,void
+162130,METHOD_REF,4,,SetPrepareStackTraceCallback,13,,1036,node.errors.SetPrepareStackTraceCallback,4,,void
+162135,METHOD_REF,4,,SetGetSourceMapErrorSource,13,,1040,node.errors.SetGetSourceMapErrorSource,4,,void
+162140,METHOD_REF,4,,SetSourceMapsEnabled,54,,1041,node.errors.SetSourceMapsEnabled,4,,void
+162145,METHOD_REF,4,,SetMaybeCacheGeneratedSourceMap,13,,1045,node.errors.SetMaybeCacheGeneratedSourceMap,4,,void
+162150,METHOD_REF,4,,SetEnhanceStackForFatalException,13,,1049,node.errors.SetEnhanceStackForFatalException,4,,void
+162155,METHOD_REF,4,,NoSideEffectsToString,49,,1051,node.errors.NoSideEffectsToString,4,,void
+162160,METHOD_REF,4,,TriggerUncaughtException,52,,1053,node.errors.TriggerUncaughtException,4,,void
+163823,METHOD_REF,1,,"[](uv_fs_t* req) {
+            FSReqBase* req_wrap = FSReqBase::from_req(req);
+            int err = static_cast<int>(req->result);
+            if (reinterpret_cast<intptr_t>(req->data) == UV_EEXIST &&
+                  req_wrap->continuation_data()->paths().size() > 0) {
+              if (err == 0 && S_ISDIR(req->statbuf.st_mode)) {
+                Environment* env = req_wrap->env();
+                uv_loop_t* loop = env->event_loop();
+                std::string path = req->path;
+                uv_fs_req_cleanup(req);
+                MKDirpAsync(loop, req, path.c_str(),
+                            req_wrap->continuation_data()->mode(), nullptr);
+                return;
+              }
+              err = UV_ENOTDIR;
+            }
+            // verify that the path pointed to is actually a directory.
+            if (err == 0 && !S_ISDIR(req->statbuf.st_mode)) err = UV_EEXIST;
+            req_wrap->continuation_data()->Done(err);
+          }",49,,1722,node.fs.MKDirpAsync..<lambda>7,1,,node_file.cc:<global>
+165020,METHOD_REF,1,,"[detail](Environment* env) {
+      char msg[70];
+      snprintf(msg, arraysize(msg),
+              ""Closing file descriptor %d on garbage collection failed"",
+              detail.fd);
+      // This exception will end up being fatal for the process because
+      // it is being thrown from within the SetImmediate handler and
+      // there is no JS stack to bubble it to. In other words, tearing
+      // down the process is the only reasonable thing we can do here.
+      HandleScope handle_scope(env->isolate());
+      env->ThrowUVException(detail.ret, ""close"", msg);
+    }",25,,359,node.fs.FileHandle.Close.<lambda>0,2,,node_file.cc:<global>
+165026,METHOD_REF,1,,"[detail](Environment* env) {
+    ProcessEmitWarning(env,
+                       ""Closing file descriptor %d on garbage collection"",
+                       detail.fd);
+    if (env->filehandle_close_warning()) {
+      env->set_filehandle_close_warning(false);
+      USE(ProcessEmitDeprecationWarning(
+          env,
+          ""Closing a FileHandle object on garbage collection is deprecated. ""
+          ""Please close FileHandle objects explicitly using ""
+          ""FileHandle.prototype.close(). In the future, an error will be ""
+          ""thrown if a file descriptor is closed during garbage collection."",
+          ""DEP0137""));
+    }
+  }",23,,378,node.fs.FileHandle.Close.<lambda>1,2,,node_file.cc:<global>
+165402,METHOD_REF,1,,"[](uv_fs_t* req) {
+    CloseReq* req_wrap = CloseReq::from_req(req);
+    FS_ASYNC_TRACE_END1(
+        req->fs_type, req_wrap, ""result"", static_cast<int>(req->result))
+    BaseObjectPtr<CloseReq> close(req_wrap);
+    CHECK(close);
+    close->file_handle()->AfterClose();
+    if (!close->env()->can_call_into_js()) return;
+    Isolate* isolate = close->env()->isolate();
+    if (req->result < 0) {
+      HandleScope handle_scope(isolate);
+      close->Reject(
+          UVException(isolate, static_cast<int>(req->result), ""close""));
+    } else {
+      close->Resolve();
+    }
+  }",38,,480,node.fs.FileHandle.ClosePromise.<lambda>2,1,,node_file.cc:<global>
+165949,METHOD_REF,1,,"[](uv_fs_t* req) {
+    FileHandle* handle;
+    {
+      FileHandleReadWrap* req_wrap = FileHandleReadWrap::from_req(req);
+      FS_ASYNC_TRACE_END1(
+          req->fs_type, req_wrap, ""result"", static_cast<int>(req->result))
+      handle = req_wrap->file_handle_;
+      CHECK_EQ(handle->current_read_.get(), req_wrap);
+    }
+
+    // ReadStart() checks whether current_read_ is set to determine whether
+    // a read is in progress. Moving it into a local variable makes sure that
+    // the ReadStart() call below doesn't think we're still actively reading.
+    BaseObjectPtr<FileHandleReadWrap> read_wrap =
+        std::move(handle->current_read_);
+
+    ssize_t result = req->result;
+    uv_buf_t buffer = read_wrap->buffer_;
+
+    uv_fs_req_cleanup(req);
+
+    // Push the read wrap back to the freelist, or let it be destroyed
+    // once we’re exiting the current scope.
+    constexpr size_t kWantedFreelistFill = 100;
+    auto& freelist = handle->binding_data_->file_handle_read_wrap_freelist;
+  ...",44,,605,node.fs.FileHandle.ReadStart.<lambda>3,1,,node_file.cc:<global>
+166108,METHOD_REF,1,,"[](uv_fs_t* req) {
+    FileHandleCloseWrap* wrap = static_cast<FileHandleCloseWrap*>(
+        FileHandleCloseWrap::from_req(req));
+    FS_ASYNC_TRACE_END1(
+        req->fs_type, wrap, ""result"", static_cast<int>(req->result))
+    FileHandle* handle = static_cast<FileHandle*>(wrap->stream());
+    handle->AfterClose();
+
+    int result = static_cast<int>(req->result);
+    uv_fs_req_cleanup(req);
+    wrap->Done(result);
+  }",53,,685,node.fs.FileHandle.DoShutdown.<lambda>4,1,,node_file.cc:<global>
+168261,METHOD_REF,6,,AfterNoArgs,58,,986,node.fs.AfterNoArgs,6,,void
+168638,METHOD_REF,6,,AfterNoArgs,57,,1011,node.fs.AfterNoArgs,6,,void
+168959,METHOD_REF,1,,"[fd, loop]() {
+    uv_fs_t close_req;
+    CHECK_EQ(0, uv_fs_close(loop, &close_req, fd, nullptr));
+    uv_fs_req_cleanup(&close_req);
+  }",35,,1047,node.fs.InternalModuleReadJSON.<lambda>5,1,,node_file.cc:<global>
+169554,METHOD_REF,6,,AfterStat,56,,1160,node.fs.AfterStat,6,,void
+169979,METHOD_REF,6,,AfterStat,57,,1193,node.fs.AfterStat,6,,void
+170401,METHOD_REF,6,,AfterStat,57,,1226,node.fs.AfterStat,6,,void
+170824,METHOD_REF,6,,AfterStatFs,15,,1264,node.fs.AfterStatFs,6,,void
+171312,METHOD_REF,8,,AfterNoArgs,25,,1319,node.fs.AfterNoArgs,8,,void
+171758,METHOD_REF,8,,AfterNoArgs,19,,1362,node.fs.AfterNoArgs,8,,void
+172159,METHOD_REF,6,,AfterStringPtr,64,,1391,node.fs.AfterStringPtr,6,,void
+172680,METHOD_REF,8,,AfterNoArgs,44,,1451,node.fs.AfterNoArgs,8,,void
+173071,METHOD_REF,6,,AfterNoArgs,61,,1478,node.fs.AfterNoArgs,6,,void
+173441,METHOD_REF,6,,AfterNoArgs,61,,1502,node.fs.AfterNoArgs,6,,void
+173809,METHOD_REF,6,,AfterNoArgs,57,,1525,node.fs.AfterNoArgs,6,,void
+174191,METHOD_REF,6,,AfterNoArgs,58,,1551,node.fs.AfterNoArgs,6,,void
+174575,METHOD_REF,6,,AfterNoArgs,57,,1577,node.fs.AfterNoArgs,6,,void
+175138,METHOD_REF,1,,"[](uv_fs_t* req) {
+    FSReqBase* req_wrap = FSReqBase::from_req(req);
+    Environment* env = req_wrap->env();
+    uv_loop_t* loop = env->event_loop();
+    std::string path = req->path;
+    int err = static_cast<int>(req->result);
+
+    while (true) {
+      switch (err) {
+        // Note: uv_fs_req_cleanup in terminal paths will be called by
+        // FSReqAfterScope::~FSReqAfterScope()
+        case 0: {
+          if (req_wrap->continuation_data()->paths().size() == 0) {
+            req_wrap->continuation_data()->MaybeSetFirstPath(path);
+            req_wrap->continuation_data()->Done(0);
+          } else {
+            req_wrap->continuation_data()->MaybeSetFirstPath(path);
+            uv_fs_req_cleanup(req);
+            MKDirpAsync(loop, req, path.c_str(),
+                        req_wrap->continuation_data()->mode(), nullptr);
+          }
+          break;
+        }
+        case UV_EACCES:
+        case UV_ENOTDIR:
+        case UV_EPERM: {
+          req_wrap->continuation_data()->Do...",42,,1673,node.fs.MKDirpAsync.<lambda>6,1,,node_file.cc:<global>
+175456,METHOD_REF,2,,AfterMkdirp,24,,1793,node.fs.AfterMkdirp,2,,void
+175457,METHOD_REF,3,,AfterNoArgs,38,,1793,node.fs.AfterNoArgs,3,,void
+175460,METHOD_REF,2,,MKDirpAsync,24,,1794,node.fs.MKDirpAsync,2,,int
+175965,METHOD_REF,6,,AfterStringPtr,64,,1840,node.fs.AfterStringPtr,6,,void
+176461,METHOD_REF,6,,AfterScanDir,15,,1896,node.fs.AfterScanDir,6,,void
+177213,METHOD_REF,6,,AfterInteger,56,,2017,node.fs.AfterInteger,6,,void
+177672,METHOD_REF,6,,AfterOpenFileHandle,56,,2054,node.fs.AfterOpenFileHandle,6,,void
+178154,METHOD_REF,8,,AfterNoArgs,47,,2101,node.fs.AfterNoArgs,8,,void
+178653,METHOD_REF,6,,AfterInteger,57,,2157,node.fs.AfterInteger,6,,void
+179131,METHOD_REF,6,,AfterInteger,57,,2203,node.fs.AfterInteger,6,,void
+179723,METHOD_REF,6,,AfterInteger,40,,2281,node.fs.AfterInteger,7,,void
+180343,METHOD_REF,6,,AfterInteger,56,,2362,node.fs.AfterInteger,6,,void
+180821,METHOD_REF,6,,AfterInteger,56,,2409,node.fs.AfterInteger,6,,void
+181249,METHOD_REF,6,,AfterNoArgs,57,,2444,node.fs.AfterNoArgs,6,,void
+181640,METHOD_REF,6,,AfterNoArgs,58,,2475,node.fs.AfterNoArgs,6,,void
+182062,METHOD_REF,6,,AfterNoArgs,57,,2512,node.fs.AfterNoArgs,6,,void
+182474,METHOD_REF,6,,AfterNoArgs,58,,2546,node.fs.AfterNoArgs,6,,void
+182898,METHOD_REF,6,,AfterNoArgs,58,,2580,node.fs.AfterNoArgs,6,,void
+183324,METHOD_REF,6,,AfterNoArgs,57,,2614,node.fs.AfterNoArgs,6,,void
+183736,METHOD_REF,6,,AfterNoArgs,58,,2644,node.fs.AfterNoArgs,6,,void
+184160,METHOD_REF,6,,AfterNoArgs,58,,2677,node.fs.AfterNoArgs,6,,void
+184561,METHOD_REF,6,,AfterStringPath,63,,2707,node.fs.AfterStringPath,6,,void
+185170,METHOD_REF,4,,Access,40,,2833,node.fs.Access,4,,void
+185175,METHOD_REF,4,,Close,39,,2834,node.fs.Close,4,,void
+185180,METHOD_REF,4,,Open,38,,2835,node.fs.Open,4,,void
+185185,METHOD_REF,4,,OpenFileHandle,48,,2836,node.fs.OpenFileHandle,4,,void
+185190,METHOD_REF,4,,Read,38,,2837,node.fs.Read,4,,void
+185195,METHOD_REF,4,,ReadBuffers,45,,2838,node.fs.ReadBuffers,4,,void
+185200,METHOD_REF,4,,Fdatasync,43,,2839,node.fs.Fdatasync,4,,void
+185205,METHOD_REF,4,,Fsync,39,,2840,node.fs.Fsync,4,,void
+185210,METHOD_REF,4,,Rename,40,,2841,node.fs.Rename,4,,void
+185215,METHOD_REF,4,,FTruncate,43,,2842,node.fs.FTruncate,4,,void
+185220,METHOD_REF,4,,RMDir,39,,2843,node.fs.RMDir,4,,void
+185225,METHOD_REF,4,,MKDir,39,,2844,node.fs.MKDir,4,,void
+185230,METHOD_REF,4,,ReadDir,41,,2845,node.fs.ReadDir,4,,void
+185235,METHOD_REF,4,,InternalModuleReadJSON,56,,2846,node.fs.InternalModuleReadJSON,4,,void
+185240,METHOD_REF,4,,InternalModuleStat,52,,2847,node.fs.InternalModuleStat,4,,void
+185245,METHOD_REF,4,,Stat,38,,2848,node.fs.Stat,4,,void
+185250,METHOD_REF,4,,LStat,39,,2849,node.fs.LStat,4,,void
+185255,METHOD_REF,4,,FStat,39,,2850,node.fs.FStat,4,,void
+185260,METHOD_REF,4,,StatFs,40,,2851,node.fs.StatFs,4,,void
+185265,METHOD_REF,4,,Link,38,,2852,node.fs.Link,4,,void
+185270,METHOD_REF,4,,Symlink,41,,2853,node.fs.Symlink,4,,void
+185275,METHOD_REF,4,,ReadLink,42,,2854,node.fs.ReadLink,4,,void
+185280,METHOD_REF,4,,Unlink,40,,2855,node.fs.Unlink,4,,void
+185285,METHOD_REF,4,,WriteBuffer,45,,2856,node.fs.WriteBuffer,4,,void
+185290,METHOD_REF,4,,WriteBuffers,46,,2857,node.fs.WriteBuffers,4,,void
+185295,METHOD_REF,4,,WriteString,45,,2858,node.fs.WriteString,4,,void
+185300,METHOD_REF,4,,RealPath,42,,2859,node.fs.RealPath,4,,void
+185305,METHOD_REF,4,,CopyFile,42,,2860,node.fs.CopyFile,4,,void
+185310,METHOD_REF,4,,Chmod,39,,2862,node.fs.Chmod,4,,void
+185315,METHOD_REF,4,,FChmod,40,,2863,node.fs.FChmod,4,,void
+185320,METHOD_REF,4,,Chown,39,,2865,node.fs.Chown,4,,void
+185325,METHOD_REF,4,,FChown,40,,2866,node.fs.FChown,4,,void
+185330,METHOD_REF,4,,LChown,40,,2867,node.fs.LChown,4,,void
+185335,METHOD_REF,4,,UTimes,40,,2869,node.fs.UTimes,4,,void
+185340,METHOD_REF,4,,FUTimes,41,,2870,node.fs.FUTimes,4,,void
+185345,METHOD_REF,4,,LUTimes,41,,2871,node.fs.LUTimes,4,,void
+185350,METHOD_REF,4,,Mkdtemp,41,,2873,node.fs.Mkdtemp,4,,void
+185382,METHOD_REF,2,,NewFSReqCallback,62,,2883,node.fs.NewFSReqCallback,2,,void
+185685,METHOD_REF,1,,Access,22,,2946,node.fs.Access,2,,void
+185695,METHOD_REF,1,,Close,22,,2949,node.fs.Close,2,,void
+185700,METHOD_REF,1,,Open,22,,2950,node.fs.Open,2,,void
+185705,METHOD_REF,1,,OpenFileHandle,22,,2951,node.fs.OpenFileHandle,2,,void
+185710,METHOD_REF,1,,Read,22,,2952,node.fs.Read,2,,void
+185715,METHOD_REF,1,,ReadBuffers,22,,2953,node.fs.ReadBuffers,2,,void
+185720,METHOD_REF,1,,Fdatasync,22,,2954,node.fs.Fdatasync,2,,void
+185725,METHOD_REF,1,,Fsync,22,,2955,node.fs.Fsync,2,,void
+185730,METHOD_REF,1,,Rename,22,,2956,node.fs.Rename,2,,void
+185735,METHOD_REF,1,,FTruncate,22,,2957,node.fs.FTruncate,2,,void
+185740,METHOD_REF,1,,RMDir,22,,2958,node.fs.RMDir,2,,void
+185745,METHOD_REF,1,,MKDir,22,,2959,node.fs.MKDir,2,,void
+185750,METHOD_REF,1,,ReadDir,22,,2960,node.fs.ReadDir,2,,void
+185755,METHOD_REF,1,,InternalModuleReadJSON,22,,2961,node.fs.InternalModuleReadJSON,2,,void
+185760,METHOD_REF,1,,InternalModuleStat,22,,2962,node.fs.InternalModuleStat,2,,void
+185765,METHOD_REF,1,,Stat,22,,2963,node.fs.Stat,2,,void
+185770,METHOD_REF,1,,LStat,22,,2964,node.fs.LStat,2,,void
+185775,METHOD_REF,1,,FStat,22,,2965,node.fs.FStat,2,,void
+185780,METHOD_REF,1,,StatFs,22,,2966,node.fs.StatFs,2,,void
+185785,METHOD_REF,1,,Link,22,,2967,node.fs.Link,2,,void
+185790,METHOD_REF,1,,Symlink,22,,2968,node.fs.Symlink,2,,void
+185795,METHOD_REF,1,,ReadLink,22,,2969,node.fs.ReadLink,2,,void
+185800,METHOD_REF,1,,Unlink,22,,2970,node.fs.Unlink,2,,void
+185805,METHOD_REF,1,,WriteBuffer,22,,2971,node.fs.WriteBuffer,2,,void
+185810,METHOD_REF,1,,WriteBuffers,22,,2972,node.fs.WriteBuffers,2,,void
+185815,METHOD_REF,1,,WriteString,22,,2973,node.fs.WriteString,2,,void
+185820,METHOD_REF,1,,RealPath,22,,2974,node.fs.RealPath,2,,void
+185825,METHOD_REF,1,,CopyFile,22,,2975,node.fs.CopyFile,2,,void
+185830,METHOD_REF,1,,Chmod,22,,2977,node.fs.Chmod,2,,void
+185835,METHOD_REF,1,,FChmod,22,,2978,node.fs.FChmod,2,,void
+185840,METHOD_REF,1,,Chown,22,,2980,node.fs.Chown,2,,void
+185845,METHOD_REF,1,,FChown,22,,2981,node.fs.FChown,2,,void
+185850,METHOD_REF,1,,LChown,22,,2982,node.fs.LChown,2,,void
+185855,METHOD_REF,1,,UTimes,22,,2984,node.fs.UTimes,2,,void
+185860,METHOD_REF,1,,FUTimes,22,,2985,node.fs.FUTimes,2,,void
+185865,METHOD_REF,1,,LUTimes,22,,2986,node.fs.LUTimes,2,,void
+185870,METHOD_REF,1,,Mkdtemp,22,,2988,node.fs.Mkdtemp,2,,void
+185875,METHOD_REF,1,,NewFSReqCallback,22,,2989,node.fs.NewFSReqCallback,2,,void
+188031,METHOD_REF,1,,"[entry = std::move(entry)](Environment* env) {
+    if (HasHttp2Observer(env))
+      entry->Notify(env);
+  }",23,,646,node.http2.Http2Stream.EmitStatistics.<lambda>0,2,,node_http2.cc:<global>
+188090,METHOD_REF,1,,"[entry = std::move(entry)](Environment* env) {
+    if (HasHttp2Observer(env))
+      entry->Notify(env);
+  }",23,,666,node.http2.Http2Session.EmitStatistics.<lambda>1,2,,node_http2.cc:<global>
+188193,METHOD_REF,1,,"[ping = std::move(ping)](Environment* env) {
+          ping->Done(false);
+        }",9,,718,node.http2.Http2Session.Close.<lambda>2,2,,node_http2.cc:<global>
+189893,METHOD_REF,1,,"[&](const Http2Header& header, size_t i) {
+    headers_v[i * 2] = header.GetName(this).ToLocalChecked();
+    headers_v[i * 2 + 1] = header.GetValue(this).ToLocalChecked();
+    if (header.flags() & NGHTTP2_NV_FLAG_NO_INDEX)
+      sensitive_v[sensitive_count++] = headers_v[i * 2];
+  }",27,,1352,node.http2.Http2Session.HandleHeadersFrame.<lambda>3,2,,node_http2.cc:<global>
+190741,METHOD_REF,1,,"[this, strong_ref](Environment* env) {
+      if (!session_ || !is_write_scheduled()) {
+        // This can happen e.g. when a stream was reset before this turn
+        // of the event loop, in which case SendPendingData() is called early,
+        // or the session was destroyed in the meantime.
+        return;
+      }
+
+      // Sending data may call arbitrary JS code, so keep track of
+      // async context.
+      if (env->can_call_into_js()) {
+        HandleScope handle_scope(env->isolate());
+        InternalCallbackScope callback_scope(this);
+        SendPendingData();
+      }
+    }",25,,1628,node.http2.Http2Session.MaybeScheduleWrite.<lambda>4,2,,node_http2.cc:<global>
+192062,METHOD_REF,1,,"[this, strong_ref = std::move(strong_ref)](
+        Environment* env) {
+      // Free any remaining outgoing data chunks here. This should be done
+      // here because it's possible for destroy to have been called while
+      // we still have queued outbound writes.
+      while (!queue_.empty()) {
+        NgHttp2StreamWrite& head = queue_.front();
+        if (head.req_wrap)
+          WriteWrap::FromObject(head.req_wrap)->Done(UV_ECANCELED);
+        queue_.pop();
+      }
+
+      // We can destroy the stream now if there are no writes for it
+      // already on the socket. Otherwise, we'll wait for the garbage collector
+      // to take care of cleaning up.
+      if (session() == nullptr ||
+          !session()->HasWritesOnSocketForStream(this)) {
+        // Delete once strong_ref goes out of scope.
+        Detach();
+      }
+    }",25,,2140,node.http2.Http2Stream.Destroy.<lambda>5,2,,node_http2.cc:<global>
+192369,METHOD_REF,2,,"[](const uint32_t code) {
+    return code == NGHTTP2_CANCEL;
+  }",27,,2275,node.http2.Http2Stream.SubmitRstStream.<lambda>6,2,,node_http2.cc:<global>
+196718,METHOD_REF,4,,HttpErrorString,52,,3220,node.http2.HttpErrorString,4,,void
+196723,METHOD_REF,4,,RefreshDefaultSettings,56,,3221,node.http2.RefreshDefaultSettings,4,,void
+196728,METHOD_REF,4,,PackSettings,46,,3222,node.http2.PackSettings,4,,void
+196733,METHOD_REF,4,,SetCallbackFunctions,54,,3223,node.http2.SetCallbackFunctions,4,,void
+199830,METHOD_REF,1,,"[&]() {
+      if (buf.base == binding_data_->parser_buffer.data())
+        binding_data_->parser_buffer_in_use = false;
+      else
+        free(buf.base);
+    }",40,,761,node.anonymous_namespace_86.Parser.OnStreamRead.<lambda>0,1,,node.anonymous_namespace_49.Parser
+202546,METHOD_REF,1,,"[&]() {
+    for (BaseObjectPtr<BaseObject> object : host_objects) {
+      if (!object) continue;
+
+      // If the function did not finish successfully, host_objects will contain
+      // a list of objects that will never be passed to JS. Therefore, we
+      // destroy them here.
+      object->Detach();
+    }
+  }",31,,166,node.worker.Message.Deserialize.<lambda>0,1,,node_messaging.cc:<global>
+204156,METHOD_REF,2,,"[](uv_async_t* handle) {
+    // Called when data has been put into the queue.
+    MessagePort* channel = ContainerOf(&MessagePort::async_, handle);
+    channel->OnMessage(MessageProcessingMode::kNormalOperation);
+  }",20,,641,node.worker.MessagePort.MessagePort.<lambda>1,2,,node_messaging.cc:<global>
+204174,METHOD_REF,1,,[&]() { if (!succeeded) Close(); },31,,652,node.worker.MessagePort.MessagePort.<lambda>2,1,,node_messaging.cc:<global>
+207423,METHOD_REF,2,,MessageChannel,57,,1514,node.worker.anonymous_namespace_31.MessageChannel,2,,void
+207512,METHOD_REF,4,,SetDeserializerCreateObjectFunction,13,,1545,node.worker.anonymous_namespace_32.SetDeserializerCreateObjectFunction,4,,void
+207517,METHOD_REF,4,,BroadcastChannel,50,,1546,node.worker.anonymous_namespace_33.BroadcastChannel,4,,void
+207554,METHOD_REF,1,,MessageChannel,22,,1559,node.worker.anonymous_namespace_36.MessageChannel,2,,void
+207559,METHOD_REF,1,,BroadcastChannel,22,,1560,node.worker.anonymous_namespace_37.BroadcastChannel,2,,void
+207627,METHOD_REF,1,,SetDeserializerCreateObjectFunction,22,,1570,node.worker.anonymous_namespace_38.SetDeserializerCreateObjectFunction,2,,void
+207999,METHOD_REF,2,,WeakCallback,32,,85,node.ObjectWrap.WeakCallback,3,,void
+210150,METHOD_REF,1,,"[&]() {
+    per_process::cli_options->per_isolate->per_env = original_per_env;
+    per_process::cli_options->per_isolate = original_per_isolate;
+  }",38,,1098,node.options_parser.GetCLIOptions.<lambda>0,1,,node_options.cc:<global>
+210838,METHOD_REF,4,,GetCLIOptions,59,,1249,node.options_parser.GetCLIOptions,4,,void
+210843,METHOD_REF,4,,GetEmbedderOptions,46,,1251,node.options_parser.GetEmbedderOptions,4,,void
+210929,METHOD_REF,1,,GetCLIOptions,22,,1275,node.options_parser.GetCLIOptions,2,,void
+210934,METHOD_REF,1,,GetEmbedderOptions,22,,1276,node.options_parser.GetEmbedderOptions,2,,void
+210942,METHOD_REF,2,,"[](const char* name) {
+    std::string text;
+    return credentials::SafeGetenv(name, &text) ? text : """";
+  }",33,,1281,node.HandleEnvOptions.<lambda>1,2,,node_options.cc:<global>
+212351,METHOD_REF,1,,[&]() { uv_os_free_passwd(&pwd); },35,,299,node.os.GetUserInfo.<lambda>0,1,,node_os.cc:<global>
+212811,METHOD_REF,4,,GetHostname,45,,393,node.os.GetHostname,4,,void
+212816,METHOD_REF,4,,GetLoadAvg,44,,394,node.os.GetLoadAvg,4,,void
+212821,METHOD_REF,4,,GetUptime,43,,395,node.os.GetUptime,4,,void
+212826,METHOD_REF,4,,GetTotalMemory,45,,396,node.os.GetTotalMemory,4,,void
+212831,METHOD_REF,4,,GetFreeMemory,44,,397,node.os.GetFreeMemory,4,,void
+212836,METHOD_REF,4,,GetCPUInfo,41,,398,node.os.GetCPUInfo,4,,void
+212841,METHOD_REF,4,,GetInterfaceAddresses,55,,399,node.os.GetInterfaceAddresses,4,,void
+212846,METHOD_REF,4,,GetHomeDirectory,50,,400,node.os.GetHomeDirectory,4,,void
+212851,METHOD_REF,4,,GetUserInfo,45,,401,node.os.GetUserInfo,4,,void
+212856,METHOD_REF,4,,SetPriority,45,,402,node.os.SetPriority,4,,void
+212861,METHOD_REF,4,,GetPriority,45,,403,node.os.GetPriority,4,,void
+212866,METHOD_REF,4,,GetAvailableParallelism,51,,405,node.os.GetAvailableParallelism,4,,void
+212871,METHOD_REF,4,,GetOSInformation,50,,406,node.os.GetOSInformation,4,,void
+212904,METHOD_REF,1,,GetHostname,22,,415,node.os.GetHostname,2,,void
+212909,METHOD_REF,1,,GetLoadAvg,22,,416,node.os.GetLoadAvg,2,,void
+212914,METHOD_REF,1,,GetUptime,22,,417,node.os.GetUptime,2,,void
+212919,METHOD_REF,1,,GetTotalMemory,22,,418,node.os.GetTotalMemory,2,,void
+212924,METHOD_REF,1,,GetFreeMemory,22,,419,node.os.GetFreeMemory,2,,void
+212929,METHOD_REF,1,,GetCPUInfo,22,,420,node.os.GetCPUInfo,2,,void
+212934,METHOD_REF,1,,GetInterfaceAddresses,22,,421,node.os.GetInterfaceAddresses,2,,void
+212939,METHOD_REF,1,,GetHomeDirectory,22,,422,node.os.GetHomeDirectory,2,,void
+212944,METHOD_REF,1,,GetUserInfo,22,,423,node.os.GetUserInfo,2,,void
+212949,METHOD_REF,1,,SetPriority,22,,424,node.os.SetPriority,2,,void
+212954,METHOD_REF,1,,GetPriority,22,,425,node.os.GetPriority,2,,void
+212959,METHOD_REF,1,,GetAvailableParallelism,22,,426,node.os.GetAvailableParallelism,2,,void
+212964,METHOD_REF,1,,GetOSInformation,22,,427,node.os.GetOSInformation,2,,void
+213549,METHOD_REF,1,,"[entry = std::move(entry)](Environment* env) {
+    entry->Notify(env);
+  }",21,,191,node.performance.MarkGarbageCollectionEnd.<lambda>0,2,,node_perf.cc:<global>
+213579,METHOD_REF,1,,MarkGarbageCollectionStart,44,,200,node.performance.MarkGarbageCollectionStart,2,,void
+213588,METHOD_REF,1,,MarkGarbageCollectionEnd,44,,201,node.performance.MarkGarbageCollectionEnd,2,,void
+213618,METHOD_REF,1,,MarkGarbageCollectionStart,41,,209,node.performance.MarkGarbageCollectionStart,2,,void
+213629,METHOD_REF,1,,MarkGarbageCollectionEnd,41,,211,node.performance.MarkGarbageCollectionEnd,2,,void
+213637,METHOD_REF,1,,GarbageCollectionCleanupHook,23,,213,node.performance.GarbageCollectionCleanupHook,2,,void
+213656,METHOD_REF,1,,GarbageCollectionCleanupHook,26,,220,node.performance.GarbageCollectionCleanupHook,2,,void
+213866,METHOD_REF,3,,"[](Histogram& histogram) {
+        uint64_t delta = histogram.RecordDelta();
+        TRACE_COUNTER1(TRACING_CATEGORY_NODE2(perf, event_loop),
+                        ""delay"", delta);
+        TRACE_COUNTER1(TRACING_CATEGORY_NODE2(perf, event_loop),
+                      ""min"", histogram.Min());
+        TRACE_COUNTER1(TRACING_CATEGORY_NODE2(perf, event_loop),
+                      ""max"", histogram.Max());
+        TRACE_COUNTER1(TRACING_CATEGORY_NODE2(perf, event_loop),
+                      ""mean"", histogram.Mean());
+        TRACE_COUNTER1(TRACING_CATEGORY_NODE2(perf, event_loop),
+                      ""stddev"", histogram.Stddev());
+      }",48,,262,node.performance.CreateELDHistogram.<lambda>1,4,,node_perf.cc:<global>
+214012,METHOD_REF,4,,MarkMilestone,47,,303,node.performance.MarkMilestone,4,,void
+214017,METHOD_REF,4,,SetupPerformanceObservers,48,,304,node.performance.SetupPerformanceObservers,4,,void
+214022,METHOD_REF,4,,InstallGarbageCollectionTracking,13,,308,node.performance.InstallGarbageCollectionTracking,4,,void
+214027,METHOD_REF,4,,RemoveGarbageCollectionTracking,13,,312,node.performance.RemoveGarbageCollectionTracking,4,,void
+214032,METHOD_REF,4,,Notify,40,,313,node.performance.Notify,4,,void
+214037,METHOD_REF,4,,LoopIdleTime,46,,314,node.performance.LoopIdleTime,4,,void
+214042,METHOD_REF,4,,GetTimeOrigin,47,,315,node.performance.GetTimeOrigin,4,,void
+214047,METHOD_REF,4,,GetTimeOriginTimeStamp,56,,316,node.performance.GetTimeOriginTimeStamp,4,,void
+214052,METHOD_REF,4,,CreateELDHistogram,52,,317,node.performance.CreateELDHistogram,4,,void
+214057,METHOD_REF,4,,MarkBootstrapComplete,55,,318,node.performance.MarkBootstrapComplete,4,,void
+215257,METHOD_REF,1,,MarkMilestone,22,,376,node.performance.MarkMilestone,2,,void
+215262,METHOD_REF,1,,SetupPerformanceObservers,22,,377,node.performance.SetupPerformanceObservers,2,,void
+215267,METHOD_REF,1,,InstallGarbageCollectionTracking,22,,378,node.performance.InstallGarbageCollectionTracking,2,,void
+215272,METHOD_REF,1,,RemoveGarbageCollectionTracking,22,,379,node.performance.RemoveGarbageCollectionTracking,2,,void
+215277,METHOD_REF,1,,Notify,22,,380,node.performance.Notify,2,,void
+215282,METHOD_REF,1,,LoopIdleTime,22,,381,node.performance.LoopIdleTime,2,,void
+215287,METHOD_REF,1,,GetTimeOrigin,22,,382,node.performance.GetTimeOrigin,2,,void
+215292,METHOD_REF,1,,GetTimeOriginTimeStamp,22,,383,node.performance.GetTimeOriginTimeStamp,2,,void
+215297,METHOD_REF,1,,CreateELDHistogram,22,,384,node.performance.CreateELDHistogram,2,,void
+215302,METHOD_REF,1,,MarkBootstrapComplete,22,,385,node.performance.MarkBootstrapComplete,2,,void
+215474,METHOD_REF,2,,"[](uv_handle_t* handle) {
+        std::unique_ptr<DelayedTask> task {
+            static_cast<DelayedTask*>(handle->data) };
+        task->platform_data->DecreaseHandleCount();
+      }",16,,479,node.PerIsolatePlatformData.FlushForegroundTasksInternal..<lambda>6,2,,node_platform.cc:<global>
+215612,METHOD_REF,2,,"[](void* data) {
+      static_cast<DelayedTaskScheduler*>(data)->Run();
+    }",25,,63,node.DelayedTaskScheduler.Start.<lambda>0,2,,node.DelayedTaskScheduler
+215721,METHOD_REF,3,,FlushTasks,54,,92,node.DelayedTaskScheduler.FlushTasks,3,,void
+215802,METHOD_REF,2,,[](uv_handle_t* handle) {},16,,117,node.DelayedTaskScheduler.StopTask.Run.<lambda>1,2,,node.DelayedTaskScheduler.StopTask
+215858,METHOD_REF,2,,RunTask,47,,138,node.DelayedTaskScheduler.RunTask,2,,void
+215924,METHOD_REF,2,,"[](uv_handle_t* handle) {
+      delete reinterpret_cast<uv_timer_t*>(handle);
+    }",53,,157,node.DelayedTaskScheduler.TakeTimerTask.<lambda>2,2,,node.DelayedTaskScheduler
+216312,METHOD_REF,2,,"[](uv_handle_t* handle) {
+    std::unique_ptr<uv_async_t> flush_tasks {
+        reinterpret_cast<uv_async_t*>(handle) };
+    PerIsolatePlatformData* platform_data =
+        static_cast<PerIsolatePlatformData*>(flush_tasks->data);
+    platform_data->DecreaseHandleCount();
+    platform_data->self_reference_.reset();
+  }",12,,314,node.PerIsolatePlatformData.Shutdown.<lambda>3,2,,node_platform.cc:<global>
+216659,METHOD_REF,3,,"[task](const DelayedTaskPointer& delayed) -> bool {
+          return delayed.get() == task;
+      }",26,,437,node.PerIsolatePlatformData.DeleteFromScheduledTasks.<lambda>4,4,,node_platform.cc:<global>
+216812,METHOD_REF,2,,"[](DelayedTask* delayed) {
+      uv_close(reinterpret_cast<uv_handle_t*>(&delayed->timer),
+               [](uv_handle_t* handle) {
+        std::unique_ptr<DelayedTask> task {
+            static_cast<DelayedTask*>(handle->data) };
+        task->platform_data->DecreaseHandleCount();
+      });
+    }",43,,477,node.PerIsolatePlatformData.FlushForegroundTasksInternal.<lambda>5,3,,node_platform.cc:<global>
+217036,METHOD_REF,-1,,"[]() {
+    fprintf(stderr, ""\n"");
+    DumpBacktrace(stderr);
+    fflush(stderr);
+  }",10,,561,node.NodePlatform.GetStackTracePrinter.<lambda>7,1,,node_platform.cc:<global>
+219579,METHOD_REF,4,,Abort,39,,580,node.Abort,4,,void
+219584,METHOD_REF,4,,CauseSegfault,47,,581,node.CauseSegfault,4,,void
+219589,METHOD_REF,4,,Chdir,39,,582,node.Chdir,4,,void
+219594,METHOD_REF,4,,Umask,39,,584,node.Umask,4,,void
+219599,METHOD_REF,4,,MemoryUsage,45,,585,node.MemoryUsage,4,,void
+219604,METHOD_REF,4,,GetConstrainedMemory,51,,586,node.GetConstrainedMemory,4,,void
+219609,METHOD_REF,4,,Rss,37,,587,node.Rss,4,,void
+219614,METHOD_REF,4,,CPUUsage,42,,588,node.CPUUsage,4,,void
+219619,METHOD_REF,4,,ResourceUsage,47,,589,node.ResourceUsage,4,,void
+219624,METHOD_REF,4,,DebugEnd,43,,591,node.DebugEnd,4,,void
+219629,METHOD_REF,4,,GetActiveRequests,52,,592,node.GetActiveRequests,4,,void
+219634,METHOD_REF,4,,GetActiveHandles,51,,593,node.GetActiveHandles,4,,void
+219639,METHOD_REF,4,,GetActiveResourcesInfo,56,,594,node.GetActiveResourcesInfo,4,,void
+219644,METHOD_REF,4,,Kill,39,,595,node.Kill,4,,void
+219649,METHOD_REF,4,,RawDebug,43,,596,node.RawDebug,4,,void
+219654,METHOD_REF,4,,Cwd,49,,598,node.Cwd,4,,void
+219666,METHOD_REF,4,,ReallyExit,44,,600,node.ReallyExit,4,,void
+219671,METHOD_REF,4,,Uptime,52,,601,node.Uptime,4,,void
+219722,METHOD_REF,1,,DebugEnd,22,,617,node.DebugEnd,2,,void
+219727,METHOD_REF,1,,Abort,22,,618,node.Abort,2,,void
+219732,METHOD_REF,1,,CauseSegfault,22,,619,node.CauseSegfault,2,,void
+219737,METHOD_REF,1,,Chdir,22,,620,node.Chdir,2,,void
+219742,METHOD_REF,1,,Umask,22,,622,node.Umask,2,,void
+219747,METHOD_REF,1,,RawDebug,22,,623,node.RawDebug,2,,void
+219752,METHOD_REF,1,,MemoryUsage,22,,624,node.MemoryUsage,2,,void
+219757,METHOD_REF,1,,GetConstrainedMemory,22,,625,node.GetConstrainedMemory,2,,void
+219762,METHOD_REF,1,,Rss,22,,626,node.Rss,2,,void
+219767,METHOD_REF,1,,CPUUsage,22,,627,node.CPUUsage,2,,void
+219772,METHOD_REF,1,,ResourceUsage,22,,628,node.ResourceUsage,2,,void
+219777,METHOD_REF,1,,GetActiveRequests,22,,630,node.GetActiveRequests,2,,void
+219782,METHOD_REF,1,,GetActiveHandles,22,,631,node.GetActiveHandles,2,,void
+219787,METHOD_REF,1,,GetActiveResourcesInfo,22,,632,node.GetActiveResourcesInfo,2,,void
+219792,METHOD_REF,1,,Kill,22,,633,node.Kill,2,,void
+219797,METHOD_REF,1,,Cwd,22,,635,node.Cwd,2,,void
+219809,METHOD_REF,1,,ReallyExit,22,,637,node.ReallyExit,2,,void
+219814,METHOD_REF,1,,Uptime,22,,638,node.Uptime,2,,void
+220214,METHOD_REF,3,,"[](auto& a, auto& b) { return a.first < b.first; }",13,,129,node.CreateProcessObject.<lambda>0,4,,node_process_object.cc:<global>
+220374,METHOD_REF,3,,ProcessTitleGetter,17,,189,node.ProcessTitleGetter,4,,void
+220380,METHOD_REF,2,,ProcessTitleSetter,45,,190,node.ProcessTitleSetter,2,,void
+220449,METHOD_REF,3,,GetParentProcessId,30,,213,node.GetParentProcessId,4,,void
+220500,METHOD_REF,3,,DebugPortGetter,27,,240,node.DebugPortGetter,4,,void
+220506,METHOD_REF,2,,DebugPortSetter,55,,241,node.DebugPortSetter,2,,void
+220524,METHOD_REF,1,,GetParentProcessId,22,,248,node.GetParentProcessId,2,,void
+220529,METHOD_REF,1,,DebugPortSetter,22,,249,node.DebugPortSetter,2,,void
+220534,METHOD_REF,1,,DebugPortGetter,22,,250,node.DebugPortGetter,2,,void
+220539,METHOD_REF,1,,ProcessTitleSetter,22,,251,node.ProcessTitleSetter,2,,void
+220544,METHOD_REF,1,,ProcessTitleGetter,22,,252,node.ProcessTitleGetter,2,,void
+221267,METHOD_REF,1,,"[&](BaseObject* obj) {
+    std::cout << ""#"" << i++ << "" "" << obj << "": "" << obj->MemoryInfoName()
+              << ""\n"";
+  }",21,,224,node.Realm.PrintInfoForSnapshot.<lambda>0,1,,node_realm.cc:<global>
+221330,METHOD_REF,1,,"[](BaseObject* obj) {
+    if (obj->IsNotIndicativeOfMemoryLeakAtExit()) return;
+    fprintf(stderr,
+            ""Found bad BaseObject during clean exit: %s\n"",
+            obj->MemoryInfoName());
+    fflush(stderr);
+    ABORT();
+  }",21,,267,node.Realm.VerifyNoStrongBaseObjects.<lambda>1,1,,node_realm.cc:<global>
+221550,METHOD_REF,1,,"[&](Environment* env) {
+        std::ostringstream os;
+
+        GetNodeReport(
+            env, ""Worker thread subreport"", trigger, Local<Value>(), os);
+
+        Mutex::ScopedLock lock(workers_mutex);
+        worker_infos.emplace_back(os.str());
+        notify.Signal(lock);
+      }",47,,222,node.report.WriteNodeReport..<lambda>1,2,,node_report.cc:<global>
+222099,METHOD_REF,1,,"[&](Worker* w) {
+      expected_results += w->RequestInterrupt([&](Environment* env) {
+        std::ostringstream os;
+
+        GetNodeReport(
+            env, ""Worker thread subreport"", trigger, Local<Value>(), os);
+
+        Mutex::ScopedLock lock(workers_mutex);
+        worker_infos.emplace_back(os.str());
+        notify.Signal(lock);
+      });
+    }",24,,221,node.report.WriteNodeReport.<lambda>0,2,,node_report.cc:<global>
+223377,METHOD_REF,3,,"[](int ch) {
+                return !std::iswspace(ch);
+              }",59,,532,node.report.PrintJavaScriptErrorStack.<lambda>2,4,,node_report.cc:<global>
+224281,METHOD_REF,3,,"[](auto& a, auto& b) { return a.first < b.first; }",13,,811,node.report.PrintComponentVersions.<lambda>3,4,,node_report.cc:<global>
+225541,METHOD_REF,4,,WriteReport,46,,173,node.report.WriteReport,4,,void
+225546,METHOD_REF,4,,GetReport,44,,174,node.report.GetReport,4,,void
+225551,METHOD_REF,4,,GetCompact,45,,175,node.report.GetCompact,4,,void
+225556,METHOD_REF,4,,SetCompact,45,,176,node.report.SetCompact,4,,void
+225561,METHOD_REF,4,,GetDirectory,47,,177,node.report.GetDirectory,4,,void
+225566,METHOD_REF,4,,SetDirectory,47,,178,node.report.SetDirectory,4,,void
+225571,METHOD_REF,4,,GetFilename,46,,179,node.report.GetFilename,4,,void
+225576,METHOD_REF,4,,SetFilename,46,,180,node.report.SetFilename,4,,void
+225581,METHOD_REF,4,,GetSignal,44,,181,node.report.GetSignal,4,,void
+225586,METHOD_REF,4,,SetSignal,44,,182,node.report.SetSignal,4,,void
+225591,METHOD_REF,4,,ShouldReportOnFatalError,53,,184,node.report.ShouldReportOnFatalError,4,,void
+225596,METHOD_REF,4,,SetReportOnFatalError,56,,185,node.report.SetReportOnFatalError,4,,void
+225601,METHOD_REF,4,,ShouldReportOnSignal,55,,186,node.report.ShouldReportOnSignal,4,,void
+225606,METHOD_REF,4,,SetReportOnSignal,52,,187,node.report.SetReportOnSignal,4,,void
+225611,METHOD_REF,4,,ShouldReportOnUncaughtException,13,,191,node.report.ShouldReportOnUncaughtException,4,,void
+225616,METHOD_REF,4,,SetReportOnUncaughtException,13,,195,node.report.SetReportOnUncaughtException,4,,void
+225626,METHOD_REF,1,,WriteReport,22,,199,node.report.WriteReport,2,,void
+225631,METHOD_REF,1,,GetReport,22,,200,node.report.GetReport,2,,void
+225636,METHOD_REF,1,,GetCompact,22,,201,node.report.GetCompact,2,,void
+225641,METHOD_REF,1,,SetCompact,22,,202,node.report.SetCompact,2,,void
+225646,METHOD_REF,1,,GetDirectory,22,,203,node.report.GetDirectory,2,,void
+225651,METHOD_REF,1,,SetDirectory,22,,204,node.report.SetDirectory,2,,void
+225656,METHOD_REF,1,,GetFilename,22,,205,node.report.GetFilename,2,,void
+225661,METHOD_REF,1,,SetFilename,22,,206,node.report.SetFilename,2,,void
+225666,METHOD_REF,1,,GetSignal,22,,207,node.report.GetSignal,2,,void
+225671,METHOD_REF,1,,SetSignal,22,,208,node.report.SetSignal,2,,void
+225676,METHOD_REF,1,,ShouldReportOnFatalError,22,,209,node.report.ShouldReportOnFatalError,2,,void
+225681,METHOD_REF,1,,SetReportOnFatalError,22,,210,node.report.SetReportOnFatalError,2,,void
+225686,METHOD_REF,1,,ShouldReportOnSignal,22,,211,node.report.ShouldReportOnSignal,2,,void
+225691,METHOD_REF,1,,SetReportOnSignal,22,,212,node.report.SetReportOnSignal,2,,void
+225696,METHOD_REF,1,,ShouldReportOnUncaughtException,22,,213,node.report.ShouldReportOnUncaughtException,2,,void
+225701,METHOD_REF,1,,SetReportOnUncaughtException,22,,214,node.report.SetReportOnUncaughtException,2,,void
+227008,METHOD_REF,0,,"[]() -> std::string_view {
+    size_t size;
+#ifdef __APPLE__
+    postject_options options;
+    postject_options_init(&options);
+    options.macho_segment_name = ""NODE_SEA"";
+    const char* blob = static_cast<const char*>(
+        postject_find_resource(""NODE_SEA_BLOB"", &size, &options));
+#else
+    const char* blob = static_cast<const char*>(
+        postject_find_resource(""NODE_SEA_BLOB"", &size, nullptr));
+#endif
+    return {blob, size};
+  }",42,,113,node.sea.anonymous_namespace_13.FindSingleExecutableBlob.<lambda>0,1,,node_sea.cc:<global>
+227035,METHOD_REF,0,,"[]() -> SeaResource {
+    std::string_view blob = FindSingleExecutableBlob();
+    per_process::Debug(DebugCategory::SEA,
+                       ""Found SEA resource %p, size=%zu\n"",
+                       blob.data(),
+                       blob.size());
+    SeaDeserializer deserializer(blob);
+    return deserializer.Read<SeaResource>();
+  }",43,,137,node.sea.FindSingleExecutableResource.<lambda>1,1,,node_sea.cc:<global>
+227460,METHOD_REF,4,,IsExperimentalSeaWarningNeeded,13,,290,node.sea.IsExperimentalSeaWarningNeeded,4,,void
+227470,METHOD_REF,1,,IsExperimentalSeaWarningNeeded,22,,294,node.sea.IsExperimentalSeaWarningNeeded,2,,void
+232273,METHOD_REF,1,,"[&]() {
+      if (bootstrapCatch.HasCaught()) {
+        PrintCaughtException(
+            isolate, isolate->GetCurrentContext(), bootstrapCatch);
+      }
+    }",41,,923,node.SnapshotBuilder.Generate.<lambda>0,1,,node_snapshotable.cc:<global>
+232484,METHOD_REF,1,,[](Realm* realm) { realm->PrintInfoForSnapshot(); },27,,1004,node.SnapshotBuilder.CreateSnapshot.<lambda>1,2,,node_snapshotable.cc:<global>
+232940,METHOD_REF,1,,"[&](BaseObject* obj) {
+    // If there are any BaseObjects that are not snapshotable left
+    // during context serialization, V8 would crash due to unregistered
+    // global handles and print detailed information about them.
+    if (!obj->is_snapshotable()) {
+      return;
+    }
+    SnapshotableObject* ptr = static_cast<SnapshotableObject*>(obj);
+
+    std::string type_name = ptr->GetTypeName();
+    per_process::Debug(DebugCategory::MKSNAPSHOT,
+                       ""Serialize snapshotable object %i (%p), ""
+                       ""object=%p, type=%s\n"",
+                       static_cast<int>(i),
+                       ptr,
+                       *(ptr->object()),
+                       type_name);
+
+    if (ptr->PrepareForSerialization(context, creator)) {
+      SnapshotIndex index = creator->AddData(context, obj->object());
+      per_process::Debug(DebugCategory::MKSNAPSHOT,
+                         ""Serialized with index=%d\n"",
+                         static_cast<int>(index));
+...",28,,1203,node.SerializeSnapshotableObjects.<lambda>2,2,,node_snapshotable.cc:<global>
+232982,METHOD_REF,2,,"[](const FunctionCallbackInfo<Value>& args) {
+                      Environment* env = Environment::GetCurrent(args);
+                      Local<Value> require_fn = args[0];
+                      Local<Value> runcjs_fn = args[1];
+                      CHECK(require_fn->IsFunction());
+                      CHECK(runcjs_fn->IsFunction());
+                      MaybeLocal<Value> retval = env->embedder_entry_point()(
+                          {env->process_object(),
+                           require_fn.As<Function>(),
+                           runcjs_fn.As<Function>()});
+                      if (!retval.IsEmpty())
+                        args.GetReturnValue().Set(retval.ToLocalChecked());
+                    }",21,,1239,node.GetEmbedderEntryFunction.<lambda>3,3,,node_snapshotable.cc:<global>
+233456,METHOD_REF,4,,GetEmbedderEntryFunction,52,,1381,node.GetEmbedderEntryFunction,4,,void
+233461,METHOD_REF,4,,CompileSerializeMain,54,,1382,node.CompileSerializeMain,4,,void
+233466,METHOD_REF,4,,SetSerializeCallback,54,,1383,node.SetSerializeCallback,4,,void
+233471,METHOD_REF,4,,SetDeserializeCallback,56,,1384,node.SetDeserializeCallback,4,,void
+233476,METHOD_REF,4,,SetDeserializeMainFunction,13,,1388,node.SetDeserializeMainFunction,4,,void
+233486,METHOD_REF,1,,GetEmbedderEntryFunction,22,,1392,node.GetEmbedderEntryFunction,2,,void
+233491,METHOD_REF,1,,CompileSerializeMain,22,,1393,node.CompileSerializeMain,2,,void
+233496,METHOD_REF,1,,SetSerializeCallback,22,,1394,node.SetSerializeCallback,2,,void
+233501,METHOD_REF,1,,SetDeserializeCallback,22,,1395,node.SetDeserializeCallback,2,,void
+233506,METHOD_REF,1,,SetDeserializeMainFunction,22,,1396,node.SetDeserializeMainFunction,2,,void
+237713,METHOD_REF,4,,EnqueueMicrotask,50,,199,node.task_queue.EnqueueMicrotask,4,,void
+237718,METHOD_REF,4,,SetTickCallback,49,,200,node.task_queue.SetTickCallback,4,,void
+237723,METHOD_REF,4,,RunMicrotasks,47,,201,node.task_queue.RunMicrotasks,4,,void
+238174,METHOD_REF,4,,SetPromiseRejectCallback,52,,216,node.task_queue.SetPromiseRejectCallback,4,,void
+238184,METHOD_REF,1,,EnqueueMicrotask,22,,220,node.task_queue.EnqueueMicrotask,2,,void
+238189,METHOD_REF,1,,SetTickCallback,22,,221,node.task_queue.SetTickCallback,2,,void
+238194,METHOD_REF,1,,RunMicrotasks,22,,222,node.task_queue.RunMicrotasks,2,,void
+238199,METHOD_REF,1,,SetPromiseRejectCallback,22,,223,node.task_queue.SetPromiseRejectCallback,2,,void
+238630,METHOD_REF,4,,GetEnabledCategories,54,,130,node.GetEnabledCategories,4,,void
+238635,METHOD_REF,4,,SetTraceCategoryStateUpdateHandler,13,,134,node.SetTraceCategoryStateUpdateHandler,4,,void
+238755,METHOD_REF,1,,GetEnabledCategories,22,,161,node.GetEnabledCategories,2,,void
+238760,METHOD_REF,1,,SetTraceCategoryStateUpdateHandler,22,,162,node.SetTraceCategoryStateUpdateHandler,2,,void
+239331,METHOD_REF,4,,IsExternal,3,,69,node.anonymous_namespace_29.IsExternal,4,,void
+239338,METHOD_REF,4,,IsDate,3,,69,node.anonymous_namespace_30.IsDate,4,,void
+239343,METHOD_REF,4,,IsArgumentsObject,3,,69,node.anonymous_namespace_31.IsArgumentsObject,4,,void
+239348,METHOD_REF,4,,IsBigIntObject,3,,69,node.anonymous_namespace_32.IsBigIntObject,4,,void
+239353,METHOD_REF,4,,IsBooleanObject,3,,69,node.anonymous_namespace_33.IsBooleanObject,4,,void
+239358,METHOD_REF,4,,IsNumberObject,3,,69,node.anonymous_namespace_34.IsNumberObject,4,,void
+239363,METHOD_REF,4,,IsStringObject,3,,69,node.anonymous_namespace_35.IsStringObject,4,,void
+239368,METHOD_REF,4,,IsSymbolObject,3,,69,node.anonymous_namespace_36.IsSymbolObject,4,,void
+239373,METHOD_REF,4,,IsNativeError,3,,69,node.anonymous_namespace_37.IsNativeError,4,,void
+239378,METHOD_REF,4,,IsRegExp,3,,69,node.anonymous_namespace_38.IsRegExp,4,,void
+239383,METHOD_REF,4,,IsAsyncFunction,3,,69,node.anonymous_namespace_39.IsAsyncFunction,4,,void
+239388,METHOD_REF,4,,IsGeneratorFunction,3,,69,node.anonymous_namespace_40.IsGeneratorFunction,4,,void
+239393,METHOD_REF,4,,IsGeneratorObject,3,,69,node.anonymous_namespace_41.IsGeneratorObject,4,,void
+239398,METHOD_REF,4,,IsPromise,3,,69,node.anonymous_namespace_42.IsPromise,4,,void
+239403,METHOD_REF,4,,IsMap,3,,69,node.anonymous_namespace_43.IsMap,4,,void
+239408,METHOD_REF,4,,IsSet,3,,69,node.anonymous_namespace_44.IsSet,4,,void
+239413,METHOD_REF,4,,IsMapIterator,3,,69,node.anonymous_namespace_45.IsMapIterator,4,,void
+239418,METHOD_REF,4,,IsSetIterator,3,,69,node.anonymous_namespace_46.IsSetIterator,4,,void
+239423,METHOD_REF,4,,IsWeakMap,3,,69,node.anonymous_namespace_47.IsWeakMap,4,,void
+239428,METHOD_REF,4,,IsWeakSet,3,,69,node.anonymous_namespace_48.IsWeakSet,4,,void
+239433,METHOD_REF,4,,IsArrayBuffer,3,,69,node.anonymous_namespace_49.IsArrayBuffer,4,,void
+239438,METHOD_REF,4,,IsDataView,3,,69,node.anonymous_namespace_50.IsDataView,4,,void
+239443,METHOD_REF,4,,IsSharedArrayBuffer,3,,69,node.anonymous_namespace_51.IsSharedArrayBuffer,4,,void
+239448,METHOD_REF,4,,IsProxy,3,,69,node.anonymous_namespace_52.IsProxy,4,,void
+239453,METHOD_REF,4,,IsModuleNamespaceObject,3,,69,node.anonymous_namespace_53.IsModuleNamespaceObject,4,,void
+239458,METHOD_REF,4,,IsAnyArrayBuffer,62,,72,node.anonymous_namespace_54.IsAnyArrayBuffer,4,,void
+239463,METHOD_REF,4,,IsBoxedPrimitive,62,,73,node.anonymous_namespace_55.IsBoxedPrimitive,4,,void
+239475,METHOD_REF,1,,IsExternal,3,,80,node.anonymous_namespace_56.IsExternal,2,,void
+239480,METHOD_REF,1,,IsDate,3,,80,node.anonymous_namespace_57.IsDate,2,,void
+239485,METHOD_REF,1,,IsArgumentsObject,3,,80,node.anonymous_namespace_58.IsArgumentsObject,2,,void
+239490,METHOD_REF,1,,IsBigIntObject,3,,80,node.anonymous_namespace_59.IsBigIntObject,2,,void
+239495,METHOD_REF,1,,IsBooleanObject,3,,80,node.anonymous_namespace_60.IsBooleanObject,2,,void
+239500,METHOD_REF,1,,IsNumberObject,3,,80,node.anonymous_namespace_61.IsNumberObject,2,,void
+239505,METHOD_REF,1,,IsStringObject,3,,80,node.anonymous_namespace_62.IsStringObject,2,,void
+239510,METHOD_REF,1,,IsSymbolObject,3,,80,node.anonymous_namespace_63.IsSymbolObject,2,,void
+239515,METHOD_REF,1,,IsNativeError,3,,80,node.anonymous_namespace_64.IsNativeError,2,,void
+239520,METHOD_REF,1,,IsRegExp,3,,80,node.anonymous_namespace_65.IsRegExp,2,,void
+239525,METHOD_REF,1,,IsAsyncFunction,3,,80,node.anonymous_namespace_66.IsAsyncFunction,2,,void
+239530,METHOD_REF,1,,IsGeneratorFunction,3,,80,node.anonymous_namespace_67.IsGeneratorFunction,2,,void
+239535,METHOD_REF,1,,IsGeneratorObject,3,,80,node.anonymous_namespace_68.IsGeneratorObject,2,,void
+239540,METHOD_REF,1,,IsPromise,3,,80,node.anonymous_namespace_69.IsPromise,2,,void
+239545,METHOD_REF,1,,IsMap,3,,80,node.anonymous_namespace_70.IsMap,2,,void
+239550,METHOD_REF,1,,IsSet,3,,80,node.anonymous_namespace_71.IsSet,2,,void
+239555,METHOD_REF,1,,IsMapIterator,3,,80,node.anonymous_namespace_72.IsMapIterator,2,,void
+239560,METHOD_REF,1,,IsSetIterator,3,,80,node.anonymous_namespace_73.IsSetIterator,2,,void
+239565,METHOD_REF,1,,IsWeakMap,3,,80,node.anonymous_namespace_74.IsWeakMap,2,,void
+239570,METHOD_REF,1,,IsWeakSet,3,,80,node.anonymous_namespace_75.IsWeakSet,2,,void
+239575,METHOD_REF,1,,IsArrayBuffer,3,,80,node.anonymous_namespace_76.IsArrayBuffer,2,,void
+239580,METHOD_REF,1,,IsDataView,3,,80,node.anonymous_namespace_77.IsDataView,2,,void
+239585,METHOD_REF,1,,IsSharedArrayBuffer,3,,80,node.anonymous_namespace_78.IsSharedArrayBuffer,2,,void
+239590,METHOD_REF,1,,IsProxy,3,,80,node.anonymous_namespace_79.IsProxy,2,,void
+239595,METHOD_REF,1,,IsModuleNamespaceObject,3,,80,node.anonymous_namespace_80.IsModuleNamespaceObject,2,,void
+239600,METHOD_REF,1,,IsAnyArrayBuffer,22,,83,node.anonymous_namespace_81.IsAnyArrayBuffer,2,,void
+239605,METHOD_REF,1,,IsBoxedPrimitive,22,,84,node.anonymous_namespace_82.IsBoxedPrimitive,2,,void
+242208,METHOD_REF,1,,GetPromiseDetails,22,,355,node.util.GetPromiseDetails,2,,void
+242213,METHOD_REF,1,,GetProxyDetails,22,,356,node.util.GetProxyDetails,2,,void
+242218,METHOD_REF,1,,IsArrayBufferDetached,22,,357,node.util.IsArrayBufferDetached,2,,void
+242223,METHOD_REF,1,,PreviewEntries,22,,358,node.util.PreviewEntries,2,,void
+242233,METHOD_REF,1,,GetConstructorName,22,,360,node.util.GetConstructorName,2,,void
+242238,METHOD_REF,1,,GetExternalValue,22,,361,node.util.GetExternalValue,2,,void
+242243,METHOD_REF,1,,Sleep,22,,362,node.util.Sleep,2,,void
+242248,METHOD_REF,1,,ArrayBufferViewHasBuffer,22,,363,node.util.ArrayBufferViewHasBuffer,2,,void
+242281,METHOD_REF,1,,GuessHandleType,22,,368,node.util.GuessHandleType,2,,void
+242286,METHOD_REF,1,,ToUSVString,22,,369,node.util.ToUSVString,2,,void
+242636,METHOD_REF,4,,GetPromiseDetails,45,,440,node.util.GetPromiseDetails,4,,void
+242641,METHOD_REF,4,,GetProxyDetails,61,,441,node.util.GetProxyDetails,4,,void
+242646,METHOD_REF,4,,IsArrayBufferDetached,49,,443,node.util.IsArrayBufferDetached,4,,void
+242651,METHOD_REF,4,,PreviewEntries,60,,444,node.util.PreviewEntries,4,,void
+242661,METHOD_REF,4,,GetConstructorName,46,,448,node.util.GetConstructorName,4,,void
+242666,METHOD_REF,4,,GetExternalValue,62,,449,node.util.GetExternalValue,4,,void
+242671,METHOD_REF,4,,Sleep,39,,450,node.util.Sleep,4,,void
+242676,METHOD_REF,4,,ArrayBufferViewHasBuffer,52,,453,node.util.ArrayBufferViewHasBuffer,4,,void
+242757,METHOD_REF,4,,GuessHandleType,49,,472,node.util.GuessHandleType,4,,void
+242762,METHOD_REF,4,,ToUSVString,57,,474,node.util.ToUSVString,4,,void
+244339,METHOD_REF,4,,CachedDataVersionTag,48,,430,node.v8_utils.CachedDataVersionTag,4,,void
+244344,METHOD_REF,4,,SetHeapSnapshotNearHeapLimit,25,,434,node.v8_utils.SetHeapSnapshotNearHeapLimit,4,,void
+244349,METHOD_REF,4,,UpdateHeapStatisticsBuffer,13,,438,node.v8_utils.UpdateHeapStatisticsBuffer,4,,void
+244354,METHOD_REF,4,,UpdateHeapCodeStatisticsBuffer,13,,443,node.v8_utils.UpdateHeapCodeStatisticsBuffer,4,,void
+244441,METHOD_REF,4,,UpdateHeapSpaceStatisticsBuffer,13,,466,node.v8_utils.UpdateHeapSpaceStatisticsBuffer,4,,void
+244958,METHOD_REF,4,,SetFlagsFromString,52,,481,node.v8_utils.SetFlagsFromString,4,,void
+245017,METHOD_REF,1,,CachedDataVersionTag,22,,493,node.v8_utils.CachedDataVersionTag,2,,void
+245022,METHOD_REF,1,,UpdateHeapStatisticsBuffer,22,,494,node.v8_utils.UpdateHeapStatisticsBuffer,2,,void
+245027,METHOD_REF,1,,UpdateHeapCodeStatisticsBuffer,22,,495,node.v8_utils.UpdateHeapCodeStatisticsBuffer,2,,void
+245032,METHOD_REF,1,,UpdateHeapSpaceStatisticsBuffer,22,,496,node.v8_utils.UpdateHeapSpaceStatisticsBuffer,2,,void
+245037,METHOD_REF,1,,SetFlagsFromString,22,,497,node.v8_utils.SetFlagsFromString,2,,void
+245042,METHOD_REF,1,,SetHeapSnapshotNearHeapLimit,22,,498,node.v8_utils.SetHeapSnapshotNearHeapLimit,2,,void
+250922,METHOD_REF,4,,SetImplementation,51,,198,node.wasm_web_api.SetImplementation,4,,void
+250932,METHOD_REF,1,,SetImplementation,22,,202,node.wasm_web_api.SetImplementation,2,,void
+250937,METHOD_REF,1,,StartStreamingCompilation,22,,203,node.wasm_web_api.StartStreamingCompilation,2,,void
+251082,METHOD_REF,3,,"[](uv_async_t* signal) {
+    Watchdog* w = ContainerOf(&Watchdog::async_, signal);
+    uv_stop(&w->loop_);
+  }",39,,51,node.Watchdog.Watchdog.<lambda>0,3,,node_watchdog.cc:<global>
+251439,METHOD_REF,3,,"[](uv_async_t* handle) {
+    TraceSigintWatchdog* watchdog =
+        ContainerOf(&TraceSigintWatchdog::handle_, handle);
+    watchdog->signal_flag_ = SignalFlags::FromIdle;
+    watchdog->HandleInterrupt();
+  }",54,,172,node.TraceSigintWatchdog.TraceSigintWatchdog.<lambda>1,3,,node_watchdog.cc:<global>
+251464,METHOD_REF,1,,"[](v8::Isolate* isolate, void* data) {
+        TraceSigintWatchdog* self = static_cast<TraceSigintWatchdog*>(data);
+        if (self->signal_flag_ == SignalFlags::None) {
+          self->signal_flag_ = SignalFlags::FromInterrupt;
+        }
+        self->HandleInterrupt();
+      }",7,,189,node.TraceSigintWatchdog.HandleSigint.<lambda>2,2,,node_watchdog.cc:<global>
+251980,METHOD_REF,1,,"[w = std::unique_ptr<Worker>(w)](Environment* env) {
+          if (w->has_ref_)
+            env->add_refs(-1);
+          w->JoinThread();
+          // implicitly delete w
+        }",9,,681,node.worker.Worker.StartThread..<lambda>5,2,,node_worker.cc:<global>
+252071,METHOD_REF,1,,"[taker = std::move(taker),
+         snapshot = std::move(snapshot)](Environment* env) mutable {
+          HandleScope handle_scope(env->isolate());
+          Context::Scope context_scope(env->context());
+
+          AsyncHooks::DefaultTriggerAsyncIdScope trigger_id_scope(taker->get());
+          BaseObjectPtr<AsyncWrap> stream =
+              heap::CreateHeapSnapshotStream(env, std::move(snapshot));
+          Local<Value> args[] = {stream->object()};
+          taker->get()->MakeCallback(
+              env->ondone_string(), arraysize(args), args);
+          // implicitly delete `taker`
+        }",9,,831,node.worker.Worker.TakeHeapSnapshot..<lambda>7,2,,node_worker.cc:<global>
+252618,METHOD_REF,2,,"[](void* data) {
+        *static_cast<bool*>(data) = true;
+      }",58,,216,node.worker.WorkerThreadData.~WorkerThreadData.<lambda>0,3,,node.worker.WorkerThreadData
+252811,METHOD_REF,1,,"[&]() {
+      // TODO(addaleax): This call is harmless but should not be necessary.
+      // Figure out why V8 is raising a DCHECK() here without it
+      // (in test/parallel/test-async-hooks-worker-asyncfn-terminate-4.js).
+      isolate_->CancelTerminateExecution();
+
+      if (!env_) return;
+      env_->set_can_call_into_js(false);
+
+      {
+        Mutex::ScopedLock lock(mutex_);
+        stopped_ = true;
+        this->env_ = nullptr;
+      }
+
+      env_.reset();
+    }",37,,292,node.worker.Worker.Run.<lambda>1,1,,node_worker.cc:<global>
+252964,METHOD_REF,2,,"[this](Environment*, int exit_code) {
+          Exit(static_cast<ExitCode>(exit_code));
+        }",43,,361,node.worker.Worker.Run.<lambda>2,2,,node_worker.cc:<global>
+253544,METHOD_REF,2,,"[&env_vars](const char* name) {
+      return env_vars->Get(name).FromMaybe("""");
+    }",49,,523,node.worker.Worker.New.<lambda>3,2,,node_worker.cc:<global>
+254200,METHOD_REF,3,,"[](void* arg) {
+    // XXX: This could become a std::unique_ptr, but that makes at least
+    // gcc 6.3 detect undefined behaviour when there shouldn't be any.
+    // gcc 7+ handles this well.
+    Worker* w = static_cast<Worker*>(arg);
+    const uintptr_t stack_top = reinterpret_cast<uintptr_t>(&arg);
+
+    // Leave a few kilobytes just to make sure we're within limits and have
+    // some space to do work in C++ land.
+    w->stack_base_ = stack_top - (w->stack_size_ - kStackBufferSize);
+
+    w->Run();
+
+    Mutex::ScopedLock lock(w->mutex_);
+    w->env()->SetImmediateThreadsafe(
+        [w = std::unique_ptr<Worker>(w)](Environment* env) {
+          if (w->has_ref_)
+            env->add_refs(-1);
+          w->JoinThread();
+          // implicitly delete w
+        });
+  }",55,,666,node.worker.Worker.StartThread.<lambda>4,3,,node_worker.cc:<global>
+254624,METHOD_REF,1,,"[taker = std::move(taker), env, options](
+                                           Environment* worker_env) mutable {
+    heap::HeapSnapshotPointer snapshot{
+        worker_env->isolate()->GetHeapProfiler()->TakeHeapSnapshot(options)};
+    CHECK(snapshot);
+
+    // Here, the worker thread temporarily owns the WorkerHeapSnapshotTaker
+    // object.
+
+    env->SetImmediateThreadsafe(
+        [taker = std::move(taker),
+         snapshot = std::move(snapshot)](Environment* env) mutable {
+          HandleScope handle_scope(env->isolate());
+          Context::Scope context_scope(env->context());
+
+          AsyncHooks::DefaultTriggerAsyncIdScope trigger_id_scope(taker->get());
+          BaseObjectPtr<AsyncWrap> stream =
+              heap::CreateHeapSnapshotStream(env, std::move(snapshot));
+          Local<Value> args[] = {stream->object()};
+          taker->get()->MakeCallback(
+              env->ondone_string(), arraysize(args), args);
+          // implicitly delete `taker`
+        },
+  ...",40,,821,node.worker.Worker.TakeHeapSnapshot.<lambda>6,2,,node_worker.cc:<global>
+255008,METHOD_REF,4,,GetEnvMessagePort,51,,942,node.worker.anonymous_namespace_3.GetEnvMessagePort,4,,void
+255637,METHOD_REF,1,,GetEnvMessagePort,22,,986,node.worker.anonymous_namespace_6.GetEnvMessagePort,2,,void
+256312,METHOD_REF,2,,context,20,,300,node.anonymous_namespace_56.CompressionStream.context,2,,CompressionContext
+256350,METHOD_REF,1,,context,31,,308,node.anonymous_namespace_57.CompressionStream.context,2,,CompressionContext
+256432,METHOD_REF,1,,context,33,,327,node.anonymous_namespace_58.CompressionStream.context,2,,CompressionContext
+256448,METHOD_REF,1,,context,33,,328,node.anonymous_namespace_59.CompressionStream.context,2,,CompressionContext
+256505,METHOD_REF,1,,context,31,,336,node.anonymous_namespace_60.CompressionStream.context,2,,CompressionContext
+256521,METHOD_REF,1,,context,31,,337,node.anonymous_namespace_61.CompressionStream.context,2,,CompressionContext
+256693,METHOD_REF,1,,[&]() { Unref(); },40,,405,node.anonymous_namespace_73.CompressionStream.AfterThreadPoolWork.<lambda>0,1,,node.anonymous_namespace_48.CompressionStream
+270825,METHOD_REF,4,,Has,49,,138,node.permission.anonymous_namespace_2.Has,4,,void
+270848,METHOD_REF,1,,Has,22,,144,node.permission.anonymous_namespace_3.Has,2,,void
+272214,METHOD_REF,4,,Spawn,51,,64,node.anonymous_namespace_3.ProcessWrap.Spawn,4,,void
+272219,METHOD_REF,4,,Kill,50,,65,node.anonymous_namespace_4.ProcessWrap.Kill,4,,void
+272665,METHOD_REF,2,,OnExit,23,,160,node.anonymous_namespace_9.ProcessWrap.OnExit,2,,void
+274318,METHOD_REF,4,,Start,51,,62,node.anonymous_namespace_3.SignalWrap.Start,4,,void
+274323,METHOD_REF,4,,Stop,50,,63,node.anonymous_namespace_4.SignalWrap.Stop,4,,void
+274343,METHOD_REF,1,,Start,24,,70,node.anonymous_namespace_6.SignalWrap.Start,2,,void
+274348,METHOD_REF,1,,Stop,24,,71,node.anonymous_namespace_7.SignalWrap.Stop,2,,void
+274436,METHOD_REF,2,,"[](uv_signal_t* handle, int signum) {
+          SignalWrap* wrap = ContainerOf(&SignalWrap::handle_, handle);
+          Environment* env = wrap->env();
+          HandleScope handle_scope(env->isolate());
+          Context::Scope context_scope(env->context());
+          Local<Value> arg = Integer::New(env->isolate(), signum);
+          wrap->MakeCallback(env->onsignal_string(), 1, &arg);
+        }",9,,123,node.anonymous_namespace_11.SignalWrap.Start.<lambda>0,2,,node.anonymous_namespace_1.SignalWrap
+281029,METHOD_REF,1,,"[this, strong_ref](Environment* env) {
+    HandleScope handle_scope(env->isolate());
+    Context::Scope context_scope(env->context());
+    Local<Object> object = this->object();
+
+    Local<Value> onunpipe;
+    if (!object->Get(env->context(), env->onunpipe_string()).ToLocal(&onunpipe))
+      return;
+    if (onunpipe->IsFunction() &&
+        MakeCallback(onunpipe.As<Function>(), 0, nullptr).IsEmpty()) {
+      return;
+    }
+
+    // Set all the links established in the constructor to `null`.
+    Local<Value> null = Null(env->isolate());
+
+    Local<Value> source_v;
+    Local<Value> sink_v;
+    if (!object->Get(env->context(), env->source_string()).ToLocal(&source_v) ||
+        !object->Get(env->context(), env->sink_string()).ToLocal(&sink_v) ||
+        !source_v->IsObject() || !sink_v->IsObject()) {
+      return;
+    }
+
+    if (object->Set(env->context(), env->source_string(), null).IsNothing() ||
+        object->Set(env->context(), env->sink_string(), null).IsNothing() ||
+        sourc...",23,,71,node.StreamPipe.Unpipe.<lambda>0,2,,stream_pipe.cc:<global>
+282826,METHOD_REF,2,,"[](uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf) {
+        static_cast<LibuvStreamWrap*>(handle->data)
+            ->OnUvAlloc(suggested_size, buf);
+      }",7,,205,node.LibuvStreamWrap.ReadStart.<lambda>0,2,,stream_wrap.cc:<global>
+282827,METHOD_REF,3,,"[](uv_stream_t* stream, ssize_t nread, const uv_buf_t* buf) {
+        LibuvStreamWrap* wrap = static_cast<LibuvStreamWrap*>(stream->data);
+        TryCatchScope try_catch(wrap->env());
+        try_catch.SetVerbose(true);
+        wrap->OnUvRead(nread, buf);
+      }",7,,209,node.LibuvStreamWrap.ReadStart.<lambda>1,3,,stream_wrap.cc:<global>
+287656,METHOD_REF,4,,DecodeData,40,,331,node.anonymous_namespace_6.DecodeData,4,,void
+287661,METHOD_REF,4,,FlushData,39,,332,node.anonymous_namespace_7.FlushData,4,,void
+287671,METHOD_REF,1,,DecodeData,22,,339,node.anonymous_namespace_8.DecodeData,2,,void
+287676,METHOD_REF,1,,FlushData,22,,340,node.anonymous_namespace_9.FlushData,2,,void
+288962,METHOD_REF,2,,"[port](const char* ip_address, sockaddr_in* addr) {
+      return uv_ip4_addr(ip_address, port, addr);
+  }",24,,300,"args,
+                       [port](const char* ip_address, sockaddr_in* addr) {
+      return uv_ip4_addr(ip_address, port, addr);
+  }.<lambda>0",2,,tcp_wrap.cc:<global>
+289009,METHOD_REF,2,,"[port](const char* ip_address, sockaddr_in6* addr) {
+      return uv_ip6_addr(ip_address, port, addr);
+  }",25,,312,"args,
+                        [port](const char* ip_address, sockaddr_in6* addr) {
+      return uv_ip6_addr(ip_address, port, addr);
+  }.<lambda>1",2,,tcp_wrap.cc:<global>
+290636,METHOD_REF,3,,"[](uv_async_t* async) {
+    Agent* agent = ContainerOf(&Agent::initialize_writer_async_, async);
+    agent->InitializeWritersOnThread();
+  }",26,,58,node.tracing.Agent.Agent.<lambda>0,3,,tracing\agent.cc:<global>
+290736,METHOD_REF,2,,"[](void* arg) {
+    Agent* agent = static_cast<Agent*>(arg);
+    uv_run(&agent->tracing_loop_, UV_RUN_DEFAULT);
+  }",42,,97,node.tracing.Agent.Start.<lambda>1,2,,tracing\agent.cc:<global>
+291681,METHOD_REF,2,,"[](uv_handle_t* signal) {
+      NodeTraceBuffer* buffer =
+          ContainerOf(&NodeTraceBuffer::exit_signal_,
+                      reinterpret_cast<uv_async_t*>(signal));
+        Mutex::ScopedLock scoped_lock(buffer->exit_mutex_);
+        buffer->exited_ = true;
+        buffer->exit_cond_.Signal(scoped_lock);
+    }",14,,187,node.tracing.NodeTraceBuffer.ExitSignalCb..<lambda>1,2,,tracing\node_trace_buffer.cc:<global>
+292251,METHOD_REF,2,,"[](uv_handle_t* signal) {
+    NodeTraceBuffer* buffer =
+        ContainerOf(&NodeTraceBuffer::flush_signal_,
+                    reinterpret_cast<uv_async_t*>(signal));
+
+    uv_close(reinterpret_cast<uv_handle_t*>(&buffer->exit_signal_),
+             [](uv_handle_t* signal) {
+      NodeTraceBuffer* buffer =
+          ContainerOf(&NodeTraceBuffer::exit_signal_,
+                      reinterpret_cast<uv_async_t*>(signal));
+        Mutex::ScopedLock scoped_lock(buffer->exit_mutex_);
+        buffer->exited_ = true;
+        buffer->exit_cond_.Signal(scoped_lock);
+    });
+  }",12,,181,node.tracing.NodeTraceBuffer.ExitSignalCb.<lambda>0,2,,tracing\node_trace_buffer.cc:<global>
+292516,METHOD_REF,2,,"[](uv_handle_t* signal) {
+                   NodeTraceWriter* trace_writer =
+                       ContainerOf(&NodeTraceWriter::exit_signal_,
+                                   reinterpret_cast<uv_async_t*>(signal));
+                   Mutex::ScopedLock scoped_lock(trace_writer->request_mutex_);
+                   trace_writer->exited_ = true;
+                   trace_writer->exit_cond_.Signal(scoped_lock);
+                 }",18,,229,node.tracing.NodeTraceWriter.ExitSignalCb..<lambda>3,2,,tracing\node_trace_writer.cc:<global>
+292558,METHOD_REF,3,,"[](uv_async_t* signal) {
+    NodeTraceWriter* trace_writer =
+        ContainerOf(&NodeTraceWriter::flush_signal_, signal);
+    trace_writer->FlushPrivate();
+  }",27,,20,node.tracing.NodeTraceWriter.InitializeOnThread.<lambda>0,3,,tracing\node_trace_writer.cc:<global>
+292998,METHOD_REF,7,,"[](uv_fs_t* req) {
+        NodeTraceWriter* writer =
+            ContainerOf(&NodeTraceWriter::write_req_, req);
+        writer->AfterWrite();
+      }",7,,187,node.tracing.NodeTraceWriter.StartWrite.<lambda>1,7,,tracing\node_trace_writer.cc:<global>
+293109,METHOD_REF,2,,"[](uv_handle_t* signal) {
+             NodeTraceWriter* trace_writer =
+                 ContainerOf(&NodeTraceWriter::flush_signal_,
+                             reinterpret_cast<uv_async_t*>(signal));
+             uv_close(
+                 reinterpret_cast<uv_handle_t*>(&trace_writer->exit_signal_),
+                 [](uv_handle_t* signal) {
+                   NodeTraceWriter* trace_writer =
+                       ContainerOf(&NodeTraceWriter::exit_signal_,
+                                   reinterpret_cast<uv_async_t*>(signal));
+                   Mutex::ScopedLock scoped_lock(trace_writer->request_mutex_);
+                   trace_writer->exited_ = true;
+                   trace_writer->exit_cond_.Signal(scoped_lock);
+                 });
+           }",12,,223,node.tracing.NodeTraceWriter.ExitSignalCb.<lambda>2,2,,tracing\node_trace_writer.cc:<global>
+297680,METHOD_REF,1,,"[](uv_udp_send_t* req, int status) {
+          UDPWrap* self = ContainerOf(&UDPWrap::handle_, req->handle);
+          self->listener()->OnSendDone(
+              ReqWrap<uv_udp_send_t>::from_req(req), status);
+        }",24,,601,node.UDPWrap.Send.<lambda>0,1,,udp_wrap.cc:<global>
+299058,METHOD_REF,1,,"[&req]() {
+    uv_fs_req_cleanup(&req);
+  }",41,,233,node.ReadFileSync.<lambda>0,1,,util.cc:<global>
+299087,METHOD_REF,1,,"[file]() {
+    uv_fs_t close_req;
+    CHECK_EQ(0, uv_fs_close(nullptr, &close_req, file, nullptr));
+    uv_fs_req_cleanup(&close_req);
+  }",35,,244,node.ReadFileSync.<lambda>1,1,,util.cc:<global>
+300722,METHOD_REF,2,,ErrName,64,,114,node.uv.ErrName,2,,void
+300811,METHOD_REF,4,,GetErrMap,45,,130,node.uv.GetErrMap,4,,void
+300821,METHOD_REF,1,,ErrName,22,,134,node.uv.ErrName,2,,void
+300826,METHOD_REF,1,,GetErrMap,22,,135,node.uv.GetErrMap,2,,void

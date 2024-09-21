@@ -1,0 +1,1162 @@
+117,BINDING,assoc_init,assoc_init,void assoc_init (int)
+226,BINDING,assoc_find,assoc_find,"item assoc_find (char*,size_t,uint32_t)"
+327,BINDING,_hashitem_before,_hashitem_before,"item _hashitem_before (char*,size_t,uint32_t)"
+402,BINDING,assoc_expand,assoc_expand,void assoc_expand (void)
+442,BINDING,assoc_start_expand,assoc_start_expand,void assoc_start_expand (uint64_t)
+520,BINDING,assoc_insert,assoc_insert,"int assoc_insert (item*,uint32_t)"
+561,BINDING,assoc_delete,assoc_delete,"void assoc_delete (char*,size_t,uint32_t)"
+781,BINDING,assoc_maintenance_thread,assoc_maintenance_thread,void* assoc_maintenance_thread (void*)
+833,BINDING,start_assoc_maintenance_thread,start_assoc_maintenance_thread,int start_assoc_maintenance_thread ()
+860,BINDING,stop_assoc_maintenance_thread,stop_assoc_maintenance_thread,void stop_assoc_maintenance_thread ()
+893,BINDING,assoc_get_iterator,assoc_get_iterator,void* assoc_get_iterator (void)
+1039,BINDING,assoc_iterate,assoc_iterate,"bool assoc_iterate (void*,item**)"
+1068,BINDING,assoc_iterate_final,assoc_iterate_final,void assoc_iterate_final (void*)
+1078,BINDING,assoc_init,assoc_init,void assoc_init (int)
+1085,BINDING,assoc_find,assoc_find,"item* assoc_find (char*,size_t,uint32_t)"
+1091,BINDING,assoc_insert,assoc_insert,"int assoc_insert (item*,uint32_t)"
+1098,BINDING,assoc_delete,assoc_delete,"void assoc_delete (char*,size_t,uint32_t)"
+1103,BINDING,do_assoc_move_next_bucket,do_assoc_move_next_bucket,void do_assoc_move_next_bucket (void)
+1108,BINDING,start_assoc_maintenance_thread,start_assoc_maintenance_thread,int start_assoc_maintenance_thread (void)
+1113,BINDING,stop_assoc_maintenance_thread,stop_assoc_maintenance_thread,void stop_assoc_maintenance_thread (void)
+1118,BINDING,assoc_start_expand,assoc_start_expand,void assoc_start_expand (uint64_t)
+1123,BINDING,assoc_get_iterator,assoc_get_iterator,void* assoc_get_iterator (void)
+1129,BINDING,assoc_iterate,assoc_iterate,"bool assoc_iterate (void*,item**)"
+1134,BINDING,assoc_iterate_final,assoc_iterate_final,void assoc_iterate_final (void*)
+1420,BINDING,authfile_load,authfile_load,enum authfile_ret authfile_load (char*)
+1490,BINDING,authfile_check,authfile_check,"int authfile_check (char*,char*)"
+1516,BINDING,authfile_check,authfile_check,"int authfile_check (char*,char*)"
+2007,BINDING,base64_encode,base64_encode,"size_t base64_encode (unsigned char*,size_t,unsigned char*,size_t)"
+2208,BINDING,base64_decode,base64_decode,"size_t base64_decode (unsigned char*,size_t,unsigned char*,size_t)"
+2221,BINDING,base64_encode,base64_encode,"size_t base64_encode (unsigned char*,size_t,unsigned char*,size_t)"
+2229,BINDING,base64_decode,base64_decode,"size_t base64_decode (unsigned char*,size_t,unsigned char*,size_t)"
+2252,BINDING,bipbuf_sizeof,bipbuf_sizeof,size_t bipbuf_sizeof (unsigned int)
+2282,BINDING,bipbuf_unused,bipbuf_unused,int bipbuf_unused (bipbuf_t*)
+2291,BINDING,bipbuf_size,bipbuf_size,int bipbuf_size (bipbuf_t*)
+2308,BINDING,bipbuf_used,bipbuf_used,int bipbuf_used (bipbuf_t*)
+2337,BINDING,bipbuf_init,bipbuf_init,"void bipbuf_init (bipbuf_t*,unsigned int)"
+2359,BINDING,bipbuf_new,bipbuf_new,bipbuf_t bipbuf_new (unsigned int)
+2366,BINDING,bipbuf_free,bipbuf_free,void bipbuf_free (bipbuf_t*)
+2379,BINDING,bipbuf_is_empty,bipbuf_is_empty,int bipbuf_is_empty (bipbuf_t*)
+2406,BINDING,__check_for_switch_to_b,__check_for_switch_to_b,void __check_for_switch_to_b (bipbuf_t*)
+2449,BINDING,bipbuf_request,bipbuf_request,"unsigned char* bipbuf_request (bipbuf_t*,int)"
+2486,BINDING,bipbuf_push,bipbuf_push,"int bipbuf_push (bipbuf_t*,int)"
+2544,BINDING,bipbuf_offer,bipbuf_offer,"int bipbuf_offer (bipbuf_t*,unsigned char*,int)"
+2579,BINDING,bipbuf_peek,bipbuf_peek,"unsigned char* bipbuf_peek (bipbuf_t*,unsigned int)"
+2611,BINDING,bipbuf_peek_all,bipbuf_peek_all,"unsigned char* bipbuf_peek_all (bipbuf_t*,unsigned int*)"
+2703,BINDING,bipbuf_poll,bipbuf_poll,"unsigned char* bipbuf_poll (bipbuf_t*,unsigned int)"
+2726,BINDING,bipbuf_new,bipbuf_new,bipbuf_t* bipbuf_new (unsigned int)
+2732,BINDING,bipbuf_init,bipbuf_init,"void bipbuf_init (bipbuf_t*,unsigned int)"
+2737,BINDING,bipbuf_free,bipbuf_free,void bipbuf_free (bipbuf_t*)
+2743,BINDING,bipbuf_request,bipbuf_request,"unsigned char* bipbuf_request (bipbuf_t*,int)"
+2749,BINDING,bipbuf_push,bipbuf_push,"int bipbuf_push (bipbuf_t*,int)"
+2756,BINDING,bipbuf_offer,bipbuf_offer,"int bipbuf_offer (bipbuf_t*,unsigned char*,int)"
+2762,BINDING,bipbuf_peek,bipbuf_peek,"unsigned char* bipbuf_peek (bipbuf_t*,unsigned int)"
+2768,BINDING,bipbuf_peek_all,bipbuf_peek_all,"unsigned char* bipbuf_peek_all (bipbuf_t*,unsigned int*)"
+2774,BINDING,bipbuf_poll,bipbuf_poll,"unsigned char* bipbuf_poll (bipbuf_t*,unsigned int)"
+2779,BINDING,bipbuf_size,bipbuf_size,int bipbuf_size (bipbuf_t*)
+2784,BINDING,bipbuf_is_empty,bipbuf_is_empty,int bipbuf_is_empty (bipbuf_t*)
+2789,BINDING,bipbuf_used,bipbuf_used,int bipbuf_used (bipbuf_t*)
+2794,BINDING,bipbuf_unused,bipbuf_unused,int bipbuf_unused (bipbuf_t*)
+2918,BINDING,cache_create,cache_create,"cache_t cache_create (char*,size_t,size_t)"
+2939,BINDING,cache_set_limit,cache_set_limit,"void cache_set_limit (cache_t*,int)"
+2952,BINDING,get_object,get_object,void* get_object (void*)
+3046,BINDING,cache_destroy,cache_destroy,void cache_destroy (cache_t*)
+3068,BINDING,cache_alloc,cache_alloc,void* cache_alloc (cache_t*)
+3228,BINDING,do_cache_alloc,do_cache_alloc,void* do_cache_alloc (cache_t*)
+3247,BINDING,cache_free,cache_free,"void cache_free (cache_t*,void*)"
+3381,BINDING,do_cache_free,do_cache_free,"void do_cache_free (cache_t*,void*)"
+3418,BINDING,cache_create,cache_create,"cache_t* cache_create (char*,size_t,size_t)"
+3423,BINDING,cache_destroy,cache_destroy,void cache_destroy (cache_t*)
+3428,BINDING,cache_alloc,cache_alloc,void* cache_alloc (cache_t*)
+3433,BINDING,do_cache_alloc,do_cache_alloc,void* do_cache_alloc (cache_t*)
+3439,BINDING,cache_free,cache_free,"void cache_free (cache_t*,void*)"
+3445,BINDING,do_cache_free,do_cache_free,"void do_cache_free (cache_t*,void*)"
+3451,BINDING,cache_set_limit,cache_set_limit,"void cache_set_limit (cache_t*,int)"
+3504,BINDING,crawler_eval_func,crawler_eval_func,"void crawler_eval_func (crawler_module_t*,item*,uint32_t,int)"
+3510,BINDING,crawler_init_func,crawler_init_func,"int crawler_init_func (crawler_module_t*,void*)"
+3515,BINDING,crawler_deinit_func,crawler_deinit_func,void crawler_deinit_func (crawler_module_t*)
+3521,BINDING,crawler_doneclass_func,crawler_doneclass_func,"void crawler_doneclass_func (crawler_module_t*,int)"
+3526,BINDING,crawler_finalize_func,crawler_finalize_func,void crawler_finalize_func (crawler_module_t*)
+3544,BINDING,crawler_expired_init,crawler_expired_init,"int crawler_expired_init (crawler_module_t*,void*)"
+3550,BINDING,crawler_expired_doneclass,crawler_expired_doneclass,"void crawler_expired_doneclass (crawler_module_t*,int)"
+3555,BINDING,crawler_expired_finalize,crawler_expired_finalize,void crawler_expired_finalize (crawler_module_t*)
+3563,BINDING,crawler_expired_eval,crawler_expired_eval,"void crawler_expired_eval (crawler_module_t*,item*,uint32_t,int)"
+3599,BINDING,crawler_metadump_eval,crawler_metadump_eval,"void crawler_metadump_eval (crawler_module_t*,item*,uint32_t,int)"
+3604,BINDING,crawler_metadump_finalize,crawler_metadump_finalize,void crawler_metadump_finalize (crawler_module_t*)
+3647,BINDING,lru_crawler_client_getbuf,lru_crawler_client_getbuf,int lru_crawler_client_getbuf (crawler_client_t*)
+3703,BINDING,lru_crawler_close_client,lru_crawler_close_client,void lru_crawler_close_client (crawler_client_t*)
+3731,BINDING,lru_crawler_release_client,lru_crawler_release_client,void lru_crawler_release_client (crawler_client_t*)
+3849,BINDING,crawler_expired_init,crawler_expired_init,"int crawler_expired_init (crawler_module_t*,void*)"
+3891,BINDING,crawler_expired_doneclass,crawler_expired_doneclass,"void crawler_expired_doneclass (crawler_module_t*,int)"
+3932,BINDING,crawler_expired_finalize,crawler_expired_finalize,void crawler_expired_finalize (crawler_module_t*)
+4149,BINDING,crawler_expired_eval,crawler_expired_eval,"void crawler_expired_eval (crawler_module_t*,item*,uint32_t,int)"
+4356,BINDING,crawler_metadump_eval,crawler_metadump_eval,"void crawler_metadump_eval (crawler_module_t*,item*,uint32_t,int)"
+4390,BINDING,crawler_metadump_finalize,crawler_metadump_finalize,void crawler_metadump_finalize (crawler_module_t*)
+4584,BINDING,lru_crawler_poll,lru_crawler_poll,int lru_crawler_poll (crawler_client_t*)
+4635,BINDING,lru_crawler_client_getbuf,lru_crawler_client_getbuf,int lru_crawler_client_getbuf (crawler_client_t*)
+4696,BINDING,lru_crawler_class_done,lru_crawler_class_done,void lru_crawler_class_done (int)
+4832,BINDING,item_crawl_hash,item_crawl_hash,void item_crawl_hash (void)
+5262,BINDING,item_crawler_thread,item_crawler_thread,void* item_crawler_thread (void*)
+5312,BINDING,stop_item_crawler_thread,stop_item_crawler_thread,int stop_item_crawler_thread (bool)
+5365,BINDING,start_item_crawler_thread,start_item_crawler_thread,int start_item_crawler_thread (void)
+5516,BINDING,do_lru_crawler_start,do_lru_crawler_start,"int do_lru_crawler_start (uint32_t,uint32_t)"
+5570,BINDING,lru_crawler_set_client,lru_crawler_set_client,"int lru_crawler_set_client (crawler_module_t*,void*,int)"
+5800,BINDING,lru_crawler_start,lru_crawler_start,"int lru_crawler_start (uint8_t*,uint32_t,crawler_run_type,void*,void*,int)"
+5995,BINDING,lru_crawler_crawl,lru_crawler_crawl,"enum crawler_result_type lru_crawler_crawl (char*,crawler_run_type,void*,int,unsigned int)"
+6003,BINDING,lru_crawler_pause,lru_crawler_pause,void lru_crawler_pause (void)
+6011,BINDING,lru_crawler_resume,lru_crawler_resume,void lru_crawler_resume (void)
+6043,BINDING,init_lru_crawler,init_lru_crawler,int init_lru_crawler (void*)
+6095,BINDING,start_item_crawler_thread,start_item_crawler_thread,int start_item_crawler_thread (void)
+6100,BINDING,stop_item_crawler_thread,stop_item_crawler_thread,int stop_item_crawler_thread (bool)
+6105,BINDING,init_lru_crawler,init_lru_crawler,int init_lru_crawler (void*)
+6117,BINDING,lru_crawler_start,lru_crawler_start,"int lru_crawler_start (uint8_t*,uint32_t,crawler_run_type,void*,void*,int)"
+6122,BINDING,lru_crawler_pause,lru_crawler_pause,void lru_crawler_pause (void)
+6127,BINDING,lru_crawler_resume,lru_crawler_resume,void lru_crawler_resume (void)
+6148,BINDING,crc32c_sw_little,crc32c_sw_little,"uint32_t crc32c_sw_little (uint32_t,void*,size_t)"
+6155,BINDING,crc32c_sw_big,crc32c_sw_big,"uint32_t crc32c_sw_big (uint32_t,void*,size_t)"
+6163,BINDING,crc32c_init,crc32c_init,void crc32c_init (void)
+6379,BINDING,crc32c_init_sw_little,crc32c_init_sw_little,void crc32c_init_sw_little (void)
+6559,BINDING,crc32c_sw_little,crc32c_sw_little,"uint32_t crc32c_sw_little (uint32_t,void*,size_t)"
+6598,BINDING,swap,swap,uint64_t swap (uint64_t)
+6820,BINDING,crc32c_init_sw_big,crc32c_init_sw_big,void crc32c_init_sw_big (void)
+6998,BINDING,crc32c_sw_big,crc32c_sw_big,"uint32_t crc32c_sw_big (uint32_t,void*,size_t)"
+7028,BINDING,crc32c_sw,crc32c_sw,"uint32_t crc32c_sw (uint32_t,void*,size_t)"
+7042,BINDING,crc_func,crc_func,"uint32_t crc_func (uint32_t,void*,size_t)"
+7048,BINDING,crc32c_init,crc32c_init,void crc32c_init (void)
+7055,BINDING,crc32c_sw,crc32c_sw,"uint32_t crc32c_sw (uint32_t,void*,size_t)"
+7181,BINDING,daemonize,daemonize,"int daemonize (int,int)"
+7358,BINDING,wbuf_new,wbuf_new,_store_wbuf wbuf_new (size_t)
+7443,BINDING,_get_io_thread,_get_io_thread,store_io_thread _get_io_thread (store_engine*)
+7453,BINDING,_next_version,_next_version,uint64_t _next_version (store_engine*)
+7458,BINDING,extstore_io_thread,extstore_io_thread,void* extstore_io_thread (void*)
+7463,BINDING,extstore_maint_thread,extstore_maint_thread,void* extstore_maint_thread (void*)
+7590,BINDING,extstore_get_stats,extstore_get_stats,"void extstore_get_stats (void*,extstore_stats*)"
+7633,BINDING,extstore_get_page_data,extstore_get_page_data,"void extstore_get_page_data (void*,extstore_stats*)"
+7692,BINDING,extstore_err,extstore_err,const char* extstore_err (extstore_res)
+8421,BINDING,extstore_init,extstore_init,"void* extstore_init (extstore_conf_file*,extstore_conf*,extstore_res*)"
+8439,BINDING,extstore_run_maint,extstore_run_maint,void extstore_run_maint (void*)
+8614,BINDING,_allocate_page,_allocate_page,"store_page _allocate_page (store_engine*,unsigned int,unsigned int)"
+8707,BINDING,_allocate_wbuf,_allocate_wbuf,"void _allocate_wbuf (store_engine*,store_page*)"
+8834,BINDING,_wbuf_cb,_wbuf_cb,"void _wbuf_cb (void*,obj_io*,int)"
+8936,BINDING,_submit_wbuf,_submit_wbuf,"void _submit_wbuf (store_engine*,store_page*)"
+9145,BINDING,extstore_write_request,extstore_write_request,"int extstore_write_request (void*,unsigned int,unsigned int,obj_io*)"
+9276,BINDING,extstore_write,extstore_write,"void extstore_write (void*,obj_io*)"
+9387,BINDING,extstore_submit,extstore_submit,"int extstore_submit (void*,obj_io*)"
+9522,BINDING,extstore_delete,extstore_delete,"int extstore_delete (void*,unsigned int,uint64_t,unsigned int,unsigned int)"
+9571,BINDING,extstore_check,extstore_check,"int extstore_check (void*,unsigned int,uint64_t)"
+9622,BINDING,extstore_close_page,extstore_close_page,"void extstore_close_page (void*,unsigned int,uint64_t)"
+9731,BINDING,_read_from_wbuf,_read_from_wbuf,"int _read_from_wbuf (store_page*,obj_io*)"
+10101,BINDING,extstore_io_thread,extstore_io_thread,void* extstore_io_thread (void*)
+10309,BINDING,_free_page,_free_page,"void _free_page (store_engine*,store_page*)"
+10665,BINDING,extstore_maint_thread,extstore_maint_thread,void* extstore_maint_thread (void*)
+10732,BINDING,obj_io_cb,obj_io_cb,"void obj_io_cb (void*,obj_io*,int)"
+10768,BINDING,extstore_err,extstore_err,char* extstore_err (extstore_res)
+10775,BINDING,extstore_init,extstore_init,"void* extstore_init (extstore_conf_file*,extstore_conf*,extstore_res*)"
+10783,BINDING,extstore_write_request,extstore_write_request,"int extstore_write_request (void*,unsigned int,unsigned int,obj_io*)"
+10789,BINDING,extstore_write,extstore_write,"void extstore_write (void*,obj_io*)"
+10795,BINDING,extstore_submit,extstore_submit,"int extstore_submit (void*,obj_io*)"
+10802,BINDING,extstore_check,extstore_check,"int extstore_check (void*,unsigned int,uint64_t)"
+10811,BINDING,extstore_delete,extstore_delete,"int extstore_delete (void*,unsigned int,uint64_t,unsigned int,unsigned int)"
+10817,BINDING,extstore_get_stats,extstore_get_stats,"void extstore_get_stats (void*,extstore_stats*)"
+10823,BINDING,extstore_get_page_data,extstore_get_page_data,"void extstore_get_page_data (void*,extstore_stats*)"
+10828,BINDING,extstore_run_maint,extstore_run_maint,void extstore_run_maint (void*)
+10835,BINDING,extstore_close_page,extstore_close_page,"void extstore_close_page (void*,unsigned int,uint64_t)"
+10901,BINDING,XXH3_hash,XXH3_hash,"uint32_t XXH3_hash (void*,size_t)"
+10948,BINDING,hash_init,hash_init,int hash_init (hashfunc_type)
+10959,BINDING,hash_func,hash_func,"uint32_t hash_func (void*,size_t)"
+10976,BINDING,hash_init,hash_init,int hash_init (hashfunc_type)
+11024,BINDING,item_link_q,item_link_q,void item_link_q (item*)
+11029,BINDING,item_unlink_q,item_unlink_q,void item_unlink_q (item*)
+11166,BINDING,item_stats_reset,item_stats_reset,void item_stats_reset (void)
+11195,BINDING,do_item_stats_add_crawl,do_item_stats_add_crawl,"void do_item_stats_add_crawl (int,uint64_t,uint64_t,uint64_t)"
+11227,BINDING,lru_bump_async,lru_bump_async,"bool lru_bump_async (lru_bump_buf*,item*,uint32_t)"
+11232,BINDING,lru_total_bumps_dropped,lru_total_bumps_dropped,uint64_t lru_total_bumps_dropped (void)
+11250,BINDING,get_cas_id,get_cas_id,uint64_t get_cas_id (void)
+11264,BINDING,set_cas_id,set_cas_id,void set_cas_id (uint64_t)
+11335,BINDING,item_is_flushed,item_is_flushed,int item_is_flushed (item*)
+11344,BINDING,do_get_lru_size,do_get_lru_size,unsigned int do_get_lru_size (uint32_t)
+11379,BINDING,item_make_header,item_make_header,"size_t item_make_header (uint8_t,unsigned int,int,char*,uint8_t*)"
+11486,BINDING,do_item_alloc_pull,do_item_alloc_pull,"item do_item_alloc_pull (size_t,unsigned int)"
+11614,BINDING,do_item_alloc_chunk,do_item_alloc_chunk,"item_chunk do_item_alloc_chunk (item_chunk*,size_t)"
+12005,BINDING,do_item_alloc,do_item_alloc,"item do_item_alloc (char*,size_t,unsigned int,rel_time_t,int)"
+12102,BINDING,item_free,item_free,void item_free (item*)
+12144,BINDING,item_size_ok,item_size_ok,"bool item_size_ok (size_t,int,int)"
+12299,BINDING,do_item_link_fixup,do_item_link_fixup,void do_item_link_fixup (item*)
+12438,BINDING,do_item_link_q,do_item_link_q,void do_item_link_q (item*)
+12459,BINDING,item_link_q,item_link_q,void item_link_q (item*)
+12488,BINDING,item_link_q_warm,item_link_q_warm,void item_link_q_warm (item*)
+12635,BINDING,do_item_unlink_q,do_item_unlink_q,void do_item_unlink_q (item*)
+12656,BINDING,item_unlink_q,item_unlink_q,void item_unlink_q (item*)
+12777,BINDING,do_item_link,do_item_link,"int do_item_link (item*,uint32_t)"
+12878,BINDING,do_item_unlink,do_item_unlink,"void do_item_unlink (item*,uint32_t)"
+12979,BINDING,do_item_unlink_nolock,do_item_unlink_nolock,"void do_item_unlink_nolock (item*,uint32_t)"
+13013,BINDING,do_item_remove,do_item_remove,void do_item_remove (item*)
+13157,BINDING,do_item_update,do_item_update,void do_item_update (item*)
+13181,BINDING,do_item_replace,do_item_replace,"int do_item_replace (item*,item*,uint32_t)"
+13398,BINDING,item_cachedump,item_cachedump,"char* item_cachedump (unsigned int,unsigned int,unsigned int*)"
+13557,BINDING,fill_item_stats_automove,fill_item_stats_automove,void fill_item_stats_automove (item_stats_automove*)
+13914,BINDING,item_stats_totals,item_stats_totals,"void item_stats_totals (ADD_STAT,void*)"
+15193,BINDING,item_stats,item_stats,"void item_stats (ADD_STAT,void*)"
+15226,BINDING,item_stats_sizes_status,item_stats_sizes_status,bool item_stats_sizes_status (void)
+15260,BINDING,item_stats_sizes_init,item_stats_sizes_init,void item_stats_sizes_init (void)
+15369,BINDING,item_stats_sizes_enable,item_stats_sizes_enable,"void item_stats_sizes_enable (ADD_STAT,void*)"
+15410,BINDING,item_stats_sizes_disable,item_stats_sizes_disable,"void item_stats_sizes_disable (ADD_STAT,void*)"
+15503,BINDING,item_stats_sizes_add,item_stats_sizes_add,void item_stats_sizes_add (item*)
+15596,BINDING,item_stats_sizes_remove,item_stats_sizes_remove,void item_stats_sizes_remove (item*)
+15683,BINDING,item_stats_sizes,item_stats_sizes,"void item_stats_sizes (ADD_STAT,void*)"
+15970,BINDING,do_item_get,do_item_get,"item do_item_get (char*,size_t,uint32_t,conn*,bool)"
+16073,BINDING,do_item_bump,do_item_bump,"void do_item_bump (conn*,item*,uint32_t)"
+16105,BINDING,do_item_touch,do_item_touch,"item do_item_touch (char*,size_t,uint32_t,uint32_t,conn*)"
+16752,BINDING,lru_pull_tail,lru_pull_tail,"int lru_pull_tail (int,int,uint64_t,uint8_t,rel_time_t,lru_pull_tail_return*)"
+16801,BINDING,lru_bump_buf_link_q,lru_bump_buf_link_q,void lru_bump_buf_link_q (lru_bump_buf*)
+16852,BINDING,item_lru_bump_buf_create,item_lru_bump_buf_create,void* item_lru_bump_buf_create (void)
+16945,BINDING,lru_bump_async,lru_bump_async,"bool lru_bump_async (lru_bump_buf*,item*,uint32_t)"
+17056,BINDING,lru_maintainer_bumps,lru_maintainer_bumps,bool lru_maintainer_bumps (void)
+17103,BINDING,lru_total_bumps_dropped,lru_total_bumps_dropped,uint64_t lru_total_bumps_dropped (void)
+17364,BINDING,lru_maintainer_juggle,lru_maintainer_juggle,int lru_maintainer_juggle (int)
+17745,BINDING,lru_maintainer_crawler_check,lru_maintainer_crawler_check,"void lru_maintainer_crawler_check (crawler_expired_data*,logger*)"
+18223,BINDING,lru_maintainer_thread,lru_maintainer_thread,void* lru_maintainer_thread (void*)
+18262,BINDING,stop_lru_maintainer_thread,stop_lru_maintainer_thread,int stop_lru_maintainer_thread (void)
+18307,BINDING,start_lru_maintainer_thread,start_lru_maintainer_thread,int start_lru_maintainer_thread (void*)
+18315,BINDING,lru_maintainer_pause,lru_maintainer_pause,void lru_maintainer_pause (void)
+18323,BINDING,lru_maintainer_resume,lru_maintainer_resume,void lru_maintainer_resume (void)
+18333,BINDING,init_lru_maintainer,init_lru_maintainer,int init_lru_maintainer (void)
+18435,BINDING,do_item_linktail_q,do_item_linktail_q,void do_item_linktail_q (item*)
+18535,BINDING,do_item_unlinktail_q,do_item_unlinktail_q,void do_item_unlinktail_q (item*)
+18742,BINDING,do_item_crawl_q,do_item_crawl_q,item do_item_crawl_q (item*)
+18752,BINDING,get_cas_id,get_cas_id,uint64_t get_cas_id (void)
+18757,BINDING,set_cas_id,set_cas_id,void set_cas_id (uint64_t)
+18766,BINDING,do_item_alloc,do_item_alloc,"item* do_item_alloc (char*,size_t,unsigned int,rel_time_t,int)"
+18772,BINDING,do_item_alloc_chunk,do_item_alloc_chunk,"item_chunk* do_item_alloc_chunk (item_chunk*,size_t)"
+18778,BINDING,do_item_alloc_pull,do_item_alloc_pull,"item* do_item_alloc_pull (size_t,unsigned int)"
+18783,BINDING,item_free,item_free,void item_free (item*)
+18790,BINDING,item_size_ok,item_size_ok,"bool item_size_ok (size_t,int,int)"
+18796,BINDING,do_item_link,do_item_link,"int do_item_link (item*,uint32_t)"
+18802,BINDING,do_item_unlink,do_item_unlink,"void do_item_unlink (item*,uint32_t)"
+18808,BINDING,do_item_unlink_nolock,do_item_unlink_nolock,"void do_item_unlink_nolock (item*,uint32_t)"
+18813,BINDING,do_item_remove,do_item_remove,void do_item_remove (item*)
+18818,BINDING,do_item_update,do_item_update,void do_item_update (item*)
+18823,BINDING,do_item_update_nolock,do_item_update_nolock,void do_item_update_nolock (item*)
+18830,BINDING,do_item_replace,do_item_replace,"int do_item_replace (item*,item*,uint32_t)"
+18835,BINDING,do_item_link_fixup,do_item_link_fixup,void do_item_link_fixup (item*)
+18840,BINDING,item_is_flushed,item_is_flushed,int item_is_flushed (item*)
+18845,BINDING,do_get_lru_size,do_get_lru_size,unsigned int do_get_lru_size (uint32_t)
+18850,BINDING,do_item_linktail_q,do_item_linktail_q,void do_item_linktail_q (item*)
+18855,BINDING,do_item_unlinktail_q,do_item_unlinktail_q,void do_item_unlinktail_q (item*)
+18860,BINDING,do_item_crawl_q,do_item_crawl_q,item* do_item_crawl_q (item*)
+18865,BINDING,item_lru_bump_buf_create,item_lru_bump_buf_create,void* item_lru_bump_buf_create (void)
+18878,BINDING,lru_pull_tail,lru_pull_tail,"int lru_pull_tail (int,int,uint64_t,uint8_t,rel_time_t,lru_pull_tail_return*)"
+18885,BINDING,item_cachedump,item_cachedump,"char* item_cachedump (unsigned int,unsigned int,unsigned int*)"
+18891,BINDING,item_stats,item_stats,"void item_stats (ADD_STAT,void*)"
+18899,BINDING,do_item_stats_add_crawl,do_item_stats_add_crawl,"void do_item_stats_add_crawl (int,uint64_t,uint64_t,uint64_t)"
+18905,BINDING,item_stats_totals,item_stats_totals,"void item_stats_totals (ADD_STAT,void*)"
+18911,BINDING,item_stats_sizes,item_stats_sizes,"void item_stats_sizes (ADD_STAT,void*)"
+18916,BINDING,item_stats_sizes_init,item_stats_sizes_init,void item_stats_sizes_init (void)
+18922,BINDING,item_stats_sizes_enable,item_stats_sizes_enable,"void item_stats_sizes_enable (ADD_STAT,void*)"
+18928,BINDING,item_stats_sizes_disable,item_stats_sizes_disable,"void item_stats_sizes_disable (ADD_STAT,void*)"
+18933,BINDING,item_stats_sizes_add,item_stats_sizes_add,void item_stats_sizes_add (item*)
+18938,BINDING,item_stats_sizes_remove,item_stats_sizes_remove,void item_stats_sizes_remove (item*)
+18943,BINDING,item_stats_sizes_status,item_stats_sizes_status,bool item_stats_sizes_status (void)
+18953,BINDING,fill_item_stats_automove,fill_item_stats_automove,void fill_item_stats_automove (item_stats_automove*)
+18962,BINDING,do_item_get,do_item_get,"item* do_item_get (char*,size_t,uint32_t,conn*,bool)"
+18971,BINDING,do_item_touch,do_item_touch,"item* do_item_touch (char*,size_t,uint32_t,uint32_t,conn*)"
+18978,BINDING,do_item_bump,do_item_bump,"void do_item_bump (conn*,item*,uint32_t)"
+18983,BINDING,item_stats_reset,item_stats_reset,void item_stats_reset (void)
+18991,BINDING,start_lru_maintainer_thread,start_lru_maintainer_thread,int start_lru_maintainer_thread (void*)
+18996,BINDING,stop_lru_maintainer_thread,stop_lru_maintainer_thread,int stop_lru_maintainer_thread (void)
+19001,BINDING,init_lru_maintainer,init_lru_maintainer,int init_lru_maintainer (void)
+19006,BINDING,lru_maintainer_pause,lru_maintainer_pause,void lru_maintainer_pause (void)
+19011,BINDING,lru_maintainer_resume,lru_maintainer_resume,void lru_maintainer_resume (void)
+19016,BINDING,lru_bump_buf_create,lru_bump_buf_create,void* lru_bump_buf_create (void)
+19048,BINDING,out2,out2,"char* out2 (int,char*)"
+19063,BINDING,out1,out1,"char* out1 (char,char*)"
+19099,BINDING,digits,digits,"int digits (uint32_t,unsigned,int*,char**,int)"
+19206,BINDING,itoa,itoa,"char* itoa (uint32_t,char*,int,int)"
+19301,BINDING,itoa_u32,itoa_u32,"char* itoa_u32 (uint32_t,char*)"
+19329,BINDING,itoa_32,itoa_32,"char* itoa_32 (int32_t,char*)"
+19387,BINDING,itoa_u64,itoa_u64,"char* itoa_u64 (uint64_t,char*)"
+19415,BINDING,itoa_64,itoa_64,"char* itoa_64 (int64_t,char*)"
+19428,BINDING,itoa_u32,itoa_u32,"char* itoa_u32 (uint32_t,char*)"
+19434,BINDING,itoa_32,itoa_32,"char* itoa_32 (int32_t,char*)"
+19440,BINDING,itoa_u64,itoa_u64,"char* itoa_u64 (uint64_t,char*)"
+19446,BINDING,itoa_64,itoa_64,"char* itoa_64 (int64_t,char*)"
+19466,BINDING,jenkins_hash,jenkins_hash,"uint32_t jenkins_hash (void*,size_t)"
+19548,BINDING,handle_syssig,handle_syssig,"void handle_syssig (int,siginfo_t*,void*)"
+19638,BINDING,logger_thread_poll_watchers,logger_thread_poll_watchers,"int logger_thread_poll_watchers (int,int)"
+19682,BINDING,_logger_log_text,_logger_log_text,"void _logger_log_text (logentry*,entry_details*,void*,va_list)"
+19806,BINDING,_logger_log_evictions,_logger_log_evictions,"void _logger_log_evictions (logentry*,entry_details*,void*,va_list)"
+19869,BINDING,_logger_log_item_get,_logger_log_item_get,"void _logger_log_item_get (logentry*,entry_details*,void*,va_list)"
+19964,BINDING,_logger_log_item_store,_logger_log_item_store,"void _logger_log_item_store (logentry*,entry_details*,void*,va_list)"
+20021,BINDING,_logger_log_conn_event,_logger_log_conn_event,"void _logger_log_conn_event (logentry*,entry_details*,void*,va_list)"
+20104,BINDING,_logger_util_addr_endpoint,_logger_util_addr_endpoint,"int _logger_util_addr_endpoint (sockaddr_in6*,char*,size_t,short unsigned*)"
+20141,BINDING,_logger_parse_text,_logger_parse_text,"int _logger_parse_text (logentry*,char*)"
+20268,BINDING,_logger_parse_ise,_logger_parse_ise,"int _logger_parse_ise (logentry*,char*)"
+20360,BINDING,_logger_parse_ige,_logger_parse_ige,"int _logger_parse_ige (logentry*,char*)"
+20454,BINDING,_logger_parse_ee,_logger_parse_ee,"int _logger_parse_ee (logentry*,char*)"
+20527,BINDING,_logger_parse_cne,_logger_parse_cne,"int _logger_parse_cne (logentry*,char*)"
+20613,BINDING,_logger_parse_cce,_logger_parse_cce,"int _logger_parse_cce (logentry*,char*)"
+20751,BINDING,logger_get_gid,logger_get_gid,uint64_t logger_get_gid (void)
+20773,BINDING,logger_set_gid,logger_set_gid,void logger_set_gid (uint64_t)
+20824,BINDING,logger_link_q,logger_link_q,void logger_link_q (logger*)
+20901,BINDING,logger_set_flags,logger_set_flags,void logger_set_flags (void)
+20957,BINDING,logger_thread_parse_entry,logger_thread_parse_entry,"enum logger_parse_entry_ret logger_thread_parse_entry (logentry*,logger_stats*,char*,int*)"
+21118,BINDING,logger_thread_write_entry,logger_thread_write_entry,"void logger_thread_write_entry (logentry*,logger_stats*,char*,int)"
+21143,BINDING,logger_thread_close_watcher,logger_thread_close_watcher,void logger_thread_close_watcher (logger_watcher*)
+21295,BINDING,logger_thread_read,logger_thread_read,"int logger_thread_read (logger*,logger_stats*)"
+21638,BINDING,logger_thread_poll_watchers,logger_thread_poll_watchers,"int logger_thread_poll_watchers (int,int)"
+21680,BINDING,logger_thread_flush_stats,logger_thread_flush_stats,void logger_thread_flush_stats (logger_stats*)
+21812,BINDING,logger_thread,logger_thread,void* logger_thread (void*)
+21843,BINDING,start_logger_thread,start_logger_thread,int start_logger_thread (void)
+21865,BINDING,stop_logger_thread,stop_logger_thread,int stop_logger_thread (void)
+21887,BINDING,logger_init,logger_init,void logger_init (void)
+21893,BINDING,logger_stop,logger_stop,void logger_stop (void)
+21949,BINDING,logger_create,logger_create,logger logger_create (void)
+22099,BINDING,logger_log,logger_log,"enum logger_ret_type logger_log (logger*,log_entry_type,void*...)"
+22257,BINDING,logger_add_watcher,logger_add_watcher,"enum logger_add_watcher_ret logger_add_watcher (void*,int,uint16_t)"
+22315,BINDING,entry_log_cb,entry_log_cb,"void entry_log_cb (logentry*,entry_details*,void*,va_list)"
+22321,BINDING,entry_parse_cb,entry_parse_cb,"int entry_parse_cb (logentry*,char*)"
+22441,BINDING,logger_init,logger_init,void logger_init (void)
+22446,BINDING,logger_stop,logger_stop,void logger_stop (void)
+22451,BINDING,logger_create,logger_create,logger* logger_create (void)
+22471,BINDING,logger_get_gid,logger_get_gid,uint64_t logger_get_gid (void)
+22476,BINDING,logger_set_gid,logger_set_gid,void logger_set_gid (uint64_t)
+25212,BINDING,md5_process,md5_process,"void md5_process (md5_state_t*,md5_byte_t*)"
+25272,BINDING,md5_init,md5_init,void md5_init (md5_state_t*)
+25411,BINDING,md5_append,md5_append,"void md5_append (md5_state_t*,md5_byte_t*,int)"
+25565,BINDING,md5_finish,md5_finish,"void md5_finish (md5_state_t*,md5_byte_t[16])"
+25592,BINDING,md5_init,md5_init,void md5_init (md5_state_t*)
+25599,BINDING,md5_append,md5_append,"void md5_append (md5_state_t*,md5_byte_t*,int)"
+25605,BINDING,md5_finish,md5_finish,"void md5_finish (md5_state_t*,md5_byte_t[16])"
+25679,BINDING,drive_machine,drive_machine,void drive_machine (conn*)
+25684,BINDING,new_socket,new_socket,int new_socket (addrinfo*)
+25691,BINDING,tcp_read,tcp_read,"ssize_t tcp_read (conn*,void*,size_t)"
+25698,BINDING,tcp_sendmsg,tcp_sendmsg,"ssize_t tcp_sendmsg (conn*,msghdr*,int)"
+25705,BINDING,tcp_write,tcp_write,"ssize_t tcp_write (conn*,void*,size_t)"
+25715,BINDING,try_read_command_negotiate,try_read_command_negotiate,int try_read_command_negotiate (conn*)
+25720,BINDING,try_read_command_udp,try_read_command_udp,int try_read_command_udp (conn*)
+25728,BINDING,start_conn_timeout_thread,start_conn_timeout_thread,int start_conn_timeout_thread ()
+25733,BINDING,stats_init,stats_init,void stats_init (void)
+25740,BINDING,conn_to_str,conn_to_str,"void conn_to_str (conn*,char*,char*)"
+25745,BINDING,settings_init,settings_init,void settings_init (void)
+25752,BINDING,event_handler,event_handler,"void event_handler (evutil_socket_t,short,void*)"
+25757,BINDING,conn_close,conn_close,void conn_close (conn*)
+25762,BINDING,conn_init,conn_init,void conn_init (void)
+25768,BINDING,update_event,update_event,"bool update_event (conn*,int)"
+25773,BINDING,complete_nread,complete_nread,void complete_nread (conn*)
+25778,BINDING,conn_free,conn_free,void conn_free (conn*)
+25819,BINDING,tcp_read,tcp_read,"ssize_t tcp_read (conn*,void*,size_t)"
+25837,BINDING,tcp_sendmsg,tcp_sendmsg,"ssize_t tcp_sendmsg (conn*,msghdr*,int)"
+25855,BINDING,tcp_write,tcp_write,"ssize_t tcp_write (conn*,void*,size_t)"
+25917,BINDING,maxconns_handler,maxconns_handler,"void maxconns_handler (evutil_socket_t,short,void*)"
+25965,BINDING,realtime,realtime,rel_time_t realtime (time_t)
+26001,BINDING,stats_init,stats_init,void stats_init (void)
+26017,BINDING,stats_reset,stats_reset,void stats_reset (void)
+26324,BINDING,settings_init,settings_init,void settings_init (void)
+26559,BINDING,conn_timeout_thread,conn_timeout_thread,void* conn_timeout_thread (void*)
+26599,BINDING,start_conn_timeout_thread,start_conn_timeout_thread,int start_conn_timeout_thread ()
+26636,BINDING,stop_conn_timeout_thread,stop_conn_timeout_thread,int stop_conn_timeout_thread (void)
+26706,BINDING,rbuf_release,rbuf_release,void rbuf_release (conn*)
+26784,BINDING,rbuf_alloc,rbuf_alloc,bool rbuf_alloc (conn*)
+26846,BINDING,rbuf_switch_to_malloc,rbuf_switch_to_malloc,bool rbuf_switch_to_malloc (conn*)
+26914,BINDING,conn_init,conn_init,void conn_init (void)
+26946,BINDING,prot_text,prot_text,const char* prot_text (protocol)
+27044,BINDING,conn_close_idle,conn_close_idle,void conn_close_idle (conn*)
+27139,BINDING,conn_worker_readd,conn_worker_readd,void conn_worker_readd (conn*)
+27198,BINDING,thread_io_queue_add,thread_io_queue_add,"void thread_io_queue_add (LIBEVENT_THREAD*,int,void*,io_queue_stack_cb,io_queue_stack_cb,io_queue_cb,io_queue_cb)"
+27254,BINDING,conn_io_queue_setup,conn_io_queue_setup,void conn_io_queue_setup (conn*)
+27288,BINDING,conn_io_queue_reset,conn_io_queue_reset,void conn_io_queue_reset (conn*)
+27322,BINDING,thread_io_queue_get,thread_io_queue_get,"io_queue_cb_t thread_io_queue_get (LIBEVENT_THREAD*,int)"
+27356,BINDING,conn_io_queue_get,conn_io_queue_get,"io_queue_t conn_io_queue_get (conn*,int)"
+27398,BINDING,conn_io_queue_complete,conn_io_queue_complete,void conn_io_queue_complete (conn*)
+27419,BINDING,conn_io_queue_return,conn_io_queue_return,void conn_io_queue_return (io_pending_t*)
+27997,BINDING,conn_new,conn_new,"conn conn_new (int,conn_states,int,int,network_transport,event_base*,void*,uint64_t,protocol)"
+28087,BINDING,conn_release_items,conn_release_items,void conn_release_items (conn*)
+28129,BINDING,conn_cleanup,conn_cleanup,void conn_cleanup (conn*)
+28171,BINDING,conn_free,conn_free,void conn_free (conn*)
+28309,BINDING,conn_close,conn_close,void conn_close (conn*)
+28343,BINDING,conn_close_all,conn_close_all,void conn_close_all (void)
+28369,BINDING,state_text,state_text,const char* state_text (conn_states)
+28427,BINDING,conn_set_state,conn_set_state,"void conn_set_state (conn*,conn_states)"
+28490,BINDING,resp_reset,resp_reset,void resp_reset (mc_resp*)
+28540,BINDING,resp_add_iov,resp_add_iov,"void resp_add_iov (mc_resp*,void*,int)"
+28563,BINDING,resp_add_chunked_iov,resp_add_chunked_iov,"void resp_add_chunked_iov (mc_resp*,void*,int)"
+28848,BINDING,resp_allocate,resp_allocate,mc_resp resp_allocate (conn*)
+29074,BINDING,resp_free,resp_free,"void resp_free (conn*,mc_resp*)"
+29245,BINDING,resp_start,resp_start,bool resp_start (conn*)
+29379,BINDING,resp_finish,resp_finish,"mc_resp resp_finish (conn*,mc_resp*)"
+29395,BINDING,resp_has_stack,resp_has_stack,bool resp_has_stack (conn*)
+29502,BINDING,out_string,out_string,"void out_string (conn*,char*)"
+29516,BINDING,out_errstring,out_errstring,"void out_errstring (conn*,char*)"
+29560,BINDING,out_of_memory,out_of_memory,"void out_of_memory (conn*,char*)"
+29703,BINDING,append_bin_stats,append_bin_stats,"void append_bin_stats (char*,uint16_t,char*,uint32_t,conn*)"
+29796,BINDING,append_ascii_stats,append_ascii_stats,"void append_ascii_stats (char*,uint16_t,char*,uint32_t,conn*)"
+29923,BINDING,grow_stats_buf,grow_stats_buf,"bool grow_stats_buf (conn*,size_t)"
+30012,BINDING,append_stats,append_stats,"void append_stats (char*,uint16_t,char*,uint32_t,void*)"
+30085,BINDING,reset_cmd_handler,reset_cmd_handler,void reset_cmd_handler (conn*)
+30126,BINDING,complete_nread,complete_nread,void complete_nread (conn*)
+30522,BINDING,_store_item_copy_chunks,_store_item_copy_chunks,"int _store_item_copy_chunks (item*,item*,int)"
+30923,BINDING,_store_item_copy_data,_store_item_copy_data,"int _store_item_copy_data (int,item*,item*,item*)"
+31653,BINDING,do_store_item,do_store_item,"enum store_item_type do_store_item (item*,int,conn*,uint32_t)"
+31686,BINDING,write_and_free,write_and_free,"void write_and_free (conn*,char*,int)"
+31727,BINDING,append_stat,append_stat,"void append_stat (char*,ADD_STAT,conn*,char*...)"
+32871,BINDING,server_stats,server_stats,"void server_stats (ADD_STAT,conn*)"
+33688,BINDING,process_stat_settings,process_stat_settings,"void process_stat_settings (ADD_STAT,void*)"
+33715,BINDING,nz_strcmp,nz_strcmp,"int nz_strcmp (int,char*,char*)"
+33873,BINDING,get_stats,get_stats,"bool get_stats (char*,int,ADD_STAT,void*)"
+34071,BINDING,get_conn_text,get_conn_text,"void get_conn_text (conn*,int,char*,sockaddr*)"
+34218,BINDING,conn_to_str,conn_to_str,"void conn_to_str (conn*,char*,char*)"
+34474,BINDING,process_stats_conns,process_stats_conns,"void process_stats_conns (ADD_STAT,void*)"
+34533,BINDING,limited_get,limited_get,"item limited_get (char*,size_t,conn*,uint32_t,bool,bool,bool*)"
+34583,BINDING,limited_get_locked,limited_get_locked,"item limited_get_locked (char*,size_t,conn*,bool,uint32_t*,bool*)"
+35215,BINDING,do_add_delta,do_add_delta,"enum delta_result_type do_add_delta (conn*,char*,size_t,bool,int64_t,char*,uint64_t*,uint32_t,item**)"
+35306,BINDING,try_read_command_negotiate,try_read_command_negotiate,int try_read_command_negotiate (conn*)
+35364,BINDING,try_read_command_udp,try_read_command_udp,int try_read_command_udp (conn*)
+35502,BINDING,try_read_udp,try_read_udp,enum try_read_result try_read_udp (conn*)
+35749,BINDING,try_read_network,try_read_network,enum try_read_result try_read_network (conn*)
+35827,BINDING,update_event,update_event,"bool update_event (conn*,int)"
+35953,BINDING,do_accept_new_conns,do_accept_new_conns,void do_accept_new_conns (bool)
+36293,BINDING,_transmit_pre,_transmit_pre,"int _transmit_pre (conn*,iovec*,int,bool)"
+36438,BINDING,_transmit_post,_transmit_post,"void _transmit_post (conn*,ssize_t)"
+36598,BINDING,transmit,transmit,enum transmit_result transmit (conn*)
+36712,BINDING,build_udp_header,build_udp_header,"void build_udp_header (unsigned char*,mc_resp*)"
+36988,BINDING,transmit_udp,transmit_udp,enum transmit_result transmit_udp (conn*)
+37309,BINDING,read_into_chunked_item,read_into_chunked_item,int read_into_chunked_item (conn*)
+38422,BINDING,drive_machine,drive_machine,void drive_machine (conn*)
+38467,BINDING,event_handler,event_handler,"void event_handler (evutil_socket_t,short,void*)"
+38522,BINDING,new_socket,new_socket,int new_socket (addrinfo*)
+38629,BINDING,maximize_sndbuf,maximize_sndbuf,void maximize_sndbuf (int)
+39119,BINDING,server_socket,server_socket,"int server_socket (char*,int,network_transport,FILE*,bool,uint64_t,protocol)"
+39549,BINDING,server_sockets,server_sockets,"int server_sockets (int,network_transport,FILE*)"
+39600,BINDING,new_socket_unix,new_socket_unix,int new_socket_unix (void)
+39784,BINDING,server_socket_unix,server_socket_unix,"int server_socket_unix (char*,int)"
+39868,BINDING,clock_handler,clock_handler,"void clock_handler (evutil_socket_t,short,void*)"
+39878,BINDING,flag_enabled_disabled,flag_enabled_disabled,const char* flag_enabled_disabled (bool)
+39893,BINDING,verify_default,verify_default,"void verify_default (char*,bool)"
+40108,BINDING,usage,usage,void usage (void)
+40117,BINDING,usage_license,usage_license,void usage_license (void)
+40217,BINDING,save_pid,save_pid,void save_pid (char*)
+40237,BINDING,remove_pidfile,remove_pidfile,void remove_pidfile (char*)
+40249,BINDING,sig_handler,sig_handler,void sig_handler (int)
+40259,BINDING,sighup_handler,sighup_handler,void sighup_handler (int)
+40271,BINDING,sig_usrhandler,sig_usrhandler,void sig_usrhandler (int)
+40279,BINDING,enable_large_pages,enable_large_pages,int enable_large_pages (void)
+40309,BINDING,sanitycheck,sanitycheck,bool sanitycheck (void)
+40446,BINDING,_parse_slab_sizes,_parse_slab_sizes,"bool _parse_slab_sizes (char*,uint32_t*)"
+40599,BINDING,_mc_meta_save_cb,_mc_meta_save_cb,"int _mc_meta_save_cb (char*,void*,void*)"
+41194,BINDING,_mc_meta_load_cb,_mc_meta_load_cb,"int _mc_meta_load_cb (char*,void*,void*)"
+44096,BINDING,main,main,"int main (int,char**)"
+44168,BINDING,ADD_STAT,ADD_STAT,"void ADD_STAT (char*,uint16_t,char*,uint32_t,void*)"
+44536,BINDING,io_queue_stack_cb,io_queue_stack_cb,void io_queue_stack_cb (io_queue_t*)
+44541,BINDING,io_queue_cb,io_queue_cb,void io_queue_cb (io_pending_t*)
+44722,BINDING,conn.try_read_command,try_read_command,int conn.try_read_command (conn*)
+44729,BINDING,conn.read,read,"ssize_t conn.read (conn*,void*,size_t)"
+44736,BINDING,conn.sendmsg,sendmsg,"ssize_t conn.sendmsg (conn*,msghdr*,int)"
+44743,BINDING,conn.write,write,"ssize_t conn.write (conn*,void*,size_t)"
+44776,BINDING,do_accept_new_conns,do_accept_new_conns,void do_accept_new_conns (bool)
+44791,BINDING,thread_io_queue_add,thread_io_queue_add,"void thread_io_queue_add (LIBEVENT_THREAD*,int,void*,io_queue_stack_cb,io_queue_stack_cb,io_queue_cb,io_queue_cb)"
+44796,BINDING,conn_io_queue_setup,conn_io_queue_setup,void conn_io_queue_setup (conn*)
+44802,BINDING,conn_io_queue_get,conn_io_queue_get,"io_queue_t* conn_io_queue_get (conn*,int)"
+44808,BINDING,thread_io_queue_get,thread_io_queue_get,"io_queue_cb_t* thread_io_queue_get (LIBEVENT_THREAD*,int)"
+44813,BINDING,conn_io_queue_return,conn_io_queue_return,void conn_io_queue_return (io_pending_t*)
+44826,BINDING,conn_new,conn_new,"conn* conn_new (int,conn_states,int,int,network_transport,event_base*,void*,uint64_t,protocol)"
+44831,BINDING,conn_worker_readd,conn_worker_readd,void conn_worker_readd (conn*)
+44837,BINDING,daemonize,daemonize,"int daemonize (int,int)"
+44843,BINDING,memcached_thread_init,memcached_thread_init,"void memcached_thread_init (int,void*)"
+44848,BINDING,redispatch_conn,redispatch_conn,void redispatch_conn (conn*)
+44853,BINDING,timeout_conn,timeout_conn,void timeout_conn (conn*)
+44858,BINDING,return_io_pending,return_io_pending,void return_io_pending (io_pending_t*)
+44870,BINDING,dispatch_conn_new,dispatch_conn_new,"void dispatch_conn_new (int,conn_states,int,int,network_transport,void*,uint64_t,protocol)"
+44875,BINDING,sidethread_conn_close,sidethread_conn_close,void sidethread_conn_close (conn*)
+44882,BINDING,accept_new_conns,accept_new_conns,void accept_new_conns (bool)
+44887,BINDING,conn_close_idle,conn_close_idle,void conn_close_idle (conn*)
+44892,BINDING,conn_close_all,conn_close_all,void conn_close_all (void)
+44901,BINDING,item_alloc,item_alloc,"item* item_alloc (char*,size_t,int,rel_time_t,int)"
+44909,BINDING,item_get,item_get,"item* item_get (char*,size_t,conn*,bool)"
+44918,BINDING,item_get_locked,item_get_locked,"item* item_get_locked (char*,size_t,conn*,bool,uint32_t*)"
+44926,BINDING,item_touch,item_touch,"item* item_touch (char*,size_t,uint32_t,conn*)"
+44931,BINDING,item_link,item_link,int item_link (item*)
+44936,BINDING,item_remove,item_remove,void item_remove (item*)
+44943,BINDING,item_replace,item_replace,"int item_replace (item*,item*,uint32_t)"
+44948,BINDING,item_unlink,item_unlink,void item_unlink (item*)
+44953,BINDING,item_lock,item_lock,void item_lock (uint32_t)
+44958,BINDING,item_trylock,item_trylock,void* item_trylock (uint32_t)
+44963,BINDING,item_trylock_unlock,item_trylock_unlock,void item_trylock_unlock (void*)
+44968,BINDING,item_unlock,item_unlock,void item_unlock (uint32_t)
+44973,BINDING,pause_threads,pause_threads,void pause_threads (pause_thread_types)
+44978,BINDING,stop_threads,stop_threads,void stop_threads (void)
+44983,BINDING,stop_conn_timeout_thread,stop_conn_timeout_thread,int stop_conn_timeout_thread (void)
+44988,BINDING,STATS_LOCK,STATS_LOCK,void STATS_LOCK (void)
+44993,BINDING,STATS_UNLOCK,STATS_UNLOCK,void STATS_UNLOCK (void)
+44998,BINDING,threadlocal_stats_reset,threadlocal_stats_reset,void threadlocal_stats_reset (void)
+45003,BINDING,threadlocal_stats_aggregate,threadlocal_stats_aggregate,void threadlocal_stats_aggregate (thread_stats*)
+45009,BINDING,slab_stats_aggregate,slab_stats_aggregate,"void slab_stats_aggregate (thread_stats*,slab_stats*)"
+45014,BINDING,get_worker_thread,get_worker_thread,LIBEVENT_THREAD* get_worker_thread (int)
+45022,BINDING,append_stat,append_stat,"void append_stat (char*,ADD_STAT,conn*,char*...)"
+45030,BINDING,out_string,out_string,"void out_string (conn*,char*)"
+45035,BINDING,realtime,realtime,rel_time_t realtime (time_t)
+45046,BINDING,limited_get,limited_get,"item* limited_get (char*,size_t,conn*,uint32_t,bool,bool,bool*)"
+45056,BINDING,limited_get_locked,limited_get_locked,"item* limited_get_locked (char*,size_t,conn*,bool,uint32_t*,bool*)"
+45061,BINDING,resp_reset,resp_reset,void resp_reset (mc_resp*)
+45068,BINDING,resp_add_iov,resp_add_iov,"void resp_add_iov (mc_resp*,void*,int)"
+45075,BINDING,resp_add_chunked_iov,resp_add_chunked_iov,"void resp_add_chunked_iov (mc_resp*,void*,int)"
+45080,BINDING,resp_start,resp_start,bool resp_start (conn*)
+45086,BINDING,resp_finish,resp_finish,"mc_resp* resp_finish (conn*,mc_resp*)"
+45091,BINDING,resp_has_stack,resp_has_stack,bool resp_has_stack (conn*)
+45096,BINDING,rbuf_switch_to_malloc,rbuf_switch_to_malloc,bool rbuf_switch_to_malloc (conn*)
+45101,BINDING,conn_release_items,conn_release_items,void conn_release_items (conn*)
+45107,BINDING,conn_set_state,conn_set_state,"void conn_set_state (conn*,conn_states)"
+45113,BINDING,out_of_memory,out_of_memory,"void out_of_memory (conn*,char*)"
+45119,BINDING,out_errstring,out_errstring,"void out_errstring (conn*,char*)"
+45126,BINDING,write_and_free,write_and_free,"void write_and_free (conn*,char*,int)"
+45132,BINDING,server_stats,server_stats,"void server_stats (ADD_STAT,conn*)"
+45141,BINDING,append_stats,append_stats,"void append_stats (char*,uint16_t,char*,uint32_t,void*)"
+45149,BINDING,get_stats,get_stats,"bool get_stats (char*,int,ADD_STAT,void*)"
+45154,BINDING,stats_reset,stats_reset,void stats_reset (void)
+45160,BINDING,process_stat_settings,process_stat_settings,"void process_stat_settings (ADD_STAT,void*)"
+45166,BINDING,process_stats_conns,process_stats_conns,"void process_stats_conns (ADD_STAT,void*)"
+45191,BINDING,rotl32,rotl32,"uint32_t rotl32 (uint32_t,int8_t)"
+45201,BINDING,getblock32,getblock32,"uint32_t getblock32 (uint32_t*,int)"
+45229,BINDING,fmix32,fmix32,uint32_t fmix32 (uint32_t)
+45391,BINDING,MurmurHash3_x86_32,MurmurHash3_x86_32,"uint32_t MurmurHash3_x86_32 (void*,size_t)"
+45406,BINDING,MurmurHash3_x86_32,MurmurHash3_x86_32,"uint32_t MurmurHash3_x86_32 (void*,size_t)"
+45448,BINDING,process_bin_flush,process_bin_flush,"void process_bin_flush (conn*,char*)"
+45453,BINDING,process_bin_append_prepend,process_bin_append_prepend,void process_bin_append_prepend (conn*)
+45459,BINDING,process_bin_update,process_bin_update,"void process_bin_update (conn*,char*)"
+45465,BINDING,process_bin_get_or_touch,process_bin_get_or_touch,"void process_bin_get_or_touch (conn*,char*)"
+45470,BINDING,process_bin_delete,process_bin_delete,void process_bin_delete (conn*)
+45476,BINDING,complete_incr_bin,complete_incr_bin,"void complete_incr_bin (conn*,char*)"
+45481,BINDING,process_bin_stat,process_bin_stat,void process_bin_stat (conn*)
+45486,BINDING,process_bin_sasl_auth,process_bin_sasl_auth,void process_bin_sasl_auth (conn*)
+45492,BINDING,dispatch_bin_command,dispatch_bin_command,"void dispatch_bin_command (conn*,char*)"
+45497,BINDING,complete_update_bin,complete_update_bin,void complete_update_bin (conn*)
+45502,BINDING,process_bin_complete_sasl_auth,process_bin_complete_sasl_auth,void process_bin_complete_sasl_auth (conn*)
+45509,BINDING,write_bin_miss_response,write_bin_miss_response,"void write_bin_miss_response (conn*,char*,size_t)"
+45562,BINDING,complete_nread_binary,complete_nread_binary,void complete_nread_binary (conn*)
+45877,BINDING,try_read_command_binary,try_read_command_binary,int try_read_command_binary (conn*)
+45894,BINDING,binary_get_key,binary_get_key,char* binary_get_key (conn*)
+46076,BINDING,add_bin_header,add_bin_header,"void add_bin_header (conn*,uint16_t,uint8_t,uint16_t,uint32_t)"
+46212,BINDING,write_bin_error,write_bin_error,"void write_bin_error (conn*,protocol_binary_response_status,char*,int)"
+46245,BINDING,handle_binary_protocol_error,handle_binary_protocol_error,void handle_binary_protocol_error (conn*)
+46296,BINDING,write_bin_response,write_bin_response,"void write_bin_response (conn*,void*,int,int,int)"
+46813,BINDING,complete_incr_bin,complete_incr_bin,"void complete_incr_bin (conn*,char*)"
+47125,BINDING,complete_update_bin,complete_update_bin,void complete_update_bin (conn*)
+47172,BINDING,write_bin_miss_response,write_bin_miss_response,"void write_bin_miss_response (conn*,char*,size_t)"
+47790,BINDING,process_bin_get_or_touch,process_bin_get_or_touch,"void process_bin_get_or_touch (conn*,char*)"
+48076,BINDING,process_bin_stat,process_bin_stat,void process_bin_stat (conn*)
+48127,BINDING,init_sasl_conn,init_sasl_conn,void init_sasl_conn (conn*)
+48203,BINDING,bin_list_sasl_mechs,bin_list_sasl_mechs,void bin_list_sasl_mechs (conn*)
+48384,BINDING,process_bin_sasl_auth,process_bin_sasl_auth,void process_bin_sasl_auth (conn*)
+48778,BINDING,process_bin_complete_sasl_auth,process_bin_complete_sasl_auth,void process_bin_complete_sasl_auth (conn*)
+48833,BINDING,authenticated,authenticated,bool authenticated (conn*)
+49414,BINDING,dispatch_bin_command,dispatch_bin_command,"void dispatch_bin_command (conn*,char*)"
+49889,BINDING,process_bin_update,process_bin_update,"void process_bin_update (conn*,char*)"
+50103,BINDING,process_bin_append_prepend,process_bin_append_prepend,void process_bin_append_prepend (conn*)
+50238,BINDING,process_bin_flush,process_bin_flush,"void process_bin_flush (conn*,char*)"
+50445,BINDING,process_bin_delete,process_bin_delete,void process_bin_delete (conn*)
+50455,BINDING,try_read_command_binary,try_read_command_binary,int try_read_command_binary (conn*)
+50460,BINDING,complete_nread_binary,complete_nread_binary,void complete_nread_binary (conn*)
+50468,BINDING,write_bin_error,write_bin_error,"void write_bin_error (conn*,protocol_binary_response_status,char*,int)"
+50483,BINDING,proxy_process_command,proxy_process_command,"void proxy_process_command (conn*,char*,size_t,bool)"
+50491,BINDING,mcp_queue_io,mcp_queue_io,"void mcp_queue_io (conn*,mc_resp*,int,lua_State*)"
+50497,BINDING,proxy_out_errstring,proxy_out_errstring,"void proxy_out_errstring (mc_resp*,char*)"
+50612,BINDING,proxy_stats,proxy_stats,"void proxy_stats (ADD_STAT,conn*)"
+51135,BINDING,process_proxy_stats,process_proxy_stats,"void process_proxy_stats (ADD_STAT,conn*)"
+51412,BINDING,proxy_init,proxy_init,void proxy_init (bool)
+51498,BINDING,proxy_thread_init,proxy_thread_init,void proxy_thread_init (LIBEVENT_THREAD*)
+51696,BINDING,proxy_submit_cb,proxy_submit_cb,void proxy_submit_cb (io_queue_t*)
+51701,BINDING,proxy_complete_cb,proxy_complete_cb,void proxy_complete_cb (io_queue_t*)
+51770,BINDING,proxy_return_cb,proxy_return_cb,void proxy_return_cb (io_pending_t*)
+51795,BINDING,proxy_finalize_cb,proxy_finalize_cb,void proxy_finalize_cb (io_pending_t*)
+51949,BINDING,try_read_command_proxy,try_read_command_proxy,int try_read_command_proxy (conn*)
+52014,BINDING,proxy_cleanup_conn,proxy_cleanup_conn,void proxy_cleanup_conn (conn*)
+52137,BINDING,complete_nread_proxy,complete_nread_proxy,void complete_nread_proxy (conn*)
+52148,BINDING,proxy_lua_error,proxy_lua_error,"void proxy_lua_error (lua_State*,char*)"
+52166,BINDING,proxy_lua_ferror,proxy_lua_ferror,"void proxy_lua_ferror (lua_State*,char*...)"
+52247,BINDING,proxy_out_errstring,proxy_out_errstring,"void proxy_out_errstring (mc_resp*,char*)"
+52326,BINDING,_set_noreply_mode,_set_noreply_mode,"void _set_noreply_mode (mc_resp*,mcp_resp_t*)"
+52763,BINDING,proxy_run_coroutine,proxy_run_coroutine,"int proxy_run_coroutine (lua_State*,mc_resp*,io_pending_proxy_t*,conn*)"
+53388,BINDING,proxy_process_command,proxy_process_command,"void proxy_process_command (conn*,char*,size_t,bool)"
+53713,BINDING,mcp_queue_io,mcp_queue_io,"void mcp_queue_io (conn*,mc_resp*,int,lua_State*)"
+53810,BINDING,dump_stack,dump_stack,void dump_stack (lua_State*)
+53821,BINDING,proxy_stats,proxy_stats,"void proxy_stats (ADD_STAT,conn*)"
+53827,BINDING,process_proxy_stats,process_proxy_stats,"void process_proxy_stats (ADD_STAT,conn*)"
+53832,BINDING,try_read_command_proxy,try_read_command_proxy,int try_read_command_proxy (conn*)
+53837,BINDING,complete_nread_proxy,complete_nread_proxy,void complete_nread_proxy (conn*)
+53842,BINDING,proxy_cleanup_conn,proxy_cleanup_conn,void proxy_cleanup_conn (conn*)
+53847,BINDING,proxy_thread_init,proxy_thread_init,void proxy_thread_init (LIBEVENT_THREAD*)
+53852,BINDING,proxy_init,proxy_init,void proxy_init (bool)
+53857,BINDING,proxy_start_reload,proxy_start_reload,void proxy_start_reload (void*)
+53862,BINDING,proxy_load_config,proxy_load_config,int proxy_load_config (void*)
+53868,BINDING,proxy_worker_reload,proxy_worker_reload,"void proxy_worker_reload (void*,LIBEVENT_THREAD*)"
+53873,BINDING,proxy_submit_cb,proxy_submit_cb,void proxy_submit_cb (io_queue_t*)
+53878,BINDING,proxy_complete_cb,proxy_complete_cb,void proxy_complete_cb (io_queue_t*)
+53883,BINDING,proxy_return_cb,proxy_return_cb,void proxy_return_cb (io_pending_t*)
+53888,BINDING,proxy_finalize_cb,proxy_finalize_cb,void proxy_finalize_cb (io_pending_t*)
+53894,BINDING,proxy_register_libs,proxy_register_libs,"int proxy_register_libs (LIBEVENT_THREAD*,void*)"
+54223,BINDING,_finalize_mset,_finalize_mset,"void _finalize_mset (conn*,store_item_type)"
+54545,BINDING,complete_nread_ascii,complete_nread_ascii,void complete_nread_ascii (conn*)
+54695,BINDING,tokenize_command,tokenize_command,"size_t tokenize_command (char*,token_t*,size_t)"
+55040,BINDING,try_read_command_asciiauth,try_read_command_asciiauth,int try_read_command_asciiauth (conn*)
+55208,BINDING,try_read_command_ascii,try_read_command_ascii,int try_read_command_ascii (conn*)
+55247,BINDING,set_noreply_maybe,set_noreply_maybe,"bool set_noreply_maybe (conn*,token_t*,size_t)"
+55386,BINDING,make_ascii_get_suffix,make_ascii_get_suffix,"int make_ascii_get_suffix (char*,item*,bool,int)"
+55936,BINDING,process_get_command,process_get_command,"void process_get_command (conn*,token_t*,size_t,bool,bool)"
+56003,BINDING,process_stats_detail,process_stats_detail,"void process_stats_detail (conn*,char*)"
+56291,BINDING,process_stat,process_stat,"void process_stat (conn*,token_t*,size_t)"
+56686,BINDING,process_meta_command,process_meta_command,"void process_meta_command (conn*,token_t*,size_t)"
+57246,BINDING,_meta_flag_preparse,_meta_flag_preparse,"int _meta_flag_preparse (token_t*,size_t,_meta_flags*,char**)"
+58435,BINDING,process_mget_command,process_mget_command,"void process_mget_command (conn*,token_t*,size_t)"
+59124,BINDING,process_mset_command,process_mset_command,"void process_mset_command (conn*,token_t*,size_t)"
+59707,BINDING,process_mdelete_command,process_mdelete_command,"void process_mdelete_command (conn*,token_t*,size_t)"
+60678,BINDING,process_marithmetic_command,process_marithmetic_command,"void process_marithmetic_command (conn*,token_t*,size_t)"
+61101,BINDING,process_update_command,process_update_command,"void process_update_command (conn*,token_t*,size_t,int,bool)"
+61299,BINDING,process_touch_command,process_touch_command,"void process_touch_command (conn*,token_t*,size_t)"
+61445,BINDING,process_arithmetic_command,process_arithmetic_command,"void process_arithmetic_command (conn*,token_t*,size_t,bool)"
+61646,BINDING,process_delete_command,process_delete_command,"void process_delete_command (conn*,token_t*,size_t)"
+61697,BINDING,process_verbosity_command,process_verbosity_command,"void process_verbosity_command (conn*,token_t*,size_t)"
+61804,BINDING,process_slabs_automove_command,process_slabs_automove_command,"void process_slabs_automove_command (conn*,token_t*,size_t)"
+62088,BINDING,process_watch_command,process_watch_command,"void process_watch_command (conn*,token_t*,size_t)"
+62171,BINDING,process_memlimit_command,process_memlimit_command,"void process_memlimit_command (conn*,token_t*,size_t)"
+62430,BINDING,process_lru_command,process_lru_command,"void process_lru_command (conn*,token_t*,size_t)"
+62558,BINDING,process_flush_all_command,process_flush_all_command,"void process_flush_all_command (conn*,token_t*,size_t)"
+62564,BINDING,process_version_command,process_version_command,void process_version_command (conn*)
+62582,BINDING,process_quit_command,process_quit_command,void process_quit_command (conn*)
+62648,BINDING,process_shutdown_command,process_shutdown_command,"void process_shutdown_command (conn*,token_t*,size_t)"
+62785,BINDING,process_slabs_command,process_slabs_command,"void process_slabs_command (conn*,token_t*,size_t)"
+63158,BINDING,process_lru_crawler_command,process_lru_crawler_command,"void process_lru_crawler_command (conn*,token_t*,size_t)"
+64234,BINDING,process_command_ascii,process_command_ascii,"void process_command_ascii (conn*,char*)"
+64244,BINDING,complete_nread_ascii,complete_nread_ascii,void complete_nread_ascii (conn*)
+64249,BINDING,try_read_command_asciiauth,try_read_command_asciiauth,int try_read_command_asciiauth (conn*)
+64254,BINDING,try_read_command_ascii,try_read_command_ascii,int try_read_command_ascii (conn*)
+64260,BINDING,process_command_ascii,process_command_ascii,"void process_command_ascii (conn*,char*)"
+65000,BINDING,key_hash_func,key_hash_func,"uint64_t key_hash_func (void*,size_t,uint64_t)"
+65010,BINDING,key_hash_filter_func,key_hash_filter_func,"char* key_hash_filter_func (char*,char*,size_t,size_t*)"
+65016,BINDING,hash_selector_func,hash_selector_func,"uint32_t hash_selector_func (uint64_t,void*)"
+65278,BINDING,proxy_init_evthread_events,proxy_init_evthread_events,void proxy_init_evthread_events (proxy_event_thread_t*)
+65283,BINDING,proxy_event_thread,proxy_event_thread,void* proxy_event_thread (void*)
+65300,BINDING,mcplib_await,mcplib_await,int mcplib_await (lua_State*)
+65308,BINDING,mcplib_await_run,mcplib_await_run,"int mcplib_await_run (conn*,mc_resp*,lua_State*,int)"
+65313,BINDING,mcplib_await_return,mcplib_await_return,int mcplib_await_return (io_pending_proxy_t*)
+65318,BINDING,mcplib_add_stat,mcplib_add_stat,int mcplib_add_stat (lua_State*)
+65323,BINDING,mcplib_stat,mcplib_stat,int mcplib_stat (lua_State*)
+65328,BINDING,_process_request_next_key,_process_request_next_key,size_t _process_request_next_key (mcp_parser_t*)
+65335,BINDING,process_request,process_request,"int process_request (mcp_parser_t*,char*,size_t)"
+65343,BINDING,mcp_new_request,mcp_new_request,"mcp_request_t* mcp_new_request (lua_State*,mcp_parser_t*,char*,size_t)"
+65348,BINDING,mcplib_request,mcplib_request,int mcplib_request (lua_State*)
+65353,BINDING,mcplib_request_command,mcplib_request_command,int mcplib_request_command (lua_State*)
+65358,BINDING,mcplib_request_key,mcplib_request_key,int mcplib_request_key (lua_State*)
+65363,BINDING,mcplib_request_ltrimkey,mcplib_request_ltrimkey,int mcplib_request_ltrimkey (lua_State*)
+65368,BINDING,mcplib_request_rtrimkey,mcplib_request_rtrimkey,int mcplib_request_rtrimkey (lua_State*)
+65373,BINDING,mcplib_request_token,mcplib_request_token,int mcplib_request_token (lua_State*)
+65378,BINDING,mcplib_request_ntokens,mcplib_request_ntokens,int mcplib_request_ntokens (lua_State*)
+65383,BINDING,mcplib_request_has_flag,mcplib_request_has_flag,int mcplib_request_has_flag (lua_State*)
+65388,BINDING,mcplib_request_flag_token,mcplib_request_flag_token,int mcplib_request_flag_token (lua_State*)
+65393,BINDING,mcplib_request_gc,mcplib_request_gc,int mcplib_request_gc (lua_State*)
+65398,BINDING,mcplib_open_dist_jump_hash,mcplib_open_dist_jump_hash,int mcplib_open_dist_jump_hash (lua_State*)
+65403,BINDING,mcplib_open_dist_ring_hash,mcplib_open_dist_ring_hash,int mcplib_open_dist_ring_hash (lua_State*)
+65411,BINDING,proxy_run_coroutine,proxy_run_coroutine,"int proxy_run_coroutine (lua_State*,mc_resp*,io_pending_proxy_t*,conn*)"
+65419,BINDING,mcplib_pool_proxy_call_helper,mcplib_pool_proxy_call_helper,"mcp_backend_t* mcplib_pool_proxy_call_helper (lua_State*,mcp_pool_t*,char*,size_t)"
+65426,BINDING,mcp_request_attach,mcp_request_attach,"void mcp_request_attach (lua_State*,mcp_request_t*,io_pending_proxy_t*)"
+65432,BINDING,proxy_lua_error,proxy_lua_error,"void proxy_lua_error (lua_State*,char*)"
+65438,BINDING,proxy_lua_ferror,proxy_lua_ferror,"void proxy_lua_ferror (lua_State*,char*...)"
+65443,BINDING,_start_proxy_config_threads,_start_proxy_config_threads,int _start_proxy_config_threads (proxy_ctx_t*)
+65448,BINDING,proxy_thread_loadconf,proxy_thread_loadconf,int proxy_thread_loadconf (LIBEVENT_THREAD*)
+65453,BINDING,mcplib_open_hash_xxhash,mcplib_open_hash_xxhash,int mcplib_open_hash_xxhash (lua_State*)
+65458,BINDING,dump_stack,dump_stack,void dump_stack (lua_State*)
+65650,BINDING,mcplib_await,mcplib_await,int mcplib_await (lua_State*)
+65973,BINDING,mcp_queue_await_io,mcp_queue_await_io,"void mcp_queue_await_io (conn*,lua_State*,mcp_request_t*,int,bool)"
+66130,BINDING,mcplib_await_run,mcplib_await_run,"int mcplib_await_run (conn*,mc_resp*,lua_State*,int)"
+66462,BINDING,mcplib_await_return,mcplib_await_return,int mcplib_await_return (io_pending_proxy_t*)
+66546,BINDING,_dump_helper,_dump_helper,"int _dump_helper (lua_State*,void*,size_t,void*)"
+66588,BINDING,_load_helper,_load_helper,"const char* _load_helper (lua_State*,void*,size_t*)"
+66616,BINDING,proxy_start_reload,proxy_start_reload,void proxy_start_reload (void*)
+66815,BINDING,_proxy_manager_thread,_proxy_manager_thread,void* _proxy_manager_thread (void*)
+67133,BINDING,_proxy_config_thread,_proxy_config_thread,void* _proxy_config_thread (void*)
+67215,BINDING,_start_proxy_config_threads,_start_proxy_config_threads,int _start_proxy_config_threads (proxy_ctx_t*)
+67344,BINDING,proxy_load_config,proxy_load_config,int proxy_load_config (void*)
+67394,BINDING,_copy_pool,_copy_pool,"int _copy_pool (lua_State*,lua_State*)"
+67400,BINDING,_copy_config_table,_copy_config_table,"void _copy_config_table (lua_State*,lua_State*)"
+67621,BINDING,_copy_config_table,_copy_config_table,"void _copy_config_table (lua_State*,lua_State*)"
+67662,BINDING,proxy_worker_reload,proxy_worker_reload,"void proxy_worker_reload (void*,LIBEVENT_THREAD*)"
+67869,BINDING,proxy_thread_loadconf,proxy_thread_loadconf,int proxy_thread_loadconf (LIBEVENT_THREAD*)
+67938,BINDING,mcplib_dist_jump_hash_get_server,mcplib_dist_jump_hash_get_server,"uint32_t mcplib_dist_jump_hash_get_server (uint64_t,void*)"
+67988,BINDING,mcplib_dist_jump_hash_new,mcplib_dist_jump_hash_new,int mcplib_dist_jump_hash_new (lua_State*)
+68008,BINDING,mcplib_open_dist_jump_hash,mcplib_open_dist_jump_hash,int mcplib_open_dist_jump_hash (lua_State*)
+68047,BINDING,mcplib_response_ok,mcplib_response_ok,int mcplib_response_ok (lua_State*)
+68089,BINDING,mcplib_response_hit,mcplib_response_hit,int mcplib_response_hit (lua_State*)
+68127,BINDING,mcplib_response_vlen,mcplib_response_vlen,int mcplib_response_vlen (lua_State*)
+68149,BINDING,mcplib_response_code,mcplib_response_code,int mcplib_response_code (lua_State*)
+68189,BINDING,mcplib_response_line,mcplib_response_line,int mcplib_response_line (lua_State*)
+68215,BINDING,mcplib_response_gc,mcplib_response_gc,int mcplib_response_gc (lua_State*)
+68280,BINDING,mcplib_backend_gc,mcplib_backend_gc,int mcplib_backend_gc (lua_State*)
+68688,BINDING,mcplib_backend,mcplib_backend,int mcplib_backend (lua_State*)
+68747,BINDING,mcplib_pool_gc,mcplib_pool_gc,int mcplib_pool_gc (lua_State*)
+68797,BINDING,mcp_key_hash_filter_stop,mcp_key_hash_filter_stop,"const char* mcp_key_hash_filter_stop (char*,char*,size_t,size_t*)"
+68860,BINDING,mcp_key_hash_filter_tag,mcp_key_hash_filter_tag,"const char* mcp_key_hash_filter_tag (char*,char*,size_t,size_t*)"
+69008,BINDING,_mcplib_pool_dist,_mcplib_pool_dist,"void _mcplib_pool_dist (lua_State*,mcp_pool_t*)"
+69407,BINDING,mcplib_pool,mcplib_pool,int mcplib_pool (lua_State*)
+69509,BINDING,mcplib_pool_proxy_gc,mcplib_pool_proxy_gc,int mcplib_pool_proxy_gc (lua_State*)
+69588,BINDING,mcplib_pool_proxy_call_helper,mcplib_pool_proxy_call_helper,"mcp_backend_t mcplib_pool_proxy_call_helper (lua_State*,mcp_pool_t*,char*,size_t)"
+69675,BINDING,mcplib_pool_proxy_call,mcplib_pool_proxy_call,int mcplib_pool_proxy_call (lua_State*)
+69723,BINDING,mcplib_tcp_keepalive,mcplib_tcp_keepalive,int mcplib_tcp_keepalive (lua_State*)
+69776,BINDING,mcplib_backend_failure_limit,mcplib_backend_failure_limit,int mcplib_backend_failure_limit (lua_State*)
+69849,BINDING,mcplib_backend_connect_timeout,mcplib_backend_connect_timeout,int mcplib_backend_connect_timeout (lua_State*)
+69922,BINDING,mcplib_backend_retry_timeout,mcplib_backend_retry_timeout,int mcplib_backend_retry_timeout (lua_State*)
+69995,BINDING,mcplib_backend_read_timeout,mcplib_backend_read_timeout,int mcplib_backend_read_timeout (lua_State*)
+70340,BINDING,mcplib_attach,mcplib_attach,int mcplib_attach (lua_State*)
+70406,BINDING,mcplib_log,mcplib_log,int mcplib_log (lua_State*)
+70580,BINDING,mcplib_log_req,mcplib_log_req,int mcplib_log_req (lua_State*)
+70596,BINDING,_rotl,_rotl,"uint32_t _rotl (uint32_t,int)"
+70669,BINDING,_nextrand,_nextrand,uint32_t _nextrand (uint32_t*)
+70926,BINDING,mcplib_log_reqsample,mcplib_log_reqsample,int mcplib_log_reqsample (lua_State*)
+71382,BINDING,proxy_register_defines,proxy_register_defines,void proxy_register_defines (lua_State*)
+71695,BINDING,proxy_register_libs,proxy_register_libs,"int proxy_register_libs (LIBEVENT_THREAD*,void*)"
+71709,BINDING,proxy_backend_handler,proxy_backend_handler,"void proxy_backend_handler (int,short,void*)"
+71716,BINDING,proxy_event_handler,proxy_event_handler,"void proxy_event_handler (evutil_socket_t,short,void*)"
+71723,BINDING,proxy_event_updater,proxy_event_updater,"void proxy_event_updater (evutil_socket_t,short,void*)"
+71728,BINDING,_flush_pending_write,_flush_pending_write,int _flush_pending_write (mcp_backend_t*)
+71734,BINDING,_reset_bad_backend,_reset_bad_backend,"int _reset_bad_backend (mcp_backend_t*,proxy_be_failures)"
+71743,BINDING,_set_event,_set_event,"void _set_event (mcp_backend_t*,event_base*,int,timeval,event_callback_fn)"
+71748,BINDING,proxy_backend_drive_machine,proxy_backend_drive_machine,int proxy_backend_drive_machine (mcp_backend_t*)
+72103,BINDING,_proxy_event_handler_dequeue,_proxy_event_handler_dequeue,int _proxy_event_handler_dequeue (proxy_event_thread_t*)
+72188,BINDING,proxy_event_updater,proxy_event_updater,"void proxy_event_updater (evutil_socket_t,short,void*)"
+72308,BINDING,proxy_event_handler,proxy_event_handler,"void proxy_event_handler (evutil_socket_t,short,void*)"
+72329,BINDING,proxy_event_thread,proxy_event_thread,void* proxy_event_thread (void*)
+72398,BINDING,_set_event,_set_event,"void _set_event (mcp_backend_t*,event_base*,int,timeval,event_callback_fn)"
+73214,BINDING,proxy_backend_drive_machine,proxy_backend_drive_machine,int proxy_backend_drive_machine (mcp_backend_t*)
+73251,BINDING,proxy_backend_retry_handler,proxy_backend_retry_handler,"void proxy_backend_retry_handler (int,short,void*)"
+73383,BINDING,_backend_failed,_backend_failed,void _backend_failed (mcp_backend_t*)
+73666,BINDING,_reset_bad_backend,_reset_bad_backend,"int _reset_bad_backend (mcp_backend_t*,proxy_be_failures)"
+73754,BINDING,_prep_pending_write,_prep_pending_write,"int _prep_pending_write (mcp_backend_t*,unsigned int*)"
+73969,BINDING,_flush_pending_write,_flush_pending_write,int _flush_pending_write (mcp_backend_t*)
+74192,BINDING,proxy_backend_handler,proxy_backend_handler,"void proxy_backend_handler (int,short,void*)"
+74294,BINDING,proxy_init_evthread_events,proxy_init_evthread_events,void proxy_init_evthread_events (proxy_event_thread_t*)
+74443,BINDING,_process_tokenize,_process_tokenize,"int _process_tokenize (mcp_parser_t*,size_t)"
+74489,BINDING,_process_token_len,_process_token_len,"int _process_token_len (mcp_parser_t*,size_t)"
+74547,BINDING,_process_request_key,_process_request_key,int _process_request_key (mcp_parser_t*)
+74638,BINDING,_process_request_next_key,_process_request_next_key,size_t _process_request_next_key (mcp_parser_t*)
+74782,BINDING,_process_request_metaflags,_process_request_metaflags,"int _process_request_metaflags (mcp_parser_t*,int)"
+74813,BINDING,_process_request_meta,_process_request_meta,int _process_request_meta (mcp_parser_t*)
+74905,BINDING,_process_request_mset,_process_request_mset,int _process_request_mset (mcp_parser_t*)
+74932,BINDING,_process_request_gat,_process_request_gat,int _process_request_gat (mcp_parser_t*)
+74996,BINDING,_process_request_noreply,_process_request_noreply,int _process_request_noreply (mcp_parser_t*)
+75086,BINDING,_process_request_storage,_process_request_storage,"int _process_request_storage (mcp_parser_t*,size_t)"
+75105,BINDING,_process_request_simple,_process_request_simple,"int _process_request_simple (mcp_parser_t*,size_t)"
+75692,BINDING,process_request,process_request,"int process_request (mcp_parser_t*,char*,size_t)"
+75771,BINDING,mcp_new_request,mcp_new_request,"mcp_request_t mcp_new_request (lua_State*,mcp_parser_t*,char*,size_t)"
+76039,BINDING,mcp_request_attach,mcp_request_attach,"void mcp_request_attach (lua_State*,mcp_request_t*,io_pending_proxy_t*)"
+76248,BINDING,mcplib_request,mcplib_request,int mcplib_request (lua_State*)
+76293,BINDING,mcplib_request_key,mcplib_request_key,int mcplib_request_key (lua_State*)
+76383,BINDING,mcplib_request_ltrimkey,mcplib_request_ltrimkey,int mcplib_request_ltrimkey (lua_State*)
+76468,BINDING,mcplib_request_rtrimkey,mcplib_request_rtrimkey,int mcplib_request_rtrimkey (lua_State*)
+76639,BINDING,mcplib_request_token,mcplib_request_token,int mcplib_request_token (lua_State*)
+76660,BINDING,mcplib_request_ntokens,mcplib_request_ntokens,int mcplib_request_ntokens (lua_State*)
+76682,BINDING,mcplib_request_command,mcplib_request_command,int mcplib_request_command (lua_State*)
+76769,BINDING,mcplib_request_has_flag,mcplib_request_has_flag,int mcplib_request_has_flag (lua_State*)
+76994,BINDING,mcplib_request_flag_token,mcplib_request_flag_token,int mcplib_request_flag_token (lua_State*)
+77037,BINDING,mcplib_request_gc,mcplib_request_gc,int mcplib_request_gc (lua_State*)
+77068,BINDING,ketama_key_hasher,ketama_key_hasher,"uint64_t ketama_key_hasher (void*,size_t,uint64_t)"
+77096,BINDING,ketama_md5_digest,ketama_md5_digest,"void ketama_md5_digest (char*,unsigned char[16])"
+77131,BINDING,ketama_compare,ketama_compare,"int ketama_compare (void*,void*)"
+77182,BINDING,ketama_key_hasher,ketama_key_hasher,"uint64_t ketama_key_hasher (void*,size_t,uint64_t)"
+77316,BINDING,ketama_get_server,ketama_get_server,"uint32_t ketama_get_server (uint64_t,void*)"
+77385,BINDING,_add_server_default,_add_server_default,"void _add_server_default (ketama_t*,size_t,char**,lua_Integer,lua_Integer,unsigned int*)"
+77500,BINDING,_add_server_ketama,_add_server_ketama,"void _add_server_ketama (ketama_t*,size_t,char**,lua_Integer,lua_Integer,unsigned int*)"
+77634,BINDING,_add_server_twemproxy,_add_server_twemproxy,"void _add_server_twemproxy (ketama_t*,size_t,char**,lua_Integer,lua_Integer,unsigned int*)"
+77752,BINDING,_add_server_evcache,_add_server_evcache,"void _add_server_evcache (ketama_t*,size_t,char**,lua_Integer,lua_Integer,unsigned int*)"
+78127,BINDING,ketama_new,ketama_new,int ketama_new (lua_State*)
+78156,BINDING,mcplib_open_dist_ring_hash,mcplib_open_dist_ring_hash,int mcplib_open_dist_ring_hash (lua_State*)
+78375,BINDING,mcplib_add_stat,mcplib_add_stat,int mcplib_add_stat (lua_State*)
+78476,BINDING,mcplib_stat,mcplib_stat,int mcplib_stat (lua_State*)
+78502,BINDING,mcplib_open_hash_xxhash,mcplib_open_hash_xxhash,int mcplib_open_hash_xxhash (lua_State*)
+78647,BINDING,restart_register,restart_register,"void restart_register (char*,restart_check_cb,restart_save_cb,void*)"
+78826,BINDING,restart_check,restart_check,int restart_check (char*)
+79025,BINDING,restart_get_kv,restart_get_kv,"enum restart_get_kv_ret restart_get_kv (void*,char**,char**)"
+79158,BINDING,restart_save,restart_save,int restart_save (char*)
+79210,BINDING,restart_set_kv,restart_set_kv,"void restart_set_kv (void*,char*,char*...)"
+79217,BINDING,_find_pagesize,_find_pagesize,long _find_pagesize (void)
+79309,BINDING,restart_mmap_open,restart_mmap_open,"bool restart_mmap_open (size_t,char*,void**)"
+79348,BINDING,restart_mmap_close,restart_mmap_close,void restart_mmap_close (void)
+79755,BINDING,restart_fixup,restart_fixup,unsigned int restart_fixup (void*)
+79780,BINDING,restart_check_cb,restart_check_cb,"int restart_check_cb (char*,void*,void*)"
+79787,BINDING,restart_save_cb,restart_save_cb,"int restart_save_cb (char*,void*,void*)"
+79795,BINDING,restart_register,restart_register,"void restart_register (char*,restart_check_cb,restart_save_cb,void*)"
+79802,BINDING,restart_set_kv,restart_set_kv,"void restart_set_kv (void*,char*,char*...)"
+79811,BINDING,restart_mmap_open,restart_mmap_open,"bool restart_mmap_open (size_t,char*,void**)"
+79816,BINDING,restart_mmap_close,restart_mmap_close,void restart_mmap_close (void)
+79821,BINDING,restart_fixup,restart_fixup,unsigned int restart_fixup (void*)
+79844,BINDING,sasl_callback_ft,sasl_callback_ft,int sasl_callback_ft (void)
+79911,BINDING,sasl_log,sasl_log,"int sasl_log (void*,int,char*)"
+79956,BINDING,display,display,"void display (char*,size_t)"
+80036,BINDING,main,main,"int main (int,char**)"
+80171,BINDING,slab_automove_init,slab_automove_init,void* slab_automove_init (settings*)
+80188,BINDING,slab_automove_free,slab_automove_free,void slab_automove_free (void*)
+80242,BINDING,window_sum,window_sum,"void window_sum (window_data*,window_data*,uint32_t)"
+80692,BINDING,slab_automove_run,slab_automove_run,"void slab_automove_run (void*,int*,int*)"
+80702,BINDING,slab_automove_init,slab_automove_init,void* slab_automove_init (settings*)
+80707,BINDING,slab_automove_free,slab_automove_free,void slab_automove_free (void*)
+80714,BINDING,slab_automove_run,slab_automove_run,"void slab_automove_run (void*,int*,int*)"
+80719,BINDING,slab_automove_init_func,slab_automove_init_func,void* slab_automove_init_func (settings*)
+80724,BINDING,slab_automove_free_func,slab_automove_free_func,void slab_automove_free_func (void*)
+80731,BINDING,slab_automove_run_func,slab_automove_run_func,"void slab_automove_run_func (void*,int*,int*)"
+80911,BINDING,slab_automove_extstore_init,slab_automove_extstore_init,void* slab_automove_extstore_init (settings*)
+80928,BINDING,slab_automove_extstore_free,slab_automove_extstore_free,void slab_automove_extstore_free (void*)
+80989,BINDING,window_sum,window_sum,"void window_sum (window_data*,window_data*,uint32_t)"
+81034,BINDING,global_pool_check,global_pool_check,int global_pool_check (slab_automove*)
+81110,BINDING,memcheck,memcheck,void memcheck (slab_automove*)
+81139,BINDING,get_window_data,get_window_data,"struct window_data get_window_data (slab_automove*,int)"
+81544,BINDING,slab_automove_extstore_run,slab_automove_extstore_run,"void slab_automove_extstore_run (void*,int*,int*)"
+81554,BINDING,slab_automove_extstore_init,slab_automove_extstore_init,void* slab_automove_extstore_init (settings*)
+81559,BINDING,slab_automove_extstore_free,slab_automove_extstore_free,void slab_automove_extstore_free (void*)
+81566,BINDING,slab_automove_extstore_run,slab_automove_extstore_run,"void slab_automove_extstore_run (void*,int*,int*)"
+81655,BINDING,grow_slab_list,grow_slab_list,int grow_slab_list (unsigned int)
+81660,BINDING,do_slabs_newslab,do_slabs_newslab,int do_slabs_newslab (unsigned int)
+81665,BINDING,memory_allocate,memory_allocate,void* memory_allocate (size_t)
+81672,BINDING,do_slabs_free,do_slabs_free,"void do_slabs_free (void*,size_t,unsigned int)"
+81677,BINDING,slabs_preallocate,slabs_preallocate,void slabs_preallocate (unsigned int)
+81719,BINDING,slabs_clsid,slabs_clsid,unsigned int slabs_clsid (size_t)
+81730,BINDING,slabs_size,slabs_size,unsigned int slabs_size (int)
+81745,BINDING,alloc_large_chunk,alloc_large_chunk,void* alloc_large_chunk (size_t)
+81869,BINDING,slabs_fixup,slabs_fixup,"unsigned int slabs_fixup (char*,int)"
+82165,BINDING,slabs_init,slabs_init,"void slabs_init (size_t,double,bool,uint32_t*,void*,bool)"
+82216,BINDING,slabs_prefill_global,slabs_prefill_global,void slabs_prefill_global (void)
+82262,BINDING,slabs_preallocate,slabs_preallocate,void slabs_preallocate (unsigned int)
+82328,BINDING,grow_slab_list,grow_slab_list,int grow_slab_list (unsigned int)
+82364,BINDING,split_slab_page_into_freelist,split_slab_page_into_freelist,"void split_slab_page_into_freelist (char*,unsigned int)"
+82405,BINDING,get_page_from_global_pool,get_page_from_global_pool,void* get_page_from_global_pool (void)
+82522,BINDING,do_slabs_newslab,do_slabs_newslab,int do_slabs_newslab (unsigned int)
+82663,BINDING,do_slabs_alloc,do_slabs_alloc,"void* do_slabs_alloc (size_t,unsigned int,unsigned int)"
+82859,BINDING,do_slabs_free_chunked,do_slabs_free_chunked,"void do_slabs_free_chunked (item*,size_t)"
+82963,BINDING,do_slabs_free,do_slabs_free,"void do_slabs_free (void*,size_t,unsigned int)"
+83032,BINDING,fill_slab_stats_automove,fill_slab_stats_automove,void fill_slab_stats_automove (slab_stats_automove*)
+83072,BINDING,global_page_pool_size,global_page_pool_size,unsigned int global_page_pool_size (bool*)
+83618,BINDING,do_slabs_stats,do_slabs_stats,"void do_slabs_stats (ADD_STAT,void*)"
+83688,BINDING,memory_allocate,memory_allocate,void* memory_allocate (size_t)
+83727,BINDING,memory_release,memory_release,void memory_release ()
+83749,BINDING,slabs_alloc,slabs_alloc,"void* slabs_alloc (size_t,unsigned int,unsigned int)"
+83766,BINDING,slabs_free,slabs_free,"void slabs_free (void*,size_t,unsigned int)"
+83781,BINDING,slabs_stats,slabs_stats,"void slabs_stats (ADD_STAT,void*)"
+83807,BINDING,do_slabs_adjust_mem_limit,do_slabs_adjust_mem_limit,bool do_slabs_adjust_mem_limit (size_t)
+83825,BINDING,slabs_adjust_mem_limit,slabs_adjust_mem_limit,bool slabs_adjust_mem_limit (size_t)
+83878,BINDING,slabs_available_chunks,slabs_available_chunks,"unsigned int slabs_available_chunks (unsigned int,bool*,unsigned int*)"
+83886,BINDING,slabs_mlock,slabs_mlock,void slabs_mlock (void)
+83894,BINDING,slabs_munlock,slabs_munlock,void slabs_munlock (void)
+84085,BINDING,slab_rebalance_start,slab_rebalance_start,int slab_rebalance_start (void)
+84177,BINDING,slab_rebalance_alloc,slab_rebalance_alloc,"void* slab_rebalance_alloc (size_t,unsigned int)"
+84237,BINDING,slab_rebalance_cut_free,slab_rebalance_cut_free,"void slab_rebalance_cut_free (slabclass_t*,item*)"
+85116,BINDING,slab_rebalance_move,slab_rebalance_move,int slab_rebalance_move (void)
+85379,BINDING,slab_rebalance_finish,slab_rebalance_finish,void slab_rebalance_finish (void)
+85483,BINDING,slab_rebalance_thread,slab_rebalance_thread,void* slab_rebalance_thread (void*)
+85546,BINDING,slabs_reassign_pick_any,slabs_reassign_pick_any,int slabs_reassign_pick_any (int)
+85644,BINDING,do_slabs_reassign,do_slabs_reassign,"enum reassign_result_type do_slabs_reassign (int,int)"
+85670,BINDING,slabs_reassign,slabs_reassign,"enum reassign_result_type slabs_reassign (int,int)"
+85678,BINDING,slabs_rebalancer_pause,slabs_rebalancer_pause,void slabs_rebalancer_pause (void)
+85686,BINDING,slabs_rebalancer_resume,slabs_rebalancer_resume,void slabs_rebalancer_resume (void)
+85723,BINDING,start_slab_maintenance_thread,start_slab_maintenance_thread,int start_slab_maintenance_thread (void)
+85747,BINDING,stop_slab_maintenance_thread,stop_slab_maintenance_thread,void stop_slab_maintenance_thread (void)
+85762,BINDING,slabs_init,slabs_init,"void slabs_init (size_t,double,bool,uint32_t*,void*,bool)"
+85767,BINDING,slabs_prefill_global,slabs_prefill_global,void slabs_prefill_global (void)
+85772,BINDING,slabs_clsid,slabs_clsid,unsigned int slabs_clsid (size_t)
+85777,BINDING,slabs_size,slabs_size,unsigned int slabs_size (int)
+85784,BINDING,slabs_alloc,slabs_alloc,"void* slabs_alloc (size_t,unsigned int,unsigned int)"
+85791,BINDING,slabs_free,slabs_free,"void slabs_free (void*,size_t,unsigned int)"
+85796,BINDING,slabs_adjust_mem_limit,slabs_adjust_mem_limit,bool slabs_adjust_mem_limit (size_t)
+85807,BINDING,fill_slab_stats_automove,fill_slab_stats_automove,void fill_slab_stats_automove (slab_stats_automove*)
+85812,BINDING,global_page_pool_size,global_page_pool_size,unsigned int global_page_pool_size (bool*)
+85818,BINDING,slabs_stats,slabs_stats,"void slabs_stats (ADD_STAT,void*)"
+85825,BINDING,slabs_available_chunks,slabs_available_chunks,"unsigned int slabs_available_chunks (unsigned int,bool*,unsigned int*)"
+85830,BINDING,slabs_mlock,slabs_mlock,void slabs_mlock (void)
+85835,BINDING,slabs_munlock,slabs_munlock,void slabs_munlock (void)
+85840,BINDING,start_slab_maintenance_thread,start_slab_maintenance_thread,int start_slab_maintenance_thread (void)
+85845,BINDING,stop_slab_maintenance_thread,stop_slab_maintenance_thread,void stop_slab_maintenance_thread (void)
+85865,BINDING,slabs_rebalancer_pause,slabs_rebalancer_pause,void slabs_rebalancer_pause (void)
+85870,BINDING,slabs_rebalancer_resume,slabs_rebalancer_resume,void slabs_rebalancer_resume (void)
+85876,BINDING,slabs_fixup,slabs_fixup,"unsigned int slabs_fixup (char*,int)"
+85933,BINDING,stats_prefix_init,stats_prefix_init,void stats_prefix_init (char)
+85990,BINDING,stats_prefix_clear,stats_prefix_clear,void stats_prefix_clear (void)
+86150,BINDING,stats_prefix_find,stats_prefix_find,"PREFIX_STATS stats_prefix_find (char*,size_t)"
+86181,BINDING,stats_prefix_record_get,stats_prefix_record_get,"void stats_prefix_record_get (char*,size_t,bool)"
+86204,BINDING,stats_prefix_record_delete,stats_prefix_record_delete,"void stats_prefix_record_delete (char*,size_t)"
+86227,BINDING,stats_prefix_record_set,stats_prefix_record_set,"void stats_prefix_record_set (char*,size_t)"
+86371,BINDING,stats_prefix_dump,stats_prefix_dump,char* stats_prefix_dump (int*)
+86381,BINDING,stats_prefix_init,stats_prefix_init,void stats_prefix_init (char)
+86386,BINDING,stats_prefix_clear,stats_prefix_clear,void stats_prefix_clear (void)
+86393,BINDING,stats_prefix_record_get,stats_prefix_record_get,"void stats_prefix_record_get (char*,size_t,bool)"
+86399,BINDING,stats_prefix_record_delete,stats_prefix_record_delete,"void stats_prefix_record_delete (char*,size_t)"
+86405,BINDING,stats_prefix_record_set,stats_prefix_record_set,"void stats_prefix_record_set (char*,size_t)"
+86410,BINDING,stats_prefix_dump,stats_prefix_dump,char* stats_prefix_dump (int*)
+86426,BINDING,stats_prefix_find,stats_prefix_find,"PREFIX_STATS* stats_prefix_find (char*,size_t)"
+86460,BINDING,storage_delete,storage_delete,"void storage_delete (void*,item*)"
+86466,BINDING,storage_stats,storage_stats,"void storage_stats (ADD_STAT,conn*)"
+86472,BINDING,process_extstore_stats,process_extstore_stats,"void process_extstore_stats (ADD_STAT,conn*)"
+86478,BINDING,storage_validate_item,storage_validate_item,"bool storage_validate_item (void*,item*)"
+86485,BINDING,storage_get_item,storage_get_item,"int storage_get_item (conn*,item*,mc_resp*)"
+86490,BINDING,storage_submit_cb,storage_submit_cb,void storage_submit_cb (io_queue_t*)
+86495,BINDING,storage_complete_cb,storage_complete_cb,void storage_complete_cb (io_queue_t*)
+86500,BINDING,storage_finalize_cb,storage_finalize_cb,void storage_finalize_cb (io_pending_t*)
+86505,BINDING,start_storage_write_thread,start_storage_write_thread,int start_storage_write_thread (void*)
+86510,BINDING,storage_write_pause,storage_write_pause,void storage_write_pause (void)
+86515,BINDING,storage_write_resume,storage_write_resume,void storage_write_resume (void)
+86520,BINDING,start_storage_compact_thread,start_storage_compact_thread,int start_storage_compact_thread (void*)
+86525,BINDING,storage_compact_pause,storage_compact_pause,void storage_compact_pause (void)
+86530,BINDING,storage_compact_resume,storage_compact_resume,void storage_compact_resume (void)
+86537,BINDING,storage_init_config,storage_init_config,void* storage_init_config (settings*)
+86543,BINDING,storage_read_config,storage_read_config,"int storage_read_config (void*,char**)"
+86548,BINDING,storage_check_config,storage_check_config,int storage_check_config (void*)
+86553,BINDING,storage_init,storage_init,void* storage_init (void*)
+86625,BINDING,conn.read,read,"ssize_t conn.read (conn*,void*,size_t)"
+86632,BINDING,conn.write,write,"ssize_t conn.write (conn*,void*,size_t)"
+86640,BINDING,tcp_read,tcp_read,"ssize_t tcp_read (conn*,void*,size_t)"
+86647,BINDING,tcp_write,tcp_write,"ssize_t tcp_write (conn*,void*,size_t)"
+86665,BINDING,tcp_read,tcp_read,"ssize_t tcp_read (conn*,void*,size_t)"
+86683,BINDING,tcp_write,tcp_write,"ssize_t tcp_write (conn*,void*,size_t)"
+86724,BINDING,close_conn,close_conn,void close_conn ()
+86746,BINDING,cache_create_test,cache_create_test,enum test_return cache_create_test (void)
+86803,BINDING,cache_reuse_test,cache_reuse_test,enum test_return cache_reuse_test (void)
+86879,BINDING,cache_bulkalloc,cache_bulkalloc,enum test_return cache_bulkalloc (size_t)
+86900,BINDING,test_issue_161,test_issue_161,enum test_return test_issue_161 (void)
+86999,BINDING,cache_redzone_test,cache_redzone_test,enum test_return cache_redzone_test (void)
+87086,BINDING,cache_limit_revised_downward_test,cache_limit_revised_downward_test,enum test_return cache_limit_revised_downward_test (void)
+87177,BINDING,test_stats_prefix_find,test_stats_prefix_find,enum test_return test_stats_prefix_find (void)
+87262,BINDING,test_stats_prefix_record_get,test_stats_prefix_record_get,enum test_return test_stats_prefix_record_get (void)
+87319,BINDING,test_stats_prefix_record_delete,test_stats_prefix_record_delete,enum test_return test_stats_prefix_record_delete (void)
+87376,BINDING,test_stats_prefix_record_set,test_stats_prefix_record_set,enum test_return test_stats_prefix_record_set (void)
+87624,BINDING,test_stats_prefix_dump,test_stats_prefix_dump,enum test_return test_stats_prefix_dump (void)
+87683,BINDING,test_safe_strtoul,test_safe_strtoul,enum test_return test_safe_strtoul (void)
+87754,BINDING,test_safe_strtoull,test_safe_strtoull,enum test_return test_safe_strtoull (void)
+87844,BINDING,test_safe_strtoll,test_safe_strtoll,enum test_return test_safe_strtoll (void)
+87922,BINDING,test_safe_strtol,test_safe_strtol,enum test_return test_safe_strtol (void)
+88266,BINDING,start_server,start_server,"pid_t start_server (in_port_t*,bool,int)"
+88296,BINDING,test_issue_44,test_issue_44,enum test_return test_issue_44 (void)
+88360,BINDING,lookuphost,lookuphost,"struct addrinfo lookuphost (char*,in_port_t)"
+88508,BINDING,connect_server,connect_server,"struct conn connect_server (char*,in_port_t,bool,bool)"
+88627,BINDING,test_vperror,test_vperror,enum test_return test_vperror (void)
+88688,BINDING,send_ascii_command,send_ascii_command,void send_ascii_command (char*)
+88766,BINDING,read_ascii_response,read_ascii_response,"void read_ascii_response (char*,size_t)"
+88822,BINDING,test_issue_92,test_issue_92,enum test_return test_issue_92 (void)
+88916,BINDING,test_crc32c,test_crc32c,enum test_return test_crc32c (void)
+89095,BINDING,test_issue_102,test_issue_102,enum test_return test_issue_102 (void)
+89119,BINDING,start_memcached_server,start_memcached_server,enum test_return start_memcached_server (void)
+89139,BINDING,stop_memcached_server,stop_memcached_server,enum test_return stop_memcached_server (void)
+89182,BINDING,shutdown_memcached_server,shutdown_memcached_server,enum test_return shutdown_memcached_server (void)
+89262,BINDING,safe_send,safe_send,"void safe_send (void*,size_t,bool)"
+89337,BINDING,safe_recv,safe_recv,"bool safe_recv (void*,size_t)"
+89454,BINDING,safe_recv_packet,safe_recv_packet,"bool safe_recv_packet (void*,size_t)"
+89611,BINDING,storage_command,storage_command,"off_t storage_command (char*,size_t,uint8_t,void*,size_t,void*,size_t,uint32_t,uint32_t)"
+89780,BINDING,ext_command,ext_command,"off_t ext_command (char*,size_t,uint8_t,void*,size_t,void*,size_t,void*,size_t)"
+89802,BINDING,raw_command,raw_command,"off_t raw_command (char*,size_t,uint8_t,void*,size_t,void*,size_t)"
+89908,BINDING,flush_command,flush_command,"off_t flush_command (char*,size_t,uint8_t,uint32_t,bool)"
+90036,BINDING,touch_command,touch_command,"off_t touch_command (char*,size_t,uint8_t,void*,size_t,uint32_t)"
+90185,BINDING,arithmetic_command,arithmetic_command,"off_t arithmetic_command (char*,size_t,uint8_t,void*,size_t,uint64_t,uint64_t,uint32_t)"
+90675,BINDING,validate_response_header,validate_response_header,"void validate_response_header (protocol_binary_response_no_extras*,uint8_t,uint16_t)"
+90720,BINDING,test_binary_noop,test_binary_noop,enum test_return test_binary_noop (void)
+90795,BINDING,test_binary_quit_impl,test_binary_quit_impl,enum test_return test_binary_quit_impl (uint8_t)
+90803,BINDING,test_binary_quit,test_binary_quit,enum test_return test_binary_quit (void)
+90811,BINDING,test_binary_quitq,test_binary_quitq,enum test_return test_binary_quitq (void)
+90968,BINDING,test_binary_set_impl,test_binary_set_impl,"enum test_return test_binary_set_impl (char*,uint8_t)"
+90977,BINDING,test_binary_set,test_binary_set,enum test_return test_binary_set (void)
+90986,BINDING,test_binary_setq,test_binary_setq,enum test_return test_binary_setq (void)
+91081,BINDING,test_binary_add_impl,test_binary_add_impl,"enum test_return test_binary_add_impl (char*,uint8_t)"
+91090,BINDING,test_binary_add,test_binary_add,enum test_return test_binary_add (void)
+91099,BINDING,test_binary_addq,test_binary_addq,enum test_return test_binary_addq (void)
+91260,BINDING,test_binary_replace_impl,test_binary_replace_impl,"enum test_return test_binary_replace_impl (char*,uint8_t)"
+91269,BINDING,test_binary_replace,test_binary_replace,enum test_return test_binary_replace (void)
+91278,BINDING,test_binary_replaceq,test_binary_replaceq,enum test_return test_binary_replaceq (void)
+91428,BINDING,test_binary_delete_impl,test_binary_delete_impl,"enum test_return test_binary_delete_impl (char*,uint8_t)"
+91437,BINDING,test_binary_delete,test_binary_delete,enum test_return test_binary_delete (void)
+91446,BINDING,test_binary_deleteq,test_binary_deleteq,enum test_return test_binary_deleteq (void)
+91645,BINDING,test_binary_get_impl,test_binary_get_impl,"enum test_return test_binary_get_impl (char*,uint8_t)"
+91654,BINDING,test_binary_get,test_binary_get,enum test_return test_binary_get (void)
+91663,BINDING,test_binary_getk,test_binary_getk,enum test_return test_binary_getk (void)
+91672,BINDING,test_binary_gat,test_binary_gat,enum test_return test_binary_gat (void)
+91681,BINDING,test_binary_gatk,test_binary_gatk,enum test_return test_binary_gatk (void)
+91857,BINDING,test_binary_getq_impl,test_binary_getq_impl,"enum test_return test_binary_getq_impl (char*,uint8_t)"
+91866,BINDING,test_binary_getq,test_binary_getq,enum test_return test_binary_getq (void)
+91875,BINDING,test_binary_getkq,test_binary_getkq,enum test_return test_binary_getkq (void)
+91884,BINDING,test_binary_gatq,test_binary_gatq,enum test_return test_binary_gatq (void)
+91893,BINDING,test_binary_gatkq,test_binary_gatkq,enum test_return test_binary_gatkq (void)
+91978,BINDING,test_binary_incr_impl,test_binary_incr_impl,"enum test_return test_binary_incr_impl (char*,uint8_t)"
+91987,BINDING,test_binary_incr,test_binary_incr,enum test_return test_binary_incr (void)
+91996,BINDING,test_binary_incrq,test_binary_incrq,enum test_return test_binary_incrq (void)
+92117,BINDING,test_binary_decr_impl,test_binary_decr_impl,"enum test_return test_binary_decr_impl (char*,uint8_t)"
+92126,BINDING,test_binary_decr,test_binary_decr,enum test_return test_binary_decr (void)
+92135,BINDING,test_binary_decrq,test_binary_decrq,enum test_return test_binary_decrq (void)
+92180,BINDING,test_binary_version,test_binary_version,enum test_return test_binary_version (void)
+92458,BINDING,test_binary_flush_impl,test_binary_flush_impl,"enum test_return test_binary_flush_impl (char*,uint8_t)"
+92467,BINDING,test_binary_flush,test_binary_flush,enum test_return test_binary_flush (void)
+92476,BINDING,test_binary_flushq,test_binary_flushq,enum test_return test_binary_flushq (void)
+92775,BINDING,test_binary_concat_impl,test_binary_concat_impl,"enum test_return test_binary_concat_impl (char*,uint8_t)"
+92784,BINDING,test_binary_append,test_binary_append,enum test_return test_binary_append (void)
+92793,BINDING,test_binary_prepend,test_binary_prepend,enum test_return test_binary_prepend (void)
+92802,BINDING,test_binary_appendq,test_binary_appendq,enum test_return test_binary_appendq (void)
+92811,BINDING,test_binary_prependq,test_binary_prependq,enum test_return test_binary_prependq (void)
+92871,BINDING,test_binary_stat,test_binary_stat,enum test_return test_binary_stat (void)
+92927,BINDING,test_binary_illegal,test_binary_illegal,enum test_return test_binary_illegal (void)
+92982,BINDING,binary_hickup_recv_verification_thread,binary_hickup_recv_verification_thread,void* binary_hickup_recv_verification_thread (void*)
+93315,BINDING,test_binary_pipeline_hickup_chunk,test_binary_pipeline_hickup_chunk,"enum test_return test_binary_pipeline_hickup_chunk (void*,size_t)"
+93404,BINDING,test_binary_pipeline_hickup,test_binary_pipeline_hickup,enum test_return test_binary_pipeline_hickup (void)
+93653,BINDING,test_issue_101,test_issue_101,enum test_return test_issue_101 (void)
+93839,BINDING,STATS_LOCK,STATS_LOCK,void STATS_LOCK (void)
+93844,BINDING,STATS_UNLOCK,STATS_UNLOCK,void STATS_UNLOCK (void)
+93849,BINDING,STATS_LOCK,STATS_LOCK,void STATS_LOCK (void)
+93854,BINDING,STATS_UNLOCK,STATS_UNLOCK,void STATS_UNLOCK (void)
+93976,BINDING,main,main,"int main (int,char**)"
+94081,BINDING,notify_worker,notify_worker,"void notify_worker (LIBEVENT_THREAD*,CQ_ITEM*)"
+94088,BINDING,notify_worker_fd,notify_worker_fd,"void notify_worker_fd (LIBEVENT_THREAD*,int,conn_queue_item_modes)"
+94093,BINDING,cqi_new,cqi_new,CQ_ITEM* cqi_new (CQ*)
+94099,BINDING,cq_push,cq_push,"void cq_push (CQ*,CQ_ITEM*)"
+94106,BINDING,thread_libevent_process,thread_libevent_process,"void thread_libevent_process (evutil_socket_t,short,void*)"
+94126,BINDING,item_lock,item_lock,void item_lock (uint32_t)
+94159,BINDING,item_trylock,item_trylock,void* item_trylock (uint32_t)
+94170,BINDING,item_trylock_unlock,item_trylock_unlock,void item_trylock_unlock (void*)
+94190,BINDING,item_unlock,item_unlock,void item_unlock (uint32_t)
+94205,BINDING,wait_for_thread_registration,wait_for_thread_registration,void wait_for_thread_registration (int)
+94227,BINDING,register_thread_initialized,register_thread_initialized,void register_thread_initialized (void)
+94313,BINDING,pause_threads,pause_threads,void pause_threads (pause_thread_types)
+94508,BINDING,stop_threads,stop_threads,void stop_threads (void)
+94572,BINDING,cq_init,cq_init,void cq_init (CQ*)
+94653,BINDING,cq_pop,cq_pop,CQ_ITEM cq_pop (CQ*)
+94708,BINDING,cq_push,cq_push,"void cq_push (CQ*,CQ_ITEM*)"
+94733,BINDING,cqi_new,cqi_new,CQ_ITEM cqi_new (CQ*)
+94744,BINDING,cqi_free,cqi_free,"void cqi_free (CQ*,CQ_ITEM*)"
+94771,BINDING,notify_worker,notify_worker,"void notify_worker (LIBEVENT_THREAD*,CQ_ITEM*)"
+94802,BINDING,notify_worker_fd,notify_worker_fd,"void notify_worker_fd (LIBEVENT_THREAD*,int,conn_queue_item_modes)"
+94837,BINDING,create_worker,create_worker,"void create_worker (void*,void*)"
+94850,BINDING,accept_new_conns,accept_new_conns,void accept_new_conns (bool)
+95040,BINDING,setup_thread,setup_thread,void setup_thread (LIBEVENT_THREAD*)
+95091,BINDING,worker_libevent,worker_libevent,void* worker_libevent (void*)
+95287,BINDING,thread_libevent_process,thread_libevent_process,"void thread_libevent_process (evutil_socket_t,short,void*)"
+95297,BINDING,get_worker_thread,get_worker_thread,LIBEVENT_THREAD get_worker_thread (int)
+95329,BINDING,select_thread_round_robin,select_thread_round_robin,LIBEVENT_THREAD select_thread_round_robin (void)
+95363,BINDING,reset_threads_napi_id,reset_threads_napi_id,void reset_threads_napi_id (void)
+95477,BINDING,select_thread_by_napi_id,select_thread_by_napi_id,LIBEVENT_THREAD select_thread_by_napi_id (int)
+95574,BINDING,dispatch_conn_new,dispatch_conn_new,"void dispatch_conn_new (int,conn_states,int,int,network_transport,void*,uint64_t,protocol)"
+95587,BINDING,redispatch_conn,redispatch_conn,void redispatch_conn (conn*)
+95600,BINDING,timeout_conn,timeout_conn,void timeout_conn (conn*)
+95635,BINDING,return_io_pending,return_io_pending,void return_io_pending (io_pending_t*)
+95661,BINDING,sidethread_conn_close,sidethread_conn_close,void sidethread_conn_close (conn*)
+95681,BINDING,item_alloc,item_alloc,"item item_alloc (char*,size_t,int,rel_time_t,int)"
+95710,BINDING,item_get,item_get,"item item_get (char*,size_t,conn*,bool)"
+95740,BINDING,item_get_locked,item_get_locked,"item item_get_locked (char*,size_t,conn*,bool,uint32_t*)"
+95769,BINDING,item_touch,item_touch,"item item_touch (char*,size_t,uint32_t,conn*)"
+95812,BINDING,item_link,item_link,int item_link (item*)
+95849,BINDING,item_remove,item_remove,void item_remove (item*)
+95861,BINDING,item_replace,item_replace,"int item_replace (item*,item*,uint32_t)"
+95899,BINDING,item_unlink,item_unlink,void item_unlink (item*)
+95935,BINDING,add_delta,add_delta,"enum delta_result_type add_delta (conn*,char*,size_t,bool,int64_t,char*,uint64_t*)"
+95982,BINDING,store_item,store_item,"enum store_item_type store_item (item*,int,conn*)"
+95989,BINDING,STATS_LOCK,STATS_LOCK,void STATS_LOCK ()
+95996,BINDING,STATS_UNLOCK,STATS_UNLOCK,void STATS_UNLOCK ()
+96285,BINDING,threadlocal_stats_reset,threadlocal_stats_reset,void threadlocal_stats_reset (void)
+96858,BINDING,threadlocal_stats_aggregate,threadlocal_stats_aggregate,void threadlocal_stats_aggregate (thread_stats*)
+96976,BINDING,slab_stats_aggregate,slab_stats_aggregate,"void slab_stats_aggregate (thread_stats*,slab_stats*)"
+97217,BINDING,memcached_thread_init,memcached_thread_init,"void memcached_thread_init (int,void*)"
+97250,BINDING,signal_handler,signal_handler,void signal_handler (int)
+97399,BINDING,wait_for_process,wait_for_process,int wait_for_process (pid_t)
+97444,BINDING,spawn_and_wait,spawn_and_wait,int spawn_and_wait (char**)
+97455,BINDING,usage,usage,void usage (void)
+97492,BINDING,main,main,"int main (int,char**)"
+97519,BINDING,SSL_LOCK,SSL_LOCK,void SSL_LOCK (void)
+97524,BINDING,SSL_UNLOCK,SSL_UNLOCK,void SSL_UNLOCK (void)
+97531,BINDING,ssl_read,ssl_read,"ssize_t ssl_read (conn*,void*,size_t)"
+97538,BINDING,ssl_sendmsg,ssl_sendmsg,"ssize_t ssl_sendmsg (conn*,msghdr*,int)"
+97545,BINDING,ssl_write,ssl_write,"ssize_t ssl_write (conn*,void*,size_t)"
+97550,BINDING,ssl_init,ssl_init,int ssl_init (void)
+97555,BINDING,refresh_certs,refresh_certs,bool refresh_certs (char**)
+97562,BINDING,ssl_callback,ssl_callback,"void ssl_callback (SSL*,int,int)"
+97568,BINDING,ssl_new_session_callback,ssl_new_session_callback,"int ssl_new_session_callback (SSL*,SSL_SESSION*)"
+97573,BINDING,ssl_proto_text,ssl_proto_text,char* ssl_proto_text (int)
+97670,BINDING,uriencode_init,uriencode_init,void uriencode_init (void)
+97748,BINDING,uriencode,uriencode,"bool uriencode (char*,char*,size_t,size_t)"
+97829,BINDING,safe_strtoull,safe_strtoull,"bool safe_strtoull (char*,uint64_t*)"
+97910,BINDING,safe_strtoull_hex,safe_strtoull_hex,"bool safe_strtoull_hex (char*,uint64_t*)"
+97975,BINDING,safe_strtoll,safe_strtoll,"bool safe_strtoll (char*,int64_t*)"
+98062,BINDING,safe_strtoul,safe_strtoul,"bool safe_strtoul (char*,uint32_t*)"
+98127,BINDING,safe_strtol,safe_strtol,"bool safe_strtol (char*,int32_t*)"
+98191,BINDING,safe_strtod,safe_strtod,"bool safe_strtod (char*,double*)"
+98243,BINDING,safe_strcpy,safe_strcpy,"bool safe_strcpy (char*,char*,size_t)"
+98298,BINDING,safe_memcmp,safe_memcmp,"bool safe_memcmp (void*,void*,size_t)"
+98338,BINDING,vperror,vperror,void vperror (char*...)
+98345,BINDING,mc_swap64,mc_swap64,uint64_t mc_swap64 (uint64_t)
+98353,BINDING,ntohll,ntohll,uint64_t ntohll (uint64_t)
+98361,BINDING,htonll,htonll,uint64_t htonll (uint64_t)
+98373,BINDING,uriencode_init,uriencode_init,void uriencode_init (void)
+98381,BINDING,uriencode,uriencode,"bool uriencode (char*,char*,size_t,size_t)"
+98387,BINDING,safe_strtoull,safe_strtoull,"bool safe_strtoull (char*,uint64_t*)"
+98393,BINDING,safe_strtoull_hex,safe_strtoull_hex,"bool safe_strtoull_hex (char*,uint64_t*)"
+98399,BINDING,safe_strtoll,safe_strtoll,"bool safe_strtoll (char*,int64_t*)"
+98405,BINDING,safe_strtoul,safe_strtoul,"bool safe_strtoul (char*,uint32_t*)"
+98411,BINDING,safe_strtol,safe_strtol,"bool safe_strtol (char*,int32_t*)"
+98417,BINDING,safe_strtod,safe_strtod,"bool safe_strtod (char*,double*)"
+98424,BINDING,safe_strcpy,safe_strcpy,"bool safe_strcpy (char*,char*,size_t)"
+98431,BINDING,safe_memcmp,safe_memcmp,"bool safe_memcmp (void*,void*,size_t)"
+98436,BINDING,htonll,htonll,uint64_t htonll (ANY)
+98441,BINDING,ntohll,ntohll,uint64_t ntohll (ANY)
+98446,BINDING,vperror,vperror,void vperror (char*...)
+98587,BINDING,show_response_buffer,show_response_buffer,"void show_response_buffer (void*,char*,size_t)"
+98675,BINDING,buffer_mode,buffer_mode,void buffer_mode (void)
+98700,BINDING,main,main,"int main (int,char[]*)"
+98969,BINDING,_mcmc_parse_value_line,_mcmc_parse_value_line,"int _mcmc_parse_value_line (mcmc_ctx_t*,mcmc_resp_t*)"
+99597,BINDING,_mcmc_parse_response,_mcmc_parse_response,"int _mcmc_parse_response (mcmc_ctx_t*,mcmc_resp_t*)"
+99612,BINDING,mcmc_fd,mcmc_fd,int mcmc_fd (void*)
+99620,BINDING,mcmc_size,mcmc_size,size_t mcmc_size (int)
+99629,BINDING,mcmc_min_buffer_size,mcmc_min_buffer_size,size_t mcmc_min_buffer_size (int)
+99693,BINDING,mcmc_parse_buf,mcmc_parse_buf,"int mcmc_parse_buf (void*,char*,size_t,mcmc_resp_t*)"
+99745,BINDING,mcmc_check_nonblock_connect,mcmc_check_nonblock_connect,"int mcmc_check_nonblock_connect (void*,int*)"
+100017,BINDING,mcmc_connect,mcmc_connect,"int mcmc_connect (void*,char*,char*,int)"
+100108,BINDING,mcmc_send_request,mcmc_send_request,"int mcmc_send_request (void*,char*,int,int)"
+100196,BINDING,mcmc_request_writev,mcmc_request_writev,"int mcmc_request_writev (void*,iovec*,int,ssize_t*,int)"
+100215,BINDING,mcmc_get_error,mcmc_get_error,"void mcmc_get_error (void*,char*,size_t,char*,size_t)"
+100247,BINDING,mcmc_disconnect,mcmc_disconnect,int mcmc_disconnect (void*)
+100277,BINDING,mcmc_fd,mcmc_fd,int mcmc_fd (void*)
+100282,BINDING,mcmc_size,mcmc_size,size_t mcmc_size (int)
+100287,BINDING,mcmc_min_buffer_size,mcmc_min_buffer_size,size_t mcmc_min_buffer_size (int)
+100295,BINDING,mcmc_parse_buf,mcmc_parse_buf,"int mcmc_parse_buf (void*,char*,size_t,mcmc_resp_t*)"
+100303,BINDING,mcmc_connect,mcmc_connect,"int mcmc_connect (void*,char*,char*,int)"
+100309,BINDING,mcmc_check_nonblock_connect,mcmc_check_nonblock_connect,"int mcmc_check_nonblock_connect (void*,int*)"
+100317,BINDING,mcmc_send_request,mcmc_send_request,"int mcmc_send_request (void*,char*,int,int)"
+100326,BINDING,mcmc_request_writev,mcmc_request_writev,"int mcmc_request_writev (void*,iovec*,int,ssize_t*,int)"
+100331,BINDING,mcmc_disconnect,mcmc_disconnect,int mcmc_disconnect (void*)
+100340,BINDING,mcmc_get_error,mcmc_get_error,"void mcmc_get_error (void*,char*,size_t,char*,size_t)"
+100390,BINDING,XXH_versionNumber,XXH_versionNumber,unsigned XXH_versionNumber (void)
+100409,BINDING,XXH32,XXH32,"XXH32_hash_t XXH32 (void*,size_t,XXH32_hash_t)"
+100416,BINDING,XXH32_createState,XXH32_createState,XXH32_state_t* XXH32_createState (void)
+100421,BINDING,XXH32_freeState,XXH32_freeState,XXH_errorcode XXH32_freeState (XXH32_state_t*)
+100427,BINDING,XXH32_copyState,XXH32_copyState,"void XXH32_copyState (XXH32_state_t*,XXH32_state_t*)"
+100433,BINDING,XXH32_reset,XXH32_reset,"XXH_errorcode XXH32_reset (XXH32_state_t*,XXH32_hash_t)"
+100440,BINDING,XXH32_update,XXH32_update,"XXH_errorcode XXH32_update (XXH32_state_t*,void*,size_t)"
+100445,BINDING,XXH32_digest,XXH32_digest,XXH32_hash_t XXH32_digest (XXH32_state_t*)
+100460,BINDING,XXH32_canonicalFromHash,XXH32_canonicalFromHash,"void XXH32_canonicalFromHash (XXH32_canonical_t*,XXH32_hash_t)"
+100465,BINDING,XXH32_hashFromCanonical,XXH32_hashFromCanonical,XXH32_hash_t XXH32_hashFromCanonical (XXH32_canonical_t*)
+100473,BINDING,XXH64,XXH64,"XXH64_hash_t XXH64 (void*,size_t,XXH64_hash_t)"
+100480,BINDING,XXH64_createState,XXH64_createState,XXH64_state_t* XXH64_createState (void)
+100485,BINDING,XXH64_freeState,XXH64_freeState,XXH_errorcode XXH64_freeState (XXH64_state_t*)
+100491,BINDING,XXH64_copyState,XXH64_copyState,"void XXH64_copyState (XXH64_state_t*,XXH64_state_t*)"
+100497,BINDING,XXH64_reset,XXH64_reset,"XXH_errorcode XXH64_reset (XXH64_state_t*,XXH64_hash_t)"
+100504,BINDING,XXH64_update,XXH64_update,"XXH_errorcode XXH64_update (XXH64_state_t*,void*,size_t)"
+100509,BINDING,XXH64_digest,XXH64_digest,XXH64_hash_t XXH64_digest (XXH64_state_t*)
+100525,BINDING,XXH64_canonicalFromHash,XXH64_canonicalFromHash,"void XXH64_canonicalFromHash (XXH64_canonical_t*,XXH64_hash_t)"
+100530,BINDING,XXH64_hashFromCanonical,XXH64_hashFromCanonical,XXH64_hash_t XXH64_hashFromCanonical (XXH64_canonical_t*)
+100536,BINDING,XXH3_64bits,XXH3_64bits,"XXH64_hash_t XXH3_64bits (void*,size_t)"
+100543,BINDING,XXH3_64bits_withSeed,XXH3_64bits_withSeed,"XXH64_hash_t XXH3_64bits_withSeed (void*,size_t,XXH64_hash_t)"
+100551,BINDING,XXH3_64bits_withSecret,XXH3_64bits_withSecret,"XXH64_hash_t XXH3_64bits_withSecret (void*,size_t,void*,size_t)"
+100558,BINDING,XXH3_createState,XXH3_createState,XXH3_state_t* XXH3_createState (void)
+100563,BINDING,XXH3_freeState,XXH3_freeState,XXH_errorcode XXH3_freeState (XXH3_state_t*)
+100569,BINDING,XXH3_copyState,XXH3_copyState,"void XXH3_copyState (XXH3_state_t*,XXH3_state_t*)"
+100574,BINDING,XXH3_64bits_reset,XXH3_64bits_reset,XXH_errorcode XXH3_64bits_reset (XXH3_state_t*)
+100580,BINDING,XXH3_64bits_reset_withSeed,XXH3_64bits_reset_withSeed,"XXH_errorcode XXH3_64bits_reset_withSeed (XXH3_state_t*,XXH64_hash_t)"
+100587,BINDING,XXH3_64bits_reset_withSecret,XXH3_64bits_reset_withSecret,"XXH_errorcode XXH3_64bits_reset_withSecret (XXH3_state_t*,void*,size_t)"
+100594,BINDING,XXH3_64bits_update,XXH3_64bits_update,"XXH_errorcode XXH3_64bits_update (XXH3_state_t*,void*,size_t)"
+100599,BINDING,XXH3_64bits_digest,XXH3_64bits_digest,XXH64_hash_t XXH3_64bits_digest (XXH3_state_t*)
+100609,BINDING,XXH3_128bits,XXH3_128bits,"XXH128_hash_t XXH3_128bits (void*,size_t)"
+100616,BINDING,XXH3_128bits_withSeed,XXH3_128bits_withSeed,"XXH128_hash_t XXH3_128bits_withSeed (void*,size_t,XXH64_hash_t)"
+100624,BINDING,XXH3_128bits_withSecret,XXH3_128bits_withSecret,"XXH128_hash_t XXH3_128bits_withSecret (void*,size_t,void*,size_t)"
+100629,BINDING,XXH3_128bits_reset,XXH3_128bits_reset,XXH_errorcode XXH3_128bits_reset (XXH3_state_t*)
+100635,BINDING,XXH3_128bits_reset_withSeed,XXH3_128bits_reset_withSeed,"XXH_errorcode XXH3_128bits_reset_withSeed (XXH3_state_t*,XXH64_hash_t)"
+100642,BINDING,XXH3_128bits_reset_withSecret,XXH3_128bits_reset_withSecret,"XXH_errorcode XXH3_128bits_reset_withSecret (XXH3_state_t*,void*,size_t)"
+100649,BINDING,XXH3_128bits_update,XXH3_128bits_update,"XXH_errorcode XXH3_128bits_update (XXH3_state_t*,void*,size_t)"
+100654,BINDING,XXH3_128bits_digest,XXH3_128bits_digest,XXH128_hash_t XXH3_128bits_digest (XXH3_state_t*)
+100660,BINDING,XXH128_isEqual,XXH128_isEqual,"int XXH128_isEqual (XXH128_hash_t,XXH128_hash_t)"
+100666,BINDING,XXH128_cmp,XXH128_cmp,"int XXH128_cmp (void*,void*)"
+100682,BINDING,XXH128_canonicalFromHash,XXH128_canonicalFromHash,"void XXH128_canonicalFromHash (XXH128_canonical_t*,XXH128_hash_t)"
+100687,BINDING,XXH128_hashFromCanonical,XXH128_hashFromCanonical,XXH128_hash_t XXH128_hashFromCanonical (XXH128_canonical_t*)

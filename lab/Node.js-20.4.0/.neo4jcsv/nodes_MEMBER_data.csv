@@ -1,0 +1,714 @@
+1463,MEMBER,<empty>,<empty>,* platform = nullptr,23,,80,platform,1,,MultiIsolatePlatform*
+1464,MEMBER,<empty>,<empty>,loop,13,,81,loop,2,,uv_loop_t
+1465,MEMBER,<empty>,<empty>,allocator,41,,82,allocator,3,,ANY
+1466,MEMBER,<empty>,<empty>,snapshot_creator,34,,83,snapshot_creator,4,,ANY
+1467,MEMBER,<empty>,<empty>,* isolate = nullptr,10,,84,isolate,5,,Isolate*
+1468,MEMBER,<empty>,<empty>,isolate_data,45,,85,isolate_data,6,,"DeleteFnPtr<IsolateData,FreeIsolateData>"
+1469,MEMBER,<empty>,<empty>,env,45,,86,env,7,,"DeleteFnPtr<Environment,FreeEnvironment>"
+1470,MEMBER,<empty>,<empty>,main_context,19,,87,main_context,8,,Global<Context>
+6109,MEMBER,<empty>,<empty>,* env,14,,95,env,1,,Environment*
+6110,MEMBER,<empty>,<empty>,fun,20,,96,fun,2,,AsyncCleanupHook
+6111,MEMBER,<empty>,<empty>,* arg,7,,97,arg,3,,void*
+6112,MEMBER,<empty>,<empty>,started = false,8,,98,started,4,,bool
+6113,MEMBER,<empty>,<empty>,self,41,,101,self,5,,ANY
+6122,MEMBER,<empty>,<empty>,info,41,,109,info,1,,ANY
+7183,MEMBER,<empty>,<empty>,asyncId,10,,198,asyncId,1,,double
+7184,MEMBER,<empty>,<empty>,* env,14,,199,env,2,,Environment*
+7185,MEMBER,<empty>,<empty>,target,18,,200,target,3,,Global<Object>
+7186,MEMBER,<empty>,<empty>,propBag,18,,201,propBag,4,,Global<Object>
+71619,MEMBER,<empty>,<empty>,(DataQueue),23,,166,,16,,SET_MEMORY_INFO_NAME
+71621,MEMBER,<empty>,<empty>,(DataQueueImpl),16,,167,,18,,SET_SELF_SIZE
+71623,MEMBER,<empty>,<empty>,entries_,39,,170,entries_,20,,ANY
+71624,MEMBER,<empty>,<empty>,idempotent_,8,,171,idempotent_,21,,bool
+71625,MEMBER,<empty>,<empty>,size_ = std::nullopt,27,,172,size_,22,,ANY
+71626,MEMBER,<empty>,<empty>,capped_size_ = std::nullopt,27,,173,capped_size_,23,,ANY
+71627,MEMBER,<empty>,<empty>,locked_to_reader_ = false,8,,174,locked_to_reader_,24,,bool
+71862,MEMBER,<empty>,<empty>,current_index_ = std::nullopt,27,,327,current_index_,9,,ANY
+71863,MEMBER,<empty>,<empty>,current_reader_ = nullptr,38,,328,current_reader_,10,,ANY
+71864,MEMBER,<empty>,<empty>,ended_ = false,8,,329,ended_,11,,bool
+71865,MEMBER,<empty>,<empty>,pull_pending_ = false,8,,330,pull_pending_,12,,bool
+72154,MEMBER,<empty>,<empty>,current_reader_ = nullptr,38,,485,current_reader_,9,,ANY
+72155,MEMBER,<empty>,<empty>,ended_ = false,8,,486,ended_,10,,bool
+72156,MEMBER,<empty>,<empty>,pull_pending_ = false,8,,487,pull_pending_,11,,bool
+72327,MEMBER,<empty>,<empty>,backing_store,35,,569,backing_store,1,,ANY
+72425,MEMBER,<empty>,<empty>,ended_ = false,10,,610,ended_,4,,bool
+72569,MEMBER,<empty>,<empty>,(InMemoryEntry),23,,673,,13,,SET_MEMORY_INFO_NAME
+72571,MEMBER,<empty>,<empty>,(InMemoryEntry),16,,674,,15,,SET_SELF_SIZE
+72573,MEMBER,<empty>,<empty>,backing_store_,33,,677,backing_store_,17,,ANY
+72574,MEMBER,<empty>,<empty>,offset_,12,,678,offset_,18,,uint64_t
+72575,MEMBER,<empty>,<empty>,byte_length_,12,,679,byte_length_,19,,uint64_t
+72695,MEMBER,<empty>,<empty>,(DataQueueEntry),23,,736,,12,,SET_MEMORY_INFO_NAME
+72697,MEMBER,<empty>,<empty>,(DataQueueEntry),16,,737,,14,,SET_SELF_SIZE
+72699,MEMBER,<empty>,<empty>,data_queue_,30,,740,data_queue_,16,,ANY
+72898,MEMBER,<empty>,<empty>,path_,32,,841,path_,9,,ANY
+72899,MEMBER,<empty>,<empty>,stat_,13,,842,stat_,10,,uv_stat_t
+72900,MEMBER,<empty>,<empty>,start_ = 0,12,,843,start_,11,,uint64_t
+72901,MEMBER,<empty>,<empty>,end_ = 0,12,,844,end_,12,,uint64_t
+73347,MEMBER,<empty>,<empty>,* env_,16,,983,env_,8,,Environment*
+73348,MEMBER,<empty>,<empty>,handle_,35,,984,handle_,9,,ANY
+73349,MEMBER,<empty>,<empty>,* entry_,12,,985,entry_,10,,FdEntry*
+73350,MEMBER,<empty>,<empty>,pending_pulls_,29,,986,pending_pulls_,11,,ANY
+73351,MEMBER,<empty>,<empty>,reading_ = false,10,,987,reading_,12,,bool
+73352,MEMBER,<empty>,<empty>,ended_ = false,10,,988,ended_,13,,bool
+74229,MEMBER,<empty>,<empty>,current_process_,10,,280,current_process_,14,,HANDLE
+80789,MEMBER,<empty>,<empty>,handle_,17,,75,handle_,10,,uv_fs_event_t
+80791,MEMBER,<empty>,<empty>,encoding_ = kDefaultEncoding,17,,76,encoding_,12,,encoding
+82010,MEMBER,<empty>,<empty>,persistent_,17,,79,persistent_,9,,Global<Value>
+82651,MEMBER,<empty>,<empty>,* isolate_,10,,206,isolate_,6,,Isolate*
+82652,MEMBER,<empty>,<empty>,nodes_,45,,207,nodes_,7,,ANY
+82653,MEMBER,<empty>,<empty>,engine_nodes_,7,,209,engine_nodes_,8,,ANY
+82654,MEMBER,<empty>,<empty>,edges_,70,,210,edges_,9,,ANY
+82801,MEMBER,<empty>,<empty>,fd_,13,,260,fd_,6,,int
+82802,MEMBER,<empty>,<empty>,* req_,10,,261,req_,7,,uv_fs_t*
+82803,MEMBER,<empty>,<empty>,status_ = 0,7,,262,status_,8,,int
+82976,MEMBER,<empty>,<empty>,(HeapSnapshotStream),23,,338,,14,,SET_MEMORY_INFO_NAME
+82978,MEMBER,<empty>,<empty>,(HeapSnapshotStream),16,,339,,16,,SET_SELF_SIZE
+82980,MEMBER,<empty>,<empty>,snapshot_,23,,342,snapshot_,18,,HeapSnapshotPointer
+86252,MEMBER,<empty>,<empty>,object_,22,,30,object_,4,,ANY
+86294,MEMBER,<empty>,<empty>,object_id_,7,,50,object_id_,3,,int
+86295,MEMBER,<empty>,<empty>,factory_,11,,51,factory_,4,,Factory
+86333,MEMBER,<empty>,<empty>,object_id_,7,,69,object_id_,3,,int
+86353,MEMBER,<empty>,<empty>,id_,7,,82,id_,3,,int
+86354,MEMBER,<empty>,<empty>,fn_,6,,83,fn_,4,,Fn
+86462,MEMBER,<empty>,<empty>,thread_,37,,127,thread_,8,,ANY
+86463,MEMBER,<empty>,<empty>,object_id_,13,,128,object_id_,9,,int
+86530,MEMBER,<empty>,<empty>,* thread_,22,,153,thread_,5,,MainThreadInterface*
+86531,MEMBER,<empty>,<empty>,prevent_shutdown_,8,,154,prevent_shutdown_,6,,bool
+86532,MEMBER,<empty>,<empty>,session_,37,,155,session_,7,,ANY
+86573,MEMBER,<empty>,<empty>,state_,56,,177,state_,3,,AnotherThreadObjectReference<MainThreadSessionState>
+86590,MEMBER,<empty>,<empty>,thread_,37,,194,thread_,3,,ANY
+86591,MEMBER,<empty>,<empty>,delegate_,58,,195,delegate_,4,,AnotherThreadObjectReference<InspectorSessionDelegate>
+87100,MEMBER,<empty>,<empty>,* main_thread_,22,,64,main_thread_,9,,MainThreadInterface*
+87101,MEMBER,<empty>,<empty>,block_lock_,9,,65,block_lock_,10,,Mutex
+87102,MEMBER,<empty>,<empty>,next_session_id_ = 0,7,,66,next_session_id_,11,,int
+87103,MEMBER,<empty>,<empty>,next_object_id_ = {1},19,,67,next_object_id_,12,,ANY
+87170,MEMBER,<empty>,<empty>,requests_,16,,91,requests_,12,,MessageQueue
+87171,MEMBER,<empty>,<empty>,requests_lock_,9,,92,requests_lock_,13,,Mutex
+87172,MEMBER,<empty>,<empty>,dispatching_message_queue_,16,,95,dispatching_message_queue_,14,,MessageQueue
+87173,MEMBER,<empty>,<empty>,dispatching_messages_ = false,8,,96,dispatching_messages_,15,,bool
+87174,MEMBER,<empty>,<empty>,incoming_message_cond_,21,,97,incoming_message_cond_,16,,ConditionVariable
+87175,MEMBER,<empty>,<empty>,* const agent_,8,,99,agent_,17,,Agent*
+87176,MEMBER,<empty>,<empty>,handle_,37,,100,handle_,18,,ANY
+87177,MEMBER,<empty>,<empty>,managed_objects_,55,,101,managed_objects_,19,,ANY
+88044,MEMBER,<empty>,<empty>,frontend_,42,,24,frontend_,5,,ANY
+88045,MEMBER,<empty>,<empty>,notify_when_waiting_for_disconnect_,8,,25,notify_when_waiting_for_disconnect_,6,,bool
+88087,MEMBER,<empty>,<empty>,frontend_,40,,28,frontend_,3,,ANY
+88119,MEMBER,<empty>,<empty>,object_id_,7,,44,object_id_,3,,int
+88120,MEMBER,<empty>,<empty>,frontend_wrapper_,45,,45,frontend_wrapper_,4,,ANY
+88137,MEMBER,<empty>,<empty>,object_id_,7,,58,object_id_,3,,int
+88183,MEMBER,<empty>,<empty>,object_id_,7,,78,object_id_,3,,int
+88184,MEMBER,<empty>,<empty>,message_,15,,79,message_,4,,ANY
+88269,MEMBER,<empty>,<empty>,json_writer_,32,,110,json_writer_,4,,ANY
+88270,MEMBER,<empty>,<empty>,stream_,22,,111,stream_,5,,ANY
+88271,MEMBER,<empty>,<empty>,frontend_object_id_,7,,112,frontend_object_id_,6,,int
+88272,MEMBER,<empty>,<empty>,main_thread_,37,,113,main_thread_,7,,ANY
+88671,MEMBER,<empty>,<empty>,* env_,14,,31,env_,7,,Environment*
+88672,MEMBER,<empty>,<empty>,main_thread_,37,,32,main_thread_,8,,ANY
+88673,MEMBER,<empty>,<empty>,trace_writer_,30,,33,trace_writer_,9,,ANY
+88674,MEMBER,<empty>,<empty>,frontend_object_id_ = 0,7,,34,frontend_object_id_,10,,int
+88675,MEMBER,<empty>,<empty>,frontend_,42,,35,frontend_,11,,ANY
+88731,MEMBER,<empty>,<empty>,frontend_,39,,26,frontend_,6,,ANY
+88732,MEMBER,<empty>,<empty>,thread_,37,,27,thread_,7,,ANY
+88733,MEMBER,<empty>,<empty>,sessions_,70,,28,sessions_,8,,ANY
+88734,MEMBER,<empty>,<empty>,next_target_id_ = 0,7,,29,next_target_id_,9,,int
+88765,MEMBER,<empty>,<empty>,workers_,32,,46,workers_,3,,ANY
+88803,MEMBER,<empty>,<empty>,id_,15,,65,id_,4,,ANY
+88804,MEMBER,<empty>,<empty>,workers_,32,,66,workers_,5,,ANY
+89191,MEMBER,<empty>,<empty>,frontend_,41,,31,frontend_,8,,ANY
+89192,MEMBER,<empty>,<empty>,manager_,32,,32,manager_,9,,ANY
+89193,MEMBER,<empty>,<empty>,event_handle_,45,,33,event_handle_,10,,ANY
+89194,MEMBER,<empty>,<empty>,workers_,32,,34,workers_,11,,ANY
+89268,MEMBER,<empty>,<empty>,id_,12,,33,id_,4,,uint64_t
+89269,MEMBER,<empty>,<empty>,info_,14,,34,info_,5,,WorkerInfo
+89270,MEMBER,<empty>,<empty>,waiting_,8,,35,waiting_,6,,bool
+89319,MEMBER,<empty>,<empty>,worker_id_,12,,54,worker_id_,3,,uint64_t
+89608,MEMBER,<empty>,<empty>,manager_,34,,38,manager_,4,,ANY
+89609,MEMBER,<empty>,<empty>,id_,7,,39,id_,5,,int
+89618,MEMBER,<empty>,<empty>,title,15,,49,title,2,,ANY
+89619,MEMBER,<empty>,<empty>,url,15,,50,url,3,,ANY
+89620,MEMBER,<empty>,<empty>,worker_thread,37,,51,worker_thread,4,,ANY
+89680,MEMBER,<empty>,<empty>,id_,12,,78,id_,8,,uint64_t
+89681,MEMBER,<empty>,<empty>,url_,15,,79,url_,9,,ANY
+89682,MEMBER,<empty>,<empty>,parent_thread_,37,,80,parent_thread_,10,,ANY
+89683,MEMBER,<empty>,<empty>,wait_,8,,81,wait_,11,,bool
+89684,MEMBER,<empty>,<empty>,name_,15,,82,name_,12,,ANY
+89732,MEMBER,<empty>,<empty>,thread_,37,,103,thread_,9,,ANY
+89733,MEMBER,<empty>,<empty>,children_,44,,104,children_,10,,ANY
+89734,MEMBER,<empty>,<empty>,delegates_,60,,105,delegates_,11,,ANY
+89735,MEMBER,<empty>,<empty>,delegates_waiting_on_start_,27,,107,delegates_waiting_on_start_,12,,ANY
+89736,MEMBER,<empty>,<empty>,next_delegate_id_ = 0,7,,108,next_delegate_id_,13,,int
+90328,MEMBER,<empty>,<empty>,runtime_agent_,43,,334,runtime_agent_,17,,ANY
+90329,MEMBER,<empty>,<empty>,tracing_agent_,43,,335,tracing_agent_,18,,ANY
+90330,MEMBER,<empty>,<empty>,worker_agent_,42,,336,worker_agent_,19,,ANY
+90331,MEMBER,<empty>,<empty>,delegate_,45,,337,delegate_,20,,ANY
+90332,MEMBER,<empty>,<empty>,session_,53,,338,session_,21,,ANY
+90333,MEMBER,<empty>,<empty>,node_dispatcher_,45,,339,node_dispatcher_,22,,ANY
+90334,MEMBER,<empty>,<empty>,prevent_shutdown_,8,,340,prevent_shutdown_,23,,bool
+90335,MEMBER,<empty>,<empty>,retaining_context_,8,,341,retaining_context_,24,,bool
+90352,MEMBER,<empty>,<empty>,session_id_,7,,353,session_id_,4,,int
+90353,MEMBER,<empty>,<empty>,client_,38,,354,client_,5,,ANY
+91279,MEMBER,<empty>,<empty>,* env_,20,,669,env_,33,,ANY*
+91280,MEMBER,<empty>,<empty>,is_main_,8,,670,is_main_,34,,bool
+91281,MEMBER,<empty>,<empty>,running_nested_loop_ = false,8,,671,running_nested_loop_,35,,bool
+91282,MEMBER,<empty>,<empty>,client_,32,,672,client_,36,,ANY
+91283,MEMBER,<empty>,<empty>,timers_,46,,674,timers_,37,,ANY
+91284,MEMBER,<empty>,<empty>,channels_,57,,675,channels_,38,,ANY
+91285,MEMBER,<empty>,<empty>,next_session_id_ = 1,7,,676,next_session_id_,39,,int
+91286,MEMBER,<empty>,<empty>,waiting_for_resume_ = false,8,,677,waiting_for_resume_,40,,bool
+91287,MEMBER,<empty>,<empty>,waiting_for_frontend_ = false,8,,678,waiting_for_frontend_,41,,bool
+91288,MEMBER,<empty>,<empty>,waiting_for_sessions_disconnect_ = false,8,,679,waiting_for_sessions_disconnect_,42,,bool
+91289,MEMBER,<empty>,<empty>,interface_,40,,681,interface_,43,,ANY
+91290,MEMBER,<empty>,<empty>,worker_manager_,34,,682,worker_manager_,44,,ANY
+92370,MEMBER,<empty>,<empty>,kKill,30,,27,kKill,1,,ANY
+92371,MEMBER,<empty>,<empty>,kSendMessage,37,,27,kSendMessage,2,,ANY
+92372,MEMBER,<empty>,<empty>,kStop,51,,27,kStop,3,,ANY
+92535,MEMBER,<empty>,<empty>,action_,19,,90,action_,3,,TransportAction
+92536,MEMBER,<empty>,<empty>,session_id_,7,,91,session_id_,4,,int
+92537,MEMBER,<empty>,<empty>,message_,47,,92,message_,5,,ANY
+92671,MEMBER,<empty>,<empty>,handle_,33,,156,handle_,11,,ANY
+92672,MEMBER,<empty>,<empty>,async_,14,,157,async_,12,,uv_async_t
+92673,MEMBER,<empty>,<empty>,* server_ = nullptr,24,,158,server_,13,,InspectorSocketServer*
+92674,MEMBER,<empty>,<empty>,messages_,16,,159,messages_,14,,MessageQueue
+92675,MEMBER,<empty>,<empty>,state_lock_,9,,160,state_lock_,15,,Mutex
+92676,MEMBER,<empty>,<empty>,incoming_message_cond_,21,,161,incoming_message_cond_,16,,ConditionVariable
+92737,MEMBER,<empty>,<empty>,* data_,19,,188,data_,5,,RequestQueueData*
+92738,MEMBER,<empty>,<empty>,lock_,9,,189,lock_,6,,Mutex
+92764,MEMBER,<empty>,<empty>,request_queue_,33,,202,request_queue_,3,,ANY
+92765,MEMBER,<empty>,<empty>,id_,7,,203,id_,4,,int
+92821,MEMBER,<empty>,<empty>,request_queue_,37,,229,request_queue_,10,,ANY
+92822,MEMBER,<empty>,<empty>,main_thread_,37,,230,main_thread_,11,,ANY
+92823,MEMBER,<empty>,<empty>,sessions_,62,,231,sessions_,12,,ANY
+92824,MEMBER,<empty>,<empty>,script_name_,21,,232,script_name_,13,,ANY
+92825,MEMBER,<empty>,<empty>,script_path_,21,,233,script_path_,14,,ANY
+92826,MEMBER,<empty>,<empty>,target_id_,21,,234,target_id_,15,,ANY
+93418,MEMBER,<empty>,<empty>,* env_,16,,87,env_,3,,Environment*
+93419,MEMBER,<empty>,<empty>,connection_,41,,88,connection_,4,,BaseObjectPtr<JSBindingsConnection>
+93680,MEMBER,<empty>,<empty>,(JSBindingsConnection),23,,157,,10,,SET_MEMORY_INFO_NAME
+93682,MEMBER,<empty>,<empty>,(JSBindingsConnection),16,,158,,12,,SET_SELF_SIZE
+93690,MEMBER,<empty>,<empty>,session_,37,,165,session_,15,,ANY
+93691,MEMBER,<empty>,<empty>,callback_,20,,166,callback_,16,,Global<Function>
+96487,MEMBER,<empty>,<empty>,tcp_,12,,47,tcp_,14,,uv_tcp_t
+96488,MEMBER,<empty>,<empty>,delegate_,42,,48,delegate_,15,,ANY
+96489,MEMBER,<empty>,<empty>,* handler_,18,,49,handler_,16,,ProtocolHandler*
+96490,MEMBER,<empty>,<empty>,buffer,21,,50,buffer,17,,ANY
+96549,MEMBER,<empty>,<empty>,* const inspector_,18,,76,inspector_,13,,InspectorSocket*
+96550,MEMBER,<empty>,<empty>,tcp_,22,,77,tcp_,14,,ANY
+96586,MEMBER,<empty>,<empty>,* const handler,18,,124,handler,4,,ProtocolHandler*
+96587,MEMBER,<empty>,<empty>,storage,21,,125,storage,5,,ANY
+96588,MEMBER,<empty>,<empty>,req,14,,126,req,6,,uv_write_t
+96589,MEMBER,<empty>,<empty>,buf,12,,127,buf,7,,uv_buf_t
+96631,MEMBER,<empty>,<empty>,FRAME_OK,3,,141,FRAME_OK,1,,ANY
+96632,MEMBER,<empty>,<empty>,FRAME_INCOMPLETE,13,,141,FRAME_INCOMPLETE,2,,ANY
+96633,MEMBER,<empty>,<empty>,FRAME_CLOSE,31,,141,FRAME_CLOSE,3,,ANY
+96634,MEMBER,<empty>,<empty>,FRAME_ERROR,44,,141,FRAME_ERROR,4,,ANY
+97616,MEMBER,<empty>,<empty>,OnCloseSent,12,,463,OnCloseSent,14,,Callback
+97617,MEMBER,<empty>,<empty>,OnCloseReceived,12,,464,OnCloseReceived,15,,Callback
+97618,MEMBER,<empty>,<empty>,dispose_,8,,465,dispose_,16,,bool
+97629,MEMBER,<empty>,<empty>,path,15,,476,path,2,,ANY
+97630,MEMBER,<empty>,<empty>,upgrade,8,,477,upgrade,3,,bool
+97631,MEMBER,<empty>,<empty>,isGET,8,,478,isGET,4,,bool
+97632,MEMBER,<empty>,<empty>,ws_key,15,,479,ws_key,5,,ANY
+97633,MEMBER,<empty>,<empty>,host,15,,480,host,6,,ANY
+98180,MEMBER,<empty>,<empty>,parsing_value_,8,,641,parsing_value_,16,,bool
+98181,MEMBER,<empty>,<empty>,parser_,12,,642,parser_,17,,llhttp_t
+98182,MEMBER,<empty>,<empty>,parser_settings,21,,643,parser_settings,18,,llhttp_settings_t
+98183,MEMBER,<empty>,<empty>,events_,26,,644,events_,19,,ANY
+98184,MEMBER,<empty>,<empty>,current_header_,15,,645,current_header_,20,,ANY
+98185,MEMBER,<empty>,<empty>,headers_,38,,646,headers_,21,,ANY
+98186,MEMBER,<empty>,<empty>,path_,15,,647,path_,22,,ANY
+99267,MEMBER,<empty>,<empty>,* server_,26,,195,server_,7,,InspectorSocketServer*
+99268,MEMBER,<empty>,<empty>,session_id_,9,,196,session_id_,8,,int
+99269,MEMBER,<empty>,<empty>,id_,13,,200,id_,11,,int
+99270,MEMBER,<empty>,<empty>,ws_socket_,28,,201,ws_socket_,12,,ANY
+99271,MEMBER,<empty>,<empty>,server_port_,13,,202,server_port_,13,,int
+99339,MEMBER,<empty>,<empty>,tcp_socket_,12,,228,tcp_socket_,10,,uv_tcp_t
+99340,MEMBER,<empty>,<empty>,* server_,24,,229,server_,11,,InspectorSocketServer*
+99341,MEMBER,<empty>,<empty>,port_ = -1,7,,230,port_,12,,int
+101371,MEMBER,<empty>,<empty>,napi_default = 0,3,,33,napi_default,1,,ANY
+101372,MEMBER,<empty>,<empty>,napi_writable = 1 << 0,3,,34,napi_writable,2,,ANY
+101373,MEMBER,<empty>,<empty>,napi_enumerable = 1 << 1,3,,35,napi_enumerable,3,,ANY
+101374,MEMBER,<empty>,<empty>,napi_configurable = 1 << 2,3,,36,napi_configurable,4,,ANY
+101375,MEMBER,<empty>,<empty>,napi_static = 1 << 10,3,,40,napi_static,5,,ANY
+101405,MEMBER,<empty>,<empty>,napi_undefined,3,,53,napi_undefined,1,,ANY
+101406,MEMBER,<empty>,<empty>,napi_null,3,,54,napi_null,2,,ANY
+101407,MEMBER,<empty>,<empty>,napi_boolean,3,,55,napi_boolean,3,,ANY
+101408,MEMBER,<empty>,<empty>,napi_number,3,,56,napi_number,4,,ANY
+101409,MEMBER,<empty>,<empty>,napi_string,3,,57,napi_string,5,,ANY
+101410,MEMBER,<empty>,<empty>,napi_symbol,3,,58,napi_symbol,6,,ANY
+101411,MEMBER,<empty>,<empty>,napi_object,3,,59,napi_object,7,,ANY
+101412,MEMBER,<empty>,<empty>,napi_function,3,,60,napi_function,8,,ANY
+101413,MEMBER,<empty>,<empty>,napi_external,3,,61,napi_external,9,,ANY
+101414,MEMBER,<empty>,<empty>,napi_bigint,3,,62,napi_bigint,10,,ANY
+101417,MEMBER,<empty>,<empty>,napi_int8_array,3,,66,napi_int8_array,1,,ANY
+101418,MEMBER,<empty>,<empty>,napi_uint8_array,3,,67,napi_uint8_array,2,,ANY
+101419,MEMBER,<empty>,<empty>,napi_uint8_clamped_array,3,,68,napi_uint8_clamped_array,3,,ANY
+101420,MEMBER,<empty>,<empty>,napi_int16_array,3,,69,napi_int16_array,4,,ANY
+101421,MEMBER,<empty>,<empty>,napi_uint16_array,3,,70,napi_uint16_array,5,,ANY
+101422,MEMBER,<empty>,<empty>,napi_int32_array,3,,71,napi_int32_array,6,,ANY
+101423,MEMBER,<empty>,<empty>,napi_uint32_array,3,,72,napi_uint32_array,7,,ANY
+101424,MEMBER,<empty>,<empty>,napi_float32_array,3,,73,napi_float32_array,8,,ANY
+101425,MEMBER,<empty>,<empty>,napi_float64_array,3,,74,napi_float64_array,9,,ANY
+101426,MEMBER,<empty>,<empty>,napi_bigint64_array,3,,75,napi_bigint64_array,10,,ANY
+101427,MEMBER,<empty>,<empty>,napi_biguint64_array,3,,76,napi_biguint64_array,11,,ANY
+101430,MEMBER,<empty>,<empty>,napi_ok,3,,80,napi_ok,1,,ANY
+101431,MEMBER,<empty>,<empty>,napi_invalid_arg,3,,81,napi_invalid_arg,2,,ANY
+101432,MEMBER,<empty>,<empty>,napi_object_expected,3,,82,napi_object_expected,3,,ANY
+101433,MEMBER,<empty>,<empty>,napi_string_expected,3,,83,napi_string_expected,4,,ANY
+101434,MEMBER,<empty>,<empty>,napi_name_expected,3,,84,napi_name_expected,5,,ANY
+101435,MEMBER,<empty>,<empty>,napi_function_expected,3,,85,napi_function_expected,6,,ANY
+101436,MEMBER,<empty>,<empty>,napi_number_expected,3,,86,napi_number_expected,7,,ANY
+101437,MEMBER,<empty>,<empty>,napi_boolean_expected,3,,87,napi_boolean_expected,8,,ANY
+101438,MEMBER,<empty>,<empty>,napi_array_expected,3,,88,napi_array_expected,9,,ANY
+101439,MEMBER,<empty>,<empty>,napi_generic_failure,3,,89,napi_generic_failure,10,,ANY
+101440,MEMBER,<empty>,<empty>,napi_pending_exception,3,,90,napi_pending_exception,11,,ANY
+101441,MEMBER,<empty>,<empty>,napi_cancelled,3,,91,napi_cancelled,12,,ANY
+101442,MEMBER,<empty>,<empty>,napi_escape_called_twice,3,,92,napi_escape_called_twice,13,,ANY
+101443,MEMBER,<empty>,<empty>,napi_handle_scope_mismatch,3,,93,napi_handle_scope_mismatch,14,,ANY
+101444,MEMBER,<empty>,<empty>,napi_callback_scope_mismatch,3,,94,napi_callback_scope_mismatch,15,,ANY
+101445,MEMBER,<empty>,<empty>,napi_queue_full,3,,95,napi_queue_full,16,,ANY
+101446,MEMBER,<empty>,<empty>,napi_closing,3,,96,napi_closing,17,,ANY
+101447,MEMBER,<empty>,<empty>,napi_bigint_expected,3,,97,napi_bigint_expected,18,,ANY
+101448,MEMBER,<empty>,<empty>,napi_date_expected,3,,98,napi_date_expected,19,,ANY
+101449,MEMBER,<empty>,<empty>,napi_arraybuffer_expected,3,,99,napi_arraybuffer_expected,20,,ANY
+101450,MEMBER,<empty>,<empty>,napi_detachable_arraybuffer_expected,3,,100,napi_detachable_arraybuffer_expected,21,,ANY
+101451,MEMBER,<empty>,<empty>,napi_would_deadlock,3,,101,napi_would_deadlock,22,,ANY
+101452,MEMBER,<empty>,<empty>,napi_no_external_buffers_allowed,3,,102,napi_no_external_buffers_allowed,23,,ANY
+101453,MEMBER,<empty>,<empty>,napi_cannot_run_js,3,,103,napi_cannot_run_js,24,,ANY
+101469,MEMBER,<empty>,<empty>,* utf8name,13,,121,utf8name,1,,char*
+101470,MEMBER,<empty>,<empty>,name,14,,122,name,2,,napi_value
+101471,MEMBER,<empty>,<empty>,method,17,,124,method,3,,napi_callback
+101472,MEMBER,<empty>,<empty>,getter,17,,125,getter,4,,napi_callback
+101473,MEMBER,<empty>,<empty>,setter,17,,126,setter,5,,napi_callback
+101474,MEMBER,<empty>,<empty>,value,14,,127,value,6,,napi_value
+101475,MEMBER,<empty>,<empty>,attributes,28,,129,attributes,7,,napi_property_attributes
+101476,MEMBER,<empty>,<empty>,* data,7,,130,data,8,,void*
+101479,MEMBER,<empty>,<empty>,* error_message,13,,134,error_message,1,,char*
+101480,MEMBER,<empty>,<empty>,* engine_reserved,7,,135,engine_reserved,2,,void*
+101481,MEMBER,<empty>,<empty>,engine_error_code,12,,136,engine_error_code,3,,uint32_t
+101482,MEMBER,<empty>,<empty>,error_code,15,,137,error_code,4,,napi_status
+101959,MEMBER,<empty>,<empty>,* string_,13,,167,string_,4,,char*
+101960,MEMBER,<empty>,<empty>,length_,16,,168,length_,5,,size_t
+101983,MEMBER,<empty>,<empty>,* string_,17,,187,string_,4,,uint16_t*
+101984,MEMBER,<empty>,<empty>,length_,16,,188,length_,5,,size_t
+102247,MEMBER,<empty>,<empty>,scope,19,,245,scope,2,,ANY
+102274,MEMBER,<empty>,<empty>,scope,28,,265,scope,4,,ANY
+102275,MEMBER,<empty>,<empty>,escape_called_,8,,266,escape_called_,5,,bool
+102511,MEMBER,<empty>,<empty>,KeepWrap,21,,317,KeepWrap,1,,ANY
+102512,MEMBER,<empty>,<empty>,RemoveWrap,31,,317,RemoveWrap,2,,ANY
+102870,MEMBER,<empty>,<empty>,env,12,,384,env,2,,napi_env
+102871,MEMBER,<empty>,<empty>,* cb_data,7,,385,cb_data,3,,void*
+102872,MEMBER,<empty>,<empty>,cb,17,,386,cb,4,,napi_callback
+102929,MEMBER,<empty>,<empty>,_this,20,,413,_this,8,,napi_value
+102930,MEMBER,<empty>,<empty>,_args_length,16,,414,_args_length,9,,size_t
+102931,MEMBER,<empty>,<empty>,* _data,7,,415,_data,10,,void*
+103004,MEMBER,<empty>,<empty>,& _cbinfo,44,,455,_cbinfo,3,,ANY
+103005,MEMBER,<empty>,<empty>,* _bundle,17,,456,_bundle,4,,CallbackBundle*
+122401,MEMBER,<empty>,<empty>,* next_ = nullptr,10,,46,next_,8,,RefList*
+122402,MEMBER,<empty>,<empty>,* prev_ = nullptr,10,,47,prev_,9,,RefList*
+122587,MEMBER,<empty>,<empty>,* const isolate,14,,133,isolate,13,,ANY*
+122588,MEMBER,<empty>,<empty>,context_persistent,35,,134,context_persistent,14,,ANY
+122589,MEMBER,<empty>,<empty>,last_exception,33,,136,last_exception,15,,ANY
+122590,MEMBER,<empty>,<empty>,reflist,31,,141,reflist,16,,ANY
+122591,MEMBER,<empty>,<empty>,finalizing_reflist,31,,142,finalizing_reflist,17,,ANY
+122592,MEMBER,<empty>,<empty>,pending_finalizers,43,,144,pending_finalizers,18,,ANY
+122593,MEMBER,<empty>,<empty>,last_error,28,,145,last_error,19,,napi_extended_error_info
+122594,MEMBER,<empty>,<empty>,open_handle_scopes = 0,7,,146,open_handle_scopes,20,,int
+122595,MEMBER,<empty>,<empty>,open_callback_scopes = 0,7,,147,open_callback_scopes,21,,int
+122596,MEMBER,<empty>,<empty>,refs = 1,7,,148,refs,22,,int
+122597,MEMBER,<empty>,<empty>,* instance_data = nullptr,7,,149,instance_data,23,,void*
+122598,MEMBER,<empty>,<empty>,module_api_version = NODE_API_DEFAULT_MODULE_API_VERSION,11,,150,module_api_version,24,,int32_t
+122783,MEMBER,<empty>,<empty>,env_,12,,336,env_,8,,napi_env
+122784,MEMBER,<empty>,<empty>,finalize_callback_,17,,337,finalize_callback_,9,,napi_finalize
+122785,MEMBER,<empty>,<empty>,* finalize_data_,7,,338,finalize_data_,10,,void*
+122786,MEMBER,<empty>,<empty>,* finalize_hint_,7,,339,finalize_hint_,11,,void*
+122810,MEMBER,<empty>,<empty>,_env,12,,353,_env,3,,napi_env
+122812,MEMBER,<empty>,<empty>,kRuntime,3,,360,kRuntime,1,,ANY
+122813,MEMBER,<empty>,<empty>,kUserland,3,,363,kUserland,2,,ANY
+122865,MEMBER,<empty>,<empty>,refcount_,12,,396,refcount_,10,,uint32_t
+122866,MEMBER,<empty>,<empty>,ownership_,13,,397,ownership_,11,,Ownership
+122915,MEMBER,<empty>,<empty>,persistent_,33,,428,persistent_,10,,ANY
+122916,MEMBER,<empty>,<empty>,can_be_weak_,8,,429,can_be_weak_,11,,bool
+130992,MEMBER,<empty>,<empty>,kNoFlags = 0,3,,235,kNoFlags,1,,uint32_t
+130993,MEMBER,<empty>,<empty>,kEnableStdioInheritance = 1 << 0,3,,238,kEnableStdioInheritance,2,,uint32_t
+130994,MEMBER,<empty>,<empty>,kDisableNodeOptionsEnv = 1 << 1,3,,240,kDisableNodeOptionsEnv,3,,uint32_t
+130995,MEMBER,<empty>,<empty>,kDisableCLIOptions = 1 << 2,3,,242,kDisableCLIOptions,4,,uint32_t
+130996,MEMBER,<empty>,<empty>,kNoICU = 1 << 3,3,,244,kNoICU,5,,uint32_t
+130997,MEMBER,<empty>,<empty>,kNoStdioInitialization = 1 << 4,3,,246,kNoStdioInitialization,6,,uint32_t
+130998,MEMBER,<empty>,<empty>,kNoDefaultSignalHandling = 1 << 5,3,,249,kNoDefaultSignalHandling,7,,uint32_t
+130999,MEMBER,<empty>,<empty>,kNoInitializeV8 = 1 << 6,3,,251,kNoInitializeV8,8,,uint32_t
+131000,MEMBER,<empty>,<empty>,kNoInitializeNodeV8Platform = 1 << 7,3,,253,kNoInitializeNodeV8Platform,9,,uint32_t
+131001,MEMBER,<empty>,<empty>,kNoInitOpenSSL = 1 << 8,3,,255,kNoInitOpenSSL,10,,uint32_t
+131002,MEMBER,<empty>,<empty>,kNoParseGlobalDebugVariables = 1 << 9,3,,257,kNoParseGlobalDebugVariables,11,,uint32_t
+131003,MEMBER,<empty>,<empty>,kNoAdjustResourceLimits = 1 << 10,3,,259,kNoAdjustResourceLimits,12,,uint32_t
+131004,MEMBER,<empty>,<empty>,kNoUseLargePages = 1 << 11,3,,261,kNoUseLargePages,13,,uint32_t
+131005,MEMBER,<empty>,<empty>,kNoPrintHelpOrVersionOutput = 1 << 12,3,,263,kNoPrintHelpOrVersionOutput,14,,uint32_t
+131006,MEMBER,<empty>,<empty>,"kLegacyInitializeNodeWithArgsBehavior =
+      kNoStdioInitialization | kNoDefaultSignalHandling | kNoInitializeV8 |
+      kNoInitializeNodeV8Platform | kNoInitOpenSSL |
+      kNoParseGlobalDebugVariables | kNoAdjustResourceLimits |
+      kNoUseLargePages | kNoPrintHelpOrVersionOutput",3,,268,kLegacyInitializeNodeWithArgsBehavior,15,,uint32_t
+131101,MEMBER,<empty>,<empty>,kNoFlags = 0,3,,279,kNoFlags,1,,uint32_t
+131102,MEMBER,<empty>,<empty>,kDoNotTerminateIsolate = 1 << 0,3,,282,kDoNotTerminateIsolate,2,,uint32_t
+131206,MEMBER,<empty>,<empty>,kAllowedInEnvvar = 0,3,,366,kAllowedInEnvvar,1,,ANY
+131207,MEMBER,<empty>,<empty>,kDisallowedInEnvvar = 1,3,,369,kDisallowedInEnvvar,2,,ANY
+131208,MEMBER,<empty>,<empty>,kAllowedInEnvironment = kAllowedInEnvvar,3,,371,kAllowedInEnvironment,3,,ANY
+131209,MEMBER,<empty>,<empty>,kDisallowedInEnvironment = kDisallowedInEnvvar,3,,373,kDisallowedInEnvironment,4,,ANY
+131311,MEMBER,<empty>,<empty>,MESSAGE_LISTENER_WITH_ERROR_LEVEL = 1 << 0,3,,463,MESSAGE_LISTENER_WITH_ERROR_LEVEL,1,,ANY
+131312,MEMBER,<empty>,<empty>,DETAILED_SOURCE_POSITIONS_FOR_PROFILING = 1 << 1,3,,464,DETAILED_SOURCE_POSITIONS_FOR_PROFILING,2,,ANY
+131313,MEMBER,<empty>,<empty>,SHOULD_NOT_SET_PROMISE_REJECTION_CALLBACK = 1 << 2,3,,465,SHOULD_NOT_SET_PROMISE_REJECTION_CALLBACK,3,,ANY
+131314,MEMBER,<empty>,<empty>,SHOULD_NOT_SET_PREPARE_STACK_TRACE_CALLBACK = 1 << 3,3,,466,SHOULD_NOT_SET_PREPARE_STACK_TRACE_CALLBACK,4,,ANY
+131315,MEMBER,<empty>,<empty>,ALLOW_MODIFY_CODE_GENERATION_FROM_STRINGS_CALLBACK = 0,3,,467,ALLOW_MODIFY_CODE_GENERATION_FROM_STRINGS_CALLBACK,5,,ANY
+131344,MEMBER,<empty>,<empty>,"flags = MESSAGE_LISTENER_WITH_ERROR_LEVEL |
+      DETAILED_SOURCE_POSITIONS_FOR_PROFILING",12,,471,flags,1,,uint64_t
+131345,MEMBER,<empty>,<empty>,policy = v8::MicrotasksPolicy::kExplicit,24,,473,policy,2,,ANY
+131346,MEMBER,<empty>,<empty>,should_abort_on_uncaught_exception_callback = nullptr,7,,477,should_abort_on_uncaught_exception_callback,3,,ANY
+131347,MEMBER,<empty>,<empty>,fatal_error_callback = nullptr,26,,478,fatal_error_callback,4,,ANY
+131348,MEMBER,<empty>,<empty>,prepare_stack_trace_callback = nullptr,33,,479,prepare_stack_trace_callback,5,,ANY
+131349,MEMBER,<empty>,<empty>,promise_reject_callback = nullptr,29,,482,promise_reject_callback,6,,ANY
+131350,MEMBER,<empty>,<empty>,allow_wasm_code_generation_callback = nullptr,7,,484,allow_wasm_code_generation_callback,7,,ANY
+131351,MEMBER,<empty>,<empty>,modify_code_generation_from_strings_callback = nullptr,7,,486,modify_code_generation_from_strings_callback,8,,ANY
+131447,MEMBER,<empty>,<empty>,* impl_,21,,553,impl_,14,,SnapshotData*
+131448,MEMBER,<empty>,<empty>,owns_impl_,8,,554,owns_impl_,15,,bool
+131506,MEMBER,<empty>,<empty>,id = static_cast<uint64_t>(-1),12,,607,id,1,,uint64_t
+131523,MEMBER,<empty>,<empty>,kNoFlags = 0,3,,613,kNoFlags,1,,uint64_t
+131524,MEMBER,<empty>,<empty>,kDefaultFlags = 1 << 0,3,,615,kDefaultFlags,2,,uint64_t
+131525,MEMBER,<empty>,<empty>,kOwnsProcessState = 1 << 1,3,,619,kOwnsProcessState,3,,uint64_t
+131526,MEMBER,<empty>,<empty>,kOwnsInspector = 1 << 2,3,,623,kOwnsInspector,4,,uint64_t
+131527,MEMBER,<empty>,<empty>,kNoRegisterESMLoader = 1 << 3,3,,627,kNoRegisterESMLoader,5,,uint64_t
+131528,MEMBER,<empty>,<empty>,kTrackUnmanagedFds = 1 << 4,3,,630,kTrackUnmanagedFds,6,,uint64_t
+131529,MEMBER,<empty>,<empty>,kHideConsoleWindows = 1 << 5,3,,634,kHideConsoleWindows,7,,uint64_t
+131530,MEMBER,<empty>,<empty>,kNoNativeAddons = 1 << 6,3,,640,kNoNativeAddons,8,,uint64_t
+131531,MEMBER,<empty>,<empty>,kNoGlobalSearchPaths = 1 << 7,3,,645,kNoGlobalSearchPaths,9,,uint64_t
+131532,MEMBER,<empty>,<empty>,kNoBrowserGlobals = 1 << 8,3,,647,kNoBrowserGlobals,10,,uint64_t
+131533,MEMBER,<empty>,<empty>,kNoCreateInspector = 1 << 9,3,,652,kNoCreateInspector,11,,uint64_t
+131623,MEMBER,<empty>,<empty>,process_object,25,,693,process_object,1,,ANY
+131624,MEMBER,<empty>,<empty>,native_require,27,,694,native_require,2,,ANY
+131625,MEMBER,<empty>,<empty>,run_cjs,27,,695,run_cjs,3,,ANY
+131840,MEMBER,<empty>,<empty>,* event_loop() const,19,,870,event_loop,7,,uv_loop_s*
+131886,MEMBER,<empty>,<empty>,kNoFlags = 0,5,,886,kNoFlags,1,,uint32_t
+131887,MEMBER,<empty>,<empty>,kIsForSnapshotting = 1,5,,887,kIsForSnapshotting,2,,uint32_t
+131899,MEMBER,<empty>,<empty>,* impl_,7,,891,impl_,20,,Impl*
+132311,MEMBER,<empty>,<empty>,ASCII,3,,1050,ASCII,1,,ANY
+132312,MEMBER,<empty>,<empty>,UTF8,3,,1051,UTF8,2,,ANY
+132313,MEMBER,<empty>,<empty>,BASE64,3,,1052,BASE64,3,,ANY
+132314,MEMBER,<empty>,<empty>,UCS2,3,,1053,UCS2,4,,ANY
+132315,MEMBER,<empty>,<empty>,BINARY,3,,1054,BINARY,5,,ANY
+132316,MEMBER,<empty>,<empty>,HEX,3,,1055,HEX,6,,ANY
+132317,MEMBER,<empty>,<empty>,BUFFER,3,,1056,BUFFER,7,,ANY
+132318,MEMBER,<empty>,<empty>,BASE64URL,3,,1057,BASE64URL,8,,ANY
+132319,MEMBER,<empty>,<empty>,LATIN1 = BINARY,3,,1058,LATIN1,9,,ANY
+132387,MEMBER,<empty>,<empty>,kLinked = 0x02,3,,1114,kLinked,1,,ANY
+132396,MEMBER,<empty>,<empty>,nm_version,7,,1118,nm_version,1,,int
+132397,MEMBER,<empty>,<empty>,nm_flags,16,,1119,nm_flags,2,,unsigned int
+132398,MEMBER,<empty>,<empty>,* nm_dso_handle,7,,1120,nm_dso_handle,3,,void*
+132399,MEMBER,<empty>,<empty>,* nm_filename,13,,1121,nm_filename,4,,char*
+132400,MEMBER,<empty>,<empty>,nm_register_func,29,,1122,nm_register_func,5,,ANY
+132401,MEMBER,<empty>,<empty>,nm_context_register_func,37,,1123,nm_context_register_func,6,,ANY
+132402,MEMBER,<empty>,<empty>,* nm_modname,13,,1124,nm_modname,7,,char*
+132403,MEMBER,<empty>,<empty>,* nm_priv,7,,1125,nm_priv,8,,void*
+132405,MEMBER,<empty>,<empty>,* nm_link,21,,1126,nm_link,10,,node_module*
+132448,MEMBER,<empty>,<empty>,async_id,20,,1269,async_id,1,,ANY
+132449,MEMBER,<empty>,<empty>,trigger_async_id,20,,1270,trigger_async_id,2,,ANY
+132592,MEMBER,<empty>,<empty>,* private_,24,,1392,private_,8,,InternalCallbackScope*
+132593,MEMBER,<empty>,<empty>,try_catch_,16,,1393,try_catch_,9,,ANY
+132669,MEMBER,<empty>,<empty>,* env_,14,,1469,env_,11,,Environment*
+132670,MEMBER,<empty>,<empty>,resource_,26,,1470,resource_,12,,ANY
+132671,MEMBER,<empty>,<empty>,async_context_,17,,1471,async_context_,13,,async_context
+133950,MEMBER,<empty>,<empty>,kDispatchIdle = 0,30,,500,kDispatchIdle,19,,unsigned char
+133951,MEMBER,<empty>,<empty>,kDispatchRunning = 1 << 0,30,,501,kDispatchRunning,20,,unsigned char
+133952,MEMBER,<empty>,<empty>,kDispatchPending = 1 << 1,30,,502,kDispatchPending,21,,unsigned char
+133953,MEMBER,<empty>,<empty>,kMaxIterationCount = 1000,29,,504,kMaxIterationCount,22,,unsigned int
+133954,MEMBER,<empty>,<empty>,mutex,15,,507,mutex,23,,ANY
+133955,MEMBER,<empty>,<empty>,cond,44,,508,cond,24,,ANY
+133956,MEMBER,<empty>,<empty>,queue,21,,509,queue,25,,ANY
+133957,MEMBER,<empty>,<empty>,async,14,,510,async,26,,uv_async_t
+133958,MEMBER,<empty>,<empty>,thread_count,10,,511,thread_count,27,,size_t
+133959,MEMBER,<empty>,<empty>,is_closing,8,,512,is_closing,28,,bool
+133960,MEMBER,<empty>,<empty>,dispatch_state,21,,513,dispatch_state,29,,ANY
+133961,MEMBER,<empty>,<empty>,* context,7,,517,context,30,,void*
+133962,MEMBER,<empty>,<empty>,max_queue_size,10,,518,max_queue_size,31,,size_t
+133963,MEMBER,<empty>,<empty>,ref,36,,521,ref,32,,ANY
+133964,MEMBER,<empty>,<empty>,env,17,,522,env,33,,node_napi_env
+133965,MEMBER,<empty>,<empty>,* finalize_data,7,,523,finalize_data,34,,void*
+133966,MEMBER,<empty>,<empty>,finalize_cb,17,,524,finalize_cb,35,,napi_finalize
+133967,MEMBER,<empty>,<empty>,call_js_cb,36,,525,call_js_cb,36,,napi_threadsafe_function_call_js
+133968,MEMBER,<empty>,<empty>,handles_closing,8,,526,handles_closing,37,,bool
+134218,MEMBER,<empty>,<empty>,env_,17,,627,env_,12,,node_napi_env
+134219,MEMBER,<empty>,<empty>,async_id_,10,,628,async_id_,13,,double
+134220,MEMBER,<empty>,<empty>,trigger_async_id_,10,,629,trigger_async_id_,14,,double
+134221,MEMBER,<empty>,<empty>,resource_,26,,630,resource_,15,,ANY
+134222,MEMBER,<empty>,<empty>,lost_reference_,8,,631,lost_reference_,16,,bool
+134663,MEMBER,<empty>,<empty>,handle_,32,,812,handle_,4,,ANY
+134664,MEMBER,<empty>,<empty>,env_ = nullptr,12,,813,env_,5,,napi_env
+134665,MEMBER,<empty>,<empty>,user_hook_ = nullptr,27,,814,user_hook_,6,,napi_async_cleanup_hook
+134666,MEMBER,<empty>,<empty>,* user_data_ = nullptr,7,,815,user_data_,7,,void*
+134672,MEMBER,<empty>,<empty>,* done_data_ = nullptr,7,,817,done_data_,9,,void*
+136548,MEMBER,<empty>,<empty>,_env,17,,1204,_env,7,,node_napi_env
+136549,MEMBER,<empty>,<empty>,* _data,7,,1205,_data,8,,void*
+136550,MEMBER,<empty>,<empty>,_execute,31,,1206,_execute,9,,napi_async_execute_callback
+136551,MEMBER,<empty>,<empty>,_complete,32,,1207,_complete,10,,napi_async_complete_callback
+137602,MEMBER,<empty>,<empty>,nm_version,7,,37,nm_version,1,,int
+137603,MEMBER,<empty>,<empty>,nm_flags,16,,38,nm_flags,2,,unsigned int
+137604,MEMBER,<empty>,<empty>,* nm_filename,13,,39,nm_filename,3,,char*
+137605,MEMBER,<empty>,<empty>,nm_register_func,28,,40,nm_register_func,4,,napi_addon_register_func
+137606,MEMBER,<empty>,<empty>,* nm_modname,13,,41,nm_modname,5,,char*
+137607,MEMBER,<empty>,<empty>,* nm_priv,7,,42,nm_priv,6,,void*
+137608,MEMBER,<empty>,<empty>,* reserved[4],7,,43,reserved,7,,void*[4]
+137920,MEMBER,<empty>,<empty>,filename,15,,35,filename,12,,ANY
+137921,MEMBER,<empty>,<empty>,destructing = false,8,,36,destructing,13,,bool
+137922,MEMBER,<empty>,<empty>,finalization_scheduled = false,8,,37,finalization_scheduled,14,,bool
+137961,MEMBER,<empty>,<empty>,major,12,,40,major,1,,uint32_t
+137962,MEMBER,<empty>,<empty>,minor,12,,41,minor,2,,uint32_t
+137963,MEMBER,<empty>,<empty>,patch,12,,42,patch,3,,uint32_t
+137964,MEMBER,<empty>,<empty>,* release,13,,43,release,4,,char*
+138690,MEMBER,<empty>,<empty>,mutex_,9,,316,mutex_,4,,Mutex
+138692,MEMBER,<empty>,<empty>,refcount,18,,318,refcount,1,,unsigned int
+138693,MEMBER,<empty>,<empty>,wants_delete_module,10,,319,wants_delete_module,2,,bool
+138694,MEMBER,<empty>,<empty>,* module,16,,320,module,3,,node_module*
+138695,MEMBER,<empty>,<empty>,map_,36,,322,map_,6,,ANY
+142038,MEMBER,<empty>,<empty>,STATUS_EOS = 0,3,,14,STATUS_EOS,1,,int
+142039,MEMBER,<empty>,<empty>,STATUS_CONTINUE = 1,3,,18,STATUS_CONTINUE,2,,int
+142040,MEMBER,<empty>,<empty>,STATUS_BLOCK = 2,3,,24,STATUS_BLOCK,3,,int
+142041,MEMBER,<empty>,<empty>,STATUS_WAIT = 3,3,,30,STATUS_WAIT,4,,int
+142059,MEMBER,<empty>,<empty>,OPTIONS_NONE = 0,3,,34,OPTIONS_NONE,1,,int
+142060,MEMBER,<empty>,<empty>,OPTIONS_END = 1,3,,38,OPTIONS_END,2,,int
+142061,MEMBER,<empty>,<empty>,OPTIONS_SYNC = 2,3,,46,OPTIONS_SYNC,3,,int
+142116,MEMBER,<empty>,<empty>,eos_ = false,8,,101,eos_,4,,bool
+142254,MEMBER,<empty>,<empty>,persistent_,23,,102,persistent_,8,,Global<ArrayBuffer>
+142255,MEMBER,<empty>,<empty>,mutex_,9,,103,mutex_,9,,Mutex
+142256,MEMBER,<empty>,<empty>,callback_,16,,104,callback_,10,,FreeCallback
+142257,MEMBER,<empty>,<empty>,* const data_,7,,105,data_,11,,char*
+142258,MEMBER,<empty>,<empty>,* const hint_,7,,106,hint_,12,,void*
+142259,MEMBER,<empty>,<empty>,* const env_,14,,107,env_,13,,Environment*
+158689,MEMBER,<empty>,<empty>,mutex_,17,,64,mutex_,11,,Mutex
+158690,MEMBER,<empty>,<empty>,map_,48,,65,map_,12,,ANY
+161411,MEMBER,<empty>,<empty>,kEnhance,36,,352,kEnhance,1,,ANY
+161412,MEMBER,<empty>,<empty>,kDontEnhance,46,,352,kDontEnhance,2,,ANY
+198611,MEMBER,<empty>,<empty>,(http_parser_binding_data),17,,98,,2,,SET_BINDING_ID
+198613,MEMBER,<empty>,<empty>,parser_buffer,21,,100,parser_buffer,4,,ANY
+198614,MEMBER,<empty>,<empty>,parser_buffer_in_use = false,8,,101,parser_buffer_in_use,5,,bool
+198626,MEMBER,<empty>,<empty>,(BindingData),16,,106,,7,,SET_SELF_SIZE
+198628,MEMBER,<empty>,<empty>,(BindingData),23,,107,,9,,SET_MEMORY_INFO_NAME
+198803,MEMBER,<empty>,<empty>,* str_,13,,185,str_,8,,char*
+198804,MEMBER,<empty>,<empty>,on_heap_,8,,186,on_heap_,9,,bool
+198805,MEMBER,<empty>,<empty>,size_,10,,187,size_,10,,size_t
+198881,MEMBER,<empty>,<empty>,all_connections_,41,,234,all_connections_,11,,ANY
+198882,MEMBER,<empty>,<empty>,active_connections_,41,,235,active_connections_,12,,ANY
+200307,MEMBER,<empty>,<empty>,kAllocBufferSize = 64 * 1024,23,,739,kAllocBufferSize,28,,size_t
+201004,MEMBER,<empty>,<empty>,parser_,12,,975,parser_,38,,llhttp_t
+201005,MEMBER,<empty>,<empty>,fields_[kMaxHeaderFieldsCount],13,,976,fields_,39,,ANY
+201006,MEMBER,<empty>,<empty>,values_[kMaxHeaderFieldsCount],13,,977,values_,40,,ANY
+201007,MEMBER,<empty>,<empty>,url_,13,,978,url_,41,,StringPtr
+201008,MEMBER,<empty>,<empty>,status_message_,13,,979,status_message_,42,,StringPtr
+201009,MEMBER,<empty>,<empty>,num_fields_,10,,980,num_fields_,43,,size_t
+201010,MEMBER,<empty>,<empty>,num_values_,10,,981,num_values_,44,,size_t
+201011,MEMBER,<empty>,<empty>,have_flushed_,8,,982,have_flushed_,45,,bool
+201012,MEMBER,<empty>,<empty>,got_exception_,8,,983,got_exception_,46,,bool
+201013,MEMBER,<empty>,<empty>,current_buffer_len_,10,,984,current_buffer_len_,47,,size_t
+201014,MEMBER,<empty>,<empty>,* current_buffer_data_,13,,985,current_buffer_data_,48,,char*
+201015,MEMBER,<empty>,<empty>,headers_completed_ = false,8,,986,headers_completed_,49,,bool
+201016,MEMBER,<empty>,<empty>,pending_pause_ = false,8,,987,pending_pause_,50,,bool
+201017,MEMBER,<empty>,<empty>,header_nread_ = 0,12,,988,header_nread_,51,,uint64_t
+201018,MEMBER,<empty>,<empty>,max_http_header_size_,12,,989,max_http_header_size_,52,,uint64_t
+201019,MEMBER,<empty>,<empty>,last_message_start_,12,,990,last_message_start_,53,,uint64_t
+201020,MEMBER,<empty>,<empty>,* connectionsList_,18,,991,connectionsList_,54,,ConnectionsList*
+201021,MEMBER,<empty>,<empty>,binding_data_,30,,993,binding_data_,55,,BaseObjectPtr<BindingData>
+201076,MEMBER,<empty>,<empty>,settings,34,,1013,settings,60,,llhttp_settings_t
+203044,MEMBER,<empty>,<empty>,* deserializer = nullptr,20,,139,deserializer,6,,ValueDeserializer*
+203045,MEMBER,<empty>,<empty>,& host_objects_,47,,142,host_objects_,7,,ANY
+203046,MEMBER,<empty>,<empty>,& shared_array_buffers_,46,,143,shared_array_buffers_,8,,ANY
+203047,MEMBER,<empty>,<empty>,& wasm_modules_,40,,144,wasm_modules_,9,,ANY
+203048,MEMBER,<empty>,<empty>,& shared_value_conveyor_,43,,145,shared_value_conveyor_,10,,ANY
+204034,MEMBER,<empty>,<empty>,* serializer = nullptr,18,,414,serializer,10,,ValueSerializer*
+204141,MEMBER,<empty>,<empty>,* env_,14,,445,env_,12,,Environment*
+204142,MEMBER,<empty>,<empty>,context_,18,,446,context_,13,,Local<Context>
+204143,MEMBER,<empty>,<empty>,* msg_,10,,447,msg_,14,,Message*
+204144,MEMBER,<empty>,<empty>,seen_shared_array_buffers_,42,,448,seen_shared_array_buffers_,15,,ANY
+204145,MEMBER,<empty>,<empty>,host_objects_,42,,449,host_objects_,16,,ANY
+204146,MEMBER,<empty>,<empty>,first_cloned_object_index_ = SIZE_MAX,10,,450,first_cloned_object_index_,17,,size_t
+208616,MEMBER,<empty>,<empty>,refs_,7,,115,refs_,11,,int
+208643,MEMBER,<empty>,<empty>,handle_,30,,127,handle_,13,,ANY
+216070,MEMBER,<empty>,<empty>,* task_queue,18,,20,task_queue,1,,TaskQueue<Task>*
+216071,MEMBER,<empty>,<empty>,* platform_workers_mutex,8,,21,platform_workers_mutex,2,,Mutex*
+216072,MEMBER,<empty>,<empty>,* platform_workers_ready,20,,22,platform_workers_ready,3,,ConditionVariable*
+216073,MEMBER,<empty>,<empty>,* pending_platform_workers,6,,23,pending_platform_workers,4,,int*
+216074,MEMBER,<empty>,<empty>,id,7,,24,id,5,,int
+216366,MEMBER,<empty>,<empty>,* scheduler_,26,,121,scheduler_,3,,DelayedTaskScheduler*
+216434,MEMBER,<empty>,<empty>,* scheduler_,25,,143,scheduler_,3,,DelayedTaskScheduler*
+216435,MEMBER,<empty>,<empty>,task_,27,,144,task_,4,,ANY
+216436,MEMBER,<empty>,<empty>,delay_in_seconds_,12,,145,delay_in_seconds_,5,,double
+216495,MEMBER,<empty>,<empty>,ready_,12,,164,ready_,11,,uv_sem_t
+216496,MEMBER,<empty>,<empty>,* pending_worker_tasks_,18,,165,pending_worker_tasks_,12,,TaskQueue<Task>*
+216497,MEMBER,<empty>,<empty>,tasks_,19,,167,tasks_,13,,TaskQueue<Task>
+216498,MEMBER,<empty>,<empty>,loop_,13,,168,loop_,14,,uv_loop_t
+216499,MEMBER,<empty>,<empty>,flush_tasks_,14,,169,flush_tasks_,15,,uv_async_t
+216500,MEMBER,<empty>,<empty>,timers_,35,,170,timers_,16,,ANY
+227755,MEMBER,<empty>,<empty>,main_path,15,,183,main_path,1,,ANY
+227756,MEMBER,<empty>,<empty>,output_path,15,,184,output_path,2,,ANY
+227757,MEMBER,<empty>,<empty>,flags = SeaFlags::kDefault,12,,185,flags,3,,SeaFlags
+228260,MEMBER,<empty>,<empty>,length_,16,,93,length_,14,,size_t
+228261,MEMBER,<empty>,<empty>,deserializer_,21,,95,deserializer_,15,,ValueDeserializer
+238958,MEMBER,<empty>,<empty>,(NodeCategorySet),23,,47,,8,,SET_MEMORY_INFO_NAME
+238960,MEMBER,<empty>,<empty>,(NodeCategorySet),16,,48,,10,,SET_SELF_SIZE
+238970,MEMBER,<empty>,<empty>,enabled_ = false,8,,58,enabled_,13,,bool
+238971,MEMBER,<empty>,<empty>,categories_,31,,59,categories_,14,,ANY
+253531,MEMBER,<empty>,<empty>,* const w_,9,,246,w_,4,,Worker*
+253532,MEMBER,<empty>,<empty>,loop_,13,,247,loop_,5,,uv_loop_t
+253533,MEMBER,<empty>,<empty>,loop_init_failed_ = true,8,,248,loop_init_failed_,6,,bool
+253534,MEMBER,<empty>,<empty>,isolate_data_,45,,249,isolate_data_,7,,"DeleteFnPtr<IsolateData,FreeIsolateData>"
+253535,MEMBER,<empty>,<empty>,* snapshot_data_ = nullptr,21,,250,snapshot_data_,8,,SnapshotData*
+256722,MEMBER,<empty>,<empty>,NONE,3,,98,NONE,1,,ANY
+256723,MEMBER,<empty>,<empty>,DEFLATE,3,,99,DEFLATE,2,,ANY
+256724,MEMBER,<empty>,<empty>,INFLATE,3,,100,INFLATE,3,,ANY
+256725,MEMBER,<empty>,<empty>,GZIP,3,,101,GZIP,4,,ANY
+256726,MEMBER,<empty>,<empty>,GUNZIP,3,,102,GUNZIP,5,,ANY
+256727,MEMBER,<empty>,<empty>,DEFLATERAW,3,,103,DEFLATERAW,6,,ANY
+256728,MEMBER,<empty>,<empty>,INFLATERAW,3,,104,INFLATERAW,7,,ANY
+256729,MEMBER,<empty>,<empty>,UNZIP,3,,105,UNZIP,8,,ANY
+256730,MEMBER,<empty>,<empty>,BROTLI_DECODE,3,,106,BROTLI_DECODE,9,,ANY
+256731,MEMBER,<empty>,<empty>,BROTLI_ENCODE,3,,107,BROTLI_ENCODE,10,,ANY
+256754,MEMBER,<empty>,<empty>,* message = nullptr,13,,123,message,3,,char*
+256755,MEMBER,<empty>,<empty>,* code = nullptr,13,,124,code,4,,char*
+256756,MEMBER,<empty>,<empty>,err = 0,7,,125,err,5,,int
+256848,MEMBER,<empty>,<empty>,(ZlibContext),23,,150,,13,,SET_MEMORY_INFO_NAME
+256850,MEMBER,<empty>,<empty>,(ZlibContext),16,,151,,15,,SET_SELF_SIZE
+256886,MEMBER,<empty>,<empty>,mutex_,9,,165,mutex_,23,,Mutex
+256887,MEMBER,<empty>,<empty>,zlib_init_done_ = false,8,,166,zlib_init_done_,24,,bool
+256888,MEMBER,<empty>,<empty>,err_ = 0,7,,167,err_,25,,int
+256889,MEMBER,<empty>,<empty>,flush_ = 0,7,,168,flush_,26,,int
+256890,MEMBER,<empty>,<empty>,level_ = 0,7,,169,level_,27,,int
+256891,MEMBER,<empty>,<empty>,mem_level_ = 0,7,,170,mem_level_,28,,int
+256892,MEMBER,<empty>,<empty>,mode_ = NONE,18,,171,mode_,29,,node_zlib_mode
+256893,MEMBER,<empty>,<empty>,strategy_ = 0,7,,172,strategy_,30,,int
+256894,MEMBER,<empty>,<empty>,window_bits_ = 0,7,,173,window_bits_,31,,int
+256895,MEMBER,<empty>,<empty>,gzip_id_bytes_read_ = 0,16,,174,gzip_id_bytes_read_,32,,unsigned int
+256896,MEMBER,<empty>,<empty>,dictionary_,30,,175,dictionary_,33,,ANY
+256897,MEMBER,<empty>,<empty>,strm_,12,,177,strm_,34,,z_stream
+256971,MEMBER,<empty>,<empty>,mode_ = NONE,18,,195,mode_,8,,node_zlib_mode
+256972,MEMBER,<empty>,<empty>,* next_in_ = nullptr,16,,196,next_in_,9,,uint8_t*
+256973,MEMBER,<empty>,<empty>,* next_out_ = nullptr,10,,197,next_out_,10,,uint8_t*
+256974,MEMBER,<empty>,<empty>,avail_in_ = 0,10,,198,avail_in_,11,,size_t
+256975,MEMBER,<empty>,<empty>,avail_out_ = 0,10,,199,avail_out_,12,,size_t
+256976,MEMBER,<empty>,<empty>,flush_ = BROTLI_OPERATION_PROCESS,26,,200,flush_,13,,BrotliEncoderOperation
+256977,MEMBER,<empty>,<empty>,alloc_ = nullptr,21,,204,alloc_,14,,brotli_alloc_func
+256978,MEMBER,<empty>,<empty>,free_ = nullptr,20,,205,free_,15,,brotli_free_func
+256979,MEMBER,<empty>,<empty>,* alloc_opaque_ = nullptr,7,,206,alloc_opaque_,16,,void*
+257041,MEMBER,<empty>,<empty>,(BrotliEncoderContext),23,,220,,7,,SET_MEMORY_INFO_NAME
+257043,MEMBER,<empty>,<empty>,(BrotliEncoderContext),16,,221,,9,,SET_SELF_SIZE
+257046,MEMBER,<empty>,<empty>,state_,65,,226,state_,12,,"DeleteFnPtr<BrotliEncoderState,BrotliEncoderDestroyInstance>"
+257077,MEMBER,<empty>,<empty>,(BrotliDecoderContext),23,,240,,7,,SET_MEMORY_INFO_NAME
+257079,MEMBER,<empty>,<empty>,(BrotliDecoderContext),16,,241,,9,,SET_SELF_SIZE
+257082,MEMBER,<empty>,<empty>,error_ = BROTLI_DECODER_NO_ERROR,26,,246,error_,12,,BrotliDecoderErrorCode
+257083,MEMBER,<empty>,<empty>,error_string_,15,,247,error_string_,13,,ANY
+257084,MEMBER,<empty>,<empty>,state_,65,,248,state_,14,,"DeleteFnPtr<BrotliDecoderState,BrotliDecoderDestroyInstance>"
+257093,MEMBER,<empty>,<empty>,kCompressionStreamBaseField = AsyncWrap::kInternalFieldCount,5,,255,kCompressionStreamBaseField,1,,ANY
+257094,MEMBER,<empty>,<empty>,kWriteJSCallback,5,,256,kWriteJSCallback,2,,ANY
+257095,MEMBER,<empty>,<empty>,kInternalFieldCount,5,,257,kInternalFieldCount,3,,ANY
+257965,MEMBER,<empty>,<empty>,* stream,22,,526,stream,3,,CompressionStream*
+257991,MEMBER,<empty>,<empty>,init_done_ = false,8,,543,init_done_,24,,bool
+257992,MEMBER,<empty>,<empty>,write_in_progress_ = false,8,,544,write_in_progress_,25,,bool
+257993,MEMBER,<empty>,<empty>,pending_close_ = false,8,,545,pending_close_,26,,bool
+257994,MEMBER,<empty>,<empty>,closed_ = false,8,,546,closed_,27,,bool
+257995,MEMBER,<empty>,<empty>,refs_ = 0,16,,547,refs_,28,,unsigned int
+257996,MEMBER,<empty>,<empty>,* write_result_ = nullptr,11,,548,write_result_,29,,uint32_t*
+257997,MEMBER,<empty>,<empty>,unreported_allocations_{0},24,,549,unreported_allocations_,30,,ANY
+257998,MEMBER,<empty>,<empty>,zlib_memory_ = 0,10,,550,zlib_memory_,31,,size_t
+257999,MEMBER,<empty>,<empty>,ctx_,22,,552,ctx_,32,,CompressionContext
+258425,MEMBER,<empty>,<empty>,(ZlibStream),23,,648,,5,,SET_MEMORY_INFO_NAME
+258427,MEMBER,<empty>,<empty>,(ZlibStream),16,,649,,7,,SET_SELF_SIZE
+258706,MEMBER,<empty>,<empty>,(BrotliCompressionStream),23,,725,,7,,SET_MEMORY_INFO_NAME
+258708,MEMBER,<empty>,<empty>,(BrotliCompressionStream),16,,726,,9,,SET_SELF_SIZE
+274375,MEMBER,<empty>,<empty>,process_,16,,320,process_,9,,uv_process_t
+275458,MEMBER,<empty>,<empty>,handle_,15,,156,handle_,8,,uv_signal_t
+275459,MEMBER,<empty>,<empty>,active_ = false,8,,157,active_,9,,bool
+284659,MEMBER,<empty>,<empty>,* isolate_,10,,141,isolate_,11,,Isolate*
+284660,MEMBER,<empty>,<empty>,* data_,17,,142,data_,12,,TypeName*
+284661,MEMBER,<empty>,<empty>,length_,10,,143,length_,13,,size_t
+291523,MEMBER,<empty>,<empty>,* controller_,20,,32,controller_,3,,TracingController*
+291524,MEMBER,<empty>,<empty>,* agent_,8,,33,agent_,4,,Agent*
+292314,MEMBER,<empty>,<empty>,* agent_ = nullptr,8,,78,agent_,15,,Agent*
+292315,MEMBER,<empty>,<empty>,id_ = 0,7,,79,id_,16,,int
+292352,MEMBER,<empty>,<empty>,kUseDefaultCategories,5,,96,kUseDefaultCategories,1,,ANY
+292353,MEMBER,<empty>,<empty>,kIgnoreDefaultCategories,5,,97,kIgnoreDefaultCategories,2,,ANY
+292418,MEMBER,<empty>,<empty>,thread_,15,,133,thread_,19,,uv_thread_t
+292419,MEMBER,<empty>,<empty>,tracing_loop_,13,,134,tracing_loop_,20,,uv_loop_t
+292420,MEMBER,<empty>,<empty>,started_ = false,8,,136,started_,21,,bool
+292422,MEMBER,<empty>,<empty>,next_writer_id_ = 1,7,,140,next_writer_id_,23,,int
+292424,MEMBER,<empty>,<empty>,kDefaultHandleId = -1,10,,141,kDefaultHandleId,1,,ANY
+292433,MEMBER,<empty>,<empty>,categories_,55,,143,categories_,25,,ANY
+292434,MEMBER,<empty>,<empty>,writers_,62,,144,writers_,26,,ANY
+292435,MEMBER,<empty>,<empty>,tracing_controller_,38,,145,tracing_controller_,27,,ANY
+292436,MEMBER,<empty>,<empty>,initialize_writer_mutex_,9,,149,initialize_writer_mutex_,28,,Mutex
+292437,MEMBER,<empty>,<empty>,initialize_writer_condvar_,21,,150,initialize_writer_condvar_,29,,ConditionVariable
+292438,MEMBER,<empty>,<empty>,initialize_writer_async_,14,,151,initialize_writer_async_,30,,uv_async_t
+292439,MEMBER,<empty>,<empty>,to_be_initialized_,31,,152,to_be_initialized_,31,,ANY
+292440,MEMBER,<empty>,<empty>,metadata_events_mutex_,9,,154,metadata_events_mutex_,32,,Mutex
+292441,MEMBER,<empty>,<empty>,metadata_events_,43,,155,metadata_events_,33,,ANY
+293285,MEMBER,<empty>,<empty>,mutex_,9,,41,mutex_,10,,Mutex
+293286,MEMBER,<empty>,<empty>,flushing_,8,,42,flushing_,11,,bool
+293287,MEMBER,<empty>,<empty>,max_chunks_,10,,43,max_chunks_,12,,size_t
+293288,MEMBER,<empty>,<empty>,* agent_,8,,44,agent_,13,,Agent*
+293289,MEMBER,<empty>,<empty>,chunks_,50,,45,chunks_,14,,ANY
+293290,MEMBER,<empty>,<empty>,total_chunks_ = 0,10,,46,total_chunks_,15,,size_t
+293291,MEMBER,<empty>,<empty>,current_chunk_seq_ = 1,12,,47,current_chunk_seq_,16,,uint32_t
+293292,MEMBER,<empty>,<empty>,id_,12,,48,id_,17,,uint32_t
+293329,MEMBER,<empty>,<empty>,kBufferChunks = 1024,23,,60,kBufferChunks,6,,size_t
+293344,MEMBER,<empty>,<empty>,* tracing_loop_,12,,67,tracing_loop_,10,,uv_loop_t*
+293345,MEMBER,<empty>,<empty>,flush_signal_,14,,68,flush_signal_,11,,uv_async_t
+293346,MEMBER,<empty>,<empty>,exit_signal_,14,,69,exit_signal_,12,,uv_async_t
+293347,MEMBER,<empty>,<empty>,exited_ = false,8,,70,exited_,13,,bool
+293348,MEMBER,<empty>,<empty>,exit_mutex_,9,,72,exit_mutex_,14,,Mutex
+293349,MEMBER,<empty>,<empty>,exit_cond_,21,,74,exit_cond_,15,,ConditionVariable
+293350,MEMBER,<empty>,<empty>,current_buf_,37,,75,current_buf_,16,,ANY
+293351,MEMBER,<empty>,<empty>,buffer1_,23,,76,buffer1_,17,,InternalTraceBuffer
+293352,MEMBER,<empty>,<empty>,buffer2_,23,,77,buffer2_,18,,InternalTraceBuffer
+294097,MEMBER,<empty>,<empty>,kTracesPerFile = 1 << 19,20,,26,kTracesPerFile,6,,int
+294099,MEMBER,<empty>,<empty>,str,17,,30,str,1,,ANY
+294100,MEMBER,<empty>,<empty>,highest_request_id,9,,31,highest_request_id,2,,int
+294133,MEMBER,<empty>,<empty>,* tracing_loop_ = nullptr,12,,42,tracing_loop_,15,,uv_loop_t*
+294134,MEMBER,<empty>,<empty>,flush_signal_,14,,44,flush_signal_,16,,uv_async_t
+294135,MEMBER,<empty>,<empty>,exit_signal_,14,,46,exit_signal_,17,,uv_async_t
+294136,MEMBER,<empty>,<empty>,stream_mutex_,9,,50,stream_mutex_,18,,Mutex
+294137,MEMBER,<empty>,<empty>,request_mutex_,9,,53,request_mutex_,19,,Mutex
+294138,MEMBER,<empty>,<empty>,request_cond_,21,,56,request_cond_,20,,ConditionVariable
+294139,MEMBER,<empty>,<empty>,exit_cond_,21,,58,exit_cond_,21,,ConditionVariable
+294140,MEMBER,<empty>,<empty>,fd_ = -1,7,,59,fd_,22,,int
+294141,MEMBER,<empty>,<empty>,write_req_,11,,60,write_req_,23,,uv_fs_t
+294142,MEMBER,<empty>,<empty>,write_req_queue_,28,,61,write_req_queue_,24,,ANY
+294143,MEMBER,<empty>,<empty>,num_write_requests_ = 0,7,,62,num_write_requests_,25,,int
+294144,MEMBER,<empty>,<empty>,highest_request_id_completed_ = 0,7,,63,highest_request_id_completed_,26,,int
+294145,MEMBER,<empty>,<empty>,total_traces_ = 0,7,,64,total_traces_,27,,int
+294146,MEMBER,<empty>,<empty>,file_num_ = 0,7,,65,file_num_,28,,int
+294147,MEMBER,<empty>,<empty>,log_file_pattern_,15,,66,log_file_pattern_,29,,ANY
+294148,MEMBER,<empty>,<empty>,stream_,22,,67,stream_,30,,ANY
+294149,MEMBER,<empty>,<empty>,json_trace_writer_,32,,68,json_trace_writer_,31,,ANY
+294150,MEMBER,<empty>,<empty>,exited_ = false,8,,69,exited_,32,,bool
+294283,MEMBER,<empty>,<empty>,kEnabledForRecording_CategoryGroupEnabledFlags = 1 << 0,3,,25,kEnabledForRecording_CategoryGroupEnabledFlags,1,,ANY
+294284,MEMBER,<empty>,<empty>,kEnabledForEventCallback_CategoryGroupEnabledFlags = 1 << 2,3,,27,kEnabledForEventCallback_CategoryGroupEnabledFlags,2,,ANY
+294285,MEMBER,<empty>,<empty>,kEnabledForETWExport_CategoryGroupEnabledFlags = 1 << 3,3,,29,kEnabledForETWExport_CategoryGroupEnabledFlags,3,,ANY
+294386,MEMBER,<empty>,<empty>,* scope_ = nullptr,15,,342,scope_,4,,char*
+294387,MEMBER,<empty>,<empty>,raw_id_,14,,343,raw_id_,5,,uint64_t
+294458,MEMBER,<empty>,<empty>,* scope_ = nullptr,15,,367,scope_,13,,char*
+294459,MEMBER,<empty>,<empty>,raw_id_,14,,368,raw_id_,14,,uint64_t
+294514,MEMBER,<empty>,<empty>,raw_id_,14,,387,raw_id_,10,,uint64_t
+294643,MEMBER,<empty>,<empty>,* scope_ = nullptr,13,,434,scope_,18,,char*
+294644,MEMBER,<empty>,<empty>,raw_id_,12,,435,raw_id_,19,,uint64_t
+294653,MEMBER,<empty>,<empty>,as_bool,8,,440,as_bool,1,,bool
+294654,MEMBER,<empty>,<empty>,as_uint,12,,441,as_uint,2,,uint64_t
+294655,MEMBER,<empty>,<empty>,as_int,11,,442,as_int,3,,int64_t
+294656,MEMBER,<empty>,<empty>,as_double,10,,443,as_double,4,,double
+294657,MEMBER,<empty>,<empty>,* as_pointer,13,,444,as_pointer,5,,void*
+294658,MEMBER,<empty>,<empty>,* as_string,13,,445,as_string,6,,char*
+294671,MEMBER,<empty>,<empty>,* str_,13,,455,str_,3,,char*
+295336,MEMBER,<empty>,<empty>,* category_group_enabled,18,,709,category_group_enabled,1,,uint8_t*
+295337,MEMBER,<empty>,<empty>,* name,15,,710,name,2,,char*
+295338,MEMBER,<empty>,<empty>,event_handle,14,,711,event_handle,3,,uint64_t
+295339,MEMBER,<empty>,<empty>,* p_data_,7,,713,p_data_,5,,Data*
+295340,MEMBER,<empty>,<empty>,data_,8,,714,data_,6,,Data
+295945,MEMBER,<empty>,<empty>,data_,15,,62,data_,28,,ANY
+295946,MEMBER,<empty>,<empty>,first_item_,8,,63,first_item_,29,,bool
+295947,MEMBER,<empty>,<empty>,root_is_array_,8,,64,root_is_array_,30,,bool
+296589,MEMBER,<empty>,<empty>,msg_size,10,,78,msg_size,3,,size_t
+301457,MEMBER,<empty>,<empty>,value,7,,32,value,1,,int
+301458,MEMBER,<empty>,<empty>,* name,13,,33,name,2,,char*
+301459,MEMBER,<empty>,<empty>,* message,13,,34,message,3,,char*

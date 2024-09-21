@@ -1,0 +1,686 @@
+2201,JUMP_TARGET,-1,case 'u':,5,16,case,1,CPPASTCaseStatement
+2203,JUMP_TARGET,-1,case 'U':,5,17,case,3,CPPASTCaseStatement
+2344,JUMP_TARGET,-1,case 'l':,5,50,case,13,CPPASTCaseStatement
+2346,JUMP_TARGET,-1,case 'L':,5,51,case,15,CPPASTCaseStatement
+2375,JUMP_TARGET,-1,case 'b':,5,61,case,20,CPPASTCaseStatement
+2377,JUMP_TARGET,-1,case 'B':,5,62,case,22,CPPASTCaseStatement
+2481,JUMP_TARGET,-1,case 'a':,5,88,case,30,CPPASTCaseStatement
+2483,JUMP_TARGET,-1,case 'A':,5,89,case,32,CPPASTCaseStatement
+2512,JUMP_TARGET,-1,case 'h':,5,99,case,37,CPPASTCaseStatement
+2514,JUMP_TARGET,-1,case 'H':,5,100,case,39,CPPASTCaseStatement
+6527,JUMP_TARGET,-1,SIGNO_CASE(SIGTERM),5,74,default,1,CPPASTCaseStatement
+6531,JUMP_TARGET,-1,default:,5,164,default,4,CPPASTDefaultStatement
+6815,JUMP_TARGET,-1,default:,5,120,default,3,CPPASTDefaultStatement
+6844,JUMP_TARGET,-1,default:,5,142,default,3,CPPASTDefaultStatement
+8627,JUMP_TARGET,-1,default:,5,547,default,3,CPPASTDefaultStatement
+8775,JUMP_TARGET,-1,default:,5,624,default,3,CPPASTDefaultStatement
+10202,JUMP_TARGET,-1,case ns_t_a:,5,214,case,1,CPPASTCaseStatement
+10204,JUMP_TARGET,-1,case ns_t_cname:,5,215,case,3,CPPASTCaseStatement
+10206,JUMP_TARGET,-1,case ns_t_cname_or_a:,5,216,case,5,CPPASTCaseStatement
+10220,JUMP_TARGET,-1,case ns_t_aaaa:,5,223,case,9,CPPASTCaseStatement
+10234,JUMP_TARGET,-1,case ns_t_ns:,5,230,case,13,CPPASTCaseStatement
+10244,JUMP_TARGET,-1,case ns_t_ptr:,5,233,case,17,CPPASTCaseStatement
+10257,JUMP_TARGET,-1,default:,5,236,default,21,CPPASTDefaultStatement
+15553,JUMP_TARGET,-1,case 0:,5,1572,case,1,CPPASTCaseStatement
+15559,JUMP_TARGET,-1,case 4:,5,1575,case,5,CPPASTCaseStatement
+15565,JUMP_TARGET,-1,case 6:,5,1578,case,9,CPPASTCaseStatement
+15571,JUMP_TARGET,-1,default:,5,1581,default,13,CPPASTDefaultStatement
+16280,JUMP_TARGET,-1,case 4:,7,1732,case,1,CPPASTCaseStatement
+16298,JUMP_TARGET,-1,case 6:,7,1736,case,6,CPPASTCaseStatement
+16316,JUMP_TARGET,-1,default:,7,1740,default,11,CPPASTDefaultStatement
+17965,JUMP_TARGET,-1,case kWebCryptoCipherDecrypt:,7,89,case,1,CPPASTCaseStatement
+17999,JUMP_TARGET,-1,case kWebCryptoCipherEncrypt:,7,99,case,6,CPPASTCaseStatement
+18007,JUMP_TARGET,-1,default:,7,107,default,10,CPPASTDefaultStatement
+18861,JUMP_TARGET,-1,case kWebCryptoCipherDecrypt:,5,383,case,1,CPPASTCaseStatement
+18906,JUMP_TARGET,-1,case kWebCryptoCipherEncrypt:,5,398,case,4,CPPASTCaseStatement
+18943,JUMP_TARGET,-1,default:,5,410,default,7,CPPASTDefaultStatement
+19129,JUMP_TARGET,-1,case kKeyVariantAES_CTR_128:,5,482,case,1,CPPASTCaseStatement
+19159,JUMP_TARGET,-1,case kKeyVariantAES_CTR_192:,5,489,case,6,CPPASTCaseStatement
+19189,JUMP_TARGET,-1,case kKeyVariantAES_CTR_256:,5,496,case,11,CPPASTCaseStatement
+19219,JUMP_TARGET,-1,case kKeyVariantAES_CBC_128:,5,503,case,16,CPPASTCaseStatement
+19239,JUMP_TARGET,-1,case kKeyVariantAES_CBC_192:,5,508,case,21,CPPASTCaseStatement
+19259,JUMP_TARGET,-1,case kKeyVariantAES_CBC_256:,5,513,case,26,CPPASTCaseStatement
+19279,JUMP_TARGET,-1,case kKeyVariantAES_KW_128:,5,518,case,31,CPPASTCaseStatement
+19287,JUMP_TARGET,-1,case kKeyVariantAES_KW_192:,5,522,case,36,CPPASTCaseStatement
+19295,JUMP_TARGET,-1,case kKeyVariantAES_KW_256:,5,526,case,41,CPPASTCaseStatement
+19303,JUMP_TARGET,-1,case kKeyVariantAES_GCM_128:,5,530,case,46,CPPASTCaseStatement
+19346,JUMP_TARGET,-1,case kKeyVariantAES_GCM_192:,5,538,case,51,CPPASTCaseStatement
+19389,JUMP_TARGET,-1,case kKeyVariantAES_GCM_256:,5,546,case,56,CPPASTCaseStatement
+19432,JUMP_TARGET,-1,default:,5,554,default,61,CPPASTDefaultStatement
+19490,JUMP_TARGET,-1,default:,5,585,default,3,CPPASTDefaultStatement
+19987,JUMP_TARGET,-1,case BIO_CTRL_RESET:,5,178,case,1,CPPASTCaseStatement
+19994,JUMP_TARGET,-1,case BIO_CTRL_EOF:,5,181,case,5,CPPASTCaseStatement
+20005,JUMP_TARGET,-1,case BIO_C_SET_BUF_MEM_EOF_RETURN:,5,184,case,9,CPPASTCaseStatement
+20013,JUMP_TARGET,-1,case BIO_CTRL_INFO:,5,187,case,13,CPPASTCaseStatement
+20033,JUMP_TARGET,-1,case BIO_C_SET_BUF_MEM:,5,192,case,18,CPPASTCaseStatement
+20037,JUMP_TARGET,-1,case BIO_C_GET_BUF_MEM_PTR:,5,194,case,21,CPPASTCaseStatement
+20041,JUMP_TARGET,-1,case BIO_CTRL_GET_CLOSE:,5,196,case,24,CPPASTCaseStatement
+20048,JUMP_TARGET,-1,case BIO_CTRL_SET_CLOSE:,5,199,case,28,CPPASTCaseStatement
+20054,JUMP_TARGET,-1,case BIO_CTRL_WPENDING:,5,202,case,32,CPPASTCaseStatement
+20060,JUMP_TARGET,-1,case BIO_CTRL_PENDING:,5,205,case,36,CPPASTCaseStatement
+20069,JUMP_TARGET,-1,case BIO_CTRL_DUP:,5,208,case,40,CPPASTCaseStatement
+20071,JUMP_TARGET,-1,case BIO_CTRL_FLUSH:,5,209,case,42,CPPASTCaseStatement
+20077,JUMP_TARGET,-1,case BIO_CTRL_PUSH:,5,212,case,46,CPPASTCaseStatement
+20079,JUMP_TARGET,-1,case BIO_CTRL_POP:,5,213,case,48,CPPASTCaseStatement
+20081,JUMP_TARGET,-1,default:,5,214,default,50,CPPASTDefaultStatement
+20977,JUMP_TARGET,-1,case EVP_CIPH_CCM_MODE:,3,31,case,1,CPPASTCaseStatement
+20979,JUMP_TARGET,-1,case EVP_CIPH_GCM_MODE:,3,32,case,3,CPPASTCaseStatement
+20981,JUMP_TARGET,-1,case EVP_CIPH_OCB_MODE:,3,34,case,5,CPPASTCaseStatement
+20985,JUMP_TARGET,-1,case EVP_CIPH_STREAM_CIPHER:,3,37,case,8,CPPASTCaseStatement
+20992,JUMP_TARGET,-1,default:,3,39,default,11,CPPASTDefaultStatement
+21149,JUMP_TARGET,-1,case EVP_CIPH_CBC_MODE:,5,79,case,1,CPPASTCaseStatement
+21155,JUMP_TARGET,-1,case EVP_CIPH_CCM_MODE:,5,80,case,5,CPPASTCaseStatement
+21161,JUMP_TARGET,-1,case EVP_CIPH_CFB_MODE:,5,81,case,9,CPPASTCaseStatement
+21167,JUMP_TARGET,-1,case EVP_CIPH_CTR_MODE:,5,82,case,13,CPPASTCaseStatement
+21173,JUMP_TARGET,-1,case EVP_CIPH_ECB_MODE:,5,83,case,17,CPPASTCaseStatement
+21179,JUMP_TARGET,-1,case EVP_CIPH_GCM_MODE:,5,84,case,21,CPPASTCaseStatement
+21185,JUMP_TARGET,-1,case EVP_CIPH_OCB_MODE:,5,85,case,25,CPPASTCaseStatement
+21191,JUMP_TARGET,-1,case EVP_CIPH_OFB_MODE:,5,86,case,29,CPPASTCaseStatement
+21197,JUMP_TARGET,-1,case EVP_CIPH_WRAP_MODE:,5,87,case,33,CPPASTCaseStatement
+21203,JUMP_TARGET,-1,case EVP_CIPH_XTS_MODE:,5,88,case,37,CPPASTCaseStatement
+21209,JUMP_TARGET,-1,case EVP_CIPH_STREAM_CIPHER:,5,89,case,41,CPPASTCaseStatement
+21303,JUMP_TARGET,-1,case EVP_CIPH_CCM_MODE:,9,119,case,1,CPPASTCaseStatement
+21316,JUMP_TARGET,-1,case EVP_CIPH_GCM_MODE:,9,123,case,5,CPPASTCaseStatement
+21318,JUMP_TARGET,-1,case EVP_CIPH_OCB_MODE:,9,125,case,7,CPPASTCaseStatement
+21333,JUMP_TARGET,-1,default:,9,134,default,11,CPPASTDefaultStatement
+24454,JUMP_TARGET,-1,case kWaiting:,5,29,case,1,CPPASTCaseStatement
+24463,JUMP_TARGET,-1,case kTLSHeader:,5,33,case,4,CPPASTCaseStatement
+24469,JUMP_TARGET,-1,case kPaused:,5,36,case,8,CPPASTCaseStatement
+24471,JUMP_TARGET,-1,case kEnded:,5,38,case,10,CPPASTCaseStatement
+24474,JUMP_TARGET,-1,default:,5,41,default,13,CPPASTDefaultStatement
+24687,JUMP_TARGET,-1,case kServerName:,5,135,case,1,CPPASTCaseStatement
+24787,JUMP_TARGET,-1,case kTLSSessionTicket:,5,158,case,5,CPPASTCaseStatement
+24798,JUMP_TARGET,-1,default:,5,162,default,10,CPPASTDefaultStatement
+25651,JUMP_TARGET,-1,CASE_X509_ERR(UNABLE_TO_GET_ISSUER_CERT),5,218,default,1,CPPASTCaseStatement
+25659,JUMP_TARGET,-1,CASE_X509_ERR(UNABLE_TO_GET_CRL),5,219,default,1,CPPASTCaseStatement
+25667,JUMP_TARGET,-1,CASE_X509_ERR(UNABLE_TO_DECRYPT_CERT_SIGNATURE),5,220,default,1,CPPASTCaseStatement
+25675,JUMP_TARGET,-1,CASE_X509_ERR(UNABLE_TO_DECRYPT_CRL_SIGNATURE),5,221,default,1,CPPASTCaseStatement
+25683,JUMP_TARGET,-1,CASE_X509_ERR(UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY),5,222,default,1,CPPASTCaseStatement
+25691,JUMP_TARGET,-1,CASE_X509_ERR(CERT_SIGNATURE_FAILURE),5,223,default,1,CPPASTCaseStatement
+25699,JUMP_TARGET,-1,CASE_X509_ERR(CRL_SIGNATURE_FAILURE),5,224,default,1,CPPASTCaseStatement
+25707,JUMP_TARGET,-1,CASE_X509_ERR(CERT_NOT_YET_VALID),5,225,default,1,CPPASTCaseStatement
+25715,JUMP_TARGET,-1,CASE_X509_ERR(CERT_HAS_EXPIRED),5,226,default,1,CPPASTCaseStatement
+25723,JUMP_TARGET,-1,CASE_X509_ERR(CRL_NOT_YET_VALID),5,227,default,1,CPPASTCaseStatement
+25731,JUMP_TARGET,-1,CASE_X509_ERR(CRL_HAS_EXPIRED),5,228,default,1,CPPASTCaseStatement
+25739,JUMP_TARGET,-1,CASE_X509_ERR(ERROR_IN_CERT_NOT_BEFORE_FIELD),5,229,default,1,CPPASTCaseStatement
+25747,JUMP_TARGET,-1,CASE_X509_ERR(ERROR_IN_CERT_NOT_AFTER_FIELD),5,230,default,1,CPPASTCaseStatement
+25755,JUMP_TARGET,-1,CASE_X509_ERR(ERROR_IN_CRL_LAST_UPDATE_FIELD),5,231,default,1,CPPASTCaseStatement
+25763,JUMP_TARGET,-1,CASE_X509_ERR(ERROR_IN_CRL_NEXT_UPDATE_FIELD),5,232,default,1,CPPASTCaseStatement
+25771,JUMP_TARGET,-1,CASE_X509_ERR(OUT_OF_MEM),5,233,default,1,CPPASTCaseStatement
+25779,JUMP_TARGET,-1,CASE_X509_ERR(DEPTH_ZERO_SELF_SIGNED_CERT),5,234,default,1,CPPASTCaseStatement
+25787,JUMP_TARGET,-1,CASE_X509_ERR(SELF_SIGNED_CERT_IN_CHAIN),5,235,default,1,CPPASTCaseStatement
+25795,JUMP_TARGET,-1,CASE_X509_ERR(UNABLE_TO_GET_ISSUER_CERT_LOCALLY),5,236,default,1,CPPASTCaseStatement
+25803,JUMP_TARGET,-1,CASE_X509_ERR(UNABLE_TO_VERIFY_LEAF_SIGNATURE),5,237,default,1,CPPASTCaseStatement
+25811,JUMP_TARGET,-1,CASE_X509_ERR(CERT_CHAIN_TOO_LONG),5,238,default,1,CPPASTCaseStatement
+25819,JUMP_TARGET,-1,CASE_X509_ERR(CERT_REVOKED),5,239,default,1,CPPASTCaseStatement
+25827,JUMP_TARGET,-1,CASE_X509_ERR(INVALID_CA),5,240,default,1,CPPASTCaseStatement
+25835,JUMP_TARGET,-1,CASE_X509_ERR(PATH_LENGTH_EXCEEDED),5,241,default,1,CPPASTCaseStatement
+25843,JUMP_TARGET,-1,CASE_X509_ERR(INVALID_PURPOSE),5,242,default,1,CPPASTCaseStatement
+25851,JUMP_TARGET,-1,CASE_X509_ERR(CERT_UNTRUSTED),5,243,default,1,CPPASTCaseStatement
+25859,JUMP_TARGET,-1,CASE_X509_ERR(CERT_REJECTED),5,244,default,1,CPPASTCaseStatement
+25867,JUMP_TARGET,-1,CASE_X509_ERR(HOSTNAME_MISMATCH),5,245,default,1,CPPASTCaseStatement
+27068,JUMP_TARGET,-1,"case '""':",5,592,case,1,CPPASTCaseStatement
+27070,JUMP_TARGET,-1,case '\\':,5,593,case,3,CPPASTCaseStatement
+27072,JUMP_TARGET,-1,"case ',':",5,596,case,5,CPPASTCaseStatement
+27074,JUMP_TARGET,-1,case '\'':,5,600,case,7,CPPASTCaseStatement
+27078,JUMP_TARGET,-1,default:,5,605,default,10,CPPASTDefaultStatement
+28790,JUMP_TARGET,-1,case EVP_PKEY_DH:,5,1120,case,1,CPPASTCaseStatement
+28827,JUMP_TARGET,-1,case EVP_PKEY_EC:,5,1129,case,5,CPPASTCaseStatement
+28829,JUMP_TARGET,-1,case EVP_PKEY_X25519:,5,1130,case,7,CPPASTCaseStatement
+28831,JUMP_TARGET,-1,case EVP_PKEY_X448:,5,1131,case,9,CPPASTCaseStatement
+29407,JUMP_TARGET,-1,case EVP_PKEY_RSA:,7,1300,case,1,CPPASTCaseStatement
+29419,JUMP_TARGET,-1,case EVP_PKEY_EC:,7,1303,case,5,CPPASTCaseStatement
+36343,JUMP_TARGET,-1,case kWebCryptoKeyFormatPKCS8:,5,609,case,1,CPPASTCaseStatement
+36364,JUMP_TARGET,-1,case kWebCryptoKeyFormatSPKI:,5,613,case,5,CPPASTCaseStatement
+36385,JUMP_TARGET,-1,default:,5,617,default,9,CPPASTDefaultStatement
+37045,JUMP_TARGET,-1,case kWebCryptoKeyFormatRaw:,5,113,case,1,CPPASTCaseStatement
+37051,JUMP_TARGET,-1,case kWebCryptoKeyFormatPKCS8:,5,116,case,4,CPPASTCaseStatement
+37072,JUMP_TARGET,-1,case kWebCryptoKeyFormatSPKI:,5,120,case,8,CPPASTCaseStatement
+37093,JUMP_TARGET,-1,default:,5,124,default,12,CPPASTDefaultStatement
+39181,JUMP_TARGET,-1,case EVP_PKEY_X25519:,5,492,case,1,CPPASTCaseStatement
+39183,JUMP_TARGET,-1,case EVP_PKEY_X448:,5,494,case,3,CPPASTCaseStatement
+39275,JUMP_TARGET,-1,default:,5,518,default,6,CPPASTDefaultStatement
+39393,JUMP_TARGET,-1,case EVP_PKEY_ED25519:,5,555,case,1,CPPASTCaseStatement
+39395,JUMP_TARGET,-1,case EVP_PKEY_ED448:,5,557,case,3,CPPASTCaseStatement
+39397,JUMP_TARGET,-1,case EVP_PKEY_X25519:,5,559,case,5,CPPASTCaseStatement
+39399,JUMP_TARGET,-1,case EVP_PKEY_X448:,5,561,case,7,CPPASTCaseStatement
+39413,JUMP_TARGET,-1,default:,5,564,default,11,CPPASTDefaultStatement
+39675,JUMP_TARGET,-1,case kKeyTypePrivate:,7,642,case,1,CPPASTCaseStatement
+39681,JUMP_TARGET,-1,case kKeyTypePublic:,7,645,case,5,CPPASTCaseStatement
+39687,JUMP_TARGET,-1,case kKeyTypeSecret:,7,648,case,9,CPPASTCaseStatement
+39858,JUMP_TARGET,-1,case kWebCryptoKeyFormatRaw:,5,699,case,1,CPPASTCaseStatement
+39868,JUMP_TARGET,-1,case kWebCryptoKeyFormatPKCS8:,5,701,case,4,CPPASTCaseStatement
+39889,JUMP_TARGET,-1,case kWebCryptoKeyFormatSPKI:,5,705,case,8,CPPASTCaseStatement
+40094,JUMP_TARGET,-1,default:,5,750,default,11,CPPASTDefaultStatement
+40261,JUMP_TARGET,-1,case NID_X9_62_prime256v1:,5,807,case,1,CPPASTCaseStatement
+40272,JUMP_TARGET,-1,case NID_secp256k1:,5,810,case,5,CPPASTCaseStatement
+40283,JUMP_TARGET,-1,case NID_secp384r1:,5,813,case,9,CPPASTCaseStatement
+40294,JUMP_TARGET,-1,case NID_secp521r1:,5,816,case,13,CPPASTCaseStatement
+40305,JUMP_TARGET,-1,default:,5,819,default,17,CPPASTDefaultStatement
+40397,JUMP_TARGET,-1,case EVP_PKEY_ED25519:,5,854,case,1,CPPASTCaseStatement
+40403,JUMP_TARGET,-1,case EVP_PKEY_ED448:,5,857,case,5,CPPASTCaseStatement
+40409,JUMP_TARGET,-1,case EVP_PKEY_X25519:,5,860,case,9,CPPASTCaseStatement
+40415,JUMP_TARGET,-1,case EVP_PKEY_X448:,5,863,case,13,CPPASTCaseStatement
+40421,JUMP_TARGET,-1,default:,5,866,default,17,CPPASTDefaultStatement
+43545,JUMP_TARGET,-1,case SignConfiguration::kSign:,5,264,case,1,CPPASTCaseStatement
+43558,JUMP_TARGET,-1,case SignConfiguration::kVerify:,5,267,case,5,CPPASTCaseStatement
+43610,JUMP_TARGET,-1,default:,5,273,default,9,CPPASTDefaultStatement
+45490,JUMP_TARGET,-1,case EVP_PKEY_RSA_PSS:,5,493,case,1,CPPASTCaseStatement
+45502,JUMP_TARGET,-1,case EVP_PKEY_RSA:,5,497,case,4,CPPASTCaseStatement
+45509,JUMP_TARGET,-1,case EVP_PKEY_EC:,5,498,case,7,CPPASTCaseStatement
+45523,JUMP_TARGET,-1,case EVP_PKEY_ED25519:,5,500,case,10,CPPASTCaseStatement
+45525,JUMP_TARGET,-1,case EVP_PKEY_ED448:,5,502,case,12,CPPASTCaseStatement
+45527,JUMP_TARGET,-1,case EVP_PKEY_X25519:,5,504,case,14,CPPASTCaseStatement
+45529,JUMP_TARGET,-1,case EVP_PKEY_X448:,5,506,case,16,CPPASTCaseStatement
+45644,JUMP_TARGET,-1,case EVP_PKEY_RSA:,5,546,case,1,CPPASTCaseStatement
+45646,JUMP_TARGET,-1,case EVP_PKEY_RSA_PSS:,5,548,case,3,CPPASTCaseStatement
+45653,JUMP_TARGET,-1,case EVP_PKEY_DSA:,5,549,case,6,CPPASTCaseStatement
+45660,JUMP_TARGET,-1,case EVP_PKEY_EC:,5,550,case,9,CPPASTCaseStatement
+45667,JUMP_TARGET,-1,case EVP_PKEY_DH:,5,551,case,12,CPPASTCaseStatement
+45845,JUMP_TARGET,-1,case kKeyTypeSecret:,5,619,case,1,CPPASTCaseStatement
+45855,JUMP_TARGET,-1,case kKeyTypePublic:,5,621,case,4,CPPASTCaseStatement
+45857,JUMP_TARGET,-1,case kKeyTypePrivate:,5,623,case,6,CPPASTCaseStatement
+45868,JUMP_TARGET,-1,default:,5,626,default,9,CPPASTDefaultStatement
+46514,JUMP_TARGET,-1,case kKeyEncodingPKCS1:,9,786,case,1,CPPASTCaseStatement
+46531,JUMP_TARGET,-1,case kKeyEncodingSPKI:,9,790,case,5,CPPASTCaseStatement
+46537,JUMP_TARGET,-1,case kKeyEncodingPKCS8:,9,793,case,9,CPPASTCaseStatement
+46539,JUMP_TARGET,-1,case kKeyEncodingSEC1:,9,794,case,11,CPPASTCaseStatement
+46545,JUMP_TARGET,-1,default:,9,797,default,15,CPPASTDefaultStatement
+46652,JUMP_TARGET,-1,case ParseKeyResult::kParseKeyOk:,5,825,case,1,CPPASTCaseStatement
+46659,JUMP_TARGET,-1,case ParseKeyResult::kParseKeyNeedPassphrase:,5,828,case,5,CPPASTCaseStatement
+46667,JUMP_TARGET,-1,default:,5,832,default,9,CPPASTDefaultStatement
+46698,JUMP_TARGET,-1,case kKeyTypeSecret:,5,849,case,1,CPPASTCaseStatement
+46710,JUMP_TARGET,-1,case kKeyTypePrivate:,5,852,case,5,CPPASTCaseStatement
+46712,JUMP_TARGET,-1,case kKeyTypePublic:,5,854,case,7,CPPASTCaseStatement
+46721,JUMP_TARGET,-1,default:,5,857,default,11,CPPASTDefaultStatement
+47144,JUMP_TARGET,-1,case kKeyTypeSecret:,3,981,case,1,CPPASTCaseStatement
+47171,JUMP_TARGET,-1,case kKeyTypePublic:,3,987,case,4,CPPASTCaseStatement
+47208,JUMP_TARGET,-1,case kKeyTypePrivate:,3,997,case,7,CPPASTCaseStatement
+47246,JUMP_TARGET,-1,default:,3,1007,default,10,CPPASTDefaultStatement
+47625,JUMP_TARGET,-1,case EVP_PKEY_X25519:,5,1110,case,1,CPPASTCaseStatement
+47627,JUMP_TARGET,-1,case EVP_PKEY_X448:,5,1111,case,3,CPPASTCaseStatement
+47629,JUMP_TARGET,-1,case EVP_PKEY_ED25519:,5,1112,case,5,CPPASTCaseStatement
+47631,JUMP_TARGET,-1,case EVP_PKEY_ED448:,5,1113,case,7,CPPASTCaseStatement
+47680,JUMP_TARGET,-1,default:,5,1124,default,10,CPPASTDefaultStatement
+47754,JUMP_TARGET,-1,case kKeyTypeSecret:,5,1144,case,1,CPPASTCaseStatement
+47792,JUMP_TARGET,-1,case kKeyTypePublic:,5,1156,case,4,CPPASTCaseStatement
+47794,JUMP_TARGET,-1,case kKeyTypePrivate:,5,1157,case,6,CPPASTCaseStatement
+47846,JUMP_TARGET,-1,default:,5,1172,default,9,CPPASTDefaultStatement
+47903,JUMP_TARGET,-1,case kKeyTypeSecret:,5,1189,case,1,CPPASTCaseStatement
+47921,JUMP_TARGET,-1,case kKeyTypePublic:,5,1193,case,5,CPPASTCaseStatement
+47923,JUMP_TARGET,-1,case kKeyTypePrivate:,5,1195,case,7,CPPASTCaseStatement
+47941,JUMP_TARGET,-1,default:,5,1199,default,11,CPPASTDefaultStatement
+47971,JUMP_TARGET,-1,case EVP_PKEY_RSA:,3,1209,case,1,CPPASTCaseStatement
+47978,JUMP_TARGET,-1,case EVP_PKEY_RSA_PSS:,3,1211,case,4,CPPASTCaseStatement
+47985,JUMP_TARGET,-1,case EVP_PKEY_DSA:,3,1213,case,7,CPPASTCaseStatement
+47992,JUMP_TARGET,-1,case EVP_PKEY_DH:,3,1215,case,10,CPPASTCaseStatement
+47999,JUMP_TARGET,-1,case EVP_PKEY_EC:,3,1217,case,13,CPPASTCaseStatement
+48006,JUMP_TARGET,-1,case EVP_PKEY_ED25519:,3,1219,case,16,CPPASTCaseStatement
+48013,JUMP_TARGET,-1,case EVP_PKEY_ED448:,3,1221,case,19,CPPASTCaseStatement
+48020,JUMP_TARGET,-1,case EVP_PKEY_X25519:,3,1223,case,22,CPPASTCaseStatement
+48027,JUMP_TARGET,-1,case EVP_PKEY_X448:,3,1225,case,25,CPPASTCaseStatement
+48034,JUMP_TARGET,-1,default:,3,1227,default,28,CPPASTDefaultStatement
+48746,JUMP_TARGET,-1,case kKeyTypeSecret:,5,1387,case,1,CPPASTCaseStatement
+48755,JUMP_TARGET,-1,case kKeyTypePublic:,5,1390,case,5,CPPASTCaseStatement
+48764,JUMP_TARGET,-1,case kKeyTypePrivate:,5,1393,case,9,CPPASTCaseStatement
+48773,JUMP_TARGET,-1,default:,5,1396,default,13,CPPASTDefaultStatement
+52972,JUMP_TARGET,-1,case kWebCryptoKeyFormatRaw:,5,269,case,1,CPPASTCaseStatement
+52978,JUMP_TARGET,-1,case kWebCryptoKeyFormatJWK:,5,272,case,4,CPPASTCaseStatement
+52988,JUMP_TARGET,-1,case kWebCryptoKeyFormatPKCS8:,5,274,case,7,CPPASTCaseStatement
+53009,JUMP_TARGET,-1,case kWebCryptoKeyFormatSPKI:,5,278,case,11,CPPASTCaseStatement
+53030,JUMP_TARGET,-1,default:,5,282,default,15,CPPASTDefaultStatement
+53107,JUMP_TARGET,-1,case kKeyVariantRSA_OAEP:,5,314,case,1,CPPASTCaseStatement
+53188,JUMP_TARGET,-1,default:,5,334,default,4,CPPASTDefaultStatement
+53209,JUMP_TARGET,-1,case kWebCryptoCipherEncrypt:,5,350,case,1,CPPASTCaseStatement
+53227,JUMP_TARGET,-1,case kWebCryptoCipherDecrypt:,5,354,case,5,CPPASTCaseStatement
+55731,JUMP_TARGET,-1,case SignBase::Error::kSignUnknownDigest:,5,227,case,1,CPPASTCaseStatement
+55740,JUMP_TARGET,-1,case SignBase::Error::kSignNotInitialised:,5,230,case,4,CPPASTCaseStatement
+55750,JUMP_TARGET,-1,case SignBase::Error::kSignMalformedSignature:,5,233,case,7,CPPASTCaseStatement
+55760,JUMP_TARGET,-1,case SignBase::Error::kSignInit:,5,236,case,10,CPPASTCaseStatement
+55766,JUMP_TARGET,-1,case SignBase::Error::kSignUpdate:,5,237,case,12,CPPASTCaseStatement
+55772,JUMP_TARGET,-1,case SignBase::Error::kSignPrivateKey:,5,238,case,14,CPPASTCaseStatement
+55778,JUMP_TARGET,-1,case SignBase::Error::kSignPublicKey:,5,239,case,16,CPPASTCaseStatement
+55799,JUMP_TARGET,-1,case SignBase::Error::kSignInit:,11,245,case,1,CPPASTCaseStatement
+55809,JUMP_TARGET,-1,case SignBase::Error::kSignUpdate:,11,248,case,4,CPPASTCaseStatement
+55819,JUMP_TARGET,-1,case SignBase::Error::kSignPrivateKey:,11,251,case,7,CPPASTCaseStatement
+55829,JUMP_TARGET,-1,case SignBase::Error::kSignPublicKey:,11,254,case,10,CPPASTCaseStatement
+55839,JUMP_TARGET,-1,default:,11,257,default,13,CPPASTDefaultStatement
+55841,JUMP_TARGET,-1,case SignBase::Error::kSignOk:,5,262,case,19,CPPASTCaseStatement
+55860,JUMP_TARGET,-1,case EVP_PKEY_ED25519:,5,269,case,1,CPPASTCaseStatement
+55862,JUMP_TARGET,-1,case EVP_PKEY_ED448:,5,270,case,3,CPPASTCaseStatement
+55866,JUMP_TARGET,-1,default:,5,272,default,6,CPPASTDefaultStatement
+55882,JUMP_TARGET,-1,case EVP_PKEY_EC:,5,280,case,1,CPPASTCaseStatement
+55884,JUMP_TARGET,-1,case EVP_PKEY_DSA:,5,281,case,3,CPPASTCaseStatement
+55890,JUMP_TARGET,-1,default:,5,283,default,6,CPPASTDefaultStatement
+57445,JUMP_TARGET,-1,case SignConfiguration::kSign:,5,703,case,1,CPPASTCaseStatement
+57482,JUMP_TARGET,-1,case SignConfiguration::kVerify:,5,714,case,5,CPPASTCaseStatement
+57580,JUMP_TARGET,-1,case SignConfiguration::kSign:,5,744,case,1,CPPASTCaseStatement
+57794,JUMP_TARGET,-1,case SignConfiguration::kVerify:,5,792,case,4,CPPASTCaseStatement
+57877,JUMP_TARGET,-1,case SignConfiguration::kSign:,5,816,case,1,CPPASTCaseStatement
+57890,JUMP_TARGET,-1,case SignConfiguration::kVerify:,5,819,case,5,CPPASTCaseStatement
+57914,JUMP_TARGET,-1,default:,5,822,default,9,CPPASTDefaultStatement
+60704,JUMP_TARGET,-1,case SSL_ERROR_ZERO_RETURN:,7,733,case,1,CPPASTCaseStatement
+60715,JUMP_TARGET,-1,case SSL_ERROR_SSL:,7,740,case,5,CPPASTCaseStatement
+60717,JUMP_TARGET,-1,case SSL_ERROR_SYSCALL:,7,741,case,7,CPPASTCaseStatement
+60897,JUMP_TARGET,-1,default:,7,775,default,11,CPPASTDefaultStatement
+64425,JUMP_TARGET,-1,case EVP_PKEY_RSA:,7,1761,case,1,CPPASTCaseStatement
+64431,JUMP_TARGET,-1,case EVP_PKEY_RSA_PSS:,7,1765,case,5,CPPASTCaseStatement
+64437,JUMP_TARGET,-1,case EVP_PKEY_DSA:,7,1769,case,9,CPPASTCaseStatement
+64443,JUMP_TARGET,-1,case EVP_PKEY_EC:,7,1773,case,13,CPPASTCaseStatement
+64449,JUMP_TARGET,-1,case NID_ED25519:,7,1777,case,17,CPPASTCaseStatement
+64455,JUMP_TARGET,-1,case NID_ED448:,7,1781,case,21,CPPASTCaseStatement
+64461,JUMP_TARGET,-1,case NID_id_GostR3410_2001:,7,1785,case,25,CPPASTCaseStatement
+64467,JUMP_TARGET,-1,case NID_id_GostR3410_2012_256:,7,1789,case,29,CPPASTCaseStatement
+64473,JUMP_TARGET,-1,case NID_id_GostR3410_2012_512:,7,1793,case,33,CPPASTCaseStatement
+64479,JUMP_TARGET,-1,default:,7,1797,default,37,CPPASTDefaultStatement
+66207,JUMP_TARGET,-1,case 0:,7,188,case,1,CPPASTCaseStatement
+66213,JUMP_TARGET,-1,case 2:,7,191,case,5,CPPASTCaseStatement
+66219,JUMP_TARGET,-1,case 1:,7,195,case,9,CPPASTCaseStatement
+67176,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,1,CPPASTCaseStatement
+67182,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,5,CPPASTCaseStatement
+67188,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,9,CPPASTCaseStatement
+67194,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,13,CPPASTCaseStatement
+67200,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,17,CPPASTCaseStatement
+67206,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,21,CPPASTCaseStatement
+67212,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,25,CPPASTCaseStatement
+67218,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,29,CPPASTCaseStatement
+67224,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,33,CPPASTCaseStatement
+67230,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,37,CPPASTCaseStatement
+67236,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,41,CPPASTCaseStatement
+67242,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,45,CPPASTCaseStatement
+67248,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,49,CPPASTCaseStatement
+67254,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,53,CPPASTCaseStatement
+67260,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,57,CPPASTCaseStatement
+67266,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,61,CPPASTCaseStatement
+67272,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,65,CPPASTCaseStatement
+67278,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,69,CPPASTCaseStatement
+67284,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,73,CPPASTCaseStatement
+67290,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,77,CPPASTCaseStatement
+67296,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,81,CPPASTCaseStatement
+67302,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,85,CPPASTCaseStatement
+67308,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,89,CPPASTCaseStatement
+67314,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,93,CPPASTCaseStatement
+67320,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,97,CPPASTCaseStatement
+67326,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,101,CPPASTCaseStatement
+67332,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,105,CPPASTCaseStatement
+67338,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,109,CPPASTCaseStatement
+67344,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,113,CPPASTCaseStatement
+67350,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,117,CPPASTCaseStatement
+67356,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,121,CPPASTCaseStatement
+67362,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,125,CPPASTCaseStatement
+67368,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,129,CPPASTCaseStatement
+67374,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,133,CPPASTCaseStatement
+67380,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,137,CPPASTCaseStatement
+67386,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,141,CPPASTCaseStatement
+67392,JUMP_TARGET,-1,OSSL_ERROR_CODES_MAP(V),33,543,default,145,CPPASTCaseStatement
+69716,JUMP_TARGET,-1,case 1:,5,349,case,1,CPPASTCaseStatement
+69752,JUMP_TARGET,-1,case 0:,5,357,case,4,CPPASTCaseStatement
+69755,JUMP_TARGET,-1,case -2:,5,359,case,7,CPPASTCaseStatement
+69762,JUMP_TARGET,-1,default:,5,361,default,10,CPPASTDefaultStatement
+69836,JUMP_TARGET,-1,case 1:,5,382,case,1,CPPASTCaseStatement
+69849,JUMP_TARGET,-1,case 0:,5,384,case,4,CPPASTCaseStatement
+69852,JUMP_TARGET,-1,case -2:,5,386,case,7,CPPASTCaseStatement
+69859,JUMP_TARGET,-1,default:,5,388,default,10,CPPASTDefaultStatement
+69929,JUMP_TARGET,-1,case 1:,5,405,case,1,CPPASTCaseStatement
+69942,JUMP_TARGET,-1,case 0:,5,407,case,4,CPPASTCaseStatement
+69945,JUMP_TARGET,-1,case -2:,5,409,case,7,CPPASTCaseStatement
+69952,JUMP_TARGET,-1,default:,5,411,default,10,CPPASTDefaultStatement
+92165,JUMP_TARGET,-1,case TransportAction::kKill:,7,75,case,1,CPPASTCaseStatement
+92173,JUMP_TARGET,-1,case TransportAction::kStop:,7,78,case,4,CPPASTCaseStatement
+92182,JUMP_TARGET,-1,case TransportAction::kSendMessage:,7,81,case,8,CPPASTCaseStatement
+96857,JUMP_TARGET,-1,case kOpCodeClose:,5,310,case,1,CPPASTCaseStatement
+96863,JUMP_TARGET,-1,case kOpCodeText:,5,313,case,5,CPPASTCaseStatement
+96866,JUMP_TARGET,-1,case kOpCodeBinary:,5,315,case,8,CPPASTCaseStatement
+96868,JUMP_TARGET,-1,case kOpCodeContinuation:,5,316,case,10,CPPASTCaseStatement
+96870,JUMP_TARGET,-1,case kOpCodePing:,5,317,case,12,CPPASTCaseStatement
+96872,JUMP_TARGET,-1,case kOpCodePong:,5,318,case,14,CPPASTCaseStatement
+96874,JUMP_TARGET,-1,default:,5,319,default,16,CPPASTDefaultStatement
+104578,JUMP_TARGET,-1,case napi_key_include_prototypes:,5,891,case,1,CPPASTCaseStatement
+104588,JUMP_TARGET,-1,case napi_key_own_only:,5,894,case,5,CPPASTCaseStatement
+104598,JUMP_TARGET,-1,default:,5,897,default,9,CPPASTDefaultStatement
+104606,JUMP_TARGET,-1,case napi_key_keep_numbers:,5,902,case,1,CPPASTCaseStatement
+104616,JUMP_TARGET,-1,case napi_key_numbers_to_strings:,5,905,case,5,CPPASTCaseStatement
+104626,JUMP_TARGET,-1,default:,5,908,default,9,CPPASTDefaultStatement
+118741,JUMP_TARGET,-1,case napi_int8_array:,5,2804,case,1,CPPASTCaseStatement
+118814,JUMP_TARGET,-1,case napi_uint8_array:,5,2808,case,5,CPPASTCaseStatement
+118887,JUMP_TARGET,-1,case napi_uint8_clamped_array:,5,2812,case,9,CPPASTCaseStatement
+118960,JUMP_TARGET,-1,case napi_int16_array:,5,2816,case,13,CPPASTCaseStatement
+119033,JUMP_TARGET,-1,case napi_uint16_array:,5,2820,case,17,CPPASTCaseStatement
+119106,JUMP_TARGET,-1,case napi_int32_array:,5,2824,case,21,CPPASTCaseStatement
+119179,JUMP_TARGET,-1,case napi_uint32_array:,5,2828,case,25,CPPASTCaseStatement
+119252,JUMP_TARGET,-1,case napi_float32_array:,5,2832,case,29,CPPASTCaseStatement
+119325,JUMP_TARGET,-1,case napi_float64_array:,5,2836,case,33,CPPASTCaseStatement
+119398,JUMP_TARGET,-1,case napi_bigint64_array:,5,2840,case,37,CPPASTCaseStatement
+119471,JUMP_TARGET,-1,case napi_biguint64_array:,5,2844,case,41,CPPASTCaseStatement
+119544,JUMP_TARGET,-1,default:,5,2848,default,45,CPPASTDefaultStatement
+124781,JUMP_TARGET,-1,case ENOTSUP:,5,443,case,1,CPPASTCaseStatement
+124785,JUMP_TARGET,-1,case EACCES:,5,446,case,4,CPPASTCaseStatement
+124789,JUMP_TARGET,-1,case ENOENT:,5,449,case,7,CPPASTCaseStatement
+124793,JUMP_TARGET,-1,case -1:,5,452,case,10,CPPASTCaseStatement
+124798,JUMP_TARGET,-1,case 0:,5,456,case,13,CPPASTCaseStatement
+124802,JUMP_TARGET,-1,default:,5,459,default,16,CPPASTDefaultStatement
+126580,JUMP_TARGET,-1,case v8::Module::Status::kUninstantiated:,5,441,case,1,CPPASTCaseStatement
+126588,JUMP_TARGET,-1,case v8::Module::Status::kInstantiating:,5,442,case,3,CPPASTCaseStatement
+126602,JUMP_TARGET,-1,case v8::Module::Status::kInstantiated:,5,445,case,6,CPPASTCaseStatement
+126610,JUMP_TARGET,-1,case v8::Module::Status::kEvaluating:,5,446,case,8,CPPASTCaseStatement
+126618,JUMP_TARGET,-1,case v8::Module::Status::kEvaluated:,5,447,case,10,CPPASTCaseStatement
+126626,JUMP_TARGET,-1,case v8::Module::Status::kErrored:,5,448,case,12,CPPASTCaseStatement
+126635,JUMP_TARGET,-1,default:,5,450,default,15,CPPASTDefaultStatement
+128479,JUMP_TARGET,-1,ATOMIC_WAIT_EVENTS(V),5,229,default,1,CPPASTCaseStatement
+128489,JUMP_TARGET,-1,ATOMIC_WAIT_EVENTS(V),5,229,default,5,CPPASTCaseStatement
+128499,JUMP_TARGET,-1,ATOMIC_WAIT_EVENTS(V),5,229,default,9,CPPASTCaseStatement
+128509,JUMP_TARGET,-1,ATOMIC_WAIT_EVENTS(V),5,229,default,13,CPPASTCaseStatement
+128519,JUMP_TARGET,-1,ATOMIC_WAIT_EVENTS(V),5,229,default,17,CPPASTCaseStatement
+128529,JUMP_TARGET,-1,ATOMIC_WAIT_EVENTS(V),5,229,default,21,CPPASTCaseStatement
+135944,JUMP_TARGET,-1,case 0:,5,1139,case,1,CPPASTCaseStatement
+135948,JUMP_TARGET,-1,case UV_EINVAL:,5,1141,case,4,CPPASTCaseStatement
+135952,JUMP_TARGET,-1,case UV_ECANCELED:,5,1143,case,7,CPPASTCaseStatement
+135956,JUMP_TARGET,-1,default:,5,1145,default,10,CPPASTDefaultStatement
+143985,JUMP_TARGET,-1,"start_fill:
+
+  if (str_length >= fill_length)
+    return;",1,675,start_fill,22,CPPASTLabelStatement
+154964,JUMP_TARGET,-1,"fail:
+  text->clear();",1,125,fail,4,CPPASTLabelStatement
+155497,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(OPENDIR, ""opendir"")",5,51,default,1,CPPASTCaseStatement
+155503,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(READDIR, ""readdir"")",5,52,default,1,CPPASTCaseStatement
+155509,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(CLOSEDIR, ""closedir"")",5,53,default,1,CPPASTCaseStatement
+155513,JUMP_TARGET,-1,default:,5,55,default,10,CPPASTDefaultStatement
+160972,JUMP_TARGET,-1,case EnhanceFatalException::kEnhance:,7,408,case,1,CPPASTCaseStatement
+160989,JUMP_TARGET,-1,case EnhanceFatalException::kDontEnhance:,7,414,case,4,CPPASTCaseStatement
+161014,JUMP_TARGET,-1,default:,7,420,default,7,CPPASTDefaultStatement
+161675,JUMP_TARGET,-1,default:,5,931,default,1,CPPASTDefaultStatement
+161697,JUMP_TARGET,-1,case Isolate::MessageErrorLevel::kMessageWarning:,5,939,case,1,CPPASTCaseStatement
+161776,JUMP_TARGET,-1,case Isolate::MessageErrorLevel::kMessageError:,5,956,case,4,CPPASTCaseStatement
+163643,JUMP_TARGET,-1,case 0:,9,1684,case,1,CPPASTCaseStatement
+163704,JUMP_TARGET,-1,case UV_EACCES:,9,1696,case,4,CPPASTCaseStatement
+163706,JUMP_TARGET,-1,case UV_ENOTDIR:,9,1697,case,6,CPPASTCaseStatement
+163708,JUMP_TARGET,-1,case UV_EPERM:,9,1698,case,8,CPPASTCaseStatement
+163720,JUMP_TARGET,-1,case UV_ENOENT:,9,1702,case,11,CPPASTCaseStatement
+163799,JUMP_TARGET,-1,default:,9,1717,default,14,CPPASTDefaultStatement
+164005,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(OPEN, ""open"")",5,122,default,1,CPPASTCaseStatement
+164011,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(CLOSE, ""close"")",5,123,default,1,CPPASTCaseStatement
+164017,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(READ, ""read"")",5,124,default,1,CPPASTCaseStatement
+164023,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(WRITE, ""write"")",5,125,default,1,CPPASTCaseStatement
+164029,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(SENDFILE, ""sendfile"")",5,126,default,1,CPPASTCaseStatement
+164035,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(STAT, ""stat"")",5,127,default,1,CPPASTCaseStatement
+164041,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(LSTAT, ""lstat"")",5,128,default,1,CPPASTCaseStatement
+164047,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(FSTAT, ""fstat"")",5,129,default,1,CPPASTCaseStatement
+164053,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(FTRUNCATE, ""ftruncate"")",5,130,default,1,CPPASTCaseStatement
+164059,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(UTIME, ""utime"")",5,131,default,1,CPPASTCaseStatement
+164065,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(FUTIME, ""futime"")",5,132,default,1,CPPASTCaseStatement
+164071,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(ACCESS, ""access"")",5,133,default,1,CPPASTCaseStatement
+164077,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(CHMOD, ""chmod"")",5,134,default,1,CPPASTCaseStatement
+164083,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(FCHMOD, ""fchmod"")",5,135,default,1,CPPASTCaseStatement
+164089,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(FSYNC, ""fsync"")",5,136,default,1,CPPASTCaseStatement
+164095,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(FDATASYNC, ""fdatasync"")",5,137,default,1,CPPASTCaseStatement
+164101,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(UNLINK, ""unlink"")",5,138,default,1,CPPASTCaseStatement
+164107,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(RMDIR, ""rmdir"")",5,139,default,1,CPPASTCaseStatement
+164113,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(MKDIR, ""mkdir"")",5,140,default,1,CPPASTCaseStatement
+164119,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(MKDTEMP, ""mkdtemp"")",5,141,default,1,CPPASTCaseStatement
+164125,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(RENAME, ""rename"")",5,142,default,1,CPPASTCaseStatement
+164131,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(SCANDIR, ""scandir"")",5,143,default,1,CPPASTCaseStatement
+164137,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(LINK, ""link"")",5,144,default,1,CPPASTCaseStatement
+164143,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(SYMLINK, ""symlink"")",5,145,default,1,CPPASTCaseStatement
+164149,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(READLINK, ""readlink"")",5,146,default,1,CPPASTCaseStatement
+164155,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(CHOWN, ""chown"")",5,147,default,1,CPPASTCaseStatement
+164161,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(FCHOWN, ""fchown"")",5,148,default,1,CPPASTCaseStatement
+164167,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(REALPATH, ""realpath"")",5,149,default,1,CPPASTCaseStatement
+164173,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(COPYFILE, ""copyfile"")",5,150,default,1,CPPASTCaseStatement
+164179,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(LCHOWN, ""lchown"")",5,151,default,1,CPPASTCaseStatement
+164185,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(STATFS, ""statfs"")",5,152,default,1,CPPASTCaseStatement
+164191,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(MKSTEMP, ""mkstemp"")",5,153,default,1,CPPASTCaseStatement
+164197,JUMP_TARGET,-1,"FS_TYPE_TO_NAME(LUTIME, ""lutime"")",5,154,default,1,CPPASTCaseStatement
+164201,JUMP_TARGET,-1,default:,5,156,default,100,CPPASTDefaultStatement
+174883,JUMP_TARGET,-1,case 0:,9,1610,case,1,CPPASTCaseStatement
+174910,JUMP_TARGET,-1,case UV_EACCES:,9,1616,case,6,CPPASTCaseStatement
+174912,JUMP_TARGET,-1,case UV_ENOSPC:,9,1617,case,8,CPPASTCaseStatement
+174914,JUMP_TARGET,-1,case UV_ENOTDIR:,9,1618,case,10,CPPASTCaseStatement
+174916,JUMP_TARGET,-1,case UV_EPERM:,9,1619,case,12,CPPASTCaseStatement
+174921,JUMP_TARGET,-1,case UV_ENOENT:,9,1622,case,15,CPPASTCaseStatement
+174987,JUMP_TARGET,-1,default:,9,1634,default,18,CPPASTDefaultStatement
+186824,JUMP_TARGET,-1,case NGHTTP2_SESSION_SERVER:,5,358,case,1,CPPASTCaseStatement
+186828,JUMP_TARGET,-1,case NGHTTP2_SESSION_CLIENT:,5,359,case,4,CPPASTCaseStatement
+186832,JUMP_TARGET,-1,default:,5,360,default,7,CPPASTDefaultStatement
+188506,JUMP_TARGET,-1,"done:
+  if (UNLIKELY(ret < 0)) {
+    Isolate* isolate = env()->isolate();
+    Debug(this,
+        ""fatal error receiving data: %d (%s)"",
+        ret,
+        custom_recv_error_code_ != nullptr ?
+            custom_recv_error_code_ : ""(no custom error code)"");
+    Local<Value> args[] = {
+      Integer::New(isolate, static_cast<int32_t>(ret)),
+      Null(isolate)
+    };
+    if (custom_recv_error_code_ != nullptr) {
+      args[1] = String::NewFromUtf8(
+          isolate,
+          custom_recv_error_code_,
+          NewStringType::kInternalized).ToLocalChecked();
+    }
+    MakeCallback(
+        env()->http2session_on_error_function(),
+        arraysize(args),
+        args);
+  }",1,844,done,19,CPPASTLabelStatement
+188804,JUMP_TARGET,-1,case NGHTTP2_DATA:,5,954,case,1,CPPASTCaseStatement
+188812,JUMP_TARGET,-1,case NGHTTP2_PUSH_PROMISE:,5,956,case,4,CPPASTCaseStatement
+188814,JUMP_TARGET,-1,case NGHTTP2_HEADERS:,5,958,case,6,CPPASTCaseStatement
+188822,JUMP_TARGET,-1,case NGHTTP2_SETTINGS:,5,961,case,10,CPPASTCaseStatement
+188830,JUMP_TARGET,-1,case NGHTTP2_PRIORITY:,5,964,case,14,CPPASTCaseStatement
+188838,JUMP_TARGET,-1,case NGHTTP2_GOAWAY:,5,967,case,18,CPPASTCaseStatement
+188846,JUMP_TARGET,-1,case NGHTTP2_PING:,5,970,case,22,CPPASTCaseStatement
+188854,JUMP_TARGET,-1,case NGHTTP2_ALTSVC:,5,973,case,26,CPPASTCaseStatement
+188862,JUMP_TARGET,-1,case NGHTTP2_ORIGIN:,5,976,case,30,CPPASTCaseStatement
+188870,JUMP_TARGET,-1,default:,5,979,default,34,CPPASTDefaultStatement
+189047,JUMP_TARGET,-1,case NGHTTP2_ERR_STREAM_CLOSED:,3,1033,case,1,CPPASTCaseStatement
+189051,JUMP_TARGET,-1,case NGHTTP2_ERR_HEADER_COMP:,3,1035,case,4,CPPASTCaseStatement
+189055,JUMP_TARGET,-1,case NGHTTP2_ERR_FRAME_SIZE_ERROR:,3,1037,case,7,CPPASTCaseStatement
+189059,JUMP_TARGET,-1,case NGHTTP2_ERR_FLOW_CONTROL:,3,1039,case,10,CPPASTCaseStatement
+189063,JUMP_TARGET,-1,case NGHTTP2_ERR_REFUSED_STREAM:,3,1041,case,13,CPPASTCaseStatement
+189067,JUMP_TARGET,-1,case NGHTTP2_ERR_PROTO:,3,1043,case,16,CPPASTCaseStatement
+189069,JUMP_TARGET,-1,case NGHTTP2_ERR_HTTP_HEADER:,3,1044,case,18,CPPASTCaseStatement
+189071,JUMP_TARGET,-1,case NGHTTP2_ERR_HTTP_MESSAGING:,3,1045,case,20,CPPASTCaseStatement
+189075,JUMP_TARGET,-1,default:,3,1047,default,23,CPPASTDefaultStatement
+189564,JUMP_TARGET,-1,case PADDING_STRATEGY_NONE:,5,1246,case,1,CPPASTCaseStatement
+189567,JUMP_TARGET,-1,case PADDING_STRATEGY_MAX:,5,1249,case,4,CPPASTCaseStatement
+189578,JUMP_TARGET,-1,case PADDING_STRATEGY_ALIGNED:,5,1252,case,8,CPPASTCaseStatement
+204765,JUMP_TARGET,-1,"reschedule:
+      if (!message_error.IsEmpty()) {
+        argv[0] = message_error;
+        argv[1] = Undefined(env()->isolate());
+        argv[2] = env()->messageerror_string();
+        USE(MakeCallback(emit_message, arraysize(argv), argv));
+      }",5,843,reschedule,1,CPPASTLabelStatement
+210214,JUMP_TARGET,-1,case kNoOp:,7,1116,case,1,CPPASTCaseStatement
+210216,JUMP_TARGET,-1,case kV8Option:,7,1117,case,3,CPPASTCaseStatement
+210242,JUMP_TARGET,-1,case kBoolean:,7,1127,case,7,CPPASTCaseStatement
+210259,JUMP_TARGET,-1,case kInteger:,7,1131,case,11,CPPASTCaseStatement
+210282,JUMP_TARGET,-1,case kUInteger:,7,1136,case,15,CPPASTCaseStatement
+210305,JUMP_TARGET,-1,case kString:,7,1141,case,19,CPPASTCaseStatement
+210332,JUMP_TARGET,-1,case kStringList:,7,1148,case,23,CPPASTCaseStatement
+210357,JUMP_TARGET,-1,case kHostPort:,7,1155,case,27,CPPASTCaseStatement
+210445,JUMP_TARGET,-1,default:,7,1171,default,30,CPPASTDefaultStatement
+225899,JUMP_TARGET,-1,case UV_UDP:,5,59,case,1,CPPASTCaseStatement
+225912,JUMP_TARGET,-1,case UV_TCP:,5,62,case,5,CPPASTCaseStatement
+225925,JUMP_TARGET,-1,default:,5,65,default,9,CPPASTDefaultStatement
+225942,JUMP_TARGET,-1,case UV_UDP:,5,71,case,1,CPPASTCaseStatement
+225955,JUMP_TARGET,-1,case UV_TCP:,5,74,case,5,CPPASTCaseStatement
+225968,JUMP_TARGET,-1,default:,5,77,default,9,CPPASTDefaultStatement
+226175,JUMP_TARGET,-1,case UV_FS_EVENT:,5,126,case,1,CPPASTCaseStatement
+226191,JUMP_TARGET,-1,case UV_FS_POLL:,5,129,case,5,CPPASTCaseStatement
+226207,JUMP_TARGET,-1,default:,5,132,default,9,CPPASTDefaultStatement
+226224,JUMP_TARGET,-1,case UV_FS_EVENT:,7,138,case,1,CPPASTCaseStatement
+226240,JUMP_TARGET,-1,case UV_FS_POLL:,7,141,case,5,CPPASTCaseStatement
+226256,JUMP_TARGET,-1,default:,7,144,default,9,CPPASTDefaultStatement
+226356,JUMP_TARGET,-1,case UV_FS_EVENT:,5,171,case,1,CPPASTCaseStatement
+226358,JUMP_TARGET,-1,case UV_FS_POLL:,5,172,case,3,CPPASTCaseStatement
+226364,JUMP_TARGET,-1,case UV_PROCESS:,5,175,case,7,CPPASTCaseStatement
+226377,JUMP_TARGET,-1,case UV_TCP:,5,178,case,11,CPPASTCaseStatement
+226379,JUMP_TARGET,-1,case UV_UDP:,5,179,case,13,CPPASTCaseStatement
+226385,JUMP_TARGET,-1,case UV_NAMED_PIPE:,5,182,case,17,CPPASTCaseStatement
+226391,JUMP_TARGET,-1,case UV_TIMER:,5,185,case,21,CPPASTCaseStatement
+226440,JUMP_TARGET,-1,case UV_TTY:,5,194,case,24,CPPASTCaseStatement
+226475,JUMP_TARGET,-1,case UV_SIGNAL:,5,203,case,27,CPPASTCaseStatement
+226499,JUMP_TARGET,-1,default:,5,209,default,32,CPPASTDefaultStatement
+226603,JUMP_TARGET,-1,case STDIN_FILENO:,9,237,case,1,CPPASTCaseStatement
+226612,JUMP_TARGET,-1,case STDOUT_FILENO:,9,240,case,5,CPPASTCaseStatement
+226621,JUMP_TARGET,-1,case STDERR_FILENO:,9,243,case,9,CPPASTCaseStatement
+226630,JUMP_TARGET,-1,default:,9,246,default,13,CPPASTDefaultStatement
+232708,JUMP_TARGET,-1,default:,5,1099,default,3,CPPASTDefaultStatement
+232791,JUMP_TARGET,-1,default:,5,1146,default,3,CPPASTDefaultStatement
+233621,JUMP_TARGET,-1,case AF_INET:,5,46,case,1,CPPASTCaseStatement
+233632,JUMP_TARGET,-1,case AF_INET6:,5,51,case,4,CPPASTCaseStatement
+233643,JUMP_TARGET,-1,default:,5,56,default,7,CPPASTDefaultStatement
+233698,JUMP_TARGET,-1,case AF_INET:,5,80,case,1,CPPASTCaseStatement
+233722,JUMP_TARGET,-1,case AF_INET6:,5,86,case,4,CPPASTCaseStatement
+233756,JUMP_TARGET,-1,default:,5,94,default,7,CPPASTDefaultStatement
+234584,JUMP_TARGET,-1,case AF_INET:,5,323,case,1,CPPASTCaseStatement
+234592,JUMP_TARGET,-1,case AF_INET:,9,325,case,1,CPPASTCaseStatement
+234599,JUMP_TARGET,-1,case AF_INET6:,9,326,case,4,CPPASTCaseStatement
+234607,JUMP_TARGET,-1,case AF_INET6:,5,329,case,5,CPPASTCaseStatement
+234615,JUMP_TARGET,-1,case AF_INET:,9,331,case,1,CPPASTCaseStatement
+234622,JUMP_TARGET,-1,case AF_INET6:,9,332,case,4,CPPASTCaseStatement
+234640,JUMP_TARGET,-1,case AF_INET:,5,342,case,1,CPPASTCaseStatement
+234648,JUMP_TARGET,-1,case AF_INET:,9,344,case,1,CPPASTCaseStatement
+234655,JUMP_TARGET,-1,case AF_INET6:,9,345,case,4,CPPASTCaseStatement
+234663,JUMP_TARGET,-1,case AF_INET6:,5,348,case,5,CPPASTCaseStatement
+234671,JUMP_TARGET,-1,case AF_INET:,9,350,case,1,CPPASTCaseStatement
+234684,JUMP_TARGET,-1,case SocketAddress::CompareResult::NOT_COMPARABLE:,13,353,case,1,CPPASTCaseStatement
+234690,JUMP_TARGET,-1,case SocketAddress::CompareResult::SAME:,13,355,case,3,CPPASTCaseStatement
+234698,JUMP_TARGET,-1,case SocketAddress::CompareResult::GREATER_THAN:,13,357,case,6,CPPASTCaseStatement
+234710,JUMP_TARGET,-1,case SocketAddress::CompareResult::LESS_THAN:,13,359,case,9,CPPASTCaseStatement
+234723,JUMP_TARGET,-1,case AF_INET6:,9,364,case,4,CPPASTCaseStatement
+234746,JUMP_TARGET,-1,case AF_INET:,5,376,case,1,CPPASTCaseStatement
+234754,JUMP_TARGET,-1,case AF_INET:,9,378,case,1,CPPASTCaseStatement
+234762,JUMP_TARGET,-1,case AF_INET6:,9,379,case,4,CPPASTCaseStatement
+234771,JUMP_TARGET,-1,case AF_INET6:,5,382,case,5,CPPASTCaseStatement
+234779,JUMP_TARGET,-1,case AF_INET:,9,384,case,1,CPPASTCaseStatement
+234787,JUMP_TARGET,-1,case AF_INET6:,9,385,case,4,CPPASTCaseStatement
+240623,JUMP_TARGET,-1,case kPathname:,5,250,case,1,CPPASTCaseStatement
+240634,JUMP_TARGET,-1,case kHash:,5,254,case,4,CPPASTCaseStatement
+240643,JUMP_TARGET,-1,case kHost:,5,258,case,7,CPPASTCaseStatement
+240654,JUMP_TARGET,-1,case kHostname:,5,262,case,10,CPPASTCaseStatement
+240665,JUMP_TARGET,-1,case kHref:,5,266,case,13,CPPASTCaseStatement
+240676,JUMP_TARGET,-1,case kPassword:,5,270,case,16,CPPASTCaseStatement
+240687,JUMP_TARGET,-1,case kPort:,5,274,case,19,CPPASTCaseStatement
+240698,JUMP_TARGET,-1,case kProtocol:,5,278,case,22,CPPASTCaseStatement
+240709,JUMP_TARGET,-1,case kSearch:,5,282,case,25,CPPASTCaseStatement
+240718,JUMP_TARGET,-1,case kUsername:,5,286,case,28,CPPASTCaseStatement
+240729,JUMP_TARGET,-1,default:,5,290,default,31,CPPASTDefaultStatement
+241988,JUMP_TARGET,-1,case UV_TCP:,5,295,case,1,CPPASTCaseStatement
+241994,JUMP_TARGET,-1,case UV_TTY:,5,298,case,5,CPPASTCaseStatement
+242000,JUMP_TARGET,-1,case UV_UDP:,5,301,case,9,CPPASTCaseStatement
+242006,JUMP_TARGET,-1,case UV_FILE:,5,304,case,13,CPPASTCaseStatement
+242012,JUMP_TARGET,-1,case UV_NAMED_PIPE:,5,307,case,17,CPPASTCaseStatement
+242018,JUMP_TARGET,-1,case UV_UNKNOWN_HANDLE:,5,310,case,21,CPPASTCaseStatement
+242024,JUMP_TARGET,-1,default:,5,313,default,25,CPPASTDefaultStatement
+243581,JUMP_TARGET,-1,case v8::GCType::kGCTypeScavenge:,5,243,case,1,CPPASTCaseStatement
+243589,JUMP_TARGET,-1,case v8::GCType::kGCTypeMarkSweepCompact:,5,245,case,4,CPPASTCaseStatement
+243597,JUMP_TARGET,-1,case v8::GCType::kGCTypeIncrementalMarking:,5,247,case,7,CPPASTCaseStatement
+243605,JUMP_TARGET,-1,case v8::GCType::kGCTypeProcessWeakCallbacks:,5,249,case,10,CPPASTCaseStatement
+243613,JUMP_TARGET,-1,default:,5,251,default,13,CPPASTDefaultStatement
+257942,JUMP_TARGET,-1,case DEFLATE:,5,771,case,1,CPPASTCaseStatement
+257944,JUMP_TARGET,-1,case GZIP:,5,772,case,3,CPPASTCaseStatement
+257946,JUMP_TARGET,-1,case DEFLATERAW:,5,773,case,5,CPPASTCaseStatement
+257955,JUMP_TARGET,-1,case UNZIP:,5,776,case,9,CPPASTCaseStatement
+257972,JUMP_TARGET,-1,case 0:,9,782,case,1,CPPASTCaseStatement
+258005,JUMP_TARGET,-1,case 1:,9,801,case,5,CPPASTCaseStatement
+258031,JUMP_TARGET,-1,default:,9,816,default,10,CPPASTDefaultStatement
+258034,JUMP_TARGET,-1,case INFLATE:,5,821,case,13,CPPASTCaseStatement
+258036,JUMP_TARGET,-1,case GUNZIP:,5,822,case,15,CPPASTCaseStatement
+258038,JUMP_TARGET,-1,case INFLATERAW:,5,823,case,17,CPPASTCaseStatement
+258126,JUMP_TARGET,-1,default:,5,859,default,23,CPPASTDefaultStatement
+258219,JUMP_TARGET,-1,case Z_OK:,3,897,case,1,CPPASTCaseStatement
+258221,JUMP_TARGET,-1,case Z_BUF_ERROR:,3,898,case,3,CPPASTCaseStatement
+258237,JUMP_TARGET,-1,case Z_STREAM_END:,3,902,case,6,CPPASTCaseStatement
+258240,JUMP_TARGET,-1,case Z_NEED_DICT:,3,905,case,9,CPPASTCaseStatement
+258256,JUMP_TARGET,-1,default:,3,910,default,12,CPPASTDefaultStatement
+258287,JUMP_TARGET,-1,case DEFLATE:,5,928,case,1,CPPASTCaseStatement
+258289,JUMP_TARGET,-1,case DEFLATERAW:,5,929,case,3,CPPASTCaseStatement
+258291,JUMP_TARGET,-1,case GZIP:,5,930,case,5,CPPASTCaseStatement
+258299,JUMP_TARGET,-1,case INFLATE:,5,933,case,9,CPPASTCaseStatement
+258301,JUMP_TARGET,-1,case INFLATERAW:,5,934,case,11,CPPASTCaseStatement
+258303,JUMP_TARGET,-1,case GUNZIP:,5,935,case,13,CPPASTCaseStatement
+258311,JUMP_TARGET,-1,default:,5,938,default,17,CPPASTDefaultStatement
+258510,JUMP_TARGET,-1,case DEFLATE:,5,1012,case,1,CPPASTCaseStatement
+258512,JUMP_TARGET,-1,case GZIP:,5,1013,case,3,CPPASTCaseStatement
+258514,JUMP_TARGET,-1,case DEFLATERAW:,5,1014,case,5,CPPASTCaseStatement
+258527,JUMP_TARGET,-1,case INFLATE:,5,1022,case,9,CPPASTCaseStatement
+258529,JUMP_TARGET,-1,case GUNZIP:,5,1023,case,11,CPPASTCaseStatement
+258531,JUMP_TARGET,-1,case INFLATERAW:,5,1024,case,13,CPPASTCaseStatement
+258533,JUMP_TARGET,-1,case UNZIP:,5,1025,case,15,CPPASTCaseStatement
+258542,JUMP_TARGET,-1,default:,5,1028,default,19,CPPASTDefaultStatement
+258583,JUMP_TARGET,-1,case DEFLATE:,5,1051,case,1,CPPASTCaseStatement
+258585,JUMP_TARGET,-1,case DEFLATERAW:,5,1052,case,3,CPPASTCaseStatement
+258601,JUMP_TARGET,-1,case INFLATERAW:,5,1057,case,7,CPPASTCaseStatement
+258617,JUMP_TARGET,-1,default:,5,1064,default,11,CPPASTDefaultStatement
+258656,JUMP_TARGET,-1,case DEFLATE:,5,1085,case,1,CPPASTCaseStatement
+258658,JUMP_TARGET,-1,case DEFLATERAW:,5,1086,case,3,CPPASTCaseStatement
+258668,JUMP_TARGET,-1,default:,5,1089,default,7,CPPASTDefaultStatement
+270168,JUMP_TARGET,-1,case PermissionScope::kFileSystem:,5,106,case,1,CPPASTCaseStatement
+270176,JUMP_TARGET,-1,case PermissionScope::kFileSystemRead:,5,108,case,4,CPPASTCaseStatement
+270197,JUMP_TARGET,-1,case PermissionScope::kFileSystemWrite:,5,112,case,7,CPPASTCaseStatement
+270218,JUMP_TARGET,-1,default:,5,116,default,10,CPPASTDefaultStatement
+271752,JUMP_TARGET,-1,case SOCKET:,5,136,case,1,CPPASTCaseStatement
+271761,JUMP_TARGET,-1,case SERVER:,5,140,case,6,CPPASTCaseStatement
+271770,JUMP_TARGET,-1,case IPC:,5,144,case,11,CPPASTCaseStatement
+271779,JUMP_TARGET,-1,default:,5,148,default,16,CPPASTDefaultStatement
+285074,JUMP_TARGET,-1,case ASCII:,5,318,case,1,CPPASTCaseStatement
+285076,JUMP_TARGET,-1,case LATIN1:,5,319,case,3,CPPASTCaseStatement
+285129,JUMP_TARGET,-1,case BUFFER:,5,330,case,7,CPPASTCaseStatement
+285131,JUMP_TARGET,-1,case UTF8:,5,331,case,9,CPPASTCaseStatement
+285145,JUMP_TARGET,-1,case UCS2:,5,335,case,13,CPPASTCaseStatement
+285163,JUMP_TARGET,-1,case BASE64URL:,5,348,case,16,CPPASTCaseStatement
+285165,JUMP_TARGET,-1,case BASE64:,5,350,case,18,CPPASTCaseStatement
+285211,JUMP_TARGET,-1,case HEX:,5,360,case,22,CPPASTCaseStatement
+285257,JUMP_TARGET,-1,default:,5,370,default,26,CPPASTDefaultStatement
+285328,JUMP_TARGET,-1,case ASCII:,5,396,case,1,CPPASTCaseStatement
+285330,JUMP_TARGET,-1,case LATIN1:,5,397,case,3,CPPASTCaseStatement
+285339,JUMP_TARGET,-1,case BUFFER:,5,401,case,7,CPPASTCaseStatement
+285341,JUMP_TARGET,-1,case UTF8:,5,402,case,9,CPPASTCaseStatement
+285352,JUMP_TARGET,-1,case UCS2:,5,409,case,13,CPPASTCaseStatement
+285364,JUMP_TARGET,-1,case BASE64URL:,5,413,case,17,CPPASTCaseStatement
+285366,JUMP_TARGET,-1,case BASE64:,5,415,case,19,CPPASTCaseStatement
+285376,JUMP_TARGET,-1,case HEX:,5,419,case,23,CPPASTCaseStatement
+285398,JUMP_TARGET,-1,default:,5,424,default,28,CPPASTDefaultStatement
+285462,JUMP_TARGET,-1,case ASCII:,5,444,case,1,CPPASTCaseStatement
+285464,JUMP_TARGET,-1,case LATIN1:,5,445,case,3,CPPASTCaseStatement
+285475,JUMP_TARGET,-1,case BUFFER:,5,448,case,6,CPPASTCaseStatement
+285477,JUMP_TARGET,-1,case UTF8:,5,449,case,8,CPPASTCaseStatement
+285489,JUMP_TARGET,-1,case UCS2:,5,452,case,11,CPPASTCaseStatement
+285500,JUMP_TARGET,-1,case BASE64URL:,5,455,case,14,CPPASTCaseStatement
+285502,JUMP_TARGET,-1,case BASE64:,5,457,case,16,CPPASTCaseStatement
+285518,JUMP_TARGET,-1,case HEX:,5,462,case,19,CPPASTCaseStatement
+285867,JUMP_TARGET,-1,case BUFFER:,5,571,case,1,CPPASTCaseStatement
+285906,JUMP_TARGET,-1,case ASCII:,5,581,case,4,CPPASTCaseStatement
+285965,JUMP_TARGET,-1,case UTF8:,5,595,case,7,CPPASTCaseStatement
+286006,JUMP_TARGET,-1,case LATIN1:,5,608,case,10,CPPASTCaseStatement
+286017,JUMP_TARGET,-1,case BASE64:,5,611,case,13,CPPASTCaseStatement
+286068,JUMP_TARGET,-1,case BASE64URL:,5,625,case,16,CPPASTCaseStatement
+286125,JUMP_TARGET,-1,case HEX:,5,639,case,19,CPPASTCaseStatement
+286177,JUMP_TARGET,-1,case UCS2:,5,652,case,22,CPPASTCaseStatement
+286337,JUMP_TARGET,-1,default:,5,684,default,25,CPPASTDefaultStatement
+288465,JUMP_TARGET,-1,case SOCKET:,5,163,case,1,CPPASTCaseStatement
+288471,JUMP_TARGET,-1,case SERVER:,5,166,case,5,CPPASTCaseStatement
+288477,JUMP_TARGET,-1,default:,5,169,default,9,CPPASTDefaultStatement
+289313,JUMP_TARGET,-1,case AF_INET6:,3,400,case,1,CPPASTCaseStatement
+289463,JUMP_TARGET,-1,case AF_INET:,3,428,case,11,CPPASTCaseStatement
+289550,JUMP_TARGET,-1,default:,3,441,default,20,CPPASTDefaultStatement
+294446,JUMP_TARGET,-1,case '\b':,7,66,case,1,CPPASTCaseStatement
+294452,JUMP_TARGET,-1,case '\f':,7,67,case,5,CPPASTCaseStatement
+294458,JUMP_TARGET,-1,case '\n':,7,68,case,9,CPPASTCaseStatement
+294464,JUMP_TARGET,-1,case '\r':,7,69,case,13,CPPASTCaseStatement
+294470,JUMP_TARGET,-1,case '\t':,7,70,case,17,CPPASTCaseStatement
+294476,JUMP_TARGET,-1,case '\\':,7,71,case,21,CPPASTCaseStatement
+294482,JUMP_TARGET,-1,"case '""':",7,72,case,25,CPPASTCaseStatement
+294488,JUMP_TARGET,-1,default:,7,73,default,29,CPPASTDefaultStatement
+294531,JUMP_TARGET,-1,case FP_NAN:,5,91,case,1,CPPASTCaseStatement
+294535,JUMP_TARGET,-1,case FP_INFINITE:,5,92,case,4,CPPASTCaseStatement
+294544,JUMP_TARGET,-1,case FP_ZERO:,5,93,case,7,CPPASTCaseStatement
+294548,JUMP_TARGET,-1,default:,5,94,default,10,CPPASTDefaultStatement
+296353,JUMP_TARGET,-1,case AF_INET:,5,255,case,1,CPPASTCaseStatement
+296362,JUMP_TARGET,-1,case AF_INET6:,5,257,case,4,CPPASTCaseStatement
+296371,JUMP_TARGET,-1,default:,5,259,default,7,CPPASTDefaultStatement

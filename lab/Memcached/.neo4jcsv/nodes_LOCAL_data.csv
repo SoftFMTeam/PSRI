@@ -1,0 +1,2212 @@
+33,LOCAL,,pthread_cond_t maintenance_cond,23,,28,maintenance_cond,1,,pthread_cond_t
+37,LOCAL,,pthread_mutex_t maintenance_lock,24,,29,maintenance_lock,2,,pthread_mutex_t
+41,LOCAL,,unsigned int hashpower,14,,32,hashpower,2,,unsigned int
+47,LOCAL,,item** primary_hashtable,12,,38,primary_hashtable,7,,item**
+51,LOCAL,,item** old_hashtable,12,,44,old_hashtable,9,,item**
+55,LOCAL,,bool expanding,13,,47,expanding,11,,bool
+59,LOCAL,,uint64_t expand_bucket,17,,53,expand_bucket,13,,uint64_t
+123,LOCAL,,item* it,10,,71,it,1,,item*
+124,LOCAL,,uint64_t oldbucket,14,,72,oldbucket,2,,uint64_t
+169,LOCAL,,item* ret,10,,82,ret,4,,item*
+173,LOCAL,,int depth,9,,83,depth,6,,int
+232,LOCAL,,item** pos,10,,100,pos,2,,item**
+233,LOCAL,,uint64_t oldbucket,14,,101,oldbucket,2,,uint64_t
+447,LOCAL,,uint64_t oldbucket,14,,150,oldbucket,1,,uint64_t
+526,LOCAL,,item** before,10,,169,before,1,,item**
+537,LOCAL,,item* nxt,14,,172,nxt,1,,item*
+562,LOCAL,,static volatile int do_run_maintenance_thread,21,,188,do_run_maintenance_thread,22,,int
+566,LOCAL,,int hash_bulk_move,5,,191,hash_bulk_move,24,,int
+585,LOCAL,,int ii,13,,197,ii,1,,int
+602,LOCAL,,item* it,18,,201,it,1,,item*
+603,LOCAL,,item* next,23,,201,next,2,,item*
+604,LOCAL,,uint64_t bucket,22,,202,bucket,3,,uint64_t
+605,LOCAL,,void* item_lock,18,,203,item_lock,4,,void*
+782,LOCAL,,pthread_t maintenance_tid,18,,262,maintenance_tid,27,,pthread_t
+785,LOCAL,,int ret,9,,265,ret,1,,int
+786,LOCAL,,char* env,10,,266,env,2,,char*
+869,LOCAL,,struct assoc_iterator* iter,27,,300,iter,1,,assoc_iterator*
+898,LOCAL,,struct assoc_iterator* iter,27,,310,iter,1,,assoc_iterator*
+1043,LOCAL,,struct assoc_iterator* iter,27,,354,iter,1,,assoc_iterator*
+1135,LOCAL,,extern unsigned int hashpower,21,,15,hashpower,12,,unsigned int
+1136,LOCAL,,extern unsigned int item_lock_hashpower,21,,16,item_lock_hashpower,13,,unsigned int
+1168,LOCAL,,auth_entry[8] main_auth_entries,8,,27,main_auth_entries,3,,auth_entry[8]
+1173,LOCAL,,int entry_cnt,5,,28,entry_cnt,5,,int
+1177,LOCAL,,char* main_auth_data,6,,29,main_auth_data,7,,char*
+1184,LOCAL,,struct stat sb,17,,32,sb,1,,stat
+1185,LOCAL,,char* auth_data,10,,33,auth_data,2,,char*
+1189,LOCAL,,auth_entry[8] auth_entries,12,,34,auth_entries,4,,auth_entry[8]
+1190,LOCAL,,FILE* pwfile,10,,36,pwfile,5,,FILE*
+1225,LOCAL,,char* auth_cur,10,,46,auth_cur,9,,char*
+1229,LOCAL,,char* auth_end,10,,47,auth_end,11,,char*
+1237,LOCAL,,auth_t* entry_cur,12,,48,entry_cur,13,,auth_t*
+1241,LOCAL,,int used,9,,49,used,15,,int
+1266,LOCAL,,int x,13,,52,x,1,,int
+1267,LOCAL,,int found,13,,53,found,2,,int
+1425,LOCAL,,size_t ulen,12,,113,ulen,1,,size_t
+1430,LOCAL,,size_t plen,12,,114,plen,3,,size_t
+1437,LOCAL,,int x,14,,116,x,1,,int
+1447,LOCAL,,auth_t* e,16,,117,e,1,,auth_t*
+1510,LOCAL,,enum authfile_ret authfile_load,19,,13,authfile_load,3,,authfile_ret
+1526,LOCAL,,unsigned char[65] base64_table,28,,53,base64_table,1,,unsigned char[65]
+1530,LOCAL,,unsigned char[256] dtable,28,,59,dtable,3,,unsigned char[256]
+1796,LOCAL,,unsigned char* pos,19,,96,pos,1,,unsigned char*
+1797,LOCAL,,const unsigned char* end,25,,97,end,2,,unsigned char*
+1798,LOCAL,,const unsigned char* in,31,,97,in,3,,unsigned char*
+1799,LOCAL,,size_t olen,12,,98,olen,4,,size_t
+2014,LOCAL,,unsigned char* pos,19,,153,pos,1,,unsigned char*
+2015,LOCAL,,unsigned char[4] block,25,,153,block,2,,unsigned char[4]
+2016,LOCAL,,unsigned char tmp,35,,153,tmp,3,,unsigned char
+2017,LOCAL,,size_t i,12,,154,i,4,,size_t
+2018,LOCAL,,size_t count,15,,154,count,5,,size_t
+2019,LOCAL,,size_t olen,22,,154,olen,6,,size_t
+2020,LOCAL,,int pad,9,,155,pad,7,,int
+2341,LOCAL,,bipbuf_t* me,14,,51,me,1,,bipbuf_t*
+2635,LOCAL,,void* end,10,,160,end,3,,void*
+2721,LOCAL,,struct bipbuf_t,3,,18,bipbuf_t,2,,struct
+2812,LOCAL,,const uint64_t redzone_pattern,16,,14,redzone_pattern,1,,uint64_t
+2816,LOCAL,,int cache_error,5,,15,cache_error,3,,int
+2825,LOCAL,,cache_t* ret,12,,19,ret,1,,cache_t*
+2832,LOCAL,,char* nm,9,,20,nm,3,,char*
+2943,LOCAL,,uint64_t* pre,14,,49,pre,1,,uint64_t*
+2973,LOCAL,,struct cache_free_s* o,29,,58,o,1,,cache_free_s*
+3050,LOCAL,,void* ret,10,,68,ret,1,,void*
+3072,LOCAL,,void* ret,10,,76,ret,1,,void*
+3073,LOCAL,,void* object,10,,77,object,2,,void*
+3195,LOCAL,,uint64_t* pre,18,,97,pre,1,,uint64_t*
+3279,LOCAL,,uint64_t* pre,14,,123,pre,2,,uint64_t*
+3391,LOCAL,,extern int cache_error,12,,9,cache_error,1,,int
+3411,LOCAL,,struct cache_t,3,,39,cache_t,4,,struct
+3494,LOCAL,,struct crawler_client_t,3,,32,crawler_client_t,2,,struct
+3534,LOCAL,,struct crawler_module_reg_t,3,,49,crawler_module_reg_t,11,,struct
+3564,LOCAL,,crawler_module_reg_t crawler_expired_mod,22,,62,crawler_expired_mod,17,,crawler_module_reg_t
+3605,LOCAL,,crawler_module_reg_t crawler_metadump_mod,22,,74,crawler_metadump_mod,21,,crawler_module_reg_t
+3633,LOCAL,,crawler_module_reg_t *[3] crawler_mod_regs,22,,83,crawler_mod_regs,23,,crawler_module_reg_t *[3]
+3648,LOCAL,,crawler_module_t active_crawler_mod,18,,90,active_crawler_mod,26,,crawler_module_t
+3650,LOCAL,,enum crawler_run_type active_crawler_type,23,,91,active_crawler_type,28,,crawler_run_type
+3651,LOCAL,,static crawler[256] crawlers,16,,93,crawlers,29,,static crawler[256]
+3656,LOCAL,,static int crawler_count,12,,95,crawler_count,31,,int
+3660,LOCAL,,static volatile int do_run_lru_crawler_thread,21,,96,do_run_lru_crawler_thread,33,,int
+3664,LOCAL,,static int lru_crawler_initialized,12,,97,lru_crawler_initialized,35,,int
+3668,LOCAL,,pthread_mutex_t lru_crawler_lock,24,,98,lru_crawler_lock,37,,pthread_mutex_t
+3672,LOCAL,,pthread_cond_t lru_crawler_cond,24,,99,lru_crawler_cond,39,,pthread_cond_t
+3736,LOCAL,,struct crawler_expired_data* d,33,,131,d,1,,crawler_expired_data*
+3811,LOCAL,,int x,14,,151,x,1,,int
+3854,LOCAL,,struct crawler_expired_data* d,33,,160,d,1,,crawler_expired_data*
+3895,LOCAL,,struct crawler_expired_data* d,33,,168,d,1,,crawler_expired_data*
+3939,LOCAL,,struct crawler_expired_data* d,33,,183,d,1,,crawler_expired_data*
+3952,LOCAL,,crawlerstats_t* s,20,,185,s,4,,crawlerstats_t*
+3961,LOCAL,,int is_flushed,9,,186,is_flushed,6,,int
+3998,LOCAL,,int ii,17,,203,ii,1,,int
+3999,LOCAL,,char* key,18,,204,key,2,,char*
+4118,LOCAL,,rel_time_t ttl_remain,24,,228,ttl_remain,1,,rel_time_t
+4126,LOCAL,,int bucket,17,,229,bucket,3,,int
+4156,LOCAL,,char[751] keybuf,10,,240,keybuf,1,,char[751]
+4157,LOCAL,,int is_flushed,9,,241,is_flushed,2,,int
+4216,LOCAL,,int total,9,,250,total,6,,int
+4394,LOCAL,,unsigned char* data,19,,278,data,1,,unsigned char*
+4395,LOCAL,,unsigned int data_size,18,,279,data_size,2,,unsigned int
+4399,LOCAL,,pollfd[1] to_poll,19,,280,to_poll,4,,pollfd[1]
+4416,LOCAL,,int ret,9,,284,ret,7,,int
+4447,LOCAL,,char[1] buf,14,,294,buf,1,,char[1]
+4448,LOCAL,,int res,13,,295,res,2,,int
+4526,LOCAL,,int total,17,,306,total,1,,int
+4588,LOCAL,,void* buf,10,,328,buf,1,,void*
+4615,LOCAL,,int ret,13,,333,ret,1,,int
+4700,LOCAL,,void* iter,10,,355,iter,1,,void*
+4704,LOCAL,,int crawls_persleep,9,,356,crawls_persleep,3,,int
+4710,LOCAL,,item* it,10,,357,it,5,,item*
+4774,LOCAL,,int ret,17,,382,ret,1,,int
+4836,LOCAL,,int i,9,,409,i,1,,int
+4837,LOCAL,,int crawls_persleep,9,,410,crawls_persleep,2,,int
+4887,LOCAL,,item* search,14,,425,search,2,,item*
+4891,LOCAL,,void* hold_lock,14,,426,hold_lock,3,,void*
+4929,LOCAL,,int ret,21,,435,ret,1,,int
+5005,LOCAL,,uint32_t hv,22,,453,hv,6,,uint32_t
+5263,LOCAL,,pthread_t item_crawler_tid,18,,528,item_crawler_tid,54,,pthread_t
+5267,LOCAL,,int ret,9,,531,ret,1,,int
+5316,LOCAL,,int ret,9,,559,ret,1,,int
+5370,LOCAL,,uint32_t sid,14,,583,sid,1,,uint32_t
+5374,LOCAL,,int starts,9,,584,starts,3,,int
+5522,LOCAL,,crawler_client_t* crawlc,22,,621,crawlc,1,,crawler_client_t*
+5579,LOCAL,,int starts,9,,638,starts,1,,int
+5583,LOCAL,,bool is_running,10,,639,is_running,3,,bool
+5584,LOCAL,,rel_time_t block_ae_until,23,,640,block_ae_until,4,,rel_time_t
+5753,LOCAL,,int sid,18,,697,sid,1,,int
+5808,LOCAL,,char* b,10,,718,b,1,,char*
+5812,LOCAL,,uint32_t sid,14,,719,sid,3,,uint32_t
+5816,LOCAL,,int starts,9,,720,starts,5,,int
+5820,LOCAL,,uint8_t[256] tocrawl,13,,721,tocrawl,7,,uint8_t[256]
+5821,LOCAL,,bool hash_crawl,10,,722,hash_crawl,8,,bool
+5875,LOCAL,,char* p,19,,733,p,1,,char*
+6064,LOCAL,,struct crawlerstats_t,3,,15,crawlerstats_t,2,,struct
+6107,LOCAL,,enum crawler_result_type lru_crawler_crawl,26,,35,lru_crawler_crawl,9,,crawler_result_type
+6141,LOCAL,,crc_func crc32c,10,,46,crc32c,1,,crc_func
+6164,LOCAL,,pthread_once_t crc32c_once_little,23,,366,crc32c_once_little,5,,pthread_once_t
+6168,LOCAL,,static uint32_t[8][256] crc32c_table_little,17,,367,crc32c_table_little,7,,static uint32_t[8][256]
+6177,LOCAL,,unsigned n,19,,369,n,1,,unsigned
+6187,LOCAL,,uint32_t crc,18,,370,crc,1,,uint32_t
+6328,LOCAL,,unsigned n,19,,381,n,1,,unsigned
+6338,LOCAL,,uint32_t crc,18,,382,crc,1,,uint32_t
+6348,LOCAL,,unsigned k,23,,383,k,1,,unsigned
+6385,LOCAL,,const unsigned char* next,25,,393,next,1,,unsigned char*
+6432,LOCAL,,uint64_t crcw,18,,402,crcw,1,,uint64_t
+6599,LOCAL,,pthread_once_t crc32c_once_big,23,,438,crc32c_once_big,12,,pthread_once_t
+6603,LOCAL,,static uint32_t[256] crc32c_table_big_byte,17,,439,crc32c_table_big_byte,14,,static uint32_t[256]
+6606,LOCAL,,static uint64_t[8][256] crc32c_table_big,17,,440,crc32c_table_big,16,,static uint64_t[8][256]
+6615,LOCAL,,unsigned n,19,,442,n,1,,unsigned
+6625,LOCAL,,uint32_t crc,18,,443,crc,1,,uint32_t
+6764,LOCAL,,unsigned n,19,,454,n,1,,unsigned
+6774,LOCAL,,uint32_t crc,18,,455,crc,1,,uint32_t
+6790,LOCAL,,unsigned k,23,,457,k,1,,unsigned
+6826,LOCAL,,const unsigned char* next,25,,467,next,1,,unsigned char*
+6871,LOCAL,,uint64_t crcw,18,,476,crcw,1,,uint64_t
+7004,LOCAL,,static const int little,22,,507,little,1,,int
+7043,LOCAL,,crc_func crc32c,17,,16,crc32c,2,,crc_func
+7075,LOCAL,,int fd,9,,46,fd,1,,int
+7274,LOCAL,,struct store_io_thread,3,,84,store_io_thread,8,,struct
+7279,LOCAL,,struct store_maint_thread,3,,90,store_maint_thread,10,,struct
+7305,LOCAL,,_store_wbuf* b,17,,116,b,1,,_store_wbuf*
+7362,LOCAL,,int tid,9,,131,tid,1,,int
+7367,LOCAL,,long long int low,19,,132,low,3,,long long int
+7378,LOCAL,,int x,14,,137,x,1,,int
+7468,LOCAL,,store_engine* e,18,,160,e,2,,store_engine*
+7533,LOCAL,,int x,14,,171,x,1,,int
+7595,LOCAL,,store_engine* e,18,,183,e,1,,store_engine*
+7637,LOCAL,,const char* rv,16,,191,rv,1,,char*
+7698,LOCAL,,int i,9,,223,i,1,,int
+7699,LOCAL,,struct extstore_conf_file* f,31,,224,f,2,,extstore_conf_file*
+7703,LOCAL,,pthread_t thread,15,,225,thread,4,,pthread_t
+7780,LOCAL,,store_engine* e,18,,248,e,9,,store_engine*
+7805,LOCAL,,uint64_t temp_page_count,14,,255,temp_page_count,13,,uint64_t
+7850,LOCAL,,struct flock lock,22,,267,lock,3,,flock
+8148,LOCAL,,int fb,17,,337,fb,1,,int
+8248,LOCAL,,_store_wbuf* w,21,,359,w,1,,_store_wbuf*
+8255,LOCAL,,obj_io* io,16,,360,io,3,,obj_io*
+8425,LOCAL,,store_engine* e,18,,397,e,1,,store_engine*
+8464,LOCAL,,store_page* tmp,16,,405,tmp,2,,store_page*
+8619,LOCAL,,_store_wbuf* wbuf,17,,440,wbuf,1,,_store_wbuf*
+8713,LOCAL,,store_engine* e,18,,468,e,1,,store_engine*
+8719,LOCAL,,store_page* p,16,,469,p,3,,store_page*
+8730,LOCAL,,_store_wbuf* w,17,,470,w,5,,_store_wbuf*
+8839,LOCAL,,_store_wbuf* w,17,,499,w,1,,_store_wbuf*
+8845,LOCAL,,obj_io* io,12,,501,io,3,,obj_io*
+8943,LOCAL,,store_engine* e,18,,532,e,1,,store_engine*
+8949,LOCAL,,store_page* p,16,,533,p,3,,store_page*
+8950,LOCAL,,int ret,9,,534,ret,4,,int
+9150,LOCAL,,store_engine* e,18,,587,e,2,,store_engine*
+9156,LOCAL,,store_page* p,16,,588,p,3,,store_page*
+9281,LOCAL,,store_engine* e,18,,612,e,1,,store_engine*
+9287,LOCAL,,unsigned int depth,18,,614,depth,3,,unsigned int
+9291,LOCAL,,obj_io* tio,12,,615,tio,5,,obj_io*
+9295,LOCAL,,obj_io* tail,12,,616,tail,7,,obj_io*
+9314,LOCAL,,store_io_thread* t,21,,623,t,10,,store_io_thread*
+9395,LOCAL,,store_engine* e,18,,651,e,2,,store_engine*
+9401,LOCAL,,store_page* p,16,,653,p,3,,store_page*
+9410,LOCAL,,int ret,9,,654,ret,5,,int
+9528,LOCAL,,store_engine* e,18,,685,e,1,,store_engine*
+9534,LOCAL,,store_page* p,16,,686,p,3,,store_page*
+9543,LOCAL,,int ret,9,,687,ret,5,,int
+9577,LOCAL,,store_engine* e,18,,698,e,1,,store_engine*
+9583,LOCAL,,store_page* p,16,,699,p,3,,store_page*
+9627,LOCAL,,_store_wbuf* wbuf,17,,716,wbuf,1,,_store_wbuf*
+9676,LOCAL,,int x,13,,722,x,1,,int
+9677,LOCAL,,unsigned int off,22,,723,off,2,,unsigned int
+9700,LOCAL,,struct iovec* iov,26,,726,iov,1,,iovec*
+9735,LOCAL,,store_io_thread* me,21,,740,me,1,,store_io_thread*
+9741,LOCAL,,store_engine* e,18,,741,e,2,,store_engine*
+9750,LOCAL,,obj_io* io_stack,16,,743,io_stack,1,,obj_io*
+9782,LOCAL,,int i,17,,754,i,1,,int
+9783,LOCAL,,obj_io* end,20,,755,end,2,,obj_io*
+9850,LOCAL,,obj_io* cur_io,16,,772,cur_io,7,,obj_io*
+9857,LOCAL,,obj_io* next,20,,776,next,1,,obj_io*
+9863,LOCAL,,int ret,17,,777,ret,3,,int
+9867,LOCAL,,int do_op,17,,778,do_op,5,,int
+9871,LOCAL,,store_page* p,24,,779,p,7,,store_page*
+10106,LOCAL,,store_page* tmp,16,,853,tmp,1,,store_page*
+10110,LOCAL,,store_page* prev,16,,854,prev,3,,store_page*
+10313,LOCAL,,store_maint_thread* me,24,,914,me,1,,store_maint_thread*
+10319,LOCAL,,store_engine* e,18,,915,e,3,,store_engine*
+10325,LOCAL,,struct extstore_page_data* pd,31,,916,pd,5,,extstore_page_data*
+10342,LOCAL,,int i,13,,920,i,1,,int
+10343,LOCAL,,bool do_evict,14,,921,do_evict,2,,bool
+10347,LOCAL,,unsigned int low_page,22,,922,low_page,4,,unsigned int
+10351,LOCAL,,uint64_t low_version,18,,923,low_version,6,,uint64_t
+10412,LOCAL,,store_page* p,24,,936,p,1,,store_page*
+10553,LOCAL,,store_page* p,24,,967,p,1,,store_page*
+10864,LOCAL,,volatile rel_time_t current_time,21,,19,current_time,1,,rel_time_t
+10866,LOCAL,,struct stats stats,14,,22,stats,3,,stats
+10868,LOCAL,,struct stats_state stats_state,20,,23,stats_state,5,,stats_state
+10870,LOCAL,,struct settings settings,17,,24,settings,7,,settings
+10872,LOCAL,,struct slab_rebalance slab_rebal,23,,25,slab_rebal,9,,slab_rebalance
+10873,LOCAL,,volatile int slab_rebalance_signal,14,,26,slab_rebalance_signal,10,,int
+10887,LOCAL,,hash_func hash,11,,9,hash,1,,hash_func
+10960,LOCAL,,hash_func hash,18,,5,hash,2,,hash_func
+11030,LOCAL,,unsigned int[4] lru_type_map,21,,28,lru_type_map,3,,unsigned int[4]
+11068,LOCAL,,struct itemstats_t,3,,53,itemstats_t,6,,struct
+11069,LOCAL,,_stritem*[256] heads,13,,55,heads,7,,_stritem*[256]
+11074,LOCAL,,_stritem*[256] tails,13,,56,tails,9,,_stritem*[256]
+11079,LOCAL,,static itemstats_t[256] itemstats,20,,57,itemstats,11,,static itemstats_t[256]
+11084,LOCAL,,unsigned int[256] sizes,21,,58,sizes,13,,unsigned int[256]
+11089,LOCAL,,static uint64_t[256] sizes_bytes,17,,59,sizes_bytes,15,,static uint64_t[256]
+11094,LOCAL,,static unsigned int* stats_sizes_hist,21,,60,stats_sizes_hist,17,,unsigned int*
+11098,LOCAL,,uint64_t stats_sizes_cas_min,17,,61,stats_sizes_cas_min,19,,uint64_t
+11102,LOCAL,,static int stats_sizes_buckets,12,,62,stats_sizes_buckets,21,,int
+11106,LOCAL,,uint64_t cas_id,17,,63,cas_id,23,,uint64_t
+11110,LOCAL,,static volatile int do_run_lru_maintainer_thread,21,,65,do_run_lru_maintainer_thread,25,,int
+11114,LOCAL,,static int lru_maintainer_initialized,12,,66,lru_maintainer_initialized,27,,int
+11118,LOCAL,,pthread_mutex_t lru_maintainer_lock,24,,67,lru_maintainer_lock,29,,pthread_mutex_t
+11122,LOCAL,,pthread_mutex_t cas_id_lock,24,,68,cas_id_lock,31,,pthread_mutex_t
+11126,LOCAL,,pthread_mutex_t stats_sizes_lock,24,,69,stats_sizes_lock,33,,pthread_mutex_t
+11133,LOCAL,,int i,9,,72,i,1,,int
+11208,LOCAL,,struct lru_bump_entry,3,,99,lru_bump_entry,40,,struct
+11209,LOCAL,,lru_bump_buf* bump_buf_head,21,,101,bump_buf_head,41,,lru_bump_buf*
+11213,LOCAL,,lru_bump_buf* bump_buf_tail,21,,102,bump_buf_tail,43,,lru_bump_buf*
+11217,LOCAL,,pthread_mutex_t bump_buf_lock,24,,103,bump_buf_lock,45,,pthread_mutex_t
+11239,LOCAL,,uint64_t next_id,14,,114,next_id,2,,uint64_t
+11268,LOCAL,,rel_time_t oldest_live,16,,126,oldest_live,1,,rel_time_t
+11274,LOCAL,,uint64_t cas,14,,127,cas,3,,uint64_t
+11294,LOCAL,,uint64_t oldest_cas,14,,128,oldest_cas,5,,uint64_t
+11384,LOCAL,,item* it,10,,176,it,1,,item*
+11388,LOCAL,,int i,9,,177,i,3,,int
+11491,LOCAL,,size_t size,12,,223,size,1,,size_t
+11510,LOCAL,,unsigned int id,18,,226,id,4,,unsigned int
+11515,LOCAL,,item_chunk* nch,16,,228,nch,6,,item_chunk*
+11622,LOCAL,,uint8_t nsuffix,13,,264,nsuffix,1,,uint8_t
+11623,LOCAL,,item* it,10,,265,it,2,,item*
+11627,LOCAL,,char[40] suffix,10,,266,suffix,4,,char[40]
+11635,LOCAL,,size_t ntotal,12,,271,ntotal,6,,size_t
+11656,LOCAL,,unsigned int id,18,,276,id,9,,unsigned int
+11661,LOCAL,,unsigned int hdr_id,18,,277,hdr_id,11,,unsigned int
+11679,LOCAL,,int htotal,13,,289,htotal,1,,int
+11927,LOCAL,,item_chunk* chunk,20,,349,chunk,1,,item_chunk*
+12009,LOCAL,,size_t ntotal,12,,364,ntotal,1,,size_t
+12047,LOCAL,,unsigned int clsid,18,,365,clsid,3,,unsigned int
+12108,LOCAL,,char[40] prefix,10,,382,prefix,1,,char[40]
+12109,LOCAL,,uint8_t nsuffix,13,,383,nsuffix,2,,uint8_t
+12117,LOCAL,,size_t ntotal,12,,387,ntotal,4,,size_t
+12148,LOCAL,,item** head,10,,398,head,1,,item**
+12149,LOCAL,,item** tail,18,,398,tail,2,,item**
+12150,LOCAL,,int ntotal,9,,399,ntotal,3,,int
+12188,LOCAL,,uint32_t hv,14,,400,hv,5,,uint32_t
+12303,LOCAL,,item** head,10,,422,head,1,,item**
+12304,LOCAL,,item** tail,18,,422,tail,2,,item**
+12492,LOCAL,,item** head,10,,462,head,1,,item**
+12493,LOCAL,,item** tail,18,,462,tail,2,,item**
+13187,LOCAL,,unsigned int memlimit,18,,609,memlimit,1,,unsigned int
+13195,LOCAL,,char* buffer,10,,610,buffer,3,,char*
+13196,LOCAL,,unsigned int bufcurr,18,,611,bufcurr,4,,unsigned int
+13197,LOCAL,,item* it,10,,612,it,5,,item*
+13198,LOCAL,,unsigned int len,18,,613,len,6,,unsigned int
+13199,LOCAL,,unsigned int shown,18,,614,shown,7,,unsigned int
+13203,LOCAL,,char[251] key_temp,10,,615,key_temp,9,,char[251]
+13204,LOCAL,,char[512] temp,10,,616,temp,10,,char[512]
+13205,LOCAL,,unsigned int id,18,,617,id,11,,unsigned int
+13402,LOCAL,,int n,9,,664,n,1,,int
+13418,LOCAL,,item_stats_automove* cur,29,,666,cur,1,,item_stats_automove*
+13425,LOCAL,,int i,13,,669,i,3,,int
+13562,LOCAL,,itemstats_t totals,17,,695,totals,3,,itemstats_t
+13569,LOCAL,,int n,9,,697,n,3,,int
+13585,LOCAL,,int x,13,,699,x,1,,int
+13586,LOCAL,,int i,13,,700,i,2,,int
+13919,LOCAL,,struct thread_stats thread_stats,25,,752,thread_stats,1,,thread_stats
+13923,LOCAL,,itemstats_t totals,17,,754,totals,3,,itemstats_t
+13924,LOCAL,,int n,9,,755,n,7,,int
+13946,LOCAL,,int x,13,,758,x,2,,int
+13947,LOCAL,,int i,13,,759,i,3,,int
+13948,LOCAL,,unsigned int size,22,,760,size,4,,unsigned int
+13952,LOCAL,,unsigned int age,22,,761,age,6,,unsigned int
+13956,LOCAL,,unsigned int age_hot,22,,762,age_hot,8,,unsigned int
+13960,LOCAL,,unsigned int age_warm,22,,763,age_warm,10,,unsigned int
+13964,LOCAL,,unsigned int[4] lru_size_map,22,,764,lru_size_map,12,,unsigned int[4]
+13965,LOCAL,,const char* fmt,20,,765,fmt,6,,char*
+13969,LOCAL,,char[128] key_str,14,,766,key_str,5,,char[128]
+13970,LOCAL,,char[128] val_str,14,,767,val_str,16,,char[128]
+13971,LOCAL,,int klen,13,,768,klen,4,,int
+13972,LOCAL,,int vlen,23,,768,vlen,18,,int
+15197,LOCAL,,bool ret,10,,885,ret,1,,bool
+15440,LOCAL,,int ntotal,9,,933,ntotal,2,,int
+15478,LOCAL,,int bucket,9,,934,bucket,4,,int
+15533,LOCAL,,int ntotal,9,,945,ntotal,2,,int
+15571,LOCAL,,int bucket,9,,946,bucket,4,,int
+15613,LOCAL,,int i,13,,961,i,1,,int
+15632,LOCAL,,char[12] key,22,,964,key,1,,char[12]
+15691,LOCAL,,item* it,10,,979,it,2,,item*
+15710,LOCAL,,int was_found,9,,1003,was_found,4,,int
+15721,LOCAL,,int ii,13,,1006,ii,1,,int
+15903,LOCAL,,logger* myl,5,,1054,myl,3,,logger*
+15907,LOCAL,,logger* myl,5,,1054,myl,1,,logger*
+16081,LOCAL,,item* it,10,,1092,it,1,,item*
+16114,LOCAL,,item* it,10,,1106,it,2,,item*
+16118,LOCAL,,int id,9,,1107,id,3,,int
+16122,LOCAL,,int removed,9,,1108,removed,5,,int
+16133,LOCAL,,int tries,9,,1112,tries,8,,int
+16137,LOCAL,,item* search,10,,1113,search,2,,item*
+16138,LOCAL,,item* next_it,10,,1114,next_it,11,,item*
+16139,LOCAL,,void* hold_lock,10,,1115,hold_lock,12,,void*
+16143,LOCAL,,unsigned int move_to_lru,18,,1116,move_to_lru,14,,unsigned int
+16147,LOCAL,,uint64_t limit,14,,1117,limit,16,,uint64_t
+16221,LOCAL,,uint32_t hv,18,,1135,hv,3,,uint32_t
+16578,LOCAL,,logger* myl,21,,1234,myl,4,,logger*
+16582,LOCAL,,logger* myl,21,,1234,myl,1,,logger*
+16805,LOCAL,,lru_bump_buf* b,18,,1295,b,1,,lru_bump_buf*
+16858,LOCAL,,bool ret,10,,1313,ret,1,,bool
+16874,LOCAL,,lru_bump_entry* be,20,,1316,be,5,,lru_bump_entry*
+16949,LOCAL,,lru_bump_buf* b,18,,1342,b,1,,lru_bump_buf*
+16950,LOCAL,,lru_bump_entry* be,20,,1343,be,2,,lru_bump_entry*
+16951,LOCAL,,unsigned int size,18,,1344,size,3,,unsigned int
+16952,LOCAL,,unsigned int todo,18,,1345,todo,4,,unsigned int
+16953,LOCAL,,bool bumped,10,,1346,bumped,5,,bool
+17060,LOCAL,,uint64_t total,14,,1377,total,1,,uint64_t
+17064,LOCAL,,lru_bump_buf* b,18,,1378,b,3,,lru_bump_buf*
+17107,LOCAL,,int i,9,,1398,i,1,,int
+17108,LOCAL,,int did_moves,9,,1399,did_moves,2,,int
+17112,LOCAL,,uint64_t total_bytes,14,,1400,total_bytes,4,,uint64_t
+17116,LOCAL,,unsigned int chunks_perslab,18,,1401,chunks_perslab,6,,unsigned int
+17159,LOCAL,,rel_time_t cold_age,16,,1417,cold_age,10,,rel_time_t
+17163,LOCAL,,rel_time_t hot_age,16,,1418,hot_age,12,,rel_time_t
+17167,LOCAL,,rel_time_t warm_age,16,,1419,warm_age,14,,rel_time_t
+17304,LOCAL,,int do_more,13,,1445,do_more,1,,int
+17369,LOCAL,,int i,9,,1475,i,6,,int
+17370,LOCAL,,unsigned int[256] next_crawls,23,,1476,next_crawls,11,,unsigned int[256]
+17371,LOCAL,,unsigned int[256] next_crawl_wait,23,,1477,next_crawl_wait,3,,unsigned int[256]
+17372,LOCAL,,uint8_t[256] todo,13,,1478,todo,4,,uint8_t[256]
+17382,LOCAL,,bool do_run,10,,1480,do_run,6,,bool
+17386,LOCAL,,unsigned int tocrawl_limit,18,,1481,tocrawl_limit,8,,unsigned int
+17405,LOCAL,,crawlerstats_t* s,24,,1485,s,13,,crawlerstats_t*
+17419,LOCAL,,char* lru_name,18,,1488,lru_name,7,,char*
+17428,LOCAL,,int x,17,,1490,x,4,,int
+17429,LOCAL,,uint64_t possible_reclaims,22,,1492,possible_reclaims,5,,uint64_t
+17439,LOCAL,,uint64_t available_reclaims,22,,1493,available_reclaims,9,,uint64_t
+17443,LOCAL,,uint64_t low_watermark,22,,1497,low_watermark,8,,uint64_t
+17451,LOCAL,,rel_time_t since_run,24,,1498,since_run,10,,rel_time_t
+17597,LOCAL,,logger* myl,13,,1535,myl,3,,logger*
+17601,LOCAL,,logger* myl,13,,1535,myl,1,,logger*
+17746,LOCAL,,slab_automove_reg_t slab_automove_default,21,,1568,slab_automove_default,93,,slab_automove_reg_t
+17762,LOCAL,,pthread_t lru_maintainer_tid,18,,1580,lru_maintainer_tid,95,,pthread_t
+17766,LOCAL,,slab_automove_reg_t* sam,25,,1586,sam,1,,slab_automove_reg_t*
+17771,LOCAL,,int i,9,,1592,i,3,,int
+17772,LOCAL,,useconds_t to_sleep,16,,1593,to_sleep,4,,useconds_t
+17778,LOCAL,,useconds_t last_sleep,16,,1594,last_sleep,6,,useconds_t
+17784,LOCAL,,rel_time_t last_crawler_check,16,,1595,last_crawler_check,8,,rel_time_t
+17788,LOCAL,,rel_time_t last_automove_check,16,,1596,last_automove_check,10,,rel_time_t
+17792,LOCAL,,useconds_t[64] next_juggles,16,,1597,next_juggles,12,,useconds_t[64]
+17797,LOCAL,,useconds_t[64] backoff_juggles,16,,1598,backoff_juggles,14,,useconds_t[64]
+17802,LOCAL,,struct crawler_expired_data* cdata,33,,1599,cdata,16,,crawler_expired_data*
+17829,LOCAL,,logger* l,12,,1607,l,3,,logger*
+17842,LOCAL,,double last_ratio,12,,1613,last_ratio,24,,double
+17848,LOCAL,,void* am,10,,1614,am,26,,void*
+17956,LOCAL,,int did_moves,17,,1643,did_moves,3,,int
+18119,LOCAL,,int src,17,,1680,src,2,,int
+18120,LOCAL,,int dst,22,,1680,dst,3,,int
+18147,LOCAL,,logger* myl,17,,1684,myl,5,,logger*
+18151,LOCAL,,logger* myl,17,,1684,myl,1,,logger*
+18227,LOCAL,,int ret,9,,1707,ret,1,,int
+18266,LOCAL,,int ret,9,,1721,ret,1,,int
+18337,LOCAL,,item** head,10,,1754,head,1,,item**
+18338,LOCAL,,item** tail,18,,1754,tail,2,,item**
+18439,LOCAL,,item** head,10,,1775,head,1,,item**
+18440,LOCAL,,item** tail,18,,1775,tail,2,,item**
+18539,LOCAL,,item** head,10,,1798,head,1,,item**
+18540,LOCAL,,item** tail,18,,1798,tail,2,,item**
+18948,LOCAL,,struct item_stats_automove,3,,71,item_stats_automove,36,,struct
+18984,LOCAL,,extern pthread_mutex_t[] lru_locks,24,,78,lru_locks,42,,extern pthread_mutex_t[]
+19026,LOCAL,,char[201] lut,19,,64,lut,1,,char[201]
+19211,LOCAL,,int d,9,,110,d,1,,int
+19212,LOCAL,,int n,15,,110,n,2,,int
+19306,LOCAL,,uint32_t u,14,,120,u,1,,uint32_t
+19334,LOCAL,,int d,9,,129,d,1,,int
+19335,LOCAL,,uint32_t lower,14,,131,lower,2,,uint32_t
+19350,LOCAL,,uint64_t upper,14,,134,upper,5,,uint64_t
+19392,LOCAL,,uint64_t u,14,,143,u,1,,uint64_t
+19490,LOCAL,,static char* kill_msg,13,,11,kill_msg,1,,char*
+19496,LOCAL,,int syscall_no,9,,23,syscall_no,1,,int
+19550,LOCAL,,const struct sigaction act,31,,45,act,4,,sigaction
+19592,LOCAL,,logger* logger_stack_head,15,,30,logger_stack_head,1,,logger*
+19596,LOCAL,,logger* logger_stack_tail,15,,31,logger_stack_tail,3,,logger*
+19600,LOCAL,,static unsigned int logger_count,21,,32,logger_count,5,,unsigned int
+19604,LOCAL,,static volatile int do_run_logger_thread,21,,33,do_run_logger_thread,7,,int
+19608,LOCAL,,pthread_t logger_tid,18,,34,logger_tid,9,,pthread_t
+19609,LOCAL,,pthread_mutex_t logger_stack_lock,17,,35,logger_stack_lock,10,,pthread_mutex_t
+19613,LOCAL,,pthread_cond_t logger_stack_cond,16,,36,logger_stack_cond,12,,pthread_cond_t
+19617,LOCAL,,pthread_key_t logger_key,15,,38,logger_key,14,,pthread_key_t
+19618,LOCAL,,pthread_mutex_t logger_atomics_mutex,17,,41,logger_atomics_mutex,2,,pthread_mutex_t
+19622,LOCAL,,logger_watcher *[20] watchers,16,,45,watchers,17,,logger_watcher *[20]
+19626,LOCAL,,pollfd[20] watchers_pollfds,15,,46,watchers_pollfds,20,,pollfd[20]
+19629,LOCAL,,int watcher_count,5,,47,watcher_count,22,,int
+19645,LOCAL,,int reqlen,9,,55,reqlen,1,,int
+19651,LOCAL,,int total,9,,56,total,3,,int
+19689,LOCAL,,item* it,10,,64,it,1,,item*
+19695,LOCAL,,struct logentry_eviction* le,30,,65,le,3,,logentry_eviction*
+19821,LOCAL,,struct logentry_item_get* le,30,,104,le,9,,logentry_item_get*
+19882,LOCAL,,rel_time_t ttl,16,,120,ttl,7,,rel_time_t
+19892,LOCAL,,struct logentry_item_store* le,32,,124,le,13,,logentry_item_store*
+19973,LOCAL,,socklen_t addrlen,15,,142,addrlen,3,,socklen_t
+19984,LOCAL,,struct logentry_conn_event* le,32,,147,le,10,,logentry_conn_event*
+20146,LOCAL,,int total,9,,202,total,1,,int
+20147,LOCAL,,const char* cmd,16,,203,cmd,2,,char*
+20151,LOCAL,,char[751] keybuf,10,,204,keybuf,4,,char[751]
+20152,LOCAL,,struct logentry_item_store* le,32,,205,le,5,,logentry_item_store*
+20160,LOCAL,,char[] status_map,16,,206,status_map,7,,char[]
+20170,LOCAL,,char[] cmd_map,16,,208,cmd_map,9,,char[]
+20273,LOCAL,,int total,9,,224,total,1,,int
+20274,LOCAL,,struct logentry_item_get* le,30,,225,le,2,,logentry_item_get*
+20282,LOCAL,,char[751] keybuf,10,,226,keybuf,4,,char[751]
+20283,LOCAL,,char[] was_found_map,16,,227,was_found_map,5,,char[]
+20365,LOCAL,,int total,9,,240,total,1,,int
+20366,LOCAL,,char[751] keybuf,10,,241,keybuf,2,,char[751]
+20367,LOCAL,,struct logentry_eviction* le,30,,242,le,3,,logentry_eviction*
+20459,LOCAL,,int total,9,,271,total,1,,int
+20460,LOCAL,,short unsigned rport,20,,272,rport,2,,short unsigned
+20461,LOCAL,,char[64] rip,10,,273,rip,3,,char[64]
+20462,LOCAL,,struct logentry_conn_event* le,32,,274,le,4,,logentry_conn_event*
+20470,LOCAL,,char[] transport_map,16,,275,transport_map,6,,char[]
+20532,LOCAL,,int total,9,,288,total,1,,int
+20533,LOCAL,,short unsigned rport,20,,289,rport,2,,short unsigned
+20534,LOCAL,,char[64] rip,10,,290,rip,3,,char[64]
+20535,LOCAL,,struct logentry_conn_event* le,32,,291,le,4,,logentry_conn_event*
+20543,LOCAL,,char[] transport_map,16,,292,transport_map,6,,char[]
+20550,LOCAL,,char[] reason_map,16,,293,reason_map,8,,char[]
+20614,LOCAL,,_entry_details[] default_entries,28,,372,default_entries,37,,_entry_details[]
+20722,LOCAL,,uint64_t logger_gid,17,,430,logger_gid,39,,uint64_t
+20736,LOCAL,,uint64_t res,14,,438,res,2,,uint64_t
+20828,LOCAL,,logger* l,12,,499,l,1,,logger*
+20832,LOCAL,,int x,9,,500,x,3,,int
+20836,LOCAL,,uint16_t f,14,,501,f,5,,uint16_t
+20853,LOCAL,,logger_watcher* w,24,,504,w,1,,logger_watcher*
+20908,LOCAL,,int total,9,,521,total,1,,int
+20912,LOCAL,,const entry_details* d,25,,522,d,3,,entry_details*
+20964,LOCAL,,int x,9,,539,x,1,,int
+20965,LOCAL,,int total,12,,539,total,2,,int
+20979,LOCAL,,logger_watcher* w,24,,542,w,1,,logger_watcher*
+20985,LOCAL,,char* skip_scr,14,,543,skip_scr,3,,char*
+21148,LOCAL,,unsigned int size,18,,601,size,1,,unsigned int
+21149,LOCAL,,unsigned int pos,18,,602,pos,2,,unsigned int
+21153,LOCAL,,unsigned char* data,19,,603,data,4,,unsigned char*
+21154,LOCAL,,char[4096] scratch,10,,604,scratch,5,,char[4096]
+21155,LOCAL,,logentry* e,14,,605,e,6,,logentry*
+21190,LOCAL,,enum logger_parse_entry_ret ret,37,,617,ret,1,,logger_parse_entry_ret
+21191,LOCAL,,int scratch_len,13,,618,scratch_len,2,,int
+21300,LOCAL,,int x,9,,657,x,1,,int
+21301,LOCAL,,int nfd,9,,658,nfd,2,,int
+21305,LOCAL,,unsigned char* data,19,,659,data,4,,unsigned char*
+21306,LOCAL,,unsigned int data_size,18,,660,data_size,5,,unsigned int
+21310,LOCAL,,int flushed,9,,661,flushed,7,,int
+21327,LOCAL,,logger_watcher* w,24,,664,w,1,,logger_watcher*
+21416,LOCAL,,int ret,9,,688,ret,11,,int
+21449,LOCAL,,logger_watcher* w,24,,697,w,1,,logger_watcher*
+21484,LOCAL,,char[1] buf,18,,706,buf,1,,char[1]
+21485,LOCAL,,int res,17,,707,res,2,,int
+21560,LOCAL,,int total,21,,720,total,1,,int
+21684,LOCAL,,useconds_t to_sleep,16,,767,to_sleep,1,,useconds_t
+21693,LOCAL,,int found_logs,13,,772,found_logs,1,,int
+21697,LOCAL,,logger* l,16,,773,l,3,,logger*
+21698,LOCAL,,struct logger_stats ls,29,,774,ls,4,,logger_stats
+21816,LOCAL,,int ret,9,,818,ret,1,,int
+21897,LOCAL,,logger* l,12,,872,l,1,,logger*
+21955,LOCAL,,bipbuf_t* buf,14,,898,buf,1,,bipbuf_t*
+21961,LOCAL,,bool nospace,10,,899,nospace,3,,bool
+21965,LOCAL,,va_list ap,13,,900,ap,5,,va_list
+21966,LOCAL,,logentry* e,14,,901,e,6,,logentry*
+21967,LOCAL,,const entry_details* d,25,,903,d,7,,entry_details*
+21976,LOCAL,,int reqlen,9,,904,reqlen,9,,int
+22105,LOCAL,,int x,9,,961,x,1,,int
+22106,LOCAL,,logger_watcher* w,20,,962,w,2,,logger_watcher*
+22429,LOCAL,,struct logger_watcher,3,,188,logger_watcher,21,,struct
+22436,LOCAL,,pthread_key_t logger_key,22,,199,logger_key,23,,pthread_key_t
+22453,LOCAL,,enum logger_ret_type logger_log,22,,216,logger_log,28,,logger_ret_type
+22466,LOCAL,,enum logger_add_watcher_ret logger_add_watcher,29,,224,logger_add_watcher,31,,logger_add_watcher_ret
+22490,LOCAL,,md5_word_t a,2,,135,a,9,,md5_word_t
+22491,LOCAL,,md5_word_t b,20,,135,b,11,,md5_word_t
+22492,LOCAL,,md5_word_t c,2,,136,c,7,,md5_word_t
+22493,LOCAL,,md5_word_t d,20,,136,d,8,,md5_word_t
+22522,LOCAL,,md5_word_t t,16,,137,t,6,,md5_word_t
+22523,LOCAL,,unsigned int[16] xbuf,16,,143,xbuf,10,,unsigned int[16]
+22524,LOCAL,,const md5_word_t* X,22,,144,X,12,,md5_word_t*
+22526,LOCAL,,static const int w,19,,154,w,1,,int
+22563,LOCAL,,const md5_byte_t* xp,23,,183,xp,1,,md5_byte_t*
+22567,LOCAL,,int i,10,,184,i,3,,int
+25278,LOCAL,,const md5_byte_t* p,22,,325,p,1,,md5_byte_t*
+25282,LOCAL,,int left,9,,326,left,3,,int
+25286,LOCAL,,int offset,9,,327,offset,5,,int
+25298,LOCAL,,md5_word_t nbits,16,,328,nbits,7,,md5_word_t
+25346,LOCAL,,int copy,6,,341,copy,1,,int
+25416,LOCAL,,unsigned char[64] pad,29,,363,pad,1,,unsigned char[64]
+25484,LOCAL,,unsigned char[8] data,16,,369,data,3,,unsigned char[8]
+25485,LOCAL,,int i,9,,370,i,4,,int
+25722,LOCAL,,enum try_read_result try_read_network,29,,84,try_read_network,10,,try_read_result
+25724,LOCAL,,enum try_read_result try_read_udp,29,,85,try_read_udp,12,,try_read_result
+25780,LOCAL,,struct stats stats,14,,106,stats,4,,stats
+25782,LOCAL,,struct stats_state stats_state,20,,107,stats_state,4,,stats_state
+25784,LOCAL,,struct settings settings,17,,108,settings,4,,settings
+25785,LOCAL,,time_t process_started,8,,109,process_started,4,,time_t
+25786,LOCAL,,conn** conns,6,,110,conns,2,,conn**
+25788,LOCAL,,struct slab_rebalance slab_rebal,23,,112,slab_rebal,32,,slab_rebalance
+25789,LOCAL,,volatile int slab_rebalance_signal,14,,113,slab_rebalance_signal,33,,int
+25790,LOCAL,,conn* listen_conn,13,,121,listen_conn,34,,conn*
+25794,LOCAL,,static int max_fds,12,,122,max_fds,36,,int
+25796,LOCAL,,struct event_base* main_base,26,,123,main_base,38,,event_base*
+25857,LOCAL,,enum transmit_result transmit,29,,148,transmit,44,,transmit_result
+25858,LOCAL,,volatile bool allow_new_conns,22,,155,allow_new_conns,45,,bool
+25862,LOCAL,,static int stop_main_loop,12,,156,stop_main_loop,47,,int
+25867,LOCAL,,struct event maxconnsevent,21,,157,maxconnsevent,50,,event
+25873,LOCAL,,struct timeval t,20,,159,t,1,,timeval
+26325,LOCAL,,pthread_mutex_t conn_lock,24,,300,conn_lock,56,,pthread_mutex_t
+26326,LOCAL,,pthread_t conn_timeout_tid,18,,303,conn_timeout_tid,57,,pthread_t
+26327,LOCAL,,static int do_run_conn_timeout_thread,12,,304,do_run_conn_timeout_thread,58,,int
+26328,LOCAL,,pthread_cond_t conn_timeout_cond,23,,305,conn_timeout_cond,59,,pthread_cond_t
+26332,LOCAL,,pthread_mutex_t conn_timeout_lock,24,,306,conn_timeout_lock,2,,pthread_mutex_t
+26339,LOCAL,,int i,9,,310,i,1,,int
+26340,LOCAL,,conn* c,10,,311,c,2,,conn*
+26341,LOCAL,,rel_time_t oldest_last_cmd,16,,312,oldest_last_cmd,3,,rel_time_t
+26342,LOCAL,,int sleep_time,9,,313,sleep_time,4,,int
+26343,LOCAL,,int sleep_slice,9,,314,sleep_slice,5,,int
+26361,LOCAL,,useconds_t timeslice,16,,318,timeslice,8,,useconds_t
+26522,LOCAL,,struct timeval now,24,,364,now,7,,timeval
+26523,LOCAL,,struct timespec to_sleep,25,,365,to_sleep,8,,timespec
+26562,LOCAL,,int ret,9,,378,ret,1,,int
+26788,LOCAL,,size_t size,12,,442,size,1,,size_t
+26796,LOCAL,,char* tmp,10,,443,tmp,3,,char*
+26850,LOCAL,,int next_fd,9,,468,next_fd,1,,int
+26864,LOCAL,,int headroom,9,,473,headroom,4,,int
+26868,LOCAL,,struct rlimit rl,19,,474,rl,6,,rlimit
+26918,LOCAL,,char* rv,10,,496,rv,1,,char*
+27149,LOCAL,,io_queue_cb_t* q,19,,572,q,1,,io_queue_cb_t*
+27202,LOCAL,,io_queue_cb_t* qcb,19,,586,qcb,1,,io_queue_cb_t*
+27210,LOCAL,,io_queue_t* q,16,,587,q,3,,io_queue_t*
+27260,LOCAL,,io_queue_t* q,21,,600,q,1,,io_queue_t*
+27293,LOCAL,,io_queue_cb_t* q,19,,607,q,1,,io_queue_cb_t*
+27327,LOCAL,,io_queue_t* q,16,,618,q,1,,io_queue_t*
+27360,LOCAL,,io_queue_t* q,16,,632,q,1,,io_queue_t*
+27366,LOCAL,,io_queue_cb_t* qcb,19,,633,qcb,3,,io_queue_cb_t*
+27402,LOCAL,,io_queue_cb_t* q,19,,645,q,1,,io_queue_cb_t*
+27431,LOCAL,,conn* c,10,,655,c,1,,conn*
+27633,LOCAL,,logger* myl,9,,721,myl,3,,logger*
+27637,LOCAL,,logger* myl,9,,721,myl,1,,logger*
+28040,LOCAL,,mc_resp* resp,17,,857,resp,1,,mc_resp*
+28191,LOCAL,,logger* myl,9,,923,myl,3,,logger*
+28195,LOCAL,,logger* myl,9,,923,myl,1,,logger*
+28313,LOCAL,,int i,9,,967,i,1,,int
+28347,LOCAL,,char[] statenames,15,,979,statenames,1,,char[]
+28504,LOCAL,,int x,9,,1040,x,2,,int
+28567,LOCAL,,LIBEVENT_THREAD* th,21,,1062,th,1,,LIBEVENT_THREAD*
+28573,LOCAL,,mc_resp* resp,13,,1063,resp,3,,mc_resp*
+28577,LOCAL,,mc_resp_bundle* b,20,,1064,b,5,,mc_resp_bundle*
+28590,LOCAL,,int i,18,,1067,i,1,,int
+28608,LOCAL,,int x,17,,1069,x,1,,int
+28777,LOCAL,,int i,22,,1102,i,1,,int
+28853,LOCAL,,LIBEVENT_THREAD* th,21,,1120,th,1,,LIBEVENT_THREAD*
+28859,LOCAL,,mc_resp_bundle* b,20,,1121,b,3,,mc_resp_bundle*
+28921,LOCAL,,mc_resp_bundle** head,28,,1135,head,2,,mc_resp_bundle**
+29022,LOCAL,,mc_resp_bundle** head,24,,1150,head,1,,mc_resp_bundle**
+29078,LOCAL,,mc_resp* resp,13,,1166,resp,1,,mc_resp*
+29250,LOCAL,,mc_resp* next,13,,1207,next,1,,mc_resp*
+29284,LOCAL,,io_queue_cb_t* qcb,23,,1219,qcb,1,,io_queue_cb_t*
+29400,LOCAL,,size_t len,12,,1243,len,1,,size_t
+29405,LOCAL,,mc_resp* resp,13,,1245,resp,3,,mc_resp*
+29521,LOCAL,,char[] error_prefix,23,,1296,error_prefix,1,,char[]
+29525,LOCAL,,static const int error_prefix_len,22,,1297,error_prefix_len,3,,int
+29568,LOCAL,,char* buf,10,,1313,buf,1,,char*
+29582,LOCAL,,uint32_t bodylen,14,,1314,bodylen,3,,uint32_t
+29588,LOCAL,,protocol_binary_response_header header,37,,1315,header,5,,protocol_binary_response_header
+29711,LOCAL,,char* pos,10,,1342,pos,1,,char*
+29725,LOCAL,,uint32_t nbytes,14,,1343,nbytes,3,,uint32_t
+29729,LOCAL,,int remaining,9,,1344,remaining,5,,int
+29743,LOCAL,,int room,9,,1345,room,7,,int
+29801,LOCAL,,size_t nsize,12,,1359,nsize,1,,size_t
+29809,LOCAL,,size_t available,12,,1360,available,3,,size_t
+29819,LOCAL,,bool rv,10,,1361,rv,5,,bool
+29882,LOCAL,,char* ptr,14,,1376,ptr,1,,char*
+29941,LOCAL,,conn* c,10,,1400,c,2,,conn*
+29954,LOCAL,,size_t needed,16,,1403,needed,1,,size_t
+29978,LOCAL,,size_t needed,16,,1409,needed,1,,size_t
+30132,LOCAL,,item_chunk* dch,16,,1466,dch,1,,item_chunk*
+30203,LOCAL,,int remain,13,,1477,remain,1,,int
+30207,LOCAL,,item_chunk* sch,20,,1478,sch,3,,item_chunk*
+30247,LOCAL,,int copied,13,,1479,copied,5,,int
+30266,LOCAL,,int todo,17,,1485,todo,2,,int
+30345,LOCAL,,item_chunk* tch,28,,1495,tch,1,,item_chunk*
+30389,LOCAL,,int done,13,,1511,done,1,,int
+30400,LOCAL,,int todo,17,,1514,todo,1,,int
+30496,LOCAL,,item_chunk* tch,28,,1522,tch,1,,item_chunk*
+30930,LOCAL,,char* key,10,,1568,key,1,,char*
+30952,LOCAL,,item* old_it,10,,1569,old_it,2,,item*
+30965,LOCAL,,enum store_item_type stored,26,,1570,stored,5,,store_item_type
+30969,LOCAL,,item* new_it,10,,1574,new_it,7,,item*
+30973,LOCAL,,uint32_t flags,14,,1575,flags,4,,uint32_t
+30974,LOCAL,,enum cas_result cas_res,21,,1578,cas_res,10,,cas_result
+30978,LOCAL,,bool do_store,10,,1580,do_store,12,,bool
+30987,LOCAL,,uint64_t it_cas,18,,1583,it_cas,1,,uint64_t
+31007,LOCAL,,uint64_t old_cas,18,,1584,old_cas,3,,uint64_t
+31571,LOCAL,,logger* myl,5,,1721,myl,3,,logger*
+31575,LOCAL,,logger* myl,5,,1721,myl,1,,logger*
+31662,LOCAL,,mc_resp* resp,17,,1731,resp,1,,mc_resp*
+31693,LOCAL,,char[128] val_str,10,,1742,val_str,1,,char[128]
+31694,LOCAL,,int vlen,9,,1743,vlen,2,,int
+31695,LOCAL,,va_list ap,13,,1744,ap,3,,va_list
+31732,LOCAL,,pid_t pid,11,,1760,pid,4,,pid_t
+31736,LOCAL,,rel_time_t now,16,,1761,now,3,,rel_time_t
+31740,LOCAL,,struct thread_stats thread_stats,25,,1763,thread_stats,3,,thread_stats
+31744,LOCAL,,struct slab_stats slab_stats,23,,1765,slab_stats,3,,slab_stats
+31750,LOCAL,,struct rusage usage,19,,1768,usage,9,,rusage
+33694,LOCAL,,int zlength,9,,2001,zlength,1,,int
+33722,LOCAL,,bool ret,10,,2006,ret,1,,bool
+33880,LOCAL,,char[] addr_text,10,,2040,addr_text,1,,char[]
+33886,LOCAL,,const char* protoname,16,,2042,protoname,3,,char*
+33890,LOCAL,,short unsigned port,20,,2043,port,5,,short unsigned
+33998,LOCAL,,size_t pathlen,20,,2071,pathlen,1,,size_t
+34100,LOCAL,,struct sockaddr_in6 local_addr,29,,2120,local_addr,1,,sockaddr_in6
+34101,LOCAL,,struct sockaddr* sock_addr,25,,2121,sock_addr,2,,sockaddr*
+34134,LOCAL,,socklen_t local_addr_len,23,,2127,local_addr_len,1,,socklen_t
+34191,LOCAL,,struct sockaddr_storage svr_sock_addr,37,,2139,svr_sock_addr,1,,sockaddr_storage
+34192,LOCAL,,socklen_t svr_addr_len,23,,2140,svr_addr_len,2,,socklen_t
+34223,LOCAL,,int i,9,,2148,i,5,,int
+34224,LOCAL,,char[128] key_str,10,,2149,key_str,4,,char[128]
+34225,LOCAL,,char[128] val_str,10,,2150,val_str,3,,char[128]
+34226,LOCAL,,size_t extras_len,12,,2151,extras_len,4,,size_t
+34234,LOCAL,,char[] addr,10,,2152,addr,6,,char[]
+34235,LOCAL,,char[] svr_addr,10,,2153,svr_addr,7,,char[]
+34246,LOCAL,,int klen,9,,2156,klen,3,,int
+34247,LOCAL,,int vlen,19,,2156,vlen,11,,int
+34484,LOCAL,,item* it,10,,2189,it,1,,item*
+34542,LOCAL,,item* it,10,,2210,it,1,,item*
+34595,LOCAL,,char* ptr,10,,2239,ptr,1,,char*
+34596,LOCAL,,uint64_t value,14,,2240,value,2,,uint64_t
+34597,LOCAL,,int res,9,,2241,res,3,,int
+34598,LOCAL,,item* it,10,,2242,it,2,,item*
+34950,LOCAL,,item* new_it,14,,2310,new_it,1,,item*
+34951,LOCAL,,uint32_t flags,18,,2311,flags,2,,uint32_t
+35368,LOCAL,,int res,9,,2388,res,1,,int
+35409,LOCAL,,unsigned char* buf,23,,2397,buf,1,,unsigned char*
+35506,LOCAL,,enum try_read_result gotdata,26,,2434,gotdata,1,,try_read_result
+35510,LOCAL,,int res,9,,2435,res,3,,int
+35511,LOCAL,,int num_allocs,9,,2436,num_allocs,4,,int
+35577,LOCAL,,char* new_rbuf,18,,2452,new_rbuf,3,,char*
+35638,LOCAL,,int avail,13,,2469,avail,2,,int
+35758,LOCAL,,struct event_base* base,23,,2501,base,2,,event_base*
+35831,LOCAL,,conn* next,10,,2516,next,1,,conn*
+35884,LOCAL,,struct timeval maxconns_exited,24,,2534,maxconns_exited,1,,timeval
+35885,LOCAL,,uint64_t elapsed_us,18,,2535,elapsed_us,2,,uint64_t
+35960,LOCAL,,mc_resp* resp,13,,2558,resp,1,,mc_resp*
+35995,LOCAL,,item_chunk* ch,24,,2570,ch,1,,item_chunk*
+36074,LOCAL,,int x,17,,2571,x,3,,int
+36095,LOCAL,,int done,25,,2575,done,1,,int
+36109,LOCAL,,int todo,25,,2577,todo,3,,int
+36132,LOCAL,,int skip,29,,2579,skip,1,,int
+36298,LOCAL,,mc_resp* resp,13,,2629,resp,1,,mc_resp*
+36307,LOCAL,,int x,13,,2631,x,1,,int
+36350,LOCAL,,struct iovec* iov,26,,2646,iov,1,,iovec*
+36446,LOCAL,,iovec[] iovs,18,,2687,iovs,2,,iovec[]
+36447,LOCAL,,struct msghdr msg,19,,2688,msg,3,,msghdr
+36448,LOCAL,,int iovused,9,,2689,iovused,4,,int
+36482,LOCAL,,ssize_t res,13,,2704,res,10,,ssize_t
+36609,LOCAL,,uint32_t total,18,,2745,total,1,,uint32_t
+36720,LOCAL,,iovec[] iovs,18,,2784,iovs,2,,iovec[]
+36721,LOCAL,,struct msghdr msg,19,,2785,msg,3,,msghdr
+36722,LOCAL,,mc_resp* resp,13,,2786,resp,4,,mc_resp*
+36723,LOCAL,,int iovused,9,,2787,iovused,5,,int
+36727,LOCAL,,unsigned char[8] udp_hdr,19,,2788,udp_hdr,7,,unsigned char[8]
+36810,LOCAL,,int x,13,,2825,x,1,,int
+36814,LOCAL,,int len,13,,2826,len,3,,int
+36868,LOCAL,,ssize_t res,13,,2839,res,21,,ssize_t
+36992,LOCAL,,int total,9,,2885,total,1,,int
+36996,LOCAL,,int res,9,,2886,res,3,,int
+37012,LOCAL,,item_chunk* ch,20,,2890,ch,1,,item_chunk*
+37077,LOCAL,,int unused,13,,2910,unused,4,,int
+37097,LOCAL,,int tocopy,17,,2914,tocopy,2,,int
+37268,LOCAL,,item_chunk* ch,20,,2952,ch,1,,item_chunk*
+37313,LOCAL,,bool stop,10,,2964,stop,1,,bool
+37317,LOCAL,,int sfd,9,,2965,sfd,3,,int
+37318,LOCAL,,socklen_t addrlen,15,,2966,addrlen,4,,socklen_t
+37319,LOCAL,,struct sockaddr_storage addr,29,,2967,addr,5,,sockaddr_storage
+37320,LOCAL,,int nreqs,9,,2968,nreqs,6,,int
+37326,LOCAL,,int res,9,,2969,res,8,,int
+37327,LOCAL,,const char* str,16,,2970,str,9,,char*
+37328,LOCAL,,static int use_accept4,17,,2974,use_accept4,10,,int
+37448,LOCAL,,bool reject,18,,3021,reject,7,,bool
+37494,LOCAL,,void* ssl_v,22,,3038,ssl_v,1,,void*
+37785,LOCAL,,int tocopy,25,,3195,tocopy,1,,int
+38066,LOCAL,,int tocopy,21,,3275,tocopy,1,,int
+38241,LOCAL,,io_queue_t* q,29,,3320,q,1,,io_queue_t*
+38264,LOCAL,,io_queue_cb_t* qcb,35,,3322,qcb,1,,io_queue_cb_t*
+38428,LOCAL,,conn* c,10,,3393,c,1,,conn*
+38471,LOCAL,,int sfd,9,,3415,sfd,1,,int
+38472,LOCAL,,int flags,9,,3416,flags,2,,int
+38526,LOCAL,,socklen_t intsize,15,,3436,intsize,1,,socklen_t
+38531,LOCAL,,int last_good,9,,3437,last_good,3,,int
+38535,LOCAL,,int min,9,,3438,min,5,,int
+38536,LOCAL,,int max,14,,3438,max,6,,int
+38537,LOCAL,,int avg,19,,3438,avg,7,,int
+38538,LOCAL,,int old_size,9,,3439,old_size,8,,int
+38639,LOCAL,,int sfd,9,,3485,sfd,1,,int
+38640,LOCAL,,struct linger ling,19,,3486,ling,2,,linger
+38646,LOCAL,,struct addrinfo* ai,21,,3487,ai,4,,addrinfo*
+38647,LOCAL,,struct addrinfo* next,21,,3488,next,5,,addrinfo*
+38648,LOCAL,,struct addrinfo hints,21,,3489,hints,6,,addrinfo
+38660,LOCAL,,char[] port_buf,10,,3491,port_buf,8,,char[]
+38661,LOCAL,,int error,9,,3492,error,9,,int
+38662,LOCAL,,int success,9,,3493,success,10,,int
+38666,LOCAL,,int flags,9,,3494,flags,12,,int
+38740,LOCAL,,conn* listen_conn_add,14,,3512,listen_conn_add,1,,conn*
+38765,LOCAL,,socklen_t len,23,,3526,len,1,,socklen_t
+38770,LOCAL,,int napi_id,17,,3527,napi_id,3,,int
+38952,LOCAL,,union my_sockaddr,19,,3593,my_sockaddr,1,,union
+38953,LOCAL,,socklen_t len,27,,3594,len,2,,socklen_t
+39025,LOCAL,,int c,17,,3610,c,1,,int
+39039,LOCAL,,int per_thread_fd,21,,3621,per_thread_fd,1,,int
+39125,LOCAL,,bool ssl_enabled,10,,3660,ssl_enabled,1,,bool
+39129,LOCAL,,uint64_t conntag,14,,3661,conntag,3,,uint64_t
+39155,LOCAL,,char* b,14,,3672,b,1,,char*
+39156,LOCAL,,int ret,13,,3673,ret,2,,int
+39160,LOCAL,,char* list,14,,3674,list,4,,char*
+39177,LOCAL,,int errno_save,13,,3681,errno_save,7,,int
+39183,LOCAL,,char* p,19,,3682,p,1,,char*
+39202,LOCAL,,int the_port,17,,3685,the_port,1,,int
+39206,LOCAL,,const char* protostr,24,,3701,protostr,3,,char*
+39210,LOCAL,,enum protocol bproto,27,,3702,bproto,5,,protocol
+39235,LOCAL,,char* e,26,,3706,e,1,,char*
+39254,LOCAL,,char* st,26,,3712,st,4,,char*
+39263,LOCAL,,size_t len,28,,3714,len,7,,size_t
+39330,LOCAL,,const char* tagstr,24,,3742,tagstr,8,,char*
+39353,LOCAL,,char* e,26,,3746,e,1,,char*
+39372,LOCAL,,char* st,26,,3752,st,4,,char*
+39381,LOCAL,,size_t len,28,,3754,len,7,,size_t
+39415,LOCAL,,char* h,18,,3771,h,11,,char*
+39425,LOCAL,,char* e,22,,3775,e,1,,char*
+39456,LOCAL,,char* s,18,,3786,s,14,,char*
+39553,LOCAL,,int sfd,9,,3820,sfd,1,,int
+39554,LOCAL,,int flags,9,,3821,flags,2,,int
+39605,LOCAL,,int sfd,9,,3838,sfd,1,,int
+39606,LOCAL,,struct linger ling,19,,3839,ling,2,,linger
+39612,LOCAL,,struct sockaddr_un addr,24,,3840,addr,4,,sockaddr_un
+39613,LOCAL,,struct stat tstat,17,,3841,tstat,5,,stat
+39614,LOCAL,,int flags,9,,3842,flags,6,,int
+39618,LOCAL,,int old_umask,9,,3843,old_umask,8,,int
+39785,LOCAL,,volatile rel_time_t current_time,21,,3908,current_time,140,,rel_time_t
+39787,LOCAL,,struct event clockevent,21,,3909,clockevent,142,,event
+39793,LOCAL,,struct timeval t,20,,3924,t,1,,timeval
+39805,LOCAL,,bool initialized,17,,3925,initialized,3,,bool
+39853,LOCAL,,struct timeval tv,24,,3972,tv,1,,timeval
+40121,LOCAL,,FILE* fp,10,,4261,fp,1,,FILE*
+40138,LOCAL,,char[1024] buffer,18,,4264,buffer,1,,char[1024]
+40148,LOCAL,,unsigned int pid,30,,4266,pid,1,,unsigned int
+40169,LOCAL,,char[1024] tmp_pid_file,10,,4280,tmp_pid_file,3,,char[1024]
+40283,LOCAL,,const char* ever,16,,4422,ever,1,,char*
+40314,LOCAL,,char* b,10,,4435,b,1,,char*
+40318,LOCAL,,uint32_t size,14,,4436,size,3,,uint32_t
+40322,LOCAL,,int i,9,,4437,i,5,,int
+40326,LOCAL,,uint32_t last_size,14,,4438,last_size,7,,uint32_t
+40340,LOCAL,,char* p,15,,4443,p,1,,char*
+40459,LOCAL,,struct _mc_meta_data* meta,26,,4488,meta,1,,_mc_meta_data*
+40542,LOCAL,,struct timeval tv,24,,4520,tv,1,,timeval
+40605,LOCAL,,struct _mc_meta_data* meta,26,,4552,meta,1,,_mc_meta_data*
+40611,LOCAL,,char* key,10,,4553,key,3,,char*
+40612,LOCAL,,char* val,10,,4554,val,4,,char*
+40613,LOCAL,,int reuse_mmap,9,,4555,reuse_mmap,5,,int
+40632,LOCAL,,int lines_seen,9,,4559,lines_seen,10,,int
+40636,LOCAL,,char[] opts,16,,4583,opts,12,,char[]
+40719,LOCAL,,int type,13,,4605,type,1,,int
+40723,LOCAL,,int32_t val_int,17,,4606,val_int,3,,int32_t
+40727,LOCAL,,uint32_t val_uint,18,,4607,val_uint,5,,uint32_t
+40731,LOCAL,,int64_t bigval_int,17,,4608,bigval_int,7,,int64_t
+40735,LOCAL,,uint64_t bigval_uint,18,,4609,bigval_uint,9,,uint64_t
+40770,LOCAL,,bool val_bool,14,,4621,val_bool,14,,bool
+40774,LOCAL,,bool is_bool,14,,4622,is_bool,16,,bool
+41114,LOCAL,,struct timeval t,32,,4725,t,1,,timeval
+41199,LOCAL,,int c,9,,4763,c,1,,int
+41200,LOCAL,,bool lock_memory,10,,4764,lock_memory,2,,bool
+41204,LOCAL,,bool do_daemonize,10,,4765,do_daemonize,4,,bool
+41208,LOCAL,,bool preallocate,10,,4766,preallocate,6,,bool
+41212,LOCAL,,int maxcore,9,,4767,maxcore,8,,int
+41216,LOCAL,,char* username,10,,4768,username,10,,char*
+41220,LOCAL,,char* pid_file,10,,4769,pid_file,12,,char*
+41224,LOCAL,,struct passwd* pw,19,,4770,pw,14,,passwd*
+41225,LOCAL,,struct rlimit rlim,19,,4771,rlim,15,,rlimit
+41226,LOCAL,,char* buf,10,,4772,buf,16,,char*
+41227,LOCAL,,char unit,10,,4773,unit,17,,char
+41231,LOCAL,,int size_max,9,,4774,size_max,19,,int
+41235,LOCAL,,int retval,9,,4775,retval,21,,int
+41239,LOCAL,,bool protocol_specified,10,,4776,protocol_specified,23,,bool
+41243,LOCAL,,bool tcp_specified,10,,4777,tcp_specified,25,,bool
+41247,LOCAL,,bool udp_specified,10,,4778,udp_specified,27,,bool
+41251,LOCAL,,bool start_lru_maintainer,10,,4779,start_lru_maintainer,29,,bool
+41255,LOCAL,,bool start_lru_crawler,10,,4780,start_lru_crawler,31,,bool
+41259,LOCAL,,bool start_assoc_maint,10,,4781,start_assoc_maint,33,,bool
+41263,LOCAL,,enum hashfunc_type hash_type,24,,4782,hash_type,35,,hashfunc_type
+41267,LOCAL,,uint32_t tocrawl,14,,4783,tocrawl,37,,uint32_t
+41268,LOCAL,,uint32_t[64] slab_sizes,14,,4784,slab_sizes,38,,uint32_t[64]
+41269,LOCAL,,bool use_slab_sizes,10,,4785,use_slab_sizes,39,,bool
+41273,LOCAL,,char* slab_sizes_unparsed,10,,4786,slab_sizes_unparsed,41,,char*
+41277,LOCAL,,bool slab_chunk_size_changed,10,,4787,slab_chunk_size_changed,43,,bool
+41281,LOCAL,,struct _mc_meta_data* meta,26,,4790,meta,45,,_mc_meta_data*
+41292,LOCAL,,char* subopts,10,,4792,subopts,48,,char*
+41293,LOCAL,,char* subopts_orig,20,,4792,subopts_orig,49,,char*
+41294,LOCAL,,char* subopts_value,10,,4793,subopts_value,50,,char*
+41295,LOCAL,,char[] subopts_tokens,10,,4857,subopts_tokens,51,,char[]
+41486,LOCAL,,char* shortopts,10,,4952,shortopts,62,,char*
+41654,LOCAL,,size_t len,24,,5109,len,2,,size_t
+41666,LOCAL,,char* p,22,,5110,p,4,,char*
+42123,LOCAL,,char* subopts_temp_o,18,,5264,subopts_temp_o,1,,char*
+42127,LOCAL,,char* subopts_temp,18,,5265,subopts_temp,3,,char*
+43121,LOCAL,,char* temp,14,,5775,temp,1,,char*
+43337,LOCAL,,struct rlimit rlim_new,23,,5870,rlim_new,1,,rlimit
+43486,LOCAL,,bool should_exit,18,,5931,should_exit,1,,bool
+43639,LOCAL,,bool reuse_mem,10,,6022,reuse_mem,93,,bool
+43643,LOCAL,,void* mem_base,10,,6023,mem_base,95,,void*
+43647,LOCAL,,bool prefill,10,,6024,prefill,97,,bool
+43721,LOCAL,,mc_ptr_t old_base,18,,6074,old_base,1,,mc_ptr_t
+43858,LOCAL,,const char* portnumber_filename,20,,6179,portnumber_filename,1,,char*
+43863,LOCAL,,char* temp_portnumber_filename,14,,6180,temp_portnumber_filename,3,,char*
+43867,LOCAL,,size_t len,16,,6181,len,5,,size_t
+43868,LOCAL,,FILE* portnumber_file,14,,6182,portnumber_file,6,,FILE*
+44447,LOCAL,,struct stats stats,21,,541,stats,17,,stats
+44449,LOCAL,,struct stats_state stats_state,27,,542,stats_state,19,,stats_state
+44450,LOCAL,,time_t process_started,15,,543,process_started,20,,time_t
+44452,LOCAL,,struct settings settings,24,,544,settings,22,,settings
+44506,LOCAL,,struct crawler,3,,620,crawler,27,,struct
+44594,LOCAL,,struct LIBEVENT_THREAD,3,,737,LIBEVENT_THREAD,42,,struct
+44752,LOCAL,,conn** conns,13,,879,conns,50,,conn**
+44753,LOCAL,,volatile rel_time_t current_time,28,,882,current_time,51,,rel_time_t
+44754,LOCAL,,extern volatile int slab_rebalance_signal,21,,890,slab_rebalance_signal,52,,int
+44771,LOCAL,,struct slab_rebalance slab_rebal,30,,909,slab_rebal,55,,slab_rebalance
+44778,LOCAL,,enum delta_result_type do_add_delta,24,,917,do_add_delta,58,,delta_result_type
+44780,LOCAL,,enum store_item_type do_store_item,22,,922,do_store_item,60,,store_item_type
+44877,LOCAL,,enum delta_result_type add_delta,24,,964,add_delta,76,,delta_result_type
+45024,LOCAL,,enum store_item_type store_item,22,,1004,store_item,103,,store_item_type
+45234,LOCAL,,const uint8_t* data,17,,73,data,1,,uint8_t*
+45240,LOCAL,,const int nblocks,13,,74,nblocks,3,,int
+45246,LOCAL,,uint32_t h1,12,,76,h1,5,,uint32_t
+45250,LOCAL,,uint32_t c1,12,,78,c1,7,,uint32_t
+45254,LOCAL,,uint32_t c2,12,,79,c2,9,,uint32_t
+45258,LOCAL,,const uint32_t* blocks,18,,84,blocks,11,,uint32_t*
+45270,LOCAL,,int i,11,,86,i,1,,int
+45279,LOCAL,,uint32_t k1,14,,88,k1,1,,uint32_t
+45319,LOCAL,,const uint8_t* tail,17,,102,tail,14,,uint8_t*
+45329,LOCAL,,uint32_t k1,12,,104,k1,3,,uint32_t
+45592,LOCAL,,protocol_binary_request_header* req,39,,59,req,2,,protocol_binary_request_header*
+45606,LOCAL,,int ii,17,,64,ii,1,,int
+45731,LOCAL,,uint8_t extlen,17,,89,extlen,10,,uint8_t
+45741,LOCAL,,uint16_t keylen,18,,90,keylen,12,,uint16_t
+45821,LOCAL,,char[] extbuf,14,,116,extbuf,21,,char[]
+45902,LOCAL,,protocol_binary_response_header* header,36,,136,header,1,,protocol_binary_response_header*
+45903,LOCAL,,mc_resp* resp,13,,137,resp,2,,mc_resp*
+46014,LOCAL,,int ii,13,,158,ii,1,,int
+46083,LOCAL,,size_t len,12,,181,len,1,,size_t
+46277,LOCAL,,mc_resp* resp,17,,251,resp,2,,mc_resp*
+46301,LOCAL,,item* it,10,,261,it,1,,item*
+46302,LOCAL,,char* key,10,,262,key,2,,char*
+46303,LOCAL,,size_t nkey,12,,263,nkey,3,,size_t
+46304,LOCAL,,char[24] tmpbuf,10,,265,tmpbuf,4,,char[24]
+46305,LOCAL,,uint64_t cas,14,,266,cas,5,,uint64_t
+46313,LOCAL,,protocol_binary_response_incr* rsp,34,,269,rsp,8,,protocol_binary_response_incr*
+46323,LOCAL,,protocol_binary_request_incr* req,33,,270,req,10,,protocol_binary_request_incr*
+46397,LOCAL,,int i,13,,282,i,1,,int
+46587,LOCAL,,int res,17,,321,res,3,,int
+46817,LOCAL,,protocol_binary_response_status eno,37,,360,eno,1,,protocol_binary_response_status
+46821,LOCAL,,enum store_item_type ret,26,,361,ret,3,,store_item_type
+46829,LOCAL,,item* it,10,,364,it,2,,item*
+46980,LOCAL,,item_chunk* ch,20,,376,ch,2,,item_chunk*
+47140,LOCAL,,char* ofs,14,,445,ofs,2,,char*
+47177,LOCAL,,item* it,10,,456,it,3,,item*
+47178,LOCAL,,protocol_binary_response_get* rsp,33,,458,rsp,4,,protocol_binary_response_get*
+47188,LOCAL,,char* key,9,,459,key,4,,char*
+47193,LOCAL,,size_t nkey,12,,460,nkey,6,,size_t
+47203,LOCAL,,int should_touch,9,,461,should_touch,8,,int
+47223,LOCAL,,int should_return_key,9,,464,should_return_key,10,,int
+47237,LOCAL,,int should_return_value,9,,466,should_return_value,12,,int
+47245,LOCAL,,bool failed,10,,467,failed,14,,bool
+47279,LOCAL,,protocol_binary_request_touch* t,39,,476,t,1,,protocol_binary_request_touch*
+47285,LOCAL,,time_t exptime,16,,477,exptime,3,,time_t
+47318,LOCAL,,uint16_t keylen,18,,486,keylen,1,,uint16_t
+47322,LOCAL,,uint32_t bodylen,18,,487,bodylen,3,,uint32_t
+47794,LOCAL,,char* subcommand,10,,606,subcommand,1,,char*
+47799,LOCAL,,size_t nkey,12,,607,nkey,3,,size_t
+47816,LOCAL,,int ii,13,,610,ii,1,,int
+47895,LOCAL,,char* subcmd_pos,14,,627,subcmd_pos,1,,char*
+47909,LOCAL,,int len,17,,629,len,1,,int
+47910,LOCAL,,char* dump_buf,18,,630,dump_buf,2,,char*
+48100,LOCAL,,int result,13,,682,result,1,,int
+48159,LOCAL,,const char* result_string,16,,706,result_string,3,,char*
+48163,LOCAL,,unsigned int string_length,18,,707,string_length,5,,unsigned int
+48167,LOCAL,,int result,9,,708,result,7,,int
+48243,LOCAL,,int nkey,9,,736,nkey,3,,int
+48253,LOCAL,,int vlen,9,,737,vlen,5,,int
+48281,LOCAL,,char* key,10,,745,key,8,,char*
+48288,LOCAL,,item* it,10,,748,it,11,,item*
+48392,LOCAL,,const char* out,16,,769,out,2,,char*
+48396,LOCAL,,unsigned int outlen,18,,770,outlen,4,,unsigned int
+48406,LOCAL,,int nkey,9,,775,nkey,8,,int
+48416,LOCAL,,int vlen,9,,776,vlen,10,,int
+48448,LOCAL,,char[] mech,10,,784,mech,13,,char[]
+48493,LOCAL,,const char* challenge,16,,791,challenge,17,,char*
+48571,LOCAL,,int result,9,,799,result,20,,int
+48786,LOCAL,,bool rv,10,,864,rv,2,,bool
+48838,LOCAL,,int protocol_error,9,,886,protocol_error,1,,int
+48842,LOCAL,,uint8_t extlen,13,,888,extlen,3,,uint8_t
+48852,LOCAL,,uint16_t keylen,14,,889,keylen,5,,uint16_t
+48862,LOCAL,,uint32_t bodylen,14,,890,bodylen,7,,uint32_t
+49419,LOCAL,,char* key,10,,1079,key,1,,char*
+49420,LOCAL,,int nkey,9,,1080,nkey,2,,int
+49421,LOCAL,,int vlen,9,,1081,vlen,3,,int
+49422,LOCAL,,item* it,10,,1082,it,2,,item*
+49423,LOCAL,,protocol_binary_request_set* req,32,,1083,req,5,,protocol_binary_request_set*
+49504,LOCAL,,int ii,13,,1097,ii,1,,int
+49601,LOCAL,,enum store_item_type status,30,,1121,status,1,,store_item_type
+49645,LOCAL,,logger* myl,9,,1132,myl,3,,logger*
+49649,LOCAL,,logger* myl,9,,1132,myl,1,,logger*
+49893,LOCAL,,char* key,10,,1188,key,1,,char*
+49894,LOCAL,,int nkey,9,,1189,nkey,2,,int
+49895,LOCAL,,int vlen,9,,1190,vlen,3,,int
+49896,LOCAL,,item* it,10,,1191,it,4,,item*
+50108,LOCAL,,time_t exptime,12,,1251,exptime,1,,time_t
+50112,LOCAL,,protocol_binary_request_flush* req,34,,1252,req,3,,protocol_binary_request_flush*
+50118,LOCAL,,rel_time_t new_oldest,16,,1253,new_oldest,5,,rel_time_t
+50242,LOCAL,,item* it,10,,1286,it,1,,item*
+50243,LOCAL,,uint32_t hv,14,,1287,hv,2,,uint32_t
+50248,LOCAL,,char* key,9,,1290,key,4,,char*
+50253,LOCAL,,size_t nkey,12,,1291,nkey,6,,size_t
+50270,LOCAL,,int ii,13,,1294,ii,1,,int
+50316,LOCAL,,uint64_t cas,18,,1308,cas,1,,uint64_t
+50509,LOCAL,,proxy_ctx_t* ctx,17,,28,ctx,2,,proxy_ctx_t*
+50617,LOCAL,,char[128] key_str,10,,40,key_str,1,,char[128]
+50618,LOCAL,,struct proxy_int_stats istats,28,,41,istats,3,,proxy_int_stats
+50630,LOCAL,,proxy_ctx_t* ctx,17,,46,ctx,2,,proxy_ctx_t*
+50644,LOCAL,,struct proxy_user_stats* us,29,,50,us,8,,proxy_user_stats*
+50651,LOCAL,,uint64_t[] counters,14,,51,counters,10,,uint64_t[]
+50659,LOCAL,,int x,14,,55,x,1,,int
+50671,LOCAL,,LIBEVENT_THREAD* t,25,,56,t,2,,LIBEVENT_THREAD*
+50676,LOCAL,,struct proxy_user_stats* tus,33,,57,tus,3,,proxy_user_stats*
+50682,LOCAL,,struct proxy_int_stats* is,32,,58,is,5,,proxy_int_stats*
+50700,LOCAL,,int i,18,,60,i,1,,int
+50734,LOCAL,,int i,22,,64,i,1,,int
+50767,LOCAL,,int x,14,,72,x,1,,int
+51139,LOCAL,,proxy_ctx_t* ctx,17,,104,ctx,1,,proxy_ctx_t*
+51270,LOCAL,,lua_State* L,15,,129,L,18,,lua_State*
+51284,LOCAL,,proxy_event_thread_t* threads,26,,140,threads,23,,proxy_event_thread_t*
+51298,LOCAL,,int i,14,,142,i,1,,int
+51308,LOCAL,,proxy_event_thread_t* t,30,,143,t,1,,proxy_event_thread_t*
+51320,LOCAL,,int[2] fds,13,,152,fds,4,,int[2]
+51456,LOCAL,,lua_State* L,15,,199,L,5,,lua_State*
+51472,LOCAL,,int x,14,,204,x,1,,int
+51502,LOCAL,,proxy_event_thread_t* e,26,,216,e,4,,proxy_event_thread_t*
+51512,LOCAL,,io_pending_proxy_t* p,24,,217,p,3,,io_pending_proxy_t*
+51518,LOCAL,,io_head_t head,15,,218,head,3,,io_head_t
+51705,LOCAL,,io_pending_proxy_t* p,24,,283,p,1,,io_pending_proxy_t*
+51720,LOCAL,,lua_State* Lc,19,,287,Lc,1,,lua_State*
+51733,LOCAL,,io_queue_t* q,20,,298,q,5,,io_queue_t*
+51743,LOCAL,,conn* c,14,,299,c,7,,conn*
+51774,LOCAL,,io_pending_proxy_t* p,24,,314,p,1,,io_pending_proxy_t*
+51799,LOCAL,,char* el,10,,327,el,1,,char*
+51800,LOCAL,,char* cont,15,,327,cont,2,,char*
+51831,LOCAL,,char* ptr,18,,339,ptr,1,,char*
+51959,LOCAL,,LIBEVENT_THREAD* thr,21,,384,thr,2,,LIBEVENT_THREAD*
+51965,LOCAL,,lua_State* L,15,,385,L,4,,lua_State*
+52022,LOCAL,,LIBEVENT_THREAD* thr,21,,395,thr,2,,LIBEVENT_THREAD*
+52028,LOCAL,,lua_State* L,15,,396,L,4,,lua_State*
+52059,LOCAL,,lua_State* Lc,15,,408,Lc,10,,lua_State*
+52066,LOCAL,,mcp_request_t* rq,19,,409,rq,12,,mcp_request_t*
+52153,LOCAL,,va_list ap,13,,444,ap,1,,va_list
+52171,LOCAL,,size_t len,12,,453,len,1,,size_t
+52172,LOCAL,,char[] error_prefix,23,,454,error_prefix,2,,char[]
+52176,LOCAL,,static const int error_prefix_len,22,,455,error_prefix_len,4,,int
+52211,LOCAL,,char* w,10,,470,w,10,,char*
+52333,LOCAL,,int nresults,9,,524,nresults,1,,int
+52337,LOCAL,,int cores,9,,525,cores,3,,int
+52346,LOCAL,,size_t rlen,12,,526,rlen,5,,size_t
+52386,LOCAL,,int type,13,,530,type,2,,int
+52397,LOCAL,,mcp_resp_t* r,24,,532,r,1,,mcp_resp_t*
+52442,LOCAL,,const char* s,28,,543,s,1,,char*
+52451,LOCAL,,size_t l,24,,544,l,3,,size_t
+52502,LOCAL,,const char* s,24,,555,s,1,,char*
+52510,LOCAL,,size_t l,20,,556,l,3,,size_t
+52560,LOCAL,,int coro_ref,21,,569,coro_ref,1,,int
+52566,LOCAL,,mc_resp* resp,25,,570,resp,3,,mc_resp*
+52606,LOCAL,,int coro_ref,21,,579,coro_ref,1,,int
+52625,LOCAL,,int coro_ref,17,,587,coro_ref,1,,int
+52629,LOCAL,,mc_resp* resp,21,,588,resp,3,,mc_resp*
+52720,LOCAL,,logger* myl,9,,612,myl,3,,logger*
+52724,LOCAL,,logger* myl,9,,612,myl,1,,logger*
+52774,LOCAL,,LIBEVENT_THREAD* thr,21,,621,thr,2,,LIBEVENT_THREAD*
+52780,LOCAL,,struct proxy_hook* hooks,23,,622,hooks,4,,proxy_hook*
+52786,LOCAL,,lua_State* L,15,,623,L,6,,lua_State*
+52792,LOCAL,,mcp_parser_t pr,18,,624,pr,8,,mcp_parser_t
+52797,LOCAL,,int ret,9,,631,ret,10,,int
+52865,LOCAL,,struct proxy_hook* hook,23,,646,hook,13,,proxy_hook*
+52874,LOCAL,,int hook_ref,9,,647,hook_ref,15,,int
+52889,LOCAL,,struct proxy_hook_tagged* pht,34,,652,pht,1,,proxy_hook_tagged*
+52973,LOCAL,,uint32_t keyoff,18,,688,keyoff,1,,uint32_t
+52990,LOCAL,,char[280] temp,18,,690,temp,1,,char[280]
+52991,LOCAL,,char* cur,18,,691,cur,2,,char*
+53189,LOCAL,,struct proxy_int_stats* istats,28,,758,istats,22,,proxy_int_stats*
+53251,LOCAL,,lua_State* Lc,15,,768,Lc,30,,lua_State*
+53262,LOCAL,,mcp_request_t* rq,19,,773,rq,33,,mcp_request_t*
+53395,LOCAL,,io_queue_t* q,16,,810,q,1,,io_queue_t*
+53403,LOCAL,,mcp_request_t* rq,19,,814,rq,3,,mcp_request_t*
+53411,LOCAL,,mcp_backend_t* be,19,,815,be,5,,mcp_backend_t*
+53417,LOCAL,,mcp_resp_t* r,16,,819,r,7,,mcp_resp_t*
+53463,LOCAL,,int x,22,,834,x,1,,int
+53548,LOCAL,,io_pending_proxy_t* p,24,,852,p,16,,io_pending_proxy_t*
+53717,LOCAL,,int top,9,,898,top,1,,int
+53722,LOCAL,,int i,9,,899,i,3,,int
+53740,LOCAL,,int type,13,,902,type,1,,int
+53926,LOCAL,,mc_resp* resp,13,,55,resp,1,,mc_resp*
+53932,LOCAL,,item* it,10,,56,it,3,,item*
+53941,LOCAL,,char* p,10,,60,p,6,,char*
+53951,LOCAL,,char* end,10,,61,end,8,,char*
+54022,LOCAL,,char* fp,15,,91,fp,1,,char*
+54231,LOCAL,,item* it,10,,131,it,2,,item*
+54237,LOCAL,,int comm,9,,132,comm,4,,int
+54243,LOCAL,,enum store_item_type ret,26,,133,ret,6,,store_item_type
+54244,LOCAL,,bool is_valid,10,,134,is_valid,7,,bool
+54352,LOCAL,,char[2] buf,14,,145,buf,1,,char[2]
+54353,LOCAL,,item_chunk* ch,20,,147,ch,2,,item_chunk*
+54551,LOCAL,,char* s,10,,284,s,1,,char*
+54552,LOCAL,,char* e,14,,284,e,2,,char*
+54553,LOCAL,,size_t ntokens,12,,285,ntokens,3,,size_t
+54569,LOCAL,,size_t len,12,,287,len,6,,size_t
+54574,LOCAL,,unsigned int i,18,,288,i,8,,unsigned int
+54699,LOCAL,,token_s[24] tokens,13,,327,tokens,1,,token_s[24]
+54700,LOCAL,,size_t ntokens,12,,328,ntokens,2,,size_t
+54701,LOCAL,,char* cont,10,,329,cont,3,,char*
+54711,LOCAL,,char* el,14,,333,el,1,,char*
+54712,LOCAL,,uint32_t size,18,,334,size,2,,uint32_t
+55044,LOCAL,,char* el,10,,439,el,1,,char*
+55045,LOCAL,,char* cont,15,,439,cont,2,,char*
+55076,LOCAL,,char* ptr,18,,451,ptr,1,,char*
+55214,LOCAL,,int noreply_index,9,,498,noreply_index,1,,int
+55254,LOCAL,,char* p,10,,516,p,1,,char*
+55394,LOCAL,,char* key,10,,541,key,1,,char*
+55395,LOCAL,,size_t nkey,12,,542,nkey,2,,size_t
+55396,LOCAL,,item* it,10,,543,it,2,,item*
+55397,LOCAL,,token_t* key_token,13,,544,key_token,4,,token_t*
+55406,LOCAL,,int32_t exptime_int,13,,545,exptime_int,2,,int32_t
+55410,LOCAL,,rel_time_t exptime,16,,546,exptime,8,,rel_time_t
+55414,LOCAL,,bool fail_length,10,,547,fail_length,10,,bool
+55422,LOCAL,,mc_resp* resp,13,,549,resp,13,,mc_resp*
+55477,LOCAL,,bool overflow,18,,563,overflow,1,,bool
+55527,LOCAL,,int nbytes,23,,588,nbytes,1,,int
+55538,LOCAL,,char* p,24,,590,p,4,,char*
+55663,LOCAL,,int ii,25,,623,ii,1,,int
+55986,LOCAL,,int len,13,,727,len,1,,int
+55987,LOCAL,,char* stats,14,,728,stats,2,,char*
+56009,LOCAL,,const char* subcommand,16,,737,subcommand,1,,char*
+56112,LOCAL,,char* buf,14,,763,buf,1,,char*
+56113,LOCAL,,unsigned int bytes,22,,764,bytes,2,,unsigned int
+56114,LOCAL,,unsigned int id,29,,764,id,3,,unsigned int
+56115,LOCAL,,unsigned int limit,33,,764,limit,4,,unsigned int
+56322,LOCAL,,char* key,10,,836,key,3,,char*
+56332,LOCAL,,size_t nkey,12,,837,nkey,5,,size_t
+56365,LOCAL,,size_t ret,16,,840,ret,1,,size_t
+56389,LOCAL,,bool overflow,10,,850,overflow,8,,bool
+56390,LOCAL,,item* it,10,,851,it,9,,item*
+56407,LOCAL,,mc_resp* resp,17,,853,resp,1,,mc_resp*
+56413,LOCAL,,size_t total,16,,854,total,3,,size_t
+56417,LOCAL,,size_t ret,16,,855,ret,5,,size_t
+56714,LOCAL,,unsigned int i,18,,920,i,1,,unsigned int
+56715,LOCAL,,size_t ret,12,,921,ret,2,,size_t
+56716,LOCAL,,int32_t tmp_int,13,,922,tmp_int,2,,int32_t
+56717,LOCAL,,uint8_t[127] seen,13,,923,seen,4,,uint8_t[127]
+56737,LOCAL,,uint8_t o,17,,926,o,1,,uint8_t
+57252,LOCAL,,char* key,10,,1052,key,1,,char*
+57253,LOCAL,,size_t nkey,12,,1053,nkey,2,,size_t
+57254,LOCAL,,item* it,10,,1054,it,6,,item*
+57255,LOCAL,,unsigned int i,18,,1055,i,4,,unsigned int
+57259,LOCAL,,struct _meta_flags of,24,,1056,of,6,,_meta_flags
+57264,LOCAL,,uint32_t hv,14,,1057,hv,8,,uint32_t
+57265,LOCAL,,bool failed,10,,1058,failed,9,,bool
+57269,LOCAL,,bool item_created,10,,1059,item_created,11,,bool
+57273,LOCAL,,bool won_token,10,,1060,won_token,13,,bool
+57277,LOCAL,,bool ttl_set,10,,1061,ttl_set,15,,bool
+57281,LOCAL,,char* errstr,10,,1062,errstr,17,,char*
+57289,LOCAL,,mc_resp* resp,13,,1064,resp,20,,mc_resp*
+57295,LOCAL,,char* p,10,,1065,p,2,,char*
+57396,LOCAL,,bool overflow,10,,1102,overflow,31,,bool
+58441,LOCAL,,char* key,10,,1355,key,1,,char*
+58442,LOCAL,,size_t nkey,12,,1356,nkey,2,,size_t
+58443,LOCAL,,item* it,10,,1357,it,3,,item*
+58444,LOCAL,,int i,9,,1358,i,4,,int
+58445,LOCAL,,short comm,11,,1359,comm,5,,short
+58451,LOCAL,,struct _meta_flags of,24,,1360,of,7,,_meta_flags
+58456,LOCAL,,char* errstr,10,,1361,errstr,9,,char*
+58460,LOCAL,,uint32_t hv,14,,1362,hv,11,,uint32_t
+58461,LOCAL,,int vlen,9,,1363,vlen,12,,int
+58469,LOCAL,,mc_resp* resp,13,,1365,resp,15,,mc_resp*
+58475,LOCAL,,char* p,10,,1366,p,3,,char*
+58620,LOCAL,,bool has_error,10,,1416,has_error,32,,bool
+58835,LOCAL,,enum store_item_type status,30,,1481,status,1,,store_item_type
+58918,LOCAL,,logger* myl,9,,1498,myl,3,,logger*
+58922,LOCAL,,logger* myl,9,,1498,myl,1,,logger*
+59130,LOCAL,,char* key,10,,1554,key,10,,char*
+59131,LOCAL,,size_t nkey,12,,1555,nkey,11,,size_t
+59132,LOCAL,,item* it,10,,1556,it,2,,item*
+59136,LOCAL,,int i,9,,1557,i,5,,int
+59137,LOCAL,,uint32_t hv,14,,1558,hv,6,,uint32_t
+59138,LOCAL,,struct _meta_flags of,24,,1559,of,8,,_meta_flags
+59143,LOCAL,,char* errstr,10,,1560,errstr,9,,char*
+59151,LOCAL,,mc_resp* resp,13,,1562,resp,12,,mc_resp*
+59157,LOCAL,,char* p,10,,1564,p,5,,char*
+59713,LOCAL,,char* key,10,,1686,key,10,,char*
+59714,LOCAL,,size_t nkey,12,,1687,nkey,11,,size_t
+59715,LOCAL,,int i,9,,1688,i,3,,int
+59716,LOCAL,,struct _meta_flags of,24,,1689,of,8,,_meta_flags
+59721,LOCAL,,char* errstr,10,,1690,errstr,6,,char*
+59729,LOCAL,,mc_resp* resp,13,,1692,resp,9,,mc_resp*
+59735,LOCAL,,char* p,10,,1694,p,3,,char*
+59751,LOCAL,,bool incr,10,,1699,incr,15,,bool
+59755,LOCAL,,bool locked,10,,1700,locked,17,,bool
+59759,LOCAL,,uint32_t hv,14,,1701,hv,19,,uint32_t
+59763,LOCAL,,item* it,10,,1702,it,2,,item*
+59895,LOCAL,,char[24] tmpbuf,10,,1752,tmpbuf,35,,char[24]
+59896,LOCAL,,bool item_created,10,,1756,item_created,36,,bool
+59976,LOCAL,,int vlen,17,,1778,vlen,2,,int
+60162,LOCAL,,size_t vlen,16,,1818,vlen,1,,size_t
+60686,LOCAL,,char* key,10,,1919,key,1,,char*
+60687,LOCAL,,size_t nkey,12,,1920,nkey,2,,size_t
+60688,LOCAL,,unsigned int flags,18,,1921,flags,3,,unsigned int
+60689,LOCAL,,int32_t exptime_int,13,,1922,exptime_int,2,,int32_t
+60693,LOCAL,,rel_time_t exptime,16,,1923,exptime,6,,rel_time_t
+60697,LOCAL,,int vlen,9,,1924,vlen,8,,int
+60698,LOCAL,,uint64_t req_cas_id,14,,1925,req_cas_id,5,,uint64_t
+60702,LOCAL,,item* it,10,,1926,it,3,,item*
+60860,LOCAL,,enum store_item_type status,30,,1970,status,6,,store_item_type
+60941,LOCAL,,logger* myl,9,,1984,myl,3,,logger*
+60945,LOCAL,,logger* myl,9,,1984,myl,1,,logger*
+61107,LOCAL,,char* key,10,,2021,key,1,,char*
+61108,LOCAL,,size_t nkey,12,,2022,nkey,2,,size_t
+61109,LOCAL,,int32_t exptime_int,13,,2023,exptime_int,3,,int32_t
+61113,LOCAL,,rel_time_t exptime,16,,2024,exptime,5,,rel_time_t
+61117,LOCAL,,item* it,10,,2025,it,7,,item*
+61306,LOCAL,,char[24] temp,10,,2065,temp,1,,char[24]
+61307,LOCAL,,uint64_t delta,14,,2066,delta,2,,uint64_t
+61308,LOCAL,,char* key,10,,2067,key,3,,char*
+61309,LOCAL,,size_t nkey,12,,2068,nkey,4,,size_t
+61451,LOCAL,,char* key,10,,2115,key,1,,char*
+61452,LOCAL,,size_t nkey,12,,2116,nkey,2,,size_t
+61453,LOCAL,,item* it,10,,2117,it,2,,item*
+61454,LOCAL,,uint32_t hv,14,,2118,hv,4,,uint32_t
+61464,LOCAL,,bool hold_is_zero,14,,2123,hold_is_zero,1,,bool
+61480,LOCAL,,bool sets_noreply,14,,2124,sets_noreply,3,,bool
+61487,LOCAL,,bool valid,14,,2125,valid,5,,bool
+61652,LOCAL,,unsigned int level,18,,2170,level,1,,unsigned int
+61703,LOCAL,,unsigned int level,18,,2232,level,1,,unsigned int
+61704,LOCAL,,double ratio,12,,2233,ratio,2,,double
+61810,LOCAL,,uint16_t f,14,,2265,f,1,,uint16_t
+61814,LOCAL,,int x,9,,2266,x,3,,int
+62094,LOCAL,,uint32_t memlimit,14,,2324,memlimit,1,,uint32_t
+62177,LOCAL,,uint32_t pct_hot,14,,2351,pct_hot,1,,uint32_t
+62178,LOCAL,,uint32_t pct_warm,14,,2352,pct_warm,2,,uint32_t
+62179,LOCAL,,double hot_factor,12,,2353,hot_factor,3,,double
+62180,LOCAL,,int32_t ttl,13,,2354,ttl,4,,int32_t
+62181,LOCAL,,double factor,12,,2355,factor,5,,double
+62436,LOCAL,,int32_t exptime,13,,2468,exptime,1,,int32_t
+62440,LOCAL,,rel_time_t new_oldest,16,,2469,new_oldest,3,,rel_time_t
+62673,LOCAL,,int src,13,,2543,src,1,,int
+62674,LOCAL,,int dst,18,,2543,dst,2,,int
+62675,LOCAL,,int rv,23,,2543,rv,3,,int
+62810,LOCAL,,int rv,13,,2585,rv,1,,int
+62920,LOCAL,,int rv,13,,2625,rv,4,,int
+62998,LOCAL,,uint32_t tocrawl,18,,2653,tocrawl,1,,uint32_t
+63044,LOCAL,,uint32_t tosleep,18,,2662,tosleep,1,,uint32_t
+63163,LOCAL,,token_s[24] tokens,13,,2718,tokens,1,,token_s[24]
+63164,LOCAL,,size_t ntokens,12,,2719,ntokens,4,,size_t
+63165,LOCAL,,int comm,9,,2720,comm,3,,int
+63220,LOCAL,,char first,10,,2749,first,9,,char
+64279,LOCAL,,enum protocol_binary_magic,7,,56,protocol_binary_magic,2,,enum
+64329,LOCAL,,enum protocol_binary_response_status,7,,74,protocol_binary_response_status,4,,enum
+64527,LOCAL,,enum protocol_binary_command,7,,137,protocol_binary_command,6,,enum
+64537,LOCAL,,enum protocol_binary_datatypes,7,,145,protocol_binary_datatypes,8,,enum
+64557,LOCAL,,union protocol_binary_request_header,7,,164,protocol_binary_request_header,10,,union
+64577,LOCAL,,union protocol_binary_response_header,7,,183,protocol_binary_response_header,12,,union
+64590,LOCAL,,union protocol_binary_request_no_extras,7,,193,protocol_binary_request_no_extras,14,,union
+64603,LOCAL,,union protocol_binary_response_no_extras,7,,203,protocol_binary_response_no_extras,16,,union
+64625,LOCAL,,union protocol_binary_response_get,7,,227,protocol_binary_response_get,22,,union
+64648,LOCAL,,union protocol_binary_request_flush,7,,259,protocol_binary_request_flush,29,,union
+64668,LOCAL,,union protocol_binary_request_set,7,,280,protocol_binary_request_set,32,,union
+64695,LOCAL,,union protocol_binary_request_incr,7,,319,protocol_binary_request_incr,41,,union
+64714,LOCAL,,union protocol_binary_response_incr,7,,335,protocol_binary_response_incr,44,,union
+64743,LOCAL,,union protocol_binary_request_touch,7,,400,protocol_binary_request_touch,57,,union
+64762,LOCAL,,union protocol_binary_request_gat,7,,418,protocol_binary_request_gat,60,,union
+64790,LOCAL,,union protocol_binary_request_rangeop,7,,451,protocol_binary_request_rangeop,69,,union
+64985,LOCAL,,struct proxy_ctx_t,3,,219,proxy_ctx_t,15,,struct
+65204,LOCAL,,struct mcp_resp_t,3,,379,mcp_resp_t,41,,struct
+65239,LOCAL,,struct mcp_pool_be_t,3,,412,mcp_pool_be_t,44,,struct
+65273,LOCAL,,struct mcp_pool_proxy_t,3,,434,mcp_pool_proxy_t,49,,struct
+65482,LOCAL,,mcp_request_t* rq,19,,27,rq,1,,mcp_request_t*
+65493,LOCAL,,int n,9,,29,n,4,,int
+65497,LOCAL,,int wait_for,9,,30,wait_for,6,,int
+65501,LOCAL,,enum mcp_await_e type,22,,31,type,8,,mcp_await_e
+65590,LOCAL,,int argtable_ref,9,,74,argtable_ref,16,,int
+65596,LOCAL,,int req_ref,9,,75,req_ref,18,,int
+65602,LOCAL,,mcp_await_t* aw,17,,79,aw,20,,mcp_await_t*
+65658,LOCAL,,io_queue_t* q,16,,94,q,1,,io_queue_t*
+65666,LOCAL,,mcp_backend_t* be,19,,96,be,3,,mcp_backend_t*
+65672,LOCAL,,mcp_resp_t* r,16,,100,r,5,,mcp_resp_t*
+65708,LOCAL,,int x,22,,111,x,1,,int
+65793,LOCAL,,io_pending_proxy_t* p,24,,129,p,12,,io_pending_proxy_t*
+65980,LOCAL,,mcp_await_t* aw,17,,184,aw,1,,mcp_await_t*
+65987,LOCAL,,int await_ref,9,,185,await_ref,3,,int
+66003,LOCAL,,mcp_request_t* rq,19,,189,rq,7,,mcp_request_t*
+66023,LOCAL,,const char* key,16,,197,key,12,,char*
+66049,LOCAL,,size_t len,12,,198,len,14,,size_t
+66057,LOCAL,,int n,9,,199,n,16,,int
+66061,LOCAL,,bool await_first,10,,200,await_first,18,,bool
+66074,LOCAL,,mcp_pool_proxy_t* pp,26,,206,pp,1,,mcp_pool_proxy_t*
+66090,LOCAL,,mcp_pool_t* p,20,,210,p,4,,mcp_pool_t*
+66134,LOCAL,,mcp_await_t* aw,17,,239,aw,1,,mcp_await_t*
+66135,LOCAL,,lua_State* L,15,,240,L,2,,lua_State*
+66143,LOCAL,,bool cleanup,10,,241,cleanup,4,,bool
+66147,LOCAL,,bool valid,10,,242,valid,6,,bool
+66151,LOCAL,,bool completing,10,,243,completing,8,,bool
+66200,LOCAL,,bool is_good,18,,266,is_good,1,,bool
+66369,LOCAL,,lua_State* Lc,19,,337,Lc,4,,lua_State*
+66403,LOCAL,,io_queue_t* q,20,,343,q,10,,io_queue_t*
+66483,LOCAL,,struct _dumpbuf* db,21,,15,db,2,,_dumpbuf*
+66503,LOCAL,,char* nb,14,,18,nb,2,,char*
+66555,LOCAL,,struct _dumpbuf* db,21,,31,db,2,,_dumpbuf*
+66592,LOCAL,,proxy_ctx_t* ctx,17,,42,ctx,1,,proxy_ctx_t*
+66620,LOCAL,,proxy_ctx_t* ctx,17,,51,ctx,2,,proxy_ctx_t*
+66624,LOCAL,,pool_head_t head,17,,52,head,4,,pool_head_t
+66761,LOCAL,,lua_State* L,19,,67,L,6,,lua_State*
+66767,LOCAL,,mcp_pool_t* p,20,,68,p,8,,mcp_pool_t*
+66819,LOCAL,,proxy_ctx_t* ctx,17,,101,ctx,3,,proxy_ctx_t*
+66844,LOCAL,,logger* myl,9,,107,myl,3,,logger*
+66848,LOCAL,,logger* myl,9,,107,myl,1,,logger*
+66899,LOCAL,,lua_State* L,19,,109,L,4,,lua_State*
+66938,LOCAL,,logger* myl,13,,123,myl,3,,logger*
+66942,LOCAL,,logger* myl,13,,123,myl,1,,logger*
+66975,LOCAL,,int x,18,,133,x,1,,int
+66987,LOCAL,,LIBEVENT_THREAD* thr,29,,134,thr,1,,LIBEVENT_THREAD*
+67058,LOCAL,,logger* myl,17,,149,myl,3,,logger*
+67062,LOCAL,,logger* myl,17,,149,myl,1,,logger*
+67096,LOCAL,,logger* myl,9,,153,myl,3,,logger*
+67100,LOCAL,,logger* myl,9,,153,myl,1,,logger*
+67137,LOCAL,,int ret,9,,160,ret,1,,int
+67219,LOCAL,,proxy_ctx_t* ctx,17,,186,ctx,1,,proxy_ctx_t*
+67223,LOCAL,,lua_State* L,15,,187,L,3,,lua_State*
+67229,LOCAL,,int res,9,,188,res,5,,int
+67252,LOCAL,,struct _dumpbuf* db,21,,197,db,8,,_dumpbuf*
+67349,LOCAL,,mcp_pool_t* p,16,,231,p,1,,mcp_pool_t*
+67357,LOCAL,,size_t size,12,,232,size,3,,size_t
+67362,LOCAL,,mcp_pool_proxy_t* pp,22,,233,pp,5,,mcp_pool_proxy_t*
+67405,LOCAL,,int type,9,,247,type,1,,int
+67412,LOCAL,,bool found,10,,248,found,3,,bool
+67453,LOCAL,,const char* name,32,,260,name,1,,char*
+67533,LOCAL,,int t,17,,290,t,25,,int
+67540,LOCAL,,int nt,17,,291,nt,27,,int
+67556,LOCAL,,int keytype,21,,295,keytype,1,,int
+67626,LOCAL,,proxy_ctx_t* ctx,17,,334,ctx,1,,proxy_ctx_t*
+67666,LOCAL,,lua_State* L,15,,347,L,1,,lua_State*
+67672,LOCAL,,proxy_ctx_t* ctx,17,,349,ctx,2,,proxy_ctx_t*
+67678,LOCAL,,struct _dumpbuf* db,21,,350,db,5,,_dumpbuf*
+67684,LOCAL,,struct _dumpbuf db2,21,,351,db2,7,,_dumpbuf
+67698,LOCAL,,int res,9,,358,res,10,,int
+67752,LOCAL,,struct proxy_user_stats* us,29,,392,us,17,,proxy_user_stats*
+67759,LOCAL,,struct proxy_user_stats* tus,29,,393,tus,19,,proxy_user_stats*
+67802,LOCAL,,uint64_t* counters,18,,405,counters,3,,uint64_t*
+67881,LOCAL,,struct mcplib_jump_hash_t,3,,8,mcplib_jump_hash_t,2,,struct
+67886,LOCAL,,mcplib_jump_hash_t* jh,24,,11,jh,1,,mcplib_jump_hash_t*
+67890,LOCAL,,int64_t b,13,,13,b,3,,int64_t
+67891,LOCAL,,int64_t j,21,,13,j,4,,int64_t
+67946,LOCAL,,lua_Unsigned buckets,18,,25,buckets,2,,lua_Unsigned
+67952,LOCAL,,mcplib_jump_hash_t* jh,24,,27,jh,4,,mcplib_jump_hash_t*
+67992,LOCAL,,luaL_Reg[] jump_f,27,,43,jump_f,1,,luaL_Reg[]
+68019,LOCAL,,mcp_resp_t* r,16,,12,r,1,,mcp_resp_t*
+68051,LOCAL,,mcp_resp_t* r,16,,24,r,1,,mcp_resp_t*
+68093,LOCAL,,mcp_resp_t* r,16,,39,r,1,,mcp_resp_t*
+68131,LOCAL,,mcp_resp_t* r,16,,54,r,1,,mcp_resp_t*
+68153,LOCAL,,mcp_resp_t* r,16,,63,r,1,,mcp_resp_t*
+68193,LOCAL,,mcp_resp_t* r,16,,75,r,1,,mcp_resp_t*
+68219,LOCAL,,mcp_backend_t* be,19,,94,be,2,,mcp_backend_t*
+68250,LOCAL,,proxy_ctx_t* ctx,17,,102,ctx,3,,proxy_ctx_t*
+68288,LOCAL,,size_t nlen,12,,110,nlen,2,,size_t
+68292,LOCAL,,const char* name,16,,111,name,4,,char*
+68301,LOCAL,,const char* port,16,,112,port,6,,char*
+68308,LOCAL,,proxy_ctx_t* ctx,17,,114,ctx,8,,proxy_ctx_t*
+68331,LOCAL,,int ret,9,,123,ret,12,,int
+68345,LOCAL,,mcp_backend_t* be_orig,23,,125,be_orig,1,,mcp_backend_t*
+68388,LOCAL,,mcp_backend_t* be,19,,139,be,15,,mcp_backend_t*
+68539,LOCAL,,int flags,9,,181,flags,34,,int
+68580,LOCAL,,int status,9,,188,status,40,,int
+68692,LOCAL,,mcp_pool_t* p,16,,217,p,1,,mcp_pool_t*
+68713,LOCAL,,int x,14,,221,x,1,,int
+68754,LOCAL,,char[251] temp,10,,234,temp,1,,char[251]
+68779,LOCAL,,char* found,10,,249,found,6,,char*
+68808,LOCAL,,const char* t1,16,,265,t1,2,,char*
+68820,LOCAL,,size_t remain,16,,267,remain,1,,size_t
+68833,LOCAL,,const char* t2,24,,270,t2,1,,char*
+68891,LOCAL,,int x,14,,291,x,1,,int
+68903,LOCAL,,mcp_backend_t* be,23,,292,be,1,,mcp_backend_t*
+68955,LOCAL,,int res,9,,317,res,6,,int
+68971,LOCAL,,struct proxy_hash_caller* phc,30,,326,phc,9,,proxy_hash_caller*
+69012,LOCAL,,int argc,9,,340,argc,1,,int
+69021,LOCAL,,int n,9,,342,n,4,,int
+69027,LOCAL,,size_t plen,12,,344,plen,6,,size_t
+69037,LOCAL,,mcp_pool_t* p,16,,345,p,8,,mcp_pool_t*
+69089,LOCAL,,int x,14,,360,x,1,,int
+69099,LOCAL,,mcp_pool_be_t* s,23,,361,s,1,,mcp_pool_be_t*
+69130,LOCAL,,int type,9,,370,type,19,,int
+69209,LOCAL,,const char* f_type,20,,399,f_type,2,,char*
+69259,LOCAL,,size_t len,20,,411,len,1,,size_t
+69263,LOCAL,,const char* conf,24,,412,conf,3,,char*
+69330,LOCAL,,struct proxy_hash_func* phf,32,,429,phf,2,,proxy_hash_func*
+69365,LOCAL,,size_t seedlen,16,,438,seedlen,2,,size_t
+69366,LOCAL,,const char* seedstr,20,,439,seedstr,1,,char*
+69411,LOCAL,,mcp_pool_proxy_t* pp,22,,458,pp,1,,mcp_pool_proxy_t*
+69419,LOCAL,,mcp_pool_t* p,16,,459,p,3,,mcp_pool_t*
+69441,LOCAL,,proxy_ctx_t* ctx,21,,463,ctx,1,,proxy_ctx_t*
+69534,LOCAL,,uint64_t hash,14,,479,hash,2,,uint64_t
+69546,LOCAL,,uint32_t lookup,14,,480,lookup,4,,uint32_t
+69592,LOCAL,,mcp_pool_proxy_t* pp,22,,497,pp,1,,mcp_pool_proxy_t*
+69600,LOCAL,,mcp_pool_t* p,16,,498,p,3,,mcp_pool_t*
+69606,LOCAL,,mcp_request_t* rq,19,,500,rq,2,,mcp_request_t*
+69627,LOCAL,,const char* key,16,,507,key,8,,char*
+69653,LOCAL,,size_t len,12,,508,len,10,,size_t
+69684,LOCAL,,int state,9,,517,state,2,,int
+69691,LOCAL,,proxy_ctx_t* ctx,17,,518,ctx,4,,proxy_ctx_t*
+69727,LOCAL,,int limit,9,,528,limit,1,,int
+69734,LOCAL,,proxy_ctx_t* ctx,17,,529,ctx,3,,proxy_ctx_t*
+69780,LOCAL,,lua_Number secondsf,16,,548,secondsf,1,,lua_Number
+69787,LOCAL,,lua_Integer secondsi,17,,549,secondsi,3,,lua_Integer
+69793,LOCAL,,lua_Number subseconds,16,,550,subseconds,5,,lua_Number
+69799,LOCAL,,proxy_ctx_t* ctx,17,,551,ctx,2,,proxy_ctx_t*
+69853,LOCAL,,lua_Number secondsf,16,,566,secondsf,1,,lua_Number
+69860,LOCAL,,lua_Integer secondsi,17,,567,secondsi,3,,lua_Integer
+69866,LOCAL,,lua_Number subseconds,16,,568,subseconds,2,,lua_Number
+69872,LOCAL,,proxy_ctx_t* ctx,17,,569,ctx,2,,proxy_ctx_t*
+69926,LOCAL,,lua_Number secondsf,16,,584,secondsf,1,,lua_Number
+69933,LOCAL,,lua_Integer secondsi,17,,585,secondsi,3,,lua_Integer
+69939,LOCAL,,lua_Number subseconds,16,,586,subseconds,5,,lua_Number
+69945,LOCAL,,proxy_ctx_t* ctx,17,,587,ctx,7,,proxy_ctx_t*
+69999,LOCAL,,LIBEVENT_THREAD* t,21,,605,t,1,,LIBEVENT_THREAD*
+70008,LOCAL,,int hook,9,,607,hook,3,,int
+70014,LOCAL,,int loop_end,9,,610,loop_end,5,,int
+70018,LOCAL,,int loop_start,9,,611,loop_start,7,,int
+70055,LOCAL,,struct proxy_hook* hooks,27,,624,hooks,1,,proxy_hook*
+70061,LOCAL,,uint64_t tag,18,,625,tag,3,,uint64_t
+70070,LOCAL,,size_t len,20,,628,len,1,,size_t
+70071,LOCAL,,const char* stag,24,,629,stag,2,,char*
+70100,LOCAL,,int x,18,,637,x,1,,int
+70110,LOCAL,,struct proxy_hook* h,31,,638,h,1,,proxy_hook*
+70123,LOCAL,,struct proxy_hook_tagged* pht,42,,643,pht,1,,proxy_hook_tagged*
+70162,LOCAL,,bool found,22,,655,found,4,,bool
+70168,LOCAL,,int x,26,,656,x,1,,int
+70344,LOCAL,,LIBEVENT_THREAD* t,21,,715,t,1,,LIBEVENT_THREAD*
+70353,LOCAL,,const char* msg,16,,716,msg,3,,char*
+70365,LOCAL,,logger* myl,5,,717,myl,5,,logger*
+70369,LOCAL,,logger* myl,5,,717,myl,1,,logger*
+70410,LOCAL,,LIBEVENT_THREAD* t,21,,723,t,1,,LIBEVENT_THREAD*
+70419,LOCAL,,logger* l,12,,724,l,3,,logger*
+70439,LOCAL,,int rtype,9,,730,rtype,6,,int
+70443,LOCAL,,int rcode,9,,731,rcode,8,,int
+70447,LOCAL,,int rstatus,9,,732,rstatus,10,,int
+70451,LOCAL,,char* rname,10,,733,rname,12,,char*
+70455,LOCAL,,char* rport,10,,734,rport,14,,char*
+70459,LOCAL,,mcp_request_t* rq,19,,736,rq,16,,mcp_request_t*
+70466,LOCAL,,int type,9,,737,type,18,,int
+70477,LOCAL,,mcp_resp_t* rs,20,,739,rs,1,,mcp_resp_t*
+70513,LOCAL,,size_t dlen,12,,746,dlen,21,,size_t
+70517,LOCAL,,const char* detail,16,,747,detail,23,,char*
+70526,LOCAL,,struct timeval end,20,,749,end,25,,timeval
+70531,LOCAL,,long elapsed,10,,751,elapsed,27,,long
+70600,LOCAL,,const uint32_t result,20,,764,result,1,,uint32_t
+70616,LOCAL,,const uint32_t t,20,,766,t,3,,uint32_t
+70673,LOCAL,,LIBEVENT_THREAD* t,21,,783,t,1,,LIBEVENT_THREAD*
+70682,LOCAL,,logger* l,12,,784,l,3,,logger*
+70702,LOCAL,,int rtype,9,,790,rtype,6,,int
+70706,LOCAL,,int rcode,9,,791,rcode,8,,int
+70710,LOCAL,,int rstatus,9,,792,rstatus,10,,int
+70714,LOCAL,,char* rname,10,,793,rname,12,,char*
+70718,LOCAL,,char* rport,10,,794,rport,14,,char*
+70722,LOCAL,,int ms,9,,796,ms,16,,int
+70728,LOCAL,,int rate,9,,797,rate,18,,int
+70734,LOCAL,,int allerr,9,,798,allerr,20,,int
+70740,LOCAL,,mcp_request_t* rq,19,,799,rq,22,,mcp_request_t*
+70747,LOCAL,,int type,9,,800,type,24,,int
+70758,LOCAL,,mcp_resp_t* rs,20,,802,rs,1,,mcp_resp_t*
+70794,LOCAL,,size_t dlen,12,,809,dlen,27,,size_t
+70798,LOCAL,,const char* detail,16,,810,detail,29,,char*
+70807,LOCAL,,struct timeval end,20,,812,end,31,,timeval
+70812,LOCAL,,long elapsed,10,,814,elapsed,33,,long
+70836,LOCAL,,bool do_log,10,,816,do_log,35,,bool
+70875,LOCAL,,uint32_t rnd,18,,824,rnd,1,,uint32_t
+71387,LOCAL,,lua_State* L,15,,870,L,1,,lua_State*
+71391,LOCAL,,luaL_Reg[] mcplib_backend_m,27,,872,mcplib_backend_m,3,,luaL_Reg[]
+71404,LOCAL,,luaL_Reg[] mcplib_request_m,27,,878,mcplib_request_m,5,,luaL_Reg[]
+71441,LOCAL,,luaL_Reg[] mcplib_response_m,27,,892,mcplib_response_m,7,,luaL_Reg[]
+71466,LOCAL,,luaL_Reg[] mcplib_pool_m,27,,902,mcplib_pool_m,9,,luaL_Reg[]
+71476,LOCAL,,luaL_Reg[] mcplib_pool_proxy_m,27,,907,mcplib_pool_proxy_m,11,,luaL_Reg[]
+71489,LOCAL,,luaL_Reg[] mcplib_f,27,,913,mcplib_f,13,,luaL_Reg[]
+71752,LOCAL,,io_head_t head,15,,15,head,2,,io_head_t
+71887,LOCAL,,int io_count,9,,25,io_count,7,,int
+71891,LOCAL,,int be_count,9,,26,be_count,9,,int
+71908,LOCAL,,io_pending_proxy_t* io,28,,28,io,3,,io_pending_proxy_t*
+71924,LOCAL,,mcp_backend_t* be,23,,30,be,4,,mcp_backend_t*
+72109,LOCAL,,proxy_event_thread_t* t,26,,387,t,1,,proxy_event_thread_t*
+72113,LOCAL,,proxy_ctx_t* ctx,17,,388,ctx,2,,proxy_ctx_t*
+72139,LOCAL,,struct timeval rate,20,,396,rate,8,,timeval
+72194,LOCAL,,proxy_event_thread_t* t,26,,407,t,1,,proxy_event_thread_t*
+72198,LOCAL,,char[1] buf,10,,416,buf,3,,char[1]
+72215,LOCAL,,mcp_backend_t* be,19,,436,be,6,,mcp_backend_t*
+72219,LOCAL,,struct timeval tmp_time,20,,437,tmp_time,8,,timeval
+72233,LOCAL,,int flags,13,,442,flags,9,,int
+72259,LOCAL,,int flags,13,,442,flags,2,,int
+72312,LOCAL,,proxy_event_thread_t* t,26,,461,t,1,,proxy_event_thread_t*
+72337,LOCAL,,int pending,9,,479,pending,1,,int
+72402,LOCAL,,bool stop,10,,506,stop,1,,bool
+72406,LOCAL,,io_pending_proxy_t* p,24,,507,p,3,,io_pending_proxy_t*
+72410,LOCAL,,int flags,9,,508,flags,5,,int
+72443,LOCAL,,mcp_resp_t* r,20,,524,r,1,,mcp_resp_t*
+72444,LOCAL,,int res,13,,525,res,2,,int
+72520,LOCAL,,int extra_space,17,,549,extra_space,11,,int
+72957,LOCAL,,size_t tocopy,20,,683,tocopy,29,,size_t
+73220,LOCAL,,mcp_backend_t* be,19,,760,be,1,,mcp_backend_t*
+73228,LOCAL,,struct timeval tmp_time,20,,762,tmp_time,4,,timeval
+73255,LOCAL,,struct timeval tmp_time,20,,780,tmp_time,1,,timeval
+73384,LOCAL,,char[] proxy_be_failure_text,12,,792,proxy_be_failure_text,16,,char[]
+73417,LOCAL,,io_pending_proxy_t* io,24,,811,io,1,,io_pending_proxy_t*
+73554,LOCAL,,int status,9,,829,status,7,,int
+73621,LOCAL,,logger* myl,5,,849,myl,3,,logger*
+73625,LOCAL,,logger* myl,5,,849,myl,1,,logger*
+73671,LOCAL,,struct iovec* iovs,18,,855,iovs,1,,iovec*
+73677,LOCAL,,io_pending_proxy_t* io,24,,856,io,3,,io_pending_proxy_t*
+73681,LOCAL,,int iovused,9,,857,iovused,5,,int
+73758,LOCAL,,int flags,9,,878,flags,1,,int
+73762,LOCAL,,unsigned int tosend,18,,879,tosend,3,,unsigned int
+73766,LOCAL,,int iovcnt,9,,880,iovcnt,5,,int
+73773,LOCAL,,ssize_t sent,13,,882,sent,7,,ssize_t
+73790,LOCAL,,io_pending_proxy_t* io,28,,884,io,1,,io_pending_proxy_t*
+73808,LOCAL,,bool flushed,18,,890,flushed,7,,bool
+73809,LOCAL,,int x,26,,899,x,15,,int
+73810,LOCAL,,struct iovec* iov,34,,900,iov,17,,iovec*
+73831,LOCAL,,bool flushed,18,,890,flushed,1,,bool
+73862,LOCAL,,int x,26,,899,x,1,,int
+73874,LOCAL,,struct iovec* iov,34,,900,iov,1,,iovec*
+73975,LOCAL,,mcp_backend_t* be,19,,939,be,1,,mcp_backend_t*
+73979,LOCAL,,int flags,9,,940,flags,3,,int
+73983,LOCAL,,struct timeval tmp_time,20,,941,tmp_time,5,,timeval
+74019,LOCAL,,int err,17,,956,err,1,,int
+74061,LOCAL,,int res,13,,973,res,3,,int
+74081,LOCAL,,int read,13,,983,read,1,,int
+74114,LOCAL,,int res,17,,987,res,2,,int
+74196,LOCAL,,struct event_config* ev_config,25,,1079,ev_config,1,,event_config*
+74250,LOCAL,,struct timeval rate,20,,1102,rate,10,,timeval
+74306,LOCAL,,const char* s,16,,11,s,1,,char*
+74312,LOCAL,,int len,9,,12,len,3,,int
+74336,LOCAL,,const char* end,16,,19,end,6,,char*
+74342,LOCAL,,int curtoken,9,,20,curtoken,8,,int
+74346,LOCAL,,int state,9,,22,state,10,,int
+74448,LOCAL,,const char* s,16,,68,s,1,,char*
+74460,LOCAL,,const char* e,16,,69,e,3,,char*
+74551,LOCAL,,const char* cur,16,,95,cur,1,,char*
+74561,LOCAL,,int remain,9,,96,remain,3,,int
+74593,LOCAL,,const char* s,16,,109,s,6,,char*
+74661,LOCAL,,const char* cur,16,,128,cur,2,,char*
+74673,LOCAL,,const char* end,16,,129,end,4,,char*
+74685,LOCAL,,int state,9,,133,state,6,,int
+74839,LOCAL,,const char* cur,16,,192,cur,5,,char*
+74854,LOCAL,,char* n,10,,195,n,8,,char*
+74858,LOCAL,,int vlen,9,,196,vlen,10,,int
+75024,LOCAL,,char* n,10,,250,n,6,,char*
+75028,LOCAL,,const char* cur,16,,251,cur,8,,char*
+75040,LOCAL,,int vlen,9,,253,vlen,10,,int
+75111,LOCAL,,const char* cm,16,,286,cm,1,,char*
+75115,LOCAL,,size_t cl,12,,287,cl,3,,size_t
+75127,LOCAL,,const char* s,16,,293,s,6,,char*
+75180,LOCAL,,int token_max,9,,304,token_max,14,,int
+75186,LOCAL,,int cmd,9,,306,cmd,16,,int
+75191,LOCAL,,int type,9,,307,type,18,,int
+75195,LOCAL,,int ret,9,,308,ret,20,,int
+75699,LOCAL,,mcp_request_t* rq,19,,443,rq,1,,mcp_request_t*
+75777,LOCAL,,mcp_parser_t* pr,18,,468,pr,1,,mcp_parser_t*
+75784,LOCAL,,char* r,10,,469,r,3,,char*
+75792,LOCAL,,size_t len,12,,470,len,5,,size_t
+75813,LOCAL,,char* nr,14,,479,nr,3,,char*
+75828,LOCAL,,char* or,14,,481,or,6,,char*
+75834,LOCAL,,int x,18,,483,x,1,,int
+75846,LOCAL,,const char* newtok,24,,484,newtok,1,,char*
+75850,LOCAL,,size_t newlen,20,,485,newlen,3,,size_t
+75865,LOCAL,,int type,21,,487,type,1,,int
+76043,LOCAL,,size_t len,12,,538,len,1,,size_t
+76047,LOCAL,,size_t vlen,12,,539,vlen,3,,size_t
+76051,LOCAL,,mcp_parser_t pr,18,,540,pr,5,,mcp_parser_t
+76056,LOCAL,,const char* cmd,16,,541,cmd,7,,char*
+76064,LOCAL,,const char* val,16,,542,val,9,,char*
+76068,LOCAL,,int type,9,,543,type,11,,int
+76113,LOCAL,,mcp_resp_t* r,20,,551,r,1,,mcp_resp_t*
+76148,LOCAL,,mcp_request_t* rq,27,,558,rq,1,,mcp_request_t*
+76190,LOCAL,,mcp_request_t* rq,19,,572,rq,15,,mcp_request_t*
+76252,LOCAL,,mcp_request_t* rq,19,,594,rq,2,,mcp_request_t*
+76297,LOCAL,,mcp_request_t* rq,19,,605,rq,1,,mcp_request_t*
+76305,LOCAL,,int totrim,9,,606,totrim,3,,int
+76312,LOCAL,,char* key,10,,607,key,5,,char*
+76387,LOCAL,,mcp_request_t* rq,19,,621,rq,2,,mcp_request_t*
+76395,LOCAL,,int totrim,9,,622,totrim,3,,int
+76402,LOCAL,,char* key,10,,623,key,5,,char*
+76472,LOCAL,,mcp_request_t* rq,19,,638,rq,1,,mcp_request_t*
+76479,LOCAL,,int argc,9,,639,argc,3,,int
+76493,LOCAL,,int token,9,,646,token,6,,int
+76550,LOCAL,,size_t vlen,12,,666,vlen,10,,size_t
+76593,LOCAL,,const char* start,24,,680,start,2,,char*
+76643,LOCAL,,mcp_request_t* rq,19,,698,rq,1,,mcp_request_t*
+76664,LOCAL,,mcp_request_t* rq,19,,704,rq,1,,mcp_request_t*
+76686,LOCAL,,mcp_request_t* rq,19,,710,rq,1,,mcp_request_t*
+76693,LOCAL,,size_t len,12,,711,len,3,,size_t
+76697,LOCAL,,const char* flagstr,16,,712,flagstr,5,,char*
+76733,LOCAL,,uint64_t flagbit,14,,721,flagbit,9,,uint64_t
+76773,LOCAL,,mcp_request_t* rq,19,,734,rq,1,,mcp_request_t*
+76780,LOCAL,,size_t len,12,,735,len,3,,size_t
+76784,LOCAL,,const char* flagstr,16,,736,flagstr,5,,char*
+76792,LOCAL,,bool replace,10,,737,replace,7,,bool
+76854,LOCAL,,uint64_t flagbit,14,,756,flagbit,12,,uint64_t
+76866,LOCAL,,int ret,9,,758,ret,14,,int
+76888,LOCAL,,int x,18,,763,x,1,,int
+76908,LOCAL,,const char* s,24,,764,s,1,,char*
+76933,LOCAL,,size_t vlen,24,,766,vlen,1,,size_t
+76998,LOCAL,,mcp_request_t* rq,19,,795,rq,1,,mcp_request_t*
+77050,LOCAL,,struct cpoint,3,,40,cpoint,2,,struct
+77061,LOCAL,,struct ketama_t,3,,46,ketama_t,4,,struct
+77070,LOCAL,,struct proxy_hash_func ketama_key_hash,31,,49,ketama_key_hash,7,,proxy_hash_func
+77079,LOCAL,,md5_state_t md5state,17,,56,md5state,1,,md5_state_t
+77101,LOCAL,,const cpoint* a,18,,64,a,1,,cpoint*
+77105,LOCAL,,const cpoint* b,18,,65,b,3,,cpoint*
+77137,LOCAL,,md5_state_t md5state,17,,73,md5state,1,,md5_state_t
+77138,LOCAL,,unsigned char[16] digest,19,,74,digest,2,,unsigned char[16]
+77153,LOCAL,,unsigned int h,18,,81,h,6,,unsigned int
+77187,LOCAL,,ketama_t* kt,14,,90,kt,1,,ketama_t*
+77193,LOCAL,,unsigned int h,18,,91,h,3,,unsigned int
+77197,LOCAL,,int highp,9,,92,highp,5,,int
+77203,LOCAL,,int lowp,9,,93,lowp,7,,int
+77204,LOCAL,,int midp,19,,93,midp,8,,int
+77208,LOCAL,,unsigned int midval,18,,94,midval,10,,unsigned int
+77209,LOCAL,,unsigned int midval1,26,,94,midval1,11,,unsigned int
+77325,LOCAL,,char* hashstring,10,,132,hashstring,1,,char*
+77332,LOCAL,,int k,14,,134,k,1,,int
+77342,LOCAL,,size_t len,16,,135,len,1,,size_t
+77394,LOCAL,,char* hashstring,10,,145,hashstring,1,,char*
+77401,LOCAL,,int k,14,,147,k,1,,int
+77413,LOCAL,,unsigned char[16] digest,23,,148,digest,1,,unsigned char[16]
+77430,LOCAL,,int h,17,,159,h,1,,int
+77509,LOCAL,,char* hashstring,10,,176,hashstring,1,,char*
+77516,LOCAL,,int k,14,,178,k,1,,int
+77528,LOCAL,,unsigned char[16] digest,23,,179,digest,1,,unsigned char[16]
+77564,LOCAL,,int h,17,,196,h,1,,int
+77643,LOCAL,,char* hashstring,10,,213,hashstring,1,,char*
+77650,LOCAL,,int k,14,,215,k,1,,int
+77662,LOCAL,,unsigned char[16] digest,23,,216,digest,1,,unsigned char[16]
+77682,LOCAL,,int h,17,,226,h,1,,int
+77756,LOCAL,,lua_Integer bucket_size,17,,244,bucket_size,1,,lua_Integer
+77762,LOCAL,,char[2] parts,16,,245,parts,3,,char[2]
+77763,LOCAL,,size_t[2] partlens,12,,246,partlens,4,,size_t[2]
+77764,LOCAL,,int makemode,9,,247,makemode,5,,int
+77772,LOCAL,,lua_Unsigned total,18,,253,total,8,,lua_Unsigned
+77778,LOCAL,,int argc,9,,256,argc,10,,int
+77805,LOCAL,,const char* mode,24,,261,mode,2,,char*
+77884,LOCAL,,int success,15,,278,success,1,,int
+77912,LOCAL,,size_t size,12,,289,size,13,,size_t
+77924,LOCAL,,ketama_t* kt,14,,290,kt,15,,ketama_t*
+77938,LOCAL,,unsigned int cont,18,,295,cont,18,,unsigned int
+77956,LOCAL,,lua_Integer id,21,,304,id,2,,lua_Integer
+78006,LOCAL,,size_t hashstring_size,16,,315,hashstring_size,11,,size_t
+78012,LOCAL,,int x,18,,316,x,1,,int
+78131,LOCAL,,luaL_Reg[] ketama_f,27,,359,ketama_f,1,,luaL_Reg[]
+78167,LOCAL,,LIBEVENT_THREAD* t,21,,8,t,1,,LIBEVENT_THREAD*
+78186,LOCAL,,int idx,9,,13,idx,4,,int
+78193,LOCAL,,const char* name,16,,14,name,6,,char*
+78238,LOCAL,,int x,14,,32,x,1,,int
+78260,LOCAL,,proxy_ctx_t* ctx,17,,39,ctx,12,,proxy_ctx_t*
+78274,LOCAL,,struct proxy_user_stats* us,29,,42,us,15,,proxy_user_stats*
+78288,LOCAL,,char** nnames,14,,48,nnames,1,,char**
+78304,LOCAL,,int x,22,,50,x,1,,int
+78379,LOCAL,,LIBEVENT_THREAD* t,21,,73,t,1,,LIBEVENT_THREAD*
+78398,LOCAL,,struct proxy_user_stats* tus,29,,79,tus,4,,proxy_user_stats*
+78414,LOCAL,,int idx,9,,85,idx,7,,int
+78421,LOCAL,,int change,9,,86,change,9,,int
+78485,LOCAL,,struct proxy_hash_func mcplib_hash_xxhash,31,,5,mcplib_hash_xxhash,2,,proxy_hash_func
+78548,LOCAL,,static int mmap_fd,12,,24,mmap_fd,4,,int
+78552,LOCAL,,static void* mmap_base,13,,25,mmap_base,6,,void*
+78556,LOCAL,,size_t slabmem_limit,15,,26,slabmem_limit,8,,size_t
+78560,LOCAL,,char* memory_file,6,,27,memory_file,10,,char*
+78564,LOCAL,,restart_data_cb* cb_stack,24,,29,cb_stack,12,,restart_data_cb*
+78574,LOCAL,,restart_data_cb* cb,21,,34,cb,1,,restart_data_cb*
+78600,LOCAL,,restart_data_cb* finder,25,,47,finder,1,,restart_data_cb*
+78653,LOCAL,,struct restart_cb_ctx,3,,65,restart_cb_ctx,16,,struct
+78657,LOCAL,,size_t flen,12,,74,flen,1,,size_t
+78662,LOCAL,,const char* ext,16,,75,ext,3,,char*
+78666,LOCAL,,char* metafile,10,,76,metafile,5,,char*
+78697,LOCAL,,FILE* f,10,,85,f,10,,FILE*
+78716,LOCAL,,restart_cb_ctx ctx,20,,92,ctx,13,,restart_cb_ctx
+78761,LOCAL,,bool failed,10,,111,failed,20,,bool
+78771,LOCAL,,restart_data_cb* cb,25,,113,cb,1,,restart_data_cb*
+78832,LOCAL,,char* line,10,,142,line,1,,char*
+78836,LOCAL,,size_t len,12,,143,len,3,,size_t
+78840,LOCAL,,restart_data_cb* cb,21,,144,cb,5,,restart_data_cb*
+78844,LOCAL,,restart_cb_ctx* c,20,,145,c,7,,restart_cb_ctx*
+78879,LOCAL,,char* p,14,,158,p,1,,char*
+78954,LOCAL,,char* p,18,,179,p,1,,char*
+79029,LOCAL,,size_t flen,12,,220,flen,1,,size_t
+79034,LOCAL,,const char* ext,16,,221,ext,3,,char*
+79038,LOCAL,,size_t extlen,12,,222,extlen,5,,size_t
+79043,LOCAL,,char* metafile,10,,223,metafile,7,,char*
+79074,LOCAL,,mode_t oldmask,12,,233,oldmask,12,,mode_t
+79082,LOCAL,,FILE* f,10,,234,f,14,,FILE*
+79102,LOCAL,,restart_data_cb* cb,21,,243,cb,18,,restart_data_cb*
+79106,LOCAL,,restart_cb_ctx ctx,20,,244,ctx,20,,restart_cb_ctx
+79164,LOCAL,,va_list ap,13,,269,ap,1,,va_list
+79165,LOCAL,,restart_cb_ctx* c,20,,270,c,2,,restart_cb_ctx*
+79171,LOCAL,,char[4096] valbuf,10,,271,valbuf,4,,char[4096]
+79175,LOCAL,,int vlen,9,,274,vlen,6,,int
+79223,LOCAL,,bool reuse_mmap,10,,299,reuse_mmap,1,,bool
+79227,LOCAL,,long pagesize,10,,301,pagesize,3,,long
+79352,LOCAL,,struct timeval tv,20,,355,tv,1,,timeval
+79353,LOCAL,,uint64_t checked,14,,356,checked,2,,uint64_t
+79357,LOCAL,,const unsigned int page_size,24,,357,page_size,4,,unsigned int
+79363,LOCAL,,unsigned int page_remain,18,,358,page_remain,6,,unsigned int
+79401,LOCAL,,item* it,14,,369,it,1,,item*
+79411,LOCAL,,int size,13,,371,size,3,,int
+79542,LOCAL,,item_chunk* ch,24,,399,ch,1,,item_chunk*
+79804,LOCAL,,enum restart_get_kv_ret restart_get_kv,25,,22,restart_get_kv,8,,restart_get_kv_ret
+79837,LOCAL,,char[1025] my_sasl_hostname,6,,8,my_sasl_hostname,1,,char[1025]
+79850,LOCAL,,bool log,10,,143,log,1,,bool
+79912,LOCAL,,static sasl_callback_t[] sasl_callbacks,24,,175,sasl_callbacks,5,,static sasl_callback_t[]
+80093,LOCAL,,struct slab_automove,3,,32,slab_automove,3,,struct
+80097,LOCAL,,uint32_t window_size,14,,35,window_size,1,,uint32_t
+80103,LOCAL,,double max_age_ratio,12,,36,max_age_ratio,3,,double
+80109,LOCAL,,slab_automove* a,19,,37,a,5,,slab_automove*
+80175,LOCAL,,slab_automove* a,19,,56,a,1,,slab_automove*
+80194,LOCAL,,int x,9,,62,x,1,,int
+80206,LOCAL,,struct window_data* d,28,,64,d,1,,window_data*
+80248,LOCAL,,slab_automove* a,19,,75,a,1,,slab_automove*
+80254,LOCAL,,int n,9,,76,n,3,,int
+80255,LOCAL,,struct window_data w_sum,24,,77,w_sum,4,,window_data
+80256,LOCAL,,int oldest,9,,78,oldest,5,,int
+80261,LOCAL,,uint64_t oldest_age,14,,79,oldest_age,7,,uint64_t
+80265,LOCAL,,int youngest,9,,80,youngest,9,,int
+80270,LOCAL,,uint64_t youngest_age,14,,81,youngest_age,11,,uint64_t
+80275,LOCAL,,bool youngest_evicting,10,,82,youngest_evicting,13,,bool
+80297,LOCAL,,uint64_t evicted_total,14,,90,evicted_total,19,,uint64_t
+80356,LOCAL,,int w_offset,13,,98,w_offset,1,,int
+80364,LOCAL,,struct window_data* wd,28,,99,wd,3,,window_data*
+80386,LOCAL,,uint64_t evicted_delta,18,,104,evicted_delta,6,,uint64_t
+80505,LOCAL,,uint64_t age,18,,127,age,14,,uint64_t
+80736,LOCAL,,struct slab_automove_reg_t,3,,17,slab_automove_reg_t,8,,struct
+80800,LOCAL,,struct slab_automove,3,,39,slab_automove,3,,struct
+80804,LOCAL,,uint32_t window_size,14,,42,window_size,1,,uint32_t
+80810,LOCAL,,double max_age_ratio,12,,43,max_age_ratio,3,,double
+80816,LOCAL,,slab_automove* a,19,,44,a,5,,slab_automove*
+80915,LOCAL,,slab_automove* a,19,,69,a,1,,slab_automove*
+80936,LOCAL,,int x,14,,76,x,1,,int
+80946,LOCAL,,struct window_data* d,28,,77,d,1,,window_data*
+80993,LOCAL,,bool mem_limit_reached,10,,87,mem_limit_reached,1,,bool
+80994,LOCAL,,unsigned int free,18,,88,free,2,,unsigned int
+81000,LOCAL,,unsigned int count,18,,89,count,4,,unsigned int
+81038,LOCAL,,unsigned int total_pages,18,,111,total_pages,1,,unsigned int
+81044,LOCAL,,int n,14,,116,n,1,,int
+81058,LOCAL,,slab_stats_automove* sam,29,,117,sam,1,,slab_stats_automove*
+81115,LOCAL,,int w_offset,9,,129,w_offset,1,,int
+81145,LOCAL,,slab_automove* a,19,,134,a,1,,slab_automove*
+81151,LOCAL,,int n,9,,135,n,3,,int
+81152,LOCAL,,struct window_data w_sum,24,,136,w_sum,4,,window_data
+81153,LOCAL,,int oldest,9,,137,oldest,5,,int
+81158,LOCAL,,uint64_t oldest_age,14,,138,oldest_age,7,,uint64_t
+81162,LOCAL,,bool too_free,10,,139,too_free,9,,bool
+81176,LOCAL,,int global_low,9,,143,global_low,13,,int
+81212,LOCAL,,bool small_slab,14,,153,small_slab,1,,bool
+81229,LOCAL,,struct window_data* wd,28,,155,wd,3,,window_data*
+81235,LOCAL,,int w_offset,13,,156,w_offset,5,,int
+81248,LOCAL,,unsigned int free_target,22,,158,free_target,8,,unsigned int
+81380,LOCAL,,uint64_t age,18,,184,age,16,,uint64_t
+81610,LOCAL,,struct slabclass_t,3,,40,slabclass_t,2,,struct
+81611,LOCAL,,static slabclass_t[64] slabclass,20,,42,slabclass,3,,static slabclass_t[64]
+81618,LOCAL,,size_t mem_limit,15,,43,mem_limit,5,,size_t
+81622,LOCAL,,size_t mem_malloced,15,,44,mem_malloced,7,,size_t
+81626,LOCAL,,bool mem_limit_reached,13,,47,mem_limit_reached,9,,bool
+81630,LOCAL,,static int power_largest,12,,48,power_largest,11,,int
+81631,LOCAL,,static void* mem_base,13,,50,mem_base,12,,void*
+81635,LOCAL,,static void* mem_current,13,,51,mem_current,14,,void*
+81639,LOCAL,,size_t mem_avail,15,,52,mem_avail,16,,size_t
+81643,LOCAL,,pthread_mutex_t slabs_lock,24,,59,slabs_lock,18,,pthread_mutex_t
+81647,LOCAL,,pthread_mutex_t slabs_rebalance_lock,24,,60,slabs_rebalance_lock,2,,pthread_mutex_t
+81681,LOCAL,,int res,9,,91,res,1,,int
+81734,LOCAL,,void* ptr,10,,110,ptr,1,,void*
+81750,LOCAL,,slabclass_t* p,17,,167,p,1,,slabclass_t*
+81751,LOCAL,,item* it,10,,168,it,2,,item*
+81757,LOCAL,,int id,9,,169,id,4,,int
+81878,LOCAL,,int i,9,,209,i,1,,int
+81886,LOCAL,,unsigned int size,18,,210,size,3,,unsigned int
+81895,LOCAL,,bool do_slab_prealloc,35,,216,do_slab_prealloc,5,,bool
+82133,LOCAL,,char* t_initial_malloc,14,,281,t_initial_malloc,1,,char*
+82141,LOCAL,,int64_t env_malloced,21,,283,env_malloced,1,,int64_t
+82169,LOCAL,,void* ptr,10,,299,ptr,1,,void*
+82170,LOCAL,,slabclass_t* p,17,,300,p,2,,slabclass_t*
+82177,LOCAL,,int len,9,,301,len,4,,int
+82220,LOCAL,,int i,9,,316,i,1,,int
+82221,LOCAL,,unsigned int prealloc,18,,317,prealloc,2,,unsigned int
+82266,LOCAL,,slabclass_t* p,17,,338,p,1,,slabclass_t*
+82282,LOCAL,,size_t new_size,16,,340,new_size,1,,size_t
+82297,LOCAL,,void* new_list,14,,341,new_list,3,,void*
+82333,LOCAL,,slabclass_t* p,17,,350,p,1,,slabclass_t*
+82340,LOCAL,,int x,9,,351,x,3,,int
+82368,LOCAL,,slabclass_t* p,17,,360,p,1,,slabclass_t*
+82386,LOCAL,,char* ret,10,,364,ret,4,,char*
+82409,LOCAL,,slabclass_t* p,17,,370,p,1,,slabclass_t*
+82416,LOCAL,,slabclass_t* g,17,,371,g,3,,slabclass_t*
+82425,LOCAL,,int len,9,,372,len,5,,int
+82450,LOCAL,,char* ptr,10,,375,ptr,7,,char*
+82528,LOCAL,,slabclass_t* p,17,,408,p,1,,slabclass_t*
+82529,LOCAL,,void* ret,10,,409,ret,2,,void*
+82533,LOCAL,,item* it,10,,410,it,4,,item*
+82668,LOCAL,,item_chunk* chunk,16,,451,chunk,1,,item_chunk*
+82708,LOCAL,,slabclass_t* p,17,,452,p,3,,slabclass_t*
+82789,LOCAL,,item_chunk* next_chunk,16,,478,next_chunk,14,,item_chunk*
+82865,LOCAL,,slabclass_t* p,17,,499,p,1,,slabclass_t*
+82866,LOCAL,,item* it,10,,500,it,2,,item*
+82967,LOCAL,,int n,9,,529,n,1,,int
+82986,LOCAL,,slabclass_t* p,21,,532,p,1,,slabclass_t*
+82993,LOCAL,,slab_stats_automove* cur,29,,533,cur,3,,slab_stats_automove*
+83036,LOCAL,,unsigned int ret,18,,546,ret,1,,unsigned int
+83077,LOCAL,,int i,9,,557,i,5,,int
+83078,LOCAL,,int total,12,,557,total,4,,int
+83079,LOCAL,,struct thread_stats thread_stats,25,,559,thread_stats,3,,thread_stats
+83099,LOCAL,,slabclass_t* p,21,,564,p,1,,slabclass_t*
+83113,LOCAL,,uint32_t perslab,22,,566,perslab,1,,uint32_t
+83114,LOCAL,,uint32_t slabs,31,,566,slabs,2,,uint32_t
+83125,LOCAL,,char[128] key_str,18,,570,key_str,4,,char[128]
+83126,LOCAL,,char[128] val_str,18,,571,val_str,6,,char[128]
+83127,LOCAL,,int klen,17,,572,klen,3,,int
+83128,LOCAL,,int vlen,27,,572,vlen,8,,int
+83622,LOCAL,,void* ret,10,,611,ret,1,,void*
+83691,LOCAL,,void* p,10,,642,p,1,,void*
+83733,LOCAL,,void* ret,10,,658,ret,1,,void*
+83811,LOCAL,,bool ret,10,,690,ret,1,,bool
+83831,LOCAL,,unsigned int ret,18,,699,ret,1,,unsigned int
+83832,LOCAL,,slabclass_t* p,17,,700,p,2,,slabclass_t*
+83895,LOCAL,,pthread_cond_t slab_rebalance_cond,23,,727,slab_rebalance_cond,54,,pthread_cond_t
+83899,LOCAL,,static volatile int do_run_slab_rebalance_thread,21,,728,do_run_slab_rebalance_thread,56,,int
+83906,LOCAL,,slabclass_t* s_cls,17,,731,s_cls,1,,slabclass_t*
+83907,LOCAL,,int no_go,9,,732,no_go,2,,int
+84090,LOCAL,,slabclass_t* s_cls,17,,790,s_cls,1,,slabclass_t*
+84099,LOCAL,,int x,9,,792,x,3,,int
+84100,LOCAL,,item* new_it,10,,793,new_it,4,,item*
+84254,LOCAL,,slabclass_t* s_cls,17,,857,s_cls,1,,slabclass_t*
+84255,LOCAL,,int was_busy,9,,858,was_busy,2,,int
+84259,LOCAL,,int refcount,9,,859,refcount,4,,int
+84263,LOCAL,,uint32_t hv,14,,860,hv,6,,uint32_t
+84264,LOCAL,,void* hold_lock,10,,861,hold_lock,7,,void*
+84265,LOCAL,,enum move_status status,22,,862,status,8,,move_status
+84277,LOCAL,,int offset,9,,866,offset,11,,int
+84313,LOCAL,,item* it,14,,873,it,4,,item*
+84319,LOCAL,,item_chunk* ch,20,,875,ch,6,,item_chunk*
+84436,LOCAL,,bool is_linked,26,,907,is_linked,1,,bool
+84548,LOCAL,,int save_item,13,,953,save_item,11,,int
+84552,LOCAL,,item* new_it,14,,954,new_it,2,,item*
+84556,LOCAL,,size_t ntotal,16,,955,ntotal,15,,size_t
+84760,LOCAL,,item_chunk* fch,40,,1010,fch,1,,item_chunk*
+84842,LOCAL,,item_chunk* nch,36,,1024,nch,1,,item_chunk*
+85120,LOCAL,,slabclass_t* s_cls,17,,1110,s_cls,1,,slabclass_t*
+85121,LOCAL,,slabclass_t* d_cls,17,,1111,d_cls,2,,slabclass_t*
+85122,LOCAL,,int x,9,,1112,x,3,,int
+85123,LOCAL,,uint32_t rescues,14,,1113,rescues,4,,uint32_t
+85124,LOCAL,,uint32_t evictions_nomem,14,,1114,evictions_nomem,5,,uint32_t
+85125,LOCAL,,uint32_t inline_reclaim,14,,1115,inline_reclaim,6,,uint32_t
+85126,LOCAL,,uint32_t chunk_rescues,14,,1116,chunk_rescues,7,,uint32_t
+85127,LOCAL,,uint32_t busy_deletes,14,,1117,busy_deletes,8,,uint32_t
+85383,LOCAL,,int was_busy,9,,1203,was_busy,1,,int
+85387,LOCAL,,int backoff_timer,9,,1204,backoff_timer,3,,int
+85391,LOCAL,,int backoff_max,9,,1205,backoff_max,5,,int
+85487,LOCAL,,static int cur,16,,1249,cur,1,,int
+85495,LOCAL,,int tries,9,,1250,tries,3,,int
+85551,LOCAL,,bool nospare,10,,1265,nospare,1,,bool
+85649,LOCAL,,enum reassign_result_type ret,31,,1299,ret,1,,reassign_result_type
+85687,LOCAL,,pthread_t rebalance_tid,18,,1317,rebalance_tid,70,,pthread_t
+85691,LOCAL,,int ret,9,,1320,ret,1,,int
+85802,LOCAL,,struct slab_stats_automove,3,,39,slab_stats_automove,9,,struct
+85860,LOCAL,,enum reassign_result_type slabs_reassign,27,,60,slabs_reassign,20,,reassign_result_type
+85907,LOCAL,,_prefix_stats*[256] prefix_stats,21,,10,prefix_stats,1,,_prefix_stats*[256]
+85912,LOCAL,,static char prefix_delimiter,13,,12,prefix_delimiter,3,,char
+85913,LOCAL,,static int num_prefixes,12,,13,num_prefixes,4,,int
+85917,LOCAL,,static int total_prefix_size,12,,14,total_prefix_size,6,,int
+85937,LOCAL,,int i,9,,22,i,1,,int
+85951,LOCAL,,PREFIX_STATS* cur,22,,25,cur,1,,PREFIX_STATS*
+85952,LOCAL,,PREFIX_STATS* next,28,,25,next,2,,PREFIX_STATS*
+85995,LOCAL,,PREFIX_STATS* pfs,18,,38,pfs,1,,PREFIX_STATS*
+85996,LOCAL,,uint32_t hashval,14,,39,hashval,2,,uint32_t
+85997,LOCAL,,size_t length,12,,40,length,3,,size_t
+85998,LOCAL,,bool bailout,10,,41,bailout,4,,bool
+86156,LOCAL,,PREFIX_STATS* pfs,18,,90,pfs,1,,PREFIX_STATS*
+86186,LOCAL,,PREFIX_STATS* pfs,18,,104,pfs,1,,PREFIX_STATS*
+86209,LOCAL,,PREFIX_STATS* pfs,18,,115,pfs,1,,PREFIX_STATS*
+86231,LOCAL,,const char* format,16,,126,format,1,,char*
+86235,LOCAL,,PREFIX_STATS* pfs,18,,127,pfs,3,,PREFIX_STATS*
+86236,LOCAL,,char* buf,10,,128,buf,4,,char*
+86237,LOCAL,,int i,9,,129,i,5,,int
+86238,LOCAL,,int pos,12,,129,pos,6,,int
+86239,LOCAL,,size_t size,12,,130,size,7,,size_t
+86240,LOCAL,,size_t written,22,,130,written,8,,size_t
+86247,LOCAL,,size_t total_written,12,,132,total_written,11,,size_t
+86532,LOCAL,,struct extstore_conf_file* storage_conf_parse,27,,34,storage_conf_parse,16,,extstore_conf_file*
+86633,LOCAL,,hash_func hash,11,,47,hash,3,,hash_func
+86684,LOCAL,,pid_t server_pid,14,,77,server_pid,8,,pid_t
+86685,LOCAL,,in_port_t port,18,,78,port,9,,in_port_t
+86687,LOCAL,,struct conn* con,20,,79,con,11,,conn*
+86691,LOCAL,,bool allow_closed_read,13,,80,allow_closed_read,13,,bool
+86695,LOCAL,,bool enable_ssl,13,,81,enable_ssl,15,,bool
+86728,LOCAL,,cache_t* cache,13,,100,cache,1,,cache_t*
+86750,LOCAL,,int ii,9,,108,ii,1,,int
+86751,LOCAL,,cache_t* cache,13,,109,cache,2,,cache_t*
+86767,LOCAL,,char* ptr,10,,113,ptr,5,,char*
+86786,LOCAL,,char* p,14,,116,p,1,,char*
+86807,LOCAL,,cache_t* cache,13,,127,cache,1,,cache_t*
+86822,LOCAL,,void*[1024] ptr,10,,132,ptr,4,,void*[1024]
+86825,LOCAL,,int ii,14,,134,ii,1,,int
+86857,LOCAL,,int ii,14,,140,ii,1,,int
+86883,LOCAL,,enum test_return ret,22,,151,ret,1,,test_return
+86904,LOCAL,,cache_t* cache,13,,162,cache,1,,cache_t*
+86920,LOCAL,,struct sigaction old_action,22,,168,old_action,4,,sigaction
+86921,LOCAL,,struct sigaction action,22,,169,action,5,,sigaction
+86944,LOCAL,,char* p,10,,174,p,9,,char*
+86949,LOCAL,,char old,10,,175,old,11,,char
+87003,LOCAL,,int limit,9,,198,limit,1,,int
+87004,LOCAL,,int allocated_num,21,,198,allocated_num,2,,int
+87005,LOCAL,,int i,48,,198,i,3,,int
+87014,LOCAL,,char** alloc_objs,10,,199,alloc_objs,6,,char**
+87021,LOCAL,,cache_t* cache,13,,201,cache,8,,cache_t*
+87090,LOCAL,,PREFIX_STATS* pfs1,18,,226,pfs1,1,,PREFIX_STATS*
+87091,LOCAL,,PREFIX_STATS* pfs2,25,,226,pfs2,2,,PREFIX_STATS*
+87181,LOCAL,,PREFIX_STATS* pfs,18,,249,pfs,1,,PREFIX_STATS*
+87266,LOCAL,,PREFIX_STATS* pfs,18,,272,pfs,1,,PREFIX_STATS*
+87323,LOCAL,,PREFIX_STATS* pfs,18,,290,pfs,1,,PREFIX_STATS*
+87380,LOCAL,,int hashval,9,,308,hashval,1,,int
+87390,LOCAL,,char[500] tmp,10,,309,tmp,3,,char[500]
+87391,LOCAL,,char* buf,10,,310,buf,4,,char*
+87392,LOCAL,,const char* expected,16,,311,expected,5,,char*
+87393,LOCAL,,int keynum,9,,312,keynum,6,,int
+87394,LOCAL,,int length,9,,313,length,7,,int
+87534,LOCAL,,bool found_match,10,,351,found_match,38,,bool
+87628,LOCAL,,uint32_t val,14,,377,val,1,,uint32_t
+87687,LOCAL,,uint64_t val,14,,401,val,1,,uint64_t
+87758,LOCAL,,int64_t val,13,,420,val,1,,int64_t
+87848,LOCAL,,int32_t val,13,,449,val,1,,int32_t
+87928,LOCAL,,char[80] environment,10,,487,environment,1,,char[80]
+87937,LOCAL,,char* filename,10,,490,filename,3,,char*
+87944,LOCAL,,char[80] pid_file,10,,491,pid_file,5,,char[80]
+87957,LOCAL,,pid_t pid,11,,507,pid,9,,pid_t
+87971,LOCAL,,char*[24] argv,14,,511,argv,1,,char*[24]
+87972,LOCAL,,int arg,13,,512,arg,2,,int
+87976,LOCAL,,char[24] tmo,14,,513,tmo,4,,char[24]
+88090,LOCAL,,useconds_t wait_timeout,16,,563,wait_timeout,13,,useconds_t
+88096,LOCAL,,useconds_t wait,16,,564,wait,15,,useconds_t
+88135,LOCAL,,FILE* fp,10,,575,fp,19,,FILE*
+88159,LOCAL,,char[80] buffer,10,,583,buffer,23,,char[80]
+88177,LOCAL,,int32_t val,21,,586,val,1,,int32_t
+88230,LOCAL,,int x,18,,611,x,1,,int
+88252,LOCAL,,int32_t val,17,,616,val,6,,int32_t
+88270,LOCAL,,in_port_t port,15,,625,port,1,,in_port_t
+88271,LOCAL,,pid_t pid,11,,626,pid,2,,pid_t
+88301,LOCAL,,struct addrinfo* ai,21,,636,ai,1,,addrinfo*
+88305,LOCAL,,struct addrinfo hints,21,,637,hints,3,,addrinfo
+88321,LOCAL,,char[] service,10,,640,service,5,,char[]
+88322,LOCAL,,int error,9,,641,error,6,,int
+88367,LOCAL,,struct conn* c,17,,658,c,1,,conn*
+88386,LOCAL,,struct addrinfo* ai,21,,665,ai,3,,addrinfo*
+88392,LOCAL,,int sock,9,,666,sock,5,,int
+88448,LOCAL,,int flags,19,,676,flags,1,,int
+88512,LOCAL,,int rv,9,,730,rv,1,,int
+88516,LOCAL,,int oldstderr,9,,731,oldstderr,3,,int
+88525,LOCAL,,char[] tmpl,10,,733,tmpl,6,,char[]
+88537,LOCAL,,int newfile,9,,736,newfile,8,,int
+88578,LOCAL,,char[80] buf,10,,752,buf,19,,char[80]
+88583,LOCAL,,FILE* efile,10,,753,efile,21,,FILE*
+88591,LOCAL,,char* prv,10,,755,prv,24,,char*
+88605,LOCAL,,char[80] expected,10,,761,expected,29,,char[80]
+88631,LOCAL,,off_t offset,11,,775,offset,1,,off_t
+88635,LOCAL,,const char* ptr,15,,776,ptr,3,,char*
+88639,LOCAL,,size_t len,12,,777,len,5,,size_t
+88646,LOCAL,,ssize_t nw,17,,780,nw,1,,ssize_t
+88693,LOCAL,,off_t offset,11,,799,offset,1,,off_t
+88697,LOCAL,,bool need_more,10,,800,need_more,3,,bool
+88703,LOCAL,,ssize_t nr,17,,802,nr,1,,ssize_t
+88770,LOCAL,,char[1024] buffer,10,,821,buffer,1,,char[1024]
+88826,LOCAL,,uint32_t crc_hw,14,,843,crc_hw,1,,uint32_t
+88827,LOCAL,,uint32_t crc_sw,22,,843,crc_sw,2,,uint32_t
+88828,LOCAL,,char[256] buffer,10,,845,buffer,3,,char[256]
+88831,LOCAL,,int x,14,,846,x,1,,int
+88920,LOCAL,,char[4096] buffer,10,,871,buffer,1,,char[4096]
+88972,LOCAL,,size_t offset,12,,888,offset,13,,size_t
+89001,LOCAL,,char[80] rsp,10,,898,rsp,19,,char[80]
+89042,LOCAL,,int len,9,,909,len,29,,int
+89143,LOCAL,,char[1024] buffer,10,,941,buffer,1,,char[1024]
+89188,LOCAL,,off_t offset,11,,963,offset,1,,off_t
+89192,LOCAL,,const char* ptr,15,,964,ptr,3,,char*
+89198,LOCAL,,size_t num_bytes,16,,981,num_bytes,1,,size_t
+89219,LOCAL,,ssize_t nw,17,,987,nw,4,,ssize_t
+89274,LOCAL,,off_t offset,11,,1006,offset,2,,off_t
+89280,LOCAL,,ssize_t nr,17,,1008,nr,1,,ssize_t
+89342,LOCAL,,protocol_binary_response_no_extras* response,40,,1027,response,1,,protocol_binary_response_no_extras*
+89422,LOCAL,,size_t len,12,,1036,len,8,,size_t
+89428,LOCAL,,char* ptr,10,,1038,ptr,10,,char*
+89466,LOCAL,,protocol_binary_request_set* request,33,,1073,request,1,,protocol_binary_request_set*
+89578,LOCAL,,off_t key_offset,11,,1086,key_offset,13,,off_t
+89623,LOCAL,,protocol_binary_request_no_extras* request,39,,1105,request,1,,protocol_binary_request_no_extras*
+89719,LOCAL,,off_t ext_offset,11,,1116,ext_offset,11,,off_t
+89724,LOCAL,,off_t key_offset,11,,1117,key_offset,13,,off_t
+89730,LOCAL,,off_t dta_offset,11,,1118,dta_offset,15,,off_t
+89810,LOCAL,,protocol_binary_request_flush* request,35,,1145,request,1,,protocol_binary_request_flush*
+89850,LOCAL,,off_t size,11,,1152,size,7,,off_t
+89917,LOCAL,,protocol_binary_request_touch* request,35,,1172,request,1,,protocol_binary_request_touch*
+90015,LOCAL,,off_t key_offset,11,,1186,key_offset,12,,off_t
+90047,LOCAL,,protocol_binary_request_incr* request,34,,1200,request,1,,protocol_binary_request_incr*
+90167,LOCAL,,off_t key_offset,11,,1214,key_offset,14,,off_t
+90679,LOCAL,,union buffer,7,,1325,buffer,1,,union
+90680,LOCAL,,size_t len,12,,1327,len,2,,size_t
+90724,LOCAL,,union buffer,7,,1344,buffer,1,,union
+90725,LOCAL,,size_t len,12,,1345,len,2,,size_t
+90816,LOCAL,,union send,7,,1377,send,1,,union
+90817,LOCAL,,union receive,13,,1377,receive,2,,union
+90818,LOCAL,,uint64_t value,14,,1378,value,3,,uint64_t
+90822,LOCAL,,size_t len,12,,1379,len,5,,size_t
+90843,LOCAL,,int ii,9,,1384,ii,7,,int
+90991,LOCAL,,uint64_t value,14,,1422,value,1,,uint64_t
+90995,LOCAL,,union send,7,,1427,send,3,,union
+90996,LOCAL,,union receive,13,,1427,receive,4,,union
+90997,LOCAL,,size_t len,12,,1428,len,5,,size_t
+91018,LOCAL,,int ii,9,,1433,ii,7,,int
+91104,LOCAL,,uint64_t value,14,,1461,value,1,,uint64_t
+91108,LOCAL,,union send,7,,1466,send,3,,union
+91109,LOCAL,,union receive,13,,1466,receive,4,,union
+91110,LOCAL,,size_t len,12,,1467,len,5,,size_t
+91213,LOCAL,,int ii,9,,1484,ii,15,,int
+91283,LOCAL,,union send,7,,1517,send,1,,union
+91284,LOCAL,,union receive,13,,1517,receive,2,,union
+91285,LOCAL,,size_t len,12,,1518,len,3,,size_t
+91451,LOCAL,,union send,7,,1566,send,1,,union
+91452,LOCAL,,union receive,13,,1566,receive,2,,union
+91453,LOCAL,,uint32_t expiration,14,,1568,expiration,3,,uint32_t
+91458,LOCAL,,size_t extlen,12,,1569,extlen,5,,size_t
+91475,LOCAL,,size_t len,12,,1573,len,8,,size_t
+91561,LOCAL,,int ii,9,,1593,ii,18,,int
+91573,LOCAL,,union temp,11,,1598,temp,1,,union
+91574,LOCAL,,size_t l,16,,1599,l,2,,size_t
+91686,LOCAL,,const char* missing,16,,1633,missing,1,,char*
+91690,LOCAL,,union send,7,,1638,send,3,,union
+91691,LOCAL,,union temp,13,,1638,temp,4,,union
+91692,LOCAL,,union receive,19,,1638,receive,5,,union
+91693,LOCAL,,uint32_t expiration,14,,1640,expiration,6,,uint32_t
+91698,LOCAL,,size_t extlen,12,,1641,extlen,8,,size_t
+91715,LOCAL,,size_t len,12,,1645,len,11,,size_t
+91734,LOCAL,,size_t len2,12,,1649,len2,13,,size_t
+91898,LOCAL,,union send,7,,1698,send,1,,union
+91899,LOCAL,,union receive,13,,1698,receive,2,,union
+91900,LOCAL,,size_t len,12,,1699,len,3,,size_t
+91918,LOCAL,,int ii,9,,1702,ii,5,,int
+92001,LOCAL,,union send,7,,1735,send,1,,union
+92002,LOCAL,,union receive,13,,1735,receive,2,,union
+92003,LOCAL,,size_t len,12,,1736,len,3,,size_t
+92021,LOCAL,,int ii,9,,1739,ii,5,,int
+92139,LOCAL,,union buffer,7,,1779,buffer,1,,union
+92140,LOCAL,,size_t len,12,,1781,len,2,,size_t
+92185,LOCAL,,union send,7,,1798,send,1,,union
+92186,LOCAL,,union receive,13,,1798,receive,2,,union
+92187,LOCAL,,size_t len,12,,1800,len,3,,size_t
+92326,LOCAL,,int ii,9,,1829,ii,19,,int
+92481,LOCAL,,union send,7,,1874,send,1,,union
+92482,LOCAL,,union receive,13,,1874,receive,2,,union
+92483,LOCAL,,const char* value,16,,1875,value,3,,char*
+92487,LOCAL,,size_t len,12,,1877,len,5,,size_t
+92725,LOCAL,,char* ptr,10,,1922,ptr,23,,char*
+92815,LOCAL,,union buffer,7,,1960,buffer,1,,union
+92816,LOCAL,,size_t len,12,,1962,len,2,,size_t
+92875,LOCAL,,uint8_t cmd,13,,1977,cmd,1,,uint8_t
+92884,LOCAL,,union buffer,11,,1983,buffer,1,,union
+92885,LOCAL,,size_t len,16,,1984,len,2,,size_t
+92928,LOCAL,,volatile bool hickup_thread_running,15,,1996,hickup_thread_running,99,,bool
+92932,LOCAL,,protocol_binary_response_no_extras* response,40,,1999,response,1,,protocol_binary_response_no_extras*
+92987,LOCAL,,off_t offset,11,,2015,offset,1,,off_t
+92991,LOCAL,,char*[256] key,10,,2016,key,3,,char*[256]
+92996,LOCAL,,uint64_t value,14,,2017,value,5,,uint64_t
+93010,LOCAL,,union command,11,,2024,command,1,,union
+93011,LOCAL,,uint8_t cmd,17,,2025,cmd,2,,uint8_t
+93018,LOCAL,,size_t len,16,,2026,len,4,,size_t
+93019,LOCAL,,size_t keylen,16,,2027,keylen,5,,size_t
+93319,LOCAL,,size_t buffersize,12,,2124,buffersize,1,,size_t
+93325,LOCAL,,void* buffer,10,,2125,buffer,3,,void*
+93330,LOCAL,,int ii,9,,2126,ii,5,,int
+93331,LOCAL,,pthread_t tid,15,,2128,tid,6,,pthread_t
+93332,LOCAL,,int ret,9,,2129,ret,7,,int
+93381,LOCAL,,size_t len,12,,2148,len,14,,size_t
+93408,LOCAL,,enum test_return ret,22,,2160,ret,1,,test_return
+93412,LOCAL,,conn*[2] conns,17,,2161,conns,3,,conn*[2]
+93413,LOCAL,,int ii,9,,2162,ii,4,,int
+93417,LOCAL,,pid_t child,11,,2163,child,6,,pid_t
+93429,LOCAL,,const char* command,16,,2169,command,9,,char*
+93433,LOCAL,,size_t cmdlen,12,,2170,cmdlen,11,,size_t
+93493,LOCAL,,bool more,14,,2183,more,1,,bool
+93499,LOCAL,,ssize_t err,21,,2185,err,1,,ssize_t
+93557,LOCAL,,int stat,13,,2206,stat,1,,int
+93558,LOCAL,,pid_t c,15,,2207,c,2,,pid_t
+93612,LOCAL,,struct conn* c,21,,2222,c,1,,conn*
+93660,LOCAL,,testcase[] testcases,17,,2248,testcases,108,,testcase[]
+93859,LOCAL,,int exitcode,9,,2319,exitcode,1,,int
+93863,LOCAL,,int ii,9,,2320,ii,3,,int
+93864,LOCAL,,int num_cases,17,,2320,num_cases,4,,int
+93912,LOCAL,,enum test_return ret,26,,2347,ret,3,,test_return
+94048,LOCAL,,pthread_mutex_t[256] lru_locks,17,,71,lru_locks,8,,pthread_mutex_t[256]
+94053,LOCAL,,pthread_mutex_t conn_lock,17,,74,conn_lock,10,,pthread_mutex_t
+94057,LOCAL,,pthread_mutex_t atomics_mutex,17,,77,atomics_mutex,12,,pthread_mutex_t
+94061,LOCAL,,pthread_mutex_t stats_lock,24,,81,stats_lock,14,,pthread_mutex_t
+94065,LOCAL,,pthread_mutex_t worker_hang_lock,24,,84,worker_hang_lock,16,,pthread_mutex_t
+94066,LOCAL,,pthread_mutex_t* item_locks,24,,86,item_locks,17,,pthread_mutex_t*
+94067,LOCAL,,uint32_t item_lock_count,17,,88,item_lock_count,18,,uint32_t
+94068,LOCAL,,unsigned int item_lock_hashpower,14,,89,item_lock_hashpower,19,,unsigned int
+94069,LOCAL,,LIBEVENT_THREAD* threads,24,,97,threads,1,,LIBEVENT_THREAD*
+94070,LOCAL,,static int init_count,12,,102,init_count,21,,int
+94074,LOCAL,,pthread_mutex_t init_lock,24,,103,init_lock,23,,pthread_mutex_t
+94075,LOCAL,,pthread_cond_t init_cond,23,,104,init_cond,24,,pthread_cond_t
+94130,LOCAL,,pthread_mutex_t* lock,21,,126,lock,1,,pthread_mutex_t*
+94231,LOCAL,,int i,9,,159,i,1,,int
+94232,LOCAL,,bool pause_workers,10,,160,pause_workers,2,,bool
+94317,LOCAL,,int i,9,,211,i,1,,int
+94576,LOCAL,,CQ_ITEM* item,13,,293,item,1,,CQ_ITEM*
+94712,LOCAL,,CQ_ITEM* item,13,,318,item,1,,CQ_ITEM*
+94754,LOCAL,,char[1] buf,10,,349,buf,2,,char[1]
+94777,LOCAL,,CQ_ITEM* item,13,,359,item,1,,CQ_ITEM*
+94807,LOCAL,,pthread_attr_t attr,21,,380,attr,1,,pthread_attr_t
+94808,LOCAL,,int ret,21,,381,ret,2,,int
+94973,LOCAL,,int limit,13,,456,limit,1,,int
+95044,LOCAL,,LIBEVENT_THREAD* me,21,,503,me,1,,LIBEVENT_THREAD*
+95097,LOCAL,,LIBEVENT_THREAD* me,21,,538,me,1,,LIBEVENT_THREAD*
+95101,LOCAL,,CQ_ITEM* item,13,,539,item,2,,CQ_ITEM*
+95102,LOCAL,,conn* c,10,,540,c,4,,conn*
+95103,LOCAL,,uint64_t ev_count,14,,541,ev_count,5,,uint64_t
+95107,LOCAL,,char[32] buf,10,,552,buf,7,,char[32]
+95134,LOCAL,,int x,14,,562,x,1,,int
+95298,LOCAL,,static int last_thread,12,,639,last_thread,51,,int
+95303,LOCAL,,static int last_thread_by_napi_id,12,,642,last_thread_by_napi_id,53,,int
+95311,LOCAL,,int tid,9,,646,tid,1,,int
+95333,LOCAL,,LIBEVENT_THREAD* thread,21,,655,thread,1,,LIBEVENT_THREAD*
+95334,LOCAL,,int i,9,,656,i,2,,int
+95367,LOCAL,,LIBEVENT_THREAD* thread,21,,672,thread,1,,LIBEVENT_THREAD*
+95368,LOCAL,,int napi_id,9,,673,napi_id,2,,int
+95369,LOCAL,,int err,18,,673,err,3,,int
+95370,LOCAL,,int i,23,,673,i,4,,int
+95371,LOCAL,,socklen_t len,15,,674,len,5,,socklen_t
+95372,LOCAL,,int tid,9,,675,tid,6,,int
+95488,LOCAL,,CQ_ITEM* item,13,,720,item,1,,CQ_ITEM*
+95492,LOCAL,,LIBEVENT_THREAD* thread,21,,721,thread,3,,LIBEVENT_THREAD*
+95604,LOCAL,,CQ_ITEM* item,13,,768,item,1,,CQ_ITEM*
+95669,LOCAL,,item* it,10,,800,it,1,,item*
+95688,LOCAL,,item* it,10,,811,it,1,,item*
+95689,LOCAL,,uint32_t hv,14,,812,hv,2,,uint32_t
+95718,LOCAL,,item* it,10,,824,it,1,,item*
+95747,LOCAL,,item* it,10,,832,it,1,,item*
+95748,LOCAL,,uint32_t hv,14,,833,hv,2,,uint32_t
+95773,LOCAL,,int ret,9,,845,ret,1,,int
+95774,LOCAL,,uint32_t hv,14,,846,hv,2,,uint32_t
+95816,LOCAL,,uint32_t hv,14,,860,hv,1,,uint32_t
+95865,LOCAL,,uint32_t hv,14,,881,hv,1,,uint32_t
+95909,LOCAL,,enum delta_result_type ret,28,,895,ret,1,,delta_result_type
+95910,LOCAL,,uint32_t hv,14,,896,hv,2,,uint32_t
+95941,LOCAL,,enum store_item_type ret,26,,909,ret,1,,store_item_type
+95942,LOCAL,,uint32_t hv,14,,910,hv,2,,uint32_t
+96000,LOCAL,,int ii,9,,930,ii,1,,int
+96289,LOCAL,,int ii,9,,953,ii,2,,int
+96290,LOCAL,,int sid,13,,953,sid,1,,int
+96863,LOCAL,,int sid,9,,993,sid,1,,int
+96981,LOCAL,,int i,17,,1010,i,1,,int
+96982,LOCAL,,int power,17,,1011,power,2,,int
+97154,LOCAL,,int[2] fds,13,,1070,fds,1,,int[2]
+97239,LOCAL,,volatile sig_atomic_t caught_sig,23,,11,caught_sig,1,,sig_atomic_t
+97254,LOCAL,,int rv,9,,20,rv,1,,int
+97258,LOCAL,,int status,9,,21,status,3,,int
+97262,LOCAL,,int i,9,,22,i,5,,int
+97266,LOCAL,,struct sigaction sig_handler,22,,23,sig_handler,7,,sigaction
+97321,LOCAL,,pid_t p,15,,38,p,1,,pid_t
+97348,LOCAL,,int sig,17,,46,sig,1,,int
+97403,LOCAL,,int rv,9,,75,rv,1,,int
+97407,LOCAL,,pid_t pid,11,,76,pid,3,,pid_t
+97460,LOCAL,,int naptime,9,,101,naptime,1,,int
+97602,LOCAL,,char*[256] uriencode_map,13,,11,uriencode_map,1,,char*[256]
+97605,LOCAL,,char[768] uriencode_str,13,,12,uriencode_str,3,,char[768]
+97611,LOCAL,,int x,9,,15,x,1,,int
+97612,LOCAL,,char* str,10,,16,str,2,,char*
+97677,LOCAL,,int x,9,,29,x,1,,int
+97678,LOCAL,,size_t d,12,,30,d,2,,size_t
+97764,LOCAL,,char* endptr,10,,53,endptr,4,,char*
+97765,LOCAL,,long long unsigned ull,24,,54,ull,5,,long long unsigned
+97845,LOCAL,,char* endptr,10,,83,endptr,2,,char*
+97846,LOCAL,,long long unsigned ull,24,,84,ull,5,,long long unsigned
+97926,LOCAL,,char* endptr,10,,108,endptr,4,,char*
+97927,LOCAL,,long long ll,15,,109,ll,5,,long long
+97980,LOCAL,,char* endptr,10,,122,endptr,2,,char*
+97984,LOCAL,,long unsigned l,19,,123,l,3,,long unsigned
+98078,LOCAL,,char* endptr,10,,154,endptr,4,,char*
+98079,LOCAL,,long l,10,,155,l,5,,long
+98143,LOCAL,,char* endptr,10,,171,endptr,4,,char*
+98144,LOCAL,,double d,12,,172,d,5,,double
+98197,LOCAL,,size_t x,11,,191,x,1,,size_t
+98249,LOCAL,,const volatile unsigned char* ua,34,,207,ua,1,,unsigned char*
+98255,LOCAL,,const volatile unsigned char* ub,34,,208,ub,3,,unsigned char*
+98261,LOCAL,,int delta,9,,209,delta,5,,int
+98265,LOCAL,,size_t x,12,,210,x,7,,size_t
+98302,LOCAL,,int old_errno,9,,224,old_errno,1,,int
+98306,LOCAL,,char[1024] buf,10,,225,buf,3,,char[1024]
+98307,LOCAL,,va_list ap,13,,226,ap,4,,va_list
+98479,LOCAL,,int status,9,,17,status,1,,int
+98480,LOCAL,,mcmc_resp_t resp,17,,18,resp,2,,mcmc_resp_t
+98481,LOCAL,,char* val,10,,19,val,3,,char*
+98487,LOCAL,,int bread,13,,22,bread,1,,int
+98541,LOCAL,,size_t toread,16,,43,toread,3,,size_t
+98551,LOCAL,,char* buf,14,,44,buf,5,,char*
+98561,LOCAL,,int read,17,,47,read,1,,int
+98591,LOCAL,,void* c,10,,146,c,1,,void*
+98599,LOCAL,,size_t bufsize,12,,147,bufsize,3,,size_t
+98608,LOCAL,,char* rbuf,10,,148,rbuf,5,,char*
+98613,LOCAL,,int status,9,,150,status,7,,int
+98623,LOCAL,,char*[5] requests,10,,152,requests,9,,char*[5]
+98634,LOCAL,,int x,14,,158,x,1,,int
+98747,LOCAL,,char* buf,10,,55,buf,1,,char*
+98753,LOCAL,,char* p,10,,57,p,3,,char*
+98759,LOCAL,,size_t l,12,,58,l,5,,size_t
+98765,LOCAL,,char* key,10,,61,key,7,,char*
+98769,LOCAL,,int keylen,9,,62,keylen,9,,int
+98792,LOCAL,,char* n,10,,75,n,13,,char*
+98799,LOCAL,,uint32_t flags,14,,77,flags,16,,uint32_t
+98831,LOCAL,,uint32_t bytes,14,,84,bytes,21,,uint32_t
+98855,LOCAL,,uint64_t cas,14,,91,cas,25,,uint64_t
+98895,LOCAL,,int buffer_remain,9,,103,buffer_remain,29,,int
+98974,LOCAL,,char* buf,10,,126,buf,1,,char*
+98980,LOCAL,,char* cur,10,,127,cur,3,,char*
+98984,LOCAL,,size_t l,12,,128,l,5,,size_t
+98990,LOCAL,,int rlen,9,,129,rlen,7,,int
+98991,LOCAL,,int more,9,,130,more,8,,int
+99080,LOCAL,,int rv,9,,160,rv,16,,int
+99086,LOCAL,,int code,9,,161,code,18,,int
+99243,LOCAL,,char* n,30,,218,n,2,,char*
+99247,LOCAL,,uint32_t vsize,34,,219,vsize,4,,uint32_t
+99279,LOCAL,,int buffer_remain,33,,225,buffer_remain,2,,int
+99601,LOCAL,,mcmc_ctx_t* ctx,16,,326,ctx,1,,mcmc_ctx_t*
+99636,LOCAL,,mcmc_ctx_t* ctx,16,,348,ctx,1,,mcmc_ctx_t*
+99640,LOCAL,,char* el,10,,349,el,3,,char*
+99698,LOCAL,,mcmc_ctx_t* ctx,16,,377,ctx,1,,mcmc_ctx_t*
+99704,LOCAL,,socklen_t errsize,15,,378,errsize,3,,socklen_t
+99752,LOCAL,,mcmc_ctx_t* ctx,16,,398,ctx,1,,mcmc_ctx_t*
+99758,LOCAL,,int s,9,,400,s,3,,int
+99759,LOCAL,,int sock,9,,401,sock,4,,int
+99760,LOCAL,,int res,9,,402,res,5,,int
+99766,LOCAL,,struct addrinfo hints,21,,403,hints,7,,addrinfo
+99767,LOCAL,,struct addrinfo* ai,21,,404,ai,8,,addrinfo*
+99768,LOCAL,,struct addrinfo* next,21,,405,next,9,,addrinfo*
+99877,LOCAL,,int optval,17,,433,optval,1,,int
+99909,LOCAL,,int flags,17,,442,flags,1,,int
+100024,LOCAL,,mcmc_ctx_t* ctx,16,,489,ctx,1,,mcmc_ctx_t*
+100030,LOCAL,,const char* r,16,,492,r,3,,char*
+100038,LOCAL,,int l,9,,493,l,5,,int
+100046,LOCAL,,int sent,9,,494,sent,7,,int
+100116,LOCAL,,mcmc_ctx_t* ctx,16,,519,ctx,1,,mcmc_ctx_t*
+100122,LOCAL,,ssize_t tosend,13,,521,tosend,3,,ssize_t
+100128,LOCAL,,int i,14,,522,i,1,,int
+100219,LOCAL,,mcmc_ctx_t* ctx,16,,660,ctx,1,,mcmc_ctx_t*
+100272,LOCAL,,struct mcmc_resp_t,3,,74,mcmc_resp_t,2,,struct
+100401,LOCAL,,enum XXH_errorcode,38,,287,XXH_errorcode,3,,enum
+100454,LOCAL,,struct XXH32_canonical_t,3,,520,XXH32_canonical_t,15,,struct
+100519,LOCAL,,struct XXH64_canonical_t,64,,635,XXH64_canonical_t,29,,struct
+100603,LOCAL,,struct XXH128_hash_t,3,,788,XXH128_hash_t,46,,struct
+100676,LOCAL,,struct XXH128_canonical_t,65,,837,XXH128_canonical_t,58,,struct

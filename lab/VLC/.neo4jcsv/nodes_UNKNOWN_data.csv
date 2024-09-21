@@ -1,0 +1,1463 @@
+178,UNKNOWN,1,,void,6,<empty>,,81,1,CASTTypeId,,<empty>
+214,UNKNOWN,1,,void**,28,<empty>,,87,1,CASTTypeId,,<empty>
+279,UNKNOWN,1,,void**,28,<empty>,,106,1,CASTTypeId,,<empty>
+525,UNKNOWN,1,,void,6,<empty>,,173,1,CASTTypeId,,<empty>
+528,UNKNOWN,1,,void,20,<empty>,,173,1,CASTTypeId,,<empty>
+621,UNKNOWN,1,,void **,34,<empty>,,205,1,CASTTypeId,,<empty>
+1367,UNKNOWN,5,,"void vlc_assert_locked (vlc_mutex_t *p_mutex)
+{
+    assert (pthread_mutex_lock (p_mutex) == EDEADLK);
+}",1,<empty>,,117,5,CASTProblemDeclaration,,<empty>
+1474,UNKNOWN,10,,static thread_local struct vlc_thread *thread = NULL;,1,<empty>,,162,10,CASTProblemDeclaration,,<empty>
+1486,UNKNOWN,1,,void,6,<empty>,,171,1,CASTTypeId,,<empty>
+1729,UNKNOWN,1,,void,6,<empty>,,266,1,CASTTypeId,,<empty>
+1800,UNKNOWN,1,,void,6,<empty>,,287,1,CASTTypeId,,<empty>
+1815,UNKNOWN,1,,void,6,<empty>,,293,1,CASTTypeId,,<empty>
+1818,UNKNOWN,1,,void,17,<empty>,,293,1,CASTTypeId,,<empty>
+1958,UNKNOWN,-1,,"void *addr = va_arg(ap, void *);",13,<empty>,,356,1,CASTProblemStatement,,<empty>
+1992,UNKNOWN,-1,,"void *addr = va_arg(ap, void *);",13,<empty>,,367,1,CASTProblemStatement,,<empty>
+2016,UNKNOWN,1,,void,14,<empty>,,372,1,CASTTypeId,,<empty>
+2180,UNKNOWN,1,,aout_instance_t *,15,<empty>,,107,1,CASTTypeId,,<empty>
+3018,UNKNOWN,1,,char *,15,<empty>,,233,1,CASTTypeId,,<empty>
+3047,UNKNOWN,1,,char *,15,<empty>,,248,1,CASTTypeId,,<empty>
+3053,UNKNOWN,1,,char *,45,<empty>,,248,1,CASTTypeId,,<empty>
+5075,UNKNOWN,1,,vlc_value_t,19,<empty>,,88,1,CASTTypeId,,<empty>
+5590,UNKNOWN,-1,,"if (!owner->sync.discontinuity)
+            msg_Warn (aout, ""playback way too late (%""PRId64""): ""
+                      ""flushing buffers"", drift);",9,<empty>,,271,1,CASTProblemStatement,,<empty>
+5591,UNKNOWN,-1,,"else
+            msg_Dbg (aout, ""playback too late (%""PRId64""): ""
+                     ""flushing buffers"", drift);",9,<empty>,,274,2,CASTProblemStatement,,<empty>
+5644,UNKNOWN,-1,,"if (!owner->sync.discontinuity)
+            msg_Warn (aout, ""playback way too early (%""PRId64""): ""
+                      ""playing silence"", drift);",9,<empty>,,294,1,CASTProblemStatement,,<empty>
+5684,UNKNOWN,-1,,"msg_Warn (aout, ""playback too late (%""PRId64""): up-sampling"",
+                  drift);",9,<empty>,,311,1,CASTProblemStatement,,<empty>
+5714,UNKNOWN,-1,,"msg_Warn (aout, ""playback too early (%""PRId64""): down-sampling"",
+                  drift);",9,<empty>,,319,1,CASTProblemStatement,,<empty>
+5752,UNKNOWN,-1,,"msg_Warn (aout, ""timing screwed (drift: %""PRId64"" us): ""
+                  ""stopping resampling"", drift);",9,<empty>,,331,1,CASTProblemStatement,,<empty>
+5802,UNKNOWN,-1,,"msg_Dbg (aout, ""resampling stopped (drift: %""PRId64"" us)"", drift);",9,<empty>,,350,2,CASTProblemStatement,,<empty>
+5886,UNKNOWN,-1,,"msg_Warn (aout, ""buffer too late (%""PRId64"" us): dropped"", advance);",9,<empty>,,379,1,CASTProblemStatement,,<empty>
+5893,UNKNOWN,-1,,"msg_Err (aout, ""buffer too early (%""PRId64"" us): dropped"", advance);",9,<empty>,,384,1,CASTProblemStatement,,<empty>
+7079,UNKNOWN,1,,audio_output_t *,32,<empty>,,378,1,CASTTypeId,,<empty>
+7082,UNKNOWN,1,,void,6,<empty>,,379,1,CASTTypeId,,<empty>
+7085,UNKNOWN,1,,void,18,<empty>,,379,1,CASTTypeId,,<empty>
+7088,UNKNOWN,1,,void,33,<empty>,,379,1,CASTTypeId,,<empty>
+7182,UNKNOWN,1,,void *,39,<empty>,,414,1,CASTTypeId,,<empty>
+8335,UNKNOWN,1,,void,5,<empty>,,53,1,CASTTypeId,,<empty>
+8359,UNKNOWN,1,,void,6,<empty>,,63,1,CASTTypeId,,<empty>
+8362,UNKNOWN,1,,void,18,<empty>,,63,1,CASTTypeId,,<empty>
+8383,UNKNOWN,1,,void,6,<empty>,,72,1,CASTTypeId,,<empty>
+8386,UNKNOWN,1,,void,18,<empty>,,72,1,CASTTypeId,,<empty>
+8389,UNKNOWN,1,,void,31,<empty>,,72,1,CASTTypeId,,<empty>
+8640,UNKNOWN,1,,audio_output_t *,36,<empty>,,169,1,CASTTypeId,,<empty>
+8643,UNKNOWN,1,,void,6,<empty>,,170,1,CASTTypeId,,<empty>
+8646,UNKNOWN,1,,void,18,<empty>,,170,1,CASTTypeId,,<empty>
+8663,UNKNOWN,1,,audio_output_t *,29,<empty>,,177,1,CASTTypeId,,<empty>
+8666,UNKNOWN,1,,void,6,<empty>,,178,1,CASTTypeId,,<empty>
+8669,UNKNOWN,1,,void,21,<empty>,,178,1,CASTTypeId,,<empty>
+8672,UNKNOWN,1,,void,35,<empty>,,178,1,CASTTypeId,,<empty>
+8675,UNKNOWN,1,,void,49,<empty>,,178,1,CASTTypeId,,<empty>
+8700,UNKNOWN,1,,audio_output_t *,31,<empty>,,188,1,CASTTypeId,,<empty>
+8706,UNKNOWN,1,,void,6,<empty>,,189,1,CASTTypeId,,<empty>
+8709,UNKNOWN,1,,void,18,<empty>,,189,1,CASTTypeId,,<empty>
+8712,UNKNOWN,1,,void,31,<empty>,,189,1,CASTTypeId,,<empty>
+8796,UNKNOWN,1,,char *,26,<empty>,,214,1,CASTTypeId,,<empty>
+8976,UNKNOWN,1,,char *,23,<empty>,,262,1,CASTTypeId,,<empty>
+8997,UNKNOWN,1,,char *,23,<empty>,,265,1,CASTTypeId,,<empty>
+9018,UNKNOWN,1,,char *,23,<empty>,,268,1,CASTTypeId,,<empty>
+9039,UNKNOWN,1,,char *,23,<empty>,,271,1,CASTTypeId,,<empty>
+9060,UNKNOWN,1,,char *,23,<empty>,,274,1,CASTTypeId,,<empty>
+9085,UNKNOWN,1,,char *,27,<empty>,,280,1,CASTTypeId,,<empty>
+9092,UNKNOWN,1,,char *,28,<empty>,,281,1,CASTTypeId,,<empty>
+9111,UNKNOWN,1,,char *,27,<empty>,,287,1,CASTTypeId,,<empty>
+9118,UNKNOWN,1,,char*,28,<empty>,,288,1,CASTTypeId,,<empty>
+9137,UNKNOWN,1,,char *,27,<empty>,,294,1,CASTTypeId,,<empty>
+9144,UNKNOWN,1,,char*,28,<empty>,,295,1,CASTTypeId,,<empty>
+9163,UNKNOWN,1,,char *,27,<empty>,,301,1,CASTTypeId,,<empty>
+9170,UNKNOWN,1,,char*,28,<empty>,,302,1,CASTTypeId,,<empty>
+9296,UNKNOWN,1,,char *,31,<empty>,,333,1,CASTTypeId,,<empty>
+9466,UNKNOWN,1,,audio_output_t *,29,<empty>,,386,1,CASTTypeId,,<empty>
+10170,UNKNOWN,1,,void,6,<empty>,,626,1,CASTTypeId,,<empty>
+10326,UNKNOWN,1,,void,5,<empty>,,692,1,CASTTypeId,,<empty>
+10367,UNKNOWN,1,,char *,30,<empty>,,699,1,CASTTypeId,,<empty>
+10504,UNKNOWN,1,,float,64,<empty>,,760,1,CASTTypeId,,<empty>
+12053,UNKNOWN,1,,vlc_value_t,27,<empty>,,297,1,CASTTypeId,,<empty>
+12065,UNKNOWN,1,,vlc_value_t,27,<empty>,,298,1,CASTTypeId,,<empty>
+12084,UNKNOWN,1,,vlc_value_t,27,<empty>,,302,1,CASTTypeId,,<empty>
+12096,UNKNOWN,1,,vlc_value_t,27,<empty>,,303,1,CASTTypeId,,<empty>
+13041,UNKNOWN,1,,int,31,<empty>,,163,1,CASTTypeId,,<empty>
+13107,UNKNOWN,1,,char **,48,<empty>,,187,1,CASTTypeId,,<empty>
+13200,UNKNOWN,1,,vlc_value_t,31,<empty>,,222,1,CASTTypeId,,<empty>
+13212,UNKNOWN,1,,vlc_value_t,31,<empty>,,223,1,CASTTypeId,,<empty>
+13244,UNKNOWN,1,,vlc_value_t,31,<empty>,,230,1,CASTTypeId,,<empty>
+13256,UNKNOWN,1,,vlc_value_t,31,<empty>,,231,1,CASTTypeId,,<empty>
+13440,UNKNOWN,1,,char *,16,<empty>,,299,1,CASTTypeId,,<empty>
+13831,UNKNOWN,1,,char *,15,<empty>,,209,1,CASTTypeId,,<empty>
+14977,UNKNOWN,1,,char *,24,<empty>,,578,1,CASTTypeId,,<empty>
+15077,UNKNOWN,-1,,"asprintf( &psz_file, ""%s"" DIR_SEP CONFIG_FILE, psz_dir ) == -1",13,<empty>,,67,1,CASTProblemExpression,,<empty>
+15444,UNKNOWN,1,,float,34,<empty>,,235,1,CASTTypeId,,<empty>
+15486,UNKNOWN,1,,locale_t,17,<empty>,,255,1,CASTTypeId,,<empty>
+15801,UNKNOWN,-1,,"fprintf( file,
+        ""\xEF\xBB\xBF###\n""
+        ""###  ""PACKAGE_NAME"" ""PACKAGE_VERSION""\n""
+        ""###\n""
+        ""\n""
+        ""###\n""
+        ""### lines beginning with a '#' character are comments\n""
+        ""###\n""
+        ""\n"" );",5,<empty>,,405,17,CASTProblemStatement,,<empty>
+15931,UNKNOWN,-1,,"config_Write (file, p_item->psz_text,
+                             (CONFIG_CLASS(p_item->i_type) == CONFIG_ITEM_BOOL)
+                                  ? N_(""boolean"") : N_(""integer""),
+                              val == p_item->orig.i,
+                              p_item->psz_name, ""%""PRId64, val);",17,<empty>,,450,3,CASTProblemStatement,,<empty>
+16042,UNKNOWN,1,,locale_t,17,<empty>,,481,1,CASTTypeId,,<empty>
+16408,UNKNOWN,1,,char **,23,<empty>,,181,1,CASTTypeId,,<empty>
+16507,UNKNOWN,1,,char **,27,<empty>,,203,1,CASTTypeId,,<empty>
+16702,UNKNOWN,1,,unsigned int,22,<empty>,,261,1,CASTTypeId,,<empty>
+16709,UNKNOWN,1,,unsigned int,25,<empty>,,262,1,CASTTypeId,,<empty>
+16906,UNKNOWN,1,,char *,28,<empty>,,327,1,CASTTypeId,,<empty>
+17111,UNKNOWN,1,,unsigned int,26,<empty>,,392,1,CASTTypeId,,<empty>
+17562,UNKNOWN,1,,void,5,<empty>,,203,1,CASTTypeId,,<empty>
+17626,UNKNOWN,1,,void,5,<empty>,,227,1,CASTTypeId,,<empty>
+18236,UNKNOWN,-1,,"sprintf(typebuf + strlen(typebuf), ""%""PRIi64"" (%s)"",
+                            pi_values[i],
+                            ppsz_texts[i]);",21,<empty>,,454,2,CASTProblemStatement,,<empty>
+18277,UNKNOWN,-1,,"asprintf(&typebuf, ""%s [%""PRId64"" .. %""PRId64""]"",
+                             type, item->min.i, item->max.i) >= 0",21,<empty>,,467,1,CASTProblemExpression,,<empty>
+18979,UNKNOWN,1,,void,5,<empty>,,677,1,CASTTypeId,,<empty>
+19097,UNKNOWN,1,,void,5,<empty>,,710,1,CASTTypeId,,<empty>
+19107,UNKNOWN,1,,void,5,<empty>,,720,1,CASTTypeId,,<empty>
+19132,UNKNOWN,1,,void,5,<empty>,,726,1,CASTTypeId,,<empty>
+19701,UNKNOWN,1,,char *,49,<empty>,,84,1,CASTTypeId,,<empty>
+19709,UNKNOWN,-1,,"asprintf(&path, ""%s/""PACKAGE, incompletepath);",9,<empty>,,86,5,CASTProblemStatement,,<empty>
+20011,UNKNOWN,1,,unsigned,10,<empty>,,34,1,CASTTypeId,,<empty>
+20014,UNKNOWN,1,,unsigned,29,<empty>,,34,1,CASTTypeId,,<empty>
+20075,UNKNOWN,1,,const CFStringRef,41,<empty>,,51,1,CASTTypeId,,<empty>
+20079,UNKNOWN,1,,const void*,22,<empty>,,52,1,CASTTypeId,,<empty>
+20085,UNKNOWN,1,,const CFNumberRef,40,<empty>,,53,1,CASTTypeId,,<empty>
+20089,UNKNOWN,1,,const void*,22,<empty>,,54,1,CASTTypeId,,<empty>
+20172,UNKNOWN,1,,void,6,<empty>,,80,1,CASTTypeId,,<empty>
+20175,UNKNOWN,1,,void,6,<empty>,,81,1,CASTTypeId,,<empty>
+20178,UNKNOWN,1,,void,6,<empty>,,82,1,CASTTypeId,,<empty>
+20427,UNKNOWN,11,,"void vlc_assert_locked (vlc_mutex_t *p_mutex)
+{
+    if (RUNNING_ON_VALGRIND > 0)
+        return;
+    assert (pthread_mutex_lock (p_mutex) == EDEADLK);
+}",1,<empty>,,160,11,CASTProblemDeclaration,,<empty>
+20971,UNKNOWN,1,,void,6,<empty>,,422,1,CASTTypeId,,<empty>
+21016,UNKNOWN,1,,void,6,<empty>,,443,1,CASTTypeId,,<empty>
+21150,UNKNOWN,1,,void,6,<empty>,,499,1,CASTTypeId,,<empty>
+21153,UNKNOWN,1,,void,17,<empty>,,499,1,CASTTypeId,,<empty>
+21244,UNKNOWN,1,,void,6,<empty>,,540,1,CASTTypeId,,<empty>
+23074,UNKNOWN,1,,unsigned char *,20,<empty>,,457,1,CASTTypeId,,<empty>
+23106,UNKNOWN,1,,char *,24,<empty>,,463,1,CASTTypeId,,<empty>
+23655,UNKNOWN,-1,,"*va_arg( args, bool* ) = false;",13,<empty>,,164,9,CASTProblemStatement,,<empty>
+23659,UNKNOWN,-1,,"*va_arg( args, int64_t * ) = 0;",13,<empty>,,167,13,CASTProblemStatement,,<empty>
+23676,UNKNOWN,1,,void,6,<empty>,,179,1,CASTTypeId,,<empty>
+23679,UNKNOWN,1,,void,16,<empty>,,179,1,CASTTypeId,,<empty>
+24874,UNKNOWN,-1,,"msg_Err(p_object, ""Timestamp conversion failed for %""PRId64"": ""
+                ""no reference clock"", *pi_ts0);",9,<empty>,,420,2,CASTProblemStatement,,<empty>
+24996,UNKNOWN,-1,,"msg_Err(p_object,
+                ""Timestamp conversion failed (delay %""PRId64"", buffering ""
+                ""%""PRId64"", bound %""PRId64"")"",
+                i_ts_delay, i_ts_buffering, i_ts_bound);",13,<empty>,,453,1,CASTProblemStatement,,<empty>
+25900,UNKNOWN,-1,,"pf = va_arg( args, double * );",13,<empty>,,83,3,CASTProblemStatement,,<empty>
+25911,UNKNOWN,-1,,"f = va_arg( args, double );",13,<empty>,,88,8,CASTProblemStatement,,<empty>
+25919,UNKNOWN,-1,,"pi_64 = va_arg( args, int64_t * );",13,<empty>,,92,12,CASTProblemStatement,,<empty>
+25930,UNKNOWN,-1,,"pi_64 = va_arg( args, int64_t * );",13,<empty>,,97,17,CASTProblemStatement,,<empty>
+25953,UNKNOWN,-1,,"pi_int = va_arg( args, int * );",13,<empty>,,106,26,CASTProblemStatement,,<empty>
+25966,UNKNOWN,-1,,"i_int = va_arg( args, int );",13,<empty>,,111,31,CASTProblemStatement,,<empty>
+25973,UNKNOWN,1,,float,35,<empty>,,113,1,CASTTypeId,,<empty>
+25976,UNKNOWN,1,,float,63,<empty>,,113,1,CASTTypeId,,<empty>
+25980,UNKNOWN,-1,,"pi_int = va_arg( args, int * );",13,<empty>,,116,35,CASTProblemStatement,,<empty>
+25991,UNKNOWN,-1,,"i_int = va_arg( args, int );",13,<empty>,,121,40,CASTProblemStatement,,<empty>
+25999,UNKNOWN,-1,,"pi_64 = va_arg( args, int64_t * );",13,<empty>,,125,44,CASTProblemStatement,,<empty>
+26010,UNKNOWN,-1,,"pi_64 = va_arg( args, int64_t * );",13,<empty>,,130,49,CASTProblemStatement,,<empty>
+26070,UNKNOWN,-1,,"char *psz_cat = va_arg( args, char * );",13,<empty>,,155,1,CASTProblemStatement,,<empty>
+26071,UNKNOWN,-1,,"char *psz_name = va_arg( args, char * );",13,<empty>,,156,2,CASTProblemStatement,,<empty>
+26072,UNKNOWN,-1,,"char *psz_format = va_arg( args, char * );",13,<empty>,,157,3,CASTProblemStatement,,<empty>
+26117,UNKNOWN,-1,,"info_category_t *p_cat = va_arg( args, info_category_t * );",13,<empty>,,175,1,CASTProblemStatement,,<empty>
+26148,UNKNOWN,-1,,"char *psz_cat = va_arg( args, char * );",13,<empty>,,188,1,CASTProblemStatement,,<empty>
+26149,UNKNOWN,-1,,"char *psz_name = va_arg( args, char * );",13,<empty>,,189,2,CASTProblemStatement,,<empty>
+26174,UNKNOWN,-1,,"p_bkmk = va_arg( args, seekpoint_t * );",13,<empty>,,198,89,CASTProblemStatement,,<empty>
+26248,UNKNOWN,-1,,"p_bkmk = va_arg( args, seekpoint_t * );",13,<empty>,,223,99,CASTProblemStatement,,<empty>
+26249,UNKNOWN,-1,,"i_bkmk = va_arg( args, int );",13,<empty>,,224,100,CASTProblemStatement,,<empty>
+26305,UNKNOWN,-1,,"i_bkmk = va_arg( args, int );",13,<empty>,,244,108,CASTProblemStatement,,<empty>
+26359,UNKNOWN,-1,,"ppp_bkmk = va_arg( args, seekpoint_t *** );",13,<empty>,,264,115,CASTProblemStatement,,<empty>
+26360,UNKNOWN,-1,,"pi_bkmk = va_arg( args, int * );",13,<empty>,,265,116,CASTProblemStatement,,<empty>
+26491,UNKNOWN,-1,,"i_bkmk = va_arg( args, int );",13,<empty>,,305,130,CASTProblemStatement,,<empty>
+26506,UNKNOWN,-1,,"p_bkmk = va_arg( args, seekpoint_t * );",13,<empty>,,313,136,CASTProblemStatement,,<empty>
+26532,UNKNOWN,-1,,"input_title_t **p_title = va_arg( args, input_title_t ** );",13,<empty>,,322,1,CASTProblemStatement,,<empty>
+26533,UNKNOWN,-1,,"int *pi_req_title_offset = va_arg( args, int * );",13,<empty>,,323,2,CASTProblemStatement,,<empty>
+26670,UNKNOWN,-1,,"*va_arg( args, input_title_t *** ) = array;",13,<empty>,,361,9,CASTProblemStatement,,<empty>
+26671,UNKNOWN,-1,,"*va_arg( args, int * ) = count;",13,<empty>,,362,10,CASTProblemStatement,,<empty>
+26677,UNKNOWN,-1,,"seekpoint_t ***array = va_arg( args, seekpoint_t *** );",13,<empty>,,368,1,CASTProblemStatement,,<empty>
+26678,UNKNOWN,-1,,"int *pi_title_to_fetch = va_arg( args, int * );",13,<empty>,,369,2,CASTProblemStatement,,<empty>
+26815,UNKNOWN,-1,,e,27,<empty>,,412,1,CASTProblemStatement,,<empty>
+26816,UNKNOWN,-1,,"type =  (enum slave_type) va_arg( args, enum slave_type );",29,<empty>,,412,2,CASTProblemStatement,,<empty>
+26817,UNKNOWN,-1,,"psz = va_arg( args, char * );",13,<empty>,,413,3,CASTProblemStatement,,<empty>
+26818,UNKNOWN,-1,,"b_bool = va_arg( args, int );",13,<empty>,,414,4,CASTProblemStatement,,<empty>
+26820,UNKNOWN,-1,,l,16,<empty>,,415,6,CASTProblemStatement,,<empty>
+26821,UNKNOWN,-1,,"b_notify = va_arg( args, int );",18,<empty>,,415,7,CASTProblemStatement,,<empty>
+26823,UNKNOWN,-1,,l,16,<empty>,,416,9,CASTProblemStatement,,<empty>
+26824,UNKNOWN,-1,,"b_check_ext = va_arg( args, int );",18,<empty>,,416,10,CASTProblemStatement,,<empty>
+26914,UNKNOWN,1,,vlc_object_t *,42,<empty>,,448,1,CASTTypeId,,<empty>
+26921,UNKNOWN,-1,,"input_attachment_t ***ppp_attachment = va_arg( args, input_attachment_t *** );",13,<empty>,,456,1,CASTProblemStatement,,<empty>
+26922,UNKNOWN,-1,,"int *pi_attachment = va_arg( args, int * );",13,<empty>,,457,2,CASTProblemStatement,,<empty>
+27005,UNKNOWN,-1,,"input_attachment_t **pp_attachment = va_arg( args, input_attachment_t ** );",13,<empty>,,478,1,CASTProblemStatement,,<empty>
+27006,UNKNOWN,-1,,"const char *psz_name = va_arg( args, const char * );",13,<empty>,,479,2,CASTProblemStatement,,<empty>
+27073,UNKNOWN,-1,,"b_bool = va_arg( args, int );",13,<empty>,,497,161,CASTProblemStatement,,<empty>
+27082,UNKNOWN,-1,,"pb_bool = va_arg( args, bool* );",13,<empty>,,502,166,CASTProblemStatement,,<empty>
+27093,UNKNOWN,-1,,"val.i_int = va_arg( args, int );",13,<empty>,,507,171,CASTProblemStatement,,<empty>
+27126,UNKNOWN,-1,,"*p_viewpoint = *va_arg( args, const vlc_viewpoint_t* );",13,<empty>,,518,5,CASTProblemStatement,,<empty>
+27140,UNKNOWN,-1,,"va_arg( args, int )",23,<empty>,,522,1,CASTProblemExpression,,<empty>
+27172,UNKNOWN,-1,,"audio_output_t **pp_aout = va_arg( args, audio_output_t** );",13,<empty>,,535,4,CASTProblemStatement,,<empty>
+27182,UNKNOWN,-1,,"vout_thread_t ***ppp_vout = va_arg( args, vout_thread_t*** );",13,<empty>,,542,1,CASTProblemStatement,,<empty>
+27183,UNKNOWN,-1,,"size_t *pi_vout = va_arg( args, size_t * );",13,<empty>,,543,2,CASTProblemStatement,,<empty>
+27203,UNKNOWN,-1,,"const int i_id = va_arg( args, int );",13,<empty>,,553,1,CASTProblemStatement,,<empty>
+27204,UNKNOWN,-1,,"vlc_object_t **pp_decoder = va_arg( args, vlc_object_t ** );",13,<empty>,,554,2,CASTProblemStatement,,<empty>
+27205,UNKNOWN,-1,,"vout_thread_t **pp_vout = va_arg( args, vout_thread_t ** );",13,<empty>,,555,3,CASTProblemStatement,,<empty>
+27206,UNKNOWN,-1,,"audio_output_t **pp_aout = va_arg( args, audio_output_t ** );",13,<empty>,,556,4,CASTProblemStatement,,<empty>
+27220,UNKNOWN,-1,,"mtime_t *pi_system = va_arg( args, mtime_t * );",13,<empty>,,565,1,CASTProblemStatement,,<empty>
+27221,UNKNOWN,-1,,"mtime_t *pi_delay  = va_arg( args, mtime_t * );",13,<empty>,,566,2,CASTProblemStatement,,<empty>
+27233,UNKNOWN,-1,,l,16,<empty>,,572,2,CASTProblemStatement,,<empty>
+27234,UNKNOWN,-1,,"b_absolute = va_arg( args, int );",18,<empty>,,572,3,CASTProblemStatement,,<empty>
+27251,UNKNOWN,-1,,"vlc_renderer_item_t* p_item = va_arg( args, vlc_renderer_item_t* );",13,<empty>,,579,1,CASTProblemStatement,,<empty>
+27339,UNKNOWN,1,,vlc_value_t,23,<empty>,,609,1,CASTTypeId,,<empty>
+27347,UNKNOWN,1,,vlc_value_t,23,<empty>,,610,1,CASTTypeId,,<empty>
+28534,UNKNOWN,1,,int64_t,10,<empty>,,426,1,CASTTypeId,,<empty>
+28551,UNKNOWN,1,,int64_t,10,<empty>,,427,1,CASTTypeId,,<empty>
+29185,UNKNOWN,1,,int,17,<empty>,,588,1,CASTTypeId,,<empty>
+29340,UNKNOWN,-1,,"msg_Err(p_dec, ""Could not get display date for timestamp %""PRId64"""", i_ts);",9,<empty>,,642,1,CASTProblemStatement,,<empty>
+29859,UNKNOWN,-1,,"if( pi_ts1 != NULL )
+                msg_Err(p_dec, ""Could not convert timestamps %""PRId64
+                        "", %""PRId64"" for %s"", *pi_ts0, *pi_ts1, psz_name );",13,<empty>,,805,3,CASTProblemStatement,,<empty>
+29860,UNKNOWN,-1,,"else
+                msg_Err(p_dec, ""Could not convert timestamp %""PRId64"" for %s"", *pi_ts0, psz_name );",13,<empty>,,808,4,CASTProblemStatement,,<empty>
+30950,UNKNOWN,1,,void,6,<empty>,,1293,1,CASTTypeId,,<empty>
+30953,UNKNOWN,1,,void,22,<empty>,,1293,1,CASTTypeId,,<empty>
+30956,UNKNOWN,1,,void,38,<empty>,,1293,1,CASTTypeId,,<empty>
+31603,UNKNOWN,1,,decoder_t *,25,<empty>,,1541,1,CASTTypeId,,<empty>
+32440,UNKNOWN,1,,char*,15,<empty>,,1818,1,CASTTypeId,,<empty>
+32653,UNKNOWN,1,,char*,66,<empty>,,1894,1,CASTTypeId,,<empty>
+32666,UNKNOWN,1,,char*,14,<empty>,,1897,1,CASTTypeId,,<empty>
+33315,UNKNOWN,1,,uint64_t,29,<empty>,,2176,1,CASTTypeId,,<empty>
+33986,UNKNOWN,2,,),48,<empty>,,32,2,CASTProblemDeclaration,,<empty>
+34418,UNKNOWN,1,,void,6,<empty>,,169,1,CASTTypeId,,<empty>
+34446,UNKNOWN,-1,,"demux_t *demux = va_arg(ap, demux_t *);",5,<empty>,,181,2,CASTProblemStatement,,<empty>
+34783,UNKNOWN,1,,demux_priv_t *,27,<empty>,,291,1,CASTTypeId,,<empty>
+34971,UNKNOWN,1,,unsigned,5,<empty>,,385,1,CASTTypeId,,<empty>
+34980,UNKNOWN,1,,unsigned,5,<empty>,,386,1,CASTTypeId,,<empty>
+34989,UNKNOWN,1,,unsigned,5,<empty>,,387,1,CASTTypeId,,<empty>
+34998,UNKNOWN,1,,unsigned,5,<empty>,,388,1,CASTTypeId,,<empty>
+35007,UNKNOWN,1,,unsigned,5,<empty>,,389,1,CASTTypeId,,<empty>
+35016,UNKNOWN,1,,unsigned,5,<empty>,,390,1,CASTTypeId,,<empty>
+35026,UNKNOWN,-1,,"bool *b = va_arg( args, bool * );",13,<empty>,,396,1,CASTProblemStatement,,<empty>
+35065,UNKNOWN,-1,,"pi64 = (int64_t*)va_arg( args, int64_t * );",13,<empty>,,413,19,CASTProblemStatement,,<empty>
+35092,UNKNOWN,-1,,"pi64 = (int64_t*)va_arg( args, int64_t * );",13,<empty>,,422,24,CASTProblemStatement,,<empty>
+35119,UNKNOWN,-1,,"pf = (double*)va_arg( args, double * );",13,<empty>,,431,29,CASTProblemStatement,,<empty>
+35130,UNKNOWN,1,,double,24,<empty>,,434,1,CASTTypeId,,<empty>
+35135,UNKNOWN,1,,double,24,<empty>,,435,1,CASTTypeId,,<empty>
+35145,UNKNOWN,-1,,"f = (double)va_arg( args, double );",13,<empty>,,442,34,CASTProblemStatement,,<empty>
+35189,UNKNOWN,1,,int64_t,20,<empty>,,456,1,CASTTypeId,,<empty>
+35230,UNKNOWN,-1,,"*va_arg( args, bool * ) = false;",13,<empty>,,469,44,CASTProblemStatement,,<empty>
+35774,UNKNOWN,6,,),66,<empty>,,57,6,CASTProblemDeclaration,,<empty>
+36117,UNKNOWN,-1,,"*va_arg(ap, double *) = dc->stats.position;",13,<empty>,,143,4,CASTProblemStatement,,<empty>
+36131,UNKNOWN,-1,,"*va_arg(ap, int64_t *) = dc->stats.length;",13,<empty>,,148,10,CASTProblemStatement,,<empty>
+36145,UNKNOWN,-1,,"*va_arg(ap, int64_t *) = dc->stats.time;",13,<empty>,,153,16,CASTProblemStatement,,<empty>
+37922,UNKNOWN,1,,double,31,<empty>,,669,1,CASTTypeId,,<empty>
+37935,UNKNOWN,1,,int,24,<empty>,,672,1,CASTTypeId,,<empty>
+37969,UNKNOWN,1,,int,16,<empty>,,684,1,CASTTypeId,,<empty>
+37974,UNKNOWN,1,,int,47,<empty>,,684,1,CASTTypeId,,<empty>
+38064,UNKNOWN,1,,int,16,<empty>,,708,1,CASTTypeId,,<empty>
+38509,UNKNOWN,1,,int,70,<empty>,,841,1,CASTTypeId,,<empty>
+38915,UNKNOWN,-1,,"asprintf( &text.psz_string, ""%s %""PRId64"" - [%s]"", _( ""Track"" ), val.i_int, psz_language ) == -1",17,<empty>,,975,1,CASTProblemExpression,,<empty>
+38925,UNKNOWN,-1,,"asprintf( &text.psz_string, ""%s %""PRId64, _( ""Track"" ), val.i_int ) == -1",17,<empty>,,980,1,CASTProblemExpression,,<empty>
+43158,UNKNOWN,-1,,"es_out_id_t *es = va_arg( args, es_out_id_t * );",9,<empty>,,2278,1,CASTProblemStatement,,<empty>
+43160,UNKNOWN,-1,,l,12,<empty>,,2279,3,CASTProblemStatement,,<empty>
+43161,UNKNOWN,-1,,"b = va_arg( args, int );",14,<empty>,,2279,4,CASTProblemStatement,,<empty>
+43204,UNKNOWN,-1,,"es_out_id_t *es = va_arg( args, es_out_id_t * );",9,<empty>,,2295,1,CASTProblemStatement,,<empty>
+43205,UNKNOWN,-1,,"bool *pb = va_arg( args, bool * );",9,<empty>,,2296,2,CASTProblemStatement,,<empty>
+43216,UNKNOWN,-1,,e,33,<empty>,,2304,1,CASTProblemStatement,,<empty>
+43217,UNKNOWN,-1,,"i_cat = va_arg( args, enum es_format_category_e );",35,<empty>,,2304,2,CASTProblemStatement,,<empty>
+43218,UNKNOWN,-1,,e,28,<empty>,,2305,3,CASTProblemStatement,,<empty>
+43219,UNKNOWN,-1,,"i_pol = va_arg( args, enum es_out_policy_e );",30,<empty>,,2305,4,CASTProblemStatement,,<empty>
+43243,UNKNOWN,-1,,"int *pi_group = va_arg( args, int * );",9,<empty>,,2315,1,CASTProblemStatement,,<empty>
+43255,UNKNOWN,-1,,"const int i_mode = va_arg( args, int );",9,<empty>,,2322,1,CASTProblemStatement,,<empty>
+43425,UNKNOWN,-1,,"es_out_id_t *es = va_arg( args, es_out_id_t * );",9,<empty>,,2363,1,CASTProblemStatement,,<empty>
+43703,UNKNOWN,-1,,"*va_arg( args, void **) = selected_es;",9,<empty>,,2436,6,CASTProblemStatement,,<empty>
+43709,UNKNOWN,-1,,"int *selected_es = va_arg( args, void * );",9,<empty>,,2441,1,CASTProblemStatement,,<empty>
+43758,UNKNOWN,-1,,"es_out_id_t *es = va_arg( args, es_out_id_t * );",9,<empty>,,2458,1,CASTProblemStatement,,<empty>
+43864,UNKNOWN,-1,,"i_group = va_arg( args, int );",13,<empty>,,2508,1,CASTProblemStatement,,<empty>
+44014,UNKNOWN,1,,int,31,<empty>,,2553,1,CASTTypeId,,<empty>
+44053,UNKNOWN,1,,int,31,<empty>,,2564,1,CASTTypeId,,<empty>
+44085,UNKNOWN,-1,,"int i = va_arg( args, int );",9,<empty>,,2586,1,CASTProblemStatement,,<empty>
+44125,UNKNOWN,-1,,"es_out_id_t *es = va_arg( args, es_out_id_t * );",9,<empty>,,2603,1,CASTProblemStatement,,<empty>
+44126,UNKNOWN,-1,,"es_format_t *p_fmt = va_arg( args, es_format_t * );",9,<empty>,,2604,2,CASTProblemStatement,,<empty>
+44161,UNKNOWN,-1,,"es_out_id_t *es = va_arg( args, es_out_id_t * );",9,<empty>,,2622,1,CASTProblemStatement,,<empty>
+44166,UNKNOWN,-1,,),33,<empty>,,2623,4,CASTProblemStatement,,<empty>
+44167,UNKNOWN,-1,,"va_arg( args, int );",34,<empty>,,2623,5,CASTProblemStatement,,<empty>
+44215,UNKNOWN,-1,,"int i_group = va_arg( args, int );",9,<empty>,,2646,1,CASTProblemStatement,,<empty>
+44217,UNKNOWN,-1,,t,24,<empty>,,2647,3,CASTProblemStatement,,<empty>
+44218,UNKNOWN,-1,,"*p_meta = va_arg( args, const vlc_meta_t * );",26,<empty>,,2647,4,CASTProblemStatement,,<empty>
+44228,UNKNOWN,-1,,"int i_group = va_arg( args, int );",9,<empty>,,2654,1,CASTProblemStatement,,<empty>
+44230,UNKNOWN,-1,,t,23,<empty>,,2655,3,CASTProblemStatement,,<empty>
+44231,UNKNOWN,-1,,"*p_epg = va_arg( args, const vlc_epg_t * );",25,<empty>,,2655,4,CASTProblemStatement,,<empty>
+44241,UNKNOWN,-1,,"int i_group = va_arg( args, int );",9,<empty>,,2662,1,CASTProblemStatement,,<empty>
+44243,UNKNOWN,-1,,t,29,<empty>,,2663,3,CASTProblemStatement,,<empty>
+44244,UNKNOWN,-1,,"*p_evt = va_arg( args, const vlc_epg_event_t * );",31,<empty>,,2663,4,CASTProblemStatement,,<empty>
+44268,UNKNOWN,-1,,"int i_group = va_arg( args, int );",9,<empty>,,2678,1,CASTProblemStatement,,<empty>
+44277,UNKNOWN,-1,,t,24,<empty>,,2685,2,CASTProblemStatement,,<empty>
+44278,UNKNOWN,-1,,"*p_meta = va_arg( args, const vlc_meta_t * );",26,<empty>,,2685,3,CASTProblemStatement,,<empty>
+44287,UNKNOWN,-1,,"mtime_t *pi_wakeup = va_arg( args, mtime_t* );",9,<empty>,,2693,1,CASTProblemStatement,,<empty>
+44302,UNKNOWN,-1,,"const int i_id = va_arg( args, int );",9,<empty>,,2702,1,CASTProblemStatement,,<empty>
+44360,UNKNOWN,-1,,"const int i_id = va_arg( args, int );",9,<empty>,,2726,1,CASTProblemStatement,,<empty>
+44373,UNKNOWN,-1,,"vlc_object_t    **pp_decoder = va_arg( args, vlc_object_t ** );",9,<empty>,,2731,5,CASTProblemStatement,,<empty>
+44374,UNKNOWN,-1,,"vout_thread_t   **pp_vout    = va_arg( args, vout_thread_t ** );",9,<empty>,,2732,6,CASTProblemStatement,,<empty>
+44375,UNKNOWN,-1,,"audio_output_t **pp_aout    = va_arg( args, audio_output_t ** );",9,<empty>,,2733,7,CASTProblemStatement,,<empty>
+44425,UNKNOWN,-1,,"bool *pb = va_arg( args, bool* );",9,<empty>,,2754,1,CASTProblemStatement,,<empty>
+44437,UNKNOWN,-1,,"bool *pb = va_arg( args, bool* );",9,<empty>,,2761,1,CASTProblemStatement,,<empty>
+44448,UNKNOWN,-1,,"const int i_cat = va_arg( args, int );",9,<empty>,,2768,1,CASTProblemStatement,,<empty>
+44465,UNKNOWN,-1,,l,12,<empty>,,2776,2,CASTProblemStatement,,<empty>
+44466,UNKNOWN,-1,,"b = va_arg( args, int );",14,<empty>,,2776,3,CASTProblemStatement,,<empty>
+44478,UNKNOWN,-1,,),43,<empty>,,2782,3,CASTProblemStatement,,<empty>
+44479,UNKNOWN,-1,,"va_arg( args, int );",44,<empty>,,2782,4,CASTProblemStatement,,<empty>
+44484,UNKNOWN,-1,,),36,<empty>,,2783,7,CASTProblemStatement,,<empty>
+44485,UNKNOWN,-1,,"va_arg( args, int );",37,<empty>,,2783,8,CASTProblemStatement,,<empty>
+44507,UNKNOWN,-1,,"const int i_src_rate = va_arg( args, int );",9,<empty>,,2794,1,CASTProblemStatement,,<empty>
+44508,UNKNOWN,-1,,"const int i_rate = va_arg( args, int );",9,<empty>,,2795,2,CASTProblemStatement,,<empty>
+44545,UNKNOWN,-1,,"double f_position = va_arg( args, double );",9,<empty>,,2819,1,CASTProblemStatement,,<empty>
+44616,UNKNOWN,1,,double,32,<empty>,,2841,1,CASTTypeId,,<empty>
+44650,UNKNOWN,-1,,"int     i_cr_average = va_arg( args, int );",9,<empty>,,2853,5,CASTProblemStatement,,<empty>
+44739,UNKNOWN,-1,,"mtime_t *pi_system = va_arg( args, mtime_t *);",9,<empty>,,2879,5,CASTProblemStatement,,<empty>
+44740,UNKNOWN,-1,,"mtime_t *pi_delay  = va_arg( args, mtime_t *);",9,<empty>,,2880,6,CASTProblemStatement,,<empty>
+44772,UNKNOWN,-1,,l,18,<empty>,,2894,6,CASTProblemStatement,,<empty>
+44773,UNKNOWN,-1,,"b_absolute = va_arg( args, int );",23,<empty>,,2894,7,CASTProblemStatement,,<empty>
+44829,UNKNOWN,-1,,"input_item_node_t *node = va_arg(args, input_item_node_t *);",9,<empty>,,2911,1,CASTProblemStatement,,<empty>
+45470,UNKNOWN,1,,char*,56,<empty>,,3133,1,CASTTypeId,,<empty>
+45490,UNKNOWN,1,,char*,33,<empty>,,3136,1,CASTTypeId,,<empty>
+45792,UNKNOWN,1,,float,26,<empty>,,3207,1,CASTTypeId,,<empty>
+45805,UNKNOWN,-1,,"if( div.rem > 0 )
+               info_category_AddInfo( p_cat, _(""Frame rate""), ""%""PRId64"".%06u"",
+                                      div.quot, (unsigned int )div.rem );",12,<empty>,,3210,2,CASTProblemStatement,,<empty>
+45806,UNKNOWN,-1,,"else
+               info_category_AddInfo( p_cat, _(""Frame rate""), ""%""PRId64,
+                                      div.quot );",12,<empty>,,3213,3,CASTProblemStatement,,<empty>
+46310,UNKNOWN,1,,float,23,<empty>,,3344,1,CASTTypeId,,<empty>
+46326,UNKNOWN,1,,float,23,<empty>,,3345,1,CASTTypeId,,<empty>
+46370,UNKNOWN,1,,float,23,<empty>,,3351,1,CASTTypeId,,<empty>
+46386,UNKNOWN,1,,float,23,<empty>,,3352,1,CASTTypeId,,<empty>
+46430,UNKNOWN,1,,float,23,<empty>,,3358,1,CASTTypeId,,<empty>
+46446,UNKNOWN,1,,float,23,<empty>,,3359,1,CASTTypeId,,<empty>
+46490,UNKNOWN,1,,float,23,<empty>,,3365,1,CASTTypeId,,<empty>
+46506,UNKNOWN,1,,float,23,<empty>,,3366,1,CASTTypeId,,<empty>
+47471,UNKNOWN,1,,int,15,<empty>,,345,1,CASTTypeId,,<empty>
+48203,UNKNOWN,-1,,"es_out_id_t *p_es = (es_out_id_t*)va_arg( args, es_out_id_t * );",9,<empty>,,670,1,CASTProblemStatement,,<empty>
+48204,UNKNOWN,-1,,"bool *pb_enabled = (bool*)va_arg( args, bool* );",9,<empty>,,671,2,CASTProblemStatement,,<empty>
+48229,UNKNOWN,-1,,"bool *pb_empty = (bool*)va_arg( args, bool* );",9,<empty>,,683,1,CASTProblemStatement,,<empty>
+48237,UNKNOWN,-1,,"mtime_t *pi_wakeup = (mtime_t*)va_arg( args, mtime_t* );",9,<empty>,,688,1,CASTProblemStatement,,<empty>
+48245,UNKNOWN,-1,,"bool *pb_buffering = (bool *)va_arg( args, bool* );",9,<empty>,,693,1,CASTProblemStatement,,<empty>
+48257,UNKNOWN,-1,,),43,<empty>,,698,3,CASTProblemStatement,,<empty>
+48258,UNKNOWN,-1,,"va_arg( args, int );",44,<empty>,,698,4,CASTProblemStatement,,<empty>
+48263,UNKNOWN,-1,,),36,<empty>,,699,7,CASTProblemStatement,,<empty>
+48264,UNKNOWN,-1,,"va_arg( args, int );",37,<empty>,,699,8,CASTProblemStatement,,<empty>
+48269,UNKNOWN,1,,mtime_t,33,<empty>,,700,1,CASTTypeId,,<empty>
+48282,UNKNOWN,-1,,"const int i_src_rate = (int)va_arg( args, int );",9,<empty>,,706,1,CASTProblemStatement,,<empty>
+48283,UNKNOWN,-1,,"const int i_rate = (int)va_arg( args, int );",9,<empty>,,707,2,CASTProblemStatement,,<empty>
+48296,UNKNOWN,1,,mtime_t,33,<empty>,,713,1,CASTTypeId,,<empty>
+48334,UNKNOWN,-1,,l,18,<empty>,,732,2,CASTProblemStatement,,<empty>
+48335,UNKNOWN,-1,,"b_absolute = va_arg( args, int );",23,<empty>,,732,3,CASTProblemStatement,,<empty>
+50097,UNKNOWN,1,,es_format_t*,31,<empty>,,1320,1,CASTTypeId,,<empty>
+50359,UNKNOWN,-1,,"p_cmd->u.control.u.i_int = (int)va_arg( args, int );",9,<empty>,,1387,7,CASTProblemStatement,,<empty>
+50376,UNKNOWN,1,,int64_t,37,<empty>,,1392,1,CASTTypeId,,<empty>
+50383,UNKNOWN,-1,,"p_cmd->u.control.u.int_i64.i_int = (int)va_arg( args, int );",9,<empty>,,1396,17,CASTProblemStatement,,<empty>
+50397,UNKNOWN,1,,int64_t,45,<empty>,,1397,1,CASTTypeId,,<empty>
+50404,UNKNOWN,-1,,"p_cmd->u.control.u.es_bool.p_es = (es_out_id_t*)va_arg( args, es_out_id_t * );",9,<empty>,,1401,22,CASTProblemStatement,,<empty>
+50418,UNKNOWN,-1,,),50,<empty>,,1402,24,CASTProblemStatement,,<empty>
+50419,UNKNOWN,-1,,"va_arg( args, int );",51,<empty>,,1402,25,CASTProblemStatement,,<empty>
+50433,UNKNOWN,-1,,"if( i_query == ES_OUT_SET_GROUP_META )
+            p_cmd->u.control.u.int_meta.i_int = (int)va_arg( args, int );",9,<empty>,,1413,1,CASTProblemStatement,,<empty>
+50435,UNKNOWN,-1,,t,24,<empty>,,1415,3,CASTProblemStatement,,<empty>
+50436,UNKNOWN,-1,,"*p_meta = va_arg( args, const vlc_meta_t * );",26,<empty>,,1415,4,CASTProblemStatement,,<empty>
+50497,UNKNOWN,1,,vlc_meta_t*,51,<empty>,,1427,1,CASTTypeId,,<empty>
+50503,UNKNOWN,-1,,"p_cmd->u.control.u.int_epg.i_int = (int)va_arg( args, int );",9,<empty>,,1434,1,CASTProblemStatement,,<empty>
+50505,UNKNOWN,-1,,t,23,<empty>,,1435,3,CASTProblemStatement,,<empty>
+50506,UNKNOWN,-1,,"*p_epg = va_arg( args, const vlc_epg_t * );",25,<empty>,,1435,4,CASTProblemStatement,,<empty>
+50555,UNKNOWN,1,,vlc_epg_t*,49,<empty>,,1446,1,CASTTypeId,,<empty>
+50561,UNKNOWN,-1,,"p_cmd->u.control.u.int_epg_evt.i_int = (int)va_arg( args, int );",9,<empty>,,1452,1,CASTProblemStatement,,<empty>
+50563,UNKNOWN,-1,,t,29,<empty>,,1453,3,CASTProblemStatement,,<empty>
+50564,UNKNOWN,-1,,"*p_evt = va_arg( args, const vlc_epg_event_t * );",31,<empty>,,1453,4,CASTProblemStatement,,<empty>
+50613,UNKNOWN,1,,vlc_epg_event_t*,53,<empty>,,1464,1,CASTTypeId,,<empty>
+50629,UNKNOWN,1,,int64_t,37,<empty>,,1469,1,CASTTypeId,,<empty>
+50640,UNKNOWN,-1,,"p_cmd->u.control.u.p_es = (es_out_id_t*)va_arg( args, es_out_id_t * );",9,<empty>,,1476,55,CASTProblemStatement,,<empty>
+50644,UNKNOWN,-1,,"p_cmd->u.control.u.es_policy.i_cat = (int) va_arg( args, int );",9,<empty>,,1480,59,CASTProblemStatement,,<empty>
+50645,UNKNOWN,-1,,"p_cmd->u.control.u.es_policy.i_policy = (int) va_arg( args, int );",9,<empty>,,1481,60,CASTProblemStatement,,<empty>
+50649,UNKNOWN,-1,,"p_cmd->u.control.u.es_bool.p_es = (es_out_id_t*)va_arg( args, es_out_id_t * );",9,<empty>,,1485,64,CASTProblemStatement,,<empty>
+50663,UNKNOWN,-1,,),50,<empty>,,1486,66,CASTProblemStatement,,<empty>
+50664,UNKNOWN,-1,,"va_arg( args, int );",51,<empty>,,1486,67,CASTProblemStatement,,<empty>
+50669,UNKNOWN,-1,,"p_cmd->u.control.u.es_fmt.p_es = (es_out_id_t*)va_arg( args, es_out_id_t * );",9,<empty>,,1491,1,CASTProblemStatement,,<empty>
+50670,UNKNOWN,-1,,"es_format_t *p_fmt = (es_format_t*)va_arg( args, es_format_t * );",9,<empty>,,1492,2,CASTProblemStatement,,<empty>
+50738,UNKNOWN,-1,,"double f_position = (double)va_arg( args, double );",9,<empty>,,1509,1,CASTProblemStatement,,<empty>
+50743,UNKNOWN,1,,mtime_t,27,<empty>,,1510,1,CASTTypeId,,<empty>
+50751,UNKNOWN,1,,mtime_t,29,<empty>,,1511,1,CASTTypeId,,<empty>
+50802,UNKNOWN,1,,mtime_t,32,<empty>,,1520,1,CASTTypeId,,<empty>
+50810,UNKNOWN,1,,mtime_t,33,<empty>,,1521,1,CASTTypeId,,<empty>
+50814,UNKNOWN,-1,,"int     i_cr_average = (int)va_arg( args, int );",9,<empty>,,1522,5,CASTProblemStatement,,<empty>
+51450,UNKNOWN,-1,,"dirname != NULL
+     && asprintf( filename, ""%s""DIR_SEP PACKAGE_NAME""-timeshift.XXXXXX"",
+                  dirname ) >= 0",9,<empty>,,1646,1,CASTProblemExpression,,<empty>
+51472,UNKNOWN,-1,,"*filename = strdup( DIR_SEP""tmp""DIR_SEP PACKAGE_NAME""-timeshift.XXXXXX"" );",5,<empty>,,1659,2,CASTProblemStatement,,<empty>
+51665,UNKNOWN,1,,float,20,<empty>,,94,1,CASTTypeId,,<empty>
+51668,UNKNOWN,1,,float,48,<empty>,,94,1,CASTTypeId,,<empty>
+52141,UNKNOWN,1,,char*,24,<empty>,,312,1,CASTTypeId,,<empty>
+53194,UNKNOWN,1,,input_thread_t *,32,<empty>,,235,1,CASTTypeId,,<empty>
+53855,UNKNOWN,-1,,"msg_Dbg( p_input, ""adding bookmark: %s, time=%""PRId64,
+                                  p_seekpoint->psz_name,
+                                  p_seekpoint->i_time_offset );",17,<empty>,,455,13,CASTProblemStatement,,<empty>
+55283,UNKNOWN,-1,,"msg_Dbg( p_input, ""starting at time: %""PRId64""s"",
+                 priv->i_start / CLOCK_FREQ );",9,<empty>,,963,2,CASTProblemStatement,,<empty>
+55337,UNKNOWN,1,,const input_item_slave_t **,45,<empty>,,979,1,CASTTypeId,,<empty>
+55344,UNKNOWN,1,,const input_item_slave_t **,45,<empty>,,980,1,CASTTypeId,,<empty>
+55496,UNKNOWN,1,,mtime_t,48,<empty>,,1029,1,CASTTypeId,,<empty>
+58416,UNKNOWN,1,,vlc_value_t,23,<empty>,,1823,1,CASTTypeId,,<empty>
+58452,UNKNOWN,1,,vlc_value_t,23,<empty>,,1835,1,CASTTypeId,,<empty>
+58920,UNKNOWN,1,,double,33,<empty>,,2022,1,CASTTypeId,,<empty>
+58932,UNKNOWN,1,,double,45,<empty>,,2025,1,CASTTypeId,,<empty>
+59037,UNKNOWN,1,,double,37,<empty>,,2067,1,CASTTypeId,,<empty>
+59040,UNKNOWN,1,,double,54,<empty>,,2067,1,CASTTypeId,,<empty>
+59067,UNKNOWN,-1,,"msg_Warn( p_input, ""INPUT_CONTROL_SET_TIME %""PRId64
+                         "" failed or not possible"", i_time );",17,<empty>,,2076,1,CASTProblemStatement,,<empty>
+59390,UNKNOWN,1,,int,51,<empty>,,2195,1,CASTTypeId,,<empty>
+59403,UNKNOWN,1,,int,81,<empty>,,2197,1,CASTTypeId,,<empty>
+59417,UNKNOWN,1,,int,55,<empty>,,2202,1,CASTTypeId,,<empty>
+60038,UNKNOWN,-1,,"msg_Err( p_input, ""invalid bookmark %""PRId64, val.i_int );",17,<empty>,,2395,1,CASTProblemStatement,,<empty>
+62512,UNKNOWN,1,,unsigned long,34,<empty>,,3321,1,CASTTypeId,,<empty>
+62517,UNKNOWN,1,,int,65,<empty>,,3321,1,CASTTypeId,,<empty>
+62548,UNKNOWN,1,,unsigned long,40,<empty>,,3329,1,CASTTypeId,,<empty>
+62553,UNKNOWN,1,,int,71,<empty>,,3329,1,CASTTypeId,,<empty>
+63132,UNKNOWN,-1,,"((ext != NULL)
+            ? asprintf(&path, ""%s""DIR_SEP""%s.%s"", dir, filename, ext)
+            : asprintf(&path, ""%s""DIR_SEP""%s"", dir, filename)) < 0",9,<empty>,,3557,1,CASTProblemExpression,,<empty>
+63212,UNKNOWN,11,,),76,<empty>,,53,11,CASTProblemDeclaration,,<empty>
+63266,UNKNOWN,-1,,S,22,<empty>,,46,2,CASTProblemDeclaration,,<empty>
+63568,UNKNOWN,1,,vlc_event_t,48,<empty>,,64,1,CASTTypeId,,<empty>
+63597,UNKNOWN,1,,vlc_event_t,44,<empty>,,71,1,CASTTypeId,,<empty>
+63691,UNKNOWN,1,,vlc_event_t,48,<empty>,,101,1,CASTTypeId,,<empty>
+63850,UNKNOWN,1,,vlc_event_t,44,<empty>,,154,1,CASTTypeId,,<empty>
+64749,UNKNOWN,1,,vlc_event_t,48,<empty>,,423,1,CASTTypeId,,<empty>
+64904,UNKNOWN,1,,input_item_owner *,33,<empty>,,472,1,CASTTypeId,,<empty>
+64926,UNKNOWN,1,,input_item_owner *,33,<empty>,,480,1,CASTTypeId,,<empty>
+65392,UNKNOWN,1,,unsigned,31,<empty>,,605,1,CASTTypeId,,<empty>
+65405,UNKNOWN,1,,unsigned,31,<empty>,,607,1,CASTTypeId,,<empty>
+65930,UNKNOWN,1,,vlc_event_t,48,<empty>,,788,1,CASTTypeId,,<empty>
+66013,UNKNOWN,1,,vlc_event_t,23,<empty>,,826,1,CASTTypeId,,<empty>
+66077,UNKNOWN,1,,vlc_event_t,23,<empty>,,845,1,CASTTypeId,,<empty>
+66157,UNKNOWN,1,,vlc_event_t,23,<empty>,,864,1,CASTTypeId,,<empty>
+66283,UNKNOWN,1,,vlc_event_t,27,<empty>,,898,1,CASTTypeId,,<empty>
+66420,UNKNOWN,1,,vlc_event_t,23,<empty>,,993,1,CASTTypeId,,<empty>
+66532,UNKNOWN,1,,vlc_event_t,23,<empty>,,1054,1,CASTTypeId,,<empty>
+67343,UNKNOWN,1,,vlc_event_t,55,<empty>,,1304,1,CASTTypeId,,<empty>
+69085,UNKNOWN,1,,vlc_meta_t*,22,<empty>,,94,1,CASTTypeId,,<empty>
+69213,UNKNOWN,1,,char *,27,<empty>,,138,1,CASTTypeId,,<empty>
+69249,UNKNOWN,1,,char *,13,<empty>,,147,1,CASTTypeId,,<empty>
+69402,UNKNOWN,1,,const char*,77,<empty>,,199,1,CASTTypeId,,<empty>
+70172,UNKNOWN,1,,void,5,<empty>,,201,1,CASTTypeId,,<empty>
+71467,UNKNOWN,1,,counter_t*,29,<empty>,,40,1,CASTTypeId,,<empty>
+71561,UNKNOWN,1,,float,12,<empty>,,65,1,CASTTypeId,,<empty>
+71583,UNKNOWN,1,,void,6,<empty>,,70,1,CASTTypeId,,<empty>
+71987,UNKNOWN,1,,counter_sample_t*,18,<empty>,,173,1,CASTTypeId,,<empty>
+72057,UNKNOWN,1,,counter_sample_t*,40,<empty>,,192,1,CASTTypeId,,<empty>
+72308,UNKNOWN,1,,stream_priv_t *,28,<empty>,,103,1,CASTTypeId,,<empty>
+72364,UNKNOWN,1,,stream_priv_t *,28,<empty>,,122,1,CASTTypeId,,<empty>
+72476,UNKNOWN,1,,stream_priv_t *,28,<empty>,,174,1,CASTTypeId,,<empty>
+72775,UNKNOWN,1,,char *,33,<empty>,,264,1,CASTTypeId,,<empty>
+72817,UNKNOWN,1,,char *,36,<empty>,,276,1,CASTTypeId,,<empty>
+72830,UNKNOWN,1,,char *,34,<empty>,,285,1,CASTTypeId,,<empty>
+72992,UNKNOWN,1,,size_t,21,<empty>,,329,1,CASTTypeId,,<empty>
+72997,UNKNOWN,1,,size_t,22,<empty>,,330,1,CASTTypeId,,<empty>
+73045,UNKNOWN,1,,size_t,23,<empty>,,341,1,CASTTypeId,,<empty>
+73155,UNKNOWN,1,,ssize_t,31,<empty>,,384,1,CASTTypeId,,<empty>
+73170,UNKNOWN,1,,stream_priv_t *,28,<empty>,,389,1,CASTTypeId,,<empty>
+73305,UNKNOWN,1,,stream_priv_t *,28,<empty>,,433,1,CASTTypeId,,<empty>
+73331,UNKNOWN,1,,ssize_t,24,<empty>,,440,1,CASTTypeId,,<empty>
+73367,UNKNOWN,1,,ssize_t,20,<empty>,,449,1,CASTTypeId,,<empty>
+73415,UNKNOWN,1,,char *,20,<empty>,,466,1,CASTTypeId,,<empty>
+73422,UNKNOWN,1,,size_t,24,<empty>,,467,1,CASTTypeId,,<empty>
+73443,UNKNOWN,1,,stream_priv_t *,28,<empty>,,477,1,CASTTypeId,,<empty>
+73595,UNKNOWN,1,,stream_priv_t *,28,<empty>,,531,1,CASTTypeId,,<empty>
+73743,UNKNOWN,1,,const stream_priv_t *,34,<empty>,,581,1,CASTTypeId,,<empty>
+73758,UNKNOWN,1,,const stream_priv_t *,34,<empty>,,588,1,CASTTypeId,,<empty>
+73774,UNKNOWN,1,,stream_priv_t *,28,<empty>,,595,1,CASTTypeId,,<empty>
+73930,UNKNOWN,1,,stream_priv_t *,28,<empty>,,657,1,CASTTypeId,,<empty>
+74098,UNKNOWN,4,,),50,<empty>,,63,4,CASTProblemDeclaration,,<empty>
+74106,UNKNOWN,7,,),69,<empty>,,83,7,CASTProblemDeclaration,,<empty>
+74400,UNKNOWN,1,,void,6,<empty>,,184,1,CASTTypeId,,<empty>
+74403,UNKNOWN,1,,void,6,<empty>,,185,1,CASTTypeId,,<empty>
+74484,UNKNOWN,1,,char*,12,<empty>,,222,1,CASTTypeId,,<empty>
+75021,UNKNOWN,1,,void,6,<empty>,,88,1,CASTTypeId,,<empty>
+75034,UNKNOWN,-1,,"*va_arg(ap, bool *) = false;",13,<empty>,,96,9,CASTProblemStatement,,<empty>
+75038,UNKNOWN,-1,,"*va_arg(ap, int64_t *) = DEFAULT_PTS_DELAY;",13,<empty>,,100,13,CASTProblemStatement,,<empty>
+75216,UNKNOWN,1,,ssize_t,52,<empty>,,168,1,CASTTypeId,,<empty>
+75405,UNKNOWN,1,,void *,58,<empty>,,80,1,CASTTypeId,,<empty>
+75667,UNKNOWN,-1,,"pi_64 = va_arg( args, uint64_t * );",13,<empty>,,94,3,CASTProblemStatement,,<empty>
+75683,UNKNOWN,-1,,"*va_arg( args, bool * ) = true;",13,<empty>,,102,14,CASTProblemStatement,,<empty>
+75687,UNKNOWN,-1,,"*va_arg( args, int64_t * ) = 0;",13,<empty>,,106,18,CASTProblemStatement,,<empty>
+76029,UNKNOWN,1,,const input_item_slave_t **,45,<empty>,,121,1,CASTTypeId,,<empty>
+76036,UNKNOWN,1,,const input_item_slave_t **,45,<empty>,,122,1,CASTTypeId,,<empty>
+76551,UNKNOWN,-1,,"""",37,<empty>,,336,8,CASTProblemStatement,,<empty>
+76553,UNKNOWN,-1,,P,44,<empty>,,336,10,CASTProblemStatement,,<empty>
+77408,UNKNOWN,1,,void *,62,<empty>,,240,1,CASTTypeId,,<empty>
+77410,UNKNOWN,1,,intptr_t,70,<empty>,,240,1,CASTTypeId,,<empty>
+77603,UNKNOWN,1,,void *,47,<empty>,,304,1,CASTTypeId,,<empty>
+77605,UNKNOWN,1,,intptr_t,55,<empty>,,304,1,CASTTypeId,,<empty>
+78449,UNKNOWN,1,,input_thread_t*,32,<empty>,,560,1,CASTTypeId,,<empty>
+78492,UNKNOWN,1,,input_thread_t*,32,<empty>,,575,1,CASTTypeId,,<empty>
+78529,UNKNOWN,1,,input_thread_t*,32,<empty>,,588,1,CASTTypeId,,<empty>
+78597,UNKNOWN,1,,input_thread_t*,32,<empty>,,609,1,CASTTypeId,,<empty>
+78635,UNKNOWN,1,,double,24,<empty>,,618,1,CASTTypeId,,<empty>
+78640,UNKNOWN,1,,double,45,<empty>,,618,1,CASTTypeId,,<empty>
+78712,UNKNOWN,1,,input_thread_t*,32,<empty>,,647,1,CASTTypeId,,<empty>
+78740,UNKNOWN,1,,input_thread_t*,32,<empty>,,659,1,CASTTypeId,,<empty>
+78871,UNKNOWN,1,,input_thread_t*,32,<empty>,,700,1,CASTTypeId,,<empty>
+78978,UNKNOWN,1,,input_thread_t*,32,<empty>,,733,1,CASTTypeId,,<empty>
+78990,UNKNOWN,1,,intptr_t,18,<empty>,,738,1,CASTTypeId,,<empty>
+79031,UNKNOWN,1,,input_thread_t*,32,<empty>,,754,1,CASTTypeId,,<empty>
+79078,UNKNOWN,1,,input_thread_t*,32,<empty>,,770,1,CASTTypeId,,<empty>
+79125,UNKNOWN,1,,input_thread_t*,32,<empty>,,786,1,CASTTypeId,,<empty>
+79172,UNKNOWN,1,,input_thread_t*,32,<empty>,,802,1,CASTTypeId,,<empty>
+79217,UNKNOWN,1,,input_thread_t*,32,<empty>,,820,1,CASTTypeId,,<empty>
+79245,UNKNOWN,1,,input_thread_t*,32,<empty>,,832,1,CASTTypeId,,<empty>
+79273,UNKNOWN,1,,input_thread_t*,32,<empty>,,844,1,CASTTypeId,,<empty>
+79407,UNKNOWN,1,,input_thread_t *,32,<empty>,,86,1,CASTTypeId,,<empty>
+79990,UNKNOWN,1,,vlm_t *,19,<empty>,,282,1,CASTTypeId,,<empty>
+80072,UNKNOWN,-1,,"psz = (const char *)va_arg( args, const char * );",9,<empty>,,311,1,CASTProblemStatement,,<empty>
+80073,UNKNOWN,-1,,"int64_t *i_time = (int64_t *)va_arg( args, int64_t *);",9,<empty>,,312,2,CASTProblemStatement,,<empty>
+80138,UNKNOWN,-1,,"int64_t *i_time = (int64_t *)va_arg( args, int64_t *);",9,<empty>,,338,1,CASTProblemStatement,,<empty>
+80176,UNKNOWN,1,,int64_t,27,<empty>,,351,1,CASTTypeId,,<empty>
+80192,UNKNOWN,-1,,"double d_scale = (double)va_arg( args, double );",9,<empty>,,358,1,CASTProblemStatement,,<empty>
+80226,UNKNOWN,-1,,"double d_scale = (double)va_arg( args, double );",9,<empty>,,371,1,CASTProblemStatement,,<empty>
+80278,UNKNOWN,1,,vlm_t*,19,<empty>,,398,1,CASTTypeId,,<empty>
+83092,UNKNOWN,-1,,"ppp_dsc = (vlm_media_t ***)va_arg( args, vlm_media_t *** );",9,<empty>,,1216,3,CASTProblemStatement,,<empty>
+83093,UNKNOWN,-1,,"pi_int = (int *)va_arg( args, int * );",9,<empty>,,1217,4,CASTProblemStatement,,<empty>
+83106,UNKNOWN,-1,,"p_dsc = (vlm_media_t*)va_arg( args, vlm_media_t * );",9,<empty>,,1224,11,CASTProblemStatement,,<empty>
+83113,UNKNOWN,-1,,"p_dsc = (vlm_media_t*)va_arg( args, vlm_media_t * );",9,<empty>,,1228,15,CASTProblemStatement,,<empty>
+83114,UNKNOWN,-1,,"p_id = (int64_t*)va_arg( args, int64_t * );",9,<empty>,,1229,16,CASTProblemStatement,,<empty>
+83125,UNKNOWN,1,,int64_t,15,<empty>,,1233,1,CASTTypeId,,<empty>
+83138,UNKNOWN,1,,int64_t,15,<empty>,,1237,1,CASTTypeId,,<empty>
+83142,UNKNOWN,-1,,"pp_dsc = (vlm_media_t **)va_arg( args, vlm_media_t ** );",9,<empty>,,1238,25,CASTProblemStatement,,<empty>
+83150,UNKNOWN,-1,,"psz_id = (const char*)va_arg( args, const char * );",9,<empty>,,1242,29,CASTProblemStatement,,<empty>
+83151,UNKNOWN,-1,,"p_id = (int64_t*)va_arg( args, int64_t * );",9,<empty>,,1243,30,CASTProblemStatement,,<empty>
+83162,UNKNOWN,1,,int64_t,15,<empty>,,1249,1,CASTTypeId,,<empty>
+83166,UNKNOWN,-1,,"ppp_idsc = (vlm_media_instance_t ***)va_arg( args, vlm_media_instance_t *** );",9,<empty>,,1250,35,CASTProblemStatement,,<empty>
+83167,UNKNOWN,-1,,"pi_int = (int *)va_arg( args, int *);",9,<empty>,,1251,36,CASTProblemStatement,,<empty>
+83179,UNKNOWN,1,,int64_t,15,<empty>,,1255,1,CASTTypeId,,<empty>
+83192,UNKNOWN,1,,int64_t,15,<empty>,,1260,1,CASTTypeId,,<empty>
+83196,UNKNOWN,-1,,"psz_id = (const char*)va_arg( args, const char* );",9,<empty>,,1261,45,CASTProblemStatement,,<empty>
+83197,UNKNOWN,-1,,"i_int = (int)va_arg( args, int );",9,<empty>,,1262,46,CASTProblemStatement,,<empty>
+83210,UNKNOWN,1,,int64_t,15,<empty>,,1266,1,CASTTypeId,,<empty>
+83214,UNKNOWN,-1,,"psz_id = (const char*)va_arg( args, const char* );",9,<empty>,,1267,51,CASTProblemStatement,,<empty>
+83215,UNKNOWN,-1,,"i_int = (int)va_arg( args, int );",9,<empty>,,1268,52,CASTProblemStatement,,<empty>
+83216,UNKNOWN,-1,,"psz_vod = (const char*)va_arg( args, const char* );",9,<empty>,,1269,53,CASTProblemStatement,,<empty>
+83235,UNKNOWN,1,,int64_t,15,<empty>,,1275,1,CASTTypeId,,<empty>
+83239,UNKNOWN,-1,,"psz_id = (const char*)va_arg( args, const char* );",9,<empty>,,1276,59,CASTProblemStatement,,<empty>
+83250,UNKNOWN,1,,int64_t,15,<empty>,,1280,1,CASTTypeId,,<empty>
+83254,UNKNOWN,-1,,"psz_id = (const char*)va_arg( args, const char* );",9,<empty>,,1281,64,CASTProblemStatement,,<empty>
+83265,UNKNOWN,1,,int64_t,15,<empty>,,1285,1,CASTTypeId,,<empty>
+83269,UNKNOWN,-1,,"psz_id = (const char*)va_arg( args, const char* );",9,<empty>,,1286,69,CASTProblemStatement,,<empty>
+83270,UNKNOWN,-1,,"pi_i64 = (int64_t*)va_arg( args, int64_t * );",9,<empty>,,1287,70,CASTProblemStatement,,<empty>
+83283,UNKNOWN,1,,int64_t,15,<empty>,,1290,1,CASTTypeId,,<empty>
+83287,UNKNOWN,-1,,"psz_id = (const char*)va_arg( args, const char* );",9,<empty>,,1291,75,CASTProblemStatement,,<empty>
+83288,UNKNOWN,-1,,"pd_double = (double*)va_arg( args, double* );",9,<empty>,,1292,76,CASTProblemStatement,,<empty>
+83301,UNKNOWN,1,,int64_t,15,<empty>,,1296,1,CASTTypeId,,<empty>
+83305,UNKNOWN,-1,,"psz_id = (const char*)va_arg( args, const char* );",9,<empty>,,1297,81,CASTProblemStatement,,<empty>
+83309,UNKNOWN,1,,int64_t,18,<empty>,,1298,1,CASTTypeId,,<empty>
+83326,UNKNOWN,1,,int64_t,15,<empty>,,1301,1,CASTTypeId,,<empty>
+83330,UNKNOWN,-1,,"psz_id = (const char*)va_arg( args, const char* );",9,<empty>,,1302,87,CASTProblemStatement,,<empty>
+83331,UNKNOWN,-1,,"d_double = (double)va_arg( args, double );",9,<empty>,,1303,88,CASTProblemStatement,,<empty>
+83685,UNKNOWN,-1,,S,22,<empty>,,86,2,CASTProblemDeclaration,,<empty>
+85561,UNKNOWN,1,,void,6,<empty>,,720,1,CASTTypeId,,<empty>
+86034,UNKNOWN,1,,char *,27,<empty>,,88,1,CASTTypeId,,<empty>
+86041,UNKNOWN,1,,char *,28,<empty>,,89,1,CASTTypeId,,<empty>
+86057,UNKNOWN,1,,char *,23,<empty>,,92,1,CASTTypeId,,<empty>
+86064,UNKNOWN,1,,char *,24,<empty>,,93,1,CASTTypeId,,<empty>
+86080,UNKNOWN,1,,char *,23,<empty>,,95,1,CASTTypeId,,<empty>
+86087,UNKNOWN,1,,char *,24,<empty>,,96,1,CASTTypeId,,<empty>
+86103,UNKNOWN,1,,char *,23,<empty>,,98,1,CASTTypeId,,<empty>
+86110,UNKNOWN,1,,char *,24,<empty>,,99,1,CASTTypeId,,<empty>
+86549,UNKNOWN,1,,void,6,<empty>,,282,1,CASTTypeId,,<empty>
+86552,UNKNOWN,1,,void,18,<empty>,,282,1,CASTTypeId,,<empty>
+86912,UNKNOWN,56,,),19,<empty>,,1488,56,CASTProblemDeclaration,,<empty>
+86918,UNKNOWN,58,,),29,<empty>,,1490,58,CASTProblemDeclaration,,<empty>
+86924,UNKNOWN,60,,),43,<empty>,,1491,60,CASTProblemDeclaration,,<empty>
+86925,UNKNOWN,61,,"add_category_hint( N_(""Audio""), AOUT_CAT_LONGTEXT , false )
+
+    add_bool( ""audio"", 1, AUDIO_TEXT, AUDIO_LONGTEXT, false )
+        change_safe ()
+    add_float( ""gain"", 1., GAIN_TEXT, GAIN_LONGTEXT, true )
+        change_float_range( 0., 8. )
+    add_obsolete_integer( ""volume"" ) /* since 2.1.0 */
+    add_float( ""volume-step"", AOUT_VOLUME_STEP, VOLUME_STEP_TEXT,
+                 VOLUME_STEP_LONGTEXT, true )
+        change_float_range( 1., AOUT_VOLUME_DEFAULT )
+    add_bool( ""volume-save"", true, VOLUME_SAVE_TEXT, VOLUME_SAVE_TEXT, true )
+    add_obsolete_integer( ""aout-rate"" ) /* since 2.0.0 */
+    add_obsolete_bool( ""hq-resampling"" ) /* since 1.1.8 */
+    add_bool( ""spdif"", false, SPDIF_TEXT, SPDIF_LONGTEXT, true )
+    add_integer( ""force-dolby-surround"", 0, FORCE_DOLBY_TEXT,
+                 FORCE_DOLBY_LONGTEXT, false )
+        change_integer_list( pi_force_dolby_values, ppsz_force_dolby_descriptions )
+    add_integer( ""stereo-mode"", 0, STEREO_MODE_TEXT, STEREO_MODE_TEXT, true )
+  ...",5,<empty>,,1492,61,CASTProblemDeclaration,,<empty>
+86926,UNKNOWN,62,,"add_bool( ""lua"", true, INPUT_LUA_TEXT, INPUT_LUA_TEXT, true );",5,<empty>,,1933,62,CASTProblemDeclaration,,<empty>
+86927,UNKNOWN,63,,),42,<empty>,,1936,63,CASTProblemDeclaration,,<empty>
+86928,UNKNOWN,64,,"add_category_hint( N_(""Decoders""), CODEC_CAT_LONGTEXT , true )
+    add_string( ""codec"", NULL, CODEC_TEXT,
+                CODEC_LONGTEXT, true )
+    add_string( ""encoder"",  NULL, ENCODER_TEXT,
+                ENCODER_LONGTEXT, true )
+
+    set_subcategory( SUBCAT_INPUT_ACCESS )
+    add_category_hint( N_(""Input""), INPUT_CAT_LONGTEXT , false )
+    add_module( ""access"", ""access"", NULL, ACCESS_TEXT, ACCESS_LONGTEXT, true )
+
+    set_subcategory( SUBCAT_INPUT_DEMUX )
+    add_module( ""demux"", ""demux"", ""any"", DEMUX_TEXT, DEMUX_LONGTEXT, true )
+    set_subcategory( SUBCAT_INPUT_ACODEC )
+    set_subcategory( SUBCAT_INPUT_SCODEC )
+    add_obsolete_bool( ""prefer-system-codecs"" )
+
+    set_subcategory( SUBCAT_INPUT_STREAM_FILTER )
+    add_module_list( ""stream-filter"", ""stream_filter"", NULL,
+                     STREAM_FILTER_TEXT, STREAM_FILTER_LONGTEXT, false )
+
+    add_string( ""demux-filter"", NULL, DEMUX_FILTER_TEXT, DEMUX_FILTER_LONGTEXT, true )
+
+/* Stream output options */
+    set_category( CA...",5,<empty>,,1937,64,CASTProblemDeclaration,,<empty>
+87251,UNKNOWN,-1,,"var_SetString( p_libvlc, ""user-agent"",
+                   ""VLC media player (LibVLC ""VERSION"")"" );",5,<empty>,,271,43,CASTProblemStatement,,<empty>
+87256,UNKNOWN,-1,,"var_SetString( p_libvlc, ""http-user-agent"",
+                   ""VLC/""PACKAGE_VERSION"" LibVLC/""PACKAGE_VERSION );",5,<empty>,,274,45,CASTProblemStatement,,<empty>
+87528,UNKNOWN,1,,vlc_object_internals_t *,27,<empty>,,446,1,CASTTypeId,,<empty>
+88171,UNKNOWN,1,,uintptr_t,25,<empty>,,61,1,CASTTypeId,,<empty>
+88211,UNKNOWN,1,,uintptr_t,23,<empty>,,73,1,CASTTypeId,,<empty>
+88215,UNKNOWN,1,,uintptr_t,43,<empty>,,73,1,CASTTypeId,,<empty>
+88249,UNKNOWN,-1,,"asprintf (&path, ""%s/""PACKAGE, dir) == -1",13,<empty>,,85,1,CASTProblemExpression,,<empty>
+88358,UNKNOWN,-1,,"unlikely(asprintf (&datadir, ""%s/share/""PACKAGE, libdir) == -1)",13,<empty>,,124,1,CASTProblemExpression,,<empty>
+88437,UNKNOWN,1,,size_t,14,<empty>,,54,1,CASTTypeId,,<empty>
+88486,UNKNOWN,1,,struct gaicb *,43,<empty>,,70,1,CASTTypeId,,<empty>
+88519,UNKNOWN,1,,const struct gaicb *,26,<empty>,,82,1,CASTTypeId,,<empty>
+89368,UNKNOWN,1,,char *,13,<empty>,,215,1,CASTTypeId,,<empty>
+89926,UNKNOWN,1,,void,6,<empty>,,412,1,CASTTypeId,,<empty>
+89929,UNKNOWN,1,,void,6,<empty>,,413,1,CASTTypeId,,<empty>
+90664,UNKNOWN,-1,,),25,<empty>,,55,7,CASTProblemDeclaration,,<empty>
+90671,UNKNOWN,-1,,),34,<empty>,,56,10,CASTProblemDeclaration,,<empty>
+90685,UNKNOWN,-1,,),34,<empty>,,66,7,CASTProblemDeclaration,,<empty>
+90749,UNKNOWN,1,,addon_entry_owner_t *,35,<empty>,,93,1,CASTTypeId,,<empty>
+90768,UNKNOWN,1,,addon_entry_owner_t *,35,<empty>,,101,1,CASTTypeId,,<empty>
+90831,UNKNOWN,-1,,),43,<empty>,,119,17,CASTProblemStatement,,<empty>
+90843,UNKNOWN,-1,,),17,<empty>,,123,22,CASTProblemStatement,,<empty>
+91179,UNKNOWN,-1,,FREE_QUEUE( finder ),5,<empty>,,204,11,CASTProblemStatement,,<empty>
+91230,UNKNOWN,-1,,FREE_QUEUE( installer ),5,<empty>,,205,19,CASTProblemStatement,,<empty>
+91268,UNKNOWN,-1,,"FOREACH_ARRAY( char *psz_uri, p_manager->p_priv->finder.uris )
+       free( psz_uri );",5,<empty>,,206,26,CASTProblemStatement,,<empty>
+91412,UNKNOWN,-1,,),78,<empty>,,250,5,CASTProblemStatement,,<empty>
+91430,UNKNOWN,-1,,),17,<empty>,,257,8,CASTProblemStatement,,<empty>
+93512,UNKNOWN,1,,void *,15,<empty>,,42,1,CASTTypeId,,<empty>
+93673,UNKNOWN,1,,unsigned char *,32,<empty>,,97,1,CASTTypeId,,<empty>
+93822,UNKNOWN,1,,void *,20,<empty>,,142,1,CASTTypeId,,<empty>
+93825,UNKNOWN,1,,uintptr_t,30,<empty>,,142,1,CASTTypeId,,<empty>
+94038,UNKNOWN,1,,size_t,50,<empty>,,208,1,CASTTypeId,,<empty>
+94184,UNKNOWN,1,,void,6,<empty>,,303,1,CASTTypeId,,<empty>
+94187,UNKNOWN,1,,void,18,<empty>,,303,1,CASTTypeId,,<empty>
+94198,UNKNOWN,1,,void,6,<empty>,,341,1,CASTTypeId,,<empty>
+94201,UNKNOWN,1,,void,19,<empty>,,341,1,CASTTypeId,,<empty>
+94251,UNKNOWN,1,,uintmax_t,10,<empty>,,395,1,CASTTypeId,,<empty>
+94265,UNKNOWN,1,,size_t,15,<empty>,,400,1,CASTTypeId,,<empty>
+94567,UNKNOWN,1,,vlc_epg_event_t *,33,<empty>,,68,1,CASTTypeId,,<empty>
+95351,UNKNOWN,1,,int32_t,17,<empty>,,76,1,CASTTypeId,,<empty>
+95804,UNKNOWN,1,,uint64_t,32,<empty>,,238,1,CASTTypeId,,<empty>
+95821,UNKNOWN,1,,uint64_t,32,<empty>,,239,1,CASTTypeId,,<empty>
+95838,UNKNOWN,1,,uint64_t,32,<empty>,,240,1,CASTTypeId,,<empty>
+95855,UNKNOWN,1,,uint64_t,32,<empty>,,241,1,CASTTypeId,,<empty>
+96026,UNKNOWN,1,,video_transform_t,30,<empty>,,305,1,CASTTypeId,,<empty>
+96035,UNKNOWN,1,,video_transform_t,48,<empty>,,306,1,CASTTypeId,,<empty>
+96077,UNKNOWN,1,,video_transform_t,29,<empty>,,322,1,CASTTypeId,,<empty>
+96354,UNKNOWN,1,,int64_t,10,<empty>,,395,1,CASTTypeId,,<empty>
+96363,UNKNOWN,1,,int64_t,10,<empty>,,396,1,CASTTypeId,,<empty>
+96495,UNKNOWN,1,,char*,15,<empty>,,431,1,CASTTypeId,,<empty>
+97349,UNKNOWN,-1,,),50,<empty>,,90,4,CASTProblemStatement,,<empty>
+97353,UNKNOWN,-1,,),21,<empty>,,92,7,CASTProblemStatement,,<empty>
+97393,UNKNOWN,-1,,),46,<empty>,,111,7,CASTProblemStatement,,<empty>
+97403,UNKNOWN,-1,,),17,<empty>,,113,10,CASTProblemStatement,,<empty>
+97493,UNKNOWN,-1,,),46,<empty>,,157,6,CASTProblemStatement,,<empty>
+97521,UNKNOWN,-1,,),17,<empty>,,169,9,CASTProblemStatement,,<empty>
+97771,UNKNOWN,1,,void,5,<empty>,,91,1,CASTTypeId,,<empty>
+97832,UNKNOWN,1,,void,5,<empty>,,110,1,CASTTypeId,,<empty>
+97916,UNKNOWN,1,,void,5,<empty>,,132,1,CASTTypeId,,<empty>
+98185,UNKNOWN,1,,void,6,<empty>,,42,1,CASTTypeId,,<empty>
+98188,UNKNOWN,1,,void,21,<empty>,,42,1,CASTTypeId,,<empty>
+98192,UNKNOWN,1,,filter_t *,14,<empty>,,43,1,CASTTypeId,,<empty>
+99382,UNKNOWN,1,,void *,15,<empty>,,253,1,CASTTypeId,,<empty>
+99477,UNKNOWN,1,,chained_filter_t *,34,<empty>,,285,1,CASTTypeId,,<empty>
+99550,UNKNOWN,1,,void *,52,<empty>,,306,1,CASTTypeId,,<empty>
+100224,UNKNOWN,1,,fingerprinter_thread_t *,23,<empty>,,34,1,CASTTypeId,,<empty>
+108745,UNKNOWN,13,,D,19,<empty>,,198,13,CASTProblemDeclaration,,<empty>
+109754,UNKNOWN,1,,int64_t,31,<empty>,,195,1,CASTTypeId,,<empty>
+109813,UNKNOWN,1,,int64_t,32,<empty>,,202,1,CASTTypeId,,<empty>
+110903,UNKNOWN,1,,int64_t,36,<empty>,,509,1,CASTTypeId,,<empty>
+110928,UNKNOWN,1,,int64_t,36,<empty>,,512,1,CASTTypeId,,<empty>
+111533,UNKNOWN,1,,char*,19,<empty>,,693,1,CASTTypeId,,<empty>
+111793,UNKNOWN,1,,int64_t,34,<empty>,,755,1,CASTTypeId,,<empty>
+111822,UNKNOWN,1,,int64_t,34,<empty>,,758,1,CASTTypeId,,<empty>
+111908,UNKNOWN,1,,char*,19,<empty>,,775,1,CASTTypeId,,<empty>
+112138,UNKNOWN,1,,static thread_local vlc_interrupt_t *vlc_interrupt_var;,1,<empty>,,46,1,CASTProblemDeclaration,,<empty>
+113105,UNKNOWN,1,,void*,39,<empty>,,467,1,CASTTypeId,,<empty>
+113281,UNKNOWN,1,,void *,39,<empty>,,518,1,CASTTypeId,,<empty>
+113295,UNKNOWN,1,,struct sockaddr *,22,<empty>,,520,1,CASTTypeId,,<empty>
+113559,UNKNOWN,1,,const char *,32,<empty>,,98,1,CASTTypeId,,<empty>
+113958,UNKNOWN,1,,uint16_t,34,<empty>,,244,1,CASTTypeId,,<empty>
+114232,UNKNOWN,1,,const char *,43,<empty>,,335,1,CASTTypeId,,<empty>
+114864,UNKNOWN,1,,const uint8_t *,34,<empty>,,569,1,CASTTypeId,,<empty>
+117912,UNKNOWN,1,,u32 *,3,<empty>,,319,1,CASTTypeId,,<empty>
+117929,UNKNOWN,1,,u32 *,3,<empty>,,320,1,CASTTypeId,,<empty>
+117946,UNKNOWN,1,,u32 *,3,<empty>,,321,1,CASTTypeId,,<empty>
+117963,UNKNOWN,1,,u32 *,3,<empty>,,322,1,CASTTypeId,,<empty>
+118027,UNKNOWN,-1,,S,22,<empty>,,48,2,CASTProblemDeclaration,,<empty>
+118179,UNKNOWN,1,,uintptr_t,24,<empty>,,114,1,CASTTypeId,,<empty>
+118607,UNKNOWN,1,,void,6,<empty>,,292,1,CASTTypeId,,<empty>
+118610,UNKNOWN,1,,void,16,<empty>,,292,1,CASTTypeId,,<empty>
+118613,UNKNOWN,1,,void,29,<empty>,,292,1,CASTTypeId,,<empty>
+118616,UNKNOWN,1,,void,42,<empty>,,292,1,CASTTypeId,,<empty>
+118619,UNKNOWN,1,,void,57,<empty>,,292,1,CASTTypeId,,<empty>
+118633,UNKNOWN,-1,,"vlc_logger_t *logger = va_arg(ap, vlc_logger_t *);",5,<empty>,,298,2,CASTProblemStatement,,<empty>
+118634,UNKNOWN,-1,,"vlc_log_cb *cb = va_arg(ap, vlc_log_cb *);",5,<empty>,,299,3,CASTProblemStatement,,<empty>
+118635,UNKNOWN,-1,,"void **sys = va_arg(ap, void **);",5,<empty>,,300,4,CASTProblemStatement,,<empty>
+118662,UNKNOWN,-1,,"void *sys = va_arg(ap, void *);",5,<empty>,,309,2,CASTProblemStatement,,<empty>
+119404,UNKNOWN,1,,int,29,<empty>,,160,1,CASTTypeId,,<empty>
+119455,UNKNOWN,1,,mtime_t,27,<empty>,,183,1,CASTTypeId,,<empty>
+119599,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,60,1,CASTTypeId,,<empty>
+119611,UNKNOWN,1,,void *,58,<empty>,,63,1,CASTTypeId,,<empty>
+119624,UNKNOWN,1,,void *,14,<empty>,,65,1,CASTTypeId,,<empty>
+119677,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,83,1,CASTTypeId,,<empty>
+119689,UNKNOWN,1,,vlc_object_internals_t *,22,<empty>,,86,1,CASTTypeId,,<empty>
+119771,UNKNOWN,1,,vlc_object_t *,24,<empty>,,102,1,CASTTypeId,,<empty>
+119787,UNKNOWN,1,,vlc_object_internals_t *,24,<empty>,,104,1,CASTTypeId,,<empty>
+119802,UNKNOWN,1,,void,6,<empty>,,117,1,CASTTypeId,,<empty>
+119805,UNKNOWN,1,,void,18,<empty>,,117,1,CASTTypeId,,<empty>
+119808,UNKNOWN,1,,void,33,<empty>,,117,1,CASTTypeId,,<empty>
+119811,UNKNOWN,1,,void,48,<empty>,,117,1,CASTTypeId,,<empty>
+119854,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,135,1,CASTTypeId,,<empty>
+119870,UNKNOWN,1,,vlc_object_internals_t *,22,<empty>,,139,1,CASTTypeId,,<empty>
+119901,UNKNOWN,1,,vlc_object_t *,29,<empty>,,142,1,CASTTypeId,,<empty>
+119914,UNKNOWN,1,,vlc_object_internals_t *,24,<empty>,,144,1,CASTTypeId,,<empty>
+119932,UNKNOWN,1,,void,6,<empty>,,153,1,CASTTypeId,,<empty>
+119935,UNKNOWN,1,,void,18,<empty>,,153,1,CASTTypeId,,<empty>
+119938,UNKNOWN,1,,void,33,<empty>,,153,1,CASTTypeId,,<empty>
+120069,UNKNOWN,1,,vlc_object_t *,26,<empty>,,204,1,CASTTypeId,,<empty>
+120118,UNKNOWN,1,,vlc_object_internals_t *,42,<empty>,,212,1,CASTTypeId,,<empty>
+120194,UNKNOWN,1,,libvlc_int_t *,31,<empty>,,230,1,CASTTypeId,,<empty>
+120277,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,274,1,CASTTypeId,,<empty>
+120304,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,284,1,CASTTypeId,,<empty>
+120358,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,300,1,CASTTypeId,,<empty>
+120395,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,317,1,CASTTypeId,,<empty>
+120478,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,345,1,CASTTypeId,,<empty>
+120511,UNKNOWN,1,,vlc_object_internals_t *,22,<empty>,,352,1,CASTTypeId,,<empty>
+120542,UNKNOWN,1,,vlc_object_t *,27,<empty>,,355,1,CASTTypeId,,<empty>
+120555,UNKNOWN,1,,vlc_object_internals_t *,24,<empty>,,358,1,CASTTypeId,,<empty>
+120607,UNKNOWN,1,,void *,42,<empty>,,396,1,CASTTypeId,,<empty>
+120617,UNKNOWN,1,,void *,42,<empty>,,397,1,CASTTypeId,,<empty>
+120653,UNKNOWN,1,,vlc_object_internals_t *,41,<empty>,,414,1,CASTTypeId,,<empty>
+120685,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,431,1,CASTTypeId,,<empty>
+120768,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,459,1,CASTTypeId,,<empty>
+120922,UNKNOWN,1,,vlc_object_internals_t *,22,<empty>,,518,1,CASTTypeId,,<empty>
+120937,UNKNOWN,1,,vlc_object_internals_t *,17,<empty>,,519,1,CASTTypeId,,<empty>
+120979,UNKNOWN,1,,vlc_object_internals_t *,32,<empty>,,527,1,CASTTypeId,,<empty>
+121007,UNKNOWN,1,,vlc_object_internals_t *,17,<empty>,,536,1,CASTTypeId,,<empty>
+121032,UNKNOWN,1,,vlc_object_t *,55,<empty>,,537,1,CASTTypeId,,<empty>
+121044,UNKNOWN,1,,vlc_object_internals_t *,24,<empty>,,538,1,CASTTypeId,,<empty>
+121131,UNKNOWN,1,,vlc_object_internals_t *,13,<empty>,,44,1,CASTTypeId,,<empty>
+121189,UNKNOWN,-1,,s,18,<empty>,,66,3,CASTProblemStatement,,<empty>
+121190,UNKNOWN,-1,,"*res = container_of(data, struct vlc_res, payload);",20,<empty>,,66,4,CASTProblemStatement,,<empty>
+121247,UNKNOWN,-1,,s,22,<empty>,,89,1,CASTProblemStatement,,<empty>
+121248,UNKNOWN,-1,,"*res = container_of(data, struct vlc_res, payload);",24,<empty>,,89,2,CASTProblemStatement,,<empty>
+121317,UNKNOWN,1,,void,6,<empty>,,128,1,CASTTypeId,,<empty>
+121484,UNKNOWN,1,,size_t,14,<empty>,,59,1,CASTTypeId,,<empty>
+122424,UNKNOWN,1,,picture_priv_t *,29,<empty>,,299,1,CASTTypeId,,<empty>
+122456,UNKNOWN,1,,picture_priv_t *,29,<empty>,,309,1,CASTTypeId,,<empty>
+122714,UNKNOWN,1,,picture_priv_t *,28,<empty>,,387,1,CASTTypeId,,<empty>
+122820,UNKNOWN,1,,picture_priv_t *,11,<empty>,,409,1,CASTTypeId,,<empty>
+122962,UNKNOWN,1,,int64_t,29,<empty>,,457,1,CASTTypeId,,<empty>
+122999,UNKNOWN,1,,unsigned,44,<empty>,,468,1,CASTTypeId,,<empty>
+123011,UNKNOWN,1,,unsigned,45,<empty>,,470,1,CASTTypeId,,<empty>
+123515,UNKNOWN,1,,"static_assert ((POOL_MAX & (POOL_MAX - 1)) == 0, ""Not a power of two"");",1,<empty>,,39,1,CASTProblemDeclaration,,<empty>
+123600,UNKNOWN,1,,picture_priv_t *,29,<empty>,,73,1,CASTTypeId,,<empty>
+123606,UNKNOWN,1,,uintptr_t,22,<empty>,,74,1,CASTTypeId,,<empty>
+123616,UNKNOWN,1,,void *,29,<empty>,,75,1,CASTTypeId,,<empty>
+123717,UNKNOWN,1,,uintptr_t,23,<empty>,,98,1,CASTTypeId,,<empty>
+123813,UNKNOWN,1,,picture_priv_t *,11,<empty>,,112,1,CASTTypeId,,<empty>
+123818,UNKNOWN,1,,void *,49,<empty>,,112,1,CASTTypeId,,<empty>
+124469,UNKNOWN,1,,picture_priv_t *,29,<empty>,,301,1,CASTTypeId,,<empty>
+124490,UNKNOWN,1,,picture_priv_t *,17,<empty>,,305,1,CASTTypeId,,<empty>
+124496,UNKNOWN,1,,uintptr_t,22,<empty>,,308,1,CASTTypeId,,<empty>
+124506,UNKNOWN,1,,void *,32,<empty>,,309,1,CASTTypeId,,<empty>
+126164,UNKNOWN,1,,char *,22,<empty>,,293,1,CASTTypeId,,<empty>
+126174,UNKNOWN,1,,char *,22,<empty>,,294,1,CASTTypeId,,<empty>
+127584,UNKNOWN,1,,update_t *,17,<empty>,,109,1,CASTTypeId,,<empty>
+127822,UNKNOWN,1,,ssize_t,39,<empty>,,209,1,CASTTypeId,,<empty>
+128099,UNKNOWN,1,,public_key_t*,25,<empty>,,292,1,CASTTypeId,,<empty>
+128427,UNKNOWN,1,,update_check_thread_t *,37,<empty>,,418,1,CASTTypeId,,<empty>
+128574,UNKNOWN,-1,,"if( l_size >> 30 )
+        i_retval = asprintf( &psz_tmp, _(""%.1f GiB""), (float)l_size/(1<<30) );
+    else if( l_size >> 20 )
+        i_retval = asprintf( &psz_tmp, _(""%.1f MiB""), (float)l_size/(1<<20) );
+    else if( l_size >> 10 )
+        i_retval = asprintf( &psz_tmp, _(""%.1f KiB""), (float)l_size/(1<<10) );
+    else
+        i_retval = asprintf( &psz_tmp, _(""%""PRIu64"" B""), l_size );",5,<empty>,,481,5,CASTProblemStatement,,<empty>
+128684,UNKNOWN,1,,update_download_thread_t *,40,<empty>,,530,1,CASTTypeId,,<empty>
+128850,UNKNOWN,1,,void *,17,<empty>,,587,1,CASTTypeId,,<empty>
+128946,UNKNOWN,1,,float,23,<empty>,,617,1,CASTTypeId,,<empty>
+128949,UNKNOWN,1,,float,43,<empty>,,617,1,CASTTypeId,,<empty>
+129484,UNKNOWN,-1,,S,22,<empty>,,134,2,CASTProblemDeclaration,,<empty>
+129633,UNKNOWN,1,,uint32_t,19,<empty>,,66,1,CASTTypeId,,<empty>
+130281,UNKNOWN,1,,uint8_t*,39,<empty>,,207,1,CASTTypeId,,<empty>
+130358,UNKNOWN,1,,uint8_t*,41,<empty>,,222,1,CASTTypeId,,<empty>
+131827,UNKNOWN,1,,uint8_t*,28,<empty>,,626,1,CASTTypeId,,<empty>
+131841,UNKNOWN,1,,char*,35,<empty>,,629,1,CASTTypeId,,<empty>
+132081,UNKNOWN,1,,uint8_t*,40,<empty>,,690,1,CASTTypeId,,<empty>
+132355,UNKNOWN,1,,uint8_t*,23,<empty>,,779,1,CASTTypeId,,<empty>
+132734,UNKNOWN,1,,uint8_t*,29,<empty>,,896,1,CASTTypeId,,<empty>
+132751,UNKNOWN,1,,uint8_t*,29,<empty>,,897,1,CASTTypeId,,<empty>
+132768,UNKNOWN,1,,uint8_t*,29,<empty>,,898,1,CASTTypeId,,<empty>
+132785,UNKNOWN,1,,uint8_t*,29,<empty>,,899,1,CASTTypeId,,<empty>
+132809,UNKNOWN,1,,uint8_t*,29,<empty>,,901,1,CASTTypeId,,<empty>
+132826,UNKNOWN,1,,uint8_t*,29,<empty>,,902,1,CASTTypeId,,<empty>
+132848,UNKNOWN,1,,char*,28,<empty>,,907,1,CASTTypeId,,<empty>
+133003,UNKNOWN,1,,uint8_t*,23,<empty>,,953,1,CASTTypeId,,<empty>
+133021,UNKNOWN,1,,int,53,<empty>,,960,1,CASTTypeId,,<empty>
+133029,UNKNOWN,1,,int,20,<empty>,,963,1,CASTTypeId,,<empty>
+133043,UNKNOWN,1,,public_key_t*,29,<empty>,,970,1,CASTTypeId,,<empty>
+133096,UNKNOWN,1,,char*,22,<empty>,,1000,1,CASTTypeId,,<empty>
+133145,UNKNOWN,-1,,"msg_Dbg( p_this, ""Downloading signature (%""PRIu64"" bytes)"", i_size );",5,<empty>,,1020,12,CASTProblemStatement,,<empty>
+133150,UNKNOWN,1,,uint8_t*,23,<empty>,,1021,1,CASTTypeId,,<empty>
+133168,UNKNOWN,1,,int,53,<empty>,,1028,1,CASTTypeId,,<empty>
+133176,UNKNOWN,1,,int,20,<empty>,,1032,1,CASTTypeId,,<empty>
+133201,UNKNOWN,1,,uint8_t*,33,<empty>,,1044,1,CASTTypeId,,<empty>
+133223,UNKNOWN,1,,char*,37,<empty>,,1051,1,CASTTypeId,,<empty>
+133302,UNKNOWN,1,,size_t,29,<empty>,,1074,1,CASTTypeId,,<empty>
+133328,UNKNOWN,1,,size_t,38,<empty>,,1082,1,CASTTypeId,,<empty>
+133628,UNKNOWN,1,,void,47,<empty>,,126,1,CASTTypeId,,<empty>
+133654,UNKNOWN,1,,void,48,<empty>,,132,1,CASTTypeId,,<empty>
+133733,UNKNOWN,1,,const void *,20,<empty>,,149,1,CASTTypeId,,<empty>
+133760,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,155,1,CASTTypeId,,<empty>
+134102,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,227,1,CASTTypeId,,<empty>
+134167,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,245,1,CASTTypeId,,<empty>
+134272,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,270,1,CASTTypeId,,<empty>
+134418,UNKNOWN,1,,callback_table_t,31,<empty>,,319,1,CASTTypeId,,<empty>
+134594,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,364,1,CASTTypeId,,<empty>
+134694,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,404,1,CASTTypeId,,<empty>
+134778,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,433,1,CASTTypeId,,<empty>
+134818,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,459,1,CASTTypeId,,<empty>
+135566,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,640,1,CASTTypeId,,<empty>
+135735,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,707,1,CASTTypeId,,<empty>
+135793,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,730,1,CASTTypeId,,<empty>
+135910,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,786,1,CASTTypeId,,<empty>
+136010,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,837,1,CASTTypeId,,<empty>
+136121,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,898,1,CASTTypeId,,<empty>
+136295,UNKNOWN,1,,vlc_object_internals_t *,38,<empty>,,973,1,CASTTypeId,,<empty>
+137041,UNKNOWN,1,,void,6,<empty>,,1316,1,CASTTypeId,,<empty>
+137048,UNKNOWN,1,,const variable_t **,31,<empty>,,1318,1,CASTTypeId,,<empty>
+137187,UNKNOWN,-1,,"printf("": %""PRId64, var->val.i_int );",13,<empty>,,1352,10,CASTProblemStatement,,<empty>
+137211,UNKNOWN,-1,,"printf("": %""PRId32""x%""PRId32,
+                   var->val.coords.x, var->val.coords.y);",13,<empty>,,1361,22,CASTProblemStatement,,<empty>
+137238,UNKNOWN,1,,vlc_object_internals_t *,21,<empty>,,1373,1,CASTTypeId,,<empty>
+137251,UNKNOWN,1,,vlc_object_internals_t *,9,<empty>,,1374,1,CASTTypeId,,<empty>
+137269,UNKNOWN,1,,vlc_object_internals_t *,15,<empty>,,1377,1,CASTTypeId,,<empty>
+137283,UNKNOWN,1,,vlc_object_internals_t *,23,<empty>,,1378,1,CASTTypeId,,<empty>
+137290,UNKNOWN,66,,static thread_local void *twalk_ctx;,1,<empty>,,1381,66,CASTProblemDeclaration,,<empty>
+137307,UNKNOWN,1,,void,6,<empty>,,1387,1,CASTTypeId,,<empty>
+137314,UNKNOWN,1,,const variable_t **,31,<empty>,,1389,1,CASTTypeId,,<empty>
+137316,UNKNOWN,-1,,DECL_ARRAY(char *) *names = twalk_ctx;,5,<empty>,,1390,5,CASTProblemStatement,,<empty>
+137346,UNKNOWN,1,,vlc_object_internals_t *,36,<empty>,,1398,1,CASTTypeId,,<empty>
+137350,UNKNOWN,-1,,DECL_ARRAY(char *) names;,5,<empty>,,1400,3,CASTProblemStatement,,<empty>
+137404,UNKNOWN,-1,,),25,<empty>,,38,2,CASTProblemDeclaration,,<empty>
+138011,UNKNOWN,1,,void,6,<empty>,,256,1,CASTTypeId,,<empty>
+138021,UNKNOWN,1,,void,6,<empty>,,262,1,CASTTypeId,,<empty>
+138032,UNKNOWN,1,,void,6,<empty>,,268,1,CASTTypeId,,<empty>
+138035,UNKNOWN,1,,void,16,<empty>,,268,1,CASTTypeId,,<empty>
+138038,UNKNOWN,1,,void,27,<empty>,,268,1,CASTTypeId,,<empty>
+138047,UNKNOWN,1,,void,6,<empty>,,274,1,CASTTypeId,,<empty>
+138057,UNKNOWN,1,,void,6,<empty>,,280,1,CASTTypeId,,<empty>
+138060,UNKNOWN,1,,void,16,<empty>,,280,1,CASTTypeId,,<empty>
+138069,UNKNOWN,1,,void,6,<empty>,,286,1,CASTTypeId,,<empty>
+138221,UNKNOWN,1,,void,6,<empty>,,91,1,CASTTypeId,,<empty>
+138468,UNKNOWN,1,,void,6,<empty>,,562,1,CASTTypeId,,<empty>
+138471,UNKNOWN,1,,void,18,<empty>,,562,1,CASTTypeId,,<empty>
+138481,UNKNOWN,1,,void,6,<empty>,,568,1,CASTTypeId,,<empty>
+139349,UNKNOWN,-1,,"*(va_arg (ap, module_t **)) = submodule;",13,<empty>,,211,6,CASTProblemStatement,,<empty>
+139407,UNKNOWN,-1,,"int type = va_arg (ap, int);",13,<empty>,,228,1,CASTProblemStatement,,<empty>
+139408,UNKNOWN,-1,,"module_config_t **pp = va_arg (ap, module_config_t **);",13,<empty>,,229,2,CASTProblemStatement,,<empty>
+139433,UNKNOWN,-1,,"unsigned i_shortcuts = va_arg (ap, unsigned);",13,<empty>,,243,1,CASTProblemStatement,,<empty>
+139448,UNKNOWN,-1,,"const char *const *tab = va_arg (ap, const char *const *);",13,<empty>,,248,5,CASTProblemStatement,,<empty>
+139511,UNKNOWN,-1,,"module->psz_capability = va_arg (ap, const char *);",13,<empty>,,265,12,CASTProblemStatement,,<empty>
+139515,UNKNOWN,-1,,"module->i_score = va_arg (ap, int);",13,<empty>,,269,16,CASTProblemStatement,,<empty>
+139519,UNKNOWN,-1,,"module->activate_name = va_arg(ap, const char *);",13,<empty>,,273,20,CASTProblemStatement,,<empty>
+139520,UNKNOWN,-1,,"module->pf_activate = va_arg (ap, void *);",13,<empty>,,274,21,CASTProblemStatement,,<empty>
+139524,UNKNOWN,-1,,"module->deactivate_name = va_arg(ap, const char *);",13,<empty>,,278,25,CASTProblemStatement,,<empty>
+139525,UNKNOWN,-1,,"module->pf_deactivate = va_arg (ap, void *);",13,<empty>,,279,26,CASTProblemStatement,,<empty>
+139533,UNKNOWN,-1,,"const char *value = va_arg (ap, const char *);",13,<empty>,,290,1,CASTProblemStatement,,<empty>
+139576,UNKNOWN,-1,,"module->psz_shortname = va_arg (ap, const char *);",13,<empty>,,303,36,CASTProblemStatement,,<empty>
+139580,UNKNOWN,-1,,"module->psz_longname = va_arg (ap, const char *);",13,<empty>,,308,40,CASTProblemStatement,,<empty>
+139584,UNKNOWN,-1,,"module->psz_help = va_arg (ap, const char *);",13,<empty>,,312,44,CASTProblemStatement,,<empty>
+139588,UNKNOWN,-1,,"plugin->textdomain = va_arg(ap, const char *);",13,<empty>,,316,48,CASTProblemStatement,,<empty>
+139593,UNKNOWN,-1,,"const char *name = va_arg (ap, const char *);",13,<empty>,,321,1,CASTProblemStatement,,<empty>
+139656,UNKNOWN,-1,,"item->orig.f =
+                item->value.f = va_arg (ap, double);",17,<empty>,,339,1,CASTProblemStatement,,<empty>
+139673,UNKNOWN,-1,,"const char *value = va_arg (ap, const char *);",17,<empty>,,345,1,CASTProblemStatement,,<empty>
+139692,UNKNOWN,1,,char *,35,<empty>,,347,1,CASTTypeId,,<empty>
+139710,UNKNOWN,-1,,"item->min.f = va_arg (ap, double);",17,<empty>,,356,1,CASTProblemStatement,,<empty>
+139711,UNKNOWN,-1,,"item->max.f = va_arg (ap, double);",17,<empty>,,357,2,CASTProblemStatement,,<empty>
+139767,UNKNOWN,-1,,"item->psz_type = va_arg (ap, const char *);",13,<empty>,,384,77,CASTProblemStatement,,<empty>
+139771,UNKNOWN,-1,,"item->i_short = va_arg (ap, int);",13,<empty>,,388,81,CASTProblemStatement,,<empty>
+139783,UNKNOWN,-1,,"item->psz_text = va_arg (ap, const char *);",13,<empty>,,396,89,CASTProblemStatement,,<empty>
+139784,UNKNOWN,-1,,"item->psz_longtext = va_arg (ap, const char *);",13,<empty>,,397,90,CASTProblemStatement,,<empty>
+139815,UNKNOWN,-1,,"if (IsConfigIntegerType (item->i_type))
+                item->list.i = va_arg(ap, const int *);",13,<empty>,,409,6,CASTProblemStatement,,<empty>
+139816,UNKNOWN,-1,,"else
+            if (IsConfigStringType (item->i_type))
+            {
+                const char *const *src = va_arg (ap, const char *const *);
+                const char **dst = xmalloc (sizeof (const char *) * len);
+
+                memcpy(dst, src, sizeof (const char *) * len);
+                item->list.psz = dst;
+            }",13,<empty>,,411,7,CASTProblemStatement,,<empty>
+139817,UNKNOWN,-1,,"else
+                break;",13,<empty>,,420,8,CASTProblemStatement,,<empty>
+139818,UNKNOWN,-1,,"const char *const *text = va_arg (ap, const char *const *);",13,<empty>,,425,9,CASTProblemStatement,,<empty>
+139851,UNKNOWN,-1,,"item->list_cb_name = va_arg(ap, const char *);",13,<empty>,,438,2,CASTProblemStatement,,<empty>
+139852,UNKNOWN,-1,,"cb = va_arg(ap, void *);",13,<empty>,,439,3,CASTProblemStatement,,<empty>
+139988,UNKNOWN,1,,void,6,<empty>,,506,1,CASTTypeId,,<empty>
+140004,UNKNOWN,-1,,"name = va_arg(ap, const char *);",13,<empty>,,517,3,CASTProblemStatement,,<empty>
+140005,UNKNOWN,-1,,"addr = va_arg(ap, void *);",13,<empty>,,518,4,CASTProblemStatement,,<empty>
+140439,UNKNOWN,1,,void,6,<empty>,,136,1,CASTTypeId,,<empty>
+140926,UNKNOWN,-1,,"vlc_object_t *obj = va_arg(ap, vlc_object_t *);",5,<empty>,,353,1,CASTProblemStatement,,<empty>
+140941,UNKNOWN,-1,,"vlc_object_t *obj = va_arg(ap, vlc_object_t *);",5,<empty>,,361,1,CASTProblemStatement,,<empty>
+141347,UNKNOWN,1,,void,6,<empty>,,81,1,CASTTypeId,,<empty>
+141358,UNKNOWN,1,,char *,13,<empty>,,96,1,CASTTypeId,,<empty>
+141369,UNKNOWN,1,,char *,13,<empty>,,105,1,CASTTypeId,,<empty>
+142291,UNKNOWN,1,,int,24,<empty>,,297,1,CASTTypeId,,<empty>
+142847,UNKNOWN,-1,,S,22,<empty>,,75,2,CASTProblemDeclaration,,<empty>
+143072,UNKNOWN,1,,size_t,13,<empty>,,287,1,CASTTypeId,,<empty>
+143097,UNKNOWN,1,,httpd_file_t*,27,<empty>,,306,1,CASTTypeId,,<empty>
+143331,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,378,1,CASTTypeId,,<empty>
+143340,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,380,1,CASTTypeId,,<empty>
+143349,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,382,1,CASTTypeId,,<empty>
+143388,UNKNOWN,1,,httpd_handler_t*,33,<empty>,,412,1,CASTTypeId,,<empty>
+143474,UNKNOWN,1,,char *,20,<empty>,,434,1,CASTTypeId,,<empty>
+143519,UNKNOWN,1,,char*,38,<empty>,,443,1,CASTTypeId,,<empty>
+143538,UNKNOWN,1,,char *,18,<empty>,,448,1,CASTTypeId,,<empty>
+143554,UNKNOWN,1,,char *,23,<empty>,,453,1,CASTTypeId,,<empty>
+143565,UNKNOWN,1,,char *,32,<empty>,,455,1,CASTTypeId,,<empty>
+143605,UNKNOWN,1,,char *,58,<empty>,,458,1,CASTTypeId,,<empty>
+143617,UNKNOWN,1,,char *,28,<empty>,,461,1,CASTTypeId,,<empty>
+143646,UNKNOWN,1,,char *,20,<empty>,,468,1,CASTTypeId,,<empty>
+143675,UNKNOWN,1,,uint8_t *,27,<empty>,,472,1,CASTTypeId,,<empty>
+143738,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,498,1,CASTTypeId,,<empty>
+143747,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,500,1,CASTTypeId,,<empty>
+143756,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,502,1,CASTTypeId,,<empty>
+143800,UNKNOWN,1,,httpd_redirect_t*,31,<empty>,,528,1,CASTTypeId,,<empty>
+143804,UNKNOWN,1,,void,6,<empty>,,530,1,CASTTypeId,,<empty>
+143851,UNKNOWN,1,,unsigned char *,23,<empty>,,541,1,CASTTypeId,,<empty>
+143946,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,572,1,CASTTypeId,,<empty>
+143955,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,574,1,CASTTypeId,,<empty>
+143964,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,576,1,CASTTypeId,,<empty>
+143973,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,578,1,CASTTypeId,,<empty>
+144014,UNKNOWN,1,,httpd_stream_t*,31,<empty>,,625,1,CASTTypeId,,<empty>
+144635,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,779,1,CASTTypeId,,<empty>
+144644,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,781,1,CASTTypeId,,<empty>
+144653,UNKNOWN,1,,httpd_callback_sys_t*,22,<empty>,,783,1,CASTTypeId,,<empty>
+145100,UNKNOWN,1,,httpd_host_t *,13,<empty>,,945,1,CASTTypeId,,<empty>
+146164,UNKNOWN,1,,void *,45,<empty>,,1250,1,CASTTypeId,,<empty>
+146595,UNKNOWN,1,,char *,34,<empty>,,1360,1,CASTTypeId,,<empty>
+146623,UNKNOWN,1,,char *,21,<empty>,,1370,1,CASTTypeId,,<empty>
+146818,UNKNOWN,1,,char *,29,<empty>,,1409,1,CASTTypeId,,<empty>
+146866,UNKNOWN,1,,char *,35,<empty>,,1418,1,CASTTypeId,,<empty>
+146885,UNKNOWN,1,,char *,30,<empty>,,1420,1,CASTTypeId,,<empty>
+146948,UNKNOWN,1,,char *,33,<empty>,,1431,1,CASTTypeId,,<empty>
+146966,UNKNOWN,1,,char *,38,<empty>,,1433,1,CASTTypeId,,<empty>
+147113,UNKNOWN,1,,uint8_t *,51,<empty>,,1469,1,CASTTypeId,,<empty>
+147525,UNKNOWN,1,,char *,14,<empty>,,1587,1,CASTTypeId,,<empty>
+147609,UNKNOWN,1,,uint8_t*,30,<empty>,,1599,1,CASTTypeId,,<empty>
+148432,UNKNOWN,1,,uint8_t *,47,<empty>,,1839,1,CASTTypeId,,<empty>
+148647,UNKNOWN,1,,uint8_t *,47,<empty>,,1898,1,CASTTypeId,,<empty>
+149081,UNKNOWN,1,,int,19,<empty>,,2013,1,CASTTypeId,,<empty>
+149502,UNKNOWN,1,,int,49,<empty>,,67,1,CASTTypeId,,<empty>
+149728,UNKNOWN,1,,int *,24,<empty>,,209,1,CASTTypeId,,<empty>
+149828,UNKNOWN,1,,ssize_t,30,<empty>,,262,1,CASTTypeId,,<empty>
+149845,UNKNOWN,1,,size_t,24,<empty>,,271,1,CASTTypeId,,<empty>
+149854,UNKNOWN,1,,char *,17,<empty>,,273,1,CASTTypeId,,<empty>
+149919,UNKNOWN,1,,ssize_t,31,<empty>,,309,1,CASTTypeId,,<empty>
+149936,UNKNOWN,1,,size_t,24,<empty>,,316,1,CASTTypeId,,<empty>
+149945,UNKNOWN,1,,const char *,17,<empty>,,318,1,CASTTypeId,,<empty>
+150881,UNKNOWN,1,,socklen_t,31,<empty>,,199,1,CASTTypeId,,<empty>
+151002,UNKNOWN,1,,int,49,<empty>,,257,1,CASTTypeId,,<empty>
+151527,UNKNOWN,1,,struct sockaddr_in *,20,<empty>,,466,1,CASTTypeId,,<empty>
+151825,UNKNOWN,-1,,"vlc_tls_creds_t *crd = va_arg (ap, vlc_tls_creds_t *);",5,<empty>,,63,2,CASTProblemStatement,,<empty>
+151826,UNKNOWN,-1,,"const char *cert = va_arg (ap, const char *);",5,<empty>,,64,3,CASTProblemStatement,,<empty>
+151827,UNKNOWN,-1,,"const char *key = va_arg (ap, const char *);",5,<empty>,,65,4,CASTProblemStatement,,<empty>
+151844,UNKNOWN,-1,,"vlc_tls_creds_t *crd = va_arg (ap, vlc_tls_creds_t *);",5,<empty>,,73,2,CASTProblemStatement,,<empty>
+151859,UNKNOWN,-1,,"vlc_tls_creds_t *crd = va_arg (ap, vlc_tls_creds_t *);",5,<empty>,,81,2,CASTProblemStatement,,<empty>
+152299,UNKNOWN,1,,char *,29,<empty>,,251,1,CASTTypeId,,<empty>
+152350,UNKNOWN,1,,ssize_t,32,<empty>,,262,1,CASTTypeId,,<empty>
+152385,UNKNOWN,1,,void *,21,<empty>,,276,1,CASTTypeId,,<empty>
+152430,UNKNOWN,1,,char *,30,<empty>,,290,1,CASTTypeId,,<empty>
+152481,UNKNOWN,1,,ssize_t,32,<empty>,,301,1,CASTTypeId,,<empty>
+152610,UNKNOWN,1,,struct vlc_tls_socket *,31,<empty>,,351,1,CASTTypeId,,<empty>
+152657,UNKNOWN,1,,struct iovec *,21,<empty>,,373,1,CASTTypeId,,<empty>
+152827,UNKNOWN,1,,int,22,<empty>,,430,1,CASTTypeId,,<empty>
+152905,UNKNOWN,1,,int,48,<empty>,,456,1,CASTTypeId,,<empty>
+152931,UNKNOWN,1,,int,48,<empty>,,459,1,CASTTypeId,,<empty>
+153038,UNKNOWN,1,,vlc_tls_socket_t *,37,<empty>,,507,1,CASTTypeId,,<empty>
+153606,UNKNOWN,1,,unsigned char,16,<empty>,,242,1,CASTTypeId,,<empty>
+153794,UNKNOWN,1,,struct sockaddr *,27,<empty>,,482,1,CASTTypeId,,<empty>
+153799,UNKNOWN,1,,socklen_t,54,<empty>,,482,1,CASTTypeId,,<empty>
+153836,UNKNOWN,1,,int,42,<empty>,,508,1,CASTTypeId,,<empty>
+153959,UNKNOWN,1,,int,53,<empty>,,551,1,CASTTypeId,,<empty>
+154333,UNKNOWN,1,,socklen_t,30,<empty>,,693,1,CASTTypeId,,<empty>
+154379,UNKNOWN,1,,ULONG,55,<empty>,,38,1,CASTTypeId,,<empty>
+154547,UNKNOWN,-1,,"if (flags & O_CREAT)
+        mode = va_arg (ap, unsigned int);",5,<empty>,,56,5,CASTProblemStatement,,<empty>
+155079,UNKNOWN,1,,void *,39,<empty>,,280,1,CASTTypeId,,<empty>
+155318,UNKNOWN,1,,size_t,11,<empty>,,50,1,CASTTypeId,,<empty>
+155356,UNKNOWN,1,,const struct sockaddr_in *,17,<empty>,,59,1,CASTTypeId,,<empty>
+155408,UNKNOWN,1,,int,44,<empty>,,75,1,CASTTypeId,,<empty>
+155425,UNKNOWN,1,,unsigned int,28,<empty>,,82,1,CASTTypeId,,<empty>
+155431,UNKNOWN,1,,int,69,<empty>,,82,1,CASTTypeId,,<empty>
+155478,UNKNOWN,1,,struct addrinfo *,12,<empty>,,127,1,CASTTypeId,,<empty>
+155608,UNKNOWN,1,,struct sockaddr*,27,<empty>,,172,1,CASTTypeId,,<empty>
+155786,UNKNOWN,1,,u_long *,17,<empty>,,254,1,CASTTypeId,,<empty>
+155846,UNKNOWN,1,,u_short,24,<empty>,,274,1,CASTTypeId,,<empty>
+156074,UNKNOWN,1,,uint8_t *,23,<empty>,,31,1,CASTTypeId,,<empty>
+156277,UNKNOWN,1,,char const **,36,<empty>,,103,1,CASTTypeId,,<empty>
+156387,UNKNOWN,-1,,"rc = DosOpen( VLC_IPC_PIPE, &hpipe, &ulAction, 0, 0,
+                          OPEN_ACTION_OPEN_IF_EXISTS,
+                          OPEN_ACCESS_READWRITE | OPEN_SHARE_DENYREADWRITE |
+                          OPEN_FLAGS_FAIL_ON_ERROR,
+                          NULL );",13,<empty>,,158,1,CASTProblemStatement,,<empty>
+156388,UNKNOWN,-1,,"if( rc == ERROR_PIPE_BUSY )
+                DosWaitNPipe( VLC_IPC_PIPE, -1 );",13,<empty>,,164,2,CASTProblemStatement,,<empty>
+156389,UNKNOWN,-1,,"else
+                break;",13,<empty>,,166,3,CASTProblemStatement,,<empty>
+156393,UNKNOWN,-1,,"rc = DosCreateNPipe( VLC_IPC_PIPE,  &hpipeIPC,
+                                 NP_ACCESS_DUPLEX,
+                                 NP_WAIT | NP_TYPE_MESSAGE |
+                                 NP_READMODE_MESSAGE | 0x01,
+                                 32768, 32768, 0 );",13,<empty>,,172,1,CASTProblemStatement,,<empty>
+156500,UNKNOWN,1,,char *,29,<empty>,,228,1,CASTTypeId,,<empty>
+156555,UNKNOWN,-1,,"rc = DosOpen( VLC_IPC_PIPE, &hpipe, &ulAction, 0, 0,
+                          OPEN_ACTION_OPEN_IF_EXISTS,
+                          OPEN_ACCESS_READWRITE | OPEN_SHARE_DENYREADWRITE |
+                          OPEN_FLAGS_FAIL_ON_ERROR,
+                          NULL );",13,<empty>,,266,1,CASTProblemStatement,,<empty>
+156556,UNKNOWN,-1,,"if( rc == ERROR_PIPE_BUSY )
+                DosWaitNPipe( VLC_IPC_PIPE, -1 );",13,<empty>,,272,2,CASTProblemStatement,,<empty>
+156557,UNKNOWN,-1,,"else if( rc )
+                DosSleep( 1 );",13,<empty>,,274,3,CASTProblemStatement,,<empty>
+156689,UNKNOWN,1,,HSEM,30,<empty>,,96,1,CASTTypeId,,<empty>
+156707,UNKNOWN,1,,HSEM,26,<empty>,,100,1,CASTTypeId,,<empty>
+156800,UNKNOWN,13,,"unsigned long _System _DLL_InitTerm(unsigned long, unsigned long);",1,<empty>,,140,13,CASTProblemDeclaration,,<empty>
+156801,UNKNOWN,14,,"unsigned long _System _DLL_InitTerm(unsigned long hmod, unsigned long flag)
+{
+    VLC_UNUSED (hmod);
+
+    switch (flag)
+    {
+        case 0 :    /* Initialization */
+            if(_CRT_init() == -1)
+                return 0;
+
+            vlc_mutex_init (&super_mutex);
+            vlc_cond_init (&super_variable);
+            vlc_threadvar_create (&thread_key, NULL);
+            vlc_rwlock_init (&config_lock);
+            vlc_CPU_init ();
+
+            return 1;
+
+        case 1 :    /* Termination */
+            vlc_rwlock_destroy (&config_lock);
+            vlc_threadvar_delete (&thread_key);
+            vlc_cond_destroy (&super_variable);
+            vlc_mutex_destroy (&super_mutex);
+            vlc_static_cond_destroy_all ();
+
+            _CRT_term();
+
+            return 1;
+    }
+
+    return 0;   /* Failed */
+}",1,<empty>,,142,14,CASTProblemDeclaration,,<empty>
+157575,UNKNOWN,1,,ULONG,18,<empty>,,490,1,CASTTypeId,,<empty>
+157586,UNKNOWN,1,,void *,14,<empty>,,496,1,CASTTypeId,,<empty>
+157597,UNKNOWN,1,,void,6,<empty>,,503,1,CASTTypeId,,<empty>
+157813,UNKNOWN,1,,int,9,<empty>,,571,1,CASTTypeId,,<empty>
+158174,UNKNOWN,-1,,"vlc_cleanup_t *cleaner = va_arg (ap, vlc_cleanup_t *);",13,<empty>,,733,1,CASTProblemStatement,,<empty>
+158379,UNKNOWN,1,,unsigned,14,<empty>,,815,1,CASTTypeId,,<empty>
+158600,UNKNOWN,1,,long long *,24,<empty>,,882,1,CASTTypeId,,<empty>
+158717,UNKNOWN,1,,HSEM,46,<empty>,,938,1,CASTTypeId,,<empty>
+158897,UNKNOWN,1,,HSEM,32,<empty>,,994,1,CASTTypeId,,<empty>
+158913,UNKNOWN,1,,void,6,<empty>,,1000,1,CASTTypeId,,<empty>
+159273,UNKNOWN,-1,,"asprintf( &psz_dir, ""%s"" DIR_SEP ""art"" DIR_SEP ""artistalbum""
+                      DIR_SEP ""%s"" DIR_SEP ""%s"", psz_cachedir,
+                      psz_artist_sanitized, psz_album_sanitized ) == -1",13,<empty>,,73,1,CASTProblemExpression,,<empty>
+159317,UNKNOWN,-1,,"asprintf( &psz_dir, ""%s"" DIR_SEP ""art"" DIR_SEP ""arturl"" DIR_SEP
+                      ""%s"", psz_cachedir, psz_arturl_sanitized ) == -1",13,<empty>,,97,1,CASTProblemExpression,,<empty>
+159464,UNKNOWN,-1,,"asprintf( &psz_filename, ""%s"" DIR_SEP ""art%s"", psz_path, psz_ext ) < 0",9,<empty>,,151,1,CASTProblemExpression,,<empty>
+159528,UNKNOWN,-1,,"asprintf( &psz_file, ""%s"" DIR_SEP ""%s"",
+                          psz_path, psz_filename ) != -1",17,<empty>,,184,1,CASTProblemExpression,,<empty>
+159570,UNKNOWN,-1,,"asprintf( &psz_dir, ""%s"" DIR_SEP
+                  ""by-iiuid"" DIR_SEP
+                  ""%s"",
+                  psz_cachedir, psz_uid ) == -1",9,<empty>,,210,1,CASTProblemExpression,,<empty>
+159587,UNKNOWN,-1,,"asprintf( &psz_file, ""%s"" DIR_SEP ""%s"", psz_dir, psz_type ) == -1",9,<empty>,,224,1,CASTProblemExpression,,<empty>
+159996,UNKNOWN,-1,,"playlist_item_t *p_node = va_arg( args, playlist_item_t * );",9,<empty>,,72,1,CASTProblemStatement,,<empty>
+159997,UNKNOWN,-1,,"playlist_item_t *p_item = va_arg( args, playlist_item_t * );",9,<empty>,,73,2,CASTProblemStatement,,<empty>
+160319,UNKNOWN,1,,"pl_priv(p_playlist)->request.i_skip = (int) va_arg( args, int );",9,<empty>,,121,1,CASTProblemStatement,,<empty>
+160426,UNKNOWN,1,,bool,45,<empty>,,146,1,CASTTypeId,,<empty>
+160475,UNKNOWN,1,,void,6,<empty>,,49,1,CASTTypeId,,<empty>
+160478,UNKNOWN,1,,void,21,<empty>,,49,1,CASTTypeId,,<empty>
+160481,UNKNOWN,1,,void,35,<empty>,,49,1,CASTTypeId,,<empty>
+160484,UNKNOWN,1,,void,49,<empty>,,49,1,CASTTypeId,,<empty>
+160490,UNKNOWN,1,,playlist_t*,31,<empty>,,50,1,CASTTypeId,,<empty>
+160570,UNKNOWN,1,,playlist_t *,23,<empty>,,83,1,CASTTypeId,,<empty>
+160572,UNKNOWN,-1,,"msg_Dbg( obj, ""corks count: %""PRId64"" -> %""PRId64, old.i_int, cur.i_int );",5,<empty>,,85,3,CASTProblemStatement,,<empty>
+160661,UNKNOWN,1,,void,6,<empty>,,113,1,CASTTypeId,,<empty>
+160664,UNKNOWN,1,,void,18,<empty>,,113,1,CASTTypeId,,<empty>
+160678,UNKNOWN,1,,void,6,<empty>,,120,1,CASTTypeId,,<empty>
+160681,UNKNOWN,1,,void,21,<empty>,,120,1,CASTTypeId,,<empty>
+160684,UNKNOWN,1,,void,34,<empty>,,120,1,CASTTypeId,,<empty>
+160690,UNKNOWN,1,,playlist_t*,31,<empty>,,121,1,CASTTypeId,,<empty>
+160734,UNKNOWN,1,,playlist_t *,31,<empty>,,135,1,CASTTypeId,,<empty>
+160910,UNKNOWN,1,,playlist_t*,31,<empty>,,172,1,CASTTypeId,,<empty>
+162418,UNKNOWN,1,,int,14,<empty>,,255,1,CASTTypeId,,<empty>
+162730,UNKNOWN,1,,struct fetcher_thread*,29,<empty>,,378,1,CASTTypeId,,<empty>
+163573,UNKNOWN,1,,uintptr_t,15,<empty>,,250,1,CASTTypeId,,<empty>
+163578,UNKNOWN,1,,uintptr_t,42,<empty>,,250,1,CASTTypeId,,<empty>
+163967,UNKNOWN,1,,input_item_t *,20,<empty>,,418,1,CASTTypeId,,<empty>
+164304,UNKNOWN,1,,playlist_item_t*,38,<empty>,,602,1,CASTTypeId,,<empty>
+164727,UNKNOWN,-1,,"ARRAY_BSEARCH( p_playlist->items,->i_id, int, p_item->i_id, i );",5,<empty>,,771,10,CASTProblemStatement,,<empty>
+165302,UNKNOWN,-1,,"asprintf( &psz_file, ""%s"" DIR_SEP ""ml.xspf"", psz_datadir ) == -1",9,<empty>,,140,1,CASTProblemExpression,,<empty>
+165414,UNKNOWN,-1,,"char psz_dirname[ strlen( psz_temp ) + sizeof( DIR_SEP ""ml.xspf"")];",5,<empty>,,191,4,CASTProblemStatement,,<empty>
+165423,UNKNOWN,1,,vlc_object_t *,28,<empty>,,194,1,CASTTypeId,,<empty>
+165429,UNKNOWN,-1,,"strcat( psz_dirname, DIR_SEP ""ml.xspf"" );",5,<empty>,,199,8,CASTProblemStatement,,<empty>
+165431,UNKNOWN,-1,,"asprintf( &psz_temp, ""%s.tmp%""PRIu32, psz_dirname, (uint32_t)getpid() ) < 1",10,<empty>,,201,1,CASTProblemExpression,,<empty>
+165641,UNKNOWN,24,,),58,<empty>,,163,24,CASTProblemDeclaration,,<empty>
+166572,UNKNOWN,1,,playlist_t *,29,<empty>,,49,1,CASTTypeId,,<empty>
+166696,UNKNOWN,1,,playlist_t *,29,<empty>,,83,1,CASTTypeId,,<empty>
+167523,UNKNOWN,1,,unsigned,23,<empty>,,149,1,CASTTypeId,,<empty>
+168017,UNKNOWN,24,,VLC_DEFINE_SORT_FUNCTIONS,5,<empty>,,368,24,CASTProblemDeclaration,,<empty>
+169650,UNKNOWN,-1,,"ARRAY_BSEARCH( p_playlist->items,->i_id, int, p_root->i_id, i );",9,<empty>,,119,1,CASTProblemStatement,,<empty>
+170111,UNKNOWN,1,,void,6,<empty>,,300,1,CASTTypeId,,<empty>
+170212,UNKNOWN,1,,void,6,<empty>,,346,1,CASTTypeId,,<empty>
+170927,UNKNOWN,1,,locale_t,56,<empty>,,35,1,CASTTypeId,,<empty>
+170934,UNKNOWN,1,,locale_t,26,<empty>,,37,1,CASTTypeId,,<empty>
+170948,UNKNOWN,1,,locale_t,53,<empty>,,40,1,CASTTypeId,,<empty>
+170955,UNKNOWN,1,,locale_t,30,<empty>,,42,1,CASTTypeId,,<empty>
+171066,UNKNOWN,-1,,"if (flags & (O_CREAT|O_TMPFILE))
+        mode = va_arg (ap, unsigned int);",5,<empty>,,65,5,CASTProblemStatement,,<empty>
+171102,UNKNOWN,-1,,"if (flags & (O_CREAT|O_TMPFILE))
+        mode = va_arg (ap, unsigned int);",5,<empty>,,85,5,CASTProblemStatement,,<empty>
+171147,UNKNOWN,-1,,"""",28,<empty>,,127,4,CASTProblemStatement,,<empty>
+171149,UNKNOWN,-1,,E,40,<empty>,,127,6,CASTProblemStatement,,<empty>
+171400,UNKNOWN,1,,void *,39,<empty>,,238,1,CASTTypeId,,<empty>
+171696,UNKNOWN,1,,size_t,14,<empty>,,69,1,CASTTypeId,,<empty>
+171803,UNKNOWN,1,,char *,24,<empty>,,52,1,CASTTypeId,,<empty>
+171806,UNKNOWN,1,,char *,41,<empty>,,52,1,CASTTypeId,,<empty>
+171949,UNKNOWN,1,,int,31,<empty>,,102,1,CASTTypeId,,<empty>
+172314,UNKNOWN,1,,uint8_t *,17,<empty>,,115,1,CASTTypeId,,<empty>
+172347,UNKNOWN,1,,void,6,<empty>,,153,1,CASTTypeId,,<empty>
+172350,UNKNOWN,1,,void,18,<empty>,,153,1,CASTTypeId,,<empty>
+172353,UNKNOWN,1,,void,31,<empty>,,153,1,CASTTypeId,,<empty>
+172561,UNKNOWN,7,,"void vlc_assert_locked (vlc_mutex_t *p_mutex)
+{
+    if (RUNNING_ON_VALGRIND > 0)
+        return;
+    assert (pthread_mutex_lock (p_mutex) == EDEADLK);
+}",1,<empty>,,203,7,CASTProblemDeclaration,,<empty>
+173159,UNKNOWN,1,,void,6,<empty>,,460,1,CASTTypeId,,<empty>
+173303,UNKNOWN,1,,void,6,<empty>,,579,1,CASTTypeId,,<empty>
+173306,UNKNOWN,1,,void,17,<empty>,,579,1,CASTTypeId,,<empty>
+173399,UNKNOWN,1,,void,6,<empty>,,622,1,CASTTypeId,,<empty>
+173508,UNKNOWN,2,,noreturn,1,<empty>,,53,2,CASTProblemDeclaration,,<empty>
+173920,UNKNOWN,8,,noreturn,1,<empty>,,82,8,CASTProblemDeclaration,,<empty>
+173989,UNKNOWN,1,,struct sockaddr *,23,<empty>,,100,1,CASTTypeId,,<empty>
+174084,UNKNOWN,12,,noreturn,1,<empty>,,135,12,CASTProblemDeclaration,,<empty>
+174494,UNKNOWN,1,,uint16_t,36,<empty>,,320,1,CASTTypeId,,<empty>
+174514,UNKNOWN,1,,const struct sockaddr_in *,20,<empty>,,336,1,CASTTypeId,,<empty>
+174754,UNKNOWN,-1,,"addrlen < offsetof (struct sockaddr, sa_family)
+                 + sizeof (addr->sa_family)",9,<empty>,,44,1,CASTProblemExpression,,<empty>
+175036,UNKNOWN,-1,,"vlc_memstream_printf(stream, ""o=- %""PRIu64"" %""PRIu64"" IN IP%c %s\r\n"",
+                             now, now, connection[5], hostname);",9,<empty>,,174,5,CASTProblemStatement,,<empty>
+175469,UNKNOWN,1,,char*,15,<empty>,,168,1,CASTTypeId,,<empty>
+175475,UNKNOWN,1,,void *,40,<empty>,,168,1,CASTTypeId,,<empty>
+175512,UNKNOWN,1,,void *,19,<empty>,,178,1,CASTTypeId,,<empty>
+175536,UNKNOWN,1,,void *,15,<empty>,,194,1,CASTTypeId,,<empty>
+176329,UNKNOWN,-1,,"if ( current_date > i_dts )
+            msg_Warn( p_mux, ""late buffer for mux input (%""PRId64"")"",
+                      current_date - i_dts );",9,<empty>,,532,3,CASTProblemStatement,,<empty>
+176731,UNKNOWN,1,,sout_instance_t *,32,<empty>,,738,1,CASTTypeId,,<empty>
+177378,UNKNOWN,1,,locale_t,17,<empty>,,56,1,CASTTypeId,,<empty>
+177415,UNKNOWN,1,,locale_t,17,<empty>,,75,1,CASTTypeId,,<empty>
+177463,UNKNOWN,1,,locale_t,18,<empty>,,105,1,CASTTypeId,,<empty>
+177625,UNKNOWN,1,,void,6,<empty>,,104,1,CASTTypeId,,<empty>
+177753,UNKNOWN,1,,"int (*)( const void *, const void *)",17,<empty>,,157,1,CASTTypeId,,<empty>
+179100,UNKNOWN,1,,unsigned char,39,<empty>,,147,1,CASTTypeId,,<empty>
+179747,UNKNOWN,1,,void,26,<empty>,,220,1,CASTTypeId,,<empty>
+180048,UNKNOWN,-1,,"vlc_memstream_printf(&stream, ""&#%""PRIu32"";"", cp);",21,<empty>,,331,1,CASTProblemStatement,,<empty>
+180120,UNKNOWN,1,,unsigned,15,<empty>,,368,1,CASTTypeId,,<empty>
+180236,UNKNOWN,1,,const uint8_t*,40,<empty>,,400,1,CASTTypeId,,<empty>
+180245,UNKNOWN,1,,const uint8_t*,40,<empty>,,402,1,CASTTypeId,,<empty>
+180715,UNKNOWN,1,,uint8_t *,19,<empty>,,427,1,CASTTypeId,,<empty>
+180748,UNKNOWN,1,,unsigned int,28,<empty>,,434,1,CASTTypeId,,<empty>
+180885,UNKNOWN,1,,uint8_t*,47,<empty>,,478,1,CASTTypeId,,<empty>
+181177,UNKNOWN,-1,,"vlc_memstream_printf(stream, ""%""PRIi64,
+                            item->p_stats->i_displayed_pictures);",25,<empty>,,598,2,CASTProblemStatement,,<empty>
+181330,UNKNOWN,-1,,"if (input != NULL)
+                    vlc_memstream_printf(stream, ""%""PRId64,
+                            var_GetInteger(input, ""bit-rate"") / 1000);",17,<empty>,,661,67,CASTProblemStatement,,<empty>
+181331,UNKNOWN,-1,,"else if (!b_empty_if_na)
+                    vlc_memstream_putc(stream, '-');",17,<empty>,,664,68,CASTProblemStatement,,<empty>
+181335,UNKNOWN,-1,,"if (input != NULL)
+                    vlc_memstream_printf(stream, ""%""PRId64,
+                            var_GetInteger(input, ""chapter""));",17,<empty>,,668,72,CASTProblemStatement,,<empty>
+181336,UNKNOWN,-1,,"else if (!b_empty_if_na)
+                    vlc_memstream_putc(stream, '-');",17,<empty>,,671,73,CASTProblemStatement,,<empty>
+181384,UNKNOWN,-1,,"if (input != NULL)
+                    vlc_memstream_printf(stream, ""%""PRId64,
+                                         var_GetInteger(input, ""title""));",17,<empty>,,692,85,CASTProblemStatement,,<empty>
+181385,UNKNOWN,-1,,"else if (!b_empty_if_na)
+                    vlc_memstream_putc(stream, '-');",17,<empty>,,695,86,CASTProblemStatement,,<empty>
+181770,UNKNOWN,1,,unsigned,10,<empty>,,851,1,CASTTypeId,,<empty>
+181777,UNKNOWN,1,,unsigned,38,<empty>,,851,1,CASTTypeId,,<empty>
+182000,UNKNOWN,1,,uint8_t *,21,<empty>,,115,1,CASTTypeId,,<empty>
+182241,UNKNOWN,1,,char *,25,<empty>,,212,1,CASTTypeId,,<empty>
+182281,UNKNOWN,1,,uint32_t,35,<empty>,,223,1,CASTTypeId,,<empty>
+182695,UNKNOWN,1,,unsigned char,14,<empty>,,82,1,CASTTypeId,,<empty>
+182702,UNKNOWN,1,,unsigned char,14,<empty>,,83,1,CASTTypeId,,<empty>
+182709,UNKNOWN,1,,unsigned char,14,<empty>,,84,1,CASTTypeId,,<empty>
+182740,UNKNOWN,1,,unsigned char,14,<empty>,,95,1,CASTTypeId,,<empty>
+182747,UNKNOWN,1,,unsigned char,14,<empty>,,96,1,CASTTypeId,,<empty>
+182754,UNKNOWN,1,,unsigned char,14,<empty>,,97,1,CASTTypeId,,<empty>
+182945,UNKNOWN,-1,,"asprintf (&buf, ""%s""DIR_SEP""%s"", cwd, path) == -1",13,<empty>,,199,1,CASTProblemExpression,,<empty>
+184099,UNKNOWN,1,,int,41,<empty>,,623,1,CASTTypeId,,<empty>
+184843,UNKNOWN,1,,unsigned char,15,<empty>,,966,1,CASTTypeId,,<empty>
+185758,UNKNOWN,-1,,DECL_ARRAY(vout_control_cmd_t) cmd;,5,<empty>,,120,7,CASTProblemDeclaration,,<empty>
+186246,UNKNOWN,1,,int64_t,20,<empty>,,165,1,CASTTypeId,,<empty>
+186299,UNKNOWN,1,,int64_t,20,<empty>,,168,1,CASTTypeId,,<empty>
+186358,UNKNOWN,1,,int64_t,20,<empty>,,172,1,CASTTypeId,,<empty>
+186404,UNKNOWN,1,,int64_t,20,<empty>,,176,1,CASTTypeId,,<empty>
+186614,UNKNOWN,1,,int64_t,36,<empty>,,229,1,CASTTypeId,,<empty>
+186648,UNKNOWN,1,,int64_t,36,<empty>,,231,1,CASTTypeId,,<empty>
+186763,UNKNOWN,1,,int,22,<empty>,,258,1,CASTTypeId,,<empty>
+186770,UNKNOWN,1,,int,48,<empty>,,258,1,CASTTypeId,,<empty>
+186815,UNKNOWN,1,,int,22,<empty>,,270,1,CASTTypeId,,<empty>
+186822,UNKNOWN,1,,int,49,<empty>,,270,1,CASTTypeId,,<empty>
+186864,UNKNOWN,1,,int,18,<empty>,,282,1,CASTTypeId,,<empty>
+186887,UNKNOWN,1,,int,18,<empty>,,284,1,CASTTypeId,,<empty>
+187254,UNKNOWN,1,,const char *,14,<empty>,,436,1,CASTTypeId,,<empty>
+187260,UNKNOWN,1,,const char *,45,<empty>,,436,1,CASTTypeId,,<empty>
+187423,UNKNOWN,-1,,"const int x = (int)va_arg(args, int);",9,<empty>,,492,1,CASTProblemStatement,,<empty>
+187424,UNKNOWN,-1,,"const int y = (int)va_arg(args, int);",9,<empty>,,493,2,CASTProblemStatement,,<empty>
+187425,UNKNOWN,-1,,"const int button_mask = (int)va_arg(args, int);",9,<empty>,,494,3,CASTProblemStatement,,<empty>
+187448,UNKNOWN,-1,,"const int x = (int)va_arg(args, int);",9,<empty>,,503,1,CASTProblemStatement,,<empty>
+187449,UNKNOWN,-1,,"const int y = (int)va_arg(args, int);",9,<empty>,,504,2,CASTProblemStatement,,<empty>
+187471,UNKNOWN,-1,,"const int button = (int)va_arg(args, int);",9,<empty>,,515,1,CASTProblemStatement,,<empty>
+187686,UNKNOWN,-1,,"const int key = (int)va_arg(args, int);",9,<empty>,,585,1,CASTProblemStatement,,<empty>
+187714,UNKNOWN,-1,,"vout_SendEventViewpointMoved(osys->vout,
+                                     va_arg(args, const vlc_viewpoint_t *));",9,<empty>,,599,21,CASTProblemStatement,,<empty>
+187719,UNKNOWN,-1,,"const int width  = (int)va_arg(args, int);",9,<empty>,,635,1,CASTProblemStatement,,<empty>
+187720,UNKNOWN,-1,,"const int height = (int)va_arg(args, int);",9,<empty>,,636,2,CASTProblemStatement,,<empty>
+187942,UNKNOWN,1,,uint64_t,31,<empty>,,713,1,CASTTypeId,,<empty>
+187962,UNKNOWN,1,,uint64_t,31,<empty>,,714,1,CASTTypeId,,<empty>
+188637,UNKNOWN,1,,int,36,<empty>,,900,1,CASTTypeId,,<empty>
+188658,UNKNOWN,1,,int,36,<empty>,,902,1,CASTTypeId,,<empty>
+188688,UNKNOWN,1,,int,26,<empty>,,906,1,CASTTypeId,,<empty>
+188711,UNKNOWN,1,,int,26,<empty>,,908,1,CASTTypeId,,<empty>
+188743,UNKNOWN,1,,int,27,<empty>,,911,1,CASTTypeId,,<empty>
+188766,UNKNOWN,1,,int,27,<empty>,,913,1,CASTTypeId,,<empty>
+189551,UNKNOWN,1,,int,30,<empty>,,1093,1,CASTTypeId,,<empty>
+189560,UNKNOWN,1,,int,62,<empty>,,1093,1,CASTTypeId,,<empty>
+190226,UNKNOWN,1,,void,6,<empty>,,1298,1,CASTTypeId,,<empty>
+190449,UNKNOWN,1,,void,6,<empty>,,1371,1,CASTTypeId,,<empty>
+190452,UNKNOWN,1,,void,16,<empty>,,1371,1,CASTTypeId,,<empty>
+190455,UNKNOWN,1,,void,29,<empty>,,1371,1,CASTTypeId,,<empty>
+191241,UNKNOWN,1,,void,6,<empty>,,45,1,CASTTypeId,,<empty>
+191279,UNKNOWN,1,,void *,46,<empty>,,58,1,CASTTypeId,,<empty>
+191287,UNKNOWN,1,,vlc_value_t,18,<empty>,,61,1,CASTTypeId,,<empty>
+191512,UNKNOWN,1,,inhibit_t *,26,<empty>,,60,1,CASTTypeId,,<empty>
+191617,UNKNOWN,1,,vout_thread_t *,28,<empty>,,69,1,CASTTypeId,,<empty>
+191886,UNKNOWN,1,,char *,33,<empty>,,138,1,CASTTypeId,,<empty>
+192166,UNKNOWN,1,,vlc_object_t *,29,<empty>,,53,1,CASTTypeId,,<empty>
+192266,UNKNOWN,1,,struct vlc_gl_priv_t *,37,<empty>,,87,1,CASTTypeId,,<empty>
+192283,UNKNOWN,1,,struct vlc_gl_priv_t *,37,<empty>,,93,1,CASTTypeId,,<empty>
+192898,UNKNOWN,1,,input_thread_t*,30,<empty>,,148,1,CASTTypeId,,<empty>
+192978,UNKNOWN,-1,,"asprintf(&filename, ""%s"" DIR_SEP ""%s%05d.%s"",
+                             cfg->path, prefix, num, cfg->format) < 0",21,<empty>,,170,1,CASTProblemExpression,,<empty>
+193038,UNKNOWN,-1,,"asprintf(&filename, ""%s"" DIR_SEP ""%s%s%03lu.%s"",
+                         cfg->path, prefix, buffer, ts.tv_nsec / 1000000,
+                         cfg->format) < 0",17,<empty>,,193,1,CASTProblemExpression,,<empty>
+193220,UNKNOWN,1,,void,6,<empty>,,44,1,CASTTypeId,,<empty>
+194643,UNKNOWN,1,,float,23,<empty>,,381,1,CASTTypeId,,<empty>
+195850,UNKNOWN,1,,vout_thread_sys_t*,16,<empty>,,133,1,CASTTypeId,,<empty>
+196407,UNKNOWN,1,,vout_thread_t *,28,<empty>,,286,1,CASTTypeId,,<empty>
+197623,UNKNOWN,1,,void,6,<empty>,,662,1,CASTTypeId,,<empty>
+197626,UNKNOWN,1,,void,21,<empty>,,662,1,CASTTypeId,,<empty>
+197629,UNKNOWN,1,,void,37,<empty>,,662,1,CASTTypeId,,<empty>
+197632,UNKNOWN,1,,void,52,<empty>,,662,1,CASTTypeId,,<empty>
+197636,UNKNOWN,1,,vout_thread_t *,32,<empty>,,663,1,CASTTypeId,,<empty>
+197649,UNKNOWN,1,,vlc_object_t *,31,<empty>,,669,1,CASTTypeId,,<empty>
+198476,UNKNOWN,-1,,"msg_Warn(vout, ""picture is too late to be displayed (missing %""PRId64"" ms)"", late/1000);",25,<empty>,,873,1,CASTProblemStatement,,<empty>
+198495,UNKNOWN,-1,,"msg_Dbg(vout, ""picture might be displayed late (missing %""PRId64"" ms)"", late/1000);",25,<empty>,,878,1,CASTProblemStatement,,<empty>
+200685,UNKNOWN,1,,int,38,<empty>,,1473,1,CASTTypeId,,<empty>
+200689,UNKNOWN,1,,int,51,<empty>,,1473,1,CASTTypeId,,<empty>
+203555,UNKNOWN,1,,int,50,<empty>,,222,1,CASTTypeId,,<empty>
+204935,UNKNOWN,1,,char*,27,<empty>,,208,1,CASTTypeId,,<empty>
+205023,UNKNOWN,1,,char*,27,<empty>,,235,1,CASTTypeId,,<empty>
+205103,UNKNOWN,1,,void *,23,<empty>,,260,1,CASTTypeId,,<empty>
+205105,UNKNOWN,1,,uintptr_t,31,<empty>,,260,1,CASTTypeId,,<empty>
+205536,UNKNOWN,1,,vout_thread_t *,28,<empty>,,445,1,CASTTypeId,,<empty>
+205655,UNKNOWN,-1,,"snprintf(buf, sizeof (buf), ""%""PRIu64""+%""PRIu64""+%""PRIu64""+%""PRIu64,
+             var_GetInteger(object, ""crop-left""),
+             var_GetInteger(object, ""crop-top""),
+             var_GetInteger(object, ""crop-right""),
+             var_GetInteger(object, ""crop-bottom""));",5,<empty>,,473,2,CASTProblemStatement,,<empty>
+205683,UNKNOWN,1,,vout_thread_t *,28,<empty>,,487,1,CASTTypeId,,<empty>
+205747,UNKNOWN,1,,vout_thread_t *,30,<empty>,,502,1,CASTTypeId,,<empty>
+205750,UNKNOWN,1,,void,6,<empty>,,504,1,CASTTypeId,,<empty>
+205753,UNKNOWN,1,,void,19,<empty>,,504,1,CASTTypeId,,<empty>
+205756,UNKNOWN,1,,void,32,<empty>,,504,1,CASTTypeId,,<empty>
+205778,UNKNOWN,1,,vout_thread_t *,30,<empty>,,512,1,CASTTypeId,,<empty>
+205781,UNKNOWN,1,,void,6,<empty>,,514,1,CASTTypeId,,<empty>
+205784,UNKNOWN,1,,void,19,<empty>,,514,1,CASTTypeId,,<empty>
+205787,UNKNOWN,1,,void,32,<empty>,,514,1,CASTTypeId,,<empty>
+205810,UNKNOWN,1,,vout_thread_t *,37,<empty>,,522,1,CASTTypeId,,<empty>
+205819,UNKNOWN,1,,void,6,<empty>,,524,1,CASTTypeId,,<empty>
+205822,UNKNOWN,1,,void,19,<empty>,,524,1,CASTTypeId,,<empty>
+205825,UNKNOWN,1,,void,32,<empty>,,524,1,CASTTypeId,,<empty>
+205842,UNKNOWN,1,,vout_thread_t *,28,<empty>,,531,1,CASTTypeId,,<empty>
+205864,UNKNOWN,1,,void,6,<empty>,,543,1,CASTTypeId,,<empty>
+205867,UNKNOWN,1,,void,19,<empty>,,543,1,CASTTypeId,,<empty>
+205870,UNKNOWN,1,,void,32,<empty>,,543,1,CASTTypeId,,<empty>
+205887,UNKNOWN,1,,vout_thread_t *,30,<empty>,,550,1,CASTTypeId,,<empty>
+205890,UNKNOWN,1,,void,6,<empty>,,551,1,CASTTypeId,,<empty>
+205893,UNKNOWN,1,,void,21,<empty>,,551,1,CASTTypeId,,<empty>
+205924,UNKNOWN,1,,vout_thread_t *,30,<empty>,,561,1,CASTTypeId,,<empty>
+205951,UNKNOWN,1,,vout_thread_t *,30,<empty>,,572,1,CASTTypeId,,<empty>
+205979,UNKNOWN,1,,vout_thread_t *,30,<empty>,,582,1,CASTTypeId,,<empty>
+206007,UNKNOWN,1,,vout_thread_t *,30,<empty>,,592,1,CASTTypeId,,<empty>
+206035,UNKNOWN,1,,vout_thread_t *,30,<empty>,,602,1,CASTTypeId,,<empty>
+206063,UNKNOWN,1,,vout_thread_t *,30,<empty>,,612,1,CASTTypeId,,<empty>
+206777,UNKNOWN,1,,input_thread_t*,30,<empty>,,184,1,CASTTypeId,,<empty>
+207905,UNKNOWN,1,,subpicture_t**,31,<empty>,,499,1,CASTTypeId,,<empty>
+207912,UNKNOWN,1,,subpicture_t**,31,<empty>,,500,1,CASTTypeId,,<empty>
+209181,UNKNOWN,1,,const char*,31,<empty>,,860,1,CASTTypeId,,<empty>
+209191,UNKNOWN,1,,const char*,31,<empty>,,861,1,CASTTypeId,,<empty>
+209522,UNKNOWN,1,,int,25,<empty>,,939,1,CASTTypeId,,<empty>
+209536,UNKNOWN,1,,int,25,<empty>,,941,1,CASTTypeId,,<empty>
+209576,UNKNOWN,1,,int,39,<empty>,,950,1,CASTTypeId,,<empty>
+209589,UNKNOWN,1,,int,39,<empty>,,952,1,CASTTypeId,,<empty>
+210104,UNKNOWN,1,,uint64_t,45,<empty>,,1094,1,CASTTypeId,,<empty>
+210120,UNKNOWN,1,,uint64_t,45,<empty>,,1096,1,CASTTypeId,,<empty>
+210149,UNKNOWN,1,,int64_t,52,<empty>,,1107,1,CASTTypeId,,<empty>
+210162,UNKNOWN,1,,int64_t,52,<empty>,,1108,1,CASTTypeId,,<empty>
+210464,UNKNOWN,1,,spu_t *,16,<empty>,,1199,1,CASTTypeId,,<empty>
+210478,UNKNOWN,1,,intptr_t,20,<empty>,,1209,1,CASTTypeId,,<empty>
+210521,UNKNOWN,1,,void *,26,<empty>,,1222,1,CASTTypeId,,<empty>
+210523,UNKNOWN,1,,intptr_t,34,<empty>,,1222,1,CASTTypeId,,<empty>
+210550,UNKNOWN,1,,intptr_t,20,<empty>,,1230,1,CASTTypeId,,<empty>
+210580,UNKNOWN,1,,vout_thread_t *,35,<empty>,,1244,1,CASTTypeId,,<empty>
+210593,UNKNOWN,1,,vlc_object_t *,31,<empty>,,1250,1,CASTTypeId,,<empty>
+210607,UNKNOWN,1,,vlc_object_t *,31,<empty>,,1257,1,CASTTypeId,,<empty>
+210632,UNKNOWN,1,,vout_thread_t *,35,<empty>,,1266,1,CASTTypeId,,<empty>
+210645,UNKNOWN,1,,vlc_object_t *,31,<empty>,,1272,1,CASTTypeId,,<empty>
+210659,UNKNOWN,1,,vlc_object_t *,31,<empty>,,1279,1,CASTTypeId,,<empty>
+210701,UNKNOWN,1,,spu_private_t*,36,<empty>,,1303,1,CASTTypeId,,<empty>
+212457,UNKNOWN,-1,,"vout_window_t *wnd = va_arg(ap, vout_window_t *);",5,<empty>,,48,2,CASTProblemStatement,,<empty>
+212459,UNKNOWN,-1,,t,27,<empty>,,49,4,CASTProblemStatement,,<empty>
+212460,UNKNOWN,-1,,"*cfg = va_arg(ap, const vout_window_cfg_t *);",29,<empty>,,49,5,CASTProblemStatement,,<empty>
+212623,UNKNOWN,-1,,"vout_window_t *wnd = va_arg(ap, vout_window_t *);",5,<empty>,,96,2,CASTProblemStatement,,<empty>
+212640,UNKNOWN,1,,window_t *,20,<empty>,,106,1,CASTTypeId,,<empty>
+212675,UNKNOWN,1,,window_t *,20,<empty>,,119,1,CASTTypeId,,<empty>
+212764,UNKNOWN,1,,vout_thread_t *,28,<empty>,,158,1,CASTTypeId,,<empty>
+212782,UNKNOWN,1,,vout_thread_t *,28,<empty>,,166,1,CASTTypeId,,<empty>
+212860,UNKNOWN,1,,vlc_object_t *,31,<empty>,,193,1,CASTTypeId,,<empty>
+213070,UNKNOWN,1,,HMODULE,30,<empty>,,195,1,CASTTypeId,,<empty>
+213566,UNKNOWN,1,,unsigned,10,<empty>,,139,1,CASTTypeId,,<empty>
+213569,UNKNOWN,1,,unsigned,29,<empty>,,139,1,CASTTypeId,,<empty>
+213709,UNKNOWN,-1,,"int unixmode = va_arg(ap, int);",9,<empty>,,85,1,CASTProblemStatement,,<empty>
+213760,UNKNOWN,1,,void,6,<empty>,,108,1,CASTTypeId,,<empty>
+213763,UNKNOWN,1,,void,18,<empty>,,108,1,CASTTypeId,,<empty>
+213766,UNKNOWN,1,,void,35,<empty>,,108,1,CASTTypeId,,<empty>
+213820,UNKNOWN,1,,void,6,<empty>,,146,1,CASTTypeId,,<empty>
+213919,UNKNOWN,1,,void *,17,<empty>,,188,1,CASTTypeId,,<empty>
+213965,UNKNOWN,1,,void *,13,<empty>,,204,1,CASTTypeId,,<empty>
+213976,UNKNOWN,1,,vlc_DIR *,23,<empty>,,209,1,CASTTypeId,,<empty>
+214332,UNKNOWN,1,,unsigned long,37,<empty>,,341,1,CASTTypeId,,<empty>
+214347,UNKNOWN,1,,void,6,<empty>,,347,1,CASTTypeId,,<empty>
+214350,UNKNOWN,1,,void,17,<empty>,,347,1,CASTTypeId,,<empty>
+214353,UNKNOWN,1,,void,30,<empty>,,347,1,CASTTypeId,,<empty>
+214356,UNKNOWN,1,,void,44,<empty>,,347,1,CASTTypeId,,<empty>
+214359,UNKNOWN,1,,void,56,<empty>,,347,1,CASTTypeId,,<empty>
+214395,UNKNOWN,1,,unsigned long,37,<empty>,,356,1,CASTTypeId,,<empty>
+214466,UNKNOWN,1,,intptr_t,31,<empty>,,379,1,CASTTypeId,,<empty>
+214524,UNKNOWN,1,,vlc_mta_holder*,30,<empty>,,42,1,CASTTypeId,,<empty>
+214553,UNKNOWN,1,,vlc_mta_holder*,30,<empty>,,65,1,CASTTypeId,,<empty>
+214569,UNKNOWN,1,,vlc_mta_holder*,18,<empty>,,68,1,CASTTypeId,,<empty>
+214664,UNKNOWN,1,,vlc_mta_holder*,30,<empty>,,103,1,CASTTypeId,,<empty>
+214754,UNKNOWN,1,,vlc_object_t *,35,<empty>,,36,1,CASTTypeId,,<empty>
+214769,UNKNOWN,1,,vlc_object_t *,39,<empty>,,40,1,CASTTypeId,,<empty>
+214959,UNKNOWN,1,,void,6,<empty>,,123,1,CASTTypeId,,<empty>
+214978,UNKNOWN,1,,void *,13,<empty>,,134,1,CASTTypeId,,<empty>
+214982,UNKNOWN,1,,char *,45,<empty>,,134,1,CASTTypeId,,<empty>
+215017,UNKNOWN,1,,uint8_t *,23,<empty>,,42,1,CASTTypeId,,<empty>
+215187,UNKNOWN,-1,,"!( hmutex = CreateMutex( 0, TRUE, L""VLC ipc "" TEXT(VERSION) ) )",13,<empty>,,99,1,CASTProblemExpression,,<empty>
+215210,UNKNOWN,-1,,"!( ipcwindow = FindWindow( 0, L""VLC ipc "" TEXT(VERSION) ) )",17,<empty>,,126,1,CASTProblemExpression,,<empty>
+215297,UNKNOWN,1,,size_t *,24,<empty>,,158,1,CASTTypeId,,<empty>
+216024,UNKNOWN,1,,HANDLE,10,<empty>,,506,1,CASTTypeId,,<empty>
+216026,UNKNOWN,1,,uintptr_t,18,<empty>,,506,1,CASTTypeId,,<empty>
+216204,UNKNOWN,32,,"static void CALLBACK vlc_cancel_self (ULONG_PTR self)
+{
+    (void) self;
+}",1,<empty>,,587,32,CASTProblemDeclaration,,<empty>
+216258,UNKNOWN,1,,uintptr_t,45,<empty>,,606,1,CASTTypeId,,<empty>
+216425,UNKNOWN,-1,,"vlc_cleanup_t *cleaner = va_arg (ap, vlc_cleanup_t *);",13,<empty>,,675,1,CASTProblemStatement,,<empty>
+216455,UNKNOWN,-1,,"void *addr = va_arg(ap, void *);",13,<empty>,,689,1,CASTProblemStatement,,<empty>
+216489,UNKNOWN,-1,,"void *addr = va_arg(ap, void *);",13,<empty>,,700,1,CASTProblemStatement,,<empty>
+216548,UNKNOWN,-1,,),41,<empty>,,734,2,CASTProblemDeclaration,,<empty>
+216549,UNKNOWN,-1,,"(LPTIMECAPS ptc,UINT cbtc);",42,<empty>,,734,3,CASTProblemDeclaration,,<empty>
+216555,UNKNOWN,-1,,),35,<empty>,,735,5,CASTProblemDeclaration,,<empty>
+216556,UNKNOWN,-1,,(void);,36,<empty>,,735,6,CASTProblemDeclaration,,<empty>
+216841,UNKNOWN,1,,void*,42,<empty>,,901,1,CASTTypeId,,<empty>
+216852,UNKNOWN,1,,void*,39,<empty>,,902,1,CASTTypeId,,<empty>
+216905,UNKNOWN,1,,void*,28,<empty>,,913,1,CASTTypeId,,<empty>
+217107,UNKNOWN,1,,void,6,<empty>,,989,1,CASTTypeId,,<empty>
+217110,UNKNOWN,1,,void,18,<empty>,,989,1,CASTTypeId,,<empty>
+217191,UNKNOWN,55,,BOOL,1,<empty>,,1041,55,CASTProblemDeclaration,,<empty>
+217199,UNKNOWN,57,,BOOL,1,<empty>,,1043,57,CASTProblemDeclaration,,<empty>
+217206,UNKNOWN,1,,void,6,<empty>,,1045,1,CASTTypeId,,<empty>
+217209,UNKNOWN,1,,void,6,<empty>,,1046,1,CASTTypeId,,<empty>
+217287,UNKNOWN,2,,"static void CALLBACK vlc_timer_do (void *val, BOOLEAN timeout)
+{
+    struct vlc_timer *timer = val;
+
+    assert (timeout);
+    timer->func (timer->data);
+}",1,<empty>,,37,2,CASTProblemDeclaration,,<empty>
+217429,UNKNOWN,1,,void,6,<empty>,,92,1,CASTTypeId,,<empty>

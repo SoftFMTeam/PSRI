@@ -1,0 +1,2487 @@
+32,MEMBER,<empty>,<empty>,*name,16,,63,name,1,,char*
+33,MEMBER,<empty>,<empty>,flag,14,,64,flag,2,,uint64_t
+189,MEMBER,<empty>,<empty>,*name,16,,91,name,1,,char*
+190,MEMBER,<empty>,<empty>,flag,14,,92,flag,2,,uint64_t
+234,MEMBER,<empty>,<empty>,*name,16,,104,name,1,,char*
+235,MEMBER,<empty>,<empty>,flag,14,,105,flag,2,,uint64_t
+265,MEMBER,<empty>,<empty>,flags,14,,116,flags,1,,uint32_t
+266,MEMBER,<empty>,<empty>,allowed_commands[USER_COMMAND_BITS_COUNT/64],14,,123,allowed_commands,2,,uint64_t[16]
+267,MEMBER,<empty>,<empty>,**allowed_firstargs,9,,132,allowed_firstargs,3,,sds**
+268,MEMBER,<empty>,<empty>,*patterns,10,,133,patterns,4,,list*
+269,MEMBER,<empty>,<empty>,*channels,10,,136,channels,5,,list*
+270,MEMBER,<empty>,<empty>,command_rules,9,,140,command_rules,6,,sds
+612,MEMBER,<empty>,<empty>,flags,9,,262,flags,1,,int
+613,MEMBER,<empty>,<empty>,pattern,9,,263,pattern,2,,sds
+5422,MEMBER,<empty>,<empty>,keys_init,9,,1635,keys_init,1,,int
+5423,MEMBER,<empty>,<empty>,keys,19,,1636,keys,2,,getKeysResult
+8189,MEMBER,<empty>,<empty>,count,14,,2502,count,1,,uint64_t
+8190,MEMBER,<empty>,<empty>,reason,9,,2503,reason,2,,int
+8191,MEMBER,<empty>,<empty>,context,9,,2504,context,3,,int
+8192,MEMBER,<empty>,<empty>,object,9,,2505,object,4,,sds
+8193,MEMBER,<empty>,<empty>,username,9,,2506,username,5,,sds
+8194,MEMBER,<empty>,<empty>,ctime,14,,2507,ctime,6,,mstime_t
+8195,MEMBER,<empty>,<empty>,cinfo,9,,2508,cinfo,7,,sds
+8196,MEMBER,<empty>,<empty>,entry_id,15,,2509,entry_id,8,,long long
+8197,MEMBER,<empty>,<empty>,timestamp_created,14,,2511,timestamp_created,9,,mstime_t
+11714,MEMBER,<empty>,<empty>,*prev,21,,37,prev,2,,listNode*
+11716,MEMBER,<empty>,<empty>,*next,21,,38,next,4,,listNode*
+11717,MEMBER,<empty>,<empty>,*value,10,,39,value,5,,void*
+11720,MEMBER,<empty>,<empty>,*next,14,,43,next,1,,listNode*
+11721,MEMBER,<empty>,<empty>,direction,9,,44,direction,2,,int
+11724,MEMBER,<empty>,<empty>,*head,14,,48,head,1,,listNode*
+11725,MEMBER,<empty>,<empty>,*tail,14,,49,tail,2,,listNode*
+11742,MEMBER,<empty>,<empty>,len,19,,53,len,6,,long unsigned
+13516,MEMBER,<empty>,<empty>,mask,9,,73,mask,1,,int
+13517,MEMBER,<empty>,<empty>,*rfileProc,16,,74,rfileProc,2,,aeFileProc*
+13518,MEMBER,<empty>,<empty>,*wfileProc,16,,75,wfileProc,3,,aeFileProc*
+13519,MEMBER,<empty>,<empty>,*clientData,10,,76,clientData,4,,void*
+13522,MEMBER,<empty>,<empty>,id,15,,81,id,1,,long long
+13523,MEMBER,<empty>,<empty>,when,14,,82,when,2,,monotime
+13524,MEMBER,<empty>,<empty>,*timeProc,16,,83,timeProc,3,,aeTimeProc*
+13525,MEMBER,<empty>,<empty>,*finalizerProc,26,,84,finalizerProc,4,,aeEventFinalizerProc*
+13526,MEMBER,<empty>,<empty>,*clientData,10,,85,clientData,5,,void*
+13528,MEMBER,<empty>,<empty>,*prev,24,,86,prev,7,,aeTimeEvent*
+13530,MEMBER,<empty>,<empty>,*next,24,,87,next,9,,aeTimeEvent*
+13531,MEMBER,<empty>,<empty>,refcount,9,,88,refcount,10,,int
+13534,MEMBER,<empty>,<empty>,fd,9,,94,fd,1,,int
+13535,MEMBER,<empty>,<empty>,mask,9,,95,mask,2,,int
+13538,MEMBER,<empty>,<empty>,maxfd,9,,100,maxfd,1,,int
+13539,MEMBER,<empty>,<empty>,setsize,9,,101,setsize,2,,int
+13540,MEMBER,<empty>,<empty>,timeEventNextId,15,,102,timeEventNextId,3,,long long
+13541,MEMBER,<empty>,<empty>,*events,17,,103,events,4,,aeFileEvent*
+13542,MEMBER,<empty>,<empty>,*fired,18,,104,fired,5,,aeFiredEvent*
+13543,MEMBER,<empty>,<empty>,*timeEventHead,17,,105,timeEventHead,6,,aeTimeEvent*
+13544,MEMBER,<empty>,<empty>,stop,9,,106,stop,7,,int
+13545,MEMBER,<empty>,<empty>,*apidata,10,,107,apidata,8,,void*
+13546,MEMBER,<empty>,<empty>,*beforesleep,23,,108,beforesleep,9,,aeBeforeSleepProc*
+13547,MEMBER,<empty>,<empty>,*aftersleep,23,,109,aftersleep,10,,aeBeforeSleepProc*
+13548,MEMBER,<empty>,<empty>,flags,9,,110,flags,11,,int
+13668,MEMBER,<empty>,<empty>,epfd,9,,35,epfd,1,,int
+13670,MEMBER,<empty>,<empty>,*events,24,,36,events,3,,epoll_event*
+14162,MEMBER,<empty>,<empty>,portfd,13,,68,portfd,1,,int
+14163,MEMBER,<empty>,<empty>,npending,13,,69,npending,2,,uint_t
+14164,MEMBER,<empty>,<empty>,pending_fds[MAX_EVENT_BATCHSZ],13,,70,pending_fds,3,,int[512]
+14165,MEMBER,<empty>,<empty>,pending_masks[MAX_EVENT_BATCHSZ],13,,71,pending_masks,4,,int[512]
+14877,MEMBER,<empty>,<empty>,kqfd,9,,37,kqfd,1,,int
+14879,MEMBER,<empty>,<empty>,*events,19,,38,events,3,,kevent*
+14880,MEMBER,<empty>,<empty>,*eventsMask,10,,43,eventsMask,4,,char*
+15520,MEMBER,<empty>,<empty>,rfds,12,,36,rfds,1,,fd_set
+15521,MEMBER,<empty>,<empty>,wfds,18,,36,wfds,2,,fd_set
+15522,MEMBER,<empty>,<empty>,_rfds,12,,39,_rfds,3,,fd_set
+15523,MEMBER,<empty>,<empty>,_wfds,19,,39,_wfds,4,,fd_set
+28104,MEMBER,<empty>,<empty>,type,13,,91,type,1,,int
+28105,MEMBER,<empty>,<empty>,header,7,,92,header,2,,struct
+28107,MEMBER,<empty>,<empty>,type,13,,96,type,1,,int
+28108,MEMBER,<empty>,<empty>,fd,13,,97,fd,2,,int
+28109,MEMBER,<empty>,<empty>,offset,19,,98,offset,3,,long long
+28110,MEMBER,<empty>,<empty>,need_fsync:1,18,,99,need_fsync,4,,unsigned
+28111,MEMBER,<empty>,<empty>,need_reclaim_cache:1,18,,101,need_reclaim_cache,5,,unsigned
+28112,MEMBER,<empty>,<empty>,fd_args,7,,103,fd_args,4,,struct
+28114,MEMBER,<empty>,<empty>,type,13,,106,type,1,,int
+28115,MEMBER,<empty>,<empty>,*free_fn,22,,107,free_fn,2,,lazy_free_fn*
+28116,MEMBER,<empty>,<empty>,*free_args[],14,,108,free_args,3,,void*[]
+28122,MEMBER,<empty>,<empty>,free_args,7,,109,free_args,6,,struct
+29149,MEMBER,<empty>,<empty>,BIO_CLOSE_FILE = 0,5,,47,BIO_CLOSE_FILE,1,,ANY
+29150,MEMBER,<empty>,<empty>,BIO_AOF_FSYNC,5,,48,BIO_AOF_FSYNC,2,,ANY
+29151,MEMBER,<empty>,<empty>,BIO_LAZY_FREE,5,,49,BIO_LAZY_FREE,3,,ANY
+29152,MEMBER,<empty>,<empty>,BIO_CLOSE_AOF,5,,50,BIO_CLOSE_AOF,4,,ANY
+29153,MEMBER,<empty>,<empty>,BIO_NUM_OPS,5,,51,BIO_NUM_OPS,5,,ANY
+33123,MEMBER,<empty>,<empty>,offset,14,,1019,offset,1,,uint64_t
+33124,MEMBER,<empty>,<empty>,i64,13,,1020,i64,2,,int64_t
+33125,MEMBER,<empty>,<empty>,opcode,9,,1021,opcode,3,,int
+33126,MEMBER,<empty>,<empty>,owtype,9,,1022,owtype,4,,int
+33127,MEMBER,<empty>,<empty>,bits,9,,1023,bits,5,,int
+33128,MEMBER,<empty>,<empty>,sign,9,,1024,sign,6,,int
+36206,MEMBER,<empty>,<empty>,*private_data,10,,43,private_data,1,,void*
+36207,MEMBER,<empty>,<empty>,original_proto,9,,44,original_proto,2,,sds
+36208,MEMBER,<empty>,<empty>,*proto,16,,45,proto,3,,char*
+36209,MEMBER,<empty>,<empty>,proto_len,12,,46,proto_len,4,,size_t
+36210,MEMBER,<empty>,<empty>,type,9,,47,type,5,,int
+36211,MEMBER,<empty>,<empty>,flags,9,,48,flags,6,,int
+36212,MEMBER,<empty>,<empty>,len,12,,49,len,7,,size_t
+36214,MEMBER,<empty>,<empty>,*str,20,,51,str,1,,char*
+36216,MEMBER,<empty>,<empty>,*str,24,,56,str,1,,char*
+36217,MEMBER,<empty>,<empty>,*format,24,,57,format,2,,char*
+36218,MEMBER,<empty>,<empty>,verbatim_str,11,,58,verbatim_str,3,,struct
+36219,MEMBER,<empty>,<empty>,ll,19,,59,ll,4,,long long
+36220,MEMBER,<empty>,<empty>,d,16,,60,d,5,,double
+36222,MEMBER,<empty>,<empty>,*array,26,,61,array,7,,CallReply*
+36223,MEMBER,<empty>,<empty>,val,7,,62,val,9,,union
+36224,MEMBER,<empty>,<empty>,*deferred_error_list,10,,63,deferred_error_list,10,,list*
+36226,MEMBER,<empty>,<empty>,*attribute,22,,64,attribute,12,,CallReply*
+38007,MEMBER,<empty>,<empty>,keys,12,,35,keys,1,,size_t
+38008,MEMBER,<empty>,<empty>,cow,12,,36,cow,2,,size_t
+38009,MEMBER,<empty>,<empty>,cow_updated,14,,37,cow_updated,3,,monotime
+38010,MEMBER,<empty>,<empty>,progress,12,,38,progress,4,,double
+38011,MEMBER,<empty>,<empty>,information_type,19,,39,information_type,5,,childInfoType
+38559,MEMBER,<empty>,<empty>,*name,10,,13,name,1,,char*
+38560,MEMBER,<empty>,<empty>,type,25,,14,type,2,,redisCommandArgType
+38561,MEMBER,<empty>,<empty>,*token,10,,15,token,3,,char*
+38562,MEMBER,<empty>,<empty>,*since,10,,16,since,4,,char*
+38563,MEMBER,<empty>,<empty>,flags,9,,17,flags,5,,int
+38564,MEMBER,<empty>,<empty>,numsubargs,9,,18,numsubargs,6,,int
+38566,MEMBER,<empty>,<empty>,*subargs,26,,19,subargs,8,,cliCommandArg*
+38567,MEMBER,<empty>,<empty>,*display_text,16,,20,display_text,9,,char*
+38568,MEMBER,<empty>,<empty>,matched,9,,26,matched,10,,int
+38569,MEMBER,<empty>,<empty>,matched_token,9,,27,matched_token,11,,int
+38570,MEMBER,<empty>,<empty>,matched_name,9,,28,matched_name,12,,int
+38571,MEMBER,<empty>,<empty>,matched_all,9,,29,matched_all,13,,int
+38574,MEMBER,<empty>,<empty>,*name,10,,34,name,1,,char*
+38575,MEMBER,<empty>,<empty>,*summary,10,,35,summary,2,,char*
+38576,MEMBER,<empty>,<empty>,*group,10,,36,group,3,,char*
+38577,MEMBER,<empty>,<empty>,*since,10,,37,since,4,,char*
+38578,MEMBER,<empty>,<empty>,numargs,9,,38,numargs,5,,int
+38579,MEMBER,<empty>,<empty>,*args,19,,39,args,6,,cliCommandArg*
+38581,MEMBER,<empty>,<empty>,*subcommands,24,,40,subcommands,8,,commandDocs*
+38582,MEMBER,<empty>,<empty>,*params,10,,41,params,9,,char*
+39447,MEMBER,<empty>,<empty>,*sni,10,,9,sni,1,,char*
+39448,MEMBER,<empty>,<empty>,*cacert,10,,11,cacert,2,,char*
+39449,MEMBER,<empty>,<empty>,*cacertdir,10,,13,cacertdir,3,,char*
+39450,MEMBER,<empty>,<empty>,skip_cert_verify,9,,15,skip_cert_verify,4,,int
+39451,MEMBER,<empty>,<empty>,*cert,10,,17,cert,5,,char*
+39452,MEMBER,<empty>,<empty>,*key,10,,19,key,6,,char*
+39453,MEMBER,<empty>,<empty>,* ciphers,9,,21,ciphers,7,,char*
+39454,MEMBER,<empty>,<empty>,* ciphersuites,9,,23,ciphersuites,8,,char*
+39457,MEMBER,<empty>,<empty>,*hostip,10,,29,hostip,1,,char*
+39458,MEMBER,<empty>,<empty>,hostport,9,,30,hostport,2,,int
+39459,MEMBER,<empty>,<empty>,input_dbnum,9,,31,input_dbnum,3,,int
+39460,MEMBER,<empty>,<empty>,*auth,10,,32,auth,4,,char*
+39461,MEMBER,<empty>,<empty>,*user,10,,33,user,5,,char*
+39989,MEMBER,<empty>,<empty>,*field,10,,198,field,1,,char*
+39990,MEMBER,<empty>,<empty>,*setter,22,,199,setter,2,,aux_value_setter*
+39991,MEMBER,<empty>,<empty>,*getter,22,,200,getter,3,,aux_value_getter*
+39992,MEMBER,<empty>,<empty>,*isPresent,23,,201,isPresent,4,,aux_value_present*
+39995,MEMBER,<empty>,<empty>,af_shard_id,5,,206,af_shard_id,1,,ANY
+39996,MEMBER,<empty>,<empty>,af_human_nodename,5,,207,af_human_nodename,2,,ANY
+39997,MEMBER,<empty>,<empty>,af_tcp_port,5,,208,af_tcp_port,3,,ANY
+39998,MEMBER,<empty>,<empty>,af_tls_port,5,,209,af_tls_port,4,,ANY
+39999,MEMBER,<empty>,<empty>,af_count,5,,210,af_count,5,,ANY
+40441,MEMBER,<empty>,<empty>,totlen,12,,323,totlen,1,,size_t
+40442,MEMBER,<empty>,<empty>,refcount,9,,324,refcount,2,,int
+40443,MEMBER,<empty>,<empty>,msg,16,,325,msg,3,,clusterMsg
+57170,MEMBER,<empty>,<empty>,flag,14,,5169,flag,1,,uint16_t
+57171,MEMBER,<empty>,<empty>,*name,10,,5170,name,2,,char*
+63291,MEMBER,<empty>,<empty>,*conn,16,,6686,conn,1,,connection*
+63292,MEMBER,<empty>,<empty>,last_dbid,10,,6687,last_dbid,2,,long
+63293,MEMBER,<empty>,<empty>,last_use_time,12,,6688,last_use_time,3,,time_t
+66721,MEMBER,<empty>,<empty>,ctime,14,,36,ctime,1,,mstime_t
+66722,MEMBER,<empty>,<empty>,*conn,16,,37,conn,2,,connection*
+66723,MEMBER,<empty>,<empty>,*send_msg_queue,10,,38,send_msg_queue,3,,list*
+66724,MEMBER,<empty>,<empty>,head_msg_send_offset,12,,39,head_msg_send_offset,4,,size_t
+66725,MEMBER,<empty>,<empty>,send_msg_queue_mem,24,,40,send_msg_queue_mem,5,,long long unsigned
+66726,MEMBER,<empty>,<empty>,*rcvbuf,10,,41,rcvbuf,6,,char*
+66727,MEMBER,<empty>,<empty>,rcvbuf_len,12,,42,rcvbuf_len,7,,size_t
+66728,MEMBER,<empty>,<empty>,rcvbuf_alloc,12,,43,rcvbuf_alloc,8,,size_t
+66730,MEMBER,<empty>,<empty>,*node,24,,44,node,10,,clusterNode*
+66731,MEMBER,<empty>,<empty>,inbound,9,,45,inbound,11,,int
+66735,MEMBER,<empty>,<empty>,*node,24,,113,node,2,,clusterNode*
+66736,MEMBER,<empty>,<empty>,time,14,,114,time,3,,mstime_t
+66739,MEMBER,<empty>,<empty>,ctime,14,,118,ctime,1,,mstime_t
+66740,MEMBER,<empty>,<empty>,name[CLUSTER_NAMELEN],10,,119,name,2,,char[40]
+66741,MEMBER,<empty>,<empty>,shard_id[CLUSTER_NAMELEN],10,,120,shard_id,3,,char[40]
+66742,MEMBER,<empty>,<empty>,flags,9,,121,flags,4,,int
+66743,MEMBER,<empty>,<empty>,configEpoch,14,,122,configEpoch,5,,uint64_t
+66744,MEMBER,<empty>,<empty>,slots[CLUSTER_SLOTS/8],19,,123,slots,6,,unsigned char[2048]
+66745,MEMBER,<empty>,<empty>,*slot_info_pairs,14,,124,slot_info_pairs,7,,uint16_t*
+66746,MEMBER,<empty>,<empty>,slot_info_pairs_count,9,,125,slot_info_pairs_count,8,,int
+66747,MEMBER,<empty>,<empty>,numslots,9,,126,numslots,9,,int
+66748,MEMBER,<empty>,<empty>,numslaves,9,,127,numslaves,10,,int
+66750,MEMBER,<empty>,<empty>,**slaves,24,,128,slaves,12,,clusterNode**
+66752,MEMBER,<empty>,<empty>,*slaveof,24,,129,slaveof,14,,clusterNode*
+66753,MEMBER,<empty>,<empty>,last_in_ping_gossip,24,,133,last_in_ping_gossip,15,,long long unsigned
+66754,MEMBER,<empty>,<empty>,ping_sent,14,,134,ping_sent,16,,mstime_t
+66755,MEMBER,<empty>,<empty>,pong_received,14,,135,pong_received,17,,mstime_t
+66756,MEMBER,<empty>,<empty>,data_received,14,,136,data_received,18,,mstime_t
+66757,MEMBER,<empty>,<empty>,fail_time,14,,137,fail_time,19,,mstime_t
+66758,MEMBER,<empty>,<empty>,voted_time,14,,138,voted_time,20,,mstime_t
+66759,MEMBER,<empty>,<empty>,repl_offset_time,14,,139,repl_offset_time,21,,mstime_t
+66760,MEMBER,<empty>,<empty>,orphaned_time,14,,140,orphaned_time,22,,mstime_t
+66761,MEMBER,<empty>,<empty>,repl_offset,15,,141,repl_offset,23,,long long
+66762,MEMBER,<empty>,<empty>,ip[NET_IP_STR_LEN],10,,142,ip,24,,char[]
+66763,MEMBER,<empty>,<empty>,hostname,9,,143,hostname,25,,sds
+66764,MEMBER,<empty>,<empty>,human_nodename,9,,144,human_nodename,26,,sds
+66765,MEMBER,<empty>,<empty>,tcp_port,9,,145,tcp_port,27,,int
+66766,MEMBER,<empty>,<empty>,tls_port,9,,146,tls_port,28,,int
+66767,MEMBER,<empty>,<empty>,cport,9,,147,cport,29,,int
+66768,MEMBER,<empty>,<empty>,*link,17,,148,link,30,,clusterLink*
+66769,MEMBER,<empty>,<empty>,*inbound_link,17,,149,inbound_link,31,,clusterLink*
+66770,MEMBER,<empty>,<empty>,*fail_reports,10,,150,fail_reports,32,,list*
+66793,MEMBER,<empty>,<empty>,count,14,,156,count,1,,uint64_t
+66794,MEMBER,<empty>,<empty>,*head,15,,157,head,2,,dictEntry*
+66797,MEMBER,<empty>,<empty>,by_slot[CLUSTER_SLOTS],16,,162,by_slot,1,,slotToKeys[16384]
+66807,MEMBER,<empty>,<empty>,*prev,15,,168,prev,1,,dictEntry*
+66808,MEMBER,<empty>,<empty>,*next,15,,169,next,2,,dictEntry*
+66811,MEMBER,<empty>,<empty>,*db,13,,173,db,1,,redisDb*
+66814,MEMBER,<empty>,<empty>,*myself,17,,177,myself,1,,clusterNode*
+66815,MEMBER,<empty>,<empty>,currentEpoch,14,,178,currentEpoch,2,,uint64_t
+66816,MEMBER,<empty>,<empty>,state,9,,179,state,3,,int
+66817,MEMBER,<empty>,<empty>,size,9,,180,size,4,,int
+66818,MEMBER,<empty>,<empty>,*nodes,10,,181,nodes,5,,dict*
+66819,MEMBER,<empty>,<empty>,*shards,10,,182,shards,6,,dict*
+66820,MEMBER,<empty>,<empty>,*nodes_black_list,10,,183,nodes_black_list,7,,dict*
+66821,MEMBER,<empty>,<empty>,*migrating_slots_to[CLUSTER_SLOTS],17,,184,migrating_slots_to,8,,clusterNode*[16384]
+66822,MEMBER,<empty>,<empty>,*importing_slots_from[CLUSTER_SLOTS],17,,185,importing_slots_from,9,,clusterNode*[16384]
+66823,MEMBER,<empty>,<empty>,*slots[CLUSTER_SLOTS],17,,186,slots,10,,clusterNode*[16384]
+66824,MEMBER,<empty>,<empty>,*slots_to_channels,9,,187,slots_to_channels,11,,rax*
+66825,MEMBER,<empty>,<empty>,failover_auth_time,14,,189,failover_auth_time,12,,mstime_t
+66826,MEMBER,<empty>,<empty>,failover_auth_count,9,,190,failover_auth_count,13,,int
+66827,MEMBER,<empty>,<empty>,failover_auth_sent,9,,191,failover_auth_sent,14,,int
+66828,MEMBER,<empty>,<empty>,failover_auth_rank,9,,192,failover_auth_rank,15,,int
+66829,MEMBER,<empty>,<empty>,failover_auth_epoch,14,,193,failover_auth_epoch,16,,uint64_t
+66830,MEMBER,<empty>,<empty>,cant_failover_reason,9,,194,cant_failover_reason,17,,int
+66831,MEMBER,<empty>,<empty>,mf_end,14,,197,mf_end,18,,mstime_t
+66832,MEMBER,<empty>,<empty>,*mf_slave,17,,200,mf_slave,19,,clusterNode*
+66833,MEMBER,<empty>,<empty>,mf_master_offset,15,,202,mf_master_offset,20,,long long
+66834,MEMBER,<empty>,<empty>,mf_can_start,9,,204,mf_can_start,21,,int
+66835,MEMBER,<empty>,<empty>,lastVoteEpoch,14,,207,lastVoteEpoch,22,,uint64_t
+66836,MEMBER,<empty>,<empty>,todo_before_sleep,9,,208,todo_before_sleep,23,,int
+66837,MEMBER,<empty>,<empty>,stats_bus_messages_sent[CLUSTERMSG_TYPE_COUNT],15,,211,stats_bus_messages_sent,24,,longlongint[11]
+66838,MEMBER,<empty>,<empty>,stats_bus_messages_received[CLUSTERMSG_TYPE_COUNT],15,,212,stats_bus_messages_received,25,,longlongint[11]
+66839,MEMBER,<empty>,<empty>,stats_pfail_nodes,15,,213,stats_pfail_nodes,26,,long long
+66840,MEMBER,<empty>,<empty>,stat_cluster_links_buffer_limit_exceeded,24,,215,stat_cluster_links_buffer_limit_exceeded,27,,long long unsigned
+66841,MEMBER,<empty>,<empty>,owner_not_claiming_slot[CLUSTER_SLOTS / 8],19,,222,owner_not_claiming_slot,28,,unsigned char[2048]
+66874,MEMBER,<empty>,<empty>,nodename[CLUSTER_NAMELEN],10,,231,nodename,1,,char[40]
+66875,MEMBER,<empty>,<empty>,ping_sent,14,,232,ping_sent,2,,uint32_t
+66876,MEMBER,<empty>,<empty>,pong_received,14,,233,pong_received,3,,uint32_t
+66877,MEMBER,<empty>,<empty>,ip[NET_IP_STR_LEN],10,,234,ip,4,,char[]
+66878,MEMBER,<empty>,<empty>,port,14,,235,port,5,,uint16_t
+66879,MEMBER,<empty>,<empty>,cport,14,,236,cport,6,,uint16_t
+66880,MEMBER,<empty>,<empty>,flags,14,,237,flags,7,,uint16_t
+66881,MEMBER,<empty>,<empty>,pport,14,,238,pport,8,,uint16_t
+66882,MEMBER,<empty>,<empty>,notused1,14,,239,notused1,9,,uint16_t
+66895,MEMBER,<empty>,<empty>,nodename[CLUSTER_NAMELEN],10,,243,nodename,1,,char[40]
+66906,MEMBER,<empty>,<empty>,channel_len,14,,247,channel_len,1,,uint32_t
+66907,MEMBER,<empty>,<empty>,message_len,14,,248,message_len,2,,uint32_t
+66908,MEMBER,<empty>,<empty>,bulk_data[8],19,,249,bulk_data,3,,unsigned char[8]
+66917,MEMBER,<empty>,<empty>,configEpoch,14,,253,configEpoch,1,,uint64_t
+66918,MEMBER,<empty>,<empty>,nodename[CLUSTER_NAMELEN],10,,254,nodename,2,,char[40]
+66919,MEMBER,<empty>,<empty>,slots[CLUSTER_SLOTS/8],19,,255,slots,3,,unsigned char[2048]
+66936,MEMBER,<empty>,<empty>,module_id,14,,259,module_id,1,,uint64_t
+66937,MEMBER,<empty>,<empty>,len,14,,260,len,2,,uint32_t
+66938,MEMBER,<empty>,<empty>,type,13,,261,type,3,,uint8_t
+66939,MEMBER,<empty>,<empty>,bulk_data[3],19,,262,bulk_data,4,,unsigned char[3]
+66948,MEMBER,<empty>,<empty>,CLUSTERMSG_EXT_TYPE_HOSTNAME,5,,269,CLUSTERMSG_EXT_TYPE_HOSTNAME,1,,ANY
+66949,MEMBER,<empty>,<empty>,CLUSTERMSG_EXT_TYPE_HUMAN_NODENAME,5,,270,CLUSTERMSG_EXT_TYPE_HUMAN_NODENAME,2,,ANY
+66950,MEMBER,<empty>,<empty>,CLUSTERMSG_EXT_TYPE_FORGOTTEN_NODE,5,,271,CLUSTERMSG_EXT_TYPE_FORGOTTEN_NODE,3,,ANY
+66951,MEMBER,<empty>,<empty>,CLUSTERMSG_EXT_TYPE_SHARDID,5,,272,CLUSTERMSG_EXT_TYPE_SHARDID,4,,ANY
+66954,MEMBER,<empty>,<empty>,hostname[1],10,,279,hostname,1,,char[1]
+66963,MEMBER,<empty>,<empty>,human_nodename[1],10,,283,human_nodename,1,,char[1]
+66972,MEMBER,<empty>,<empty>,name[CLUSTER_NAMELEN],10,,287,name,1,,char[40]
+66973,MEMBER,<empty>,<empty>,ttl,14,,288,ttl,2,,uint64_t
+66985,MEMBER,<empty>,<empty>,shard_id[CLUSTER_NAMELEN],10,,294,shard_id,1,,char[40]
+66996,MEMBER,<empty>,<empty>,length,14,,298,length,1,,uint32_t
+66997,MEMBER,<empty>,<empty>,type,14,,299,type,2,,uint16_t
+66998,MEMBER,<empty>,<empty>,unused,14,,300,unused,3,,uint16_t
+67000,MEMBER,<empty>,<empty>,hostname,35,,302,hostname,1,,clusterMsgPingExtHostname
+67001,MEMBER,<empty>,<empty>,human_nodename,33,,303,human_nodename,2,,clusterMsgPingExtHumanNodename
+67002,MEMBER,<empty>,<empty>,forgotten_node,40,,304,forgotten_node,3,,clusterMsgPingExtForgottenNode
+67003,MEMBER,<empty>,<empty>,shard_id,34,,305,shard_id,4,,clusterMsgPingExtShardId
+67004,MEMBER,<empty>,<empty>,ext[],7,,306,ext,5,,[]
+67013,MEMBER,<empty>,<empty>,gossip[1],30,,314,gossip,1,,clusterMsgDataGossip[1]
+67020,MEMBER,<empty>,<empty>,ping,7,,318,ping,2,,struct
+67022,MEMBER,<empty>,<empty>,about,28,,322,about,1,,clusterMsgDataFail
+67023,MEMBER,<empty>,<empty>,fail,7,,323,fail,4,,struct
+67025,MEMBER,<empty>,<empty>,msg,31,,327,msg,1,,clusterMsgDataPublish
+67026,MEMBER,<empty>,<empty>,publish,7,,328,publish,6,,struct
+67028,MEMBER,<empty>,<empty>,nodecfg,30,,332,nodecfg,1,,clusterMsgDataUpdate
+67029,MEMBER,<empty>,<empty>,update,7,,333,update,8,,struct
+67031,MEMBER,<empty>,<empty>,msg,26,,337,msg,1,,clusterMsgModule
+67032,MEMBER,<empty>,<empty>,module,7,,338,module,10,,struct
+67034,MEMBER,<empty>,<empty>,sig[4],10,,344,sig,1,,char[4]
+67035,MEMBER,<empty>,<empty>,totlen,14,,345,totlen,2,,uint32_t
+67036,MEMBER,<empty>,<empty>,ver,14,,346,ver,3,,uint16_t
+67037,MEMBER,<empty>,<empty>,port,14,,347,port,4,,uint16_t
+67038,MEMBER,<empty>,<empty>,type,14,,348,type,5,,uint16_t
+67039,MEMBER,<empty>,<empty>,count,14,,349,count,6,,uint16_t
+67040,MEMBER,<empty>,<empty>,currentEpoch,14,,350,currentEpoch,7,,uint64_t
+67041,MEMBER,<empty>,<empty>,configEpoch,14,,351,configEpoch,8,,uint64_t
+67042,MEMBER,<empty>,<empty>,offset,14,,354,offset,9,,uint64_t
+67043,MEMBER,<empty>,<empty>,sender[CLUSTER_NAMELEN],10,,356,sender,10,,char[40]
+67044,MEMBER,<empty>,<empty>,myslots[CLUSTER_SLOTS/8],19,,357,myslots,11,,unsigned char[2048]
+67045,MEMBER,<empty>,<empty>,slaveof[CLUSTER_NAMELEN],10,,358,slaveof,12,,char[40]
+67046,MEMBER,<empty>,<empty>,myip[NET_IP_STR_LEN],10,,359,myip,13,,char[]
+67047,MEMBER,<empty>,<empty>,extensions,14,,360,extensions,14,,uint16_t
+67048,MEMBER,<empty>,<empty>,notused1[30],10,,361,notused1,15,,char[30]
+67049,MEMBER,<empty>,<empty>,pport,14,,362,pport,16,,uint16_t
+67050,MEMBER,<empty>,<empty>,cport,14,,364,cport,17,,uint16_t
+67051,MEMBER,<empty>,<empty>,flags,14,,365,flags,18,,uint16_t
+67052,MEMBER,<empty>,<empty>,state,19,,366,state,19,,unsigned char
+67053,MEMBER,<empty>,<empty>,mflags[3],19,,367,mflags,20,,unsigned char[3]
+67055,MEMBER,<empty>,<empty>,data,26,,368,data,22,,union clusterMsgData
+67311,MEMBER,<empty>,<empty>,ARG_TYPE_STRING,5,,6,ARG_TYPE_STRING,1,,ANY
+67312,MEMBER,<empty>,<empty>,ARG_TYPE_INTEGER,5,,7,ARG_TYPE_INTEGER,2,,ANY
+67313,MEMBER,<empty>,<empty>,ARG_TYPE_DOUBLE,5,,8,ARG_TYPE_DOUBLE,3,,ANY
+67314,MEMBER,<empty>,<empty>,ARG_TYPE_KEY,5,,9,ARG_TYPE_KEY,4,,ANY
+67315,MEMBER,<empty>,<empty>,ARG_TYPE_PATTERN,5,,10,ARG_TYPE_PATTERN,5,,ANY
+67316,MEMBER,<empty>,<empty>,ARG_TYPE_UNIX_TIME,5,,11,ARG_TYPE_UNIX_TIME,6,,ANY
+67317,MEMBER,<empty>,<empty>,ARG_TYPE_PURE_TOKEN,5,,12,ARG_TYPE_PURE_TOKEN,7,,ANY
+67318,MEMBER,<empty>,<empty>,ARG_TYPE_ONEOF,5,,13,ARG_TYPE_ONEOF,8,,ANY
+67319,MEMBER,<empty>,<empty>,ARG_TYPE_BLOCK,5,,14,ARG_TYPE_BLOCK,9,,ANY
+67322,MEMBER,<empty>,<empty>,*name,16,,24,name,1,,char*
+67323,MEMBER,<empty>,<empty>,type,25,,25,type,2,,redisCommandArgType
+67324,MEMBER,<empty>,<empty>,key_spec_index,9,,26,key_spec_index,3,,int
+67325,MEMBER,<empty>,<empty>,*token,16,,27,token,4,,char*
+67326,MEMBER,<empty>,<empty>,*summary,16,,28,summary,5,,char*
+67327,MEMBER,<empty>,<empty>,*since,16,,29,since,6,,char*
+67328,MEMBER,<empty>,<empty>,flags,9,,30,flags,7,,int
+67329,MEMBER,<empty>,<empty>,*deprecated_since,16,,31,deprecated_since,8,,char*
+67330,MEMBER,<empty>,<empty>,num_args,9,,32,num_args,9,,int
+67332,MEMBER,<empty>,<empty>,*subargs,28,,33,subargs,11,,redisCommandArg*
+67333,MEMBER,<empty>,<empty>,*display_text,16,,34,display_text,12,,char*
+67366,MEMBER,<empty>,<empty>,*name,16,,48,name,1,,char*
+67367,MEMBER,<empty>,<empty>,argc_min,15,,49,argc_min,2,,int
+67368,MEMBER,<empty>,<empty>,argc_max,15,,50,argc_max,3,,int
+67810,MEMBER,<empty>,<empty>,*config,9,,186,config,1,,int*
+67811,MEMBER,<empty>,<empty>,default_value,9,,187,default_value,2,,int
+67820,MEMBER,<empty>,<empty>,**config,10,,192,config,1,,char**
+67821,MEMBER,<empty>,<empty>,*default_value,16,,193,default_value,2,,char*
+67828,MEMBER,<empty>,<empty>,convert_empty_to_null,9,,195,convert_empty_to_null,4,,int
+67831,MEMBER,<empty>,<empty>,*config,9,,200,config,1,,sds*
+67832,MEMBER,<empty>,<empty>,*default_value,10,,201,default_value,2,,char*
+67839,MEMBER,<empty>,<empty>,convert_empty_to_null,9,,203,convert_empty_to_null,4,,int
+67842,MEMBER,<empty>,<empty>,*config,9,,208,config,1,,int*
+67843,MEMBER,<empty>,<empty>,*enum_value,16,,209,enum_value,2,,configEnum*
+67844,MEMBER,<empty>,<empty>,default_value,9,,210,default_value,3,,int
+67853,MEMBER,<empty>,<empty>,NUMERIC_TYPE_INT,5,,215,NUMERIC_TYPE_INT,1,,ANY
+67854,MEMBER,<empty>,<empty>,NUMERIC_TYPE_UINT,5,,216,NUMERIC_TYPE_UINT,2,,ANY
+67855,MEMBER,<empty>,<empty>,NUMERIC_TYPE_LONG,5,,217,NUMERIC_TYPE_LONG,3,,ANY
+67856,MEMBER,<empty>,<empty>,NUMERIC_TYPE_ULONG,5,,218,NUMERIC_TYPE_ULONG,4,,ANY
+67857,MEMBER,<empty>,<empty>,NUMERIC_TYPE_LONG_LONG,5,,219,NUMERIC_TYPE_LONG_LONG,5,,ANY
+67858,MEMBER,<empty>,<empty>,NUMERIC_TYPE_ULONG_LONG,5,,220,NUMERIC_TYPE_ULONG_LONG,6,,ANY
+67859,MEMBER,<empty>,<empty>,NUMERIC_TYPE_SIZE_T,5,,221,NUMERIC_TYPE_SIZE_T,7,,ANY
+67860,MEMBER,<empty>,<empty>,NUMERIC_TYPE_SSIZE_T,5,,222,NUMERIC_TYPE_SSIZE_T,8,,ANY
+67861,MEMBER,<empty>,<empty>,NUMERIC_TYPE_OFF_T,5,,223,NUMERIC_TYPE_OFF_T,9,,ANY
+67862,MEMBER,<empty>,<empty>,NUMERIC_TYPE_TIME_T,5,,224,NUMERIC_TYPE_TIME_T,10,,ANY
+67866,MEMBER,<empty>,<empty>,*i,13,,229,i,1,,int*
+67867,MEMBER,<empty>,<empty>,*ui,22,,230,ui,2,,unsigned int*
+67868,MEMBER,<empty>,<empty>,*l,14,,231,l,3,,long*
+67869,MEMBER,<empty>,<empty>,*ul,23,,232,ul,4,,long unsigned*
+67870,MEMBER,<empty>,<empty>,*ll,19,,233,ll,5,,long long*
+67871,MEMBER,<empty>,<empty>,*ull,28,,234,ull,6,,long long unsigned*
+67872,MEMBER,<empty>,<empty>,*st,16,,235,st,7,,size_t*
+67873,MEMBER,<empty>,<empty>,*sst,17,,236,sst,8,,ssize_t*
+67874,MEMBER,<empty>,<empty>,*ot,15,,237,ot,9,,off_t*
+67875,MEMBER,<empty>,<empty>,*tt,16,,238,tt,10,,time_t*
+67876,MEMBER,<empty>,<empty>,config,7,,239,config,2,,union
+67877,MEMBER,<empty>,<empty>,flags,18,,240,flags,3,,unsigned int
+67878,MEMBER,<empty>,<empty>,numeric_type,17,,241,numeric_type,4,,numericType
+67879,MEMBER,<empty>,<empty>,lower_bound,15,,242,lower_bound,5,,long long
+67880,MEMBER,<empty>,<empty>,upper_bound,15,,243,upper_bound,6,,long long
+67881,MEMBER,<empty>,<empty>,default_value,15,,244,default_value,7,,long long
+67890,MEMBER,<empty>,<empty>,yesno,20,,249,yesno,1,,boolConfigData
+67891,MEMBER,<empty>,<empty>,string,22,,250,string,2,,stringConfigData
+67892,MEMBER,<empty>,<empty>,sds,19,,251,sds,3,,sdsConfigData
+67893,MEMBER,<empty>,<empty>,enumd,20,,252,enumd,4,,enumConfigData
+67894,MEMBER,<empty>,<empty>,numeric,23,,253,numeric,5,,numericConfigData
+67917,MEMBER,<empty>,<empty>,apply,14,,269,apply,3,,apply_fn
+67932,MEMBER,<empty>,<empty>,*name,16,,277,name,1,,char*
+67933,MEMBER,<empty>,<empty>,*alias,16,,278,alias,2,,char*
+67934,MEMBER,<empty>,<empty>,flags,18,,279,flags,3,,unsigned int
+67935,MEMBER,<empty>,<empty>,interface,19,,280,interface,4,,typeInterface
+67936,MEMBER,<empty>,<empty>,data,14,,281,data,5,,typeData
+67937,MEMBER,<empty>,<empty>,type,16,,282,type,6,,configType
+67938,MEMBER,<empty>,<empty>,*privdata,10,,283,privdata,7,,void*
+70734,MEMBER,<empty>,<empty>,*option_to_line,10,,1055,option_to_line,1,,dict*
+70735,MEMBER,<empty>,<empty>,*rewritten,10,,1056,rewritten,2,,dict*
+70736,MEMBER,<empty>,<empty>,numlines,9,,1057,numlines,3,,int
+70737,MEMBER,<empty>,<empty>,*lines,9,,1058,lines,4,,sds*
+70738,MEMBER,<empty>,<empty>,needs_signature,9,,1059,needs_signature,5,,int
+70739,MEMBER,<empty>,<empty>,force_write,9,,1061,force_write,6,,int
+98086,MEMBER,<empty>,<empty>,CONN_STATE_NONE = 0,5,,50,CONN_STATE_NONE,1,,ANY
+98087,MEMBER,<empty>,<empty>,CONN_STATE_CONNECTING,5,,51,CONN_STATE_CONNECTING,2,,ANY
+98088,MEMBER,<empty>,<empty>,CONN_STATE_ACCEPTING,5,,52,CONN_STATE_ACCEPTING,3,,ANY
+98089,MEMBER,<empty>,<empty>,CONN_STATE_CONNECTED,5,,53,CONN_STATE_CONNECTED,4,,ANY
+98090,MEMBER,<empty>,<empty>,CONN_STATE_CLOSED,5,,54,CONN_STATE_CLOSED,5,,ANY
+98091,MEMBER,<empty>,<empty>,CONN_STATE_ERROR,5,,55,CONN_STATE_ERROR,6,,ANY
+98135,MEMBER,<empty>,<empty>,*accept_handler,16,,79,accept_handler,6,,aeFileProc*
+98279,MEMBER,<empty>,<empty>,*type,20,,115,type,1,,ConnectionType*
+98280,MEMBER,<empty>,<empty>,state,21,,116,state,2,,ConnectionState
+98281,MEMBER,<empty>,<empty>,last_errno,9,,117,last_errno,3,,int
+98282,MEMBER,<empty>,<empty>,fd,9,,118,fd,4,,int
+98283,MEMBER,<empty>,<empty>,flags,15,,119,flags,5,,short int
+98284,MEMBER,<empty>,<empty>,refs,15,,120,refs,6,,short int
+98285,MEMBER,<empty>,<empty>,iovcnt,24,,121,iovcnt,7,,short unsigned int
+98286,MEMBER,<empty>,<empty>,*private_data,10,,122,private_data,8,,void*
+98287,MEMBER,<empty>,<empty>,conn_handler,28,,123,conn_handler,9,,ConnectionCallbackFunc
+98288,MEMBER,<empty>,<empty>,write_handler,28,,124,write_handler,10,,ConnectionCallbackFunc
+98289,MEMBER,<empty>,<empty>,read_handler,28,,125,read_handler,11,,ConnectionCallbackFunc
+98291,MEMBER,<empty>,<empty>,fd[CONFIG_BINDADDR_MAX],9,,132,fd,1,,int[16]
+98292,MEMBER,<empty>,<empty>,count,9,,133,count,2,,int
+98293,MEMBER,<empty>,<empty>,**bindaddr,10,,134,bindaddr,3,,char**
+98294,MEMBER,<empty>,<empty>,bindaddr_count,9,,135,bindaddr_count,4,,int
+98295,MEMBER,<empty>,<empty>,port,9,,136,port,5,,int
+98296,MEMBER,<empty>,<empty>,*ct,20,,137,ct,6,,ConnectionType*
+98297,MEMBER,<empty>,<empty>,*priv,10,,138,priv,7,,void*
+104066,MEMBER,<empty>,<empty>,*keys,10,,815,keys,1,,list*
+104067,MEMBER,<empty>,<empty>,*o,10,,816,o,2,,robj*
+104068,MEMBER,<empty>,<empty>,type,15,,817,type,3,,long long
+104069,MEMBER,<empty>,<empty>,pattern,9,,818,pattern,4,,sds
+104070,MEMBER,<empty>,<empty>,sampled,10,,819,sampled,5,,long
+108296,MEMBER,<empty>,<empty>,*proc,22,,2036,proc,1,,redisCommandProc*
+108297,MEMBER,<empty>,<empty>,flags,14,,2037,flags,2,,uint64_t
+108298,MEMBER,<empty>,<empty>,start,9,,2038,start,3,,int
+108299,MEMBER,<empty>,<empty>,count,9,,2039,count,4,,int
+116284,MEMBER,<empty>,<empty>,*key,10,,64,key,1,,void*
+116286,MEMBER,<empty>,<empty>,*val,14,,66,val,1,,void*
+116287,MEMBER,<empty>,<empty>,u64,18,,67,u64,2,,uint64_t
+116288,MEMBER,<empty>,<empty>,s64,17,,68,s64,3,,int64_t
+116289,MEMBER,<empty>,<empty>,d,16,,69,d,4,,double
+116290,MEMBER,<empty>,<empty>,v,7,,70,v,3,,union
+116292,MEMBER,<empty>,<empty>,*next,22,,71,next,5,,dictEntry*
+116293,MEMBER,<empty>,<empty>,*metadata[],10,,72,metadata,6,,void*[]
+116300,MEMBER,<empty>,<empty>,*key,10,,78,key,1,,void*
+116301,MEMBER,<empty>,<empty>,*next,15,,79,next,2,,dictEntry*
+122609,MEMBER,<empty>,<empty>,no_value:1,18,,64,no_value,8,,unsigned int
+122610,MEMBER,<empty>,<empty>,keys_are_odd:1,18,,68,keys_are_odd,9,,unsigned int
+122629,MEMBER,<empty>,<empty>,*type,14,,85,type,1,,dictType*
+122630,MEMBER,<empty>,<empty>,**ht_table[2],15,,87,ht_table,2,,dictEntry**[2]
+122631,MEMBER,<empty>,<empty>,ht_used[2],19,,88,ht_used,3,,unsigned longint[2]
+122632,MEMBER,<empty>,<empty>,rehashidx,10,,90,rehashidx,4,,long
+122633,MEMBER,<empty>,<empty>,pauserehash,13,,93,pauserehash,5,,int16_t
+122634,MEMBER,<empty>,<empty>,ht_size_exp[2],17,,94,ht_size_exp,6,,signedchar[2]
+122635,MEMBER,<empty>,<empty>,*metadata[],10,,96,metadata,7,,void*[]
+122648,MEMBER,<empty>,<empty>,*d,10,,106,d,1,,dict*
+122649,MEMBER,<empty>,<empty>,index,10,,107,index,2,,long
+122650,MEMBER,<empty>,<empty>,table,9,,108,table,3,,int
+122651,MEMBER,<empty>,<empty>,safe,16,,108,safe,4,,int
+122652,MEMBER,<empty>,<empty>,*entry,15,,109,entry,5,,dictEntry*
+122653,MEMBER,<empty>,<empty>,*nextEntry,23,,109,nextEntry,6,,dictEntry*
+122654,MEMBER,<empty>,<empty>,fingerprint,24,,111,fingerprint,7,,long long unsigned
+122668,MEMBER,<empty>,<empty>,*defragAlloc,29,,117,defragAlloc,1,,dictDefragAllocFunction*
+122669,MEMBER,<empty>,<empty>,*defragKey,29,,118,defragKey,2,,dictDefragAllocFunction*
+122670,MEMBER,<empty>,<empty>,*defragVal,29,,119,defragVal,3,,dictDefragAllocFunction*
+122673,MEMBER,<empty>,<empty>,DICT_RESIZE_ENABLE,5,,161,DICT_RESIZE_ENABLE,1,,ANY
+122674,MEMBER,<empty>,<empty>,DICT_RESIZE_AVOID,5,,162,DICT_RESIZE_AVOID,2,,ANY
+122675,MEMBER,<empty>,<empty>,DICT_RESIZE_FORBID,5,,163,DICT_RESIZE_FORBID,3,,ANY
+123364,MEMBER,<empty>,<empty>,*lua,15,,74,lua,1,,lua_State*
+123365,MEMBER,<empty>,<empty>,*lua_client,12,,75,lua_client,2,,client*
+123366,MEMBER,<empty>,<empty>,*lua_scripts,10,,76,lua_scripts,3,,dict*
+123367,MEMBER,<empty>,<empty>,lua_scripts_mem,24,,77,lua_scripts_mem,4,,long long unsigned
+123370,MEMBER,<empty>,<empty>,*conn,16,,84,conn,1,,connection*
+123371,MEMBER,<empty>,<empty>,active,9,,85,active,2,,int
+123372,MEMBER,<empty>,<empty>,forked,9,,86,forked,3,,int
+123373,MEMBER,<empty>,<empty>,*logs,10,,87,logs,4,,list*
+123374,MEMBER,<empty>,<empty>,*traces,10,,88,traces,5,,list*
+123375,MEMBER,<empty>,<empty>,*children,10,,89,children,6,,list*
+123376,MEMBER,<empty>,<empty>,bp[LDB_BREAKPOINTS_MAX],9,,90,bp,7,,int[64]
+123377,MEMBER,<empty>,<empty>,bpcount,9,,91,bpcount,8,,int
+123378,MEMBER,<empty>,<empty>,step,9,,92,step,9,,int
+123379,MEMBER,<empty>,<empty>,luabp,9,,93,luabp,10,,int
+123380,MEMBER,<empty>,<empty>,*src,9,,94,src,11,,sds*
+123381,MEMBER,<empty>,<empty>,lines,9,,95,lines,12,,int
+123382,MEMBER,<empty>,<empty>,currentline,9,,96,currentline,13,,int
+123383,MEMBER,<empty>,<empty>,cbuf,9,,97,cbuf,14,,sds
+123384,MEMBER,<empty>,<empty>,maxlen,12,,98,maxlen,15,,size_t
+123385,MEMBER,<empty>,<empty>,maxlen_hint_sent,9,,99,maxlen_hint_sent,16,,int
+128834,MEMBER,<empty>,<empty>,idle,24,,57,idle,1,,long long unsigned
+128835,MEMBER,<empty>,<empty>,key,9,,58,key,2,,sds
+128836,MEMBER,<empty>,<empty>,cached,9,,59,cached,3,,sds
+128837,MEMBER,<empty>,<empty>,dbid,9,,60,dbid,4,,int
+130822,MEMBER,<empty>,<empty>,*db,13,,115,db,1,,redisDb*
+130823,MEMBER,<empty>,<empty>,now,15,,116,now,2,,long long
+130824,MEMBER,<empty>,<empty>,sampled,19,,117,sampled,3,,long unsigned
+130825,MEMBER,<empty>,<empty>,expired,19,,118,expired,4,,long unsigned
+130826,MEMBER,<empty>,<empty>,ttl_sum,15,,119,ttl_sum,5,,long long
+130827,MEMBER,<empty>,<empty>,ttl_samples,9,,120,ttl_samples,6,,int
+132644,MEMBER,<empty>,<empty>,*lua,15,,58,lua,1,,lua_State*
+132647,MEMBER,<empty>,<empty>,lua_function_ref,9,,64,lua_function_ref,1,,int
+132650,MEMBER,<empty>,<empty>,*li,21,,68,li,1,,functionLibInfo*
+132651,MEMBER,<empty>,<empty>,start_time,14,,69,start_time,2,,monotime
+132654,MEMBER,<empty>,<empty>,name,9,,73,name,1,,sds
+132655,MEMBER,<empty>,<empty>,desc,9,,74,desc,2,,sds
+132656,MEMBER,<empty>,<empty>,*lua_f_ctx,20,,75,lua_f_ctx,3,,luaFunctionCtx*
+132657,MEMBER,<empty>,<empty>,f_flags,14,,76,f_flags,4,,uint64_t
+133929,MEMBER,<empty>,<empty>,restorePolicy_Flush,5,,37,restorePolicy_Flush,1,,ANY
+133930,MEMBER,<empty>,<empty>,restorePolicy_Append,26,,37,restorePolicy_Append,2,,ANY
+133931,MEMBER,<empty>,<empty>,restorePolicy_Replace,48,,37,restorePolicy_Replace,3,,ANY
+133961,MEMBER,<empty>,<empty>,n_lib,12,,49,n_lib,1,,size_t
+133962,MEMBER,<empty>,<empty>,n_functions,12,,50,n_functions,2,,size_t
+133965,MEMBER,<empty>,<empty>,*libraries,10,,54,libraries,1,,dict*
+133966,MEMBER,<empty>,<empty>,*functions,10,,55,functions,2,,dict*
+133967,MEMBER,<empty>,<empty>,cache_memory,12,,56,cache_memory,3,,size_t
+133968,MEMBER,<empty>,<empty>,*engines_stats,10,,57,engines_stats,4,,dict*
+133970,MEMBER,<empty>,<empty>,engine,9,,61,engine,1,,sds
+133971,MEMBER,<empty>,<empty>,name,9,,62,name,2,,sds
+133972,MEMBER,<empty>,<empty>,code,9,,63,code,3,,sds
+137418,MEMBER,<empty>,<empty>,*engine_ctx,10,,54,engine_ctx,1,,void*
+137461,MEMBER,<empty>,<empty>,name,9,,86,name,1,,sds
+137462,MEMBER,<empty>,<empty>,*engine,12,,87,engine,2,,engine*
+137463,MEMBER,<empty>,<empty>,*c,12,,88,c,3,,client*
+137466,MEMBER,<empty>,<empty>,name,9,,94,name,1,,sds
+137467,MEMBER,<empty>,<empty>,*function,10,,95,function,2,,void*
+137468,MEMBER,<empty>,<empty>,* li,20,,97,li,3,,functionLibInfo*
+137469,MEMBER,<empty>,<empty>,desc,9,,98,desc,4,,sds
+137470,MEMBER,<empty>,<empty>,f_flags,14,,99,f_flags,5,,uint64_t
+137473,MEMBER,<empty>,<empty>,name,9,,105,name,1,,sds
+137474,MEMBER,<empty>,<empty>,*functions,10,,106,functions,2,,dict*
+137475,MEMBER,<empty>,<empty>,*ei,16,,107,ei,3,,engineInfo*
+137476,MEMBER,<empty>,<empty>,code,9,,108,code,4,,sds
+141338,MEMBER,<empty>,<empty>,longitude,12,,9,longitude,1,,double
+141339,MEMBER,<empty>,<empty>,latitude,12,,10,latitude,2,,double
+141340,MEMBER,<empty>,<empty>,dist,12,,11,dist,3,,double
+141341,MEMBER,<empty>,<empty>,score,12,,12,score,4,,double
+141342,MEMBER,<empty>,<empty>,*member,10,,13,member,5,,char*
+141346,MEMBER,<empty>,<empty>,*array,21,,17,array,2,,geoPoint*
+141347,MEMBER,<empty>,<empty>,buckets,12,,18,buckets,3,,size_t
+141348,MEMBER,<empty>,<empty>,used,12,,19,used,4,,size_t
+142703,MEMBER,<empty>,<empty>,GEOHASH_NORTH = 0,5,,55,GEOHASH_NORTH,1,,ANY
+142704,MEMBER,<empty>,<empty>,GEOHASH_EAST,5,,56,GEOHASH_EAST,2,,ANY
+142705,MEMBER,<empty>,<empty>,GEOHASH_WEST,5,,57,GEOHASH_WEST,3,,ANY
+142706,MEMBER,<empty>,<empty>,GEOHASH_SOUTH,5,,58,GEOHASH_SOUTH,4,,ANY
+142707,MEMBER,<empty>,<empty>,GEOHASH_SOUTH_WEST,5,,59,GEOHASH_SOUTH_WEST,5,,ANY
+142708,MEMBER,<empty>,<empty>,GEOHASH_SOUTH_EAST,5,,60,GEOHASH_SOUTH_EAST,6,,ANY
+142709,MEMBER,<empty>,<empty>,GEOHASH_NORT_WEST,5,,61,GEOHASH_NORT_WEST,7,,ANY
+142710,MEMBER,<empty>,<empty>,GEOHASH_NORT_EAST,5,,62,GEOHASH_NORT_EAST,8,,ANY
+142720,MEMBER,<empty>,<empty>,bits,14,,66,bits,1,,uint64_t
+142721,MEMBER,<empty>,<empty>,step,13,,67,step,2,,uint8_t
+142724,MEMBER,<empty>,<empty>,min,12,,71,min,1,,double
+142725,MEMBER,<empty>,<empty>,max,12,,72,max,2,,double
+142728,MEMBER,<empty>,<empty>,hash,17,,76,hash,1,,GeoHashBits
+142729,MEMBER,<empty>,<empty>,longitude,18,,77,longitude,2,,GeoHashRange
+142730,MEMBER,<empty>,<empty>,latitude,18,,78,latitude,3,,GeoHashRange
+142733,MEMBER,<empty>,<empty>,north,17,,82,north,1,,GeoHashBits
+142734,MEMBER,<empty>,<empty>,east,17,,83,east,2,,GeoHashBits
+142735,MEMBER,<empty>,<empty>,west,17,,84,west,3,,GeoHashBits
+142736,MEMBER,<empty>,<empty>,south,17,,85,south,4,,GeoHashBits
+142737,MEMBER,<empty>,<empty>,north_east,17,,86,north_east,5,,GeoHashBits
+142738,MEMBER,<empty>,<empty>,south_east,17,,87,south_east,6,,GeoHashBits
+142739,MEMBER,<empty>,<empty>,north_west,17,,88,north_west,7,,GeoHashBits
+142740,MEMBER,<empty>,<empty>,south_west,17,,89,south_west,8,,GeoHashBits
+142743,MEMBER,<empty>,<empty>,type,9,,95,type,1,,int
+142744,MEMBER,<empty>,<empty>,xy[2],12,,96,xy,2,,double[2]
+142745,MEMBER,<empty>,<empty>,conversion,12,,97,conversion,3,,double
+142746,MEMBER,<empty>,<empty>,bounds[4],12,,98,bounds,4,,double[4]
+142748,MEMBER,<empty>,<empty>,radius,16,,102,radius,1,,double
+142750,MEMBER,<empty>,<empty>,height,20,,105,height,1,,double
+142751,MEMBER,<empty>,<empty>,width,20,,106,width,2,,double
+142752,MEMBER,<empty>,<empty>,r,11,,107,r,3,,struct
+142753,MEMBER,<empty>,<empty>,t,7,,108,t,6,,union
+143910,MEMBER,<empty>,<empty>,hash,17,,45,hash,1,,GeoHashBits
+143911,MEMBER,<empty>,<empty>,area,17,,46,area,2,,GeoHashArea
+143912,MEMBER,<empty>,<empty>,neighbors,22,,47,neighbors,3,,GeoHashNeighbors
+143987,MEMBER,<empty>,<empty>,magic[4],10,,183,magic,1,,char[4]
+143988,MEMBER,<empty>,<empty>,encoding,13,,184,encoding,2,,uint8_t
+143989,MEMBER,<empty>,<empty>,notused[3],13,,185,notused,3,,uint8_t[3]
+143990,MEMBER,<empty>,<empty>,card[8],13,,186,card,4,,uint8_t[8]
+143991,MEMBER,<empty>,<empty>,registers[],13,,187,registers,5,,uint8_t[]
+150547,MEMBER,<empty>,<empty>,encoding,14,,36,encoding,1,,uint32_t
+150548,MEMBER,<empty>,<empty>,length,14,,37,length,2,,uint32_t
+150549,MEMBER,<empty>,<empty>,contents[],12,,38,contents,3,,int8_t[]
+152993,MEMBER,<empty>,<empty>,time,13,,42,time,1,,int32_t
+152994,MEMBER,<empty>,<empty>,latency,14,,43,latency,2,,uint32_t
+152996,MEMBER,<empty>,<empty>,idx,9,,48,idx,1,,int
+152997,MEMBER,<empty>,<empty>,max,14,,49,max,2,,uint32_t
+152999,MEMBER,<empty>,<empty>,samples[LATENCY_TS_LEN],26,,50,samples,4,,latencySample[160]
+153009,MEMBER,<empty>,<empty>,all_time_high,14,,55,all_time_high,1,,uint32_t
+153010,MEMBER,<empty>,<empty>,avg,14,,56,avg,2,,uint32_t
+153011,MEMBER,<empty>,<empty>,min,14,,57,min,3,,uint32_t
+153012,MEMBER,<empty>,<empty>,max,14,,58,max,4,,uint32_t
+153013,MEMBER,<empty>,<empty>,mad,14,,59,mad,5,,uint32_t
+153014,MEMBER,<empty>,<empty>,samples,14,,60,samples,6,,uint32_t
+153015,MEMBER,<empty>,<empty>,period,12,,61,period,7,,time_t
+153028,MEMBER,<empty>,<empty>,cnt,24,,93,cnt,1,,long long unsigned
+153029,MEMBER,<empty>,<empty>,sum,24,,94,sum,2,,long long unsigned
+153030,MEMBER,<empty>,<empty>,max,24,,95,max,3,,long long unsigned
+153033,MEMBER,<empty>,<empty>,EL_DURATION_TYPE_EL = 0,5,,99,EL_DURATION_TYPE_EL,1,,ANY
+153034,MEMBER,<empty>,<empty>,EL_DURATION_TYPE_CMD,5,,100,EL_DURATION_TYPE_CMD,2,,ANY
+153035,MEMBER,<empty>,<empty>,EL_DURATION_TYPE_AOF,5,,101,EL_DURATION_TYPE_AOF,3,,ANY
+153036,MEMBER,<empty>,<empty>,EL_DURATION_TYPE_CRON,5,,102,EL_DURATION_TYPE_CRON,4,,ANY
+153037,MEMBER,<empty>,<empty>,EL_DURATION_TYPE_NUM,5,,103,EL_DURATION_TYPE_NUM,5,,ANY
+159974,MEMBER,<empty>,<empty>,*sval,19,,51,sval,1,,unsigned char*
+159975,MEMBER,<empty>,<empty>,slen,14,,52,slen,2,,uint32_t
+159976,MEMBER,<empty>,<empty>,lval,15,,54,lval,3,,long long
+161101,MEMBER,<empty>,<empty>,width,9,,42,width,1,,int
+161102,MEMBER,<empty>,<empty>,height,9,,43,height,2,,int
+161103,MEMBER,<empty>,<empty>,*pixels,10,,44,pixels,3,,char*
+161871,MEMBER,<empty>,<empty>,xoff,9,,75,xoff,1,,int
+161872,MEMBER,<empty>,<empty>,width,9,,76,width,2,,int
+161873,MEMBER,<empty>,<empty>,height,9,,77,height,3,,int
+161874,MEMBER,<empty>,<empty>,windows,9,,78,windows,4,,int
+161875,MEMBER,<empty>,<empty>,color,9,,79,color,5,,int
+164980,MEMBER,<empty>,<empty>,*module,24,,75,module,2,,RedisModule*
+164981,MEMBER,<empty>,<empty>,*requested_sections,10,,76,requested_sections,3,,dict*
+164982,MEMBER,<empty>,<empty>,info,9,,77,info,4,,sds
+164983,MEMBER,<empty>,<empty>,sections,9,,78,sections,5,,int
+164984,MEMBER,<empty>,<empty>,in_section,9,,79,in_section,6,,int
+164985,MEMBER,<empty>,<empty>,in_dict_field,9,,80,in_dict_field,7,,int
+164987,MEMBER,<empty>,<empty>,*func,10,,88,func,1,,void*
+164988,MEMBER,<empty>,<empty>,*module,17,,89,module,2,,RedisModule*
+164993,MEMBER,<empty>,<empty>,*ptr,10,,98,ptr,1,,void*
+164994,MEMBER,<empty>,<empty>,type,9,,99,type,2,,int
+164996,MEMBER,<empty>,<empty>,size,14,,127,size,1,,uint32_t
+164997,MEMBER,<empty>,<empty>,used,14,,128,used,2,,uint32_t
+164999,MEMBER,<empty>,<empty>,*next,38,,129,next,4,,RedisModulePoolAllocBlock*
+165000,MEMBER,<empty>,<empty>,memory[],10,,130,memory,5,,char[]
+165010,MEMBER,<empty>,<empty>,*getapifuncptr,10,,145,getapifuncptr,1,,void*
+165012,MEMBER,<empty>,<empty>,*module,24,,146,module,3,,RedisModule*
+165013,MEMBER,<empty>,<empty>,*client,12,,147,client,4,,client*
+165015,MEMBER,<empty>,<empty>,*blocked_client,37,,148,blocked_client,6,,RedisModuleBlockedClient*
+165017,MEMBER,<empty>,<empty>,*amqueue,25,,150,amqueue,8,,AutoMemEntry*
+165018,MEMBER,<empty>,<empty>,amqueue_len,9,,151,amqueue_len,9,,int
+165019,MEMBER,<empty>,<empty>,amqueue_used,9,,152,amqueue_used,10,,int
+165020,MEMBER,<empty>,<empty>,flags,9,,153,flags,11,,int
+165021,MEMBER,<empty>,<empty>,**postponed_arrays,10,,154,postponed_arrays,12,,void**
+165022,MEMBER,<empty>,<empty>,postponed_arrays_count,9,,155,postponed_arrays_count,13,,int
+165023,MEMBER,<empty>,<empty>,*blocked_privdata,10,,156,blocked_privdata,14,,void*
+165024,MEMBER,<empty>,<empty>,*blocked_ready_key,23,,157,blocked_ready_key,15,,robj*
+165025,MEMBER,<empty>,<empty>,*keys_result,19,,163,keys_result,16,,getKeysResult*
+165027,MEMBER,<empty>,<empty>,*pa_head,38,,165,pa_head,18,,RedisModulePoolAllocBlock*
+165028,MEMBER,<empty>,<empty>,next_yield_time,15,,166,next_yield_time,19,,long long
+165030,MEMBER,<empty>,<empty>,*user,34,,168,user,21,,RedisModuleUser*
+165034,MEMBER,<empty>,<empty>,*ctx,20,,190,ctx,1,,RedisModuleCtx*
+165035,MEMBER,<empty>,<empty>,*db,13,,191,db,2,,redisDb*
+165036,MEMBER,<empty>,<empty>,*key,10,,192,key,3,,robj*
+165037,MEMBER,<empty>,<empty>,*value,10,,193,value,4,,robj*
+165038,MEMBER,<empty>,<empty>,*iter,10,,194,iter,5,,void*
+165039,MEMBER,<empty>,<empty>,mode,9,,195,mode,6,,int
+165042,MEMBER,<empty>,<empty>,entry,27,,200,entry,1,,listTypeEntry
+165043,MEMBER,<empty>,<empty>,index,18,,201,index,2,,long
+165044,MEMBER,<empty>,<empty>,list,11,,202,list,2,,struct
+165046,MEMBER,<empty>,<empty>,type,22,,205,type,1,,uint32_t
+165047,MEMBER,<empty>,<empty>,rs,24,,206,rs,2,,zrangespec
+165048,MEMBER,<empty>,<empty>,lrs,27,,207,lrs,3,,zlexrangespec
+165049,MEMBER,<empty>,<empty>,start,22,,208,start,4,,uint32_t
+165050,MEMBER,<empty>,<empty>,end,22,,209,end,5,,uint32_t
+165051,MEMBER,<empty>,<empty>,*current,18,,210,current,6,,void*
+165052,MEMBER,<empty>,<empty>,er,17,,211,er,7,,int
+165053,MEMBER,<empty>,<empty>,zset,11,,213,zset,4,,struct
+165055,MEMBER,<empty>,<empty>,currentid,22,,216,currentid,1,,streamID
+165056,MEMBER,<empty>,<empty>,numfieldsleft,21,,217,numfieldsleft,2,,int64_t
+165057,MEMBER,<empty>,<empty>,signalready,17,,218,signalready,3,,int
+165058,MEMBER,<empty>,<empty>,stream,11,,219,stream,6,,struct
+165059,MEMBER,<empty>,<empty>,u,7,,220,u,8,,union
+165084,MEMBER,<empty>,<empty>,*module,24,,238,module,2,,RedisModule*
+165085,MEMBER,<empty>,<empty>,func,24,,239,func,3,,RedisModuleCmdFunc
+165087,MEMBER,<empty>,<empty>,*rediscmd,25,,240,rediscmd,5,,redisCommand*
+165094,MEMBER,<empty>,<empty>,*module,24,,256,module,2,,RedisModule*
+165095,MEMBER,<empty>,<empty>,auth_cb,29,,257,auth_cb,3,,RedisModuleAuthCallback
+165098,MEMBER,<empty>,<empty>,*client,12,,263,client,1,,client*
+165099,MEMBER,<empty>,<empty>,*module,17,,265,module,2,,RedisModule*
+165100,MEMBER,<empty>,<empty>,reply_callback,24,,266,reply_callback,3,,RedisModuleCmdFunc
+165101,MEMBER,<empty>,<empty>,auth_reply_cb,29,,267,auth_reply_cb,4,,RedisModuleAuthCallback
+165102,MEMBER,<empty>,<empty>,timeout_callback,24,,269,timeout_callback,5,,RedisModuleCmdFunc
+165103,MEMBER,<empty>,<empty>,disconnect_callback,31,,270,disconnect_callback,6,,RedisModuleDisconnectFunc
+165110,MEMBER,<empty>,<empty>,*privdata,10,,272,privdata,8,,void*
+165111,MEMBER,<empty>,<empty>,*thread_safe_ctx_client,12,,275,thread_safe_ctx_client,9,,client*
+165112,MEMBER,<empty>,<empty>,*reply_client,12,,277,reply_client,10,,client*
+165113,MEMBER,<empty>,<empty>,dbid,9,,279,dbid,11,,int
+165114,MEMBER,<empty>,<empty>,blocked_on_keys,9,,280,blocked_on_keys,12,,int
+165115,MEMBER,<empty>,<empty>,unblocked,9,,281,unblocked,13,,int
+165116,MEMBER,<empty>,<empty>,background_timer,14,,282,background_timer,14,,monotime
+165117,MEMBER,<empty>,<empty>,background_duration,14,,283,background_duration,15,,uint64_t
+165157,MEMBER,<empty>,<empty>,*module,17,,320,module,1,,RedisModule*
+165158,MEMBER,<empty>,<empty>,notify_callback,33,,322,notify_callback,2,,RedisModuleNotificationFunc
+165159,MEMBER,<empty>,<empty>,event_mask,9,,324,event_mask,3,,int
+165160,MEMBER,<empty>,<empty>,active,9,,327,active,4,,int
+165163,MEMBER,<empty>,<empty>,*module,17,,332,module,1,,RedisModule*
+165164,MEMBER,<empty>,<empty>,callback,40,,333,callback,2,,RedisModulePostNotificationJobFunc
+165165,MEMBER,<empty>,<empty>,*pd,10,,334,pd,3,,void*
+165171,MEMBER,<empty>,<empty>,dbid,9,,336,dbid,5,,int
+165176,MEMBER,<empty>,<empty>,*rax,9,,347,rax,1,,rax*
+165179,MEMBER,<empty>,<empty>,*dict,21,,351,dict,1,,RedisModuleDict*
+165180,MEMBER,<empty>,<empty>,ri,17,,352,ri,2,,raxIterator
+165183,MEMBER,<empty>,<empty>,**argv,23,,356,argv,1,,robj**
+165184,MEMBER,<empty>,<empty>,argv_len,9,,357,argv_len,2,,int
+165185,MEMBER,<empty>,<empty>,argc,9,,358,argc,3,,int
+165186,MEMBER,<empty>,<empty>,*c,12,,359,c,4,,client*
+165194,MEMBER,<empty>,<empty>,*module,17,,366,module,1,,RedisModule*
+165195,MEMBER,<empty>,<empty>,callback,34,,368,callback,2,,RedisModuleCommandFilterFunc
+165196,MEMBER,<empty>,<empty>,flags,9,,370,flags,3,,int
+165207,MEMBER,<empty>,<empty>,done_handler,32,,379,done_handler,1,,RedisModuleForkDoneHandler
+165208,MEMBER,<empty>,<empty>,* done_handler_user_data,9,,380,done_handler_user_data,2,,void*
+165215,MEMBER,<empty>,<empty>,*rax,9,,384,rax,1,,rax*
+165218,MEMBER,<empty>,<empty>,*module,17,,414,module,1,,RedisModule*
+165219,MEMBER,<empty>,<empty>,event,22,,415,event,2,,RedisModuleEvent
+165220,MEMBER,<empty>,<empty>,callback,30,,416,callback,3,,RedisModuleEventCallback
+165224,MEMBER,<empty>,<empty>,*user,10,,427,user,1,,user*
+165225,MEMBER,<empty>,<empty>,free_user,9,,428,free_user,2,,int
+165229,MEMBER,<empty>,<empty>,*from_key,24,,433,from_key,2,,redisObject*
+165230,MEMBER,<empty>,<empty>,*to_key,35,,433,to_key,3,,redisObject*
+165231,MEMBER,<empty>,<empty>,from_dbid,9,,436,from_dbid,4,,int
+165232,MEMBER,<empty>,<empty>,to_dbid,20,,436,to_dbid,5,,int
+165298,MEMBER,<empty>,<empty>,name,9,,457,name,1,,sds
+165299,MEMBER,<empty>,<empty>,*privdata,10,,458,privdata,2,,void*
+165301,MEMBER,<empty>,<empty>,get_string,40,,460,get_string,1,,RedisModuleConfigGetStringFunc
+165302,MEMBER,<empty>,<empty>,get_numeric,41,,461,get_numeric,2,,RedisModuleConfigGetNumericFunc
+165303,MEMBER,<empty>,<empty>,get_bool,38,,462,get_bool,3,,RedisModuleConfigGetBoolFunc
+165304,MEMBER,<empty>,<empty>,get_enum,38,,463,get_enum,4,,RedisModuleConfigGetEnumFunc
+165305,MEMBER,<empty>,<empty>,get_fn,7,,464,get_fn,4,,union get_fn
+165307,MEMBER,<empty>,<empty>,set_string,40,,466,set_string,1,,RedisModuleConfigSetStringFunc
+165308,MEMBER,<empty>,<empty>,set_numeric,41,,467,set_numeric,2,,RedisModuleConfigSetNumericFunc
+165309,MEMBER,<empty>,<empty>,set_bool,38,,468,set_bool,3,,RedisModuleConfigSetBoolFunc
+165310,MEMBER,<empty>,<empty>,set_enum,38,,469,set_enum,4,,RedisModuleConfigSetEnumFunc
+165311,MEMBER,<empty>,<empty>,set_fn,7,,470,set_fn,6,,union set_fn
+165312,MEMBER,<empty>,<empty>,apply_fn,32,,471,apply_fn,7,,RedisModuleConfigApplyFunc
+165313,MEMBER,<empty>,<empty>,*module,17,,472,module,8,,RedisModule*
+165315,MEMBER,<empty>,<empty>,ref_count,12,,476,ref_count,1,,size_t
+165316,MEMBER,<empty>,<empty>,*private_data,10,,477,private_data,2,,void*
+165317,MEMBER,<empty>,<empty>,*module,17,,478,module,3,,RedisModule*
+165318,MEMBER,<empty>,<empty>,on_unblocked,28,,479,on_unblocked,4,,RedisModuleOnUnblocked
+165319,MEMBER,<empty>,<empty>,*c,12,,480,c,5,,client*
+165320,MEMBER,<empty>,<empty>,*ctx,20,,481,ctx,6,,RedisModuleCtx*
+187472,MEMBER,<empty>,<empty>,module_id,14,,8759,module_id,1,,uint64_t
+187473,MEMBER,<empty>,<empty>,callback,39,,8760,callback,2,,RedisModuleClusterMessageReceiver
+187475,MEMBER,<empty>,<empty>,*module,24,,8761,module,4,,RedisModule*
+187477,MEMBER,<empty>,<empty>,*next,34,,8762,next,6,,moduleClusterReceiver*
+187480,MEMBER,<empty>,<empty>,flags,9,,8766,flags,1,,int
+187481,MEMBER,<empty>,<empty>,ip[NET_IP_STR_LEN],10,,8767,ip,2,,char[46]
+187482,MEMBER,<empty>,<empty>,port,9,,8768,port,3,,int
+187483,MEMBER,<empty>,<empty>,master_id[40],10,,8769,master_id,4,,char[40]
+188223,MEMBER,<empty>,<empty>,*module,17,,9026,module,1,,RedisModule*
+188224,MEMBER,<empty>,<empty>,callback,26,,9027,callback,2,,RedisModuleTimerProc
+188225,MEMBER,<empty>,<empty>,*data,10,,9028,data,3,,void*
+188226,MEMBER,<empty>,<empty>,dbid,9,,9029,dbid,4,,int
+188734,MEMBER,<empty>,<empty>,rFunc,30,,9195,rFunc,1,,RedisModuleEventLoopFunc
+188735,MEMBER,<empty>,<empty>,wFunc,30,,9196,wFunc,2,,RedisModuleEventLoopFunc
+188736,MEMBER,<empty>,<empty>,*user_data,10,,9197,user_data,3,,void*
+188739,MEMBER,<empty>,<empty>,func,37,,9201,func,1,,RedisModuleEventLoopOneShotFunc
+188740,MEMBER,<empty>,<empty>,*user_data,10,,9202,user_data,2,,void*
+192812,MEMBER,<empty>,<empty>,*ctx,20,,10831,ctx,1,,RedisModuleCtx*
+192813,MEMBER,<empty>,<empty>,* user_data,9,,10832,user_data,2,,void*
+192814,MEMBER,<empty>,<empty>,fn,23,,10833,fn,3,,RedisModuleScanCB
+192817,MEMBER,<empty>,<empty>,cursor,19,,10837,cursor,1,,long unsigned
+192818,MEMBER,<empty>,<empty>,done,9,,10838,done,2,,int
+193007,MEMBER,<empty>,<empty>,*key,20,,10950,key,1,,RedisModuleKey*
+193008,MEMBER,<empty>,<empty>,* user_data,9,,10951,user_data,2,,void*
+193009,MEMBER,<empty>,<empty>,fn,26,,10952,fn,3,,RedisModuleScanKeyCB
+194111,MEMBER,<empty>,<empty>,dbnum,13,,11596,dbnum,1,,int32_t
+194112,MEMBER,<empty>,<empty>,*key,23,,11597,key,2,,robj*
+194113,MEMBER,<empty>,<empty>,*value,10,,11598,value,3,,robj*
+194114,MEMBER,<empty>,<empty>,mode,9,,11599,mode,4,,int
+198710,MEMBER,<empty>,<empty>,type,9,,12843,type,1,,int
+198712,MEMBER,<empty>,<empty>,*filename,14,,12846,filename,1,,char*
+198713,MEMBER,<empty>,<empty>,data,7,,12847,data,3,,union
+199865,MEMBER,<empty>,<empty>,endtime,19,,13292,endtime,1,,long long int
+199866,MEMBER,<empty>,<empty>,*cursor,19,,13293,cursor,2,,long unsigned*
+199868,MEMBER,<empty>,<empty>,*key,24,,13294,key,4,,redisObject*
+199869,MEMBER,<empty>,<empty>,dbid,9,,13295,dbid,5,,int
+205267,MEMBER,<empty>,<empty>,value,13,,54,value,1,,int64_t
+205269,MEMBER,<empty>,<empty>,*next,26,,55,next,3,,HelloTypeNode*
+205272,MEMBER,<empty>,<empty>,*head,26,,59,head,2,,HelloTypeNode*
+205273,MEMBER,<empty>,<empty>,len,12,,60,len,3,,size_t
+208203,MEMBER,<empty>,<empty>,MONOTONIC_CLOCK_POSIX,5,,28,MONOTONIC_CLOCK_POSIX,1,,ANY
+208204,MEMBER,<empty>,<empty>,MONOTONIC_CLOCK_HW,5,,29,MONOTONIC_CLOCK_HW,2,,ANY
+209710,MEMBER,<empty>,<empty>,node,14,,275,node,1,,listNode
+209711,MEMBER,<empty>,<empty>,*key,10,,276,key,2,,robj*
+209712,MEMBER,<empty>,<empty>,*db,13,,277,db,3,,redisDb*
+209713,MEMBER,<empty>,<empty>,*client,12,,278,client,4,,client*
+209714,MEMBER,<empty>,<empty>,expired:1,14,,279,expired,5,,unsigned
+225364,MEMBER,<empty>,<empty>,value,31,,4150,value,1,,long unsigned
+235196,MEMBER,<empty>,<empty>,shard,9,,36,shard,1,,int
+235207,MEMBER,<empty>,<empty>,**serverPubSubChannels,10,,39,serverPubSubChannels,4,,dict**
+235208,MEMBER,<empty>,<empty>,**subscribeMsg,10,,40,subscribeMsg,5,,robj**
+235209,MEMBER,<empty>,<empty>,**unsubscribeMsg,10,,41,unsubscribeMsg,6,,robj**
+235210,MEMBER,<empty>,<empty>,**messageBulk,10,,42,messageBulk,7,,robj**
+243725,MEMBER,<empty>,<empty>,*prev,26,,47,prev,2,,quicklistNode*
+243727,MEMBER,<empty>,<empty>,*next,26,,48,next,4,,quicklistNode*
+243728,MEMBER,<empty>,<empty>,*entry,19,,49,entry,5,,unsigned char*
+243729,MEMBER,<empty>,<empty>,sz,12,,50,sz,6,,size_t
+243730,MEMBER,<empty>,<empty>,count : 16,18,,51,count,7,,unsigned int
+243731,MEMBER,<empty>,<empty>,encoding : 2,18,,52,encoding,8,,unsigned int
+243732,MEMBER,<empty>,<empty>,container : 2,18,,53,container,9,,unsigned int
+243733,MEMBER,<empty>,<empty>,recompress : 1,18,,54,recompress,10,,unsigned int
+243734,MEMBER,<empty>,<empty>,attempted_compress : 1,18,,55,attempted_compress,11,,unsigned int
+243735,MEMBER,<empty>,<empty>,dont_compress : 1,18,,56,dont_compress,12,,unsigned int
+243736,MEMBER,<empty>,<empty>,extra : 9,18,,57,extra,13,,unsigned int
+243739,MEMBER,<empty>,<empty>,sz,12,,66,sz,1,,size_t
+243740,MEMBER,<empty>,<empty>,compressed[],10,,67,compressed,2,,char[]
+243748,MEMBER,<empty>,<empty>,*node,19,,79,node,1,,quicklistNode*
+243749,MEMBER,<empty>,<empty>,*name,10,,80,name,2,,char*
+243752,MEMBER,<empty>,<empty>,*head,19,,107,head,1,,quicklistNode*
+243753,MEMBER,<empty>,<empty>,*tail,19,,108,tail,2,,quicklistNode*
+243754,MEMBER,<empty>,<empty>,count,19,,109,count,3,,long unsigned
+243755,MEMBER,<empty>,<empty>,len,19,,110,len,4,,long unsigned
+243756,MEMBER,<empty>,<empty>,fill : QL_FILL_BITS,16,,111,fill,5,,signed int
+243757,MEMBER,<empty>,<empty>,compress : QL_COMP_BITS,18,,112,compress,6,,unsigned int
+243758,MEMBER,<empty>,<empty>,bookmark_count: QL_BM_BITS,18,,113,bookmark_count,7,,unsigned int
+243759,MEMBER,<empty>,<empty>,bookmarks[],23,,114,bookmarks,8,,quicklistBookmark[]
+243767,MEMBER,<empty>,<empty>,*quicklist,15,,118,quicklist,1,,quicklist*
+243768,MEMBER,<empty>,<empty>,*current,19,,119,current,2,,quicklistNode*
+243769,MEMBER,<empty>,<empty>,*zi,19,,120,zi,3,,unsigned char*
+243770,MEMBER,<empty>,<empty>,offset,10,,121,offset,4,,long
+243771,MEMBER,<empty>,<empty>,direction,9,,122,direction,5,,int
+243774,MEMBER,<empty>,<empty>,*quicklist,21,,126,quicklist,1,,quicklist*
+243775,MEMBER,<empty>,<empty>,*node,19,,127,node,2,,quicklistNode*
+243776,MEMBER,<empty>,<empty>,*zi,19,,128,zi,3,,unsigned char*
+243777,MEMBER,<empty>,<empty>,*value,19,,129,value,4,,unsigned char*
+243778,MEMBER,<empty>,<empty>,longval,15,,130,longval,5,,long long
+243779,MEMBER,<empty>,<empty>,sz,12,,131,sz,6,,size_t
+243780,MEMBER,<empty>,<empty>,offset,9,,132,offset,7,,int
+251839,MEMBER,<empty>,<empty>,iskey:1,14,,99,iskey,1,,uint32_t
+251840,MEMBER,<empty>,<empty>,isnull:1,14,,100,isnull,2,,uint32_t
+251841,MEMBER,<empty>,<empty>,iscompr:1,14,,101,iscompr,3,,uint32_t
+251842,MEMBER,<empty>,<empty>,size:29,14,,102,size,4,,uint32_t
+251843,MEMBER,<empty>,<empty>,data[],19,,130,data,5,,unsigned char[]
+251851,MEMBER,<empty>,<empty>,*head,13,,134,head,1,,raxNode*
+251852,MEMBER,<empty>,<empty>,numele,14,,135,numele,2,,uint64_t
+251853,MEMBER,<empty>,<empty>,numnodes,14,,136,numnodes,3,,uint64_t
+251856,MEMBER,<empty>,<empty>,**stack,10,,144,stack,1,,void**
+251857,MEMBER,<empty>,<empty>,items,12,,145,items,2,,size_t
+251858,MEMBER,<empty>,<empty>,maxitems,19,,145,maxitems,3,,size_t
+251859,MEMBER,<empty>,<empty>,*static_items[RAX_STACK_STATIC_ITEMS],10,,148,static_items,4,,void*[32]
+251860,MEMBER,<empty>,<empty>,oom,9,,149,oom,5,,int
+251876,MEMBER,<empty>,<empty>,flags,9,,176,flags,1,,int
+251877,MEMBER,<empty>,<empty>,*rt,9,,177,rt,2,,rax*
+251878,MEMBER,<empty>,<empty>,*key,19,,178,key,3,,unsigned char*
+251879,MEMBER,<empty>,<empty>,*data,10,,179,data,4,,void*
+251880,MEMBER,<empty>,<empty>,key_len,12,,180,key_len,5,,size_t
+251881,MEMBER,<empty>,<empty>,key_max,12,,181,key_max,6,,size_t
+251882,MEMBER,<empty>,<empty>,key_static_string[RAX_ITER_STATIC_LEN],19,,182,key_static_string,7,,unsigned char[128]
+251883,MEMBER,<empty>,<empty>,*node,13,,183,node,8,,raxNode*
+251884,MEMBER,<empty>,<empty>,stack,14,,184,stack,9,,raxStack
+251885,MEMBER,<empty>,<empty>,node_cb,21,,185,node_cb,10,,raxNodeCallback
+266458,MEMBER,<empty>,<empty>,*el,17,,83,el,1,,aeEventLoop*
+266459,MEMBER,<empty>,<empty>,conn_info,17,,84,conn_info,2,,cliConnInfo
+266460,MEMBER,<empty>,<empty>,*hostsocket,16,,85,hostsocket,3,,char*
+266461,MEMBER,<empty>,<empty>,tls,9,,86,tls,4,,int
+266463,MEMBER,<empty>,<empty>,sslconfig,25,,87,sslconfig,6,,cliSSLconfig
+266464,MEMBER,<empty>,<empty>,numclients,9,,88,numclients,7,,int
+266465,MEMBER,<empty>,<empty>,liveclients,21,,89,liveclients,8,,int
+266466,MEMBER,<empty>,<empty>,requests,9,,90,requests,9,,int
+266467,MEMBER,<empty>,<empty>,requests_issued,21,,91,requests_issued,10,,int
+266468,MEMBER,<empty>,<empty>,requests_finished,21,,92,requests_finished,11,,int
+266469,MEMBER,<empty>,<empty>,previous_requests_finished,21,,93,previous_requests_finished,12,,int
+266470,MEMBER,<empty>,<empty>,last_printed_bytes,9,,94,last_printed_bytes,13,,int
+266471,MEMBER,<empty>,<empty>,previous_tick,15,,95,previous_tick,14,,long long
+266472,MEMBER,<empty>,<empty>,keysize,9,,96,keysize,15,,int
+266473,MEMBER,<empty>,<empty>,datasize,9,,97,datasize,16,,int
+266474,MEMBER,<empty>,<empty>,randomkeys,9,,98,randomkeys,17,,int
+266475,MEMBER,<empty>,<empty>,randomkeys_keyspacelen,9,,99,randomkeys_keyspacelen,18,,int
+266476,MEMBER,<empty>,<empty>,keepalive,9,,100,keepalive,19,,int
+266477,MEMBER,<empty>,<empty>,pipeline,9,,101,pipeline,20,,int
+266478,MEMBER,<empty>,<empty>,start,15,,102,start,21,,long long
+266479,MEMBER,<empty>,<empty>,totlatency,15,,103,totlatency,22,,long long
+266480,MEMBER,<empty>,<empty>,*title,16,,104,title,23,,char*
+266481,MEMBER,<empty>,<empty>,*clients,10,,105,clients,24,,list*
+266482,MEMBER,<empty>,<empty>,quiet,9,,106,quiet,25,,int
+266483,MEMBER,<empty>,<empty>,csv,9,,107,csv,26,,int
+266484,MEMBER,<empty>,<empty>,loop,9,,108,loop,27,,int
+266485,MEMBER,<empty>,<empty>,idlemode,9,,109,idlemode,28,,int
+266486,MEMBER,<empty>,<empty>,input_dbnumstr,9,,110,input_dbnumstr,29,,sds
+266487,MEMBER,<empty>,<empty>,*tests,10,,111,tests,30,,char*
+266488,MEMBER,<empty>,<empty>,stdinarg,9,,112,stdinarg,31,,int
+266489,MEMBER,<empty>,<empty>,precision,9,,113,precision,32,,int
+266490,MEMBER,<empty>,<empty>,num_threads,9,,114,num_threads,33,,int
+266492,MEMBER,<empty>,<empty>,**threads,28,,115,threads,35,,benchmarkThread**
+266493,MEMBER,<empty>,<empty>,cluster_mode,9,,116,cluster_mode,36,,int
+266494,MEMBER,<empty>,<empty>,cluster_node_count,9,,117,cluster_node_count,37,,int
+266496,MEMBER,<empty>,<empty>,**cluster_nodes,24,,118,cluster_nodes,39,,clusterNode**
+266498,MEMBER,<empty>,<empty>,*redis_config,24,,119,redis_config,41,,redisConfig*
+266500,MEMBER,<empty>,<empty>,* latency_histogram,25,,120,latency_histogram,43,,hdr_histogram*
+266502,MEMBER,<empty>,<empty>,* current_sec_latency_histogram,25,,121,current_sec_latency_histogram,45,,hdr_histogram*
+266503,MEMBER,<empty>,<empty>,is_fetching_slots,21,,122,is_fetching_slots,46,,int
+266504,MEMBER,<empty>,<empty>,is_updating_slots,21,,123,is_updating_slots,47,,int
+266505,MEMBER,<empty>,<empty>,slots_last_update,21,,124,slots_last_update,48,,int
+266506,MEMBER,<empty>,<empty>,enable_tracking,9,,125,enable_tracking,49,,int
+266507,MEMBER,<empty>,<empty>,liveclients_mutex,21,,126,liveclients_mutex,50,,pthread_mutex_t
+266508,MEMBER,<empty>,<empty>,is_updating_slots_mutex,21,,127,is_updating_slots_mutex,51,,pthread_mutex_t
+266509,MEMBER,<empty>,<empty>,resp3,9,,128,resp3,52,,int
+266512,MEMBER,<empty>,<empty>,*context,18,,132,context,1,,redisContext*
+266513,MEMBER,<empty>,<empty>,obuf,9,,133,obuf,2,,sds
+266514,MEMBER,<empty>,<empty>,**randptr,10,,134,randptr,3,,char**
+266515,MEMBER,<empty>,<empty>,randlen,12,,135,randlen,4,,size_t
+266516,MEMBER,<empty>,<empty>,randfree,12,,136,randfree,5,,size_t
+266517,MEMBER,<empty>,<empty>,**stagptr,10,,137,stagptr,6,,char**
+266518,MEMBER,<empty>,<empty>,staglen,12,,138,staglen,7,,size_t
+266519,MEMBER,<empty>,<empty>,stagfree,12,,139,stagfree,8,,size_t
+266520,MEMBER,<empty>,<empty>,written,12,,140,written,9,,size_t
+266521,MEMBER,<empty>,<empty>,start,15,,141,start,10,,long long
+266522,MEMBER,<empty>,<empty>,latency,15,,142,latency,11,,long long
+266523,MEMBER,<empty>,<empty>,pending,9,,143,pending,12,,int
+266524,MEMBER,<empty>,<empty>,prefix_pending,9,,144,prefix_pending,13,,int
+266525,MEMBER,<empty>,<empty>,prefixlen,9,,147,prefixlen,14,,int
+266526,MEMBER,<empty>,<empty>,thread_id,9,,148,thread_id,15,,int
+266528,MEMBER,<empty>,<empty>,*cluster_node,24,,149,cluster_node,17,,clusterNode*
+266529,MEMBER,<empty>,<empty>,slots_last_update,9,,150,slots_last_update,18,,int
+266532,MEMBER,<empty>,<empty>,index,9,,156,index,1,,int
+266533,MEMBER,<empty>,<empty>,thread,15,,157,thread,2,,pthread_t
+266534,MEMBER,<empty>,<empty>,*el,17,,158,el,3,,aeEventLoop*
+266537,MEMBER,<empty>,<empty>,*ip,10,,163,ip,1,,char*
+266538,MEMBER,<empty>,<empty>,port,9,,164,port,2,,int
+266539,MEMBER,<empty>,<empty>,name,9,,165,name,3,,sds
+266540,MEMBER,<empty>,<empty>,flags,9,,166,flags,4,,int
+266541,MEMBER,<empty>,<empty>,replicate,9,,167,replicate,5,,sds
+266542,MEMBER,<empty>,<empty>,*slots,9,,168,slots,6,,int*
+266543,MEMBER,<empty>,<empty>,slots_count,9,,169,slots_count,7,,int
+266544,MEMBER,<empty>,<empty>,current_slot_index,9,,170,current_slot_index,8,,int
+266545,MEMBER,<empty>,<empty>,*updated_slots,9,,171,updated_slots,9,,int*
+266546,MEMBER,<empty>,<empty>,updated_slots_count,9,,172,updated_slots_count,10,,int
+266547,MEMBER,<empty>,<empty>,replicas_count,9,,173,replicas_count,11,,int
+266548,MEMBER,<empty>,<empty>,*migrating,9,,174,migrating,12,,sds*
+266549,MEMBER,<empty>,<empty>,*importing,9,,176,importing,13,,sds*
+266550,MEMBER,<empty>,<empty>,migrating_count,9,,178,migrating_count,14,,int
+266551,MEMBER,<empty>,<empty>,importing_count,9,,179,importing_count,15,,int
+266553,MEMBER,<empty>,<empty>,*redis_config,24,,180,redis_config,17,,redisConfig*
+266556,MEMBER,<empty>,<empty>,save,9,,184,save,1,,sds
+266557,MEMBER,<empty>,<empty>,appendonly,9,,185,appendonly,2,,sds
+274124,MEMBER,<empty>,<empty>,AOF_RESP,5,,43,AOF_RESP,1,,ANY
+274125,MEMBER,<empty>,<empty>,AOF_RDB_PREAMBLE,5,,44,AOF_RDB_PREAMBLE,2,,ANY
+274126,MEMBER,<empty>,<empty>,AOF_MULTI_PART,5,,45,AOF_MULTI_PART,3,,ANY
+275705,MEMBER,<empty>,<empty>,*rio,9,,44,rio,1,,rio*
+275706,MEMBER,<empty>,<empty>,*key,10,,45,key,2,,robj*
+275707,MEMBER,<empty>,<empty>,key_type,9,,46,key_type,3,,int
+275708,MEMBER,<empty>,<empty>,keys,19,,47,keys,4,,long unsigned
+275709,MEMBER,<empty>,<empty>,expires,19,,48,expires,5,,long unsigned
+275710,MEMBER,<empty>,<empty>,already_expired,19,,49,already_expired,6,,long unsigned
+275711,MEMBER,<empty>,<empty>,doing,9,,50,doing,7,,int
+275712,MEMBER,<empty>,<empty>,error_set,9,,51,error_set,8,,int
+275713,MEMBER,<empty>,<empty>,error[1024],10,,52,error,9,,char[1024]
+277100,MEMBER,<empty>,<empty>,*name,10,,189,name,1,,char*
+277101,MEMBER,<empty>,<empty>,argc,9,,190,argc,2,,int
+277102,MEMBER,<empty>,<empty>,**argv,10,,191,argv,3,,char**
+277103,MEMBER,<empty>,<empty>,stdin_arg,9,,192,stdin_arg,4,,sds
+277104,MEMBER,<empty>,<empty>,flags,9,,193,flags,5,,int
+277105,MEMBER,<empty>,<empty>,replicas,9,,194,replicas,6,,int
+277106,MEMBER,<empty>,<empty>,*from,10,,195,from,7,,char*
+277107,MEMBER,<empty>,<empty>,*to,10,,196,to,8,,char*
+277108,MEMBER,<empty>,<empty>,**weight,10,,197,weight,9,,char**
+277109,MEMBER,<empty>,<empty>,weight_argc,9,,198,weight_argc,10,,int
+277110,MEMBER,<empty>,<empty>,*master_id,10,,199,master_id,11,,char*
+277111,MEMBER,<empty>,<empty>,slots,9,,200,slots,12,,int
+277112,MEMBER,<empty>,<empty>,timeout,9,,201,timeout,13,,int
+277113,MEMBER,<empty>,<empty>,pipeline,9,,202,pipeline,14,,int
+277114,MEMBER,<empty>,<empty>,threshold,11,,203,threshold,15,,float
+277115,MEMBER,<empty>,<empty>,*backup_dir,10,,204,backup_dir,16,,char*
+277116,MEMBER,<empty>,<empty>,*from_user,10,,205,from_user,17,,char*
+277117,MEMBER,<empty>,<empty>,*from_pass,10,,206,from_pass,18,,char*
+277118,MEMBER,<empty>,<empty>,from_askpass,9,,207,from_askpass,19,,int
+277129,MEMBER,<empty>,<empty>,conn_info,17,,215,conn_info,1,,cliConnInfo
+277130,MEMBER,<empty>,<empty>,*hostsocket,10,,216,hostsocket,2,,char*
+277131,MEMBER,<empty>,<empty>,tls,9,,217,tls,3,,int
+277132,MEMBER,<empty>,<empty>,sslconfig,18,,218,sslconfig,4,,cliSSLconfig
+277133,MEMBER,<empty>,<empty>,repeat,10,,219,repeat,5,,long
+277134,MEMBER,<empty>,<empty>,interval,10,,220,interval,6,,long
+277135,MEMBER,<empty>,<empty>,dbnum,9,,221,dbnum,7,,int
+277136,MEMBER,<empty>,<empty>,interactive,9,,222,interactive,8,,int
+277137,MEMBER,<empty>,<empty>,shutdown,9,,223,shutdown,9,,int
+277138,MEMBER,<empty>,<empty>,monitor_mode,9,,224,monitor_mode,10,,int
+277139,MEMBER,<empty>,<empty>,pubsub_mode,9,,225,pubsub_mode,11,,int
+277140,MEMBER,<empty>,<empty>,blocking_state_aborted,9,,226,blocking_state_aborted,12,,int
+277141,MEMBER,<empty>,<empty>,latency_mode,9,,227,latency_mode,13,,int
+277142,MEMBER,<empty>,<empty>,latency_dist_mode,9,,228,latency_dist_mode,14,,int
+277143,MEMBER,<empty>,<empty>,latency_history,9,,229,latency_history,15,,int
+277144,MEMBER,<empty>,<empty>,lru_test_mode,9,,230,lru_test_mode,16,,int
+277145,MEMBER,<empty>,<empty>,lru_test_sample_size,15,,231,lru_test_sample_size,17,,long long
+277146,MEMBER,<empty>,<empty>,cluster_mode,9,,232,cluster_mode,18,,int
+277147,MEMBER,<empty>,<empty>,cluster_reissue_command,9,,233,cluster_reissue_command,19,,int
+277148,MEMBER,<empty>,<empty>,cluster_send_asking,9,,234,cluster_send_asking,20,,int
+277149,MEMBER,<empty>,<empty>,slave_mode,9,,235,slave_mode,21,,int
+277150,MEMBER,<empty>,<empty>,pipe_mode,9,,236,pipe_mode,22,,int
+277151,MEMBER,<empty>,<empty>,pipe_timeout,9,,237,pipe_timeout,23,,int
+277152,MEMBER,<empty>,<empty>,getrdb_mode,9,,238,getrdb_mode,24,,int
+277153,MEMBER,<empty>,<empty>,get_functions_rdb_mode,9,,239,get_functions_rdb_mode,25,,int
+277154,MEMBER,<empty>,<empty>,stat_mode,9,,240,stat_mode,26,,int
+277155,MEMBER,<empty>,<empty>,scan_mode,9,,241,scan_mode,27,,int
+277156,MEMBER,<empty>,<empty>,count,9,,242,count,28,,int
+277157,MEMBER,<empty>,<empty>,intrinsic_latency_mode,9,,243,intrinsic_latency_mode,29,,int
+277158,MEMBER,<empty>,<empty>,intrinsic_latency_duration,9,,244,intrinsic_latency_duration,30,,int
+277159,MEMBER,<empty>,<empty>,pattern,9,,245,pattern,31,,sds
+277160,MEMBER,<empty>,<empty>,*rdb_filename,10,,246,rdb_filename,32,,char*
+277161,MEMBER,<empty>,<empty>,bigkeys,9,,247,bigkeys,33,,int
+277162,MEMBER,<empty>,<empty>,memkeys,9,,248,memkeys,34,,int
+277163,MEMBER,<empty>,<empty>,memkeys_samples,14,,249,memkeys_samples,35,,unsigned
+277164,MEMBER,<empty>,<empty>,hotkeys,9,,250,hotkeys,36,,int
+277165,MEMBER,<empty>,<empty>,stdin_lastarg,9,,251,stdin_lastarg,37,,int
+277166,MEMBER,<empty>,<empty>,stdin_tag_arg,9,,252,stdin_tag_arg,38,,int
+277167,MEMBER,<empty>,<empty>,*stdin_tag_name,10,,253,stdin_tag_name,39,,char*
+277168,MEMBER,<empty>,<empty>,askpass,9,,254,askpass,40,,int
+277169,MEMBER,<empty>,<empty>,quoted_input,9,,255,quoted_input,41,,int
+277170,MEMBER,<empty>,<empty>,output,9,,256,output,42,,int
+277171,MEMBER,<empty>,<empty>,push_output,9,,257,push_output,43,,int
+277172,MEMBER,<empty>,<empty>,mb_delim,9,,258,mb_delim,44,,sds
+277173,MEMBER,<empty>,<empty>,cmd_delim,9,,259,cmd_delim,45,,sds
+277174,MEMBER,<empty>,<empty>,prompt[128],10,,260,prompt,46,,char[128]
+277175,MEMBER,<empty>,<empty>,*eval,10,,261,eval,47,,char*
+277176,MEMBER,<empty>,<empty>,eval_ldb,9,,262,eval_ldb,48,,int
+277177,MEMBER,<empty>,<empty>,eval_ldb_sync,9,,263,eval_ldb_sync,49,,int
+277178,MEMBER,<empty>,<empty>,eval_ldb_end,9,,264,eval_ldb_end,50,,int
+277179,MEMBER,<empty>,<empty>,enable_ldb_on_eval,9,,265,enable_ldb_on_eval,51,,int
+277180,MEMBER,<empty>,<empty>,last_cmd_type,9,,266,last_cmd_type,52,,int
+277181,MEMBER,<empty>,<empty>,*last_reply,16,,267,last_reply,53,,redisReply*
+277182,MEMBER,<empty>,<empty>,verbose,9,,268,verbose,54,,int
+277183,MEMBER,<empty>,<empty>,set_errcode,9,,269,set_errcode,55,,int
+277184,MEMBER,<empty>,<empty>,cluster_manager_command,27,,270,cluster_manager_command,56,,clusterManagerCommand
+277185,MEMBER,<empty>,<empty>,no_auth_warning,9,,271,no_auth_warning,57,,int
+277186,MEMBER,<empty>,<empty>,resp2,9,,272,resp2,58,,int
+277187,MEMBER,<empty>,<empty>,resp3,9,,273,resp3,59,,int
+277188,MEMBER,<empty>,<empty>,current_resp3,9,,274,current_resp3,60,,int
+277189,MEMBER,<empty>,<empty>,in_multi,9,,275,in_multi,61,,int
+277190,MEMBER,<empty>,<empty>,pre_multi_dbnum,9,,276,pre_multi_dbnum,62,,int
+277191,MEMBER,<empty>,<empty>,*server_version,10,,277,server_version,63,,char*
+277192,MEMBER,<empty>,<empty>,*test_hint,10,,278,test_hint,64,,char*
+277193,MEMBER,<empty>,<empty>,*test_hint_file,10,,279,test_hint_file,65,,char*
+277202,MEMBER,<empty>,<empty>,hints,9,,284,hints,1,,int
+277560,MEMBER,<empty>,<empty>,type,9,,415,type,1,,int
+277561,MEMBER,<empty>,<empty>,argc,9,,416,argc,2,,int
+277562,MEMBER,<empty>,<empty>,*argv,9,,417,argv,3,,sds*
+277563,MEMBER,<empty>,<empty>,full,9,,418,full,4,,sds
+277565,MEMBER,<empty>,<empty>,docs,24,,421,docs,6,,commandDocs
+289858,MEMBER,<empty>,<empty>,*nodes,10,,3597,nodes,1,,list*
+289859,MEMBER,<empty>,<empty>,*errors,10,,3598,errors,2,,list*
+289860,MEMBER,<empty>,<empty>,unreachable_masters,9,,3599,unreachable_masters,3,,int
+289867,MEMBER,<empty>,<empty>,*context,18,,3606,context,1,,redisContext*
+289868,MEMBER,<empty>,<empty>,name,9,,3607,name,2,,sds
+289869,MEMBER,<empty>,<empty>,*ip,10,,3608,ip,3,,char*
+289870,MEMBER,<empty>,<empty>,port,9,,3609,port,4,,int
+289871,MEMBER,<empty>,<empty>,bus_port,9,,3610,bus_port,5,,int
+289872,MEMBER,<empty>,<empty>,current_epoch,14,,3611,current_epoch,6,,uint64_t
+289873,MEMBER,<empty>,<empty>,ping_sent,12,,3612,ping_sent,7,,time_t
+289874,MEMBER,<empty>,<empty>,ping_recv,12,,3613,ping_recv,8,,time_t
+289875,MEMBER,<empty>,<empty>,flags,9,,3614,flags,9,,int
+289876,MEMBER,<empty>,<empty>,*flags_str,10,,3615,flags_str,10,,list*
+289877,MEMBER,<empty>,<empty>,replicate,9,,3616,replicate,11,,sds
+289878,MEMBER,<empty>,<empty>,dirty,9,,3617,dirty,12,,int
+289879,MEMBER,<empty>,<empty>,slots[CLUSTER_MANAGER_SLOTS],13,,3618,slots,13,,uint8_t[16384]
+289880,MEMBER,<empty>,<empty>,slots_count,9,,3619,slots_count,14,,int
+289881,MEMBER,<empty>,<empty>,replicas_count,9,,3620,replicas_count,15,,int
+289882,MEMBER,<empty>,<empty>,*friends,10,,3621,friends,16,,list*
+289883,MEMBER,<empty>,<empty>,*migrating,9,,3622,migrating,17,,sds*
+289884,MEMBER,<empty>,<empty>,*importing,9,,3624,importing,18,,sds*
+289885,MEMBER,<empty>,<empty>,migrating_count,9,,3626,migrating_count,19,,int
+289886,MEMBER,<empty>,<empty>,importing_count,9,,3627,importing_count,20,,int
+289887,MEMBER,<empty>,<empty>,weight,11,,3628,weight,21,,float
+289888,MEMBER,<empty>,<empty>,balance,9,,3629,balance,22,,int
+289899,MEMBER,<empty>,<empty>,**nodes,24,,3634,nodes,1,,clusterManagerNode**
+289900,MEMBER,<empty>,<empty>,**alloc,24,,3635,alloc,2,,clusterManagerNode**
+289901,MEMBER,<empty>,<empty>,len,9,,3636,len,3,,int
+289902,MEMBER,<empty>,<empty>,count,9,,3637,count,4,,int
+289905,MEMBER,<empty>,<empty>,*source,24,,3642,source,1,,clusterManagerNode*
+289906,MEMBER,<empty>,<empty>,slot,9,,3643,slot,2,,int
+289909,MEMBER,<empty>,<empty>,node_name,9,,3649,node_name,1,,sds
+289910,MEMBER,<empty>,<empty>,node_addr,9,,3650,node_addr,2,,sds
+289911,MEMBER,<empty>,<empty>,connected,9,,3651,connected,3,,int
+289912,MEMBER,<empty>,<empty>,handshaking,9,,3652,handshaking,4,,int
+290170,MEMBER,<empty>,<empty>,*name,10,,3731,name,1,,char*
+290171,MEMBER,<empty>,<empty>,*proc,31,,3732,proc,2,,clusterManagerCommandProc*
+290172,MEMBER,<empty>,<empty>,arity,9,,3733,arity,3,,int
+290173,MEMBER,<empty>,<empty>,*args,10,,3734,args,4,,char*
+290174,MEMBER,<empty>,<empty>,*options,10,,3735,options,5,,char*
+290266,MEMBER,<empty>,<empty>,*name,10,,3767,name,1,,char*
+290267,MEMBER,<empty>,<empty>,*desc,10,,3768,desc,2,,char*
+308482,MEMBER,<empty>,<empty>,max,15,,8241,max,1,,long long
+308483,MEMBER,<empty>,<empty>,count,15,,8242,count,2,,long long
+308484,MEMBER,<empty>,<empty>,character,9,,8243,character,3,,int
+310346,MEMBER,<empty>,<empty>,*name,10,,8889,name,1,,char*
+310347,MEMBER,<empty>,<empty>,*sizecmd,10,,8890,sizecmd,2,,char*
+310348,MEMBER,<empty>,<empty>,*sizeunit,10,,8891,sizeunit,3,,char*
+310349,MEMBER,<empty>,<empty>,biggest,24,,8892,biggest,4,,long long unsigned
+310350,MEMBER,<empty>,<empty>,count,24,,8893,count,5,,long long unsigned
+310351,MEMBER,<empty>,<empty>,totalsize,24,,8894,totalsize,6,,long long unsigned
+310352,MEMBER,<empty>,<empty>,biggest_key,9,,8895,biggest_key,7,,sds
+314164,MEMBER,<empty>,<empty>,ms,14,,134,ms,1,,uint64_t
+314165,MEMBER,<empty>,<empty>,seq,14,,135,seq,2,,uint64_t
+314169,MEMBER,<empty>,<empty>,REDISMODULE_ARG_TYPE_STRING,5,,315,REDISMODULE_ARG_TYPE_STRING,1,,ANY
+314170,MEMBER,<empty>,<empty>,REDISMODULE_ARG_TYPE_INTEGER,5,,316,REDISMODULE_ARG_TYPE_INTEGER,2,,ANY
+314171,MEMBER,<empty>,<empty>,REDISMODULE_ARG_TYPE_DOUBLE,5,,317,REDISMODULE_ARG_TYPE_DOUBLE,3,,ANY
+314172,MEMBER,<empty>,<empty>,REDISMODULE_ARG_TYPE_KEY,5,,318,REDISMODULE_ARG_TYPE_KEY,4,,ANY
+314173,MEMBER,<empty>,<empty>,REDISMODULE_ARG_TYPE_PATTERN,5,,319,REDISMODULE_ARG_TYPE_PATTERN,5,,ANY
+314174,MEMBER,<empty>,<empty>,REDISMODULE_ARG_TYPE_UNIX_TIME,5,,320,REDISMODULE_ARG_TYPE_UNIX_TIME,6,,ANY
+314175,MEMBER,<empty>,<empty>,REDISMODULE_ARG_TYPE_PURE_TOKEN,5,,321,REDISMODULE_ARG_TYPE_PURE_TOKEN,7,,ANY
+314176,MEMBER,<empty>,<empty>,REDISMODULE_ARG_TYPE_ONEOF,5,,322,REDISMODULE_ARG_TYPE_ONEOF,8,,ANY
+314177,MEMBER,<empty>,<empty>,REDISMODULE_ARG_TYPE_BLOCK,5,,323,REDISMODULE_ARG_TYPE_BLOCK,9,,ANY
+314180,MEMBER,<empty>,<empty>,REDISMODULE_KSPEC_BS_INVALID = 0,5,,333,REDISMODULE_KSPEC_BS_INVALID,1,,ANY
+314181,MEMBER,<empty>,<empty>,REDISMODULE_KSPEC_BS_UNKNOWN,5,,336,REDISMODULE_KSPEC_BS_UNKNOWN,2,,ANY
+314182,MEMBER,<empty>,<empty>,REDISMODULE_KSPEC_BS_INDEX,5,,337,REDISMODULE_KSPEC_BS_INDEX,3,,ANY
+314183,MEMBER,<empty>,<empty>,REDISMODULE_KSPEC_BS_KEYWORD,5,,338,REDISMODULE_KSPEC_BS_KEYWORD,4,,ANY
+314193,MEMBER,<empty>,<empty>,REDISMODULE_KSPEC_FK_OMITTED = 0,5,,342,REDISMODULE_KSPEC_FK_OMITTED,1,,ANY
+314194,MEMBER,<empty>,<empty>,REDISMODULE_KSPEC_FK_UNKNOWN,5,,345,REDISMODULE_KSPEC_FK_UNKNOWN,2,,ANY
+314195,MEMBER,<empty>,<empty>,REDISMODULE_KSPEC_FK_RANGE,5,,346,REDISMODULE_KSPEC_FK_RANGE,3,,ANY
+314196,MEMBER,<empty>,<empty>,REDISMODULE_KSPEC_FK_KEYNUM,5,,347,REDISMODULE_KSPEC_FK_KEYNUM,4,,ANY
+314206,MEMBER,<empty>,<empty>,*name,16,,372,name,1,,char*
+314207,MEMBER,<empty>,<empty>,type,31,,373,type,2,,RedisModuleCommandArgType
+314208,MEMBER,<empty>,<empty>,key_spec_index,9,,374,key_spec_index,3,,int
+314209,MEMBER,<empty>,<empty>,*token,16,,377,token,4,,char*
+314210,MEMBER,<empty>,<empty>,*summary,16,,378,summary,5,,char*
+314211,MEMBER,<empty>,<empty>,*since,16,,379,since,6,,char*
+314212,MEMBER,<empty>,<empty>,flags,9,,380,flags,7,,int
+314213,MEMBER,<empty>,<empty>,*deprecated_since,16,,381,deprecated_since,8,,char*
+314215,MEMBER,<empty>,<empty>,*subargs,34,,382,subargs,10,,RedisModuleCommandArg*
+314216,MEMBER,<empty>,<empty>,*display_text,16,,383,display_text,11,,char*
+314219,MEMBER,<empty>,<empty>,*since,16,,387,since,1,,char*
+314220,MEMBER,<empty>,<empty>,*changes,16,,388,changes,2,,char*
+314223,MEMBER,<empty>,<empty>,*notes,16,,392,notes,1,,char*
+314224,MEMBER,<empty>,<empty>,flags,14,,393,flags,2,,uint64_t
+314225,MEMBER,<empty>,<empty>,begin_search_type,39,,394,begin_search_type,3,,RedisModuleKeySpecBeginSearchType
+314228,MEMBER,<empty>,<empty>,pos,17,,398,pos,1,,int
+314229,MEMBER,<empty>,<empty>,index,11,,399,index,2,,struct
+314231,MEMBER,<empty>,<empty>,*keyword,24,,402,keyword,1,,char*
+314232,MEMBER,<empty>,<empty>,startfrom,17,,406,startfrom,2,,int
+314233,MEMBER,<empty>,<empty>,keyword,11,,407,keyword,4,,struct
+314234,MEMBER,<empty>,<empty>,bs,7,,408,bs,5,,union
+314235,MEMBER,<empty>,<empty>,find_keys_type,36,,409,find_keys_type,6,,RedisModuleKeySpecFindKeysType
+314238,MEMBER,<empty>,<empty>,lastkey,17,,416,lastkey,1,,int
+314239,MEMBER,<empty>,<empty>,keystep,17,,419,keystep,2,,int
+314240,MEMBER,<empty>,<empty>,limit,17,,423,limit,3,,int
+314241,MEMBER,<empty>,<empty>,range,11,,424,range,2,,struct
+314243,MEMBER,<empty>,<empty>,keynumidx,17,,428,keynumidx,1,,int
+314244,MEMBER,<empty>,<empty>,firstkey,17,,431,firstkey,2,,int
+314245,MEMBER,<empty>,<empty>,keystep,17,,435,keystep,3,,int
+314246,MEMBER,<empty>,<empty>,keynum,11,,436,keynum,4,,struct
+314247,MEMBER,<empty>,<empty>,fk,7,,437,fk,8,,union
+314250,MEMBER,<empty>,<empty>,version,9,,441,version,1,,int
+314251,MEMBER,<empty>,<empty>,sizeof_historyentry,12,,442,sizeof_historyentry,2,,size_t
+314252,MEMBER,<empty>,<empty>,sizeof_keyspec,12,,443,sizeof_keyspec,3,,size_t
+314253,MEMBER,<empty>,<empty>,sizeof_arg,12,,444,sizeof_arg,4,,size_t
+314279,MEMBER,<empty>,<empty>,*version,41,,458,version,1,,RedisModuleCommandInfoVersion*
+314280,MEMBER,<empty>,<empty>,*summary,16,,460,summary,2,,char*
+314281,MEMBER,<empty>,<empty>,*complexity,16,,461,complexity,3,,char*
+314282,MEMBER,<empty>,<empty>,*since,16,,462,since,4,,char*
+314283,MEMBER,<empty>,<empty>,*history,36,,463,history,5,,RedisModuleCommandHistoryEntry*
+314284,MEMBER,<empty>,<empty>,*tips,16,,466,tips,6,,char*
+314285,MEMBER,<empty>,<empty>,arity,9,,468,arity,7,,int
+314286,MEMBER,<empty>,<empty>,*key_specs,31,,469,key_specs,8,,RedisModuleCommandKeySpec*
+314287,MEMBER,<empty>,<empty>,*args,27,,470,args,9,,RedisModuleCommandArg*
+314302,MEMBER,<empty>,<empty>,id,14,,504,id,1,,uint64_t
+314303,MEMBER,<empty>,<empty>,dataver,14,,505,dataver,2,,uint64_t
+314460,MEMBER,<empty>,<empty>,version,14,,715,version,1,,uint64_t
+314461,MEMBER,<empty>,<empty>,flags,14,,716,flags,2,,uint64_t
+314462,MEMBER,<empty>,<empty>,id,14,,717,id,3,,uint64_t
+314463,MEMBER,<empty>,<empty>,addr[46],10,,718,addr,4,,char[46]
+314464,MEMBER,<empty>,<empty>,port,14,,719,port,5,,uint16_t
+314465,MEMBER,<empty>,<empty>,db,14,,720,db,6,,uint16_t
+314474,MEMBER,<empty>,<empty>,version,14,,729,version,1,,uint64_t
+314475,MEMBER,<empty>,<empty>,master,9,,732,master,2,,int
+314476,MEMBER,<empty>,<empty>,*masterhost,10,,733,masterhost,3,,char*
+314477,MEMBER,<empty>,<empty>,masterport,9,,734,masterport,4,,int
+314478,MEMBER,<empty>,<empty>,*replid1,10,,735,replid1,5,,char*
+314479,MEMBER,<empty>,<empty>,*replid2,10,,736,replid2,6,,char*
+314480,MEMBER,<empty>,<empty>,repl1_offset,14,,737,repl1_offset,7,,uint64_t
+314481,MEMBER,<empty>,<empty>,repl2_offset,14,,738,repl2_offset,8,,uint64_t
+314484,MEMBER,<empty>,<empty>,version,14,,745,version,1,,uint64_t
+314485,MEMBER,<empty>,<empty>,sync,13,,748,sync,2,,int32_t
+314486,MEMBER,<empty>,<empty>,dbnum,13,,749,dbnum,3,,int32_t
+314489,MEMBER,<empty>,<empty>,version,14,,756,version,1,,uint64_t
+314490,MEMBER,<empty>,<empty>,* module_name,15,,759,module_name,2,,char*
+314491,MEMBER,<empty>,<empty>,module_version,13,,760,module_version,3,,int32_t
+314494,MEMBER,<empty>,<empty>,version,14,,767,version,1,,uint64_t
+314495,MEMBER,<empty>,<empty>,num_changes,14,,770,num_changes,2,,uint32_t
+314496,MEMBER,<empty>,<empty>,**config_names,16,,771,config_names,3,,char**
+314499,MEMBER,<empty>,<empty>,version,14,,778,version,1,,uint64_t
+314500,MEMBER,<empty>,<empty>,hz,13,,781,hz,2,,int32_t
+314503,MEMBER,<empty>,<empty>,version,14,,788,version,1,,uint64_t
+314504,MEMBER,<empty>,<empty>,hz,13,,791,hz,2,,int32_t
+314505,MEMBER,<empty>,<empty>,progress,13,,792,progress,3,,int32_t
+314508,MEMBER,<empty>,<empty>,version,14,,800,version,1,,uint64_t
+314509,MEMBER,<empty>,<empty>,dbnum_first,13,,803,dbnum_first,2,,int32_t
+314510,MEMBER,<empty>,<empty>,dbnum_second,13,,804,dbnum_second,3,,int32_t
+314513,MEMBER,<empty>,<empty>,version,14,,811,version,1,,uint64_t
+314514,MEMBER,<empty>,<empty>,*key,20,,814,key,2,,RedisModuleKey*
+314517,MEMBER,<empty>,<empty>,REDISMODULE_ACL_LOG_AUTH = 0,5,,820,REDISMODULE_ACL_LOG_AUTH,1,,ANY
+314518,MEMBER,<empty>,<empty>,REDISMODULE_ACL_LOG_CMD,5,,821,REDISMODULE_ACL_LOG_CMD,2,,ANY
+314519,MEMBER,<empty>,<empty>,REDISMODULE_ACL_LOG_KEY,5,,822,REDISMODULE_ACL_LOG_KEY,3,,ANY
+314520,MEMBER,<empty>,<empty>,REDISMODULE_ACL_LOG_CHANNEL,5,,823,REDISMODULE_ACL_LOG_CHANNEL,4,,ANY
+314832,MEMBER,<empty>,<empty>,version,14,,925,version,1,,uint64_t
+314833,MEMBER,<empty>,<empty>,rdb_load,29,,926,rdb_load,2,,RedisModuleTypeLoadFunc
+314834,MEMBER,<empty>,<empty>,rdb_save,29,,927,rdb_save,3,,RedisModuleTypeSaveFunc
+314835,MEMBER,<empty>,<empty>,aof_rewrite,32,,928,aof_rewrite,4,,RedisModuleTypeRewriteFunc
+314836,MEMBER,<empty>,<empty>,mem_usage,33,,929,mem_usage,5,,RedisModuleTypeMemUsageFunc
+314837,MEMBER,<empty>,<empty>,digest,31,,930,digest,6,,RedisModuleTypeDigestFunc
+314838,MEMBER,<empty>,<empty>,free,29,,931,free,7,,RedisModuleTypeFreeFunc
+314839,MEMBER,<empty>,<empty>,aux_load,32,,932,aux_load,8,,RedisModuleTypeAuxLoadFunc
+314840,MEMBER,<empty>,<empty>,aux_save,32,,933,aux_save,9,,RedisModuleTypeAuxSaveFunc
+314841,MEMBER,<empty>,<empty>,aux_save_triggers,9,,934,aux_save_triggers,10,,int
+314842,MEMBER,<empty>,<empty>,free_effort,35,,935,free_effort,11,,RedisModuleTypeFreeEffortFunc
+314843,MEMBER,<empty>,<empty>,unlink,31,,936,unlink,12,,RedisModuleTypeUnlinkFunc
+314844,MEMBER,<empty>,<empty>,copy,29,,937,copy,13,,RedisModuleTypeCopyFunc
+314845,MEMBER,<empty>,<empty>,defrag,31,,938,defrag,14,,RedisModuleTypeDefragFunc
+314846,MEMBER,<empty>,<empty>,mem_usage2,34,,939,mem_usage2,15,,RedisModuleTypeMemUsageFunc2
+314847,MEMBER,<empty>,<empty>,free_effort2,36,,940,free_effort2,16,,RedisModuleTypeFreeEffortFunc2
+314848,MEMBER,<empty>,<empty>,unlink2,32,,941,unlink2,17,,RedisModuleTypeUnlinkFunc2
+314849,MEMBER,<empty>,<empty>,copy2,30,,942,copy2,18,,RedisModuleTypeCopyFunc2
+314850,MEMBER,<empty>,<empty>,aux_save2,32,,943,aux_save2,19,,RedisModuleTypeAuxSaveFunc
+334362,MEMBER,<empty>,<empty>,*curr_location,16,,88,curr_location,1,,char*
+334363,MEMBER,<empty>,<empty>,callbacks,26,,89,callbacks,2,,ReplyParserCallbacks
+336197,MEMBER,<empty>,<empty>,cksum,14,,64,cksum,6,,uint64_t
+336198,MEMBER,<empty>,<empty>,flags,21,,64,flags,7,,uint64_t
+336199,MEMBER,<empty>,<empty>,processed_bytes,12,,67,processed_bytes,8,,size_t
+336200,MEMBER,<empty>,<empty>,max_processing_chunk,12,,70,max_processing_chunk,9,,size_t
+336203,MEMBER,<empty>,<empty>,ptr,17,,76,ptr,1,,sds
+336204,MEMBER,<empty>,<empty>,pos,19,,77,pos,2,,off_t
+336205,MEMBER,<empty>,<empty>,buffer,11,,78,buffer,2,,struct
+336207,MEMBER,<empty>,<empty>,*fp,18,,81,fp,1,,FILE*
+336208,MEMBER,<empty>,<empty>,buffered,19,,82,buffered,2,,off_t
+336209,MEMBER,<empty>,<empty>,autosync,19,,83,autosync,3,,off_t
+336210,MEMBER,<empty>,<empty>,reclaim_cache:1,22,,84,reclaim_cache,4,,unsigned
+336211,MEMBER,<empty>,<empty>,file,11,,85,file,4,,struct
+336213,MEMBER,<empty>,<empty>,*conn,24,,88,conn,1,,connection*
+336214,MEMBER,<empty>,<empty>,pos,19,,89,pos,2,,off_t
+336215,MEMBER,<empty>,<empty>,buf,17,,90,buf,3,,sds
+336216,MEMBER,<empty>,<empty>,read_limit,20,,91,read_limit,4,,size_t
+336217,MEMBER,<empty>,<empty>,read_so_far,20,,92,read_so_far,5,,size_t
+336218,MEMBER,<empty>,<empty>,conn,11,,93,conn,6,,struct
+336220,MEMBER,<empty>,<empty>,fd,17,,96,fd,1,,int
+336221,MEMBER,<empty>,<empty>,pos,19,,97,pos,2,,off_t
+336222,MEMBER,<empty>,<empty>,buf,17,,98,buf,3,,sds
+336223,MEMBER,<empty>,<empty>,fd,11,,99,fd,8,,struct
+336224,MEMBER,<empty>,<empty>,io,7,,100,io,11,,union
+338606,MEMBER,<empty>,<empty>,*funcname,16,,71,funcname,1,,char*
+338607,MEMBER,<empty>,<empty>,*c,12,,72,c,2,,client*
+338608,MEMBER,<empty>,<empty>,*original_client,12,,73,original_client,3,,client*
+338609,MEMBER,<empty>,<empty>,flags,9,,74,flags,4,,int
+338610,MEMBER,<empty>,<empty>,repl_flags,9,,75,repl_flags,5,,int
+338611,MEMBER,<empty>,<empty>,start_time,14,,76,start_time,6,,monotime
+338613,MEMBER,<empty>,<empty>,flag,14,,89,flag,1,,uint64_t
+338614,MEMBER,<empty>,<empty>,*str,16,,90,str,2,,char*
+343372,MEMBER,<empty>,<empty>,msg,9,,62,msg,1,,sds
+343373,MEMBER,<empty>,<empty>,source,9,,63,source,2,,sds
+343374,MEMBER,<empty>,<empty>,line,9,,64,line,3,,sds
+343375,MEMBER,<empty>,<empty>,ignore_err_stats_update,9,,65,ignore_err_stats_update,4,,int
+346968,MEMBER,<empty>,<empty>,flags,19,,48,flags,1,,unsigned char
+346969,MEMBER,<empty>,<empty>,buf[],10,,49,buf,2,,char[]
+346976,MEMBER,<empty>,<empty>,len,13,,52,len,1,,uint8_t
+346977,MEMBER,<empty>,<empty>,alloc,13,,53,alloc,2,,uint8_t
+346978,MEMBER,<empty>,<empty>,flags,19,,54,flags,3,,unsigned char
+346979,MEMBER,<empty>,<empty>,buf[],10,,55,buf,4,,char[]
+346986,MEMBER,<empty>,<empty>,len,14,,58,len,1,,uint16_t
+346987,MEMBER,<empty>,<empty>,alloc,14,,59,alloc,2,,uint16_t
+346988,MEMBER,<empty>,<empty>,flags,19,,60,flags,3,,unsigned char
+346989,MEMBER,<empty>,<empty>,buf[],10,,61,buf,4,,char[]
+346996,MEMBER,<empty>,<empty>,len,14,,64,len,1,,uint32_t
+346997,MEMBER,<empty>,<empty>,alloc,14,,65,alloc,2,,uint32_t
+346998,MEMBER,<empty>,<empty>,flags,19,,66,flags,3,,unsigned char
+346999,MEMBER,<empty>,<empty>,buf[],10,,67,buf,4,,char[]
+347006,MEMBER,<empty>,<empty>,len,14,,70,len,1,,uint64_t
+347007,MEMBER,<empty>,<empty>,alloc,14,,71,alloc,2,,uint64_t
+347008,MEMBER,<empty>,<empty>,flags,19,,72,flags,3,,unsigned char
+347009,MEMBER,<empty>,<empty>,buf[],10,,73,buf,4,,char[]
+347979,MEMBER,<empty>,<empty>,*hostname,10,,58,hostname,1,,char*
+347980,MEMBER,<empty>,<empty>,*ip,10,,59,ip,2,,char*
+347981,MEMBER,<empty>,<empty>,port,9,,60,port,3,,int
+348046,MEMBER,<empty>,<empty>,refcount,9,,156,refcount,1,,int
+348047,MEMBER,<empty>,<empty>,disconnected,9,,157,disconnected,2,,int
+348048,MEMBER,<empty>,<empty>,pending_commands,9,,158,pending_commands,3,,int
+348049,MEMBER,<empty>,<empty>,*cc,23,,159,cc,4,,redisAsyncContext*
+348050,MEMBER,<empty>,<empty>,*pc,23,,160,pc,5,,redisAsyncContext*
+348051,MEMBER,<empty>,<empty>,cc_conn_time,14,,161,cc_conn_time,6,,mstime_t
+348052,MEMBER,<empty>,<empty>,pc_conn_time,14,,162,pc_conn_time,7,,mstime_t
+348053,MEMBER,<empty>,<empty>,pc_last_activity,14,,163,pc_last_activity,8,,mstime_t
+348054,MEMBER,<empty>,<empty>,last_avail_time,14,,164,last_avail_time,9,,mstime_t
+348055,MEMBER,<empty>,<empty>,act_ping_time,14,,166,act_ping_time,10,,mstime_t
+348056,MEMBER,<empty>,<empty>,last_ping_time,14,,171,last_ping_time,11,,mstime_t
+348057,MEMBER,<empty>,<empty>,last_pong_time,14,,175,last_pong_time,12,,mstime_t
+348058,MEMBER,<empty>,<empty>,last_reconn_time,14,,178,last_reconn_time,13,,mstime_t
+348061,MEMBER,<empty>,<empty>,flags,9,,183,flags,1,,int
+348062,MEMBER,<empty>,<empty>,*name,10,,184,name,2,,char*
+348063,MEMBER,<empty>,<empty>,*runid,10,,185,runid,3,,char*
+348064,MEMBER,<empty>,<empty>,config_epoch,14,,186,config_epoch,4,,uint64_t
+348065,MEMBER,<empty>,<empty>,*addr,18,,187,addr,5,,sentinelAddr*
+348066,MEMBER,<empty>,<empty>,*link,18,,188,link,6,,instanceLink*
+348067,MEMBER,<empty>,<empty>,last_pub_time,14,,189,last_pub_time,7,,mstime_t
+348068,MEMBER,<empty>,<empty>,last_hello_time,14,,190,last_hello_time,8,,mstime_t
+348069,MEMBER,<empty>,<empty>,last_master_down_reply_time,14,,193,last_master_down_reply_time,9,,mstime_t
+348070,MEMBER,<empty>,<empty>,s_down_since_time,14,,195,s_down_since_time,10,,mstime_t
+348071,MEMBER,<empty>,<empty>,o_down_since_time,14,,196,o_down_since_time,11,,mstime_t
+348072,MEMBER,<empty>,<empty>,down_after_period,14,,197,down_after_period,12,,mstime_t
+348073,MEMBER,<empty>,<empty>,master_reboot_down_after_period,14,,198,master_reboot_down_after_period,13,,mstime_t
+348074,MEMBER,<empty>,<empty>,master_reboot_since_time,14,,199,master_reboot_since_time,14,,mstime_t
+348075,MEMBER,<empty>,<empty>,info_refresh,14,,200,info_refresh,15,,mstime_t
+348076,MEMBER,<empty>,<empty>,*renamed_commands,10,,201,renamed_commands,16,,dict*
+348077,MEMBER,<empty>,<empty>,role_reported,9,,211,role_reported,17,,int
+348078,MEMBER,<empty>,<empty>,role_reported_time,14,,212,role_reported_time,18,,mstime_t
+348079,MEMBER,<empty>,<empty>,slave_conf_change_time,14,,213,slave_conf_change_time,19,,mstime_t
+348080,MEMBER,<empty>,<empty>,*sentinels,10,,216,sentinels,20,,dict*
+348081,MEMBER,<empty>,<empty>,*slaves,10,,217,slaves,21,,dict*
+348082,MEMBER,<empty>,<empty>,quorum,18,,218,quorum,22,,unsigned int
+348083,MEMBER,<empty>,<empty>,parallel_syncs,9,,219,parallel_syncs,23,,int
+348084,MEMBER,<empty>,<empty>,*auth_pass,10,,220,auth_pass,24,,char*
+348085,MEMBER,<empty>,<empty>,*auth_user,10,,221,auth_user,25,,char*
+348086,MEMBER,<empty>,<empty>,master_link_down_time,14,,224,master_link_down_time,26,,mstime_t
+348087,MEMBER,<empty>,<empty>,slave_priority,9,,225,slave_priority,27,,int
+348088,MEMBER,<empty>,<empty>,replica_announced,9,,226,replica_announced,28,,int
+348089,MEMBER,<empty>,<empty>,slave_reconf_sent_time,14,,227,slave_reconf_sent_time,29,,mstime_t
+348091,MEMBER,<empty>,<empty>,*master,34,,228,master,31,,sentinelRedisInstance*
+348092,MEMBER,<empty>,<empty>,*slave_master_host,10,,229,slave_master_host,32,,char*
+348093,MEMBER,<empty>,<empty>,slave_master_port,9,,230,slave_master_port,33,,int
+348094,MEMBER,<empty>,<empty>,slave_master_link_status,9,,231,slave_master_link_status,34,,int
+348095,MEMBER,<empty>,<empty>,slave_repl_offset,24,,232,slave_repl_offset,35,,long long unsigned
+348096,MEMBER,<empty>,<empty>,*leader,10,,234,leader,36,,char*
+348097,MEMBER,<empty>,<empty>,leader_epoch,14,,238,leader_epoch,37,,uint64_t
+348098,MEMBER,<empty>,<empty>,failover_epoch,14,,239,failover_epoch,38,,uint64_t
+348099,MEMBER,<empty>,<empty>,failover_state,9,,240,failover_state,39,,int
+348100,MEMBER,<empty>,<empty>,failover_state_change_time,14,,241,failover_state_change_time,40,,mstime_t
+348101,MEMBER,<empty>,<empty>,failover_start_time,14,,242,failover_start_time,41,,mstime_t
+348102,MEMBER,<empty>,<empty>,failover_timeout,14,,243,failover_timeout,42,,mstime_t
+348103,MEMBER,<empty>,<empty>,failover_delay_logged,14,,244,failover_delay_logged,43,,mstime_t
+348105,MEMBER,<empty>,<empty>,*promoted_slave,34,,246,promoted_slave,45,,sentinelRedisInstance*
+348106,MEMBER,<empty>,<empty>,*notification_script,10,,249,notification_script,46,,char*
+348107,MEMBER,<empty>,<empty>,*client_reconfig_script,10,,250,client_reconfig_script,47,,char*
+348108,MEMBER,<empty>,<empty>,info,9,,251,info,48,,sds
+348111,MEMBER,<empty>,<empty>,myid[CONFIG_RUN_ID_SIZE+1],10,,256,myid,1,,char[41]
+348112,MEMBER,<empty>,<empty>,current_epoch,14,,257,current_epoch,2,,uint64_t
+348113,MEMBER,<empty>,<empty>,*masters,10,,258,masters,3,,dict*
+348114,MEMBER,<empty>,<empty>,tilt,9,,261,tilt,4,,int
+348115,MEMBER,<empty>,<empty>,running_scripts,9,,262,running_scripts,5,,int
+348116,MEMBER,<empty>,<empty>,tilt_start_time,14,,263,tilt_start_time,6,,mstime_t
+348117,MEMBER,<empty>,<empty>,previous_time,14,,264,previous_time,7,,mstime_t
+348118,MEMBER,<empty>,<empty>,*scripts_queue,10,,265,scripts_queue,8,,list*
+348119,MEMBER,<empty>,<empty>,*announce_ip,10,,266,announce_ip,9,,char*
+348120,MEMBER,<empty>,<empty>,announce_port,9,,268,announce_port,10,,int
+348121,MEMBER,<empty>,<empty>,simfailure_flags,19,,270,simfailure_flags,11,,long unsigned
+348122,MEMBER,<empty>,<empty>,deny_scripts_reconfig,9,,271,deny_scripts_reconfig,12,,int
+348123,MEMBER,<empty>,<empty>,*sentinel_auth_pass,10,,273,sentinel_auth_pass,13,,char*
+348124,MEMBER,<empty>,<empty>,*sentinel_auth_user,10,,274,sentinel_auth_user,14,,char*
+348125,MEMBER,<empty>,<empty>,resolve_hostnames,9,,275,resolve_hostnames,15,,int
+348126,MEMBER,<empty>,<empty>,announce_hostnames,9,,276,announce_hostnames,16,,int
+348139,MEMBER,<empty>,<empty>,flags,9,,281,flags,1,,int
+348140,MEMBER,<empty>,<empty>,retry_num,9,,282,retry_num,2,,int
+348141,MEMBER,<empty>,<empty>,**argv,10,,283,argv,3,,char**
+348142,MEMBER,<empty>,<empty>,start_time,14,,284,start_time,4,,mstime_t
+348143,MEMBER,<empty>,<empty>,pid,11,,289,pid,5,,pid_t
+348146,MEMBER,<empty>,<empty>,*context,23,,298,context,1,,redisAsyncContext*
+348147,MEMBER,<empty>,<empty>,*loop,17,,299,loop,2,,aeEventLoop*
+348148,MEMBER,<empty>,<empty>,fd,9,,300,fd,3,,int
+348149,MEMBER,<empty>,<empty>,reading,9,,301,reading,4,,int
+348150,MEMBER,<empty>,<empty>,writing,18,,301,writing,5,,int
+364402,MEMBER,<empty>,<empty>,*runid,10,,4777,runid,1,,char*
+364403,MEMBER,<empty>,<empty>,votes,19,,4778,votes,2,,long unsigned
+382005,MEMBER,<empty>,<empty>,flag,14,,4544,flag,1,,uint64_t
+382006,MEMBER,<empty>,<empty>,*name,16,,4545,name,2,,char*
+383918,MEMBER,<empty>,<empty>,COMMAND_LIST_FILTER_MODULE,5,,5048,COMMAND_LIST_FILTER_MODULE,1,,ANY
+383919,MEMBER,<empty>,<empty>,COMMAND_LIST_FILTER_ACLCAT,5,,5049,COMMAND_LIST_FILTER_ACLCAT,2,,ANY
+383920,MEMBER,<empty>,<empty>,COMMAND_LIST_FILTER_PATTERN,5,,5050,COMMAND_LIST_FILTER_PATTERN,3,,ANY
+383923,MEMBER,<empty>,<empty>,type,27,,5054,type,1,,commandListFilterType
+383924,MEMBER,<empty>,<empty>,arg,9,,5055,arg,2,,sds
+383926,MEMBER,<empty>,<empty>,valid,13,,5057,valid,1,,int
+383928,MEMBER,<empty>,<empty>,aclcat,22,,5059,aclcat,1,,uint64_t
+383929,MEMBER,<empty>,<empty>,*module_handle,18,,5060,module_handle,2,,void*
+383930,MEMBER,<empty>,<empty>,u,11,,5061,u,3,,union
+383931,MEMBER,<empty>,<empty>,cache,7,,5062,cache,4,,struct
+390935,MEMBER,<empty>,<empty>,BLOCKED_NONE,5,,407,BLOCKED_NONE,1,,ANY
+390936,MEMBER,<empty>,<empty>,BLOCKED_LIST,5,,408,BLOCKED_LIST,2,,ANY
+390937,MEMBER,<empty>,<empty>,BLOCKED_WAIT,5,,409,BLOCKED_WAIT,3,,ANY
+390938,MEMBER,<empty>,<empty>,BLOCKED_WAITAOF,5,,410,BLOCKED_WAITAOF,4,,ANY
+390939,MEMBER,<empty>,<empty>,BLOCKED_MODULE,5,,411,BLOCKED_MODULE,5,,ANY
+390940,MEMBER,<empty>,<empty>,BLOCKED_STREAM,5,,412,BLOCKED_STREAM,6,,ANY
+390941,MEMBER,<empty>,<empty>,BLOCKED_ZSET,5,,413,BLOCKED_ZSET,7,,ANY
+390942,MEMBER,<empty>,<empty>,BLOCKED_POSTPONE,5,,414,BLOCKED_POSTPONE,8,,ANY
+390943,MEMBER,<empty>,<empty>,BLOCKED_SHUTDOWN,5,,415,BLOCKED_SHUTDOWN,9,,ANY
+390944,MEMBER,<empty>,<empty>,BLOCKED_NUM,5,,416,BLOCKED_NUM,10,,ANY
+390945,MEMBER,<empty>,<empty>,BLOCKED_END,5,,417,BLOCKED_END,11,,ANY
+390948,MEMBER,<empty>,<empty>,REPL_STATE_NONE = 0,5,,438,REPL_STATE_NONE,1,,ANY
+390949,MEMBER,<empty>,<empty>,REPL_STATE_CONNECT,5,,439,REPL_STATE_CONNECT,2,,ANY
+390950,MEMBER,<empty>,<empty>,REPL_STATE_CONNECTING,5,,440,REPL_STATE_CONNECTING,3,,ANY
+390951,MEMBER,<empty>,<empty>,REPL_STATE_RECEIVE_PING_REPLY,5,,442,REPL_STATE_RECEIVE_PING_REPLY,4,,ANY
+390952,MEMBER,<empty>,<empty>,REPL_STATE_SEND_HANDSHAKE,5,,443,REPL_STATE_SEND_HANDSHAKE,5,,ANY
+390953,MEMBER,<empty>,<empty>,REPL_STATE_RECEIVE_AUTH_REPLY,5,,444,REPL_STATE_RECEIVE_AUTH_REPLY,6,,ANY
+390954,MEMBER,<empty>,<empty>,REPL_STATE_RECEIVE_PORT_REPLY,5,,445,REPL_STATE_RECEIVE_PORT_REPLY,7,,ANY
+390955,MEMBER,<empty>,<empty>,REPL_STATE_RECEIVE_IP_REPLY,5,,446,REPL_STATE_RECEIVE_IP_REPLY,8,,ANY
+390956,MEMBER,<empty>,<empty>,REPL_STATE_RECEIVE_CAPA_REPLY,5,,447,REPL_STATE_RECEIVE_CAPA_REPLY,9,,ANY
+390957,MEMBER,<empty>,<empty>,REPL_STATE_SEND_PSYNC,5,,448,REPL_STATE_SEND_PSYNC,10,,ANY
+390958,MEMBER,<empty>,<empty>,REPL_STATE_RECEIVE_PSYNC_REPLY,5,,449,REPL_STATE_RECEIVE_PSYNC_REPLY,11,,ANY
+390959,MEMBER,<empty>,<empty>,REPL_STATE_TRANSFER,5,,451,REPL_STATE_TRANSFER,12,,ANY
+390960,MEMBER,<empty>,<empty>,REPL_STATE_CONNECTED,5,,452,REPL_STATE_CONNECTED,13,,ANY
+390970,MEMBER,<empty>,<empty>,NO_FAILOVER = 0,5,,457,NO_FAILOVER,1,,ANY
+390971,MEMBER,<empty>,<empty>,FAILOVER_WAIT_FOR_SYNC,5,,458,FAILOVER_WAIT_FOR_SYNC,2,,ANY
+390972,MEMBER,<empty>,<empty>,FAILOVER_IN_PROGRESS,5,,459,FAILOVER_IN_PROGRESS,3,,ANY
+390982,MEMBER,<empty>,<empty>,PAUSE_BY_CLIENT_COMMAND = 0,5,,623,PAUSE_BY_CLIENT_COMMAND,1,,ANY
+390983,MEMBER,<empty>,<empty>,PAUSE_DURING_SHUTDOWN,5,,624,PAUSE_DURING_SHUTDOWN,2,,ANY
+390984,MEMBER,<empty>,<empty>,PAUSE_DURING_FAILOVER,5,,625,PAUSE_DURING_FAILOVER,3,,ANY
+390985,MEMBER,<empty>,<empty>,NUM_PAUSE_PURPOSES,5,,626,NUM_PAUSE_PURPOSES,4,,ANY
+390995,MEMBER,<empty>,<empty>,paused_actions,14,,630,paused_actions,1,,uint32_t
+390996,MEMBER,<empty>,<empty>,end,14,,631,end,2,,mstime_t
+390999,MEMBER,<empty>,<empty>,CLUSTER_ENDPOINT_TYPE_IP = 0,5,,636,CLUSTER_ENDPOINT_TYPE_IP,1,,ANY
+391000,MEMBER,<empty>,<empty>,CLUSTER_ENDPOINT_TYPE_HOSTNAME,5,,637,CLUSTER_ENDPOINT_TYPE_HOSTNAME,2,,ANY
+391001,MEMBER,<empty>,<empty>,CLUSTER_ENDPOINT_TYPE_UNKNOWN_ENDPOINT,5,,638,CLUSTER_ENDPOINT_TYPE_UNKNOWN_ENDPOINT,3,,ANY
+391131,MEMBER,<empty>,<empty>,id,14,,760,id,1,,uint64_t
+391133,MEMBER,<empty>,<empty>,*module,24,,761,module,3,,RedisModule*
+391134,MEMBER,<empty>,<empty>,rdb_load,24,,762,rdb_load,4,,moduleTypeLoadFunc
+391135,MEMBER,<empty>,<empty>,rdb_save,24,,763,rdb_save,5,,moduleTypeSaveFunc
+391136,MEMBER,<empty>,<empty>,aof_rewrite,27,,764,aof_rewrite,6,,moduleTypeRewriteFunc
+391137,MEMBER,<empty>,<empty>,mem_usage,28,,765,mem_usage,7,,moduleTypeMemUsageFunc
+391138,MEMBER,<empty>,<empty>,digest,26,,766,digest,8,,moduleTypeDigestFunc
+391139,MEMBER,<empty>,<empty>,free,24,,767,free,9,,moduleTypeFreeFunc
+391140,MEMBER,<empty>,<empty>,free_effort,30,,768,free_effort,10,,moduleTypeFreeEffortFunc
+391141,MEMBER,<empty>,<empty>,unlink,26,,769,unlink,11,,moduleTypeUnlinkFunc
+391142,MEMBER,<empty>,<empty>,copy,24,,770,copy,12,,moduleTypeCopyFunc
+391143,MEMBER,<empty>,<empty>,defrag,26,,771,defrag,13,,moduleTypeDefragFunc
+391144,MEMBER,<empty>,<empty>,aux_load,27,,772,aux_load,14,,moduleTypeAuxLoadFunc
+391145,MEMBER,<empty>,<empty>,aux_save,27,,773,aux_save,15,,moduleTypeAuxSaveFunc
+391146,MEMBER,<empty>,<empty>,mem_usage2,29,,774,mem_usage2,16,,moduleTypeMemUsageFunc2
+391147,MEMBER,<empty>,<empty>,free_effort2,31,,775,free_effort2,17,,moduleTypeFreeEffortFunc2
+391148,MEMBER,<empty>,<empty>,unlink2,27,,776,unlink2,18,,moduleTypeUnlinkFunc2
+391149,MEMBER,<empty>,<empty>,copy2,25,,777,copy2,19,,moduleTypeCopyFunc2
+391150,MEMBER,<empty>,<empty>,aux_save2,27,,778,aux_save2,20,,moduleTypeAuxSaveFunc
+391151,MEMBER,<empty>,<empty>,aux_save_triggers,9,,779,aux_save_triggers,21,,int
+391152,MEMBER,<empty>,<empty>,name[10],10,,780,name,22,,char[10]
+391161,MEMBER,<empty>,<empty>,*type,16,,799,type,1,,moduleType*
+391162,MEMBER,<empty>,<empty>,*value,10,,800,value,2,,void*
+391165,MEMBER,<empty>,<empty>,*handle,10,,805,handle,1,,void*
+391166,MEMBER,<empty>,<empty>,*name,10,,806,name,2,,char*
+391167,MEMBER,<empty>,<empty>,ver,9,,807,ver,3,,int
+391168,MEMBER,<empty>,<empty>,apiver,9,,808,apiver,4,,int
+391169,MEMBER,<empty>,<empty>,*types,10,,809,types,5,,list*
+391170,MEMBER,<empty>,<empty>,*usedby,10,,810,usedby,6,,list*
+391171,MEMBER,<empty>,<empty>,*using,10,,811,using,7,,list*
+391172,MEMBER,<empty>,<empty>,*filters,10,,812,filters,8,,list*
+391173,MEMBER,<empty>,<empty>,*module_configs,10,,813,module_configs,9,,list*
+391174,MEMBER,<empty>,<empty>,configs_initialized,9,,814,configs_initialized,10,,int
+391175,MEMBER,<empty>,<empty>,in_call,9,,815,in_call,11,,int
+391176,MEMBER,<empty>,<empty>,in_hook,9,,816,in_hook,12,,int
+391177,MEMBER,<empty>,<empty>,options,9,,817,options,13,,int
+391178,MEMBER,<empty>,<empty>,blocked_clients,9,,818,blocked_clients,14,,int
+391179,MEMBER,<empty>,<empty>,info_cb,25,,819,info_cb,15,,RedisModuleInfoFunc
+391180,MEMBER,<empty>,<empty>,defrag_cb,27,,820,defrag_cb,16,,RedisModuleDefragFunc
+391182,MEMBER,<empty>,<empty>,*loadmod,33,,821,loadmod,18,,moduleLoadQueueEntry*
+391183,MEMBER,<empty>,<empty>,num_commands_with_acl_categories,9,,822,num_commands_with_acl_categories,19,,int
+391184,MEMBER,<empty>,<empty>,onload,9,,823,onload,20,,int
+391188,MEMBER,<empty>,<empty>,bytes,12,,831,bytes,1,,size_t
+391189,MEMBER,<empty>,<empty>,*rio,9,,832,rio,2,,rio*
+391190,MEMBER,<empty>,<empty>,*type,16,,833,type,3,,moduleType*
+391191,MEMBER,<empty>,<empty>,error,9,,834,error,4,,int
+391193,MEMBER,<empty>,<empty>,*ctx,27,,835,ctx,6,,RedisModuleCtx*
+391195,MEMBER,<empty>,<empty>,*key,24,,836,key,8,,redisObject*
+391196,MEMBER,<empty>,<empty>,dbid,9,,837,dbid,9,,int
+391197,MEMBER,<empty>,<empty>,pre_flush_buffer,9,,838,pre_flush_buffer,10,,sds
+391199,MEMBER,<empty>,<empty>,o[20],19,,861,o,1,,unsigned char[20]
+391200,MEMBER,<empty>,<empty>,x[20],19,,862,x,2,,unsigned char[20]
+391202,MEMBER,<empty>,<empty>,*key,24,,863,key,4,,redisObject*
+391203,MEMBER,<empty>,<empty>,dbid,9,,864,dbid,5,,int
+391213,MEMBER,<empty>,<empty>,type:4,14,,900,type,1,,unsigned
+391214,MEMBER,<empty>,<empty>,encoding:4,14,,901,encoding,2,,unsigned
+391215,MEMBER,<empty>,<empty>,lru:LRU_BITS,14,,902,lru,3,,unsigned
+391216,MEMBER,<empty>,<empty>,refcount,9,,905,refcount,4,,int
+391217,MEMBER,<empty>,<empty>,*ptr,10,,906,ptr,5,,void*
+391225,MEMBER,<empty>,<empty>,size,12,,930,size,1,,size_t
+391226,MEMBER,<empty>,<empty>,used,18,,930,used,2,,size_t
+391227,MEMBER,<empty>,<empty>,buf[],10,,931,buf,3,,char[]
+391235,MEMBER,<empty>,<empty>,refcount,9,,954,refcount,1,,int
+391236,MEMBER,<empty>,<empty>,id,15,,955,id,2,,long long
+391237,MEMBER,<empty>,<empty>,repl_offset,15,,956,repl_offset,3,,long long
+391238,MEMBER,<empty>,<empty>,size,12,,957,size,4,,size_t
+391239,MEMBER,<empty>,<empty>,used,18,,957,used,5,,size_t
+391240,MEMBER,<empty>,<empty>,buf[],10,,958,buf,6,,char[]
+391250,MEMBER,<empty>,<empty>,*dict,10,,968,dict,1,,dict*
+391251,MEMBER,<empty>,<empty>,*expires,10,,969,expires,2,,dict*
+391252,MEMBER,<empty>,<empty>,*blocking_keys,10,,970,blocking_keys,3,,dict*
+391253,MEMBER,<empty>,<empty>,*blocking_keys_unblock_on_nokey,10,,971,blocking_keys_unblock_on_nokey,4,,dict*
+391254,MEMBER,<empty>,<empty>,*ready_keys,10,,974,ready_keys,5,,dict*
+391255,MEMBER,<empty>,<empty>,*watched_keys,10,,975,watched_keys,6,,dict*
+391256,MEMBER,<empty>,<empty>,id,9,,976,id,7,,int
+391257,MEMBER,<empty>,<empty>,avg_ttl,15,,977,avg_ttl,8,,long long
+391258,MEMBER,<empty>,<empty>,expires_cursor,19,,978,expires_cursor,9,,long unsigned
+391259,MEMBER,<empty>,<empty>,*defrag_later,10,,979,defrag_later,10,,list*
+391260,MEMBER,<empty>,<empty>,*slots_to_keys,29,,980,slots_to_keys,11,,clusterSlotToKeyMapping*
+391265,MEMBER,<empty>,<empty>,* dbarray,12,,992,dbarray,1,,redisDb*
+391266,MEMBER,<empty>,<empty>,* functions_lib_ctx,20,,993,functions_lib_ctx,2,,functionsLibCtx*
+391269,MEMBER,<empty>,<empty>,**argv,10,,998,argv,1,,robj**
+391270,MEMBER,<empty>,<empty>,argv_len,9,,999,argv_len,2,,int
+391271,MEMBER,<empty>,<empty>,argc,9,,1000,argc,3,,int
+391273,MEMBER,<empty>,<empty>,*cmd,25,,1001,cmd,5,,redisCommand*
+391276,MEMBER,<empty>,<empty>,*commands,14,,1005,commands,1,,multiCmd*
+391277,MEMBER,<empty>,<empty>,count,9,,1006,count,2,,int
+391278,MEMBER,<empty>,<empty>,cmd_flags,9,,1007,cmd_flags,3,,int
+391279,MEMBER,<empty>,<empty>,cmd_inv_flags,9,,1010,cmd_inv_flags,4,,int
+391280,MEMBER,<empty>,<empty>,argv_len_sums,12,,1013,argv_len_sums,5,,size_t
+391281,MEMBER,<empty>,<empty>,alloc_count,9,,1014,alloc_count,6,,int
+391284,MEMBER,<empty>,<empty>,btype,19,,1021,btype,1,,blocking_type
+391285,MEMBER,<empty>,<empty>,timeout,14,,1022,timeout,2,,mstime_t
+391286,MEMBER,<empty>,<empty>,unblock_on_nokey,9,,1024,unblock_on_nokey,3,,int
+391287,MEMBER,<empty>,<empty>,*keys,10,,1027,keys,4,,dict*
+391288,MEMBER,<empty>,<empty>,numreplicas,9,,1030,numreplicas,5,,int
+391289,MEMBER,<empty>,<empty>,numlocal,9,,1031,numlocal,6,,int
+391290,MEMBER,<empty>,<empty>,reploffset,15,,1032,reploffset,7,,long long
+391291,MEMBER,<empty>,<empty>,*module_blocked_handle,10,,1035,module_blocked_handle,8,,void*
+391292,MEMBER,<empty>,<empty>,*async_rm_call_handle,10,,1039,async_rm_call_handle,9,,void*
+391295,MEMBER,<empty>,<empty>,*db,13,,1056,db,1,,redisDb*
+391296,MEMBER,<empty>,<empty>,*key,10,,1057,key,2,,robj*
+391299,MEMBER,<empty>,<empty>,name,9,,1089,name,1,,sds
+391300,MEMBER,<empty>,<empty>,flags,14,,1090,flags,2,,uint32_t
+391301,MEMBER,<empty>,<empty>,*passwords,10,,1091,passwords,3,,list*
+391302,MEMBER,<empty>,<empty>,*selectors,10,,1092,selectors,4,,list*
+391303,MEMBER,<empty>,<empty>,*acl_string,10,,1095,acl_string,5,,robj*
+391306,MEMBER,<empty>,<empty>,*ref_repl_buf_node,14,,1112,ref_repl_buf_node,1,,listNode*
+391307,MEMBER,<empty>,<empty>,unindexed_count,12,,1114,unindexed_count,2,,size_t
+391308,MEMBER,<empty>,<empty>,*blocks_index,9,,1115,blocks_index,3,,rax*
+391309,MEMBER,<empty>,<empty>,histlen,15,,1118,histlen,4,,long long
+391310,MEMBER,<empty>,<empty>,offset,15,,1119,offset,5,,long long
+391313,MEMBER,<empty>,<empty>,*clients,10,,1124,clients,1,,list*
+391314,MEMBER,<empty>,<empty>,mem_usage_sum,12,,1125,mem_usage_sum,2,,size_t
+391317,MEMBER,<empty>,<empty>,id,14,,1154,id,1,,uint64_t
+391318,MEMBER,<empty>,<empty>,flags,14,,1155,flags,2,,uint64_t
+391319,MEMBER,<empty>,<empty>,*conn,16,,1156,conn,3,,connection*
+391320,MEMBER,<empty>,<empty>,resp,9,,1157,resp,4,,int
+391321,MEMBER,<empty>,<empty>,*db,13,,1158,db,5,,redisDb*
+391322,MEMBER,<empty>,<empty>,*name,10,,1159,name,6,,robj*
+391323,MEMBER,<empty>,<empty>,*lib_name,10,,1160,lib_name,7,,robj*
+391324,MEMBER,<empty>,<empty>,*lib_ver,10,,1161,lib_ver,8,,robj*
+391325,MEMBER,<empty>,<empty>,querybuf,9,,1162,querybuf,9,,sds
+391326,MEMBER,<empty>,<empty>,qb_pos,12,,1163,qb_pos,10,,size_t
+391327,MEMBER,<empty>,<empty>,querybuf_peak,12,,1164,querybuf_peak,11,,size_t
+391328,MEMBER,<empty>,<empty>,argc,9,,1165,argc,12,,int
+391329,MEMBER,<empty>,<empty>,**argv,10,,1166,argv,13,,robj**
+391330,MEMBER,<empty>,<empty>,argv_len,9,,1167,argv_len,14,,int
+391331,MEMBER,<empty>,<empty>,original_argc,9,,1168,original_argc,15,,int
+391332,MEMBER,<empty>,<empty>,**original_argv,10,,1169,original_argv,16,,robj**
+391333,MEMBER,<empty>,<empty>,argv_len_sum,12,,1170,argv_len_sum,17,,size_t
+391335,MEMBER,<empty>,<empty>,*cmd,25,,1171,cmd,19,,redisCommand*
+391336,MEMBER,<empty>,<empty>,*lastcmd,31,,1171,lastcmd,20,,redisCommand*
+391338,MEMBER,<empty>,<empty>,*realcmd,25,,1172,realcmd,22,,redisCommand*
+391339,MEMBER,<empty>,<empty>,*user,10,,1175,user,23,,user*
+391340,MEMBER,<empty>,<empty>,reqtype,9,,1178,reqtype,24,,int
+391341,MEMBER,<empty>,<empty>,multibulklen,9,,1179,multibulklen,25,,int
+391342,MEMBER,<empty>,<empty>,bulklen,10,,1180,bulklen,26,,long
+391343,MEMBER,<empty>,<empty>,*reply,10,,1181,reply,27,,list*
+391344,MEMBER,<empty>,<empty>,reply_bytes,24,,1182,reply_bytes,28,,long long unsigned
+391345,MEMBER,<empty>,<empty>,*deferred_reply_errors,10,,1183,deferred_reply_errors,29,,list*
+391346,MEMBER,<empty>,<empty>,sentlen,12,,1184,sentlen,30,,size_t
+391347,MEMBER,<empty>,<empty>,ctime,12,,1186,ctime,31,,time_t
+391348,MEMBER,<empty>,<empty>,duration,10,,1187,duration,32,,long
+391349,MEMBER,<empty>,<empty>,slot,9,,1188,slot,33,,int
+391350,MEMBER,<empty>,<empty>,*cur_script,15,,1189,cur_script,34,,dictEntry*
+391351,MEMBER,<empty>,<empty>,lastinteraction,12,,1190,lastinteraction,35,,time_t
+391352,MEMBER,<empty>,<empty>,obuf_soft_limit_reached_time,12,,1191,obuf_soft_limit_reached_time,36,,time_t
+391353,MEMBER,<empty>,<empty>,authenticated,9,,1192,authenticated,37,,int
+391354,MEMBER,<empty>,<empty>,replstate,9,,1193,replstate,38,,int
+391355,MEMBER,<empty>,<empty>,repl_start_cmd_stream_on_ack,9,,1194,repl_start_cmd_stream_on_ack,39,,int
+391356,MEMBER,<empty>,<empty>,repldbfd,9,,1195,repldbfd,40,,int
+391357,MEMBER,<empty>,<empty>,repldboff,11,,1196,repldboff,41,,off_t
+391358,MEMBER,<empty>,<empty>,repldbsize,11,,1197,repldbsize,42,,off_t
+391359,MEMBER,<empty>,<empty>,replpreamble,9,,1198,replpreamble,43,,sds
+391360,MEMBER,<empty>,<empty>,read_reploff,15,,1199,read_reploff,44,,long long
+391361,MEMBER,<empty>,<empty>,reploff,15,,1200,reploff,45,,long long
+391362,MEMBER,<empty>,<empty>,repl_applied,15,,1201,repl_applied,46,,long long
+391363,MEMBER,<empty>,<empty>,repl_ack_off,15,,1202,repl_ack_off,47,,long long
+391364,MEMBER,<empty>,<empty>,repl_aof_off,15,,1203,repl_aof_off,48,,long long
+391365,MEMBER,<empty>,<empty>,repl_ack_time,15,,1204,repl_ack_time,49,,long long
+391366,MEMBER,<empty>,<empty>,repl_last_partial_write,15,,1205,repl_last_partial_write,50,,long long
+391367,MEMBER,<empty>,<empty>,psync_initial_offset,15,,1206,psync_initial_offset,51,,long long
+391368,MEMBER,<empty>,<empty>,replid[CONFIG_RUN_ID_SIZE+1],10,,1209,replid,52,,char[41]
+391369,MEMBER,<empty>,<empty>,slave_listening_port,9,,1210,slave_listening_port,53,,int
+391370,MEMBER,<empty>,<empty>,*slave_addr,10,,1211,slave_addr,54,,char*
+391371,MEMBER,<empty>,<empty>,slave_capa,9,,1212,slave_capa,55,,int
+391372,MEMBER,<empty>,<empty>,slave_req,9,,1213,slave_req,56,,int
+391373,MEMBER,<empty>,<empty>,mstate,16,,1214,mstate,57,,multiState
+391374,MEMBER,<empty>,<empty>,bstate,19,,1215,bstate,58,,blockingState
+391375,MEMBER,<empty>,<empty>,woff,15,,1216,woff,59,,long long
+391376,MEMBER,<empty>,<empty>,*watched_keys,10,,1217,watched_keys,60,,list*
+391377,MEMBER,<empty>,<empty>,*pubsub_channels,10,,1218,pubsub_channels,61,,dict*
+391378,MEMBER,<empty>,<empty>,*pubsub_patterns,10,,1219,pubsub_patterns,62,,dict*
+391379,MEMBER,<empty>,<empty>,*pubsubshard_channels,10,,1220,pubsubshard_channels,63,,dict*
+391380,MEMBER,<empty>,<empty>,peerid,9,,1221,peerid,64,,sds
+391381,MEMBER,<empty>,<empty>,sockname,9,,1222,sockname,65,,sds
+391382,MEMBER,<empty>,<empty>,*client_list_node,14,,1223,client_list_node,66,,listNode*
+391383,MEMBER,<empty>,<empty>,*postponed_list_node,14,,1224,postponed_list_node,67,,listNode*
+391384,MEMBER,<empty>,<empty>,*pending_read_list_node,14,,1225,pending_read_list_node,68,,listNode*
+391385,MEMBER,<empty>,<empty>,*module_blocked_client,10,,1226,module_blocked_client,69,,void*
+391386,MEMBER,<empty>,<empty>,*module_auth_ctx,10,,1229,module_auth_ctx,70,,void*
+391387,MEMBER,<empty>,<empty>,auth_callback,32,,1232,auth_callback,71,,RedisModuleUserChangedFunc
+391388,MEMBER,<empty>,<empty>,*auth_callback_privdata,10,,1235,auth_callback_privdata,72,,void*
+391389,MEMBER,<empty>,<empty>,*auth_module,10,,1238,auth_module,73,,void*
+391390,MEMBER,<empty>,<empty>,client_tracking_redirection,14,,1245,client_tracking_redirection,74,,uint64_t
+391391,MEMBER,<empty>,<empty>,*client_tracking_prefixes,9,,1246,client_tracking_prefixes,75,,rax*
+391392,MEMBER,<empty>,<empty>,last_memory_usage,12,,1254,last_memory_usage,76,,size_t
+391393,MEMBER,<empty>,<empty>,last_memory_type,9,,1255,last_memory_type,77,,int
+391394,MEMBER,<empty>,<empty>,*mem_usage_bucket_node,14,,1257,mem_usage_bucket_node,78,,listNode*
+391395,MEMBER,<empty>,<empty>,*mem_usage_bucket,26,,1258,mem_usage_bucket,79,,clientMemUsageBucket*
+391396,MEMBER,<empty>,<empty>,*ref_repl_buf_node,14,,1260,ref_repl_buf_node,80,,listNode*
+391397,MEMBER,<empty>,<empty>,ref_block_pos,12,,1262,ref_block_pos,81,,size_t
+391398,MEMBER,<empty>,<empty>,clients_pending_write_node,14,,1266,clients_pending_write_node,82,,listNode
+391399,MEMBER,<empty>,<empty>,buf_peak,12,,1268,buf_peak,83,,size_t
+391400,MEMBER,<empty>,<empty>,buf_peak_last_reset_time,14,,1269,buf_peak_last_reset_time,84,,mstime_t
+391401,MEMBER,<empty>,<empty>,bufpos,9,,1270,bufpos,85,,int
+391402,MEMBER,<empty>,<empty>,buf_usable_size,12,,1271,buf_usable_size,86,,size_t
+391403,MEMBER,<empty>,<empty>,*buf,10,,1272,buf,87,,char*
+391404,MEMBER,<empty>,<empty>,reqres,22,,1274,reqres,88,,clientReqResInfo
+391417,MEMBER,<empty>,<empty>,user_auth_failures,15,,1280,user_auth_failures,1,,long long
+391418,MEMBER,<empty>,<empty>,invalid_cmd_accesses,15,,1281,invalid_cmd_accesses,2,,long long
+391419,MEMBER,<empty>,<empty>,invalid_key_accesses,15,,1282,invalid_key_accesses,3,,long long
+391420,MEMBER,<empty>,<empty>,invalid_channel_accesses,15,,1283,invalid_channel_accesses,4,,long long
+391423,MEMBER,<empty>,<empty>,seconds,12,,1287,seconds,1,,time_t
+391424,MEMBER,<empty>,<empty>,changes,9,,1288,changes,2,,int
+391426,MEMBER,<empty>,<empty>,path,9,,1292,path,1,,sds
+391427,MEMBER,<empty>,<empty>,argc,9,,1293,argc,2,,int
+391428,MEMBER,<empty>,<empty>,**argv,10,,1294,argv,3,,robj**
+391430,MEMBER,<empty>,<empty>,argc,9,,1298,argc,1,,int
+391431,MEMBER,<empty>,<empty>,*argv,9,,1299,argv,2,,sds*
+391432,MEMBER,<empty>,<empty>,linenum,9,,1300,linenum,3,,int
+391433,MEMBER,<empty>,<empty>,line,9,,1301,line,4,,sds
+391435,MEMBER,<empty>,<empty>,*pre_monitor_cfg,10,,1305,pre_monitor_cfg,1,,list*
+391436,MEMBER,<empty>,<empty>,*monitor_cfg,10,,1306,monitor_cfg,2,,list*
+391437,MEMBER,<empty>,<empty>,*post_monitor_cfg,10,,1307,post_monitor_cfg,3,,list*
+391439,MEMBER,<empty>,<empty>,*ok,10,,1311,ok,1,,robj*
+391440,MEMBER,<empty>,<empty>,*err,15,,1311,err,2,,robj*
+391441,MEMBER,<empty>,<empty>,*emptybulk,21,,1311,emptybulk,3,,robj*
+391442,MEMBER,<empty>,<empty>,*czero,33,,1311,czero,4,,robj*
+391443,MEMBER,<empty>,<empty>,*cone,41,,1311,cone,5,,robj*
+391444,MEMBER,<empty>,<empty>,*pong,48,,1311,pong,6,,robj*
+391445,MEMBER,<empty>,<empty>,*space,55,,1311,space,7,,robj*
+391446,MEMBER,<empty>,<empty>,*queued,5,,1312,queued,8,,robj*
+391447,MEMBER,<empty>,<empty>,*null[4],14,,1312,null,9,,redisObject*[4]
+391448,MEMBER,<empty>,<empty>,*nullarray[4],24,,1312,nullarray,10,,redisObject*[4]
+391449,MEMBER,<empty>,<empty>,*emptymap[4],39,,1312,emptymap,11,,redisObject*[4]
+391450,MEMBER,<empty>,<empty>,*emptyset[4],53,,1312,emptyset,12,,redisObject*[4]
+391451,MEMBER,<empty>,<empty>,*emptyarray,5,,1313,emptyarray,13,,robj*
+391452,MEMBER,<empty>,<empty>,*wrongtypeerr,18,,1313,wrongtypeerr,14,,robj*
+391453,MEMBER,<empty>,<empty>,*nokeyerr,33,,1313,nokeyerr,15,,robj*
+391454,MEMBER,<empty>,<empty>,*syntaxerr,44,,1313,syntaxerr,16,,robj*
+391455,MEMBER,<empty>,<empty>,*sameobjecterr,56,,1313,sameobjecterr,17,,robj*
+391456,MEMBER,<empty>,<empty>,*outofrangeerr,5,,1314,outofrangeerr,18,,robj*
+391457,MEMBER,<empty>,<empty>,*noscripterr,21,,1314,noscripterr,19,,robj*
+391458,MEMBER,<empty>,<empty>,*loadingerr,35,,1314,loadingerr,20,,robj*
+391459,MEMBER,<empty>,<empty>,*slowevalerr,5,,1315,slowevalerr,21,,robj*
+391460,MEMBER,<empty>,<empty>,*slowscripterr,19,,1315,slowscripterr,22,,robj*
+391461,MEMBER,<empty>,<empty>,*slowmoduleerr,35,,1315,slowmoduleerr,23,,robj*
+391462,MEMBER,<empty>,<empty>,*bgsaveerr,51,,1315,bgsaveerr,24,,robj*
+391463,MEMBER,<empty>,<empty>,*masterdownerr,5,,1316,masterdownerr,25,,robj*
+391464,MEMBER,<empty>,<empty>,*roslaveerr,21,,1316,roslaveerr,26,,robj*
+391465,MEMBER,<empty>,<empty>,*execaborterr,34,,1316,execaborterr,27,,robj*
+391466,MEMBER,<empty>,<empty>,*noautherr,49,,1316,noautherr,28,,robj*
+391467,MEMBER,<empty>,<empty>,*noreplicaserr,61,,1316,noreplicaserr,29,,robj*
+391468,MEMBER,<empty>,<empty>,*busykeyerr,5,,1317,busykeyerr,30,,robj*
+391469,MEMBER,<empty>,<empty>,*oomerr,18,,1317,oomerr,31,,robj*
+391470,MEMBER,<empty>,<empty>,*plus,27,,1317,plus,32,,robj*
+391471,MEMBER,<empty>,<empty>,*messagebulk,34,,1317,messagebulk,33,,robj*
+391472,MEMBER,<empty>,<empty>,*pmessagebulk,48,,1317,pmessagebulk,34,,robj*
+391473,MEMBER,<empty>,<empty>,*subscribebulk,63,,1317,subscribebulk,35,,robj*
+391474,MEMBER,<empty>,<empty>,*unsubscribebulk,5,,1318,unsubscribebulk,36,,robj*
+391475,MEMBER,<empty>,<empty>,*psubscribebulk,23,,1318,psubscribebulk,37,,robj*
+391476,MEMBER,<empty>,<empty>,*punsubscribebulk,40,,1318,punsubscribebulk,38,,robj*
+391477,MEMBER,<empty>,<empty>,*del,59,,1318,del,39,,robj*
+391478,MEMBER,<empty>,<empty>,*unlink,65,,1318,unlink,40,,robj*
+391479,MEMBER,<empty>,<empty>,*rpop,5,,1319,rpop,41,,robj*
+391480,MEMBER,<empty>,<empty>,*lpop,12,,1319,lpop,42,,robj*
+391481,MEMBER,<empty>,<empty>,*lpush,19,,1319,lpush,43,,robj*
+391482,MEMBER,<empty>,<empty>,*rpoplpush,27,,1319,rpoplpush,44,,robj*
+391483,MEMBER,<empty>,<empty>,*lmove,39,,1319,lmove,45,,robj*
+391484,MEMBER,<empty>,<empty>,*blmove,47,,1319,blmove,46,,robj*
+391485,MEMBER,<empty>,<empty>,*zpopmin,56,,1319,zpopmin,47,,robj*
+391486,MEMBER,<empty>,<empty>,*zpopmax,66,,1319,zpopmax,48,,robj*
+391487,MEMBER,<empty>,<empty>,*emptyscan,5,,1320,emptyscan,49,,robj*
+391488,MEMBER,<empty>,<empty>,*multi,17,,1320,multi,50,,robj*
+391489,MEMBER,<empty>,<empty>,*exec,25,,1320,exec,51,,robj*
+391490,MEMBER,<empty>,<empty>,*left,32,,1320,left,52,,robj*
+391491,MEMBER,<empty>,<empty>,*right,39,,1320,right,53,,robj*
+391492,MEMBER,<empty>,<empty>,*hset,47,,1320,hset,54,,robj*
+391493,MEMBER,<empty>,<empty>,*srem,54,,1320,srem,55,,robj*
+391494,MEMBER,<empty>,<empty>,*xgroup,61,,1320,xgroup,56,,robj*
+391495,MEMBER,<empty>,<empty>,*xclaim,70,,1320,xclaim,57,,robj*
+391496,MEMBER,<empty>,<empty>,*script,5,,1321,script,58,,robj*
+391497,MEMBER,<empty>,<empty>,*replconf,14,,1321,replconf,59,,robj*
+391498,MEMBER,<empty>,<empty>,*eval,25,,1321,eval,60,,robj*
+391499,MEMBER,<empty>,<empty>,*persist,32,,1321,persist,61,,robj*
+391500,MEMBER,<empty>,<empty>,*set,42,,1321,set,62,,robj*
+391501,MEMBER,<empty>,<empty>,*pexpireat,48,,1321,pexpireat,63,,robj*
+391502,MEMBER,<empty>,<empty>,*pexpire,60,,1321,pexpire,64,,robj*
+391503,MEMBER,<empty>,<empty>,*time,5,,1322,time,65,,robj*
+391504,MEMBER,<empty>,<empty>,*pxat,12,,1322,pxat,66,,robj*
+391505,MEMBER,<empty>,<empty>,*absttl,19,,1322,absttl,67,,robj*
+391506,MEMBER,<empty>,<empty>,*retrycount,28,,1322,retrycount,68,,robj*
+391507,MEMBER,<empty>,<empty>,*force,41,,1322,force,69,,robj*
+391508,MEMBER,<empty>,<empty>,*justid,49,,1322,justid,70,,robj*
+391509,MEMBER,<empty>,<empty>,*entriesread,58,,1322,entriesread,71,,robj*
+391510,MEMBER,<empty>,<empty>,*lastid,5,,1323,lastid,72,,robj*
+391511,MEMBER,<empty>,<empty>,*ping,14,,1323,ping,73,,robj*
+391512,MEMBER,<empty>,<empty>,*setid,21,,1323,setid,74,,robj*
+391513,MEMBER,<empty>,<empty>,*keepttl,29,,1323,keepttl,75,,robj*
+391514,MEMBER,<empty>,<empty>,*load,39,,1323,load,76,,robj*
+391515,MEMBER,<empty>,<empty>,*createconsumer,46,,1323,createconsumer,77,,robj*
+391516,MEMBER,<empty>,<empty>,*getack,5,,1324,getack,78,,robj*
+391517,MEMBER,<empty>,<empty>,*special_asterick,14,,1324,special_asterick,79,,robj*
+391518,MEMBER,<empty>,<empty>,*special_equals,33,,1324,special_equals,80,,robj*
+391519,MEMBER,<empty>,<empty>,*default_username,50,,1324,default_username,81,,robj*
+391520,MEMBER,<empty>,<empty>,*redacted,69,,1324,redacted,82,,robj*
+391521,MEMBER,<empty>,<empty>,*ssubscribebulk,5,,1325,ssubscribebulk,83,,robj*
+391522,MEMBER,<empty>,<empty>,*sunsubscribebulk,21,,1325,sunsubscribebulk,84,,robj*
+391523,MEMBER,<empty>,<empty>,*smessagebulk,40,,1325,smessagebulk,85,,robj*
+391524,MEMBER,<empty>,<empty>,*select[PROTO_SHARED_SELECT_CMDS],5,,1326,select,86,,redisObject*[10]
+391525,MEMBER,<empty>,<empty>,*integers[OBJ_SHARED_INTEGERS],5,,1327,integers,87,,redisObject*[10000]
+391526,MEMBER,<empty>,<empty>,*mbulkhdr[OBJ_SHARED_BULKHDR_LEN],5,,1328,mbulkhdr,88,,redisObject*[32]
+391527,MEMBER,<empty>,<empty>,*bulkhdr[OBJ_SHARED_BULKHDR_LEN],5,,1329,bulkhdr,89,,redisObject*[32]
+391528,MEMBER,<empty>,<empty>,*maphdr[OBJ_SHARED_BULKHDR_LEN],5,,1330,maphdr,90,,redisObject*[32]
+391529,MEMBER,<empty>,<empty>,*sethdr[OBJ_SHARED_BULKHDR_LEN],5,,1331,sethdr,91,,redisObject*[32]
+391530,MEMBER,<empty>,<empty>,minstring,9,,1332,minstring,92,,sds
+391531,MEMBER,<empty>,<empty>,maxstring,20,,1332,maxstring,93,,sds
+391569,MEMBER,<empty>,<empty>,ele,9,,1337,ele,1,,sds
+391570,MEMBER,<empty>,<empty>,score,12,,1338,score,2,,double
+391572,MEMBER,<empty>,<empty>,*backward,26,,1339,backward,4,,zskiplistNode*
+391575,MEMBER,<empty>,<empty>,*forward,30,,1341,forward,2,,zskiplistNode*
+391576,MEMBER,<empty>,<empty>,span,23,,1342,span,3,,long unsigned
+391577,MEMBER,<empty>,<empty>,level[],7,,1343,level,6,,zskiplistLevel[]
+391586,MEMBER,<empty>,<empty>,*header,26,,1347,header,2,,zskiplistNode*
+391587,MEMBER,<empty>,<empty>,*tail,35,,1347,tail,3,,zskiplistNode*
+391588,MEMBER,<empty>,<empty>,length,19,,1348,length,4,,long unsigned
+391589,MEMBER,<empty>,<empty>,level,9,,1349,level,5,,int
+391592,MEMBER,<empty>,<empty>,*dict,10,,1353,dict,1,,dict*
+391593,MEMBER,<empty>,<empty>,*zsl,15,,1354,zsl,2,,zskiplist*
+391596,MEMBER,<empty>,<empty>,hard_limit_bytes,24,,1358,hard_limit_bytes,1,,long long unsigned
+391597,MEMBER,<empty>,<empty>,soft_limit_bytes,24,,1359,soft_limit_bytes,2,,long long unsigned
+391598,MEMBER,<empty>,<empty>,soft_limit_seconds,12,,1360,soft_limit_seconds,3,,time_t
+391606,MEMBER,<empty>,<empty>,**argv,10,,1372,argv,1,,robj**
+391607,MEMBER,<empty>,<empty>,argc,9,,1373,argc,2,,int
+391608,MEMBER,<empty>,<empty>,dbid,15,,1373,dbid,3,,int
+391609,MEMBER,<empty>,<empty>,target,21,,1373,target,4,,int
+391612,MEMBER,<empty>,<empty>,*ops,13,,1383,ops,1,,redisOp*
+391613,MEMBER,<empty>,<empty>,numops,9,,1384,numops,2,,int
+391614,MEMBER,<empty>,<empty>,capacity,9,,1385,capacity,3,,int
+391617,MEMBER,<empty>,<empty>,peak_allocated,12,,1391,peak_allocated,1,,size_t
+391618,MEMBER,<empty>,<empty>,total_allocated,12,,1392,total_allocated,2,,size_t
+391619,MEMBER,<empty>,<empty>,startup_allocated,12,,1393,startup_allocated,3,,size_t
+391620,MEMBER,<empty>,<empty>,repl_backlog,12,,1394,repl_backlog,4,,size_t
+391621,MEMBER,<empty>,<empty>,clients_slaves,12,,1395,clients_slaves,5,,size_t
+391622,MEMBER,<empty>,<empty>,clients_normal,12,,1396,clients_normal,6,,size_t
+391623,MEMBER,<empty>,<empty>,cluster_links,12,,1397,cluster_links,7,,size_t
+391624,MEMBER,<empty>,<empty>,aof_buffer,12,,1398,aof_buffer,8,,size_t
+391625,MEMBER,<empty>,<empty>,lua_caches,12,,1399,lua_caches,9,,size_t
+391626,MEMBER,<empty>,<empty>,functions_caches,12,,1400,functions_caches,10,,size_t
+391627,MEMBER,<empty>,<empty>,overhead_total,12,,1401,overhead_total,11,,size_t
+391628,MEMBER,<empty>,<empty>,dataset,12,,1402,dataset,12,,size_t
+391629,MEMBER,<empty>,<empty>,total_keys,12,,1403,total_keys,13,,size_t
+391630,MEMBER,<empty>,<empty>,bytes_per_key,12,,1404,bytes_per_key,14,,size_t
+391631,MEMBER,<empty>,<empty>,dataset_perc,11,,1405,dataset_perc,15,,float
+391632,MEMBER,<empty>,<empty>,peak_perc,11,,1406,peak_perc,16,,float
+391633,MEMBER,<empty>,<empty>,total_frag,11,,1407,total_frag,17,,float
+391634,MEMBER,<empty>,<empty>,total_frag_bytes,13,,1408,total_frag_bytes,18,,ssize_t
+391635,MEMBER,<empty>,<empty>,allocator_frag,11,,1409,allocator_frag,19,,float
+391636,MEMBER,<empty>,<empty>,allocator_frag_bytes,13,,1410,allocator_frag_bytes,20,,ssize_t
+391637,MEMBER,<empty>,<empty>,allocator_rss,11,,1411,allocator_rss,21,,float
+391638,MEMBER,<empty>,<empty>,allocator_rss_bytes,13,,1412,allocator_rss_bytes,22,,ssize_t
+391639,MEMBER,<empty>,<empty>,rss_extra,11,,1413,rss_extra,23,,float
+391640,MEMBER,<empty>,<empty>,rss_extra_bytes,12,,1414,rss_extra_bytes,24,,size_t
+391641,MEMBER,<empty>,<empty>,num_dbs,12,,1415,num_dbs,25,,size_t
+391643,MEMBER,<empty>,<empty>,dbid,16,,1417,dbid,1,,size_t
+391644,MEMBER,<empty>,<empty>,overhead_ht_main,16,,1418,overhead_ht_main,2,,size_t
+391645,MEMBER,<empty>,<empty>,overhead_ht_expires,16,,1419,overhead_ht_expires,3,,size_t
+391646,MEMBER,<empty>,<empty>,overhead_ht_slot_to_keys,16,,1420,overhead_ht_slot_to_keys,4,,size_t
+391647,MEMBER,<empty>,<empty>,*db,7,,1421,db,27,,struct*
+391649,MEMBER,<empty>,<empty>,PROPAGATION_ERR_BEHAVIOR_IGNORE = 0,5,,1428,PROPAGATION_ERR_BEHAVIOR_IGNORE,1,,ANY
+391650,MEMBER,<empty>,<empty>,PROPAGATION_ERR_BEHAVIOR_PANIC,5,,1429,PROPAGATION_ERR_BEHAVIOR_PANIC,2,,ANY
+391651,MEMBER,<empty>,<empty>,PROPAGATION_ERR_BEHAVIOR_PANIC_ON_REPLICAS,5,,1430,PROPAGATION_ERR_BEHAVIOR_PANIC_ON_REPLICAS,3,,ANY
+391661,MEMBER,<empty>,<empty>,repl_stream_db,9,,1443,repl_stream_db,1,,int
+391662,MEMBER,<empty>,<empty>,repl_id_is_set,9,,1446,repl_id_is_set,2,,int
+391663,MEMBER,<empty>,<empty>,repl_id[CONFIG_RUN_ID_SIZE+1],10,,1447,repl_id,3,,char[41]
+391664,MEMBER,<empty>,<empty>,repl_offset,15,,1448,repl_offset,4,,long long
+391677,MEMBER,<empty>,<empty>,zmalloc_used,12,,1454,zmalloc_used,1,,size_t
+391678,MEMBER,<empty>,<empty>,process_rss,12,,1455,process_rss,2,,size_t
+391679,MEMBER,<empty>,<empty>,allocator_allocated,12,,1456,allocator_allocated,3,,size_t
+391680,MEMBER,<empty>,<empty>,allocator_active,12,,1457,allocator_active,4,,size_t
+391681,MEMBER,<empty>,<empty>,allocator_resident,12,,1458,allocator_resident,5,,size_t
+391683,MEMBER,<empty>,<empty>,*cert_file,10,,1466,cert_file,1,,char*
+391684,MEMBER,<empty>,<empty>,*key_file,10,,1467,key_file,2,,char*
+391685,MEMBER,<empty>,<empty>,*key_file_pass,10,,1468,key_file_pass,3,,char*
+391686,MEMBER,<empty>,<empty>,*client_cert_file,10,,1469,client_cert_file,4,,char*
+391687,MEMBER,<empty>,<empty>,*client_key_file,10,,1470,client_key_file,5,,char*
+391688,MEMBER,<empty>,<empty>,*client_key_file_pass,10,,1471,client_key_file_pass,6,,char*
+391689,MEMBER,<empty>,<empty>,*dh_params_file,10,,1472,dh_params_file,7,,char*
+391690,MEMBER,<empty>,<empty>,*ca_cert_file,10,,1473,ca_cert_file,8,,char*
+391691,MEMBER,<empty>,<empty>,*ca_cert_dir,10,,1474,ca_cert_dir,9,,char*
+391692,MEMBER,<empty>,<empty>,*protocols,10,,1475,protocols,10,,char*
+391693,MEMBER,<empty>,<empty>,*ciphers,10,,1476,ciphers,11,,char*
+391694,MEMBER,<empty>,<empty>,*ciphersuites,10,,1477,ciphersuites,12,,char*
+391695,MEMBER,<empty>,<empty>,prefer_server_ciphers,9,,1478,prefer_server_ciphers,13,,int
+391696,MEMBER,<empty>,<empty>,session_caching,9,,1479,session_caching,14,,int
+391697,MEMBER,<empty>,<empty>,session_cache_size,9,,1480,session_cache_size,15,,int
+391698,MEMBER,<empty>,<empty>,session_cache_timeout,9,,1481,session_cache_timeout,16,,int
+391701,MEMBER,<empty>,<empty>,AOF_FILE_TYPE_BASE  = 'b',5,,1488,AOF_FILE_TYPE_BASE,1,,ANY
+391702,MEMBER,<empty>,<empty>,AOF_FILE_TYPE_HIST  = 'h',5,,1489,AOF_FILE_TYPE_HIST,2,,ANY
+391703,MEMBER,<empty>,<empty>,AOF_FILE_TYPE_INCR  = 'i',5,,1490,AOF_FILE_TYPE_INCR,3,,ANY
+391719,MEMBER,<empty>,<empty>,file_name,19,,1494,file_name,1,,sds
+391720,MEMBER,<empty>,<empty>,file_seq,19,,1495,file_seq,2,,long long
+391721,MEMBER,<empty>,<empty>,file_type,19,,1496,file_type,3,,aof_file_type
+391724,MEMBER,<empty>,<empty>,*base_aof_info,17,,1500,base_aof_info,1,,aofInfo*
+391725,MEMBER,<empty>,<empty>,*incr_aof_list,17,,1501,incr_aof_list,2,,list*
+391726,MEMBER,<empty>,<empty>,*history_aof_list,17,,1502,history_aof_list,3,,list*
+391727,MEMBER,<empty>,<empty>,curr_base_file_seq,17,,1505,curr_base_file_seq,4,,long long
+391728,MEMBER,<empty>,<empty>,curr_incr_file_seq,17,,1506,curr_incr_file_seq,5,,long long
+391729,MEMBER,<empty>,<empty>,dirty,17,,1507,dirty,6,,int
+391732,MEMBER,<empty>,<empty>,CHILD_INFO_TYPE_CURRENT_INFO,5,,1528,CHILD_INFO_TYPE_CURRENT_INFO,1,,ANY
+391733,MEMBER,<empty>,<empty>,CHILD_INFO_TYPE_AOF_COW_SIZE,5,,1529,CHILD_INFO_TYPE_AOF_COW_SIZE,2,,ANY
+391734,MEMBER,<empty>,<empty>,CHILD_INFO_TYPE_RDB_COW_SIZE,5,,1530,CHILD_INFO_TYPE_RDB_COW_SIZE,3,,ANY
+391735,MEMBER,<empty>,<empty>,CHILD_INFO_TYPE_MODULE_COW_SIZE,5,,1531,CHILD_INFO_TYPE_MODULE_COW_SIZE,4,,ANY
+391738,MEMBER,<empty>,<empty>,pid,11,,1536,pid,1,,pid_t
+391739,MEMBER,<empty>,<empty>,main_thread_id,15,,1537,main_thread_id,2,,pthread_t
+391740,MEMBER,<empty>,<empty>,*configfile,10,,1538,configfile,3,,char*
+391741,MEMBER,<empty>,<empty>,*executable,10,,1539,executable,4,,char*
+391742,MEMBER,<empty>,<empty>,**exec_argv,10,,1540,exec_argv,5,,char**
+391743,MEMBER,<empty>,<empty>,dynamic_hz,9,,1541,dynamic_hz,6,,int
+391744,MEMBER,<empty>,<empty>,config_hz,9,,1542,config_hz,7,,int
+391745,MEMBER,<empty>,<empty>,umask,12,,1545,umask,8,,mode_t
+391746,MEMBER,<empty>,<empty>,hz,9,,1546,hz,9,,int
+391747,MEMBER,<empty>,<empty>,in_fork_child,9,,1547,in_fork_child,10,,int
+391748,MEMBER,<empty>,<empty>,*db,13,,1548,db,11,,redisDb*
+391749,MEMBER,<empty>,<empty>,*commands,10,,1549,commands,12,,dict*
+391750,MEMBER,<empty>,<empty>,*orig_commands,10,,1550,orig_commands,13,,dict*
+391751,MEMBER,<empty>,<empty>,*el,17,,1551,el,14,,aeEventLoop*
+391752,MEMBER,<empty>,<empty>,*errors,9,,1552,errors,15,,rax*
+391753,MEMBER,<empty>,<empty>,lruclock,18,,1553,lruclock,16,,unsigned int
+391754,MEMBER,<empty>,<empty>,shutdown_asap,27,,1554,shutdown_asap,17,,sig_atomic_t
+391755,MEMBER,<empty>,<empty>,shutdown_mstime,14,,1555,shutdown_mstime,18,,mstime_t
+391756,MEMBER,<empty>,<empty>,last_sig_received,9,,1556,last_sig_received,19,,int
+391757,MEMBER,<empty>,<empty>,shutdown_flags,9,,1557,shutdown_flags,20,,int
+391758,MEMBER,<empty>,<empty>,activerehashing,9,,1558,activerehashing,21,,int
+391759,MEMBER,<empty>,<empty>,active_defrag_running,9,,1559,active_defrag_running,22,,int
+391760,MEMBER,<empty>,<empty>,*pidfile,10,,1560,pidfile,23,,char*
+391761,MEMBER,<empty>,<empty>,arch_bits,9,,1561,arch_bits,24,,int
+391762,MEMBER,<empty>,<empty>,cronloops,9,,1562,cronloops,25,,int
+391763,MEMBER,<empty>,<empty>,runid[CONFIG_RUN_ID_SIZE+1],10,,1563,runid,26,,char[41]
+391764,MEMBER,<empty>,<empty>,sentinel_mode,9,,1564,sentinel_mode,27,,int
+391765,MEMBER,<empty>,<empty>,initial_memory_usage,12,,1565,initial_memory_usage,28,,size_t
+391766,MEMBER,<empty>,<empty>,always_show_logo,9,,1566,always_show_logo,29,,int
+391767,MEMBER,<empty>,<empty>,in_exec,9,,1567,in_exec,30,,int
+391768,MEMBER,<empty>,<empty>,busy_module_yield_flags,9,,1568,busy_module_yield_flags,31,,int
+391769,MEMBER,<empty>,<empty>,*busy_module_yield_reply,16,,1569,busy_module_yield_reply,32,,char*
+391770,MEMBER,<empty>,<empty>,*ignore_warnings,10,,1570,ignore_warnings,33,,char*
+391771,MEMBER,<empty>,<empty>,client_pause_in_transaction,9,,1571,client_pause_in_transaction,34,,int
+391772,MEMBER,<empty>,<empty>,thp_enabled,9,,1572,thp_enabled,35,,int
+391773,MEMBER,<empty>,<empty>,page_size,12,,1573,page_size,36,,size_t
+391774,MEMBER,<empty>,<empty>,*moduleapi,10,,1575,moduleapi,37,,dict*
+391775,MEMBER,<empty>,<empty>,*sharedapi,10,,1576,sharedapi,38,,dict*
+391776,MEMBER,<empty>,<empty>,*module_configs_queue,10,,1578,module_configs_queue,39,,dict*
+391777,MEMBER,<empty>,<empty>,*loadmodule_queue,10,,1579,loadmodule_queue,40,,list*
+391778,MEMBER,<empty>,<empty>,module_pipe[2],9,,1580,module_pipe,41,,int[2]
+391779,MEMBER,<empty>,<empty>,child_pid,11,,1581,child_pid,42,,pid_t
+391780,MEMBER,<empty>,<empty>,child_type,9,,1582,child_type,43,,int
+391781,MEMBER,<empty>,<empty>,port,9,,1584,port,44,,int
+391782,MEMBER,<empty>,<empty>,tls_port,9,,1585,tls_port,45,,int
+391783,MEMBER,<empty>,<empty>,tcp_backlog,9,,1586,tcp_backlog,46,,int
+391784,MEMBER,<empty>,<empty>,*bindaddr[CONFIG_BINDADDR_MAX],10,,1587,bindaddr,47,,char*[16]
+391785,MEMBER,<empty>,<empty>,bindaddr_count,9,,1588,bindaddr_count,48,,int
+391786,MEMBER,<empty>,<empty>,*bind_source_addr,10,,1589,bind_source_addr,49,,char*
+391787,MEMBER,<empty>,<empty>,*unixsocket,10,,1590,unixsocket,50,,char*
+391788,MEMBER,<empty>,<empty>,unixsocketperm,18,,1591,unixsocketperm,51,,unsigned int
+391789,MEMBER,<empty>,<empty>,listeners[CONN_TYPE_MAX],18,,1592,listeners,52,,connListener[8]
+391790,MEMBER,<empty>,<empty>,socket_mark_id,14,,1593,socket_mark_id,53,,uint32_t
+391791,MEMBER,<empty>,<empty>,clistener,18,,1594,clistener,54,,connListener
+391792,MEMBER,<empty>,<empty>,*clients,10,,1595,clients,55,,list*
+391793,MEMBER,<empty>,<empty>,*clients_to_close,10,,1596,clients_to_close,56,,list*
+391794,MEMBER,<empty>,<empty>,*clients_pending_write,10,,1597,clients_pending_write,57,,list*
+391795,MEMBER,<empty>,<empty>,*clients_pending_read,10,,1598,clients_pending_read,58,,list*
+391796,MEMBER,<empty>,<empty>,*slaves,10,,1599,slaves,59,,list*
+391797,MEMBER,<empty>,<empty>,*monitors,19,,1599,monitors,60,,list*
+391798,MEMBER,<empty>,<empty>,*current_client,12,,1600,current_client,61,,client*
+391799,MEMBER,<empty>,<empty>,*executing_client,12,,1601,executing_client,62,,client*
+391800,MEMBER,<empty>,<empty>,*req_res_logfile,10,,1604,req_res_logfile,63,,char*
+391801,MEMBER,<empty>,<empty>,client_default_resp,18,,1605,client_default_resp,64,,unsigned int
+391802,MEMBER,<empty>,<empty>,* client_mem_usage_buckets,25,,1609,client_mem_usage_buckets,65,,clientMemUsageBucket*
+391803,MEMBER,<empty>,<empty>,*clients_timeout_table,9,,1611,clients_timeout_table,66,,rax*
+391804,MEMBER,<empty>,<empty>,execution_nesting,9,,1612,execution_nesting,67,,int
+391805,MEMBER,<empty>,<empty>,*clients_index,9,,1615,clients_index,68,,rax*
+391806,MEMBER,<empty>,<empty>,paused_actions,14,,1616,paused_actions,69,,uint32_t
+391807,MEMBER,<empty>,<empty>,*postponed_clients,10,,1617,postponed_clients,70,,list*
+391808,MEMBER,<empty>,<empty>,client_pause_per_purpose[NUM_PAUSE_PURPOSES],17,,1618,client_pause_per_purpose,71,,pause_event[3]
+391809,MEMBER,<empty>,<empty>,neterr[ANET_ERR_LEN],10,,1619,neterr,72,,char[256]
+391810,MEMBER,<empty>,<empty>,*migrate_cached_sockets,10,,1620,migrate_cached_sockets,73,,dict*
+391811,MEMBER,<empty>,<empty>,next_client_id,26,,1621,next_client_id,74,,uint64_t
+391812,MEMBER,<empty>,<empty>,protected_mode,9,,1622,protected_mode,75,,int
+391813,MEMBER,<empty>,<empty>,io_threads_num,9,,1623,io_threads_num,76,,int
+391814,MEMBER,<empty>,<empty>,io_threads_do_reads,9,,1624,io_threads_do_reads,77,,int
+391815,MEMBER,<empty>,<empty>,io_threads_active,9,,1625,io_threads_active,78,,int
+391816,MEMBER,<empty>,<empty>,events_processed_while_blocked,15,,1626,events_processed_while_blocked,79,,long long
+391817,MEMBER,<empty>,<empty>,enable_protected_configs,9,,1627,enable_protected_configs,80,,int
+391818,MEMBER,<empty>,<empty>,enable_debug_cmd,9,,1628,enable_debug_cmd,81,,int
+391819,MEMBER,<empty>,<empty>,enable_module_cmd,9,,1629,enable_module_cmd,82,,int
+391820,MEMBER,<empty>,<empty>,loading,27,,1632,loading,83,,sig_atomic_t
+391821,MEMBER,<empty>,<empty>,async_loading,27,,1633,async_loading,84,,sig_atomic_t
+391822,MEMBER,<empty>,<empty>,loading_total_bytes,11,,1634,loading_total_bytes,85,,off_t
+391823,MEMBER,<empty>,<empty>,loading_rdb_used_mem,11,,1635,loading_rdb_used_mem,86,,off_t
+391824,MEMBER,<empty>,<empty>,loading_loaded_bytes,11,,1636,loading_loaded_bytes,87,,off_t
+391825,MEMBER,<empty>,<empty>,loading_start_time,12,,1637,loading_start_time,88,,time_t
+391826,MEMBER,<empty>,<empty>,loading_process_events_interval_bytes,11,,1638,loading_process_events_interval_bytes,89,,off_t
+391827,MEMBER,<empty>,<empty>,stat_starttime,12,,1640,stat_starttime,90,,time_t
+391828,MEMBER,<empty>,<empty>,stat_numcommands,15,,1641,stat_numcommands,91,,long long
+391829,MEMBER,<empty>,<empty>,stat_numconnections,15,,1642,stat_numconnections,92,,long long
+391830,MEMBER,<empty>,<empty>,stat_expiredkeys,15,,1643,stat_expiredkeys,93,,long long
+391831,MEMBER,<empty>,<empty>,stat_expired_stale_perc,12,,1644,stat_expired_stale_perc,94,,double
+391832,MEMBER,<empty>,<empty>,stat_expired_time_cap_reached_count,15,,1645,stat_expired_time_cap_reached_count,95,,long long
+391833,MEMBER,<empty>,<empty>,stat_expire_cycle_time_used,15,,1646,stat_expire_cycle_time_used,96,,long long
+391834,MEMBER,<empty>,<empty>,stat_evictedkeys,15,,1647,stat_evictedkeys,97,,long long
+391835,MEMBER,<empty>,<empty>,stat_evictedclients,15,,1648,stat_evictedclients,98,,long long
+391836,MEMBER,<empty>,<empty>,stat_total_eviction_exceeded_time,15,,1649,stat_total_eviction_exceeded_time,99,,long long
+391837,MEMBER,<empty>,<empty>,stat_last_eviction_exceeded_time,14,,1650,stat_last_eviction_exceeded_time,100,,monotime
+391838,MEMBER,<empty>,<empty>,stat_keyspace_hits,15,,1651,stat_keyspace_hits,101,,long long
+391839,MEMBER,<empty>,<empty>,stat_keyspace_misses,15,,1652,stat_keyspace_misses,102,,long long
+391840,MEMBER,<empty>,<empty>,stat_active_defrag_hits,15,,1653,stat_active_defrag_hits,103,,long long
+391841,MEMBER,<empty>,<empty>,stat_active_defrag_misses,15,,1654,stat_active_defrag_misses,104,,long long
+391842,MEMBER,<empty>,<empty>,stat_active_defrag_key_hits,15,,1655,stat_active_defrag_key_hits,105,,long long
+391843,MEMBER,<empty>,<empty>,stat_active_defrag_key_misses,15,,1656,stat_active_defrag_key_misses,106,,long long
+391844,MEMBER,<empty>,<empty>,stat_active_defrag_scanned,15,,1657,stat_active_defrag_scanned,107,,long long
+391845,MEMBER,<empty>,<empty>,stat_total_active_defrag_time,15,,1658,stat_total_active_defrag_time,108,,long long
+391846,MEMBER,<empty>,<empty>,stat_last_active_defrag_time,14,,1659,stat_last_active_defrag_time,109,,monotime
+391847,MEMBER,<empty>,<empty>,stat_peak_memory,12,,1660,stat_peak_memory,110,,size_t
+391848,MEMBER,<empty>,<empty>,stat_aof_rewrites,15,,1661,stat_aof_rewrites,111,,long long
+391849,MEMBER,<empty>,<empty>,stat_aofrw_consecutive_failures,15,,1662,stat_aofrw_consecutive_failures,112,,long long
+391850,MEMBER,<empty>,<empty>,stat_rdb_saves,15,,1663,stat_rdb_saves,113,,long long
+391851,MEMBER,<empty>,<empty>,stat_fork_time,15,,1664,stat_fork_time,114,,long long
+391852,MEMBER,<empty>,<empty>,stat_fork_rate,12,,1665,stat_fork_rate,115,,double
+391853,MEMBER,<empty>,<empty>,stat_total_forks,15,,1666,stat_total_forks,116,,long long
+391854,MEMBER,<empty>,<empty>,stat_rejected_conn,15,,1667,stat_rejected_conn,117,,long long
+391855,MEMBER,<empty>,<empty>,stat_sync_full,15,,1668,stat_sync_full,118,,long long
+391856,MEMBER,<empty>,<empty>,stat_sync_partial_ok,15,,1669,stat_sync_partial_ok,119,,long long
+391857,MEMBER,<empty>,<empty>,stat_sync_partial_err,15,,1670,stat_sync_partial_err,120,,long long
+391858,MEMBER,<empty>,<empty>,*slowlog,10,,1671,slowlog,121,,list*
+391859,MEMBER,<empty>,<empty>,slowlog_entry_id,15,,1672,slowlog_entry_id,122,,long long
+391860,MEMBER,<empty>,<empty>,slowlog_log_slower_than,15,,1673,slowlog_log_slower_than,123,,long long
+391861,MEMBER,<empty>,<empty>,slowlog_max_len,19,,1674,slowlog_max_len,124,,long unsigned
+391863,MEMBER,<empty>,<empty>,cron_malloc_stats,25,,1675,cron_malloc_stats,126,,malloc_stats
+391864,MEMBER,<empty>,<empty>,stat_net_input_bytes,27,,1676,stat_net_input_bytes,127,,long long
+391865,MEMBER,<empty>,<empty>,stat_net_output_bytes,27,,1677,stat_net_output_bytes,128,,long long
+391866,MEMBER,<empty>,<empty>,stat_net_repl_input_bytes,27,,1678,stat_net_repl_input_bytes,129,,long long
+391867,MEMBER,<empty>,<empty>,stat_net_repl_output_bytes,27,,1679,stat_net_repl_output_bytes,130,,long long
+391868,MEMBER,<empty>,<empty>,stat_current_cow_peak,12,,1680,stat_current_cow_peak,131,,size_t
+391869,MEMBER,<empty>,<empty>,stat_current_cow_bytes,12,,1681,stat_current_cow_bytes,132,,size_t
+391870,MEMBER,<empty>,<empty>,stat_current_cow_updated,14,,1682,stat_current_cow_updated,133,,monotime
+391871,MEMBER,<empty>,<empty>,stat_current_save_keys_processed,12,,1683,stat_current_save_keys_processed,134,,size_t
+391872,MEMBER,<empty>,<empty>,stat_current_save_keys_total,12,,1684,stat_current_save_keys_total,135,,size_t
+391873,MEMBER,<empty>,<empty>,stat_rdb_cow_bytes,12,,1685,stat_rdb_cow_bytes,136,,size_t
+391874,MEMBER,<empty>,<empty>,stat_aof_cow_bytes,12,,1686,stat_aof_cow_bytes,137,,size_t
+391875,MEMBER,<empty>,<empty>,stat_module_cow_bytes,12,,1687,stat_module_cow_bytes,138,,size_t
+391876,MEMBER,<empty>,<empty>,stat_module_progress,12,,1688,stat_module_progress,139,,double
+391877,MEMBER,<empty>,<empty>,stat_clients_type_memory[CLIENT_TYPE_COUNT],12,,1689,stat_clients_type_memory,140,,size_t[4]
+391878,MEMBER,<empty>,<empty>,stat_cluster_links_memory,12,,1690,stat_cluster_links_memory,141,,size_t
+391879,MEMBER,<empty>,<empty>,stat_unexpected_error_replies,15,,1691,stat_unexpected_error_replies,142,,long long
+391880,MEMBER,<empty>,<empty>,stat_total_error_replies,15,,1692,stat_total_error_replies,143,,long long
+391881,MEMBER,<empty>,<empty>,stat_dump_payload_sanitizations,15,,1693,stat_dump_payload_sanitizations,144,,long long
+391882,MEMBER,<empty>,<empty>,stat_io_reads_processed,15,,1694,stat_io_reads_processed,145,,long long
+391883,MEMBER,<empty>,<empty>,stat_io_writes_processed,15,,1695,stat_io_writes_processed,146,,long long
+391884,MEMBER,<empty>,<empty>,stat_total_reads_processed,27,,1696,stat_total_reads_processed,147,,long long
+391885,MEMBER,<empty>,<empty>,stat_total_writes_processed,27,,1697,stat_total_writes_processed,148,,long long
+391887,MEMBER,<empty>,<empty>,last_sample_base,19,,1701,last_sample_base,1,,long long
+391888,MEMBER,<empty>,<empty>,last_sample_value,19,,1702,last_sample_value,2,,long long
+391889,MEMBER,<empty>,<empty>,samples[STATS_METRIC_SAMPLES],19,,1703,samples,3,,longlongint[16]
+391890,MEMBER,<empty>,<empty>,idx,13,,1704,idx,4,,int
+391899,MEMBER,<empty>,<empty>,inst_metric[STATS_METRIC_COUNT],7,,1705,inst_metric,150,,[7]
+391900,MEMBER,<empty>,<empty>,stat_reply_buffer_shrinks,15,,1706,stat_reply_buffer_shrinks,151,,long long
+391901,MEMBER,<empty>,<empty>,stat_reply_buffer_expands,15,,1707,stat_reply_buffer_expands,152,,long long
+391902,MEMBER,<empty>,<empty>,el_start,14,,1708,el_start,153,,monotime
+391903,MEMBER,<empty>,<empty>,el_cmd_cnt_start,15,,1711,el_cmd_cnt_start,154,,long long
+391904,MEMBER,<empty>,<empty>,el_cmd_cnt_max,15,,1712,el_cmd_cnt_max,155,,long long
+391905,MEMBER,<empty>,<empty>,el_cron_duration,14,,1715,el_cron_duration,156,,monotime
+391906,MEMBER,<empty>,<empty>,duration_stats[EL_DURATION_TYPE_NUM],19,,1716,duration_stats,157,,durationStats[4]
+391907,MEMBER,<empty>,<empty>,verbosity,9,,1719,verbosity,158,,int
+391908,MEMBER,<empty>,<empty>,maxidletime,9,,1720,maxidletime,159,,int
+391909,MEMBER,<empty>,<empty>,tcpkeepalive,9,,1721,tcpkeepalive,160,,int
+391910,MEMBER,<empty>,<empty>,active_expire_enabled,9,,1722,active_expire_enabled,161,,int
+391911,MEMBER,<empty>,<empty>,active_expire_effort,9,,1723,active_expire_effort,162,,int
+391912,MEMBER,<empty>,<empty>,lazy_expire_disabled,9,,1724,lazy_expire_disabled,163,,int
+391913,MEMBER,<empty>,<empty>,active_defrag_enabled,9,,1725,active_defrag_enabled,164,,int
+391914,MEMBER,<empty>,<empty>,sanitize_dump_payload,9,,1726,sanitize_dump_payload,165,,int
+391915,MEMBER,<empty>,<empty>,skip_checksum_validation,9,,1727,skip_checksum_validation,166,,int
+391916,MEMBER,<empty>,<empty>,jemalloc_bg_thread,9,,1728,jemalloc_bg_thread,167,,int
+391917,MEMBER,<empty>,<empty>,active_defrag_ignore_bytes,12,,1729,active_defrag_ignore_bytes,168,,size_t
+391918,MEMBER,<empty>,<empty>,active_defrag_threshold_lower,9,,1730,active_defrag_threshold_lower,169,,int
+391919,MEMBER,<empty>,<empty>,active_defrag_threshold_upper,9,,1731,active_defrag_threshold_upper,170,,int
+391920,MEMBER,<empty>,<empty>,active_defrag_cycle_min,9,,1732,active_defrag_cycle_min,171,,int
+391921,MEMBER,<empty>,<empty>,active_defrag_cycle_max,9,,1733,active_defrag_cycle_max,172,,int
+391922,MEMBER,<empty>,<empty>,active_defrag_max_scan_fields,19,,1734,active_defrag_max_scan_fields,173,,long unsigned
+391923,MEMBER,<empty>,<empty>,client_max_querybuf_len,12,,1735,client_max_querybuf_len,174,,size_t
+391924,MEMBER,<empty>,<empty>,dbnum,9,,1736,dbnum,175,,int
+391925,MEMBER,<empty>,<empty>,supervised,9,,1737,supervised,176,,int
+391926,MEMBER,<empty>,<empty>,supervised_mode,9,,1738,supervised_mode,177,,int
+391927,MEMBER,<empty>,<empty>,daemonize,9,,1739,daemonize,178,,int
+391928,MEMBER,<empty>,<empty>,set_proc_title,9,,1740,set_proc_title,179,,int
+391929,MEMBER,<empty>,<empty>,*proc_title_template,10,,1741,proc_title_template,180,,char*
+391930,MEMBER,<empty>,<empty>,client_obuf_limits[CLIENT_TYPE_OBUF_COUNT],30,,1742,client_obuf_limits,181,,clientBufferLimitsConfig[3]
+391931,MEMBER,<empty>,<empty>,pause_cron,9,,1743,pause_cron,182,,int
+391932,MEMBER,<empty>,<empty>,latency_tracking_enabled,9,,1744,latency_tracking_enabled,183,,int
+391933,MEMBER,<empty>,<empty>,*latency_tracking_info_percentiles,12,,1745,latency_tracking_info_percentiles,184,,double*
+391934,MEMBER,<empty>,<empty>,latency_tracking_info_percentiles_len,9,,1746,latency_tracking_info_percentiles_len,185,,int
+391935,MEMBER,<empty>,<empty>,aof_enabled,9,,1748,aof_enabled,186,,int
+391936,MEMBER,<empty>,<empty>,aof_state,9,,1749,aof_state,187,,int
+391937,MEMBER,<empty>,<empty>,aof_fsync,9,,1750,aof_fsync,188,,int
+391938,MEMBER,<empty>,<empty>,*aof_filename,10,,1751,aof_filename,189,,char*
+391939,MEMBER,<empty>,<empty>,*aof_dirname,10,,1752,aof_dirname,190,,char*
+391940,MEMBER,<empty>,<empty>,aof_no_fsync_on_rewrite,9,,1753,aof_no_fsync_on_rewrite,191,,int
+391941,MEMBER,<empty>,<empty>,aof_rewrite_perc,9,,1754,aof_rewrite_perc,192,,int
+391942,MEMBER,<empty>,<empty>,aof_rewrite_min_size,11,,1755,aof_rewrite_min_size,193,,off_t
+391943,MEMBER,<empty>,<empty>,aof_rewrite_base_size,11,,1756,aof_rewrite_base_size,194,,off_t
+391944,MEMBER,<empty>,<empty>,aof_current_size,11,,1757,aof_current_size,195,,off_t
+391945,MEMBER,<empty>,<empty>,aof_last_incr_size,11,,1758,aof_last_incr_size,196,,off_t
+391946,MEMBER,<empty>,<empty>,aof_last_incr_fsync_offset,11,,1759,aof_last_incr_fsync_offset,197,,off_t
+391947,MEMBER,<empty>,<empty>,aof_flush_sleep,9,,1761,aof_flush_sleep,198,,int
+391948,MEMBER,<empty>,<empty>,aof_rewrite_scheduled,9,,1762,aof_rewrite_scheduled,199,,int
+391949,MEMBER,<empty>,<empty>,aof_buf,9,,1763,aof_buf,200,,sds
+391950,MEMBER,<empty>,<empty>,aof_fd,9,,1764,aof_fd,201,,int
+391951,MEMBER,<empty>,<empty>,aof_selected_db,9,,1765,aof_selected_db,202,,int
+391952,MEMBER,<empty>,<empty>,aof_flush_postponed_start,12,,1766,aof_flush_postponed_start,203,,time_t
+391953,MEMBER,<empty>,<empty>,aof_last_fsync,12,,1767,aof_last_fsync,204,,time_t
+391954,MEMBER,<empty>,<empty>,aof_rewrite_time_last,12,,1768,aof_rewrite_time_last,205,,time_t
+391955,MEMBER,<empty>,<empty>,aof_rewrite_time_start,12,,1769,aof_rewrite_time_start,206,,time_t
+391956,MEMBER,<empty>,<empty>,aof_cur_timestamp,12,,1770,aof_cur_timestamp,207,,time_t
+391957,MEMBER,<empty>,<empty>,aof_timestamp_enabled,9,,1771,aof_timestamp_enabled,208,,int
+391958,MEMBER,<empty>,<empty>,aof_lastbgrewrite_status,9,,1772,aof_lastbgrewrite_status,209,,int
+391959,MEMBER,<empty>,<empty>,aof_delayed_fsync,19,,1773,aof_delayed_fsync,210,,long unsigned
+391960,MEMBER,<empty>,<empty>,aof_rewrite_incremental_fsync,9,,1774,aof_rewrite_incremental_fsync,211,,int
+391961,MEMBER,<empty>,<empty>,rdb_save_incremental_fsync,9,,1775,rdb_save_incremental_fsync,212,,int
+391962,MEMBER,<empty>,<empty>,aof_last_write_status,9,,1776,aof_last_write_status,213,,int
+391963,MEMBER,<empty>,<empty>,aof_last_write_errno,9,,1777,aof_last_write_errno,214,,int
+391964,MEMBER,<empty>,<empty>,aof_load_truncated,9,,1778,aof_load_truncated,215,,int
+391965,MEMBER,<empty>,<empty>,aof_use_rdb_preamble,9,,1779,aof_use_rdb_preamble,216,,int
+391966,MEMBER,<empty>,<empty>,aof_bio_fsync_status,21,,1780,aof_bio_fsync_status,217,,int
+391967,MEMBER,<empty>,<empty>,aof_bio_fsync_errno,21,,1781,aof_bio_fsync_errno,218,,int
+391968,MEMBER,<empty>,<empty>,*aof_manifest,17,,1782,aof_manifest,219,,aofManifest*
+391969,MEMBER,<empty>,<empty>,aof_disable_auto_gc,9,,1783,aof_disable_auto_gc,220,,int
+391970,MEMBER,<empty>,<empty>,dirty,15,,1787,dirty,221,,long long
+391971,MEMBER,<empty>,<empty>,dirty_before_bgsave,15,,1788,dirty_before_bgsave,222,,long long
+391972,MEMBER,<empty>,<empty>,rdb_last_load_keys_expired,15,,1789,rdb_last_load_keys_expired,223,,long long
+391973,MEMBER,<empty>,<empty>,rdb_last_load_keys_loaded,15,,1790,rdb_last_load_keys_loaded,224,,long long
+391975,MEMBER,<empty>,<empty>,*saveparams,22,,1791,saveparams,226,,saveparam*
+391976,MEMBER,<empty>,<empty>,saveparamslen,9,,1792,saveparamslen,227,,int
+391977,MEMBER,<empty>,<empty>,*rdb_filename,10,,1793,rdb_filename,228,,char*
+391978,MEMBER,<empty>,<empty>,rdb_compression,9,,1794,rdb_compression,229,,int
+391979,MEMBER,<empty>,<empty>,rdb_checksum,9,,1795,rdb_checksum,230,,int
+391980,MEMBER,<empty>,<empty>,rdb_del_sync_files,9,,1796,rdb_del_sync_files,231,,int
+391981,MEMBER,<empty>,<empty>,lastsave,12,,1798,lastsave,232,,time_t
+391982,MEMBER,<empty>,<empty>,lastbgsave_try,12,,1799,lastbgsave_try,233,,time_t
+391983,MEMBER,<empty>,<empty>,rdb_save_time_last,12,,1800,rdb_save_time_last,234,,time_t
+391984,MEMBER,<empty>,<empty>,rdb_save_time_start,12,,1801,rdb_save_time_start,235,,time_t
+391985,MEMBER,<empty>,<empty>,rdb_bgsave_scheduled,9,,1802,rdb_bgsave_scheduled,236,,int
+391986,MEMBER,<empty>,<empty>,rdb_child_type,9,,1803,rdb_child_type,237,,int
+391987,MEMBER,<empty>,<empty>,lastbgsave_status,9,,1804,lastbgsave_status,238,,int
+391988,MEMBER,<empty>,<empty>,stop_writes_on_bgsave_err,9,,1805,stop_writes_on_bgsave_err,239,,int
+391989,MEMBER,<empty>,<empty>,rdb_pipe_read,9,,1806,rdb_pipe_read,240,,int
+391990,MEMBER,<empty>,<empty>,rdb_child_exit_pipe,9,,1808,rdb_child_exit_pipe,241,,int
+391991,MEMBER,<empty>,<empty>,**rdb_pipe_conns,16,,1809,rdb_pipe_conns,242,,connection**
+391992,MEMBER,<empty>,<empty>,rdb_pipe_numconns,9,,1810,rdb_pipe_numconns,243,,int
+391993,MEMBER,<empty>,<empty>,rdb_pipe_numconns_writing,9,,1811,rdb_pipe_numconns_writing,244,,int
+391994,MEMBER,<empty>,<empty>,*rdb_pipe_buff,10,,1812,rdb_pipe_buff,245,,char*
+391995,MEMBER,<empty>,<empty>,rdb_pipe_bufflen,9,,1813,rdb_pipe_bufflen,246,,int
+391996,MEMBER,<empty>,<empty>,rdb_key_save_delay,9,,1814,rdb_key_save_delay,247,,int
+391997,MEMBER,<empty>,<empty>,key_load_delay,9,,1817,key_load_delay,248,,int
+391998,MEMBER,<empty>,<empty>,child_info_pipe[2],9,,1821,child_info_pipe,249,,int[2]
+391999,MEMBER,<empty>,<empty>,child_info_nread,9,,1822,child_info_nread,250,,int
+392000,MEMBER,<empty>,<empty>,also_propagate,18,,1824,also_propagate,251,,redisOpArray
+392001,MEMBER,<empty>,<empty>,replication_allowed,9,,1825,replication_allowed,252,,int
+392002,MEMBER,<empty>,<empty>,*logfile,10,,1827,logfile,253,,char*
+392003,MEMBER,<empty>,<empty>,syslog_enabled,9,,1828,syslog_enabled,254,,int
+392004,MEMBER,<empty>,<empty>,*syslog_ident,10,,1829,syslog_ident,255,,char*
+392005,MEMBER,<empty>,<empty>,syslog_facility,9,,1830,syslog_facility,256,,int
+392006,MEMBER,<empty>,<empty>,crashlog_enabled,9,,1831,crashlog_enabled,257,,int
+392007,MEMBER,<empty>,<empty>,memcheck_enabled,9,,1833,memcheck_enabled,258,,int
+392008,MEMBER,<empty>,<empty>,use_exit_on_panic,9,,1834,use_exit_on_panic,259,,int
+392009,MEMBER,<empty>,<empty>,shutdown_timeout,9,,1837,shutdown_timeout,260,,int
+392010,MEMBER,<empty>,<empty>,shutdown_on_sigint,9,,1838,shutdown_on_sigint,261,,int
+392011,MEMBER,<empty>,<empty>,shutdown_on_sigterm,9,,1839,shutdown_on_sigterm,262,,int
+392012,MEMBER,<empty>,<empty>,replid[CONFIG_RUN_ID_SIZE+1],10,,1842,replid,263,,char[41]
+392013,MEMBER,<empty>,<empty>,replid2[CONFIG_RUN_ID_SIZE+1],10,,1843,replid2,264,,char[41]
+392014,MEMBER,<empty>,<empty>,master_repl_offset,15,,1844,master_repl_offset,265,,long long
+392015,MEMBER,<empty>,<empty>,second_replid_offset,15,,1845,second_replid_offset,266,,long long
+392016,MEMBER,<empty>,<empty>,fsynced_reploff_pending,27,,1846,fsynced_reploff_pending,267,,long long
+392017,MEMBER,<empty>,<empty>,fsynced_reploff,15,,1850,fsynced_reploff,268,,long long
+392018,MEMBER,<empty>,<empty>,slaveseldb,9,,1851,slaveseldb,269,,int
+392019,MEMBER,<empty>,<empty>,repl_ping_slave_period,9,,1852,repl_ping_slave_period,270,,int
+392020,MEMBER,<empty>,<empty>,*repl_backlog,17,,1853,repl_backlog,271,,replBacklog*
+392021,MEMBER,<empty>,<empty>,repl_backlog_size,15,,1854,repl_backlog_size,272,,long long
+392022,MEMBER,<empty>,<empty>,repl_backlog_time_limit,12,,1855,repl_backlog_time_limit,273,,time_t
+392023,MEMBER,<empty>,<empty>,repl_no_slaves_since,12,,1857,repl_no_slaves_since,274,,time_t
+392024,MEMBER,<empty>,<empty>,repl_min_slaves_to_write,9,,1859,repl_min_slaves_to_write,275,,int
+392025,MEMBER,<empty>,<empty>,repl_min_slaves_max_lag,9,,1860,repl_min_slaves_max_lag,276,,int
+392026,MEMBER,<empty>,<empty>,repl_good_slaves_count,9,,1861,repl_good_slaves_count,277,,int
+392027,MEMBER,<empty>,<empty>,repl_diskless_sync,9,,1862,repl_diskless_sync,278,,int
+392028,MEMBER,<empty>,<empty>,repl_diskless_load,9,,1863,repl_diskless_load,279,,int
+392029,MEMBER,<empty>,<empty>,repl_diskless_sync_delay,9,,1865,repl_diskless_sync_delay,280,,int
+392030,MEMBER,<empty>,<empty>,repl_diskless_sync_max_replicas,9,,1866,repl_diskless_sync_max_replicas,281,,int
+392031,MEMBER,<empty>,<empty>,repl_buffer_mem,12,,1868,repl_buffer_mem,282,,size_t
+392032,MEMBER,<empty>,<empty>,*repl_buffer_blocks,10,,1869,repl_buffer_blocks,283,,list*
+392033,MEMBER,<empty>,<empty>,*masteruser,10,,1872,masteruser,284,,char*
+392034,MEMBER,<empty>,<empty>,masterauth,9,,1873,masterauth,285,,sds
+392035,MEMBER,<empty>,<empty>,*masterhost,10,,1874,masterhost,286,,char*
+392036,MEMBER,<empty>,<empty>,masterport,9,,1875,masterport,287,,int
+392037,MEMBER,<empty>,<empty>,repl_timeout,9,,1876,repl_timeout,288,,int
+392038,MEMBER,<empty>,<empty>,*master,12,,1877,master,289,,client*
+392039,MEMBER,<empty>,<empty>,*cached_master,12,,1878,cached_master,290,,client*
+392040,MEMBER,<empty>,<empty>,repl_syncio_timeout,9,,1879,repl_syncio_timeout,291,,int
+392041,MEMBER,<empty>,<empty>,repl_state,9,,1880,repl_state,292,,int
+392042,MEMBER,<empty>,<empty>,repl_transfer_size,11,,1881,repl_transfer_size,293,,off_t
+392043,MEMBER,<empty>,<empty>,repl_transfer_read,11,,1882,repl_transfer_read,294,,off_t
+392044,MEMBER,<empty>,<empty>,repl_transfer_last_fsync_off,11,,1883,repl_transfer_last_fsync_off,295,,off_t
+392045,MEMBER,<empty>,<empty>,*repl_transfer_s,16,,1884,repl_transfer_s,296,,connection*
+392046,MEMBER,<empty>,<empty>,repl_transfer_fd,9,,1885,repl_transfer_fd,297,,int
+392047,MEMBER,<empty>,<empty>,*repl_transfer_tmpfile,10,,1886,repl_transfer_tmpfile,298,,char*
+392048,MEMBER,<empty>,<empty>,repl_transfer_lastio,12,,1887,repl_transfer_lastio,299,,time_t
+392049,MEMBER,<empty>,<empty>,repl_serve_stale_data,9,,1888,repl_serve_stale_data,300,,int
+392050,MEMBER,<empty>,<empty>,repl_slave_ro,9,,1889,repl_slave_ro,301,,int
+392051,MEMBER,<empty>,<empty>,repl_slave_ignore_maxmemory,9,,1890,repl_slave_ignore_maxmemory,302,,int
+392052,MEMBER,<empty>,<empty>,repl_down_since,12,,1891,repl_down_since,303,,time_t
+392053,MEMBER,<empty>,<empty>,repl_disable_tcp_nodelay,9,,1892,repl_disable_tcp_nodelay,304,,int
+392054,MEMBER,<empty>,<empty>,slave_priority,9,,1893,slave_priority,305,,int
+392055,MEMBER,<empty>,<empty>,replica_announced,9,,1894,replica_announced,306,,int
+392056,MEMBER,<empty>,<empty>,slave_announce_port,9,,1895,slave_announce_port,307,,int
+392057,MEMBER,<empty>,<empty>,*slave_announce_ip,10,,1896,slave_announce_ip,308,,char*
+392058,MEMBER,<empty>,<empty>,propagation_error_behavior,9,,1897,propagation_error_behavior,309,,int
+392059,MEMBER,<empty>,<empty>,repl_ignore_disk_write_error,9,,1899,repl_ignore_disk_write_error,310,,int
+392060,MEMBER,<empty>,<empty>,master_replid[CONFIG_RUN_ID_SIZE+1],10,,1904,master_replid,311,,char[41]
+392061,MEMBER,<empty>,<empty>,master_initial_offset,15,,1905,master_initial_offset,312,,long long
+392062,MEMBER,<empty>,<empty>,repl_slave_lazy_flush,9,,1906,repl_slave_lazy_flush,313,,int
+392063,MEMBER,<empty>,<empty>,*clients_waiting_acks,10,,1908,clients_waiting_acks,314,,list*
+392064,MEMBER,<empty>,<empty>,get_ack_from_slaves,9,,1909,get_ack_from_slaves,315,,int
+392065,MEMBER,<empty>,<empty>,maxclients,18,,1911,maxclients,316,,unsigned int
+392066,MEMBER,<empty>,<empty>,maxmemory,24,,1912,maxmemory,317,,long long unsigned
+392067,MEMBER,<empty>,<empty>,maxmemory_clients,13,,1913,maxmemory_clients,318,,ssize_t
+392068,MEMBER,<empty>,<empty>,maxmemory_policy,9,,1914,maxmemory_policy,319,,int
+392069,MEMBER,<empty>,<empty>,maxmemory_samples,9,,1915,maxmemory_samples,320,,int
+392070,MEMBER,<empty>,<empty>,maxmemory_eviction_tenacity,9,,1916,maxmemory_eviction_tenacity,321,,int
+392071,MEMBER,<empty>,<empty>,lfu_log_factor,9,,1917,lfu_log_factor,322,,int
+392072,MEMBER,<empty>,<empty>,lfu_decay_time,9,,1918,lfu_decay_time,323,,int
+392073,MEMBER,<empty>,<empty>,proto_max_bulk_len,15,,1919,proto_max_bulk_len,324,,long long
+392074,MEMBER,<empty>,<empty>,oom_score_adj_values[CONFIG_OOM_COUNT],9,,1920,oom_score_adj_values,325,,int[3]
+392075,MEMBER,<empty>,<empty>,oom_score_adj,9,,1921,oom_score_adj,326,,int
+392076,MEMBER,<empty>,<empty>,disable_thp,9,,1922,disable_thp,327,,int
+392077,MEMBER,<empty>,<empty>,blocked_clients,18,,1924,blocked_clients,328,,unsigned int
+392078,MEMBER,<empty>,<empty>,blocked_clients_by_type[BLOCKED_NUM],18,,1925,blocked_clients_by_type,329,,unsigned int[9]
+392079,MEMBER,<empty>,<empty>,*unblocked_clients,10,,1926,unblocked_clients,330,,list*
+392080,MEMBER,<empty>,<empty>,*ready_keys,10,,1927,ready_keys,331,,list*
+392081,MEMBER,<empty>,<empty>,tracking_clients,18,,1929,tracking_clients,332,,unsigned int
+392082,MEMBER,<empty>,<empty>,tracking_table_max_keys,12,,1930,tracking_table_max_keys,333,,size_t
+392083,MEMBER,<empty>,<empty>,*tracking_pending_keys,10,,1931,tracking_pending_keys,334,,list*
+392084,MEMBER,<empty>,<empty>,*pending_push_messages,10,,1932,pending_push_messages,335,,list*
+392085,MEMBER,<empty>,<empty>,sort_desc,9,,1935,sort_desc,336,,int
+392086,MEMBER,<empty>,<empty>,sort_alpha,9,,1936,sort_alpha,337,,int
+392087,MEMBER,<empty>,<empty>,sort_bypattern,9,,1937,sort_bypattern,338,,int
+392088,MEMBER,<empty>,<empty>,sort_store,9,,1938,sort_store,339,,int
+392089,MEMBER,<empty>,<empty>,hash_max_listpack_entries,12,,1940,hash_max_listpack_entries,340,,size_t
+392090,MEMBER,<empty>,<empty>,hash_max_listpack_value,12,,1941,hash_max_listpack_value,341,,size_t
+392091,MEMBER,<empty>,<empty>,set_max_intset_entries,12,,1942,set_max_intset_entries,342,,size_t
+392092,MEMBER,<empty>,<empty>,set_max_listpack_entries,12,,1943,set_max_listpack_entries,343,,size_t
+392093,MEMBER,<empty>,<empty>,set_max_listpack_value,12,,1944,set_max_listpack_value,344,,size_t
+392094,MEMBER,<empty>,<empty>,zset_max_listpack_entries,12,,1945,zset_max_listpack_entries,345,,size_t
+392095,MEMBER,<empty>,<empty>,zset_max_listpack_value,12,,1946,zset_max_listpack_value,346,,size_t
+392096,MEMBER,<empty>,<empty>,hll_sparse_max_bytes,12,,1947,hll_sparse_max_bytes,347,,size_t
+392097,MEMBER,<empty>,<empty>,stream_node_max_bytes,12,,1948,stream_node_max_bytes,348,,size_t
+392098,MEMBER,<empty>,<empty>,stream_node_max_entries,15,,1949,stream_node_max_entries,349,,long long
+392099,MEMBER,<empty>,<empty>,list_max_listpack_size,9,,1951,list_max_listpack_size,350,,int
+392100,MEMBER,<empty>,<empty>,list_compress_depth,9,,1952,list_compress_depth,351,,int
+392101,MEMBER,<empty>,<empty>,unixtime,24,,1954,unixtime,352,,time_t
+392102,MEMBER,<empty>,<empty>,timezone,12,,1955,timezone,353,,time_t
+392103,MEMBER,<empty>,<empty>,daylight_active,9,,1956,daylight_active,354,,int
+392104,MEMBER,<empty>,<empty>,mstime,14,,1957,mstime,355,,mstime_t
+392105,MEMBER,<empty>,<empty>,ustime,14,,1958,ustime,356,,ustime_t
+392106,MEMBER,<empty>,<empty>,cmd_time_snapshot,14,,1959,cmd_time_snapshot,357,,mstime_t
+392107,MEMBER,<empty>,<empty>,blocking_op_nesting,12,,1960,blocking_op_nesting,358,,size_t
+392108,MEMBER,<empty>,<empty>,blocked_last_cron,15,,1961,blocked_last_cron,359,,long long
+392109,MEMBER,<empty>,<empty>,*pubsub_channels,10,,1963,pubsub_channels,360,,dict*
+392110,MEMBER,<empty>,<empty>,*pubsub_patterns,10,,1964,pubsub_patterns,361,,dict*
+392111,MEMBER,<empty>,<empty>,notify_keyspace_events,9,,1965,notify_keyspace_events,362,,int
+392112,MEMBER,<empty>,<empty>,*pubsubshard_channels,10,,1967,pubsubshard_channels,363,,dict*
+392113,MEMBER,<empty>,<empty>,cluster_enabled,9,,1969,cluster_enabled,364,,int
+392114,MEMBER,<empty>,<empty>,cluster_port,9,,1970,cluster_port,365,,int
+392115,MEMBER,<empty>,<empty>,cluster_node_timeout,14,,1971,cluster_node_timeout,366,,mstime_t
+392116,MEMBER,<empty>,<empty>,cluster_ping_interval,14,,1972,cluster_ping_interval,367,,mstime_t
+392117,MEMBER,<empty>,<empty>,*cluster_configfile,10,,1973,cluster_configfile,368,,char*
+392119,MEMBER,<empty>,<empty>,*cluster,25,,1974,cluster,370,,clusterState*
+392120,MEMBER,<empty>,<empty>,cluster_migration_barrier,9,,1975,cluster_migration_barrier,371,,int
+392121,MEMBER,<empty>,<empty>,cluster_allow_replica_migration,9,,1976,cluster_allow_replica_migration,372,,int
+392122,MEMBER,<empty>,<empty>,cluster_slave_validity_factor,9,,1977,cluster_slave_validity_factor,373,,int
+392123,MEMBER,<empty>,<empty>,cluster_require_full_coverage,9,,1978,cluster_require_full_coverage,374,,int
+392124,MEMBER,<empty>,<empty>,cluster_slave_no_failover,9,,1980,cluster_slave_no_failover,375,,int
+392125,MEMBER,<empty>,<empty>,*cluster_announce_ip,10,,1982,cluster_announce_ip,376,,char*
+392126,MEMBER,<empty>,<empty>,*cluster_announce_hostname,10,,1983,cluster_announce_hostname,377,,char*
+392127,MEMBER,<empty>,<empty>,*cluster_announce_human_nodename,10,,1984,cluster_announce_human_nodename,378,,char*
+392128,MEMBER,<empty>,<empty>,cluster_preferred_endpoint_type,9,,1985,cluster_preferred_endpoint_type,379,,int
+392129,MEMBER,<empty>,<empty>,cluster_announce_port,9,,1986,cluster_announce_port,380,,int
+392130,MEMBER,<empty>,<empty>,cluster_announce_tls_port,9,,1987,cluster_announce_tls_port,381,,int
+392131,MEMBER,<empty>,<empty>,cluster_announce_bus_port,9,,1988,cluster_announce_bus_port,382,,int
+392132,MEMBER,<empty>,<empty>,cluster_module_flags,9,,1989,cluster_module_flags,383,,int
+392133,MEMBER,<empty>,<empty>,cluster_allow_reads_when_down,9,,1993,cluster_allow_reads_when_down,384,,int
+392134,MEMBER,<empty>,<empty>,cluster_config_file_lock_fd,9,,1995,cluster_config_file_lock_fd,385,,int
+392135,MEMBER,<empty>,<empty>,cluster_link_msg_queue_limit_bytes,24,,1996,cluster_link_msg_queue_limit_bytes,386,,long long unsigned
+392136,MEMBER,<empty>,<empty>,cluster_drop_packet_filter,9,,1997,cluster_drop_packet_filter,387,,int
+392137,MEMBER,<empty>,<empty>,busy_reply_threshold,14,,2000,busy_reply_threshold,388,,mstime_t
+392138,MEMBER,<empty>,<empty>,pre_command_oom_state,9,,2001,pre_command_oom_state,389,,int
+392139,MEMBER,<empty>,<empty>,script_disable_deny_script,9,,2002,script_disable_deny_script,390,,int
+392140,MEMBER,<empty>,<empty>,lazyfree_lazy_eviction,9,,2004,lazyfree_lazy_eviction,391,,int
+392141,MEMBER,<empty>,<empty>,lazyfree_lazy_expire,9,,2005,lazyfree_lazy_expire,392,,int
+392142,MEMBER,<empty>,<empty>,lazyfree_lazy_server_del,9,,2006,lazyfree_lazy_server_del,393,,int
+392143,MEMBER,<empty>,<empty>,lazyfree_lazy_user_del,9,,2007,lazyfree_lazy_user_del,394,,int
+392144,MEMBER,<empty>,<empty>,lazyfree_lazy_user_flush,9,,2008,lazyfree_lazy_user_flush,395,,int
+392145,MEMBER,<empty>,<empty>,latency_monitor_threshold,15,,2010,latency_monitor_threshold,396,,long long
+392146,MEMBER,<empty>,<empty>,*latency_events,10,,2011,latency_events,397,,dict*
+392147,MEMBER,<empty>,<empty>,*acl_filename,10,,2013,acl_filename,398,,char*
+392148,MEMBER,<empty>,<empty>,acllog_max_len,19,,2014,acllog_max_len,399,,long unsigned
+392149,MEMBER,<empty>,<empty>,requirepass,9,,2015,requirepass,400,,sds
+392150,MEMBER,<empty>,<empty>,acl_pubsub_default,9,,2018,acl_pubsub_default,401,,int
+392151,MEMBER,<empty>,<empty>,acl_info,13,,2019,acl_info,402,,aclInfo
+392152,MEMBER,<empty>,<empty>,watchdog_period,9,,2021,watchdog_period,403,,int
+392153,MEMBER,<empty>,<empty>,system_memory_size,12,,2023,system_memory_size,404,,size_t
+392154,MEMBER,<empty>,<empty>,tls_cluster,9,,2025,tls_cluster,405,,int
+392155,MEMBER,<empty>,<empty>,tls_replication,9,,2026,tls_replication,406,,int
+392156,MEMBER,<empty>,<empty>,tls_auth_clients,9,,2027,tls_auth_clients,407,,int
+392157,MEMBER,<empty>,<empty>,tls_ctx_config,27,,2028,tls_ctx_config,408,,redisTLSContextConfig
+392158,MEMBER,<empty>,<empty>,*server_cpulist,10,,2030,server_cpulist,409,,char*
+392159,MEMBER,<empty>,<empty>,*bio_cpulist,10,,2031,bio_cpulist,410,,char*
+392160,MEMBER,<empty>,<empty>,*aof_rewrite_cpulist,10,,2032,aof_rewrite_cpulist,411,,char*
+392161,MEMBER,<empty>,<empty>,*bgsave_cpulist,10,,2033,bgsave_cpulist,412,,char*
+392163,MEMBER,<empty>,<empty>,*sentinel_config,27,,2035,sentinel_config,414,,sentinelConfig*
+392164,MEMBER,<empty>,<empty>,failover_end_time,14,,2037,failover_end_time,415,,mstime_t
+392165,MEMBER,<empty>,<empty>,force_failover,9,,2038,force_failover,416,,int
+392166,MEMBER,<empty>,<empty>,*target_replica_host,10,,2040,target_replica_host,417,,char*
+392167,MEMBER,<empty>,<empty>,target_replica_port,9,,2042,target_replica_port,418,,int
+392168,MEMBER,<empty>,<empty>,failover_state,9,,2043,failover_state,419,,int
+392169,MEMBER,<empty>,<empty>,cluster_allow_pubsubshard_when_down,9,,2044,cluster_allow_pubsubshard_when_down,420,,int
+392170,MEMBER,<empty>,<empty>,reply_buffer_peak_reset_time,10,,2046,reply_buffer_peak_reset_time,421,,long
+392171,MEMBER,<empty>,<empty>,reply_buffer_resizing_enabled,9,,2047,reply_buffer_resizing_enabled,422,,int
+392172,MEMBER,<empty>,<empty>,*locale_collate,10,,2049,locale_collate,423,,char*
+392240,MEMBER,<empty>,<empty>,pos,9,,2055,pos,1,,int
+392241,MEMBER,<empty>,<empty>,flags,9,,2056,flags,2,,int
+392244,MEMBER,<empty>,<empty>,keysbuf[MAX_KEYS_BUFFER],18,,2065,keysbuf,1,,keyReference[256]
+392245,MEMBER,<empty>,<empty>,*keys,18,,2066,keys,2,,keyReference*
+392246,MEMBER,<empty>,<empty>,numkeys,9,,2067,numkeys,3,,int
+392247,MEMBER,<empty>,<empty>,size,9,,2068,size,4,,int
+392258,MEMBER,<empty>,<empty>,KSPEC_BS_INVALID = 0,5,,2093,KSPEC_BS_INVALID,1,,ANY
+392259,MEMBER,<empty>,<empty>,KSPEC_BS_UNKNOWN,5,,2094,KSPEC_BS_UNKNOWN,2,,ANY
+392260,MEMBER,<empty>,<empty>,KSPEC_BS_INDEX,5,,2095,KSPEC_BS_INDEX,3,,ANY
+392261,MEMBER,<empty>,<empty>,KSPEC_BS_KEYWORD,5,,2096,KSPEC_BS_KEYWORD,4,,ANY
+392271,MEMBER,<empty>,<empty>,KSPEC_FK_INVALID = 0,5,,2101,KSPEC_FK_INVALID,1,,ANY
+392272,MEMBER,<empty>,<empty>,KSPEC_FK_UNKNOWN,5,,2102,KSPEC_FK_UNKNOWN,2,,ANY
+392273,MEMBER,<empty>,<empty>,KSPEC_FK_RANGE,5,,2103,KSPEC_FK_RANGE,3,,ANY
+392274,MEMBER,<empty>,<empty>,KSPEC_FK_KEYNUM,5,,2104,KSPEC_FK_KEYNUM,4,,ANY
+392284,MEMBER,<empty>,<empty>,*notes,16,,2110,notes,1,,char*
+392285,MEMBER,<empty>,<empty>,flags,14,,2111,flags,2,,uint64_t
+392286,MEMBER,<empty>,<empty>,begin_search_type,19,,2112,begin_search_type,3,,kspec_bs_type
+392289,MEMBER,<empty>,<empty>,pos,17,,2116,pos,1,,int
+392290,MEMBER,<empty>,<empty>,index,11,,2117,index,2,,struct
+392292,MEMBER,<empty>,<empty>,*keyword,24,,2120,keyword,1,,char*
+392293,MEMBER,<empty>,<empty>,startfrom,17,,2124,startfrom,2,,int
+392294,MEMBER,<empty>,<empty>,keyword,11,,2125,keyword,4,,struct
+392295,MEMBER,<empty>,<empty>,bs,7,,2126,bs,5,,union
+392296,MEMBER,<empty>,<empty>,find_keys_type,19,,2127,find_keys_type,6,,kspec_fk_type
+392299,MEMBER,<empty>,<empty>,lastkey,17,,2135,lastkey,1,,int
+392300,MEMBER,<empty>,<empty>,keystep,17,,2137,keystep,2,,int
+392301,MEMBER,<empty>,<empty>,limit,17,,2140,limit,3,,int
+392302,MEMBER,<empty>,<empty>,range,11,,2141,range,2,,struct
+392304,MEMBER,<empty>,<empty>,keynumidx,17,,2144,keynumidx,1,,int
+392305,MEMBER,<empty>,<empty>,firstkey,17,,2147,firstkey,2,,int
+392306,MEMBER,<empty>,<empty>,keystep,17,,2149,keystep,3,,int
+392307,MEMBER,<empty>,<empty>,keynum,11,,2150,keynum,4,,struct
+392308,MEMBER,<empty>,<empty>,fk,7,,2151,fk,8,,union
+392311,MEMBER,<empty>,<empty>,*since,16,,2189,since,1,,char*
+392312,MEMBER,<empty>,<empty>,*changes,16,,2190,changes,2,,char*
+392315,MEMBER,<empty>,<empty>,COMMAND_GROUP_GENERIC,5,,2195,COMMAND_GROUP_GENERIC,1,,ANY
+392316,MEMBER,<empty>,<empty>,COMMAND_GROUP_STRING,5,,2196,COMMAND_GROUP_STRING,2,,ANY
+392317,MEMBER,<empty>,<empty>,COMMAND_GROUP_LIST,5,,2197,COMMAND_GROUP_LIST,3,,ANY
+392318,MEMBER,<empty>,<empty>,COMMAND_GROUP_SET,5,,2198,COMMAND_GROUP_SET,4,,ANY
+392319,MEMBER,<empty>,<empty>,COMMAND_GROUP_SORTED_SET,5,,2199,COMMAND_GROUP_SORTED_SET,5,,ANY
+392320,MEMBER,<empty>,<empty>,COMMAND_GROUP_HASH,5,,2200,COMMAND_GROUP_HASH,6,,ANY
+392321,MEMBER,<empty>,<empty>,COMMAND_GROUP_PUBSUB,5,,2201,COMMAND_GROUP_PUBSUB,7,,ANY
+392322,MEMBER,<empty>,<empty>,COMMAND_GROUP_TRANSACTIONS,5,,2202,COMMAND_GROUP_TRANSACTIONS,8,,ANY
+392323,MEMBER,<empty>,<empty>,COMMAND_GROUP_CONNECTION,5,,2203,COMMAND_GROUP_CONNECTION,9,,ANY
+392324,MEMBER,<empty>,<empty>,COMMAND_GROUP_SERVER,5,,2204,COMMAND_GROUP_SERVER,10,,ANY
+392325,MEMBER,<empty>,<empty>,COMMAND_GROUP_SCRIPTING,5,,2205,COMMAND_GROUP_SCRIPTING,11,,ANY
+392326,MEMBER,<empty>,<empty>,COMMAND_GROUP_HYPERLOGLOG,5,,2206,COMMAND_GROUP_HYPERLOGLOG,12,,ANY
+392327,MEMBER,<empty>,<empty>,COMMAND_GROUP_CLUSTER,5,,2207,COMMAND_GROUP_CLUSTER,13,,ANY
+392328,MEMBER,<empty>,<empty>,COMMAND_GROUP_SENTINEL,5,,2208,COMMAND_GROUP_SENTINEL,14,,ANY
+392329,MEMBER,<empty>,<empty>,COMMAND_GROUP_GEO,5,,2209,COMMAND_GROUP_GEO,15,,ANY
+392330,MEMBER,<empty>,<empty>,COMMAND_GROUP_STREAM,5,,2210,COMMAND_GROUP_STREAM,16,,ANY
+392331,MEMBER,<empty>,<empty>,COMMAND_GROUP_BITMAP,5,,2211,COMMAND_GROUP_BITMAP,17,,ANY
+392332,MEMBER,<empty>,<empty>,COMMAND_GROUP_MODULE,5,,2212,COMMAND_GROUP_MODULE,18,,ANY
+392348,MEMBER,<empty>,<empty>,*declared_name,16,,2313,declared_name,1,,char*
+392349,MEMBER,<empty>,<empty>,*summary,16,,2315,summary,2,,char*
+392350,MEMBER,<empty>,<empty>,*complexity,16,,2316,complexity,3,,char*
+392351,MEMBER,<empty>,<empty>,*since,16,,2317,since,4,,char*
+392352,MEMBER,<empty>,<empty>,doc_flags,9,,2318,doc_flags,5,,int
+392353,MEMBER,<empty>,<empty>,*replaced_by,16,,2319,replaced_by,6,,char*
+392354,MEMBER,<empty>,<empty>,*deprecated_since,16,,2320,deprecated_since,7,,char*
+392355,MEMBER,<empty>,<empty>,group,23,,2321,group,8,,redisCommandGroup
+392356,MEMBER,<empty>,<empty>,*history,20,,2322,history,9,,commandHistory*
+392357,MEMBER,<empty>,<empty>,num_history,9,,2323,num_history,10,,int
+392358,MEMBER,<empty>,<empty>,**tips,16,,2324,tips,11,,char**
+392359,MEMBER,<empty>,<empty>,num_tips,9,,2325,num_tips,12,,int
+392360,MEMBER,<empty>,<empty>,*proc,22,,2326,proc,13,,redisCommandProc*
+392361,MEMBER,<empty>,<empty>,arity,9,,2327,arity,14,,int
+392362,MEMBER,<empty>,<empty>,flags,14,,2328,flags,15,,uint64_t
+392363,MEMBER,<empty>,<empty>,acl_categories,14,,2329,acl_categories,16,,uint64_t
+392364,MEMBER,<empty>,<empty>,*key_specs,13,,2330,key_specs,17,,keySpec*
+392365,MEMBER,<empty>,<empty>,key_specs_num,9,,2331,key_specs_num,18,,int
+392366,MEMBER,<empty>,<empty>,*getkeys_proc,22,,2334,getkeys_proc,19,,redisGetKeysProc*
+392367,MEMBER,<empty>,<empty>,num_args,9,,2335,num_args,20,,int
+392369,MEMBER,<empty>,<empty>,*subcommands,25,,2337,subcommands,22,,redisCommand*
+392371,MEMBER,<empty>,<empty>,*args,28,,2339,args,24,,redisCommandArg*
+392373,MEMBER,<empty>,<empty>,*reply_schema,23,,2342,reply_schema,26,,jsonObject*
+392374,MEMBER,<empty>,<empty>,microseconds,15,,2346,microseconds,27,,long long
+392375,MEMBER,<empty>,<empty>,calls,29,,2346,calls,28,,long long
+392376,MEMBER,<empty>,<empty>,rejected_calls,36,,2346,rejected_calls,29,,long long
+392377,MEMBER,<empty>,<empty>,failed_calls,52,,2346,failed_calls,30,,long long
+392378,MEMBER,<empty>,<empty>,id,9,,2347,id,31,,int
+392379,MEMBER,<empty>,<empty>,fullname,9,,2352,fullname,32,,sds
+392381,MEMBER,<empty>,<empty>,* latency_histogram,25,,2353,latency_histogram,34,,hdr_histogram*
+392382,MEMBER,<empty>,<empty>,legacy_range_key_spec,13,,2354,legacy_range_key_spec,35,,keySpec
+392383,MEMBER,<empty>,<empty>,*subcommands_dict,10,,2358,subcommands_dict,36,,dict*
+392385,MEMBER,<empty>,<empty>,*parent,25,,2360,parent,38,,redisCommand*
+392387,MEMBER,<empty>,<empty>,*module_cmd,31,,2361,module_cmd,40,,RedisModuleCommand*
+392389,MEMBER,<empty>,<empty>,count,15,,2365,count,1,,long long
+392391,MEMBER,<empty>,<empty>,*name,10,,2369,name,1,,char*
+392392,MEMBER,<empty>,<empty>,pointer,19,,2370,pointer,2,,long unsigned
+392394,MEMBER,<empty>,<empty>,*obj,10,,2374,obj,1,,robj*
+392396,MEMBER,<empty>,<empty>,score,16,,2376,score,1,,double
+392397,MEMBER,<empty>,<empty>,*cmpobj,14,,2377,cmpobj,2,,robj*
+392398,MEMBER,<empty>,<empty>,u,7,,2378,u,3,,union
+392401,MEMBER,<empty>,<empty>,type,9,,2382,type,1,,int
+392402,MEMBER,<empty>,<empty>,*pattern,10,,2383,pattern,2,,robj*
+392405,MEMBER,<empty>,<empty>,*subject,10,,2388,subject,1,,robj*
+392406,MEMBER,<empty>,<empty>,encoding,19,,2389,encoding,2,,unsigned char
+392407,MEMBER,<empty>,<empty>,direction,19,,2390,direction,3,,unsigned char
+392408,MEMBER,<empty>,<empty>,*lpi,19,,2392,lpi,4,,unsigned char*
+392409,MEMBER,<empty>,<empty>,*iter,19,,2393,iter,5,,quicklistIter*
+392412,MEMBER,<empty>,<empty>,*li,22,,2398,li,1,,listTypeIterator*
+392413,MEMBER,<empty>,<empty>,*lpe,19,,2399,lpe,2,,unsigned char*
+392414,MEMBER,<empty>,<empty>,entry,20,,2400,entry,3,,quicklistEntry
+392417,MEMBER,<empty>,<empty>,*subject,10,,2405,subject,1,,robj*
+392418,MEMBER,<empty>,<empty>,encoding,9,,2406,encoding,2,,int
+392419,MEMBER,<empty>,<empty>,ii,9,,2407,ii,3,,int
+392420,MEMBER,<empty>,<empty>,*di,18,,2408,di,4,,dictIterator*
+392421,MEMBER,<empty>,<empty>,*lpi,19,,2409,lpi,5,,unsigned char*
+392424,MEMBER,<empty>,<empty>,*subject,10,,2417,subject,1,,robj*
+392425,MEMBER,<empty>,<empty>,encoding,9,,2418,encoding,2,,int
+392426,MEMBER,<empty>,<empty>,*fptr,19,,2420,fptr,3,,unsigned char*
+392427,MEMBER,<empty>,<empty>,*vptr,26,,2420,vptr,4,,unsigned char*
+392428,MEMBER,<empty>,<empty>,*di,18,,2422,di,5,,dictIterator*
+392429,MEMBER,<empty>,<empty>,*de,15,,2423,de,6,,dictEntry*
+393694,MEMBER,<empty>,<empty>,LIST_CONV_AUTO,5,,2703,LIST_CONV_AUTO,1,,ANY
+393695,MEMBER,<empty>,<empty>,LIST_CONV_GROWING,5,,2704,LIST_CONV_GROWING,2,,ANY
+393696,MEMBER,<empty>,<empty>,LIST_CONV_SHRINKING,5,,2705,LIST_CONV_SHRINKING,3,,ANY
+394555,MEMBER,<empty>,<empty>,AUTH_OK = 0,5,,2907,AUTH_OK,1,,ANY
+394556,MEMBER,<empty>,<empty>,AUTH_ERR,5,,2908,AUTH_ERR,2,,ANY
+394557,MEMBER,<empty>,<empty>,AUTH_NOT_HANDLED,5,,2909,AUTH_NOT_HANDLED,3,,ANY
+394558,MEMBER,<empty>,<empty>,AUTH_BLOCKED,5,,2910,AUTH_BLOCKED,4,,ANY
+394748,MEMBER,<empty>,<empty>,min,12,,2960,min,1,,double
+394749,MEMBER,<empty>,<empty>,max,17,,2960,max,2,,double
+394750,MEMBER,<empty>,<empty>,minex,9,,2961,minex,3,,int
+394751,MEMBER,<empty>,<empty>,maxex,16,,2961,maxex,4,,int
+394754,MEMBER,<empty>,<empty>,min,9,,2966,min,1,,sds
+394755,MEMBER,<empty>,<empty>,max,14,,2966,max,2,,sds
+394756,MEMBER,<empty>,<empty>,minex,9,,2967,minex,3,,int
+394757,MEMBER,<empty>,<empty>,maxex,16,,2967,maxex,4,,int
+395621,MEMBER,<empty>,<empty>,*name,10,,3176,name,1,,char*
+395622,MEMBER,<empty>,<empty>,val,9,,3177,val,2,,int
+395625,MEMBER,<empty>,<empty>,BOOL_CONFIG,5,,3182,BOOL_CONFIG,1,,ANY
+395626,MEMBER,<empty>,<empty>,NUMERIC_CONFIG,5,,3183,NUMERIC_CONFIG,2,,ANY
+395627,MEMBER,<empty>,<empty>,STRING_CONFIG,5,,3184,STRING_CONFIG,3,,ANY
+395628,MEMBER,<empty>,<empty>,SDS_CONFIG,5,,3185,SDS_CONFIG,4,,ANY
+395629,MEMBER,<empty>,<empty>,ENUM_CONFIG,5,,3186,ENUM_CONFIG,5,,ANY
+395630,MEMBER,<empty>,<empty>,SPECIAL_CONFIG,5,,3187,SPECIAL_CONFIG,6,,ANY
+396455,MEMBER,<empty>,<empty>,flags,14,,3360,flags,1,,uint64_t
+396456,MEMBER,<empty>,<empty>,*body,10,,3361,body,2,,robj*
+407584,MEMBER,<empty>,<empty>,state[5],14,,11,state,1,,uint32_t[5]
+407585,MEMBER,<empty>,<empty>,count[2],14,,12,count,2,,uint32_t[2]
+407586,MEMBER,<empty>,<empty>,buffer[64],19,,13,buffer,3,,unsigned char[64]
+408626,MEMBER,<empty>,<empty>,data[64],7,,24,data,1,,BYTE[64]
+408627,MEMBER,<empty>,<empty>,datalen,7,,25,datalen,2,,WORD
+408628,MEMBER,<empty>,<empty>,bitlen,21,,26,bitlen,3,,long long unsigned
+408629,MEMBER,<empty>,<empty>,state[8],7,,27,state,4,,WORD[8]
+411167,MEMBER,<empty>,<empty>,**argv,10,,38,argv,1,,robj**
+411168,MEMBER,<empty>,<empty>,argc,9,,39,argc,2,,int
+411169,MEMBER,<empty>,<empty>,id,15,,40,id,3,,long long
+411170,MEMBER,<empty>,<empty>,duration,15,,41,duration,4,,long long
+411171,MEMBER,<empty>,<empty>,time,12,,42,time,5,,time_t
+411172,MEMBER,<empty>,<empty>,cname,9,,43,cname,6,,sds
+411173,MEMBER,<empty>,<empty>,peerid,9,,44,peerid,7,,sds
+415401,MEMBER,<empty>,<empty>,value,12,,35,value,1,,double
+415402,MEMBER,<empty>,<empty>,*label,10,,36,label,2,,char*
+415404,MEMBER,<empty>,<empty>,length,9,,40,length,1,,int
+415405,MEMBER,<empty>,<empty>,labels,9,,41,labels,2,,int
+415407,MEMBER,<empty>,<empty>,*samples,19,,42,samples,4,,sample*
+415408,MEMBER,<empty>,<empty>,min,12,,43,min,5,,double
+415409,MEMBER,<empty>,<empty>,max,17,,43,max,6,,double
+415453,MEMBER,<empty>,<empty>,ms,14,,12,ms,1,,uint64_t
+415454,MEMBER,<empty>,<empty>,seq,14,,13,seq,2,,uint64_t
+415457,MEMBER,<empty>,<empty>,*rax,9,,17,rax,1,,rax*
+415458,MEMBER,<empty>,<empty>,length,14,,18,length,2,,uint64_t
+415459,MEMBER,<empty>,<empty>,last_id,14,,19,last_id,3,,streamID
+415460,MEMBER,<empty>,<empty>,first_id,14,,20,first_id,4,,streamID
+415461,MEMBER,<empty>,<empty>,max_deleted_entry_id,14,,21,max_deleted_entry_id,5,,streamID
+415462,MEMBER,<empty>,<empty>,entries_added,14,,22,entries_added,6,,uint64_t
+415463,MEMBER,<empty>,<empty>,*cgroups,9,,23,cgroups,7,,rax*
+415466,MEMBER,<empty>,<empty>,*stream,12,,33,stream,1,,stream*
+415467,MEMBER,<empty>,<empty>,master_id,14,,34,master_id,2,,streamID
+415468,MEMBER,<empty>,<empty>,master_fields_count,14,,35,master_fields_count,3,,uint64_t
+415469,MEMBER,<empty>,<empty>,*master_fields_start,19,,36,master_fields_start,4,,unsigned char*
+415470,MEMBER,<empty>,<empty>,*master_fields_ptr,19,,37,master_fields_ptr,5,,unsigned char*
+415471,MEMBER,<empty>,<empty>,entry_flags,9,,38,entry_flags,6,,int
+415472,MEMBER,<empty>,<empty>,rev,9,,39,rev,7,,int
+415473,MEMBER,<empty>,<empty>,skip_tombstones,9,,40,skip_tombstones,8,,int
+415474,MEMBER,<empty>,<empty>,start_key[2],14,,41,start_key,9,,uint64_t[2]
+415475,MEMBER,<empty>,<empty>,end_key[2],14,,42,end_key,10,,uint64_t[2]
+415476,MEMBER,<empty>,<empty>,ri,17,,43,ri,11,,raxIterator
+415477,MEMBER,<empty>,<empty>,*lp,19,,44,lp,12,,unsigned char*
+415478,MEMBER,<empty>,<empty>,*lp_ele,19,,45,lp_ele,13,,unsigned char*
+415479,MEMBER,<empty>,<empty>,*lp_flags,19,,46,lp_flags,14,,unsigned char*
+415480,MEMBER,<empty>,<empty>,field_buf[LP_INTBUF_SIZE],19,,50,field_buf,15,,unsigned char[21]
+415481,MEMBER,<empty>,<empty>,value_buf[LP_INTBUF_SIZE],19,,51,value_buf,16,,unsigned char[21]
+415500,MEMBER,<empty>,<empty>,last_id,14,,56,last_id,1,,streamID
+415501,MEMBER,<empty>,<empty>,entries_read,15,,59,entries_read,2,,long long
+415502,MEMBER,<empty>,<empty>,*pel,9,,64,pel,3,,rax*
+415503,MEMBER,<empty>,<empty>,*consumers,9,,70,consumers,4,,rax*
+415506,MEMBER,<empty>,<empty>,seen_time,14,,77,seen_time,1,,mstime_t
+415507,MEMBER,<empty>,<empty>,active_time,14,,78,active_time,2,,mstime_t
+415508,MEMBER,<empty>,<empty>,name,9,,79,name,3,,sds
+415509,MEMBER,<empty>,<empty>,*pel,9,,82,pel,4,,rax*
+415512,MEMBER,<empty>,<empty>,delivery_time,14,,93,delivery_time,1,,mstime_t
+415513,MEMBER,<empty>,<empty>,delivery_count,14,,94,delivery_count,2,,uint64_t
+415514,MEMBER,<empty>,<empty>,*consumer,20,,95,consumer,3,,streamConsumer*
+415517,MEMBER,<empty>,<empty>,*keyname,10,,102,keyname,1,,robj*
+415518,MEMBER,<empty>,<empty>,*groupname,10,,103,groupname,2,,robj*
+416211,MEMBER,<empty>,<empty>,*name,16,,336,name,1,,char*
+433796,MEMBER,<empty>,<empty>,id,14,,674,id,1,,streamID
+433797,MEMBER,<empty>,<empty>,id_given,9,,675,id_given,2,,int
+433798,MEMBER,<empty>,<empty>,seq_given,9,,676,seq_given,3,,int
+433799,MEMBER,<empty>,<empty>,no_mkstream,9,,677,no_mkstream,4,,int
+433800,MEMBER,<empty>,<empty>,trim_strategy,9,,680,trim_strategy,5,,int
+433801,MEMBER,<empty>,<empty>,trim_strategy_arg_idx,9,,681,trim_strategy_arg_idx,6,,int
+433802,MEMBER,<empty>,<empty>,approx_trim,9,,682,approx_trim,7,,int
+433803,MEMBER,<empty>,<empty>,limit,15,,684,limit,8,,long long
+433804,MEMBER,<empty>,<empty>,maxlen,15,,687,maxlen,9,,long long
+433805,MEMBER,<empty>,<empty>,minid,14,,689,minid,10,,streamID
+456024,MEMBER,<empty>,<empty>,ZRANGE_AUTO = 0,5,,1873,ZRANGE_AUTO,1,,ANY
+456025,MEMBER,<empty>,<empty>,ZRANGE_RANK,5,,1874,ZRANGE_RANK,2,,ANY
+456026,MEMBER,<empty>,<empty>,ZRANGE_SCORE,5,,1875,ZRANGE_SCORE,3,,ANY
+456027,MEMBER,<empty>,<empty>,ZRANGE_LEX,5,,1876,ZRANGE_LEX,4,,ANY
+456548,MEMBER,<empty>,<empty>,*subject,10,,2000,subject,1,,robj*
+456549,MEMBER,<empty>,<empty>,type,9,,2001,type,2,,int
+456550,MEMBER,<empty>,<empty>,encoding,9,,2002,encoding,3,,int
+456551,MEMBER,<empty>,<empty>,weight,12,,2003,weight,4,,double
+456555,MEMBER,<empty>,<empty>,*is,24,,2009,is,1,,intset*
+456556,MEMBER,<empty>,<empty>,ii,21,,2010,ii,2,,int
+456557,MEMBER,<empty>,<empty>,is,15,,2011,is,2,,struct
+456559,MEMBER,<empty>,<empty>,*dict,22,,2013,dict,1,,dict*
+456560,MEMBER,<empty>,<empty>,*di,30,,2014,di,2,,dictIterator*
+456561,MEMBER,<empty>,<empty>,*de,27,,2015,de,3,,dictEntry*
+456562,MEMBER,<empty>,<empty>,ht,15,,2016,ht,4,,struct
+456564,MEMBER,<empty>,<empty>,*lp,31,,2018,lp,1,,unsigned char*
+456565,MEMBER,<empty>,<empty>,*p,31,,2019,p,2,,unsigned char*
+456566,MEMBER,<empty>,<empty>,lp,15,,2020,lp,6,,struct
+456567,MEMBER,<empty>,<empty>,set,11,,2021,set,2,,union _iterset
+456570,MEMBER,<empty>,<empty>,*zl,31,,2026,zl,1,,unsigned char*
+456571,MEMBER,<empty>,<empty>,*eptr,31,,2027,eptr,2,,unsigned char*
+456572,MEMBER,<empty>,<empty>,*sptr,38,,2027,sptr,3,,unsigned char*
+456573,MEMBER,<empty>,<empty>,zl,15,,2028,zl,2,,struct
+456575,MEMBER,<empty>,<empty>,*zs,22,,2030,zs,1,,zset*
+456576,MEMBER,<empty>,<empty>,*node,31,,2031,node,2,,zskiplistNode*
+456577,MEMBER,<empty>,<empty>,sl,15,,2032,sl,4,,struct
+456578,MEMBER,<empty>,<empty>,zset,11,,2033,zset,4,,union _iterzset
+456579,MEMBER,<empty>,<empty>,iter,7,,2034,iter,6,,union
+456582,MEMBER,<empty>,<empty>,flags,9,,2050,flags,1,,int
+456583,MEMBER,<empty>,<empty>,_buf[32],19,,2051,_buf,2,,unsigned char[32]
+456584,MEMBER,<empty>,<empty>,ele,9,,2052,ele,3,,sds
+456585,MEMBER,<empty>,<empty>,*estr,19,,2053,estr,4,,unsigned char*
+456586,MEMBER,<empty>,<empty>,elen,18,,2054,elen,5,,unsigned int
+456587,MEMBER,<empty>,<empty>,ell,15,,2055,ell,6,,long long
+456588,MEMBER,<empty>,<empty>,score,12,,2056,score,7,,double
+459889,MEMBER,<empty>,<empty>,ZRANGE_DIRECTION_AUTO = 0,5,,2898,ZRANGE_DIRECTION_AUTO,1,,ANY
+459890,MEMBER,<empty>,<empty>,ZRANGE_DIRECTION_FORWARD,5,,2899,ZRANGE_DIRECTION_FORWARD,2,,ANY
+459891,MEMBER,<empty>,<empty>,ZRANGE_DIRECTION_REVERSE,5,,2900,ZRANGE_DIRECTION_REVERSE,3,,ANY
+459901,MEMBER,<empty>,<empty>,ZRANGE_CONSUMER_TYPE_CLIENT = 0,5,,2904,ZRANGE_CONSUMER_TYPE_CLIENT,1,,ANY
+459902,MEMBER,<empty>,<empty>,ZRANGE_CONSUMER_TYPE_INTERNAL,5,,2905,ZRANGE_CONSUMER_TYPE_INTERNAL,2,,ANY
+459950,MEMBER,<empty>,<empty>,type,42,,2925,type,1,,zrange_consumer_type
+459951,MEMBER,<empty>,<empty>,*client,41,,2926,client,2,,client*
+459952,MEMBER,<empty>,<empty>,*dstkey,41,,2927,dstkey,3,,robj*
+459953,MEMBER,<empty>,<empty>,*dstobj,41,,2928,dstobj,4,,robj*
+459954,MEMBER,<empty>,<empty>,*userdata,41,,2929,userdata,5,,void*
+459955,MEMBER,<empty>,<empty>,withscores,42,,2930,withscores,6,,int
+459956,MEMBER,<empty>,<empty>,should_emit_array_length,42,,2931,should_emit_array_length,7,,int
+459957,MEMBER,<empty>,<empty>,beginResultEmission,42,,2932,beginResultEmission,8,,zrangeResultBeginFunction
+459958,MEMBER,<empty>,<empty>,finalizeResultEmission,42,,2933,finalizeResultEmission,9,,zrangeResultFinalizeFunction
+459959,MEMBER,<empty>,<empty>,emitResultFromCBuffer,42,,2934,emitResultFromCBuffer,10,,zrangeResultEmitCBufferFunction
+459960,MEMBER,<empty>,<empty>,emitResultFromLongLong,42,,2935,emitResultFromLongLong,11,,zrangeResultEmitLongLongFunction
+465631,MEMBER,<empty>,<empty>,*keys,9,,56,keys,1,,rax*
+465632,MEMBER,<empty>,<empty>,*clients,9,,57,clients,2,,rax*
+471339,MEMBER,<empty>,<empty>,LD_STR_AUTO,5,,55,LD_STR_AUTO,1,,ANY
+471340,MEMBER,<empty>,<empty>,LD_STR_HUMAN,5,,56,LD_STR_HUMAN,2,,ANY
+471341,MEMBER,<empty>,<empty>,LD_STR_HEX,5,,57,LD_STR_HEX,3,,ANY
+471622,MEMBER,<empty>,<empty>,prevrawlensize,18,,285,prevrawlensize,1,,unsigned int
+471623,MEMBER,<empty>,<empty>,prevrawlen,18,,286,prevrawlen,2,,unsigned int
+471624,MEMBER,<empty>,<empty>,lensize,18,,287,lensize,3,,unsigned int
+471625,MEMBER,<empty>,<empty>,len,18,,290,len,4,,unsigned int
+471626,MEMBER,<empty>,<empty>,headersize,18,,295,headersize,5,,unsigned int
+471627,MEMBER,<empty>,<empty>,encoding,19,,296,encoding,6,,unsigned char
+471628,MEMBER,<empty>,<empty>,*p,19,,300,p,7,,unsigned char*
+478177,MEMBER,<empty>,<empty>,*sval,19,,40,sval,1,,unsigned char*
+478178,MEMBER,<empty>,<empty>,slen,18,,41,slen,2,,unsigned int
+478179,MEMBER,<empty>,<empty>,lval,15,,43,lval,3,,long long

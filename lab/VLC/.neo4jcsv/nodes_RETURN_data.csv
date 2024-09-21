@@ -1,0 +1,3362 @@
+16,RETURN,-1,,return vlc_strerror_c(errnum);,5,31,1
+29,RETURN,-1,,return android_buf;,5,38,3
+118,RETURN,-1,,return NULL;,9,61,2
+147,RETURN,1,,return NULL;,9,68,1
+169,RETURN,-1,,return psz_strdup;,5,75,13
+220,RETURN,1,,return;,9,88,1
+285,RETURN,1,,return -1;,9,107,1
+306,RETURN,1,,return -1;,9,111,1
+493,RETURN,-1,,return JNI_VERSION_1_2;,5,156,24
+509,RETURN,-1,,return -1;,5,162,28
+564,RETURN,1,,return strdup(psz_home);,9,186,1
+595,RETURN,-1,,return psz_fullpath;,5,196,8
+598,RETURN,-1,,return psz_default_dir != NULL ? strdup(psz_default_dir) : NULL;,5,199,10
+657,RETURN,1,,return NULL;,13,215,1
+669,RETURN,-1,,return env;,5,220,3
+706,RETURN,1,,return NULL;,9,237,1
+835,RETURN,-1,,return psz_ret;,5,269,26
+847,RETURN,-1,,"return config_GetHomeDir("".share"",
+                ""/sdcard/Android/data/org.videolan.vlc"");",13,277,3
+853,RETURN,-1,,"return config_GetHomeDir("".cache"",
+                ""/sdcard/Android/data/org.videolan.vlc/cache"");",13,280,6
+859,RETURN,-1,,"return config_GetHomeDir(NULL, NULL);",13,283,9
+865,RETURN,-1,,"return config_GetHomeDir("".config"", NULL);",13,285,12
+907,RETURN,1,,return config_GetGenericDir(psz_name);,17,299,1
+910,RETURN,-1,,return NULL;,5,302,2
+951,RETURN,1,,return NULL;,9,326,1
+1219,RETURN,-1,,return psz_ret;,5,391,38
+1427,RETURN,-1,,return val;,5,135,4
+1478,RETURN,-1,,return thread;,5,166,1
+1531,RETURN,-1,,return NULL;,5,194,8
+1578,RETURN,-1,,return ret;,5,215,9
+1601,RETURN,1,,return ENOMEM;,9,223,1
+1718,RETURN,-1,,return ret;,5,260,21
+1731,RETURN,-1,,"return vlc_clone_attr (th, entry, data, false);",5,267,2
+1802,RETURN,-1,,"return vlc_clone_attr (th, entry, data, true);",5,288,4
+1820,RETURN,-1,,return VLC_SUCCESS;,5,294,3
+1875,RETURN,1,,return true;,9,316,1
+1888,RETURN,-1,,return oldstate;,5,320,5
+1899,RETURN,1,,return;,9,326,1
+1914,RETURN,1,,return;,9,334,1
+1921,RETURN,1,,return;,9,336,1
+1930,RETURN,1,,return;,9,338,1
+1948,RETURN,1,,return;,9,349,1
+2036,RETURN,-1,,"return pthread_key_create (key, destr);",5,387,1
+2054,RETURN,-1,,"return pthread_setspecific (key, value);",5,397,1
+2063,RETURN,-1,,return pthread_getspecific (key);,5,402,1
+2082,RETURN,-1,,return (INT64_C(1000000) * ts.tv_sec) + (ts.tv_nsec / 1000);,5,413,3
+2100,RETURN,-1,,return sysconf(_SC_NPROCESSORS_ONLN);,5,420,1
+2176,RETURN,-1,,return &((aout_instance_t *)aout)->owner;,5,107,1
+2435,RETURN,-1,,return 8;,9,50,9
+2445,RETURN,-1,,return 16;,9,56,18
+2455,RETURN,-1,,return 24;,9,62,27
+2473,RETURN,-1,,return 32;,9,72,44
+2479,RETURN,-1,,return 64;,9,76,49
+2482,RETURN,-1,,return 0;,9,81,51
+2549,RETURN,1,,"return ""Ambisonics"";",9,109,1
+2577,RETURN,1,,"return ""Mono"";",13,120,1
+2588,RETURN,1,,"return ""Left"";",13,122,1
+2590,RETURN,-1,,"return ""Right"";",9,123,8
+2603,RETURN,1,,"return ""Dolby"";",13,126,1
+2614,RETURN,1,,"return ""Dual-mono"";",13,128,1
+2625,RETURN,1,,"return ""Stereo/Mono"";",13,130,1
+2637,RETURN,1,,"return ""Stereo/Left"";",13,132,1
+2649,RETURN,1,,"return ""Stereo/Right"";",13,134,1
+2651,RETURN,-1,,"return ""Stereo"";",9,135,12
+2659,RETURN,-1,,"return ""3F"";",9,137,15
+2667,RETURN,-1,,"return ""2F1R"";",9,139,18
+2677,RETURN,-1,,"return ""3F1R"";",9,142,21
+2687,RETURN,-1,,"return ""2F2R"";",9,145,24
+2697,RETURN,-1,,"return ""2F2M"";",9,148,27
+2709,RETURN,-1,,"return ""3F2R"";",9,151,30
+2721,RETURN,-1,,"return ""3F2M"";",9,154,33
+2742,RETURN,1,,"return ""Mono/LFE"";",13,160,1
+2753,RETURN,1,,"return ""Left/LFE"";",13,162,1
+2755,RETURN,-1,,"return ""Right/LFE"";",9,163,37
+2770,RETURN,1,,"return ""Dolby/LFE"";",13,166,1
+2781,RETURN,1,,"return ""Dual-mono/LFE"";",13,168,1
+2792,RETURN,1,,"return ""Mono/LFE"";",13,170,1
+2804,RETURN,1,,"return ""Stereo/Left/LFE"";",13,172,1
+2816,RETURN,1,,"return ""Stereo/Right/LFE"";",13,174,1
+2818,RETURN,-1,,"return ""Stereo/LFE"";",10,175,41
+2828,RETURN,-1,,"return ""3F/LFE"";",9,177,44
+2838,RETURN,-1,,"return ""2F1R/LFE"";",9,180,47
+2850,RETURN,-1,,"return ""3F1R/LFE"";",9,183,50
+2862,RETURN,-1,,"return ""2F2R/LFE"";",9,186,53
+2874,RETURN,-1,,"return ""2F2M/LFE"";",9,189,56
+2888,RETURN,-1,,"return ""3F2R/LFE"";",9,192,59
+2904,RETURN,-1,,"return ""3F3R/LFE"";",9,196,62
+2918,RETURN,-1,,"return ""3F2M/LFE"";",9,199,65
+2932,RETURN,-1,,"return ""2F2M2R"";",9,203,68
+2948,RETURN,-1,,"return ""3F2M2R"";",9,207,71
+2966,RETURN,-1,,"return ""3F2M2R/LFE"";",9,211,74
+2982,RETURN,-1,,"return ""3F2M1R/LFE"";",9,215,77
+3002,RETURN,-1,,"return ""3F2M3R/LFE"";",9,219,80
+3004,RETURN,-1,,"return ""Unknown-chan-mask"";",5,222,3
+3179,RETURN,1,,return channels;,13,286,1
+3181,RETURN,-1,,return 0;,5,287,8
+3198,RETURN,1,,return;,9,305,1
+3279,RETURN,-1,,return;,57,332,4
+3347,RETURN,-1,,return;,57,333,8
+3415,RETURN,-1,,return;,57,334,12
+3483,RETURN,-1,,return;,57,335,16
+3551,RETURN,-1,,return;,57,336,20
+4551,RETURN,1,,return true;,13,518,1
+4553,RETURN,-1,,return i_out != i_channels;,5,520,13
+4592,RETURN,1,,return filter[i].i_order;,13,535,1
+4598,RETURN,-1,,return INT_MAX;,5,537,4
+4615,RETURN,1,,return false;,9,548,1
+4672,RETURN,-1,,return false;,9,570,2
+4742,RETURN,-1,,return false;,9,592,3
+4869,RETURN,-1,,return false;,9,627,3
+4925,RETURN,-1,,return true;,5,647,30
+4990,RETURN,-1,,return -1;,13,57,2
+5006,RETURN,-1,,return -1;,9,65,2
+5022,RETURN,-1,,return -1;,9,71,2
+5151,RETURN,-1,,return -1;,9,106,6
+5197,RETURN,-1,,return 0;,5,118,25
+5406,RETURN,-1,,return (owner->mixer_format.i_format) ? status : AOUT_DEC_FAILED;,5,190,8
+5508,RETURN,1,,return;,9,225,1
+5565,RETURN,1,,return;,9,259,1
+5619,RETURN,1,,return;,13,285,1
+5669,RETURN,1,,return;,9,305,1
+5739,RETURN,1,,return;,9,326,1
+5755,RETURN,-1,,return;,9,334,3
+6002,RETURN,-1,,return ret;,5,414,29
+6258,RETURN,1,,return NULL;,9,53,1
+6390,RETURN,-1,,return filter;,5,89,15
+6399,RETURN,-1,,"return CreateFilter (obj, ""audio converter"", NULL, NULL, infmt, outfmt,
+                         NULL, true);",5,96,1
+6416,RETURN,-1,,"return CreateFilter (obj, ""audio resampler"", ""$audio-resampler"", NULL,
+                         infmt, outfmt, NULL, true);",5,104,1
+6500,RETURN,-1,,return filter;,5,134,9
+6551,RETURN,-1,,return -1;,9,166,2
+6825,RETURN,-1,,return 0;,5,263,14
+6843,RETURN,-1,,return -1;,5,271,20
+6883,RETURN,-1,,return block;,5,289,2
+6953,RETURN,1,,return block_ChainGather(chain);,9,319,1
+6958,RETURN,1,,return NULL;,9,321,1
+7090,RETURN,-1,,return VLC_SUCCESS;,5,380,10
+7123,RETURN,-1,,"return req->pf_request_vout (req->p_private, vout, fmt, recycle);",5,397,8
+7171,RETURN,-1,,return -1;,9,410,2
+7198,RETURN,-1,,return -1;,9,418,2
+7235,RETURN,-1,,return -1;,9,428,4
+7265,RETURN,-1,,return 0;,5,435,12
+7339,RETURN,1,,return 0;,9,457,1
+7382,RETURN,1,,return -1;,9,468,1
+7427,RETURN,-1,,return ret;,5,481,19
+7451,RETURN,1,,return NULL;,9,508,1
+7547,RETURN,-1,,return filters;,9,537,2
+7908,RETURN,-1,,return filters;,5,653,34
+7930,RETURN,-1,,return NULL;,5,660,39
+7975,RETURN,-1,,return (filters->resampler != NULL);,5,684,1
+7994,RETURN,1,,return false;,9,690,1
+8011,RETURN,-1,,return filters->resampling != 0;,5,696,3
+8141,RETURN,-1,,return block;,5,730,7
+8146,RETURN,-1,,return NULL;,5,734,10
+8234,RETURN,-1,,return chain ? block_ChainGather (chain) : NULL;,9,763,8
+8242,RETURN,1,,return block;,9,766,1
+8364,RETURN,-1,,"return var_Set (dst, name, value);",5,64,5
+8391,RETURN,-1,,"return var_Set (dst, ""audio-device"", value);",5,73,6
+8618,RETURN,-1,,return 0;,5,162,5
+8648,RETURN,-1,,return VLC_SUCCESS;,5,171,4
+8680,RETURN,-1,,return 0;,5,181,8
+8714,RETURN,-1,,return VLC_SUCCESS;,5,190,5
+8741,RETURN,1,,return NULL;,9,204,1
+8950,RETURN,-1,,return NULL;,9,249,3
+9372,RETURN,-1,,return aout;,5,353,88
+9576,RETURN,1,,return;,9,416,1
+10029,RETURN,-1,,return -1;,9,570,2
+10057,RETURN,-1,,return 0;,5,579,15
+10093,RETURN,1,,return -1;,9,600,1
+10096,RETURN,-1,,"return aout->time_get (aout, delay);",5,601,3
+10217,RETURN,-1,,"return (aout->volume_set != NULL) ? aout->volume_set (aout, vol) : -1;",5,659,2
+10240,RETURN,-1,,"return (aout->mute_set != NULL) ? aout->mute_set (aout, mute) : -1;",5,665,2
+10263,RETURN,-1,,"return (aout->device_select != NULL) ? aout->device_select (aout, id) : -1;",5,671,2
+10303,RETURN,-1,,return vlc_mutex_trylock (&owner->lock);,5,685,3
+10434,RETURN,-1,,"return var_GetFloat (aout, ""volume"");",5,730,1
+10482,RETURN,-1,,return 0;,5,749,8
+10563,RETURN,-1,,return ret;,5,776,10
+10570,RETURN,-1,,"return var_InheritBool (aout, ""mute"");",5,785,1
+10614,RETURN,-1,,return 0;,5,802,7
+10621,RETURN,-1,,"return var_GetNonEmptyString (aout, ""device"");",5,812,1
+10655,RETURN,1,,return -1;,13,829,1
+10702,RETURN,-1,,return 0;,5,840,11
+10836,RETURN,-1,,return i;,5,887,15
+10865,RETURN,-1,,return -1;,5,899,21
+10926,RETURN,1,,return NULL;,9,58,1
+10973,RETURN,-1,,return vol;,5,74,9
+10987,RETURN,1,,return -1;,9,83,1
+11014,RETURN,-1,,return 0;,13,91,2
+11045,RETURN,1,,return -1;,9,100,1
+11048,RETURN,-1,,return 0;,5,101,8
+11060,RETURN,1,,return;,9,110,1
+11103,RETURN,1,,return;,9,124,1
+11127,RETURN,1,,return -1;,9,135,1
+11154,RETURN,-1,,return 0;,5,141,5
+11284,RETURN,-1,,return multiplier;,5,191,7
+11321,RETURN,-1,,return VLC_SUCCESS;,5,202,8
+11347,RETURN,-1,,"return c == '\'' || c == '""' || c == '\\';",5,47,1
+11368,RETURN,1,,return false;,9,52,1
+11370,RETURN,-1,,return psz[0] == '\\' && IsEscapeNeeded( psz[1] );,5,53,2
+11386,RETURN,-1,,return c == ' ' || c == '\t';,5,57,1
+11408,RETURN,1,,return NULL;,9,77,1
+11439,RETURN,1,,return p;,13,85,1
+11484,RETURN,1,,return p;,13,102,1
+11501,RETURN,1,,return ++p;,13,107,1
+11709,RETURN,-1,,return psz_value;,5,177,14
+11847,RETURN,-1,,return psz_opts;,5,223,8
+11869,RETURN,1,,return NULL;,9,235,1
+11918,RETURN,1,,return strdup( psz_chain + 1 );,9,249,1
+11923,RETURN,-1,,return NULL;,5,251,12
+12023,RETURN,1,,return /* VLC_xxx */;,13,288,1
+12522,RETURN,-1,,return p_dst;,5,453,6
+12541,RETURN,1,,return NULL;,9,461,1
+12564,RETURN,-1,,return psz_string;,5,471,8
+12580,RETURN,1,,return NULL;,9,479,1
+12616,RETURN,1,,return NULL;,9,487,1
+12649,RETURN,-1,,return ret;,5,496,12
+12748,RETURN,1,,return -1;,9,83,1
+12766,RETURN,-1,,return -1;,9,89,2
+12791,RETURN,-1,,return -1;,13,102,3
+13452,RETURN,-1,,return ret;,5,303,38
+13549,RETURN,-1,,return src ? strdup (src) : NULL;,5,46,1
+13569,RETURN,-1,,return 0;,9,61,1
+13586,RETURN,-1,,return VLC_VAR_FLOAT;,13,67,3
+13590,RETURN,-1,,return VLC_VAR_INTEGER;,13,69,6
+13594,RETURN,-1,,return VLC_VAR_BOOL;,13,71,9
+13598,RETURN,-1,,return VLC_VAR_STRING;,13,73,12
+13601,RETURN,-1,,return 0;,13,75,14
+13613,RETURN,-1,,return p_config != NULL && p_config->b_safe;,5,82,3
+13640,RETURN,-1,,return -1;,9,101,2
+13670,RETURN,-1,,return val;,5,111,9
+13691,RETURN,-1,,return -1;,9,131,2
+13719,RETURN,-1,,return val;,5,141,9
+13740,RETURN,-1,,return NULL;,9,166,2
+13770,RETURN,-1,,return psz_value;,5,176,9
+13792,RETURN,-1,,return;,9,197,2
+13872,RETURN,-1,,return;,9,234,2
+13954,RETURN,-1,,return;,9,266,2
+14068,RETURN,-1,,return -1;,9,304,3
+14092,RETURN,-1,,return -1;,13,313,2
+14104,RETURN,1,,return 0;,13,317,1
+14106,RETURN,-1,,"return cfg->list.i_cb(obj, name, values, texts);",9,318,3
+14226,RETURN,-1,,return count;,5,346,17
+14233,RETURN,-1,,return -1;,5,351,21
+14264,RETURN,-1,,return n;,9,363,2
+14367,RETURN,-1,,return n + 2;,5,385,17
+14399,RETURN,-1,,return -1;,9,406,2
+14409,RETURN,-1,,"return config_ListModules (cfg->psz_type, values, texts);",13,412,3
+14435,RETURN,-1,,return -1;,17,417,2
+14460,RETURN,-1,,return -1;,13,428,2
+14472,RETURN,1,,return 0;,13,432,1
+14474,RETURN,-1,,"return cfg->list.psz_cb(obj, name, values, texts);",9,433,3
+14566,RETURN,-1,,return count;,5,449,16
+14582,RETURN,-1,,"return strcmp ((*ca)->psz_name, (*cb)->psz_name);",5,456,5
+14602,RETURN,-1,,"return strcmp (key, (*conf)->psz_name);",5,463,3
+14662,RETURN,1,,return VLC_ENOMEM;,9,485,1
+14739,RETURN,-1,,return VLC_SUCCESS;,5,506,13
+14775,RETURN,1,,return NULL;,9,526,1
+14792,RETURN,-1,,return p ? *p : NULL;,5,530,4
+15046,RETURN,-1,,return src ? strdup (src) : NULL;,5,53,1
+15084,RETURN,-1,,return psz_file;,5,71,5
+15101,RETURN,1,,return NULL;,9,78,1
+15208,RETURN,-1,,return p_stream;,5,137,9
+15238,RETURN,-1,,return l;,5,159,6
+15255,RETURN,1,,return VLC_EGENERIC;,9,175,1
+15493,RETURN,-1,,return 0;,5,260,21
+15509,RETURN,1,,return -1;,41,268,1
+15519,RETURN,1,,return 0;,9,271,1
+15526,RETURN,-1,,return 0;,13,276,3
+15565,RETURN,1,,return 0;,25,291,1
+15573,RETURN,-1,,return -1;,5,299,5
+15611,RETURN,1,,return -1;,9,314,1
+15630,RETURN,1,,return -1;,9,320,1
+15640,RETURN,1,,return -1;,9,323,1
+15643,RETURN,-1,,return 0;,5,324,10
+15660,RETURN,1,,return -1;,9,332,1
+15671,RETURN,-1,,return ret;,5,336,7
+15685,RETURN,-1,,return -1;,9,350,2
+15699,RETURN,1,,return -1;,9,359,1
+15715,RETURN,-1,,return -1;,9,363,2
+16084,RETURN,-1,,return 0;,5,517,33
+16091,RETURN,-1,,return -1;,5,522,37
+16123,RETURN,-1,,return ret;,5,540,7
+16561,RETURN,-1,,return -1;,13,220,2
+16597,RETURN,-1,,return 1;,13,229,2
+16766,RETURN,-1,,return '?';,13,286,4
+16813,RETURN,-1,,return '?';,21,302,3
+16856,RETURN,-1,,return optstring[0] == ':' ? ':' : '?';,21,313,3
+16895,RETURN,-1,,return 0;,17,322,2
+16897,RETURN,-1,,return pfound->val;,13,324,7
+16917,RETURN,-1,,return '?';,9,330,19
+16960,RETURN,-1,,return '?';,13,346,2
+17042,RETURN,-1,,return c;,17,374,3
+17168,RETURN,-1,,return '?';,17,415,3
+17204,RETURN,-1,,return '?';,25,427,2
+17240,RETURN,-1,,return optstring[0] == ':' ? ':' : '?';,25,437,2
+17279,RETURN,-1,,return 0;,21,446,2
+17281,RETURN,-1,,return pfound->val;,17,448,6
+17290,RETURN,-1,,return 'W';,13,451,18
+17364,RETURN,-1,,return c;,9,477,9
+17437,RETURN,-1,,return 80;,5,86,1
+17453,RETURN,-1,,return true;,9,103,2
+17461,RETURN,-1,,return true;,9,110,2
+17478,RETURN,-1,,return true;,9,119,3
+17504,RETURN,-1,,return true;,9,130,6
+17514,RETURN,-1,,return true;,9,137,2
+17524,RETURN,-1,,return true;,9,144,2
+17534,RETURN,-1,,return true;,9,150,2
+17536,RETURN,-1,,return false;,5,153,10
+17646,RETURN,1,,return;,9,253,1
+17877,RETURN,1,,return total;,13,336,1
+17886,RETURN,1,,return -1;,13,338,1
+17903,RETURN,1,,return -1;,13,343,1
+18007,RETURN,-1,,return;,13,379,4
+18366,RETURN,-1,,return;,13,494,23
+18596,RETURN,1,,return true;,9,549,1
+18617,RETURN,1,,return true;,9,555,1
+18655,RETURN,1,,return true;,13,563,1
+18657,RETURN,-1,,return false;,5,565,6
+18714,RETURN,-1,,return true;,9,580,6
+18716,RETURN,-1,,return false;,5,582,2
+19188,RETURN,-1,,return;,13,49,2
+19220,RETURN,-1,,return;,13,62,2
+19464,RETURN,-1,,return true;,13,158,2
+19497,RETURN,-1,,return true;,13,171,2
+19511,RETURN,-1,,return false;,5,178,14
+19607,RETURN,1,,return strdup( dirname(psz_img_name) );,17,58,1
+19630,RETURN,1,,return strdup( dirname(psz_img_name) );,13,65,1
+19648,RETURN,1,,return strdup( dirname(psz_img_name) );,13,69,1
+19666,RETURN,1,,return strdup( dirname(psz_img_name) );,13,73,1
+19684,RETURN,1,,return strdup( dirname(psz_img_name) );,13,77,1
+19712,RETURN,-1,,return path;,9,88,7
+19728,RETURN,1,,return strdup (path);,9,99,1
+19751,RETURN,-1,,return datadir;,5,108,9
+19771,RETURN,-1,,return strdup (home);,5,118,4
+19898,RETURN,-1,,return psz_dir;,5,168,16
+19917,RETURN,-1,,return getAppDependentDir(type);,13,179,9
+19988,RETURN,-1,,return psz_dir;,5,211,8
+20017,RETURN,1,,return sys_errlist[errnum];,9,35,1
+20021,RETURN,-1,,"return _(""Unknown error"");",5,37,2
+20029,RETURN,-1,,return vlc_strerror_c(errnum);,5,42,1
+20114,RETURN,-1,,return NULL;,17,59,2
+20140,RETURN,-1,,return proxy_url;,5,72,7
+20253,RETURN,-1,,return ts;,5,63,5
+20475,RETURN,-1,,return val;,5,180,4
+20551,RETURN,1,,return;,13,251,1
+20670,RETURN,-1,,return val;,5,294,11
+20710,RETURN,-1,,return val;,5,321,7
+20744,RETURN,1,,return;,9,337,1
+20774,RETURN,1,,return 0;,9,349,1
+20797,RETURN,-1,,return val;,5,355,5
+20813,RETURN,1,,return;,9,363,1
+20935,RETURN,-1,,"return pthread_key_create (key, destr);",5,402,1
+20953,RETURN,-1,,"return pthread_setspecific (key, value);",5,412,1
+20962,RETURN,-1,,return pthread_getspecific (key);,5,417,1
+21048,RETURN,-1,,return ret;,5,455,10
+21062,RETURN,-1,,"return vlc_clone_attr (th, &attr, entry, data, priority);",5,464,3
+21120,RETURN,-1,,"return vlc_clone_attr (th, &attr, entry, data, priority);",5,484,6
+21133,RETURN,-1,,return pthread_self ();,5,489,1
+21140,RETURN,-1,,return -1;,5,494,1
+21155,RETURN,-1,,return VLC_SUCCESS;,5,500,3
+21189,RETURN,-1,,return state;,5,514,5
+21279,RETURN,-1,,return (d.quot * date) + ((d.rem * date) / denom);,5,558,9
+21336,RETURN,-1,,return sysconf(_SC_NPROCESSORS_CONF);,5,582,1
+22746,RETURN,1,,return (size_t)(0);,9,299,1
+22990,RETURN,-1,,return (size_t)(-1);,9,386,2
+22994,RETURN,-1,,return (size_t)(0);,5,389,18
+23014,RETURN,1,,return (vlc_iconv_t)(-2);,9,401,1
+23031,RETURN,1,,return (vlc_iconv_t)(-3);,9,403,1
+23035,RETURN,-1,,return (vlc_iconv_t)(-1);,5,443,2
+23111,RETURN,-1,,return ret;,5,480,3
+23131,RETURN,1,,return 0;,9,487,1
+23161,RETURN,-1,,return 1;,9,510,3
+23290,RETURN,-1,,return b_exact;,5,546,12
+23336,RETURN,1,,return NULL;,9,50,1
+23344,RETURN,-1,,return path;,5,54,6
+23389,RETURN,1,,return NULL;,9,77,1
+23534,RETURN,-1,,return access;,13,114,3
+23621,RETURN,-1,,return NULL;,5,143,20
+23629,RETURN,-1,,"return access_New(parent, NULL, false, mrl);",5,148,1
+23665,RETURN,-1,,return VLC_EGENERIC;,13,172,19
+23667,RETURN,-1,,return VLC_SUCCESS;,6,174,3
+23681,RETURN,-1,,return VLC_EGENERIC;,5,180,3
+23710,RETURN,-1,,return NULL;,9,193,2
+23715,RETURN,1,,return NULL;,9,196,1
+23777,RETURN,-1,,return block;,5,212,10
+23802,RETURN,1,,return 0;,9,222,1
+23807,RETURN,1,,return -1;,9,224,1
+23871,RETURN,-1,,return val;,5,239,10
+23885,RETURN,-1,,"return access->pf_readdir(access, p_node);",5,247,3
+23904,RETURN,-1,,"return vlc_stream_Seek(access, offset);",5,255,3
+23921,RETURN,-1,,"return vlc_stream_vaControl(access, cmd, args);",5,262,3
+23959,RETURN,1,,return NULL;,9,277,1
+23977,RETURN,-1,,return NULL;,9,283,2
+24074,RETURN,-1,,return stream_FilterAutoNew(s);,5,318,16
+24153,RETURN,-1,,return p;,5,135,3
+24215,RETURN,1,,return NULL;,9,195,1
+24316,RETURN,-1,,return cl;,5,220,19
+24835,RETURN,-1,,return i_wakeup;,5,401,6
+24886,RETURN,-1,,return VLC_EGENERIC;,9,425,5
+24997,RETURN,-1,,return VLC_EGENERIC;,13,457,2
+24999,RETURN,-1,,return VLC_SUCCESS;,5,461,13
+25022,RETURN,-1,,return i_rate;,5,474,5
+25049,RETURN,-1,,return VLC_EGENERIC;,9,486,2
+25100,RETURN,-1,,return VLC_SUCCESS;,5,497,8
+25467,RETURN,-1,,return i_pts_delay + i_late_median;,5,598,9
+25483,RETURN,1,,return VLC_TS_INVALID;,9,607,1
+25485,RETURN,-1,,"return ( i_stream - cl->ref.i_stream ) * cl->i_rate / INPUT_RATE_DEFAULT +
+           cl->ref.i_system;",5,609,2
+25515,RETURN,-1,,"return ( i_system - cl->ref.i_system ) * INPUT_RATE_DEFAULT / cl->i_rate +
+            cl->ref.i_stream;",5,621,2
+25540,RETURN,-1,,return cl->i_pts_delay * ( cl->i_rate - INPUT_RATE_DEFAULT ) / INPUT_RATE_DEFAULT;,5,631,1
+25661,RETURN,-1,,return p_avg->i_value;,5,666,1
+25864,RETURN,-1,,return i_result;,5,62,6
+25907,RETURN,-1,,return VLC_SUCCESS;,13,85,5
+25912,RETURN,-1,,"return var_SetFloat( p_input, ""position"", f );",13,89,9
+25926,RETURN,-1,,return VLC_SUCCESS;,13,94,14
+25937,RETURN,-1,,return VLC_SUCCESS;,13,99,19
+25946,RETURN,-1,,"return var_SetInteger( p_input, ""time"", i_64 );",13,103,23
+25962,RETURN,-1,,return VLC_SUCCESS;,13,108,28
+25967,RETURN,-1,,"return var_SetFloat( p_input, ""rate"",
+                                 (float)INPUT_RATE_DEFAULT / (float)i_int );",13,112,32
+25987,RETURN,-1,,return VLC_SUCCESS;,13,118,37
+25992,RETURN,-1,,"return var_SetInteger( p_input, ""state"", i_int );",13,122,41
+26006,RETURN,-1,,return VLC_SUCCESS;,13,127,46
+26017,RETURN,-1,,return VLC_SUCCESS;,13,132,51
+26026,RETURN,-1,,"return var_SetInteger( p_input, ""audio-delay"", i_64 );",13,136,55
+26038,RETURN,-1,,"return var_SetInteger( p_input, ""spu-delay"", i_64 );",13,140,59
+26065,RETURN,-1,,return VLC_SUCCESS;,13,151,75
+26084,RETURN,1,,return VLC_EGENERIC;,17,162,1
+26110,RETURN,-1,,return i_ret;,13,170,10
+26143,RETURN,-1,,return VLC_SUCCESS;,13,184,4
+26170,RETURN,-1,,return i_ret;,13,195,6
+26241,RETURN,-1,,return p_bkmk ? VLC_SUCCESS : VLC_EGENERIC;,13,220,96
+26298,RETURN,-1,,return p_bkmk ? VLC_SUCCESS : VLC_EGENERIC;,13,241,105
+26346,RETURN,-1,,return VLC_SUCCESS;,17,257,6
+26355,RETURN,-1,,return VLC_EGENERIC;,13,261,112
+26421,RETURN,-1,,return VLC_SUCCESS;,17,281,6
+26440,RETURN,-1,,return VLC_EGENERIC;,17,289,4
+26487,RETURN,-1,,return VLC_SUCCESS;,13,302,127
+26502,RETURN,-1,,return VLC_SUCCESS;,13,310,133
+26527,RETURN,-1,,return VLC_SUCCESS;,13,318,140
+26586,RETURN,-1,,return VLC_SUCCESS;,17,335,3
+26597,RETURN,-1,,return VLC_EGENERIC;,17,340,2
+26640,RETURN,-1,,return VLC_ENOMEM;,17,353,2
+26672,RETURN,-1,,return VLC_SUCCESS;,13,363,11
+26719,RETURN,-1,,return VLC_EGENERIC;,17,379,2
+26752,RETURN,-1,,return VLC_SUCCESS;,17,391,2
+26778,RETURN,-1,,return VLC_ENOMEM;,17,398,2
+26810,RETURN,-1,,return VLC_SUCCESS;,13,407,16
+26837,RETURN,1,,return VLC_EGENERIC;,17,419,1
+26850,RETURN,1,,return VLC_EGENERIC;,17,422,1
+26863,RETURN,1,,return VLC_ENOMEM;,17,427,1
+26916,RETURN,-1,,return VLC_SUCCESS;,13,451,20
+26952,RETURN,-1,,return VLC_EGENERIC;,17,465,4
+27000,RETURN,-1,,return VLC_SUCCESS;,13,473,9
+27056,RETURN,-1,,return VLC_SUCCESS;,21,488,3
+27069,RETURN,-1,,return VLC_EGENERIC;,13,493,7
+27078,RETURN,-1,,return VLC_SUCCESS;,13,499,163
+27089,RETURN,-1,,return VLC_SUCCESS;,13,504,168
+27099,RETURN,-1,,return VLC_SUCCESS;,13,509,173
+27119,RETURN,1,,return VLC_ENOMEM;,17,516,1
+27154,RETURN,-1,,return VLC_SUCCESS;,13,526,7
+27170,RETURN,1,,return VLC_EGENERIC;,17,533,1
+27177,RETURN,-1,,return VLC_SUCCESS;,13,537,6
+27196,RETURN,1,,return VLC_EGENERIC;,17,547,1
+27198,RETURN,-1,,return VLC_SUCCESS;,13,548,5
+27207,RETURN,-1,,"return es_out_Control( priv->p_es_out_display,
+                                   ES_OUT_GET_ES_OBJECTS_BY_ID, i_id,
+                                   pp_decoder, pp_vout, pp_aout );",13,558,5
+27222,RETURN,-1,,"return es_out_ControlGetPcrSystem( priv->p_es_out_display, pi_system, pi_delay );",13,567,3
+27241,RETURN,-1,,"return es_out_ControlModifyPcrSystem( priv->p_es_out_display, b_absolute, i_system );",13,574,6
+27266,RETURN,-1,,return VLC_SUCCESS;,13,582,4
+27274,RETURN,-1,,return VLC_EGENERIC;,13,587,199
+27385,RETURN,-1,,return;,9,621,2
+27706,RETURN,-1,,return -1;,9,188,2
+27711,RETURN,1,,return 0;,9,191,1
+27781,RETURN,-1,,return VLC_EGENERIC;,9,223,2
+27859,RETURN,-1,,return VLC_EGENERIC;,9,250,3
+27864,RETURN,-1,,return VLC_SUCCESS;,5,253,8
+27989,RETURN,-1,,return p_vout;,5,301,11
+28058,RETURN,1,,return true;,13,313,1
+28060,RETURN,-1,,return false;,5,315,2
+28366,RETURN,-1,,return -1;,13,403,2
+28399,RETURN,-1,,return 0;,5,411,6
+28649,RETURN,-1,,return -1;,13,439,1
+29036,RETURN,-1,,return -1;,13,543,2
+29118,RETURN,-1,,return 0;,5,560,5
+29135,RETURN,-1,,return vout_GetPicture( p_owner->p_vout );,5,568,4
+29196,RETURN,-1,,return NULL;,9,594,2
+29250,RETURN,-1,,return p_subpic;,5,614,14
+29273,RETURN,1,,return VLC_ENOOBJ;,9,624,1
+29275,RETURN,-1,,"return input_Control( p_input, INPUT_GET_ATTACHMENTS,
+                          ppp_attachment, pi_attachment );",5,625,4
+29325,RETURN,1,,return i_ts;,9,639,1
+29341,RETURN,-1,,return VLC_TS_INVALID;,9,643,2
+29343,RETURN,-1,,return i_ts;,5,646,8
+29362,RETURN,1,,return INPUT_RATE_DEFAULT;,9,654,1
+29364,RETURN,-1,,return input_clock_GetRate( p_owner->p_clock );,5,655,4
+29440,RETURN,-1,,return block;,5,674,7
+29464,RETURN,-1,,return p_subpicture;,5,683,4
+29502,RETURN,1,,return VLC_EGENERIC;,9,701,1
+29504,RETURN,-1,,"return p_dec->pf_get_attachments( p_dec, ppp_attachment, pi_attachment );",5,703,2
+29524,RETURN,1,,return VLC_TS_INVALID;,9,710,1
+29526,RETURN,-1,,"return p_dec->pf_get_display_date( p_dec, i_ts );",5,712,2
+29544,RETURN,1,,return INPUT_RATE_DEFAULT;,9,719,1
+29546,RETURN,-1,,return p_dec->pf_get_display_rate( p_dec );,5,721,2
+29645,RETURN,1,,return VLC_SUCCESS;,9,755,1
+29681,RETURN,-1,,return ret;,5,763,9
+29798,RETURN,1,,return;,9,791,1
+30042,RETURN,1,,return;,9,972,1
+30062,RETURN,1,,return;,9,978,1
+30114,RETURN,-1,,return 0;,5,995,4
+30157,RETURN,-1,,return -1;,9,1010,3
+30373,RETURN,-1,,return 0;,5,1089,30
+30382,RETURN,-1,,return 0;,5,1093,34
+30406,RETURN,1,,return;,9,1104,1
+30505,RETURN,-1,,return ret;,5,1130,9
+30546,RETURN,-1,,return -1;,9,1146,3
+30599,RETURN,-1,,return 0;,9,1167,4
+30730,RETURN,-1,,return 0;,5,1213,22
+30754,RETURN,1,,return;,9,1224,1
+30848,RETURN,-1,,return ret;,5,1250,8
+30880,RETURN,-1,,return;,9,1263,3
+30938,RETURN,-1,,return;,9,1284,2
+31092,RETURN,-1,,return i_ret;,5,1335,13
+31345,RETURN,-1,,return;,21,1439,2
+31378,RETURN,-1,,return;,21,1455,2
+31394,RETURN,-1,,return;,5,1467,10
+31423,RETURN,1,,return;,9,1480,1
+31889,RETURN,1,,return NULL;,9,1666,1
+31908,RETURN,-1,,return NULL;,9,1673,2
+32067,RETURN,-1,,return NULL;,9,1715,3
+32197,RETURN,1,,return p_dec;,9,1756,1
+32256,RETURN,-1,,return p_dec;,13,1776,20
+32423,RETURN,-1,,return p_dec;,5,1804,57
+32735,RETURN,-1,,return NULL;,9,1922,3
+32750,RETURN,-1,,return NULL;,9,1930,3
+32801,RETURN,-1,,return NULL;,9,1946,3
+32803,RETURN,-1,,return p_dec;,5,1949,13
+32813,RETURN,-1,,"return decoder_New( VLC_OBJECT(p_input), p_input, fmt, p_clock,
+                        input_priv(p_input)->p_resource, p_sout );",5,1964,1
+32832,RETURN,-1,,"return decoder_New( p_parent, NULL, fmt, NULL, p_resource, NULL );",5,1974,1
+33054,RETURN,-1,,return false;,9,2074,2
+33118,RETURN,-1,,return b_empty;,5,2094,11
+33300,RETURN,1,,return false;,10,2173,1
+33302,RETURN,-1,,"return ( i_channel >= 0 && i_channel < i_max_channels &&
+             ( i_bitmap & ((uint64_t)1 << i_channel) ) );",5,2175,6
+33339,RETURN,1,,return VLC_EGENERIC;,9,2187,1
+33405,RETURN,-1,,return VLC_EGENERIC;,13,2205,3
+33422,RETURN,-1,,return VLC_EGENERIC;,13,2211,3
+33488,RETURN,-1,,return VLC_SUCCESS;,5,2231,5
+33511,RETURN,1,,return VLC_EGENERIC;,9,2240,1
+33535,RETURN,-1,,return VLC_SUCCESS;,5,2245,7
+33896,RETURN,-1,,return b_changed;,5,2370,8
+33909,RETURN,-1,,return block_FifoSize( p_owner->p_fifo );,5,2377,3
+34113,RETURN,-1,,"return vlc_ascii_strcasecmp( k, entry->key );",5,49,3
+34126,RETURN,-1,,"return bsearch( key, data, size, sizeof( *data ), demux_mapping_cmp );",5,55,1
+34176,RETURN,-1,,"return (type != NULL) ? type->name : ""any"";",5,73,5
+34338,RETURN,-1,,return result ? result->name : NULL;,5,138,9
+34354,RETURN,-1,,"return demux_NewAdvanced( p_obj, NULL,
+                              (s == NULL) ? psz_name : """",
+                              (s != NULL) ? psz_name : """",
+                              psz_location, s, out, false );",5,148,1
+34464,RETURN,-1,,return VLC_EGENERIC;,9,188,2
+34466,RETURN,-1,,return probe(VLC_OBJECT(demux));,5,191,4
+34497,RETURN,1,,return NULL;,9,206,1
+34751,RETURN,-1,,return p_demux;,5,276,26
+34772,RETURN,-1,,return NULL;,5,283,33
+34835,RETURN,-1,,return ret;,5,314,6
+34890,RETURN,-1,,return ret;,17,335,7
+34903,RETURN,1,,"return vlc_stream_vaControl( demux->s, query, args );",21,357,1
+34913,RETURN,-1,,"return demux->pf_control( demux, query, args );",5,365,2
+35058,RETURN,-1,,"return vlc_stream_vaControl( s, i_query, args );",13,410,16
+35086,RETURN,-1,,return VLC_SUCCESS;,17,417,2
+35088,RETURN,-1,,return VLC_EGENERIC;,13,419,21
+35113,RETURN,-1,,return VLC_SUCCESS;,17,426,2
+35115,RETURN,-1,,return VLC_EGENERIC;,13,428,26
+35139,RETURN,-1,,return VLC_SUCCESS;,17,436,2
+35141,RETURN,-1,,return VLC_EGENERIC;,13,438,31
+35178,RETURN,-1,,return VLC_EGENERIC;,21,449,1
+35180,RETURN,-1,,return VLC_SUCCESS;,17,451,4
+35182,RETURN,-1,,return VLC_EGENERIC;,13,453,36
+35222,RETURN,-1,,return VLC_EGENERIC;,21,462,1
+35224,RETURN,-1,,return VLC_SUCCESS;,17,464,4
+35226,RETURN,-1,,return VLC_EGENERIC;,13,466,41
+35231,RETURN,-1,,return VLC_SUCCESS;,13,470,45
+35273,RETURN,-1,,return VLC_EGENERIC;,13,492,86
+35289,RETURN,-1,,return VLC_EGENERIC;,13,500,96
+35291,RETURN,-1,,return VLC_SUCCESS;,5,502,17
+35315,RETURN,-1,,return NULL;,9,516,2
+35370,RETURN,-1,,return NULL;,9,532,4
+35372,RETURN,-1,,return p_packetizer;,5,535,11
+35429,RETURN,1,,return update;,9,554,1
+35448,RETURN,-1,,return update;,5,558,6
+35465,RETURN,1,,return i_title;,9,565,1
+35467,RETURN,-1,,return p_demux->info.i_title;,5,566,3
+35488,RETURN,1,,return i_seekpoint;,9,573,1
+35490,RETURN,-1,,return p_demux->info.i_seekpoint;,5,574,3
+35517,RETURN,1,,return NULL;,9,581,1
+35590,RETURN,-1,,return p_demux;,5,600,17
+35595,RETURN,-1,,return NULL;,5,603,20
+35611,RETURN,1,,return NULL;,9,609,1
+35622,RETURN,1,,return NULL;,9,613,1
+35661,RETURN,-1,,return p_demux;,5,632,6
+35701,RETURN,-1,,return true;,9,645,2
+35703,RETURN,-1,,return false;,5,647,4
+35711,RETURN,-1,,"return demux_filter_enable_disable( p_demux_chain, psz_demux, true );",5,652,1
+35722,RETURN,-1,,"return demux_filter_enable_disable( p_demux_chain, psz_demux, false );",5,657,1
+35878,RETURN,-1,,return NULL;,9,61,2
+35977,RETURN,-1,,return NULL;,5,95,11
+36004,RETURN,1,,return NULL;,9,103,1
+36021,RETURN,-1,,return NULL;,9,109,2
+36087,RETURN,-1,,return dc;,5,129,13
+36153,RETURN,-1,,return VLC_EGENERIC;,13,157,20
+36155,RETURN,-1,,return VLC_SUCCESS;,5,159,2
+36519,RETURN,-1,,return i_channel;,5,224,3
+36526,RETURN,-1,,return p_fmt->i_cat == SPU_ES && p_fmt->i_codec == VLC_CODEC_TELETEXT;,5,228,1
+36549,RETURN,-1,,return &p_sys->audio;,9,239,3
+36556,RETURN,-1,,return &p_sys->sub;,9,241,6
+36563,RETURN,-1,,return &p_sys->video;,9,243,9
+36568,RETURN,-1,,return NULL;,5,245,2
+36731,RETURN,1,,return NULL;,9,296,1
+36747,RETURN,-1,,return NULL;,9,302,2
+36884,RETURN,-1,,return out;,5,340,28
+37102,RETURN,1,,return 0;,9,404,1
+37120,RETURN,1,,return 0;,9,414,1
+37122,RETURN,-1,,return input_clock_GetWakeup( p_sys->p_pgrm->p_clock );,5,416,7
+37143,RETURN,-1,,return es_cat - i_id;,9,426,1
+37176,RETURN,1,,return out->p_sys->es[i];,13,432,1
+37184,RETURN,-1,,return NULL;,5,434,3
+37214,RETURN,1,,return true;,13,445,1
+37249,RETURN,1,,return false;,13,453,1
+37262,RETURN,1,,return false;,13,455,1
+37264,RETURN,-1,,return true;,5,457,5
+37443,RETURN,1,,return VLC_EGENERIC;,13,513,1
+37453,RETURN,1,,return VLC_EGENERIC;,13,521,1
+37564,RETURN,-1,,return VLC_SUCCESS;,5,553,7
+37861,RETURN,1,,return;,9,653,1
+37957,RETURN,-1,,return;,9,679,7
+38002,RETURN,-1,,return;,9,692,1
+38271,RETURN,-1,,return i_size < i_level_high;,5,772,8
+38359,RETURN,1,,return;,9,793,1
+38440,RETURN,-1,,return;,9,816,2
+38493,RETURN,-1,,return;,9,835,2
+38554,RETURN,1,,return;,13,859,1
+38646,RETURN,1,,return 0;,9,883,1
+38668,RETURN,1,,return 0;,13,891,1
+38747,RETURN,1,,return 0;,9,919,1
+38749,RETURN,-1,,return i_delay;,5,920,9
+38792,RETURN,-1,,return;,9,937,3
+39012,RETURN,-1,,return out->p_sys->i_group_id == 0 || out->p_sys->i_group_id == i_group;,5,1007,1
+39054,RETURN,1,,return;,9,1020,1
+39322,RETURN,1,,return NULL;,9,1098,1
+39370,RETURN,-1,,return NULL;,9,1111,2
+39435,RETURN,-1,,return p_pgrm;,5,1127,21
+39497,RETURN,1,,return VLC_EGENERIC;,9,1150,1
+39511,RETURN,-1,,return VLC_EGENERIC;,9,1156,2
+39551,RETURN,-1,,return VLC_SUCCESS;,5,1174,17
+39590,RETURN,1,,return p_sys->pgrm[i];,13,1186,1
+39596,RETURN,-1,,"return EsOutProgramAdd( p_out, i_group );",5,1188,4
+39640,RETURN,1,,return NULL;,13,1200,1
+39658,RETURN,1,,return NULL;,13,1205,1
+39660,RETURN,-1,,return psz;,5,1207,4
+39682,RETURN,-1,,"return strdup( vlc_meta_Get( p_pgrm->p_meta, vlc_meta_Title ) );",9,1215,1
+39705,RETURN,1,,return NULL;,13,1220,1
+39707,RETURN,-1,,return psz;,5,1222,4
+39728,RETURN,1,,return NULL;,9,1230,1
+39730,RETURN,-1,,return psz_category;,5,1232,3
+39781,RETURN,-1,,return;,9,1251,1
+39790,RETURN,-1,,return;,9,1257,2
+39797,RETURN,1,,return;,9,1262,1
+39807,RETURN,1,,return;,9,1265,1
+40083,RETURN,1,,return;,9,1366,1
+40093,RETURN,1,,return;,9,1369,1
+40131,RETURN,1,,return;,9,1384,1
+40141,RETURN,1,,return;,9,1387,1
+40437,RETURN,1,,return;,9,1476,1
+40683,RETURN,-1,,return NULL;,9,1551,2
+40698,RETURN,1,,return NULL;,9,1559,1
+40723,RETURN,-1,,return NULL;,9,1569,3
+41233,RETURN,-1,,return es;,5,1665,37
+41241,RETURN,-1,,"return EsOutAddSlave( out, fmt, NULL );",5,1673,1
+41289,RETURN,-1,,return b_decode;,9,1687,4
+41293,RETURN,-1,,return es->p_dec != NULL;,9,1691,1
+41408,RETURN,1,,return;,9,1720,1
+41460,RETURN,-1,,return;,9,1740,2
+41475,RETURN,1,,return;,13,1747,1
+41503,RETURN,1,,return;,13,1754,1
+41547,RETURN,-1,,return;,17,1765,2
+41574,RETURN,-1,,return;,17,1774,2
+41599,RETURN,-1,,return;,17,1783,2
+41618,RETURN,1,,return;,13,1790,1
+41669,RETURN,1,,return;,9,1804,1
+41788,RETURN,-1,,return;,9,1834,2
+41840,RETURN,1,,return;,9,1854,1
+41901,RETURN,-1,,return;,9,1879,1
+42046,RETURN,1,,return;,13,1922,1
+42368,RETURN,1,,return;,9,2016,1
+42721,RETURN,-1,,return VLC_SUCCESS;,9,2118,3
+42874,RETURN,-1,,return VLC_SUCCESS;,5,2173,21
+43172,RETURN,-1,,return EsIsSelected( es ) ? VLC_SUCCESS : VLC_EGENERIC;,13,2283,2
+43197,RETURN,-1,,return VLC_SUCCESS;,13,2288,2
+43199,RETURN,-1,,return VLC_SUCCESS;,9,2290,6
+43211,RETURN,-1,,return VLC_SUCCESS;,9,2299,4
+43231,RETURN,1,,return VLC_EGENERIC;,13,2308,1
+43238,RETURN,-1,,return VLC_SUCCESS;,9,2310,9
+43250,RETURN,-1,,return VLC_SUCCESS;,9,2317,3
+43418,RETURN,-1,,return VLC_SUCCESS;,9,2356,9
+43622,RETURN,-1,,return VLC_SUCCESS;,9,2418,5
+43642,RETURN,1,,return VLC_ENOMEM;,13,2424,1
+43704,RETURN,-1,,return VLC_SUCCESS;,9,2437,7
+43753,RETURN,-1,,return VLC_SUCCESS;,9,2453,6
+43827,RETURN,-1,,return VLC_SUCCESS;,9,2489,3
+43874,RETURN,1,,return VLC_EGENERIC;,13,2512,1
+43891,RETURN,-1,,return VLC_EGENERIC;,13,2518,2
+43929,RETURN,1,,return VLC_SUCCESS;,13,2532,1
+44069,RETURN,-1,,return VLC_SUCCESS;,9,2576,15
+44080,RETURN,-1,,return VLC_SUCCESS;,9,2582,39
+44118,RETURN,-1,,return VLC_SUCCESS;,17,2593,2
+44120,RETURN,-1,,return VLC_EGENERIC;,9,2596,3
+44132,RETURN,1,,return VLC_EGENERIC;,13,2606,1
+44156,RETURN,-1,,return VLC_SUCCESS;,9,2617,7
+44187,RETURN,-1,,return VLC_SUCCESS;,9,2630,7
+44203,RETURN,1,,return VLC_EGENERIC;,13,2638,1
+44210,RETURN,-1,,return VLC_SUCCESS;,9,2642,5
+44223,RETURN,-1,,return VLC_SUCCESS;,9,2650,6
+44236,RETURN,-1,,return VLC_SUCCESS;,9,2658,6
+44249,RETURN,-1,,return VLC_SUCCESS;,9,2666,6
+44263,RETURN,-1,,return VLC_SUCCESS;,9,2673,4
+44269,RETURN,-1,,"return EsOutProgramDel( out, i_group );",9,2680,2
+44282,RETURN,-1,,return VLC_SUCCESS;,9,2688,5
+44293,RETURN,-1,,return VLC_SUCCESS;,9,2695,3
+44355,RETURN,-1,,return i_ret;,9,2721,10
+44371,RETURN,1,,return VLC_EGENERIC;,13,2729,1
+44420,RETURN,-1,,return VLC_SUCCESS;,9,2749,9
+44432,RETURN,-1,,return VLC_SUCCESS;,9,2756,3
+44443,RETURN,-1,,return VLC_SUCCESS;,9,2763,3
+44459,RETURN,-1,,return VLC_SUCCESS;,9,2771,5
+44467,RETURN,-1,,"return EsOutSetRecord( out, b );",9,2777,4
+44502,RETURN,-1,,return VLC_SUCCESS;,9,2789,13
+44516,RETURN,-1,,return VLC_SUCCESS;,9,2800,5
+44534,RETURN,-1,,return VLC_SUCCESS;,9,2810,5
+44540,RETURN,-1,,return VLC_SUCCESS;,9,2815,107
+44633,RETURN,-1,,return VLC_SUCCESS;,9,2847,8
+44715,RETURN,-1,,return VLC_SUCCESS;,9,2867,13
+44725,RETURN,1,,return VLC_EGENERIC;,13,2873,1
+44737,RETURN,1,,return VLC_EGENERIC;,13,2877,1
+44747,RETURN,-1,,return VLC_SUCCESS;,9,2882,8
+44757,RETURN,1,,return VLC_EGENERIC;,13,2888,1
+44769,RETURN,1,,return VLC_EGENERIC;,13,2892,1
+44786,RETURN,-1,,return VLC_SUCCESS;,9,2897,11
+44824,RETURN,-1,,return VLC_SUCCESS;,9,2906,2
+44832,RETURN,-1,,return VLC_SUCCESS;,9,2913,3
+44842,RETURN,-1,,return VLC_EGENERIC;,9,2919,128
+44874,RETURN,-1,,return i_ret;,5,2931,7
+44892,RETURN,-1,,"return strdup( """" );",9,2943,1
+44950,RETURN,-1,,return strdup( psz_code );,8,2967,1
+44955,RETURN,-1,,return strdup( vlc_gettext(pl->psz_eng_name) );,9,2971,1
+44977,RETURN,1,,"return strdup(""??"");",9,2981,1
+45022,RETURN,1,,return strdup( pl->psz_iso639_1 );,13,2989,1
+45027,RETURN,-1,,"return strdup(""??"");",5,2992,4
+45050,RETURN,1,,return NULL;,29,3002,1
+45134,RETURN,-1,,return ppsz;,5,3044,12
+45149,RETURN,1,,return -1;,9,3050,1
+45183,RETURN,1,,return i;,13,3056,1
+45194,RETURN,-1,,return -1;,5,3061,3
+45405,RETURN,1,,return;,9,3113,1
+45418,RETURN,1,,return;,9,3120,1
+46726,RETURN,-1,,return i_wu;,5,104,5
+46745,RETURN,-1,,return b;,5,112,5
+46764,RETURN,-1,,return b;,5,120,5
+46790,RETURN,-1,,"return es_out_Control( p_out, ES_OUT_SET_RECORD_STATE, b_record );",5,129,1
+46803,RETURN,-1,,"return es_out_Control( p_out, ES_OUT_SET_PAUSE_STATE, b_source_paused, b_paused, i_date );",5,133,1
+46817,RETURN,-1,,"return es_out_Control( p_out, ES_OUT_SET_RATE, i_source_rate, i_rate );",5,137,1
+46829,RETURN,-1,,"return es_out_Control( p_out, ES_OUT_SET_TIME, i_date );",5,141,1
+46839,RETURN,-1,,"return es_out_Control( p_out, ES_OUT_SET_FRAME_NEXT );",5,145,1
+46892,RETURN,-1,,"return es_out_Control( p_out, ES_OUT_GET_ES_OBJECTS_BY_ID, i_id, pp_decoder, pp_vout, pp_aout );",5,162,1
+46917,RETURN,-1,,return i_group;,5,169,5
+47334,RETURN,1,,return NULL;,9,306,1
+47349,RETURN,-1,,return NULL;,9,312,2
+47503,RETURN,-1,,return p_out;,5,401,29
+47587,RETURN,1,,return NULL;,9,434,1
+47613,RETURN,-1,,return NULL;,9,444,3
+47647,RETURN,-1,,return p_es;,5,456,13
+47705,RETURN,-1,,return i_ret;,5,476,11
+47798,RETURN,-1,,return VLC_SUCCESS;,5,507,4
+47838,RETURN,-1,,return VLC_SUCCESS;,5,523,4
+47870,RETURN,-1,,return VLC_SUCCESS;,5,534,4
+47965,RETURN,-1,,return i_ret;,5,569,6
+48055,RETURN,-1,,return i_ret;,5,605,6
+48075,RETURN,1,,"return es_out_SetTime( p_sys->p_out, i_date );",9,612,1
+48086,RETURN,-1,,return VLC_EGENERIC;,5,616,5
+48099,RETURN,-1,,return es_out_SetFrameNext( p_sys->p_out );,5,622,3
+48178,RETURN,1,,return VLC_EGENERIC;,13,658,1
+48191,RETURN,-1,,return VLC_SUCCESS;,13,662,2
+48193,RETURN,-1,,"return CmdExecuteControl( p_sys->p_out, &cmd );",9,664,4
+48214,RETURN,-1,,return VLC_SUCCESS;,13,676,2
+48216,RETURN,-1,,"return es_out_Control( p_sys->p_out, ES_OUT_GET_ES_STATE, p_es->p_es, pb_enabled );",9,678,4
+48230,RETURN,-1,,"return ControlLockedGetEmpty( p_out, pb_empty );",9,684,2
+48238,RETURN,-1,,"return ControlLockedGetWakeup( p_out, pi_wakeup );",9,689,2
+48246,RETURN,-1,,"return ControlLockedGetBuffering( p_out, pb_buffering );",9,694,2
+48273,RETURN,-1,,"return ControlLockedSetPauseState( p_out, b_source_paused, b_paused, i_date );",9,702,11
+48284,RETURN,-1,,"return ControlLockedSetRate( p_out, i_src_rate, i_rate );",9,709,3
+48300,RETURN,-1,,"return ControlLockedSetTime( p_out, i_date );",9,715,3
+48307,RETURN,-1,,return ControlLockedSetFrameNext( p_out );,9,719,1
+48317,RETURN,1,,return VLC_EGENERIC;,13,724,1
+48323,RETURN,-1,,"return es_out_vaControl( p_sys->p_out, i_query, args );",9,728,79
+48349,RETURN,1,,return VLC_EGENERIC;,13,736,1
+48351,RETURN,-1,,"return es_out_ControlModifyPcrSystem( p_sys->p_out, b_absolute, i_system );",9,738,7
+48376,RETURN,-1,,return VLC_EGENERIC;,9,752,101
+48410,RETURN,-1,,return i_ret;,5,768,8
+48461,RETURN,1,,return VLC_EGENERIC;,9,789,1
+48596,RETURN,-1,,return VLC_EGENERIC;,9,816,4
+48598,RETURN,-1,,return VLC_SUCCESS;,5,819,25
+48623,RETURN,1,,return;,9,826,1
+48744,RETURN,-1,,return;,13,868,3
+48818,RETURN,1,,return VLC_EGENERIC;,9,895,1
+48854,RETURN,-1,,return VLC_SUCCESS;,5,909,5
+48879,RETURN,-1,,return b_cmd;,5,919,5
+48916,RETURN,-1,,return b_unused;,5,931,5
+49001,RETURN,-1,,return i_ret;,5,963,6
+49057,RETURN,-1,,return i_ret;,5,980,10
+49410,RETURN,-1,,return NULL;,5,1099,6
+49431,RETURN,1,,return NULL;,9,1109,1
+49449,RETURN,-1,,return NULL;,9,1116,2
+49546,RETURN,-1,,return NULL;,9,1157,2
+49548,RETURN,-1,,return p_storage;,5,1159,22
+49555,RETURN,-1,,return NULL;,5,1163,26
+49608,RETURN,1,,return;,9,1191,1
+49696,RETURN,1,,return true;,13,1206,1
+49698,RETURN,-1,,return p_storage->i_cmd_w >= p_storage->i_cmd_max;,5,1208,2
+49711,RETURN,-1,,return !p_storage || p_storage->i_cmd_r >= p_storage->i_cmd_w;,5,1212,1
+49792,RETURN,-1,,return;,13,1230,2
+49824,RETURN,-1,,return;,17,1238,2
+50075,RETURN,1,,return VLC_EGENERIC;,13,1315,1
+50099,RETURN,-1,,return VLC_SUCCESS;,5,1322,5
+50221,RETURN,1,,"return es_out_Send( p_out, p_cmd->u.send.p_es->p_es, p_block );",13,1350,1
+50236,RETURN,-1,,return VLC_EGENERIC;,5,1353,5
+50285,RETURN,-1,,return VLC_SUCCESS;,5,1366,4
+50467,RETURN,1,,return VLC_EGENERIC;,17,1421,1
+50538,RETURN,1,,return VLC_EGENERIC;,17,1441,1
+50596,RETURN,1,,return VLC_EGENERIC;,17,1459,1
+50704,RETURN,1,,return VLC_EGENERIC;,17,1498,1
+50857,RETURN,-1,,return VLC_EGENERIC;,9,1532,80
+50859,RETURN,-1,,return VLC_SUCCESS;,5,1535,5
+50886,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.i_int );",9,1547,7
+50903,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.i_i64 );",9,1551,12
+50918,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.int_i64.i_int,
+                                               p_cmd->u.control.u.int_i64.i_i64 );",9,1554,15
+50950,RETURN,-1,,"return es_out_Control( p_out, i_query );",9,1560,22
+50956,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.int_meta.i_int,
+                                               p_cmd->u.control.u.int_meta.p_meta );",9,1563,25
+50984,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.int_epg.i_int,
+                                               p_cmd->u.control.u.int_epg.p_epg );",9,1567,28
+51012,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.int_epg_evt.i_int,
+                                               p_cmd->u.control.u.int_epg_evt.p_evt );",9,1571,31
+51040,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.i_i64 );",9,1575,34
+51055,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.es_bool.p_es->p_es,
+                                               p_cmd->u.control.u.es_bool.b_bool );",9,1578,37
+51085,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.int_meta.p_meta );",9,1582,40
+51106,RETURN,-1,,"return es_out_Control( p_out, i_query, !p_cmd->u.control.u.p_es ? NULL :
+                                               p_cmd->u.control.u.p_es->p_es );",9,1588,47
+51135,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.es_bool.p_es->p_es,
+                                               p_cmd->u.control.u.es_bool.b_bool );",9,1592,50
+51165,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.es_policy.i_cat,
+                                               p_cmd->u.control.u.es_policy.i_policy );",9,1596,53
+51193,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.es_fmt.p_es->p_es,
+                                               p_cmd->u.control.u.es_fmt.p_fmt );",9,1600,56
+51223,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.times.f_position,
+                                               p_cmd->u.control.u.times.i_time,
+                                               p_cmd->u.control.u.times.i_length );",9,1604,59
+51262,RETURN,-1,,"return es_out_Control( p_out, i_query, p_cmd->u.control.u.jitter.i_pts_delay,
+                                               p_cmd->u.control.u.jitter.i_pts_jitter,
+                                               p_cmd->u.control.u.jitter.i_cr_average );",9,1608,62
+51301,RETURN,-1,,return VLC_EGENERIC;,9,1614,65
+51467,RETURN,1,,return fd;,13,1654,1
+51480,RETURN,1,,return -1;,9,1661,1
+51495,RETURN,1,,return fd;,9,1665,1
+51500,RETURN,-1,,return -1;,5,1668,8
+51622,RETURN,1,,return;,9,77,1
+51958,RETURN,1,,return;,9,225,1
+51976,RETURN,-1,,"return ""video-es"";",9,236,3
+51980,RETURN,-1,,"return ""audio-es"";",9,238,6
+51984,RETURN,-1,,"return ""spu-es"";",9,240,9
+51987,RETURN,-1,,return NULL;,9,242,11
+52426,RETURN,1,,return NULL;,9,33,1
+52443,RETURN,-1,,return info;,5,37,6
+52476,RETURN,1,,return NULL;,9,51,1
+52494,RETURN,-1,,return cat;,5,56,7
+52536,RETURN,-1,,return cat->pp_infos[i];,13,66,2
+52542,RETURN,-1,,return NULL;,5,69,2
+52615,RETURN,1,,return NULL;,13,92,1
+52648,RETURN,-1,,return info;,5,98,5
+52671,RETURN,-1,,return info;,5,111,6
+52701,RETURN,-1,,return VLC_SUCCESS;,9,120,3
+52703,RETURN,-1,,return VLC_EGENERIC;,5,122,3
+52975,RETURN,-1,,"return Create( p_parent, p_item, psz_log, false, p_resource, p_renderer );",5,133,1
+53003,RETURN,1,,return VLC_EGENERIC;,9,148,1
+53017,RETURN,-1,,return VLC_SUCCESS;,5,157,6
+53025,RETURN,-1,,"return Create( parent, item, NULL, true, NULL, NULL );",5,163,1
+53086,RETURN,-1,,return VLC_EGENERIC;,9,189,3
+53088,RETURN,-1,,return VLC_SUCCESS;,5,191,8
+53310,RETURN,-1,,return input_priv(p_input)->p_item;,5,276,2
+53340,RETURN,1,,return NULL;,9,295,1
+53910,RETURN,-1,,return p_input;,5,481,63
+53959,RETURN,-1,,return NULL;,5,512,8
+54020,RETURN,-1,,return NULL;,5,537,8
+54048,RETURN,-1,,return ret;,5,548,7
+54217,RETURN,1,,return VLC_EGENERIC;,9,613,1
+54342,RETURN,-1,,return VLC_SUCCESS;,5,650,13
+54792,RETURN,1,,return;,30,819,1
+55063,RETURN,1,,return;,9,904,1
+55355,RETURN,-1,,return p_slave0 == NULL ? 1 : p_slave1 == NULL ? -1 : 0;,9,985,1
+55377,RETURN,1,,return -1;,9,989,1
+55389,RETURN,1,,return 1;,9,992,1
+55391,RETURN,-1,,return 0;,5,994,8
+55428,RETURN,1,,return true;,13,1004,1
+55430,RETURN,-1,,return false;,5,1006,2
+55535,RETURN,-1,,return i_type;,5,1047,6
+55545,RETURN,-1,,return SLAVE_TYPE_AUDIO;,5,1053,10
+55564,RETURN,1,,return;,9,1061,1
+56716,RETURN,-1,,return VLC_SUCCESS;,5,1441,26
+57281,RETURN,-1,,return VLC_EGENERIC;,5,1492,35
+57986,RETURN,-1,,return i - 1;,5,1658,5
+58037,RETURN,-1,,return VLC_EGENERIC;,13,1675,2
+58061,RETURN,-1,,return VLC_EGENERIC;,17,1684,2
+58169,RETURN,-1,,return VLC_SUCCESS;,5,1710,13
+58211,RETURN,-1,,return true;,9,1732,33
+58214,RETURN,-1,,return false;,9,1734,35
+58296,RETURN,-1,,return;,13,1773,2
+58313,RETURN,-1,,return;,9,1782,2
+58350,RETURN,-1,,return;,13,1799,3
+58560,RETURN,1,,return;,9,1881,1
+58630,RETURN,-1,,return;,13,1908,27
+58861,RETURN,1,,return b_force_update;,9,2002,1
+60082,RETURN,-1,,return b_force_update;,5,2459,8
+60145,RETURN,1,,return VLC_DEMUXER_EOF;,13,2477,1
+60159,RETURN,1,,return VLC_DEMUXER_EOF;,13,2482,1
+60173,RETURN,1,,return VLC_DEMUXER_EOF;,13,2487,1
+60175,RETURN,-1,,return VLC_DEMUXER_SUCCESS;,5,2489,6
+60211,RETURN,-1,,"return UpdateTitleSeekpoint( p_input,
+                                 demux_GetTitle( p_demux ),
+                                 demux_GetSeekpoint( p_demux ) );",5,2506,5
+60396,RETURN,-1,,return VLC_EGENERIC;,9,2567,2
+60431,RETURN,-1,,return VLC_SUCCESS;,5,2578,5
+60505,RETURN,-1,,return p_demux;,9,2598,2
+60518,RETURN,1,,return NULL;,9,2605,1
+60608,RETURN,1,,return p_demux;,9,2636,1
+60620,RETURN,-1,,return NULL;,5,2645,25
+60650,RETURN,1,,return NULL;,9,2660,1
+60677,RETURN,-1,,return NULL;,9,2671,2
+60901,RETURN,-1,,return NULL;,9,2754,3
+60963,RETURN,-1,,return NULL;,13,2776,3
+61297,RETURN,-1,,return in;,5,2865,48
+61392,RETURN,1,,return;,9,2912,1
+61408,RETURN,1,,return;,9,2917,1
+61515,RETURN,-1,,return;,9,2950,2
+61639,RETURN,-1,,return;,9,3006,2
+61857,RETURN,-1,,return;,13,3081,5
+61890,RETURN,1,,return;,9,3099,1
+62231,RETURN,1,,return;,9,3218,1
+62316,RETURN,-1,,return;,13,3237,3
+62331,RETURN,1,,return;,9,3246,1
+62565,RETURN,-1,,return str;,5,3335,7
+62598,RETURN,1,,return;,9,3354,1
+62649,RETURN,1,,return;,9,3367,1
+62779,RETURN,-1,,return VLC_EGENERIC;,9,3416,2
+62807,RETURN,-1,,return VLC_EGENERIC;,17,3431,3
+62823,RETURN,-1,,return VLC_EGENERIC;,17,3439,3
+62844,RETURN,1,,return VLC_SUCCESS;,9,3450,1
+62856,RETURN,1,,return VLC_SUCCESS;,9,3456,1
+62912,RETURN,-1,,return VLC_SUCCESS;,5,3471,25
+62985,RETURN,-1,,return psz_uri;,5,3502,9
+63127,RETURN,1,,return NULL;,9,3553,1
+63139,RETURN,-1,,return path;,5,3563,8
+63367,RETURN,-1,,"return container_of(input, input_thread_private_t, input);",5,183,1
+64165,RETURN,-1,,return b_error;,5,240,5
+64190,RETURN,-1,,return false;,9,251,2
+64213,RETURN,-1,,return b_ret;,5,258,8
+64237,RETURN,-1,,return NULL;,9,268,2
+64263,RETURN,-1,,return psz;,5,276,7
+64298,RETURN,-1,,return psz_ret;,9,289,3
+64335,RETURN,-1,,return psz_ret;,5,299,8
+64364,RETURN,-1,,return psz_name;,5,309,5
+64419,RETURN,-1,,return psz_s;,5,328,5
+64702,RETURN,-1,,return i_duration;,5,406,5
+64787,RETURN,-1,,"return input_item_GetMeta( p_item, vlc_meta_ESNowPlaying );",9,435,2
+64791,RETURN,-1,,return psz_meta;,5,438,4
+64824,RETURN,-1,,return b_preparsed;,5,447,5
+64857,RETURN,-1,,return b_fetched;,5,456,5
+64890,RETURN,-1,,return b_ret;,5,467,5
+64912,RETURN,-1,,return p_item;,5,475,4
+64938,RETURN,1,,return;,9,483,1
+65168,RETURN,1,,return VLC_EGENERIC;,9,538,1
+65266,RETURN,-1,,return err;,5,570,17
+65303,RETURN,-1,,return i_ret;,5,580,4
+65336,RETURN,1,,return VLC_ENOMEM;,9,590,1
+65373,RETURN,-1,,return VLC_SUCCESS;,5,599,13
+65473,RETURN,-1,,"return strcasecmp(a, *entry);",5,623,3
+65505,RETURN,1,,return false;,9,632,1
+65507,RETURN,-1,,"return bsearch(psz_ext, ppsz_master_exts, ARRAY_SIZE(ppsz_master_exts),
+                   sizeof(const char *), bsearch_strcmp_cb) != NULL;",5,634,6
+65565,RETURN,1,,return false;,9,655,1
+65609,RETURN,-1,,return true;,13,663,2
+65611,RETURN,-1,,return false;,5,666,11
+65624,RETURN,1,,return NULL;,9,673,1
+65642,RETURN,1,,return NULL;,9,677,1
+65664,RETURN,-1,,return p_slave;,5,684,9
+65687,RETURN,1,,return VLC_EGENERIC;,9,691,1
+65707,RETURN,-1,,return VLC_SUCCESS;,5,698,5
+65760,RETURN,-1,,return p_cat;,13,713,2
+65762,RETURN,-1,,return NULL;,5,716,3
+65812,RETURN,-1,,return psz_ret;,13,743,4
+65819,RETURN,-1,,"return strdup( """" );",5,747,6
+65855,RETURN,1,,return VLC_ENOMEM;,13,762,1
+65882,RETURN,1,,return VLC_EGENERIC;,9,767,1
+65884,RETURN,-1,,return VLC_SUCCESS;,5,768,8
+65936,RETURN,-1,,return i_ret;,5,791,9
+65968,RETURN,-1,,return VLC_EGENERIC;,9,804,2
+65987,RETURN,-1,,return VLC_EGENERIC;,13,814,2
+66019,RETURN,-1,,return VLC_SUCCESS;,5,828,9
+66305,RETURN,1,,return;,9,923,1
+66561,RETURN,1,,return NULL;,9,1063,1
+66717,RETURN,-1,,return p_input;,5,1106,29
+66800,RETURN,-1,,return item;,5,1135,11
+66826,RETURN,-1,,"return strncmp( uri, scheme, strlen( scheme ) );",5,1150,7
+67121,RETURN,1,,return ITEM_TYPE_UNKNOWN;,9,1229,1
+67143,RETURN,1,,return ITEM_TYPE_UNKNOWN;,9,1235,1
+67151,RETURN,-1,,return e->i_type;,5,1238,10
+67170,RETURN,1,,return NULL;,9,1245,1
+67191,RETURN,-1,,return p_node;,5,1255,9
+67243,RETURN,1,,return NULL;,24,1272,1
+67291,RETURN,-1,,return p_new_child;,5,1285,12
+67379,RETURN,1,,return;,9,1317,1
+67439,RETURN,-1,,return;,9,1333,6
+67475,RETURN,1,,return -1;,13,1346,1
+67485,RETURN,1,,return 1;,13,1348,1
+67487,RETURN,-1,,return 0;,5,1350,2
+67528,RETURN,1,,return i_ret;,9,1360,1
+67530,RETURN,-1,,"return vlc_filenamecmp(ia->psz_name, ib->psz_name);",5,1362,12
+67550,RETURN,1,,return;,9,1368,1
+67591,RETURN,1,,return false;,9,1386,1
+67604,RETURN,1,,return false;,9,1390,1
+67657,RETURN,1,,return true;,13,1401,1
+67666,RETURN,-1,,return false;,5,1407,8
+67674,RETURN,-1,,"return (psz_filename[0] == '\0'
+         || strcmp(psz_filename, ""."") == 0
+         || strcmp(psz_filename, "".."") == 0
+         || (!p_rdh->b_show_hiddenfiles && psz_filename[0] == '.')
+         || rdh_file_has_ext(psz_filename, p_rdh->psz_ignored_exts));",5,1413,1
+67747,RETURN,1,,return NULL;,9,1441,1
+67806,RETURN,-1,,return psz_name;,5,1461,13
+67930,RETURN,-1,,return i_priority;,5,1518,21
+67950,RETURN,1,,return false;,9,1526,1
+67961,RETURN,1,,return false;,9,1530,1
+68050,RETURN,1,,return true;,13,1555,1
+68052,RETURN,-1,,return false;,5,1557,7
+68067,RETURN,1,,return;,9,1564,1
+68357,RETURN,1,,return VLC_ENOMEM;,17,1660,1
+68411,RETURN,-1,,return VLC_ENOMEM;,17,1676,2
+68436,RETURN,-1,,return VLC_ENOMEM;,17,1684,2
+68460,RETURN,-1,,return VLC_SUCCESS;,5,1693,5
+68727,RETURN,1,,return VLC_ENOMEM;,13,1783,1
+68765,RETURN,-1,,return VLC_ENOMEM;,13,1793,3
+68780,RETURN,1,,return VLC_SUCCESS;,9,1800,1
+68807,RETURN,1,,return i_ret;,13,1808,1
+68824,RETURN,1,,return VLC_ENOMEM;,9,1814,1
+68843,RETURN,1,,return VLC_ENOMEM;,9,1820,1
+68855,RETURN,-1,,return VLC_SUCCESS;,5,1827,19
+69071,RETURN,-1,,return vlc_gettext (posix_names[meta_type]);,5,84,4
+69094,RETURN,1,,return NULL;,9,96,1
+69116,RETURN,-1,,return m;,5,100,7
+69196,RETURN,-1,,return p_meta->ppsz_meta[meta_type];,5,133,1
+69247,RETURN,-1,,"return (char *)vlc_dictionary_value_for_key(&m->extra_tags, psz_name);",5,147,1
+69261,RETURN,-1,,return vlc_dictionary_keys_count(&m->extra_tags);,5,152,1
+69272,RETURN,-1,,return vlc_dictionary_all_keys(&m->extra_tags);,5,157,1
+69283,RETURN,-1,,return m->i_status;,5,165,1
+69311,RETURN,1,,return;,9,180,1
+69437,RETURN,1,,return;,13,216,1
+69498,RETURN,-1,,return;,9,238,2
+69573,RETURN,1,,return VLC_ENOMEM;,9,261,1
+69650,RETURN,-1,,return VLC_SUCCESS;,5,283,20
+69655,RETURN,-1,,return VLC_EGENERIC;,5,287,23
+69668,RETURN,1,,return;,9,296,1
+69804,RETURN,1,,return VLC_EGENERIC;,9,72,1
+69843,RETURN,1,,return VLC_EGENERIC;,9,89,1
+69851,RETURN,-1,,return VLC_SUCCESS;,5,92,6
+69939,RETURN,-1,,return VLC_SUCCESS;,5,153,7
+69960,RETURN,-1,,return VLC_EGENERIC;,5,159,11
+70030,RETURN,-1,,return NULL;,5,138,4
+70070,RETURN,1,,return;,9,157,1
+70203,RETURN,-1,,return NULL;,9,211,2
+70299,RETURN,1,,return NULL;,13,243,1
+70338,RETURN,-1,,return p_vout;,9,256,11
+70438,RETURN,-1,,return NULL;,9,288,8
+70475,RETURN,-1,,return p_vout;,5,302,6
+70615,RETURN,1,,return NULL;,13,350,1
+70663,RETURN,-1,,return p_aout;,5,365,7
+70751,RETURN,-1,,return p_aout;,5,399,6
+70817,RETURN,1,,return NULL;,9,423,1
+70840,RETURN,-1,,return p_resource;,5,429,8
+70857,RETURN,1,,return;,9,435,1
+70896,RETURN,-1,,return p_resource;,5,450,2
+70961,RETURN,-1,,return p_ret;,5,475,5
+70968,RETURN,-1,,return HoldVout( p_resource );,5,479,1
+71021,RETURN,-1,,return b_vout;,5,499,6
+71047,RETURN,-1,,return p_ret;,5,509,5
+71190,RETURN,-1,,return VLC_ENOMEM;,9,51,3
+71192,RETURN,-1,,return VLC_PROBE_CONTINUE;,5,53,4
+71217,RETURN,-1,,return NULL;,9,69,2
+71268,RETURN,-1,,return NULL;,9,82,5
+71340,RETURN,-1,,return names;,5,96,18
+71368,RETURN,1,,return NULL;,9,112,1
+71418,RETURN,-1,,return sd;,5,127,9
+71475,RETURN,1,,return NULL;,22,42,1
+71497,RETURN,-1,,return p_counter;,5,49,8
+71515,RETURN,1,,return 0;,9,55,1
+71517,RETURN,-1,,return counter->pp_samples[0]->value;,5,56,2
+71541,RETURN,1,,return 0.;,9,62,1
+71543,RETURN,-1,,"return (counter->pp_samples[0]->value - counter->pp_samples[1]->value)
+        / (float)(counter->pp_samples[0]->date - counter->pp_samples[1]->date);",5,64,2
+71596,RETURN,1,,return NULL;,9,73,1
+71605,RETURN,-1,,return p_stats;,5,78,7
+71623,RETURN,1,,return;,9,86,1
+71954,RETURN,1,,return;,9,161,1
+71978,RETURN,1,,return;,13,170,1
+71997,RETURN,1,,return;,13,175,1
+72067,RETURN,1,,return;,17,195,1
+72186,RETURN,1,,return NULL;,9,72,1
+72297,RETURN,-1,,return s;,5,98,25
+72383,RETURN,1,,return NULL;,9,131,1
+72402,RETURN,-1,,return s;,5,136,5
+72421,RETURN,1,,return NULL;,9,144,1
+72434,RETURN,1,,return stream;,9,149,1
+72453,RETURN,-1,,return NULL;,9,156,3
+72465,RETURN,-1,,return stream;,5,162,10
+72503,RETURN,1,,return NULL;,9,180,1
+73075,RETURN,-1,,return p_line;,9,352,4
+73080,RETURN,-1,,return NULL;,5,358,14
+73099,RETURN,1,,return -1;,9,367,1
+73148,RETURN,-1,,return likely(len > 0) ? (ssize_t)len : -1;,5,384,9
+73180,RETURN,1,,return 0;,9,395,1
+73206,RETURN,1,,return 0;,17,403,1
+73230,RETURN,-1,,return ret;,9,410,3
+73246,RETURN,1,,return ret;,9,415,1
+73284,RETURN,1,,return ret;,13,424,1
+73286,RETURN,-1,,return eof ? 0 : -1;,9,425,6
+73292,RETURN,-1,,return 0;,5,428,10
+73333,RETURN,-1,,return ret;,9,441,3
+73369,RETURN,-1,,return ret;,5,450,10
+73430,RETURN,-1,,return copied;,5,472,4
+73486,RETURN,1,,return VLC_ENOMEM;,13,492,1
+73520,RETURN,1,,return VLC_ENOMEM;,13,503,1
+73580,RETURN,1,,return peek->i_buffer;,13,523,1
+73584,RETURN,-1,,return len;,5,526,10
+73606,RETURN,-1,,return NULL;,9,537,2
+73681,RETURN,1,,return NULL;,13,559,1
+73732,RETURN,-1,,return block;,5,576,7
+73745,RETURN,-1,,return priv->offset;,5,583,3
+73760,RETURN,-1,,return priv->eof;,5,590,3
+73846,RETURN,-1,,return VLC_SUCCESS;,13,617,7
+73857,RETURN,1,,return VLC_SUCCESS;,13,623,1
+73866,RETURN,1,,return VLC_EGENERIC;,9,627,1
+73882,RETURN,1,,return ret;,9,631,1
+73917,RETURN,-1,,return VLC_SUCCESS;,5,647,14
+73955,RETURN,1,,return ret;,17,666,1
+73994,RETURN,-1,,return VLC_SUCCESS;,13,682,7
+73996,RETURN,-1,,"return s->pf_control(s, cmd, args);",5,685,4
+74016,RETURN,1,,return NULL;,9,700,1
+74029,RETURN,1,,return NULL;,9,704,1
+74047,RETURN,-1,,return NULL;,9,710,2
+74054,RETURN,-1,,return block;,5,714,9
+74062,RETURN,-1,,"return s->pf_readdir( s, p_node );",5,723,1
+74178,RETURN,1,,return NULL;,9,95,1
+74187,RETURN,-1,,return NULL;,9,100,2
+74210,RETURN,-1,,return vlc_memstream_close( &buffer ) ? NULL : buffer.ptr;,5,111,9
+74281,RETURN,-1,,"return priv->extractor.pf_read( &priv->extractor, buf, len );",5,150,3
+74306,RETURN,-1,,"return priv->extractor.pf_block( &priv->extractor, eof );",5,157,3
+74330,RETURN,-1,,"return priv->extractor.pf_seek( &priv->extractor, offset );",5,164,3
+74354,RETURN,-1,,"return priv->directory.pf_readdir( &priv->directory, node );",5,171,3
+74379,RETURN,-1,,"return priv->extractor.pf_control( &priv->extractor, req, args );",5,178,3
+74410,RETURN,1,,return VLC_SUCCESS;,9,188,1
+74412,RETURN,-1,,return VLC_EGENERIC;,5,190,4
+74473,RETURN,1,,return VLC_ENOMEM;,9,214,1
+74475,RETURN,-1,,return VLC_SUCCESS;,5,216,6
+74530,RETURN,1,,return VLC_EGENERIC;,9,235,1
+74532,RETURN,-1,,return VLC_SUCCESS;,5,237,7
+74555,RETURN,1,,return VLC_ENOMEM;,9,261,1
+74567,RETURN,-1,,return VLC_EGENERIC;,9,266,2
+74629,RETURN,-1,,return VLC_SUCCESS;,5,280,10
+74670,RETURN,1,,return VLC_ENOMEM;,9,295,1
+74778,RETURN,-1,,return VLC_SUCCESS;,5,326,12
+74783,RETURN,-1,,return VLC_EGENERIC;,5,330,15
+74791,RETURN,-1,,"return StreamExtractorAttach( source, NULL, module_name );",5,336,1
+74803,RETURN,-1,,"return StreamExtractorAttach( source, identifier, module_name );",5,343,1
+74823,RETURN,1,,return VLC_EGENERIC;,9,353,1
+74875,RETURN,-1,,return idx == count ? VLC_SUCCESS : VLC_EGENERIC;,5,372,10
+74888,RETURN,-1,,"return StreamExtractorCreateMRL( directory->source->psz_url, subentry );",5,379,1
+75011,RETURN,-1,,return block;,5,83,10
+75041,RETURN,-1,,return VLC_EGENERIC;,13,104,16
+75043,RETURN,-1,,return VLC_SUCCESS;,5,106,3
+75063,RETURN,1,,return NULL;,9,113,1
+75080,RETURN,-1,,return NULL;,9,119,2
+75105,RETURN,-1,,return NULL;,9,129,3
+75127,RETURN,-1,,return vlc_object_hold(s);,5,136,14
+75176,RETURN,-1,,return -1;,9,156,3
+75179,RETURN,-1,,return 0;,5,158,9
+75199,RETURN,1,,return -1;,9,165,1
+75208,RETURN,-1,,"return vlc_stream_fifo_Queue(s, block) ? -1 : (ssize_t)len;",5,168,5
+75310,RETURN,1,,return NULL;,9,47,1
+75365,RETURN,-1,,return s;,5,64,10
+75370,RETURN,-1,,return NULL;,5,67,13
+75410,RETURN,-1,,return p_source;,5,83,2
+75429,RETURN,1,,return p_source;,9,92,1
+75475,RETURN,-1,,return p_source;,5,107,7
+75508,RETURN,-1,,"return vlc_stream_ReadDir( s->p_source, p_node );",5,121,2
+75595,RETURN,1,,return NULL;,9,63,1
+75614,RETURN,-1,,return NULL;,9,69,2
+75646,RETURN,-1,,return s;,5,79,13
+75705,RETURN,-1,,return VLC_EGENERIC;,13,117,36
+75719,RETURN,-1,,return VLC_EGENERIC;,13,127,47
+75726,RETURN,-1,,return VLC_EGENERIC;,13,131,50
+75728,RETURN,-1,,return VLC_SUCCESS;,5,133,5
+75781,RETURN,-1,,return i_read;,5,145,6
+75812,RETURN,-1,,return VLC_SUCCESS;,5,156,5
+75942,RETURN,-1,,return;,9,86,2
+76012,RETURN,1,,return 0;,13,113,1
+76016,RETURN,-1,,return 1;,5,116,3
+76047,RETURN,1,,return 0;,9,125,1
+76049,RETURN,-1,,"return strcmp( p_slave0->psz_uri, p_slave1->psz_uri );",5,131,6
+76072,RETURN,1,,return 0;,9,143,1
+76098,RETURN,1,,return 1;,13,148,1
+76100,RETURN,-1,,return 0;,5,149,6
+76123,RETURN,1,,return NULL;,9,163,1
+76163,RETURN,1,,return NULL;,9,173,1
+76235,RETURN,-1,,return subdirs;,5,195,13
+76257,RETURN,1,,return VLC_EGENERIC;,9,219,1
+76283,RETURN,1,,return VLC_EGENERIC;,9,227,1
+76294,RETURN,1,,return VLC_EGENERIC;,9,231,1
+76308,RETURN,-1,,return VLC_ENOMEM;,9,238,2
+76324,RETURN,-1,,return VLC_EGENERIC;,9,246,3
+76366,RETURN,-1,,return VLC_ENOMEM;,9,261,5
+76809,RETURN,-1,,return VLC_SUCCESS;,5,431,43
+78475,RETURN,-1,,return VLC_SUCCESS;,9,566,2
+78477,RETURN,-1,,return VLC_EGENERIC;,5,569,7
+78514,RETURN,-1,,return VLC_SUCCESS;,5,581,8
+78582,RETURN,-1,,return VLC_SUCCESS;,5,603,10
+78658,RETURN,-1,,return VLC_SUCCESS;,5,628,10
+78697,RETURN,-1,,return VLC_SUCCESS;,5,640,8
+78725,RETURN,-1,,return VLC_SUCCESS;,5,652,7
+78856,RETURN,-1,,return VLC_SUCCESS;,5,693,8
+78963,RETURN,-1,,return VLC_SUCCESS;,5,726,8
+79016,RETURN,-1,,return VLC_SUCCESS;,5,748,11
+79063,RETURN,-1,,return VLC_SUCCESS;,5,764,8
+79110,RETURN,-1,,return VLC_SUCCESS;,5,780,8
+79157,RETURN,-1,,return VLC_SUCCESS;,5,796,8
+79202,RETURN,-1,,return VLC_SUCCESS;,5,813,6
+79230,RETURN,-1,,return VLC_SUCCESS;,5,825,7
+79258,RETURN,-1,,return VLC_SUCCESS;,5,837,7
+79287,RETURN,-1,,return VLC_SUCCESS;,5,850,8
+79388,RETURN,-1,,return VLC_SUCCESS;,5,77,7
+79539,RETURN,-1,,return VLC_SUCCESS;,5,116,13
+79597,RETURN,-1,,return p_vlm;,9,141,3
+79629,RETURN,-1,,return NULL;,9,151,2
+79739,RETURN,-1,,return NULL;,9,179,8
+79800,RETURN,-1,,return p_vlm;,5,206,31
+79848,RETURN,-1,,return;,9,226,2
+79975,RETURN,-1,,return i_result;,5,273,5
+80003,RETURN,1,,return VLC_EGENERIC;,9,288,1
+80064,RETURN,-1,,return VLC_EGENERIC;,9,304,2
+80267,RETURN,-1,,return i_ret;,5,389,13
+80765,RETURN,-1,,return NULL;,5,530,9
+80800,RETURN,1,,return p_vlm->media[i];,13,559,1
+80806,RETURN,-1,,return NULL;,5,561,2
+80842,RETURN,1,,return p_vlm->media[i];,13,568,1
+80848,RETURN,-1,,return NULL;,5,570,2
+80886,RETURN,1,,return VLC_EGENERIC;,9,576,1
+80934,RETURN,1,,return VLC_EGENERIC;,13,583,1
+80936,RETURN,-1,,return VLC_SUCCESS;,5,585,3
+81427,RETURN,-1,,return VLC_SUCCESS;,5,722,5
+81451,RETURN,1,,return VLC_EGENERIC;,9,730,1
+81476,RETURN,1,,return VLC_EGENERIC;,9,732,1
+81492,RETURN,-1,,"return vlm_OnMediaUpdate( p_vlm, p_media );",5,742,8
+81518,RETURN,-1,,return VLC_EGENERIC;,9,752,2
+81581,RETURN,-1,,return VLC_EGENERIC;,13,767,4
+81607,RETURN,1,,return VLC_ENOMEM;,9,776,1
+81679,RETURN,-1,,"return vlm_OnMediaUpdate( p_vlm, p_media );",5,795,14
+81699,RETURN,1,,return VLC_EGENERIC;,9,803,1
+81785,RETURN,-1,,return VLC_SUCCESS;,5,827,12
+81837,RETURN,-1,,return VLC_SUCCESS;,5,845,7
+81861,RETURN,-1,,return VLC_SUCCESS;,5,852,2
+81880,RETURN,1,,return VLC_EGENERIC;,9,858,1
+81890,RETURN,-1,,return VLC_SUCCESS;,5,861,5
+81909,RETURN,1,,return VLC_EGENERIC;,9,867,1
+81919,RETURN,-1,,return VLC_SUCCESS;,5,870,5
+81969,RETURN,1,,return p_media->instance[i];,13,880,1
+81975,RETURN,-1,,return NULL;,5,882,2
+81994,RETURN,1,,return NULL;,9,888,1
+82048,RETURN,-1,,return p_instance;,5,902,12
+82145,RETURN,1,,return VLC_EGENERIC;,9,932,1
+82166,RETURN,1,,return VLC_EGENERIC;,9,937,1
+82181,RETURN,1,,return VLC_EGENERIC;,9,940,1
+82208,RETURN,1,,return VLC_ENOMEM;,13,949,1
+82409,RETURN,-1,,return VLC_SUCCESS;,13,995,2
+82626,RETURN,-1,,return VLC_SUCCESS;,5,1061,16
+82646,RETURN,1,,return VLC_EGENERIC;,9,1070,1
+82657,RETURN,1,,return VLC_EGENERIC;,9,1074,1
+82664,RETURN,-1,,return VLC_SUCCESS;,5,1078,8
+82685,RETURN,1,,return VLC_EGENERIC;,9,1087,1
+82701,RETURN,1,,return VLC_EGENERIC;,9,1091,1
+82741,RETURN,-1,,return VLC_SUCCESS;,5,1099,10
+82763,RETURN,1,,return VLC_EGENERIC;,9,1107,1
+82779,RETURN,1,,return VLC_EGENERIC;,9,1111,1
+82803,RETURN,-1,,return VLC_SUCCESS;,5,1117,9
+82825,RETURN,1,,return VLC_EGENERIC;,9,1125,1
+82841,RETURN,1,,return VLC_EGENERIC;,9,1129,1
+82848,RETURN,1,,"return var_SetInteger( p_instance->p_input, ""time"", i_time );",9,1132,1
+82866,RETURN,1,,"return var_SetFloat( p_instance->p_input, ""position"", d_position );",9,1134,1
+82873,RETURN,-1,,return VLC_EGENERIC;,5,1135,8
+82895,RETURN,1,,return VLC_EGENERIC;,9,1145,1
+83008,RETURN,-1,,return VLC_SUCCESS;,5,1170,10
+83026,RETURN,1,,return VLC_EGENERIC;,9,1178,1
+83044,RETURN,-1,,return VLC_SUCCESS;,5,1183,5
+83064,RETURN,-1,,return VLC_SUCCESS;,5,1191,2
+83094,RETURN,-1,,"return vlm_ControlMediaGets( p_vlm, ppp_dsc, pi_int );",9,1218,5
+83101,RETURN,-1,,return vlm_ControlMediaClear( p_vlm );,9,1221,8
+83107,RETURN,-1,,"return vlm_ControlMediaChange( p_vlm, p_dsc );",9,1225,12
+83115,RETURN,-1,,"return vlm_ControlMediaAdd( p_vlm, p_dsc, p_id );",9,1230,17
+83129,RETURN,-1,,"return vlm_ControlMediaDel( p_vlm, id );",9,1234,21
+83143,RETURN,-1,,"return vlm_ControlMediaGet( p_vlm, id, pp_dsc );",9,1239,26
+83152,RETURN,-1,,"return vlm_ControlMediaGetId( p_vlm, psz_id, p_id );",9,1244,31
+83168,RETURN,-1,,"return vlm_ControlMediaInstanceGets( p_vlm, id, ppp_idsc, pi_int );",9,1252,37
+83183,RETURN,-1,,"return vlm_ControlMediaInstanceClear( p_vlm, id );",9,1256,41
+83198,RETURN,-1,,"return vlm_ControlMediaInstanceStart( p_vlm, id, psz_id, i_int, NULL );",9,1263,47
+83221,RETURN,1,,return VLC_EGENERIC;,13,1271,1
+83223,RETURN,-1,,"return vlm_ControlMediaInstanceStart( p_vlm, id, psz_id, i_int, psz_vod );",9,1272,55
+83240,RETURN,-1,,"return vlm_ControlMediaInstanceStop( p_vlm, id, psz_id );",9,1277,60
+83255,RETURN,-1,,"return vlm_ControlMediaInstancePause( p_vlm, id, psz_id );",9,1282,65
+83271,RETURN,-1,,"return vlm_ControlMediaInstanceGetTimePosition( p_vlm, id, psz_id, pi_i64, NULL );",9,1288,71
+83289,RETURN,-1,,"return vlm_ControlMediaInstanceGetTimePosition( p_vlm, id, psz_id, NULL, pd_double );",9,1293,77
+83313,RETURN,-1,,"return vlm_ControlMediaInstanceSetTimePosition( p_vlm, id, psz_id, i_i64, -1 );",9,1299,83
+83332,RETURN,-1,,"return vlm_ControlMediaInstanceSetTimePosition( p_vlm, id, psz_id, -1, d_double );",9,1304,89
+83342,RETURN,-1,,return vlm_ControlScheduleClear( p_vlm );,9,1307,92
+83349,RETURN,-1,,return VLC_EGENERIC;,9,1311,95
+83370,RETURN,-1,,return i_result;,5,1324,6
+83401,RETURN,-1,,return i_result;,5,1340,8
+83864,RETURN,1,,return NULL;,9,126,1
+83881,RETURN,-1,,return p_provider;,5,131,5
+83954,RETURN,1,,return VLC_EGENERIC;,9,154,1
+83997,RETURN,-1,,return VLC_SUCCESS;,5,166,12
+84024,RETURN,-1,,return;,9,176,2
+84064,RETURN,1,,return NULL;,9,190,1
+84076,RETURN,-1,,return NULL;,9,195,2
+84098,RETURN,-1,,return p_id;,5,204,9
+84209,RETURN,1,,return;,9,243,1
+84461,RETURN,-1,,return i_ret;,5,326,13
+84490,RETURN,-1,,return VLC_EGENERIC;,9,337,2
+84508,RETURN,-1,,return VLC_ENOMEM;,9,344,2
+84528,RETURN,-1,,return VLC_SUCCESS;,5,351,8
+84588,RETURN,-1,,return i_ret;,5,372,7
+84615,RETURN,-1,,return i_ret;,5,386,7
+84655,RETURN,-1,,return VLC_EGENERIC;,9,399,2
+84673,RETURN,-1,,return VLC_ENOMEM;,9,406,2
+84693,RETURN,-1,,return VLC_ENOMEM;,9,414,3
+84720,RETURN,-1,,return VLC_SUCCESS;,5,422,12
+84765,RETURN,1,,return VLC_EGENERIC;,9,436,1
+84791,RETURN,1,,return i_ret;,9,442,1
+84807,RETURN,1,,return i_ret;,9,447,1
+84844,RETURN,-1,,return 1;,5,454,15
+84879,RETURN,-1,,return i_ret;,5,471,7
+84921,RETURN,-1,,return VLC_EGENERIC;,9,486,2
+84939,RETURN,-1,,return VLC_ENOMEM;,9,493,2
+84959,RETURN,-1,,return VLC_ENOMEM;,9,501,3
+84988,RETURN,-1,,return VLC_SUCCESS;,5,510,12
+85029,RETURN,1,,return VLC_EGENERIC;,9,525,1
+85055,RETURN,1,,return i_ret;,9,532,1
+85071,RETURN,1,,return i_ret;,9,537,1
+85094,RETURN,1,,return VLC_EGENERIC;,9,540,1
+85096,RETURN,-1,,return answer.u.question.i_action;,5,542,13
+85137,RETURN,-1,,return i_ret;,5,560,7
+85186,RETURN,-1,,return VLC_EGENERIC;,9,575,2
+85204,RETURN,-1,,return VLC_ENOMEM;,9,582,2
+85224,RETURN,-1,,return VLC_ENOMEM;,9,590,3
+85260,RETURN,-1,,return VLC_SUCCESS;,5,600,13
+85296,RETURN,1,,return NULL;,9,613,1
+85312,RETURN,-1,,return i_ret == VLC_SUCCESS ? p_id : NULL;,5,618,8
+85350,RETURN,-1,,return p_id;,5,634,7
+85399,RETURN,-1,,return VLC_EGENERIC;,9,650,3
+85442,RETURN,-1,,return VLC_SUCCESS;,5,665,10
+85451,RETURN,-1,,"return dialog_update_progress(p_obj, p_id, f_value, NULL);",5,673,1
+85481,RETURN,1,,return VLC_ENOMEM;,9,685,1
+85483,RETURN,-1,,"return dialog_update_progress(p_obj, p_id, f_value, psz_text);",5,686,4
+85516,RETURN,-1,,return i_ret;,5,700,7
+85583,RETURN,-1,,return b_cancelled;,5,726,7
+85631,RETURN,-1,,return p_context;,5,744,6
+85697,RETURN,-1,,return VLC_SUCCESS;,5,771,5
+85802,RETURN,-1,,return VLC_ENOMEM;,9,794,4
+85804,RETURN,-1,,"return dialog_id_post(p_id, &answer);",5,797,5
+85842,RETURN,-1,,"return dialog_id_post(p_id, &answer);",5,810,4
+85852,RETURN,-1,,"return dialog_id_post(p_id, NULL);",5,816,1
+85926,RETURN,-1,,return VLC_EGENERIC;,9,847,2
+85941,RETURN,-1,,return VLC_SUCCESS;,5,851,8
+86005,RETURN,1,,return VLC_ENOMEM;,9,77,1
+86193,RETURN,-1,,return VLC_SUCCESS;,5,122,30
+86212,RETURN,-1,,return VLC_EGENERIC;,5,129,35
+86248,RETURN,-1,,return playlist;,5,150,6
+86276,RETURN,1,,return -1;,9,170,1
+86313,RETURN,-1,,return ret;,5,183,10
+86430,RETURN,-1,,return ret;,5,231,6
+86554,RETURN,-1,,return ret;,5,283,8
+87013,RETURN,1,,return NULL;,9,91,1
+87034,RETURN,-1,,return p_libvlc;,5,99,9
+87085,RETURN,-1,,return VLC_EGENERIC;,9,135,2
+87413,RETURN,-1,,return VLC_SUCCESS;,5,371,64
+87418,RETURN,-1,,return i_ret;,5,375,67
+87575,RETURN,-1,,return;,17,470,2
+87646,RETURN,1,,return VLC_ENOMEM;,9,496,1
+87676,RETURN,-1,,return VLC_SUCCESS;,5,505,6
+87700,RETURN,1,,return VLC_ENOMEM;,9,521,1
+87742,RETURN,-1,,return VLC_SUCCESS;,5,530,9
+87764,RETURN,1,,return VLC_ENOMEM;,9,543,1
+87772,RETURN,-1,,return VLC_SUCCESS;,5,546,5
+87793,RETURN,1,,return;,9,560,1
+87967,RETURN,-1,,"return container_of(libvlc, libvlc_priv_t, public_data);",5,201,1
+88083,RETURN,-1,,return 0;,5,132,1
+88141,RETURN,-1,,return ret;,9,50,4
+88293,RETURN,-1,,return path;,5,98,23
+88310,RETURN,1,,return strdup (path);,9,105,1
+88322,RETURN,1,,return NULL;,9,109,1
+88365,RETURN,-1,,return (datadir != NULL) ? datadir : strdup (PKGDATADIR);,5,128,13
+88447,RETURN,1,,return EAI_NONAME;,13,56,1
+88499,RETURN,-1,,return val;,9,74,2
+88549,RETURN,-1,,return val;,5,91,19
+88593,RETURN,-1,,return tid;,6,47,4
+88605,RETURN,-1,,"return syscall(__NR_futex, addr, op, val, to, addr2, val3);",5,53,1
+88620,RETURN,-1,,"return sys_futex(addr, FUTEX_WAKE_PRIVATE, nr, NULL, NULL, 0);",5,58,1
+88637,RETURN,-1,,"return sys_futex(addr, FUTEX_WAIT_PRIVATE, val, to, NULL, 0);",5,63,1
+88700,RETURN,-1,,"return (vlc_futex_wait(addr, val, &ts) == 0 || errno != ETIMEDOUT);",5,86,5
+89034,RETURN,-1,,"return strcmp (sa, sb);",5,125,5
+89198,RETURN,1,,return NULL;,9,164,1
+89200,RETURN,-1,,return buf;,5,165,2
+89359,RETURN,-1,,return code;,5,210,9
+89366,RETURN,-1,,return (char *)txt;,5,215,1
+89434,RETURN,1,,return NULL;,9,241,1
+89491,RETURN,1,,return NULL;,9,252,1
+89493,RETURN,-1,,return str;,5,253,12
+89860,RETURN,-1,,return (ka->key < kb->key) ? -1 : (ka->key > kb->key) ? +1 : 0;,5,391,5
+89923,RETURN,1,,return VLC_SUCCESS;,9,410,1
+89931,RETURN,-1,,"return var_SetInteger (obj, ""key-action"", (*pent)->action);",5,414,10
+89958,RETURN,1,,return ENOMEM;,9,424,1
+89983,RETURN,1,,return ENOMEM;,9,430,1
+89993,RETURN,-1,,return EEXIST;,9,434,2
+89995,RETURN,-1,,return 0;,5,436,10
+90080,RETURN,1,,return;,9,478,1
+90177,RETURN,1,,return VLC_ENOMEM;,9,509,1
+90363,RETURN,-1,,return VLC_SUCCESS;,5,549,19
+90387,RETURN,1,,return;,9,561,1
+90432,RETURN,-1,,"return strcmp(key, act->psz);",5,577,3
+90450,RETURN,1,,return ACTIONID_NONE;,9,590,1
+90473,RETURN,-1,,return (act != NULL) ? act->id : ACTIONID_NONE;,5,594,5
+90514,RETURN,1,,return 0;,9,609,1
+90558,RETURN,-1,,return 0;,9,622,2
+90602,RETURN,-1,,return i_nb_keycodes;,5,633,18
+90620,RETURN,-1,,return as->ppsz_keys;,5,641,3
+90714,RETURN,1,,return NULL;,9,81,1
+90738,RETURN,-1,,return p_entry;,5,88,9
+90757,RETURN,-1,,return p_entry;,5,96,4
+90780,RETURN,1,,return;,9,104,1
+90871,RETURN,1,,return NULL;,23,134,1
+90888,RETURN,-1,,return NULL;,9,140,2
+90980,RETURN,-1,,return NULL;,9,157,5
+91064,RETURN,-1,,return p_manager;,5,170,20
+91294,RETURN,1,,return;,9,218,1
+91354,RETURN,-1,,return;,13,232,3
+91440,RETURN,-1,,return p_return;,5,259,10
+91918,RETURN,-1,,return NULL;,5,383,10
+92016,RETURN,-1,,return i_return;,5,406,10
+92025,RETURN,-1,,return VLC_SUCCESS;,5,412,2
+92131,RETURN,-1,,return i_return;,5,443,10
+92440,RETURN,-1,,return NULL;,5,524,11
+92467,RETURN,1,,return VLC_EBADVAR;,9,532,1
+92527,RETURN,-1,,return VLC_EGENERIC;,13,544,3
+92558,RETURN,-1,,return VLC_SUCCESS;,5,551,7
+92576,RETURN,1,,return VLC_EGENERIC;,30,557,1
+92586,RETURN,-1,,return i_ret;,5,560,7
+92594,RETURN,-1,,"return addons_manager_Install( p_manager, uuid );",5,565,1
+92971,RETURN,-1,,return NULL;,5,151,4
+93122,RETURN,1,,return NULL;,9,190,1
+93189,RETURN,-1,,return worker;,5,205,14
+93211,RETURN,1,,return VLC_EGENERIC;,9,214,1
+93267,RETURN,-1,,return VLC_EGENERIC;,9,226,2
+93329,RETURN,-1,,return ret;,5,242,17
+93743,RETURN,-1,,return NULL;,9,125,2
+93768,RETURN,1,,return NULL;,9,132,1
+93781,RETURN,1,,return NULL;,9,136,1
+93845,RETURN,-1,,return b;,5,145,14
+93989,RETURN,-1,,return p_block;,13,190,5
+94001,RETURN,1,,return NULL;,13,196,1
+94008,RETURN,-1,,return p_rea;,9,200,7
+94059,RETURN,1,,return NULL;,13,213,1
+94078,RETURN,-1,,return p_rea;,9,219,7
+94106,RETURN,-1,,return p_block;,5,236,18
+94129,RETURN,-1,,return rea;,5,244,4
+94164,RETURN,-1,,return NULL;,9,260,2
+94175,RETURN,-1,,return block;,5,265,6
+94189,RETURN,-1,,return NULL;,31,303,3
+94218,RETURN,1,,return NULL;,9,375,1
+94229,RETURN,-1,,return NULL;,9,386,2
+94246,RETURN,-1,,return NULL;,9,391,2
+94260,RETURN,-1,,return NULL;,9,398,2
+94279,RETURN,1,,return NULL;,9,417,1
+94323,RETURN,-1,,return block;,5,432,14
+94343,RETURN,1,,return NULL;,9,441,1
+94353,RETURN,-1,,return block;,5,445,7
+94418,RETURN,-1,,return cpu_flags;,5,277,4
+94580,RETURN,-1,,return p_event;,5,72,4
+94760,RETURN,-1,,return p_evt;,5,112,4
+94999,RETURN,-1,,return true;,13,178,4
+95022,RETURN,-1,,return true;,5,188,5
+95044,RETURN,-1,,return p_epg;,5,196,4
+95072,RETURN,1,,return;,9,210,1
+95195,RETURN,-1,,return p_epg;,5,240,4
+95216,RETURN,-1,,"return ""no error"";",13,44,3
+95220,RETURN,-1,,"return ""not enough memory"";",13,47,6
+95224,RETURN,-1,,"return ""timeout"";",13,49,9
+95228,RETURN,-1,,"return ""module not found"";",13,52,12
+95232,RETURN,-1,,"return ""object not found"";",13,55,15
+95236,RETURN,-1,,"return ""variable not found"";",13,58,18
+95240,RETURN,-1,,"return ""bad variable value"";",13,60,21
+95244,RETURN,-1,,"return ""generic error"";",13,63,24
+95247,RETURN,-1,,"return ""unknown error"";",13,65,26
+95276,RETURN,1,,return -31337;,18,48,1
+95319,RETURN,-1,,return i_log;,5,56,9
+95341,RETURN,-1,,return;,9,70,2
+95478,RETURN,-1,,return;,13,121,26
+95989,RETURN,-1,,return hflip ? TRANSFORM_TRANSPOSE : TRANSFORM_R90;,13,289,3
+95996,RETURN,-1,,return hflip ? TRANSFORM_VFLIP : TRANSFORM_R180;,13,291,6
+96003,RETURN,-1,,return hflip ? TRANSFORM_ANTI_TRANSPOSE : TRANSFORM_R270;,13,293,9
+96009,RETURN,-1,,return hflip ? TRANSFORM_HFLIP : TRANSFORM_IDENTITY;,13,295,11
+96055,RETURN,-1,,"return transform_FromBasicOps(angle, hflip);",5,312,11
+96297,RETURN,1,,return false;,9,388,1
+96348,RETURN,1,,return false;,9,394,1
+96371,RETURN,1,,return false;,9,397,1
+96382,RETURN,1,,return false;,9,400,1
+96393,RETURN,1,,return false;,8,403,1
+96461,RETURN,1,,return false;,13,419,1
+96463,RETURN,-1,,return true;,5,421,7
+96952,RETURN,-1,,return ret;,5,539,10
+97092,RETURN,1,,return false;,9,575,1
+97131,RETURN,1,,return false;,13,585,1
+97174,RETURN,1,,return false;,13,591,1
+97185,RETURN,1,,return false;,13,593,1
+97187,RETURN,-1,,return true;,9,594,8
+97238,RETURN,-1,,"return video_format_IsSimilar( &p_fmt1->video, &p_fmt2->video );",9,605,7
+97251,RETURN,-1,,return true;,9,610,10
+97436,RETURN,1,,return VLC_ENOMEM;,9,132,1
+97463,RETURN,-1,,return VLC_SUCCESS;,5,140,11
+97519,RETURN,-1,,return;,13,167,4
+97732,RETURN,-1,,"return vlc_cond_timedwait(condvar, &fifo->lock, deadline);",5,76,1
+97745,RETURN,-1,,return fifo->i_depth;,5,81,1
+97754,RETURN,-1,,return fifo->i_size;,5,86,1
+97848,RETURN,1,,return NULL;,9,115,1
+97902,RETURN,-1,,return block;,5,127,12
+97950,RETURN,-1,,return block;,5,141,8
+97967,RETURN,1,,return NULL;,9,148,1
+98001,RETURN,-1,,return p_fifo;,5,156,9
+98077,RETURN,-1,,return block;,5,200,7
+98106,RETURN,-1,,return b;,5,212,6
+98129,RETURN,-1,,return size;,5,223,5
+98152,RETURN,-1,,return depth;,5,234,5
+98196,RETURN,-1,,return 0;,5,44,4
+98216,RETURN,1,,return;,9,53,1
+98296,RETURN,1,,return;,9,81,1
+98378,RETURN,1,,return NULL;,9,110,1
+98515,RETURN,-1,,return p_blend;,5,132,17
+98624,RETURN,1,,return VLC_EGENERIC;,9,163,1
+98626,RETURN,-1,,return VLC_SUCCESS;,5,164,8
+98644,RETURN,1,,return VLC_EGENERIC;,9,172,1
+98656,RETURN,-1,,return VLC_SUCCESS;,5,175,3
+98695,RETURN,1,,return NULL;,9,196,1
+98720,RETURN,-1,,return NULL;,9,205,2
+98722,RETURN,-1,,return p_splitter;,5,208,7
+98778,RETURN,-1,,"return container_of(filter, chained_filter_t, filter);",5,48,1
+98835,RETURN,1,,return NULL;,9,80,1
+98893,RETURN,-1,,return chain;,5,92,15
+98910,RETURN,-1,,"return filter_chain_NewInner( &callbacks, cap, NULL, false, NULL, cat );",5,106,3
+98950,RETURN,-1,,return pic;,9,117,4
+98992,RETURN,-1,,return pic;,9,127,7
+99017,RETURN,-1,,"return filter_chain_NewInner( &callbacks, ""video filter"",
+                                  ""video converter"", allow_change, owner, VIDEO_ES );",5,142,3
+99139,RETURN,1,,return NULL;,9,188,1
+99384,RETURN,-1,,return filter;,5,254,31
+99415,RETURN,-1,,return NULL;,5,264,37
+99426,RETURN,-1,,"return filter_chain_AppendInner( chain, name, chain->filter_cap, cfg,
+                                     fmt_in, fmt_out );",5,271,1
+99443,RETURN,-1,,"return filter_chain_AppendInner( chain, NULL, chain->conv_cap, NULL,
+                                     fmt_in, fmt_out ) != NULL ? 0 : -1;",5,278,1
+99656,RETURN,-1,,return ret;,5,352,9
+99676,RETURN,-1,,return VLC_EGENERIC;,5,361,13
+99714,RETURN,1,,return ret;,13,371,1
+99716,RETURN,-1,,return VLC_SUCCESS;,5,373,2
+99723,RETURN,-1,,return chain->first == NULL;,5,378,1
+99739,RETURN,1,,return &p_chain->fmt_out;,9,385,1
+99751,RETURN,1,,return &p_chain->last->filter.fmt_out;,9,388,1
+99760,RETURN,-1,,return &p_chain->fmt_out;,5,391,3
+99826,RETURN,-1,,return p_pic;,5,410,2
+99847,RETURN,1,,return p_pic;,13,419,1
+99898,RETURN,1,,return p_pic;,13,431,1
+99900,RETURN,-1,,return NULL;,5,433,3
+100031,RETURN,-1,,return p_subpic;,5,472,2
+100105,RETURN,1,,return VLC_EGENERIC;,17,491,1
+100114,RETURN,-1,,return VLC_SUCCESS;,5,497,5
+100177,RETURN,1,,return VLC_EGENERIC;,17,513,1
+100179,RETURN,-1,,return VLC_SUCCESS;,5,517,2
+100243,RETURN,-1,,return NULL;,9,39,2
+100265,RETURN,-1,,return NULL;,9,48,3
+100267,RETURN,-1,,return p_fingerprint;,5,51,6
+100304,RETURN,-1,,"return memcmp(key, ent, 4);",5,40,1
+100364,RETURN,-1,,return mapping->fourcc;,17,59,2
+100389,RETURN,1,,return 0;,9,67,1
+100402,RETURN,-1,,return fourcc;,5,70,8
+100410,RETURN,-1,,"return Lookup(fourcc, dsc, mapping_video,
+                  sizeof (mapping_video) / sizeof (mapping_video[0]),
+                  desc_video, sizeof (desc_video) / sizeof (desc_video[0]));",5,75,1
+100432,RETURN,-1,,"return Lookup(fourcc, dsc, mapping_audio,
+                  sizeof (mapping_audio) / sizeof (mapping_audio[0]),
+                  desc_audio, sizeof (desc_audio) / sizeof (desc_audio[0]));",5,82,1
+100454,RETURN,-1,,"return Lookup(fourcc, dsc, mapping_spu,
+                  sizeof (mapping_spu) / sizeof (mapping_spu[0]),
+                  desc_spu, sizeof (desc_spu) / sizeof (desc_spu[0]));",5,89,1
+100482,RETURN,-1,,"return LookupVideo(fourcc, dsc);",13,100,3
+100488,RETURN,-1,,"return LookupAudio(fourcc, dsc);",13,102,6
+100494,RETURN,-1,,"return LookupSpu(fourcc, dsc);",13,104,9
+100522,RETURN,-1,,return ret;,5,112,6
+100537,RETURN,-1,,return codec ? codec : fourcc;,5,118,3
+100557,RETURN,1,,return 0;,9,124,1
+100559,RETURN,-1,,"return vlc_fourcc_GetCodec( i_cat,
+                                VLC_FOURCC( psz_fourcc[0], psz_fourcc[1],
+                                            psz_fourcc[2], psz_fourcc[3] ) );",5,125,2
+100603,RETURN,-1,,return VLC_CODEC_FL32;,13,139,3
+100607,RETURN,-1,,return VLC_CODEC_FL64;,13,141,6
+100610,RETURN,-1,,return 0;,13,143,8
+100628,RETURN,-1,,return VLC_CODEC_U8;,13,151,3
+100632,RETURN,-1,,return VLC_CODEC_S16L;,13,153,6
+100636,RETURN,-1,,return VLC_CODEC_S24L;,13,155,9
+100640,RETURN,-1,,return VLC_CODEC_S32L;,13,157,12
+100643,RETURN,-1,,return 0;,13,159,14
+100661,RETURN,-1,,return VLC_CODEC_S8;,13,167,3
+100665,RETURN,-1,,return VLC_CODEC_S16B;,13,169,6
+100669,RETURN,-1,,return VLC_CODEC_S24B;,13,171,9
+100673,RETURN,-1,,return VLC_CODEC_S32B;,13,173,12
+100676,RETURN,-1,,return 0;,13,175,14
+100694,RETURN,-1,,return VLC_CODEC_S8;,13,183,3
+100698,RETURN,-1,,return VLC_CODEC_S16L;,13,185,6
+100702,RETURN,-1,,return VLC_CODEC_S24L;,13,187,9
+100706,RETURN,-1,,return VLC_CODEC_S32L;,13,189,12
+100709,RETURN,-1,,return 0;,13,191,14
+100713,RETURN,-1,,"return vlc_fourcc_GetCodec( AUDIO_ES, i_fourcc );",9,196,1
+100724,RETURN,-1,,"return LookupCat(fourcc, &ret, cat) ? ret : """";",5,204,2
+101966,RETURN,1,,return pp_fallback[i];,13,604,1
+101970,RETURN,-1,,return p_list;,5,606,2
+101977,RETURN,-1,,"return GetFallback( i_fourcc, pp_YUV_fallback, p_list_YUV );",5,611,1
+101987,RETURN,-1,,"return GetFallback( i_fourcc, pp_RGB_fallback, p_RGB32_fallback );",5,615,1
+102079,RETURN,1,,return true;,17,639,1
+102081,RETURN,-1,,return false;,5,642,4
+102107,RETURN,1,,return true;,13,650,1
+102109,RETURN,-1,,return false;,5,652,2
+104816,RETURN,1,,return &p_list_chroma_description[i].description;,17,789,1
+104823,RETURN,-1,,return NULL;,5,792,2
+104916,RETURN,-1,,return d;,5,64,8
+105319,RETURN,-1,,return 0;,5,153,13
+108303,RETURN,-1,,"return strndup( str, value_length );",13,63,4
+108312,RETURN,-1,,return NULL;,5,68,6
+108366,RETURN,1,,return true;,13,83,1
+108373,RETURN,-1,,return false;,5,87,6
+108391,RETURN,1,,return NULL;,9,95,1
+108415,RETURN,-1,,return domain;,5,102,5
+108428,RETURN,1,,return false;,9,111,1
+108439,RETURN,1,,return true;,9,113,1
+108448,RETURN,1,,return false;,9,115,1
+108518,RETURN,-1,,"return is_suffix && has_dot_before_suffix &&
+        !( host_is_ipv4 || host_is_ipv6 );",5,131,16
+108532,RETURN,-1,,"return cookie_get_attribute_value(cookie, ""path"");",5,137,1
+108547,RETURN,1,,return false;,9,143,1
+108560,RETURN,1,,return true;,9,145,1
+108574,RETURN,-1,,"return ( path_len > prefix_len ) &&
+        ( strncmp(uripath, cookie->psz_path, prefix_len) == 0 ) &&
+        ( uripath[prefix_len - 1] == '/' || uripath[prefix_len] == '/' );",5,149,6
+108630,RETURN,-1,,return protocol_ok && domain_ok && path_ok;,5,160,7
+108652,RETURN,1,,"return strdup(""/"");",9,166,1
+108685,RETURN,1,,return NULL;,9,176,1
+108713,RETURN,-1,,return path;,5,185,11
+108764,RETURN,1,,return NULL;,9,204,1
+108933,RETURN,-1,,return cookie;,5,259,18
+108938,RETURN,-1,,return NULL;,5,263,21
+108960,RETURN,1,,return NULL;,9,276,1
+108972,RETURN,-1,,return jar;,5,281,6
+108983,RETURN,1,,return;,9,287,1
+109046,RETURN,1,,return false;,9,306,1
+109064,RETURN,-1,,return false;,9,318,2
+109182,RETURN,-1,,return b_ret;,5,350,13
+109277,RETURN,-1,,return NULL;,17,375,3
+109289,RETURN,-1,,return psz_cookiebuf;,5,384,6
+109426,RETURN,1,,return NULL;,9,86,1
+109463,RETURN,-1,,return p_image;,5,98,11
+109474,RETURN,1,,return;,20,107,1
+109528,RETURN,-1,,return 0;,5,128,4
+109591,RETURN,-1,,return NULL;,13,152,2
+109615,RETURN,-1,,return NULL;,13,159,4
+109714,RETURN,-1,,return 0;,9,189,2
+110098,RETURN,-1,,return NULL;,17,247,2
+110183,RETURN,-1,,return p_pic;,5,270,21
+110217,RETURN,-1,,return NULL;,9,288,2
+110292,RETURN,-1,,return p_pic;,5,320,15
+110297,RETURN,-1,,return NULL;,5,323,18
+110371,RETURN,1,,return false;,13,344,1
+110373,RETURN,-1,,return true;,5,346,2
+110460,RETURN,1,,return NULL;,31,375,1
+110623,RETURN,-1,,return NULL;,17,410,1
+110740,RETURN,-1,,return 0;,9,444,2
+110742,RETURN,-1,,return p_block;,5,447,6
+110784,RETURN,-1,,return VLC_EGENERIC;,9,467,2
+110842,RETURN,-1,,return err ? VLC_EGENERIC : VLC_SUCCESS;,5,489,12
+111094,RETURN,-1,,return NULL;,13,546,1
+111171,RETURN,-1,,return p_pif;,5,571,13
+111296,RETURN,1,,return ext_table[i].i_codec;,13,612,1
+111302,RETURN,-1,,return 0;,5,614,2
+111318,RETURN,1,,return 0;,21,620,1
+111322,RETURN,-1,,return image_Type2Fourcc( psz_name );,5,623,4
+111418,RETURN,1,,return mime_table[i].i_codec;,13,656,1
+111424,RETURN,-1,,return 0;,5,657,2
+111444,RETURN,-1,,return 0;,5,663,2
+111451,RETURN,-1,,return picture_NewFromFormat( &p_dec->fmt_out.video );,5,668,1
+111479,RETURN,1,,return NULL;,9,677,1
+111542,RETURN,-1,,return NULL;,9,696,3
+111544,RETURN,-1,,return p_dec;,5,699,12
+111602,RETURN,1,,return NULL;,9,723,1
+111917,RETURN,-1,,return NULL;,9,778,3
+111932,RETURN,-1,,return p_enc;,5,782,15
+111969,RETURN,-1,,return picture_NewFromFormat( &p_filter->fmt_out.video );,5,798,1
+112068,RETURN,-1,,return NULL;,9,824,3
+112070,RETURN,-1,,return p_filter;,5,827,12
+112183,RETURN,-1,,return ctx;,5,64,4
+112264,RETURN,-1,,return oldctx;,5,104,4
+112360,RETURN,-1,,return ret;,5,157,9
+112390,RETURN,-1,,return (ctx != NULL) ? vlc_interrupt_finish(ctx) : 0;,5,170,3
+112431,RETURN,-1,,return (ctx != NULL) && atomic_load(&ctx->killed);,5,190,3
+112462,RETURN,1,,"return vlc_sem_wait(sem), 0;",9,202,1
+112477,RETURN,-1,,return vlc_interrupt_finish(ctx);,5,210,8
+112525,RETURN,1,,"return mwait(deadline), 0;",9,232,1
+112577,RETURN,-1,,return ret;,5,248,15
+112634,RETURN,1,,return;,9,267,1
+112669,RETURN,1,,return 0;,9,279,1
+112683,RETURN,-1,,return vlc_interrupt_finish(from);,5,283,6
+112771,RETURN,-1,,return -1;,9,330,3
+112917,RETURN,-1,,return ret;,5,369,20
+112935,RETURN,1,,"return poll(fds, nfds, timeout);",9,376,1
+112974,RETURN,1,,return -1;,13,390,1
+112991,RETURN,-1,,return ret;,5,397,6
+113021,RETURN,1,,return -1;,9,425,1
+113024,RETURN,-1,,"return readv(fd, iov, count);",5,426,5
+113057,RETURN,1,,return -1;,9,444,1
+113060,RETURN,-1,,"return writev(fd, iov, count);",5,445,5
+113084,RETURN,-1,,"return vlc_readv_i11e(fd, &iov, 1);",5,455,3
+113111,RETURN,-1,,"return vlc_writev_i11e(fd, &iov, 1);",5,468,3
+113145,RETURN,1,,return -1;,9,479,1
+113148,RETURN,-1,,"return recvmsg(fd, msg, flags);",5,482,5
+113225,RETURN,-1,,return ret;,5,499,8
+113255,RETURN,1,,return -1;,9,510,1
+113258,RETURN,-1,,"return sendmsg(fd, msg, flags);",5,512,5
+113310,RETURN,-1,,"return vlc_sendmsg_i11e(fd, &msg, flags);",5,526,5
+113345,RETURN,1,,return -1;,9,538,1
+113348,RETURN,-1,,"return vlc_accept(fd, addr, addrlen, blocking);",5,540,5
+113427,RETURN,1,,return NULL;,9,41,1
+113447,RETURN,-1,,return NULL;,9,47,2
+113461,RETURN,-1,,return p_keystore;,5,53,9
+113470,RETURN,-1,,"return keystore_create(p_parent, ""$keystore"");",5,61,2
+113519,RETURN,-1,,return VLC_EGENERIC;,9,85,2
+113547,RETURN,-1,,return VLC_EGENERIC;,13,94,2
+113562,RETURN,-1,,"return p_keystore->pf_store(p_keystore, ppsz_values, p_secret, i_secret_len,
+                                psz_label);",5,99,5
+113585,RETURN,-1,,"return p_keystore->pf_find(p_keystore, ppsz_values, pp_entries);",5,109,2
+113603,RETURN,-1,,"return p_keystore->pf_remove(p_keystore, ppsz_values);",5,117,2
+113656,RETURN,-1,,return p_priv->p_memory_keystore != NULL ? VLC_SUCCESS : VLC_EGENERIC;,5,135,5
+113700,RETURN,-1,,return libvlc_priv(p_obj->obj.libvlc)->p_memory_keystore;,5,154,1
+113734,RETURN,1,,return NULL;,9,165,1
+113802,RETURN,-1,,return p_match_entry;,5,188,10
+113818,RETURN,1,,return true;,9,195,1
+113825,RETURN,-1,,return false;,5,197,3
+113832,RETURN,-1,,"return p_url && p_url->psz_protocol && p_url->psz_protocol[0]
+        && p_url->psz_host && p_url->psz_host[0];",5,203,1
+113960,RETURN,-1,,return true;,9,245,2
+113962,RETURN,-1,,return false;,5,247,5
+113969,RETURN,-1,,"return strcasecmp(p_url->psz_protocol, ""smb"") == 0;",5,253,1
+113982,RETURN,-1,,"return p_url->psz_path
+      && (strncasecmp(p_url->psz_protocol, ""http"", 4) == 0
+      || strcasecmp(p_url->psz_protocol, ""rtsp"") == 0
+      || protocol_is_smb(p_url));",5,259,1
+114368,RETURN,-1,,return false;,9,384,2
+114527,RETURN,1,,return false;,17,446,1
+114569,RETURN,1,,return false;,17,459,1
+114647,RETURN,-1,,return false;,17,485,2
+114670,RETURN,-1,,return is_credential_valid(p_credential);,5,497,8
+114684,RETURN,1,,return false;,9,505,1
+114691,RETURN,1,,return p_credential->b_from_keystore;,9,508,1
+114723,RETURN,1,,return false;,9,523,1
+114858,RETURN,-1,,return false;,9,566,2
+114891,RETURN,-1,,return b_ret;,5,576,29
+117612,RETURN,1,,return;,5,232,1
+117649,RETURN,1,,return;,9,240,1
+118122,RETURN,1,,return;,9,94,1
+118340,RETURN,1,,return;,9,230,1
+118492,RETURN,1,,return -1;,9,259,1
+118523,RETURN,-1,,return 0;,5,267,9
+118643,RETURN,-1,,return (*cb != NULL) ? VLC_SUCCESS : VLC_EGENERIC;,5,303,6
+118696,RETURN,1,,return -1;,9,330,1
+118713,RETURN,-1,,return -1;,9,337,2
+118732,RETURN,-1,,return 0;,5,345,11
+118752,RETURN,1,,return -1;,9,358,1
+118834,RETURN,-1,,return 0;,5,382,19
+118856,RETURN,1,,return;,9,395,1
+118946,RETURN,1,,return;,9,427,1
+119178,RETURN,-1,,return ext_mime[i].psz_mime;,17,103,1
+119184,RETURN,-1,,"return ""application/octet-stream"";",5,107,4
+119221,RETURN,-1,,return psz_buffer;,9,57,3
+119267,RETURN,-1,,return psz_buffer;,5,72,7
+119347,RETURN,-1,,return p_date->date;,5,131,1
+119439,RETURN,-1,,return p_date->date;,5,170,9
+119510,RETURN,-1,,return p_date->date;,5,197,8
+119556,RETURN,-1,,return t;,5,217,7
+119668,RETURN,-1,,return;,9,80,2
+119830,RETURN,-1,,return VLC_SUCCESS;,5,127,6
+119843,RETURN,1,,return vlc_object_hold (root);,9,133,1
+119919,RETURN,-1,,return ret;,5,145,9
+119967,RETURN,-1,,return VLC_ENOOBJ;,13,161,2
+119983,RETURN,-1,,return VLC_SUCCESS;,5,172,9
+120012,RETURN,1,,return NULL;,9,192,1
+120250,RETURN,-1,,return obj;,5,246,22
+120258,RETURN,-1,,"return vlc_custom_create( p_this, i_size, ""generic"" );",5,259,1
+120335,RETURN,-1,,return (priv->psz_name || !name) ? VLC_SUCCESS : VLC_ENOMEM;,5,294,11
+120380,RETURN,-1,,return name;,5,307,7
+120496,RETURN,1,,return vlc_object_hold (obj);,9,348,1
+120560,RETURN,-1,,return found;,5,359,9
+120621,RETURN,1,,return NULL;,9,398,1
+120638,RETURN,-1,,return p_found;,5,405,11
+120670,RETURN,-1,,return p_this;,5,421,6
+120714,RETURN,1,,return;,13,438,1
+120759,RETURN,-1,,return;,9,455,8
+120897,RETURN,1,,return NULL;,9,510,1
+120986,RETURN,-1,,return NULL;,13,529,3
+121049,RETURN,-1,,return l;,5,539,16
+121123,RETURN,-1,,return &vlc_internals(obj)->resources;,5,44,1
+121154,RETURN,-1,,return NULL;,9,52,2
+121167,RETURN,1,,return NULL;,9,57,1
+121174,RETURN,-1,,return res->payload;,5,60,6
+121221,RETURN,1,,return NULL;,9,78,1
+121229,RETURN,-1,,return res->payload;,5,80,7
+121304,RETURN,-1,,return;,13,119,4
+121325,RETURN,-1,,return a == b;,5,133,1
+121350,RETURN,-1,,return ptr;,5,141,4
+121371,RETURN,-1,,return NULL;,9,151,2
+121395,RETURN,-1,,return ptr;,5,161,6
+121404,RETURN,-1,,"return vlc_obj_alloc_common(obj, nmemb, size, true);",5,166,1
+121501,RETURN,-1,,return VLC_ENOMEM;,13,62,2
+121526,RETURN,-1,,return VLC_ENOMEM;,9,70,2
+121556,RETURN,-1,,return VLC_EGENERIC;,9,78,2
+121619,RETURN,-1,,return VLC_SUCCESS;,5,89,11
+121711,RETURN,-1,,"return a * b / GCD( a, b );",5,145,1
+121805,RETURN,1,,return VLC_EGENERIC;,9,168,1
+122109,RETURN,-1,,return VLC_SUCCESS;,5,205,24
+122216,RETURN,1,,return NULL;,9,229,1
+122244,RETURN,-1,,return NULL;,9,240,2
+122363,RETURN,-1,,return NULL;,13,267,2
+122372,RETURN,-1,,return p_picture;,5,272,16
+122379,RETURN,-1,,"return picture_NewFromResource( p_fmt, NULL );",5,277,1
+122407,RETURN,-1,,return picture_NewFromFormat( &fmt );,5,288,4
+122441,RETURN,-1,,return p_picture;,5,302,7
+122478,RETURN,1,,return;,9,313,1
+122847,RETURN,-1,,return clone;,5,415,7
+123092,RETURN,1,,return VLC_ENOMEM;,9,486,1
+123110,RETURN,1,,return VLC_EGENERIC;,9,493,1
+123134,RETURN,-1,,return VLC_SUCCESS;,5,502,27
+123257,RETURN,-1,,return picture;,5,67,4
+123275,RETURN,1,,return NULL;,9,74,1
+123284,RETURN,-1,,return fifo;,5,78,6
+123325,RETURN,-1,,return picture;,5,93,5
+123353,RETURN,-1,,return picture;,5,103,6
+123552,RETURN,1,,return;,9,57,1
+123822,RETURN,-1,,return clone;,5,115,11
+123842,RETURN,1,,return NULL;,9,121,1
+123887,RETURN,1,,return NULL;,9,129,1
+123975,RETURN,-1,,return pool;,5,144,17
+123995,RETURN,-1,,return picture_pool_NewExtended(&cfg);,5,154,3
+124043,RETURN,-1,,return pool;,5,173,7
+124055,RETURN,-1,,return NULL;,5,178,10
+124101,RETURN,-1,,return pool;,5,196,7
+124113,RETURN,-1,,return NULL;,5,201,10
+124129,RETURN,1,,return 0;,9,208,1
+124131,RETURN,-1,,return ffsll(x & ~((1ULL << i) - 1));,5,209,2
+124167,RETURN,-1,,return NULL;,9,220,2
+124267,RETURN,-1,,return clone;,9,241,9
+124274,RETURN,-1,,return NULL;,5,245,6
+124310,RETURN,-1,,return NULL;,13,260,2
+124395,RETURN,-1,,return NULL;,9,277,5
+124422,RETURN,-1,,return clone;,5,285,15
+124518,RETURN,-1,,return pool == picpool;,5,310,8
+124527,RETURN,-1,,return pool->picture_count;,5,315,1
+124604,RETURN,-1,,return NULL;,9,38,2
+124649,RETURN,-1,,return ret;,5,53,13
+124729,RETURN,-1,,return ret;,5,66,6
+124754,RETURN,-1,,return ret;,5,86,6
+124779,RETURN,-1,,return ret;,5,106,6
+125015,RETURN,-1,,return p_item;,5,100,18
+125028,RETURN,-1,,return NULL;,5,106,22
+125039,RETURN,-1,,return p_item->psz_name;,5,114,2
+125052,RETURN,-1,,return p_item->psz_type;,5,122,2
+125065,RETURN,-1,,return p_item->psz_sout;,5,130,2
+125078,RETURN,-1,,return p_item->psz_icon_uri;,5,138,2
+125091,RETURN,-1,,return p_item->psz_demux_filter;,5,146,2
+125104,RETURN,-1,,return p_item->i_flags;,5,154,2
+125123,RETURN,-1,,return p_item;,5,163,3
+125152,RETURN,1,,return;,9,174,1
+125202,RETURN,-1,,return VLC_ENOMEM;,9,195,3
+125204,RETURN,-1,,return VLC_PROBE_CONTINUE;,5,197,4
+125229,RETURN,-1,,return VLC_EGENERIC;,9,211,2
+125265,RETURN,-1,,return VLC_EGENERIC;,9,222,4
+125316,RETURN,-1,,return VLC_SUCCESS;,5,234,15
+125358,RETURN,1,,return NULL;,9,253,1
+125412,RETURN,-1,,return p_rd;,5,269,8
+125453,RETURN,1,,return NULL;,9,48,1
+125501,RETURN,-1,,return NULL;,13,63,2
+125561,RETURN,-1,,return p_subpic;,5,80,11
+125647,RETURN,1,,return NULL;,9,115,1
+125665,RETURN,1,,return NULL;,9,122,1
+125678,RETURN,-1,,return NULL;,10,128,2
+125732,RETURN,-1,,return p_subpic;,5,147,21
+125761,RETURN,1,,return;,9,159,1
+125787,RETURN,1,,return;,9,166,1
+125843,RETURN,1,,return NULL;,9,186,1
+125857,RETURN,-1,,return NULL;,9,191,2
+125864,RETURN,-1,,return p_private;,5,195,6
+125904,RETURN,1,,return NULL;,9,210,1
+125954,RETURN,-1,,return NULL;,17,222,2
+125988,RETURN,1,,return p_region;,9,236,1
+126009,RETURN,-1,,return NULL;,9,243,3
+126011,RETURN,-1,,return p_region;,5,246,10
+126022,RETURN,1,,return;,9,252,1
+126187,RETURN,-1,,return done;,5,298,5
+126198,RETURN,1,,return NULL;,9,304,1
+126213,RETURN,1,,return NULL;,9,307,1
+126304,RETURN,-1,,return p_region_dst;,5,321,11
+126342,RETURN,-1,,return text_style_Create( STYLE_FULLY_SET );,5,36,1
+126362,RETURN,1,,return NULL;,9,43,1
+126369,RETURN,1,,return p_style;,9,46,1
+126472,RETURN,-1,,return p_style;,5,70,25
+126484,RETURN,1,,return p_dst;,9,76,1
+126517,RETURN,-1,,return p_dst;,5,87,5
+127010,RETURN,1,,return NULL;,9,142,1
+127026,RETURN,-1,,return p_dst;,5,147,5
+127066,RETURN,1,,return NULL;,9,163,1
+127077,RETURN,-1,,return segment;,5,168,5
+127088,RETURN,1,,return NULL;,9,174,1
+127100,RETURN,1,,return NULL;,9,177,1
+127117,RETURN,-1,,return NULL;,9,182,2
+127119,RETURN,-1,,return p_segment;,5,184,7
+127226,RETURN,-1,,return p_dst0;,5,234,6
+127460,RETURN,-1,,return color;,5,296,12
+127592,RETURN,1,,return NULL;,21,110,1
+127638,RETURN,-1,,return p_update;,5,125,13
+128333,RETURN,-1,,return true;,9,373,5
+128345,RETURN,-1,,return false;,5,381,57
+128389,RETURN,1,,return;,18,406,1
+128473,RETURN,-1,,return NULL;,5,433,12
+128540,RETURN,1,,return true;,13,456,1
+128551,RETURN,1,,return false;,13,460,1
+128557,RETURN,1,,return true;,9,465,1
+128559,RETURN,-1,,return false;,5,468,8
+128575,RETURN,-1,,return i_retval == -1 ? NULL : psz_tmp;,5,490,6
+128641,RETURN,1,,return;,9,518,1
+129245,RETURN,-1,,return NULL;,5,753,70
+129252,RETURN,-1,,return &p_update->release;,5,758,1
+129599,RETURN,1,,return( p[0] );,9,62,1
+129610,RETURN,1,,return( (p[0] << 8) + p[1] );,9,64,1
+129627,RETURN,1,,return( ((uint32_t)p[0] << 24) + (p[1] << 16) + (p[2] << 8) + p[3] );,9,66,1
+129659,RETURN,-1,,"return (scalar_number(mpi, 2) + 7) / 8;",5,75,1
+129680,RETURN,1,,return 0;,9,81,1
+129694,RETURN,1,,return 0;,9,86,1
+129704,RETURN,1,,return 0;,9,91,1
+129710,RETURN,-1,,return n;,5,94,8
+129724,RETURN,1,,return VLC_EGENERIC;,9,112,1
+129746,RETURN,1,,return VLC_EGENERIC;,9,118,1
+130033,RETURN,1,,return VLC_EGENERIC;,9,133,1
+130040,RETURN,1,,return VLC_SUCCESS;,9,136,1
+130043,RETURN,-1,,return VLC_EGENERIC;,5,141,15
+130061,RETURN,1,,return 0;,9,151,1
+130087,RETURN,1,,return 0;,9,155,1
+130170,RETURN,-1,,return i_read;,5,174,24
+130188,RETURN,1,,return 0;,9,188,1
+130221,RETURN,1,,return 0;,13,194,1
+130270,RETURN,1,,return 0;,9,205,1
+130294,RETURN,1,,return 0;,9,209,1
+130347,RETURN,1,,return 0;,9,220,1
+130371,RETURN,1,,return 0;,9,224,1
+130430,RETURN,1,,return 0;,13,239,1
+130446,RETURN,1,,return 0;,17,245,1
+130468,RETURN,1,,return 0;,17,251,1
+130496,RETURN,1,,return 0;,17,258,1
+130518,RETURN,1,,return 0;,17,266,1
+130529,RETURN,-1,,return i_read;,13,270,3
+130545,RETURN,1,,return VLC_EGENERIC;,9,282,1
+130597,RETURN,-1,,return VLC_EGENERIC;,13,298,12
+130796,RETURN,-1,,return VLC_SUCCESS;,5,335,13
+130822,RETURN,-1,,return VLC_EGENERIC;,5,345,16
+130872,RETURN,-1,,return crc & 0xFFFFFFL;,5,370,5
+131016,RETURN,1,,return 0;,9,425,1
+131027,RETURN,1,,return 0;,9,429,1
+131059,RETURN,-1,,return l_crc2 == l_crc ? p_opos - p_obuf : 0;,5,434,17
+131096,RETURN,1,,return VLC_EGENERIC;,9,447,1
+131110,RETURN,1,,return VLC_EGENERIC;,9,450,1
+131175,RETURN,1,,return VLC_EGENERIC;,9,461,1
+131177,RETURN,-1,,return VLC_SUCCESS;,5,462,18
+131391,RETURN,-1,,return ret;,5,515,40
+131725,RETURN,-1,,return ret;,5,583,57
+131741,RETURN,1,,"return verify_signature_dsa(sign, p_key, p_hash);",9,593,1
+131755,RETURN,1,,"return verify_signature_rsa(sign, p_key, p_hash);",9,595,1
+131762,RETURN,1,,return VLC_EGENERIC;,9,597,1
+131834,RETURN,1,,return VLC_ENOMEM;,13,628,1
+132126,RETURN,1,,return VLC_EGENERIC;,9,706,1
+132138,RETURN,1,,return VLC_EGENERIC;,9,709,1
+132140,RETURN,-1,,return VLC_SUCCESS;,5,711,17
+132178,RETURN,-1,,return VLC_EGENERIC;,5,721,22
+132198,RETURN,1,,return -1;,9,733,1
+132218,RETURN,-1,,return 0;,5,740,8
+132347,RETURN,-1,,return NULL;,9,774,1
+132382,RETURN,-1,,return p_hash;,5,785,11
+132400,RETURN,1,,return NULL;,9,797,1
+132458,RETURN,-1,,"return hash_finish( hd, p_sig );",5,820,4
+132478,RETURN,1,,return NULL;,9,831,1
+132489,RETURN,-1,,return NULL;,9,836,2
+132491,RETURN,-1,,"return hash_finish( hd, p_sig );",5,839,4
+132524,RETURN,1,,return NULL;,9,855,1
+132543,RETURN,1,,return NULL;,9,859,1
+132552,RETURN,1,,return NULL;,9,862,1
+132671,RETURN,1,,return NULL;,9,880,1
+132687,RETURN,1,,return NULL;,9,884,1
+132923,RETURN,-1,,return NULL;,9,922,2
+132925,RETURN,-1,,return p_hash;,5,925,37
+132968,RETURN,1,,return NULL;,9,939,1
+132982,RETURN,1,,return NULL;,9,944,1
+132997,RETURN,-1,,return NULL;,9,950,2
+133012,RETURN,-1,,return NULL;,9,957,2
+133037,RETURN,-1,,return NULL;,9,967,3
+133053,RETURN,-1,,return NULL;,9,974,2
+133081,RETURN,-1,,return NULL;,9,986,3
+133083,RETURN,-1,,return p_pkey;,5,989,24
+133108,RETURN,1,,return VLC_ENOMEM;,9,1002,1
+133128,RETURN,1,,return VLC_ENOMEM;,9,1011,1
+133143,RETURN,-1,,return VLC_EGENERIC;,9,1017,2
+133159,RETURN,-1,,return VLC_ENOMEM;,9,1025,2
+133185,RETURN,-1,,return VLC_EGENERIC;,9,1037,3
+133216,RETURN,-1,,return VLC_EGENERIC;,13,1048,2
+133246,RETURN,-1,,return VLC_EGENERIC;,13,1061,3
+133269,RETURN,-1,,return VLC_EGENERIC;,9,1069,3
+133310,RETURN,-1,,return VLC_EGENERIC;,9,1078,3
+133336,RETURN,-1,,return VLC_EGENERIC;,9,1086,3
+133359,RETURN,-1,,return i_ret;,9,1094,2
+133403,RETURN,-1,,return VLC_EGENERIC;,9,1105,3
+133405,RETURN,-1,,return VLC_SUCCESS;,5,1108,33
+133486,RETURN,-1,,return v.b_bool ? w.b_bool ? 0 : 1 : w.b_bool ? -1 : 0;,5,108,1
+133510,RETURN,-1,,return v.i_int == w.i_int ? 0 : v.i_int > w.i_int ? 1 : -1;,5,113,1
+133543,RETURN,1,,return !w.psz_string ? 0 : -1;,9,119,1
+133554,RETURN,1,,"return !w.psz_string ? 1 : strcmp( v.psz_string, w.psz_string );",9,121,1
+133574,RETURN,-1,,return v.f_float == w.f_float ? 0 : v.f_float > w.f_float ? 1 : -1;,55,123,1
+133601,RETURN,-1,,return v.p_address == w.p_address ? 0 : v.p_address > w.p_address ? 1 : -1;,57,124,1
+133738,RETURN,-1,,"return strcmp( va->psz_name, vb->psz_name );",5,150,6
+133780,RETURN,-1,,return (pp_var != NULL) ? *pp_var : NULL;,5,160,6
+134150,RETURN,1,,return;,9,242,1
+134255,RETURN,1,,return;,9,267,1
+134354,RETURN,1,,return VLC_ENOMEM;,9,304,1
+134675,RETURN,-1,,return ret;,5,386,28
+134837,RETURN,-1,,return VLC_ENOVAR;,9,465,2
+135100,RETURN,-1,,return VLC_EGENERIC;,17,532,2
+135542,RETURN,-1,,return ret;,5,618,13
+135585,RETURN,-1,,return VLC_ENOVAR;,9,646,2
+135688,RETURN,-1,,return VLC_EGENERIC;,9,678,23
+135712,RETURN,-1,,return VLC_SUCCESS;,5,689,16
+135771,RETURN,-1,,return i_type;,5,718,10
+135812,RETURN,-1,,return VLC_ENOVAR;,9,736,2
+135877,RETURN,-1,,return VLC_SUCCESS;,5,764,18
+135886,RETURN,-1,,"return var_SetChecked( p_this, psz_name, 0, val );",5,777,1
+135972,RETURN,-1,,return err;,5,807,10
+135981,RETURN,-1,,"return var_GetChecked( p_this, psz_name, 0, p_val );",5,821,1
+136036,RETURN,-1,,return;,9,845,3
+136147,RETURN,-1,,return;,9,906,3
+136243,RETURN,-1,,return;,9,939,4
+136408,RETURN,1,,return;,9,1047,1
+136418,RETURN,1,,return;,9,1051,1
+136525,RETURN,-1,,return;,9,1085,3
+136653,RETURN,-1,,return ret;,5,1164,7
+136692,RETURN,1,,return VLC_SUCCESS;,13,1180,1
+136757,RETURN,-1,,return VLC_ENOOBJ;,13,1202,22
+136759,RETURN,-1,,return VLC_SUCCESS;,5,1204,4
+136901,RETURN,-1,,return VLC_SUCCESS;,5,1273,11
+136914,RETURN,-1,,return VLC_EGENERIC;,5,1279,16
+137039,RETURN,1,,return;,9,1315,1
+137305,RETURN,1,,return;,9,1386,1
+137379,RETURN,1,,return NULL;,9,1409,1
+137384,RETURN,-1,,return names.p_elems;,5,1411,11
+137484,RETURN,-1,,return NULL;,9,50,3
+137486,RETURN,-1,,return p_xml;,5,53,5
+137546,RETURN,-1,,return NULL;,9,85,3
+137548,RETURN,-1,,return reader;,5,87,6
+137601,RETURN,-1,,return NULL;,9,124,2
+137603,RETURN,-1,,return reader;,5,126,4
+137713,RETURN,-1,,return NULL;,5,80,4
+137762,RETURN,-1,,return NULL;,5,108,4
+137783,RETURN,-1,,return NULL;,5,122,2
+137919,RETURN,-1,,return 0;,5,189,7
+137980,RETURN,-1,,return NULL;,5,233,2
+137992,RETURN,-1,,return vlm_MessageSimpleNew (a);,5,240,3
+138003,RETURN,-1,,return NULL;,6,247,2
+138013,RETURN,-1,,return NULL;,5,257,2
+138130,RETURN,-1,,"return strcmp(capa->name, capb->name);",5,62,5
+138171,RETURN,-1,,return (*mb)->i_score - (*ma)->i_score;,5,79,5
+138206,RETURN,1,,return;,9,88,1
+138263,RETURN,1,,return -1;,9,112,1
+138342,RETURN,1,,return -1;,9,133,1
+138363,RETURN,-1,,return 0;,5,138,20
+138368,RETURN,-1,,return -1;,5,141,23
+138418,RETURN,1,,return NULL;,9,166,1
+138420,RETURN,-1,,return lib;,5,172,4
+138433,RETURN,1,,return;,9,186,1
+138473,RETURN,-1,,return 0;,5,563,3
+138650,RETURN,-1,,return count;,5,680,8
+138717,RETURN,-1,,return NULL;,13,714,3
+138748,RETURN,-1,,return tab;,5,722,8
+138776,RETURN,-1,,return 0;,9,739,2
+138807,RETURN,1,,return -1;,9,747,1
+138820,RETURN,-1,,return n;,5,750,13
+138907,RETURN,1,,return NULL;,9,45,1
+139015,RETURN,-1,,return module;,5,77,20
+139060,RETURN,1,,return NULL;,9,99,1
+139105,RETURN,-1,,return plugin;,5,117,11
+139185,RETURN,1,,return NULL;,13,152,1
+139292,RETURN,-1,,return tab;,5,181,13
+139916,RETURN,-1,,return ret;,5,459,13
+139933,RETURN,1,,return NULL;,9,471,1
+139947,RETURN,-1,,return plugin;,5,478,5
+139966,RETURN,-1,,"return strcmp(sa->name, sb->name);",5,491,5
+140010,RETURN,-1,,return 0;,13,523,9
+140044,RETURN,-1,,return -1;,9,536,2
+140064,RETURN,-1,,return 0;,5,544,15
+140084,RETURN,-1,,return NULL;,9,564,2
+140086,RETURN,-1,,return root;,5,567,4
+140112,RETURN,-1,,return 0;,9,581,2
+140128,RETURN,1,,return -1;,9,588,1
+140138,RETURN,-1,,return 0;,5,591,6
+140290,RETURN,-1,,return ret;,5,632,10
+140325,RETURN,-1,,"return !strcmp (module_get_capability (m), cap);",5,55,1
+140344,RETURN,1,,"return ""unnamed"";",9,67,1
+140346,RETURN,-1,,return m->pp_shortcuts[0];,5,68,2
+140367,RETURN,1,,return m->psz_longname;,9,81,1
+140378,RETURN,1,,return m->psz_shortname;,9,84,1
+140382,RETURN,-1,,return module_get_object (m);,5,85,3
+140390,RETURN,-1,,return m->psz_help;,5,96,1
+140399,RETURN,-1,,"return (m->psz_capability != NULL) ? m->psz_capability : ""none"";",5,107,1
+140415,RETURN,-1,,return m->i_score;,5,118,1
+140436,RETURN,1,,"return """";",9,131,1
+140441,RETURN,-1,,return str;,5,137,3
+140454,RETURN,-1,,return (activate != NULL) ? activate (obj) : VLC_SUCCESS;,4,146,2
+140492,RETURN,1,,return m->i_score > 0;,10,162,1
+140521,RETURN,1,,return true;,15,166,1
+140523,RETURN,-1,,return false;,6,167,3
+140544,RETURN,1,,return VLC_EGENERIC;,9,176,1
+140573,RETURN,-1,,return ret;,5,190,6
+140649,RETURN,-1,,return NULL;,9,240,3
+140891,RETURN,-1,,return module;,5,326,24
+140932,RETURN,-1,,return activate(obj);,5,356,3
+140957,RETURN,-1,,"return vlc_module_load(obj, cap, name, strict, generic_start, obj);",5,371,1
+141036,RETURN,-1,,return module;,13,403,2
+141040,RETURN,-1,,return NULL;,5,407,7
+141047,RETURN,-1,,return module_find (psz_name) != NULL;,5,418,1
+141075,RETURN,-1,,return NULL;,9,436,2
+141107,RETURN,1,,return NULL;,9,447,1
+141158,RETURN,-1,,return config;,5,461,15
+141349,RETURN,-1,,return 0;,5,84,2
+141356,RETURN,-1,,return (char *)msgid;,5,96,1
+141367,RETURN,-1,,return (char *)((n == 1) ? msgid : plural);,5,105,1
+141456,RETURN,-1,,return i_val;,5,63,9
+141479,RETURN,1,,return EAI_SERVICE;,13,90,1
+141558,RETURN,-1,,"return getaddrinfo (node, servname, hints, res);",5,120,6
+141616,RETURN,1,,return strdup( psz_header );,13,57,1
+141619,RETURN,-1,,"return strndup( psz_header, psz_end - psz_header );",9,58,5
+141627,RETURN,-1,,return NULL;,9,62,1
+141662,RETURN,1,,return strdup( psz_header );,13,79,1
+141665,RETURN,-1,,"return strndup( psz_header, psz_end - psz_header );",9,80,5
+141673,RETURN,-1,,return NULL;,9,84,1
+141697,RETURN,-1,,return psz_md5_hash( &md5 );,5,99,7
+142100,RETURN,-1,,return psz_result;,5,222,35
+142175,RETURN,1,,return;,13,259,1
+142468,RETURN,-1,,return i_err;,5,385,25
+142732,RETURN,-1,,return psz_result;,5,486,12
+143001,RETURN,1,,return p->psz_reason;,9,252,1
+143005,RETURN,-1,,return psz_fallback_reason[(i_code / 100) - 1];,5,254,11
+143068,RETURN,-1,,return 0;,9,284,2
+143070,RETURN,-1,,return (size_t)res;,5,287,10
+143110,RETURN,1,,return VLC_SUCCESS;,9,311,1
+143233,RETURN,-1,,return VLC_SUCCESS;,5,349,22
+143285,RETURN,1,,return NULL;,9,365,1
+143304,RETURN,-1,,return NULL;,9,370,2
+143351,RETURN,-1,,return file;,5,384,17
+143370,RETURN,-1,,return p_sys;,5,393,5
+143398,RETURN,1,,return VLC_SUCCESS;,9,416,1
+143677,RETURN,-1,,return VLC_SUCCESS;,5,475,14
+143700,RETURN,1,,return NULL;,9,486,1
+143719,RETURN,-1,,return NULL;,9,491,2
+143758,RETURN,-1,,return handler;,5,504,11
+143777,RETURN,-1,,return p_sys;,5,512,5
+143813,RETURN,1,,return VLC_SUCCESS;,9,533,1
+143881,RETURN,-1,,return VLC_SUCCESS;,5,551,15
+143910,RETURN,1,,return NULL;,9,561,1
+143929,RETURN,-1,,return NULL;,9,566,2
+143975,RETURN,-1,,return rdir;,5,580,13
+144026,RETURN,1,,return VLC_SUCCESS;,9,628,1
+144045,RETURN,1,,return VLC_EGENERIC;,13,634,1
+144063,RETURN,1,,return VLC_EGENERIC;,17,639,1
+144136,RETURN,1,,return VLC_EGENERIC;,13,655,1
+144189,RETURN,-1,,return VLC_SUCCESS;,9,671,17
+144506,RETURN,-1,,return VLC_SUCCESS;,9,742,16
+144528,RETURN,1,,return NULL;,9,752,1
+144547,RETURN,-1,,return NULL;,9,757,2
+144655,RETURN,-1,,return stream;,5,785,22
+144705,RETURN,-1,,return VLC_SUCCESS;,5,801,7
+144787,RETURN,1,,return VLC_SUCCESS;,9,825,1
+144833,RETURN,-1,,return VLC_SUCCESS;,5,840,7
+144916,RETURN,-1,,"return httpd_HostCreate(p_this, ""http-host"", ""http-port"", NULL, 10);",5,869,1
+144941,RETURN,-1,,return NULL;,9,877,2
+144972,RETURN,-1,,return NULL;,9,888,4
+144978,RETURN,-1,,"return httpd_HostCreate(obj, ""http-host"", ""https-port"", tls, 10);",5,893,11
+144996,RETURN,-1,,"return httpd_HostCreate(p_this, ""rtsp-host"", ""rtsp-port"", NULL, timeout);",5,899,3
+145095,RETURN,-1,,return host;,9,941,8
+145257,RETURN,-1,,return host;,5,988,29
+145286,RETURN,-1,,return NULL;,5,1001,34
+145338,RETURN,-1,,return;,9,1020,3
+145487,RETURN,-1,,return NULL;,13,1059,3
+145576,RETURN,-1,,return url;,5,1078,15
+145614,RETURN,-1,,return VLC_SUCCESS;,5,1090,5
+145859,RETURN,1,,return msg->p_headers[i].value;,13,1159,1
+145867,RETURN,-1,,return NULL;,5,1160,2
+145895,RETURN,1,,return;,9,1167,1
+145924,RETURN,1,,return;,9,1174,1
+145956,RETURN,-1,,return;,9,1185,2
+146019,RETURN,-1,,"return net_GetPeerAddress(vlc_tls_GetFD(cl->sock), ip, port) ? NULL : ip;",5,1206,1
+146037,RETURN,-1,,"return net_GetSockAddress(vlc_tls_GetFD(cl->sock), ip, port) ? NULL : ip;",5,1211,1
+146088,RETURN,1,,return NULL;,14,1228,1
+146107,RETURN,-1,,return cl;,5,1235,8
+146134,RETURN,-1,,"return sock->readv(sock, &iov, 1);",5,1243,5
+146170,RETURN,-1,,"return sock->writev(sock, &iov, 1);",5,1251,5
+147394,RETURN,-1,,return 0;,9,1548,2
+147406,RETURN,1,,return -1;,13,1558,1
+147414,RETURN,-1,,return 0;,9,1561,3
+147416,RETURN,-1,,return 0;,5,1564,5
+147643,RETURN,1,,return -1;,13,1611,1
+147651,RETURN,-1,,return 0;,9,1615,3
+147797,RETURN,-1,,return 0;,5,1645,7
+147863,RETURN,1,,return true;,9,1662,1
+147869,RETURN,1,,return false;,9,1665,1
+147877,RETURN,1,,return false;,9,1668,1
+147898,RETURN,1,,return false;,9,1676,1
+147933,RETURN,-1,,return true;,5,1692,17
+147938,RETURN,-1,,return false;,5,1696,20
+149209,RETURN,-1,,return NULL;,5,2058,6
+149222,RETURN,1,,return VLC_EGENERIC;,9,2065,1
+149290,RETURN,-1,,return VLC_SUCCESS;,9,2080,2
+149311,RETURN,-1,,return VLC_ENOMEM;,9,2086,2
+149423,RETURN,-1,,return VLC_SUCCESS;,5,2107,12
+149493,RETURN,-1,,return -1;,9,64,2
+149507,RETURN,-1,,return fd;,5,102,5
+149574,RETURN,-1,,return NULL;,9,124,2
+149768,RETURN,-1,,return sockv;,5,224,15
+149791,RETURN,-1,,return -1;,13,244,3
+149824,RETURN,-1,,return rd ? (ssize_t)rd : -1;,17,262,2
+149860,RETURN,-1,,return rd;,5,277,4
+149883,RETURN,-1,,return -1;,13,299,3
+149915,RETURN,-1,,return written ? (ssize_t)written : -1;,13,309,3
+149951,RETURN,-1,,return written;,5,322,4
+150105,RETURN,-1,,return buf;,5,377,11
+150115,RETURN,-1,,return NULL;,5,381,15
+150138,RETURN,-1,,return i_ret;,5,393,6
+150164,RETURN,1,,return -1;,9,405,1
+150182,RETURN,-1,,return i_ret;,5,410,8
+150288,RETURN,1,,return -1;,9,94,1
+150351,RETURN,-1,,return fd;,13,104,2
+150356,RETURN,-1,,return -1;,5,109,18
+150402,RETURN,-1,,return -1;,9,129,2
+150419,RETURN,-1,,return -1;,17,138,2
+150427,RETURN,-1,,return -1;,13,154,7
+150440,RETURN,-1,,return -1;,9,160,2
+150457,RETURN,-1,,return -1;,9,168,2
+150498,RETURN,-1,,return -1;,9,178,2
+150508,RETURN,-1,,return fd;,5,183,20
+150638,RETURN,-1,,return -1;,17,102,10
+150658,RETURN,-1,,return -1;,17,113,10
+150715,RETURN,-1,,return -1;,9,137,3
+150912,RETURN,1,,return -1;,9,218,1
+150955,RETURN,-1,,return i_handle;,5,238,21
+150988,RETURN,-1,,return -1;,9,253,2
+151007,RETURN,-1,,return fd;,5,258,6
+151084,RETURN,-1,,return -1;,17,297,2
+151151,RETURN,-1,,return fd;,13,317,9
+151153,RETURN,-1,,return -1;,5,320,8
+151176,RETURN,1,,return VLC_SUCCESS;,9,339,1
+151237,RETURN,1,,return VLC_EGENERIC;,9,359,1
+151248,RETURN,1,,return VLC_EGENERIC;,9,361,1
+151290,RETURN,-1,,return VLC_EGENERIC;,13,375,2
+151314,RETURN,-1,,return VLC_EGENERIC;,13,385,2
+151370,RETURN,1,,return VLC_EGENERIC;,13,399,1
+151381,RETURN,1,,return VLC_EGENERIC;,13,402,1
+151402,RETURN,-1,,return VLC_EGENERIC;,13,408,2
+151420,RETURN,-1,,return VLC_EGENERIC;,9,418,2
+151422,RETURN,-1,,return VLC_SUCCESS;,5,421,12
+151464,RETURN,1,,return VLC_EGENERIC;,9,446,1
+151501,RETURN,1,,return VLC_EGENERIC;,13,460,1
+151549,RETURN,1,,return VLC_EGENERIC;,13,472,1
+151560,RETURN,1,,return VLC_EGENERIC;,13,474,1
+151578,RETURN,1,,return VLC_EGENERIC;,13,480,1
+151651,RETURN,1,,return VLC_EGENERIC;,13,500,1
+151662,RETURN,1,,return VLC_EGENERIC;,13,504,1
+151686,RETURN,-1,,return VLC_EGENERIC;,13,512,2
+151736,RETURN,1,,return VLC_EGENERIC;,13,523,1
+151747,RETURN,1,,return VLC_EGENERIC;,13,526,1
+151749,RETURN,-1,,return VLC_SUCCESS;,5,529,5
+151828,RETURN,-1,,"return activate (crd, cert, key);",5,67,5
+151845,RETURN,-1,,return activate (crd);,5,75,3
+151888,RETURN,1,,return NULL;,9,93,1
+151923,RETURN,-1,,return NULL;,9,104,3
+151925,RETURN,-1,,return srv;,5,107,7
+151951,RETURN,1,,return NULL;,9,115,1
+151976,RETURN,-1,,return NULL;,9,123,3
+151978,RETURN,-1,,return crd;,5,126,6
+151990,RETURN,1,,return;,9,132,1
+152035,RETURN,-1,,return session;,5,152,7
+152088,RETURN,1,,return NULL;,9,178,1
+152209,RETURN,-1,,return session;,5,218,16
+152218,RETURN,-1,,"return vlc_tls_SessionCreate(crd, sock, NULL, alpn);",5,225,1
+152268,RETURN,-1,,return -1;,13,243,2
+152291,RETURN,1,,return val;,17,250,1
+152323,RETURN,1,,return rcvd;,13,256,1
+152334,RETURN,1,,return -1;,17,260,1
+152346,RETURN,1,,return rcvd ? (ssize_t)rcvd : -1;,17,262,1
+152405,RETURN,-1,,return -1;,13,284,2
+152454,RETURN,1,,return sent;,13,295,1
+152465,RETURN,1,,return -1;,17,299,1
+152477,RETURN,1,,return sent ? (ssize_t)sent : -1;,17,301,1
+152581,RETURN,-1,,return line;,5,334,9
+152586,RETURN,-1,,return NULL;,5,338,12
+152612,RETURN,-1,,return sock->fd;,5,353,3
+152635,RETURN,-1,,"return recvmsg(vlc_tls_SocketGetFD(tls), &msg, 0);",5,365,3
+152663,RETURN,-1,,"return sendmsg(vlc_tls_SocketGetFD(tls), &msg, MSG_NOSIGNAL);",5,377,3
+152676,RETURN,-1,,"return shutdown(vlc_tls_SocketGetFD(tls), duplex ? SHUT_RDWR : SHUT_WR);",5,382,1
+152716,RETURN,1,,return NULL;,9,397,1
+152776,RETURN,-1,,return tls;,5,412,15
+152783,RETURN,-1,,"return vlc_tls_SocketAlloc(fd, NULL, 0);",5,417,1
+152804,RETURN,1,,return -1;,9,425,1
+152867,RETURN,-1,,return -1;,13,440,3
+152870,RETURN,-1,,return 0;,5,443,4
+152897,RETURN,1,,return NULL;,9,454,1
+152955,RETURN,-1,,return sk;,5,464,9
+152986,RETURN,-1,,return -1;,13,483,2
+153013,RETURN,1,,return -1;,9,492,1
+153024,RETURN,-1,,return -1;,9,497,2
+153027,RETURN,-1,,return 0;,5,499,12
+153054,RETURN,1,,return 0;,9,510,1
+153061,RETURN,1,,return -1;,9,513,1
+153064,RETURN,-1,,return vlc_tls_WaitConnect(tls);,5,518,5
+153083,RETURN,1,,return -1;,9,559,1
+153086,RETURN,-1,,"return vlc_tls_SocketWrite(tls, iov, count);",5,561,3
+153107,RETURN,1,,return NULL;,9,569,1
+153128,RETURN,-1,,return sock;,5,584,5
+153180,RETURN,-1,,return NULL;,9,604,2
+153221,RETURN,-1,,return tls;,9,620,5
+153225,RETURN,-1,,return NULL;,5,624,12
+153276,RETURN,-1,,return NULL;,9,644,2
+153327,RETURN,-1,,return tls;,13,661,2
+153338,RETURN,-1,,return NULL;,5,670,10
+153397,RETURN,-1,,return -1;,9,138,3
+153400,RETURN,-1,,return fd;,5,140,2
+153469,RETURN,-1,,return -1;,9,164,2
+153558,RETURN,-1,,return val;,5,200,12
+153582,RETURN,-1,,return VLC_EGENERIC;,13,232,4
+153629,RETURN,-1,,return VLC_EGENERIC;,13,247,2
+153631,RETURN,-1,,return VLC_SUCCESS;,5,251,5
+153655,RETURN,-1,,return -1;,9,262,2
+153671,RETURN,-1,,return -1;,5,290,6
+153690,RETURN,1,,return 0;,9,298,1
+153708,RETURN,-1,,return ifindex;,5,304,8
+153732,RETURN,-1,,return -1;,9,361,2
+153752,RETURN,-1,,"return net_Subscribe (obj, fd, grp, grplen);",5,391,5
+153780,RETURN,-1,,return -1;,5,475,3
+153804,RETURN,1,,return -1;,9,483,1
+153826,RETURN,-1,,return -1;,13,505,7
+153829,RETURN,-1,,"return setsockopt( fd, level, cmd, &(int){ dscp }, sizeof (int));",5,508,6
+153913,RETURN,-1,,return -1;,9,539,2
+154051,RETURN,-1,,return -1;,9,591,2
+154054,RETURN,-1,,return i_handle;,5,594,16
+154077,RETURN,1,,"return net_ListenSingle (obj, psz_bind, i_bind, protocol);",9,607,1
+154130,RETURN,-1,,return -1;,9,623,2
+154159,RETURN,-1,,return -1;,9,633,3
+154314,RETURN,-1,,return val;,5,677,17
+154338,RETURN,1,,return VLC_EGENERIC;,9,694,1
+154347,RETURN,-1,,return VLC_EGENERIC;,5,744,6
+154403,RETURN,-1,,return FromLocaleDup(psz_path);,5,46,9
+154419,RETURN,1,,return strdup (path);,9,58,1
+154437,RETURN,-1,,return datadir;,5,64,7
+154454,RETURN,1,,return FromLocaleDup (home);,9,71,1
+154457,RETURN,-1,,return config_GetLibDir();,5,73,4
+154492,RETURN,-1,,return config_GetHomeDir ();,5,94,2
+154563,RETURN,-1,,return -1;,9,65,2
+154585,RETURN,-1,,return fd;,5,73,14
+154597,RETURN,-1,,return -1;,5,80,2
+154608,RETURN,-1,,return -1;,5,86,2
+154616,RETURN,-1,,return close (fd);,5,91,1
+154639,RETURN,-1,,return -1;,9,100,2
+154650,RETURN,-1,,return res;,5,105,7
+154671,RETURN,-1,,return NULL;,9,114,2
+154680,RETURN,-1,,return dir;,5,121,7
+154708,RETURN,1,,return NULL;,9,145,1
+154746,RETURN,-1,,return path;,5,153,13
+154769,RETURN,-1,,return -1;,9,162,2
+154785,RETURN,-1,,return res;,5,168,7
+154793,RETURN,-1,,"return vlc_statEx (filename, buf, true);",5,173,1
+154804,RETURN,-1,,"return vlc_statEx (filename, buf, false);",5,178,1
+154828,RETURN,-1,,return -1;,9,187,2
+154838,RETURN,-1,,return ret;,5,192,7
+154873,RETURN,-1,,return -1;,9,207,4
+154886,RETURN,-1,,return ret;,5,213,11
+154936,RETURN,1,,return ToLocaleDup (pwd);,13,226,1
+154991,RETURN,-1,,return ret;,13,243,4
+155001,RETURN,-1,,return NULL;,5,250,9
+155024,RETURN,-1,,return newfd;,5,261,4
+155039,RETURN,1,,return -1;,9,267,1
+155062,RETURN,-1,,return 0;,5,275,6
+155085,RETURN,-1,,"return vlc_writev(fd, &iov, 1);",5,282,3
+155162,RETURN,-1,,return val;,5,305,10
+155210,RETURN,-1,,return fd;,5,321,4
+155228,RETURN,1,,return -1;,9,327,1
+155241,RETURN,-1,,return 0;,5,331,4
+155282,RETURN,-1,,return fd;,13,344,3
+155287,RETURN,-1,,return -1;,5,349,2
+155328,RETURN,1,,return EAI_FAMILY;,9,52,1
+155348,RETURN,1,,return EAI_BADFLAGS;,9,54,1
+155374,RETURN,1,,return EAI_NONAME;,21,67,1
+155411,RETURN,1,,return EAI_OVERFLOW;,17,76,1
+155434,RETURN,1,,return EAI_OVERFLOW;,17,83,1
+155436,RETURN,-1,,return 0;,5,86,2
+155448,RETURN,-1,,return EAI_NONAME;,13,100,3
+155452,RETURN,-1,,return EAI_NODATA;,13,106,6
+155456,RETURN,-1,,return EAI_FAIL;,13,109,9
+155460,RETURN,-1,,return EAI_AGAIN;,13,112,12
+155462,RETURN,-1,,return EAI_SYSTEM;,5,114,2
+155559,RETURN,1,,return res;,21,147,1
+155563,RETURN,1,,return res;,17,150,1
+155567,RETURN,-1,,return NULL;,5,155,5
+155602,RETURN,-1,,"return makeaddrinfo (AF_INET, type, proto,
+                         (struct sockaddr*)&addr, sizeof (addr), name);",5,171,6
+155659,RETURN,1,,return EAI_BADFLAGS;,13,199,1
+155672,RETURN,1,,return EAI_FAMILY;,13,202,1
+155695,RETURN,-1,,return EAI_SOCKTYPE;,17,222,13
+155710,RETURN,1,,return EAI_SERVICE;,13,226,1
+155765,RETURN,1,,return gai_error_from_herrno ();,13,249,1
+155780,RETURN,1,,return EAI_FAMILY;,13,252,1
+155840,RETURN,1,,return EAI_SERVICE;,13,272,1
+155872,RETURN,-1,,return EAI_SYSTEM;,13,284,2
+155912,RETURN,-1,,return EAI_SYSTEM;,13,296,2
+155934,RETURN,-1,,return 0;,5,304,17
+155954,RETURN,-1,,return NULL;,5,37,2
+156013,RETURN,-1,,return -1;,9,61,3
+156022,RETURN,-1,,return 0;,5,65,10
+156048,RETURN,-1,,"return dlsym( handle, buf );",5,98,4
+156400,RETURN,-1,,return;,17,183,2
+156667,RETURN,1,,"return DosWaitEventSem( hev, ulTimeout );",13,88,1
+156671,RETURN,-1,,return DosSleep( ulTimeout );,9,90,2
+156739,RETURN,1,,return rc;,9,108,1
+156748,RETURN,-1,,return ERROR_INTERRUPT;,9,113,2
+156750,RETURN,-1,,return NO_ERROR;,5,116,19
+156758,RETURN,-1,,"return vlc_DosWaitEventSemEx( hev, ulTimeout );",5,121,1
+156773,RETURN,-1,,return ( rc != ERROR_TIMEOUT ) ? rc : 0;,5,128,3
+156900,RETURN,-1,,return;,9,214,9
+156946,RETURN,-1,,return ret;,9,234,7
+156948,RETURN,-1,,"return DosRequestMutexSem( p_mutex->hmtx, 0 ) ? EBUSY : 0;",5,237,2
+156996,RETURN,-1,,return;,9,252,7
+157287,RETURN,-1,,return rc ? ETIMEDOUT : 0;,5,385,5
+157346,RETURN,-1,,"return vlc_cond_wait_common (p_condvar, p_mutex, ulTimeout);",5,408,7
+157403,RETURN,-1,,"return vlc_cond_wait_common (p_condvar, p_mutex, ulTimeout);",5,428,9
+157443,RETURN,1,,return errno;,9,446,1
+157458,RETURN,-1,,return EAGAIN;,9,452,2
+157500,RETURN,-1,,return 0;,5,466,15
+157577,RETURN,-1,,return 0;,5,491,2
+157584,RETURN,-1,,return ( void * )*key->id;,5,496,1
+157729,RETURN,1,,return ENOMEM;,9,553,1
+157842,RETURN,-1,,return 0;,5,583,18
+157859,RETURN,-1,,return ENOMEM;,5,591,24
+157869,RETURN,-1,,"return vlc_clone_attr (p_handle, false, entry, data, priority);",5,597,1
+157939,RETURN,-1,,"return vlc_clone_attr (p_handle, true, entry, data, priority);",5,628,3
+157963,RETURN,1,,return VLC_EGENERIC;,9,637,1
+157965,RETURN,-1,,return VLC_SUCCESS;,5,638,2
+157972,RETURN,-1,,return vlc_threadvar_get (thread_key);,5,643,1
+157980,RETURN,-1,,return _gettid();,5,648,1
+158030,RETURN,1,,return false;,9,674,1
+158042,RETURN,-1,,return state;,5,678,7
+158066,RETURN,1,,return;,9,687,1
+158093,RETURN,1,,return;,9,697,1
+158164,RETURN,1,,return;,9,724,1
+158243,RETURN,-1,,return rc;,5,766,7
+158386,RETURN,-1,,return -1;,13,818,2
+158493,RETURN,1,,return -1;,13,847,1
+158572,RETURN,-1,,return val;,5,866,18
+158604,RETURN,-1,,return (d.quot * 1000000) + ((d.rem * 1000000) / freq);,5,884,6
+158744,RETURN,1,,return ENOMEM;,9,947,1
+158794,RETURN,-1,,return 0;,5,959,12
+158867,RETURN,1,,return;,9,986,1
+158915,RETURN,-1,,return 0;,5,1001,2
+158933,RETURN,-1,,return numprocs;,5,1012,4
+158969,RETURN,-1,,return input_resource_HoldAout(sys->p_input_resource);,5,43,3
+159000,RETURN,-1,,return volume;,5,56,6
+159030,RETURN,-1,,return ret;,5,69,6
+159062,RETURN,-1,,return ret;,5,87,6
+159090,RETURN,-1,,return mute;,5,100,6
+159120,RETURN,-1,,return ret;,5,113,6
+159326,RETURN,-1,,return psz_dir;,5,103,6
+159425,RETURN,-1,,return psz_path;,5,136,19
+159474,RETURN,-1,,return psz_filename;,5,158,14
+159490,RETURN,1,,return VLC_EGENERIC;,9,167,1
+159503,RETURN,-1,,return VLC_EGENERIC;,9,174,2
+159553,RETURN,-1,,return b_found ? VLC_SUCCESS : VLC_EGENERIC;,5,203,13
+159577,RETURN,-1,,return psz_dir;,5,218,6
+159592,RETURN,-1,,return psz_file;,5,228,3
+159613,RETURN,-1,,return VLC_EGENERIC;,9,237,2
+159668,RETURN,1,,return VLC_SUCCESS;,19,262,1
+159670,RETURN,-1,,return VLC_EGENERIC;,5,264,14
+159691,RETURN,1,,return VLC_EGENERIC;,9,274,1
+159705,RETURN,-1,,return VLC_EGENERIC;,9,280,2
+159722,RETURN,-1,,return VLC_SUCCESS;,9,290,4
+159830,RETURN,-1,,return VLC_SUCCESS;,5,339,26
+160555,RETURN,-1,,return VLC_SUCCESS;,5,71,12
+160584,RETURN,1,,return VLC_SUCCESS;,9,87,1
+160592,RETURN,1,,return VLC_SUCCESS;,9,90,1
+160666,RETURN,-1,,return VLC_SUCCESS;,5,114,11
+160719,RETURN,-1,,return VLC_SUCCESS;,5,129,9
+160892,RETURN,-1,,"return var_SetFloat( p_playlist, ""rate"", rate );",5,166,20
+160952,RETURN,-1,,return VLC_SUCCESS;,5,187,12
+160973,RETURN,1,,return NULL;,9,205,1
+161352,RETURN,-1,,return p_playlist;,5,302,54
+161502,RETURN,-1,,return p_input;,5,377,5
+161516,RETURN,-1,,return p_input;,5,389,5
+161524,RETURN,-1,,return pl_priv(p_playlist)->status.p_item;,5,402,2
+161542,RETURN,-1,,return pl_priv(p_playlist)->status.p_node;,5,409,2
+161788,RETURN,-1,,return pl_priv(p_playlist)->status.p_item;,5,489,2
+161823,RETURN,1,,return PLAYLIST_STOPPED;,9,499,1
+161832,RETURN,1,,return PLAYLIST_PAUSED;,9,501,1
+161834,RETURN,-1,,return PLAYLIST_RUNNING;,5,502,6
+161924,RETURN,-1,,return NULL;,9,79,2
+161971,RETURN,-1,,return key;,5,97,10
+161999,RETURN,1,,return VLC_EGENERIC;,9,111,1
+162028,RETURN,-1,,return art ? VLC_SUCCESS : VLC_EGENERIC;,5,121,10
+162126,RETURN,1,,return VLC_ENOMEM;,9,151,1
+162154,RETURN,-1,,return VLC_SUCCESS;,5,163,10
+162199,RETURN,-1,,return error;,5,174,5
+162230,RETURN,-1,,return error;,5,183,5
+162244,RETURN,-1,,return CheckArt( item );,5,189,2
+162272,RETURN,-1,,return VLC_EGENERIC;,9,200,1
+162314,RETURN,1,,return VLC_SUCCESS;,13,211,1
+162316,RETURN,-1,,return VLC_EGENERIC;,5,214,5
+162488,RETURN,-1,,return;,5,285,22
+162507,RETURN,1,,return;,9,295,1
+162579,RETURN,1,,return;,9,324,1
+162636,RETURN,-1,,return NULL;,5,345,7
+162659,RETURN,1,,return VLC_ENOMEM;,9,355,1
+162707,RETURN,-1,,return VLC_SUCCESS;,9,368,2
+162716,RETURN,-1,,return VLC_EGENERIC;,5,373,13
+162724,RETURN,-1,,return !atomic_load( &((struct fetcher_thread*)th_)->active );,5,378,1
+162775,RETURN,-1,,"DEF_STARTER(  SearchLocal, fetcher->local )",1,398,3
+162795,RETURN,-1,,"DEF_STARTER(SearchNetwork, fetcher->network )",1,399,3
+162815,RETURN,-1,,"DEF_STARTER(   Downloader, fetcher->downloader )",1,400,3
+162883,RETURN,1,,return NULL;,9,421,1
+162957,RETURN,-1,,return NULL;,9,441,5
+162970,RETURN,-1,,return fetcher;,5,447,11
+162992,RETURN,1,,return VLC_ENOMEM;,9,456,1
+163030,RETURN,-1,,return VLC_SUCCESS;,5,469,11
+163536,RETURN,-1,,return pa->i_id - pb->i_id;,5,241,5
+163567,RETURN,1,,return 0;,9,249,1
+163569,RETURN,-1,,"return (((uintptr_t)pa->p_input) > ((uintptr_t)pb->p_input))
+        ? +1 : -1;",5,250,6
+163615,RETURN,1,,return NULL;,9,265,1
+163814,RETURN,-1,,return p_item;,5,325,30
+163819,RETURN,-1,,return NULL;,5,329,33
+163935,RETURN,-1,,return (pp != NULL) ? *pp : NULL;,5,396,8
+163979,RETURN,-1,,return (pp != NULL) ? *pp : NULL;,5,420,8
+164044,RETURN,-1,,"return playlist_AddExt( p_playlist, psz_uri, NULL, play_now,
+                            0, NULL, 0, true );",5,456,1
+164076,RETURN,1,,return VLC_ENOMEM;,9,481,1
+164093,RETURN,-1,,return i_ret;,5,485,8
+164135,RETURN,-1,,return (item != NULL) ? VLC_SUCCESS : VLC_ENOMEM;,5,509,7
+164174,RETURN,1,,return NULL;,9,534,1
+164198,RETURN,-1,,return p_item;,5,543,11
+164277,RETURN,1,,return i_pos;,13,578,1
+164279,RETURN,-1,,"return RecursiveInsertCopy( p_playlist, p_item, p_parent, i_pos, b_flat );",5,581,8
+164295,RETURN,-1,,"return RecursiveAddIntoParent( p_playlist, p_parent, p_node, i_pos, b_flat,
+                                   &(playlist_item_t*){ NULL } );",5,601,1
+164326,RETURN,-1,,return idx;,5,619,3
+164345,RETURN,1,,return VLC_EGENERIC;,36,638,1
+164413,RETURN,-1,,return VLC_SUCCESS;,5,653,13
+164433,RETURN,1,,return VLC_EGENERIC;,37,674,1
+164539,RETURN,-1,,return VLC_SUCCESS;,5,693,7
+164614,RETURN,-1,,return duration;,5,727,5
+164694,RETURN,1,,return;,36,759,1
+164827,RETURN,1,,return i_pos;,31,800,1
+164870,RETURN,-1,,return i_pos;,5,823,5
+164895,RETURN,1,,return i_pos;,30,833,1
+164974,RETURN,1,,return i_pos;,13,860,1
+165032,RETURN,-1,,return i_pos;,5,878,8
+165088,RETURN,1,,return VLC_ENOMEM;,9,47,1
+165195,RETURN,-1,,return ret;,4,89,20
+165215,RETURN,1,,return VLC_EGENERIC;,9,98,1
+165249,RETURN,-1,,return ret;,5,111,14
+165298,RETURN,-1,,return VLC_EGENERIC;,9,136,2
+165314,RETURN,1,,return VLC_ENOMEM;,9,144,1
+165325,RETURN,-1,,return VLC_EGENERIC;,9,151,2
+165340,RETURN,1,,return VLC_ENOMEM;,9,157,1
+165356,RETURN,1,,return VLC_EGENERIC;,9,162,1
+165393,RETURN,-1,,return VLC_SUCCESS;,5,176,26
+165412,RETURN,-1,,return VLC_EGENERIC;,9,188,2
+165427,RETURN,-1,,return VLC_EGENERIC;,9,196,1
+165433,RETURN,1,,return VLC_EGENERIC;,9,202,1
+165452,RETURN,-1,,return i_ret;,9,209,3
+165473,RETURN,-1,,return VLC_EGENERIC;,9,218,2
+165475,RETURN,-1,,return VLC_SUCCESS;,5,220,16
+165713,RETURN,-1,,return VLC_SUCCESS;,5,50,5
+165741,RETURN,-1,,return VLC_EGENERIC;,9,61,2
+165766,RETURN,-1,,return VLC_EGENERIC;,9,70,4
+165772,RETURN,-1,,return VLC_SUCCESS;,5,74,9
+165785,RETURN,-1,,return state == END_S || state == ERROR_S;,5,80,3
+165863,RETURN,1,,return;,13,111,1
+165950,RETURN,-1,,return NULL;,9,140,2
+165979,RETURN,-1,,return preparser;,5,150,11
+165997,RETURN,1,,return;,9,158,1
+166044,RETURN,-1,,return;,13,175,12
+166235,RETURN,-1,,return VLC_SUCCESS;,5,50,11
+166471,RETURN,-1,,return b_match;,4,107,5
+166516,RETURN,-1,,return VLC_SUCCESS;,5,129,5
+166733,RETURN,-1,,return;,9,94,3
+166813,RETURN,1,,return VLC_ENOMEM;,9,117,1
+166847,RETURN,-1,,return VLC_ENOMEM;,9,132,2
+166910,RETURN,-1,,return VLC_SUCCESS;,5,147,14
+167028,RETURN,-1,,return VLC_EGENERIC;,9,190,3
+167035,RETURN,-1,,return VLC_SUCCESS;,5,197,10
+167095,RETURN,-1,,return found;,5,218,8
+167173,RETURN,-1,,return i_ret;,5,244,10
+167306,RETURN,-1,,return i_ret;,5,61,9
+167448,RETURN,-1,,return i_ret;,5,105,9
+167475,RETURN,1,,return 0;,9,122,1
+167477,RETURN,-1,,return sorting_fns[i_mode][i_type];,5,123,2
+167594,RETURN,-1,,return VLC_SUCCESS;,5,178,4
+167616,RETURN,-1,,"return recursiveNodeSort(p_playlist,p_node,find_sorting_fn(i_mode,i_type));",5,201,3
+167629,RETURN,-1,,"return meta_sort( first, second, vlc_meta_TrackNumber, true );",5,220,1
+167659,RETURN,-1,,return i_ret;,5,230,4
+167685,RETURN,-1,,return i_ret;,5,240,4
+167711,RETURN,-1,,return i_ret;,5,250,4
+167737,RETURN,-1,,return i_ret;,5,260,4
+167745,RETURN,-1,,"return meta_sort( first, second, vlc_meta_Description, false );",5,265,1
+167786,RETURN,-1,,return i_ret;,5,274,7
+167794,RETURN,-1,,"return meta_sort( first, second, vlc_meta_Genre, false );",5,279,1
+167806,RETURN,-1,,return first->i_id - second->i_id;,5,284,1
+167820,RETURN,-1,,"return meta_sort( first, second, vlc_meta_Rating, true );",5,289,1
+167832,RETURN,-1,,"return meta_strcasecmp_title( first, second );",5,294,1
+167856,RETURN,1,,return -1;,9,301,1
+167875,RETURN,1,,return 1;,9,304,1
+167879,RETURN,1,,"return meta_strcasecmp_title( first, second );",9,307,1
+167948,RETURN,-1,,return i_ret;,5,327,9
+168013,RETURN,-1,,return i_ret;,5,347,9
+168102,RETURN,-1,,return;,9,80,2
+168172,RETURN,-1,,return VLC_SUCCESS;,5,109,7
+168582,RETURN,-1,,return p_input_thread != NULL;,5,255,30
+168632,RETURN,-1,,return NULL;,9,279,2
+168657,RETURN,1,,return NULL;,13,288,1
+169034,RETURN,-1,,return get_current_status_item( p_playlist );,13,384,2
+169046,RETURN,-1,,return NULL;,13,389,2
+169107,RETURN,1,,return NULL;,17,406,1
+169145,RETURN,1,,return NULL;,13,417,1
+169156,RETURN,-1,,return p_new;,5,421,10
+169271,RETURN,-1,,return ok;,5,463,21
+169288,RETURN,1,,return false;,9,470,1
+169296,RETURN,-1,,"return PlayItem( p_playlist, p_item );",5,474,6
+169456,RETURN,-1,,return NULL;,5,536,11
+169534,RETURN,1,,return NULL;,9,72,1
+169548,RETURN,1,,return NULL;,27,76,1
+169562,RETURN,-1,,return p_item;,5,83,13
+169598,RETURN,1,,return;,9,106,1
+169833,RETURN,-1,,return VLC_SUCCESS;,5,164,7
+169849,RETURN,-1,,return NULL;,10,184,1
+169878,RETURN,-1,,return p_node->pp_children[i];,13,190,1
+169884,RETURN,-1,,return NULL;,5,193,4
+169980,RETURN,-1,,return p_next;,5,238,8
+170001,RETURN,1,,return p_root->pp_children[0];,13,257,1
+170009,RETURN,1,,return NULL;,13,259,1
+170018,RETURN,1,,return p_item->pp_children[0];,9,264,1
+170062,RETURN,1,,return p_parent->pp_children[i+1];,17,273,1
+170081,RETURN,-1,,return NULL;,21,283,2
+170085,RETURN,1,,"return GetNextUncle( p_playlist, p_item, p_root );",21,286,1
+170090,RETURN,-1,,return NULL;,5,290,6
+170166,RETURN,-1,,return p_grandparent->pp_children[i+1];,21,321,1
+170179,RETURN,-1,,return NULL;,17,326,1
+170191,RETURN,-1,,return NULL;,5,336,8
+170265,RETURN,-1,,return p_grandparent->pp_children[i-1];,17,364,1
+170278,RETURN,-1,,return NULL;,17,369,1
+170290,RETURN,-1,,return NULL;,5,379,8
+170310,RETURN,1,,return p_item->pp_children[p_item->i_children - 1];,9,393,1
+170376,RETURN,-1,,return NULL;,21,417,2
+170378,RETURN,-1,,"return GetPrevUncle( p_playlist, p_item, p_root );",17,419,3
+170385,RETURN,-1,,return p_parent->pp_children[i-1];,17,423,1
+170393,RETURN,-1,,return NULL;,5,427,6
+170426,RETURN,-1,,return strdup ((path != NULL) ? path : PKGDATADIR);,5,47,3
+170439,RETURN,-1,,return strdup (PKGLIBDIR);,5,57,1
+170457,RETURN,1,,return strdup (home);,9,66,1
+170460,RETURN,-1,,return NULL;,5,80,4
+170499,RETURN,-1,,return psz_dir;,9,96,2
+170525,RETURN,-1,,return psz_dir;,5,104,11
+170556,RETURN,1,,return NULL;,9,115,1
+170581,RETURN,1,,return NULL;,9,124,1
+170812,RETURN,1,,return NULL;,17,202,1
+170820,RETURN,-1,,return path;,5,208,19
+170835,RETURN,-1,,"return config_GetAppDir (""CONFIG"", "".config"");",13,219,6
+170841,RETURN,-1,,"return config_GetAppDir (""DATA"", "".local/share"");",13,221,9
+170847,RETURN,-1,,"return config_GetAppDir (""CACHE"", "".cache"");",13,223,12
+170853,RETURN,-1,,"return config_GetTypeDir (""DESKTOP"");",13,226,15
+170858,RETURN,-1,,"return config_GetTypeDir (""DOWNLOAD"");",13,228,18
+170863,RETURN,-1,,"return config_GetTypeDir (""TEMPLATES"");",13,230,21
+170868,RETURN,-1,,"return config_GetTypeDir (""PUBLICSHARE"");",13,232,24
+170873,RETURN,-1,,"return config_GetTypeDir (""DOCUMENTS"");",13,234,27
+170878,RETURN,-1,,"return config_GetTypeDir (""MUSIC"");",13,236,30
+170883,RETURN,-1,,"return config_GetTypeDir (""PICTURES"");",13,238,33
+170888,RETURN,-1,,"return config_GetTypeDir (""VIDEOS"");",13,240,36
+170891,RETURN,-1,,return config_GetHomeDir ();,5,242,2
+170969,RETURN,-1,,"return ""Error message unavailable"";",13,46,3
+170982,RETURN,-1,,return buf;,5,54,9
+170989,RETURN,-1,,"return vlc_strerror_l(errnum, """");",5,66,1
+170998,RETURN,-1,,"return vlc_strerror_l(errnum, ""C"");",5,77,1
+171084,RETURN,-1,,return -1;,5,75,10
+171114,RETURN,-1,,return -1;,5,96,11
+171135,RETURN,-1,,return fd;,5,108,4
+171163,RETURN,-1,,return fd;,5,132,10
+171197,RETURN,-1,,return ret;,5,149,5
+171205,RETURN,-1,,"return mkdir (dirname, mode);",5,154,1
+171214,RETURN,-1,,return opendir (dirname);,5,159,1
+171227,RETURN,-1,,return (ent != NULL) ? ent->d_name : NULL;,5,165,3
+171242,RETURN,-1,,"return stat (filename, buf);",5,170,1
+171252,RETURN,-1,,"return lstat (filename, buf);",5,175,1
+171265,RETURN,-1,,return unlink (filename);,5,180,1
+171274,RETURN,-1,,"return rename (oldpath, newpath);",5,185,1
+171328,RETURN,1,,return buf;,13,200,1
+171338,RETURN,-1,,return NULL;,5,206,6
+171358,RETURN,-1,,return newfd;,5,217,4
+171383,RETURN,-1,,return ret;,5,232,4
+171406,RETURN,-1,,"return vlc_writev(fd, &iov, 1);",5,240,3
+171487,RETURN,-1,,return val;,5,277,10
+171533,RETURN,-1,,return fd;,5,312,4
+171567,RETURN,-1,,return ret;,5,339,4
+171593,RETURN,-1,,return fd;,5,359,4
+171660,RETURN,-1,,return NULL;,5,51,6
+171706,RETURN,1,,return EAI_NONAME;,13,71,1
+171733,RETURN,-1,,return EAI_SYSTEM;,9,81,2
+171756,RETURN,-1,,return req.error;,5,91,13
+171814,RETURN,1,,return NULL;,9,56,1
+171821,RETURN,1,,return NULL;,9,59,1
+171843,RETURN,-1,,return NULL;,9,65,2
+171966,RETURN,1,,return NULL;,13,105,1
+171984,RETURN,-1,,return strdup(buf);,13,111,2
+172007,RETURN,-1,,return var;,5,122,20
+172054,RETURN,-1,,return -1;,9,64,2
+172061,RETURN,-1,,return 0;,5,67,7
+172076,RETURN,-1,,"return dlsym( handle, psz_function );",5,105,1
+172137,RETURN,1,,return;,9,57,1
+172432,RETURN,-1,,return ts;,5,115,5
+172609,RETURN,-1,,return val;,5,223,4
+172781,RETURN,-1,,return val;,5,283,6
+172821,RETURN,-1,,return val;,5,293,6
+172850,RETURN,1,,return;,9,307,1
+172879,RETURN,1,,return 0;,9,319,1
+172902,RETURN,-1,,return val;,5,325,5
+172918,RETURN,1,,return;,13,334,1
+173042,RETURN,-1,,"return pthread_key_create (key, destr);",5,372,1
+173060,RETURN,-1,,"return pthread_setspecific (key, value);",5,382,1
+173069,RETURN,-1,,return pthread_getspecific (key);,5,387,1
+173194,RETURN,-1,,return ret;,5,485,10
+173208,RETURN,-1,,"return vlc_clone_attr (th, &attr, entry, data, priority);",5,494,3
+173268,RETURN,-1,,"return vlc_clone_attr (th, &attr, entry, data, priority);",5,544,6
+173286,RETURN,-1,,return thread;,5,550,3
+173293,RETURN,-1,,return -1;,6,556,1
+173308,RETURN,-1,,return VLC_SUCCESS;,5,581,3
+173344,RETURN,-1,,return state;,5,595,5
+173418,RETURN,-1,,return (INT64_C(1000000) * tv.tv_sec) + tv.tv_usec;,5,642,3
+173472,RETURN,-1,,return 1;,5,721,1
+173696,RETURN,1,,return ENOMEM;,9,114,1
+173758,RETURN,-1,,return ENOMEM;,9,130,4
+173764,RETURN,-1,,return 0;,5,134,14
+173847,RETURN,-1,,"return atomic_exchange_explicit (&timer->overruns, 0,
+                                     memory_order_relaxed);",5,164,1
+173946,RETURN,1,,return NULL;,9,88,1
+173962,RETURN,-1,,return NULL;,9,94,2
+174042,RETURN,-1,,return NULL;,9,113,4
+174044,RETURN,-1,,return addr;,5,115,17
+174249,RETURN,-1,,return NULL;,9,204,2
+174342,RETURN,-1,,return NULL;,17,255,2
+174363,RETURN,-1,,return NULL;,13,265,6
+174386,RETURN,-1,,return NULL;,9,274,2
+174434,RETURN,-1,,return NULL;,13,292,2
+174586,RETURN,-1,,return session;,5,364,43
+174756,RETURN,1,,return NULL;,9,46,1
+174776,RETURN,1,,return NULL;,9,52,1
+174801,RETURN,-1,,return NULL;,13,76,5
+174803,RETURN,-1,,return buf;,5,79,5
+174817,RETURN,1,,return false;,9,86,1
+174826,RETURN,1,,return false;,9,88,1
+174833,RETURN,1,,return false;,9,90,1
+174835,RETURN,-1,,return true;,5,91,4
+174999,RETURN,1,,return -1;,9,156,1
+175220,RETURN,-1,,return 0;,5,261,37
+175235,RETURN,-1,,return -1;,5,266,41
+175330,RETURN,1,,return NULL;,9,98,1
+175347,RETURN,-1,,return NULL;,9,105,2
+175396,RETURN,-1,,return p_sout;,9,123,2
+175415,RETURN,-1,,return NULL;,5,133,21
+175458,RETURN,1,,return NULL;,9,163,1
+175519,RETURN,-1,,return( p_input );,5,183,9
+175562,RETURN,-1,,return( VLC_SUCCESS);,5,202,8
+175600,RETURN,-1,,return b;,5,214,7
+175668,RETURN,-1,,return i_ret;,5,240,7
+175691,RETURN,1,,return NULL;,9,255,1
+175773,RETURN,-1,,return( NULL );,9,276,4
+175775,RETURN,-1,,return p_access;,5,279,16
+175819,RETURN,1,,return VLC_EGENERIC;,9,305,1
+175821,RETURN,-1,,"return p_access->pf_seek( p_access, i_pos );",5,306,2
+175834,RETURN,-1,,"return( p_access->pf_read ?
+            p_access->pf_read( p_access, p_buffer ) : VLC_EGENERIC );",5,314,1
+175852,RETURN,-1,,"return p_access->pf_write( p_access, p_buffer );",5,323,1
+175891,RETURN,-1,,return ret;,5,340,6
+175915,RETURN,1,,return NULL;,9,354,1
+176021,RETURN,-1,,return NULL;,9,383,3
+176090,RETURN,-1,,return p_mux;,5,424,23
+176138,RETURN,-1,,return NULL;,9,454,2
+176152,RETURN,1,,return NULL;,9,462,1
+176218,RETURN,-1,,return NULL;,9,479,6
+176220,RETURN,-1,,return p_input;,5,482,12
+176373,RETURN,1,,return VLC_SUCCESS;,13,547,1
+176380,RETURN,-1,,return p_mux->pf_mux( p_mux );,5,550,6
+176463,RETURN,-1,,return -1;,17,579,1
+176499,RETURN,-1,,return i_stream;,5,595,8
+176703,RETURN,-1,,return( VLC_SUCCESS );,5,714,14
+176826,RETURN,1,,return NULL;,9,788,1
+176903,RETURN,-1,,return NULL;,9,811,4
+176912,RETURN,-1,,return p_stream;,5,815,17
+176937,RETURN,-1,,return p_next;,9,835,2
+176948,RETURN,1,,return NULL;,9,840,1
+177045,RETURN,-1,,return p_next;,5,880,18
+177087,RETURN,-1,,return NULL;,5,902,28
+177266,RETURN,-1,,return psz_chain;,5,962,10
+177273,RETURN,-1,,"return vlc_custom_create( p_this, sizeof( encoder_t ), ""encoder"" );",5,968,1
+177385,RETURN,-1,,return res;,5,61,8
+177422,RETURN,-1,,return res;,5,80,8
+177429,RETURN,-1,,"return us_strtod( str, NULL );",5,90,1
+177470,RETURN,-1,,return i_rc;,5,111,8
+177491,RETURN,-1,,return i_rc;,5,128,6
+177602,RETURN,1,,return NULL;,9,92,1
+177617,RETURN,-1,,return stream;,5,98,12
+177627,RETURN,-1,,return 1;,5,105,2
+177759,RETURN,-1,,return num;,5,159,11
+177779,RETURN,-1,,return -1;,5,165,15
+177814,RETURN,-1,,return val;,5,191,6
+178880,RETURN,1,,return p_lang;,13,53,1
+178882,RETURN,-1,,return &unknown_language;,5,55,3
+178910,RETURN,1,,return p_lang;,13,64,1
+178912,RETURN,-1,,return &unknown_language;,5,66,3
+178940,RETURN,1,,return p_lang;,13,75,1
+178942,RETURN,-1,,return &unknown_language;,5,77,3
+178993,RETURN,-1,,return ms->error;,5,112,5
+179002,RETURN,-1,,return ms->error;,5,117,1
+179020,RETURN,-1,,return ms->error;,5,124,2
+179077,RETURN,-1,,return len;,5,138,8
+179085,RETURN,-1,,return 0;,5,142,11
+179093,RETURN,-1,,"return (vlc_memstream_write(ms, &(unsigned char){ c }, 1u) == 1) ? c : EOF;",5,147,1
+179118,RETURN,-1,,"return (vlc_memstream_write(ms, str, len) == len) ? 0 : EOF;",5,153,3
+179196,RETURN,-1,,return len;,5,177,13
+179204,RETURN,-1,,return EOF;,5,181,16
+179225,RETURN,-1,,return ret;,5,193,6
+179665,RETURN,-1,,"return strncmp (name, ent->psz_entity, strlen (ent->psz_entity));",5,195,5
+179992,RETURN,-1,,return NULL;,13,306,3
+180072,RETURN,1,,return NULL;,9,346,1
+180074,RETURN,-1,,return stream.ptr;,5,347,8
+180108,RETURN,1,,return NULL;,9,360,1
+180223,RETURN,-1,,return ret;,5,394,10
+180233,RETURN,1,,"return vlc_b64_encode_binary( (const uint8_t*)src, strlen(src) );",9,400,1
+180242,RETURN,1,,"return vlc_b64_encode_binary( (const uint8_t*)"""", 0 );",9,402,1
+180823,RETURN,-1,,return p_dst - p_start;,5,458,10
+180850,RETURN,1,,return 0;,9,467,1
+180852,RETURN,-1,,"return  vlc_b64_decode_binary_to_buffer( p_dst, i_src, psz_src );",5,468,6
+180879,RETURN,1,,return NULL;,9,476,1
+180894,RETURN,-1,,return p_dst;,5,481,9
+180910,RETURN,1,,"return strdup ("""");",9,490,1
+180944,RETURN,1,,return NULL;,13,501,1
+180968,RETURN,-1,,return ret ? ret : str;,13,507,3
+181026,RETURN,1,,return EOF;,9,530,1
+181039,RETURN,1,,return EOF;,9,534,1
+181046,RETURN,-1,,return 0;,5,538,7
+181726,RETURN,1,,return NULL;,9,827,1
+181728,RETURN,-1,,return stream->ptr;,5,828,13
+181764,RETURN,1,,return 0;,13,849,1
+181783,RETURN,1,,"return strcoll(a, b);",9,852,1
+181812,RETURN,1,,"return strcoll(a, b);",9,861,1
+181818,RETURN,-1,,return (ua > ub) ? +1 : -1;,5,863,11
+181852,RETURN,-1,,return;,9,886,2
+181963,RETURN,-1,,"return vfprintf (stream, fmt, ap);",5,55,1
+181987,RETURN,-1,,return res;,5,110,6
+182017,RETURN,1,,return -1;,9,122,1
+182036,RETURN,-1,,return c != '\0';,13,129,4
+182042,RETURN,-1,,return -1;,13,132,7
+182053,RETURN,1,,return -1;,17,136,1
+182104,RETURN,1,,return -1;,17,158,1
+182120,RETURN,1,,return -1;,17,162,1
+182138,RETURN,1,,return -1;,17,167,1
+182158,RETURN,1,,return -1;,17,171,1
+182173,RETURN,1,,return -1;,17,173,1
+182191,RETURN,1,,return -1;,17,178,1
+182204,RETURN,-1,,return charlen;,5,184,13
+182239,RETURN,1,,return (char *)haystack;,17,212,1
+182249,RETURN,1,,return NULL;,17,214,1
+182290,RETURN,-1,,return NULL;,5,228,3
+182312,RETURN,1,,return NULL;,9,241,1
+182392,RETURN,-1,,return out;,5,264,8
+182414,RETURN,1,,return NULL;,9,283,1
+182537,RETURN,-1,,return res;,5,317,9
+182599,RETURN,-1,,return buf;,5,51,4
+182619,RETURN,1,,return NULL;,9,58,1
+182656,RETURN,1,,return NULL;,17,68,1
+182682,RETURN,-1,,return str;,5,76,9
+182689,RETURN,-1,,"return ((unsigned char)(c - 'a') < 26)
+        || ((unsigned char)(c - 'A') < 26)
+        || ((unsigned char)(c - '0') < 10)
+        || (strchr (""-._~"", c) != NULL);",5,82,1
+182724,RETURN,-1,,"return strchr(""!$&'()*+,;="", c) != NULL;",5,90,1
+182735,RETURN,-1,,"return ((unsigned char)(c - '0') < 10)
+        || ((unsigned char)(c - 'A') < 6)
+        || ((unsigned char)(c - 'a') < 6);",5,95,1
+182785,RETURN,1,,return NULL;,9,106,1
+182858,RETURN,-1,,return likely(out != NULL) ? out : buf;,5,127,9
+182894,RETURN,-1,,return ret;,5,136,6
+182910,RETURN,-1,,return NULL;,9,144,2
+182922,RETURN,1,,"return strdup (""fd://0"");",9,147,1
+182942,RETURN,1,,return NULL;,13,198,1
+182964,RETURN,-1,,return ret;,9,205,8
+182989,RETURN,1,,return NULL;,9,211,1
+183026,RETURN,-1,,return NULL;,13,224,2
+183054,RETURN,1,,return NULL;,13,233,1
+183061,RETURN,-1,,return buf;,5,238,8
+183084,RETURN,1,,return NULL;,9,248,1
+183128,RETURN,1,,return NULL;,9,258,1
+183149,RETURN,1,,return path;,13,268,1
+183158,RETURN,1,,"return memmove (path, path + 9, strlen (path + 9) + 1);",13,271,1
+183237,RETURN,-1,,return ret;,5,324,18
+183301,RETURN,-1,,return NULL;,9,347,2
+183321,RETURN,1,,return NULL;,9,352,1
+183379,RETURN,-1,,return uri;,5,369,13
+183450,RETURN,-1,,return false;,9,389,6
+183452,RETURN,-1,,return true;,5,391,3
+183459,RETURN,-1,,"return vlc_uri_component_validate(str, "":"");",5,396,1
+183468,RETURN,-1,,"return vlc_uri_component_validate(str, ""/@:[]"");",5,401,1
+183531,RETURN,-1,,return -1;,9,419,2
+183545,RETURN,1,,return -1;,9,424,1
+183914,RETURN,-1,,return ret;,5,552,28
+183953,RETURN,-1,,return ret;,5,565,4
+184033,RETURN,-1,,return ret;,5,592,6
+184115,RETURN,-1,,return str;,5,628,5
+184308,RETURN,-1,,return str;,5,704,7
+184476,RETURN,1,,return NULL;,9,759,1
+184478,RETURN,-1,,return stream.ptr;,5,760,9
+184494,RETURN,-1,,return NULL;,5,765,12
+184522,RETURN,-1,,return NULL;,9,777,2
+184534,RETURN,-1,,return strdup(ref);,9,783,2
+184683,RETURN,-1,,return ret;,5,829,18
+184798,RETURN,1,,return NULL;,9,860,1
+184800,RETURN,-1,,return stream.ptr;,5,861,9
+184818,RETURN,1,,return strdup(str);,9,870,1
+184821,RETURN,-1,,"return vlc_uri_fixup_inner(str, extras);",5,872,4
+184851,RETURN,-1,,return NULL;,13,969,2
+184853,RETURN,-1,,return strdup (idn);,5,972,2
+184870,RETURN,-1,,"DECLARE_VLC_VERSION( CompileBy, COMPILE_BY )",1,43,1
+184877,RETURN,-1,,"DECLARE_VLC_VERSION( CompileHost, COMPILE_HOST )",1,44,1
+184884,RETURN,-1,,"DECLARE_VLC_VERSION( Compiler, COMPILER )",1,45,1
+184963,RETURN,-1,,return chrono->avg + 2 * chrono->var;,5,61,1
+184978,RETURN,-1,,"return __MAX(chrono->avg - 2 * chrono->var, 0);",5,65,1
+185660,RETURN,-1,,return has_cmd ? VLC_SUCCESS : VLC_EGENERIC;,5,205,6
+185948,RETURN,1,,return NULL;,9,64,1
+185950,RETURN,-1,,return picture_pool_Get(pool);,5,65,9
+186099,RETURN,-1,,return NULL;,13,112,2
+186108,RETURN,-1,,return vd;,5,117,21
+186159,RETURN,-1,,return result;,5,146,6
+186513,RETURN,1,,return;,9,199,1
+187137,RETURN,1,,return -1;,9,414,1
+187248,RETURN,1,,return 0;,9,433,1
+187351,RETURN,-1,,return ret;,5,463,28
+187382,RETURN,-1,,return VoutDisplayCreateRender(vd);,5,477,2
+187562,RETURN,-1,,return;,9,546,2
+187816,RETURN,-1,,return window;,5,674,6
+187870,RETURN,1,,return;,9,692,1
+189028,RETURN,-1,,return reset_render;,5,962,17
+189059,RETURN,-1,,return reset_pictures;,5,973,7
+189074,RETURN,-1,,return osys->filters == NULL || !filter_chain_IsEmpty(osys->filters);,5,980,3
+189109,RETURN,-1,,return NULL;,9,989,2
+189111,RETURN,-1,,"return filter_chain_VideoFilter(osys->filters, picture);",5,992,4
+190050,RETURN,-1,,return p_display;,5,1217,40
+190060,RETURN,-1,,return NULL;,5,1221,44
+190127,RETURN,-1,,"return DisplayNew(vout, source, state, module, false,
+                      double_click_timeout, hide_timeout, NULL);",5,1255,1
+190208,RETURN,-1,,return window;,5,1289,8
+190287,RETURN,-1,,return sys->pool;,5,1333,4
+190339,RETURN,-1,,return;,9,1347,2
+190457,RETURN,-1,,return VLC_EGENERIC;,5,1372,4
+190583,RETURN,-1,,return VLC_EGENERIC;,13,1397,2
+190585,RETURN,-1,,return VLC_SUCCESS;,5,1400,4
+190708,RETURN,1,,return NULL;,9,1441,1
+190728,RETURN,-1,,return NULL;,9,1449,2
+190967,RETURN,-1,,return NULL;,13,1499,2
+190977,RETURN,-1,,return wrapper;,5,1504,28
+191012,RETURN,1,,return;,9,1517,1
+191338,RETURN,-1,,return;,9,77,6
+191348,RETURN,-1,,return;,9,81,7
+191359,RETURN,-1,,return;,9,86,11
+191457,RETURN,1,,return NULL;,9,41,1
+191497,RETURN,-1,,return ih;,5,53,10
+191592,RETURN,1,,return true;,13,60,1
+191594,RETURN,-1,,return false;,5,62,2
+191647,RETURN,-1,,return VLC_EGENERIC;,9,78,2
+191701,RETURN,-1,,return VLC_SUCCESS;,5,96,21
+192186,RETURN,-1,,return NULL;,13,66,10
+192207,RETURN,1,,return NULL;,9,71,1
+192244,RETURN,-1,,return NULL;,9,78,2
+192252,RETURN,-1,,return &glpriv->gl;,5,82,12
+192295,RETURN,1,,return;,9,95,1
+192368,RETURN,1,,return NULL;,9,128,1
+192439,RETURN,-1,,return NULL;,9,149,2
+192449,RETURN,-1,,return gl;,5,153,17
+192459,RETURN,-1,,return NULL;,5,158,21
+192542,RETURN,-1,,return ret;,5,188,10
+192772,RETURN,-1,,return picture;,5,100,10
+192803,RETURN,-1,,return has_request;,5,111,4
+192881,RETURN,-1,,return config_GetUserDir(VLC_PICTURES_DIR);,5,138,1
+193110,RETURN,-1,,return VLC_SUCCESS;,5,227,21
+193116,RETURN,-1,,return VLC_EGENERIC;,5,231,24
+193333,RETURN,-1,,return psz_uri;,5,88,8
+193402,RETURN,1,,return NULL;,9,111,1
+193430,RETURN,-1,,return region;,5,119,17
+193788,RETURN,1,,return NULL;,9,147,1
+194000,RETURN,-1,,return region;,5,188,22
+194047,RETURN,1,,return NULL;,9,204,1
+194064,RETURN,-1,,return NULL;,9,211,2
+194116,RETURN,-1,,return p_segment;,5,222,12
+194179,RETURN,-1,,return image;,5,242,8
+194214,RETURN,1,,return NULL;,9,261,1
+194239,RETURN,1,,return NULL;,9,270,1
+194275,RETURN,-1,,return region;,5,279,15
+194286,RETURN,-1,,"return vout_OSDTextRegion(vout_OSDSegment(text, size, color), x, y);",5,286,1
+194323,RETURN,-1,,return psz;,5,296,5
+194398,RETURN,1,,return NULL;,9,316,1
+194400,RETURN,-1,,"return vout_OSDTextRegion(p_segment, x, y);",5,317,12
+195073,RETURN,-1,,return head;,5,497,12
+195099,RETURN,1,,return VLC_SUCCESS;,9,510,1
+195101,RETURN,-1,,return VLC_EGENERIC;,5,511,7
+195423,RETURN,1,,return VLC_EGENERIC;,9,616,1
+195452,RETURN,-1,,return VLC_EGENERIC;,9,624,2
+195528,RETURN,-1,,return VLC_EGENERIC;,9,645,3
+195573,RETURN,-1,,return VLC_SUCCESS;,5,658,35
+195655,RETURN,1,,return VLC_EGENERIC;,9,83,1
+195670,RETURN,1,,return VLC_EGENERIC;,9,85,1
+195725,RETURN,-1,,return VLC_SUCCESS;,5,97,8
+195756,RETURN,-1,,"return dst->i_sar_num * src->i_sar_den == dst->i_sar_den * src->i_sar_num &&
+           dst->i_x_offset       == src->i_x_offset &&
+           dst->i_y_offset       == src->i_y_offset &&
+           dst->i_visible_width  == src->i_visible_width &&
+           dst->i_visible_height == src->i_visible_height;",5,109,1
+195819,RETURN,1,,return NULL;,9,121,1
+195843,RETURN,-1,,return NULL;,9,129,2
+196108,RETURN,-1,,return NULL;,9,202,4
+196129,RETURN,-1,,return NULL;,9,210,3
+196159,RETURN,-1,,return vout;,5,217,29
+196188,RETURN,-1,,return NULL;,9,228,2
+196297,RETURN,-1,,return vout;,13,253,2
+196304,RETURN,-1,,"return VoutCreate(object, cfg);",5,259,5
+196584,RETURN,-1,,return !picture;,5,343,4
+196733,RETURN,-1,,return channel;,5,390,6
+196783,RETURN,-1,,return picture;,5,414,4
+196851,RETURN,-1,,return VLC_EGENERIC;,9,452,2
+196898,RETURN,-1,,return VLC_EGENERIC;,13,467,3
+196911,RETURN,-1,,return VLC_SUCCESS;,5,474,6
+197486,RETURN,1,,return NULL;,9,618,1
+197499,RETURN,1,,return NULL;,9,620,1
+197501,RETURN,-1,,return window;,5,621,6
+197604,RETURN,-1,,"return window != NULL ? vout_window_HideMouse(window, hide) : VLC_EGENERIC;",5,654,3
+197639,RETURN,-1,,return 0;,5,664,6
+197653,RETURN,-1,,return VLC_SUCCESS;,5,671,2
+197718,RETURN,-1,,return picture;,5,690,6
+197752,RETURN,1,,return VoutVideoFilterInteractiveNewPicture(filter);,9,699,1
+197755,RETURN,-1,,return picture_NewFromFormat(&filter->fmt_out.video);,5,701,5
+198610,RETURN,1,,return VLC_EGENERIC;,9,903,1
+198651,RETURN,-1,,return VLC_SUCCESS;,5,910,12
+198658,RETURN,-1,,return picture_NewFromFormat(&filter->fmt_out.video);,5,915,1
+198703,RETURN,1,,return NULL;,9,935,1
+198743,RETURN,-1,,return NULL;,9,945,2
+198784,RETURN,1,,return pic;,17,960,1
+198788,RETURN,-1,,return NULL;,5,964,18
+198864,RETURN,1,,return VLC_EGENERIC;,9,981,1
+199412,RETURN,-1,,return VLC_EGENERIC;,13,1109,3
+199480,RETURN,-1,,return VLC_EGENERIC;,9,1140,2
+199572,RETURN,-1,,return VLC_SUCCESS;,5,1182,50
+199615,RETURN,1,,return VLC_EGENERIC;,13,1193,1
+199782,RETURN,-1,,return VLC_EGENERIC;,9,1236,1
+199829,RETURN,1,,return VLC_EGENERIC;,9,1246,1
+199853,RETURN,-1,,return force_refresh ? VLC_EGENERIC : ret;,5,1251,33
+199900,RETURN,1,,return;,9,1268,1
+200278,RETURN,1,,return;,9,1350,1
+200449,RETURN,1,,return;,17,1406,1
+201004,RETURN,-1,,return VLC_SUCCESS;,5,1554,29
+201071,RETURN,-1,,return VLC_EGENERIC;,5,1566,35
+201284,RETURN,-1,,return VLC_EGENERIC;,9,1623,3
+201333,RETURN,-1,,return VLC_SUCCESS;,13,1634,2
+201494,RETURN,-1,,return VLC_EGENERIC;,9,1671,2
+201496,RETURN,-1,,return VLC_SUCCESS;,5,1673,20
+201533,RETURN,-1,,return 1;,13,1689,2
+201543,RETURN,-1,,return 1;,9,1695,10
+201556,RETURN,1,,return 1;,13,1698,1
+201907,RETURN,-1,,return 0;,5,1779,3
+201975,RETURN,1,,return NULL;,17,1808,1
+202043,RETURN,1,,return VLC_SUCCESS;,9,49,1
+202045,RETURN,-1,,return VLC_EGENERIC;,5,50,7
+202080,RETURN,1,,return;,9,62,1
+202137,RETURN,1,,return;,9,75,1
+202303,RETURN,1,,return;,9,111,1
+202315,RETURN,1,,return;,9,115,1
+202363,RETURN,-1,,return;,9,129,3
+202494,RETURN,1,,return;,9,69,1
+202798,RETURN,1,,return NULL;,9,121,1
+203189,RETURN,1,,return NULL;,9,142,1
+203201,RETURN,-1,,return r;,5,146,20
+203368,RETURN,1,,return NULL;,9,178,1
+203382,RETURN,1,,return NULL;,9,182,1
+203469,RETURN,-1,,return r;,5,200,29
+203542,RETURN,1,,return NULL;,9,219,1
+203566,RETURN,1,,return NULL;,9,225,1
+203772,RETURN,-1,,return r;,5,249,21
+203801,RETURN,1,,return VLC_SUCCESS;,9,267,1
+203803,RETURN,-1,,return VLC_EGENERIC;,5,268,7
+203962,RETURN,1,,return;,9,302,1
+203989,RETURN,1,,return;,9,308,1
+204032,RETURN,-1,,return;,9,321,2
+205296,RETURN,1,,return VLC_EGENERIC;,9,341,1
+205340,RETURN,-1,,return VLC_SUCCESS;,5,356,12
+205643,RETURN,-1,,return VLC_SUCCESS;,5,465,17
+205668,RETURN,-1,,return VLC_SUCCESS;,5,481,8
+205732,RETURN,-1,,return VLC_SUCCESS;,5,496,9
+205763,RETURN,-1,,return VLC_SUCCESS;,5,506,7
+205797,RETURN,-1,,return VLC_SUCCESS;,5,516,7
+205827,RETURN,-1,,return VLC_SUCCESS;,5,525,5
+205872,RETURN,-1,,return VLC_SUCCESS;,5,544,7
+205909,RETURN,-1,,return VLC_SUCCESS;,5,555,6
+205936,RETURN,-1,,return VLC_SUCCESS;,5,566,8
+205964,RETURN,-1,,return VLC_SUCCESS;,5,576,7
+205992,RETURN,-1,,return VLC_SUCCESS;,5,586,7
+206020,RETURN,-1,,return VLC_SUCCESS;,5,596,7
+206048,RETURN,-1,,return VLC_SUCCESS;,5,606,7
+206083,RETURN,-1,,return VLC_SUCCESS;,5,617,7
+206393,RETURN,1,,return NULL;,9,84,1
+206404,RETURN,1,,return NULL;,9,88,1
+206415,RETURN,-1,,return region;,5,93,18
+206591,RETURN,-1,,return VLC_SUCCESS;,9,124,6
+206593,RETURN,-1,,return VLC_EGENERIC;,5,126,2
+206668,RETURN,-1,,return VLC_SUCCESS;,9,148,5
+206670,RETURN,-1,,return VLC_EGENERIC;,5,150,2
+206744,RETURN,-1,,return picture_NewFromFormat(fmt);,5,173,3
+206786,RETURN,-1,,return ret;,5,187,6
+206810,RETURN,1,,return NULL;,9,194,1
+206889,RETURN,-1,,return text;,5,214,13
+206917,RETURN,1,,return NULL;,9,224,1
+207038,RETURN,-1,,return scale;,5,244,12
+207074,RETURN,1,,return;,9,257,1
+207152,RETURN,-1,,return s;,5,303,5
+207159,RETURN,-1,,"return spu_scale_create(SCALE_UNIT, SCALE_UNIT);",5,307,1
+207175,RETURN,-1,,"return spu_scale_create(wn * SCALE_UNIT / wd,
+                            hn * SCALE_UNIT / hd);",5,311,1
+207197,RETURN,-1,,return v * s.w / SCALE_UNIT;,5,316,1
+207213,RETURN,-1,,return v * s.h / SCALE_UNIT;,5,320,1
+207229,RETURN,-1,,return v * SCALE_UNIT / s.w;,5,324,1
+207245,RETURN,-1,,return v * SCALE_UNIT / s.h;,5,328,1
+207295,RETURN,-1,,return a;,5,346,3
+207323,RETURN,1,,return a;,9,351,1
+207374,RETURN,-1,,return a;,5,359,7
+207403,RETURN,1,,return a;,9,364,1
+207450,RETURN,-1,,return a;,5,374,8
+207466,RETURN,-1,,"return __MAX(a.x, b.x) < __MIN(a.x + a.width , b.x + b.width ) &&
+           __MAX(a.y, b.y) < __MIN(a.y + a.height, b.y + b.height);",5,381,3
+207881,RETURN,-1,,return i0 < i1 ? -1 : i0 > i1 ? 1 : 0;,5,484,1
+207965,RETURN,-1,,return r;,5,510,10
+209860,RETURN,1,,return NULL;,9,1031,1
+209871,RETURN,1,,return NULL;,9,1036,1
+210293,RETURN,-1,,return output;,5,1143,25
+210340,RETURN,-1,,return;,9,1168,2
+210467,RETURN,-1,,return VLC_SUCCESS;,5,1200,5
+210497,RETURN,-1,,return subpicture;,5,1214,6
+210534,RETURN,-1,,return VLC_SUCCESS;,5,1224,7
+210559,RETURN,-1,,return VLC_SUCCESS;,5,1233,6
+210583,RETURN,-1,,return VLC_SUCCESS;,5,1245,6
+210597,RETURN,-1,,return VLC_SUCCESS;,5,1252,2
+210611,RETURN,-1,,return VLC_SUCCESS;,5,1259,2
+210635,RETURN,-1,,return VLC_SUCCESS;,5,1267,6
+210649,RETURN,-1,,return VLC_SUCCESS;,5,1274,2
+210663,RETURN,-1,,return VLC_SUCCESS;,5,1281,2
+210691,RETURN,1,,return NULL;,9,1300,1
+210816,RETURN,-1,,return spu;,5,1343,24
+211058,RETURN,-1,,return VLC_SUCCESS;,5,1433,6
+211248,RETURN,1,,return;,9,1505,1
+211304,RETURN,-1,,return;,9,1521,4
+211483,RETURN,-1,,return NULL;,9,1594,2
+211537,RETURN,-1,,return render;,5,1619,27
+211655,RETURN,-1,,return channel;,5,1649,7
+212004,RETURN,-1,,return VLC_EGENERIC;,9,72,2
+212011,RETURN,-1,,return VLC_SUCCESS;,5,84,12
+212179,RETURN,1,,return VLC_EGENERIC;,9,136,1
+212255,RETURN,1,,return VLC_EGENERIC;,13,155,1
+212319,RETURN,-1,,return VLC_EGENERIC;,9,170,3
+212321,RETURN,-1,,return VLC_SUCCESS;,5,172,25
+212461,RETURN,-1,,"return activate(wnd, cfg);",5,51,6
+212559,RETURN,-1,,return NULL;,9,76,2
+212610,RETURN,-1,,return window;,5,90,13
+212635,RETURN,1,,return;,9,104,1
+212809,RETURN,1,,return NULL;,9,178,1
+212878,RETURN,-1,,return window;,5,198,13
+213094,RETURN,-1,,return FromWide (wpath);,5,203,9
+213109,RETURN,-1,,return (path != NULL) ? strdup (path) : config_GetLibDir ();,5,212,3
+213135,RETURN,1,,return FromWide (wdir);,9,221,1
+213138,RETURN,-1,,return NULL;,5,222,3
+213181,RETURN,1,,return FromT (path);,17,239,1
+213209,RETURN,-1,,return psz_dir;,5,251,8
+213221,RETURN,-1,,return config_GetShellDir (CSIDL_PERSONAL);,13,260,3
+213228,RETURN,-1,,return config_GetAppDir ();,13,263,8
+213232,RETURN,-1,,return config_GetAppDir ();,13,266,11
+213244,RETURN,-1,,return config_GetUserDir(VLC_HOME_DIR);,13,276,22
+213249,RETURN,-1,,return config_GetShellDir (CSIDL_MYMUSIC);,13,278,25
+213254,RETURN,-1,,return config_GetShellDir (CSIDL_MYPICTURES);,13,280,28
+213259,RETURN,-1,,return config_GetShellDir (CSIDL_MYVIDEO);,13,282,31
+213572,RETURN,1,,return _sys_errlist[errnum];,9,140,1
+213596,RETURN,1,,return e->msg;,13,145,1
+213600,RETURN,-1,,"return ""Unknown error"";",5,147,3
+213607,RETURN,-1,,return /*vlc_gettext*/(vlc_strerror_c(errnum));,5,152,1
+213673,RETURN,-1,,return NULL;,9,62,2
+213675,RETURN,-1,,return wpath;,5,64,5
+213738,RETURN,1,,return -1;,9,99,1
+213750,RETURN,-1,,return fd;,5,103,15
+213771,RETURN,-1,,return -1;,5,110,5
+213782,RETURN,-1,,return -1;,5,129,2
+213790,RETURN,-1,,return close (fd);,5,135,1
+213809,RETURN,1,,return -1;,9,142,1
+213822,RETURN,-1,,return ret;,5,147,8
+213840,RETURN,1,,return NULL;,9,157,1
+213849,RETURN,-1,,return dir;,5,161,7
+213866,RETURN,1,,return NULL;,9,171,1
+213883,RETURN,-1,,return NULL;,9,177,2
+213917,RETURN,-1,,return (void *)p_dir;,9,188,5
+213951,RETURN,-1,,return NULL;,9,200,2
+213963,RETURN,-1,,return (void *)p_dir;,5,204,16
+214007,RETURN,-1,,return NULL;,13,221,2
+214101,RETURN,-1,,return p_dir->entry;,5,246,5
+214121,RETURN,1,,return -1;,9,253,1
+214140,RETURN,-1,,return ret;,5,260,8
+214148,RETURN,-1,,"return vlc_stat (filename, buf);",5,265,1
+214167,RETURN,1,,return -1;,9,272,1
+214177,RETURN,-1,,return ret;,5,276,7
+214245,RETURN,-1,,return ret;,5,301,13
+214266,RETURN,-1,,return fd;,5,309,4
+214273,RETURN,-1,,"return _pipe (fds, 32768, O_NOINHERIT | O_BINARY);",5,318,1
+214287,RETURN,-1,,"return write(fd, buf, len);",5,324,1
+214321,RETURN,1,,return -1;,9,338,1
+214335,RETURN,-1,,return fd;,5,342,5
+214364,RETURN,-1,,return -1;,5,349,7
+214398,RETURN,-1,,return fd;,5,357,4
+214419,RETURN,1,,return NULL;,9,366,1
+214435,RETURN,1,,return NULL;,9,371,1
+214459,RETURN,1,,return NULL;,9,377,1
+214477,RETURN,-1,,return NULL;,9,382,2
+214492,RETURN,-1,,return NULL;,9,388,2
+214494,RETURN,-1,,return stream;,5,390,17
+214540,RETURN,-1,,return NULL;,5,50,7
+214582,RETURN,-1,,return false;,13,72,2
+214628,RETURN,-1,,return false;,13,84,6
+214651,RETURN,-1,,return true;,5,92,6
+214762,RETURN,1,,return NULL;,9,38,1
+214777,RETURN,1,,return proxy;,9,42,1
+214795,RETURN,-1,,return NULL;,9,49,4
+214822,RETURN,-1,,return proxy_url;,5,109,16
+214887,RETURN,-1,,return FromWide( wmsg );,5,91,9
+214908,RETURN,1,,return -1;,9,99,1
+214951,RETURN,-1,,return -1;,9,119,5
+214961,RETURN,-1,,return 0;,5,124,12
+214976,RETURN,-1,,"return (void *)GetProcAddress( handle, (char *)psz_function );",5,134,1
+215126,RETURN,1,,return 0;,13,51,1
+215129,RETURN,-1,,return -1;,5,55,3
+215192,RETURN,-1,,return;,13,105,2
+215217,RETURN,-1,,return;,17,131,3
+215490,RETURN,-1,,return;,9,134,5
+215531,RETURN,-1,,return ret;,9,153,6
+215533,RETURN,-1,,return TryEnterCriticalSection (&p_mutex->mutex) ? 0 : EBUSY;,5,156,2
+215576,RETURN,-1,,return;,9,169,6
+215616,RETURN,1,,return errno;,9,239,1
+215632,RETURN,-1,,return EAGAIN;,9,245,2
+215674,RETURN,-1,,return 0;,5,258,14
+215755,RETURN,1,,return ENOMEM;,9,285,1
+215759,RETURN,-1,,return 0;,5,288,5
+215779,RETURN,-1,,return value;,5,297,6
+215876,RETURN,-1,,return true;,9,441,2
+215878,RETURN,-1,,"return WaitOnAddress(addr, &val, sizeof (val), delay);",5,444,3
+215954,RETURN,-1,,return 0;,5,481,8
+215978,RETURN,1,,return ENOMEM;,9,489,1
+216045,RETURN,-1,,return err;,9,512,4
+216081,RETURN,-1,,return 0;,5,529,17
+216091,RETURN,-1,,"return vlc_clone_attr (p_handle, false, entry, data, priority);",5,535,1
+216162,RETURN,-1,,"return vlc_clone_attr (p_handle, true, entry, data, priority);",5,563,3
+216174,RETURN,-1,,return TlsGetValue(thread_key);,5,568,1
+216182,RETURN,-1,,return GetCurrentThreadId ();,5,573,1
+216198,RETURN,1,,return VLC_EGENERIC;,9,579,1
+216200,RETURN,-1,,return VLC_SUCCESS;,5,580,2
+216274,RETURN,1,,return false;,9,614,1
+216287,RETURN,-1,,return state;,5,618,7
+216311,RETURN,1,,return;,9,627,1
+216338,RETURN,1,,return;,9,637,1
+216345,RETURN,1,,return;,9,639,1
+216355,RETURN,1,,return;,9,641,1
+216415,RETURN,1,,return;,9,666,1
+216582,RETURN,-1,,return ts / (10000000 / CLOCK_FREQ);,5,755,6
+216604,RETURN,-1,,return ts * (CLOCK_FREQ / 1000);,5,768,4
+216631,RETURN,-1,,return ts * (CLOCK_FREQ / 1000);,5,777,4
+216664,RETURN,-1,,return (d.quot * 1000000) + ((d.rem * 1000000) / clk.perf.freq.QuadPart);,5,792,5
+216715,RETURN,-1,,return s.QuadPart / (10000000 / CLOCK_FREQ);,5,809,7
+216730,RETURN,-1,,return mdate_perf();,5,815,2
+216745,RETURN,-1,,return mdate_selected ();,5,822,1
+216975,RETURN,-1,,return TRUE;,5,940,11
+217112,RETURN,-1,,return n;,5,990,27
+217123,RETURN,-1,,return systemInfo.dwNumberOfProcessors;,5,1001,3
+217144,RETURN,-1,,return;,9,1014,2
+217226,RETURN,1,,return FALSE;,17,1078,1
+217260,RETURN,-1,,return TRUE;,5,1102,4
+217305,RETURN,1,,return ENOMEM;,9,50,1
+217326,RETURN,-1,,return 0;,5,55,8
+217379,RETURN,1,,return;,9,74,1
+217431,RETURN,-1,,return 0;,5,93,2

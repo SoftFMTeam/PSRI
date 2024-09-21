@@ -1,0 +1,710 @@
+1884,METHOD_REF,3,,is_neg,48,,157,cv.dnn.anonymous_namespace_2.is_neg,4,,bool
+5886,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,4222,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+7858,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,4772,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+8375,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,4957,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+8926,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,5145,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+9872,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,5450,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+12742,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,6166,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+14605,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,6700,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+16041,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,7102,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+17536,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,7537,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+19499,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,8053,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+25641,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,9653,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+26776,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,9981,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+27692,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,10257,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+28979,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,10606,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+30012,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,10929,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+41104,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,13959,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+42558,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,14371,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+43445,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,14643,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+44258,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,14902,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+45125,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,15168,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+45820,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,15398,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+46766,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,15693,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+47627,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,15969,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+48298,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,16199,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+51249,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,16957,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+51957,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,17183,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+53840,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,17711,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+54623,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,17970,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+56287,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,18451,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+56958,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,18681,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+58346,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,19043,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+59228,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,19315,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+59740,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,19505,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+60928,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,19861,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+61698,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,20120,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+62395,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,20350,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+63374,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,20645,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+64013,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,20864,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+64560,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,21060,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+66754,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,21668,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+67393,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,21887,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+68690,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,22272,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+69207,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,22457,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+69977,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,22716,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+71202,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,23081,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+72174,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,23370,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+72954,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,23629,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+73529,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,23836,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+75549,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,24387,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+76317,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,24646,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+77534,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,25015,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+78702,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,25368,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+79520,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,25633,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+80283,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,25876,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+81194,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,26158,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+82375,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,26515,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+82922,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,26711,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+83798,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,26977,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+84513,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,27213,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+85060,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,27409,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+85755,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,27639,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+86267,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,27829,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+88647,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,28491,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+89552,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,28766,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+97178,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,30790,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+102839,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,32288,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+103597,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,32537,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+104898,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,32930,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+105759,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,33196,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+107263,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,33614,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+108180,METHOD_REF,1,,descriptor_table_opencv_2dcaffe_2eproto_getter,8,,33897,descriptor_table_opencv_2dcaffe_2eproto_getter,1,,DescriptorTable
+225874,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,1415,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+226919,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,1743,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+228785,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,2250,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+230887,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,2825,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+231766,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,3107,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+233380,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,3554,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+234138,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,3791,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+236652,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,4466,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+237603,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,4792,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+238120,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,4977,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+238907,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,5232,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+239796,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,5542,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+240583,METHOD_REF,1,,descriptor_table_opencv_2donnx_2eproto_getter,8,,5797,descriptor_table_opencv_2donnx_2eproto_getter,1,,DescriptorTable
+260461,METHOD_REF,1,,descriptor_table_attr_5fvalue_2eproto_getter,8,,592,descriptor_table_attr_5fvalue_2eproto_getter,1,,DescriptorTable
+262308,METHOD_REF,1,,descriptor_table_attr_5fvalue_2eproto_getter,8,,1226,descriptor_table_attr_5fvalue_2eproto_getter,1,,DescriptorTable
+262342,METHOD_REF,1,,descriptor_table_attr_5fvalue_2eproto_getter,8,,1240,descriptor_table_attr_5fvalue_2eproto_getter,1,,DescriptorTable
+263296,METHOD_REF,1,,descriptor_table_attr_5fvalue_2eproto_getter,8,,1516,descriptor_table_attr_5fvalue_2eproto_getter,1,,DescriptorTable
+268807,METHOD_REF,1,,descriptor_table_function_2eproto_getter,8,,405,descriptor_table_function_2eproto_getter,1,,DescriptorTable
+268841,METHOD_REF,1,,descriptor_table_function_2eproto_getter,8,,419,descriptor_table_function_2eproto_getter,1,,DescriptorTable
+270427,METHOD_REF,1,,descriptor_table_function_2eproto_getter,8,,812,descriptor_table_function_2eproto_getter,1,,DescriptorTable
+271121,METHOD_REF,1,,descriptor_table_function_2eproto_getter,8,,1046,descriptor_table_function_2eproto_getter,1,,DescriptorTable
+271960,METHOD_REF,1,,descriptor_table_function_2eproto_getter,8,,1298,descriptor_table_function_2eproto_getter,1,,DescriptorTable
+276717,METHOD_REF,1,,descriptor_table_graph_2eproto_getter,8,,456,descriptor_table_graph_2eproto_getter,1,,DescriptorTable
+276751,METHOD_REF,1,,descriptor_table_graph_2eproto_getter,8,,470,descriptor_table_graph_2eproto_getter,1,,DescriptorTable
+278379,METHOD_REF,1,,descriptor_table_graph_2eproto_getter,8,,885,descriptor_table_graph_2eproto_getter,1,,DescriptorTable
+282775,METHOD_REF,1,,descriptor_table_op_5fdef_2eproto_getter,8,,689,descriptor_table_op_5fdef_2eproto_getter,1,,DescriptorTable
+284479,METHOD_REF,1,,descriptor_table_op_5fdef_2eproto_getter,8,,1144,descriptor_table_op_5fdef_2eproto_getter,1,,DescriptorTable
+286608,METHOD_REF,1,,descriptor_table_op_5fdef_2eproto_getter,8,,1689,descriptor_table_op_5fdef_2eproto_getter,1,,DescriptorTable
+287333,METHOD_REF,1,,descriptor_table_op_5fdef_2eproto_getter,8,,1918,descriptor_table_op_5fdef_2eproto_getter,1,,DescriptorTable
+287850,METHOD_REF,1,,descriptor_table_op_5fdef_2eproto_getter,8,,2103,descriptor_table_op_5fdef_2eproto_getter,1,,DescriptorTable
+295629,METHOD_REF,1,,descriptor_table_tensor_2eproto_getter,8,,738,descriptor_table_tensor_2eproto_getter,1,,DescriptorTable
+298962,METHOD_REF,1,,descriptor_table_tensor_5fshape_2eproto_getter,8,,327,descriptor_table_tensor_5fshape_2eproto_getter,1,,DescriptorTable
+299585,METHOD_REF,1,,descriptor_table_tensor_5fshape_2eproto_getter,8,,538,descriptor_table_tensor_5fshape_2eproto_getter,1,,DescriptorTable
+302203,METHOD_REF,1,,descriptor_table_versions_2eproto_getter,8,,329,descriptor_table_versions_2eproto_getter,1,,DescriptorTable
+346220,METHOD_REF,2,,"[os](const std::vector<int>& shape, const std::string tag) {
+        if (shape.empty()) {
+            return ;
+        }
+
+        *os << tag << ""=["";
+        for (size_t i = 0; i < shape.size(); ++i) {
+            if (i == shape.size() - 1) {
+                *os << shape[i] << ""]"";
+                break;
+            }
+            *os << shape[i] << "", "";
+        }
+    }",24,,125,opencv_test.PrintTo.<lambda>0,2,,perf\perf_gemm.cpp:<global>
+346284,METHOD_REF,2,,"[os](const std::vector<int>& shape, const std::string tag) {
+        if (shape.empty()) {
+            return ;
+        }
+
+        *os << tag << ""=["";
+        for (size_t i = 0; i < shape.size(); ++i) {
+            if (i == shape.size() - 1) {
+                *os << shape[i] << ""]"";
+                break;
+            }
+            *os << shape[i] << "", "";
+        }
+    }",24,,278,opencv_test.PrintTo.<lambda>1,2,,perf\perf_gemm.cpp:<global>
+349867,METHOD_REF,2,,"[](cublasStatus_t err) {
+                switch (err) {
+                case CUBLAS_STATUS_SUCCESS: return ""CUBLAS_STATUS_SUCCESS"";
+                case CUBLAS_STATUS_NOT_INITIALIZED: return ""CUBLAS_STATUS_NOT_INITIALIZED"";
+                case CUBLAS_STATUS_ALLOC_FAILED: return ""CUBLAS_STATUS_ALLOC_FAILED"";
+                case CUBLAS_STATUS_INVALID_VALUE: return ""CUBLAS_STATUS_INVALID_VALUE"";
+                case CUBLAS_STATUS_ARCH_MISMATCH: return ""CUBLAS_STATUS_ARCH_MISMATCH"";
+                case CUBLAS_STATUS_MAPPING_ERROR: return ""CUBLAS_STATUS_MAPPING_ERROR"";
+                case CUBLAS_STATUS_EXECUTION_FAILED: return ""CUBLAS_STATUS_EXECUTION_FAILED"";
+                case CUBLAS_STATUS_INTERNAL_ERROR: return ""CUBLAS_STATUS_INTERNAL_ERROR"";
+                case CUBLAS_STATUS_NOT_SUPPORTED: return ""CUBLAS_STATUS_NOT_SUPPORTED"";
+                case CUBLAS_STATUS_LICENSE_ERROR: return ""CUBLAS_STATUS_LICENSE_ERROR"";
+                }
+                return ""UNKNOWN_CUBLAS_ERROR""...",41,,34,cv.dnn.cuda4dnn.csl.cublas.detail.check.<lambda>0,2,,src\cuda4dnn\csl\cublas.hpp:<global>
+351407,METHOD_REF,0,,"[type] {
+                    switch(type) {
+                        case ActivationType::IDENTITY: return CUDNN_ACTIVATION_IDENTITY;
+                        case ActivationType::RELU: return CUDNN_ACTIVATION_RELU;
+                        case ActivationType::CLIPPED_RELU: return CUDNN_ACTIVATION_CLIPPED_RELU;
+                        case ActivationType::SIGMOID: return CUDNN_ACTIVATION_SIGMOID;
+                        case ActivationType::TANH: return CUDNN_ACTIVATION_TANH;
+                        case ActivationType::ELU: return CUDNN_ACTIVATION_ELU;
+                    }
+                    CV_Assert(0);
+                    return CUDNN_ACTIVATION_IDENTITY;
+                }",35,,37,cv.dnn.cuda4dnn.csl.cudnn.ActivationDescriptor.ActivationDescriptor.<lambda>0,1,,cv.dnn.cuda4dnn.csl.cudnn.ActivationDescriptor
+354712,METHOD_REF,2,,"[] (PoolingType type) {
+                switch (type) {
+                case PoolingType::MAX:
+                    return CUDNN_POOLING_MAX;
+                case PoolingType::MAX_DETERMINISTIC:
+                    return CUDNN_POOLING_MAX_DETERMINISTIC;
+                case PoolingType::AVERAGE_EXCLUDE_PADDING:
+                    return CUDNN_POOLING_AVERAGE_COUNT_EXCLUDE_PADDING;
+                case PoolingType::AVERAGE_INCLUDE_PADDING:
+                    return CUDNN_POOLING_AVERAGE_COUNT_INCLUDE_PADDING;
+                }
+                CV_Error(Error::StsBadArg, ""unknown pooling type"");
+            }",37,,87,cv.dnn.cuda4dnn.csl.cudnn.PoolingDescriptor.constructor.<lambda>0,2,,cv.dnn.cuda4dnn.csl.cudnn.PoolingDescriptor
+355482,METHOD_REF,0,,"[mode] {
+            switch (mode)
+            {
+            case RNNMode::RNN_RELU:
+                return CUDNN_RNN_RELU;
+            case RNNMode::RNN_TANH:
+                return CUDNN_RNN_TANH;
+            case RNNMode::LSTM:
+                return CUDNN_LSTM;
+            case RNNMode::GRU:
+                return CUDNN_GRU;
+            default:
+                return CUDNN_LSTM;
+            }
+        }",31,,104,cv.dnn.cuda4dnn.csl.cudnn.RNNDescriptor.RNNDescriptor.<lambda>0,1,,cv.dnn.cuda4dnn.csl.cudnn.RNNDescriptor
+357209,METHOD_REF,2,,"[](element_type* ptr) {
+                if (ptr != nullptr) {
+                    /* contract violation for std::shared_ptr if cudaFree throws */
+                    try {
+                        CUDA4DNN_CHECK_CUDA(cudaFree(ptr));
+                    } catch (const CUDAException& ex) {
+                        std::ostringstream os;
+                        os << ""Device memory deallocation failed in deleter.\n"";
+                        os << ex.what();
+                        os << ""Exception will be ignored.\n"";
+                        CV_LOG_WARNING(0, os.str().c_str());
+                    }
+                }
+            }",32,,57,cv.dnn.cuda4dnn.csl.ManagedPtr.ManagedPtr.<lambda>0,3,,cv.dnn.cuda4dnn.csl.ManagedPtr
+359876,METHOD_REF,3,,"[](ItrValueType x) {
+                return !(x > 0 || x == -1);
+            }",60,,277,cv.dnn.cuda4dnn.csl.Tensor.reshape.<lambda>0,4,,cv.dnn.cuda4dnn.csl.Tensor
+360182,METHOD_REF,3,,[](size_type x){ return x == 1; },75,,387,cv.dnn.cuda4dnn.csl.Tensor.squeeze_to.<lambda>1,4,,cv.dnn.cuda4dnn.csl.Tensor
+360387,METHOD_REF,3,,[](ItrValueType x) { return x <= 0; },41,,457,cv.dnn.cuda4dnn.csl.TensorSpan.TensorSpan.<lambda>2,4,,cv.dnn.cuda4dnn.csl.TensorSpan
+360624,METHOD_REF,3,,"[](ItrValueType x) {
+                return !(x > 0 || x == -1);
+            }",60,,593,cv.dnn.cuda4dnn.csl.TensorSpan.reshape.<lambda>3,4,,cv.dnn.cuda4dnn.csl.TensorSpan
+360930,METHOD_REF,3,,[](size_type x){ return x == 1; },75,,703,cv.dnn.cuda4dnn.csl.TensorSpan.squeeze_to.<lambda>4,4,,cv.dnn.cuda4dnn.csl.TensorSpan
+361034,METHOD_REF,3,,"[](ItrValueType x) {
+                return !(x > 0);
+            }",60,,748,cv.dnn.cuda4dnn.csl.TensorSpan.subspan.<lambda>5,4,,cv.dnn.cuda4dnn.csl.TensorSpan
+361292,METHOD_REF,3,,[](ItrValueType x) { return x <= 0; },41,,828,cv.dnn.cuda4dnn.csl.TensorView.TensorView.<lambda>6,4,,cv.dnn.cuda4dnn.csl.TensorView
+361535,METHOD_REF,3,,"[](ItrValueType x) {
+                return !(x > 0 || x == -1);
+            }",60,,958,cv.dnn.cuda4dnn.csl.TensorView.reshape.<lambda>7,4,,cv.dnn.cuda4dnn.csl.TensorView
+361841,METHOD_REF,3,,[](size_type x){ return x == 1; },75,,1068,cv.dnn.cuda4dnn.csl.TensorView.squeeze_to.<lambda>8,4,,cv.dnn.cuda4dnn.csl.TensorView
+361945,METHOD_REF,3,,"[](ItrValueType x) {
+                return !(x > 0);
+            }",60,,1116,cv.dnn.cuda4dnn.csl.TensorView.subview.<lambda>9,4,,cv.dnn.cuda4dnn.csl.TensorView
+368485,METHOD_REF,2,,[](std::size_t i) { return i != 0; },32,,185,cv.dnn.cuda4dnn.ConvolutionOp.ConvolutionOp.<lambda>0,2,,cv.dnn.cuda4dnn.ConvolutionOp
+374979,METHOD_REF,0,,"[&] {
+                    for (int i = 0; i < order.size(); i++)
+                        if (order[i] != i)
+                            return true;
+                    return false;
+                }",37,,44,cv.dnn.cuda4dnn.PermuteOp.forward.<lambda>0,1,,cv.dnn.cuda4dnn.PermuteOp
+375514,METHOD_REF,2,,[](std::size_t i) { return i != 0; },32,,163,cv.dnn.cuda4dnn.PoolingOp.PoolingOp.<lambda>0,2,,cv.dnn.cuda4dnn.PoolingOp
+377612,METHOD_REF,2,,"[this](std::size_t input_size, std::size_t output_size) {
+                return (align_corners && output_size > 1) ?
+                            static_cast<float>(input_size - 1) / (output_size - 1) :
+                            static_cast<float>(input_size) / output_size;
+            }",40,,56,cv.dnn.cuda4dnn.ResizeOp.forward.<lambda>0,2,,cv.dnn.cuda4dnn.ResizeOp
+378267,METHOD_REF,0,,"[&] {
+                if (num_parameters == 1) {
+                    return static_cast<int>(axis + 1);
+                }
+                for (int endAxis = axis + 1; endAxis <= input.rank(); endAxis++) {
+                    if (input.size_range(axis, endAxis) == mid_size)
+                        return endAxis;
+                }
+                CV_Assert(0 /* failed to find a broadcast config */);
+            }",34,,130,cv.dnn.cuda4dnn.ScaleShiftOp.forward.<lambda>0,1,,cv.dnn.cuda4dnn.ScaleShiftOp
+379609,METHOD_REF,2,,[](std::size_t i) { return i != 0; },32,,165,cv.dnn.cuda4dnn.TransposeConvolutionOp.TransposeConvolutionOp.<lambda>0,2,,cv.dnn.cuda4dnn.TransposeConvolutionOp
+391971,METHOD_REF,3,,"[](int a, int b) { return a > b; }",59,,273,cv.dnn.simplifySubgraphs.<lambda>0,4,,src\graph_simplifier.cpp:<global>
+396410,METHOD_REF,2,,"[&](const Range &r0) {
+    for (int nc = r0.start; nc < r0.end; nc++)
+    {
+        int c = nc % C;
+        const float *inptr0 = inp + inp_planesize * nc;
+        float *outptr0 = out + out_planesize * nc;
+
+        const float *weights = weights0 + c * padded_ksize;
+
+        if (conv_dim == CONV_2D)
+        {
+#if CV_TRY_AVX2
+            if(canRunOpt && conv->useAVX2)
+                opt_AVX2::fastDepthwiseConv(weights, Hk, Wk, stride_h, stride_w, dilation_h, dilation_w,
+                                            pad_top, pad_left, bias, relu, inptr0, Hi, Wi, outptr0, c, H0, W0);
+            else
+#endif
+#if CV_TRY_AVX
+            if(canRunOpt && conv->useAVX)
+                opt_AVX::fastDepthwiseConv(weights, Hk, Wk, stride_h, stride_w, dilation_h, dilation_w,
+                                            pad_top, pad_left, bias, relu, inptr0, Hi, Wi, outptr0, c, H0, W0);
+            else
+#endif
+#if CV_TRY_RVV
+            if(canRunOpt && conv->useRVV)
+                opt_RVV::fastDe...",36,,99,cv.dnn.runDepthwise.<lambda>0,2,,src\layers\cpu_kernels\conv_depthwise.cpp:<global>
+400157,METHOD_REF,2,,"[&](const Range& r0) {
+                for(int c = r0.start; c < r0.end; c++)
+                    memcpy(weightsPtr + c*padded_ksize, srcWeights + c*wstep, ksize*sizeof(weightsPtr[0]));
+            }",40,,227,cv.dnn.initFastConv.<lambda>0,2,,src\layers\cpu_kernels\convolution.cpp:<global>
+400323,METHOD_REF,2,,"[&](const Range& r0){
+        float kernelTm[CONV_WINO_AREA];
+        for (int k = r0.start; k < r0.end; k++)
+        {
+            int g = k / Kg;
+            int k_ = k - g*Kg;
+            int ki = k_ / CONV_WINO_KBLOCK;
+            int dk = k_ - ki*CONV_WINO_KBLOCK;
+
+            for (int c = 0; c < Cg; c++)
+            {
+                // wstep = Hk*Wk*Cg
+                const float *kernel0 = srcWeights + k * wstep + c * ksize;
+
+                // transform kernel, transposed
+                const float *k0 = kernel0;
+                const float *k1 = kernel0 + 3;
+                const float *k2 = kernel0 + 6;
+
+                // h
+                float tmp[8][3];
+                for (int i = 0; i < 8; i++)
+                {
+                    tmp[i][0] = k0[0] * ktm[i][0] + k0[1] * ktm[i][1] + k0[2] * ktm[i][2];
+                    tmp[i][1] = k1[0] * ktm[i][0] + k1[1] * ktm[i][1] + k1[2] * ktm[i][2];
+                    tmp[i][2] = k2[0] * ktm[i][0] + k2[1] * ktm[i][1] + k2[...",36,,289,cv.dnn.initFastConv.<lambda>1,2,,src\layers\cpu_kernels\convolution.cpp:<global>
+400417,METHOD_REF,2,,"[&](const Range& r0){
+            for (int gsi = r0.start; gsi < r0.end; gsi++)
+            {
+                int g = gsi / numStripsMR;
+                int si = gsi - g * numStripsMR;
+
+                int startK = si * CONV_MR_FP32;
+                CV_Assert(startK < Kg_aligned);
+
+                float* packed_wptr = weightsPtr + DkHkWkCg * (startK + g * Kg_aligned);
+                int dk = Kg - startK < CONV_MR_FP32 ? Kg - startK : CONV_MR_FP32; // check if we need zero padding.
+
+                int k_idx = g*Kg + startK;
+                for(int hwd = 0; hwd < Hk*Wk*Dk; hwd++)
+                {
+                    for(int c = 0; c < Cg; c++, packed_wptr += CONV_MR_FP32)
+                    {
+                        const float* wptr = srcWeights + wstep * k_idx + c*Hk*Wk*Dk + hwd;
+                        int k = 0;
+                        for(; k < dk; k++, wptr += wstep)
+                            packed_wptr[k] = *wptr;
+                        for(; k < CONV_MR_FP32; k++)
+    ...",60,,424,cv.dnn.initFastConv.<lambda>2,2,,src\layers\cpu_kernels\convolution.cpp:<global>
+404003,METHOD_REF,2,,"[&](const Range& r0) {
+        for (int task_id = r0.start; task_id < r0.end; task_id++)
+        {
+            if (fast_1x1)
+            {
+                int nc0 = task_id*N*C/ntasks, nc1 = (task_id+1)*N*C/ntasks, dc = 0;
+                for (; nc0 < nc1; nc0 += dc)
+                {
+                    int n = nc0/C, c0 = nc0 - n*C;
+                    int g = c0 / Cg;
+                    c0 -= g*Cg;
+                    dc = Cg - c0 <= nc1 - nc0 ? Cg - c0 : nc1 - nc0;
+
+                    float * inptr_ = inp + (size_t)nc0*inp_planesize;
+                    char* inpbuf_ = inpbuf_all_0 + ((n*ngroups + g)*stripes_per_plane0*stripesize + c0*CONV_NR)*esz;
+
+                    packInputData(inpbuf_, inptr_, ofstab, dhwTab, 0, out_planesize, ksize, stride_d, stride_h,
+                                  stride_w, pad_front, pad_top, pad_left, Dk, Hk, Wk, dilation_d, dilation_h, dilation_w,
+                                  Di, Hi, Wi, H0, W0, dc, stripesize, 0, inp_planesize, conv->conv_...",41,,1328,cv.dnn.runFastConv.<lambda>3,2,,src\layers\cpu_kernels\convolution.cpp:<global>
+404008,METHOD_REF,2,,"[&](const Range& r0) {
+    for (int task_id = r0.start; task_id < r0.end; task_id++)
+    {
+        float * cbuf_task = (float *)(inpbuf_all + taskbufsize * task_id);
+        char * inpbuf_task = (char*)(cbuf_task + cbufsize);
+
+        int ngs0 = (int)((size_t)nsubtasks * task_id / ntasks);
+        int ngs1 = (int)((size_t)nsubtasks * (task_id+1) / ntasks);
+        for (int subtask = ngs0; subtask < ngs1; )
+        {
+            int ng = subtask / Kstripes;
+            int kzyx0 = subtask - ng * Kstripes;
+            int kzyx1 = kzyx0 + (ngs1 - subtask);
+            int n = ng / ngroups, g = ng % ngroups; // ng - n * ngroups;
+            size_t inp_plane_ofs = (size_t)(n * ngroups + g) * Cg * inp_planesize;
+            kzyx1 = kzyx1 <= Kstripes ? kzyx1 : Kstripes;
+            subtask += kzyx1 - kzyx0;
+            int k0, k1;
+            int zyx0, zyx_limit, zyx_block_limit = 0;
+
+            if (stripes_per_plane == 1 || conv->conv_type == CONV_TYPE_DEPTHWISE_REMAIN)
+            {
+   ...",37,,1379,cv.dnn.runFastConv.<lambda>4,2,,src\layers\cpu_kernels\convolution.cpp:<global>
+404991,METHOD_REF,2,,"[&](const Range &r) {
+        for(int start = r.start ; start < r.end; start++ ) {
+            float* c_i = (float*)c_ + start * ldc;
+            if (beta == 0.f)
+                for(int j = 0; j < N; j++ ) c_i[j] = 0.f;
+            else if (beta != 1.f)
+                for(int j = 0; j < N; j++ ) c_i[j] *= beta;
+            for(int k = 0; k < K; k++ ) {
+                const float* b_k = (const float*)b_ + k * ldb;
+                float aval = alpha * a[start * lda0 + k * lda1];
+                for(int j = 0; j < N; j++ )
+                    c_i[j] += aval * b_k[j];
+            }
+        }
+    }",15,,164,cv.dnn.fast_gemm_thin.<lambda>0,2,,src\layers\cpu_kernels\fast_gemm.cpp:<global>
+408957,METHOD_REF,2,,"[&](const Range &r) {
+        char* packed_a = (char*)(use_stackbuff ? alloca(buff_size) : malloc(buff_size));
+        char* packed_b = packed_a + KC * MC * esz;
+        int start = r.start;
+        int end = r.end;
+
+        for (int tile_idx = start; tile_idx < end; tile_idx++) {
+            int i0 = (tile_idx / n_tiles) * MC;
+            int j0 = (tile_idx % n_tiles) * NC;
+            int mc = M - i0 < MC ? M - i0 : MC;
+            int nc = N - j0 < NC ? N - j0 : NC;
+            int ldc_block = ldc;
+            char* c_block = C + (i0 * ldc + j0) * esz;
+
+            if (beta == 0.f) {
+                for(int i = 0; i < mc; i++)
+                    memset(c_block + i * ldc_block * esz, 0, nc * esz);
+            } else if (beta != 1.f) {
+                for(int i = 0; i < mc; i++) {
+                    float* c_i = (float*)c_block + i * ldc_block;
+                    for(int j = 0; j < nc; j++)
+                        c_i[j] *= beta;
+                }
+            }
+
+            for(...",15,,200,cv.dnn.cpu_baseline.fastGemmKernel.<lambda>0,2,,src\layers\cpu_kernels\fast_gemm_kernels.default.hpp:<global>
+409115,METHOD_REF,2,,"[&](const Range &r) {
+        char* packed_a = (char*)(use_stackbuff ? alloca(buff_size) : malloc(buff_size)); // TODO: use AutoBuffer
+        const char *packed_b_ = packed_B;
+        int start = r.start;
+        int end = r.end;
+
+        for (int tile_idx = start; tile_idx < end; tile_idx++) {
+            int i0 = (tile_idx / n_tiles) * MC;
+            int j0 = (tile_idx % n_tiles) * NC;
+            int mc = M - i0 < MC ? M - i0 : MC;
+            int nc = N - j0 < NC ? N - j0 : NC;
+            int ldc_block = ldc;
+            char* c_block = C + (i0 * ldc + j0) * esz;
+            packed_b_ = packed_B + j0 * K * esz;
+
+            if (beta == 0.f) {
+                for(int i = 0; i < mc; i++)
+                    memset(c_block + i * ldc_block * esz, 0, nc * esz);
+            } else if (beta != 1.f) {
+                for(int i = 0; i < mc; i++) {
+                    float* c_i = (float*)c_block + i * ldc_block;
+                    for(int j = 0; j < nc; j++)
+                        c...",15,,266,cv.dnn.cpu_baseline.fastGemmKernel.<lambda>1,2,,src\layers\cpu_kernels\fast_gemm_kernels.default.hpp:<global>
+409275,METHOD_REF,2,,"[&](const Range &r) {
+        char* packed_a = (char*)(use_stackbuff ? alloca(buff_size) : malloc(buff_size));
+        char* packed_b = packed_a + KC * MC * esz;
+        int start = r.start;
+        int end = r.end;
+
+        for (int tile_idx = start; tile_idx < end; tile_idx++) {
+            const int batch_index = static_cast<int>(tile_idx / total_tiles);
+            const int m_tiles_index = static_cast<int>((tile_idx - batch_index * total_tiles) / n_tiles);
+            const int n_tiles_index = static_cast<int>(tile_idx % n_tiles);
+
+            int i0 = m_tiles_index * MC;
+            int j0 = n_tiles_index * NC;
+            int mc = M - i0 < MC ? M - i0 : MC;
+            int nc = N - j0 < NC ? N - j0 : NC;
+            int ldc_block = ldc;
+            const char *a_block = A + A_offsets[batch_index] * esz;
+            const char *b_block = B + B_offsets[batch_index] * esz;
+            char* c_block = C + C_offsets[batch_index] * esz + (i0 * ldc + j0) * esz;
+
+            if (beta...",15,,334,cv.dnn.cpu_baseline.fastGemmBatchKernel.<lambda>2,2,,src\layers\cpu_kernels\fast_gemm_kernels.default.hpp:<global>
+409429,METHOD_REF,2,,"[&](const Range &r) {
+        char* packed_a = (char*)(use_stackbuff ? alloca(buff_size) : malloc(buff_size));
+        const char *packed_b = packed_B;
+        int start = r.start;
+        int end = r.end;
+
+        for (int tile_idx = start; tile_idx < end; tile_idx++) {
+            const int batch_index = static_cast<int>(tile_idx / total_tiles);
+            const int m_tiles_index = static_cast<int>((tile_idx - batch_index * total_tiles) / n_tiles);
+            const int n_tiles_index = static_cast<int>(tile_idx % n_tiles);
+
+            int i0 = m_tiles_index * MC;
+            int j0 = n_tiles_index * NC;
+            int mc = M - i0 < MC ? M - i0 : MC;
+            int nc = N - j0 < NC ? N - j0 : NC;
+            int ldc_block = ldc;
+            const char *a_block = A + A_offsets[batch_index] * esz;
+            packed_b = packed_B + B_offsets[batch_index] * esz + j0 * K * esz;
+            char* c_block = C + C_offsets[batch_index] * esz + (i0 * ldc + j0) * esz;
+
+            if (bet...",15,,408,cv.dnn.cpu_baseline.fastGemmBatchKernel.<lambda>3,2,,src\layers\cpu_kernels\fast_gemm_kernels.default.hpp:<global>
+411216,METHOD_REF,2,,"[&](const Range &r) {
+        char* packed_a = (char*)(use_stackbuff ? alloca(buff_size) : malloc(buff_size));
+        char* packed_b = packed_a + KC * MC * esz;
+        int start = r.start;
+        int end = r.end;
+
+        for (int tile_idx = start; tile_idx < end; tile_idx++) {
+            int i0 = (tile_idx / n_tiles) * MC;
+            int j0 = (tile_idx % n_tiles) * NC;
+            int mc = M - i0 < MC ? M - i0 : MC;
+            int nc = N - j0 < NC ? N - j0 : NC;
+            int ldc_block = ldc;
+            char* c_block = C + (i0 * ldc + j0) * esz;
+
+            if (beta == 0.f) {
+                for(int i = 0; i < mc; i++)
+                    memset(c_block + i * ldc_block * esz, 0, nc * esz);
+            } else if (beta != 1.f) {
+                for(int i = 0; i < mc; i++) {
+                    float* c_i = (float*)c_block + i * ldc_block;
+                    for(int j = 0; j < nc; j++)
+                        c_i[j] *= beta;
+                }
+            }
+
+            for(...",15,,589,cv.dnn.fastGemmKernel.<lambda>0,2,,src\layers\cpu_kernels\fast_gemm_kernels.simd.hpp:<global>
+411377,METHOD_REF,2,,"[&](const Range &r) {
+        char* packed_a = (char*)(use_stackbuff ? alloca(buff_size) : malloc(buff_size)); // TODO: use AutoBuffer
+        const char *packed_b_ = packed_B;
+        int start = r.start;
+        int end = r.end;
+
+        for (int tile_idx = start; tile_idx < end; tile_idx++) {
+            int i0 = (tile_idx / n_tiles) * MC;
+            int j0 = (tile_idx % n_tiles) * NC;
+            int mc = M - i0 < MC ? M - i0 : MC;
+            int nc = N - j0 < NC ? N - j0 : NC;
+            int ldc_block = ldc;
+            char* c_block = C + (i0 * ldc + j0) * esz;
+            packed_b_ = packed_B + j0 * K * esz;
+
+            if (beta == 0.f) {
+                for(int i = 0; i < mc; i++)
+                    memset(c_block + i * ldc_block * esz, 0, nc * esz);
+            } else if (beta != 1.f) {
+                for(int i = 0; i < mc; i++) {
+                    float* c_i = (float*)c_block + i * ldc_block;
+                    for(int j = 0; j < nc; j++)
+                        c...",15,,677,cv.dnn.fastGemmKernel.<lambda>1,2,,src\layers\cpu_kernels\fast_gemm_kernels.simd.hpp:<global>
+411541,METHOD_REF,2,,"[&](const Range &r) {
+        char* packed_a = (char*)(use_stackbuff ? alloca(buff_size) : malloc(buff_size));
+        char* packed_b = packed_a + KC * MC * esz;
+        int start = r.start;
+        int end = r.end;
+
+        for (int tile_idx = start; tile_idx < end; tile_idx++) {
+            const int batch_index = static_cast<int>(tile_idx / total_tiles);
+            const int m_tiles_index = static_cast<int>((tile_idx - batch_index * total_tiles) / n_tiles);
+            const int n_tiles_index = static_cast<int>(tile_idx % n_tiles);
+
+            int i0 = m_tiles_index * MC;
+            int j0 = n_tiles_index * NC;
+            int mc = M - i0 < MC ? M - i0 : MC;
+            int nc = N - j0 < NC ? N - j0 : NC;
+            int ldc_block = ldc;
+            const char *a_block = A + A_offsets[batch_index] * esz;
+            const char *b_block = B + B_offsets[batch_index] * esz;
+            char* c_block = C + C_offsets[batch_index] * esz + (i0 * ldc + j0) * esz;
+
+            if (beta...",15,,756,cv.dnn.fastGemmBatchKernel.<lambda>2,2,,src\layers\cpu_kernels\fast_gemm_kernels.simd.hpp:<global>
+411697,METHOD_REF,2,,"[&](const Range &r) {
+        char* packed_a = (char*)(use_stackbuff ? alloca(buff_size) : malloc(buff_size));
+        const char *packed_b = packed_B;
+        int start = r.start;
+        int end = r.end;
+
+        for (int tile_idx = start; tile_idx < end; tile_idx++) {
+            const int batch_index = static_cast<int>(tile_idx / total_tiles);
+            const int m_tiles_index = static_cast<int>((tile_idx - batch_index * total_tiles) / n_tiles);
+            const int n_tiles_index = static_cast<int>(tile_idx % n_tiles);
+
+            int i0 = m_tiles_index * MC;
+            int j0 = n_tiles_index * NC;
+            int mc = M - i0 < MC ? M - i0 : MC;
+            int nc = N - j0 < NC ? N - j0 : NC;
+            int ldc_block = ldc;
+            const char *a_block = A + A_offsets[batch_index] * esz;
+            packed_b = packed_B + B_offsets[batch_index] * esz + j0 * K * esz;
+            char* c_block = C + C_offsets[batch_index] * esz + (i0 * ldc + j0) * esz;
+
+            if (bet...",15,,846,cv.dnn.fastGemmBatchKernel.<lambda>3,2,,src\layers\cpu_kernels\fast_gemm_kernels.simd.hpp:<global>
+412446,METHOD_REF,2,,"[&](const Range &r) {
+        const auto *input_data = input.ptr<const float>();
+        auto *output_data = output.ptr<float>();
+        for (int i = r.start; i < r.end; i++) {
+            const auto *x = input_data + norm_size * i;
+            auto *y = output_data + norm_size * i;
+
+            float mean = 0.f, mean_square = 0.f;
+            for (int j = 0; j < norm_size; j++) {
+                float v = x[j];
+                mean += v;
+                mean_square += v * v;
+            }
+
+            mean *= inv_norm_size;
+            mean_square = std::sqrt(std::max(0.f, mean_square * inv_norm_size - mean * mean) + epsilon);
+            float inv_stdev = normalize_variance ? 1.f / mean_square : 1.f;
+
+            for (size_t j = 0; j < norm_size; j++) {
+                y[j] = (x[j] - mean) * inv_stdev;
+            }
+        }
+    }",15,,18,cv.dnn.fastNorm.<lambda>0,2,,src\layers\cpu_kernels\fast_norm.cpp:<global>
+412508,METHOD_REF,2,,"[&](const Range &r) {
+        const auto *input_data = input.ptr<const float>();
+        const auto *scale_data = scale.ptr<const float>();
+        auto *output_data = output.ptr<float>();
+        for (int i = r.start; i < r.end; i++) {
+            const auto *x = input_data + norm_size * i;
+            auto *y = output_data + norm_size * i;
+
+            float mean = 0.f, mean_square = 0.f;
+            for (int j = 0; j < norm_size; j++) {
+                float v = x[j];
+                mean += v;
+                mean_square += v * v;
+            }
+
+            mean *= inv_norm_size;
+            mean_square = std::sqrt(std::max(0.f, mean_square * inv_norm_size - mean * mean) + epsilon);
+            float inv_stdev = 1.f / mean_square;
+
+            for (size_t j = 0; j < norm_size; j++) {
+                y[j] = scale_data[j] * (x[j] - mean) * inv_stdev;
+            }
+        }
+    }",15,,53,cv.dnn.fastNorm.<lambda>1,2,,src\layers\cpu_kernels\fast_norm.cpp:<global>
+412580,METHOD_REF,2,,"[&](const Range &r) {
+        const auto *input_data = input.ptr<const float>();
+        const auto *scale_data = scale.ptr<const float>();
+        const auto *bias_data = bias.ptr<const float>();
+        auto *output_data = output.ptr<float>();
+        for (int i = r.start; i < r.end; i++) {
+            const auto *x = input_data + norm_size * i;
+            auto *y = output_data + norm_size * i;
+
+            float mean = 0.f, mean_square = 0.f;
+            for (int j = 0; j < norm_size; j++) {
+                float v = x[j];
+                mean += v;
+                mean_square += v * v;
+            }
+
+            mean *= inv_norm_size;
+            mean_square = std::sqrt(std::max(0.f, mean_square * inv_norm_size - mean * mean) + epsilon);
+            float inv_stdev = 1.f / mean_square;
+
+            for (size_t j = 0; j < norm_size; j++) {
+                y[j] = scale_data[j] * (x[j] - mean) * inv_stdev + bias_data[j];
+            }
+        }
+    }",15,,90,cv.dnn.fastNorm.<lambda>2,2,,src\layers\cpu_kernels\fast_norm.cpp:<global>
+412661,METHOD_REF,2,,"[&](const Range &r) {
+        const auto *input_data = input.ptr<const float>();
+        const auto *scale_data = scale.ptr<const float>();
+        const auto *bias_data = bias.ptr<const float>();
+        auto *output_data = output.ptr<float>();
+        for (int i = r.start; i < r.end; i++) {
+            const auto *x = input_data + norm_size * i;
+            auto *y = output_data + norm_size * i;
+
+            float mean = 0.f, mean_square = 0.f;
+            for (int j = 0; j < norm_size; j++) {
+                float v = x[j];
+                mean += v;
+                mean_square += v * v;
+            }
+
+            mean *= inv_norm_size;
+            mean_square = std::sqrt(std::max(0.f, mean_square * inv_norm_size - mean * mean) + epsilon);
+            float inv_stdev = 1.f / mean_square;
+
+            size_t c = i % C;
+            float s = scale_data[c] * inv_stdev, b = bias_data[c];
+            for (size_t j = 0; j < norm_size; j++) {
+                y[j] = s * (x[j] - mean) + b...",15,,130,cv.dnn.fastNormChannel.<lambda>3,2,,src\layers\cpu_kernels\fast_norm.cpp:<global>
+413022,METHOD_REF,2,,"[&](const Range &range) {
+        AutoBuffer<float> axisBuf_(channelAxis);
+        float *axisBuf = axisBuf_.data();
+
+        for (size_t i = range.start; i < range.end; i++) {
+            size_t outerDim = i / innerSize;
+            size_t innerDim = i % innerSize;
+            size_t srcOffset = outerDim * outerStep + innerDim;
+            // copy data from src to buf along axis, since the data may not be continuous
+            for (size_t cnDim = 0; cnDim < axisStep; cnDim++)
+                axisBuf[cnDim] = srcPtr[srcOffset + (cnDim + axisBias) * cnStep];
+
+            float s = 0.f;
+#if (CV_SIMD || CV_SIMD_SCALABLE)
+            // make the value of the redundant dimension to be -FLT_MAX
+            if (redundantDim != nlanes) {
+                for (size_t j = axisStep; j < axisStep + redundantDim; j++)
+                    axisBuf[j] = -FLT_MAX;
+            }
+            // calculate the max value along the axis
+            v_float32 vmax = vx_load(axisBuf);
+            for (size_...",47,,44,cv.dnn.softmax.<lambda>0,2,,src\layers\cpu_kernels\softmax.cpp:<global>
+413932,METHOD_REF,4,,"[](const std::string& a, int b) {
+                                                        return a + ' ' + std::to_string(b);
+                                                    }",53,,185,cv.dnn.Diagonal.<lambda>0,5,,src\layers\einsum_layer.cpp:<global>
+422006,METHOD_REF,3,,[](int d){ return d != 1;},61,,3146,cv.dnn.ChannelsPReLULayer.create.<lambda>0,4,,src\layers\elementwise_layers.cpp:<global>
+424442,METHOD_REF,-1,,tanh,16,,95,cv.dnn.tanh,1,,void
+424451,METHOD_REF,-1,,sigmoid,16,,99,cv.dnn.sigmoid,1,,void
+429939,METHOD_REF,4,,PrefixScoreCompare,37,,881,cv.dnn.TextRecognitionModel_Impl.PrefixScoreCompare,5,,bool
+429957,METHOD_REF,3,,PrefixScoreCompare,57,,883,cv.dnn.TextRecognitionModel_Impl.PrefixScoreCompare,4,,bool
+431650,METHOD_REF,8,,rotatedRectIOU,83,,58,cv.dnn.rotatedRectIOU,8,,float
+431993,METHOD_REF,2,,"[](const std::pair<float, size_t>& a, const std::pair<float, size_t>& b)
+    {
+        return a.first == b.first ? a.second > b.second : a.first < b.first;
+    }",28,,139,cv.dnn.softNMSBoxes.<lambda>0,2,,src\nms.cpp:<global>
+449177,METHOD_REF,1,,THDiskFile_isOpened,5,,469,TH.THDiskFile_isOpened,1,,int
+449178,METHOD_REF,2,,THDiskFile_readByte,5,,471,TH.THDiskFile_readByte,2,,long
+449179,METHOD_REF,3,,THDiskFile_readChar,5,,472,TH.THDiskFile_readChar,3,,long
+449180,METHOD_REF,4,,THDiskFile_readShort,5,,473,TH.THDiskFile_readShort,4,,long
+449181,METHOD_REF,5,,THDiskFile_readInt,5,,474,TH.THDiskFile_readInt,5,,long
+449182,METHOD_REF,6,,THDiskFile_readLong,5,,475,TH.THDiskFile_readLong,6,,long
+449183,METHOD_REF,7,,THDiskFile_readFloat,5,,476,TH.THDiskFile_readFloat,7,,long
+449184,METHOD_REF,8,,THDiskFile_readDouble,5,,477,TH.THDiskFile_readDouble,8,,long
+449185,METHOD_REF,9,,THDiskFile_readString,5,,478,TH.THDiskFile_readString,9,,long
+449186,METHOD_REF,10,,THDiskFile_seek,5,,480,TH.THDiskFile_seek,10,,void
+449187,METHOD_REF,11,,THDiskFile_seekEnd,5,,481,TH.THDiskFile_seekEnd,11,,void
+449188,METHOD_REF,12,,THDiskFile_position,5,,482,TH.THDiskFile_position,12,,long
+449189,METHOD_REF,13,,THDiskFile_close,5,,483,TH.THDiskFile_close,13,,void
+449190,METHOD_REF,14,,THDiskFile_free,5,,484,TH.THDiskFile_free,14,,void

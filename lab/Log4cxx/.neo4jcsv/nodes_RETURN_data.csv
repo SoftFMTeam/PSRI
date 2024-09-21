@@ -1,0 +1,1005 @@
+34,RETURN,-1,,return 1;,4,14,5
+78,RETURN,-1,,return 0;,2,5,2
+94,RETURN,-1,,return 0;,2,5,2
+112,RETURN,-1,,return 0;,2,9,2
+128,RETURN,-1,,return 0;,2,5,2
+186,RETURN,-1,,return 0;,2,5,2
+202,RETURN,-1,,return 0;,2,5,2
+220,RETURN,-1,,return 0;,2,9,2
+236,RETURN,-1,,return 0;,2,5,2
+256,RETURN,-1,,return 0;,2,5,2
+270,RETURN,-1,,return thread_id_string;,5,6,2
+300,RETURN,-1,,return 0;,5,16,4
+403,RETURN,-1,,return result;,2,19,7
+475,RETURN,-1,,return EXIT_SUCCESS;,2,23,5
+523,RETURN,-1,,return result;,2,16,4
+557,RETURN,-1,,return EXIT_SUCCESS;,2,29,2
+719,RETURN,-1,,"return name.isEmpty()
+		? LogManager::getRootLogger()
+		: LogManager::getLogger(name.toStdString());",2,66,1
+742,RETURN,-1,,"return name
+		? LogManager::getLogger(name)
+		: LogManager::getRootLogger();",2,74,1
+812,RETURN,-1,,"return name.empty()
+		? LogManager::getRootLogger()
+		: LogManager::getLogger(name);",2,18,2
+848,RETURN,-1,,"return name.empty()
+		? LogManager::getRootLogger()
+		: LogManager::getLogger(name);",2,19,2
+1056,RETURN,-1,,return result;,2,112,18
+1158,RETURN,1,,return;,4,144,1
+1171,RETURN,-1,,"return name.empty()
+		? LogManager::getRootLogger()
+		: LogManager::getLogger(name);",2,166,2
+1455,RETURN,-1,,return 0;,5,111,8
+1483,RETURN,-1,,return false;,3,38,1
+1732,RETURN,-1,,return result;,5,112,6
+1774,RETURN,-1,,return stream;,3,37,2
+1850,RETURN,-1,,return 0;,2,81,13
+1911,RETURN,-1,,return result;,5,47,5
+2024,RETURN,-1,,return result;,5,55,5
+2070,RETURN,-1,,return;,3,41,1
+2098,RETURN,-1,,return;,3,49,1
+2282,RETURN,-1,,return stat;,2,100,7
+2337,RETURN,-1,,"return {configStatus, canidate_str};",6,117,1
+2346,RETURN,-1,,"return {LOG4CXX_NS::spi::ConfigurationStatus::NotConfigured, QString()};",2,125,2
+2572,RETURN,-1,,return m_priv->complete;,2,79,1
+2750,RETURN,-1,,return Filter::ACCEPT;,4,87,1
+2754,RETURN,-1,,return Filter::DENY;,3,90,2
+2758,RETURN,-1,,return Filter::NEUTRAL;,2,93,7
+2805,RETURN,-1,,return;,3,54,1
+2881,RETURN,-1,,return numberAppended;,2,83,6
+2899,RETURN,-1,,return m_priv->appenderList;,2,89,2
+2914,RETURN,-1,,return 0;,3,96,1
+2967,RETURN,-1,,return appender;,4,109,1
+2969,RETURN,-1,,return 0;,2,113,8
+2981,RETURN,-1,,return false;,3,120,1
+3015,RETURN,-1,,return it != m_priv->appenderList.end();,2,127,5
+3091,RETURN,-1,,return;,3,149,1
+3152,RETURN,-1,,return;,3,166,1
+3211,RETURN,-1,,return;,4,180,2
+3262,RETURN,-1,,return;,3,59,1
+3341,RETURN,-1,,return ((level == 0) || level->isGreaterOrEqual(m_priv->threshold));,2,88,1
+3400,RETURN,-1,,return;,3,104,2
+3409,RETURN,-1,,return;,3,109,1
+3432,RETURN,-1,,return;,5,120,3
+3538,RETURN,-1,,return m_priv->errorHandler;,2,168,1
+3546,RETURN,-1,,return m_priv->headFilter;,2,173,1
+3554,RETURN,-1,,return m_priv->headFilter;,2,178,1
+3562,RETURN,-1,,return m_priv->layout;,2,183,1
+3570,RETURN,-1,,return m_priv->name;,2,188,1
+3578,RETURN,-1,,return m_priv->threshold;,2,193,1
+4078,RETURN,-1,,return _priv->socket != nullptr;,2,211,1
+4142,RETURN,-1,,return tlsDestructImpl(ptr);,2,61,1
+4244,RETURN,-1,,return init;,2,125,3
+4250,RETURN,-1,,return getInstance().m_priv->startTime;,2,131,1
+4260,RETURN,-1,,return getInstance().m_priv->p;,2,136,1
+4270,RETURN,-1,,return getInstance().m_priv->tlsKey;,2,141,1
+4370,RETURN,-1,,return;,4,163,2
+4446,RETURN,-1,,return pItem->second;,2,180,5
+4879,RETURN,-1,,"return std::make_shared<APRSocket>(newSocket, newPool);",2,159,24
+5205,RETURN,-1,,return totalWritten;,2,143,5
+5264,RETURN,-1,,return priv->buffer.empty();,5,273,1
+5284,RETURN,-1,,return 0 < priv->buffer.size() || priv->closed;,7,472,1
+5957,RETURN,-1,,return priv->appenders->getAllAppenders();,2,330,1
+5976,RETURN,-1,,return priv->appenders->getAppender(n);,2,335,1
+5996,RETURN,-1,,return priv->appenders->isAttached(appender);,2,340,1
+6015,RETURN,-1,,return false;,2,345,1
+6076,RETURN,-1,,return priv->locationInfo;,2,365,1
+6171,RETURN,-1,,return priv->bufferSize;,2,388,1
+6235,RETURN,-1,,return priv->blocking;,2,400,1
+6271,RETURN,-1,,return *this;,2,417,3
+6331,RETURN,-1,,"return std::make_shared<LoggingEvent>(
+				maxEvent->getLoggerName(),
+				maxEvent->getLevel(),
+				msg,
+				LocationInfo::getLocationUnavailable() );",2,436,6
+6376,RETURN,-1,,"return std::make_shared<LoggingEvent>(
+				LOG4CXX_STR(""""),
+				LOG4CXX_NS::Level::getError(),
+				msg,
+				LocationInfo::getLocationUnavailable() );",2,451,5
+6784,RETURN,-1,,return s_instance;,2,59,1
+6792,RETURN,-1,,"return s_instance.add(key, std::move(action));",2,64,1
+6808,RETURN,-1,,return s_instance.del(key);,2,69,1
+7142,RETURN,-1,,return -1;,3,62,1
+7197,RETURN,-1,,return (int)bytesCopied;,3,70,6
+7292,RETURN,-1,,return m_priv->array;,2,60,1
+7433,RETURN,-1,,return true;,3,85,2
+7435,RETURN,-1,,return false;,2,88,2
+7441,RETURN,-1,,return m_priv->base;,2,93,1
+7449,RETURN,-1,,return m_priv->base;,2,98,1
+7457,RETURN,-1,,return m_priv->base + m_priv->pos;,2,103,1
+7469,RETURN,-1,,return m_priv->base + m_priv->pos;,2,108,1
+7481,RETURN,-1,,return m_priv->lim;,2,113,1
+7489,RETURN,-1,,return m_priv->pos;,2,118,1
+7497,RETURN,-1,,return m_priv->lim - m_priv->pos;,2,123,1
+7683,RETURN,-1,,return UNRECOGNIZED_MILLISECONDS;,3,186,1
+7820,RETURN,-1,,return possibleRetVal;,6,223,1
+7824,RETURN,-1,,return UNRECOGNIZED_MILLISECONDS;,6,227,1
+7826,RETURN,-1,,return NO_MILLISECONDS;,2,233,14
+7849,RETURN,-1,,return;,3,253,2
+7917,RETURN,-1,,return;,4,283,4
+8174,RETURN,-1,,return 1000000;,3,377,1
+8176,RETURN,-1,,return 1000;,2,380,10
+8187,RETURN,-1,,"return target.compare(toffset, len, other, ooffset, len) == 0;",2,400,1
+8298,RETURN,-1,,return APR_SUCCESS;,4,257,4
+8391,RETURN,-1,,return APR_BADARG;,7,303,4
+8409,RETURN,-1,,return APR_SUCCESS;,4,314,2
+8487,RETURN,-1,,return APR_SUCCESS;,4,357,2
+8585,RETURN,-1,,return stat;,4,415,4
+8747,RETURN,-1,,return result;,4,475,12
+8762,RETURN,-1,,return new LocaleCharsetDecoder();,2,509,1
+8780,RETURN,-1,,return CharsetDecoderPtr( createDefaultDecoder() );,3,524,1
+8783,RETURN,-1,,return decoder;,2,527,4
+8801,RETURN,-1,,return std::make_shared<UTF8CharsetDecoder>();,3,541,1
+8806,RETURN,-1,,return decoder;,2,544,4
+8812,RETURN,-1,,return std::make_shared<ISOLatinCharsetDecoder>();,2,549,1
+8853,RETURN,-1,,return std::make_shared<UTF8CharsetDecoder>();,3,559,1
+8916,RETURN,-1,,return std::make_shared<USASCIICharsetDecoder>();,3,568,1
+8954,RETURN,-1,,return std::make_shared<ISOLatinCharsetDecoder>();,3,574,1
+8972,RETURN,-1,,return std::make_shared<LocaleCharsetDecoder>();,3,578,1
+8986,RETURN,-1,,return 0x80 <= (unsigned int)ch;,38,638,1
+9097,RETURN,-1,,return stat;,4,251,4
+9181,RETURN,-1,,return stat;,4,295,4
+9285,RETURN,-1,,return APR_SUCCESS;,4,334,2
+9338,RETURN,-1,,return APR_BADARG;,6,365,1
+9346,RETURN,-1,,return APR_SUCCESS;,4,371,2
+9399,RETURN,-1,,return APR_BADARG;,6,400,1
+9407,RETURN,-1,,return APR_SUCCESS;,4,406,2
+9460,RETURN,-1,,return APR_BADARG;,6,435,1
+9468,RETURN,-1,,return APR_SUCCESS;,4,441,2
+9614,RETURN,-1,,return result;,4,492,10
+9640,RETURN,-1,,return CharsetEncoderPtr( createDefaultEncoder() );,3,525,1
+9643,RETURN,-1,,return encoder;,2,528,4
+9649,RETURN,-1,,return new LocaleCharsetEncoder();,2,542,1
+9656,RETURN,-1,,return std::make_shared<UTF8CharsetEncoder>();,2,549,1
+9687,RETURN,-1,,return std::make_shared<UTF8CharsetEncoder>();,3,559,1
+9750,RETURN,-1,,return std::make_shared<USASCIICharsetEncoder>();,3,568,1
+9788,RETURN,-1,,return std::make_shared<ISOLatinCharsetEncoder>();,3,574,1
+9826,RETURN,-1,,return std::make_shared<UTF16BECharsetEncoder>();,3,580,1
+9844,RETURN,-1,,return std::make_shared<UTF16LECharsetEncoder>();,3,584,1
+9862,RETURN,-1,,return std::make_shared<LocaleCharsetEncoder>();,3,588,1
+9963,RETURN,-1,,return result;,2,643,3
+10053,RETURN,-1,,return LOG4CXX_VERSION;,2,82,1
+10060,RETURN,-1,,return  LOG4CXX_NS::libraryVersion();,2,89,1
+10077,RETURN,-1,,return getName();,2,103,1
+10092,RETURN,-1,,return registry;,2,119,2
+10184,RETURN,-1,,return *clazz;,2,162,7
+10205,RETURN,-1,,return true;,2,168,2
+10376,RETURN,-1,,return def;,3,43,3
+10378,RETURN,-1,,return std::make_shared<ClassNamePatternConverter>(options);,2,46,2
+10470,RETURN,-1,,return instance;,2,41,3
+10646,RETURN,-1,,"return LOG4CXX_STR("""");",3,56,1
+10665,RETURN,-1,,return ret;,2,63,8
+10792,RETURN,-1,,"return LOG4CXX_STR("""");",3,86,1
+10803,RETURN,-1,,return ret;,2,90,7
+10866,RETURN,-1,,"return LOG4CXX_STR("""");",4,106,1
+10909,RETURN,-1,,"return LOG4CXX_STR("""");",3,122,1
+10921,RETURN,-1,,"return colorToANSISequence(strInParens, true, pool);",3,127,1
+10937,RETURN,-1,,"return colorToANSISequence(strInParens, false, pool);",3,129,1
+10944,RETURN,-1,,"return graphicsModeToANSISequence(sequence, pool);",3,131,1
+10977,RETURN,-1,,return instance;,2,158,3
+11274,RETURN,-1,,return;,3,234,2
+11296,RETURN,-1,,return;,4,241,1
+11535,RETURN,-1,,return name;,2,74,3
+11545,RETURN,-1,,return name;,2,80,3
+11616,RETURN,-1,,return _priv->target;,2,105,1
+11886,RETURN,-1,,return 0;,3,94,1
+11888,RETURN,-1,,return m_priv->ea[(m_priv->first + i) % m_priv->maxSize];,2,97,2
+11951,RETURN,-1,,return r;,2,120,3
+11991,RETURN,-1,,return;,3,140,1
+12096,RETURN,-1,,return m_priv->maxSize;,2,176,1
+12104,RETURN,-1,,return m_priv->numElems;,2,181,1
+12193,RETURN,-1,,return m_priv->address;,2,102,1
+12201,RETURN,-1,,return m_priv->buf;,2,107,1
+12209,RETURN,-1,,return m_priv->length;,2,112,1
+12217,RETURN,-1,,return m_priv->offset;,2,117,1
+12225,RETURN,-1,,return m_priv->port;,2,122,1
+12333,RETURN,-1,,return m_priv->address;,2,51,1
+12341,RETURN,-1,,return m_priv->localAddress;,2,56,1
+12349,RETURN,-1,,return m_priv->localPort;,2,61,1
+12357,RETURN,-1,,return m_priv->port;,2,66,1
+12365,RETURN,-1,,return m_priv->localPort != 0;,2,71,1
+12375,RETURN,-1,,return m_priv->port != 0;,2,76,1
+12385,RETURN,-1,,return std::make_unique<APRDatagramSocket>();,2,80,1
+12418,RETURN,-1,,return sock;,2,88,6
+12445,RETURN,-1,,return sock;,2,95,4
+12482,RETURN,-1,,return 86400000000ull;,2,49,1
+12488,RETURN,-1,,return LOG4CXX_USEC_PER_SEC;,2,54,1
+12496,RETURN,-1,,return ((time / LOG4CXX_USEC_PER_SEC) + 1) * LOG4CXX_USEC_PER_SEC;,2,60,1
+12520,RETURN,-1,,return getCurrentTimeFn ? getCurrentTimeFn() : getCurrentTimeStd();,2,68,1
+12529,RETURN,-1,,return std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count();,2,72,1
+12844,RETURN,-1,,return df;,2,130,6
+12851,RETURN,-1,,return std::make_shared<DatePatternConverter>(options);,2,136,1
+13294,RETURN,-1,,return specs;,5,99,3
+13622,RETURN,-1,,return;,9,158,7
+13699,RETURN,-1,,return;,9,168,3
+13885,RETURN,-1,,return;,9,191,9
+14055,RETURN,-1,,return;,9,221,2
+14466,RETURN,-1,,return configuratorClassName;,2,133,5
+14497,RETURN,-1,,return configurationFileName;,2,146,9
+14536,RETURN,-1,,return milliseconds;,2,157,8
+14554,RETURN,-1,,return LOG4CXX_NS::PropertyConfigurator::configure(filename);,3,167,1
+14562,RETURN,-1,,return LOG4CXX_NS::spi::ConfigurationStatus::NotConfigured;,2,170,2
+14636,RETURN,-1,,"return ResultType{configStatus, canidate_str};",6,190,1
+14647,RETURN,-1,,"return ResultType{LOG4CXX_NS::spi::ConfigurationStatus::NotConfigured, LogString()};",2,197,4
+14677,RETURN,-1,,"return std::make_shared<Logger>(pool, name);",2,29,1
+14715,RETURN,-1,,return m_priv->repository;,2,39,1
+14906,RETURN,-1,,return appender;,2,163,7
+14992,RETURN,-1,,return appender;,2,200,8
+15385,RETURN,-1,,return appender;,3,311,10
+15395,RETURN,-1,,return 0;,3,319,2
+16173,RETURN,-1,,return layout;,3,590,9
+16183,RETURN,-1,,return 0;,3,596,2
+16331,RETURN,-1,,return instance;,3,645,7
+16341,RETURN,-1,,return 0;,3,651,2
+16435,RETURN,-1,,return layout;,3,685,9
+16445,RETURN,-1,,return 0;,3,691,2
+16613,RETURN,-1,,return;,5,753,2
+16623,RETURN,-1,,return;,5,760,2
+16780,RETURN,-1,,return spi::ConfigurationStatus::NotConfigured;,3,807,10
+16894,RETURN,-1,,return spi::ConfigurationStatus::NotConfigured;,4,839,12
+16917,RETURN,-1,,return spi::ConfigurationStatus::Configured;,2,849,14
+16931,RETURN,-1,,"return DOMConfigurator().doConfigure(file, LogManager::getLoggerRepository());",2,855,3
+16946,RETURN,-1,,"return configureAndWatch(filename, FileWatchdog::DEFAULT_DELAY);",2,885,1
+16994,RETURN,-1,,return status;,2,925,10
+17032,RETURN,-1,,return;,4,1012,2
+17359,RETURN,-1,,"return OptionConverter::substVars(value, m_priv->props);",3,1107,1
+17376,RETURN,-1,,return value;,3,1112,2
+17428,RETURN,-1,,return attrValue;,2,1135,3
+17532,RETURN,-1,,return *this;,2,77,3
+17539,RETURN,-1,,return msg;,2,82,1
+17566,RETURN,-1,,return *this;,2,103,2
+17586,RETURN,-1,,return s;,2,111,5
+17608,RETURN,-1,,return *this;,2,127,2
+17631,RETURN,-1,,return *this;,2,143,2
+17663,RETURN,-1,,return *this;,2,170,2
+17713,RETURN,-1,,return s;,2,185,13
+17735,RETURN,-1,,return *this;,2,203,2
+17758,RETURN,-1,,return s;,2,211,5
+17780,RETURN,-1,,return *this;,2,227,2
+17788,RETURN,-1,,"return LOG4CXX_STR(""Pool exception"");",2,232,1
+17811,RETURN,-1,,return *this;,2,249,2
+17819,RETURN,-1,,"return LOG4CXX_STR(""Transcoder exception"");",2,254,1
+17846,RETURN,-1,,return *this;,2,275,2
+17866,RETURN,-1,,return s;,2,283,5
+17893,RETURN,-1,,return *this;,2,304,2
+17913,RETURN,-1,,return s;,2,312,5
+17935,RETURN,-1,,return *this;,2,328,2
+17958,RETURN,-1,,return *this;,2,344,2
+17981,RETURN,-1,,return *this;,2,361,2
+17998,RETURN,-1,,return s;,2,368,4
+18019,RETURN,-1,,return *this;,2,385,2
+18041,RETURN,-1,,return *this;,2,402,2
+18069,RETURN,-1,,return *this;,2,421,2
+18092,RETURN,-1,,return *this;,2,436,2
+18114,RETURN,-1,,return *this;,2,451,2
+18137,RETURN,-1,,return *this;,2,466,2
+18160,RETURN,-1,,return *this;,2,481,2
+18182,RETURN,-1,,return *this;,2,497,2
+18312,RETURN,-1,,return;,3,76,1
+18553,RETURN,-1,,return dst;,2,64,3
+18567,RETURN,-1,,return dst;,2,72,3
+18595,RETURN,-1,,return *this;,3,126,1
+18618,RETURN,-1,,return *this;,2,132,4
+18637,RETURN,-1,,return m_priv->path;,2,147,1
+18653,RETURN,-1,,return *this;,2,153,2
+18684,RETURN,-1,,return m_priv->path.substr(lastSlash + 1);,3,163,1
+18694,RETURN,-1,,return m_priv->path;,2,166,6
+18745,RETURN,-1,,return retval;,2,184,7
+18755,RETURN,-1,,"return apr_file_open(file, getPath(p), flags, perm, p.getAPRPool());",2,190,1
+18785,RETURN,-1,,return rv == APR_SUCCESS;,2,200,4
+18817,RETURN,-1,,return src;,2,213,2
+18835,RETURN,-1,,return rv == APR_SUCCESS;,2,220,3
+18862,RETURN,-1,,return rv == APR_SUCCESS;,2,228,3
+18890,RETURN,-1,,return (size_t) finfo.size;,3,240,1
+18896,RETURN,-1,,return 0;,2,243,5
+18922,RETURN,-1,,return finfo.mtime;,3,255,1
+18926,RETURN,-1,,return 0;,2,258,5
+19030,RETURN,-1,,return filenames;,2,302,7
+19106,RETURN,-1,,return parent;,2,329,8
+19125,RETURN,-1,,return stat == APR_SUCCESS;,2,336,3
+19143,RETURN,-1,,return m_priv->autoDelete;,2,344,1
+19889,RETURN,-1,,return src;,5,235,1
+19891,RETURN,-1,,return tmp;,3,239,4
+19893,RETURN,-1,,return src;,2,242,6
+20110,RETURN,-1,,return _priv->fileName;,2,360,1
+20125,RETURN,-1,,return _priv->bufferedIO;,2,365,1
+20140,RETURN,-1,,return _priv->bufferSize;,2,370,1
+20172,RETURN,-1,,return _priv->fileAppend;,2,380,1
+20220,RETURN,-1,,return DatePatternConverter::newInstance(altOptions);,3,34,3
+20226,RETURN,-1,,return DatePatternConverter::newInstance(options);,2,37,2
+20459,RETURN,-1,,return retval;,2,124,8
+20492,RETURN,-1,,return instance;,2,39,3
+20628,RETURN,-1,,return fileptr;,2,79,13
+20768,RETURN,-1,,return m_priv->fileptr;,2,137,1
+20808,RETURN,-1,,"return priv->source.renameTo(priv->destination, pool1);",2,51,1
+20895,RETURN,-1,,return m_priv->thread.joinable();,2,70,1
+20946,RETURN,-1,,return m_priv->file;,2,87,1
+21194,RETURN,-1,,return m_priv->interrupted == 0xFFFF;,2,156,1
+21238,RETURN,-1,,return m_priv->next;,2,40,1
+21302,RETURN,-1,,return false;,3,60,1
+21333,RETURN,-1,,return false;,5,68,3
+21339,RETURN,-1,,return true;,5,71,6
+21346,RETURN,-1,,return true;,2,78,3
+21403,RETURN,-1,,return m_priv->headFilter;,2,108,1
+21847,RETURN,-1,,"return std::make_shared<RolloverDescription>(newActiveFile, append, noAction, noAction);",2,154,7
+21882,RETURN,-1,,return desc;,3,169,1
+21928,RETURN,-1,,return desc;,3,181,1
+22124,RETURN,-1,,return desc;,2,228,21
+22130,RETURN,-1,,return priv->maxIndex;,2,237,1
+22145,RETURN,-1,,return priv->minIndex;,2,246,1
+22337,RETURN,-1,,return false;,6,314,1
+22444,RETURN,-1,,return false;,5,357,1
+22453,RETURN,-1,,return false;,4,364,2
+22455,RETURN,-1,,return true;,2,368,13
+22500,RETURN,-1,,return specs;,2,380,4
+22573,RETURN,-1,,return m_priv->conversionPattern;,2,70,1
+22991,RETURN,-1,,return def;,2,71,3
+23082,RETURN,-1,,return m_priv->leftAlign;,2,104,1
+23090,RETURN,-1,,return m_priv->minLength;,2,109,1
+23098,RETURN,-1,,return m_priv->maxLength;,2,114,1
+23135,RETURN,-1,,return instance;,2,41,3
+23525,RETURN,-1,,return true;,4,152,4
+23585,RETURN,-1,,return true;,3,170,38
+23587,RETURN,-1,,return false;,2,173,2
+23956,RETURN,-1,,return sstream.str();,2,115,12
+24005,RETURN,-1,,return result;,3,501,4
+24359,RETURN,-1,,return logger;,2,160,6
+24574,RETURN,-1,,return m_priv->threshold ? m_priv->threshold : Level::getAll();,2,237,1
+24598,RETURN,-1,,"return getLogger(name, defaultFactory);",2,243,3
+24721,RETURN,-1,,return result;,2,276,9
+24760,RETURN,-1,,return v;,2,290,4
+24812,RETURN,-1,,return m_priv->root;,2,302,3
+24821,RETURN,-1,,return m_priv->thresholdInt > level;,2,307,1
+25374,RETURN,-1,,return m_priv->configured;,2,472,2
+25386,RETURN,-1,,return ret;,2,478,3
+25534,RETURN,-1,,return result;,2,523,9
+26416,RETURN,-1,,return m_priv->locationInfo;,2,256,1
+26436,RETURN,-1,,return m_priv->title;,2,266,1
+26444,RETURN,-1,,"return LOG4CXX_STR(""text/html"");",2,271,1
+26451,RETURN,-1,,return false;,2,276,1
+26495,RETURN,-1,,return *this;,2,50,2
+26650,RETURN,-1,,return result;,2,116,12
+26676,RETURN,-1,,return result;,2,128,5
+26682,RETURN,-1,,return m_priv->ipAddrString;,2,135,1
+26690,RETURN,-1,,return m_priv->hostNameString;,2,142,1
+26698,RETURN,-1,,"return getByName(LOG4CXX_STR(""127.0.0.1""));",2,149,1
+26706,RETURN,-1,,"return getByName(LOG4CXX_STR(""0.0.0.0""));",2,156,1
+26735,RETURN,-1,,return rv;,2,168,5
+26931,RETURN,-1,,return output;,2,103,7
+26988,RETURN,-1,,return instance;,2,39,3
+27081,RETURN,-1,,return m_priv->locationInfo;,2,76,1
+27099,RETURN,-1,,return m_priv->prettyPrint;,2,86,1
+27117,RETURN,-1,,return m_priv->threadInfo;,2,96,1
+27125,RETURN,-1,,"return LOG4CXX_STR(""application/json"");",2,101,1
+27769,RETURN,-1,,return;,3,320,1
+27944,RETURN,-1,,return;,3,376,1
+28314,RETURN,-1,,"return LOG4CXX_STR(""text/plain"");",2,30,1
+28360,RETURN,-1,,return text.size();,2,51,6
+28404,RETURN,-1,,return fatalLevel;,2,42,3
+28427,RETURN,-1,,return errorLevel;,2,48,3
+28450,RETURN,-1,,return warnLevel;,2,54,3
+28473,RETURN,-1,,return infoLevel;,2,60,3
+28496,RETURN,-1,,return debugLevel;,2,66,3
+28519,RETURN,-1,,return traceLevel;,2,72,3
+28542,RETURN,-1,,return allLevel;,2,79,3
+28560,RETURN,-1,,"return toLevelLS(sArg, Level::getDebug());",2,94,1
+28571,RETURN,-1,,return name;,2,99,1
+28578,RETURN,-1,,"return toLevel(val, Level::getDebug());",2,105,1
+28596,RETURN,-1,,return getAll();,4,113,3
+28600,RETURN,-1,,return getDebug();,4,116,6
+28604,RETURN,-1,,return getTrace();,4,119,9
+28608,RETURN,-1,,return getInfo();,4,122,12
+28612,RETURN,-1,,return getWarn();,4,125,15
+28616,RETURN,-1,,return getError();,4,128,18
+28620,RETURN,-1,,return getFatal();,4,131,21
+28624,RETURN,-1,,return getOff();,4,134,24
+28627,RETURN,-1,,return defaultLevel;,4,137,26
+28634,RETURN,-1,,"return toLevel(sArg, Level::getDebug());",2,143,1
+28650,RETURN,-1,,"return toLevelLS(s, defaultLevel);",2,149,2
+28701,RETURN,-1,,return getInfo();,4,224,1
+28714,RETURN,-1,,return getWarn();,4,229,1
+28734,RETURN,-1,,return getDebug();,5,238,1
+28747,RETURN,-1,,return getTrace();,5,243,1
+28760,RETURN,-1,,return getError();,5,248,1
+28773,RETURN,-1,,return getFatal();,5,253,1
+28793,RETURN,-1,,return getOff();,6,262,1
+28806,RETURN,-1,,return getAll();,6,267,1
+28808,RETURN,-1,,return defaultLevel;,2,273,6
+28815,RETURN,-1,,return level1 && this->level == level1->level;,2,279,1
+28830,RETURN,-1,,return level1 && this->level >= level1->level;,2,284,1
+28977,RETURN,-1,,return priv->levelToMatch->toString();,2,73,1
+29040,RETURN,-1,,return Filter::ACCEPT;,4,83,1
+29046,RETURN,-1,,return Filter::DENY;,4,87,1
+29052,RETURN,-1,,return Filter::NEUTRAL;,3,92,1
+29077,RETURN,-1,,return priv->acceptOnMatch;,2,103,1
+29121,RETURN,-1,,return def;,2,42,3
+29178,RETURN,-1,,"return LOG4CXX_STR(""level trace"");",5,68,3
+29185,RETURN,-1,,"return LOG4CXX_STR(""level debug"");",5,71,6
+29192,RETURN,-1,,"return LOG4CXX_STR(""level info"");",5,74,9
+29199,RETURN,-1,,"return LOG4CXX_STR(""level warn"");",5,77,12
+29206,RETURN,-1,,"return LOG4CXX_STR(""level error"");",5,80,15
+29213,RETURN,-1,,"return LOG4CXX_STR(""level fatal"");",5,83,18
+29217,RETURN,-1,,"return LogString(LOG4CXX_STR(""level "")) + e->getLevel()->toString();",5,86,20
+29229,RETURN,-1,,"return LOG4CXX_STR(""level"");",2,90,4
+29428,RETURN,-1,,return Filter::DENY;,3,83,1
+29468,RETURN,-1,,return Filter::DENY;,3,92,1
+29484,RETURN,-1,,return Filter::ACCEPT;,3,99,1
+29490,RETURN,-1,,return Filter::NEUTRAL;,3,104,1
+29515,RETURN,-1,,return priv->levelMin;,2,115,1
+29547,RETURN,-1,,return priv->levelMax;,2,125,1
+29579,RETURN,-1,,return priv->acceptOnMatch;,2,135,1
+29623,RETURN,-1,,return instance;,2,41,3
+29676,RETURN,-1,,return instance;,2,40,3
+29762,RETURN,-1,,return blank;,3,57,3
+29764,RETURN,-1,,return std::make_shared<LiteralPatternConverter>(literal);,2,60,2
+29888,RETURN,-1,,return Class::forName(clazz);,2,59,1
+29901,RETURN,-1,,return std::make_shared<FileInputStream>(name);,3,68,1
+29910,RETURN,-1,,return 0;,2,74,2
+29967,RETURN,-1,,return m_priv->language;,2,66,1
+29975,RETURN,-1,,return m_priv->country;,2,71,1
+29983,RETURN,-1,,return m_priv->variant;,2,76,1
+30011,RETURN,-1,,return unavailable;,2,35,2
+30050,RETURN,-1,,return * this;,2,86,4
+30071,RETURN,-1,,return fileName;,2,106,1
+30077,RETURN,-1,,return shortFileName;,2,110,1
+30083,RETURN,-1,,return lineNumber;,2,119,1
+30166,RETURN,-1,,return tmp;,2,149,9
+30244,RETURN,-1,,return tmp;,3,175,5
+30255,RETURN,-1,,return tmp;,2,179,10
+30479,RETURN,-1,,return Filter::NEUTRAL;,3,86,1
+30511,RETURN,-1,,return Filter::NEUTRAL;,3,91,1
+30601,RETURN,-1,,return matched ? Filter::ACCEPT : Filter::NEUTRAL;,3,106,1
+30612,RETURN,-1,,return matched ? Filter::DENY : Filter::NEUTRAL;,3,110,1
+30642,RETURN,-1,,return priv->acceptOnMatch;,2,121,1
+30657,RETURN,-1,,return priv->mustMatchAll;,2,126,1
+30981,RETURN,1,,return;,3,164,1
+31021,RETURN,1,,return;,3,179,1
+31074,RETURN,1,,return;,3,198,1
+31111,RETURN,1,,return;,3,208,1
+31137,RETURN,-1,,return m_priv->additive;,2,217,1
+31145,RETURN,-1,,return m_priv->aai.getAllAppenders();,2,222,1
+31157,RETURN,-1,,return m_priv->aai.getAppender(name1);,2,227,1
+31198,RETURN,-1,,return l->m_priv->level;,4,236,1
+31212,RETURN,-1,,return m_priv->repositoryRaw;,2,248,1
+31220,RETURN,-1,,return m_priv->repositoryRaw;,2,253,1
+31257,RETURN,-1,,return l->m_priv->resourceBundle;,4,262,1
+31263,RETURN,-1,,return 0;,2,267,2
+31279,RETURN,-1,,return LogString();,3,279,1
+31285,RETURN,-1,,return rb->getString(key);,4,285,1
+31308,RETURN,-1,,return LogString();,4,292,2
+31314,RETURN,-1,,return m_priv->parent;,2,300,1
+31322,RETURN,-1,,return m_priv->level;,2,305,1
+31331,RETURN,-1,,return m_priv->aai.isAttached(appender);,2,310,1
+31359,RETURN,-1,,return false;,3,319,1
+31361,RETURN,-1,,return getEffectiveLevel()->toInt() <= Level::TRACE_INT;,2,322,4
+31390,RETURN,-1,,return false;,3,331,1
+31392,RETURN,-1,,return getEffectiveLevel()->toInt() <= Level::DEBUG_INT;,2,334,4
+31423,RETURN,-1,,return false;,3,343,1
+31425,RETURN,-1,,return level1->isGreaterOrEqual(getEffectiveLevel());,2,346,4
+31451,RETURN,-1,,return false;,3,356,1
+31453,RETURN,-1,,return getEffectiveLevel()->toInt() <= Level::INFO_INT;,2,359,4
+31482,RETURN,-1,,return false;,3,368,1
+31484,RETURN,-1,,return getEffectiveLevel()->toInt() <= Level::ERROR_INT;,2,371,4
+31513,RETURN,-1,,return false;,3,380,1
+31515,RETURN,-1,,return getEffectiveLevel()->toInt() <= Level::WARN_INT;,2,383,4
+31544,RETURN,-1,,return false;,3,392,1
+31546,RETURN,-1,,return getEffectiveLevel()->toInt() <= Level::FATAL_INT;,2,395,4
+31580,RETURN,-1,,return;,3,432,1
+31940,RETURN,-1,,return m_priv->name;,2,572,1
+31949,RETURN,-1,,return LogManager::getLogger(name);,2,577,1
+31960,RETURN,-1,,return LogManager::getLogger(name);,2,583,1
+31980,RETURN,-1,,return LogManager::getRootLogger();,2,593,1
+31991,RETURN,-1,,"return LogManager::getLoggerLS(name, factory);",2,599,1
+32263,RETURN,-1,,return LogManager::getLoggerLS(name);,2,735,1
+32324,RETURN,-1,,return priv->loggerToMatch;,2,59,1
+32431,RETURN,-1,,return Filter::ACCEPT;,4,87,1
+32437,RETURN,-1,,return Filter::DENY;,4,91,1
+32443,RETURN,-1,,return Filter::NEUTRAL;,3,96,1
+32468,RETURN,-1,,return priv->acceptOnMatch;,2,107,1
+32522,RETURN,-1,,return def;,3,43,3
+32524,RETURN,-1,,return std::make_shared<LoggerPatternConverter>(options);,2,46,2
+32565,RETURN,-1,,return threadId == item.first;,40,361,1
+32661,RETURN,-1,,return LOG4CXX_NS::helpers::APRInitializer::initialize();,2,176,1
+32698,RETURN,-1,,return m_priv->threadUserName;,2,206,1
+32745,RETURN,-1,,return true;,3,225,2
+32747,RETURN,-1,,return false;,2,228,3
+32806,RETURN,-1,,return true;,5,244,2
+32808,RETURN,-1,,"return MDC::get(key, dest);",2,249,2
+32910,RETURN,-1,,return set;,2,282,3
+32969,RETURN,-1,,return false;,3,308,1
+32998,RETURN,-1,,return true;,3,316,2
+33000,RETURN,-1,,return false;,2,319,5
+33043,RETURN,-1,,return set;,2,336,3
+33116,RETURN,-1,,return thread_id_string;,3,368,1
+33122,RETURN,-1,,return thread_id_string;,2,384,15
+33140,RETURN,-1,,return thread_name;,3,395,1
+33145,RETURN,-1,,return thread_name;,2,436,5
+33178,RETURN,-1,,return m_priv->level;,2,451,1
+33186,RETURN,-1,,return m_priv->logger;,2,456,1
+33194,RETURN,-1,,return m_priv->message;,2,461,1
+33202,RETURN,-1,,return m_priv->message;,2,466,1
+33210,RETURN,-1,,return m_priv->threadName;,2,471,1
+33218,RETURN,-1,,return m_priv->timeStamp;,2,476,1
+33226,RETURN,-1,,return m_priv->locationInfo;,2,481,1
+33234,RETURN,-1,,return m_priv->chronoTimeStamp;,2,485,1
+33294,RETURN,-1,,return false;,2,57,1
+33368,RETURN,-1,,return internalLogger;,2,66,2
+33429,RETURN,-1,,return;,4,84,1
+33473,RETURN,1,,return;,4,99,1
+33758,RETURN,-1,,return std::make_shared<DefaultRepositorySelector>(hierarchy);,4,52,3
+33825,RETURN,-1,,return result;,2,55,3
+33877,RETURN,-1,,return getRepositorySelector()->getLoggerRepository();,2,78,1
+33902,RETURN,-1,,return r->getRootLogger();,2,86,4
+33928,RETURN,-1,,return r->getLogger(name);,2,96,4
+33956,RETURN,-1,,"return r->getLogger(name, factory);",2,108,4
+33971,RETURN,-1,,return getLoggerLS(n);,2,114,2
+33983,RETURN,-1,,"return getLoggerLS(n, factory);",2,121,2
+33995,RETURN,-1,,return existsLS(n);,2,127,2
+34003,RETURN,-1,,return getLoggerRepository()->exists(name);,2,195,1
+34013,RETURN,-1,,return getLoggerRepository()->getCurrentLoggers();,2,200,1
+34068,RETURN,-1,,return result;,2,220,4
+34207,RETURN,-1,,return fillset;,2,90,11
+34218,RETURN,-1,,return stream;,2,96,2
+34225,RETURN,-1,,return stream;,2,101,1
+34265,RETURN,-1,,return oldVal;,2,122,6
+34276,RETURN,-1,,return (int)initclear.precision();,2,128,2
+34309,RETURN,-1,,return oldVal;,2,137,6
+34320,RETURN,-1,,return (int)initclear.width();,2,143,2
+34348,RETURN,-1,,return oldfill;,2,153,7
+34359,RETURN,-1,,return fillchar;,2,159,2
+34385,RETURN,-1,,return oldVal;,2,168,6
+34414,RETURN,-1,,return oldVal;,2,177,6
+34440,RETURN,-1,,return oldVal;,2,186,6
+34472,RETURN,-1,,return logger->isEnabledFor(l);,2,205,1
+34524,RETURN,-1,,return *this;,2,243,2
+34534,RETURN,-1,,return *this;,2,249,2
+34544,RETURN,-1,,return *this;,2,255,2
+34554,RETURN,-1,,return *this;,2,261,2
+34567,RETURN,-1,,return *this;,2,267,2
+34584,RETURN,-1,,return *stream;,2,278,2
+34772,RETURN,-1,,return false;,2,37,1
+34948,RETURN,-1,,return Filter::NEUTRAL;,3,73,1
+35048,RETURN,-1,,return matched ? Filter::ACCEPT : Filter::NEUTRAL;,3,100,1
+35059,RETURN,-1,,return matched ? Filter::DENY : Filter::NEUTRAL;,3,104,1
+35110,RETURN,-1,,return (it != priv->keyVals.end() ? it->second : empty.value());,2,118,4
+35155,RETURN,-1,,return priv->acceptOnMatch;,2,128,1
+35170,RETURN,-1,,return priv->mustMatchAll;,2,133,1
+35312,RETURN,-1,,return true;,4,68,2
+35318,RETURN,-1,,return false;,2,74,4
+35337,RETURN,-1,,return value;,3,85,2
+35339,RETURN,-1,,return std::string();,2,88,4
+35398,RETURN,-1,,return true;,4,105,4
+35400,RETURN,-1,,return false;,2,109,4
+35419,RETURN,-1,,return value;,3,120,2
+35421,RETURN,-1,,return std::string();,2,123,4
+35505,RETURN,-1,,return def;,3,43,3
+35507,RETURN,-1,,"return std::make_shared<MDCPatternConverter>(LogString(), options.front());",2,45,2
+35739,RETURN,-1,,return *this->stream;,3,72,2
+35791,RETURN,-1,,return this->buf;,3,86,2
+35831,RETURN,-1,,return *this;,2,112,2
+35873,RETURN,-1,,return *this;,2,133,5
+35881,RETURN,-1,,return operator<<((const char*) msg);,2,137,1
+35924,RETURN,-1,,return *this;,2,152,2
+35931,RETURN,-1,,return m_priv->StreamFromBuf();,2,157,1
+35941,RETURN,-1,,return std::move(m_priv->BufFromStream());,2,162,1
+35955,RETURN,-1,,return std::move(m_priv->buf);,2,167,1
+35968,RETURN,-1,,return m_priv->BufFromStream();,2,172,1
+35978,RETURN,-1,,return m_priv->buf;,2,177,1
+35986,RETURN,-1,,return (m_priv->stream != 0);,2,182,1
+36006,RETURN,-1,,return s;,2,189,4
+36013,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,194,1
+36027,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,198,1
+36041,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,202,1
+36055,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,206,1
+36069,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,210,1
+36083,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,214,1
+36097,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,218,1
+36111,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,222,1
+36125,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,226,1
+36139,RETURN,-1,,return ((std::ostream&) * this).operator << (val);,2,230,1
+36265,RETURN,-1,,return def;,3,76,3
+36267,RETURN,-1,,return std::make_shared<QuotedMessagePatternConverter>(options.front().front());,2,78,2
+36327,RETURN,-1,,return def;,2,40,3
+36767,RETURN,-1,,return rolloverInternal(p);,2,205,2
+37120,RETURN,-1,,return false;,6,292,2
+37593,RETURN,-1,,return true;,7,433,3
+37638,RETURN,-1,,return false;,2,454,2
+37792,RETURN,-1,,return;,3,510,2
+37893,RETURN,-1,,return _priv->rollingPolicy;,2,545,1
+37908,RETURN,-1,,return _priv->triggeringPolicy;,2,554,1
+38050,RETURN,-1,,return *os;,4,653,1
+38071,RETURN,-1,,return FileAppender::createWriter(cos);,2,671,3
+38081,RETURN,-1,,return _priv->fileLength;,2,680,1
+38216,RETURN,-1,,return;,6,112,1
+38268,RETURN,-1,,return *this;,4,162,3
+38339,RETURN,-1,,return nextDot;,4,192,4
+38451,RETURN,-1,,return getDefaultAbbreviator();,4,277,1
+38487,RETURN,-1,,return std::make_shared<MaxElementAbbreviator>(StringHelper::toInt(trimmed));,4,294,1
+38614,RETURN,-1,,return std::make_shared<PatternAbbreviator>(fragments);,3,348,14
+38622,RETURN,-1,,return getDefaultAbbreviator();,2,354,2
+38635,RETURN,-1,,return def;,2,365,3
+38683,RETURN,-1,,return NameAbbreviator::getAbbreviator(options[0]);,3,58,1
+38691,RETURN,-1,,return NameAbbreviator::getDefaultAbbreviator();,2,61,2
+38745,RETURN,-1,,return ctx.first;,2,38,1
+38754,RETURN,-1,,return ctx.second;,2,43,1
+38826,RETURN,-1,,return new Stack(stack);,4,73,1
+38830,RETURN,-1,,return new Stack();,2,77,4
+38891,RETURN,-1,,return true;,4,101,2
+38897,RETURN,-1,,return false;,2,107,4
+38939,RETURN,-1,,return size;,2,125,6
+38986,RETURN,-1,,return value;,4,141,5
+38992,RETURN,-1,,return LogString();,2,147,4
+39050,RETURN,-1,,return retval;,2,169,6
+39082,RETURN,-1,,return getMessage(stack.top());,4,182,1
+39092,RETURN,-1,,return LogString();,2,188,4
+39135,RETURN,-1,,return true;,4,202,2
+39141,RETURN,-1,,return false;,2,208,4
+39207,RETURN,-1,,return empty;,2,243,6
+39240,RETURN,-1,,return def;,2,40,3
+39391,RETURN,-1,,"return apr_pstrdup((apr_pool_t*) p.getAPRPool(), strReturn.c_str());",2,113,5
+39663,RETURN,-1,,return specs;,2,171,3
+39810,RETURN,-1,,return false;,2,212,1
+39835,RETURN,-1,,return LogString();,5,272,1
+39853,RETURN,-1,,return 0;,2,371,1
+39871,RETURN,-1,,return;,3,379,1
+40120,RETURN,-1,,return _priv->sqlStatement;,2,659,1
+40203,RETURN,-1,,return _priv->databaseUser;,2,684,1
+40218,RETURN,-1,,return _priv->databaseURL;,2,689,1
+40233,RETURN,-1,,return _priv->databasePassword;,2,694,1
+40248,RETURN,-1,,return _priv->bufferSize;,2,699,1
+40518,RETURN,-1,,return sbuf;,2,118,6
+40550,RETURN,-1,,return true;,4,129,1
+40578,RETURN,-1,,return false;,4,138,1
+40580,RETURN,-1,,return dEfault;,2,142,3
+40601,RETURN,-1,,return dEfault;,3,151,1
+40606,RETURN,-1,,return (int) atol(cvalue.c_str());,2,156,5
+40626,RETURN,-1,,return dEfault;,3,163,1
+40712,RETURN,-1,,"return toInt(s.substr(0, index), 1) * multiplier;",3,186,5
+40723,RETURN,-1,,"return toInt(s, 1);",2,189,5
+40746,RETURN,-1,,return value;,3,198,1
+40750,RETURN,-1,,"return substVars(value, props);",3,203,1
+40769,RETURN,-1,,return value;,3,209,2
+40828,RETURN,-1,,return val;,5,234,1
+40847,RETURN,-1,,return sbuf;,5,240,2
+40999,RETURN,-1,,return value;,4,296,1
+41001,RETURN,-1,,return def;,2,300,2
+41031,RETURN,-1,,return defaultValue;,4,312,1
+41048,RETURN,-1,,"return Level::toLevelLS(value, defaultValue);",4,321,2
+41098,RETURN,-1,,"return Level::toLevelLS(value, defaultValue);",3,333,1
+41117,RETURN,-1,,return levelClass.toLevel(levelName);,3,340,3
+41172,RETURN,-1,,return defaultValue;,2,360,11
+41203,RETURN,-1,,return defaultValue;,3,374,2
+41205,RETURN,-1,,"return OptionConverter::instantiateByClassName(
+			StringHelper::trim(className), superClass, defaultValue);",2,378,4
+41257,RETURN,-1,,return defaultValue;,5,394,1
+41259,RETURN,-1,,return newObject;,4,397,6
+41274,RETURN,-1,,return defaultValue;,2,406,2
+41351,RETURN,-1,,return;,4,439,2
+41539,RETURN,1,,return;,3,82,1
+41668,RETURN,-1,,return m_priv->out;,2,124,1
+41706,RETURN,-1,,return m_priv->name;,2,47,1
+41715,RETURN,-1,,return m_priv->style;,2,52,1
+42801,RETURN,-1,,return specs;,2,270,35
+42807,RETURN,-1,,return m_priv->conversionPattern;,2,275,1
+42870,RETURN,-1,,return colorPatternConverter;,2,288,8
+42898,RETURN,-1,,"return (ch >= 0x41 /* 'A' */ && ch <= 0x5A /* 'Z' */) ||
+		(ch >= 0x61 /* 'a' */ && ch <= 0x7A /* 'z' */) ||
+		(ch >= 0x30 /* '0' */ && ch <= 0x39 /* '9' */);",2,43,1
+42927,RETURN,-1,,"return isUnicodeIdentifierStart(ch)
+		|| (ch == 0x5F /* '_' */);",2,54,1
+42967,RETURN,-1,,return i;,3,75,1
+43006,RETURN,-1,,return i;,2,91,5
+43070,RETURN,-1,,return i;,2,112,2
+43659,RETURN,-1,,return (iter->second)(options);,4,325,2
+43674,RETURN,-1,,return PatternConverterPtr();,2,331,5
+43849,RETURN,-1,,return i;,2,391,5
+43914,RETURN,-1,,return pool;,2,59,1
+43936,RETURN,-1,,return child;,2,72,5
+43943,RETURN,-1,,"return apr_palloc(pool, size);",2,77,1
+43952,RETURN,-1,,return (char*) palloc(size);,2,82,1
+43962,RETURN,-1,,"return apr_itoa(pool, n);",2,87,1
+43972,RETURN,-1,,"return apr_pstrndup(pool, s, len);",2,92,1
+43982,RETURN,-1,,"return apr_pstrdup(pool, s);",2,97,1
+43991,RETURN,-1,,"return apr_pstrndup(pool, s.data(), s.length());",2,102,1
+44041,RETURN,-1,,return;,5,39,1
+44604,RETURN,-1,,return false;,5,373,2
+44619,RETURN,-1,,return true;,4,378,4
+44650,RETURN,-1,,"return put(key, value);",2,409,1
+44672,RETURN,-1,,return oldValue;,2,416,4
+44679,RETURN,-1,,return get(key);,2,421,1
+44695,RETURN,-1,,return (it != properties->end()) ? it->second : LogString();,2,427,3
+44797,RETURN,-1,,return names;,2,453,5
+44861,RETURN,-1,,return def;,3,61,3
+44880,RETURN,-1,,"return std::make_shared<PropertiesPatternConverter>(converterName, options[0]);",2,67,6
+45151,RETURN,-1,,return spi::ConfigurationStatus::NotConfigured;,3,104,3
+45177,RETURN,-1,,"return doConfigure(props, hierarchy);",3,112,4
+45199,RETURN,-1,,return spi::ConfigurationStatus::NotConfigured;,2,120,5
+45210,RETURN,-1,,"return PropertyConfigurator().doConfigure(configFilename, LogManager::getLoggerRepository());",2,125,1
+45225,RETURN,-1,,"return PropertyConfigurator().doConfigure(properties, LogManager::getLoggerRepository());",2,130,1
+45240,RETURN,-1,,"return configureAndWatch(configFilename, FileWatchdog::DEFAULT_DELAY);",2,135,1
+45285,RETURN,-1,,return stat;,2,156,8
+45470,RETURN,-1,,return spi::ConfigurationStatus::Configured;,2,213,20
+45866,RETURN,-1,,return additivity;,3,328,4
+45868,RETURN,-1,,return true;,2,331,7
+45926,RETURN,-1,,return;,4,356,1
+46140,RETURN,-1,,return appender;,3,430,2
+46258,RETURN,-1,,return 0;,3,458,2
+46559,RETURN,-1,,return appender;,2,534,17
+46580,RETURN,-1,,return (*registry)[name];,2,544,1
+46639,RETURN,-1,,return resource;,4,47,1
+46831,RETURN,-1,,return;,3,92,1
+47004,RETURN,-1,,return def;,2,41,3
+47292,RETURN,-1,,return resourceBundle;,2,123,11
+47457,RETURN,-1,,return result;,2,109,4
+47558,RETURN,-1,,return result;,2,129,4
+47729,RETURN,-1,,return result;,2,183,9
+48159,RETURN,-1,,return rolloverInternal(p);,2,305,2
+48568,RETURN,-1,,return true;,7,433,2
+48608,RETURN,-1,,return false;,2,447,2
+48697,RETURN,-1,,return _priv->rollingPolicy;,2,489,1
+48712,RETURN,-1,,return _priv->triggeringPolicy;,2,497,1
+48842,RETURN,-1,,return FileAppender::createWriter(cos);,2,602,3
+48852,RETURN,-1,,return _priv->fileLength;,2,611,1
+49027,RETURN,-1,,return m_priv->fileNamePatternStr;,2,90,1
+49196,RETURN,-1,,return *converterIter;,4,145,1
+49200,RETURN,-1,,return noMatch;,2,150,3
+49248,RETURN,-1,,return *converterIter;,4,166,1
+49252,RETURN,-1,,return noMatch;,2,171,3
+49258,RETURN,-1,,return m_priv->createIntermediateDirectories;,2,175,1
+49276,RETURN,-1,,return m_priv->patternConverters;,2,184,1
+49328,RETURN,-1,,return m_priv->activeFileName;,2,83,1
+49336,RETURN,-1,,return m_priv->append;,2,88,1
+49344,RETURN,-1,,return m_priv->synchronous;,2,93,1
+49352,RETURN,-1,,return m_priv->asynchronous;,2,104,1
+49383,RETURN,-1,,return getLevel();,2,35,1
+49437,RETURN,-1,,return m_priv->timeout;,2,44,1
+49456,RETURN,-1,,return std::make_unique<APRServerSocket>(port);,2,55,1
+49492,RETURN,-1,,return instance;,3,38,3
+49843,RETURN,-1,,return 1900 + tm.tm_year;,4,274,1
+49860,RETURN,-1,,return tm.tm_mon + 1;,4,289,1
+49943,RETURN,-1,,return tm.tm_yday / 7;,4,342,1
+49960,RETURN,-1,,return tm.tm_mday / 7;,4,357,1
+49977,RETURN,-1,,return tm.tm_mday;,4,372,1
+49992,RETURN,-1,,return tm.tm_yday;,4,387,1
+50007,RETURN,-1,,return -1;,4,402,1
+50088,RETURN,-1,,return tm.tm_hour + offset;,4,457,1
+50107,RETURN,-1,,return ( ( tm.tm_hour + 12 - offset ) % 12 ) + offset;,4,475,1
+50131,RETURN,-1,,return tm.tm_min;,4,493,1
+50146,RETURN,-1,,return tm.tm_sec;,4,508,1
+50161,RETURN,-1,,return tm.tm_usec / 1000;,4,523,1
+50178,RETURN,-1,,return tm.tm_usec;,4,538,1
+50960,RETURN,-1,,return (fileLength >= maxFileSize);,2,38,1
+50968,RETURN,-1,,return maxFileSize;,2,43,1
+51088,RETURN,-1,,return event->getLevel()->isGreaterOrEqual(Level::getError());,2,424,1
+51118,RETURN,-1,,return true;,2,447,1
+51124,RETURN,-1,,return _priv->from;,2,452,1
+51156,RETURN,-1,,return _priv->subject;,2,463,1
+51188,RETURN,-1,,return _priv->smtpHost;,2,473,1
+51220,RETURN,-1,,return _priv->smtpPort;,2,483,1
+51252,RETURN,-1,,return _priv->locationInfo;,2,493,1
+51284,RETURN,-1,,return _priv->smtpUsername;,2,503,1
+51316,RETURN,-1,,return _priv->smtpPassword;,2,513,1
+51571,RETURN,-1,,return false;,4,588,2
+51573,RETURN,-1,,return true;,2,592,2
+51892,RETURN,-1,,return;,3,653,1
+51943,RETURN,-1,,return false;,2,701,1
+51967,RETURN,-1,,return _priv->to;,2,714,1
+51999,RETURN,-1,,return _priv->cc;,2,724,1
+52031,RETURN,-1,,return _priv->bcc;,2,734,1
+52068,RETURN,-1,,return _priv->evaluator == 0 ? LogString() : _priv->evaluator->getClass().getName();,2,787,1
+52101,RETURN,-1,,return _priv->evaluator;,2,792,1
+52201,RETURN,-1,,return _priv->bufferSize;,2,828,1
+52242,RETURN,-1,,return m_priv->address;,2,40,1
+52250,RETURN,-1,,return m_priv->port;,2,45,1
+52260,RETURN,-1,,"return std::make_unique<APRSocket>(address, port);",2,49,1
+52377,RETURN,-1,,return;,3,75,1
+52884,RETURN,-1,,return;,4,179,9
+53101,RETURN,-1,,return _priv->closed;,2,216,1
+53155,RETURN,-1,,return _priv->remoteHost;,2,227,1
+53187,RETURN,-1,,return _priv->port;,2,237,1
+53219,RETURN,-1,,return _priv->locationInfo;,2,247,1
+53251,RETURN,-1,,return _priv->reconnectionDelay;,2,257,1
+53595,RETURN,-1,,return false;,4,39,1
+53597,RETURN,-1,,return (*upper == 0);,2,43,2
+53673,RETURN,-1,,return false;,4,58,1
+53675,RETURN,-1,,return u == upper.end() && iter == s1.end();,2,62,8
+53721,RETURN,-1,,return d;,2,72,3
+53745,RETURN,-1,,return LogString();,3,81,1
+53759,RETURN,-1,,"return s.substr(pos, n);",2,85,6
+53783,RETURN,-1,,return false;,3,92,1
+53785,RETURN,-1,,"return s.compare(0, prefix.length(), prefix) == 0;",2,95,2
+53815,RETURN,-1,,"return s.compare(s.length() - suffix.length(), suffix.length(), suffix) == 0;",3,102,1
+53836,RETURN,-1,,return false;,2,105,2
+53843,RETURN,-1,,return std::stoi(s);,2,116,1
+53854,RETURN,-1,,return std::stoll(s);,2,127,1
+54014,RETURN,-1,,return result;,2,194,5
+54150,RETURN,-1,,return Filter::NEUTRAL;,3,74,1
+54174,RETURN,-1,,return Filter::NEUTRAL;,3,80,1
+54192,RETURN,-1,,return Filter::ACCEPT;,4,87,1
+54198,RETURN,-1,,return Filter::DENY;,4,91,1
+54225,RETURN,-1,,return priv->stringToMatch;,2,103,1
+54257,RETURN,-1,,return priv->acceptOnMatch;,2,113,1
+54305,RETURN,-1,,"return (m_priv->pos != LogString::npos
+			&& m_priv->src.find_first_not_of(m_priv->delim, m_priv->pos) != LogString::npos);",2,48,1
+54388,RETURN,-1,,return m_priv->src.substr(nextPos);,5,64,1
+54396,RETURN,-1,,"return m_priv->src.substr(nextPos, m_priv->pos - nextPos);",4,67,3
+54637,RETURN,-1,,"return LOG4CXX_STR(""kern"");",4,110,3
+54642,RETURN,-1,,"return LOG4CXX_STR(""user"");",4,113,6
+54647,RETURN,-1,,"return LOG4CXX_STR(""mail"");",4,116,9
+54652,RETURN,-1,,"return LOG4CXX_STR(""daemon"");",4,119,12
+54657,RETURN,-1,,"return LOG4CXX_STR(""auth"");",4,122,15
+54662,RETURN,-1,,"return LOG4CXX_STR(""syslog"");",4,125,18
+54667,RETURN,-1,,"return LOG4CXX_STR(""lpr"");",4,128,21
+54672,RETURN,-1,,"return LOG4CXX_STR(""news"");",4,131,24
+54677,RETURN,-1,,"return LOG4CXX_STR(""uucp"");",4,134,27
+54682,RETURN,-1,,"return LOG4CXX_STR(""cron"");",4,137,30
+54687,RETURN,-1,,"return LOG4CXX_STR(""local0"");",4,150,33
+54692,RETURN,-1,,"return LOG4CXX_STR(""local1"");",4,153,36
+54697,RETURN,-1,,"return LOG4CXX_STR(""local2"");",4,156,39
+54702,RETURN,-1,,"return LOG4CXX_STR(""local3"");",4,159,42
+54707,RETURN,-1,,"return LOG4CXX_STR(""local4"");",4,162,45
+54712,RETURN,-1,,"return LOG4CXX_STR(""local5"");",4,165,48
+54717,RETURN,-1,,"return LOG4CXX_STR(""local6"");",4,168,51
+54722,RETURN,-1,,"return LOG4CXX_STR(""local7"");",4,171,54
+54726,RETURN,-1,,return LogString();,4,174,56
+54744,RETURN,-1,,return LOG_KERN;,3,183,1
+54759,RETURN,-1,,return LOG_USER;,3,187,1
+54774,RETURN,-1,,return LOG_MAIL;,3,191,1
+54789,RETURN,-1,,return LOG_DAEMON;,3,195,1
+54804,RETURN,-1,,return LOG_AUTH;,3,199,1
+54819,RETURN,-1,,return LOG_SYSLOG;,3,203,1
+54834,RETURN,-1,,return LOG_LPR;,3,207,1
+54849,RETURN,-1,,return LOG_NEWS;,3,211,1
+54864,RETURN,-1,,return LOG_UUCP;,3,215,1
+54879,RETURN,-1,,return LOG_CRON;,3,219,1
+54894,RETURN,-1,,return LOG_LOCAL0;,3,238,1
+54909,RETURN,-1,,return LOG_LOCAL1;,3,242,1
+54924,RETURN,-1,,return LOG_LOCAL2;,3,246,1
+54939,RETURN,-1,,return LOG_LOCAL3;,3,250,1
+54954,RETURN,-1,,return LOG_LOCAL4;,3,254,1
+54969,RETURN,-1,,return LOG_LOCAL5;,3,258,1
+54984,RETURN,-1,,return LOG_LOCAL6;,3,262,1
+54999,RETURN,-1,,return LOG_LOCAL7;,3,266,1
+55003,RETURN,-1,,return LOG_UNDEF;,3,270,1
+55022,RETURN,-1,,return;,3,278,1
+55225,RETURN,-1,,return;,3,354,2
+55553,RETURN,-1,,return;,3,446,1
+55615,RETURN,-1,,return _priv->syslogHost;,2,463,1
+55630,RETURN,-1,,return getFacilityString(_priv->syslogFacility);,2,468,1
+55663,RETURN,-1,,return _priv->facilityPrinting;,2,478,1
+55695,RETURN,-1,,return _priv->maxMessageLength;,2,488,1
+55921,RETURN,-1,,return rv;,3,52,7
+55956,RETURN,-1,,return rv;,3,67,7
+55993,RETURN,-1,,return rv;,2,120,12
+56043,RETURN,-1,,return false;,2,59,1
+56112,RETURN,-1,,return false;,2,59,1
+56342,RETURN,-1,,return _priv->encoding;,2,102,2
+56440,RETURN,-1,,return;,3,119,1
+57148,RETURN,-1,,return _priv->port;,2,314,1
+57198,RETURN,-1,,return key;,2,37,3
+57221,RETURN,-1,,return retval;,2,73,3
+57254,RETURN,-1,,return def;,2,40,3
+57301,RETURN,-1,,return m_priv->ndcStack;,2,47,1
+57309,RETURN,-1,,return m_priv->mdcMap;,2,52,1
+57318,RETURN,-1,,return noThreadData;,2,58,2
+57324,RETURN,-1,,return &getDataNoThreads();,2,71,1
+57472,RETURN,-1,,return 0;,2,176,1
+57505,RETURN,-1,,return def;,2,40,3
+57595,RETURN,-1,,return &instance.value();,2,72,2
+57791,RETURN,-1,,return m_priv->start_pre;,2,188,1
+57799,RETURN,-1,,return m_priv->started;,2,193,1
+57807,RETURN,-1,,return m_priv->start_post;,2,198,1
+57878,RETURN,-1,,return shortConverter;,3,60,3
+57890,RETURN,-1,,return converter;,2,64,4
+57903,RETURN,-1,,return true;,2,80,1
+57982,RETURN,-1,,return 0;,2,249,1
+57989,RETURN,-1,,return true;,2,253,1
+58002,RETURN,-1,,return 0;,2,259,1
+58008,RETURN,-1,,return 0;,2,263,1
+58017,RETURN,-1,,"return """";",2,267,1
+58204,RETURN,-1,,return specs;,2,354,4
+58272,RETURN,-1,,"return std::make_shared<RolloverDescription>(
+					currentActiveFile, append, noAction, noAction);",3,380,1
+58292,RETURN,-1,,"return std::make_shared<RolloverDescription>(
+					m_priv->lastFileName.substr(0, m_priv->lastFileName.length() - m_priv->suffixLength), append,
+					noAction, noAction);",3,386,2
+58375,RETURN,-1,,return desc;,3,432,2
+58556,RETURN,-1,,"return std::make_shared<RolloverDescription>(nextActiveFile, append, renameAction, compressAction);",2,494,24
+58582,RETURN,-1,,return Date::currentTime() > m_priv->nextCheck;,2,525,2
+58673,RETURN,-1,,return tz;,4,50,3
+58723,RETURN,-1,,return stat;,4,71,3
+58741,RETURN,-1,,return tz;,4,89,3
+58791,RETURN,-1,,return stat;,4,110,3
+58849,RETURN,-1,,return retval;,4,136,12
+58908,RETURN,-1,,return stat;,4,169,3
+58924,RETURN,-1,,return LOG4CXX_NS::helpers::TimeZoneImpl::LocalTimeZone::getInstance();,2,193,1
+58939,RETURN,-1,,return LOG4CXX_NS::helpers::TimeZoneImpl::GMTTimeZone::getInstance();,2,198,1
+58968,RETURN,-1,,return LOG4CXX_NS::helpers::TimeZoneImpl::GMTTimeZone::getInstance();,3,207,1
+59223,RETURN,-1,,"return std::make_shared<helpers::TimeZoneImpl::FixedTimeZone>( s, offset );",3,274,26
+59250,RETURN,-1,,return ltz;,3,281,1
+59252,RETURN,-1,,return getGMT();,2,284,8
+59387,RETURN,-1,,return p.pstrdup(tmp);,2,95,3
+59436,RETURN,-1,,return 1;,3,112,2
+59467,RETURN,-1,,return 2;,3,118,3
+59511,RETURN,-1,,return 3;,3,125,4
+59568,RETURN,-1,,return 4;,3,133,5
+59593,RETURN,-1,,return 3;,3,143,4
+59649,RETURN,-1,,return 2;,3,160,3
+59716,RETURN,-1,,return 4;,3,170,7
+59729,RETURN,-1,,return 2;,2,174,4
+59785,RETURN,-1,,return 2;,3,189,3
+59852,RETURN,-1,,return 4;,3,199,7
+59865,RETURN,-1,,return 2;,2,203,4
+59887,RETURN,-1,,return ch1;,3,215,1
+59919,RETURN,-1,,return 0xFFFF;,4,230,2
+59952,RETURN,-1,,return rv;,6,241,1
+59957,RETURN,-1,,return 0xFFFF;,4,246,3
+59983,RETURN,-1,,return 0xFFFF;,5,259,2
+60018,RETURN,-1,,return 0xFFFF;,6,271,2
+60020,RETURN,-1,,return rv;,5,274,4
+60046,RETURN,-1,,return 0xFFFF;,6,284,2
+60077,RETURN,-1,,return rv;,6,294,1
+60082,RETURN,-1,,return 0xFFFF;,2,302,8
+60249,RETURN,-1,,return p.pstrdup(tmp);,2,362,3
+60412,RETURN,-1,,return ch1;,3,431,2
+60452,RETURN,-1,,return (ch1 - 0xD800) * 0x400 + (ch2 - 0xDC00) + 0x10000;,5,450,2
+60464,RETURN,-1,,return 0xFFFF;,2,458,4
+60542,RETURN,-1,,return val;,2,666,1
+60556,RETURN,-1,,return dst;,2,677,3
+60711,RETURN,-1,,return out;,2,707,5
+60738,RETURN,-1,,return;,3,35,1
+60907,RETURN,-1,,return;,3,101,1
+60928,RETURN,-1,,return;,3,109,2
+60977,RETURN,-1,,return;,4,126,1
+61196,RETURN,-1,,return;,3,96,1
+61241,RETURN,-1,,return false;,3,122,2
+61294,RETURN,-1,,return false;,3,135,2
+61347,RETURN,-1,,return false;,3,147,2
+61349,RETURN,-1,,return true;,2,150,10
+61386,RETURN,-1,,return;,3,170,1
+61562,RETURN,-1,,"return WriterPtr(new OutputStreamWriter(os, encoder));",2,240,5
+61572,RETURN,-1,,return _priv->encoding;,2,245,1
+61825,RETURN,-1,,return true;,2,304,1
+61875,RETURN,-1,,return _priv->immediateFlush;,2,327,1
+61890,RETURN,-1,,return _priv->writer;,2,331,1
+62469,RETURN,-1,,return m_priv->locationInfo;,2,191,1
+62487,RETURN,-1,,return m_priv->properties;,2,201,1
+62634,RETURN,-1,,return DEFAULT_RECONNECTION_DELAY;,2,93,1
+62640,RETURN,-1,,return DEFAULT_PORT;,2,98,1
+62911,RETURN,-1,,return false;,3,59,1
+63155,RETURN,-1,,return true;,3,133,2
+63199,RETURN,-1,,return true;,2,149,32
+63259,RETURN,-1,,return mb << tmp;,2,68,2
+63740,RETURN,-1,,"return cast<T>(getInstance().findOrAddObject(typeid(T).hash_code(), creator));",4,72,1
+64255,RETURN,-1,,return ((std::basic_ostream<char>&) os) << val;,2,210,1
+64292,RETURN,-1,,return std::shared_ptr<Ret>();,3,131,1
+64315,RETURN,-1,,"return std::shared_ptr<Ret>( incoming, casted );",3,138,1
+64326,RETURN,-1,,return std::shared_ptr<Ret>();,2,141,5
+64566,RETURN,-1,,return (a < b) ? a : b;,4,37,1
+64579,RETURN,-1,,return (a > b) ? a : b;,4,43,1
+64809,RETURN,-1,,return *reinterpret_cast<T*>(&storage);,3,63,1
+64819,RETURN,-1,,return *reinterpret_cast<const T*>(&storage);,3,68,1
+64829,RETURN,-1,,return value();,3,73,1
+64835,RETURN,-1,,return value();,3,78,1
+64947,RETURN,-1,,return !!(static_cast<uint32_t>(a) & static_cast<uint32_t>(b));,2,35,1
+64963,RETURN,-1,,return static_cast<HexdumpFlags>(static_cast<uint32_t>(a) | static_cast<uint32_t>(b));,2,39,1
+65201,RETURN,-1,,return m_logger;,3,69,1
+65207,RETURN,-1,,return !!m_logger;,3,74,1
+65215,RETURN,-1,,return m_logger;,3,79,1
+65221,RETURN,-1,,return m_logger;,3,84,1
+65227,RETURN,-1,,return m_logger.get();,3,89,1
+65236,RETURN,-1,,return m_logger.get();,3,94,1
+66276,RETURN,-1,,return result;,2,38,4
+66300,RETURN,1,,return -1;,3,43,1
+66308,RETURN,1,,return -2;,3,45,1
+66362,RETURN,-1,,return -3;,3,60,2
+66365,RETURN,-1,,return 0;,2,62,12
+67235,RETURN,-1,,return status;,2,12,2
+67242,RETURN,-1,,return pool.ptr;,2,29,2
+67263,RETURN,-1,,return result;,2,39,4
+67286,RETURN,-1,,return result;,2,47,6
+67369,RETURN,-1,,return (CFStringRef)result;,2,63,5
+67407,RETURN,-1,,return (CFStringRef)result;,2,69,4

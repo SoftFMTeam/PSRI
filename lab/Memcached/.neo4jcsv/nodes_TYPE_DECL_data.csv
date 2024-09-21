@@ -1,0 +1,2526 @@
+30,TYPE_DECL,,assoc.c:<global>,NAMESPACE_BLOCK,<global>,1,assoc.c,assoc.c:<global>,,false,1,<global>,14
+861,TYPE_DECL,,,,"struct assoc_iterator {
+    uint64_t bucket;
+    item *it;
+    item *next;
+    bool bucket_locked;
+}",1,assoc.c,assoc_iterator,,false,292,assoc_iterator,30
+1071,TYPE_DECL,,assoc.h:<global>,NAMESPACE_BLOCK,<global>,1,assoc.h,assoc.h:<global>,,false,1,<global>,1
+1159,TYPE_DECL,,authfile.c:<global>,NAMESPACE_BLOCK,<global>,1,authfile.c,authfile.c:<global>,,false,1,<global>,11
+1162,TYPE_DECL,auth_t,,,"typedef struct auth_entry {
+    char *user;
+    size_t ulen;
+    char *pass;
+    size_t plen;
+}",1,authfile.c,auth_entry,,false,20,auth_entry,1
+1167,TYPE_DECL,auth_entry,,,"typedef struct auth_entry {
+    char *user;
+    size_t ulen;
+    char *pass;
+    size_t plen;
+} auth_t;",3,authfile.c,auth_t,,false,25,auth_t,2
+1493,TYPE_DECL,,authfile.h:<global>,NAMESPACE_BLOCK,<global>,1,authfile.h,authfile.h:<global>,,false,1,<global>,1
+1496,TYPE_DECL,,,,"enum authfile_ret {
+    AUTHFILE_OK = 0,
+    AUTHFILE_OOM,
+    AUTHFILE_STATFAIL, // not likely, but just to be sure
+    AUTHFILE_OPENFAIL,
+    AUTHFILE_MALFORMED,
+}",1,authfile.h,authfile_ret,,false,4,authfile_ret,1
+1509,TYPE_DECL,authfile_load,,,enum authfile_ret,1,authfile.h,authfile_ret,,false,13,authfile_ret,2
+1523,TYPE_DECL,,base64.c:<global>,NAMESPACE_BLOCK,<global>,1,base64.c,base64.c:<global>,,false,1,<global>,3
+2211,TYPE_DECL,,base64.h:<global>,NAMESPACE_BLOCK,<global>,1,base64.h,base64.h:<global>,,false,1,<global>,1
+2240,TYPE_DECL,,bipbuffer.c:<global>,NAMESPACE_BLOCK,<global>,1,bipbuffer.c,bipbuffer.c:<global>,,false,1,<global>,5
+2706,TYPE_DECL,,bipbuffer.h:<global>,NAMESPACE_BLOCK,<global>,1,bipbuffer.h,bipbuffer.h:<global>,,false,1,<global>,1
+2709,TYPE_DECL,bipbuf_t,,,"typedef struct
+{
+    unsigned long int size;
+
+    /* region A */
+    unsigned int a_start, a_end;
+
+    /* region B */
+    unsigned int b_end;
+
+    /* is B inuse? */
+    int b_inuse;
+
+    unsigned char data[];
+}",1,bipbuffer.h,bipbuf_t,,false,4,bipbuf_t,1
+2809,TYPE_DECL,,cache.c:<global>,NAMESPACE_BLOCK,<global>,1,cache.c,cache.c:<global>,,false,1,<global>,7
+3388,TYPE_DECL,,cache.h:<global>,NAMESPACE_BLOCK,<global>,1,cache.h,cache.h:<global>,,false,1,<global>,3
+3392,TYPE_DECL,,,,"struct cache_free_s {
+    STAILQ_ENTRY(cache_free_s) c_next;
+}",1,cache.h,cache_free_s,,false,12,cache_free_s,2
+3393,TYPE_DECL,c_next,,,STAILQ_ENTRY(cache_free_s),5,cache.h,cache_free_s.c_next,,false,13,cache_free_s.c_next,1
+3394,TYPE_DECL,stqe_next,,,cache_free_s,5,cache.h,cache_free_s.c_next.cache_free_s,,false,13,cache_free_s,1
+3397,TYPE_DECL,cache_t,,,"typedef struct {
+    /** Mutex to protect access to the structure */
+    pthread_mutex_t mutex;
+    /** Name of the cache objects in this cache (provided by the caller) */
+    char *name;
+    /** freelist of available buffers */
+    STAILQ_HEAD(cache_head, cache_free_s) head;
+    /** The size of each element in this cache */
+    size_t bufsize;
+    /** The capacity of the list of elements */
+    int freetotal;
+    /** Total malloc'ed objects */
+    int total;
+    /** The current number of free elements */
+    int freecurr;
+    /** A limit on the total number of elements */
+    int limit;
+}",1,cache.h,cache_t,,false,22,cache_t,3
+3400,TYPE_DECL,head,,,cache_head,5,cache.h,cache_t.cache_head,,false,28,cache_head,3
+3401,TYPE_DECL,stqh_first,,,cache_free_s,5,cache.h,cache_t.cache_head.cache_free_s,,false,28,cache_free_s,1
+3403,TYPE_DECL,stqh_last,,,cache_free_s,5,cache.h,cache_t.cache_head.cache_free_s,,false,28,cache_free_s,3
+3486,TYPE_DECL,,crawler.c:<global>,NAMESPACE_BLOCK,<global>,1,crawler.c,crawler.c:<global>,,false,1,<global>,17
+3489,TYPE_DECL,crawler_client_t,,,"typedef struct {
+    void *c; /* original connection structure. still with source thread attached. */
+    int sfd; /* client fd. */
+    bipbuf_t *buf; /* output buffer */
+    char *cbuf; /* current buffer */
+}",1,crawler.c,crawler_client_t,,false,27,crawler_client_t,1
+3495,TYPE_DECL,crawler_module_t,,,typedef struct _crawler_module_t,1,crawler.c,_crawler_module_t,,false,34,_crawler_module_t,3
+3496,TYPE_DECL,_crawler_module_t,,,typedef struct _crawler_module_t crawler_module_t;,34,crawler.c,crawler_module_t,,false,34,crawler_module_t,4
+3527,TYPE_DECL,crawler_module_reg_t,,,"typedef struct {
+    crawler_init_func init; /* run before crawl starts */
+    crawler_eval_func eval; /* runs on an item. */
+    crawler_doneclass_func doneclass; /* runs once per sub-crawler completion. */
+    crawler_finalize_func finalize; /* runs once when all sub-crawlers are done. */
+    bool needs_lock; /* whether or not we need the LRU lock held when eval is called */
+    bool needs_client; /* whether or not to grab onto the remote client */
+}",1,crawler.c,crawler_module_reg_t,,false,42,crawler_module_reg_t,10
+3535,TYPE_DECL,,,,"struct _crawler_module_t {
+    void *data; /* opaque data pointer */
+    crawler_client_t c;
+    crawler_module_reg_t *mod;
+}",1,crawler.c,_crawler_module_t,,false,51,_crawler_module_t,12
+3649,TYPE_DECL,active_crawler_type,,,enum crawler_run_type,1,crawler.c,crawler_run_type,,false,91,crawler_run_type,27
+6046,TYPE_DECL,,crawler.h:<global>,NAMESPACE_BLOCK,<global>,1,crawler.h,crawler.h:<global>,,false,1,<global>,1
+6049,TYPE_DECL,crawlerstats_t,,,"typedef struct {
+    uint64_t histo[61];
+    uint64_t ttl_hourplus;
+    uint64_t noexp;
+    uint64_t reclaimed;
+    uint64_t seen;
+    rel_time_t start_time;
+    rel_time_t end_time;
+    bool run_complete;
+}",1,crawler.h,crawlerstats_t,,false,6,crawlerstats_t,1
+6065,TYPE_DECL,,,,"struct crawler_expired_data {
+    pthread_mutex_t lock;
+    crawlerstats_t crawlerstats[POWER_LARGEST];
+    /* redundant with crawlerstats_t so we can get overall start/stop/done */
+    rel_time_t start_time;
+    rel_time_t end_time;
+    bool crawl_complete;
+    bool is_external; /* whether this was an alloc local or remote to the module. */
+}",1,crawler.h,crawler_expired_data,,false,17,crawler_expired_data,3
+6078,TYPE_DECL,,,,"enum crawler_result_type {
+    CRAWLER_OK=0, CRAWLER_RUNNING, CRAWLER_BADCLASS, CRAWLER_NOTSTARTED, CRAWLER_ERROR
+}",1,crawler.h,crawler_result_type,,false,27,crawler_result_type,4
+6106,TYPE_DECL,lru_crawler_crawl,,,enum crawler_result_type,1,crawler.h,crawler_result_type,,false,35,crawler_result_type,8
+6138,TYPE_DECL,,crc32c.c:<global>,NAMESPACE_BLOCK,<global>,1,crc32c.c,crc32c.c:<global>,,false,1,<global>,5
+7033,TYPE_DECL,,crc32c.h:<global>,NAMESPACE_BLOCK,<global>,1,crc32c.h,crc32c.h:<global>,,false,1,<global>,2
+7068,TYPE_DECL,,daemon.c:<global>,NAMESPACE_BLOCK,<global>,1,daemon.c,daemon.c:<global>,,false,1,<global>,6
+7194,TYPE_DECL,,darwin_priv.c:<global>,NAMESPACE_BLOCK,<global>,1,darwin_priv.c,darwin_priv.c:<global>,,false,1,<global>,6
+7231,TYPE_DECL,,extstore.c:<global>,NAMESPACE_BLOCK,<global>,1,extstore.c,extstore.c:<global>,,false,1,<global>,16
+7234,TYPE_DECL,_store_wbuf,,,"typedef struct __store_wbuf {
+    struct __store_wbuf *next;
+    char *buf;
+    char *buf_pos;
+    unsigned int free;
+    unsigned int size;
+    unsigned int offset; /* offset into page this write starts at */
+    bool full; /* done writing to this page */
+    bool flushed; /* whether wbuf has been flushed to disk */
+}",1,extstore.c,__store_wbuf,,false,45,__store_wbuf,1
+7235,TYPE_DECL,next,,,struct __store_wbuf,5,extstore.c,__store_wbuf.__store_wbuf,,false,46,__store_wbuf,1
+7244,TYPE_DECL,__store_wbuf,,,"typedef struct __store_wbuf {
+    struct __store_wbuf *next;
+    char *buf;
+    char *buf_pos;
+    unsigned int free;
+    unsigned int size;
+    unsigned int offset; /* offset into page this write starts at */
+    bool full; /* done writing to this page */
+    bool flushed; /* whether wbuf has been flushed to disk */
+} _store_wbuf;",3,extstore.c,_store_wbuf,,false,54,_store_wbuf,2
+7245,TYPE_DECL,store_page,,,"typedef struct _store_page {
+    pthread_mutex_t mutex; /* Need to be held for most operations */
+    uint64_t obj_count; /* _delete can decrease post-closing */
+    uint64_t bytes_used; /* _delete can decrease post-closing */
+    uint64_t offset; /* starting address of page within fd */
+    unsigned int version;
+    unsigned int refcount;
+    unsigned int allocated;
+    unsigned int written; /* item offsets can be past written if wbuf not flushed */
+    unsigned int bucket; /* which bucket the page is linked into */
+    unsigned int free_bucket; /* which bucket this page returns to when freed */
+    int fd;
+    unsigned short id;
+    bool active; /* actively being written to */
+    bool closed; /* closed and draining before free */
+    bool free; /* on freelist */
+    _store_wbuf *wbuf; /* currently active wbuf from the stack */
+    struct _store_page *next;
+}",1,extstore.c,_store_page,,false,56,_store_page,3
+7262,TYPE_DECL,next,,,struct _store_page,5,extstore.c,_store_page._store_page,,false,73,_store_page,17
+7264,TYPE_DECL,_store_page,,,"typedef struct _store_page {
+    pthread_mutex_t mutex; /* Need to be held for most operations */
+    uint64_t obj_count; /* _delete can decrease post-closing */
+    uint64_t bytes_used; /* _delete can decrease post-closing */
+    uint64_t offset; /* starting address of page within fd */
+    unsigned int version;
+    unsigned int refcount;
+    unsigned int allocated;
+    unsigned int written; /* item offsets can be past written if wbuf not flushed */
+    unsigned int bucket; /* which bucket the page is linked into */
+    unsigned int free_bucket; /* which bucket this page returns to when freed */
+    int fd;
+    unsigned short id;
+    bool active; /* actively being written to */
+    bool closed; /* closed and draining before free */
+    bool free; /* on freelist */
+    _store_wbuf *wbuf; /* currently active wbuf from the stack */
+    struct _store_page *next;
+} store_page;",3,extstore.c,store_page,,false,74,store_page,4
+7265,TYPE_DECL,store_engine,,,typedef struct store_engine,1,extstore.c,store_engine,,false,76,store_engine,5
+7266,TYPE_DECL,store_engine,,,typedef struct store_engine store_engine;,29,extstore.c,store_engine,,false,76,store_engine,6
+7267,TYPE_DECL,store_io_thread,,,"typedef struct {
+    pthread_mutex_t mutex;
+    pthread_cond_t cond;
+    obj_io *queue;
+    obj_io *queue_tail;
+    store_engine *e;
+    unsigned int depth; // queue depth
+}",1,extstore.c,store_io_thread,,false,77,store_io_thread,7
+7275,TYPE_DECL,store_maint_thread,,,"typedef struct {
+    pthread_mutex_t mutex;
+    pthread_cond_t cond;
+    store_engine *e;
+}",1,extstore.c,store_maint_thread,,false,86,store_maint_thread,9
+7280,TYPE_DECL,,,,"struct store_engine {
+    pthread_mutex_t mutex; /* covers internal stacks and variables */
+    store_page *pages; /* directly addressable page list */
+    _store_wbuf *wbuf_stack; /* wbuf freelist */
+    obj_io *io_stack; /* IO's to use with submitting wbuf's */
+    store_io_thread *io_threads;
+    store_maint_thread *maint_thread;
+    store_page *page_freelist;
+    store_page **page_buckets; /* stack of pages currently allocated to each bucket */
+    store_page **free_page_buckets; /* stack of use-case isolated free pages */
+    size_t page_size;
+    unsigned int version; /* global version counter */
+    unsigned int last_io_thread; /* round robin the IO threads */
+    unsigned int io_threadcount; /* count of IO threads */
+    unsigned int page_count;
+    unsigned int page_free; /* unallocated pages */
+    unsigned int page_bucketcount; /* count of potential page buckets */
+    unsigned int free_page_bucketcount; /* count of free page buckets */
+    unsigned int io_depth; /* FIXME...",1,extstore.c,store_engine,,false,92,store_engine,11
+7300,TYPE_DECL,stats,,,struct extstore_stats,5,extstore.c,store_engine.extstore_stats,,false,112,extstore_stats,20
+10668,TYPE_DECL,,extstore.h:<global>,NAMESPACE_BLOCK,<global>,1,extstore.h,extstore.h:<global>,,false,1,<global>,1
+10671,TYPE_DECL,,,,"struct extstore_page_data {
+    uint64_t version;
+    uint64_t bytes_used;
+    unsigned int bucket;
+    unsigned int free_bucket;
+}",1,extstore.h,extstore_page_data,,false,7,extstore_page_data,1
+10676,TYPE_DECL,,,,"struct extstore_stats {
+    uint64_t page_allocs;
+    uint64_t page_count; /* total page count */
+    uint64_t page_evictions;
+    uint64_t page_reclaims;
+    uint64_t page_size; /* size in bytes per page (supplied by caller) */
+    uint64_t pages_free; /* currently unallocated/unused pages */
+    uint64_t pages_used;
+    uint64_t objects_evicted;
+    uint64_t objects_read;
+    uint64_t objects_written;
+    uint64_t objects_used; /* total number of objects stored */
+    uint64_t bytes_evicted;
+    uint64_t bytes_written;
+    uint64_t bytes_read; /* wbuf - read -> bytes read from storage */
+    uint64_t bytes_used; /* total number of bytes stored */
+    uint64_t bytes_fragmented; /* see above comment */
+    uint64_t io_queue;
+    struct extstore_page_data *page_data;
+}",1,extstore.h,extstore_stats,,false,20,extstore_stats,2
+10694,TYPE_DECL,page_data,,,struct extstore_page_data,5,extstore.h,extstore_stats.extstore_page_data,,false,38,extstore_page_data,18
+10696,TYPE_DECL,,,,"struct extstore_conf {
+    unsigned int page_size; // ideally 64-256M in size
+    unsigned int page_count;
+    unsigned int page_buckets; // number of different writeable pages
+    unsigned int free_page_buckets; // buckets of dedicated pages (see code)
+    unsigned int wbuf_size; // must divide cleanly into page_size
+    unsigned int wbuf_count; // this might get locked to ""2 per active page""
+    unsigned int io_threadcount;
+    unsigned int io_depth; // with normal I/O, hits locks less. req'd for AIO
+}",1,extstore.h,extstore_conf,,false,44,extstore_conf,3
+10705,TYPE_DECL,,,,"struct extstore_conf_file {
+    unsigned int page_count;
+    char *file;
+    int fd; // internal usage
+    uint64_t offset; // internal usage
+    unsigned int bucket; // free page bucket
+    unsigned int free_bucket; // specialized free bucket
+    struct extstore_conf_file *next;
+}",1,extstore.h,extstore_conf_file,,false,55,extstore_conf_file,4
+10712,TYPE_DECL,next,,,struct extstore_conf_file,5,extstore.h,extstore_conf_file.extstore_conf_file,,false,62,extstore_conf_file,7
+10714,TYPE_DECL,,,,"enum obj_io_mode {
+    OBJ_IO_READ = 0,
+    OBJ_IO_WRITE,
+}",1,extstore.h,obj_io_mode,,false,65,obj_io_mode,5
+10724,TYPE_DECL,obj_io,,,typedef struct _obj_io,1,extstore.h,_obj_io,,false,70,_obj_io,6
+10725,TYPE_DECL,_obj_io,,,typedef struct _obj_io obj_io;,24,extstore.h,obj_io,,false,70,obj_io,7
+10733,TYPE_DECL,,,,"struct _obj_io {
+    void *data; /* user supplied data pointer */
+    struct _obj_io *next;
+    char *buf;  /* buffer of data to read or write to */
+    struct iovec *iov; /* alternatively, use this iovec */
+    unsigned int iovcnt; /* number of IOV's */
+    unsigned int page_version;     /* page version for read mode */
+    unsigned int len;     /* for both modes */
+    unsigned int offset;  /* for read mode */
+    unsigned short page_id; /* for read mode */
+    enum obj_io_mode mode;
+    /* callback pointers? */
+    obj_io_cb cb;
+}",1,extstore.h,_obj_io,,false,77,_obj_io,9
+10735,TYPE_DECL,next,,,struct _obj_io,5,extstore.h,_obj_io._obj_io,,false,79,_obj_io,2
+10738,TYPE_DECL,iov,,,struct iovec,5,extstore.h,_obj_io.iovec,,false,81,iovec,5
+10745,TYPE_DECL,mode,,,enum obj_io_mode,5,extstore.h,_obj_io.obj_io_mode,,false,87,obj_io_mode,12
+10748,TYPE_DECL,,,,"enum extstore_res {
+    EXTSTORE_INIT_BAD_WBUF_SIZE = 1,
+    EXTSTORE_INIT_NEED_MORE_WBUF,
+    EXTSTORE_INIT_NEED_MORE_BUCKETS,
+    EXTSTORE_INIT_PAGE_WBUF_ALIGNMENT,
+    EXTSTORE_INIT_TOO_MANY_PAGES,
+    EXTSTORE_INIT_OOM,
+    EXTSTORE_INIT_OPEN_FAIL,
+    EXTSTORE_INIT_THREAD_FAIL
+}",1,extstore.h,extstore_res,,false,92,extstore_res,10
+10852,TYPE_DECL,,freebsd_priv.c:<global>,NAMESPACE_BLOCK,<global>,1,freebsd_priv.c,freebsd_priv.c:<global>,,false,1,<global>,8
+10861,TYPE_DECL,,globals.c:<global>,NAMESPACE_BLOCK,<global>,1,globals.c,globals.c:<global>,,false,1,<global>,2
+10865,TYPE_DECL,stats,,,struct stats,1,globals.c,stats,,false,22,stats,2
+10867,TYPE_DECL,stats_state,,,struct stats_state,1,globals.c,stats_state,,false,23,stats_state,4
+10869,TYPE_DECL,settings,,,struct settings,1,globals.c,settings,,false,24,settings,6
+10871,TYPE_DECL,slab_rebal,,,struct slab_rebalance,1,globals.c,slab_rebalance,,false,25,slab_rebalance,8
+10884,TYPE_DECL,,hash.c:<global>,NAMESPACE_BLOCK,<global>,1,hash.c,hash.c:<global>,,false,1,<global>,5
+10951,TYPE_DECL,,hash.h:<global>,NAMESPACE_BLOCK,<global>,1,hash.h,hash.h:<global>,,false,1,<global>,1
+10961,TYPE_DECL,,,,"enum hashfunc_type {
+    JENKINS_HASH=0, MURMUR3_HASH, XXH3_HASH
+}",1,hash.h,hashfunc_type,,false,7,hashfunc_type,3
+11017,TYPE_DECL,,items.c:<global>,NAMESPACE_BLOCK,<global>,1,items.c,items.c:<global>,,false,1,<global>,20
+11046,TYPE_DECL,itemstats_t,,,"typedef struct {
+    uint64_t evicted;
+    uint64_t evicted_nonzero;
+    uint64_t reclaimed;
+    uint64_t outofmemory;
+    uint64_t tailrepairs;
+    uint64_t expired_unfetched; /* items reclaimed but never touched */
+    uint64_t evicted_unfetched; /* items evicted but never touched */
+    uint64_t evicted_active; /* items evicted that should have been shuffled */
+    uint64_t crawler_reclaimed;
+    uint64_t crawler_items_checked;
+    uint64_t lrutail_reflocked;
+    uint64_t moves_to_cold;
+    uint64_t moves_to_warm;
+    uint64_t moves_within_lru;
+    uint64_t direct_reclaims;
+    uint64_t hits_to_hot;
+    uint64_t hits_to_warm;
+    uint64_t hits_to_cold;
+    uint64_t hits_to_temp;
+    uint64_t mem_requested;
+    rel_time_t evicted_time;
+}",1,items.c,itemstats_t,,false,31,itemstats_t,5
+11196,TYPE_DECL,lru_bump_buf,,,"typedef struct _lru_bump_buf {
+    struct _lru_bump_buf *prev;
+    struct _lru_bump_buf *next;
+    pthread_mutex_t mutex;
+    bipbuf_t *buf;
+    uint64_t dropped;
+}",1,items.c,_lru_bump_buf,,false,88,_lru_bump_buf,37
+11197,TYPE_DECL,prev,,,struct _lru_bump_buf,5,items.c,_lru_bump_buf._lru_bump_buf,,false,89,_lru_bump_buf,1
+11199,TYPE_DECL,next,,,struct _lru_bump_buf,5,items.c,_lru_bump_buf._lru_bump_buf,,false,90,_lru_bump_buf,3
+11204,TYPE_DECL,_lru_bump_buf,,,"typedef struct _lru_bump_buf {
+    struct _lru_bump_buf *prev;
+    struct _lru_bump_buf *next;
+    pthread_mutex_t mutex;
+    bipbuf_t *buf;
+    uint64_t dropped;
+} lru_bump_buf;",3,items.c,lru_bump_buf,,false,94,lru_bump_buf,38
+11205,TYPE_DECL,lru_bump_entry,,,"typedef struct {
+    item *it;
+    uint32_t hv;
+}",1,items.c,lru_bump_entry,,false,96,lru_bump_entry,39
+18745,TYPE_DECL,,items.h:<global>,NAMESPACE_BLOCK,<global>,1,items.h,items.h:<global>,,false,1,<global>,1
+18866,TYPE_DECL,,,,"struct lru_pull_tail_return {
+    item *it;
+    uint32_t hv;
+}",1,items.h,lru_pull_tail_return,,false,42,lru_pull_tail_return,22
+18944,TYPE_DECL,item_stats_automove,,,"typedef struct {
+    int64_t evicted;
+    int64_t outofmemory;
+    uint32_t age;
+}",1,items.h,item_stats_automove,,false,67,item_stats_automove,35
+19023,TYPE_DECL,,itoa_ljust.c:<global>,NAMESPACE_BLOCK,<global>,1,itoa_ljust.c,itoa_ljust.c:<global>,,false,1,<global>,3
+19420,TYPE_DECL,,itoa_ljust.h:<global>,NAMESPACE_BLOCK,<global>,1,itoa_ljust.h,itoa_ljust.h:<global>,,false,1,<global>,2
+19453,TYPE_DECL,,jenkins_hash.c:<global>,NAMESPACE_BLOCK,<global>,1,jenkins_hash.c,jenkins_hash.c:<global>,,false,1,<global>,3
+19458,TYPE_DECL,,jenkins_hash.h:<global>,NAMESPACE_BLOCK,<global>,1,jenkins_hash.h,jenkins_hash.h:<global>,,false,1,<global>,1
+19487,TYPE_DECL,,linux_priv.c:<global>,NAMESPACE_BLOCK,<global>,1,linux_priv.c,linux_priv.c:<global>,,false,1,<global>,10
+19549,TYPE_DECL,act,,,static const struct sigaction,1,linux_priv.c,sigaction,,false,45,sigaction,3
+19589,TYPE_DECL,,logger.c:<global>,NAMESPACE_BLOCK,<global>,1,logger.c,logger.c:<global>,,false,1,<global>,12
+19625,TYPE_DECL,watchers_pollfds,,,struct pollfd,1,logger.c,pollfd,,false,46,pollfd,19
+22262,TYPE_DECL,,logger.h:<global>,NAMESPACE_BLOCK,<global>,1,logger.h,logger.h:<global>,,false,1,<global>,2
+22265,TYPE_DECL,unsigned int,,,typedef unsigned int rel_time_t;,22,logger.h,rel_time_t,,false,14,rel_time_t,1
+22266,TYPE_DECL,,,,"enum log_entry_type {
+    LOGGER_ASCII_CMD = 0,
+    LOGGER_EVICTION,
+    LOGGER_ITEM_GET,
+    LOGGER_ITEM_STORE,
+    LOGGER_CRAWLER_STATUS,
+    LOGGER_SLAB_MOVE,
+    LOGGER_CONNECTION_NEW,
+    LOGGER_CONNECTION_CLOSE,
+#ifdef EXTSTORE
+    LOGGER_EXTSTORE_WRITE,
+    LOGGER_COMPACT_START,
+    LOGGER_COMPACT_ABORT,
+    LOGGER_COMPACT_READ_START,
+    LOGGER_COMPACT_READ_END,
+    LOGGER_COMPACT_END,
+    LOGGER_COMPACT_FRAGINFO,
+#endif
+#ifdef PROXY
+    LOGGER_PROXY_CONFIG,
+    LOGGER_PROXY_RAW,
+    LOGGER_PROXY_ERROR,
+    LOGGER_PROXY_USER,
+    LOGGER_PROXY_REQ,
+    LOGGER_PROXY_BE_ERROR,
+#endif
+}",1,logger.h,log_entry_type,,false,16,log_entry_type,2
+22282,TYPE_DECL,,,,"enum logger_ret_type {
+    LOGGER_RET_OK = 0,
+    LOGGER_RET_NOSPACE,
+    LOGGER_RET_ERR
+}",1,logger.h,logger_ret_type,,false,44,logger_ret_type,3
+22293,TYPE_DECL,,,,"enum logger_parse_entry_ret {
+    LOGGER_PARSE_ENTRY_OK = 0,
+    LOGGER_PARSE_ENTRY_FULLBUF,
+    LOGGER_PARSE_ENTRY_FAILED
+}",1,logger.h,logger_parse_entry_ret,,false,50,logger_parse_entry_ret,4
+22304,TYPE_DECL,logentry,,,typedef struct _logentry,1,logger.h,_logentry,,false,56,_logentry,5
+22305,TYPE_DECL,_logentry,,,typedef struct _logentry logentry;,26,logger.h,logentry,,false,56,logentry,6
+22306,TYPE_DECL,entry_details,,,typedef struct _entry_details,1,logger.h,_entry_details,,false,57,_entry_details,7
+22307,TYPE_DECL,_entry_details,,,typedef struct _entry_details entry_details;,31,logger.h,entry_details,,false,57,entry_details,8
+22322,TYPE_DECL,,,,"struct _entry_details {
+    int reqlen;
+    uint16_t eflags;
+    entry_log_cb log_cb;
+    entry_parse_cb parse_cb;
+    char *format;
+}",1,logger.h,_entry_details,,false,62,_entry_details,11
+22328,TYPE_DECL,,,,"struct logentry_eviction {
+    long long int exptime;
+    int nbytes;
+    uint32_t latime;
+    uint16_t it_flags;
+    uint8_t nkey;
+    uint8_t clsid;
+    char key[];
+}",1,logger.h,logentry_eviction,,false,71,logentry_eviction,12
+22341,TYPE_DECL,,,,"struct logentry_item_get {
+    uint8_t was_found;
+    uint8_t nkey;
+    uint8_t clsid;
+    int nbytes;
+    int sfd;
+    char key[];
+}",1,logger.h,logentry_item_get,,false,91,logentry_item_get,13
+22353,TYPE_DECL,,,,"struct logentry_item_store {
+    int status;
+    int cmd;
+    rel_time_t ttl;
+    uint8_t nkey;
+    uint8_t clsid;
+    int nbytes;
+    int sfd;
+    char key[];
+}",1,logger.h,logentry_item_store,,false,100,logentry_item_store,14
+22367,TYPE_DECL,,,,"struct logentry_conn_event {
+    int transport;
+    int reason;
+    int sfd;
+    struct sockaddr_in6 addr;
+}",1,logger.h,logentry_conn_event,,false,111,logentry_conn_event,15
+22371,TYPE_DECL,addr,,,struct sockaddr_in6,5,logger.h,logentry_conn_event.sockaddr_in6,,false,115,sockaddr_in6,4
+22373,TYPE_DECL,,,,"struct _logentry {
+    enum log_entry_type event;
+    uint8_t pad;
+    uint16_t eflags;
+    uint64_t gid;
+    struct timeval tv; /* not monotonic! */
+    int size;
+    union {
+        char end;
+    } data[];
+}",1,logger.h,_logentry,,false,135,_logentry,16
+22374,TYPE_DECL,event,,,enum log_entry_type,5,logger.h,_logentry.log_entry_type,,false,136,log_entry_type,1
+22379,TYPE_DECL,tv,,,struct timeval,5,logger.h,_logentry.timeval,,false,140,timeval,6
+22382,TYPE_DECL,data,,,"union {
+        char end;
+    }",5,logger.h,_logentry.data,,false,142,_logentry.data,9
+22390,TYPE_DECL,logger,,,"typedef struct _logger {
+    struct _logger *prev;
+    struct _logger *next;
+    pthread_mutex_t mutex; /* guard for this + *buf */
+    uint64_t written; /* entries written to the buffer */
+    uint64_t dropped; /* entries dropped */
+    uint64_t blocked; /* times blocked instead of dropped */
+    uint16_t fetcher_ratio; /* log one out of every N fetches */
+    uint16_t mutation_ratio; /* log one out of every N mutations */
+    uint16_t eflags; /* flags this logger should log */
+    bipbuf_t *buf;
+    const entry_details *entry_map;
+}",1,logger.h,_logger,,false,159,_logger,17
+22391,TYPE_DECL,prev,,,struct _logger,5,logger.h,_logger._logger,,false,160,_logger,1
+22393,TYPE_DECL,next,,,struct _logger,5,logger.h,_logger._logger,,false,161,_logger,3
+22404,TYPE_DECL,_logger,,,"typedef struct _logger {
+    struct _logger *prev;
+    struct _logger *next;
+    pthread_mutex_t mutex; /* guard for this + *buf */
+    uint64_t written; /* entries written to the buffer */
+    uint64_t dropped; /* entries dropped */
+    uint64_t blocked; /* times blocked instead of dropped */
+    uint16_t fetcher_ratio; /* log one out of every N fetches */
+    uint16_t mutation_ratio; /* log one out of every N mutations */
+    uint16_t eflags; /* flags this logger should log */
+    bipbuf_t *buf;
+    const entry_details *entry_map;
+} logger;",3,logger.h,logger,,false,171,logger,18
+22405,TYPE_DECL,,,,"enum logger_watcher_type {
+    LOGGER_WATCHER_STDERR = 0,
+    LOGGER_WATCHER_CLIENT = 1
+}",1,logger.h,logger_watcher_type,,false,173,logger_watcher_type,19
+22418,TYPE_DECL,logger_watcher,,,"typedef struct  {
+    void *c; /* original connection structure. still with source thread attached */
+    int sfd; /* client fd */
+    int id; /* id number for watcher list */
+    uint64_t skipped; /* lines skipped since last successful print */
+    uint64_t min_gid; /* don't show log entries older than this GID */
+    bool failed_flush; /* recently failed to write out (EAGAIN), wait before retry */
+    enum logger_watcher_type t; /* stderr, client, syslog, etc */
+    uint16_t eflags; /* flags we are interested in */
+    bipbuf_t *buf; /* per-watcher output buffer */
+}",1,logger.h,logger_watcher,,false,178,logger_watcher,20
+22425,TYPE_DECL,t,,,enum logger_watcher_type,5,logger.h,logger_watcher.logger_watcher_type,,false,185,logger_watcher_type,7
+22430,TYPE_DECL,,,,"struct logger_stats {
+    uint64_t worker_dropped;
+    uint64_t worker_written;
+    uint64_t watcher_skipped;
+    uint64_t watcher_sent;
+    uint64_t watcher_count;
+}",1,logger.h,logger_stats,,false,191,logger_stats,22
+22452,TYPE_DECL,logger_log,,,enum logger_ret_type,1,logger.h,logger_ret_type,,false,216,logger_ret_type,27
+22454,TYPE_DECL,,,,"enum logger_add_watcher_ret {
+    LOGGER_ADD_WATCHER_TOO_MANY = 0,
+    LOGGER_ADD_WATCHER_OK,
+    LOGGER_ADD_WATCHER_FAILED
+}",1,logger.h,logger_add_watcher_ret,,false,218,logger_add_watcher_ret,29
+22465,TYPE_DECL,logger_add_watcher,,,enum logger_add_watcher_ret,1,logger.h,logger_add_watcher_ret,,false,224,logger_add_watcher_ret,30
+22483,TYPE_DECL,,md5.c:<global>,NAMESPACE_BLOCK,<global>,1,md5.c,md5.c:<global>,,false,1,<global>,3
+25568,TYPE_DECL,,md5.h:<global>,NAMESPACE_BLOCK,<global>,1,md5.h,md5.h:<global>,,false,1,<global>,1
+25571,TYPE_DECL,unsigned char,,,typedef unsigned char md5_byte_t;,23,md5.h,md5_byte_t,,false,63,md5_byte_t,1
+25572,TYPE_DECL,unsigned int,,,typedef unsigned int md5_word_t;,22,md5.h,md5_word_t,,false,64,md5_word_t,2
+25573,TYPE_DECL,md5_state_t,,,"typedef struct md5_state_s {
+    md5_word_t count[2];	/* message length in bits, lsw first */
+    md5_word_t abcd[4];		/* digest buffer */
+    md5_byte_t buf[64];		/* accumulate block */
+}",1,md5.h,md5_state_s,,false,67,md5_state_s,3
+25587,TYPE_DECL,md5_state_s,,,"typedef struct md5_state_s {
+    md5_word_t count[2];	/* message length in bits, lsw first */
+    md5_word_t abcd[4];		/* digest buffer */
+    md5_byte_t buf[64];		/* accumulate block */
+} md5_state_t;",3,md5.h,md5_state_t,,false,71,md5_state_t,4
+25672,TYPE_DECL,,memcached.c:<global>,NAMESPACE_BLOCK,<global>,1,memcached.c,memcached.c:<global>,,false,1,<global>,33
+25706,TYPE_DECL,,,,"enum try_read_result {
+    READ_DATA_RECEIVED,
+    READ_NO_DATA_RECEIVED,
+    READ_ERROR,            /** an error occurred (on the socket) (or client closed connection) */
+    READ_MEMORY_ERROR      /** failed to allocate more memory */
+}",1,memcached.c,try_read_result,,false,74,try_read_result,6
+25721,TYPE_DECL,try_read_network,,,static enum try_read_result,1,memcached.c,try_read_result,,false,84,try_read_result,9
+25723,TYPE_DECL,try_read_udp,,,static enum try_read_result,1,memcached.c,try_read_result,,false,85,try_read_result,11
+25779,TYPE_DECL,stats,,,struct stats,1,memcached.c,stats,,false,106,stats,23
+25781,TYPE_DECL,stats_state,,,struct stats_state,1,memcached.c,stats_state,,false,107,stats_state,25
+25783,TYPE_DECL,settings,,,struct settings,1,memcached.c,settings,,false,108,settings,27
+25787,TYPE_DECL,slab_rebal,,,struct slab_rebalance,1,memcached.c,slab_rebalance,,false,112,slab_rebalance,31
+25795,TYPE_DECL,main_base,,,static struct event_base,1,memcached.c,event_base,,false,123,event_base,37
+25797,TYPE_DECL,,,,"enum transmit_result {
+    TRANSMIT_COMPLETE,   /** All done writing. */
+    TRANSMIT_INCOMPLETE, /** More data remaining to write. */
+    TRANSMIT_SOFT_ERROR, /** Can't write any more right now. */
+    TRANSMIT_HARD_ERROR  /** Can't write (c->state is set to conn_closing) */
+}",1,memcached.c,transmit_result,,false,125,transmit_result,39
+25856,TYPE_DECL,transmit,,,static enum transmit_result,1,memcached.c,transmit_result,,false,148,transmit_result,43
+25866,TYPE_DECL,maxconnsevent,,,static struct event,1,memcached.c,event,,false,157,event,49
+39786,TYPE_DECL,clockevent,,,static struct event,1,memcached.c,event,,false,3909,event,141
+40447,TYPE_DECL,,,,"struct _mc_meta_data {
+    void *mmap_base;
+    uint64_t old_base;
+    char *slab_config; // string containing either factor or custom slab list.
+    int64_t time_delta;
+    uint64_t process_started;
+    uint32_t current_time;
+}",1,memcached.c,_mc_meta_data,,false,4472,_mc_meta_data,156
+44157,TYPE_DECL,,memcached.h:<global>,NAMESPACE_BLOCK,<global>,1,memcached.h,memcached.h:<global>,,false,1,<global>,30
+44169,TYPE_DECL,,,,"enum conn_states {
+    conn_listening,  /**< the socket which listens for connections */
+    conn_new_cmd,    /**< Prepare connection for next command */
+    conn_waiting,    /**< waiting for a readable socket */
+    conn_read,       /**< reading in a command line */
+    conn_parse_cmd,  /**< try to parse a command from the input buffer */
+    conn_write,      /**< writing out a simple response */
+    conn_nread,      /**< reading in a fixed number of bytes */
+    conn_swallow,    /**< swallowing unnecessary bytes w/o storing */
+    conn_closing,    /**< closing this connection */
+    conn_mwrite,     /**< writing out many items sequentially */
+    conn_closed,     /**< connection is closed */
+    conn_watch,      /**< held by the logger thread as a watcher */
+    conn_io_queue,   /**< wait on async. process to get response object */
+    conn_max_state   /**< Max state value (used for assertion) */
+}",1,memcached.h,conn_states,,false,199,conn_states,2
+44184,TYPE_DECL,,,,"enum bin_substates {
+    bin_no_state,
+    bin_reading_set_header,
+    bin_reading_cas_header,
+    bin_read_set_value,
+    bin_reading_get_key,
+    bin_reading_stat,
+    bin_reading_del_header,
+    bin_reading_incr_header,
+    bin_read_flush_exptime,
+    bin_reading_sasl_auth,
+    bin_reading_sasl_auth_data,
+    bin_reading_touch_key,
+}",1,memcached.h,bin_substates,,false,216,bin_substates,3
+44197,TYPE_DECL,,,,"enum protocol {
+    ascii_prot = 3, /* arbitrary value. */
+    binary_prot,
+    negotiating_prot, /* Discovering the protocol */
+#ifdef PROXY
+    proxy_prot,
+#endif
+}",1,memcached.h,protocol,,false,231,protocol,4
+44208,TYPE_DECL,,,,"enum network_transport {
+    local_transport, /* Unix sockets*/
+    tcp_transport,
+    udp_transport
+}",1,memcached.h,network_transport,,false,240,network_transport,5
+44212,TYPE_DECL,,,,"enum pause_thread_types {
+    PAUSE_WORKER_THREADS = 0,
+    PAUSE_ALL_THREADS,
+    RESUME_ALL_THREADS,
+    RESUME_WORKER_THREADS
+}",1,memcached.h,pause_thread_types,,false,246,pause_thread_types,6
+44224,TYPE_DECL,,,,"enum stop_reasons {
+    NOT_STOP,
+    GRACE_STOP,
+    EXIT_NORMALLY
+}",1,memcached.h,stop_reasons,,false,253,stop_reasons,7
+44228,TYPE_DECL,,,,"enum close_reasons {
+    ERROR_CLOSE,
+    NORMAL_CLOSE,
+    IDLE_TIMEOUT_CLOSE,
+    SHUTDOWN_CLOSE,
+}",1,memcached.h,close_reasons,,false,259,close_reasons,8
+44233,TYPE_DECL,,,,"enum store_item_type {
+    NOT_STORED=0, STORED, EXISTS, NOT_FOUND, TOO_LARGE, NO_MEMORY
+}",1,memcached.h,store_item_type,,false,276,store_item_type,9
+44247,TYPE_DECL,,,,"enum delta_result_type {
+    OK, NON_NUMERIC, EOM, DELTA_ITEM_NOT_FOUND, DELTA_ITEM_CAS_MISMATCH
+}",1,memcached.h,delta_result_type,,false,280,delta_result_type,10
+44253,TYPE_DECL,,,,"struct slab_stats {
+#define X(name) uint64_t    name;
+    SLAB_STATS_FIELDS
+#undef X
+}",1,memcached.h,slab_stats,,false,303,slab_stats,11
+44262,TYPE_DECL,,,,"struct thread_stats {
+    pthread_mutex_t   mutex;
+#define X(name) uint64_t    name;
+    THREAD_STATS_FIELDS
+#ifdef EXTSTORE
+    EXTSTORE_THREAD_STATS_FIELDS
+#endif
+#ifdef PROXY
+    PROXY_THREAD_STATS_FIELDS
+#endif
+#undef X
+    struct slab_stats slab_stats[MAX_NUMBER_OF_SLAB_CLASSES];
+    uint64_t lru_hits[POWER_LARGEST];
+    uint64_t read_buf_count;
+    uint64_t read_buf_bytes;
+    uint64_t read_buf_bytes_free;
+}",1,memcached.h,thread_stats,,false,356,thread_stats,12
+44290,TYPE_DECL,slab_stats,,,struct slab_stats,5,memcached.h,thread_stats.slab_stats,,false,367,slab_stats,28
+44310,TYPE_DECL,,,,"struct stats {
+    uint64_t      total_items;
+    uint64_t      total_conns;
+    uint64_t      rejected_conns;
+    uint64_t      malloc_fails;
+    uint64_t      listen_disabled_num;
+    uint64_t      slabs_moved;       /* times slabs were moved around */
+    uint64_t      slab_reassign_rescues; /* items rescued during slab move */
+    uint64_t      slab_reassign_evictions_nomem; /* valid items lost during slab move */
+    uint64_t      slab_reassign_inline_reclaim; /* valid items lost during slab move */
+    uint64_t      slab_reassign_chunk_rescues; /* chunked-item chunks recovered */
+    uint64_t      slab_reassign_busy_items; /* valid temporarily unmovable */
+    uint64_t      slab_reassign_busy_deletes; /* refcounted items killed */
+    uint64_t      lru_crawler_starts; /* Number of item crawlers kicked off */
+    uint64_t      lru_maintainer_juggles; /* number of LRU bg pokes */
+    uint64_t      time_in_listen_disabled_us;  /* elapsed time in microseconds while server unable t...",1,memcached.h,stats,,false,377,stats,13
+44335,TYPE_DECL,maxconns_entered,,,struct timeval,5,memcached.h,stats.timeval,,false,406,timeval,25
+44339,TYPE_DECL,,,,"struct stats_state {
+    uint64_t      curr_items;
+    uint64_t      curr_bytes;
+    uint64_t      curr_conns;
+    uint64_t      hash_bytes;       /* size used for hash tables */
+    unsigned int  conn_structs;
+    unsigned int  reserved_fds;
+    unsigned int  hash_power_level; /* Better hope it's not over 9000 */
+    unsigned int  log_watchers; /* number of currently active watchers */
+    bool          hash_is_expanding; /* If the hash table is being expanded */
+    bool          accepting_conns;  /* whether we are currently accepting */
+    bool          slab_reassign_running; /* slab reassign in progress */
+    bool          lru_crawler_running; /* crawl in progress */
+}",1,memcached.h,stats_state,,false,415,stats_state,14
+44352,TYPE_DECL,,,,"struct settings {
+    size_t maxbytes;
+    int maxconns;
+    int port;
+    int udpport;
+    char *inter;
+    int verbose;
+    rel_time_t oldest_live; /* ignore existing items older than this */
+    uint64_t oldest_cas; /* ignore existing items with CAS values lower than this */
+    int evict_to_free;
+    char *socketpath;   /* path to unix socket if using local socket */
+    char *auth_file;    /* path to user authentication file */
+    int access;  /* access mask (a la chmod) for unix domain socket */
+    double factor;          /* chunk size growth factor */
+    int chunk_size;
+    int num_threads;        /* number of worker (without dispatcher) libevent threads to run */
+    int num_threads_per_udp; /* number of worker threads serving each udp socket */
+    char prefix_delimiter;  /* character that marks a key prefix (for stats) */
+    int detail_enabled;     /* nonzero if we're collecting detailed stats */
+    int reqs_per_event;     /* Maximum number of io to process on each
+  ...",1,memcached.h,settings,,false,436,settings,15
+44373,TYPE_DECL,binding_protocol,,,enum protocol,5,memcached.h,settings.protocol,,false,458,protocol,21
+44446,TYPE_DECL,stats,,,extern struct stats,1,memcached.h,stats,,false,541,stats,16
+44448,TYPE_DECL,stats_state,,,extern struct stats_state,1,memcached.h,stats_state,,false,542,stats_state,18
+44451,TYPE_DECL,settings,,,extern struct settings,1,memcached.h,settings,,false,544,settings,21
+44453,TYPE_DECL,item,,,"typedef struct _stritem {
+    /* Protected by LRU locks */
+    struct _stritem *next;
+    struct _stritem *prev;
+    /* Rest are protected by an item lock */
+    struct _stritem *h_next;    /* hash chain next */
+    rel_time_t      time;       /* least recent access */
+    rel_time_t      exptime;    /* expire time */
+    int             nbytes;     /* size of data */
+    unsigned short  refcount;
+    uint16_t        it_flags;   /* ITEM_* above */
+    uint8_t         slabs_clsid;/* which slab class we're in */
+    uint8_t         nkey;       /* key length, w/terminating null and padding */
+    /* this odd type prevents type-punning issues when we do
+     * the little shuffle to save space when not using CAS. */
+    union {
+        uint64_t cas;
+        char end;
+    } data[];
+    /* if it_flags & ITEM_CAS we have 8 bytes CAS */
+    /* then null-terminated key */
+    /* then "" flags length\r\n"" (no terminating null) */
+    /* then data with terminating \r\n (no terminating null; it's...",1,memcached.h,_stritem,,false,575,_stritem,23
+44454,TYPE_DECL,next,,,struct _stritem,5,memcached.h,_stritem._stritem,,false,577,_stritem,1
+44456,TYPE_DECL,prev,,,struct _stritem,5,memcached.h,_stritem._stritem,,false,578,_stritem,3
+44458,TYPE_DECL,h_next,,,struct _stritem,5,memcached.h,_stritem._stritem,,false,580,_stritem,5
+44467,TYPE_DECL,data,,,"union {
+        uint64_t cas;
+        char end;
+    }",5,memcached.h,_stritem.data,,false,590,_stritem.data,14
+44476,TYPE_DECL,_stritem,,,"typedef struct _stritem {
+    /* Protected by LRU locks */
+    struct _stritem *next;
+    struct _stritem *prev;
+    /* Rest are protected by an item lock */
+    struct _stritem *h_next;    /* hash chain next */
+    rel_time_t      time;       /* least recent access */
+    rel_time_t      exptime;    /* expire time */
+    int             nbytes;     /* size of data */
+    unsigned short  refcount;
+    uint16_t        it_flags;   /* ITEM_* above */
+    uint8_t         slabs_clsid;/* which slab class we're in */
+    uint8_t         nkey;       /* key length, w/terminating null and padding */
+    /* this odd type prevents type-punning issues when we do
+     * the little shuffle to save space when not using CAS. */
+    union {
+        uint64_t cas;
+        char end;
+    } data[];
+    /* if it_flags & ITEM_CAS we have 8 bytes CAS */
+    /* then null-terminated key */
+    /* then "" flags length\r\n"" (no terminating null) */
+    /* then data with terminating \r\n (no terminating null; it's...",3,memcached.h,item,,false,598,item,24
+44477,TYPE_DECL,,,,"enum crawler_run_type {
+    CRAWLER_AUTOEXPIRE=0, CRAWLER_EXPIRED, CRAWLER_METADUMP
+}",1,memcached.h,crawler_run_type,,false,601,crawler_run_type,25
+44488,TYPE_DECL,crawler,,,"typedef struct {
+    struct _stritem *next;
+    struct _stritem *prev;
+    struct _stritem *h_next;    /* hash chain next */
+    rel_time_t      time;       /* least recent access */
+    rel_time_t      exptime;    /* expire time */
+    int             nbytes;     /* size of data */
+    unsigned short  refcount;
+    uint16_t        it_flags;   /* ITEM_* above */
+    uint8_t         slabs_clsid;/* which slab class we're in */
+    uint8_t         nkey;       /* key length, w/terminating null and padding */
+    uint32_t        remaining;  /* Max keys to crawl per slab per invocation */
+    uint64_t        reclaimed;  /* items reclaimed during this crawl. */
+    uint64_t        unfetched;  /* items reclaimed unfetched during this crawl. */
+    uint64_t        checked;    /* items examined during this crawl. */
+}",1,memcached.h,crawler,,false,605,crawler,26
+44489,TYPE_DECL,next,,,struct _stritem,5,memcached.h,crawler._stritem,,false,606,_stritem,1
+44491,TYPE_DECL,prev,,,struct _stritem,5,memcached.h,crawler._stritem,,false,607,_stritem,3
+44493,TYPE_DECL,h_next,,,struct _stritem,5,memcached.h,crawler._stritem,,false,608,_stritem,5
+44507,TYPE_DECL,item_chunk,,,"typedef struct _strchunk {
+    struct _strchunk *next;     /* points within its own chain. */
+    struct _strchunk *prev;     /* can potentially point to the head. */
+    struct _stritem  *head;     /* always points to the owner chunk */
+    int              size;      /* available chunk space in bytes */
+    int              used;      /* chunk space used */
+    int              nbytes;    /* used. */
+    unsigned short   refcount;  /* used? */
+    uint16_t         it_flags;  /* ITEM_* above. */
+    uint8_t          slabs_clsid; /* Same as above. */
+    uint8_t          orig_clsid; /* For obj hdr chunks slabs_clsid is fake. */
+    char data[];
+}",1,memcached.h,_strchunk,,false,623,_strchunk,28
+44508,TYPE_DECL,next,,,struct _strchunk,5,memcached.h,_strchunk._strchunk,,false,624,_strchunk,1
+44510,TYPE_DECL,prev,,,struct _strchunk,5,memcached.h,_strchunk._strchunk,,false,625,_strchunk,3
+44512,TYPE_DECL,head,,,struct _stritem,5,memcached.h,_strchunk._stritem,,false,626,_stritem,5
+44527,TYPE_DECL,_strchunk,,,"typedef struct _strchunk {
+    struct _strchunk *next;     /* points within its own chain. */
+    struct _strchunk *prev;     /* can potentially point to the head. */
+    struct _stritem  *head;     /* always points to the owner chunk */
+    int              size;      /* available chunk space in bytes */
+    int              used;      /* chunk space used */
+    int              nbytes;    /* used. */
+    unsigned short   refcount;  /* used? */
+    uint16_t         it_flags;  /* ITEM_* above. */
+    uint8_t          slabs_clsid; /* Same as above. */
+    uint8_t          orig_clsid; /* For obj hdr chunks slabs_clsid is fake. */
+    char data[];
+} item_chunk;",3,memcached.h,item_chunk,,false,635,item_chunk,29
+44528,TYPE_DECL,io_pending_t,,,typedef struct _io_pending_t,1,memcached.h,_io_pending_t,,false,668,_io_pending_t,30
+44529,TYPE_DECL,_io_pending_t,,,typedef struct _io_pending_t io_pending_t;,30,memcached.h,io_pending_t,,false,668,io_pending_t,31
+44530,TYPE_DECL,io_queue_t,,,typedef struct io_queue_s,1,memcached.h,io_queue_s,,false,669,io_queue_s,32
+44531,TYPE_DECL,io_queue_s,,,typedef struct io_queue_s io_queue_t;,27,memcached.h,io_queue_t,,false,669,io_queue_t,33
+44542,TYPE_DECL,,,,"struct io_queue_s {
+    void *ctx; // duplicated from io_queue_cb_t
+    void *stack_ctx; // module-specific context to be batch-submitted
+    int count; // ios to process before returning. only accessed by queue processor once submitted
+    int type; // duplicated from io_queue_cb_t
+}",1,memcached.h,io_queue_s,,false,687,io_queue_s,36
+44547,TYPE_DECL,io_queue_cb_t,,,"typedef struct io_queue_cb_s {
+    void *ctx; // untouched ptr for specific context
+    io_queue_stack_cb submit_cb; // callback given a full stack of pending IO's at once.
+    io_queue_stack_cb complete_cb;
+    io_queue_cb return_cb; // called on worker thread.
+    io_queue_cb finalize_cb; // called back on the worker thread.
+    int type;
+}",1,memcached.h,io_queue_cb_s,,false,694,io_queue_cb_s,37
+44554,TYPE_DECL,io_queue_cb_s,,,"typedef struct io_queue_cb_s {
+    void *ctx; // untouched ptr for specific context
+    io_queue_stack_cb submit_cb; // callback given a full stack of pending IO's at once.
+    io_queue_stack_cb complete_cb;
+    io_queue_cb return_cb; // called on worker thread.
+    io_queue_cb finalize_cb; // called back on the worker thread.
+    int type;
+} io_queue_cb_t;",3,memcached.h,io_queue_cb_t,,false,701,io_queue_cb_t,38
+44555,TYPE_DECL,mc_resp_bundle,,,typedef struct _mc_resp_bundle,1,memcached.h,_mc_resp_bundle,,false,703,_mc_resp_bundle,39
+44556,TYPE_DECL,_mc_resp_bundle,,,typedef struct _mc_resp_bundle mc_resp_bundle;,32,memcached.h,mc_resp_bundle,,false,703,mc_resp_bundle,40
+44557,TYPE_DECL,LIBEVENT_THREAD,,,"typedef struct {
+    pthread_t thread_id;        /* unique ID of this thread */
+    struct event_base *base;    /* libevent handle this thread uses */
+    struct event notify_event;  /* listen event for notify pipe */
+#ifdef HAVE_EVENTFD
+    int notify_event_fd;        /* notify counter */
+#else
+    int notify_receive_fd;      /* receiving end of notify pipe */
+    int notify_send_fd;         /* sending end of notify pipe */
+#endif
+    struct thread_stats stats;  /* Stats generated by this thread */
+    io_queue_cb_t io_queues[IO_QUEUE_COUNT];
+    struct conn_queue *ev_queue; /* Worker/conn event queue */
+    cache_t *rbuf_cache;        /* static-sized read buffers */
+    mc_resp_bundle *open_bundle;
+    cache_t *io_cache;          /* IO objects */
+#ifdef EXTSTORE
+    void *storage;              /* data object for storage system */
+#endif
+    logger *l;                  /* logger buffer */
+    void *lru_bump_buf;         /* async LRU bump buffer */
+#ifdef TLS
+    char   *ssl_wbuf;
+#...",1,memcached.h,LIBEVENT_THREAD,,false,704,LIBEVENT_THREAD,41
+44559,TYPE_DECL,base,,,struct event_base,5,memcached.h,LIBEVENT_THREAD.event_base,,false,706,event_base,2
+44561,TYPE_DECL,notify_event,,,struct event,5,memcached.h,LIBEVENT_THREAD.event,,false,707,event,4
+44566,TYPE_DECL,stats,,,struct thread_stats,5,memcached.h,LIBEVENT_THREAD.thread_stats,,false,714,thread_stats,9
+44569,TYPE_DECL,ev_queue,,,struct conn_queue,5,memcached.h,LIBEVENT_THREAD.conn_queue,,false,716,conn_queue,12
+44595,TYPE_DECL,mc_resp,,,"typedef struct _mc_resp {
+    mc_resp_bundle *bundle; // ptr back to bundle
+    struct _mc_resp *next; // choo choo.
+    int wbytes; // bytes to write out of wbuf: might be able to nuke this.
+    int tosend; // total bytes to send for this response
+    void *write_and_free; /** free this memory after finishing writing */
+    io_pending_t *io_pending; /* pending IO descriptor for this response */
+
+    item *item; /* item associated with this response object, with reference held */
+    struct iovec iov[MC_RESP_IOVCOUNT]; /* built-in iovecs to simplify network code */
+    int chunked_total; /* total amount of chunked item data to send. */
+    uint8_t iovcnt;
+    uint8_t chunked_data_iov; /* this iov is a pointer to chunked data header */
+
+    /* instruct transmit to skip this response object. used by storage engines
+     * to asynchronously kill an object that was queued to write
+     */
+    bool skip;
+    bool free; // double free detection.
+    // UDP bits. Copied in from the client....",1,memcached.h,_mc_resp,,false,743,_mc_resp,43
+44597,TYPE_DECL,next,,,struct _mc_resp,5,memcached.h,_mc_resp._mc_resp,,false,745,_mc_resp,2
+44604,TYPE_DECL,iov,,,struct iovec,5,memcached.h,_mc_resp.iovec,,false,752,iovec,9
+44614,TYPE_DECL,request_addr,,,struct sockaddr_in6,5,memcached.h,_mc_resp.sockaddr_in6,,false,766,sockaddr_in6,19
+44630,TYPE_DECL,_mc_resp,,,"typedef struct _mc_resp {
+    mc_resp_bundle *bundle; // ptr back to bundle
+    struct _mc_resp *next; // choo choo.
+    int wbytes; // bytes to write out of wbuf: might be able to nuke this.
+    int tosend; // total bytes to send for this response
+    void *write_and_free; /** free this memory after finishing writing */
+    io_pending_t *io_pending; /* pending IO descriptor for this response */
+
+    item *item; /* item associated with this response object, with reference held */
+    struct iovec iov[MC_RESP_IOVCOUNT]; /* built-in iovecs to simplify network code */
+    int chunked_total; /* total amount of chunked item data to send. */
+    uint8_t iovcnt;
+    uint8_t chunked_data_iov; /* this iov is a pointer to chunked data header */
+
+    /* instruct transmit to skip this response object. used by storage engines
+     * to asynchronously kill an object that was queued to write
+     */
+    bool skip;
+    bool free; // double free detection.
+    // UDP bits. Copied in from the client....",3,memcached.h,mc_resp,,false,770,mc_resp,44
+44631,TYPE_DECL,,,,"struct _mc_resp_bundle {
+    uint8_t refcount;
+    uint8_t next_check; // next object to check on assignment.
+    struct _mc_resp_bundle *next;
+    struct _mc_resp_bundle *prev;
+    mc_resp r[];
+}",1,memcached.h,_mc_resp_bundle,,false,773,_mc_resp_bundle,45
+44634,TYPE_DECL,next,,,struct _mc_resp_bundle,5,memcached.h,_mc_resp_bundle._mc_resp_bundle,,false,776,_mc_resp_bundle,3
+44636,TYPE_DECL,prev,,,struct _mc_resp_bundle,5,memcached.h,_mc_resp_bundle._mc_resp_bundle,,false,777,_mc_resp_bundle,5
+44644,TYPE_DECL,conn,,,typedef struct conn,1,memcached.h,conn,,false,781,conn,46
+44645,TYPE_DECL,conn,,,typedef struct conn conn;,21,memcached.h,conn,,false,781,conn,47
+44646,TYPE_DECL,,,,"struct _io_pending_t {
+    int io_queue_type; // matches one of IO_QUEUE_*
+    LIBEVENT_THREAD *thread;
+    conn *c;
+    mc_resp *resp; // associated response object
+    char data[120];
+}",1,memcached.h,_io_pending_t,,false,783,_io_pending_t,48
+44658,TYPE_DECL,,,,"struct conn {
+    sasl_conn_t *sasl_conn;
+    int    sfd;
+    bool sasl_started;
+    bool authenticated;
+    bool set_stale;
+    bool mset_res; /** uses mset format for return code */
+    bool close_after_write; /** flush write then move to close connection */
+    bool rbuf_malloced; /** read buffer was malloc'ed for ascii mget, needs free() */
+    bool item_malloced; /** item for conn_nread state is a temporary malloc */
+#ifdef TLS
+    SSL    *ssl;
+    char   *ssl_wbuf;
+    bool ssl_enabled;
+#endif
+    enum conn_states  state;
+    enum bin_substates substate;
+    rel_time_t last_cmd_time;
+    struct event event;
+    short  ev_flags;
+    short  which;   /** which events were just triggered */
+
+    char   *rbuf;   /** buffer to read commands into */
+    char   *rcurr;  /** but if we parsed some already, this is where we stopped */
+    int    rsize;   /** total allocated size of rbuf */
+    int    rbytes;  /** how much data, starting from rcur, do we have unparsed */
+
+    mc_resp *res...",1,memcached.h,conn,,false,794,conn,49
+44671,TYPE_DECL,state,,,enum conn_states,5,memcached.h,conn.conn_states,,false,809,conn_states,13
+44673,TYPE_DECL,substate,,,enum bin_substates,5,memcached.h,conn.bin_substates,,false,810,bin_substates,15
+44676,TYPE_DECL,event,,,struct event,5,memcached.h,conn.event,,false,812,event,18
+44694,TYPE_DECL,protocol,,,enum protocol,5,memcached.h,conn.protocol,,false,845,protocol,36
+44696,TYPE_DECL,transport,,,enum network_transport,5,memcached.h,conn.network_transport,,false,846,network_transport,38
+44698,TYPE_DECL,close_reason,,,enum close_reasons,5,memcached.h,conn.close_reasons,,false,847,close_reasons,40
+44701,TYPE_DECL,request_addr,,,struct sockaddr_in6,5,memcached.h,conn.sockaddr_in6,,false,851,sockaddr_in6,43
+44705,TYPE_DECL,stats,,,"struct {
+        char *buffer;
+        size_t size;
+        size_t offset;
+    }",5,memcached.h,conn.stats,,false,856,conn.stats,47
+44755,TYPE_DECL,,,,"struct slab_rebalance {
+    void *slab_start;
+    void *slab_end;
+    void *slab_pos;
+    int s_clsid;
+    int d_clsid;
+    uint32_t busy_items;
+    uint32_t rescues;
+    uint32_t evictions_nomem;
+    uint32_t inline_reclaim;
+    uint32_t chunk_rescues;
+    uint32_t busy_deletes;
+    uint32_t busy_loops;
+    uint8_t done;
+    uint8_t *completed;
+}",1,memcached.h,slab_rebalance,,false,892,slab_rebalance,53
+44770,TYPE_DECL,slab_rebal,,,extern struct slab_rebalance,1,memcached.h,slab_rebalance,,false,909,slab_rebalance,54
+44777,TYPE_DECL,do_add_delta,,,enum delta_result_type,1,memcached.h,delta_result_type,,false,917,delta_result_type,57
+44779,TYPE_DECL,do_store_item,,,enum store_item_type,1,memcached.h,store_item_type,,false,922,store_item_type,59
+44876,TYPE_DECL,add_delta,,,enum delta_result_type,1,memcached.h,delta_result_type,,false,964,delta_result_type,75
+45023,TYPE_DECL,store_item,,,enum store_item_type,1,memcached.h,store_item_type,,false,1004,store_item_type,102
+45173,TYPE_DECL,,murmur3_hash.c:<global>,NAMESPACE_BLOCK,<global>,1,murmur3_hash.c,murmur3_hash.c:<global>,,false,1,<global>,3
+45398,TYPE_DECL,,murmur3_hash.h:<global>,NAMESPACE_BLOCK,<global>,1,murmur3_hash.h,murmur3_hash.h:<global>,,false,1,<global>,3
+45421,TYPE_DECL,,openbsd_priv.c:<global>,NAMESPACE_BLOCK,<global>,1,openbsd_priv.c,openbsd_priv.c:<global>,,false,1,<global>,7
+45440,TYPE_DECL,,proto_bin.c:<global>,NAMESPACE_BLOCK,<global>,1,proto_bin.c,proto_bin.c:<global>,,false,1,<global>,7
+50448,TYPE_DECL,,proto_bin.h:<global>,NAMESPACE_BLOCK,<global>,1,proto_bin.h,proto_bin.h:<global>,,false,1,<global>,1
+50473,TYPE_DECL,,proto_proxy.c:<global>,NAMESPACE_BLOCK,<global>,1,proto_proxy.c,proto_proxy.c:<global>,,false,1,<global>,2
+53813,TYPE_DECL,,proto_proxy.h:<global>,NAMESPACE_BLOCK,<global>,1,proto_proxy.h,proto_proxy.h:<global>,,false,1,<global>,1
+53915,TYPE_DECL,,proto_text.c:<global>,NAMESPACE_BLOCK,<global>,1,proto_text.c,proto_text.c:<global>,,false,1,<global>,10
+53918,TYPE_DECL,token_t,,,"typedef struct token_s {
+    char *value;
+    size_t length;
+}",1,proto_text.c,token_s,,false,49,token_s,1
+53921,TYPE_DECL,token_s,,,"typedef struct token_s {
+    char *value;
+    size_t length;
+} token_t;",3,proto_text.c,token_t,,false,52,token_t,2
+56687,TYPE_DECL,,,,"struct _meta_flags {
+    unsigned int has_error :1; // flipped if we found an error during parsing.
+    unsigned int no_update :1;
+    unsigned int locked :1;
+    unsigned int vivify :1;
+    unsigned int la :1;
+    unsigned int hit :1;
+    unsigned int value :1;
+    unsigned int set_stale :1;
+    unsigned int no_reply :1;
+    unsigned int has_cas :1;
+    unsigned int new_ttl :1;
+    unsigned int key_binary:1;
+    char mode; // single character mode switch, common to ms/ma
+    rel_time_t exptime;
+    rel_time_t autoviv_exptime;
+    rel_time_t recache_time;
+    uint32_t client_flags;
+    uint64_t req_cas_id;
+    uint64_t delta; // ma
+    uint64_t initial; // ma
+}",1,proto_text.c,_meta_flags,,false,895,_meta_flags,14
+64237,TYPE_DECL,,proto_text.h:<global>,NAMESPACE_BLOCK,<global>,1,proto_text.h,proto_text.h:<global>,,false,1,<global>,1
+64263,TYPE_DECL,,protocol_binary.h:<global>,NAMESPACE_BLOCK,<global>,1,protocol_binary.h,protocol_binary.h:<global>,,false,1,<global>,1
+64266,TYPE_DECL,,,,"typedef enum {
+        PROTOCOL_BINARY_REQ = 0x80,
+        PROTOCOL_BINARY_RES = 0x81
+    }",5,protocol_binary.h,protocol_binary_magic,,false,53,protocol_binary_magic,1
+64280,TYPE_DECL,,,,"typedef enum {
+        PROTOCOL_BINARY_RESPONSE_SUCCESS = 0x00,
+        PROTOCOL_BINARY_RESPONSE_KEY_ENOENT = 0x01,
+        PROTOCOL_BINARY_RESPONSE_KEY_EEXISTS = 0x02,
+        PROTOCOL_BINARY_RESPONSE_E2BIG = 0x03,
+        PROTOCOL_BINARY_RESPONSE_EINVAL = 0x04,
+        PROTOCOL_BINARY_RESPONSE_NOT_STORED = 0x05,
+        PROTOCOL_BINARY_RESPONSE_DELTA_BADVAL = 0x06,
+        PROTOCOL_BINARY_RESPONSE_AUTH_ERROR = 0x20,
+        PROTOCOL_BINARY_RESPONSE_AUTH_CONTINUE = 0x21,
+        PROTOCOL_BINARY_RESPONSE_UNKNOWN_COMMAND = 0x81,
+        PROTOCOL_BINARY_RESPONSE_ENOMEM = 0x82
+    }",5,protocol_binary.h,protocol_binary_response_status,,false,62,protocol_binary_response_status,3
+64330,TYPE_DECL,,,,"typedef enum {
+        PROTOCOL_BINARY_CMD_GET = 0x00,
+        PROTOCOL_BINARY_CMD_SET = 0x01,
+        PROTOCOL_BINARY_CMD_ADD = 0x02,
+        PROTOCOL_BINARY_CMD_REPLACE = 0x03,
+        PROTOCOL_BINARY_CMD_DELETE = 0x04,
+        PROTOCOL_BINARY_CMD_INCREMENT = 0x05,
+        PROTOCOL_BINARY_CMD_DECREMENT = 0x06,
+        PROTOCOL_BINARY_CMD_QUIT = 0x07,
+        PROTOCOL_BINARY_CMD_FLUSH = 0x08,
+        PROTOCOL_BINARY_CMD_GETQ = 0x09,
+        PROTOCOL_BINARY_CMD_NOOP = 0x0a,
+        PROTOCOL_BINARY_CMD_VERSION = 0x0b,
+        PROTOCOL_BINARY_CMD_GETK = 0x0c,
+        PROTOCOL_BINARY_CMD_GETKQ = 0x0d,
+        PROTOCOL_BINARY_CMD_APPEND = 0x0e,
+        PROTOCOL_BINARY_CMD_PREPEND = 0x0f,
+        PROTOCOL_BINARY_CMD_STAT = 0x10,
+        PROTOCOL_BINARY_CMD_SETQ = 0x11,
+        PROTOCOL_BINARY_CMD_ADDQ = 0x12,
+        PROTOCOL_BINARY_CMD_REPLACEQ = 0x13,
+        PROTOCOL_BINARY_CMD_DELETEQ = 0x14,
+        PROTOCOL_BINARY_CMD_INCREMENTQ = 0x15,
+        PROTOCOL_BINARY_CMD_DECREMENTQ = 0x16...",5,protocol_binary.h,protocol_binary_command,,false,80,protocol_binary_command,5
+64528,TYPE_DECL,,,,"typedef enum {
+        PROTOCOL_BINARY_RAW_BYTES = 0x00
+    }",5,protocol_binary.h,protocol_binary_datatypes,,false,143,protocol_binary_datatypes,7
+64538,TYPE_DECL,protocol_binary_request_header,,,"typedef union {
+        struct {
+            uint8_t magic;
+            uint8_t opcode;
+            uint16_t keylen;
+            uint8_t extlen;
+            uint8_t datatype;
+            uint16_t reserved;
+            uint32_t bodylen;
+            uint32_t opaque;
+            uint64_t cas;
+        } request;
+        uint8_t bytes[24];
+    }",5,protocol_binary.h,protocol_binary_request_header,,false,151,protocol_binary_request_header,9
+64539,TYPE_DECL,request,,,"struct {
+            uint8_t magic;
+            uint8_t opcode;
+            uint16_t keylen;
+            uint8_t extlen;
+            uint8_t datatype;
+            uint16_t reserved;
+            uint32_t bodylen;
+            uint32_t opaque;
+            uint64_t cas;
+        }",9,protocol_binary.h,protocol_binary_request_header.request,,false,152,protocol_binary_request_header.request,1
+64558,TYPE_DECL,protocol_binary_response_header,,,"typedef union {
+        struct {
+            uint8_t magic;
+            uint8_t opcode;
+            uint16_t keylen;
+            uint8_t extlen;
+            uint8_t datatype;
+            uint16_t status;
+            uint32_t bodylen;
+            uint32_t opaque;
+            uint64_t cas;
+        } response;
+        uint8_t bytes[24];
+    }",5,protocol_binary.h,protocol_binary_response_header,,false,170,protocol_binary_response_header,11
+64559,TYPE_DECL,response,,,"struct {
+            uint8_t magic;
+            uint8_t opcode;
+            uint16_t keylen;
+            uint8_t extlen;
+            uint8_t datatype;
+            uint16_t status;
+            uint32_t bodylen;
+            uint32_t opaque;
+            uint64_t cas;
+        }",9,protocol_binary.h,protocol_binary_response_header.response,,false,171,protocol_binary_response_header.response,1
+64578,TYPE_DECL,protocol_binary_request_no_extras,,,"typedef union {
+        struct {
+            protocol_binary_request_header header;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_request_header)];
+    }",5,protocol_binary.h,protocol_binary_request_no_extras,,false,188,protocol_binary_request_no_extras,13
+64579,TYPE_DECL,message,,,"struct {
+            protocol_binary_request_header header;
+        }",9,protocol_binary.h,protocol_binary_request_no_extras.message,,false,189,protocol_binary_request_no_extras.message,1
+64591,TYPE_DECL,protocol_binary_response_no_extras,,,"typedef union {
+        struct {
+            protocol_binary_response_header header;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_response_header)];
+    }",5,protocol_binary.h,protocol_binary_response_no_extras,,false,198,protocol_binary_response_no_extras,15
+64592,TYPE_DECL,message,,,"struct {
+            protocol_binary_response_header header;
+        }",9,protocol_binary.h,protocol_binary_response_no_extras.message,,false,199,protocol_binary_response_no_extras.message,1
+64604,TYPE_DECL,anonymous_type_4,,,typedef protocol_binary_request_no_extras protocol_binary_request_get;,47,protocol_binary.h,protocol_binary_request_get,,false,209,protocol_binary_request_get,17
+64605,TYPE_DECL,anonymous_type_5,,,typedef protocol_binary_request_no_extras protocol_binary_request_getq;,47,protocol_binary.h,protocol_binary_request_getq,,false,210,protocol_binary_request_getq,18
+64606,TYPE_DECL,anonymous_type_6,,,typedef protocol_binary_request_no_extras protocol_binary_request_getk;,47,protocol_binary.h,protocol_binary_request_getk,,false,211,protocol_binary_request_getk,19
+64607,TYPE_DECL,anonymous_type_7,,,typedef protocol_binary_request_no_extras protocol_binary_request_getkq;,47,protocol_binary.h,protocol_binary_request_getkq,,false,212,protocol_binary_request_getkq,20
+64608,TYPE_DECL,protocol_binary_response_get,,,"typedef union {
+        struct {
+            protocol_binary_response_header header;
+            struct {
+                uint32_t flags;
+            } body;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_response_header) + 4];
+    }",5,protocol_binary.h,protocol_binary_response_get,,false,219,protocol_binary_response_get,21
+64609,TYPE_DECL,message,,,"struct {
+            protocol_binary_response_header header;
+            struct {
+                uint32_t flags;
+            } body;
+        }",9,protocol_binary.h,protocol_binary_response_get.message,,false,220,protocol_binary_response_get.message,1
+64611,TYPE_DECL,body,,,"struct {
+                uint32_t flags;
+            }",13,protocol_binary.h,protocol_binary_response_get.message.body,,false,222,protocol_binary_response_get.message.body,2
+64626,TYPE_DECL,anonymous_type_8,,,typedef protocol_binary_response_get protocol_binary_response_getq;,42,protocol_binary.h,protocol_binary_response_getq,,false,229,protocol_binary_response_getq,23
+64627,TYPE_DECL,anonymous_type_9,,,typedef protocol_binary_response_get protocol_binary_response_getk;,42,protocol_binary.h,protocol_binary_response_getk,,false,230,protocol_binary_response_getk,24
+64628,TYPE_DECL,anonymous_type_10,,,typedef protocol_binary_response_get protocol_binary_response_getkq;,42,protocol_binary.h,protocol_binary_response_getkq,,false,231,protocol_binary_response_getkq,25
+64629,TYPE_DECL,anonymous_type_11,,,typedef protocol_binary_request_no_extras protocol_binary_request_delete;,47,protocol_binary.h,protocol_binary_request_delete,,false,237,protocol_binary_request_delete,26
+64630,TYPE_DECL,anonymous_type_12,,,typedef protocol_binary_response_no_extras protocol_binary_response_delete;,48,protocol_binary.h,protocol_binary_response_delete,,false,243,protocol_binary_response_delete,27
+64631,TYPE_DECL,protocol_binary_request_flush,,,"typedef union {
+        struct {
+            protocol_binary_request_header header;
+            struct {
+                uint32_t expiration;
+            } body;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_request_header) + 4];
+    }",5,protocol_binary.h,protocol_binary_request_flush,,false,251,protocol_binary_request_flush,28
+64632,TYPE_DECL,message,,,"struct {
+            protocol_binary_request_header header;
+            struct {
+                uint32_t expiration;
+            } body;
+        }",9,protocol_binary.h,protocol_binary_request_flush.message,,false,252,protocol_binary_request_flush.message,1
+64634,TYPE_DECL,body,,,"struct {
+                uint32_t expiration;
+            }",13,protocol_binary.h,protocol_binary_request_flush.message.body,,false,254,protocol_binary_request_flush.message.body,2
+64649,TYPE_DECL,anonymous_type_13,,,typedef protocol_binary_response_no_extras protocol_binary_response_flush;,48,protocol_binary.h,protocol_binary_response_flush,,false,265,protocol_binary_response_flush,30
+64650,TYPE_DECL,protocol_binary_request_set,,,"typedef union {
+        struct {
+            protocol_binary_request_header header;
+            struct {
+                uint32_t flags;
+                uint32_t expiration;
+            } body;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_request_header) + 8];
+    }",5,protocol_binary.h,protocol_binary_request_set,,false,271,protocol_binary_request_set,31
+64651,TYPE_DECL,message,,,"struct {
+            protocol_binary_request_header header;
+            struct {
+                uint32_t flags;
+                uint32_t expiration;
+            } body;
+        }",9,protocol_binary.h,protocol_binary_request_set.message,,false,272,protocol_binary_request_set.message,1
+64653,TYPE_DECL,body,,,"struct {
+                uint32_t flags;
+                uint32_t expiration;
+            }",13,protocol_binary.h,protocol_binary_request_set.message.body,,false,274,protocol_binary_request_set.message.body,2
+64669,TYPE_DECL,anonymous_type_14,,,typedef protocol_binary_request_set protocol_binary_request_add;,41,protocol_binary.h,protocol_binary_request_add,,false,281,protocol_binary_request_add,33
+64670,TYPE_DECL,anonymous_type_15,,,typedef protocol_binary_request_set protocol_binary_request_replace;,41,protocol_binary.h,protocol_binary_request_replace,,false,282,protocol_binary_request_replace,34
+64671,TYPE_DECL,anonymous_type_16,,,typedef protocol_binary_response_no_extras protocol_binary_response_set;,48,protocol_binary.h,protocol_binary_response_set,,false,288,protocol_binary_response_set,35
+64672,TYPE_DECL,anonymous_type_17,,,typedef protocol_binary_response_no_extras protocol_binary_response_add;,48,protocol_binary.h,protocol_binary_response_add,,false,289,protocol_binary_response_add,36
+64673,TYPE_DECL,anonymous_type_18,,,typedef protocol_binary_response_no_extras protocol_binary_response_replace;,48,protocol_binary.h,protocol_binary_response_replace,,false,290,protocol_binary_response_replace,37
+64674,TYPE_DECL,anonymous_type_19,,,typedef protocol_binary_request_no_extras protocol_binary_request_noop;,47,protocol_binary.h,protocol_binary_request_noop,,false,296,protocol_binary_request_noop,38
+64675,TYPE_DECL,anonymous_type_20,,,typedef protocol_binary_response_no_extras protocol_binary_response_noop;,48,protocol_binary.h,protocol_binary_response_noop,,false,302,protocol_binary_response_noop,39
+64676,TYPE_DECL,protocol_binary_request_incr,,,"typedef union {
+        struct {
+            protocol_binary_request_header header;
+            struct {
+                uint64_t delta;
+                uint64_t initial;
+                uint32_t expiration;
+            } body;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_request_header) + 20];
+    }",5,protocol_binary.h,protocol_binary_request_incr,,false,309,protocol_binary_request_incr,40
+64677,TYPE_DECL,message,,,"struct {
+            protocol_binary_request_header header;
+            struct {
+                uint64_t delta;
+                uint64_t initial;
+                uint32_t expiration;
+            } body;
+        }",9,protocol_binary.h,protocol_binary_request_incr.message,,false,310,protocol_binary_request_incr.message,1
+64679,TYPE_DECL,body,,,"struct {
+                uint64_t delta;
+                uint64_t initial;
+                uint32_t expiration;
+            }",13,protocol_binary.h,protocol_binary_request_incr.message.body,,false,312,protocol_binary_request_incr.message.body,2
+64696,TYPE_DECL,anonymous_type_21,,,typedef protocol_binary_request_incr protocol_binary_request_decr;,42,protocol_binary.h,protocol_binary_request_decr,,false,320,protocol_binary_request_decr,42
+64697,TYPE_DECL,protocol_binary_response_incr,,,"typedef union {
+        struct {
+            protocol_binary_response_header header;
+            struct {
+                uint64_t value;
+            } body;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_response_header) + 8];
+    }",5,protocol_binary.h,protocol_binary_response_incr,,false,327,protocol_binary_response_incr,43
+64698,TYPE_DECL,message,,,"struct {
+            protocol_binary_response_header header;
+            struct {
+                uint64_t value;
+            } body;
+        }",9,protocol_binary.h,protocol_binary_response_incr.message,,false,328,protocol_binary_response_incr.message,1
+64700,TYPE_DECL,body,,,"struct {
+                uint64_t value;
+            }",13,protocol_binary.h,protocol_binary_response_incr.message.body,,false,330,protocol_binary_response_incr.message.body,2
+64715,TYPE_DECL,anonymous_type_22,,,typedef protocol_binary_response_incr protocol_binary_response_decr;,43,protocol_binary.h,protocol_binary_response_decr,,false,336,protocol_binary_response_decr,45
+64716,TYPE_DECL,anonymous_type_23,,,typedef protocol_binary_request_no_extras protocol_binary_request_quit;,47,protocol_binary.h,protocol_binary_request_quit,,false,342,protocol_binary_request_quit,46
+64717,TYPE_DECL,anonymous_type_24,,,typedef protocol_binary_response_no_extras protocol_binary_response_quit;,48,protocol_binary.h,protocol_binary_response_quit,,false,348,protocol_binary_response_quit,47
+64718,TYPE_DECL,anonymous_type_25,,,typedef protocol_binary_request_no_extras protocol_binary_request_append;,47,protocol_binary.h,protocol_binary_request_append,,false,354,protocol_binary_request_append,48
+64719,TYPE_DECL,anonymous_type_26,,,typedef protocol_binary_request_no_extras protocol_binary_request_prepend;,47,protocol_binary.h,protocol_binary_request_prepend,,false,355,protocol_binary_request_prepend,49
+64720,TYPE_DECL,anonymous_type_27,,,typedef protocol_binary_response_no_extras protocol_binary_response_append;,48,protocol_binary.h,protocol_binary_response_append,,false,361,protocol_binary_response_append,50
+64721,TYPE_DECL,anonymous_type_28,,,typedef protocol_binary_response_no_extras protocol_binary_response_prepend;,48,protocol_binary.h,protocol_binary_response_prepend,,false,362,protocol_binary_response_prepend,51
+64722,TYPE_DECL,anonymous_type_29,,,typedef protocol_binary_request_no_extras protocol_binary_request_version;,47,protocol_binary.h,protocol_binary_request_version,,false,368,protocol_binary_request_version,52
+64723,TYPE_DECL,anonymous_type_30,,,typedef protocol_binary_response_no_extras protocol_binary_response_version;,48,protocol_binary.h,protocol_binary_response_version,,false,374,protocol_binary_response_version,53
+64724,TYPE_DECL,anonymous_type_31,,,typedef protocol_binary_request_no_extras protocol_binary_request_stats;,47,protocol_binary.h,protocol_binary_request_stats,,false,381,protocol_binary_request_stats,54
+64725,TYPE_DECL,anonymous_type_32,,,typedef protocol_binary_response_no_extras protocol_binary_response_stats;,48,protocol_binary.h,protocol_binary_response_stats,,false,387,protocol_binary_response_stats,55
+64726,TYPE_DECL,protocol_binary_request_touch,,,"typedef union {
+        struct {
+            protocol_binary_request_header header;
+            struct {
+                uint32_t expiration;
+            } body;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_request_header) + 4];
+    }",5,protocol_binary.h,protocol_binary_request_touch,,false,392,protocol_binary_request_touch,56
+64727,TYPE_DECL,message,,,"struct {
+            protocol_binary_request_header header;
+            struct {
+                uint32_t expiration;
+            } body;
+        }",9,protocol_binary.h,protocol_binary_request_touch.message,,false,393,protocol_binary_request_touch.message,1
+64729,TYPE_DECL,body,,,"struct {
+                uint32_t expiration;
+            }",13,protocol_binary.h,protocol_binary_request_touch.message.body,,false,395,protocol_binary_request_touch.message.body,2
+64744,TYPE_DECL,anonymous_type_33,,,typedef protocol_binary_response_no_extras protocol_binary_response_touch;,48,protocol_binary.h,protocol_binary_response_touch,,false,405,protocol_binary_response_touch,58
+64745,TYPE_DECL,protocol_binary_request_gat,,,"typedef union {
+        struct {
+            protocol_binary_request_header header;
+            struct {
+                uint32_t expiration;
+            } body;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_request_header) + 4];
+    }",5,protocol_binary.h,protocol_binary_request_gat,,false,410,protocol_binary_request_gat,59
+64746,TYPE_DECL,message,,,"struct {
+            protocol_binary_request_header header;
+            struct {
+                uint32_t expiration;
+            } body;
+        }",9,protocol_binary.h,protocol_binary_request_gat.message,,false,411,protocol_binary_request_gat.message,1
+64748,TYPE_DECL,body,,,"struct {
+                uint32_t expiration;
+            }",13,protocol_binary.h,protocol_binary_request_gat.message.body,,false,413,protocol_binary_request_gat.message.body,2
+64763,TYPE_DECL,anonymous_type_34,,,typedef protocol_binary_request_gat protocol_binary_request_gatq;,41,protocol_binary.h,protocol_binary_request_gatq,,false,420,protocol_binary_request_gatq,61
+64764,TYPE_DECL,anonymous_type_35,,,typedef protocol_binary_request_gat protocol_binary_request_gatk;,41,protocol_binary.h,protocol_binary_request_gatk,,false,421,protocol_binary_request_gatk,62
+64765,TYPE_DECL,anonymous_type_36,,,typedef protocol_binary_request_gat protocol_binary_request_gatkq;,41,protocol_binary.h,protocol_binary_request_gatkq,,false,422,protocol_binary_request_gatkq,63
+64766,TYPE_DECL,anonymous_type_37,,,typedef protocol_binary_response_get protocol_binary_response_gat;,42,protocol_binary.h,protocol_binary_response_gat,,false,427,protocol_binary_response_gat,64
+64767,TYPE_DECL,anonymous_type_38,,,typedef protocol_binary_response_get protocol_binary_response_gatq;,42,protocol_binary.h,protocol_binary_response_gatq,,false,428,protocol_binary_response_gatq,65
+64768,TYPE_DECL,anonymous_type_39,,,typedef protocol_binary_response_get protocol_binary_response_gatk;,42,protocol_binary.h,protocol_binary_response_gatk,,false,429,protocol_binary_response_gatk,66
+64769,TYPE_DECL,anonymous_type_40,,,typedef protocol_binary_response_get protocol_binary_response_gatkq;,42,protocol_binary.h,protocol_binary_response_gatkq,,false,430,protocol_binary_response_gatkq,67
+64770,TYPE_DECL,protocol_binary_request_rangeop,,,"typedef union {
+        struct {
+            protocol_binary_response_header header;
+            struct {
+                uint16_t size;
+                uint8_t  reserved;
+                uint8_t  flags;
+                uint32_t max_results;
+            } body;
+        } message;
+        uint8_t bytes[sizeof(protocol_binary_request_header) + 4];
+    }",5,protocol_binary.h,protocol_binary_request_rangeop,,false,440,protocol_binary_request_rangeop,68
+64771,TYPE_DECL,message,,,"struct {
+            protocol_binary_response_header header;
+            struct {
+                uint16_t size;
+                uint8_t  reserved;
+                uint8_t  flags;
+                uint32_t max_results;
+            } body;
+        }",9,protocol_binary.h,protocol_binary_request_rangeop.message,,false,441,protocol_binary_request_rangeop.message,1
+64773,TYPE_DECL,body,,,"struct {
+                uint16_t size;
+                uint8_t  reserved;
+                uint8_t  flags;
+                uint32_t max_results;
+            }",13,protocol_binary.h,protocol_binary_request_rangeop.message.body,,false,443,protocol_binary_request_rangeop.message.body,2
+64791,TYPE_DECL,anonymous_type_41,,,typedef protocol_binary_request_rangeop protocol_binary_request_rget;,45,protocol_binary.h,protocol_binary_request_rget,,false,453,protocol_binary_request_rget,70
+64792,TYPE_DECL,anonymous_type_42,,,typedef protocol_binary_request_rangeop protocol_binary_request_rset;,45,protocol_binary.h,protocol_binary_request_rset,,false,454,protocol_binary_request_rset,71
+64793,TYPE_DECL,anonymous_type_43,,,typedef protocol_binary_request_rangeop protocol_binary_request_rsetq;,45,protocol_binary.h,protocol_binary_request_rsetq,,false,455,protocol_binary_request_rsetq,72
+64794,TYPE_DECL,anonymous_type_44,,,typedef protocol_binary_request_rangeop protocol_binary_request_rappend;,45,protocol_binary.h,protocol_binary_request_rappend,,false,456,protocol_binary_request_rappend,73
+64795,TYPE_DECL,anonymous_type_45,,,typedef protocol_binary_request_rangeop protocol_binary_request_rappendq;,45,protocol_binary.h,protocol_binary_request_rappendq,,false,457,protocol_binary_request_rappendq,74
+64796,TYPE_DECL,anonymous_type_46,,,typedef protocol_binary_request_rangeop protocol_binary_request_rprepend;,45,protocol_binary.h,protocol_binary_request_rprepend,,false,458,protocol_binary_request_rprepend,75
+64797,TYPE_DECL,anonymous_type_47,,,typedef protocol_binary_request_rangeop protocol_binary_request_rprependq;,45,protocol_binary.h,protocol_binary_request_rprependq,,false,459,protocol_binary_request_rprependq,76
+64798,TYPE_DECL,anonymous_type_48,,,typedef protocol_binary_request_rangeop protocol_binary_request_rdelete;,45,protocol_binary.h,protocol_binary_request_rdelete,,false,460,protocol_binary_request_rdelete,77
+64799,TYPE_DECL,anonymous_type_49,,,typedef protocol_binary_request_rangeop protocol_binary_request_rdeleteq;,45,protocol_binary.h,protocol_binary_request_rdeleteq,,false,461,protocol_binary_request_rdeleteq,78
+64800,TYPE_DECL,anonymous_type_50,,,typedef protocol_binary_request_rangeop protocol_binary_request_rincr;,45,protocol_binary.h,protocol_binary_request_rincr,,false,462,protocol_binary_request_rincr,79
+64801,TYPE_DECL,anonymous_type_51,,,typedef protocol_binary_request_rangeop protocol_binary_request_rincrq;,45,protocol_binary.h,protocol_binary_request_rincrq,,false,463,protocol_binary_request_rincrq,80
+64802,TYPE_DECL,anonymous_type_52,,,typedef protocol_binary_request_rangeop protocol_binary_request_rdecr;,45,protocol_binary.h,protocol_binary_request_rdecr,,false,464,protocol_binary_request_rdecr,81
+64803,TYPE_DECL,anonymous_type_53,,,typedef protocol_binary_request_rangeop protocol_binary_request_rdecrq;,45,protocol_binary.h,protocol_binary_request_rdecrq,,false,465,protocol_binary_request_rdecrq,82
+64840,TYPE_DECL,,proxy.h:<global>,NAMESPACE_BLOCK,<global>,1,proxy.h,proxy.h:<global>,,false,1,<global>,18
+64843,TYPE_DECL,,,,"enum proxy_defines {
+    P_OK = 0,
+    CMD_FIELDS
+    CMD_SIZE, // used to define array size for command hooks.
+    CMD_ANY, // override _all_ commands
+    CMD_ANY_STORAGE, // override commands specific to key storage.
+    CMD_FINAL, // end cap for convenience.
+}",1,proxy.h,proxy_defines,,false,120,proxy_defines,1
+64890,TYPE_DECL,,,,"enum proxy_cmd_types {
+    CMD_TYPE_GENERIC = 0,
+    CMD_TYPE_GET, // get/gets/gat/gats
+    CMD_TYPE_META, // m*'s.
+}",1,proxy.h,proxy_cmd_types,,false,132,proxy_cmd_types,2
+64901,TYPE_DECL,,,,"enum proxy_be_failures {
+    P_BE_FAIL_TIMEOUT = 0,
+    P_BE_FAIL_DISCONNECTED,
+    P_BE_FAIL_CONNECTING,
+    P_BE_FAIL_WRITING,
+    P_BE_FAIL_READING,
+    P_BE_FAIL_PARSING,
+}",1,proxy.h,proxy_be_failures,,false,138,proxy_be_failures,3
+64915,TYPE_DECL,io_pending_proxy_t,,,typedef struct _io_pending_proxy_t,1,proxy.h,_io_pending_proxy_t,,false,147,_io_pending_proxy_t,4
+64916,TYPE_DECL,_io_pending_proxy_t,,,typedef struct _io_pending_proxy_t io_pending_proxy_t;,36,proxy.h,io_pending_proxy_t,,false,147,io_pending_proxy_t,5
+64917,TYPE_DECL,proxy_event_thread_t,,,typedef struct proxy_event_thread_s,1,proxy.h,proxy_event_thread_s,,false,148,proxy_event_thread_s,6
+64918,TYPE_DECL,proxy_event_thread_s,,,typedef struct proxy_event_thread_s proxy_event_thread_t;,37,proxy.h,proxy_event_thread_t,,false,148,proxy_event_thread_t,7
+64919,TYPE_DECL,,,,"struct proxy_int_stats {
+    uint64_t counters[CMD_FINAL];
+}",1,proxy.h,proxy_int_stats,,false,163,proxy_int_stats,8
+64927,TYPE_DECL,,,,"struct proxy_user_stats {
+    size_t num_stats; // number of stats, for sizing various arrays
+    char **names; // not needed for worker threads
+    uint64_t *counters; // array of counters.
+}",1,proxy.h,proxy_user_stats,,false,167,proxy_user_stats,9
+64931,TYPE_DECL,,,,"struct proxy_global_stats {
+    uint64_t config_reloads;
+    uint64_t config_reload_fails;
+    uint64_t backend_total;
+    uint64_t backend_disconn; // backends with no connections
+    uint64_t backend_requests; // reqs sent to backends
+    uint64_t backend_responses; // responses received from backends
+    uint64_t backend_errors; // errors from backends
+    uint64_t backend_marked_bad; // backend set to autofail
+    uint64_t backend_failed; // an error caused a backend reset
+}",1,proxy.h,proxy_global_stats,,false,173,proxy_global_stats,10
+64941,TYPE_DECL,,,,"struct proxy_tunables {
+    struct timeval connect;
+    struct timeval retry; // wait time before retrying a dead backend
+    struct timeval read;
+#ifdef HAVE_LIBURING
+    struct __kernel_timespec connect_ur;
+    struct __kernel_timespec retry_ur;
+    struct __kernel_timespec read_ur;
+#endif // HAVE_LIBURING
+    int backend_failure_limit;
+    bool tcp_keepalive;
+}",1,proxy.h,proxy_tunables,,false,185,proxy_tunables,11
+64942,TYPE_DECL,connect,,,struct timeval,5,proxy.h,proxy_tunables.timeval,,false,186,timeval,1
+64944,TYPE_DECL,retry,,,struct timeval,5,proxy.h,proxy_tunables.timeval,,false,187,timeval,3
+64946,TYPE_DECL,read,,,struct timeval,5,proxy.h,proxy_tunables.timeval,,false,188,timeval,5
+64948,TYPE_DECL,connect_ur,,,struct __kernel_timespec,5,proxy.h,proxy_tunables.__kernel_timespec,,false,190,__kernel_timespec,7
+64950,TYPE_DECL,retry_ur,,,struct __kernel_timespec,5,proxy.h,proxy_tunables.__kernel_timespec,,false,191,__kernel_timespec,9
+64952,TYPE_DECL,read_ur,,,struct __kernel_timespec,5,proxy.h,proxy_tunables.__kernel_timespec,,false,192,__kernel_timespec,11
+64956,TYPE_DECL,pool_head_t,,,"typedef STAILQ_HEAD(pool_head_s, mcp_pool_s)",1,proxy.h,pool_head_s,,false,198,pool_head_s,12
+64957,TYPE_DECL,stqh_first,,,mcp_pool_s,9,proxy.h,pool_head_s.mcp_pool_s,,false,198,mcp_pool_s,1
+64959,TYPE_DECL,stqh_last,,,mcp_pool_s,9,proxy.h,pool_head_s.mcp_pool_s,,false,198,mcp_pool_s,3
+64961,TYPE_DECL,pool_head_s,,,"typedef STAILQ_HEAD(pool_head_s, mcp_pool_s) pool_head_t;",46,proxy.h,pool_head_t,,false,198,pool_head_t,13
+64962,TYPE_DECL,proxy_ctx_t,,,"typedef struct {
+    lua_State *proxy_state;
+    void *proxy_code;
+    proxy_event_thread_t *proxy_threads;
+    pthread_mutex_t config_lock;
+    pthread_cond_t config_cond;
+    pthread_t config_tid;
+    pthread_mutex_t worker_lock;
+    pthread_cond_t worker_cond;
+    pthread_t manager_tid; // deallocation management thread
+    pthread_mutex_t manager_lock;
+    pthread_cond_t manager_cond;
+    pool_head_t manager_head; // stack for pool deallocation.
+    bool worker_done; // signal variable for the worker lock/cond system.
+    bool worker_failed; // covered by worker_lock as well.
+    bool use_uring; // use IO_URING for backend connections.
+    struct proxy_global_stats global_stats;
+    struct proxy_user_stats user_stats;
+    struct proxy_tunables tunables; // NOTE: updates covered by stats_lock
+    pthread_mutex_t stats_lock; // used for rare global counters
+}",1,proxy.h,proxy_ctx_t,,false,199,proxy_ctx_t,14
+64978,TYPE_DECL,global_stats,,,struct proxy_global_stats,5,proxy.h,proxy_ctx_t.proxy_global_stats,,false,215,proxy_global_stats,16
+64980,TYPE_DECL,user_stats,,,struct proxy_user_stats,5,proxy.h,proxy_ctx_t.proxy_user_stats,,false,216,proxy_user_stats,18
+64982,TYPE_DECL,tunables,,,struct proxy_tunables,5,proxy.h,proxy_ctx_t.proxy_tunables,,false,217,proxy_tunables,20
+64986,TYPE_DECL,,,,"struct proxy_hook_tagged {
+    uint64_t tag;
+    int lua_ref;
+}",1,proxy.h,proxy_hook_tagged,,false,221,proxy_hook_tagged,16
+64989,TYPE_DECL,,,,"struct proxy_hook {
+    int lua_ref;
+    int tagcount;
+    struct proxy_hook_tagged *tagged; // array of possible tagged hooks.
+}",1,proxy.h,proxy_hook,,false,226,proxy_hook,17
+64992,TYPE_DECL,tagged,,,struct proxy_hook_tagged,5,proxy.h,proxy_hook.proxy_hook_tagged,,false,229,proxy_hook_tagged,3
+65001,TYPE_DECL,,,,"struct proxy_hash_func {
+    key_hash_func func;
+}",1,proxy.h,proxy_hash_func,,false,235,proxy_hash_func,19
+65017,TYPE_DECL,,,,"struct proxy_hash_caller {
+    hash_selector_func selector_func;
+    void *ctx;
+}",1,proxy.h,proxy_hash_caller,,false,240,proxy_hash_caller,22
+65020,TYPE_DECL,,,,"enum mcp_backend_states {
+    mcp_backend_read = 0, // waiting to read any response
+    mcp_backend_parse, // have some buffered data to check
+    mcp_backend_read_end, // looking for an ""END"" marker for GET
+    mcp_backend_want_read, // read more data to complete command
+    mcp_backend_next, // advance to the next IO
+}",1,proxy.h,mcp_backend_states,,false,245,mcp_backend_states,23
+65033,TYPE_DECL,mcp_backend_t,,,typedef struct mcp_backend_s,1,proxy.h,mcp_backend_s,,false,253,mcp_backend_s,24
+65034,TYPE_DECL,mcp_backend_s,,,typedef struct mcp_backend_s mcp_backend_t;,30,proxy.h,mcp_backend_t,,false,253,mcp_backend_t,25
+65035,TYPE_DECL,mcp_request_t,,,typedef struct mcp_request_s,1,proxy.h,mcp_request_s,,false,254,mcp_request_s,26
+65036,TYPE_DECL,mcp_request_s,,,typedef struct mcp_request_s mcp_request_t;,30,proxy.h,mcp_request_t,,false,254,mcp_request_t,27
+65037,TYPE_DECL,mcp_parser_t,,,typedef struct mcp_parser_s,1,proxy.h,mcp_parser_s,,false,255,mcp_parser_s,28
+65038,TYPE_DECL,mcp_parser_s,,,typedef struct mcp_parser_s mcp_parser_t;,29,proxy.h,mcp_parser_t,,false,255,mcp_parser_t,29
+65039,TYPE_DECL,,,,"struct mcp_parser_meta_s {
+    uint64_t flags;
+}",1,proxy.h,mcp_parser_meta_s,,false,259,mcp_parser_meta_s,30
+65041,TYPE_DECL,,,,"struct mcp_parser_s {
+    const char *request;
+    void *vbuf; // temporary buffer for holding value lengths.
+    uint8_t command;
+    uint8_t cmd_type; // command class.
+    uint8_t ntokens;
+    uint8_t keytoken; // because GAT. sigh. also cmds without a key.
+    uint32_t parsed; // how far into the request we parsed already
+    uint32_t reqlen; // full length of request buffer.
+    int vlen;
+    uint32_t klen; // length of key.
+    uint16_t tokens[PARSER_MAX_TOKENS]; // offsets for start of each token
+    bool has_space; // a space was found after the last byte parsed.
+    bool noreply; // if quiet/noreply mode is set.
+    union {
+        struct mcp_parser_meta_s meta;
+    } t;
+}",1,proxy.h,mcp_parser_s,,false,265,mcp_parser_s,31
+65055,TYPE_DECL,t,,,"union {
+        struct mcp_parser_meta_s meta;
+    }",5,proxy.h,mcp_parser_s.t,,false,279,mcp_parser_s.t,14
+65056,TYPE_DECL,meta,,,struct mcp_parser_meta_s,9,proxy.h,mcp_parser_s.t.mcp_parser_meta_s,,false,280,mcp_parser_meta_s,1
+65067,TYPE_DECL,,,,"struct mcp_request_s {
+    mcp_parser_t pr; // non-lua-specific parser handling.
+    struct timeval start; // time this object was created.
+    mcp_backend_t *be; // backend handling this request.
+    bool ascii_multiget; // ascii multiget mode. (hide errors/END)
+    bool was_modified; // need to rewrite the request
+    int tokent_ref; // reference to token table if modified.
+    char request[];
+}",1,proxy.h,mcp_request_s,,false,287,mcp_request_s,32
+65069,TYPE_DECL,start,,,struct timeval,5,proxy.h,mcp_request_s.timeval,,false,289,timeval,2
+65081,TYPE_DECL,io_head_t,,,"typedef STAILQ_HEAD(io_head_s, _io_pending_proxy_t)",1,proxy.h,io_head_s,,false,297,io_head_s,33
+65082,TYPE_DECL,stqh_first,,,_io_pending_proxy_t,9,proxy.h,io_head_s._io_pending_proxy_t,,false,297,_io_pending_proxy_t,1
+65084,TYPE_DECL,stqh_last,,,_io_pending_proxy_t,9,proxy.h,io_head_s._io_pending_proxy_t,,false,297,_io_pending_proxy_t,3
+65086,TYPE_DECL,io_head_s,,,"typedef STAILQ_HEAD(io_head_s, _io_pending_proxy_t) io_head_t;",53,proxy.h,io_head_t,,false,297,io_head_t,34
+65087,TYPE_DECL,,,,"struct mcp_backend_s {
+    int depth;
+    int failed_count; // number of fails (timeouts) in a row
+    pthread_mutex_t mutex; // covers stack.
+    proxy_event_thread_t *event_thread; // event thread owning this backend.
+    void *client; // mcmc client
+    STAILQ_ENTRY(mcp_backend_s) be_next; // stack for backends
+    io_head_t io_head; // stack of requests.
+    char *rbuf; // statically allocated read buffer.
+    size_t rbufused; // currently active bytes in the buffer
+    struct event event; // libevent
+#ifdef HAVE_LIBURING
+    proxy_event_t ur_rd_ev; // liburing.
+    proxy_event_t ur_wr_ev; // need a separate event/cb for writing/polling
+    proxy_event_t ur_te_ev; // for timeout handling
+#endif
+    enum mcp_backend_states state; // readback state machine
+    int connect_flags; // flags to pass to mcmc_connect
+    bool connecting; // in the process of an asynch connection.
+    bool can_write; // recently got a WANT_WRITE or are connecting.
+    bool stacked; // if backend already ...",1,proxy.h,mcp_backend_s,,false,308,mcp_backend_s,35
+65093,TYPE_DECL,be_next,,,STAILQ_ENTRY(mcp_backend_s),5,proxy.h,mcp_backend_s.be_next,,false,314,mcp_backend_s.be_next,6
+65094,TYPE_DECL,stqe_next,,,mcp_backend_s,5,proxy.h,mcp_backend_s.be_next.mcp_backend_s,,false,314,mcp_backend_s,1
+65100,TYPE_DECL,event,,,struct event,5,proxy.h,mcp_backend_s.event,,false,318,event,11
+65105,TYPE_DECL,state,,,enum mcp_backend_states,5,proxy.h,mcp_backend_s.mcp_backend_states,,false,324,mcp_backend_states,16
+65112,TYPE_DECL,write_iovs,,,struct iovec,5,proxy.h,mcp_backend_s.iovec,,false,330,iovec,23
+65136,TYPE_DECL,be_head_t,,,"typedef STAILQ_HEAD(be_head_s, mcp_backend_s)",1,proxy.h,be_head_s,,false,334,be_head_s,36
+65137,TYPE_DECL,stqh_first,,,mcp_backend_s,9,proxy.h,be_head_s.mcp_backend_s,,false,334,mcp_backend_s,1
+65139,TYPE_DECL,stqh_last,,,mcp_backend_s,9,proxy.h,be_head_s.mcp_backend_s,,false,334,mcp_backend_s,3
+65141,TYPE_DECL,be_head_s,,,"typedef STAILQ_HEAD(be_head_s, mcp_backend_s) be_head_t;",47,proxy.h,be_head_t,,false,334,be_head_t,37
+65142,TYPE_DECL,,,,"struct proxy_event_thread_s {
+    pthread_t thread_id;
+    struct event_base *base;
+    struct event notify_event; // listen event for the notify pipe/eventfd.
+    struct event clock_event; // timer for updating event thread data.
+#ifdef HAVE_LIBURING
+    struct io_uring ring;
+    proxy_event_t ur_notify_event; // listen on eventfd.
+    proxy_event_t ur_clock_event; // timer for updating event thread data.
+    eventfd_t event_counter;
+    bool use_uring;
+#endif
+    pthread_mutex_t mutex; // covers stack.
+    pthread_cond_t cond; // condition to wait on while stack drains.
+    io_head_t io_head_in; // inbound requests to process.
+    be_head_t be_head; // stack of backends for processing.
+#ifdef USE_EVENTFD
+    int event_fd;
+#else
+    int notify_receive_fd;
+    int notify_send_fd;
+#endif
+    proxy_ctx_t *ctx; // main context.
+    struct proxy_tunables tunables; // periodically copied from main ctx
+}",1,proxy.h,proxy_event_thread_s,,false,336,proxy_event_thread_s,38
+65144,TYPE_DECL,base,,,struct event_base,5,proxy.h,proxy_event_thread_s.event_base,,false,338,event_base,2
+65146,TYPE_DECL,notify_event,,,struct event,5,proxy.h,proxy_event_thread_s.event,,false,339,event,4
+65148,TYPE_DECL,clock_event,,,struct event,5,proxy.h,proxy_event_thread_s.event,,false,340,event,6
+65150,TYPE_DECL,ring,,,struct io_uring,5,proxy.h,proxy_event_thread_s.io_uring,,false,342,io_uring,8
+65164,TYPE_DECL,tunables,,,struct proxy_tunables,5,proxy.h,proxy_event_thread_s.proxy_tunables,,false,359,proxy_tunables,22
+65166,TYPE_DECL,,,,"enum mcp_resp_mode {
+    RESP_MODE_NORMAL = 0,
+    RESP_MODE_NOREPLY,
+    RESP_MODE_METAQUIET
+}",1,proxy.h,mcp_resp_mode,,false,362,mcp_resp_mode,39
+65177,TYPE_DECL,mcp_resp_t,,,"typedef struct {
+    mcmc_resp_t resp;
+    char *buf; // response line + potentially value.
+    size_t blen; // total size of the value to read.
+    int status; // status code from mcmc_read()
+    int bread; // amount of bytes read into value so far.
+    uint8_t cmd; // from parser (pr.command)
+    enum mcp_resp_mode mode; // reply mode (for noreply fixing)
+    char be_name[MAX_NAMELEN+1];
+    char be_port[MAX_PORTLEN+1];
+}",1,proxy.h,mcp_resp_t,,false,369,mcp_resp_t,40
+65184,TYPE_DECL,mode,,,enum mcp_resp_mode,5,proxy.h,mcp_resp_t.mcp_resp_mode,,false,376,mcp_resp_mode,7
+65205,TYPE_DECL,,,,"struct _io_pending_proxy_t {
+    int io_queue_type;
+    LIBEVENT_THREAD *thread;
+    conn *c;
+    mc_resp *resp;  // original struct ends here
+
+    struct _io_pending_proxy_t *next; // stack for IO submission
+    STAILQ_ENTRY(_io_pending_proxy_t) io_next; // stack for backends
+    int coro_ref; // lua registry reference to the coroutine
+    int mcpres_ref; // mcp.res reference used for await()
+    lua_State *coro; // pointer directly to the coroutine
+    mcp_backend_t *backend; // backend server to request from
+    struct iovec iov[2]; // request string + tail buffer
+    int iovcnt; // 1 or 2...
+    unsigned int iovbytes; // total bytes in the iovec
+    int await_ref; // lua reference if we were an await object
+    mcp_resp_t *client_resp; // reference (currently pointing to a lua object)
+    bool flushed; // whether we've fully written this request to a backend.
+    bool ascii_multiget; // passed on from mcp_r_t
+    bool is_await; // are we an await object?
+    bool await_first; //...",1,proxy.h,_io_pending_proxy_t,,false,383,_io_pending_proxy_t,42
+65210,TYPE_DECL,next,,,struct _io_pending_proxy_t,5,proxy.h,_io_pending_proxy_t._io_pending_proxy_t,,false,389,_io_pending_proxy_t,5
+65212,TYPE_DECL,io_next,,,STAILQ_ENTRY(_io_pending_proxy_t),5,proxy.h,_io_pending_proxy_t.io_next,,false,390,_io_pending_proxy_t.io_next,7
+65213,TYPE_DECL,stqe_next,,,_io_pending_proxy_t,5,proxy.h,_io_pending_proxy_t.io_next._io_pending_proxy_t,,false,390,_io_pending_proxy_t,1
+65220,TYPE_DECL,iov,,,struct iovec,5,proxy.h,_io_pending_proxy_t.iovec,,false,395,iovec,13
+65236,TYPE_DECL,mcp_pool_be_t,,,"typedef struct {
+    int ref; // luaL_ref reference.
+    mcp_backend_t *be;
+}",1,proxy.h,mcp_pool_be_t,,false,409,mcp_pool_be_t,43
+65240,TYPE_DECL,mcp_pool_t,,,typedef struct mcp_pool_s,1,proxy.h,mcp_pool_s,,false,415,mcp_pool_s,45
+65241,TYPE_DECL,mcp_pool_s,,,typedef struct mcp_pool_s mcp_pool_t;,27,proxy.h,mcp_pool_t,,false,415,mcp_pool_t,46
+65242,TYPE_DECL,,,,"struct mcp_pool_s {
+    struct proxy_hash_caller phc;
+    key_hash_filter_func key_filter;
+    key_hash_func key_hasher;
+    pthread_mutex_t lock; // protects refcount.
+    proxy_ctx_t *ctx; // main context.
+    STAILQ_ENTRY(mcp_pool_s) next; // stack for deallocator.
+    char key_filter_conf[KEY_HASH_FILTER_MAX+1];
+    uint64_t hash_seed; // calculated from a string.
+    int refcount;
+    int phc_ref;
+    int self_ref; // TODO (v2): double check that this is needed.
+    int pool_size;
+    mcp_pool_be_t pool[];
+}",1,proxy.h,mcp_pool_s,,false,416,mcp_pool_s,47
+65243,TYPE_DECL,phc,,,struct proxy_hash_caller,5,proxy.h,mcp_pool_s.proxy_hash_caller,,false,417,proxy_hash_caller,1
+65249,TYPE_DECL,next,,,STAILQ_ENTRY(mcp_pool_s),5,proxy.h,mcp_pool_s.next,,false,422,mcp_pool_s.next,7
+65250,TYPE_DECL,stqe_next,,,mcp_pool_s,5,proxy.h,mcp_pool_s.next.mcp_pool_s,,false,422,mcp_pool_s,1
+65271,TYPE_DECL,mcp_pool_proxy_t,,,"typedef struct {
+    mcp_pool_t *main; // ptr to original
+}",1,proxy.h,mcp_pool_proxy_t,,false,432,mcp_pool_proxy_t,48
+65284,TYPE_DECL,,,,"enum mcp_await_e {
+    AWAIT_GOOD = 0, // looks for OK + NOT MISS
+    AWAIT_ANY, // any response, including errors,
+    AWAIT_OK, // any non-error response
+    AWAIT_FIRST, // return the result from the first pool
+}",1,proxy.h,mcp_await_e,,false,441,mcp_await_e,52
+65463,TYPE_DECL,,proxy_await.c:<global>,NAMESPACE_BLOCK,<global>,1,proxy_await.c,proxy_await.c:<global>,,false,1,<global>,2
+65466,TYPE_DECL,mcp_await_t,,,"typedef struct mcp_await_s {
+    int pending;
+    int wait_for;
+    int req_ref;
+    int argtable_ref; // need to hold refs to any potential hash selectors
+    int restable_ref; // table of result objects
+    int coro_ref; // reference to parent coroutine
+    enum mcp_await_e type;
+    bool completed; // have we completed the parent coroutine or not
+    mcp_request_t *rq;
+    mc_resp *resp; // the top level mc_resp to fill in (as if we were an iop)
+}",1,proxy_await.c,mcp_await_s,,false,5,mcp_await_s,1
+65473,TYPE_DECL,type,,,enum mcp_await_e,5,proxy_await.c,mcp_await_s.mcp_await_e,,false,12,mcp_await_e,7
+65478,TYPE_DECL,mcp_await_s,,,"typedef struct mcp_await_s {
+    int pending;
+    int wait_for;
+    int req_ref;
+    int argtable_ref; // need to hold refs to any potential hash selectors
+    int restable_ref; // table of result objects
+    int coro_ref; // reference to parent coroutine
+    enum mcp_await_e type;
+    bool completed; // have we completed the parent coroutine or not
+    mcp_request_t *rq;
+    mc_resp *resp; // the top level mc_resp to fill in (as if we were an iop)
+} mcp_await_t;",3,proxy_await.c,mcp_await_t,,false,16,mcp_await_t,2
+66467,TYPE_DECL,,proxy_config.c:<global>,NAMESPACE_BLOCK,<global>,1,proxy_config.c,proxy_config.c:<global>,,false,1,<global>,2
+66470,TYPE_DECL,,,,"struct _dumpbuf {
+    size_t size;
+    size_t used;
+    char *buf;
+}",1,proxy_config.c,_dumpbuf,,false,7,_dumpbuf,1
+67874,TYPE_DECL,,proxy_jump_hash.c:<global>,NAMESPACE_BLOCK,<global>,1,proxy_jump_hash.c,proxy_jump_hash.c:<global>,,false,1,<global>,2
+67877,TYPE_DECL,mcplib_jump_hash_t,,,"typedef struct {
+    struct proxy_hash_caller phc; // passed back to proxy API
+    unsigned int buckets;
+}",1,proxy_jump_hash.c,mcplib_jump_hash_t,,false,5,mcplib_jump_hash_t,1
+67878,TYPE_DECL,phc,,,struct proxy_hash_caller,5,proxy_jump_hash.c,mcplib_jump_hash_t.proxy_hash_caller,,false,6,proxy_hash_caller,1
+68013,TYPE_DECL,,proxy_lua.c:<global>,NAMESPACE_BLOCK,<global>,1,proxy_lua.c,proxy_lua.c:<global>,,false,1,<global>,2
+71700,TYPE_DECL,,proxy_network.c:<global>,NAMESPACE_BLOCK,<global>,1,proxy_network.c,proxy_network.c:<global>,,false,1,<global>,2
+74299,TYPE_DECL,,proxy_request.c:<global>,NAMESPACE_BLOCK,<global>,1,proxy_request.c,proxy_request.c:<global>,,false,1,<global>,2
+77044,TYPE_DECL,,proxy_ring_hash.c:<global>,NAMESPACE_BLOCK,<global>,1,proxy_ring_hash.c,proxy_ring_hash.c:<global>,,false,1,<global>,3
+77047,TYPE_DECL,cpoint,,,"typedef struct {
+    unsigned int point; // continuum point.
+    unsigned int id; // server id.
+}",1,proxy_ring_hash.c,cpoint,,false,37,cpoint,1
+77051,TYPE_DECL,ketama_t,,,"typedef struct {
+    struct proxy_hash_caller phc; // passed back to the proxy API.
+    unsigned int total_buckets;
+    cpoint continuum[]; // points to server ids.
+}",1,proxy_ring_hash.c,ketama_t,,false,42,ketama_t,3
+77052,TYPE_DECL,phc,,,struct proxy_hash_caller,5,proxy_ring_hash.c,ketama_t.proxy_hash_caller,,false,43,proxy_hash_caller,1
+77069,TYPE_DECL,ketama_key_hash,,,static struct proxy_hash_func,1,proxy_ring_hash.c,proxy_hash_func,,false,49,proxy_hash_func,6
+78161,TYPE_DECL,,proxy_ustats.c:<global>,NAMESPACE_BLOCK,<global>,1,proxy_ustats.c,proxy_ustats.c:<global>,,false,1,<global>,2
+78481,TYPE_DECL,,proxy_xxhash.c:<global>,NAMESPACE_BLOCK,<global>,1,proxy_xxhash.c,proxy_xxhash.c:<global>,,false,1,<global>,2
+78484,TYPE_DECL,mcplib_hash_xxhash,,,static struct proxy_hash_func,1,proxy_xxhash.c,proxy_hash_func,,false,5,proxy_hash_func,1
+78505,TYPE_DECL,,queue.h:<global>,NAMESPACE_BLOCK,<global>,1,queue.h,queue.h:<global>,,false,1,<global>,1
+78528,TYPE_DECL,,restart.c:<global>,NAMESPACE_BLOCK,<global>,1,restart.c,restart.c:<global>,,false,1,<global>,10
+78531,TYPE_DECL,restart_data_cb,,,typedef struct _restart_data_cb,1,restart.c,_restart_data_cb,,false,13,_restart_data_cb,1
+78532,TYPE_DECL,_restart_data_cb,,,typedef struct _restart_data_cb restart_data_cb;,33,restart.c,restart_data_cb,,false,13,restart_data_cb,2
+78533,TYPE_DECL,,,,"struct _restart_data_cb {
+    void *data; // user supplied opaque data.
+    struct _restart_data_cb *next; // callbacks are ordered stack
+    restart_check_cb ccb;
+    restart_save_cb scb;
+    char tag[RESTART_TAG_MAXLEN];
+}",1,restart.c,_restart_data_cb,,false,15,_restart_data_cb,3
+78535,TYPE_DECL,next,,,struct _restart_data_cb,5,restart.c,_restart_data_cb._restart_data_cb,,false,17,_restart_data_cb,2
+78648,TYPE_DECL,restart_cb_ctx,,,"typedef struct {
+    FILE *f;
+    restart_data_cb *cb;
+    char *line;
+    bool done;
+}",1,restart.c,restart_cb_ctx,,false,60,restart_cb_ctx,15
+79758,TYPE_DECL,,restart.h:<global>,NAMESPACE_BLOCK,<global>,1,restart.h,restart.h:<global>,,false,1,<global>,1
+79761,TYPE_DECL,ANY,,,typedef uint32_t mc_ptr_t;,22,restart.h,mc_ptr_t,,false,10,mc_ptr_t,1
+79762,TYPE_DECL,,,,"enum restart_get_kv_ret {
+    RESTART_OK=0, RESTART_NOTAG, RESTART_BADLINE, RESTART_DONE
+}",1,restart.h,restart_get_kv_ret,,false,13,restart_get_kv_ret,2
+79803,TYPE_DECL,restart_get_kv,,,enum restart_get_kv_ret,1,restart.h,restart_get_kv_ret,,false,22,restart_get_kv_ret,7
+79834,TYPE_DECL,,sasl_defs.c:<global>,NAMESPACE_BLOCK,<global>,1,sasl_defs.c,sasl_defs.c:<global>,,false,1,<global>,6
+79932,TYPE_DECL,,sasl_defs.h:<global>,NAMESPACE_BLOCK,<global>,1,sasl_defs.h,sasl_defs.h:<global>,,false,1,<global>,2
+79935,TYPE_DECL,void*,,,typedef void* sasl_conn_t;,13,sasl_defs.h,sasl_conn_t,,false,16,sasl_conn_t,1
+79942,TYPE_DECL,,sizes.c:<global>,NAMESPACE_BLOCK,<global>,1,sizes.c,sizes.c:<global>,,false,1,<global>,3
+80047,TYPE_DECL,,slab_automove.c:<global>,NAMESPACE_BLOCK,<global>,1,slab_automove.c,slab_automove.c:<global>,,false,1,<global>,5
+80050,TYPE_DECL,,,,"struct window_data {
+    uint64_t age;
+    uint64_t dirty;
+    float evicted_ratio;
+    uint64_t evicted_seen; // if evictions were seen at all this window
+}",1,slab_automove.c,window_data,,false,16,window_data,1
+80055,TYPE_DECL,slab_automove,,,"typedef struct {
+    struct window_data *window_data;
+    uint32_t window_size;
+    uint32_t window_cur;
+    double max_age_ratio;
+    item_stats_automove iam_before[MAX_NUMBER_OF_SLAB_CLASSES];
+    item_stats_automove iam_after[MAX_NUMBER_OF_SLAB_CLASSES];
+    slab_stats_automove sam_before[MAX_NUMBER_OF_SLAB_CLASSES];
+    slab_stats_automove sam_after[MAX_NUMBER_OF_SLAB_CLASSES];
+}",1,slab_automove.c,slab_automove,,false,23,slab_automove,2
+80056,TYPE_DECL,window_data,,,struct window_data,5,slab_automove.c,slab_automove.window_data,,false,24,window_data,1
+80695,TYPE_DECL,,slab_automove.h:<global>,NAMESPACE_BLOCK,<global>,1,slab_automove.h,slab_automove.h:<global>,,false,1,<global>,1
+80732,TYPE_DECL,slab_automove_reg_t,,,"typedef struct {
+    slab_automove_init_func init;
+    slab_automove_free_func free;
+    slab_automove_run_func run;
+}",1,slab_automove.h,slab_automove_reg_t,,false,13,slab_automove_reg_t,7
+80747,TYPE_DECL,,slab_automove_extstore.c:<global>,NAMESPACE_BLOCK,<global>,1,slab_automove_extstore.c,slab_automove_extstore.c:<global>,,false,1,<global>,5
+80750,TYPE_DECL,,,,"struct window_data {
+    uint64_t age;
+    uint64_t dirty;
+    uint64_t evicted;
+    unsigned int excess_free;
+    unsigned int relaxed;
+}",1,slab_automove_extstore.c,window_data,,false,17,window_data,1
+80756,TYPE_DECL,slab_automove,,,"typedef struct {
+    struct window_data *window_data;
+    struct settings *settings;
+    uint32_t window_size;
+    uint32_t window_cur;
+    uint32_t item_size;
+    double max_age_ratio;
+    double free_ratio;
+    bool pool_filled_once;
+    unsigned int global_pool_watermark;
+    item_stats_automove iam_before[MAX_NUMBER_OF_SLAB_CLASSES];
+    item_stats_automove iam_after[MAX_NUMBER_OF_SLAB_CLASSES];
+    slab_stats_automove sam_before[MAX_NUMBER_OF_SLAB_CLASSES];
+    slab_stats_automove sam_after[MAX_NUMBER_OF_SLAB_CLASSES];
+}",1,slab_automove_extstore.c,slab_automove,,false,25,slab_automove,2
+80757,TYPE_DECL,window_data,,,struct window_data,5,slab_automove_extstore.c,slab_automove.window_data,,false,26,window_data,1
+80759,TYPE_DECL,settings,,,struct settings,5,slab_automove_extstore.c,slab_automove.settings,,false,27,settings,3
+81547,TYPE_DECL,,slab_automove_extstore.h:<global>,NAMESPACE_BLOCK,<global>,1,slab_automove_extstore.h,slab_automove_extstore.h:<global>,,false,1,<global>,1
+81599,TYPE_DECL,,slabs.c:<global>,NAMESPACE_BLOCK,<global>,1,slabs.c,slabs.c:<global>,,false,1,<global>,16
+81602,TYPE_DECL,slabclass_t,,,"typedef struct {
+    unsigned int size;      /* sizes of items */
+    unsigned int perslab;   /* how many items per slab */
+
+    void *slots;           /* list of item ptrs */
+    unsigned int sl_curr;   /* total free items in list */
+
+    unsigned int slabs;     /* how many slabs were allocated for this class */
+
+    void **slab_list;       /* array of slab pointers */
+    unsigned int list_size; /* size of prev array */
+}",1,slabs.c,slabclass_t,,false,29,slabclass_t,1
+84238,TYPE_DECL,,,,"enum move_status {
+    MOVE_PASS=0, MOVE_FROM_SLAB, MOVE_FROM_LRU, MOVE_BUSY, MOVE_LOCKED
+}",1,slabs.c,move_status,,false,833,move_status,61
+85750,TYPE_DECL,,slabs.h:<global>,NAMESPACE_BLOCK,<global>,1,slabs.h,slabs.h:<global>,,false,1,<global>,1
+85797,TYPE_DECL,slab_stats_automove,,,"typedef struct {
+    unsigned int chunks_per_page;
+    unsigned int chunk_size;
+    long int free_chunks;
+    long int total_pages;
+}",1,slabs.h,slab_stats_automove,,false,34,slab_stats_automove,8
+85846,TYPE_DECL,,,,"enum reassign_result_type {
+    REASSIGN_OK=0, REASSIGN_RUNNING, REASSIGN_BADCLASS, REASSIGN_NOSPARE,
+    REASSIGN_SRC_DST_SAME
+}",1,slabs.h,reassign_result_type,,false,55,reassign_result_type,18
+85859,TYPE_DECL,slabs_reassign,,,enum reassign_result_type,1,slabs.h,reassign_result_type,,false,60,reassign_result_type,19
+85887,TYPE_DECL,,solaris_priv.c:<global>,NAMESPACE_BLOCK,<global>,1,solaris_priv.c,solaris_priv.c:<global>,,false,1,<global>,5
+85904,TYPE_DECL,,stats_prefix.c:<global>,NAMESPACE_BLOCK,<global>,1,stats_prefix.c,stats_prefix.c:<global>,,false,1,<global>,6
+86374,TYPE_DECL,,stats_prefix.h:<global>,NAMESPACE_BLOCK,<global>,1,stats_prefix.h,stats_prefix.h:<global>,,false,1,<global>,1
+86411,TYPE_DECL,PREFIX_STATS,,,typedef struct _prefix_stats,1,stats_prefix.h,_prefix_stats,,false,41,_prefix_stats,7
+86412,TYPE_DECL,_prefix_stats,,,typedef struct _prefix_stats PREFIX_STATS;,30,stats_prefix.h,PREFIX_STATS,,false,41,PREFIX_STATS,8
+86413,TYPE_DECL,,,,"struct _prefix_stats {
+    char *prefix;
+    size_t prefix_len;
+    uint64_t num_gets;
+    uint64_t num_sets;
+    uint64_t num_deletes;
+    uint64_t num_hits;
+    PREFIX_STATS *next;
+}",1,stats_prefix.h,_prefix_stats,,false,42,_prefix_stats,9
+86447,TYPE_DECL,,storage.c:<global>,NAMESPACE_BLOCK,<global>,1,storage.c,storage.c:<global>,,false,1,<global>,10
+86452,TYPE_DECL,,storage.h:<global>,NAMESPACE_BLOCK,<global>,1,storage.h,storage.h:<global>,,false,1,<global>,1
+86531,TYPE_DECL,storage_conf_parse,,,struct extstore_conf_file,1,storage.h,extstore_conf_file,,false,34,extstore_conf_file,15
+86608,TYPE_DECL,,testapp.c:<global>,NAMESPACE_BLOCK,<global>,1,testapp.c,testapp.c:<global>,,false,1,<global>,27
+86611,TYPE_DECL,,,,"enum test_return { TEST_SKIP, TEST_PASS, TEST_FAIL }",1,testapp.c,test_return,,false,35,test_return,1
+86615,TYPE_DECL,,,,"struct conn {
+    int sock;
+#ifdef TLS
+    SSL_CTX   *ssl_ctx;
+    SSL    *ssl;
+#endif
+    ssize_t (*read)(struct conn  *c, void *buf, size_t count);
+    ssize_t (*write)(struct conn *c, const void *buf, size_t count);
+}",1,testapp.c,conn,,false,37,conn,2
+86686,TYPE_DECL,con,,,static struct conn,1,testapp.c,conn,,false,79,conn,10
+93654,TYPE_DECL,TEST_FUNC,,,typedef enum test_return,1,testapp.c,test_return,,false,2242,test_return,104
+93655,TYPE_DECL,test_return ()(),,,typedef enum test_return (*TEST_FUNC)(void);,26,testapp.c,,,false,2242,,105
+93656,TYPE_DECL,,,,"struct testcase {
+    const char *description;
+    TEST_FUNC function;
+}",1,testapp.c,testcase,,false,2243,testcase,106
+93659,TYPE_DECL,testcases,,,struct testcase,1,testapp.c,testcase,,false,2248,testcase,107
+94005,TYPE_DECL,,thread.c:<global>,NAMESPACE_BLOCK,<global>,1,thread.c,thread.c:<global>,,false,1,<global>,14
+94008,TYPE_DECL,,,,"enum conn_queue_item_modes {
+    queue_new_conn,   /* brand new connection. */
+    queue_pause,      /* pause thread */
+    queue_timeout,    /* socket sfd timed out */
+    queue_redispatch, /* return conn from side thread */
+    queue_stop,       /* exit thread */
+    queue_return_io,  /* returning a pending IO object immediately */
+#ifdef PROXY
+    queue_proxy_reload, /* signal proxy to reload worker VM */
+#endif
+}",1,thread.c,conn_queue_item_modes,,false,35,conn_queue_item_modes,1
+94015,TYPE_DECL,CQ_ITEM,,,typedef struct conn_queue_item,1,thread.c,conn_queue_item,,false,46,conn_queue_item,2
+94016,TYPE_DECL,conn_queue_item,,,typedef struct conn_queue_item CQ_ITEM;,32,thread.c,CQ_ITEM,,false,46,CQ_ITEM,3
+94017,TYPE_DECL,,,,"struct conn_queue_item {
+    int               sfd;
+    enum conn_states  init_state;
+    int               event_flags;
+    int               read_buffer_size;
+    enum network_transport     transport;
+    enum conn_queue_item_modes mode;
+    conn *c;
+    void    *ssl;
+    uint64_t conntag;
+    enum protocol bproto;
+    io_pending_t *io; // IO when used for deferred IO handling.
+    STAILQ_ENTRY(conn_queue_item) i_next;
+}",1,thread.c,conn_queue_item,,false,47,conn_queue_item,4
+94019,TYPE_DECL,init_state,,,enum conn_states,5,thread.c,conn_queue_item.conn_states,,false,49,conn_states,2
+94023,TYPE_DECL,transport,,,enum network_transport,5,thread.c,conn_queue_item.network_transport,,false,52,network_transport,6
+94025,TYPE_DECL,mode,,,enum conn_queue_item_modes,5,thread.c,conn_queue_item.conn_queue_item_modes,,false,53,conn_queue_item_modes,8
+94030,TYPE_DECL,bproto,,,enum protocol,5,thread.c,conn_queue_item.protocol,,false,57,protocol,13
+94033,TYPE_DECL,i_next,,,STAILQ_ENTRY(conn_queue_item),5,thread.c,conn_queue_item.i_next,,false,59,conn_queue_item.i_next,16
+94034,TYPE_DECL,stqe_next,,,conn_queue_item,5,thread.c,conn_queue_item.i_next.conn_queue_item,,false,59,conn_queue_item,1
+94037,TYPE_DECL,CQ,,,typedef struct conn_queue,1,thread.c,conn_queue,,false,63,conn_queue,5
+94038,TYPE_DECL,conn_queue,,,typedef struct conn_queue CQ;,27,thread.c,CQ,,false,63,CQ,6
+94039,TYPE_DECL,,,,"struct conn_queue {
+    STAILQ_HEAD(conn_ev_head, conn_queue_item) head;
+    pthread_mutex_t lock;
+    cache_t *cache; /* freelisted objects */
+}",1,thread.c,conn_queue,,false,64,conn_queue,7
+94040,TYPE_DECL,head,,,conn_ev_head,5,thread.c,conn_queue.conn_ev_head,,false,65,conn_ev_head,1
+94041,TYPE_DECL,stqh_first,,,conn_queue_item,5,thread.c,conn_queue.conn_ev_head.conn_queue_item,,false,65,conn_queue_item,1
+94043,TYPE_DECL,stqh_last,,,conn_queue_item,5,thread.c,conn_queue.conn_ev_head.conn_queue_item,,false,65,conn_queue_item,3
+97236,TYPE_DECL,,timedrun.c:<global>,NAMESPACE_BLOCK,<global>,1,timedrun.c,timedrun.c:<global>,,false,1,<global>,9
+97507,TYPE_DECL,,tls.c:<global>,NAMESPACE_BLOCK,<global>,1,tls.c,tls.c:<global>,,false,1,<global>,7
+97512,TYPE_DECL,,tls.h:<global>,NAMESPACE_BLOCK,<global>,1,tls.h,tls.h:<global>,,false,1,<global>,1
+97578,TYPE_DECL,,trace.h:<global>,NAMESPACE_BLOCK,<global>,1,trace.h,trace.h:<global>,,false,1,<global>,2
+97599,TYPE_DECL,,util.c:<global>,NAMESPACE_BLOCK,<global>,1,util.c,util.c:<global>,,false,1,<global>,9
+98366,TYPE_DECL,,util.h:<global>,NAMESPACE_BLOCK,<global>,1,util.h,util.h:<global>,,false,1,<global>,2
+98471,TYPE_DECL,,vendor\mcmc\example.c:<global>,NAMESPACE_BLOCK,<global>,1,vendor\mcmc\example.c,vendor\mcmc\example.c:<global>,,false,1,<global>,12
+98727,TYPE_DECL,,vendor\mcmc\mcmc.c:<global>,NAMESPACE_BLOCK,<global>,1,vendor\mcmc\mcmc.c,vendor\mcmc\mcmc.c:<global>,,false,1,<global>,13
+98730,TYPE_DECL,mcmc_ctx_t,,,"typedef struct mcmc_ctx {
+    int fd;
+    int gai_status; // getaddrinfo() last status.
+    int last_sys_error; // last syscall error (connect/etc?)
+    int sent_bytes_partial; // note for partially sent buffers.
+    int fail_code; // recent failure reason.
+    int error; // latest error code.
+    uint32_t status_flags; // internal only flags.
+    int state;
+
+    // FIXME: s/buffer_used/buffer_filled/ ?
+    size_t buffer_used; // amount of bytes read into the buffer so far.
+    size_t buffer_request_len; // cached endpoint for current request
+    char *buffer_head; // buffer pointer currently in use.
+}",1,vendor\mcmc\mcmc.c,mcmc_ctx,,false,36,mcmc_ctx,1
+98742,TYPE_DECL,mcmc_ctx,,,"typedef struct mcmc_ctx {
+    int fd;
+    int gai_status; // getaddrinfo() last status.
+    int last_sys_error; // last syscall error (connect/etc?)
+    int sent_bytes_partial; // note for partially sent buffers.
+    int fail_code; // recent failure reason.
+    int error; // latest error code.
+    uint32_t status_flags; // internal only flags.
+    int state;
+
+    // FIXME: s/buffer_used/buffer_filled/ ?
+    size_t buffer_used; // amount of bytes read into the buffer so far.
+    size_t buffer_request_len; // cached endpoint for current request
+    char *buffer_head; // buffer pointer currently in use.
+} mcmc_ctx_t;",3,vendor\mcmc\mcmc.c,mcmc_ctx_t,,false,50,mcmc_ctx_t,2
+100250,TYPE_DECL,,vendor\mcmc\mcmc.h:<global>,NAMESPACE_BLOCK,<global>,1,vendor\mcmc\mcmc.h,vendor\mcmc\mcmc.h:<global>,,false,1,<global>,1
+100253,TYPE_DECL,mcmc_resp_t,,,"typedef struct {
+    unsigned short type;
+    unsigned short code;
+    char *value; // pointer to start of value in buffer.
+    size_t reslen; // full length of the response line
+    size_t vlen_read; // amount of value that was in supplied buffer.
+    size_t vlen; // reslen + vlen is the full length of the response.
+    union {
+        // META response
+        struct {
+            char *rline; // start of meta response line.
+            size_t rlen;
+        };
+        // GET response
+        struct {
+            char *key;
+            size_t klen;
+            uint32_t flags;
+            uint64_t cas;
+            // TODO: value info
+        };
+        // STAT response
+        struct {
+            char *stat;
+            size_t slen;
+        };
+    };
+}",1,vendor\mcmc\mcmc.h,mcmc_resp_t,,false,47,mcmc_resp_t,1
+100260,TYPE_DECL,,,,"union {
+        // META response
+        struct {
+            char *rline; // start of meta response line.
+            size_t rlen;
+        };
+        // GET response
+        struct {
+            char *key;
+            size_t klen;
+            uint32_t flags;
+            uint64_t cas;
+            // TODO: value info
+        };
+        // STAT response
+        struct {
+            char *stat;
+            size_t slen;
+        };
+    }",5,vendor\mcmc\mcmc.h,mcmc_resp_t.anonymous_composite_type_0,,false,54,mcmc_resp_t.anonymous_composite_type_0,7
+100261,TYPE_DECL,,,,"struct {
+            char *rline; // start of meta response line.
+            size_t rlen;
+        }",9,vendor\mcmc\mcmc.h,mcmc_resp_t.anonymous_composite_type_2.anonymous_composite_type_1,,false,56,mcmc_resp_t.anonymous_composite_type_2.anonymous_composite_type_1,1
+100264,TYPE_DECL,,,,"struct {
+            char *key;
+            size_t klen;
+            uint32_t flags;
+            uint64_t cas;
+            // TODO: value info
+        }",9,vendor\mcmc\mcmc.h,mcmc_resp_t.anonymous_composite_type_4.anonymous_composite_type_3,,false,61,mcmc_resp_t.anonymous_composite_type_4.anonymous_composite_type_3,2
+100269,TYPE_DECL,,,,"struct {
+            char *stat;
+            size_t slen;
+        }",9,vendor\mcmc\mcmc.h,mcmc_resp_t.anonymous_composite_type_6.anonymous_composite_type_5,,false,69,mcmc_resp_t.anonymous_composite_type_6.anonymous_composite_type_5,3
+100383,TYPE_DECL,,xxhash.h:<global>,NAMESPACE_BLOCK,<global>,1,xxhash.h,xxhash.h:<global>,,false,1,<global>,21
+100391,TYPE_DECL,,,,"typedef enum { XXH_OK=0, XXH_ERROR }",1,xxhash.h,XXH_errorcode,,false,287,XXH_errorcode,2
+100402,TYPE_DECL,ANY,,,typedef uint32_t XXH32_hash_t;,22,xxhash.h,XXH32_hash_t,,false,304,XXH32_hash_t,4
+100410,TYPE_DECL,XXH32_state_t,,,typedef struct XXH32_state_s,1,xxhash.h,XXH32_state_s,,false,416,XXH32_state_s,6
+100411,TYPE_DECL,XXH32_state_s,,,typedef struct XXH32_state_s XXH32_state_t;,30,xxhash.h,XXH32_state_t,,false,416,XXH32_state_t,7
+100446,TYPE_DECL,XXH32_canonical_t,,,"typedef struct {
+    unsigned char digest[4]; /*!< Hash bytes, big endian */
+}",1,xxhash.h,XXH32_canonical_t,,false,518,XXH32_canonical_t,14
+100466,TYPE_DECL,ANY,,,typedef uint64_t XXH64_hash_t;,21,xxhash.h,XXH64_hash_t,,false,567,XXH64_hash_t,18
+100474,TYPE_DECL,XXH64_state_t,,,typedef struct XXH64_state_s,1,xxhash.h,XXH64_state_s,,false,625,XXH64_state_s,20
+100475,TYPE_DECL,XXH64_state_s,,,typedef struct XXH64_state_s XXH64_state_t;,30,xxhash.h,XXH64_state_t,,false,625,XXH64_state_t,21
+100510,TYPE_DECL,XXH64_canonical_t,,,typedef struct { unsigned char digest[sizeof(XXH64_hash_t)]; },1,xxhash.h,XXH64_canonical_t,,false,635,XXH64_canonical_t,28
+100552,TYPE_DECL,XXH3_state_t,,,typedef struct XXH3_state_s,1,xxhash.h,XXH3_state_s,,false,740,XXH3_state_s,35
+100553,TYPE_DECL,XXH3_state_s,,,typedef struct XXH3_state_s XXH3_state_t;,29,xxhash.h,XXH3_state_t,,false,740,XXH3_state_t,36
+100600,TYPE_DECL,XXH128_hash_t,,,"typedef struct {
+    XXH64_hash_t low64;   /*!< `value & 0xFFFFFFFFFFFFFFFF` */
+    XXH64_hash_t high64;  /*!< `value >> 64` */
+}",1,xxhash.h,XXH128_hash_t,,false,785,XXH128_hash_t,45
+100667,TYPE_DECL,XXH128_canonical_t,,,typedef struct { unsigned char digest[sizeof(XXH128_hash_t)]; },1,xxhash.h,XXH128_canonical_t,,false,837,XXH128_canonical_t,57
+101543,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,ADD_STAT,,<includes>,ADD_STAT,,true,,ADD_STAT,-1
+101544,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,ANY,,<includes>,ANY,,true,,ANY,-1
+101545,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,CQ*,,<includes>,CQ*,,true,,CQ*,-1
+101546,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,CQ_ITEM*,,<includes>,CQ_ITEM*,,true,,CQ_ITEM*,-1
+101547,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,FILE*,,<includes>,FILE*,,true,,FILE*,-1
+101548,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,LIBEVENT_THREAD*,,<includes>,LIBEVENT_THREAD*,,true,,LIBEVENT_THREAD*,-1
+101549,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,PREFIX_STATS*,,<includes>,PREFIX_STATS*,,true,,PREFIX_STATS*,-1
+101550,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,SSL*,,<includes>,SSL*,,true,,SSL*,-1
+101551,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,SSL_CTX*,,<includes>,SSL_CTX*,,true,,SSL_CTX*,-1
+101552,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,SSL_SESSION*,,<includes>,SSL_SESSION*,,true,,SSL_SESSION*,-1
+101553,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,TEST_FUNC,,<includes>,TEST_FUNC,,true,,TEST_FUNC,-1
+101554,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,XXH128_canonical_t*,,<includes>,XXH128_canonical_t*,,true,,XXH128_canonical_t*,-1
+101555,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,XXH32_canonical_t*,,<includes>,XXH32_canonical_t*,,true,,XXH32_canonical_t*,-1
+101556,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,XXH32_state_t*,,<includes>,XXH32_state_t*,,true,,XXH32_state_t*,-1
+101557,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,XXH3_state_t*,,<includes>,XXH3_state_t*,,true,,XXH3_state_t*,-1
+101558,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,XXH64_canonical_t*,,<includes>,XXH64_canonical_t*,,true,,XXH64_canonical_t*,-1
+101559,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,XXH64_state_t*,,<includes>,XXH64_state_t*,,true,,XXH64_state_t*,-1
+101560,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,[],,<includes>,[],,true,,[],-1
+101561,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,__kernel_timespec,,<includes>,__kernel_timespec,,true,,__kernel_timespec,-1
+101562,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,__store_wbuf*,,<includes>,__store_wbuf*,,true,,__store_wbuf*,-1
+101563,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_dumpbuf*,,<includes>,_dumpbuf*,,true,,_dumpbuf*,-1
+101564,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_entry_details[],,<includes>,_entry_details[],,true,,_entry_details[],-1
+101565,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_io_pending_proxy_t*,,<includes>,_io_pending_proxy_t*,,true,,_io_pending_proxy_t*,-1
+101566,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_io_pending_proxy_t**,,<includes>,_io_pending_proxy_t**,,true,,_io_pending_proxy_t**,-1
+101567,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_logger*,,<includes>,_logger*,,true,,_logger*,-1
+101568,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_lru_bump_buf*,,<includes>,_lru_bump_buf*,,true,,_lru_bump_buf*,-1
+101569,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_mc_meta_data*,,<includes>,_mc_meta_data*,,true,,_mc_meta_data*,-1
+101570,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_mc_resp*,,<includes>,_mc_resp*,,true,,_mc_resp*,-1
+101571,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_mc_resp[],,<includes>,_mc_resp[],,true,,_mc_resp[],-1
+101572,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_mc_resp_bundle*,,<includes>,_mc_resp_bundle*,,true,,_mc_resp_bundle*,-1
+101573,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_meta_flags*,,<includes>,_meta_flags*,,true,,_meta_flags*,-1
+101574,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_obj_io*,,<includes>,_obj_io*,,true,,_obj_io*,-1
+101575,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_prefix_stats*[256],,<includes>,_prefix_stats*[256],,true,,_prefix_stats*[256],-1
+101576,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_restart_data_cb*,,<includes>,_restart_data_cb*,,true,,_restart_data_cb*,-1
+101577,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_store_page*,,<includes>,_store_page*,,true,,_store_page*,-1
+101578,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_store_wbuf*,,<includes>,_store_wbuf*,,true,,_store_wbuf*,-1
+101579,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_strchunk*,,<includes>,_strchunk*,,true,,_strchunk*,-1
+101580,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_stritem*,,<includes>,_stritem*,,true,,_stritem*,-1
+101581,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,_stritem*[256],,<includes>,_stritem*[256],,true,,_stritem*[256],-1
+101582,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,act,,<includes>,act,,true,,act,-1
+101583,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,active_crawler_type,,<includes>,active_crawler_type,,true,,active_crawler_type,-1
+101584,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,add_delta,,<includes>,add_delta,,true,,add_delta,-1
+101585,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,addr,,<includes>,addr,,true,,addr,-1
+101586,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,addrinfo,,<includes>,addrinfo,,true,,addrinfo,-1
+101587,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,addrinfo*,,<includes>,addrinfo*,,true,,addrinfo*,-1
+101588,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_10,,<includes>,anonymous_type_10,,true,,anonymous_type_10,-1
+101589,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_11,,<includes>,anonymous_type_11,,true,,anonymous_type_11,-1
+101590,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_12,,<includes>,anonymous_type_12,,true,,anonymous_type_12,-1
+101591,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_13,,<includes>,anonymous_type_13,,true,,anonymous_type_13,-1
+101592,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_14,,<includes>,anonymous_type_14,,true,,anonymous_type_14,-1
+101593,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_15,,<includes>,anonymous_type_15,,true,,anonymous_type_15,-1
+101594,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_16,,<includes>,anonymous_type_16,,true,,anonymous_type_16,-1
+101595,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_17,,<includes>,anonymous_type_17,,true,,anonymous_type_17,-1
+101596,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_18,,<includes>,anonymous_type_18,,true,,anonymous_type_18,-1
+101597,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_19,,<includes>,anonymous_type_19,,true,,anonymous_type_19,-1
+101598,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_20,,<includes>,anonymous_type_20,,true,,anonymous_type_20,-1
+101599,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_21,,<includes>,anonymous_type_21,,true,,anonymous_type_21,-1
+101600,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_22,,<includes>,anonymous_type_22,,true,,anonymous_type_22,-1
+101601,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_23,,<includes>,anonymous_type_23,,true,,anonymous_type_23,-1
+101602,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_24,,<includes>,anonymous_type_24,,true,,anonymous_type_24,-1
+101603,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_25,,<includes>,anonymous_type_25,,true,,anonymous_type_25,-1
+101604,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_26,,<includes>,anonymous_type_26,,true,,anonymous_type_26,-1
+101605,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_27,,<includes>,anonymous_type_27,,true,,anonymous_type_27,-1
+101606,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_28,,<includes>,anonymous_type_28,,true,,anonymous_type_28,-1
+101607,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_29,,<includes>,anonymous_type_29,,true,,anonymous_type_29,-1
+101608,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_30,,<includes>,anonymous_type_30,,true,,anonymous_type_30,-1
+101609,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_31,,<includes>,anonymous_type_31,,true,,anonymous_type_31,-1
+101610,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_32,,<includes>,anonymous_type_32,,true,,anonymous_type_32,-1
+101611,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_33,,<includes>,anonymous_type_33,,true,,anonymous_type_33,-1
+101612,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_34,,<includes>,anonymous_type_34,,true,,anonymous_type_34,-1
+101613,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_35,,<includes>,anonymous_type_35,,true,,anonymous_type_35,-1
+101614,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_36,,<includes>,anonymous_type_36,,true,,anonymous_type_36,-1
+101615,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_37,,<includes>,anonymous_type_37,,true,,anonymous_type_37,-1
+101616,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_38,,<includes>,anonymous_type_38,,true,,anonymous_type_38,-1
+101617,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_39,,<includes>,anonymous_type_39,,true,,anonymous_type_39,-1
+101618,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_4,,<includes>,anonymous_type_4,,true,,anonymous_type_4,-1
+101619,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_40,,<includes>,anonymous_type_40,,true,,anonymous_type_40,-1
+101620,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_41,,<includes>,anonymous_type_41,,true,,anonymous_type_41,-1
+101621,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_42,,<includes>,anonymous_type_42,,true,,anonymous_type_42,-1
+101622,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_43,,<includes>,anonymous_type_43,,true,,anonymous_type_43,-1
+101623,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_44,,<includes>,anonymous_type_44,,true,,anonymous_type_44,-1
+101624,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_45,,<includes>,anonymous_type_45,,true,,anonymous_type_45,-1
+101625,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_46,,<includes>,anonymous_type_46,,true,,anonymous_type_46,-1
+101626,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_47,,<includes>,anonymous_type_47,,true,,anonymous_type_47,-1
+101627,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_48,,<includes>,anonymous_type_48,,true,,anonymous_type_48,-1
+101628,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_49,,<includes>,anonymous_type_49,,true,,anonymous_type_49,-1
+101629,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_5,,<includes>,anonymous_type_5,,true,,anonymous_type_5,-1
+101630,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_50,,<includes>,anonymous_type_50,,true,,anonymous_type_50,-1
+101631,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_51,,<includes>,anonymous_type_51,,true,,anonymous_type_51,-1
+101632,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_52,,<includes>,anonymous_type_52,,true,,anonymous_type_52,-1
+101633,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_53,,<includes>,anonymous_type_53,,true,,anonymous_type_53,-1
+101634,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_6,,<includes>,anonymous_type_6,,true,,anonymous_type_6,-1
+101635,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_7,,<includes>,anonymous_type_7,,true,,anonymous_type_7,-1
+101636,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_8,,<includes>,anonymous_type_8,,true,,anonymous_type_8,-1
+101637,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,anonymous_type_9,,<includes>,anonymous_type_9,,true,,anonymous_type_9,-1
+101638,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,assoc_iterator*,,<includes>,assoc_iterator*,,true,,assoc_iterator*,-1
+101639,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,auth_entry[8],,<includes>,auth_entry[8],,true,,auth_entry[8],-1
+101640,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,auth_t*,,<includes>,auth_t*,,true,,auth_t*,-1
+101641,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,authfile_load,,<includes>,authfile_load,,true,,authfile_load,-1
+101642,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,base,,<includes>,base,,true,,base,-1
+101643,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,be_next,,<includes>,be_next,,true,,be_next,-1
+101644,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,binding_protocol,,<includes>,binding_protocol,,true,,binding_protocol,-1
+101645,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,bipbuf_t*,,<includes>,bipbuf_t*,,true,,bipbuf_t*,-1
+101646,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,body,,<includes>,body,,true,,body,-1
+101647,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,bool,,<includes>,bool,,true,,bool,-1
+101648,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,bool*,,<includes>,bool*,,true,,bool*,-1
+101649,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,bproto,,<includes>,bproto,,true,,bproto,-1
+101650,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,c_next,,<includes>,c_next,,true,,c_next,-1
+101651,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,cache_free_s*,,<includes>,cache_free_s*,,true,,cache_free_s*,-1
+101652,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,cache_free_s**,,<includes>,cache_free_s**,,true,,cache_free_s**,-1
+101653,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,cache_head,,<includes>,cache_head,,true,,cache_head,-1
+101654,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,cache_t*,,<includes>,cache_t*,,true,,cache_t*,-1
+101655,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,cas_result,,<includes>,cas_result,,true,,cas_result,-1
+101656,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char,,<includes>,char,,true,,char,-1
+101657,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char*,,<includes>,char*,,true,,char*,-1
+101658,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char**,,<includes>,char**,,true,,char**,-1
+101659,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char*[24],,<includes>,char*[24],,true,,char*[24],-1
+101660,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char*[256],,<includes>,char*[256],,true,,char*[256],-1
+101661,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char*[5],,<includes>,char*[5],,true,,char*[5],-1
+101662,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[1024],,<includes>,char[1024],,true,,char[1024],-1
+101663,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[1025],,<includes>,char[1025],,true,,char[1025],-1
+101664,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[120],,<includes>,char[120],,true,,char[120],-1
+101665,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[128],,<includes>,char[128],,true,,char[128],-1
+101666,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[12],,<includes>,char[12],,true,,char[12],-1
+101667,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[1],,<includes>,char[1],,true,,char[1],-1
+101668,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[201],,<includes>,char[201],,true,,char[201],-1
+101669,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[24],,<includes>,char[24],,true,,char[24],-1
+101670,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[251],,<includes>,char[251],,true,,char[251],-1
+101671,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[255],,<includes>,char[255],,true,,char[255],-1
+101672,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[256],,<includes>,char[256],,true,,char[256],-1
+101673,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[280],,<includes>,char[280],,true,,char[280],-1
+101674,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[2],,<includes>,char[2],,true,,char[2],-1
+101675,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[32],,<includes>,char[32],,true,,char[32],-1
+101676,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[4096],,<includes>,char[4096],,true,,char[4096],-1
+101677,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[40],,<includes>,char[40],,true,,char[40],-1
+101678,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[500],,<includes>,char[500],,true,,char[500],-1
+101679,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[512],,<includes>,char[512],,true,,char[512],-1
+101680,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[64],,<includes>,char[64],,true,,char[64],-1
+101681,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[6],,<includes>,char[6],,true,,char[6],-1
+101682,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[751],,<includes>,char[751],,true,,char[751],-1
+101683,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[768],,<includes>,char[768],,true,,char[768],-1
+101684,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[7],,<includes>,char[7],,true,,char[7],-1
+101685,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[80],,<includes>,char[80],,true,,char[80],-1
+101686,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[],,<includes>,char[],,true,,char[],-1
+101687,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,char[]*,,<includes>,char[]*,,true,,char[]*,-1
+101688,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,clock_event,,<includes>,clock_event,,true,,clock_event,-1
+101689,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,clockevent,,<includes>,clockevent,,true,,clockevent,-1
+101690,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,close_reason,,<includes>,close_reason,,true,,close_reason,-1
+101691,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,con,,<includes>,con,,true,,con,-1
+101692,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,conn*,,<includes>,conn*,,true,,conn*,-1
+101693,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,conn**,,<includes>,conn**,,true,,conn**,-1
+101694,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,conn*[2],,<includes>,conn*[2],,true,,conn*[2],-1
+101695,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,conn_ev_head,,<includes>,conn_ev_head,,true,,conn_ev_head,-1
+101696,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,conn_queue*,,<includes>,conn_queue*,,true,,conn_queue*,-1
+101697,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,conn_queue_item*,,<includes>,conn_queue_item*,,true,,conn_queue_item*,-1
+101698,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,conn_queue_item**,,<includes>,conn_queue_item**,,true,,conn_queue_item**,-1
+101699,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,connect,,<includes>,connect,,true,,connect,-1
+101700,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,connect_ur,,<includes>,connect_ur,,true,,connect_ur,-1
+101701,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,const char*,,<includes>,const char*,,true,,const char*,-1
+101702,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,cpoint*,,<includes>,cpoint*,,true,,cpoint*,-1
+101703,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,cpoint[],,<includes>,cpoint[],,true,,cpoint[],-1
+101704,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler[256],,<includes>,crawler[256],,true,,crawler[256],-1
+101705,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_client_t*,,<includes>,crawler_client_t*,,true,,crawler_client_t*,-1
+101706,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_doneclass_func,,<includes>,crawler_doneclass_func,,true,,crawler_doneclass_func,-1
+101707,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_eval_func,,<includes>,crawler_eval_func,,true,,crawler_eval_func,-1
+101708,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_expired_data*,,<includes>,crawler_expired_data*,,true,,crawler_expired_data*,-1
+101709,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_finalize_func,,<includes>,crawler_finalize_func,,true,,crawler_finalize_func,-1
+101710,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_init_func,,<includes>,crawler_init_func,,true,,crawler_init_func,-1
+101711,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_module_reg_t *[3],,<includes>,crawler_module_reg_t *[3],,true,,crawler_module_reg_t *[3],-1
+101712,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_module_reg_t*,,<includes>,crawler_module_reg_t*,,true,,crawler_module_reg_t*,-1
+101713,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_module_reg_t*[3],,<includes>,crawler_module_reg_t*[3],,true,,crawler_module_reg_t*[3],-1
+101714,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawler_module_t*,,<includes>,crawler_module_t*,,true,,crawler_module_t*,-1
+101715,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawlerstats_t*,,<includes>,crawlerstats_t*,,true,,crawlerstats_t*,-1
+101716,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crawlerstats_t[],,<includes>,crawlerstats_t[],,true,,crawlerstats_t[],-1
+101717,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,crc_func,,<includes>,crc_func,,true,,crc_func,-1
+101718,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,data,,<includes>,data,,true,,data,-1
+101719,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,do_add_delta,,<includes>,do_add_delta,,true,,do_add_delta,-1
+101720,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,do_store_item,,<includes>,do_store_item,,true,,do_store_item,-1
+101721,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,double,,<includes>,double,,true,,double,-1
+101722,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,double*,,<includes>,double*,,true,,double*,-1
+101723,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,entry_details*,,<includes>,entry_details*,,true,,entry_details*,-1
+101724,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,entry_log_cb,,<includes>,entry_log_cb,,true,,entry_log_cb,-1
+101725,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,entry_parse_cb,,<includes>,entry_parse_cb,,true,,entry_parse_cb,-1
+101726,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum,,<includes>,enum,,true,,enum,-1
+101727,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum authfile_ret,,<includes>,enum authfile_ret,,true,,enum authfile_ret,-1
+101728,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum crawler_result_type,,<includes>,enum crawler_result_type,,true,,enum crawler_result_type,-1
+101729,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum delta_result_type,,<includes>,enum delta_result_type,,true,,enum delta_result_type,-1
+101730,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum logger_add_watcher_ret,,<includes>,enum logger_add_watcher_ret,,true,,enum logger_add_watcher_ret,-1
+101731,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum logger_parse_entry_ret,,<includes>,enum logger_parse_entry_ret,,true,,enum logger_parse_entry_ret,-1
+101732,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum logger_ret_type,,<includes>,enum logger_ret_type,,true,,enum logger_ret_type,-1
+101733,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum reassign_result_type,,<includes>,enum reassign_result_type,,true,,enum reassign_result_type,-1
+101734,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum restart_get_kv_ret,,<includes>,enum restart_get_kv_ret,,true,,enum restart_get_kv_ret,-1
+101735,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum store_item_type,,<includes>,enum store_item_type,,true,,enum store_item_type,-1
+101736,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum test_return,,<includes>,enum test_return,,true,,enum test_return,-1
+101737,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum transmit_result,,<includes>,enum transmit_result,,true,,enum transmit_result,-1
+101738,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,enum try_read_result,,<includes>,enum try_read_result,,true,,enum try_read_result,-1
+101739,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,ev_queue,,<includes>,ev_queue,,true,,ev_queue,-1
+101740,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,event_base*,,<includes>,event_base*,,true,,event_base*,-1
+101741,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,event_callback_fn,,<includes>,event_callback_fn,,true,,event_callback_fn,-1
+101742,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,event_config*,,<includes>,event_config*,,true,,event_config*,-1
+101743,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,eventfd_t,,<includes>,eventfd_t,,true,,eventfd_t,-1
+101744,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,evutil_socket_t,,<includes>,evutil_socket_t,,true,,evutil_socket_t,-1
+101745,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,extern pthread_mutex_t[],,<includes>,extern pthread_mutex_t[],,true,,extern pthread_mutex_t[],-1
+101746,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,extstore_conf*,,<includes>,extstore_conf*,,true,,extstore_conf*,-1
+101747,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,extstore_conf_file*,,<includes>,extstore_conf_file*,,true,,extstore_conf_file*,-1
+101748,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,extstore_page_data*,,<includes>,extstore_page_data*,,true,,extstore_page_data*,-1
+101749,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,extstore_res*,,<includes>,extstore_res*,,true,,extstore_res*,-1
+101750,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,extstore_stats*,,<includes>,extstore_stats*,,true,,extstore_stats*,-1
+101751,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,float,,<includes>,float,,true,,float,-1
+101752,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,flock,,<includes>,flock,,true,,flock,-1
+101753,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,global_stats,,<includes>,global_stats,,true,,global_stats,-1
+101754,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,h_next,,<includes>,h_next,,true,,h_next,-1
+101755,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,hash_func,,<includes>,hash_func,,true,,hash_func,-1
+101756,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,hash_selector_func,,<includes>,hash_selector_func,,true,,hash_selector_func,-1
+101757,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,head,,<includes>,head,,true,,head,-1
+101758,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,i_next,,<includes>,i_next,,true,,i_next,-1
+101759,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,in_port_t,,<includes>,in_port_t,,true,,in_port_t,-1
+101760,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,in_port_t*,,<includes>,in_port_t*,,true,,in_port_t*,-1
+101761,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,init_state,,<includes>,init_state,,true,,init_state,-1
+101762,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,int,,<includes>,int,,true,,int,-1
+101763,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,int*,,<includes>,int*,,true,,int*,-1
+101764,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,int32_t,,<includes>,int32_t,,true,,int32_t,-1
+101765,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,int32_t*,,<includes>,int32_t*,,true,,int32_t*,-1
+101766,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,int64_t,,<includes>,int64_t,,true,,int64_t,-1
+101767,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,int64_t*,,<includes>,int64_t*,,true,,int64_t*,-1
+101768,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,int8_t,,<includes>,int8_t,,true,,int8_t,-1
+101769,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,int[2],,<includes>,int[2],,true,,int[2],-1
+101770,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_next,,<includes>,io_next,,true,,io_next,-1
+101771,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_pending_proxy_t*,,<includes>,io_pending_proxy_t*,,true,,io_pending_proxy_t*,-1
+101772,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_pending_t*,,<includes>,io_pending_t*,,true,,io_pending_t*,-1
+101773,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_queue_cb,,<includes>,io_queue_cb,,true,,io_queue_cb,-1
+101774,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_queue_cb_s[3],,<includes>,io_queue_cb_s[3],,true,,io_queue_cb_s[3],-1
+101775,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_queue_cb_t*,,<includes>,io_queue_cb_t*,,true,,io_queue_cb_t*,-1
+101776,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_queue_s[3],,<includes>,io_queue_s[3],,true,,io_queue_s[3],-1
+101777,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_queue_stack_cb,,<includes>,io_queue_stack_cb,,true,,io_queue_stack_cb,-1
+101778,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_queue_t*,,<includes>,io_queue_t*,,true,,io_queue_t*,-1
+101779,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,io_uring,,<includes>,io_uring,,true,,io_uring,-1
+101780,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,iov,,<includes>,iov,,true,,iov,-1
+101781,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,iovec,,<includes>,iovec,,true,,iovec,-1
+101782,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,iovec*,,<includes>,iovec*,,true,,iovec*,-1
+101783,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,iovec[2],,<includes>,iovec[2],,true,,iovec[2],-1
+101784,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,iovec[4],,<includes>,iovec[4],,true,,iovec[4],-1
+101785,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,iovec[],,<includes>,iovec[],,true,,iovec[],-1
+101786,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,item*,,<includes>,item*,,true,,item*,-1
+101787,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,item**,,<includes>,item**,,true,,item**,-1
+101788,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,item_chunk*,,<includes>,item_chunk*,,true,,item_chunk*,-1
+101789,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,item_stats_automove*,,<includes>,item_stats_automove*,,true,,item_stats_automove*,-1
+101790,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,item_stats_automove[64],,<includes>,item_stats_automove[64],,true,,item_stats_automove[64],-1
+101791,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,itemstats_t[256],,<includes>,itemstats_t[256],,true,,itemstats_t[256],-1
+101792,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,ketama_key_hash,,<includes>,ketama_key_hash,,true,,ketama_key_hash,-1
+101793,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,ketama_t*,,<includes>,ketama_t*,,true,,ketama_t*,-1
+101794,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,key_hash_filter_func,,<includes>,key_hash_filter_func,,true,,key_hash_filter_func,-1
+101795,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,key_hash_func,,<includes>,key_hash_func,,true,,key_hash_func,-1
+101796,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,linger,,<includes>,linger,,true,,linger,-1
+101797,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logentry*,,<includes>,logentry*,,true,,logentry*,-1
+101798,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logentry_conn_event*,,<includes>,logentry_conn_event*,,true,,logentry_conn_event*,-1
+101799,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logentry_eviction*,,<includes>,logentry_eviction*,,true,,logentry_eviction*,-1
+101800,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logentry_item_get*,,<includes>,logentry_item_get*,,true,,logentry_item_get*,-1
+101801,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logentry_item_store*,,<includes>,logentry_item_store*,,true,,logentry_item_store*,-1
+101802,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logger*,,<includes>,logger*,,true,,logger*,-1
+101803,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logger_add_watcher,,<includes>,logger_add_watcher,,true,,logger_add_watcher,-1
+101804,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logger_log,,<includes>,logger_log,,true,,logger_log,-1
+101805,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logger_stats*,,<includes>,logger_stats*,,true,,logger_stats*,-1
+101806,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logger_watcher *[20],,<includes>,logger_watcher *[20],,true,,logger_watcher *[20],-1
+101807,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logger_watcher*,,<includes>,logger_watcher*,,true,,logger_watcher*,-1
+101808,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,logger_watcher*[20],,<includes>,logger_watcher*[20],,true,,logger_watcher*[20],-1
+101809,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,long,,<includes>,long,,true,,long,-1
+101810,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,long int,,<includes>,long int,,true,,long int,-1
+101811,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,long long,,<includes>,long long,,true,,long long,-1
+101812,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,long long int,,<includes>,long long int,,true,,long long int,-1
+101813,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,long long unsigned,,<includes>,long long unsigned,,true,,long long unsigned,-1
+101814,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,long unsigned,,<includes>,long unsigned,,true,,long unsigned,-1
+101815,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,long unsigned int,,<includes>,long unsigned int,,true,,long unsigned int,-1
+101816,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,lru_bump_buf*,,<includes>,lru_bump_buf*,,true,,lru_bump_buf*,-1
+101817,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,lru_bump_entry*,,<includes>,lru_bump_entry*,,true,,lru_bump_entry*,-1
+101818,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,lru_crawler_crawl,,<includes>,lru_crawler_crawl,,true,,lru_crawler_crawl,-1
+101819,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,lru_pull_tail_return*,,<includes>,lru_pull_tail_return*,,true,,lru_pull_tail_return*,-1
+101820,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,luaL_Reg[],,<includes>,luaL_Reg[],,true,,luaL_Reg[],-1
+101821,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,lua_Integer,,<includes>,lua_Integer,,true,,lua_Integer,-1
+101822,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,lua_Number,,<includes>,lua_Number,,true,,lua_Number,-1
+101823,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,lua_State*,,<includes>,lua_State*,,true,,lua_State*,-1
+101824,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,lua_Unsigned,,<includes>,lua_Unsigned,,true,,lua_Unsigned,-1
+101825,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,main_base,,<includes>,main_base,,true,,main_base,-1
+101826,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,maxconns_entered,,<includes>,maxconns_entered,,true,,maxconns_entered,-1
+101827,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,maxconnsevent,,<includes>,maxconnsevent,,true,,maxconnsevent,-1
+101828,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mc_resp*,,<includes>,mc_resp*,,true,,mc_resp*,-1
+101829,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mc_resp_bundle*,,<includes>,mc_resp_bundle*,,true,,mc_resp_bundle*,-1
+101830,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mc_resp_bundle**,,<includes>,mc_resp_bundle**,,true,,mc_resp_bundle**,-1
+101831,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcmc_ctx_t*,,<includes>,mcmc_ctx_t*,,true,,mcmc_ctx_t*,-1
+101832,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcmc_resp_t*,,<includes>,mcmc_resp_t*,,true,,mcmc_resp_t*,-1
+101833,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_await_t*,,<includes>,mcp_await_t*,,true,,mcp_await_t*,-1
+101834,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_backend_s*,,<includes>,mcp_backend_s*,,true,,mcp_backend_s*,-1
+101835,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_backend_s**,,<includes>,mcp_backend_s**,,true,,mcp_backend_s**,-1
+101836,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_backend_t*,,<includes>,mcp_backend_t*,,true,,mcp_backend_t*,-1
+101837,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_parser_t*,,<includes>,mcp_parser_t*,,true,,mcp_parser_t*,-1
+101838,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_pool_be_t*,,<includes>,mcp_pool_be_t*,,true,,mcp_pool_be_t*,-1
+101839,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_pool_be_t[],,<includes>,mcp_pool_be_t[],,true,,mcp_pool_be_t[],-1
+101840,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_pool_proxy_t*,,<includes>,mcp_pool_proxy_t*,,true,,mcp_pool_proxy_t*,-1
+101841,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_pool_s*,,<includes>,mcp_pool_s*,,true,,mcp_pool_s*,-1
+101842,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_pool_s**,,<includes>,mcp_pool_s**,,true,,mcp_pool_s**,-1
+101843,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_pool_t*,,<includes>,mcp_pool_t*,,true,,mcp_pool_t*,-1
+101844,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_request_t*,,<includes>,mcp_request_t*,,true,,mcp_request_t*,-1
+101845,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcp_resp_t*,,<includes>,mcp_resp_t*,,true,,mcp_resp_t*,-1
+101846,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcplib_hash_xxhash,,<includes>,mcplib_hash_xxhash,,true,,mcplib_hash_xxhash,-1
+101847,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mcplib_jump_hash_t*,,<includes>,mcplib_jump_hash_t*,,true,,mcplib_jump_hash_t*,-1
+101848,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,md5_byte_t*,,<includes>,md5_byte_t*,,true,,md5_byte_t*,-1
+101849,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,md5_byte_t[16],,<includes>,md5_byte_t[16],,true,,md5_byte_t[16],-1
+101850,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,md5_state_t*,,<includes>,md5_state_t*,,true,,md5_state_t*,-1
+101851,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,md5_word_t*,,<includes>,md5_word_t*,,true,,md5_word_t*,-1
+101852,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,message,,<includes>,message,,true,,message,-1
+101853,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,meta,,<includes>,meta,,true,,meta,-1
+101854,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mode,,<includes>,mode,,true,,mode,-1
+101855,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,mode_t,,<includes>,mode_t,,true,,mode_t,-1
+101856,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,msghdr,,<includes>,msghdr,,true,,msghdr,-1
+101857,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,msghdr*,,<includes>,msghdr*,,true,,msghdr*,-1
+101858,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,next,,<includes>,next,,true,,next,-1
+101859,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,notify_event,,<includes>,notify_event,,true,,notify_event,-1
+101860,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,obj_io*,,<includes>,obj_io*,,true,,obj_io*,-1
+101861,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,obj_io_cb,,<includes>,obj_io_cb,,true,,obj_io_cb,-1
+101862,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,off_t,,<includes>,off_t,,true,,off_t,-1
+101863,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,page_data,,<includes>,page_data,,true,,page_data,-1
+101864,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,passwd*,,<includes>,passwd*,,true,,passwd*,-1
+101865,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,phc,,<includes>,phc,,true,,phc,-1
+101866,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pid_t,,<includes>,pid_t,,true,,pid_t,-1
+101867,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pollfd[1],,<includes>,pollfd[1],,true,,pollfd[1],-1
+101868,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pollfd[20],,<includes>,pollfd[20],,true,,pollfd[20],-1
+101869,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,prev,,<includes>,prev,,true,,prev,-1
+101870,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_request_flush*,,<includes>,protocol_binary_request_flush*,,true,,protocol_binary_request_flush*,-1
+101871,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_request_header*,,<includes>,protocol_binary_request_header*,,true,,protocol_binary_request_header*,-1
+101872,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_request_incr*,,<includes>,protocol_binary_request_incr*,,true,,protocol_binary_request_incr*,-1
+101873,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_request_no_extras*,,<includes>,protocol_binary_request_no_extras*,,true,,protocol_binary_request_no_extras*,-1
+101874,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_request_set*,,<includes>,protocol_binary_request_set*,,true,,protocol_binary_request_set*,-1
+101875,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_request_touch*,,<includes>,protocol_binary_request_touch*,,true,,protocol_binary_request_touch*,-1
+101876,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_response_get*,,<includes>,protocol_binary_response_get*,,true,,protocol_binary_response_get*,-1
+101877,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_response_header*,,<includes>,protocol_binary_response_header*,,true,,protocol_binary_response_header*,-1
+101878,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_response_incr*,,<includes>,protocol_binary_response_incr*,,true,,protocol_binary_response_incr*,-1
+101879,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,protocol_binary_response_no_extras*,,<includes>,protocol_binary_response_no_extras*,,true,,protocol_binary_response_no_extras*,-1
+101880,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,proxy_ctx_t*,,<includes>,proxy_ctx_t*,,true,,proxy_ctx_t*,-1
+101881,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,proxy_event_t,,<includes>,proxy_event_t,,true,,proxy_event_t,-1
+101882,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,proxy_event_thread_t*,,<includes>,proxy_event_thread_t*,,true,,proxy_event_thread_t*,-1
+101883,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,proxy_hash_caller*,,<includes>,proxy_hash_caller*,,true,,proxy_hash_caller*,-1
+101884,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,proxy_hash_func*,,<includes>,proxy_hash_func*,,true,,proxy_hash_func*,-1
+101885,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,proxy_hook*,,<includes>,proxy_hook*,,true,,proxy_hook*,-1
+101886,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,proxy_hook_tagged*,,<includes>,proxy_hook_tagged*,,true,,proxy_hook_tagged*,-1
+101887,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,proxy_int_stats*,,<includes>,proxy_int_stats*,,true,,proxy_int_stats*,-1
+101888,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,proxy_user_stats*,,<includes>,proxy_user_stats*,,true,,proxy_user_stats*,-1
+101889,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pthread_attr_t,,<includes>,pthread_attr_t,,true,,pthread_attr_t,-1
+101890,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pthread_cond_t,,<includes>,pthread_cond_t,,true,,pthread_cond_t,-1
+101891,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pthread_key_t,,<includes>,pthread_key_t,,true,,pthread_key_t,-1
+101892,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pthread_mutex_t,,<includes>,pthread_mutex_t,,true,,pthread_mutex_t,-1
+101893,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pthread_mutex_t*,,<includes>,pthread_mutex_t*,,true,,pthread_mutex_t*,-1
+101894,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pthread_mutex_t[256],,<includes>,pthread_mutex_t[256],,true,,pthread_mutex_t[256],-1
+101895,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pthread_once_t,,<includes>,pthread_once_t,,true,,pthread_once_t,-1
+101896,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,pthread_t,,<includes>,pthread_t,,true,,pthread_t,-1
+101897,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,read,,<includes>,read,,true,,read,-1
+101898,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,read_ur,,<includes>,read_ur,,true,,read_ur,-1
+101899,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,request,,<includes>,request,,true,,request,-1
+101900,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,request_addr,,<includes>,request_addr,,true,,request_addr,-1
+101901,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,response,,<includes>,response,,true,,response,-1
+101902,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,restart_cb_ctx*,,<includes>,restart_cb_ctx*,,true,,restart_cb_ctx*,-1
+101903,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,restart_check_cb,,<includes>,restart_check_cb,,true,,restart_check_cb,-1
+101904,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,restart_data_cb*,,<includes>,restart_data_cb*,,true,,restart_data_cb*,-1
+101905,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,restart_get_kv,,<includes>,restart_get_kv,,true,,restart_get_kv,-1
+101906,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,restart_save_cb,,<includes>,restart_save_cb,,true,,restart_save_cb,-1
+101907,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,retry,,<includes>,retry,,true,,retry,-1
+101908,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,retry_ur,,<includes>,retry_ur,,true,,retry_ur,-1
+101909,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,ring,,<includes>,ring,,true,,ring,-1
+101910,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,rlimit,,<includes>,rlimit,,true,,rlimit,-1
+101911,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,rusage,,<includes>,rusage,,true,,rusage,-1
+101912,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,sasl_callback_t[],,<includes>,sasl_callback_t[],,true,,sasl_callback_t[],-1
+101913,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,sasl_conn_t*,,<includes>,sasl_conn_t*,,true,,sasl_conn_t*,-1
+101914,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,settings*,,<includes>,settings*,,true,,settings*,-1
+101915,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,short,,<includes>,short,,true,,short,-1
+101916,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,short unsigned,,<includes>,short unsigned,,true,,short unsigned,-1
+101917,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,shortunsigned*,,<includes>,shortunsigned*,,true,,shortunsigned*,-1
+101918,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,sig_atomic_t,,<includes>,sig_atomic_t,,true,,sig_atomic_t,-1
+101919,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,siginfo_t*,,<includes>,siginfo_t*,,true,,siginfo_t*,-1
+101920,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,size_t,,<includes>,size_t,,true,,size_t,-1
+101921,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,size_t*,,<includes>,size_t*,,true,,size_t*,-1
+101922,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,size_t[2],,<includes>,size_t[2],,true,,size_t[2],-1
+101923,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_automove*,,<includes>,slab_automove*,,true,,slab_automove*,-1
+101924,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_automove_free_func,,<includes>,slab_automove_free_func,,true,,slab_automove_free_func,-1
+101925,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_automove_init_func,,<includes>,slab_automove_init_func,,true,,slab_automove_init_func,-1
+101926,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_automove_reg_t*,,<includes>,slab_automove_reg_t*,,true,,slab_automove_reg_t*,-1
+101927,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_automove_run_func,,<includes>,slab_automove_run_func,,true,,slab_automove_run_func,-1
+101928,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_rebal,,<includes>,slab_rebal,,true,,slab_rebal,-1
+101929,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_stats*,,<includes>,slab_stats*,,true,,slab_stats*,-1
+101930,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_stats[64],,<includes>,slab_stats[64],,true,,slab_stats[64],-1
+101931,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_stats_automove*,,<includes>,slab_stats_automove*,,true,,slab_stats_automove*,-1
+101932,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slab_stats_automove[64],,<includes>,slab_stats_automove[64],,true,,slab_stats_automove[64],-1
+101933,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slabclass_t*,,<includes>,slabclass_t*,,true,,slabclass_t*,-1
+101934,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slabclass_t[64],,<includes>,slabclass_t[64],,true,,slabclass_t[64],-1
+101935,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,slabs_reassign,,<includes>,slabs_reassign,,true,,slabs_reassign,-1
+101936,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,sockaddr*,,<includes>,sockaddr*,,true,,sockaddr*,-1
+101937,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,sockaddr_in6,,<includes>,sockaddr_in6,,true,,sockaddr_in6,-1
+101938,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,sockaddr_in6*,,<includes>,sockaddr_in6*,,true,,sockaddr_in6*,-1
+101939,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,sockaddr_storage,,<includes>,sockaddr_storage,,true,,sockaddr_storage,-1
+101940,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,sockaddr_un,,<includes>,sockaddr_un,,true,,sockaddr_un,-1
+101941,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,socklen_t,,<includes>,socklen_t,,true,,socklen_t,-1
+101942,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,ssize_t,,<includes>,ssize_t,,true,,ssize_t,-1
+101943,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,ssize_t*,,<includes>,ssize_t*,,true,,ssize_t*,-1
+101944,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,start,,<includes>,start,,true,,start,-1
+101945,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,stat,,<includes>,stat,,true,,stat,-1
+101946,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,state,,<includes>,state,,true,,state,-1
+101947,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,static crawler[256],,<includes>,static crawler[256],,true,,static crawler[256],-1
+101948,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,static itemstats_t[256],,<includes>,static itemstats_t[256],,true,,static itemstats_t[256],-1
+101949,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,static sasl_callback_t[],,<includes>,static sasl_callback_t[],,true,,static sasl_callback_t[],-1
+101950,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,static slabclass_t[64],,<includes>,static slabclass_t[64],,true,,static slabclass_t[64],-1
+101951,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,static uint32_t[256],,<includes>,static uint32_t[256],,true,,static uint32_t[256],-1
+101952,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,static uint32_t[8][256],,<includes>,static uint32_t[8][256],,true,,static uint32_t[8][256],-1
+101953,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,static uint64_t[256],,<includes>,static uint64_t[256],,true,,static uint64_t[256],-1
+101954,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,static uint64_t[8][256],,<includes>,static uint64_t[8][256],,true,,static uint64_t[8][256],-1
+101955,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,storage_conf_parse,,<includes>,storage_conf_parse,,true,,storage_conf_parse,-1
+101956,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,store_engine*,,<includes>,store_engine*,,true,,store_engine*,-1
+101957,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,store_io_thread*,,<includes>,store_io_thread*,,true,,store_io_thread*,-1
+101958,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,store_item,,<includes>,store_item,,true,,store_item,-1
+101959,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,store_maint_thread*,,<includes>,store_maint_thread*,,true,,store_maint_thread*,-1
+101960,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,store_page*,,<includes>,store_page*,,true,,store_page*,-1
+101961,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,store_page**,,<includes>,store_page**,,true,,store_page**,-1
+101962,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,stqe_next,,<includes>,stqe_next,,true,,stqe_next,-1
+101963,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,stqh_first,,<includes>,stqh_first,,true,,stqh_first,-1
+101964,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,stqh_last,,<includes>,stqh_last,,true,,stqh_last,-1
+101965,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,struct,,<includes>,struct,,true,,struct,-1
+101966,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,struct addrinfo,,<includes>,struct addrinfo,,true,,struct addrinfo,-1
+101967,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,struct conn,,<includes>,struct conn,,true,,struct conn,-1
+101968,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,struct window_data,,<includes>,struct window_data,,true,,struct window_data,-1
+101969,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,substate,,<includes>,substate,,true,,substate,-1
+101970,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,t,,<includes>,t,,true,,t,-1
+101971,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,tagged,,<includes>,tagged,,true,,tagged,-1
+101972,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,test_return ()(),,<includes>,test_return ()(),,true,,test_return ()(),-1
+101973,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,testcase[],,<includes>,testcase[],,true,,testcase[],-1
+101974,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,testcases,,<includes>,testcases,,true,,testcases,-1
+101975,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,thread_stats*,,<includes>,thread_stats*,,true,,thread_stats*,-1
+101976,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,time_t,,<includes>,time_t,,true,,time_t,-1
+101977,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,timespec,,<includes>,timespec,,true,,timespec,-1
+101978,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,timeval,,<includes>,timeval,,true,,timeval,-1
+101979,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,token_s[24],,<includes>,token_s[24],,true,,token_s[24],-1
+101980,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,token_t*,,<includes>,token_t*,,true,,token_t*,-1
+101981,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,transmit,,<includes>,transmit,,true,,transmit,-1
+101982,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,transport,,<includes>,transport,,true,,transport,-1
+101983,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,try_read_network,,<includes>,try_read_network,,true,,try_read_network,-1
+101984,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,try_read_udp,,<includes>,try_read_udp,,true,,try_read_udp,-1
+101985,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,tunables,,<includes>,tunables,,true,,tunables,-1
+101986,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,tv,,<includes>,tv,,true,,tv,-1
+101987,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,type,,<includes>,type,,true,,type,-1
+101988,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint16_t,,<includes>,uint16_t,,true,,uint16_t,-1
+101989,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint16_t[24],,<includes>,uint16_t[24],,true,,uint16_t[24],-1
+101990,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint32_t,,<includes>,uint32_t,,true,,uint32_t,-1
+101991,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint32_t*,,<includes>,uint32_t*,,true,,uint32_t*,-1
+101992,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint32_t[256],,<includes>,uint32_t[256],,true,,uint32_t[256],-1
+101993,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint32_t[4],,<includes>,uint32_t[4],,true,,uint32_t[4],-1
+101994,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint32_t[64],,<includes>,uint32_t[64],,true,,uint32_t[64],-1
+101995,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint32_t[8][256],,<includes>,uint32_t[8][256],,true,,uint32_t[8][256],-1
+101996,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint64_t,,<includes>,uint64_t,,true,,uint64_t,-1
+101997,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint64_t*,,<includes>,uint64_t*,,true,,uint64_t*,-1
+101998,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint64_t[256],,<includes>,uint64_t[256],,true,,uint64_t[256],-1
+101999,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint64_t[38],,<includes>,uint64_t[38],,true,,uint64_t[38],-1
+102000,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint64_t[61],,<includes>,uint64_t[61],,true,,uint64_t[61],-1
+102001,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint64_t[8][256],,<includes>,uint64_t[8][256],,true,,uint64_t[8][256],-1
+102002,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint64_t[],,<includes>,uint64_t[],,true,,uint64_t[],-1
+102003,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint8_t,,<includes>,uint8_t,,true,,uint8_t,-1
+102004,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint8_t*,,<includes>,uint8_t*,,true,,uint8_t*,-1
+102005,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint8_t[127],,<includes>,uint8_t[127],,true,,uint8_t[127],-1
+102006,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint8_t[24],,<includes>,uint8_t[24],,true,,uint8_t[24],-1
+102007,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint8_t[256],,<includes>,uint8_t[256],,true,,uint8_t[256],-1
+102008,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,uint8_t[],,<includes>,uint8_t[],,true,,uint8_t[],-1
+102009,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,union,,<includes>,union,,true,,union,-1
+102010,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned,,<includes>,unsigned,,true,,unsigned,-1
+102011,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned char,,<includes>,unsigned char,,true,,unsigned char,-1
+102012,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned char*,,<includes>,unsigned char*,,true,,unsigned char*,-1
+102013,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned char[16],,<includes>,unsigned char[16],,true,,unsigned char[16],-1
+102014,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned char[256],,<includes>,unsigned char[256],,true,,unsigned char[256],-1
+102015,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned char[4],,<includes>,unsigned char[4],,true,,unsigned char[4],-1
+102016,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned char[64],,<includes>,unsigned char[64],,true,,unsigned char[64],-1
+102017,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned char[65],,<includes>,unsigned char[65],,true,,unsigned char[65],-1
+102018,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned char[8],,<includes>,unsigned char[8],,true,,unsigned char[8],-1
+102019,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned char[],,<includes>,unsigned char[],,true,,unsigned char[],-1
+102020,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned int,,<includes>,unsigned int,,true,,unsigned int,-1
+102021,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned int*,,<includes>,unsigned int*,,true,,unsigned int*,-1
+102022,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned int[16],,<includes>,unsigned int[16],,true,,unsigned int[16],-1
+102023,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned int[256],,<includes>,unsigned int[256],,true,,unsigned int[256],-1
+102024,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned int[2],,<includes>,unsigned int[2],,true,,unsigned int[2],-1
+102025,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned int[4],,<includes>,unsigned int[4],,true,,unsigned int[4],-1
+102026,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,unsigned longlongint,,<includes>,unsigned longlongint,,true,,unsigned longlongint,-1
+102027,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,useconds_t,,<includes>,useconds_t,,true,,useconds_t,-1
+102028,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,useconds_t[64],,<includes>,useconds_t[64],,true,,useconds_t[64],-1
+102029,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,user_stats,,<includes>,user_stats,,true,,user_stats,-1
+102030,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,va_list,,<includes>,va_list,,true,,va_list,-1
+102031,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,void,,<includes>,void,,true,,void,-1
+102032,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,void*,,<includes>,void*,,true,,void*,-1
+102033,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,void**,,<includes>,void**,,true,,void**,-1
+102034,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,void*[1024],,<includes>,void*[1024],,true,,void*[1024],-1
+102035,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,watchers_pollfds,,<includes>,watchers_pollfds,,true,,watchers_pollfds,-1
+102036,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,window_data*,,<includes>,window_data*,,true,,window_data*,-1
+102037,TYPE_DECL,,<includes>:<global>,NAMESPACE_BLOCK,write_iovs,,<includes>,write_iovs,,true,,write_iovs,-1

@@ -1,0 +1,2583 @@
+167,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kCount;i++),3,FOR,63,5,CPPASTForStatement
+221,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kCount;i++),3,FOR,69,7,CPPASTForStatement
+295,CONTROL_STRUCTURE,-1,,for (int read = 0;true;read++),3,FOR,80,15,CPPASTForStatement
+332,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();iter->Valid() && iter->key().ToString() < limit_key;iter->Next()),5,FOR,83,4,CPPASTForStatement
+391,CONTROL_STRUCTURE,-1,,if (size <= initial_size/10),5,IF,94,10,CPPASTIfStatement
+398,CONTROL_STRUCTURE,-1,,break;,7,BREAK,95,1,CPPASTBreakStatement
+580,CONTROL_STRUCTURE,-1,,if (iter->Valid()),3,IF,28,6,CPPASTIfStatement
+596,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,31,3,CPPASTIfStatement
+622,CONTROL_STRUCTURE,-1,,for (;iter->Valid();iter->Next()),5,FOR,37,7,CPPASTForStatement
+656,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,44,8,CPPASTIfStatement
+668,CONTROL_STRUCTURE,-1,,if (s.ok()),7,IF,46,2,CPPASTIfStatement
+688,CONTROL_STRUCTURE,-1,,else,12,ELSE,50,3,CPPASTCompoundStatement
+696,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,56,10,CPPASTIfStatement
+708,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,59,11,CPPASTIfStatement
+725,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,65,14,CPPASTIfStatement
+753,CONTROL_STRUCTURE,-1,,if (!iter->status().ok()),3,IF,76,7,CPPASTIfStatement
+769,CONTROL_STRUCTURE,-1,,if (s.ok() && meta->file_size > 0),3,IF,80,8,CPPASTIfStatement
+781,CONTROL_STRUCTURE,-1,,else,10,ELSE,82,3,CPPASTCompoundStatement
+1010,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),5,FOR,111,4,CPPASTForStatement
+1109,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,134,2,CPPASTIfStatement
+1117,CONTROL_STRUCTURE,-1,,else,10,ELSE,136,3,CPPASTIfStatement
+1119,CONTROL_STRUCTURE,1,,if (*errptr == NULL),10,IF,136,1,CPPASTIfStatement
+1136,CONTROL_STRUCTURE,-1,,else,10,ELSE,138,3,CPPASTCompoundStatement
+1195,CONTROL_STRUCTURE,-1,,"if (SaveError(errptr, DB::Open(options->rep, std::string(name), &db)))",3,IF,157,2,CPPASTIfStatement
+1344,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,206,6,CPPASTIfStatement
+1361,CONTROL_STRUCTURE,-1,,else,10,ELSE,209,3,CPPASTCompoundStatement
+1367,CONTROL_STRUCTURE,-1,,if (!s.IsNotFound()),5,IF,211,2,CPPASTIfStatement
+1451,CONTROL_STRUCTURE,-1,,"if (db->rep->GetProperty(Slice(propname), &tmp))",3,IF,244,2,CPPASTIfStatement
+1469,CONTROL_STRUCTURE,-1,,else,10,ELSE,247,3,CPPASTCompoundStatement
+1489,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num_ranges;i++),3,FOR,259,3,CPPASTForStatement
+2313,CONTROL_STRUCTURE,-1,,if (!env->is_default),3,IF,579,1,CPPASTIfStatement
+2392,CONTROL_STRUCTURE,-1,,if (ret == NULL || ret[0] == '\0'),5,IF,24,3,CASTIfStatement
+2415,CONTROL_STRUCTURE,-1,,if (expected == NULL && v == NULL),3,IF,42,1,CASTIfStatement
+2424,CONTROL_STRUCTURE,-1,,else,10,ELSE,44,3,CASTIfStatement
+2426,CONTROL_STRUCTURE,1,,"if (expected != NULL && v != NULL && n == strlen(expected) &&
+             memcmp(expected, v, n) == 0)",10,IF,44,1,CASTIfStatement
+2448,CONTROL_STRUCTURE,-1,,else,10,ELSE,48,3,CASTCompoundStatement
+2468,CONTROL_STRUCTURE,-1,,if (*ptr),3,IF,58,1,CASTIfStatement
+2508,CONTROL_STRUCTURE,1,,if ((err) != NULL),3,IF,73,1,CASTIfStatement
+2574,CONTROL_STRUCTURE,1,,if (!(*state < 2)),3,IF,93,1,CASTIfStatement
+2589,CONTROL_STRUCTURE,-1,,switch(*state),3,SWITCH,94,4,CASTSwitchStatement
+2603,CONTROL_STRUCTURE,-1,,break;,7,BREAK,98,5,CASTBreakStatement
+2614,CONTROL_STRUCTURE,-1,,break;,7,BREAK,102,10,CASTBreakStatement
+2633,CONTROL_STRUCTURE,1,,if (!(*state == 2)),3,IF,110,1,CASTIfStatement
+2685,CONTROL_STRUCTURE,-1,,if (r == 0),3,IF,121,5,CASTIfStatement
+2690,CONTROL_STRUCTURE,-1,,if (alen < blen),5,IF,122,1,CASTIfStatement
+2699,CONTROL_STRUCTURE,-1,,else,10,ELSE,123,3,CASTIfStatement
+2701,CONTROL_STRUCTURE,1,,if (alen > blen),10,IF,123,1,CASTIfStatement
+2770,CONTROL_STRUCTURE,1,,if (!(filter_length == 4)),3,IF,152,1,CASTIfStatement
+2786,CONTROL_STRUCTURE,1,,"if (!(memcmp(filter, ""fake"", 4) == 0))",3,IF,153,1,CASTIfStatement
+2829,CONTROL_STRUCTURE,1,,if (!(leveldb_major_version() >= 1)),3,IF,168,1,CASTIfStatement
+2845,CONTROL_STRUCTURE,1,,if (!(leveldb_minor_version() >= 1)),3,IF,169,1,CASTIfStatement
+2956,CONTROL_STRUCTURE,1,,if (!(err != NULL)),3,IF,207,1,CASTIfStatement
+2984,CONTROL_STRUCTURE,1,,if (!(err != NULL)),3,IF,212,1,CASTIfStatement
+3018,CONTROL_STRUCTURE,1,,if ((err) != NULL),3,IF,219,1,CASTIfStatement
+3050,CONTROL_STRUCTURE,1,,if ((err) != NULL),3,IF,224,1,CASTIfStatement
+3134,CONTROL_STRUCTURE,1,,if ((err) != NULL),5,IF,244,1,CASTIfStatement
+3174,CONTROL_STRUCTURE,1,,if (!(pos == 3)),5,IF,250,1,CASTIfStatement
+3204,CONTROL_STRUCTURE,1,,if (!(!leveldb_iter_valid(iter))),5,IF,257,1,CASTIfStatement
+3224,CONTROL_STRUCTURE,1,,if (!(leveldb_iter_valid(iter))),5,IF,259,1,CASTIfStatement
+3260,CONTROL_STRUCTURE,1,,if (!(!leveldb_iter_valid(iter))),5,IF,266,1,CASTIfStatement
+3295,CONTROL_STRUCTURE,1,,if ((err) != NULL),5,IF,272,1,CASTIfStatement
+3348,CONTROL_STRUCTURE,-1,,for (i = 0;i < n;i++),5,FOR,288,16,CASTForStatement
+3385,CONTROL_STRUCTURE,1,,if ((err) != NULL),7,IF,293,1,CASTIfStatement
+3408,CONTROL_STRUCTURE,1,,if (!(sizes[0] > 0)),5,IF,296,1,CASTIfStatement
+3426,CONTROL_STRUCTURE,1,,if (!(sizes[1] > 0)),5,IF,297,1,CASTIfStatement
+3453,CONTROL_STRUCTURE,1,,if (!(prop == NULL)),5,IF,303,1,CASTIfStatement
+3474,CONTROL_STRUCTURE,1,,if (!(prop != NULL)),5,IF,305,1,CASTIfStatement
+3509,CONTROL_STRUCTURE,1,,if ((err) != NULL),5,IF,314,1,CASTIfStatement
+3560,CONTROL_STRUCTURE,1,,if ((err) != NULL),5,IF,328,1,CASTIfStatement
+3583,CONTROL_STRUCTURE,1,,if ((err) != NULL),5,IF,330,1,CASTIfStatement
+3619,CONTROL_STRUCTURE,-1,,for (run = 0;run < 2;run++),3,FOR,339,76,CASTForStatement
+3633,CONTROL_STRUCTURE,1,,if ((err) != NULL),5,IF,341,1,CASTIfStatement
+3647,CONTROL_STRUCTURE,-1,,if (run == 0),5,IF,343,3,CASTIfStatement
+3660,CONTROL_STRUCTURE,-1,,else,12,ELSE,346,3,CASTCompoundStatement
+3686,CONTROL_STRUCTURE,1,,if ((err) != NULL),5,IF,355,1,CASTIfStatement
+3711,CONTROL_STRUCTURE,1,,if ((err) != NULL),5,IF,357,1,CASTIfStatement
+3736,CONTROL_STRUCTURE,1,,if ((err) != NULL),5,IF,359,1,CASTIfStatement
+3768,CONTROL_STRUCTURE,-1,,if (phase == 0),5,IF,365,17,CASTIfStatement
+4001,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),5,FOR,73,4,CPPASTForStatement
+4034,CONTROL_STRUCTURE,-1,,if (i == n - 1),7,IF,81,6,CPPASTIfStatement
+4101,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();iter->Valid();iter->Next()),5,FOR,96,14,CPPASTForStatement
+4123,CONTROL_STRUCTURE,-1,,"if (in == """" || in == ""~"")",7,IF,99,4,CPPASTIfStatement
+4132,CONTROL_STRUCTURE,-1,,continue;,9,CONTINUE,101,1,CPPASTContinueStatement
+4133,CONTROL_STRUCTURE,-1,,"if (!ConsumeDecimalNumber(&in, &key) ||
+          !in.empty() ||
+          key < next_expected)",7,IF,103,5,CPPASTIfStatement
+4153,CONTROL_STRUCTURE,-1,,continue;,9,CONTINUE,107,2,CPPASTContinueStatement
+4164,CONTROL_STRUCTURE,-1,,"if (iter->value() != Value(key, &value_space))",7,IF,111,8,CPPASTIfStatement
+4177,CONTROL_STRUCTURE,-1,,else,14,ELSE,113,3,CPPASTCompoundStatement
+4270,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < filenames.size();i++),5,FOR,134,8,CPPASTForStatement
+4285,CONTROL_STRUCTURE,-1,,"if (ParseFileName(filenames[i], &number, &type) &&
+          type == filetype &&
+          int(number) > picked_number)",7,IF,135,1,CPPASTIfStatement
+4344,CONTROL_STRUCTURE,-1,,"if (stat(fname.c_str(), &sbuf) != 0)",5,IF,145,11,CPPASTIfStatement
+4382,CONTROL_STRUCTURE,-1,,if (offset < 0),5,IF,150,12,CPPASTIfStatement
+4387,CONTROL_STRUCTURE,-1,,if (-offset > sbuf.st_size),7,IF,152,1,CPPASTIfStatement
+4398,CONTROL_STRUCTURE,-1,,else,14,ELSE,154,3,CPPASTCompoundStatement
+4407,CONTROL_STRUCTURE,-1,,if (offset > sbuf.st_size),5,IF,158,13,CPPASTIfStatement
+4419,CONTROL_STRUCTURE,-1,,if (offset + bytes_to_corrupt > sbuf.st_size),5,IF,161,14,CPPASTIfStatement
+4474,CONTROL_STRUCTURE,-1,,for (int i = 0;i < bytes_to_corrupt;i++),5,FOR,169,19,CPPASTForStatement
+4536,CONTROL_STRUCTURE,-1,,"if (db_->GetProperty(name, &property) &&
+        sscanf(property.c_str(), ""%d"", &result) == 1)",5,IF,179,3,CPPASTIfStatement
+4558,CONTROL_STRUCTURE,-1,,else,12,ELSE,182,3,CPPASTCompoundStatement
+4775,CONTROL_STRUCTURE,-1,,for (int i = 0;s.ok() && i < num;i++),3,FOR,225,6,CPPASTForStatement
+5652,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 2;i++),3,FOR,340,6,CPPASTForStatement
+6035,CONTROL_STRUCTURE,-1,,while (data_.size() < 1048576),5,WHILE,135,4,<empty>
+6066,CONTROL_STRUCTURE,-1,,if (pos_ + len > data_.size()),5,IF,145,1,CPPASTIfStatement
+6106,CONTROL_STRUCTURE,-1,,if (msg.empty()),3,IF,169,1,CPPASTIfStatement
+6113,CONTROL_STRUCTURE,-1,,if (!str->empty()),3,IF,170,2,CPPASTIfStatement
+6215,CONTROL_STRUCTURE,-1,,if (other.start_ < start_),5,IF,208,5,CPPASTIfStatement
+6227,CONTROL_STRUCTURE,-1,,if (other.finish_ > finish_),5,IF,209,6,CPPASTIfStatement
+6239,CONTROL_STRUCTURE,-1,,if (message_.empty()),5,IF,212,7,CPPASTIfStatement
+6280,CONTROL_STRUCTURE,-1,,if (FLAGS_histogram),5,IF,225,1,CPPASTIfStatement
+6301,CONTROL_STRUCTURE,-1,,if (micros > 20000),7,IF,229,6,CPPASTIfStatement
+6317,CONTROL_STRUCTURE,-1,,if (done_ >= next_report_),5,IF,237,3,CPPASTIfStatement
+6322,CONTROL_STRUCTURE,-1,,if (next_report_ < 1000),7,IF,238,1,CPPASTIfStatement
+6330,CONTROL_STRUCTURE,-1,,else,12,ELSE,239,3,CPPASTIfStatement
+6332,CONTROL_STRUCTURE,1,,if (next_report_ < 5000),12,IF,239,1,CPPASTIfStatement
+6340,CONTROL_STRUCTURE,-1,,else,12,ELSE,240,3,CPPASTIfStatement
+6342,CONTROL_STRUCTURE,1,,if (next_report_ < 10000),12,IF,240,1,CPPASTIfStatement
+6350,CONTROL_STRUCTURE,-1,,else,12,ELSE,241,3,CPPASTIfStatement
+6352,CONTROL_STRUCTURE,1,,if (next_report_ < 50000),12,IF,241,1,CPPASTIfStatement
+6360,CONTROL_STRUCTURE,-1,,else,12,ELSE,242,3,CPPASTIfStatement
+6362,CONTROL_STRUCTURE,1,,if (next_report_ < 100000),12,IF,242,1,CPPASTIfStatement
+6370,CONTROL_STRUCTURE,-1,,else,12,ELSE,243,3,CPPASTIfStatement
+6372,CONTROL_STRUCTURE,1,,if (next_report_ < 500000),12,IF,243,1,CPPASTIfStatement
+6380,CONTROL_STRUCTURE,-1,,else,39,ELSE,244,3,CPPASTExpressionStatement
+6404,CONTROL_STRUCTURE,-1,,if (done_ < 1),5,IF,257,1,CPPASTIfStatement
+6413,CONTROL_STRUCTURE,-1,,if (bytes_ > 0),5,IF,260,3,CPPASTIfStatement
+6470,CONTROL_STRUCTURE,-1,,if (FLAGS_histogram),5,IF,276,6,CPPASTIfStatement
+6583,CONTROL_STRUCTURE,-1,,"if (!port::Snappy_Compress(text, sizeof(text), &compressed))",5,IF,361,5,CPPASTIfStatement
+6598,CONTROL_STRUCTURE,-1,,else,12,ELSE,363,3,CPPASTIfStatement
+6600,CONTROL_STRUCTURE,1,,if (compressed.size() >= sizeof(text)),12,IF,363,1,CPPASTIfStatement
+6641,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files.size();i++),5,FOR,417,3,CPPASTForStatement
+6656,CONTROL_STRUCTURE,-1,,"if (Slice(files[i]).starts_with(""heap-""))",7,IF,418,1,CPPASTIfStatement
+6681,CONTROL_STRUCTURE,-1,,if (!FLAGS_use_existing_db),5,IF,422,4,CPPASTIfStatement
+6708,CONTROL_STRUCTURE,-1,,while (benchmarks != NULL),5,WHILE,438,5,<empty>
+6720,CONTROL_STRUCTURE,-1,,if (sep == NULL),7,IF,441,4,CPPASTIfStatement
+6731,CONTROL_STRUCTURE,-1,,else,14,ELSE,444,3,CPPASTCompoundStatement
+6778,CONTROL_STRUCTURE,-1,,"if (name == Slice(""open""))",7,IF,460,15,CPPASTIfStatement
+6793,CONTROL_STRUCTURE,-1,,if (num_ < 1),9,IF,463,3,CPPASTIfStatement
+6801,CONTROL_STRUCTURE,-1,,else,14,ELSE,464,3,CPPASTIfStatement
+6803,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillseq""))",14,IF,464,1,CPPASTIfStatement
+6818,CONTROL_STRUCTURE,-1,,else,14,ELSE,467,3,CPPASTIfStatement
+6820,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillbatch""))",14,IF,467,1,CPPASTIfStatement
+6838,CONTROL_STRUCTURE,-1,,else,14,ELSE,471,3,CPPASTIfStatement
+6840,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillrandom""))",14,IF,471,1,CPPASTIfStatement
+6855,CONTROL_STRUCTURE,-1,,else,14,ELSE,474,3,CPPASTIfStatement
+6857,CONTROL_STRUCTURE,1,,"if (name == Slice(""overwrite""))",14,IF,474,1,CPPASTIfStatement
+6872,CONTROL_STRUCTURE,-1,,else,14,ELSE,477,3,CPPASTIfStatement
+6874,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillsync""))",14,IF,477,1,CPPASTIfStatement
+6897,CONTROL_STRUCTURE,-1,,else,14,ELSE,482,3,CPPASTIfStatement
+6899,CONTROL_STRUCTURE,1,,"if (name == Slice(""fill100K""))",14,IF,482,1,CPPASTIfStatement
+6922,CONTROL_STRUCTURE,-1,,else,14,ELSE,487,3,CPPASTIfStatement
+6924,CONTROL_STRUCTURE,1,,"if (name == Slice(""readseq""))",14,IF,487,1,CPPASTIfStatement
+6936,CONTROL_STRUCTURE,-1,,else,14,ELSE,489,3,CPPASTIfStatement
+6938,CONTROL_STRUCTURE,1,,"if (name == Slice(""readreverse""))",14,IF,489,1,CPPASTIfStatement
+6950,CONTROL_STRUCTURE,-1,,else,14,ELSE,491,3,CPPASTIfStatement
+6952,CONTROL_STRUCTURE,1,,"if (name == Slice(""readrandom""))",14,IF,491,1,CPPASTIfStatement
+6964,CONTROL_STRUCTURE,-1,,else,14,ELSE,493,3,CPPASTIfStatement
+6966,CONTROL_STRUCTURE,1,,"if (name == Slice(""readmissing""))",14,IF,493,1,CPPASTIfStatement
+6978,CONTROL_STRUCTURE,-1,,else,14,ELSE,495,3,CPPASTIfStatement
+6980,CONTROL_STRUCTURE,1,,"if (name == Slice(""seekrandom""))",14,IF,495,1,CPPASTIfStatement
+6992,CONTROL_STRUCTURE,-1,,else,14,ELSE,497,3,CPPASTIfStatement
+6994,CONTROL_STRUCTURE,1,,"if (name == Slice(""readhot""))",14,IF,497,1,CPPASTIfStatement
+7006,CONTROL_STRUCTURE,-1,,else,14,ELSE,499,3,CPPASTIfStatement
+7008,CONTROL_STRUCTURE,1,,"if (name == Slice(""readrandomsmall""))",14,IF,499,1,CPPASTIfStatement
+7023,CONTROL_STRUCTURE,-1,,else,14,ELSE,502,3,CPPASTIfStatement
+7025,CONTROL_STRUCTURE,1,,"if (name == Slice(""deleteseq""))",14,IF,502,1,CPPASTIfStatement
+7037,CONTROL_STRUCTURE,-1,,else,14,ELSE,504,3,CPPASTIfStatement
+7039,CONTROL_STRUCTURE,1,,"if (name == Slice(""deleterandom""))",14,IF,504,1,CPPASTIfStatement
+7051,CONTROL_STRUCTURE,-1,,else,14,ELSE,506,3,CPPASTIfStatement
+7053,CONTROL_STRUCTURE,1,,"if (name == Slice(""readwhilewriting""))",14,IF,506,1,CPPASTIfStatement
+7067,CONTROL_STRUCTURE,-1,,else,14,ELSE,509,3,CPPASTIfStatement
+7069,CONTROL_STRUCTURE,1,,"if (name == Slice(""compact""))",14,IF,509,1,CPPASTIfStatement
+7081,CONTROL_STRUCTURE,-1,,else,14,ELSE,511,3,CPPASTIfStatement
+7083,CONTROL_STRUCTURE,1,,"if (name == Slice(""crc32c""))",14,IF,511,1,CPPASTIfStatement
+7095,CONTROL_STRUCTURE,-1,,else,14,ELSE,513,3,CPPASTIfStatement
+7097,CONTROL_STRUCTURE,1,,"if (name == Slice(""acquireload""))",14,IF,513,1,CPPASTIfStatement
+7109,CONTROL_STRUCTURE,-1,,else,14,ELSE,515,3,CPPASTIfStatement
+7111,CONTROL_STRUCTURE,1,,"if (name == Slice(""snappycomp""))",14,IF,515,1,CPPASTIfStatement
+7123,CONTROL_STRUCTURE,-1,,else,14,ELSE,517,3,CPPASTIfStatement
+7125,CONTROL_STRUCTURE,1,,"if (name == Slice(""snappyuncomp""))",14,IF,517,1,CPPASTIfStatement
+7137,CONTROL_STRUCTURE,-1,,else,14,ELSE,519,3,CPPASTIfStatement
+7139,CONTROL_STRUCTURE,1,,"if (name == Slice(""heapprofile""))",14,IF,519,1,CPPASTIfStatement
+7146,CONTROL_STRUCTURE,-1,,else,14,ELSE,521,3,CPPASTIfStatement
+7148,CONTROL_STRUCTURE,1,,"if (name == Slice(""stats""))",14,IF,521,1,CPPASTIfStatement
+7156,CONTROL_STRUCTURE,-1,,else,14,ELSE,523,3,CPPASTIfStatement
+7158,CONTROL_STRUCTURE,1,,"if (name == Slice(""sstables""))",14,IF,523,1,CPPASTIfStatement
+7166,CONTROL_STRUCTURE,-1,,else,14,ELSE,525,3,CPPASTCompoundStatement
+7168,CONTROL_STRUCTURE,-1,,if (name != Slice()),9,IF,526,1,CPPASTIfStatement
+7183,CONTROL_STRUCTURE,-1,,if (fresh_db),7,IF,531,16,CPPASTIfStatement
+7186,CONTROL_STRUCTURE,-1,,if (FLAGS_use_existing_db),9,IF,532,1,CPPASTIfStatement
+7202,CONTROL_STRUCTURE,-1,,else,16,ELSE,536,3,CPPASTCompoundStatement
+7213,CONTROL_STRUCTURE,-1,,if (method != NULL),7,IF,544,17,CPPASTIfStatement
+7265,CONTROL_STRUCTURE,-1,,if (shared->num_initialized >= shared->total),7,IF,565,4,CPPASTIfStatement
+7280,CONTROL_STRUCTURE,-1,,while (!shared->start),7,WHILE,568,5,<empty>
+7324,CONTROL_STRUCTURE,-1,,if (shared->num_done >= shared->total),7,IF,580,4,CPPASTIfStatement
+7372,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),5,FOR,595,8,CPPASTForStatement
+7440,CONTROL_STRUCTURE,-1,,while (shared.num_initialized < n),5,WHILE,605,10,<empty>
+7464,CONTROL_STRUCTURE,-1,,while (shared.num_done < n),5,WHILE,611,13,<empty>
+7483,CONTROL_STRUCTURE,-1,,for (int i = 1;i < n;i++),5,FOR,616,15,CPPASTForStatement
+7523,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),5,FOR,621,17,CPPASTForStatement
+7568,CONTROL_STRUCTURE,-1,,while (bytes < 500 * 1048576),5,WHILE,634,11,<empty>
+7640,CONTROL_STRUCTURE,-1,,while (count < 100000),5,WHILE,652,9,<empty>
+7645,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 1000;i++),7,FOR,653,1,CPPASTForStatement
+7671,CONTROL_STRUCTURE,-1,,if (ptr == NULL),5,IF,659,10,CPPASTIfStatement
+7707,CONTROL_STRUCTURE,-1,,while (ok && bytes < 1024 * 1048576),5,WHILE,669,11,<empty>
+7750,CONTROL_STRUCTURE,-1,,if (!ok),5,IF,676,12,CPPASTIfStatement
+7761,CONTROL_STRUCTURE,-1,,else,12,ELSE,678,3,CPPASTCompoundStatement
+7831,CONTROL_STRUCTURE,-1,,while (ok && bytes < 1024 * 1048576),5,WHILE,694,11,<empty>
+7869,CONTROL_STRUCTURE,-1,,if (!ok),5,IF,702,13,CPPASTIfStatement
+7880,CONTROL_STRUCTURE,-1,,else,12,ELSE,704,3,CPPASTCompoundStatement
+7955,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,722,14,CPPASTIfStatement
+7979,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num_;i++),5,FOR,729,1,CPPASTForStatement
+8022,CONTROL_STRUCTURE,-1,,if (num_ != FLAGS_num),5,IF,745,1,CPPASTIfStatement
+8048,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num_;i += entries_per_batch_),5,FOR,755,7,CPPASTForStatement
+8065,CONTROL_STRUCTURE,-1,,for (int j = 0;j < entries_per_batch_;j++),7,FOR,757,2,CPPASTForStatement
+8131,CONTROL_STRUCTURE,-1,,if (!s.ok()),7,IF,766,4,CPPASTIfStatement
+8178,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();i < reads_ && iter->Valid();iter->Next()),5,FOR,778,7,CPPASTForStatement
+8252,CONTROL_STRUCTURE,-1,,for (iter->SeekToLast();i < reads_ && iter->Valid();iter->Prev()),5,FOR,791,7,CPPASTForStatement
+8316,CONTROL_STRUCTURE,-1,,for (int i = 0;i < reads_;i++),5,FOR,804,5,CPPASTForStatement
+8346,CONTROL_STRUCTURE,-1,,"if (db_->Get(options, key, &value).ok())",7,IF,808,5,CPPASTIfStatement
+8389,CONTROL_STRUCTURE,-1,,for (int i = 0;i < reads_;i++),5,FOR,821,3,CPPASTForStatement
+8448,CONTROL_STRUCTURE,-1,,for (int i = 0;i < reads_;i++),5,FOR,834,5,CPPASTForStatement
+8502,CONTROL_STRUCTURE,-1,,for (int i = 0;i < reads_;i++),5,FOR,846,4,CPPASTForStatement
+8545,CONTROL_STRUCTURE,-1,,if (iter->Valid() && iter->key() == key),7,IF,852,8,CPPASTIfStatement
+8592,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num_;i += entries_per_batch_),5,FOR,865,4,CPPASTForStatement
+8609,CONTROL_STRUCTURE,-1,,for (int j = 0;j < entries_per_batch_;j++),7,FOR,867,2,CPPASTForStatement
+8664,CONTROL_STRUCTURE,-1,,if (!s.ok()),7,IF,875,4,CPPASTIfStatement
+8704,CONTROL_STRUCTURE,-1,,if (thread->tid > 0),5,IF,891,1,CPPASTIfStatement
+8713,CONTROL_STRUCTURE,-1,,else,12,ELSE,893,3,CPPASTCompoundStatement
+8716,CONTROL_STRUCTURE,-1,,while (true),7,WHILE,896,2,<empty>
+8728,CONTROL_STRUCTURE,-1,,if (thread->shared->num_done + 1 >= thread->shared->num_initialized),11,IF,899,3,CPPASTIfStatement
+8743,CONTROL_STRUCTURE,-1,,break;,13,BREAK,901,1,CPPASTBreakStatement
+8776,CONTROL_STRUCTURE,-1,,if (!s.ok()),9,IF,909,8,CPPASTIfStatement
+8818,CONTROL_STRUCTURE,-1,,"if (!db_->GetProperty(key, &stats))",5,IF,926,2,CPPASTIfStatement
+8878,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,941,6,CPPASTIfStatement
+8907,CONTROL_STRUCTURE,-1,,if (!ok),5,IF,947,10,CPPASTIfStatement
+8958,CONTROL_STRUCTURE,-1,,for (int i = 1;i < argc;i++),3,FOR,963,6,CPPASTForStatement
+8973,CONTROL_STRUCTURE,-1,,"if (leveldb::Slice(argv[i]).starts_with(""--benchmarks=""))",5,IF,967,4,CPPASTIfStatement
+8994,CONTROL_STRUCTURE,-1,,else,12,ELSE,969,3,CPPASTIfStatement
+8996,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--compression_ratio=%lf%c"", &d, &junk) == 1)",12,IF,969,1,CPPASTIfStatement
+9012,CONTROL_STRUCTURE,-1,,else,12,ELSE,971,3,CPPASTIfStatement
+9014,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--histogram=%d%c"", &n, &junk) == 1 &&
+               (n == 0 || n == 1))",12,IF,971,1,CPPASTIfStatement
+9038,CONTROL_STRUCTURE,-1,,else,12,ELSE,974,3,CPPASTIfStatement
+9040,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--use_existing_db=%d%c"", &n, &junk) == 1 &&
+               (n == 0 || n == 1))",12,IF,974,1,CPPASTIfStatement
+9064,CONTROL_STRUCTURE,-1,,else,12,ELSE,977,3,CPPASTIfStatement
+9066,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--reuse_logs=%d%c"", &n, &junk) == 1 &&
+               (n == 0 || n == 1))",12,IF,977,1,CPPASTIfStatement
+9090,CONTROL_STRUCTURE,-1,,else,12,ELSE,980,3,CPPASTIfStatement
+9092,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--num=%d%c"", &n, &junk) == 1)",12,IF,980,1,CPPASTIfStatement
+9108,CONTROL_STRUCTURE,-1,,else,12,ELSE,982,3,CPPASTIfStatement
+9110,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--reads=%d%c"", &n, &junk) == 1)",12,IF,982,1,CPPASTIfStatement
+9126,CONTROL_STRUCTURE,-1,,else,12,ELSE,984,3,CPPASTIfStatement
+9128,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--threads=%d%c"", &n, &junk) == 1)",12,IF,984,1,CPPASTIfStatement
+9144,CONTROL_STRUCTURE,-1,,else,12,ELSE,986,3,CPPASTIfStatement
+9146,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--value_size=%d%c"", &n, &junk) == 1)",12,IF,986,1,CPPASTIfStatement
+9162,CONTROL_STRUCTURE,-1,,else,12,ELSE,988,3,CPPASTIfStatement
+9164,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--write_buffer_size=%d%c"", &n, &junk) == 1)",12,IF,988,1,CPPASTIfStatement
+9180,CONTROL_STRUCTURE,-1,,else,12,ELSE,990,3,CPPASTIfStatement
+9182,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--max_file_size=%d%c"", &n, &junk) == 1)",12,IF,990,1,CPPASTIfStatement
+9198,CONTROL_STRUCTURE,-1,,else,12,ELSE,992,3,CPPASTIfStatement
+9200,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--block_size=%d%c"", &n, &junk) == 1)",12,IF,992,1,CPPASTIfStatement
+9216,CONTROL_STRUCTURE,-1,,else,12,ELSE,994,3,CPPASTIfStatement
+9218,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--cache_size=%d%c"", &n, &junk) == 1)",12,IF,994,1,CPPASTIfStatement
+9234,CONTROL_STRUCTURE,-1,,else,12,ELSE,996,3,CPPASTIfStatement
+9236,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--bloom_bits=%d%c"", &n, &junk) == 1)",12,IF,996,1,CPPASTIfStatement
+9252,CONTROL_STRUCTURE,-1,,else,12,ELSE,998,3,CPPASTIfStatement
+9254,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--open_files=%d%c"", &n, &junk) == 1)",12,IF,998,1,CPPASTIfStatement
+9270,CONTROL_STRUCTURE,-1,,else,12,ELSE,1000,3,CPPASTIfStatement
+9272,CONTROL_STRUCTURE,1,,"if (strncmp(argv[i], ""--db="", 5) == 0)",12,IF,1000,1,CPPASTIfStatement
+9289,CONTROL_STRUCTURE,-1,,else,12,ELSE,1002,3,CPPASTCompoundStatement
+9309,CONTROL_STRUCTURE,-1,,if (FLAGS_db == NULL),3,IF,1011,8,CPPASTIfStatement
+9455,CONTROL_STRUCTURE,-1,,if (static_cast<V>(*ptr) > maxvalue),3,IF,87,1,CPPASTIfStatement
+9467,CONTROL_STRUCTURE,-1,,if (static_cast<V>(*ptr) < minvalue),3,IF,88,2,CPPASTIfStatement
+9550,CONTROL_STRUCTURE,-1,,if (result.info_log == NULL),3,IF,101,9,CPPASTIfStatement
+9589,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,106,5,CPPASTIfStatement
+9601,CONTROL_STRUCTURE,-1,,if (result.block_cache == NULL),3,IF,111,10,CPPASTIfStatement
+9668,CONTROL_STRUCTURE,-1,,while (bg_compaction_scheduled_),3,WHILE,152,3,<empty>
+9679,CONTROL_STRUCTURE,-1,,if (db_lock_ != NULL),3,IF,157,5,CPPASTIfStatement
+9691,CONTROL_STRUCTURE,-1,,if (mem_ != NULL),3,IF,162,7,CPPASTIfStatement
+9700,CONTROL_STRUCTURE,-1,,if (imm_ != NULL),3,IF,163,8,CPPASTIfStatement
+9717,CONTROL_STRUCTURE,-1,,if (owns_info_log_),3,IF,169,13,CPPASTIfStatement
+9724,CONTROL_STRUCTURE,-1,,if (owns_cache_),3,IF,172,14,CPPASTIfStatement
+9776,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,187,11,CPPASTIfStatement
+9803,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,195,6,CPPASTIfStatement
+9817,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,200,14,CPPASTIfStatement
+9829,CONTROL_STRUCTURE,-1,,else,10,ELSE,203,3,CPPASTCompoundStatement
+9843,CONTROL_STRUCTURE,-1,,if (s->ok() || options_.paranoid_checks),3,IF,210,1,CPPASTIfStatement
+9853,CONTROL_STRUCTURE,-1,,else,10,ELSE,212,3,CPPASTCompoundStatement
+9878,CONTROL_STRUCTURE,-1,,if (!bg_error_.ok()),3,IF,219,1,CPPASTIfStatement
+9919,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < filenames.size();i++),3,FOR,233,8,CPPASTForStatement
+9934,CONTROL_STRUCTURE,-1,,"if (ParseFileName(filenames[i], &number, &type))",5,IF,234,1,CPPASTIfStatement
+9948,CONTROL_STRUCTURE,-1,,switch(type),7,SWITCH,236,3,CPPASTSwitchStatement
+9968,CONTROL_STRUCTURE,-1,,break;,11,BREAK,240,4,CPPASTBreakStatement
+9979,CONTROL_STRUCTURE,-1,,break;,11,BREAK,245,8,CPPASTBreakStatement
+9994,CONTROL_STRUCTURE,-1,,break;,11,BREAK,248,12,CPPASTBreakStatement
+10009,CONTROL_STRUCTURE,-1,,break;,11,BREAK,253,16,CPPASTBreakStatement
+10019,CONTROL_STRUCTURE,-1,,break;,11,BREAK,258,24,CPPASTBreakStatement
+10020,CONTROL_STRUCTURE,-1,,if (!keep),7,IF,261,4,CPPASTIfStatement
+10024,CONTROL_STRUCTURE,-1,,if (type == kTableFile),9,IF,262,1,CPPASTIfStatement
+10086,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,283,6,CPPASTIfStatement
+10095,CONTROL_STRUCTURE,-1,,if (!env_->FileExists(CurrentFileName(dbname_))),3,IF,287,7,CPPASTIfStatement
+10104,CONTROL_STRUCTURE,-1,,if (options_.create_if_missing),5,IF,288,1,CPPASTIfStatement
+10112,CONTROL_STRUCTURE,-1,,if (!s.ok()),7,IF,290,2,CPPASTIfStatement
+10121,CONTROL_STRUCTURE,-1,,else,12,ELSE,293,3,CPPASTCompoundStatement
+10130,CONTROL_STRUCTURE,-1,,else,10,ELSE,297,3,CPPASTCompoundStatement
+10132,CONTROL_STRUCTURE,-1,,if (options_.error_if_exists),5,IF,298,1,CPPASTIfStatement
+10151,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,305,9,CPPASTIfStatement
+10195,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,321,18,CPPASTIfStatement
+10226,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < filenames.size();i++),3,FOR,329,24,CPPASTForStatement
+10241,CONTROL_STRUCTURE,-1,,"if (ParseFileName(filenames[i], &number, &type))",5,IF,330,1,CPPASTIfStatement
+10256,CONTROL_STRUCTURE,-1,,if (type == kLogFile && ((number >= min_log) || (number == prev_log))),7,IF,332,2,CPPASTIfStatement
+10274,CONTROL_STRUCTURE,-1,,if (!expected.empty()),3,IF,336,25,CPPASTIfStatement
+10318,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < logs.size();i++),3,FOR,345,27,CPPASTForStatement
+10351,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,348,2,CPPASTIfStatement
+10367,CONTROL_STRUCTURE,-1,,if (versions_->LastSequence() < max_sequence),3,IF,358,28,CPPASTIfStatement
+10415,CONTROL_STRUCTURE,-1,,if (!status.ok()),3,IF,387,7,CPPASTIfStatement
+10485,CONTROL_STRUCTURE,-1,,"while (reader.ReadRecord(&record, &scratch) &&
+         status.ok())",3,WHILE,413,23,<empty>
+10500,CONTROL_STRUCTURE,-1,,if (record.size() < 12),5,IF,415,1,CPPASTIfStatement
+10521,CONTROL_STRUCTURE,-1,,continue;,7,CONTINUE,418,2,CPPASTContinueStatement
+10529,CONTROL_STRUCTURE,-1,,if (mem == NULL),5,IF,422,3,CPPASTIfStatement
+10555,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,428,6,CPPASTIfStatement
+10562,CONTROL_STRUCTURE,-1,,break;,7,BREAK,429,1,CPPASTBreakStatement
+10581,CONTROL_STRUCTURE,-1,,if (last_seq > *max_sequence),5,IF,434,9,CPPASTIfStatement
+10591,CONTROL_STRUCTURE,-1,,if (mem->ApproximateMemoryUsage() > options_.write_buffer_size),5,IF,438,10,CPPASTIfStatement
+10620,CONTROL_STRUCTURE,-1,,if (!status.ok()),7,IF,444,6,CPPASTIfStatement
+10627,CONTROL_STRUCTURE,-1,,break;,9,BREAK,447,1,CPPASTBreakStatement
+10630,CONTROL_STRUCTURE,-1,,if (status.ok() && options_.reuse_logs && last_log && compactions == 0),3,IF,455,25,CPPASTIfStatement
+10659,CONTROL_STRUCTURE,-1,,"if (env_->GetFileSize(fname, &lfile_size).ok() &&
+        env_->NewAppendableFile(fname, &logfile_).ok())",5,IF,460,5,CPPASTIfStatement
+10700,CONTROL_STRUCTURE,-1,,if (mem != NULL),7,IF,465,4,CPPASTIfStatement
+10711,CONTROL_STRUCTURE,-1,,else,14,ELSE,468,3,CPPASTCompoundStatement
+10722,CONTROL_STRUCTURE,-1,,if (mem != NULL),3,IF,476,26,CPPASTIfStatement
+10727,CONTROL_STRUCTURE,-1,,if (status.ok()),5,IF,478,1,CPPASTIfStatement
+10855,CONTROL_STRUCTURE,-1,,if (s.ok() && meta.file_size > 0),3,IF,517,17,CPPASTIfStatement
+10885,CONTROL_STRUCTURE,-1,,if (base != NULL),5,IF,520,5,CPPASTIfStatement
+10978,CONTROL_STRUCTURE,-1,,if (s.ok() && shutting_down_.Acquire_Load()),3,IF,545,10,CPPASTIfStatement
+10996,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,550,11,CPPASTIfStatement
+11022,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,556,12,CPPASTIfStatement
+11041,CONTROL_STRUCTURE,-1,,else,10,ELSE,562,3,CPPASTCompoundStatement
+11067,CONTROL_STRUCTURE,-1,,for (int level = 1;level < config::kNumLevels;level++),5,FOR,572,5,CPPASTForStatement
+11081,CONTROL_STRUCTURE,-1,,"if (base->OverlapInLevel(level, begin, end))",7,IF,573,1,CPPASTIfStatement
+11094,CONTROL_STRUCTURE,-1,,for (int level = 0;level < max_level_with_files;level++),3,FOR,579,5,CPPASTForStatement
+11142,CONTROL_STRUCTURE,-1,,if (begin == NULL),3,IF,593,8,CPPASTIfStatement
+11152,CONTROL_STRUCTURE,-1,,else,10,ELSE,595,3,CPPASTCompoundStatement
+11167,CONTROL_STRUCTURE,-1,,if (end == NULL),3,IF,599,9,CPPASTIfStatement
+11177,CONTROL_STRUCTURE,-1,,else,10,ELSE,601,3,CPPASTCompoundStatement
+11198,CONTROL_STRUCTURE,-1,,while (!manual.done && !shutting_down_.Acquire_Load() && bg_error_.ok()),3,WHILE,607,12,<empty>
+11215,CONTROL_STRUCTURE,-1,,if (manual_compaction_ == NULL),5,IF,608,1,CPPASTIfStatement
+11225,CONTROL_STRUCTURE,-1,,else,12,ELSE,611,3,CPPASTCompoundStatement
+11231,CONTROL_STRUCTURE,-1,,if (manual_compaction_ == &manual),3,IF,615,13,CPPASTIfStatement
+11250,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,624,3,CPPASTIfStatement
+11260,CONTROL_STRUCTURE,-1,,while (imm_ != NULL && bg_error_.ok()),5,WHILE,627,3,<empty>
+11274,CONTROL_STRUCTURE,-1,,if (imm_ != NULL),5,IF,630,4,CPPASTIfStatement
+11293,CONTROL_STRUCTURE,-1,,if (bg_error_.ok()),3,IF,639,2,CPPASTIfStatement
+11314,CONTROL_STRUCTURE,-1,,if (bg_compaction_scheduled_),3,IF,647,2,CPPASTIfStatement
+11317,CONTROL_STRUCTURE,-1,,else,10,ELSE,649,3,CPPASTIfStatement
+11319,CONTROL_STRUCTURE,1,,if (shutting_down_.Acquire_Load()),10,IF,649,1,CPPASTIfStatement
+11325,CONTROL_STRUCTURE,-1,,else,10,ELSE,651,3,CPPASTIfStatement
+11327,CONTROL_STRUCTURE,1,,if (!bg_error_.ok()),10,IF,651,1,CPPASTIfStatement
+11334,CONTROL_STRUCTURE,-1,,else,10,ELSE,653,3,CPPASTIfStatement
+11336,CONTROL_STRUCTURE,1,,"if (imm_ == NULL &&
+             manual_compaction_ == NULL &&
+             !versions_->NeedsCompaction())",10,IF,653,1,CPPASTIfStatement
+11351,CONTROL_STRUCTURE,-1,,else,10,ELSE,657,3,CPPASTCompoundStatement
+11386,CONTROL_STRUCTURE,-1,,if (shutting_down_.Acquire_Load()),3,IF,670,4,CPPASTIfStatement
+11392,CONTROL_STRUCTURE,-1,,else,10,ELSE,672,3,CPPASTIfStatement
+11394,CONTROL_STRUCTURE,1,,if (!bg_error_.ok()),10,IF,672,1,CPPASTIfStatement
+11401,CONTROL_STRUCTURE,-1,,else,10,ELSE,674,3,CPPASTCompoundStatement
+11420,CONTROL_STRUCTURE,-1,,if (imm_ != NULL),3,IF,689,2,CPPASTIfStatement
+11435,CONTROL_STRUCTURE,-1,,if (is_manual),3,IF,697,7,CPPASTIfStatement
+11464,CONTROL_STRUCTURE,-1,,if (c != NULL),5,IF,701,5,CPPASTIfStatement
+11533,CONTROL_STRUCTURE,-1,,else,10,ELSE,710,3,CPPASTCompoundStatement
+11542,CONTROL_STRUCTURE,-1,,if (c == NULL),3,IF,715,9,CPPASTIfStatement
+11547,CONTROL_STRUCTURE,-1,,else,10,ELSE,717,3,CPPASTIfStatement
+11549,CONTROL_STRUCTURE,1,,if (!is_manual && c->IsTrivialMove()),10,IF,717,1,CPPASTIfStatement
+11626,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,725,7,CPPASTIfStatement
+11670,CONTROL_STRUCTURE,-1,,else,10,ELSE,735,3,CPPASTCompoundStatement
+11682,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,738,4,CPPASTIfStatement
+11700,CONTROL_STRUCTURE,-1,,if (status.ok()),3,IF,747,11,CPPASTIfStatement
+11706,CONTROL_STRUCTURE,-1,,else,10,ELSE,749,3,CPPASTIfStatement
+11708,CONTROL_STRUCTURE,1,,if (shutting_down_.Acquire_Load()),10,IF,749,1,CPPASTIfStatement
+11714,CONTROL_STRUCTURE,-1,,else,10,ELSE,751,3,CPPASTCompoundStatement
+11728,CONTROL_STRUCTURE,-1,,if (is_manual),3,IF,756,12,CPPASTIfStatement
+11735,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,758,3,CPPASTIfStatement
+11747,CONTROL_STRUCTURE,-1,,if (!m->done),5,IF,761,4,CPPASTIfStatement
+11778,CONTROL_STRUCTURE,-1,,if (compact->builder != NULL),3,IF,773,2,CPPASTIfStatement
+11795,CONTROL_STRUCTURE,-1,,else,10,ELSE,777,3,CPPASTCompoundStatement
+11807,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < compact->outputs.size();i++),3,FOR,781,4,CPPASTForStatement
+11920,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,807,9,CPPASTIfStatement
+11989,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,825,11,CPPASTIfStatement
+12003,CONTROL_STRUCTURE,-1,,else,10,ELSE,827,3,CPPASTCompoundStatement
+12042,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,837,18,CPPASTIfStatement
+12056,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,840,19,CPPASTIfStatement
+12079,CONTROL_STRUCTURE,-1,,if (s.ok() && current_entries > 0),3,IF,846,22,CPPASTIfStatement
+12107,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,853,5,CPPASTIfStatement
+12203,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < compact->outputs.size();i++),3,FOR,878,6,CPPASTForStatement
+12339,CONTROL_STRUCTURE,-1,,if (snapshots_.empty()),3,IF,900,9,CPPASTIfStatement
+12353,CONTROL_STRUCTURE,-1,,else,10,ELSE,902,3,CPPASTCompoundStatement
+12394,CONTROL_STRUCTURE,-1,,for (;input->Valid() && !shutting_down_.Acquire_Load();),3,FOR,916,21,CPPASTForStatement
+12407,CONTROL_STRUCTURE,-1,,if (has_imm_.NoBarrier_Load() != NULL),5,IF,918,1,CPPASTIfStatement
+12426,CONTROL_STRUCTURE,-1,,if (imm_ != NULL),7,IF,921,4,CPPASTIfStatement
+12455,CONTROL_STRUCTURE,-1,,"if (compact->compaction->ShouldStopBefore(key) &&
+        compact->builder != NULL)",5,IF,930,4,CPPASTIfStatement
+12475,CONTROL_STRUCTURE,-1,,if (!status.ok()),7,IF,933,2,CPPASTIfStatement
+12482,CONTROL_STRUCTURE,-1,,break;,9,BREAK,934,1,CPPASTBreakStatement
+12487,CONTROL_STRUCTURE,-1,,"if (!ParseInternalKey(key, &ikey))",5,IF,940,7,CPPASTIfStatement
+12504,CONTROL_STRUCTURE,-1,,else,12,ELSE,945,3,CPPASTCompoundStatement
+12506,CONTROL_STRUCTURE,-1,,"if (!has_current_user_key ||
+          user_comparator()->Compare(ikey.user_key,
+                                     Slice(current_user_key)) != 0)",7,IF,946,1,CPPASTIfStatement
+12544,CONTROL_STRUCTURE,-1,,if (last_sequence_for_key <= compact->smallest_snapshot),7,IF,955,2,CPPASTIfStatement
+12554,CONTROL_STRUCTURE,-1,,else,14,ELSE,958,3,CPPASTIfStatement
+12556,CONTROL_STRUCTURE,1,,"if (ikey.type == kTypeDeletion &&
+                 ikey.sequence <= compact->smallest_snapshot &&
+                 compact->compaction->IsBaseLevelForKey(ikey.user_key))",14,IF,958,1,CPPASTIfStatement
+12589,CONTROL_STRUCTURE,-1,,if (!drop),5,IF,983,8,CPPASTIfStatement
+12593,CONTROL_STRUCTURE,-1,,if (compact->builder == NULL),7,IF,985,1,CPPASTIfStatement
+12604,CONTROL_STRUCTURE,-1,,if (!status.ok()),9,IF,987,2,CPPASTIfStatement
+12611,CONTROL_STRUCTURE,-1,,break;,11,BREAK,988,1,CPPASTBreakStatement
+12612,CONTROL_STRUCTURE,-1,,if (compact->builder->NumEntries() == 0),7,IF,991,2,CPPASTIfStatement
+12653,CONTROL_STRUCTURE,-1,,"if (compact->builder->FileSize() >=
+          compact->compaction->MaxOutputFileSize())",7,IF,998,5,CPPASTIfStatement
+12673,CONTROL_STRUCTURE,-1,,if (!status.ok()),9,IF,1001,2,CPPASTIfStatement
+12680,CONTROL_STRUCTURE,-1,,break;,11,BREAK,1002,1,CPPASTBreakStatement
+12685,CONTROL_STRUCTURE,-1,,if (status.ok() && shutting_down_.Acquire_Load()),3,IF,1010,22,CPPASTIfStatement
+12703,CONTROL_STRUCTURE,-1,,if (status.ok() && compact->builder != NULL),3,IF,1013,23,CPPASTIfStatement
+12720,CONTROL_STRUCTURE,-1,,if (status.ok()),3,IF,1016,24,CPPASTIfStatement
+12750,CONTROL_STRUCTURE,-1,,for (int which = 0;which < 2;which++),3,FOR,1024,29,CPPASTForStatement
+12762,CONTROL_STRUCTURE,-1,,for (int i = 0;i < compact->compaction->num_input_files(which);i++),5,FOR,1025,1,CPPASTForStatement
+12794,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < compact->outputs.size();i++),3,FOR,1029,30,CPPASTForStatement
+12840,CONTROL_STRUCTURE,-1,,if (status.ok()),3,IF,1036,33,CPPASTIfStatement
+12850,CONTROL_STRUCTURE,-1,,if (!status.ok()),3,IF,1039,34,CPPASTIfStatement
+12903,CONTROL_STRUCTURE,-1,,if (state->imm != NULL),3,IF,1060,5,CPPASTIfStatement
+12966,CONTROL_STRUCTURE,-1,,if (imm_ != NULL),3,IF,1078,8,CPPASTIfStatement
+13095,CONTROL_STRUCTURE,-1,,if (options.snapshot != NULL),3,IF,1115,5,CPPASTIfStatement
+13111,CONTROL_STRUCTURE,-1,,else,10,ELSE,1117,3,CPPASTCompoundStatement
+13138,CONTROL_STRUCTURE,-1,,if (imm != NULL),3,IF,1125,13,CPPASTIfStatement
+13165,CONTROL_STRUCTURE,-1,,"if (mem->Get(lkey, value, &s))",5,IF,1136,4,CPPASTIfStatement
+13175,CONTROL_STRUCTURE,-1,,else,12,ELSE,1138,3,CPPASTIfStatement
+13177,CONTROL_STRUCTURE,1,,"if (imm != NULL && imm->Get(lkey, value, &s))",12,IF,1138,1,CPPASTIfStatement
+13191,CONTROL_STRUCTURE,-1,,else,12,ELSE,1140,3,CPPASTCompoundStatement
+13211,CONTROL_STRUCTURE,-1,,if (have_stat_update && current->UpdateStats(stats)),3,IF,1147,19,CPPASTIfStatement
+13225,CONTROL_STRUCTURE,-1,,if (imm != NULL),3,IF,1151,21,CPPASTIfStatement
+13285,CONTROL_STRUCTURE,-1,,if (versions_->current()->RecordReadSample(key)),3,IF,1170,3,CPPASTIfStatement
+13394,CONTROL_STRUCTURE,-1,,while (!w.done && &w != writers_.front()),3,WHILE,1202,9,<empty>
+13414,CONTROL_STRUCTURE,-1,,if (w.done),3,IF,1205,10,CPPASTIfStatement
+13442,CONTROL_STRUCTURE,-1,,if (status.ok() && my_batch != NULL),3,IF,1213,17,CPPASTIfStatement
+13493,CONTROL_STRUCTURE,-1,,if (status.ok() && options.sync),7,IF,1226,5,CPPASTIfStatement
+13509,CONTROL_STRUCTURE,-1,,if (!status.ok()),9,IF,1228,2,CPPASTIfStatement
+13519,CONTROL_STRUCTURE,-1,,if (status.ok()),7,IF,1232,6,CPPASTIfStatement
+13537,CONTROL_STRUCTURE,-1,,if (sync_error),7,IF,1236,8,CPPASTIfStatement
+13542,CONTROL_STRUCTURE,-1,,if (updates == tmp_batch_),5,IF,1243,6,CPPASTIfStatement
+13556,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,1248,18,<empty>
+13570,CONTROL_STRUCTURE,-1,,if (ready != &w),5,IF,1251,4,CPPASTIfStatement
+13592,CONTROL_STRUCTURE,-1,,if (ready == last_writer),5,IF,1256,5,CPPASTIfStatement
+13597,CONTROL_STRUCTURE,1,,break;,31,BREAK,1256,1,CPPASTBreakStatement
+13598,CONTROL_STRUCTURE,-1,,if (!writers_.empty()),3,IF,1260,19,CPPASTIfStatement
+13660,CONTROL_STRUCTURE,-1,,if (size <= (128<<10)),3,IF,1281,11,CPPASTIfStatement
+13687,CONTROL_STRUCTURE,-1,,for (;iter != writers_.end();++iter),3,FOR,1288,16,CPPASTForStatement
+13703,CONTROL_STRUCTURE,-1,,if (w->sync && !first->sync),5,IF,1290,3,CPPASTIfStatement
+13713,CONTROL_STRUCTURE,-1,,break;,7,BREAK,1292,1,CPPASTBreakStatement
+13714,CONTROL_STRUCTURE,-1,,if (w->batch != NULL),5,IF,1295,4,CPPASTIfStatement
+13730,CONTROL_STRUCTURE,-1,,if (size > max_size),7,IF,1297,2,CPPASTIfStatement
+13735,CONTROL_STRUCTURE,-1,,break;,9,BREAK,1299,1,CPPASTBreakStatement
+13736,CONTROL_STRUCTURE,-1,,if (result == first->batch),7,IF,1303,3,CPPASTIfStatement
+13797,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,1323,6,<empty>
+13800,CONTROL_STRUCTURE,-1,,if (!bg_error_.ok()),5,IF,1324,1,CPPASTIfStatement
+13810,CONTROL_STRUCTURE,-1,,break;,7,BREAK,1327,2,CPPASTBreakStatement
+13811,CONTROL_STRUCTURE,-1,,else,12,ELSE,1328,3,CPPASTIfStatement
+13813,CONTROL_STRUCTURE,1,,"if (allow_delay &&
+        versions_->NumLevelFiles(0) >= config::kL0_SlowdownWritesTrigger)",12,IF,1328,1,CPPASTIfStatement
+13842,CONTROL_STRUCTURE,-1,,else,12,ELSE,1341,3,CPPASTIfStatement
+13844,CONTROL_STRUCTURE,1,,"if (!force &&
+               (mem_->ApproximateMemoryUsage() <= options_.write_buffer_size))",12,IF,1341,1,CPPASTIfStatement
+13857,CONTROL_STRUCTURE,-1,,break;,7,BREAK,1344,1,CPPASTBreakStatement
+13858,CONTROL_STRUCTURE,-1,,else,12,ELSE,1345,3,CPPASTIfStatement
+13860,CONTROL_STRUCTURE,1,,if (imm_ != NULL),12,IF,1345,1,CPPASTIfStatement
+13874,CONTROL_STRUCTURE,-1,,else,12,ELSE,1350,3,CPPASTIfStatement
+13876,CONTROL_STRUCTURE,1,,if (versions_->NumLevelFiles(0) >= config::kL0_StopWritesTrigger),12,IF,1350,1,CPPASTIfStatement
+13896,CONTROL_STRUCTURE,-1,,else,12,ELSE,1354,3,CPPASTCompoundStatement
+13927,CONTROL_STRUCTURE,-1,,if (!s.ok()),7,IF,1360,7,CPPASTIfStatement
+13939,CONTROL_STRUCTURE,-1,,break;,9,BREAK,1363,2,CPPASTBreakStatement
+13999,CONTROL_STRUCTURE,-1,,if (!in.starts_with(prefix)),3,IF,1387,8,CPPASTIfStatement
+14017,CONTROL_STRUCTURE,-1,,"if (in.starts_with(""num-files-at-level""))",3,IF,1390,10,CPPASTIfStatement
+14044,CONTROL_STRUCTURE,-1,,if (!ok || level >= config::kNumLevels),5,IF,1394,5,CPPASTIfStatement
+14056,CONTROL_STRUCTURE,-1,,else,12,ELSE,1396,3,CPPASTCompoundStatement
+14077,CONTROL_STRUCTURE,-1,,else,10,ELSE,1403,3,CPPASTIfStatement
+14079,CONTROL_STRUCTURE,1,,"if (in == ""stats"")",10,IF,1403,1,CPPASTIfStatement
+14095,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),5,FOR,1411,4,CPPASTForStatement
+14117,CONTROL_STRUCTURE,-1,,if (stats_[level].micros > 0 || files > 0),7,IF,1413,3,CPPASTIfStatement
+14172,CONTROL_STRUCTURE,-1,,else,10,ELSE,1427,3,CPPASTIfStatement
+14174,CONTROL_STRUCTURE,1,,"if (in == ""sstables"")",10,IF,1427,1,CPPASTIfStatement
+14191,CONTROL_STRUCTURE,-1,,else,10,ELSE,1430,3,CPPASTIfStatement
+14193,CONTROL_STRUCTURE,1,,"if (in == ""approximate-memory-usage"")",10,IF,1430,1,CPPASTIfStatement
+14207,CONTROL_STRUCTURE,-1,,if (mem_),5,IF,1432,3,CPPASTIfStatement
+14216,CONTROL_STRUCTURE,-1,,if (imm_),5,IF,1435,4,CPPASTIfStatement
+14269,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),3,FOR,1459,3,CPPASTForStatement
+14418,CONTROL_STRUCTURE,-1,,if (s.ok() && impl->mem_ == NULL),3,IF,1500,10,CPPASTIfStatement
+14453,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,1506,5,CPPASTIfStatement
+14496,CONTROL_STRUCTURE,-1,,if (s.ok() && save_manifest),3,IF,1515,11,CPPASTIfStatement
+14530,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,1520,12,CPPASTIfStatement
+14550,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,1525,14,CPPASTIfStatement
+14566,CONTROL_STRUCTURE,-1,,else,10,ELSE,1528,3,CPPASTCompoundStatement
+14604,CONTROL_STRUCTURE,-1,,if (filenames.empty()),3,IF,1542,5,CPPASTIfStatement
+14631,CONTROL_STRUCTURE,-1,,if (result.ok()),3,IF,1549,11,CPPASTIfStatement
+14639,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < filenames.size();i++),5,FOR,1552,3,CPPASTForStatement
+14654,CONTROL_STRUCTURE,-1,,"if (ParseFileName(filenames[i], &number, &type) &&
+          type != kDBLockFile)",7,IF,1553,1,CPPASTIfStatement
+14682,CONTROL_STRUCTURE,-1,,if (result.ok() && !del.ok()),9,IF,1556,3,CPPASTIfStatement
+15136,CONTROL_STRUCTURE,-1,,if (status_.ok()),5,IF,75,1,CPPASTIfStatement
+15147,CONTROL_STRUCTURE,-1,,else,12,ELSE,77,3,CPPASTCompoundStatement
+15209,CONTROL_STRUCTURE,-1,,if (saved_value_.capacity() > 1048576),5,IF,98,1,CPPASTIfStatement
+15221,CONTROL_STRUCTURE,-1,,else,12,ELSE,101,3,CPPASTCompoundStatement
+15292,CONTROL_STRUCTURE,-1,,while (bytes_counter_ < 0),3,WHILE,134,6,<empty>
+15305,CONTROL_STRUCTURE,-1,,"if (!ParseInternalKey(k, ikey))",3,IF,138,7,CPPASTIfStatement
+15320,CONTROL_STRUCTURE,-1,,else,10,ELSE,141,3,CPPASTCompoundStatement
+15330,CONTROL_STRUCTURE,-1,,if (direction_ == kReverse),3,IF,149,2,CPPASTIfStatement
+15338,CONTROL_STRUCTURE,-1,,if (!iter_->Valid()),5,IF,154,2,CPPASTIfStatement
+15349,CONTROL_STRUCTURE,-1,,else,12,ELSE,156,3,CPPASTCompoundStatement
+15355,CONTROL_STRUCTURE,-1,,if (!iter_->Valid()),5,IF,159,3,CPPASTIfStatement
+15370,CONTROL_STRUCTURE,-1,,else,10,ELSE,165,3,CPPASTCompoundStatement
+15399,CONTROL_STRUCTURE,-1,,"do {
+    ParsedInternalKey ikey;
+    if (ParseKey(&ikey) && ikey.sequence <= sequence_) {
+      switch (ikey.type) {
+        case kTypeDeletion:
+          // Arrange to skip all upcoming entries for this key since
+          // they are hidden by this deletion.
+          SaveKey(ikey.user_key, skip);
+          skipping = true;
+          break;
+        case kTypeValue:
+          if (skipping &&
+              user_comparator_->Compare(ikey.user_key, *skip) <= 0) {
+            // Entry hidden
+          } else {
+            valid_ = true;
+            saved_key_.clear();
+            return;
+          }
+          break;
+      }
+    }
+    iter_->Next();
+  } while (iter_->Valid());",3,DO,177,3,CPPASTDoStatement
+15402,CONTROL_STRUCTURE,-1,,if (ParseKey(&ikey) && ikey.sequence <= sequence_),5,IF,179,2,CPPASTIfStatement
+15413,CONTROL_STRUCTURE,-1,,switch(ikey.type),7,SWITCH,180,1,CPPASTSwitchStatement
+15428,CONTROL_STRUCTURE,-1,,break;,11,BREAK,186,5,CPPASTBreakStatement
+15431,CONTROL_STRUCTURE,-1,,"if (skipping &&
+              user_comparator_->Compare(ikey.user_key, *skip) <= 0)",11,IF,188,8,CPPASTIfStatement
+15446,CONTROL_STRUCTURE,-1,,else,18,ELSE,191,3,CPPASTCompoundStatement
+15456,CONTROL_STRUCTURE,-1,,break;,11,BREAK,196,9,CPPASTBreakStatement
+15478,CONTROL_STRUCTURE,-1,,if (direction_ == kForward),3,IF,208,2,CPPASTIfStatement
+15496,CONTROL_STRUCTURE,-1,,while (true),5,WHILE,213,3,<empty>
+15503,CONTROL_STRUCTURE,-1,,if (!iter_->Valid()),7,IF,215,2,CPPASTIfStatement
+15519,CONTROL_STRUCTURE,-1,,"if (user_comparator_->Compare(ExtractUserKey(iter_->key()),
+                                    saved_key_) < 0)",7,IF,221,3,CPPASTIfStatement
+15533,CONTROL_STRUCTURE,-1,,break;,9,BREAK,223,1,CPPASTBreakStatement
+15550,CONTROL_STRUCTURE,-1,,if (iter_->Valid()),3,IF,236,4,CPPASTIfStatement
+15556,CONTROL_STRUCTURE,-1,,"do {
+      ParsedInternalKey ikey;
+      if (ParseKey(&ikey) && ikey.sequence <= sequence_) {
+        if ((value_type != kTypeDeletion) &&
+            user_comparator_->Compare(ikey.user_key, saved_key_) < 0) {
+          // We encountered a non-deleted value in entries for previous keys,
+          break;
+        }
+        value_type = ikey.type;
+        if (value_type == kTypeDeletion) {
+          saved_key_.clear();
+          ClearSavedValue();
+        } else {
+          Slice raw_value = iter_->value();
+          if (saved_value_.capacity() > raw_value.size() + 1048576) {
+            std::string empty;
+            swap(empty, saved_value_);
+          }
+          SaveKey(ExtractUserKey(iter_->key()), &saved_key_);
+          saved_value_.assign(raw_value.data(), raw_value.size());
+        }
+      }
+      iter_->Prev();
+    } while (iter_->Valid());",5,DO,237,1,CPPASTDoStatement
+15559,CONTROL_STRUCTURE,-1,,if (ParseKey(&ikey) && ikey.sequence <= sequence_),7,IF,239,2,CPPASTIfStatement
+15570,CONTROL_STRUCTURE,-1,,"if ((value_type != kTypeDeletion) &&
+            user_comparator_->Compare(ikey.user_key, saved_key_) < 0)",9,IF,240,1,CPPASTIfStatement
+15586,CONTROL_STRUCTURE,-1,,break;,11,BREAK,243,1,CPPASTBreakStatement
+15592,CONTROL_STRUCTURE,-1,,if (value_type == kTypeDeletion),9,IF,246,3,CPPASTIfStatement
+15602,CONTROL_STRUCTURE,-1,,else,16,ELSE,249,3,CPPASTCompoundStatement
+15611,CONTROL_STRUCTURE,-1,,if (saved_value_.capacity() > raw_value.size() + 1048576),11,IF,251,3,CPPASTIfStatement
+15656,CONTROL_STRUCTURE,-1,,if (value_type == kTypeDeletion),3,IF,263,5,CPPASTIfStatement
+15672,CONTROL_STRUCTURE,-1,,else,10,ELSE,269,3,CPPASTCompoundStatement
+15702,CONTROL_STRUCTURE,-1,,if (iter_->Valid()),3,IF,281,6,CPPASTIfStatement
+15712,CONTROL_STRUCTURE,-1,,else,10,ELSE,283,3,CPPASTCompoundStatement
+15729,CONTROL_STRUCTURE,-1,,if (iter_->Valid()),3,IF,292,4,CPPASTIfStatement
+15739,CONTROL_STRUCTURE,-1,,else,10,ELSE,294,3,CPPASTCompoundStatement
+15962,CONTROL_STRUCTURE,-1,,if (non_writable_.Acquire_Load() != NULL),5,IF,148,1,CPPASTIfStatement
+15985,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,153,4,CPPASTIfStatement
+15991,CONTROL_STRUCTURE,-1,,"if (strstr(f.c_str(), "".ldb"") != NULL ||
+          strstr(f.c_str(), "".log"") != NULL)",7,IF,154,1,CPPASTIfStatement
+16018,CONTROL_STRUCTURE,-1,,else,14,ELSE,157,3,CPPASTIfStatement
+16020,CONTROL_STRUCTURE,1,,"if (strstr(f.c_str(), ""MANIFEST"") != NULL)",14,IF,157,1,CPPASTIfStatement
+16055,CONTROL_STRUCTURE,-1,,if (s.ok() && count_random_reads_),5,IF,182,3,CPPASTIfStatement
+16129,CONTROL_STRUCTURE,-1,,if (option_config_ >= kEnd),5,IF,230,2,CPPASTIfStatement
+16136,CONTROL_STRUCTURE,-1,,else,12,ELSE,232,3,CPPASTCompoundStatement
+16151,CONTROL_STRUCTURE,-1,,switch(option_config_),5,SWITCH,242,3,CPPASTSwitchStatement
+16161,CONTROL_STRUCTURE,-1,,break;,9,BREAK,245,4,CPPASTBreakStatement
+16169,CONTROL_STRUCTURE,-1,,break;,9,BREAK,248,8,CPPASTBreakStatement
+16177,CONTROL_STRUCTURE,-1,,break;,9,BREAK,251,12,CPPASTBreakStatement
+16179,CONTROL_STRUCTURE,-1,,break;,9,BREAK,253,14,CPPASTBreakStatement
+16262,CONTROL_STRUCTURE,-1,,if (options != NULL),5,IF,282,4,CPPASTIfStatement
+16271,CONTROL_STRUCTURE,-1,,else,12,ELSE,284,3,CPPASTCompoundStatement
+16343,CONTROL_STRUCTURE,-1,,if (s.IsNotFound()),5,IF,306,6,CPPASTIfStatement
+16352,CONTROL_STRUCTURE,-1,,else,12,ELSE,308,3,CPPASTIfStatement
+16354,CONTROL_STRUCTURE,1,,if (!s.ok()),12,IF,308,1,CPPASTIfStatement
+16391,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();iter->Valid();iter->Next()),5,FOR,320,5,CPPASTForStatement
+16435,CONTROL_STRUCTURE,-1,,for (iter->SeekToLast();iter->Valid();iter->Prev()),5,FOR,330,8,CPPASTForStatement
+16555,CONTROL_STRUCTURE,-1,,if (!iter->status().ok()),5,IF,346,7,CPPASTIfStatement
+16574,CONTROL_STRUCTURE,-1,,else,12,ELSE,348,3,CPPASTCompoundStatement
+16583,CONTROL_STRUCTURE,-1,,while (iter->Valid()),7,WHILE,351,4,<empty>
+16590,CONTROL_STRUCTURE,-1,,"if (!ParseInternalKey(iter->key(), &ikey))",9,IF,353,2,CPPASTIfStatement
+16603,CONTROL_STRUCTURE,-1,,else,16,ELSE,355,3,CPPASTCompoundStatement
+16605,CONTROL_STRUCTURE,-1,,"if (last_options_.comparator->Compare(ikey.user_key, user_key) != 0)",11,IF,356,1,CPPASTIfStatement
+16619,CONTROL_STRUCTURE,-1,,break;,13,BREAK,357,1,CPPASTBreakStatement
+16620,CONTROL_STRUCTURE,-1,,if (!first),11,IF,359,2,CPPASTIfStatement
+16630,CONTROL_STRUCTURE,-1,,switch(ikey.type),11,SWITCH,363,4,CPPASTSwitchStatement
+16646,CONTROL_STRUCTURE,-1,,break;,15,BREAK,366,4,CPPASTBreakStatement
+16652,CONTROL_STRUCTURE,-1,,break;,15,BREAK,369,8,CPPASTBreakStatement
+16657,CONTROL_STRUCTURE,-1,,if (!first),7,IF,374,5,CPPASTIfStatement
+16715,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),5,FOR,393,3,CPPASTForStatement
+16744,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),5,FOR,403,4,CPPASTForStatement
+16777,CONTROL_STRUCTURE,-1,,if (f > 0),7,IF,408,6,CPPASTIfStatement
+16865,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),5,FOR,436,1,CPPASTForStatement
+16917,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),5,FOR,454,3,CPPASTForStatement
+16936,CONTROL_STRUCTURE,-1,,if (num > 0),7,IF,456,3,CPPASTIfStatement
+16966,CONTROL_STRUCTURE,-1,,if (iter->Valid()),5,IF,470,2,CPPASTIfStatement
+16991,CONTROL_STRUCTURE,-1,,else,12,ELSE,472,3,CPPASTCompoundStatement
+17033,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < filenames.size();i++),5,FOR,483,5,CPPASTForStatement
+17048,CONTROL_STRUCTURE,-1,,"if (ParseFileName(filenames[i], &number, &type) && type == kTableFile)",7,IF,484,1,CPPASTIfStatement
+17125,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < filenames.size();i++),5,FOR,499,7,CPPASTForStatement
+17140,CONTROL_STRUCTURE,-1,,"if (ParseFileName(filenames[i], &number, &type) && type == kTableFile)",7,IF,500,1,CPPASTIfStatement
+17222,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_TRUE(db_ != NULL);
+    ASSERT_EQ(""NOT_FOUND"", Get(""foo""));
+  } while (ChangeOptions());",3,DO,512,1,CPPASTDoStatement
+17294,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_OK(Put(""foo"", ""v1""));
+    ASSERT_EQ(""v1"", Get(""foo""));
+    ASSERT_OK(Put(""bar"", ""v2""));
+    ASSERT_OK(Put(""foo"", ""v3""));
+    ASSERT_EQ(""v3"", Get(""foo""));
+    ASSERT_EQ(""v2"", Get(""bar""));
+  } while (ChangeOptions());",3,DO,519,1,CPPASTDoStatement
+17435,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_OK(db_->Put(WriteOptions(), ""foo"", ""v1""));
+    ASSERT_EQ(""v1"", Get(""foo""));
+    ASSERT_OK(db_->Put(WriteOptions(), ""foo"", ""v2""));
+    ASSERT_EQ(""v2"", Get(""foo""));
+    ASSERT_OK(db_->Delete(WriteOptions(), ""foo""));
+    ASSERT_EQ(""NOT_FOUND"", Get(""foo""));
+  } while (ChangeOptions());",3,DO,530,1,CPPASTDoStatement
+17587,CONTROL_STRUCTURE,-1,,"do {
+    Options options = CurrentOptions();
+    options.env = env_;
+    options.write_buffer_size = 100000;  // Small write buffer
+    Reopen(&options);
+
+    ASSERT_OK(Put(""foo"", ""v1""));
+    ASSERT_EQ(""v1"", Get(""foo""));
+
+    env_->delay_data_sync_.Release_Store(env_);      // Block sync calls
+    Put(""k1"", std::string(100000, 'x'));             // Fill memtable
+    Put(""k2"", std::string(100000, 'y'));             // Trigger compaction
+    ASSERT_EQ(""v1"", Get(""foo""));
+    env_->delay_data_sync_.Release_Store(NULL);      // Release sync calls
+  } while (ChangeOptions());",3,DO,541,1,CPPASTDoStatement
+17724,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_OK(Put(""foo"", ""v1""));
+    dbfull()->TEST_CompactMemTable();
+    ASSERT_EQ(""v1"", Get(""foo""));
+  } while (ChangeOptions());",3,DO,559,1,CPPASTDoStatement
+17799,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_OK(Put(""foo"", ""v1""));
+    std::string val;
+    ASSERT_TRUE(db_->GetProperty(""leveldb.approximate-memory-usage"", &val));
+    int mem_usage = atoi(val.c_str());
+    ASSERT_GT(mem_usage, 0);
+    ASSERT_LT(mem_usage, 5*1024*1024);
+  } while (ChangeOptions());",3,DO,567,1,CPPASTDoStatement
+17918,CONTROL_STRUCTURE,-1,,"do {
+    // Try with both a short key and a long key
+    for (int i = 0; i < 2; i++) {
+      std::string key = (i == 0) ? std::string(""foo"") : std::string(200, 'x');
+      ASSERT_OK(Put(key, ""v1""));
+      const Snapshot* s1 = db_->GetSnapshot();
+      ASSERT_OK(Put(key, ""v2""));
+      ASSERT_EQ(""v2"", Get(key));
+      ASSERT_EQ(""v1"", Get(key, s1));
+      dbfull()->TEST_CompactMemTable();
+      ASSERT_EQ(""v2"", Get(key));
+      ASSERT_EQ(""v1"", Get(key, s1));
+      db_->ReleaseSnapshot(s1);
+    }
+  } while (ChangeOptions());",3,DO,578,1,CPPASTDoStatement
+17920,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 2;i++),5,FOR,580,1,CPPASTForStatement
+18106,CONTROL_STRUCTURE,-1,,"do {
+    // Check that we process level-0 files in correct order.  The code
+    // below generates two level-0 files where the earlier one comes
+    // before the later one in the level-0 file list since the earlier
+    // one has a smaller ""smallest"" key.
+    ASSERT_OK(Put(""bar"", ""b""));
+    ASSERT_OK(Put(""foo"", ""v1""));
+    dbfull()->TEST_CompactMemTable();
+    ASSERT_OK(Put(""foo"", ""v2""));
+    dbfull()->TEST_CompactMemTable();
+    ASSERT_EQ(""v2"", Get(""foo""));
+  } while (ChangeOptions());",3,DO,596,1,CPPASTDoStatement
+18217,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_OK(Put(""foo"", ""v1""));
+    Compact(""a"", ""z"");
+    ASSERT_EQ(""v1"", Get(""foo""));
+    ASSERT_OK(Put(""foo"", ""v2""));
+    ASSERT_EQ(""v2"", Get(""foo""));
+    dbfull()->TEST_CompactMemTable();
+    ASSERT_EQ(""v2"", Get(""foo""));
+  } while (ChangeOptions());",3,DO,611,1,CPPASTDoStatement
+18349,CONTROL_STRUCTURE,-1,,"do {
+    // Arrange to have multiple files in a non-level-0 level.
+    ASSERT_OK(Put(""a"", ""va""));
+    Compact(""a"", ""b"");
+    ASSERT_OK(Put(""x"", ""vx""));
+    Compact(""x"", ""y"");
+    ASSERT_OK(Put(""f"", ""vf""));
+    Compact(""f"", ""g"");
+    ASSERT_EQ(""va"", Get(""a""));
+    ASSERT_EQ(""vf"", Get(""f""));
+    ASSERT_EQ(""vx"", Get(""x""));
+  } while (ChangeOptions());",3,DO,623,1,CPPASTDoStatement
+18499,CONTROL_STRUCTURE,-1,,"do {
+    // Arrange for the following to happen:
+    //   * sstable A in level 0
+    //   * nothing in level 1
+    //   * sstable B in level 2
+    // Then do enough Get() calls to arrange for an automatic compaction
+    // of sstable A.  A bug would cause the compaction to be marked as
+    // occurring at level 1 (instead of the correct level 0).
+
+    // Step 1: First place sstables in levels 0 and 2
+    int compaction_count = 0;
+    while (NumTableFilesAtLevel(0) == 0 ||
+           NumTableFilesAtLevel(2) == 0) {
+      ASSERT_LE(compaction_count, 100) << ""could not fill levels 0 and 2"";
+      compaction_count++;
+      Put(""a"", ""begin"");
+      Put(""z"", ""end"");
+      dbfull()->TEST_CompactMemTable();
+    }
+
+    // Step 2: clear level 1 if necessary.
+    dbfull()->TEST_CompactRange(1, NULL, NULL);
+    ASSERT_EQ(NumTableFilesAtLevel(0), 1);
+    ASSERT_EQ(NumTableFilesAtLevel(1), 0);
+    ASSERT_EQ(NumTableFilesAtLevel(2), 1);
+
+    // Step 3: read a bunch of times
+    for (int i = 0; i <...",3,DO,638,1,CPPASTDoStatement
+18505,CONTROL_STRUCTURE,-1,,"while (NumTableFilesAtLevel(0) == 0 ||
+           NumTableFilesAtLevel(2) == 0)",5,WHILE,649,3,<empty>
+18611,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 1000;i++),5,FOR,665,8,CPPASTForStatement
+20443,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_OK(Put(""a"", ""va""));
+    ASSERT_OK(Put(""b"", ""vb""));
+    ASSERT_OK(Put(""c"", ""vc""));
+    ASSERT_OK(Delete(""b""));
+    ASSERT_EQ(""NOT_FOUND"", Get(""b""));
+
+    Iterator* iter = db_->NewIterator(ReadOptions());
+    iter->Seek(""c"");
+    ASSERT_EQ(IterStatus(iter), ""c->vc"");
+    iter->Prev();
+    ASSERT_EQ(IterStatus(iter), ""a->va"");
+    delete iter;
+  } while (ChangeOptions());",3,DO,851,1,CPPASTDoStatement
+20620,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_OK(Put(""foo"", ""v1""));
+    ASSERT_OK(Put(""baz"", ""v5""));
+
+    Reopen();
+    ASSERT_EQ(""v1"", Get(""foo""));
+
+    ASSERT_EQ(""v1"", Get(""foo""));
+    ASSERT_EQ(""v5"", Get(""baz""));
+    ASSERT_OK(Put(""bar"", ""v2""));
+    ASSERT_OK(Put(""foo"", ""v3""));
+
+    Reopen();
+    ASSERT_EQ(""v3"", Get(""foo""));
+    ASSERT_OK(Put(""foo"", ""v4""));
+    ASSERT_EQ(""v4"", Get(""foo""));
+    ASSERT_EQ(""v2"", Get(""bar""));
+    ASSERT_EQ(""v5"", Get(""baz""));
+  } while (ChangeOptions());",3,DO,868,1,CPPASTDoStatement
+20871,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_OK(Put(""foo"", ""v1""));
+    ASSERT_OK(Put(""foo"", ""v2""));
+    Reopen();
+    Reopen();
+    ASSERT_OK(Put(""foo"", ""v3""));
+    Reopen();
+    ASSERT_EQ(""v3"", Get(""foo""));
+  } while (ChangeOptions());",3,DO,890,1,CPPASTDoStatement
+20977,CONTROL_STRUCTURE,-1,,"do {
+    Options options = CurrentOptions();
+    options.env = env_;
+    options.write_buffer_size = 1000000;
+    Reopen(&options);
+
+    // Trigger a long memtable compaction and reopen the database during it
+    ASSERT_OK(Put(""foo"", ""v1""));                         // Goes to 1st log file
+    ASSERT_OK(Put(""big1"", std::string(10000000, 'x')));  // Fills memtable
+    ASSERT_OK(Put(""big2"", std::string(1000, 'y')));      // Triggers compaction
+    ASSERT_OK(Put(""bar"", ""v2""));                         // Goes to new log file
+
+    Reopen(&options);
+    ASSERT_EQ(""v1"", Get(""foo""));
+    ASSERT_EQ(""v2"", Get(""bar""));
+    ASSERT_EQ(std::string(10000000, 'x'), Get(""big1""));
+    ASSERT_EQ(std::string(1000, 'y'), Get(""big2""));
+  } while (ChangeOptions());",3,DO,904,1,CPPASTDoStatement
+21229,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,938,9,CPPASTForStatement
+21287,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,944,13,CPPASTForStatement
+21328,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,950,15,CPPASTForStatement
+21730,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 80;i++),3,FOR,989,9,CPPASTForStatement
+21817,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 80;i++),3,FOR,1000,14,CPPASTForStatement
+21928,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 5 * kMaxFiles;i++),3,FOR,1017,12,CPPASTForStatement
+22026,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 100000;i++),3,FOR,1040,9,CPPASTForStatement
+22178,CONTROL_STRUCTURE,-1,,if (!result),3,IF,1066,3,CPPASTIfStatement
+22229,CONTROL_STRUCTURE,-1,,"do {
+    Options options = CurrentOptions();
+    options.write_buffer_size = 100000000;        // Large write buffer
+    options.compression = kNoCompression;
+    DestroyAndReopen();
+
+    ASSERT_TRUE(Between(Size("""", ""xyz""), 0, 0));
+    Reopen(&options);
+    ASSERT_TRUE(Between(Size("""", ""xyz""), 0, 0));
+
+    // Write 8MB (80 values, each 100K)
+    ASSERT_EQ(NumTableFilesAtLevel(0), 0);
+    const int N = 80;
+    static const int S1 = 100000;
+    static const int S2 = 105000;  // Allow some expansion from metadata
+    Random rnd(301);
+    for (int i = 0; i < N; i++) {
+      ASSERT_OK(Put(Key(i), RandomString(&rnd, S1)));
+    }
+
+    // 0 because GetApproximateSizes() does not account for memtable space
+    ASSERT_TRUE(Between(Size("""", Key(50)), 0, 0));
+
+    if (options.reuse_logs) {
+      // Recovery will reuse memtable, and GetApproximateSizes() does not
+      // account for memtable usage;
+      Reopen(&options);
+      ASSERT_TRUE(Between(Size("""", Key(50)), 0, 0));
+      continue;
+   ...",3,DO,1076,1,CPPASTDoStatement
+22323,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),5,FOR,1092,18,CPPASTForStatement
+22376,CONTROL_STRUCTURE,-1,,if (options.reuse_logs),5,IF,1099,20,CPPASTIfStatement
+22405,CONTROL_STRUCTURE,-1,,continue;,7,CONTINUE,1104,3,CPPASTContinueStatement
+22406,CONTROL_STRUCTURE,-1,,for (int run = 0;run < 3;run++),5,FOR,1108,21,CPPASTForStatement
+22421,CONTROL_STRUCTURE,-1,,for (int compact_start = 0;compact_start < N;compact_start += 10),7,FOR,1111,2,CPPASTForStatement
+22434,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i += 10),9,FOR,1112,1,CPPASTForStatement
+22684,CONTROL_STRUCTURE,-1,,"do {
+    Options options = CurrentOptions();
+    options.compression = kNoCompression;
+    Reopen();
+
+    Random rnd(301);
+    std::string big1 = RandomString(&rnd, 100000);
+    ASSERT_OK(Put(Key(0), RandomString(&rnd, 10000)));
+    ASSERT_OK(Put(Key(1), RandomString(&rnd, 10000)));
+    ASSERT_OK(Put(Key(2), big1));
+    ASSERT_OK(Put(Key(3), RandomString(&rnd, 10000)));
+    ASSERT_OK(Put(Key(4), big1));
+    ASSERT_OK(Put(Key(5), RandomString(&rnd, 10000)));
+    ASSERT_OK(Put(Key(6), RandomString(&rnd, 300000)));
+    ASSERT_OK(Put(Key(7), RandomString(&rnd, 10000)));
+
+    if (options.reuse_logs) {
+      // Need to force a memtable compaction since recovery does not do so.
+      ASSERT_OK(dbfull()->TEST_CompactMemTable());
+    }
+
+    // Check sizes across recovery by reopening a few times
+    for (int run = 0; run < 3; run++) {
+      Reopen(&options);
+
+      ASSERT_TRUE(Between(Size("""", Key(0)), 0, 0));
+      ASSERT_TRUE(Between(Size("""", Key(1)), 10000, 11000));
+      ASSERT_TRUE(Betw...",3,DO,1134,1,CPPASTDoStatement
+22860,CONTROL_STRUCTURE,-1,,if (options.reuse_logs),5,IF,1150,17,CPPASTIfStatement
+22886,CONTROL_STRUCTURE,-1,,for (int run = 0;run < 3;run++),5,FOR,1156,18,CPPASTForStatement
+23167,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 100;i++),3,FOR,1184,5,CPPASTForStatement
+23354,CONTROL_STRUCTURE,-1,,"do {
+    Put(""foo"", ""v1"");
+    const Snapshot* s1 = db_->GetSnapshot();
+    Put(""foo"", ""v2"");
+    const Snapshot* s2 = db_->GetSnapshot();
+    Put(""foo"", ""v3"");
+    const Snapshot* s3 = db_->GetSnapshot();
+
+    Put(""foo"", ""v4"");
+    ASSERT_EQ(""v1"", Get(""foo"", s1));
+    ASSERT_EQ(""v2"", Get(""foo"", s2));
+    ASSERT_EQ(""v3"", Get(""foo"", s3));
+    ASSERT_EQ(""v4"", Get(""foo""));
+
+    db_->ReleaseSnapshot(s3);
+    ASSERT_EQ(""v1"", Get(""foo"", s1));
+    ASSERT_EQ(""v2"", Get(""foo"", s2));
+    ASSERT_EQ(""v4"", Get(""foo""));
+
+    db_->ReleaseSnapshot(s1);
+    ASSERT_EQ(""v2"", Get(""foo"", s2));
+    ASSERT_EQ(""v4"", Get(""foo""));
+
+    db_->ReleaseSnapshot(s2);
+    ASSERT_EQ(""v4"", Get(""foo""));
+  } while (ChangeOptions());",3,DO,1199,1,CPPASTDoStatement
+23622,CONTROL_STRUCTURE,-1,,"do {
+    Random rnd(301);
+    FillLevels(""a"", ""z"");
+
+    std::string big = RandomString(&rnd, 50000);
+    Put(""foo"", big);
+    Put(""pastfoo"", ""v"");
+    const Snapshot* snapshot = db_->GetSnapshot();
+    Put(""foo"", ""tiny"");
+    Put(""pastfoo2"", ""v2"");        // Advance sequence number one more
+
+    ASSERT_OK(dbfull()->TEST_CompactMemTable());
+    ASSERT_GT(NumTableFilesAtLevel(0), 0);
+
+    ASSERT_EQ(big, Get(""foo"", snapshot));
+    ASSERT_TRUE(Between(Size("""", ""pastfoo""), 50000, 60000));
+    db_->ReleaseSnapshot(snapshot);
+    ASSERT_EQ(AllEntriesFor(""foo""), ""[ tiny, "" + big + "" ]"");
+    Slice x(""x"");
+    dbfull()->TEST_CompactRange(0, NULL, &x);
+    ASSERT_EQ(AllEntriesFor(""foo""), ""[ tiny ]"");
+    ASSERT_EQ(NumTableFilesAtLevel(0), 0);
+    ASSERT_GE(NumTableFilesAtLevel(1), 1);
+    dbfull()->TEST_CompactRange(1, NULL, &x);
+    ASSERT_EQ(AllEntriesFor(""foo""), ""[ tiny ]"");
+
+    ASSERT_TRUE(Between(Size("""", ""pastfoo""), 0, 1000));
+  } while (ChangeOptions());",3,DO,1228,1,CPPASTDoStatement
+24401,CONTROL_STRUCTURE,-1,,"do {
+    ASSERT_EQ(config::kMaxMemCompactLevel, 2) << ""Fix test to match config"";
+
+    // Fill levels 1 and 2 to disable the pushing of new memtables to levels > 0.
+    ASSERT_OK(Put(""100"", ""v100""));
+    ASSERT_OK(Put(""999"", ""v999""));
+    dbfull()->TEST_CompactMemTable();
+    ASSERT_OK(Delete(""100""));
+    ASSERT_OK(Delete(""999""));
+    dbfull()->TEST_CompactMemTable();
+    ASSERT_EQ(""0,1,1"", FilesPerLevel());
+
+    // Make files spanning the following ranges in level-0:
+    //  files[0]  200 .. 900
+    //  files[1]  300 .. 500
+    // Note that files are sorted by smallest key.
+    ASSERT_OK(Put(""300"", ""v300""));
+    ASSERT_OK(Put(""500"", ""v500""));
+    dbfull()->TEST_CompactMemTable();
+    ASSERT_OK(Put(""200"", ""v200""));
+    ASSERT_OK(Put(""600"", ""v600""));
+    ASSERT_OK(Put(""900"", ""v900""));
+    dbfull()->TEST_CompactMemTable();
+    ASSERT_EQ(""2,1,1"", FilesPerLevel());
+
+    // Compact away the placeholder files we created initially
+    dbfull()->TEST_CompactRange(1, NULL, NULL);
+    dbfull(...",3,DO,1314,1,CPPASTDoStatement
+25174,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 2;i++),3,FOR,1455,11,CPPASTForStatement
+25303,CONTROL_STRUCTURE,-1,,for (int run = 0;run < 2;run++),3,FOR,1465,12,CPPASTForStatement
+25315,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 1000;i++),5,FOR,1466,1,CPPASTForStatement
+26021,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 10;i++),3,FOR,1565,11,CPPASTForStatement
+26033,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels-1;level++),5,FOR,1566,1,CPPASTForStatement
+26162,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 20;i++),3,FOR,1583,12,CPPASTForStatement
+26179,CONTROL_STRUCTURE,-1,,"if (!Put(""foo"", big).ok())",5,IF,1585,2,CPPASTIfStatement
+26503,CONTROL_STRUCTURE,-1,,for (int iter = 0;iter < 2;iter++),3,FOR,1634,1,CPPASTForStatement
+27094,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 10;i++),3,FOR,1704,5,CPPASTForStatement
+27208,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,1721,10,CPPASTForStatement
+27241,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i += 100),3,FOR,1725,12,CPPASTForStatement
+27289,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,1735,16,CPPASTForStatement
+27383,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,1745,23,CPPASTForStatement
+27535,CONTROL_STRUCTURE,-1,,while (t->state->stop.Acquire_Load() == NULL),3,WHILE,1786,14,<empty>
+27575,CONTROL_STRUCTURE,-1,,if (rnd.OneIn(2)),5,IF,1793,6,CPPASTIfStatement
+27614,CONTROL_STRUCTURE,-1,,else,12,ELSE,1799,3,CPPASTCompoundStatement
+27628,CONTROL_STRUCTURE,-1,,if (s.IsNotFound()),7,IF,1802,3,CPPASTIfStatement
+27634,CONTROL_STRUCTURE,-1,,else,14,ELSE,1804,3,CPPASTCompoundStatement
+27830,CONTROL_STRUCTURE,-1,,"do {
+    // Initialize state
+    MTState mt;
+    mt.test = this;
+    mt.stop.Release_Store(0);
+    for (int id = 0; id < kNumThreads; id++) {
+      mt.counter[id].Release_Store(0);
+      mt.thread_done[id].Release_Store(0);
+    }
+
+    // Start threads
+    MTThread thread[kNumThreads];
+    for (int id = 0; id < kNumThreads; id++) {
+      thread[id].state = &mt;
+      thread[id].id = id;
+      env_->StartThread(MTThreadBody, &thread[id]);
+    }
+
+    // Let them run for a while
+    DelayMilliseconds(kTestSeconds * 1000);
+
+    // Stop the threads and wait for them to finish
+    mt.stop.Release_Store(&mt);
+    for (int id = 0; id < kNumThreads; id++) {
+      while (mt.thread_done[id].Acquire_Load() == NULL) {
+        DelayMilliseconds(100);
+      }
+    }
+  } while (ChangeOptions());",3,DO,1825,1,CPPASTDoStatement
+27845,CONTROL_STRUCTURE,-1,,for (int id = 0;id < kNumThreads;id++),5,FOR,1830,4,CPPASTForStatement
+27876,CONTROL_STRUCTURE,-1,,for (int id = 0;id < kNumThreads;id++),5,FOR,1837,6,CPPASTForStatement
+27924,CONTROL_STRUCTURE,-1,,for (int id = 0;id < kNumThreads;id++),5,FOR,1848,9,CPPASTForStatement
+27936,CONTROL_STRUCTURE,-1,,while (mt.thread_done[id].Acquire_Load() == NULL),7,WHILE,1849,1,<empty>
+28013,CONTROL_STRUCTURE,-1,,if (options.snapshot == NULL),5,IF,1881,1,CPPASTIfStatement
+28034,CONTROL_STRUCTURE,-1,,else,12,ELSE,1885,3,CPPASTCompoundStatement
+28112,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),5,FOR,1920,1,CPPASTForStatement
+28146,CONTROL_STRUCTURE,-1,,if (owned_),7,IF,1934,1,CPPASTIfStatement
+28176,CONTROL_STRUCTURE,-1,,if (map_->empty()),7,IF,1939,1,CPPASTIfStatement
+28188,CONTROL_STRUCTURE,-1,,else,14,ELSE,1941,3,CPPASTCompoundStatement
+28341,CONTROL_STRUCTURE,-1,,"for (miter->SeekToFirst(), dbiter->SeekToFirst();ok && miter->Valid() && dbiter->Valid();miter->Next(), dbiter->Next())",3,FOR,1981,12,CPPASTForStatement
+28375,CONTROL_STRUCTURE,-1,,if (miter->key().compare(dbiter->key()) != 0),5,IF,1985,2,CPPASTIfStatement
+28413,CONTROL_STRUCTURE,-1,,break;,7,BREAK,1991,3,CPPASTBreakStatement
+28414,CONTROL_STRUCTURE,-1,,if (miter->value().compare(dbiter->value()) != 0),5,IF,1994,3,CPPASTIfStatement
+28460,CONTROL_STRUCTURE,-1,,if (ok),3,IF,2004,13,CPPASTIfStatement
+28463,CONTROL_STRUCTURE,-1,,if (miter->Valid() != dbiter->Valid()),5,IF,2005,1,CPPASTIfStatement
+28539,CONTROL_STRUCTURE,-1,,"do {
+    ModelDB model(CurrentOptions());
+    const int N = 10000;
+    const Snapshot* model_snap = NULL;
+    const Snapshot* db_snap = NULL;
+    std::string k, v;
+    for (int step = 0; step < N; step++) {
+      if (step % 100 == 0) {
+        fprintf(stderr, ""Step %d of %d\n"", step, N);
+      }
+      // TODO(sanjay): Test Get() works
+      int p = rnd.Uniform(100);
+      if (p < 45) {                               // Put
+        k = RandomKey(&rnd);
+        v = RandomString(&rnd,
+                         rnd.OneIn(20)
+                         ? 100 + rnd.Uniform(100)
+                         : rnd.Uniform(8));
+        ASSERT_OK(model.Put(WriteOptions(), k, v));
+        ASSERT_OK(db_->Put(WriteOptions(), k, v));
+
+      } else if (p < 90) {                        // Delete
+        k = RandomKey(&rnd);
+        ASSERT_OK(model.Delete(WriteOptions(), k));
+        ASSERT_OK(db_->Delete(WriteOptions(), k));
+
+
+      } else {                                    // Multi-element batch
+       ...",3,DO,2019,3,CPPASTDoStatement
+28558,CONTROL_STRUCTURE,-1,,for (int step = 0;step < N;step++),5,FOR,2025,11,CPPASTForStatement
+28570,CONTROL_STRUCTURE,-1,,if (step % 100 == 0),7,IF,2026,1,CPPASTIfStatement
+28590,CONTROL_STRUCTURE,-1,,if (p < 45),7,IF,2031,4,CPPASTIfStatement
+28663,CONTROL_STRUCTURE,-1,,else,14,ELSE,2040,3,CPPASTIfStatement
+28665,CONTROL_STRUCTURE,1,,if (p < 90),14,IF,2040,1,CPPASTIfStatement
+28713,CONTROL_STRUCTURE,-1,,else,14,ELSE,2046,3,CPPASTCompoundStatement
+28724,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num;i++),9,FOR,2049,4,CPPASTForStatement
+28736,CONTROL_STRUCTURE,-1,,if (i == 0 || !rnd.OneIn(10)),11,IF,2050,1,CPPASTIfStatement
+28753,CONTROL_STRUCTURE,-1,,else,18,ELSE,2052,3,CPPASTCompoundStatement
+28755,CONTROL_STRUCTURE,-1,,if (rnd.OneIn(2)),11,IF,2056,2,CPPASTIfStatement
+28778,CONTROL_STRUCTURE,-1,,else,18,ELSE,2059,3,CPPASTCompoundStatement
+28825,CONTROL_STRUCTURE,-1,,if ((step % 100) == 0),7,IF,2067,5,CPPASTIfStatement
+28874,CONTROL_STRUCTURE,-1,,if (model_snap != NULL),9,IF,2073,3,CPPASTIfStatement
+28884,CONTROL_STRUCTURE,-1,,if (db_snap != NULL),9,IF,2074,4,CPPASTIfStatement
+28928,CONTROL_STRUCTURE,-1,,if (model_snap != NULL),5,IF,2083,12,CPPASTIfStatement
+28938,CONTROL_STRUCTURE,-1,,if (db_snap != NULL),5,IF,2084,13,CPPASTIfStatement
+29098,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num_base_files;i++),3,FOR,2120,29,CPPASTForStatement
+29166,CONTROL_STRUCTURE,-1,,for (int i = 0;i < iters;i++),3,FOR,2129,33,CPPASTForStatement
+29258,CONTROL_STRUCTURE,-1,,"if (argc > 1 && std::string(argv[1]) == ""--benchmark"")",3,IF,2149,1,CPPASTIfStatement
+29409,CONTROL_STRUCTURE,-1,,"if (ParseInternalKey(rep_, &parsed))",3,IF,37,3,CPPASTIfStatement
+29421,CONTROL_STRUCTURE,-1,,else,10,ELSE,39,3,CPPASTCompoundStatement
+29457,CONTROL_STRUCTURE,-1,,if (r == 0),3,IF,56,3,CPPASTIfStatement
+29492,CONTROL_STRUCTURE,-1,,if (anum > bnum),5,IF,59,5,CPPASTIfStatement
+29501,CONTROL_STRUCTURE,-1,,else,12,ELSE,61,3,CPPASTIfStatement
+29503,CONTROL_STRUCTURE,1,,if (anum < bnum),12,IF,61,1,CPPASTIfStatement
+29548,CONTROL_STRUCTURE,-1,,"if (tmp.size() < user_start.size() &&
+      user_comparator_->Compare(user_start, tmp) < 0)",3,IF,76,8,CPPASTIfStatement
+29625,CONTROL_STRUCTURE,-1,,"if (tmp.size() < user_key.size() &&
+      user_comparator_->Compare(user_key, tmp) < 0)",3,IF,91,6,CPPASTIfStatement
+29688,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),3,FOR,110,3,CPPASTForStatement
+29749,CONTROL_STRUCTURE,-1,,if (needed <= sizeof(space_)),3,IF,125,6,CPPASTIfStatement
+29758,CONTROL_STRUCTURE,-1,,else,10,ELSE,127,3,CPPASTCompoundStatement
+30156,CONTROL_STRUCTURE,-1,,if (n < 8),3,IF,179,3,CPPASTIfStatement
+30280,CONTROL_STRUCTURE,-1,,if (start_ != space_),3,IF,225,1,CPPASTIfStatement
+30571,CONTROL_STRUCTURE,-1,,for (int k = 0;k < sizeof(keys) / sizeof(keys[0]);k++),3,FOR,57,5,CPPASTForStatement
+30589,CONTROL_STRUCTURE,-1,,for (int s = 0;s < sizeof(seq) / sizeof(seq[0]);s++),5,FOR,58,1,CPPASTForStatement
+30998,CONTROL_STRUCTURE,-1,,if (pos == std::string::npos),3,IF,26,4,CPPASTIfStatement
+31010,CONTROL_STRUCTURE,-1,,else,10,ELSE,28,3,CPPASTCompoundStatement
+31095,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,55,4,CPPASTIfStatement
+31119,CONTROL_STRUCTURE,-1,,"while (reader.ReadRecord(&record, &scratch))",3,WHILE,63,11,<empty>
+31215,CONTROL_STRUCTURE,-1,,if (record.size() < 12),3,IF,97,5,CPPASTIfStatement
+31287,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,113,16,CPPASTIfStatement
+31346,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,130,8,CPPASTIfStatement
+31364,CONTROL_STRUCTURE,-1,,else,10,ELSE,133,3,CPPASTCompoundStatement
+31416,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,148,8,CPPASTIfStatement
+31431,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,151,9,CPPASTIfStatement
+31448,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,158,10,CPPASTIfStatement
+31476,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();iter->Valid();iter->Next()),3,FOR,168,16,CPPASTForStatement
+31496,CONTROL_STRUCTURE,-1,,"if (!ParseInternalKey(iter->key(), &key))",5,IF,171,3,CPPASTIfStatement
+31534,CONTROL_STRUCTURE,-1,,else,12,ELSE,178,3,CPPASTCompoundStatement
+31557,CONTROL_STRUCTURE,-1,,if (key.type == kTypeDeletion),7,IF,184,6,CPPASTIfStatement
+31567,CONTROL_STRUCTURE,-1,,else,14,ELSE,186,3,CPPASTIfStatement
+31569,CONTROL_STRUCTURE,1,,if (key.type == kTypeValue),14,IF,186,1,CPPASTIfStatement
+31579,CONTROL_STRUCTURE,-1,,else,14,ELSE,188,3,CPPASTCompoundStatement
+31611,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,198,18,CPPASTIfStatement
+31649,CONTROL_STRUCTURE,-1,,"if (!GuessType(fname, &ftype))",3,IF,212,2,CPPASTIfStatement
+31664,CONTROL_STRUCTURE,-1,,switch(ftype),3,SWITCH,215,3,CPPASTSwitchStatement
+31689,CONTROL_STRUCTURE,-1,,break;,7,BREAK,220,11,CPPASTBreakStatement
+31761,CONTROL_STRUCTURE,-1,,if (found == std::string::npos),3,IF,39,3,CPPASTIfStatement
+31772,CONTROL_STRUCTURE,-1,,else,10,ELSE,41,3,CPPASTCompoundStatement
+31817,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,57,6,CPPASTIfStatement
+31844,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,64,12,CPPASTIfStatement
+31867,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,68,5,CPPASTIfStatement
+31882,CONTROL_STRUCTURE,-1,,if (s.ok()),7,IF,71,3,CPPASTIfStatement
+31896,CONTROL_STRUCTURE,-1,,else,14,ELSE,73,3,CPPASTCompoundStatement
+32070,CONTROL_STRUCTURE,-1,,if (writable_file_opened_),3,IF,170,1,CPPASTIfStatement
+32089,CONTROL_STRUCTURE,-1,,if (s.ok() && env_->IsFilesystemActive()),3,IF,178,3,CPPASTIfStatement
+32124,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,187,4,CPPASTIfStatement
+32148,CONTROL_STRUCTURE,-1,,if (s.ok() && env_->IsFilesystemActive()),3,IF,195,3,CPPASTIfStatement
+32180,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,203,3,CPPASTIfStatement
+32196,CONTROL_STRUCTURE,-1,,if (!env_->IsFilesystemActive()),3,IF,210,1,CPPASTIfStatement
+32215,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,215,4,CPPASTIfStatement
+32228,CONTROL_STRUCTURE,-1,,if (env_->IsFileCreatedSinceLastDirSync(state_.filename_)),3,IF,218,5,CPPASTIfStatement
+32241,CONTROL_STRUCTURE,-1,,if (s.ok() && !ps.ok()),5,IF,220,3,CPPASTIfStatement
+32275,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,231,4,CPPASTIfStatement
+32327,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,249,4,CPPASTIfStatement
+32346,CONTROL_STRUCTURE,-1,,if (db_file_state_.count(fname) == 0),7,IF,254,3,CPPASTIfStatement
+32360,CONTROL_STRUCTURE,-1,,else,14,ELSE,256,3,CPPASTCompoundStatement
+32386,CONTROL_STRUCTURE,-1,,"for (std::map<std::string, FileState>::const_iterator it =
+           db_file_state_.begin();s.ok() && it != db_file_state_.end();++it)",3,FOR,268,4,CPPASTForStatement
+32415,CONTROL_STRUCTURE,-1,,if (!state.IsFullySynced()),5,IF,272,3,CPPASTIfStatement
+32509,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,300,4,CPPASTIfStatement
+32534,CONTROL_STRUCTURE,-1,,if (ret.ok()),3,IF,310,3,CPPASTIfStatement
+32544,CONTROL_STRUCTURE,-1,,if (db_file_state_.find(s) != db_file_state_.end()),5,IF,312,3,CPPASTIfStatement
+32568,CONTROL_STRUCTURE,-1,,if (new_files_since_last_dir_sync_.erase(s) != 0),5,IF,317,4,CPPASTIfStatement
+32636,CONTROL_STRUCTURE,-1,,for (it = new_files.begin();s.ok() && it != new_files.end();++it),3,FOR,343,6,CPPASTForStatement
+32782,CONTROL_STRUCTURE,-1,,for (int i = start_idx;i < start_idx + num_vals;i++),5,FOR,397,4,CPPASTForStatement
+32875,CONTROL_STRUCTURE,-1,,for (int i = start_idx;i < start_idx + num_vals && s.ok();i++),5,FOR,419,4,CPPASTForStatement
+32904,CONTROL_STRUCTURE,-1,,if (expected == VAL_EXPECT_NO_ERROR),7,IF,422,3,CPPASTIfStatement
+32909,CONTROL_STRUCTURE,-1,,if (s.ok()),9,IF,423,1,CPPASTIfStatement
+32932,CONTROL_STRUCTURE,-1,,else,14,ELSE,426,3,CPPASTIfStatement
+32934,CONTROL_STRUCTURE,1,,if (s.ok()),14,IF,426,1,CPPASTIfStatement
+32952,CONTROL_STRUCTURE,-1,,else,14,ELSE,429,3,CPPASTCompoundStatement
+33048,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();iter->Valid();iter->Next()),5,FOR,465,4,CPPASTForStatement
+33092,CONTROL_STRUCTURE,-1,,switch(reset_method),5,SWITCH,473,1,CPPASTSwitchStatement
+33118,CONTROL_STRUCTURE,-1,,break;,9,BREAK,476,4,CPPASTBreakStatement
+33142,CONTROL_STRUCTURE,-1,,break;,9,BREAK,479,8,CPPASTBreakStatement
+33282,CONTROL_STRUCTURE,-1,,for (size_t idx = 0;idx < kNumIterations;idx++),5,FOR,515,4,CPPASTForStatement
+33592,CONTROL_STRUCTURE,-1,,"if (rest == ""CURRENT"")",3,IF,84,3,CPPASTIfStatement
+33605,CONTROL_STRUCTURE,-1,,else,10,ELSE,87,3,CPPASTIfStatement
+33607,CONTROL_STRUCTURE,1,,"if (rest == ""LOCK"")",10,IF,87,1,CPPASTIfStatement
+33620,CONTROL_STRUCTURE,-1,,else,10,ELSE,90,3,CPPASTIfStatement
+33622,CONTROL_STRUCTURE,1,,"if (rest == ""LOG"" || rest == ""LOG.old"")",10,IF,90,1,CPPASTIfStatement
+33639,CONTROL_STRUCTURE,-1,,else,10,ELSE,93,3,CPPASTIfStatement
+33641,CONTROL_STRUCTURE,1,,"if (rest.starts_with(""MANIFEST-""))",10,IF,93,1,CPPASTIfStatement
+33655,CONTROL_STRUCTURE,-1,,"if (!ConsumeDecimalNumber(&rest, &num))",5,IF,96,3,CPPASTIfStatement
+33665,CONTROL_STRUCTURE,-1,,if (!rest.empty()),5,IF,99,4,CPPASTIfStatement
+33682,CONTROL_STRUCTURE,-1,,else,10,ELSE,104,3,CPPASTCompoundStatement
+33685,CONTROL_STRUCTURE,-1,,"if (!ConsumeDecimalNumber(&rest, &num))",5,IF,108,2,CPPASTIfStatement
+33699,CONTROL_STRUCTURE,-1,,"if (suffix == Slice("".log""))",5,IF,112,5,CPPASTIfStatement
+33709,CONTROL_STRUCTURE,-1,,else,12,ELSE,114,3,CPPASTIfStatement
+33711,CONTROL_STRUCTURE,1,,"if (suffix == Slice("".sst"") || suffix == Slice("".ldb""))",12,IF,114,1,CPPASTIfStatement
+33726,CONTROL_STRUCTURE,-1,,else,12,ELSE,116,3,CPPASTIfStatement
+33728,CONTROL_STRUCTURE,1,,"if (suffix == Slice("".dbtmp""))",12,IF,116,1,CPPASTIfStatement
+33738,CONTROL_STRUCTURE,-1,,else,12,ELSE,118,3,CPPASTCompoundStatement
+33801,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,135,11,CPPASTIfStatement
+33816,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,138,12,CPPASTIfStatement
+34020,CONTROL_STRUCTURE,-1,,for (int i = 0;i < sizeof(cases) / sizeof(cases[0]);i++),3,FOR,39,6,CPPASTForStatement
+34148,CONTROL_STRUCTURE,-1,,for (int i = 0;i < sizeof(errors) / sizeof(errors[0]);i++),3,FOR,71,9,CPPASTForStatement
+34846,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num;i++),3,FOR,27,4,CPPASTForStatement
+34868,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,29,3,CPPASTIfStatement
+34916,CONTROL_STRUCTURE,-1,,if (argc < 2),3,IF,51,5,CPPASTIfStatement
+34925,CONTROL_STRUCTURE,-1,,else,10,ELSE,54,3,CPPASTCompoundStatement
+34933,CONTROL_STRUCTURE,-1,,"if (command == ""dump"")",5,IF,56,3,CPPASTIfStatement
+34951,CONTROL_STRUCTURE,-1,,else,12,ELSE,58,3,CPPASTCompoundStatement
+35061,CONTROL_STRUCTURE,-1,,if (offset_in_block > kBlockSize - 6),3,IF,41,5,CPPASTIfStatement
+35077,CONTROL_STRUCTURE,-1,,if (block_start_location > 0),3,IF,49,7,CPPASTIfStatement
+35090,CONTROL_STRUCTURE,-1,,if (!skip_status.ok()),5,IF,51,3,CPPASTIfStatement
+35110,CONTROL_STRUCTURE,-1,,if (last_record_offset_ < initial_offset_),3,IF,61,1,CPPASTIfStatement
+35115,CONTROL_STRUCTURE,-1,,if (!SkipToInitialBlock()),5,IF,62,1,CPPASTIfStatement
+35138,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,75,9,<empty>
+35163,CONTROL_STRUCTURE,-1,,if (resyncing_),5,IF,84,5,CPPASTIfStatement
+35166,CONTROL_STRUCTURE,-1,,if (record_type == kMiddleType),7,IF,85,1,CPPASTIfStatement
+35171,CONTROL_STRUCTURE,-1,,continue;,9,CONTINUE,86,1,CPPASTContinueStatement
+35172,CONTROL_STRUCTURE,-1,,else,14,ELSE,87,3,CPPASTIfStatement
+35174,CONTROL_STRUCTURE,1,,if (record_type == kLastType),14,IF,87,1,CPPASTIfStatement
+35182,CONTROL_STRUCTURE,-1,,continue;,9,CONTINUE,89,2,CPPASTContinueStatement
+35183,CONTROL_STRUCTURE,-1,,else,14,ELSE,90,3,CPPASTCompoundStatement
+35188,CONTROL_STRUCTURE,-1,,switch(record_type),5,SWITCH,95,6,CPPASTSwitchStatement
+35193,CONTROL_STRUCTURE,-1,,if (in_fragmented_record),9,IF,97,3,CPPASTIfStatement
+35196,CONTROL_STRUCTURE,-1,,if (scratch->empty()),11,IF,102,1,CPPASTIfStatement
+35205,CONTROL_STRUCTURE,-1,,else,18,ELSE,104,3,CPPASTCompoundStatement
+35231,CONTROL_STRUCTURE,-1,,if (in_fragmented_record),9,IF,115,11,CPPASTIfStatement
+35234,CONTROL_STRUCTURE,-1,,if (scratch->empty()),11,IF,120,1,CPPASTIfStatement
+35243,CONTROL_STRUCTURE,-1,,else,18,ELSE,122,3,CPPASTCompoundStatement
+35269,CONTROL_STRUCTURE,-1,,break;,9,BREAK,129,15,CPPASTBreakStatement
+35272,CONTROL_STRUCTURE,-1,,if (!in_fragmented_record),9,IF,132,18,CPPASTIfStatement
+35282,CONTROL_STRUCTURE,-1,,else,16,ELSE,135,3,CPPASTCompoundStatement
+35296,CONTROL_STRUCTURE,-1,,break;,9,BREAK,138,19,CPPASTBreakStatement
+35299,CONTROL_STRUCTURE,-1,,if (!in_fragmented_record),9,IF,141,22,CPPASTIfStatement
+35309,CONTROL_STRUCTURE,-1,,else,16,ELSE,144,3,CPPASTCompoundStatement
+35334,CONTROL_STRUCTURE,-1,,break;,9,BREAK,150,23,CPPASTBreakStatement
+35337,CONTROL_STRUCTURE,-1,,if (in_fragmented_record),9,IF,153,26,CPPASTIfStatement
+35348,CONTROL_STRUCTURE,-1,,if (in_fragmented_record),9,IF,162,30,CPPASTIfStatement
+35364,CONTROL_STRUCTURE,-1,,break;,9,BREAK,167,31,CPPASTBreakStatement
+35395,CONTROL_STRUCTURE,-1,,break;,9,BREAK,177,6,CPPASTBreakStatement
+35423,CONTROL_STRUCTURE,-1,,"if (reporter_ != NULL &&
+      end_of_buffer_offset_ - buffer_.size() - bytes >= initial_offset_)",3,IF,193,1,CPPASTIfStatement
+35452,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,200,1,<empty>
+35455,CONTROL_STRUCTURE,-1,,if (buffer_.size() < kHeaderSize),5,IF,201,1,CPPASTIfStatement
+35463,CONTROL_STRUCTURE,-1,,if (!eof_),7,IF,202,1,CPPASTIfStatement
+35488,CONTROL_STRUCTURE,-1,,if (!status.ok()),9,IF,207,5,CPPASTIfStatement
+35507,CONTROL_STRUCTURE,-1,,else,16,ELSE,212,3,CPPASTIfStatement
+35509,CONTROL_STRUCTURE,1,,if (buffer_.size() < kBlockSize),16,IF,212,1,CPPASTIfStatement
+35520,CONTROL_STRUCTURE,-1,,continue;,9,CONTINUE,215,6,CPPASTContinueStatement
+35521,CONTROL_STRUCTURE,-1,,else,14,ELSE,216,3,CPPASTCompoundStatement
+35570,CONTROL_STRUCTURE,-1,,if (kHeaderSize + length > buffer_.size()),5,IF,232,12,CPPASTIfStatement
+35591,CONTROL_STRUCTURE,-1,,if (!eof_),7,IF,235,4,CPPASTIfStatement
+35602,CONTROL_STRUCTURE,-1,,if (type == kZeroType && length == 0),5,IF,245,13,CPPASTIfStatement
+35617,CONTROL_STRUCTURE,-1,,if (checksum_),5,IF,254,14,CPPASTIfStatement
+35642,CONTROL_STRUCTURE,-1,,if (actual_crc != expected_crc),7,IF,257,5,CPPASTIfStatement
+35670,CONTROL_STRUCTURE,-1,,"if (end_of_buffer_offset_ - buffer_.size() - kHeaderSize - length <
+        initial_offset_)",5,IF,272,16,CPPASTIfStatement
+35836,CONTROL_STRUCTURE,-1,,while (result.size() < n),3,WHILE,20,2,<empty>
+35976,CONTROL_STRUCTURE,-1,,if (force_error_),7,IF,64,2,CPPASTIfStatement
+35991,CONTROL_STRUCTURE,-1,,if (contents_.size() < n),7,IF,70,3,CPPASTIfStatement
+36032,CONTROL_STRUCTURE,-1,,if (n > contents_.size()),7,IF,80,1,CPPASTIfStatement
+36169,CONTROL_STRUCTURE,-1,,if (!reading_),5,IF,142,1,CPPASTIfStatement
+36186,CONTROL_STRUCTURE,-1,,"if (reader_->ReadRecord(&record, &scratch))",5,IF,148,4,CPPASTIfStatement
+36201,CONTROL_STRUCTURE,-1,,else,12,ELSE,150,3,CPPASTCompoundStatement
+36319,CONTROL_STRUCTURE,-1,,if (report_.message_.find(msg) == std::string::npos),5,IF,188,1,CPPASTIfStatement
+36338,CONTROL_STRUCTURE,-1,,else,12,ELSE,190,3,CPPASTCompoundStatement
+36346,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num_initial_offset_records_;i++),5,FOR,196,1,CPPASTForStatement
+36490,CONTROL_STRUCTURE,-1,,for (;expected_record_offset < num_initial_offset_records_;++expected_record_offset),5,FOR,230,7,CPPASTForStatement
+36926,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 100000;i++),3,FOR,288,1,CPPASTForStatement
+36941,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 100000;i++),3,FOR,291,2,CPPASTForStatement
+37760,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,365,5,CPPASTForStatement
+37780,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,369,8,CPPASTForStatement
+39114,CONTROL_STRUCTURE,-1,,for (int offset = kBlockSize;offset < 2*kBlockSize;offset++),3,FOR,517,4,CPPASTForStatement
+39780,CONTROL_STRUCTURE,-1,,for (int i = 0;i <= kMaxRecordType;i++),3,FOR,16,1,CPPASTForStatement
+39852,CONTROL_STRUCTURE,-1,,"do {
+    const int leftover = kBlockSize - block_offset_;
+    assert(leftover >= 0);
+    if (leftover < kHeaderSize) {
+      // Switch to a new block
+      if (leftover > 0) {
+        // Fill the trailer (literal below relies on kHeaderSize being 7)
+        assert(kHeaderSize == 7);
+        dest_->Append(Slice(""\x00\x00\x00\x00\x00\x00"", leftover));
+      }
+      block_offset_ = 0;
+    }
+
+    // Invariant: we never leave < kHeaderSize bytes in a block.
+    assert(kBlockSize - block_offset_ - kHeaderSize >= 0);
+
+    const size_t avail = kBlockSize - block_offset_ - kHeaderSize;
+    const size_t fragment_length = (left < avail) ? left : avail;
+
+    RecordType type;
+    const bool end = (left == fragment_length);
+    if (begin && end) {
+      type = kFullType;
+    } else if (begin) {
+      type = kFirstType;
+    } else if (end) {
+      type = kLastType;
+    } else {
+      type = kMiddleType;
+    }
+
+    s = EmitPhysicalRecord(type, ptr, fragment_length);
+    ptr += fragment_length;
+    ...",3,DO,45,8,CPPASTDoStatement
+39864,CONTROL_STRUCTURE,-1,,if (leftover < kHeaderSize),5,IF,48,4,CPPASTIfStatement
+39869,CONTROL_STRUCTURE,-1,,if (leftover > 0),7,IF,50,1,CPPASTIfStatement
+39920,CONTROL_STRUCTURE,-1,,if (begin && end),5,IF,66,13,CPPASTIfStatement
+39928,CONTROL_STRUCTURE,-1,,else,12,ELSE,68,3,CPPASTIfStatement
+39930,CONTROL_STRUCTURE,1,,if (begin),12,IF,68,1,CPPASTIfStatement
+39936,CONTROL_STRUCTURE,-1,,else,12,ELSE,70,3,CPPASTIfStatement
+39938,CONTROL_STRUCTURE,1,,if (end),12,IF,70,1,CPPASTIfStatement
+39944,CONTROL_STRUCTURE,-1,,else,12,ELSE,72,3,CPPASTCompoundStatement
+40051,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,101,13,CPPASTIfStatement
+40066,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,103,2,CPPASTIfStatement
+40517,CONTROL_STRUCTURE,-1,,if (iter.Valid()),3,IF,112,6,CPPASTIfStatement
+40541,CONTROL_STRUCTURE,-1,,"if (comparator_.comparator.user_comparator()->Compare(
+            Slice(key_ptr, key_length - 8),
+            key.user_key()) == 0)",5,IF,125,6,CPPASTIfStatement
+40572,CONTROL_STRUCTURE,-1,,switch(static_cast<ValueType>(tag & 0xff)),7,SWITCH,130,3,CPPASTSwitchStatement
+40658,CONTROL_STRUCTURE,-1,,if (refs_ <= 0),5,IF,33,3,CPPASTIfStatement
+40805,CONTROL_STRUCTURE,-1,,if (s.IsNotSupportedError()),5,IF,38,5,CPPASTIfStatement
+40813,CONTROL_STRUCTURE,-1,,else,12,ELSE,40,3,CPPASTCompoundStatement
+40833,CONTROL_STRUCTURE,-1,,if (options != NULL),5,IF,53,3,CPPASTIfStatement
+40842,CONTROL_STRUCTURE,-1,,else,12,ELSE,55,3,CPPASTCompoundStatement
+40854,CONTROL_STRUCTURE,-1,,if (opts.env == NULL),5,IF,59,4,CPPASTIfStatement
+40936,CONTROL_STRUCTURE,-1,,if (s.IsNotFound()),5,IF,73,4,CPPASTIfStatement
+40945,CONTROL_STRUCTURE,-1,,else,12,ELSE,75,3,CPPASTIfStatement
+40947,CONTROL_STRUCTURE,1,,if (!s.ok()),12,IF,75,1,CPPASTIfStatement
+40993,CONTROL_STRUCTURE,-1,,if (len > 0 && current[len-1] == '\n'),5,IF,85,5,CPPASTIfStatement
+41042,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < logs.size();i++),5,FOR,97,2,CPPASTForStatement
+41146,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < filenames.size();i++),5,FOR,111,4,CPPASTForStatement
+41163,CONTROL_STRUCTURE,-1,,"if (ParseFileName(filenames[i], &number, &type) && type == t)",7,IF,114,3,CPPASTIfStatement
+41386,CONTROL_STRUCTURE,-1,,if (!CanAppend()),3,IF,160,1,CPPASTIfStatement
+41522,CONTROL_STRUCTURE,-1,,if (!CanAppend()),3,IF,176,1,CPPASTIfStatement
+41870,CONTROL_STRUCTURE,-1,,if (!CanAppend()),3,IF,216,1,CPPASTIfStatement
+41878,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 2;i++),3,FOR,220,2,CPPASTForStatement
+41906,CONTROL_STRUCTURE,-1,,if (i == 0),5,IF,222,2,CPPASTIfStatement
+41934,CONTROL_STRUCTURE,-1,,if (i == 0),5,IF,229,7,CPPASTIfStatement
+41960,CONTROL_STRUCTURE,-1,,else,12,ELSE,231,3,CPPASTCompoundStatement
+42132,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNum;i++),3,FOR,248,3,CPPASTForStatement
+42294,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNum;i++),3,FOR,267,17,CPPASTForStatement
+42573,CONTROL_STRUCTURE,-1,,if (CanAppend()),3,IF,299,21,CPPASTIfStatement
+42693,CONTROL_STRUCTURE,-1,,if (CanAppend()),3,IF,312,30,CPPASTIfStatement
+42837,CONTROL_STRUCTURE,-1,,if (owns_info_log_),5,IF,62,2,CPPASTIfStatement
+42844,CONTROL_STRUCTURE,-1,,if (owns_cache_),5,IF,65,3,CPPASTIfStatement
+42859,CONTROL_STRUCTURE,-1,,if (status.ok()),5,IF,72,3,CPPASTIfStatement
+42870,CONTROL_STRUCTURE,-1,,if (status.ok()),5,IF,77,4,CPPASTIfStatement
+42880,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < tables_.size();i++),7,FOR,79,3,CPPASTForStatement
+42962,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,119,4,CPPASTIfStatement
+42971,CONTROL_STRUCTURE,-1,,if (filenames.empty()),5,IF,122,5,CPPASTIfStatement
+42986,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < filenames.size();i++),5,FOR,128,8,CPPASTForStatement
+43001,CONTROL_STRUCTURE,-1,,"if (ParseFileName(filenames[i], &number, &type))",7,IF,129,1,CPPASTIfStatement
+43011,CONTROL_STRUCTURE,-1,,if (type == kDescriptorFile),9,IF,130,1,CPPASTIfStatement
+43023,CONTROL_STRUCTURE,-1,,else,16,ELSE,132,3,CPPASTCompoundStatement
+43025,CONTROL_STRUCTURE,-1,,if (number + 1 > next_file_number_),11,IF,133,1,CPPASTIfStatement
+43037,CONTROL_STRUCTURE,-1,,if (type == kLogFile),11,IF,136,2,CPPASTIfStatement
+43047,CONTROL_STRUCTURE,-1,,else,18,ELSE,138,3,CPPASTIfStatement
+43049,CONTROL_STRUCTURE,1,,if (type == kTableFile),18,IF,138,1,CPPASTIfStatement
+43059,CONTROL_STRUCTURE,-1,,else,18,ELSE,140,3,CPPASTCompoundStatement
+43067,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < logs_.size();i++),5,FOR,150,1,CPPASTForStatement
+43097,CONTROL_STRUCTURE,-1,,if (!status.ok()),7,IF,153,5,CPPASTIfStatement
+43145,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,180,6,CPPASTIfStatement
+43196,CONTROL_STRUCTURE,-1,,"while (reader.ReadRecord(&record, &scratch))",5,WHILE,203,21,<empty>
+43206,CONTROL_STRUCTURE,-1,,if (record.size() < 12),7,IF,204,1,CPPASTIfStatement
+43227,CONTROL_STRUCTURE,-1,,continue;,9,CONTINUE,207,2,CPPASTContinueStatement
+43244,CONTROL_STRUCTURE,-1,,if (status.ok()),7,IF,211,4,CPPASTIfStatement
+43258,CONTROL_STRUCTURE,-1,,else,14,ELSE,213,3,CPPASTCompoundStatement
+43316,CONTROL_STRUCTURE,-1,,if (status.ok()),5,IF,231,31,CPPASTIfStatement
+43322,CONTROL_STRUCTURE,-1,,if (meta.file_size > 0),7,IF,232,1,CPPASTIfStatement
+43363,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < table_numbers_.size();i++),5,FOR,245,1,CPPASTForStatement
+43440,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,263,7,CPPASTIfStatement
+43466,CONTROL_STRUCTURE,-1,,if (s2.ok()),7,IF,267,4,CPPASTIfStatement
+43478,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,271,8,CPPASTIfStatement
+43534,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();iter->Valid();iter->Next()),5,FOR,286,17,CPPASTForStatement
+43556,CONTROL_STRUCTURE,-1,,"if (!ParseInternalKey(key, &parsed))",7,IF,288,3,CPPASTIfStatement
+43580,CONTROL_STRUCTURE,-1,,continue;,9,CONTINUE,292,2,CPPASTContinueStatement
+43583,CONTROL_STRUCTURE,-1,,if (empty),7,IF,296,5,CPPASTIfStatement
+43607,CONTROL_STRUCTURE,-1,,if (parsed.sequence > t.max_sequence),7,IF,301,7,CPPASTIfStatement
+43623,CONTROL_STRUCTURE,-1,,if (!iter->status().ok()),5,IF,305,18,CPPASTIfStatement
+43661,CONTROL_STRUCTURE,-1,,if (status.ok()),5,IF,314,21,CPPASTIfStatement
+43672,CONTROL_STRUCTURE,-1,,else,12,ELSE,316,3,CPPASTCompoundStatement
+43701,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,329,6,CPPASTIfStatement
+43727,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();iter->Valid();iter->Next()),5,FOR,337,13,CPPASTForStatement
+43760,CONTROL_STRUCTURE,-1,,if (counter == 0),5,IF,344,16,CPPASTIfStatement
+43769,CONTROL_STRUCTURE,-1,,else,12,ELSE,346,3,CPPASTCompoundStatement
+43777,CONTROL_STRUCTURE,-1,,if (s.ok()),7,IF,348,2,CPPASTIfStatement
+43798,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,355,19,CPPASTIfStatement
+43815,CONTROL_STRUCTURE,-1,,if (counter > 0 && s.ok()),5,IF,361,22,CPPASTIfStatement
+43843,CONTROL_STRUCTURE,-1,,if (s.ok()),7,IF,364,4,CPPASTIfStatement
+43867,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,370,23,CPPASTIfStatement
+43900,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,379,6,CPPASTIfStatement
+43913,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < tables_.size();i++),5,FOR,384,9,CPPASTForStatement
+43928,CONTROL_STRUCTURE,-1,,if (max_sequence < tables_[i].max_sequence),7,IF,385,1,CPPASTIfStatement
+43970,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < tables_.size();i++),5,FOR,395,14,CPPASTForStatement
+44034,CONTROL_STRUCTURE,-1,,if (status.ok()),5,IF,409,16,CPPASTIfStatement
+44051,CONTROL_STRUCTURE,-1,,if (!status.ok()),5,IF,415,19,CPPASTIfStatement
+44063,CONTROL_STRUCTURE,-1,,else,12,ELSE,417,3,CPPASTCompoundStatement
+44065,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < manifests_.size();i++),7,FOR,419,1,CPPASTForStatement
+44098,CONTROL_STRUCTURE,-1,,if (status.ok()),7,IF,425,3,CPPASTIfStatement
+44110,CONTROL_STRUCTURE,-1,,else,14,ELSE,427,3,CPPASTCompoundStatement
+44134,CONTROL_STRUCTURE,-1,,if (slash != NULL),5,IF,441,4,CPPASTIfStatement
+44547,CONTROL_STRUCTURE,-1,,if (node_ == list_->head_),3,IF,219,3,CPPASTIfStatement
+44593,CONTROL_STRUCTURE,-1,,if (node_ == list_->head_),3,IF,237,2,CPPASTIfStatement
+44615,CONTROL_STRUCTURE,-1,,while (height < kMaxHeight && ((rnd_.Next() % kBranching) == 0)),3,WHILE,247,5,<empty>
+44675,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,266,5,<empty>
+44686,CONTROL_STRUCTURE,-1,,"if (KeyIsAfterNode(key, next))",5,IF,268,3,CPPASTIfStatement
+44694,CONTROL_STRUCTURE,-1,,else,12,ELSE,271,3,CPPASTCompoundStatement
+44696,CONTROL_STRUCTURE,-1,,if (prev != NULL),7,IF,272,1,CPPASTIfStatement
+44706,CONTROL_STRUCTURE,-1,,if (level == 0),7,IF,273,2,CPPASTIfStatement
+44713,CONTROL_STRUCTURE,-1,,else,14,ELSE,275,3,CPPASTCompoundStatement
+44732,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,288,5,<empty>
+44755,CONTROL_STRUCTURE,-1,,"if (next == NULL || compare_(next->key, key) >= 0)",5,IF,291,4,CPPASTIfStatement
+44768,CONTROL_STRUCTURE,-1,,if (level == 0),7,IF,292,1,CPPASTIfStatement
+44775,CONTROL_STRUCTURE,-1,,else,14,ELSE,294,3,CPPASTCompoundStatement
+44779,CONTROL_STRUCTURE,-1,,else,12,ELSE,298,3,CPPASTCompoundStatement
+44798,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,309,5,<empty>
+44809,CONTROL_STRUCTURE,-1,,if (next == NULL),5,IF,311,3,CPPASTIfStatement
+44814,CONTROL_STRUCTURE,-1,,if (level == 0),7,IF,312,1,CPPASTIfStatement
+44821,CONTROL_STRUCTURE,-1,,else,14,ELSE,314,3,CPPASTCompoundStatement
+44825,CONTROL_STRUCTURE,-1,,else,12,ELSE,318,3,CPPASTCompoundStatement
+44836,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kMaxHeight;i++),3,FOR,331,1,CPPASTForStatement
+44881,CONTROL_STRUCTURE,-1,,if (height > GetMaxHeight()),3,IF,347,7,CPPASTIfStatement
+44886,CONTROL_STRUCTURE,-1,,for (int i = GetMaxHeight();i < height;i++),5,FOR,348,1,CPPASTForStatement
+44915,CONTROL_STRUCTURE,-1,,for (int i = 0;i < height;i++),3,FOR,364,9,CPPASTForStatement
+44958,CONTROL_STRUCTURE,-1,,"if (x != NULL && Equal(key, x->key))",3,IF,375,3,CPPASTIfStatement
+44971,CONTROL_STRUCTURE,-1,,else,10,ELSE,377,3,CPPASTCompoundStatement
+45003,CONTROL_STRUCTURE,-1,,if (a < b),5,IF,19,1,CPPASTIfStatement
+45011,CONTROL_STRUCTURE,-1,,else,12,ELSE,21,3,CPPASTIfStatement
+45013,CONTROL_STRUCTURE,1,,if (a > b),12,IF,21,1,CPPASTIfStatement
+45021,CONTROL_STRUCTURE,-1,,else,12,ELSE,23,3,CPPASTCompoundStatement
+45257,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,55,12,CPPASTForStatement
+45278,CONTROL_STRUCTURE,-1,,if (keys.insert(key).second),5,IF,57,3,CPPASTIfStatement
+45292,CONTROL_STRUCTURE,-1,,for (int i = 0;i < R;i++),3,FOR,62,13,CPPASTForStatement
+45304,CONTROL_STRUCTURE,-1,,if (list.Contains(i)),5,IF,63,1,CPPASTIfStatement
+45336,CONTROL_STRUCTURE,-1,,else,12,ELSE,65,3,CPPASTCompoundStatement
+45564,CONTROL_STRUCTURE,-1,,for (int i = 0;i < R;i++),3,FOR,89,15,CPPASTForStatement
+45593,CONTROL_STRUCTURE,-1,,for (int j = 0;j < 3;j++),5,FOR,95,6,CPPASTForStatement
+45605,CONTROL_STRUCTURE,-1,,if (model_iter == keys.end()),7,IF,96,1,CPPASTIfStatement
+45637,CONTROL_STRUCTURE,-1,,break;,9,BREAK,98,2,CPPASTBreakStatement
+45638,CONTROL_STRUCTURE,-1,,else,14,ELSE,99,3,CPPASTCompoundStatement
+45702,CONTROL_STRUCTURE,-1,,for (std::set<Key>::reverse_iterator model_iter = keys.rbegin();model_iter != keys.rend();++model_iter),5,FOR,114,4,CPPASTForStatement
+45901,CONTROL_STRUCTURE,-1,,switch(rnd->Next() % 10),5,SWITCH,174,1,CPPASTSwitchStatement
+45966,CONTROL_STRUCTURE,-1,,for (int k = 0;k < K;k++),7,FOR,198,1,CPPASTForStatement
+46041,CONTROL_STRUCTURE,-1,,for (int k = 0;k < K;k++),5,FOR,228,2,CPPASTForStatement
+46077,CONTROL_STRUCTURE,-1,,while (true),5,WHILE,235,8,<empty>
+46081,CONTROL_STRUCTURE,-1,,if (!iter.Valid()),7,IF,237,2,CPPASTIfStatement
+46093,CONTROL_STRUCTURE,-1,,else,14,ELSE,239,3,CPPASTCompoundStatement
+46140,CONTROL_STRUCTURE,-1,,while (pos < current),7,WHILE,247,4,<empty>
+46215,CONTROL_STRUCTURE,-1,,if (key(pos) < key(current)),9,IF,260,3,CPPASTIfStatement
+46230,CONTROL_STRUCTURE,-1,,else,16,ELSE,262,3,CPPASTCompoundStatement
+46241,CONTROL_STRUCTURE,-1,,if (!iter.Valid()),7,IF,267,5,CPPASTIfStatement
+46248,CONTROL_STRUCTURE,-1,,break;,9,BREAK,268,1,CPPASTBreakStatement
+46249,CONTROL_STRUCTURE,-1,,if (rnd->Next() % 2),7,IF,271,6,CPPASTIfStatement
+46270,CONTROL_STRUCTURE,-1,,else,14,ELSE,274,3,CPPASTCompoundStatement
+46277,CONTROL_STRUCTURE,-1,,if (new_target > pos),9,IF,276,3,CPPASTIfStatement
+46338,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 10000;i++),3,FOR,291,4,CPPASTForStatement
+46384,CONTROL_STRUCTURE,-1,,while (state_ != s),5,WHILE,317,2,<empty>
+46447,CONTROL_STRUCTURE,-1,,while (!state->quit_flag_.Acquire_Load()),3,WHILE,341,8,<empty>
+46500,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,353,9,CPPASTForStatement
+46512,CONTROL_STRUCTURE,-1,,if ((i % 100) == 0),5,IF,354,1,CPPASTIfStatement
+46546,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kSize;i++),5,FOR,360,6,CPPASTForStatement
+47019,CONTROL_STRUCTURE,-1,,if (*handle == NULL),3,IF,52,7,CPPASTIfStatement
+47048,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,57,8,CPPASTIfStatement
+47061,CONTROL_STRUCTURE,-1,,"if (env_->NewRandomAccessFile(old_fname, &file).ok())",7,IF,59,3,CPPASTIfStatement
+47079,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,63,9,CPPASTIfStatement
+47097,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,67,10,CPPASTIfStatement
+47110,CONTROL_STRUCTURE,-1,,else,12,ELSE,72,3,CPPASTCompoundStatement
+47149,CONTROL_STRUCTURE,-1,,if (tableptr != NULL),3,IF,86,1,CPPASTIfStatement
+47170,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,92,6,CPPASTIfStatement
+47208,CONTROL_STRUCTURE,-1,,if (tableptr != NULL),3,IF,99,12,CPPASTIfStatement
+47241,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,113,5,CPPASTIfStatement
+47455,CONTROL_STRUCTURE,-1,,if (has_comparator_),3,IF,42,1,CPPASTIfStatement
+47464,CONTROL_STRUCTURE,-1,,if (has_log_number_),3,IF,46,2,CPPASTIfStatement
+47473,CONTROL_STRUCTURE,-1,,if (has_prev_log_number_),3,IF,50,3,CPPASTIfStatement
+47482,CONTROL_STRUCTURE,-1,,if (has_next_file_number_),3,IF,54,4,CPPASTIfStatement
+47491,CONTROL_STRUCTURE,-1,,if (has_last_sequence_),3,IF,58,5,CPPASTIfStatement
+47500,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < compact_pointers_.size();i++),3,FOR,63,6,CPPASTForStatement
+47535,CONTROL_STRUCTURE,-1,,for (DeletedFileSet::const_iterator iter = deleted_files_.begin();iter != deleted_files_.end();++iter),3,FOR,69,7,CPPASTForStatement
+47566,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < new_files_.size();i++),3,FOR,77,8,CPPASTForStatement
+47632,CONTROL_STRUCTURE,-1,,"if (GetLengthPrefixedSlice(input, &str))",3,IF,90,2,CPPASTIfStatement
+47645,CONTROL_STRUCTURE,-1,,else,10,ELSE,93,3,CPPASTCompoundStatement
+47656,CONTROL_STRUCTURE,-1,,"if (GetVarint32(input, &v) &&
+      v < config::kNumLevels)",3,IF,100,2,CPPASTIfStatement
+47674,CONTROL_STRUCTURE,-1,,else,10,ELSE,104,3,CPPASTCompoundStatement
+47698,CONTROL_STRUCTURE,-1,,"while (msg == NULL && GetVarint32(&input, &tag))",3,WHILE,122,12,<empty>
+47709,CONTROL_STRUCTURE,-1,,switch(tag),5,SWITCH,123,1,CPPASTSwitchStatement
+47714,CONTROL_STRUCTURE,-1,,"if (GetLengthPrefixedSlice(&input, &str))",9,IF,125,3,CPPASTIfStatement
+47730,CONTROL_STRUCTURE,-1,,else,16,ELSE,128,3,CPPASTCompoundStatement
+47735,CONTROL_STRUCTURE,-1,,break;,9,BREAK,131,4,CPPASTBreakStatement
+47738,CONTROL_STRUCTURE,-1,,"if (GetVarint64(&input, &log_number_))",9,IF,134,7,CPPASTIfStatement
+47748,CONTROL_STRUCTURE,-1,,else,16,ELSE,136,3,CPPASTCompoundStatement
+47753,CONTROL_STRUCTURE,-1,,break;,9,BREAK,139,8,CPPASTBreakStatement
+47756,CONTROL_STRUCTURE,-1,,"if (GetVarint64(&input, &prev_log_number_))",9,IF,142,11,CPPASTIfStatement
+47766,CONTROL_STRUCTURE,-1,,else,16,ELSE,144,3,CPPASTCompoundStatement
+47771,CONTROL_STRUCTURE,-1,,break;,9,BREAK,147,12,CPPASTBreakStatement
+47774,CONTROL_STRUCTURE,-1,,"if (GetVarint64(&input, &next_file_number_))",9,IF,150,15,CPPASTIfStatement
+47784,CONTROL_STRUCTURE,-1,,else,16,ELSE,152,3,CPPASTCompoundStatement
+47789,CONTROL_STRUCTURE,-1,,break;,9,BREAK,155,16,CPPASTBreakStatement
+47792,CONTROL_STRUCTURE,-1,,"if (GetVarint64(&input, &last_sequence_))",9,IF,158,19,CPPASTIfStatement
+47802,CONTROL_STRUCTURE,-1,,else,16,ELSE,160,3,CPPASTCompoundStatement
+47807,CONTROL_STRUCTURE,-1,,break;,9,BREAK,163,20,CPPASTBreakStatement
+47810,CONTROL_STRUCTURE,-1,,"if (GetLevel(&input, &level) &&
+            GetInternalKey(&input, &key))",9,IF,166,23,CPPASTIfStatement
+47833,CONTROL_STRUCTURE,-1,,else,16,ELSE,169,3,CPPASTCompoundStatement
+47838,CONTROL_STRUCTURE,-1,,break;,9,BREAK,172,24,CPPASTBreakStatement
+47841,CONTROL_STRUCTURE,-1,,"if (GetLevel(&input, &level) &&
+            GetVarint64(&input, &number))",9,IF,175,27,CPPASTIfStatement
+47864,CONTROL_STRUCTURE,-1,,else,16,ELSE,178,3,CPPASTCompoundStatement
+47869,CONTROL_STRUCTURE,-1,,break;,9,BREAK,181,28,CPPASTBreakStatement
+47872,CONTROL_STRUCTURE,-1,,"if (GetLevel(&input, &level) &&
+            GetVarint64(&input, &f.number) &&
+            GetVarint64(&input, &f.file_size) &&
+            GetInternalKey(&input, &f.smallest) &&
+            GetInternalKey(&input, &f.largest))",9,IF,184,31,CPPASTIfStatement
+47921,CONTROL_STRUCTURE,-1,,else,16,ELSE,190,3,CPPASTCompoundStatement
+47926,CONTROL_STRUCTURE,-1,,break;,9,BREAK,193,32,CPPASTBreakStatement
+47931,CONTROL_STRUCTURE,-1,,break;,9,BREAK,197,35,CPPASTBreakStatement
+47932,CONTROL_STRUCTURE,-1,,if (msg == NULL && !input.empty()),3,IF,201,13,CPPASTIfStatement
+47947,CONTROL_STRUCTURE,-1,,if (msg != NULL),3,IF,206,15,CPPASTIfStatement
+47972,CONTROL_STRUCTURE,-1,,if (has_comparator_),3,IF,215,3,CPPASTIfStatement
+47985,CONTROL_STRUCTURE,-1,,if (has_log_number_),3,IF,219,4,CPPASTIfStatement
+47997,CONTROL_STRUCTURE,-1,,if (has_prev_log_number_),3,IF,223,5,CPPASTIfStatement
+48009,CONTROL_STRUCTURE,-1,,if (has_next_file_number_),3,IF,227,6,CPPASTIfStatement
+48021,CONTROL_STRUCTURE,-1,,if (has_last_sequence_),3,IF,231,7,CPPASTIfStatement
+48033,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < compact_pointers_.size();i++),3,FOR,235,8,CPPASTForStatement
+48078,CONTROL_STRUCTURE,-1,,for (DeletedFileSet::const_iterator iter = deleted_files_.begin();iter != deleted_files_.end();++iter),3,FOR,241,9,CPPASTForStatement
+48118,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < new_files_.size();i++),3,FOR,249,10,CPPASTForStatement
+48535,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 4;i++),3,FOR,26,4,CPPASTForStatement
+48719,CONTROL_STRUCTURE,-1,,while (level > 1),3,WHILE,46,3,<empty>
+48749,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files.size();i++),3,FOR,60,3,CPPASTForStatement
+48791,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),3,FOR,74,4,CPPASTForStatement
+48805,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files_[level].size();i++),5,FOR,75,1,CPPASTForStatement
+48840,CONTROL_STRUCTURE,-1,,if (f->refs <= 0),7,IF,79,5,CPPASTIfStatement
+48867,CONTROL_STRUCTURE,-1,,while (left < right),3,WHILE,91,5,<empty>
+48886,CONTROL_STRUCTURE,-1,,"if (icmp.InternalKeyComparator::Compare(f->largest.Encode(), key) < 0)",5,IF,94,5,CPPASTIfStatement
+48906,CONTROL_STRUCTURE,-1,,else,12,ELSE,98,3,CPPASTCompoundStatement
+48981,CONTROL_STRUCTURE,-1,,if (!disjoint_sorted_files),3,IF,128,3,CPPASTIfStatement
+48985,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files.size();i++),5,FOR,130,1,CPPASTForStatement
+49006,CONTROL_STRUCTURE,-1,,"if (AfterFile(ucmp, smallest_user_key, f) ||
+          BeforeFile(ucmp, largest_user_key, f))",7,IF,132,3,CPPASTIfStatement
+49017,CONTROL_STRUCTURE,-1,,else,14,ELSE,135,3,CPPASTCompoundStatement
+49027,CONTROL_STRUCTURE,-1,,if (smallest_user_key != NULL),3,IF,144,6,CPPASTIfStatement
+49047,CONTROL_STRUCTURE,-1,,if (index >= files.size()),3,IF,150,7,CPPASTIfStatement
+49134,CONTROL_STRUCTURE,-1,,if (index_ == 0),5,IF,187,2,CPPASTIfStatement
+49145,CONTROL_STRUCTURE,-1,,else,12,ELSE,189,3,CPPASTCompoundStatement
+49226,CONTROL_STRUCTURE,-1,,if (file_value.size() != 16),3,IF,217,3,CPPASTIfStatement
+49241,CONTROL_STRUCTURE,-1,,else,10,ELSE,220,3,CPPASTCompoundStatement
+49290,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files_[0].size();i++),3,FOR,237,1,CPPASTForStatement
+49332,CONTROL_STRUCTURE,-1,,for (int level = 1;level < config::kNumLevels;level++),3,FOR,246,2,CPPASTForStatement
+49346,CONTROL_STRUCTURE,-1,,if (!files_[level].empty()),5,IF,247,1,CPPASTIfStatement
+49387,CONTROL_STRUCTURE,-1,,"if (!ParseInternalKey(ikey, &parsed_key))",3,IF,271,4,CPPASTIfStatement
+49399,CONTROL_STRUCTURE,-1,,else,10,ELSE,273,3,CPPASTCompoundStatement
+49401,CONTROL_STRUCTURE,-1,,"if (s->ucmp->Compare(parsed_key.user_key, s->user_key) == 0)",5,IF,274,1,CPPASTIfStatement
+49429,CONTROL_STRUCTURE,-1,,if (s->state == kFound),7,IF,276,2,CPPASTIfStatement
+49492,CONTROL_STRUCTURE,-1,,for (uint32_t i = 0;i < files_[0].size();i++),3,FOR,296,5,CPPASTForStatement
+49517,CONTROL_STRUCTURE,-1,,"if (ucmp->Compare(user_key, f->smallest.user_key()) >= 0 &&
+        ucmp->Compare(user_key, f->largest.user_key()) <= 0)",5,IF,298,3,CPPASTIfStatement
+49551,CONTROL_STRUCTURE,-1,,if (!tmp.empty()),3,IF,303,6,CPPASTIfStatement
+49571,CONTROL_STRUCTURE,-1,,for (uint32_t i = 0;i < tmp.size();i++),5,FOR,305,2,CPPASTForStatement
+49586,CONTROL_STRUCTURE,-1,,"if (!(*func)(arg, 0, tmp[i]))",7,IF,306,1,CPPASTIfStatement
+49598,CONTROL_STRUCTURE,-1,,for (int level = 1;level < config::kNumLevels;level++),3,FOR,313,7,CPPASTForStatement
+49621,CONTROL_STRUCTURE,-1,,if (num_files == 0),5,IF,315,3,CPPASTIfStatement
+49626,CONTROL_STRUCTURE,1,,continue;,25,CONTINUE,315,1,CPPASTContinueStatement
+49638,CONTROL_STRUCTURE,-1,,if (index < num_files),5,IF,319,6,CPPASTIfStatement
+49651,CONTROL_STRUCTURE,-1,,"if (ucmp->Compare(user_key, f->smallest.user_key()) < 0)",7,IF,321,3,CPPASTIfStatement
+49666,CONTROL_STRUCTURE,-1,,else,14,ELSE,323,3,CPPASTCompoundStatement
+49668,CONTROL_STRUCTURE,-1,,"if (!(*func)(arg, level, f))",9,IF,324,1,CPPASTIfStatement
+49732,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),3,FOR,351,16,CPPASTForStatement
+49755,CONTROL_STRUCTURE,-1,,if (num_files == 0),5,IF,353,3,CPPASTIfStatement
+49760,CONTROL_STRUCTURE,1,,continue;,25,CONTINUE,353,1,CPPASTContinueStatement
+49770,CONTROL_STRUCTURE,-1,,if (level == 0),5,IF,357,6,CPPASTIfStatement
+49780,CONTROL_STRUCTURE,-1,,for (uint32_t i = 0;i < num_files;i++),7,FOR,361,2,CPPASTForStatement
+49798,CONTROL_STRUCTURE,-1,,"if (ucmp->Compare(user_key, f->smallest.user_key()) >= 0 &&
+            ucmp->Compare(user_key, f->largest.user_key()) <= 0)",9,IF,363,3,CPPASTIfStatement
+49832,CONTROL_STRUCTURE,-1,,if (tmp.empty()),7,IF,368,3,CPPASTIfStatement
+49838,CONTROL_STRUCTURE,1,,continue;,24,CONTINUE,368,1,CPPASTContinueStatement
+49864,CONTROL_STRUCTURE,-1,,else,12,ELSE,373,3,CPPASTCompoundStatement
+49877,CONTROL_STRUCTURE,-1,,if (index >= num_files),7,IF,376,3,CPPASTIfStatement
+49888,CONTROL_STRUCTURE,-1,,else,14,ELSE,379,3,CPPASTCompoundStatement
+49895,CONTROL_STRUCTURE,-1,,"if (ucmp->Compare(user_key, tmp2->smallest.user_key()) < 0)",9,IF,381,2,CPPASTIfStatement
+49916,CONTROL_STRUCTURE,-1,,else,16,ELSE,385,3,CPPASTCompoundStatement
+49925,CONTROL_STRUCTURE,-1,,for (uint32_t i = 0;i < num_files;++i),5,FOR,392,7,CPPASTForStatement
+49937,CONTROL_STRUCTURE,-1,,if (last_file_read != NULL && stats->seek_file == NULL),7,IF,393,1,CPPASTIfStatement
+50010,CONTROL_STRUCTURE,-1,,if (!s.ok()),7,IF,410,12,CPPASTIfStatement
+50019,CONTROL_STRUCTURE,-1,,switch(saver.state),7,SWITCH,413,13,CPPASTSwitchStatement
+50026,CONTROL_STRUCTURE,-1,,break;,11,BREAK,415,3,CPPASTBreakStatement
+50071,CONTROL_STRUCTURE,-1,,if (f != NULL),3,IF,433,3,CPPASTIfStatement
+50080,CONTROL_STRUCTURE,-1,,if (f->allowed_seeks <= 0 && file_to_compact_ == NULL),5,IF,435,2,CPPASTIfStatement
+50109,CONTROL_STRUCTURE,-1,,"if (!ParseInternalKey(internal_key, &ikey))",3,IF,446,2,CPPASTIfStatement
+50135,CONTROL_STRUCTURE,-1,,if (state.matches >= 2),3,IF,475,6,CPPASTIfStatement
+50172,CONTROL_STRUCTURE,-1,,if (refs_ == 0),3,IF,490,4,CPPASTIfStatement
+50209,CONTROL_STRUCTURE,-1,,"if (!OverlapInLevel(0, &smallest_user_key, &largest_user_key))",3,IF,506,3,CPPASTIfStatement
+50231,CONTROL_STRUCTURE,-1,,while (level < config::kMaxMemCompactLevel),5,WHILE,512,6,<empty>
+50238,CONTROL_STRUCTURE,-1,,"if (OverlapInLevel(level + 1, &smallest_user_key, &largest_user_key))",7,IF,513,1,CPPASTIfStatement
+50248,CONTROL_STRUCTURE,-1,,break;,9,BREAK,514,1,CPPASTBreakStatement
+50249,CONTROL_STRUCTURE,-1,,if (level + 2 < config::kNumLevels),7,IF,516,2,CPPASTIfStatement
+50273,CONTROL_STRUCTURE,-1,,if (sum > MaxGrandParentOverlapBytes(vset_->options_)),9,IF,520,4,CPPASTIfStatement
+50281,CONTROL_STRUCTURE,-1,,break;,11,BREAK,521,1,CPPASTBreakStatement
+50310,CONTROL_STRUCTURE,-1,,if (begin != NULL),3,IF,540,6,CPPASTIfStatement
+50321,CONTROL_STRUCTURE,-1,,if (end != NULL),3,IF,543,7,CPPASTIfStatement
+50341,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files_[level].size();),3,FOR,547,10,CPPASTForStatement
+50383,CONTROL_STRUCTURE,-1,,"if (begin != NULL && user_cmp->Compare(file_limit, user_begin) < 0)",5,IF,551,7,CPPASTIfStatement
+50397,CONTROL_STRUCTURE,-1,,else,12,ELSE,553,3,CPPASTIfStatement
+50399,CONTROL_STRUCTURE,1,,"if (end != NULL && user_cmp->Compare(file_start, user_end) > 0)",12,IF,553,1,CPPASTIfStatement
+50413,CONTROL_STRUCTURE,-1,,else,12,ELSE,555,3,CPPASTCompoundStatement
+50420,CONTROL_STRUCTURE,-1,,if (level == 0),7,IF,557,2,CPPASTIfStatement
+50425,CONTROL_STRUCTURE,-1,,"if (begin != NULL && user_cmp->Compare(file_start, user_begin) < 0)",9,IF,560,1,CPPASTIfStatement
+50449,CONTROL_STRUCTURE,-1,,else,16,ELSE,564,3,CPPASTIfStatement
+50451,CONTROL_STRUCTURE,1,,"if (end != NULL && user_cmp->Compare(file_limit, user_end) > 0)",16,IF,564,1,CPPASTIfStatement
+50480,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),3,FOR,576,2,CPPASTForStatement
+50514,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files.size();i++),5,FOR,585,6,CPPASTForStatement
+50618,CONTROL_STRUCTURE,-1,,if (r != 0),7,IF,611,3,CPPASTIfStatement
+50627,CONTROL_STRUCTURE,-1,,else,14,ELSE,613,3,CPPASTCompoundStatement
+50663,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),5,FOR,638,4,CPPASTForStatement
+50690,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),5,FOR,644,1,CPPASTForStatement
+50721,CONTROL_STRUCTURE,-1,,for (FileSet::const_iterator it = added->begin();it != added->end();++it),7,FOR,648,5,CPPASTForStatement
+50747,CONTROL_STRUCTURE,-1,,for (uint32_t i = 0;i < to_unref.size();i++),7,FOR,653,7,CPPASTForStatement
+50772,CONTROL_STRUCTURE,-1,,if (f->refs <= 0),9,IF,656,4,CPPASTIfStatement
+50790,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < edit->compact_pointers_.size();i++),5,FOR,667,1,CPPASTForStatement
+50842,CONTROL_STRUCTURE,-1,,for (VersionEdit::DeletedFileSet::const_iterator iter = del.begin();iter != del.end();++iter),5,FOR,675,4,CPPASTForStatement
+50881,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < edit->new_files_.size();i++),5,FOR,684,5,CPPASTForStatement
+50934,CONTROL_STRUCTURE,-1,,if (f->allowed_seeks < 100),7,IF,703,7,CPPASTIfStatement
+50980,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),5,FOR,714,3,CPPASTForStatement
+51041,CONTROL_STRUCTURE,-1,,for (FileSet::const_iterator added_iter = added->begin();added_iter != added->end();++added_iter),7,FOR,722,10,CPPASTForStatement
+51059,CONTROL_STRUCTURE,-1,,"for (std::vector<FileMetaData*>::const_iterator bpos
+                 = std::upper_bound(base_iter, base_end, *added_iter, cmp);base_iter != bpos;++base_iter)",9,FOR,726,1,CPPASTForStatement
+51089,CONTROL_STRUCTURE,-1,,for (;base_iter != base_end;++base_iter),7,FOR,737,11,CPPASTForStatement
+51102,CONTROL_STRUCTURE,-1,,if (level > 0),7,IF,743,12,CPPASTIfStatement
+51107,CONTROL_STRUCTURE,-1,,for (uint32_t i = 1;i < v->files_[level].size();i++),9,FOR,744,1,CPPASTForStatement
+51152,CONTROL_STRUCTURE,-1,,"if (vset_->icmp_.Compare(prev_end, this_begin) >= 0)",11,IF,747,5,CPPASTIfStatement
+51189,CONTROL_STRUCTURE,-1,,if (levels_[level].deleted_files.count(f->number) > 0),5,IF,760,1,CPPASTIfStatement
+51204,CONTROL_STRUCTURE,-1,,else,12,ELSE,762,3,CPPASTCompoundStatement
+51215,CONTROL_STRUCTURE,-1,,if (level > 0 && !files->empty()),7,IF,764,3,CPPASTIfStatement
+51312,CONTROL_STRUCTURE,-1,,if (current_ != NULL),3,IF,807,3,CPPASTIfStatement
+51361,CONTROL_STRUCTURE,-1,,if (edit->has_log_number_),3,IF,821,1,CPPASTIfStatement
+51378,CONTROL_STRUCTURE,-1,,else,10,ELSE,824,3,CPPASTCompoundStatement
+51385,CONTROL_STRUCTURE,-1,,if (!edit->has_prev_log_number_),3,IF,828,2,CPPASTIfStatement
+51431,CONTROL_STRUCTURE,-1,,if (descriptor_log_ == NULL),3,IF,847,11,CPPASTIfStatement
+51459,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,854,5,CPPASTIfStatement
+51479,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,865,2,CPPASTIfStatement
+51499,CONTROL_STRUCTURE,-1,,if (s.ok()),7,IF,869,4,CPPASTIfStatement
+51511,CONTROL_STRUCTURE,-1,,if (!s.ok()),7,IF,872,5,CPPASTIfStatement
+51530,CONTROL_STRUCTURE,-1,,if (s.ok() && !new_manifest_file.empty()),5,IF,879,3,CPPASTIfStatement
+51552,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,887,13,CPPASTIfStatement
+51570,CONTROL_STRUCTURE,-1,,else,10,ELSE,891,3,CPPASTCompoundStatement
+51574,CONTROL_STRUCTURE,-1,,if (!new_manifest_file.empty()),5,IF,893,2,CPPASTIfStatement
+51613,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,916,4,CPPASTIfStatement
+51622,CONTROL_STRUCTURE,-1,,if (current.empty() || current[current.size()-1] != '\n'),3,IF,919,5,CPPASTIfStatement
+51673,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,927,11,CPPASTIfStatement
+51735,CONTROL_STRUCTURE,-1,,"while (reader.ReadRecord(&record, &scratch) && s.ok())",5,WHILE,947,7,<empty>
+51758,CONTROL_STRUCTURE,-1,,if (s.ok()),7,IF,950,3,CPPASTIfStatement
+51764,CONTROL_STRUCTURE,-1,,"if (edit.has_comparator_ &&
+            edit.comparator_ != icmp_.user_comparator()->Name())",9,IF,951,1,CPPASTIfStatement
+51799,CONTROL_STRUCTURE,-1,,if (s.ok()),7,IF,959,4,CPPASTIfStatement
+51811,CONTROL_STRUCTURE,-1,,if (edit.has_log_number_),7,IF,963,5,CPPASTIfStatement
+51824,CONTROL_STRUCTURE,-1,,if (edit.has_prev_log_number_),7,IF,968,6,CPPASTIfStatement
+51837,CONTROL_STRUCTURE,-1,,if (edit.has_next_file_number_),7,IF,973,7,CPPASTIfStatement
+51850,CONTROL_STRUCTURE,-1,,if (edit.has_last_sequence_),7,IF,978,8,CPPASTIfStatement
+51868,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,987,33,CPPASTIfStatement
+51874,CONTROL_STRUCTURE,-1,,if (!have_next_file),5,IF,988,1,CPPASTIfStatement
+51885,CONTROL_STRUCTURE,-1,,else,12,ELSE,990,3,CPPASTIfStatement
+51887,CONTROL_STRUCTURE,1,,if (!have_log_number),12,IF,990,1,CPPASTIfStatement
+51898,CONTROL_STRUCTURE,-1,,else,12,ELSE,992,3,CPPASTIfStatement
+51900,CONTROL_STRUCTURE,1,,if (!have_last_sequence),12,IF,992,1,CPPASTIfStatement
+51911,CONTROL_STRUCTURE,-1,,if (!have_prev_log_number),5,IF,996,2,CPPASTIfStatement
+51922,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,1004,34,CPPASTIfStatement
+51960,CONTROL_STRUCTURE,-1,,"if (ReuseManifest(dscname, current))",5,IF,1017,11,CPPASTIfStatement
+51965,CONTROL_STRUCTURE,-1,,else,12,ELSE,1019,3,CPPASTCompoundStatement
+51979,CONTROL_STRUCTURE,-1,,if (!options_->reuse_logs),3,IF,1029,1,CPPASTIfStatement
+51990,CONTROL_STRUCTURE,-1,,"if (!ParseFileName(dscbase, &manifest_number, &manifest_type) ||
+      manifest_type != kDescriptorFile ||
+      !env_->GetFileSize(dscname, &manifest_size).ok() ||
+      // Make new compacted MANIFEST if old one is too big
+      manifest_size >= TargetFileSize(options_))",3,IF,1035,5,CPPASTIfStatement
+52040,CONTROL_STRUCTURE,-1,,if (!r.ok()),3,IF,1046,10,CPPASTIfStatement
+52090,CONTROL_STRUCTURE,-1,,if (next_file_number_ <= number),3,IF,1059,1,CPPASTIfStatement
+52115,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels-1;level++),3,FOR,1069,5,CPPASTForStatement
+52132,CONTROL_STRUCTURE,-1,,if (level == 0),5,IF,1071,2,CPPASTIfStatement
+52153,CONTROL_STRUCTURE,-1,,else,12,ELSE,1085,3,CPPASTCompoundStatement
+52173,CONTROL_STRUCTURE,-1,,if (score > best_score),5,IF,1092,3,CPPASTIfStatement
+52211,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),3,FOR,1110,3,CPPASTForStatement
+52225,CONTROL_STRUCTURE,-1,,if (!compact_pointer_[level].empty()),5,IF,1111,1,CPPASTIfStatement
+52248,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),3,FOR,1119,4,CPPASTForStatement
+52270,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files.size();i++),5,FOR,1121,3,CPPASTForStatement
+52449,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),3,FOR,1155,3,CPPASTForStatement
+52471,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files.size();i++),5,FOR,1157,3,CPPASTForStatement
+52486,CONTROL_STRUCTURE,-1,,"if (icmp_.Compare(files[i]->largest, ikey) <= 0)",7,IF,1158,1,CPPASTIfStatement
+52507,CONTROL_STRUCTURE,-1,,else,14,ELSE,1161,3,CPPASTIfStatement
+52509,CONTROL_STRUCTURE,1,,"if (icmp_.Compare(files[i]->smallest, ikey) > 0)",14,IF,1161,1,CPPASTIfStatement
+52523,CONTROL_STRUCTURE,-1,,if (level > 0),9,IF,1163,1,CPPASTIfStatement
+52528,CONTROL_STRUCTURE,-1,,break;,11,BREAK,1167,1,CPPASTBreakStatement
+52529,CONTROL_STRUCTURE,-1,,else,14,ELSE,1169,3,CPPASTCompoundStatement
+52552,CONTROL_STRUCTURE,-1,,if (tableptr != NULL),9,IF,1175,4,CPPASTIfStatement
+52576,CONTROL_STRUCTURE,-1,,for (Version* v = dummy_versions_.next_;v != &dummy_versions_;v = v->next_),3,FOR,1186,1,CPPASTForStatement
+52594,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),5,FOR,1189,1,CPPASTForStatement
+52616,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files.size();i++),7,FOR,1191,3,CPPASTForStatement
+52671,CONTROL_STRUCTURE,-1,,for (int level = 1;level < config::kNumLevels - 1;level++),3,FOR,1207,4,CPPASTForStatement
+52687,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < current_->files_[level].size();i++),5,FOR,1208,1,CPPASTForStatement
+52738,CONTROL_STRUCTURE,-1,,if (sum > result),7,IF,1213,6,CPPASTIfStatement
+52769,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < inputs.size();i++),3,FOR,1230,4,CPPASTForStatement
+52790,CONTROL_STRUCTURE,-1,,if (i == 0),5,IF,1232,3,CPPASTIfStatement
+52807,CONTROL_STRUCTURE,-1,,else,12,ELSE,1235,3,CPPASTCompoundStatement
+52809,CONTROL_STRUCTURE,-1,,"if (icmp_.Compare(f->smallest, *smallest) < 0)",7,IF,1236,1,CPPASTIfStatement
+52828,CONTROL_STRUCTURE,-1,,"if (icmp_.Compare(f->largest, *largest) > 0)",7,IF,1239,2,CPPASTIfStatement
+52927,CONTROL_STRUCTURE,-1,,for (int which = 0;which < 2;which++),3,FOR,1269,10,CPPASTForStatement
+52939,CONTROL_STRUCTURE,-1,,if (!c->inputs_[which].empty()),5,IF,1270,1,CPPASTIfStatement
+52950,CONTROL_STRUCTURE,-1,,if (c->level() + which == 0),7,IF,1271,1,CPPASTIfStatement
+52968,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < files.size();i++),9,FOR,1273,3,CPPASTForStatement
+53003,CONTROL_STRUCTURE,-1,,else,14,ELSE,1277,3,CPPASTCompoundStatement
+53062,CONTROL_STRUCTURE,-1,,if (size_compaction),3,IF,1299,7,CPPASTIfStatement
+53088,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < current_->files_[level].size();i++),5,FOR,1306,5,CPPASTForStatement
+53117,CONTROL_STRUCTURE,-1,,"if (compact_pointer_[level].empty() ||
+          icmp_.Compare(f->largest.Encode(), compact_pointer_[level]) > 0)",7,IF,1308,3,CPPASTIfStatement
+53150,CONTROL_STRUCTURE,-1,,break;,9,BREAK,1311,2,CPPASTBreakStatement
+53151,CONTROL_STRUCTURE,-1,,if (c->inputs_[0].empty()),5,IF,1314,6,CPPASTIfStatement
+53176,CONTROL_STRUCTURE,-1,,else,10,ELSE,1318,3,CPPASTIfStatement
+53178,CONTROL_STRUCTURE,1,,if (seek_compaction),10,IF,1318,1,CPPASTIfStatement
+53203,CONTROL_STRUCTURE,-1,,else,10,ELSE,1322,3,CPPASTCompoundStatement
+53218,CONTROL_STRUCTURE,-1,,if (level == 0),3,IF,1330,10,CPPASTIfStatement
+53322,CONTROL_STRUCTURE,-1,,if (!c->inputs_[1].empty()),3,IF,1358,10,CPPASTIfStatement
+53368,CONTROL_STRUCTURE,-1,,"if (expanded0.size() > c->inputs_[0].size() &&
+        inputs1_size + expanded0_size <
+            ExpandedCompactionByteSizeLimit(options_))",5,IF,1364,9,CPPASTIfStatement
+53412,CONTROL_STRUCTURE,-1,,if (expanded1.size() == c->inputs_[1].size()),7,IF,1372,6,CPPASTIfStatement
+53512,CONTROL_STRUCTURE,-1,,if (level + 2 < config::kNumLevels),3,IF,1393,11,CPPASTIfStatement
+53536,CONTROL_STRUCTURE,-1,,if (false),3,IF,1398,12,CPPASTIfStatement
+53595,CONTROL_STRUCTURE,-1,,if (inputs.empty()),3,IF,1419,3,CPPASTIfStatement
+53603,CONTROL_STRUCTURE,-1,,if (level > 0),3,IF,1427,4,CPPASTIfStatement
+53618,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < inputs.size();i++),5,FOR,1430,5,CPPASTForStatement
+53644,CONTROL_STRUCTURE,-1,,if (total >= limit),7,IF,1433,4,CPPASTIfStatement
+53656,CONTROL_STRUCTURE,-1,,break;,9,BREAK,1435,2,CPPASTBreakStatement
+53692,CONTROL_STRUCTURE,-1,,for (int i = 0;i < config::kNumLevels;i++),3,FOR,1455,1,CPPASTForStatement
+53715,CONTROL_STRUCTURE,-1,,if (input_version_ != NULL),3,IF,1461,1,CPPASTIfStatement
+53757,CONTROL_STRUCTURE,-1,,for (int which = 0;which < 2;which++),3,FOR,1477,1,CPPASTForStatement
+53769,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < inputs_[which].size();i++),5,FOR,1478,1,CPPASTForStatement
+53816,CONTROL_STRUCTURE,-1,,for (int lvl = level_ + 2;lvl < config::kNumLevels;lvl++),3,FOR,1487,3,CPPASTForStatement
+53840,CONTROL_STRUCTURE,-1,,for (;level_ptrs_[lvl] < files.size();),5,FOR,1489,3,CPPASTForStatement
+53859,CONTROL_STRUCTURE,-1,,"if (user_cmp->Compare(user_key, f->largest.user_key()) <= 0)",7,IF,1491,3,CPPASTIfStatement
+53874,CONTROL_STRUCTURE,-1,,"if (user_cmp->Compare(user_key, f->smallest.user_key()) >= 0)",9,IF,1493,1,CPPASTIfStatement
+53891,CONTROL_STRUCTURE,-1,,break;,9,BREAK,1497,2,CPPASTBreakStatement
+53916,CONTROL_STRUCTURE,-1,,"while (grandparent_index_ < grandparents_.size() &&
+      icmp->Compare(internal_key,
+                    grandparents_[grandparent_index_]->largest.Encode()) > 0)",3,WHILE,1509,5,<empty>
+53940,CONTROL_STRUCTURE,-1,,if (seen_key_),5,IF,1512,1,CPPASTIfStatement
+53955,CONTROL_STRUCTURE,-1,,if (overlapped_bytes_ > MaxGrandParentOverlapBytes(vset->options_)),3,IF,1519,7,CPPASTIfStatement
+53968,CONTROL_STRUCTURE,-1,,else,10,ELSE,1523,3,CPPASTCompoundStatement
+53976,CONTROL_STRUCTURE,-1,,if (input_version_ != NULL),3,IF,1529,1,CPPASTIfStatement
+54208,CONTROL_STRUCTURE,-1,,if (next_file_number_ == file_number + 1),5,IF,197,1,CPPASTIfStatement
+54528,CONTROL_STRUCTURE,-1,,for (int i = 0;i < files_.size();i++),5,FOR,20,1,CPPASTForStatement
+56526,CONTROL_STRUCTURE,-1,,if (input.size() < kHeader),3,IF,44,3,CPPASTIfStatement
+56551,CONTROL_STRUCTURE,-1,,while (!input.empty()),3,WHILE,51,9,<empty>
+56571,CONTROL_STRUCTURE,-1,,switch(tag),5,SWITCH,55,5,CPPASTSwitchStatement
+56576,CONTROL_STRUCTURE,-1,,"if (GetLengthPrefixedSlice(&input, &key) &&
+            GetLengthPrefixedSlice(&input, &value))",9,IF,57,3,CPPASTIfStatement
+56595,CONTROL_STRUCTURE,-1,,else,16,ELSE,60,3,CPPASTCompoundStatement
+56603,CONTROL_STRUCTURE,-1,,break;,9,BREAK,63,4,CPPASTBreakStatement
+56606,CONTROL_STRUCTURE,-1,,"if (GetLengthPrefixedSlice(&input, &key))",9,IF,65,7,CPPASTIfStatement
+56618,CONTROL_STRUCTURE,-1,,else,16,ELSE,67,3,CPPASTCompoundStatement
+56626,CONTROL_STRUCTURE,-1,,break;,9,BREAK,70,8,CPPASTBreakStatement
+56634,CONTROL_STRUCTURE,-1,,if (found != WriteBatchInternal::Count(this)),3,IF,75,10,CPPASTIfStatement
+56649,CONTROL_STRUCTURE,-1,,else,10,ELSE,77,3,CPPASTCompoundStatement
+57039,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();iter->Valid();iter->Next()),3,FOR,23,13,CPPASTForStatement
+57076,CONTROL_STRUCTURE,-1,,switch(ikey.type),5,SWITCH,26,3,CPPASTSwitchStatement
+57121,CONTROL_STRUCTURE,-1,,break;,9,BREAK,34,9,CPPASTBreakStatement
+57146,CONTROL_STRUCTURE,-1,,break;,9,BREAK,40,16,CPPASTBreakStatement
+57162,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,46,15,CPPASTIfStatement
+57174,CONTROL_STRUCTURE,-1,,else,10,ELSE,48,3,CPPASTIfStatement
+57176,CONTROL_STRUCTURE,1,,if (count != WriteBatchInternal::Count(b)),10,IF,48,1,CPPASTIfStatement
+57785,CONTROL_STRUCTURE,-1,,if (status != SQLITE_OK),3,IF,83,1,CPPASTIfStatement
+57803,CONTROL_STRUCTURE,-1,,if (status != SQLITE_DONE),3,IF,92,1,CPPASTIfStatement
+57819,CONTROL_STRUCTURE,-1,,if (status != SQLITE_OK),3,IF,100,1,CPPASTIfStatement
+57835,CONTROL_STRUCTURE,-1,,if (FLAGS_WAL_enabled),3,IF,109,1,CPPASTIfStatement
+57857,CONTROL_STRUCTURE,-1,,while (data_.size() < 1048576),5,WHILE,130,4,<empty>
+57888,CONTROL_STRUCTURE,-1,,if (pos_ + len > data_.size()),5,IF,140,1,CPPASTIfStatement
+57931,CONTROL_STRUCTURE,-1,,while (start < s.size() && isspace(s[start])),3,WHILE,151,3,<empty>
+57953,CONTROL_STRUCTURE,-1,,while (limit > start && isspace(s[limit-1])),3,WHILE,155,6,<empty>
+58083,CONTROL_STRUCTURE,-1,,if (FLAGS_histogram),5,IF,251,1,CPPASTIfStatement
+58111,CONTROL_STRUCTURE,-1,,if (micros > 20000),7,IF,255,6,CPPASTIfStatement
+58127,CONTROL_STRUCTURE,-1,,if (done_ >= next_report_),5,IF,263,3,CPPASTIfStatement
+58132,CONTROL_STRUCTURE,-1,,if (next_report_ < 1000),7,IF,264,1,CPPASTIfStatement
+58140,CONTROL_STRUCTURE,-1,,else,12,ELSE,265,3,CPPASTIfStatement
+58142,CONTROL_STRUCTURE,1,,if (next_report_ < 5000),12,IF,265,1,CPPASTIfStatement
+58150,CONTROL_STRUCTURE,-1,,else,12,ELSE,266,3,CPPASTIfStatement
+58152,CONTROL_STRUCTURE,1,,if (next_report_ < 10000),12,IF,266,1,CPPASTIfStatement
+58160,CONTROL_STRUCTURE,-1,,else,12,ELSE,267,3,CPPASTIfStatement
+58162,CONTROL_STRUCTURE,1,,if (next_report_ < 50000),12,IF,267,1,CPPASTIfStatement
+58170,CONTROL_STRUCTURE,-1,,else,12,ELSE,268,3,CPPASTIfStatement
+58172,CONTROL_STRUCTURE,1,,if (next_report_ < 100000),12,IF,268,1,CPPASTIfStatement
+58180,CONTROL_STRUCTURE,-1,,else,12,ELSE,269,3,CPPASTIfStatement
+58182,CONTROL_STRUCTURE,1,,if (next_report_ < 500000),12,IF,269,1,CPPASTIfStatement
+58190,CONTROL_STRUCTURE,-1,,else,39,ELSE,270,3,CPPASTExpressionStatement
+58218,CONTROL_STRUCTURE,-1,,if (done_ < 1),5,IF,281,3,CPPASTIfStatement
+58226,CONTROL_STRUCTURE,-1,,if (bytes_ > 0),5,IF,283,4,CPPASTIfStatement
+58244,CONTROL_STRUCTURE,-1,,if (!message_.empty()),7,IF,287,3,CPPASTIfStatement
+58262,CONTROL_STRUCTURE,-1,,else,14,ELSE,289,3,CPPASTCompoundStatement
+58295,CONTROL_STRUCTURE,-1,,if (FLAGS_histogram),5,IF,299,6,CPPASTIfStatement
+58348,CONTROL_STRUCTURE,-1,,if (!FLAGS_use_existing_db),5,IF,326,5,CPPASTIfStatement
+58352,CONTROL_STRUCTURE,-1,,for (int i = 0;i < files.size();i++),7,FOR,327,1,CPPASTForStatement
+58367,CONTROL_STRUCTURE,-1,,"if (Slice(files[i]).starts_with(""dbbench_sqlite3""))",9,IF,328,1,CPPASTIfStatement
+58420,CONTROL_STRUCTURE,-1,,while (benchmarks != NULL),5,WHILE,348,5,<empty>
+58432,CONTROL_STRUCTURE,-1,,if (sep == NULL),7,IF,351,4,CPPASTIfStatement
+58443,CONTROL_STRUCTURE,-1,,else,14,ELSE,354,3,CPPASTCompoundStatement
+58469,CONTROL_STRUCTURE,-1,,"if (name == Slice(""fillseq""))",7,IF,364,11,CPPASTIfStatement
+58484,CONTROL_STRUCTURE,-1,,else,14,ELSE,367,3,CPPASTIfStatement
+58486,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillseqbatch""))",14,IF,367,1,CPPASTIfStatement
+58501,CONTROL_STRUCTURE,-1,,else,14,ELSE,370,3,CPPASTIfStatement
+58503,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillrandom""))",14,IF,370,1,CPPASTIfStatement
+58518,CONTROL_STRUCTURE,-1,,else,14,ELSE,373,3,CPPASTIfStatement
+58520,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillrandbatch""))",14,IF,373,1,CPPASTIfStatement
+58535,CONTROL_STRUCTURE,-1,,else,14,ELSE,376,3,CPPASTIfStatement
+58537,CONTROL_STRUCTURE,1,,"if (name == Slice(""overwrite""))",14,IF,376,1,CPPASTIfStatement
+58552,CONTROL_STRUCTURE,-1,,else,14,ELSE,379,3,CPPASTIfStatement
+58554,CONTROL_STRUCTURE,1,,"if (name == Slice(""overwritebatch""))",14,IF,379,1,CPPASTIfStatement
+58569,CONTROL_STRUCTURE,-1,,else,14,ELSE,382,3,CPPASTIfStatement
+58571,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillrandsync""))",14,IF,382,1,CPPASTIfStatement
+58591,CONTROL_STRUCTURE,-1,,else,14,ELSE,386,3,CPPASTIfStatement
+58593,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillseqsync""))",14,IF,386,1,CPPASTIfStatement
+58613,CONTROL_STRUCTURE,-1,,else,14,ELSE,390,3,CPPASTIfStatement
+58615,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillrand100K""))",14,IF,390,1,CPPASTIfStatement
+58634,CONTROL_STRUCTURE,-1,,else,14,ELSE,393,3,CPPASTIfStatement
+58636,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillseq100K""))",14,IF,393,1,CPPASTIfStatement
+58655,CONTROL_STRUCTURE,-1,,else,14,ELSE,396,3,CPPASTIfStatement
+58657,CONTROL_STRUCTURE,1,,"if (name == Slice(""readseq""))",14,IF,396,1,CPPASTIfStatement
+58664,CONTROL_STRUCTURE,-1,,else,14,ELSE,398,3,CPPASTIfStatement
+58666,CONTROL_STRUCTURE,1,,"if (name == Slice(""readrandom""))",14,IF,398,1,CPPASTIfStatement
+58675,CONTROL_STRUCTURE,-1,,else,14,ELSE,400,3,CPPASTIfStatement
+58677,CONTROL_STRUCTURE,1,,"if (name == Slice(""readrand100K""))",14,IF,400,1,CPPASTIfStatement
+58696,CONTROL_STRUCTURE,-1,,else,14,ELSE,405,3,CPPASTCompoundStatement
+58701,CONTROL_STRUCTURE,-1,,if (name != Slice()),9,IF,407,2,CPPASTIfStatement
+58716,CONTROL_STRUCTURE,-1,,if (known),7,IF,411,12,CPPASTIfStatement
+58763,CONTROL_STRUCTURE,-1,,if (status),5,IF,433,11,CPPASTIfStatement
+58792,CONTROL_STRUCTURE,-1,,if (FLAGS_page_size != 1024),5,IF,446,16,CPPASTIfStatement
+58816,CONTROL_STRUCTURE,-1,,if (FLAGS_WAL_enabled),5,IF,455,17,CPPASTIfStatement
+58879,CONTROL_STRUCTURE,-1,,for (int i = 0;i < stmt_array_length;i++),5,FOR,472,26,CPPASTForStatement
+58918,CONTROL_STRUCTURE,-1,,if (state == FRESH),5,IF,481,1,CPPASTIfStatement
+58923,CONTROL_STRUCTURE,-1,,if (FLAGS_use_existing_db),7,IF,482,1,CPPASTIfStatement
+58937,CONTROL_STRUCTURE,-1,,if (num_entries != num_),5,IF,492,2,CPPASTIfStatement
+59045,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num_entries;i += entries_per_batch),5,FOR,524,27,CPPASTForStatement
+59058,CONTROL_STRUCTURE,-1,,if (FLAGS_transaction && transaction),7,IF,526,1,CPPASTIfStatement
+59075,CONTROL_STRUCTURE,-1,,for (int j = 0;j < entries_per_batch;j++),7,FOR,534,2,CPPASTForStatement
+59166,CONTROL_STRUCTURE,-1,,if (FLAGS_transaction && transaction),7,IF,565,3,CPPASTIfStatement
+59274,CONTROL_STRUCTURE,-1,,for (int i = 0;i < reads_;i += entries_per_batch),5,FOR,600,19,CPPASTForStatement
+59287,CONTROL_STRUCTURE,-1,,if (FLAGS_transaction && transaction),7,IF,602,1,CPPASTIfStatement
+59304,CONTROL_STRUCTURE,-1,,for (int j = 0;j < entries_per_batch;j++),7,FOR,610,2,CPPASTForStatement
+59349,CONTROL_STRUCTURE,-1,,while ((status = sqlite3_step(read_stmt)) == SQLITE_ROW),9,WHILE,621,7,<empty>
+59372,CONTROL_STRUCTURE,-1,,if (FLAGS_transaction && transaction),7,IF,633,3,CPPASTIfStatement
+59432,CONTROL_STRUCTURE,-1,,for (int i = 0;i < reads_ && SQLITE_ROW == sqlite3_step(pStmt);i++),5,FOR,656,7,CPPASTForStatement
+59472,CONTROL_STRUCTURE,-1,,for (int i = 1;i < argc;i++),3,FOR,671,2,CPPASTForStatement
+59487,CONTROL_STRUCTURE,-1,,"if (leveldb::Slice(argv[i]).starts_with(""--benchmarks=""))",5,IF,675,4,CPPASTIfStatement
+59508,CONTROL_STRUCTURE,-1,,else,12,ELSE,677,3,CPPASTIfStatement
+59510,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--histogram=%d%c"", &n, &junk) == 1 &&
+               (n == 0 || n == 1))",12,IF,677,1,CPPASTIfStatement
+59534,CONTROL_STRUCTURE,-1,,else,12,ELSE,680,3,CPPASTIfStatement
+59536,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--compression_ratio=%lf%c"", &d, &junk) == 1)",12,IF,680,1,CPPASTIfStatement
+59552,CONTROL_STRUCTURE,-1,,else,12,ELSE,682,3,CPPASTIfStatement
+59554,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--use_existing_db=%d%c"", &n, &junk) == 1 &&
+               (n == 0 || n == 1))",12,IF,682,1,CPPASTIfStatement
+59578,CONTROL_STRUCTURE,-1,,else,12,ELSE,685,3,CPPASTIfStatement
+59580,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--num=%d%c"", &n, &junk) == 1)",12,IF,685,1,CPPASTIfStatement
+59596,CONTROL_STRUCTURE,-1,,else,12,ELSE,687,3,CPPASTIfStatement
+59598,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--reads=%d%c"", &n, &junk) == 1)",12,IF,687,1,CPPASTIfStatement
+59614,CONTROL_STRUCTURE,-1,,else,12,ELSE,689,3,CPPASTIfStatement
+59616,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--value_size=%d%c"", &n, &junk) == 1)",12,IF,689,1,CPPASTIfStatement
+59632,CONTROL_STRUCTURE,-1,,else,12,ELSE,691,3,CPPASTIfStatement
+59634,CONTROL_STRUCTURE,1,,"if (leveldb::Slice(argv[i]) == leveldb::Slice(""--no_transaction""))",12,IF,691,1,CPPASTIfStatement
+59652,CONTROL_STRUCTURE,-1,,else,12,ELSE,693,3,CPPASTIfStatement
+59654,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--page_size=%d%c"", &n, &junk) == 1)",12,IF,693,1,CPPASTIfStatement
+59670,CONTROL_STRUCTURE,-1,,else,12,ELSE,695,3,CPPASTIfStatement
+59672,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--num_pages=%d%c"", &n, &junk) == 1)",12,IF,695,1,CPPASTIfStatement
+59688,CONTROL_STRUCTURE,-1,,else,12,ELSE,697,3,CPPASTIfStatement
+59690,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--WAL_enabled=%d%c"", &n, &junk) == 1 &&
+               (n == 0 || n == 1))",12,IF,697,1,CPPASTIfStatement
+59714,CONTROL_STRUCTURE,-1,,else,12,ELSE,700,3,CPPASTIfStatement
+59716,CONTROL_STRUCTURE,1,,"if (strncmp(argv[i], ""--db="", 5) == 0)",12,IF,700,1,CPPASTIfStatement
+59733,CONTROL_STRUCTURE,-1,,else,12,ELSE,702,3,CPPASTCompoundStatement
+59743,CONTROL_STRUCTURE,-1,,if (FLAGS_db == NULL),3,IF,709,3,CPPASTIfStatement
+59842,CONTROL_STRUCTURE,-1,,if (!db_->synchronize()),3,IF,78,1,CPPASTIfStatement
+59872,CONTROL_STRUCTURE,-1,,while (data_.size() < 1048576),5,WHILE,99,4,<empty>
+59903,CONTROL_STRUCTURE,-1,,if (pos_ + len > data_.size()),5,IF,109,1,CPPASTIfStatement
+59946,CONTROL_STRUCTURE,-1,,while (start < s.size() && isspace(s[start])),3,WHILE,120,3,<empty>
+59968,CONTROL_STRUCTURE,-1,,while (limit > start && isspace(s[limit-1])),3,WHILE,124,6,<empty>
+60126,CONTROL_STRUCTURE,-1,,if (FLAGS_histogram),5,IF,227,1,CPPASTIfStatement
+60154,CONTROL_STRUCTURE,-1,,if (micros > 20000),7,IF,231,6,CPPASTIfStatement
+60170,CONTROL_STRUCTURE,-1,,if (done_ >= next_report_),5,IF,239,3,CPPASTIfStatement
+60175,CONTROL_STRUCTURE,-1,,if (next_report_ < 1000),7,IF,240,1,CPPASTIfStatement
+60183,CONTROL_STRUCTURE,-1,,else,12,ELSE,241,3,CPPASTIfStatement
+60185,CONTROL_STRUCTURE,1,,if (next_report_ < 5000),12,IF,241,1,CPPASTIfStatement
+60193,CONTROL_STRUCTURE,-1,,else,12,ELSE,242,3,CPPASTIfStatement
+60195,CONTROL_STRUCTURE,1,,if (next_report_ < 10000),12,IF,242,1,CPPASTIfStatement
+60203,CONTROL_STRUCTURE,-1,,else,12,ELSE,243,3,CPPASTIfStatement
+60205,CONTROL_STRUCTURE,1,,if (next_report_ < 50000),12,IF,243,1,CPPASTIfStatement
+60213,CONTROL_STRUCTURE,-1,,else,12,ELSE,244,3,CPPASTIfStatement
+60215,CONTROL_STRUCTURE,1,,if (next_report_ < 100000),12,IF,244,1,CPPASTIfStatement
+60223,CONTROL_STRUCTURE,-1,,else,12,ELSE,245,3,CPPASTIfStatement
+60225,CONTROL_STRUCTURE,1,,if (next_report_ < 500000),12,IF,245,1,CPPASTIfStatement
+60233,CONTROL_STRUCTURE,-1,,else,39,ELSE,246,3,CPPASTExpressionStatement
+60261,CONTROL_STRUCTURE,-1,,if (done_ < 1),5,IF,257,3,CPPASTIfStatement
+60269,CONTROL_STRUCTURE,-1,,if (bytes_ > 0),5,IF,259,4,CPPASTIfStatement
+60287,CONTROL_STRUCTURE,-1,,if (!message_.empty()),7,IF,263,3,CPPASTIfStatement
+60305,CONTROL_STRUCTURE,-1,,else,14,ELSE,265,3,CPPASTCompoundStatement
+60338,CONTROL_STRUCTURE,-1,,if (FLAGS_histogram),5,IF,275,6,CPPASTIfStatement
+60394,CONTROL_STRUCTURE,-1,,if (!FLAGS_use_existing_db),5,IF,301,5,CPPASTIfStatement
+60398,CONTROL_STRUCTURE,-1,,for (int i = 0;i < files.size();i++),7,FOR,302,1,CPPASTForStatement
+60413,CONTROL_STRUCTURE,-1,,"if (Slice(files[i]).starts_with(""dbbench_polyDB""))",9,IF,303,1,CPPASTIfStatement
+60449,CONTROL_STRUCTURE,-1,,if (!db_->close()),5,IF,314,1,CPPASTIfStatement
+60477,CONTROL_STRUCTURE,-1,,while (benchmarks != NULL),5,WHILE,324,5,<empty>
+60489,CONTROL_STRUCTURE,-1,,if (sep == NULL),7,IF,327,4,CPPASTIfStatement
+60500,CONTROL_STRUCTURE,-1,,else,14,ELSE,330,3,CPPASTCompoundStatement
+60523,CONTROL_STRUCTURE,-1,,"if (name == Slice(""fillseq""))",7,IF,339,10,CPPASTIfStatement
+60538,CONTROL_STRUCTURE,-1,,else,14,ELSE,342,3,CPPASTIfStatement
+60540,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillrandom""))",14,IF,342,1,CPPASTIfStatement
+60555,CONTROL_STRUCTURE,-1,,else,14,ELSE,345,3,CPPASTIfStatement
+60557,CONTROL_STRUCTURE,1,,"if (name == Slice(""overwrite""))",14,IF,345,1,CPPASTIfStatement
+60572,CONTROL_STRUCTURE,-1,,else,14,ELSE,348,3,CPPASTIfStatement
+60574,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillrandsync""))",14,IF,348,1,CPPASTIfStatement
+60594,CONTROL_STRUCTURE,-1,,else,14,ELSE,352,3,CPPASTIfStatement
+60596,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillseqsync""))",14,IF,352,1,CPPASTIfStatement
+60616,CONTROL_STRUCTURE,-1,,else,14,ELSE,356,3,CPPASTIfStatement
+60618,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillrand100K""))",14,IF,356,1,CPPASTIfStatement
+60637,CONTROL_STRUCTURE,-1,,else,14,ELSE,359,3,CPPASTIfStatement
+60639,CONTROL_STRUCTURE,1,,"if (name == Slice(""fillseq100K""))",14,IF,359,1,CPPASTIfStatement
+60658,CONTROL_STRUCTURE,-1,,else,14,ELSE,362,3,CPPASTIfStatement
+60660,CONTROL_STRUCTURE,1,,"if (name == Slice(""readseq""))",14,IF,362,1,CPPASTIfStatement
+60667,CONTROL_STRUCTURE,-1,,else,14,ELSE,364,3,CPPASTIfStatement
+60669,CONTROL_STRUCTURE,1,,"if (name == Slice(""readrandom""))",14,IF,364,1,CPPASTIfStatement
+60676,CONTROL_STRUCTURE,-1,,else,14,ELSE,366,3,CPPASTIfStatement
+60678,CONTROL_STRUCTURE,1,,"if (name == Slice(""readrand100K""))",14,IF,366,1,CPPASTIfStatement
+60695,CONTROL_STRUCTURE,-1,,else,14,ELSE,371,3,CPPASTIfStatement
+60697,CONTROL_STRUCTURE,1,,"if (name == Slice(""readseq100K""))",14,IF,371,1,CPPASTIfStatement
+60714,CONTROL_STRUCTURE,-1,,else,14,ELSE,376,3,CPPASTCompoundStatement
+60719,CONTROL_STRUCTURE,-1,,if (name != Slice()),9,IF,378,2,CPPASTIfStatement
+60734,CONTROL_STRUCTURE,-1,,if (known),7,IF,382,11,CPPASTIfStatement
+60803,CONTROL_STRUCTURE,-1,,if (FLAGS_compression),5,IF,408,12,CPPASTIfStatement
+60841,CONTROL_STRUCTURE,-1,,if (sync),5,IF,416,17,CPPASTIfStatement
+60851,CONTROL_STRUCTURE,-1,,"if (!db_->open(file_name, open_options))",5,IF,419,18,CPPASTIfStatement
+60880,CONTROL_STRUCTURE,-1,,if (state == FRESH),5,IF,427,1,CPPASTIfStatement
+60885,CONTROL_STRUCTURE,-1,,if (FLAGS_use_existing_db),7,IF,428,1,CPPASTIfStatement
+60900,CONTROL_STRUCTURE,-1,,if (num_entries != num_),5,IF,438,2,CPPASTIfStatement
+60915,CONTROL_STRUCTURE,-1,,for (int i = 0;i < num_entries;i++),5,FOR,445,3,CPPASTForStatement
+60958,CONTROL_STRUCTURE,-1,,"if (!db_->set(cpp_key, gen_.Generate(value_size).ToString()))",7,IF,452,8,CPPASTIfStatement
+61002,CONTROL_STRUCTURE,-1,,"while (cur->get(&ckey, &cvalue, true))",5,WHILE,463,6,<empty>
+61032,CONTROL_STRUCTURE,-1,,for (int i = 0;i < reads_;i++),5,FOR,472,2,CPPASTForStatement
+61075,CONTROL_STRUCTURE,-1,,for (int i = 1;i < argc;i++),3,FOR,486,2,CPPASTForStatement
+61090,CONTROL_STRUCTURE,-1,,"if (leveldb::Slice(argv[i]).starts_with(""--benchmarks=""))",5,IF,490,4,CPPASTIfStatement
+61111,CONTROL_STRUCTURE,-1,,else,12,ELSE,492,3,CPPASTIfStatement
+61113,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--compression_ratio=%lf%c"", &d, &junk) == 1)",12,IF,492,1,CPPASTIfStatement
+61129,CONTROL_STRUCTURE,-1,,else,12,ELSE,494,3,CPPASTIfStatement
+61131,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--histogram=%d%c"", &n, &junk) == 1 &&
+               (n == 0 || n == 1))",12,IF,494,1,CPPASTIfStatement
+61155,CONTROL_STRUCTURE,-1,,else,12,ELSE,497,3,CPPASTIfStatement
+61157,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--num=%d%c"", &n, &junk) == 1)",12,IF,497,1,CPPASTIfStatement
+61173,CONTROL_STRUCTURE,-1,,else,12,ELSE,499,3,CPPASTIfStatement
+61175,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--reads=%d%c"", &n, &junk) == 1)",12,IF,499,1,CPPASTIfStatement
+61191,CONTROL_STRUCTURE,-1,,else,12,ELSE,501,3,CPPASTIfStatement
+61193,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--value_size=%d%c"", &n, &junk) == 1)",12,IF,501,1,CPPASTIfStatement
+61209,CONTROL_STRUCTURE,-1,,else,12,ELSE,503,3,CPPASTIfStatement
+61211,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--cache_size=%d%c"", &n, &junk) == 1)",12,IF,503,1,CPPASTIfStatement
+61227,CONTROL_STRUCTURE,-1,,else,12,ELSE,505,3,CPPASTIfStatement
+61229,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--page_size=%d%c"", &n, &junk) == 1)",12,IF,505,1,CPPASTIfStatement
+61245,CONTROL_STRUCTURE,-1,,else,12,ELSE,507,3,CPPASTIfStatement
+61247,CONTROL_STRUCTURE,1,,"if (sscanf(argv[i], ""--compression=%d%c"", &n, &junk) == 1 &&
+               (n == 0 || n == 1))",12,IF,507,1,CPPASTIfStatement
+61276,CONTROL_STRUCTURE,-1,,else,12,ELSE,510,3,CPPASTIfStatement
+61278,CONTROL_STRUCTURE,1,,"if (strncmp(argv[i], ""--db="", 5) == 0)",12,IF,510,1,CPPASTIfStatement
+61295,CONTROL_STRUCTURE,-1,,else,12,ELSE,512,3,CPPASTCompoundStatement
+61305,CONTROL_STRUCTURE,-1,,if (FLAGS_db == NULL),3,IF,519,3,CPPASTIfStatement
+61396,CONTROL_STRUCTURE,-1,,if (refs_ <= 0),7,IF,40,5,CPPASTIfStatement
+61404,CONTROL_STRUCTURE,-1,,if (do_delete),5,IF,45,4,CPPASTIfStatement
+61423,CONTROL_STRUCTURE,-1,,if (offset > size_),5,IF,53,1,CPPASTIfStatement
+61440,CONTROL_STRUCTURE,-1,,if (n > available),5,IF,57,4,CPPASTIfStatement
+61450,CONTROL_STRUCTURE,-1,,if (n == 0),5,IF,60,5,CPPASTIfStatement
+61484,CONTROL_STRUCTURE,-1,,if (n <= kBlockSize - block_offset),5,IF,69,11,CPPASTIfStatement
+61514,CONTROL_STRUCTURE,-1,,while (bytes_to_copy > 0),5,WHILE,78,16,<empty>
+61525,CONTROL_STRUCTURE,-1,,if (avail > bytes_to_copy),7,IF,80,3,CPPASTIfStatement
+61582,CONTROL_STRUCTURE,-1,,while (src_len > 0),5,WHILE,99,5,<empty>
+61594,CONTROL_STRUCTURE,-1,,if (offset != 0),7,IF,103,4,CPPASTIfStatement
+61604,CONTROL_STRUCTURE,-1,,else,14,ELSE,106,3,CPPASTCompoundStatement
+61615,CONTROL_STRUCTURE,-1,,if (avail > src_len),7,IF,112,5,CPPASTIfStatement
+61650,CONTROL_STRUCTURE,-1,,for (std::vector<char*>::iterator i = blocks_.begin();i != blocks_.end();++i),5,FOR,127,1,CPPASTForStatement
+61732,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,161,3,CPPASTIfStatement
+61751,CONTROL_STRUCTURE,-1,,if (pos_ > file_->Size()),5,IF,168,1,CPPASTIfStatement
+61774,CONTROL_STRUCTURE,-1,,if (n > available),5,IF,172,4,CPPASTIfStatement
+61902,CONTROL_STRUCTURE,-1,,for (FileSystem::iterator i = file_map_.begin();i != file_map_.end();++i),5,FOR,235,1,CPPASTForStatement
+61936,CONTROL_STRUCTURE,-1,,if (file_map_.find(fname) == file_map_.end()),5,IF,244,3,CPPASTIfStatement
+61982,CONTROL_STRUCTURE,-1,,if (file_map_.find(fname) == file_map_.end()),5,IF,256,3,CPPASTIfStatement
+62028,CONTROL_STRUCTURE,-1,,if (file_map_.find(fname) != file_map_.end()),5,IF,268,3,CPPASTIfStatement
+62089,CONTROL_STRUCTURE,-1,,if (file == NULL),5,IF,285,7,CPPASTIfStatement
+62147,CONTROL_STRUCTURE,-1,,for (FileSystem::iterator i = file_map_.begin();i != file_map_.end();++i),5,FOR,303,4,CPPASTForStatement
+62171,CONTROL_STRUCTURE,-1,,"if (filename.size() >= dir.size() + 1 && filename[dir.size()] == '/' &&
+          Slice(filename).starts_with(Slice(dir)))",7,IF,306,3,CPPASTIfStatement
+62225,CONTROL_STRUCTURE,-1,,if (file_map_.find(fname) == file_map_.end()),5,IF,316,1,CPPASTIfStatement
+62258,CONTROL_STRUCTURE,-1,,if (file_map_.find(fname) == file_map_.end()),5,IF,326,3,CPPASTIfStatement
+62314,CONTROL_STRUCTURE,-1,,if (file_map_.find(fname) == file_map_.end()),5,IF,344,3,CPPASTIfStatement
+62357,CONTROL_STRUCTURE,-1,,if (file_map_.find(src) == file_map_.end()),5,IF,355,3,CPPASTIfStatement
+64236,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < kWriteSize;++i),3,FOR,166,6,CPPASTForStatement
+64398,CONTROL_STRUCTURE,-1,,while (read < kWriteSize),3,WHILE,184,20,<empty>
+64551,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < 3;++i),3,FOR,204,10,CPPASTForStatement
+64587,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < 3;++i),3,FOR,208,11,CPPASTForStatement
+64654,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < 3;++i),3,FOR,216,15,CPPASTForStatement
+64789,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < 3;++i),3,FOR,228,21,CPPASTForStatement
+66547,CONTROL_STRUCTURE,-1,,if (r == 0),3,IF,99,5,CPPASTIfStatement
+66552,CONTROL_STRUCTURE,-1,,if (size_ < b.size_),5,IF,100,1,CPPASTIfStatement
+66563,CONTROL_STRUCTURE,-1,,else,10,ELSE,101,3,CPPASTIfStatement
+66565,CONTROL_STRUCTURE,1,,if (size_ > b.size_),10,IF,101,1,CPPASTIfStatement
+66802,CONTROL_STRUCTURE,-1,,if (state_ != s.state_),3,IF,104,1,CPPASTIfStatement
+67198,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < kNumKeys;i++),3,FOR,46,10,CPPASTForStatement
+67244,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < kNumKeys;i++),3,FOR,53,13,CPPASTForStatement
+67290,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < kNumKeys;i++),3,FOR,60,16,CPPASTForStatement
+67386,CONTROL_STRUCTURE,-1,,for (iter->SeekToFirst();iter->Valid();iter->Next()),3,FOR,77,31,CPPASTForStatement
+68016,CONTROL_STRUCTURE,-1,,if (result != 0),3,IF,15,1,CPPASTIfStatement
+68359,CONTROL_STRUCTURE,-1,,if (size_ < sizeof(uint32_t)),3,IF,27,1,CPPASTIfStatement
+68368,CONTROL_STRUCTURE,-1,,else,10,ELSE,29,3,CPPASTCompoundStatement
+68380,CONTROL_STRUCTURE,-1,,if (NumRestarts() > max_restarts_allowed),5,IF,31,3,CPPASTIfStatement
+68388,CONTROL_STRUCTURE,-1,,else,12,ELSE,34,3,CPPASTCompoundStatement
+68404,CONTROL_STRUCTURE,-1,,if (owned_),3,IF,41,1,CPPASTIfStatement
+68418,CONTROL_STRUCTURE,-1,,if (limit - p < 3),3,IF,57,1,CPPASTIfStatement
+68451,CONTROL_STRUCTURE,-1,,if ((*shared | *non_shared | *value_length) < 128),3,IF,61,5,CPPASTIfStatement
+68466,CONTROL_STRUCTURE,-1,,else,10,ELSE,64,3,CPPASTCompoundStatement
+68468,CONTROL_STRUCTURE,-1,,"if ((p = GetVarint32Ptr(p, limit, shared)) == NULL)",5,IF,65,1,CPPASTIfStatement
+68480,CONTROL_STRUCTURE,-1,,"if ((p = GetVarint32Ptr(p, limit, non_shared)) == NULL)",5,IF,66,2,CPPASTIfStatement
+68492,CONTROL_STRUCTURE,-1,,"if ((p = GetVarint32Ptr(p, limit, value_length)) == NULL)",5,IF,67,3,CPPASTIfStatement
+68504,CONTROL_STRUCTURE,-1,,if (static_cast<uint32_t>(limit - p) < (*non_shared + *value_length)),3,IF,70,6,CPPASTIfStatement
+68662,CONTROL_STRUCTURE,-1,,while (GetRestartPoint(restart_index_) >= original),5,WHILE,149,4,<empty>
+68668,CONTROL_STRUCTURE,-1,,if (restart_index_ == 0),7,IF,150,1,CPPASTIfStatement
+68684,CONTROL_STRUCTURE,-1,,"do {
+      // Loop until end of current entry hits the start of original entry
+    } while (ParseNextKey() && NextEntryOffset() < original);",5,DO,160,6,CPPASTDoStatement
+68706,CONTROL_STRUCTURE,-1,,while (left < right),5,WHILE,170,5,<empty>
+68745,CONTROL_STRUCTURE,-1,,if (key_ptr == NULL || (shared != 0)),7,IF,177,10,CPPASTIfStatement
+68760,CONTROL_STRUCTURE,-1,,"if (Compare(mid_key, target) < 0)",7,IF,182,13,CPPASTIfStatement
+68770,CONTROL_STRUCTURE,-1,,else,14,ELSE,186,3,CPPASTCompoundStatement
+68779,CONTROL_STRUCTURE,-1,,while (true),5,WHILE,195,7,<empty>
+68782,CONTROL_STRUCTURE,-1,,if (!ParseNextKey()),7,IF,196,1,CPPASTIfStatement
+68787,CONTROL_STRUCTURE,-1,,"if (Compare(key_, target) >= 0)",7,IF,199,2,CPPASTIfStatement
+68810,CONTROL_STRUCTURE,-1,,while (ParseNextKey() && NextEntryOffset() < restarts_),5,WHILE,212,2,<empty>
+68861,CONTROL_STRUCTURE,-1,,if (p >= limit),5,IF,230,6,CPPASTIfStatement
+68888,CONTROL_STRUCTURE,-1,,if (p == NULL || key_.size() < shared),5,IF,240,11,CPPASTIfStatement
+68903,CONTROL_STRUCTURE,-1,,else,12,ELSE,243,3,CPPASTCompoundStatement
+68923,CONTROL_STRUCTURE,-1,,"while (restart_index_ + 1 < num_restarts_ &&
+             GetRestartPoint(restart_index_ + 1) < current_)",7,WHILE,247,4,<empty>
+68946,CONTROL_STRUCTURE,-1,,if (size_ < sizeof(uint32_t)),3,IF,257,1,CPPASTIfStatement
+68963,CONTROL_STRUCTURE,-1,,if (num_restarts == 0),3,IF,261,4,CPPASTIfStatement
+68970,CONTROL_STRUCTURE,-1,,else,10,ELSE,263,3,CPPASTCompoundStatement
+69118,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < restarts_.size();i++),3,FOR,65,1,CPPASTForStatement
+69190,CONTROL_STRUCTURE,-1,,if (counter_ < options_->block_restart_interval),3,IF,80,8,CPPASTIfStatement
+69212,CONTROL_STRUCTURE,-1,,while ((shared < min_length) && (last_key_piece[shared] == key[shared])),5,WHILE,83,3,<empty>
+69227,CONTROL_STRUCTURE,-1,,else,10,ELSE,86,3,CPPASTCompoundStatement
+69417,CONTROL_STRUCTURE,-1,,while (filter_index > filter_offsets_.size()),3,WHILE,25,4,<empty>
+69459,CONTROL_STRUCTURE,-1,,if (!start_.empty()),3,IF,37,1,CPPASTIfStatement
+69474,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < filter_offsets_.size();i++),3,FOR,43,4,CPPASTForStatement
+69518,CONTROL_STRUCTURE,-1,,if (num_keys == 0),3,IF,54,3,CPPASTIfStatement
+69545,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < num_keys;i++),3,FOR,63,6,CPPASTForStatement
+69633,CONTROL_STRUCTURE,-1,,if (n < 5),3,IF,86,3,CPPASTIfStatement
+69658,CONTROL_STRUCTURE,-1,,if (last_word > n - 5),3,IF,89,7,CPPASTIfStatement
+69698,CONTROL_STRUCTURE,-1,,if (index < num_),3,IF,97,3,CPPASTIfStatement
+69723,CONTROL_STRUCTURE,-1,,if (start <= limit && limit <= static_cast<size_t>(offset_ - data_)),5,IF,100,5,CPPASTIfStatement
+69753,CONTROL_STRUCTURE,-1,,else,12,ELSE,103,3,CPPASTIfStatement
+69755,CONTROL_STRUCTURE,1,,if (start == limit),12,IF,103,1,CPPASTIfStatement
+69875,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),5,FOR,24,1,CPPASTForStatement
+69926,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i + 4 <= filter.size();i += 4),5,FOR,32,3,CPPASTForStatement
+69944,CONTROL_STRUCTURE,-1,,if (h == DecodeFixed32(filter.data() + i)),7,IF,33,1,CPPASTIfStatement
+70786,CONTROL_STRUCTURE,-1,,"if (GetVarint64(input, &offset_) &&
+      GetVarint64(input, &size_))",3,IF,24,1,CPPASTIfStatement
+70802,CONTROL_STRUCTURE,-1,,else,10,ELSE,27,3,CPPASTCompoundStatement
+70907,CONTROL_STRUCTURE,-1,,if (magic != kTableMagicNumber),3,IF,49,9,CPPASTIfStatement
+70926,CONTROL_STRUCTURE,-1,,if (result.ok()),3,IF,54,12,CPPASTIfStatement
+70939,CONTROL_STRUCTURE,-1,,if (result.ok()),3,IF,57,13,CPPASTIfStatement
+71024,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,79,11,CPPASTIfStatement
+71035,CONTROL_STRUCTURE,-1,,if (contents.size() != n + kBlockTrailerSize),3,IF,83,12,CPPASTIfStatement
+71060,CONTROL_STRUCTURE,-1,,if (options.verify_checksums),3,IF,90,15,CPPASTIfStatement
+71089,CONTROL_STRUCTURE,-1,,if (actual != crc),5,IF,93,5,CPPASTIfStatement
+71105,CONTROL_STRUCTURE,-1,,switch(data[n]),3,SWITCH,100,16,CPPASTSwitchStatement
+71112,CONTROL_STRUCTURE,-1,,if (data != buf),7,IF,102,3,CPPASTIfStatement
+71136,CONTROL_STRUCTURE,-1,,else,14,ELSE,110,3,CPPASTCompoundStatement
+71155,CONTROL_STRUCTURE,-1,,break;,7,BREAK,117,4,CPPASTBreakStatement
+71163,CONTROL_STRUCTURE,-1,,"if (!port::Snappy_GetUncompressedLength(data, n, &ulength))",7,IF,120,3,CPPASTIfStatement
+71187,CONTROL_STRUCTURE,-1,,"if (!port::Snappy_Uncompress(data, n, ubuf))",7,IF,125,6,CPPASTIfStatement
+71226,CONTROL_STRUCTURE,-1,,break;,7,BREAK,134,11,CPPASTBreakStatement
+71426,CONTROL_STRUCTURE,-1,,if (cleanup_.function != NULL),3,IF,15,1,CPPASTIfStatement
+71444,CONTROL_STRUCTURE,-1,,for (Cleanup* c = cleanup_.next;c != NULL;),5,FOR,17,2,CPPASTForStatement
+71490,CONTROL_STRUCTURE,-1,,if (cleanup_.function == NULL),3,IF,29,3,CPPASTIfStatement
+71501,CONTROL_STRUCTURE,-1,,else,10,ELSE,31,3,CPPASTCompoundStatement
+71659,CONTROL_STRUCTURE,-1,,if (iter_ == NULL),5,IF,31,3,CPPASTIfStatement
+71667,CONTROL_STRUCTURE,-1,,else,12,ELSE,33,3,CPPASTCompoundStatement
+71773,CONTROL_STRUCTURE,-1,,if (valid_),5,IF,54,2,CPPASTIfStatement
+71808,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),5,FOR,22,1,CPPASTForStatement
+71847,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n_;i++),5,FOR,36,1,CPPASTForStatement
+71873,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n_;i++),5,FOR,44,1,CPPASTForStatement
+71900,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n_;i++),5,FOR,52,1,CPPASTForStatement
+71929,CONTROL_STRUCTURE,-1,,if (direction_ != kForward),5,IF,67,2,CPPASTIfStatement
+71934,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n_;i++),7,FOR,68,1,CPPASTForStatement
+71953,CONTROL_STRUCTURE,-1,,if (child != current_),9,IF,70,3,CPPASTIfStatement
+71963,CONTROL_STRUCTURE,-1,,"if (child->Valid() &&
+              comparator_->Compare(key(), child->key()) == 0)",11,IF,72,2,CPPASTIfStatement
+71999,CONTROL_STRUCTURE,-1,,if (direction_ != kReverse),5,IF,93,2,CPPASTIfStatement
+72004,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n_;i++),7,FOR,94,1,CPPASTForStatement
+72023,CONTROL_STRUCTURE,-1,,if (child != current_),9,IF,96,3,CPPASTIfStatement
+72033,CONTROL_STRUCTURE,-1,,if (child->Valid()),11,IF,98,2,CPPASTIfStatement
+72043,CONTROL_STRUCTURE,-1,,else,18,ELSE,101,3,CPPASTCompoundStatement
+72084,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n_;i++),5,FOR,126,2,CPPASTForStatement
+72104,CONTROL_STRUCTURE,-1,,if (!status.ok()),7,IF,128,2,CPPASTIfStatement
+72111,CONTROL_STRUCTURE,-1,,break;,9,BREAK,129,1,CPPASTBreakStatement
+72138,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n_;i++),3,FOR,157,3,CPPASTForStatement
+72157,CONTROL_STRUCTURE,-1,,if (child->Valid()),5,IF,159,3,CPPASTIfStatement
+72163,CONTROL_STRUCTURE,-1,,if (smallest == NULL),7,IF,160,1,CPPASTIfStatement
+72171,CONTROL_STRUCTURE,-1,,else,14,ELSE,162,3,CPPASTIfStatement
+72173,CONTROL_STRUCTURE,1,,"if (comparator_->Compare(child->key(), smallest->key()) < 0)",14,IF,162,1,CPPASTIfStatement
+72203,CONTROL_STRUCTURE,-1,,for (int i = n_-1;i >= 0;i--),3,FOR,172,3,CPPASTForStatement
+72224,CONTROL_STRUCTURE,-1,,if (child->Valid()),5,IF,174,3,CPPASTIfStatement
+72230,CONTROL_STRUCTURE,-1,,if (largest == NULL),7,IF,175,1,CPPASTIfStatement
+72238,CONTROL_STRUCTURE,-1,,else,14,ELSE,177,3,CPPASTIfStatement
+72240,CONTROL_STRUCTURE,1,,"if (comparator_->Compare(child->key(), largest->key()) > 0)",14,IF,177,1,CPPASTIfStatement
+72273,CONTROL_STRUCTURE,-1,,if (n == 0),3,IF,188,2,CPPASTIfStatement
+72280,CONTROL_STRUCTURE,-1,,else,10,ELSE,190,3,CPPASTIfStatement
+72282,CONTROL_STRUCTURE,1,,if (n == 1),10,IF,190,1,CPPASTIfStatement
+72291,CONTROL_STRUCTURE,-1,,else,10,ELSE,192,3,CPPASTCompoundStatement
+72373,CONTROL_STRUCTURE,-1,,if (size < Footer::kEncodedLength),3,IF,43,2,CPPASTIfStatement
+72406,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,51,7,CPPASTIfStatement
+72424,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,55,10,CPPASTIfStatement
+72438,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,60,14,CPPASTIfStatement
+72445,CONTROL_STRUCTURE,-1,,if (options.paranoid_checks),5,IF,62,2,CPPASTIfStatement
+72466,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,66,4,CPPASTIfStatement
+72477,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,71,15,CPPASTIfStatement
+72548,CONTROL_STRUCTURE,-1,,else,10,ELSE,84,3,CPPASTCompoundStatement
+72559,CONTROL_STRUCTURE,-1,,if (rep_->options.filter_policy == NULL),3,IF,92,1,CPPASTIfStatement
+72570,CONTROL_STRUCTURE,-1,,if (rep_->options.paranoid_checks),3,IF,99,3,CPPASTIfStatement
+72583,CONTROL_STRUCTURE,-1,,"if (!ReadBlock(rep_->file, opt, footer.metaindex_handle(), &contents).ok())",3,IF,103,5,CPPASTIfStatement
+72636,CONTROL_STRUCTURE,-1,,if (iter->Valid() && iter->key() == Slice(key)),3,IF,113,14,CPPASTIfStatement
+72669,CONTROL_STRUCTURE,-1,,if (!filter_handle.DecodeFrom(&v).ok()),3,IF,123,4,CPPASTIfStatement
+72683,CONTROL_STRUCTURE,-1,,if (rep_->options.paranoid_checks),3,IF,130,6,CPPASTIfStatement
+72696,CONTROL_STRUCTURE,-1,,"if (!ReadBlock(rep_->file, opt, filter_handle, &block).ok())",3,IF,134,8,CPPASTIfStatement
+72711,CONTROL_STRUCTURE,-1,,if (block.heap_allocated),3,IF,137,9,CPPASTIfStatement
+72838,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,178,14,CPPASTIfStatement
+72845,CONTROL_STRUCTURE,-1,,if (block_cache != NULL),5,IF,180,2,CPPASTIfStatement
+72878,CONTROL_STRUCTURE,-1,,if (cache_handle != NULL),7,IF,186,7,CPPASTIfStatement
+72892,CONTROL_STRUCTURE,-1,,else,14,ELSE,188,3,CPPASTCompoundStatement
+72906,CONTROL_STRUCTURE,-1,,if (s.ok()),9,IF,190,2,CPPASTIfStatement
+72917,CONTROL_STRUCTURE,-1,,if (contents.cachable && options.fill_cache),11,IF,192,2,CPPASTIfStatement
+72940,CONTROL_STRUCTURE,-1,,else,12,ELSE,198,3,CPPASTCompoundStatement
+72954,CONTROL_STRUCTURE,-1,,if (s.ok()),7,IF,200,2,CPPASTIfStatement
+72966,CONTROL_STRUCTURE,-1,,if (block != NULL),3,IF,207,16,CPPASTIfStatement
+72984,CONTROL_STRUCTURE,-1,,if (cache_handle == NULL),5,IF,209,2,CPPASTIfStatement
+72997,CONTROL_STRUCTURE,-1,,else,12,ELSE,211,3,CPPASTCompoundStatement
+73007,CONTROL_STRUCTURE,-1,,else,10,ELSE,214,3,CPPASTCompoundStatement
+73069,CONTROL_STRUCTURE,-1,,if (iiter->Valid()),3,IF,232,5,CPPASTIfStatement
+73089,CONTROL_STRUCTURE,-1,,"if (filter != NULL &&
+        handle.DecodeFrom(&handle_value).ok() &&
+        !filter->KeyMayMatch(handle.offset(), k))",5,IF,236,6,CPPASTIfStatement
+73115,CONTROL_STRUCTURE,-1,,else,12,ELSE,240,3,CPPASTCompoundStatement
+73132,CONTROL_STRUCTURE,-1,,if (block_iter->Valid()),7,IF,243,4,CPPASTIfStatement
+73158,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,250,6,CPPASTIfStatement
+73199,CONTROL_STRUCTURE,-1,,if (index_iter->Valid()),3,IF,263,5,CPPASTIfStatement
+73222,CONTROL_STRUCTURE,-1,,if (s.ok()),5,IF,267,6,CPPASTIfStatement
+73234,CONTROL_STRUCTURE,-1,,else,12,ELSE,269,3,CPPASTCompoundStatement
+73244,CONTROL_STRUCTURE,-1,,else,10,ELSE,275,3,CPPASTCompoundStatement
+73318,CONTROL_STRUCTURE,-1,,if (rep_->filter_block != NULL),3,IF,65,1,CPPASTIfStatement
+73351,CONTROL_STRUCTURE,-1,,if (options.comparator != rep_->options.comparator),3,IF,80,1,CPPASTIfStatement
+73405,CONTROL_STRUCTURE,-1,,if (!ok()),3,IF,95,4,CPPASTIfStatement
+73410,CONTROL_STRUCTURE,-1,,if (r->num_entries > 0),3,IF,96,5,CPPASTIfStatement
+73433,CONTROL_STRUCTURE,-1,,if (r->pending_index_entry),3,IF,100,6,CPPASTIfStatement
+73483,CONTROL_STRUCTURE,-1,,if (r->filter_block != NULL),3,IF,109,7,CPPASTIfStatement
+73532,CONTROL_STRUCTURE,-1,,if (estimated_block_size >= r->options.block_size),3,IF,118,13,CPPASTIfStatement
+73555,CONTROL_STRUCTURE,-1,,if (!ok()),3,IF,126,4,CPPASTIfStatement
+73560,CONTROL_STRUCTURE,-1,,if (r->data_block.empty()),3,IF,127,5,CPPASTIfStatement
+73583,CONTROL_STRUCTURE,-1,,if (ok()),3,IF,130,8,CPPASTIfStatement
+73601,CONTROL_STRUCTURE,-1,,if (r->filter_block != NULL),3,IF,134,9,CPPASTIfStatement
+73645,CONTROL_STRUCTURE,-1,,switch(type),3,SWITCH,151,9,CPPASTSwitchStatement
+73653,CONTROL_STRUCTURE,-1,,break;,7,BREAK,154,4,CPPASTBreakStatement
+73664,CONTROL_STRUCTURE,-1,,"if (port::Snappy_Compress(raw.data(), raw.size(), compressed) &&
+          compressed->size() < raw.size() - (raw.size() / 8u))",7,IF,158,3,CPPASTIfStatement
+73700,CONTROL_STRUCTURE,-1,,else,14,ELSE,161,3,CPPASTCompoundStatement
+73708,CONTROL_STRUCTURE,-1,,break;,7,BREAK,167,4,CPPASTBreakStatement
+73760,CONTROL_STRUCTURE,-1,,if (r->status.ok()),3,IF,182,6,CPPASTIfStatement
+73820,CONTROL_STRUCTURE,-1,,if (r->status.ok()),5,IF,189,8,CPPASTIfStatement
+73868,CONTROL_STRUCTURE,-1,,if (ok() && r->filter_block != NULL),3,IF,208,9,CPPASTIfStatement
+73887,CONTROL_STRUCTURE,-1,,if (ok()),3,IF,214,10,CPPASTIfStatement
+73896,CONTROL_STRUCTURE,-1,,if (r->filter_block != NULL),5,IF,216,3,CPPASTIfStatement
+73937,CONTROL_STRUCTURE,-1,,if (ok()),3,IF,230,11,CPPASTIfStatement
+73940,CONTROL_STRUCTURE,-1,,if (r->pending_index_entry),5,IF,231,1,CPPASTIfStatement
+73989,CONTROL_STRUCTURE,-1,,if (ok()),3,IF,242,12,CPPASTIfStatement
+74021,CONTROL_STRUCTURE,-1,,if (r->status.ok()),5,IF,249,7,CPPASTIfStatement
+74127,CONTROL_STRUCTURE,-1,,for (std::string::reverse_iterator rit = str.rbegin();rit != str.rend();++rit),3,FOR,30,5,CPPASTForStatement
+74234,CONTROL_STRUCTURE,-1,,if (cmp == BytewiseComparator()),3,IF,67,1,CPPASTIfStatement
+74244,CONTROL_STRUCTURE,-1,,else,10,ELSE,69,3,CPPASTCompoundStatement
+74384,CONTROL_STRUCTURE,-1,,if (offset > contents_.size()),5,IF,122,1,CPPASTIfStatement
+74398,CONTROL_STRUCTURE,-1,,if (offset + n > contents_.size()),5,IF,125,2,CPPASTIfStatement
+74475,CONTROL_STRUCTURE,-1,,for (KVMap::const_iterator it = data_.begin();it != data_.end();++it),5,FOR,158,3,CPPASTForStatement
+74588,CONTROL_STRUCTURE,-1,,for (KVMap::const_iterator it = data.begin();it != data.end();++it),5,FOR,195,5,CPPASTForStatement
+74692,CONTROL_STRUCTURE,-1,,for (KVMap::const_iterator it = data.begin();it != data.end();++it),5,FOR,235,5,CPPASTForStatement
+74970,CONTROL_STRUCTURE,-1,,"if (!ParseInternalKey(iter_->key(), &key))",5,IF,295,3,CPPASTIfStatement
+75076,CONTROL_STRUCTURE,-1,,for (KVMap::const_iterator it = data.begin();it != data.end();++it),5,FOR,332,6,CPPASTForStatement
+75154,CONTROL_STRUCTURE,-1,,for (KVMap::const_iterator it = data.begin();it != data.end();++it),5,FOR,364,4,CPPASTForStatement
+75451,CONTROL_STRUCTURE,-1,,if (args.reverse_compare),5,IF,450,6,CPPASTIfStatement
+75462,CONTROL_STRUCTURE,-1,,switch(args.type),5,SWITCH,453,7,CPPASTSwitchStatement
+75476,CONTROL_STRUCTURE,-1,,break;,9,BREAK,456,4,CPPASTBreakStatement
+75486,CONTROL_STRUCTURE,-1,,break;,9,BREAK,459,8,CPPASTBreakStatement
+75496,CONTROL_STRUCTURE,-1,,break;,9,BREAK,462,12,CPPASTBreakStatement
+75506,CONTROL_STRUCTURE,-1,,break;,9,BREAK,465,16,CPPASTBreakStatement
+75600,CONTROL_STRUCTURE,-1,,for (KVMap::const_iterator model_iter = data.begin();model_iter != data.end();++model_iter),5,FOR,492,5,CPPASTForStatement
+75709,CONTROL_STRUCTURE,-1,,for (KVMap::const_reverse_iterator model_iter = data.rbegin();model_iter != data.rend();++model_iter),5,FOR,507,5,CPPASTForStatement
+75826,CONTROL_STRUCTURE,-1,,if (kVerbose),5,IF,524,8,CPPASTIfStatement
+75832,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 200;i++),5,FOR,525,9,CPPASTForStatement
+75852,CONTROL_STRUCTURE,-1,,switch(toss),7,SWITCH,527,3,CPPASTSwitchStatement
+75858,CONTROL_STRUCTURE,-1,,if (iter->Valid()),11,IF,529,1,CPPASTIfStatement
+75864,CONTROL_STRUCTURE,-1,,if (kVerbose),13,IF,530,1,CPPASTIfStatement
+75896,CONTROL_STRUCTURE,-1,,break;,11,BREAK,535,2,CPPASTBreakStatement
+75900,CONTROL_STRUCTURE,-1,,if (kVerbose),11,IF,539,1,CPPASTIfStatement
+75936,CONTROL_STRUCTURE,-1,,break;,11,BREAK,543,5,CPPASTBreakStatement
+75953,CONTROL_STRUCTURE,-1,,if (kVerbose),11,IF,549,4,CPPASTIfStatement
+75990,CONTROL_STRUCTURE,-1,,break;,11,BREAK,553,7,CPPASTBreakStatement
+75994,CONTROL_STRUCTURE,-1,,if (iter->Valid()),11,IF,557,1,CPPASTIfStatement
+76000,CONTROL_STRUCTURE,-1,,if (kVerbose),13,IF,558,1,CPPASTIfStatement
+76010,CONTROL_STRUCTURE,-1,,if (model_iter == data.begin()),13,IF,560,3,CPPASTIfStatement
+76024,CONTROL_STRUCTURE,-1,,else,20,ELSE,562,3,CPPASTCompoundStatement
+76048,CONTROL_STRUCTURE,-1,,break;,11,BREAK,567,2,CPPASTBreakStatement
+76052,CONTROL_STRUCTURE,-1,,if (kVerbose),11,IF,571,1,CPPASTIfStatement
+76062,CONTROL_STRUCTURE,-1,,if (keys.empty()),11,IF,573,3,CPPASTIfStatement
+76074,CONTROL_STRUCTURE,-1,,else,18,ELSE,575,3,CPPASTCompoundStatement
+76112,CONTROL_STRUCTURE,-1,,break;,11,BREAK,580,5,CPPASTBreakStatement
+76121,CONTROL_STRUCTURE,-1,,if (it == data.end()),5,IF,588,1,CPPASTIfStatement
+76131,CONTROL_STRUCTURE,-1,,else,12,ELSE,590,3,CPPASTCompoundStatement
+76153,CONTROL_STRUCTURE,-1,,if (it == data.rend()),5,IF,597,1,CPPASTIfStatement
+76163,CONTROL_STRUCTURE,-1,,else,12,ELSE,599,3,CPPASTCompoundStatement
+76184,CONTROL_STRUCTURE,-1,,if (!it->Valid()),5,IF,605,1,CPPASTIfStatement
+76193,CONTROL_STRUCTURE,-1,,else,12,ELSE,607,3,CPPASTCompoundStatement
+76223,CONTROL_STRUCTURE,-1,,if (keys.empty()),5,IF,613,1,CPPASTIfStatement
+76231,CONTROL_STRUCTURE,-1,,else,12,ELSE,615,3,CPPASTCompoundStatement
+76250,CONTROL_STRUCTURE,-1,,switch(rnd->Uniform(3)),7,SWITCH,618,5,CPPASTSwitchStatement
+76259,CONTROL_STRUCTURE,-1,,break;,11,BREAK,621,3,CPPASTBreakStatement
+76263,CONTROL_STRUCTURE,-1,,if (result.size() > 0 && result[result.size()-1] > '\0'),11,IF,624,1,CPPASTIfStatement
+76291,CONTROL_STRUCTURE,-1,,break;,11,BREAK,627,2,CPPASTBreakStatement
+76301,CONTROL_STRUCTURE,-1,,break;,11,BREAK,632,2,CPPASTBreakStatement
+76348,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumTestArgs;i++),3,FOR,649,1,CPPASTForStatement
+76564,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumTestArgs;i++),3,FOR,679,1,CPPASTForStatement
+76627,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumTestArgs;i++),3,FOR,688,1,CPPASTForStatement
+76690,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumTestArgs;i++),3,FOR,697,1,CPPASTForStatement
+76759,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumTestArgs;i++),3,FOR,708,1,CPPASTForStatement
+76822,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumTestArgs;i++),3,FOR,717,1,CPPASTForStatement
+76846,CONTROL_STRUCTURE,-1,,for (int num_entries = 0;num_entries < 2000;num_entries += (num_entries < 50 ? 1 : 200)),5,FOR,720,4,CPPASTForStatement
+76864,CONTROL_STRUCTURE,-1,,if ((num_entries % 10) == 0),7,IF,722,1,CPPASTIfStatement
+76881,CONTROL_STRUCTURE,-1,,for (int e = 0;e < num_entries;e++),7,FOR,726,2,CPPASTForStatement
+76977,CONTROL_STRUCTURE,-1,,for (int e = 0;e < num_entries;e++),3,FOR,741,8,CPPASTForStatement
+77025,CONTROL_STRUCTURE,-1,,for (int level = 0;level < config::kNumLevels;level++),3,FOR,750,12,CPPASTForStatement
+77238,CONTROL_STRUCTURE,-1,,while (iter->Valid()),3,WHILE,776,16,<empty>
+77294,CONTROL_STRUCTURE,-1,,if (!result),3,IF,789,3,CPPASTIfStatement
+77740,CONTROL_STRUCTURE,-1,,if (!SnappyCompressionSupported()),3,IF,837,1,CPPASTIfStatement
+78089,CONTROL_STRUCTURE,-1,,if (!index_iter_.status().ok()),5,IF,47,1,CPPASTIfStatement
+78104,CONTROL_STRUCTURE,-1,,else,12,ELSE,49,3,CPPASTIfStatement
+78106,CONTROL_STRUCTURE,1,,if (data_iter_.iter() != NULL && !data_iter_.status().ok()),12,IF,49,1,CPPASTIfStatement
+78128,CONTROL_STRUCTURE,-1,,else,12,ELSE,51,3,CPPASTCompoundStatement
+78137,CONTROL_STRUCTURE,-1,,if (status_.ok() && !s.ok()),5,IF,58,1,CPPASTIfStatement
+78199,CONTROL_STRUCTURE,-1,,if (data_iter_.iter() != NULL),3,IF,94,3,CPPASTIfStatement
+78222,CONTROL_STRUCTURE,-1,,if (data_iter_.iter() != NULL),3,IF,101,3,CPPASTIfStatement
+78244,CONTROL_STRUCTURE,-1,,if (data_iter_.iter() != NULL),3,IF,108,3,CPPASTIfStatement
+78283,CONTROL_STRUCTURE,-1,,while (data_iter_.iter() == NULL || !data_iter_.Valid()),3,WHILE,126,1,<empty>
+78297,CONTROL_STRUCTURE,-1,,if (!index_iter_.Valid()),5,IF,128,1,CPPASTIfStatement
+78311,CONTROL_STRUCTURE,-1,,if (data_iter_.iter() != NULL),5,IF,134,4,CPPASTIfStatement
+78327,CONTROL_STRUCTURE,-1,,while (data_iter_.iter() == NULL || !data_iter_.Valid()),3,WHILE,139,1,<empty>
+78341,CONTROL_STRUCTURE,-1,,if (!index_iter_.Valid()),5,IF,141,1,CPPASTIfStatement
+78355,CONTROL_STRUCTURE,-1,,if (data_iter_.iter() != NULL),5,IF,147,4,CPPASTIfStatement
+78372,CONTROL_STRUCTURE,-1,,if (data_iter_.iter() != NULL),3,IF,152,1,CPPASTIfStatement
+78394,CONTROL_STRUCTURE,-1,,if (!index_iter_.Valid()),3,IF,157,1,CPPASTIfStatement
+78402,CONTROL_STRUCTURE,-1,,else,10,ELSE,159,3,CPPASTCompoundStatement
+78411,CONTROL_STRUCTURE,-1,,if (data_iter_.iter() != NULL && handle.compare(data_block_handle_) == 0),5,IF,161,3,CPPASTIfStatement
+78427,CONTROL_STRUCTURE,-1,,else,12,ELSE,164,3,CPPASTCompoundStatement
+78512,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < blocks_.size();i++),3,FOR,18,1,CPPASTForStatement
+78536,CONTROL_STRUCTURE,-1,,if (bytes > kBlockSize / 4),3,IF,24,1,CPPASTIfStatement
+78621,CONTROL_STRUCTURE,-1,,if (needed <= alloc_bytes_remaining_),3,IF,48,11,CPPASTIfStatement
+78637,CONTROL_STRUCTURE,-1,,else,10,ELSE,52,3,CPPASTCompoundStatement
+78763,CONTROL_STRUCTURE,-1,,if (bytes <= alloc_bytes_remaining_),3,IF,57,2,CPPASTIfStatement
+78884,CONTROL_STRUCTURE,-1,,for (int i = 0;i < N;i++),3,FOR,24,9,CPPASTForStatement
+78897,CONTROL_STRUCTURE,-1,,if (i % (N / 10) == 0),5,IF,26,2,CPPASTIfStatement
+78909,CONTROL_STRUCTURE,-1,,else,12,ELSE,28,3,CPPASTCompoundStatement
+78940,CONTROL_STRUCTURE,-1,,if (s == 0),5,IF,32,3,CPPASTIfStatement
+78949,CONTROL_STRUCTURE,-1,,if (rnd.OneIn(10)),5,IF,37,5,CPPASTIfStatement
+78963,CONTROL_STRUCTURE,-1,,else,12,ELSE,39,3,CPPASTCompoundStatement
+78972,CONTROL_STRUCTURE,-1,,for (size_t b = 0;b < s;b++),5,FOR,43,6,CPPASTForStatement
+79027,CONTROL_STRUCTURE,-1,,if (i > N/10),5,IF,50,10,CPPASTIfStatement
+79058,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < allocated.size();i++),3,FOR,54,10,CPPASTForStatement
+79089,CONTROL_STRUCTURE,-1,,for (size_t b = 0;b < num_bytes;b++),5,FOR,57,5,CPPASTForStatement
+79181,CONTROL_STRUCTURE,-1,,if (k_ < 1),5,IF,27,2,CPPASTIfStatement
+79189,CONTROL_STRUCTURE,-1,,if (k_ > 30),5,IF,28,3,CPPASTIfStatement
+79216,CONTROL_STRUCTURE,-1,,if (bits < 64),5,IF,41,3,CPPASTIfStatement
+79267,CONTROL_STRUCTURE,-1,,for (int i = 0;i < n;i++),5,FOR,50,13,CPPASTForStatement
+79296,CONTROL_STRUCTURE,-1,,for (size_t j = 0;j < k_;j++),7,FOR,55,5,CPPASTForStatement
+79341,CONTROL_STRUCTURE,-1,,if (len < 2),5,IF,65,3,CPPASTIfStatement
+79371,CONTROL_STRUCTURE,-1,,if (k > 30),5,IF,73,10,CPPASTIfStatement
+79393,CONTROL_STRUCTURE,-1,,for (size_t j = 0;j < k;j++),5,FOR,81,15,CPPASTForStatement
+79411,CONTROL_STRUCTURE,-1,,if ((array[bitpos/8] & (1 << (bitpos % 8))) == 0),7,IF,83,3,CPPASTIfStatement
+79520,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < keys_.size();i++),5,FOR,45,2,CPPASTForStatement
+79567,CONTROL_STRUCTURE,-1,,if (kVerbose >= 2),5,IF,52,6,CPPASTIfStatement
+79589,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i+1 < filter_.size();i++),5,FOR,61,2,CPPASTForStatement
+79614,CONTROL_STRUCTURE,-1,,for (int j = 0;j < 8;j++),7,FOR,63,3,CPPASTForStatement
+79645,CONTROL_STRUCTURE,-1,,if (!keys_.empty()),5,IF,71,1,CPPASTIfStatement
+79669,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 10000;i++),5,FOR,80,4,CPPASTForStatement
+79681,CONTROL_STRUCTURE,-1,,"if (Matches(Key(i + 1000000000, buffer)))",7,IF,81,1,CPPASTIfStatement
+79886,CONTROL_STRUCTURE,-1,,if (length < 10),3,IF,104,1,CPPASTIfStatement
+79894,CONTROL_STRUCTURE,-1,,else,10,ELSE,106,3,CPPASTIfStatement
+79896,CONTROL_STRUCTURE,1,,if (length < 100),10,IF,106,1,CPPASTIfStatement
+79904,CONTROL_STRUCTURE,-1,,else,10,ELSE,108,3,CPPASTIfStatement
+79906,CONTROL_STRUCTURE,1,,if (length < 1000),10,IF,108,1,CPPASTIfStatement
+79914,CONTROL_STRUCTURE,-1,,else,10,ELSE,110,3,CPPASTCompoundStatement
+79963,CONTROL_STRUCTURE,-1,,for (int length = 1;length <= 10000;length = NextLength(length)),3,FOR,123,6,CPPASTForStatement
+79978,CONTROL_STRUCTURE,-1,,for (int i = 0;i < length;i++),5,FOR,125,2,CPPASTForStatement
+80021,CONTROL_STRUCTURE,-1,,for (int i = 0;i < length;i++),5,FOR,134,5,CPPASTForStatement
+80063,CONTROL_STRUCTURE,-1,,if (kVerbose >= 1),5,IF,141,8,CPPASTIfStatement
+80095,CONTROL_STRUCTURE,-1,,if (rate > 0.0125),5,IF,146,10,CPPASTIfStatement
+80102,CONTROL_STRUCTURE,-1,,else,10,ELSE,147,3,CPPASTExpressionStatement
+80106,CONTROL_STRUCTURE,-1,,if (kVerbose >= 1),3,IF,149,7,CPPASTIfStatement
+80193,CONTROL_STRUCTURE,-1,,if (next == this),5,IF,58,1,CPPASTIfStatement
+80203,CONTROL_STRUCTURE,-1,,else,12,ELSE,60,3,CPPASTCompoundStatement
+80275,CONTROL_STRUCTURE,-1,,if (old == NULL),5,IF,85,7,CPPASTIfStatement
+80282,CONTROL_STRUCTURE,-1,,if (elems_ > length_),7,IF,87,2,CPPASTIfStatement
+80307,CONTROL_STRUCTURE,-1,,if (result != NULL),5,IF,99,5,CPPASTIfStatement
+80342,CONTROL_STRUCTURE,-1,,"while (*ptr != NULL &&
+           ((*ptr)->hash != hash || key != (*ptr)->key()))",5,WHILE,118,3,<empty>
+80380,CONTROL_STRUCTURE,-1,,while (new_length < elems_),5,WHILE,127,3,<empty>
+80406,CONTROL_STRUCTURE,-1,,for (uint32_t i = 0;i < length_;i++),5,FOR,133,9,CPPASTForStatement
+80424,CONTROL_STRUCTURE,-1,,while (h != NULL),7,WHILE,135,3,<empty>
+80607,CONTROL_STRUCTURE,-1,,for (LRUHandle* e = lru_.next;e != &lru_;),3,FOR,211,2,CPPASTForStatement
+80651,CONTROL_STRUCTURE,-1,,if (e->refs == 1 && e->in_cache),3,IF,222,1,CPPASTIfStatement
+80687,CONTROL_STRUCTURE,-1,,if (e->refs == 0),3,IF,232,3,CPPASTIfStatement
+80713,CONTROL_STRUCTURE,-1,,else,10,ELSE,236,3,CPPASTIfStatement
+80715,CONTROL_STRUCTURE,1,,if (e->in_cache && e->refs == 1),10,IF,236,1,CPPASTIfStatement
+80806,CONTROL_STRUCTURE,-1,,if (e != NULL),3,IF,258,5,CPPASTIfStatement
+80908,CONTROL_STRUCTURE,-1,,if (capacity_ > 0),3,IF,285,13,CPPASTIfStatement
+80935,CONTROL_STRUCTURE,-1,,while (usage_ > capacity_ && lru_.next != &lru_),3,WHILE,293,14,<empty>
+80974,CONTROL_STRUCTURE,-1,,if (!erased),5,IF,297,6,CPPASTIfStatement
+80989,CONTROL_STRUCTURE,-1,,if (e != NULL),3,IF,308,1,CPPASTIfStatement
+81041,CONTROL_STRUCTURE,-1,,while (lru_.next != &lru_),3,WHILE,325,3,<empty>
+81076,CONTROL_STRUCTURE,-1,,if (!erased),5,IF,329,6,CPPASTIfStatement
+81138,CONTROL_STRUCTURE,-1,,for (int s = 0;s < kNumShards;s++),5,FOR,356,3,CPPASTForStatement
+81273,CONTROL_STRUCTURE,-1,,for (int s = 0;s < kNumShards;s++),5,FOR,386,1,CPPASTForStatement
+81299,CONTROL_STRUCTURE,-1,,for (int s = 0;s < kNumShards;s++),5,FOR,392,3,CPPASTForStatement
+81468,CONTROL_STRUCTURE,-1,,if (handle != NULL),5,IF,51,5,CPPASTIfStatement
+82458,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kCacheSize + 100;i++),3,FOR,148,6,CPPASTForStatement
+82616,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kCacheSize + 100;i++),3,FOR,162,2,CPPASTForStatement
+82641,CONTROL_STRUCTURE,-1,,for (int i = 0;i < h.size();i++),3,FOR,167,3,CPPASTForStatement
+82676,CONTROL_STRUCTURE,-1,,for (int i = 0;i < h.size();i++),3,FOR,171,4,CPPASTForStatement
+82747,CONTROL_STRUCTURE,-1,,while (added < 2*kCacheSize),3,WHILE,184,9,<empty>
+82778,CONTROL_STRUCTURE,-1,,for (int i = 0;i < index;i++),3,FOR,192,12,CPPASTForStatement
+82804,CONTROL_STRUCTURE,-1,,if (r >= 0),5,IF,195,5,CPPASTIfStatement
+83054,CONTROL_STRUCTURE,-1,,if (port::kLittleEndian),3,IF,10,1,CPPASTIfStatement
+83065,CONTROL_STRUCTURE,-1,,else,10,ELSE,12,3,CPPASTCompoundStatement
+83107,CONTROL_STRUCTURE,-1,,if (port::kLittleEndian),3,IF,21,1,CPPASTIfStatement
+83118,CONTROL_STRUCTURE,-1,,else,10,ELSE,23,3,CPPASTCompoundStatement
+83240,CONTROL_STRUCTURE,-1,,if (v < (1<<7)),3,IF,51,5,CPPASTIfStatement
+83252,CONTROL_STRUCTURE,-1,,else,10,ELSE,53,3,CPPASTIfStatement
+83254,CONTROL_STRUCTURE,1,,if (v < (1<<14)),10,IF,53,1,CPPASTIfStatement
+83275,CONTROL_STRUCTURE,-1,,else,10,ELSE,56,3,CPPASTIfStatement
+83277,CONTROL_STRUCTURE,1,,if (v < (1<<21)),10,IF,56,1,CPPASTIfStatement
+83307,CONTROL_STRUCTURE,-1,,else,10,ELSE,60,3,CPPASTIfStatement
+83309,CONTROL_STRUCTURE,1,,if (v < (1<<28)),10,IF,60,1,CPPASTIfStatement
+83348,CONTROL_STRUCTURE,-1,,else,10,ELSE,65,3,CPPASTCompoundStatement
+83432,CONTROL_STRUCTURE,-1,,while (v >= B),3,WHILE,84,5,<empty>
+83516,CONTROL_STRUCTURE,-1,,while (v >= 128),3,WHILE,105,3,<empty>
+83539,CONTROL_STRUCTURE,-1,,for (uint32_t shift = 0;shift <= 28 && p < limit;shift += 7),3,FOR,116,3,CPPASTForStatement
+83565,CONTROL_STRUCTURE,-1,,if (byte & 128),5,IF,119,4,CPPASTIfStatement
+83577,CONTROL_STRUCTURE,-1,,else,12,ELSE,122,3,CPPASTCompoundStatement
+83623,CONTROL_STRUCTURE,-1,,if (q == NULL),3,IF,135,7,CPPASTIfStatement
+83630,CONTROL_STRUCTURE,-1,,else,10,ELSE,137,3,CPPASTCompoundStatement
+83653,CONTROL_STRUCTURE,-1,,for (uint32_t shift = 0;shift <= 63 && p < limit;shift += 7),3,FOR,145,3,CPPASTForStatement
+83679,CONTROL_STRUCTURE,-1,,if (byte & 128),5,IF,148,4,CPPASTIfStatement
+83691,CONTROL_STRUCTURE,-1,,else,12,ELSE,151,3,CPPASTCompoundStatement
+83737,CONTROL_STRUCTURE,-1,,if (q == NULL),3,IF,164,7,CPPASTIfStatement
+83744,CONTROL_STRUCTURE,-1,,else,10,ELSE,166,3,CPPASTCompoundStatement
+83771,CONTROL_STRUCTURE,-1,,if (p == NULL),3,IF,176,3,CPPASTIfStatement
+83778,CONTROL_STRUCTURE,-1,,if (p + len > limit),3,IF,177,4,CPPASTIfStatement
+83804,CONTROL_STRUCTURE,-1,,"if (GetVarint32(input, &len) &&
+      input->size() >= len)",3,IF,184,2,CPPASTIfStatement
+83833,CONTROL_STRUCTURE,-1,,else,10,ELSE,189,3,CPPASTCompoundStatement
+83949,CONTROL_STRUCTURE,-1,,if (port::kLittleEndian),3,IF,59,1,CPPASTIfStatement
+83963,CONTROL_STRUCTURE,-1,,else,10,ELSE,64,3,CPPASTCompoundStatement
+84008,CONTROL_STRUCTURE,-1,,if (port::kLittleEndian),3,IF,73,1,CPPASTIfStatement
+84022,CONTROL_STRUCTURE,-1,,else,10,ELSE,78,3,CPPASTCompoundStatement
+84056,CONTROL_STRUCTURE,-1,,if (p < limit),3,IF,92,1,CPPASTIfStatement
+84068,CONTROL_STRUCTURE,-1,,if ((result & 128) == 0),5,IF,94,3,CPPASTIfStatement
+84133,CONTROL_STRUCTURE,-1,,for (uint32_t v = 0;v < 100000;v++),3,FOR,15,2,CPPASTForStatement
+84156,CONTROL_STRUCTURE,-1,,for (uint32_t v = 0;v < 100000;v++),3,FOR,20,5,CPPASTForStatement
+84228,CONTROL_STRUCTURE,-1,,for (int power = 0;power <= 63;power++),3,FOR,29,2,CPPASTForStatement
+84273,CONTROL_STRUCTURE,-1,,for (int power = 0;power <= 63;power++),3,FOR,37,5,CPPASTForStatement
+84798,CONTROL_STRUCTURE,-1,,for (uint32_t i = 0;i < (32 * 32);i++),3,FOR,79,2,CPPASTForStatement
+84842,CONTROL_STRUCTURE,-1,,for (uint32_t i = 0;i < (32 * 32);i++),3,FOR,86,7,CPPASTForStatement
+85024,CONTROL_STRUCTURE,-1,,for (uint32_t k = 0;k < 64;k++),3,FOR,106,6,CPPASTForStatement
+85062,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < values.size();i++),3,FOR,115,8,CPPASTForStatement
+85099,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < values.size();i++),3,FOR,121,13,CPPASTForStatement
+85334,CONTROL_STRUCTURE,-1,,for (size_t len = 0;len < s.size() - 1;len++),3,FOR,146,6,CPPASTForStatement
+85545,CONTROL_STRUCTURE,-1,,for (size_t len = 0;len < s.size() - 1;len++),3,FOR,165,6,CPPASTForStatement
+85982,CONTROL_STRUCTURE,-1,,"while ((diff_index < min_length) &&
+           ((*start)[diff_index] == limit[diff_index]))",5,WHILE,35,5,<empty>
+85998,CONTROL_STRUCTURE,-1,,if (diff_index >= min_length),5,IF,40,6,CPPASTIfStatement
+86003,CONTROL_STRUCTURE,-1,,else,12,ELSE,42,3,CPPASTCompoundStatement
+86014,CONTROL_STRUCTURE,-1,,"if (diff_byte < static_cast<uint8_t>(0xff) &&
+          diff_byte + 1 < static_cast<uint8_t>(limit[diff_index]))",7,IF,44,3,CPPASTIfStatement
+86062,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < n;i++),5,FOR,56,3,CPPASTForStatement
+86081,CONTROL_STRUCTURE,-1,,if (byte != static_cast<uint8_t>(0xff)),7,IF,58,3,CPPASTIfStatement
+87235,CONTROL_STRUCTURE,-1,,if (accelerate),3,IF,301,3,CPPASTIfStatement
+87282,CONTROL_STRUCTURE,-1,,if (x <= e),3,IF,326,14,CPPASTIfStatement
+87287,CONTROL_STRUCTURE,-1,,while (p != x),5,WHILE,328,1,<empty>
+87295,CONTROL_STRUCTURE,1,,STEP1;,7,DO,329,1,CPPASTDoStatement
+87317,CONTROL_STRUCTURE,-1,,while ((e-p) >= 16),3,WHILE,333,15,<empty>
+87327,CONTROL_STRUCTURE,1,,STEP4;,5,DO,334,1,CPPASTDoStatement
+87372,CONTROL_STRUCTURE,1,,STEP4;,12,DO,334,1,CPPASTDoStatement
+87417,CONTROL_STRUCTURE,1,,STEP4;,19,DO,334,1,CPPASTDoStatement
+87462,CONTROL_STRUCTURE,1,,STEP4;,26,DO,334,1,CPPASTDoStatement
+87504,CONTROL_STRUCTURE,-1,,while ((e-p) >= 4),3,WHILE,337,16,<empty>
+87514,CONTROL_STRUCTURE,1,,STEP4;,5,DO,338,1,CPPASTDoStatement
+87556,CONTROL_STRUCTURE,-1,,while (p != e),3,WHILE,341,17,<empty>
+87564,CONTROL_STRUCTURE,1,,STEP1;,5,DO,342,1,CPPASTDoStatement
+87751,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 32;i++),3,FOR,23,6,CPPASTForStatement
+87787,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 32;i++),3,FOR,28,8,CPPASTForStatement
+88194,CONTROL_STRUCTURE,-1,,if (info_log != NULL),3,IF,32,1,CPPASTIfStatement
+88230,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,45,4,CPPASTIfStatement
+88246,CONTROL_STRUCTURE,-1,,if (s.ok() && should_sync),3,IF,49,6,CPPASTIfStatement
+88260,CONTROL_STRUCTURE,-1,,if (s.ok()),3,IF,52,7,CPPASTIfStatement
+88274,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,56,9,CPPASTIfStatement
+88336,CONTROL_STRUCTURE,-1,,if (!s.ok()),3,IF,76,5,CPPASTIfStatement
+88354,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,81,10,<empty>
+88368,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,84,3,CPPASTIfStatement
+88375,CONTROL_STRUCTURE,-1,,break;,7,BREAK,85,1,CPPASTBreakStatement
+88388,CONTROL_STRUCTURE,-1,,if (fragment.empty()),5,IF,88,5,CPPASTIfStatement
+88394,CONTROL_STRUCTURE,-1,,break;,7,BREAK,89,1,CPPASTBreakStatement
+88496,CONTROL_STRUCTURE,-1,,if (GetAllowed() <= 0),5,IF,55,1,CPPASTIfStatement
+88511,CONTROL_STRUCTURE,-1,,if (x <= 0),5,IF,60,6,CPPASTIfStatement
+88518,CONTROL_STRUCTURE,-1,,else,12,ELSE,62,3,CPPASTCompoundStatement
+88610,CONTROL_STRUCTURE,-1,,if (r < n),5,IF,106,5,CPPASTIfStatement
+88615,CONTROL_STRUCTURE,-1,,if (feof(file_)),7,IF,107,1,CPPASTIfStatement
+88619,CONTROL_STRUCTURE,-1,,else,14,ELSE,109,3,CPPASTCompoundStatement
+88633,CONTROL_STRUCTURE,-1,,"if (fseek(file_, n, SEEK_CUR))",5,IF,118,1,CPPASTIfStatement
+88667,CONTROL_STRUCTURE,-1,,if (temporary_fd_),5,IF,137,2,CPPASTIfStatement
+88680,CONTROL_STRUCTURE,-1,,if (!temporary_fd_),5,IF,145,1,CPPASTIfStatement
+88702,CONTROL_STRUCTURE,-1,,if (temporary_fd_),5,IF,154,3,CPPASTIfStatement
+88713,CONTROL_STRUCTURE,-1,,if (fd < 0),7,IF,156,2,CPPASTIfStatement
+88744,CONTROL_STRUCTURE,-1,,if (r < 0),5,IF,164,8,CPPASTIfStatement
+88754,CONTROL_STRUCTURE,-1,,if (temporary_fd_),5,IF,168,9,CPPASTIfStatement
+88794,CONTROL_STRUCTURE,-1,,if (offset + n > length_),5,IF,200,2,CPPASTIfStatement
+88810,CONTROL_STRUCTURE,-1,,else,12,ELSE,203,3,CPPASTCompoundStatement
+88837,CONTROL_STRUCTURE,-1,,if (file_ != NULL),5,IF,220,1,CPPASTIfStatement
+88863,CONTROL_STRUCTURE,-1,,if (r != data.size()),5,IF,228,3,CPPASTIfStatement
+88885,CONTROL_STRUCTURE,-1,,if (fclose(file_) != 0),5,IF,236,2,CPPASTIfStatement
+88905,CONTROL_STRUCTURE,-1,,if (fflush_unlocked(file_) != 0),5,IF,244,1,CPPASTIfStatement
+88939,CONTROL_STRUCTURE,-1,,if (sep == NULL),5,IF,255,7,CPPASTIfStatement
+88950,CONTROL_STRUCTURE,-1,,else,12,ELSE,258,3,CPPASTCompoundStatement
+88968,CONTROL_STRUCTURE,-1,,"if (basename.starts_with(""MANIFEST""))",5,IF,263,9,CPPASTIfStatement
+88984,CONTROL_STRUCTURE,-1,,if (fd < 0),7,IF,265,3,CPPASTIfStatement
+88994,CONTROL_STRUCTURE,-1,,else,14,ELSE,267,3,CPPASTCompoundStatement
+88996,CONTROL_STRUCTURE,-1,,if (fsync(fd) < 0),9,IF,268,1,CPPASTIfStatement
+89019,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,280,3,CPPASTIfStatement
+89028,CONTROL_STRUCTURE,-1,,"if (fflush_unlocked(file_) != 0 ||
+        fdatasync(fileno(file_)) != 0)",5,IF,283,4,CPPASTIfStatement
+89168,CONTROL_STRUCTURE,-1,,if (f == NULL),5,IF,338,3,CPPASTIfStatement
+89181,CONTROL_STRUCTURE,-1,,else,12,ELSE,341,3,CPPASTCompoundStatement
+89215,CONTROL_STRUCTURE,-1,,if (fd < 0),5,IF,352,5,CPPASTIfStatement
+89225,CONTROL_STRUCTURE,-1,,else,12,ELSE,354,3,CPPASTIfStatement
+89227,CONTROL_STRUCTURE,1,,if (mmap_limit_.Acquire()),12,IF,354,1,CPPASTIfStatement
+89240,CONTROL_STRUCTURE,-1,,if (s.ok()),7,IF,357,3,CPPASTIfStatement
+89256,CONTROL_STRUCTURE,-1,,if (base != MAP_FAILED),9,IF,359,3,CPPASTIfStatement
+89271,CONTROL_STRUCTURE,-1,,else,16,ELSE,361,3,CPPASTCompoundStatement
+89280,CONTROL_STRUCTURE,-1,,if (!s.ok()),7,IF,366,5,CPPASTIfStatement
+89291,CONTROL_STRUCTURE,-1,,else,12,ELSE,369,3,CPPASTCompoundStatement
+89320,CONTROL_STRUCTURE,-1,,if (f == NULL),5,IF,379,4,CPPASTIfStatement
+89334,CONTROL_STRUCTURE,-1,,else,12,ELSE,382,3,CPPASTCompoundStatement
+89361,CONTROL_STRUCTURE,-1,,if (f == NULL),5,IF,392,4,CPPASTIfStatement
+89375,CONTROL_STRUCTURE,-1,,else,12,ELSE,395,3,CPPASTCompoundStatement
+89418,CONTROL_STRUCTURE,-1,,if (d == NULL),5,IF,409,4,CPPASTIfStatement
+89428,CONTROL_STRUCTURE,-1,,while ((entry = readdir(d)) != NULL),5,WHILE,413,6,<empty>
+89456,CONTROL_STRUCTURE,-1,,if (unlink(fname.c_str()) != 0),5,IF,422,2,CPPASTIfStatement
+89478,CONTROL_STRUCTURE,-1,,"if (mkdir(name.c_str(), 0755) != 0)",5,IF,430,2,CPPASTIfStatement
+89501,CONTROL_STRUCTURE,-1,,if (rmdir(name.c_str()) != 0),5,IF,438,2,CPPASTIfStatement
+89525,CONTROL_STRUCTURE,-1,,"if (stat(fname.c_str(), &sbuf) != 0)",5,IF,447,3,CPPASTIfStatement
+89545,CONTROL_STRUCTURE,-1,,else,12,ELSE,450,3,CPPASTCompoundStatement
+89562,CONTROL_STRUCTURE,-1,,"if (rename(src.c_str(), target.c_str()) != 0)",5,IF,458,2,CPPASTIfStatement
+89605,CONTROL_STRUCTURE,-1,,if (fd < 0),5,IF,468,5,CPPASTIfStatement
+89615,CONTROL_STRUCTURE,-1,,else,12,ELSE,470,3,CPPASTIfStatement
+89617,CONTROL_STRUCTURE,1,,if (!locks_.Insert(fname)),12,IF,470,1,CPPASTIfStatement
+89637,CONTROL_STRUCTURE,-1,,else,12,ELSE,473,3,CPPASTIfStatement
+89639,CONTROL_STRUCTURE,1,,"if (LockOrUnlock(fd, true) == -1)",12,IF,473,1,CPPASTIfStatement
+89661,CONTROL_STRUCTURE,-1,,else,12,ELSE,477,3,CPPASTCompoundStatement
+89696,CONTROL_STRUCTURE,-1,,"if (LockOrUnlock(my_lock->fd_, false) == -1)",5,IF,489,4,CPPASTIfStatement
+89748,CONTROL_STRUCTURE,-1,,if (env && env[0] != '\0'),5,IF,504,3,CPPASTIfStatement
+89761,CONTROL_STRUCTURE,-1,,else,12,ELSE,506,3,CPPASTCompoundStatement
+89826,CONTROL_STRUCTURE,-1,,if (f == NULL),5,IF,525,3,CPPASTIfStatement
+89839,CONTROL_STRUCTURE,-1,,else,12,ELSE,528,3,CPPASTCompoundStatement
+89890,CONTROL_STRUCTURE,-1,,if (result != 0),5,IF,546,1,CPPASTIfStatement
+89939,CONTROL_STRUCTURE,-1,,if (mmap_limit >= 0),3,IF,576,1,CPPASTIfStatement
+89961,CONTROL_STRUCTURE,-1,,if (open_read_only_file_limit >= 0),3,IF,586,1,CPPASTIfStatement
+89969,CONTROL_STRUCTURE,-1,,"if (getrlimit(RLIMIT_NOFILE, &rlim))",3,IF,590,3,CPPASTIfStatement
+89978,CONTROL_STRUCTURE,-1,,else,10,ELSE,593,3,CPPASTIfStatement
+89980,CONTROL_STRUCTURE,1,,if (rlim.rlim_cur == RLIM_INFINITY),10,IF,593,1,CPPASTIfStatement
+89995,CONTROL_STRUCTURE,-1,,else,10,ELSE,595,3,CPPASTCompoundStatement
+90033,CONTROL_STRUCTURE,-1,,if (!started_bgthread_),3,IF,614,2,CPPASTIfStatement
+90051,CONTROL_STRUCTURE,-1,,if (queue_.empty()),3,IF,623,3,CPPASTIfStatement
+90092,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,636,1,<empty>
+90100,CONTROL_STRUCTURE,-1,,while (queue_.empty()),5,WHILE,639,2,<empty>
+90409,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumFiles;i++),3,FOR,44,16,CPPASTForStatement
+90445,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumFiles;i++),3,FOR,49,19,CPPASTForStatement
+90507,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumFiles;i++),3,FOR,53,20,CPPASTForStatement
+90913,CONTROL_STRUCTURE,-1,,for (int i = 0;i < 3;i++),3,FOR,87,4,CPPASTForStatement
+90933,CONTROL_STRUCTURE,-1,,while (true),3,WHILE,90,5,<empty>
+90954,CONTROL_STRUCTURE,-1,,if (num == 0),5,IF,94,5,CPPASTIfStatement
+90959,CONTROL_STRUCTURE,-1,,break;,7,BREAK,95,1,CPPASTBreakStatement
+91052,CONTROL_STRUCTURE,-1,,while (data + 4 <= limit),3,WHILE,26,9,<empty>
+91078,CONTROL_STRUCTURE,-1,,switch(limit - data),3,SWITCH,35,10,CPPASTSwitchStatement
+91096,CONTROL_STRUCTURE,1,,FALLTHROUGH_INTENDED;,7,DO,38,1,CPPASTDoStatement
+91112,CONTROL_STRUCTURE,1,,FALLTHROUGH_INTENDED;,7,DO,41,1,CPPASTDoStatement
+91132,CONTROL_STRUCTURE,-1,,break;,7,BREAK,46,14,CPPASTBreakStatement
+91611,CONTROL_STRUCTURE,-1,,for (int i = 0;i < kNumBuckets;i++),3,FOR,39,6,CPPASTForStatement
+91637,CONTROL_STRUCTURE,-1,,while (b < kNumBuckets - 1 && kBucketLimit[b] <= value),3,WHILE,47,3,<empty>
+91657,CONTROL_STRUCTURE,-1,,if (min_ > value),3,IF,51,5,CPPASTIfStatement
+91665,CONTROL_STRUCTURE,-1,,if (max_ < value),3,IF,52,6,CPPASTIfStatement
+91688,CONTROL_STRUCTURE,-1,,if (other.min_ < min_),3,IF,59,1,CPPASTIfStatement
+91700,CONTROL_STRUCTURE,-1,,if (other.max_ > max_),3,IF,60,2,CPPASTIfStatement
+91727,CONTROL_STRUCTURE,-1,,for (int b = 0;b < kNumBuckets;b++),3,FOR,64,6,CPPASTForStatement
+91772,CONTROL_STRUCTURE,-1,,for (int b = 0;b < kNumBuckets;b++),3,FOR,76,5,CPPASTForStatement
+91789,CONTROL_STRUCTURE,-1,,if (sum >= threshold),5,IF,78,2,CPPASTIfStatement
+91845,CONTROL_STRUCTURE,-1,,if (r < min_),7,IF,86,13,CPPASTIfStatement
+91853,CONTROL_STRUCTURE,-1,,if (r > max_),7,IF,87,14,CPPASTIfStatement
+91869,CONTROL_STRUCTURE,-1,,if (num_ == 0.0),3,IF,95,1,CPPASTIfStatement
+91884,CONTROL_STRUCTURE,-1,,if (num_ == 0.0),3,IF,100,1,CPPASTIfStatement
+91960,CONTROL_STRUCTURE,-1,,for (int b = 0;b < kNumBuckets;b++),3,FOR,119,12,CPPASTForStatement
+91972,CONTROL_STRUCTURE,-1,,if (buckets_[b] <= 0.0),5,IF,120,1,CPPASTIfStatement
+91979,CONTROL_STRUCTURE,1,,continue;,29,CONTINUE,120,1,CPPASTContinueStatement
+92168,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < value.size();i++),3,FOR,23,1,CPPASTForStatement
+92189,CONTROL_STRUCTURE,-1,,if (c >= ' ' && c <= '~'),5,IF,25,3,CPPASTIfStatement
+92203,CONTROL_STRUCTURE,-1,,else,12,ELSE,27,3,CPPASTCompoundStatement
+92259,CONTROL_STRUCTURE,-1,,while (!in->empty()),3,WHILE,51,5,<empty>
+92273,CONTROL_STRUCTURE,-1,,if (c >= '0' && c <= '9'),5,IF,53,3,CPPASTIfStatement
+92297,CONTROL_STRUCTURE,-1,,"if (v > kMaxUint64/10 ||
+          (v == kMaxUint64/10 && delta > kMaxUint64%10))",7,IF,57,6,CPPASTIfStatement
+92330,CONTROL_STRUCTURE,-1,,else,12,ELSE,64,3,CPPASTCompoundStatement
+92332,CONTROL_STRUCTURE,-1,,break;,7,BREAK,65,1,CPPASTBreakStatement
+92491,CONTROL_STRUCTURE,-1,,for (int iter = 0;iter < 2;iter++),5,FOR,34,4,CPPASTForStatement
+92505,CONTROL_STRUCTURE,-1,,if (iter == 0),7,IF,37,3,CPPASTIfStatement
+92517,CONTROL_STRUCTURE,-1,,else,14,ELSE,40,3,CPPASTCompoundStatement
+92591,CONTROL_STRUCTURE,-1,,if (p < limit),7,IF,64,15,CPPASTIfStatement
+92611,CONTROL_STRUCTURE,-1,,if (p >= limit),7,IF,72,16,CPPASTIfStatement
+92616,CONTROL_STRUCTURE,-1,,if (iter == 0),9,IF,73,1,CPPASTIfStatement
+92621,CONTROL_STRUCTURE,-1,,continue;,11,CONTINUE,74,1,CPPASTContinueStatement
+92622,CONTROL_STRUCTURE,-1,,else,16,ELSE,75,3,CPPASTCompoundStatement
+92629,CONTROL_STRUCTURE,-1,,if (p == base || p[-1] != '\n'),7,IF,81,17,CPPASTIfStatement
+92659,CONTROL_STRUCTURE,-1,,if (base != buffer),7,IF,88,21,CPPASTIfStatement
+92666,CONTROL_STRUCTURE,-1,,break;,7,BREAK,91,22,CPPASTBreakStatement
+92682,CONTROL_STRUCTURE,-1,,if (seed_ == 0 || seed_ == 2147483647L),5,IF,21,1,CPPASTIfStatement
+92723,CONTROL_STRUCTURE,-1,,if (seed_ > M),5,IF,41,8,CPPASTIfStatement
+92866,CONTROL_STRUCTURE,-1,,if (len2),3,IF,28,13,CPPASTIfStatement
+92901,CONTROL_STRUCTURE,-1,,if (state_ == NULL),3,IF,37,1,CPPASTIfStatement
+92908,CONTROL_STRUCTURE,-1,,else,10,ELSE,39,3,CPPASTCompoundStatement
+92912,CONTROL_STRUCTURE,-1,,switch(code()),5,SWITCH,42,3,CPPASTSwitchStatement
+92920,CONTROL_STRUCTURE,-1,,break;,9,BREAK,45,4,CPPASTBreakStatement
+92926,CONTROL_STRUCTURE,-1,,break;,9,BREAK,48,8,CPPASTBreakStatement
+92932,CONTROL_STRUCTURE,-1,,break;,9,BREAK,51,12,CPPASTBreakStatement
+92938,CONTROL_STRUCTURE,-1,,break;,9,BREAK,54,16,CPPASTBreakStatement
+92944,CONTROL_STRUCTURE,-1,,break;,9,BREAK,57,20,CPPASTBreakStatement
+92950,CONTROL_STRUCTURE,-1,,break;,9,BREAK,60,24,CPPASTBreakStatement
+92963,CONTROL_STRUCTURE,-1,,break;,9,BREAK,65,28,CPPASTBreakStatement
+93017,CONTROL_STRUCTURE,-1,,if (tests == NULL),3,IF,25,1,CPPASTIfStatement
+93062,CONTROL_STRUCTURE,-1,,if (tests != NULL),3,IF,40,5,CPPASTIfStatement
+93067,CONTROL_STRUCTURE,-1,,for (size_t i = 0;i < tests->size();i++),5,FOR,41,1,CPPASTForStatement
+93089,CONTROL_STRUCTURE,-1,,if (matcher != NULL),7,IF,43,3,CPPASTIfStatement
+93112,CONTROL_STRUCTURE,-1,,"if (strstr(name.c_str(), matcher) == NULL)",9,IF,47,5,CPPASTIfStatement
+93122,CONTROL_STRUCTURE,-1,,continue;,11,CONTINUE,48,1,CPPASTContinueStatement
+93210,CONTROL_STRUCTURE,-1,,if (result <= 0),3,IF,70,5,CPPASTIfStatement
+93266,CONTROL_STRUCTURE,-1,,if (!ok_),5,IF,55,1,CPPASTIfStatement
+93290,CONTROL_STRUCTURE,-1,,if (!b),5,IF,62,1,CPPASTIfStatement
+93310,CONTROL_STRUCTURE,-1,,if (!s.ok()),5,IF,70,1,CPPASTIfStatement
+93337,CONTROL_STRUCTURE,-1,,if (!(x == y)),3,IF,87,1,CPPASTIfStatement
+93364,CONTROL_STRUCTURE,-1,,if (!(x != y)),3,IF,88,1,CPPASTIfStatement
+93391,CONTROL_STRUCTURE,-1,,if (!(x >= y)),3,IF,89,1,CPPASTIfStatement
+93418,CONTROL_STRUCTURE,-1,,if (!(x > y)),3,IF,90,1,CPPASTIfStatement
+93445,CONTROL_STRUCTURE,-1,,if (!(x <= y)),3,IF,91,1,CPPASTIfStatement
+93472,CONTROL_STRUCTURE,-1,,if (!(x < y)),3,IF,92,1,CPPASTIfStatement
+93498,CONTROL_STRUCTURE,-1,,if (!ok_),5,IF,98,1,CPPASTIfStatement
+93540,CONTROL_STRUCTURE,-1,,for (int i = 0;i < len;i++),3,FOR,14,2,CPPASTForStatement
+93591,CONTROL_STRUCTURE,-1,,for (int i = 0;i < len;i++),3,FOR,27,4,CPPASTForStatement
+93631,CONTROL_STRUCTURE,-1,,if (raw < 1),3,IF,37,3,CPPASTIfStatement
+93649,CONTROL_STRUCTURE,-1,,while (dst->size() < len),3,WHILE,43,7,<empty>
+93718,CONTROL_STRUCTURE,-1,,if (writable_file_error_),5,IF,41,1,CPPASTIfStatement
+93747,CONTROL_STRUCTURE,-1,,if (writable_file_error_),5,IF,51,1,CPPASTIfStatement
